@@ -8,6 +8,8 @@ import { WhatWeDoCarousel } from "@/components/what-we-do-grid"
 import SustainabilityComp from "@/components/sustainability"
 import LifeatModules from "@/components/life-at"
 import WhatSetsUsApart from "@/components/sets-us-apart"
+// import TradingViewWidget from "@/components/live-price"
+// import TradingViewNSEWidget from "@/components/live-price-bse"
 
 export default function HomePage() {
   return (
@@ -16,6 +18,8 @@ export default function HomePage() {
 
       <section className="relative">
         <HeroVideo />
+        {/* <TradingViewWidget/>
+        <TradingViewNSEWidget/> */}
       </section>
 
       <motion.section
