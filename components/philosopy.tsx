@@ -9,33 +9,39 @@ import "slick-carousel/slick/slick-theme.css";
 
 const items = [
   {
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/A-Trusted-Partner-to-Global-Brands-in-150+-Countries17.jpg",
-    title: "A trusted partner to global brands in 150+ countries",
-    desc: "Delivering excellence in sustainable packaging solutions, we empower global brands worldwide with innovative technologies and unmatched reliability.",
+    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Trust-respect23.jpg",
+    title: "Trust & respect ",
+    desc: "Proactively build inclusive and egalitarian partnerships with all stakeholders, through the virtues of honesty of purpose, mutual trust and respect.",
   },
   {
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/page-banners/life_at_image10.webp",
-    title: "End-to-end packaging solutions for diverse industries",
-    desc: "UFlex serves as a one-stop-shop flexible packaging solution provider serving varied sectors spanning FMCG, consumer product goods, pharmaceuticals, building materials, automobiles, and more.",
+    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Customer-value-creation22.jpg",
+    title: "Customer value creation ",
+    desc: "Enabling customers to become high-performance businesses through our total packaging solutions and creating long-term relationships by being responsive, relevant and consistently delivering value.",
   },
   {
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Indias-First-NABL-Accredited48.jpg",
-    title: "India's first NABL-accredited R&D lab certified to ISO/IEC 17025:2017 standards",
-    desc: "Located in Noida, our state-of-the-art facility leads innovation in inks, adhesives, and coatings with globally recognized quality and precision.",
+    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Innovation11.jpg",
+    title: "Innovation",
+    desc: "Strive to be the front runner in technology and business, actively contributing to the evolution of best practices in developing new and efficient packaging solutions to address customers’ dynamic needs.",
   },
   {
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Pioneering-India-on-the-Global-Map-for-Aseptic-Packaging35.jpg",
-    title: "Putting India on the global map for aseptic packaging",
-    desc: "As the first Indian company to achieve this milestone, we proudly represent India in the global aseptic packaging industry with innovative and sustainable solutions.",
+    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Global-perspective04.jpg",
+    title: "Global perspective ",
+    desc: "Thinking globally and acting locally we leverage the power of global insight, relationships, collaborations and learnings to deliver exceptional packaging solutions for the clients.",
   },
   {
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Comprehensive-and-Sustainable-Packaging-Ecosystems25.jpg",
-    title: "Comprehensive and sustainable packaging ecosystems",
-    desc: "From producing films, converting, engineering, printing cylinders, chemicals, holography, and aseptic packaging to recycling solutions, we deliver eco-friendly packaging solutions for a sustainable future.",
+    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Speed-in-all-directions-47.jpg",
+    title: "Speed in all directions  ",
+    desc: "Speed and efficiency in every activity and process responding to internal and external customers with a sense of urgency and dynamism is an integral part of our value system. ",
   },
+   {
+    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Socio-environmental-sustainability-26.jpg",
+    title: "Socio-environmental sustainability ",
+    desc: "Upholding that society and environment are cornerstones for sustainability, we support and promote inclusive social development and strive towards the conservation of the environment and protection of our planet.",
+  },
+
 ];
 
-export default function WhatSetsUsApart() {
+export default function Philosopy() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // const settings = {
@@ -128,11 +134,11 @@ const settings = {
 };
 
   return (
-    <section className="relative bg-[#bcd3f0]/30 py-16">
+    <section className="relative bg-white py-16">
       <div className="mx-auto max-w-6xl px-6 text-center">
-        <h2 className="poppins-800 text-4xl text-[#0B3C7D] md:text-5xl">What Sets Us Apart</h2>
+        <h2 className="poppins-800 text-4xl text-[#0B3C7D] md:text-5xl">People’s philosophy</h2>
         <p className="poppins-400 mx-auto mt-2 max-w-3xl text-[#222] md:text-lg">
-          At UFlex, research-led innovation is the pillar of our business strategy.
+          Our staunch beliefs, our DNA - Our values
         </p>
       </div>
 

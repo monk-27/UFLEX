@@ -394,6 +394,35 @@ swiper-pagination {
   font-weight: 800;
   line-height: 120%;
 }
+
+.bg-mobimg {
+  background-image: url(https://uflex.wpdevstudio.site/HTML/uploaded-files/page-images/image07.jpg);
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+@media screen and (max-width: 992px) {
+  .bg-mobimg {
+    height: 75px !important; /* Adjusted height for tablets */
+    background-position: center center; /* Center the image for better focus */
+    background-size: contain; /* Use contain to avoid stretching */
+    background-repeat: no-repeat; /* Prevent tiling */
+  }
+  .swiper-wrapper {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bg-mobimg {
+    height: 550px !important; /* Reduced height for mobile */
+    background-position: center; /* Center the image */
+    background-size: cover; /* Use contain to avoid stretching */
+    background-repeat: no-repeat; /* Prevent tiling */
+  }
+}
 .content {
   /* width: 652px; */
   color: #4f4f4f;
