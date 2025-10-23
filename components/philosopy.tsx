@@ -90,19 +90,19 @@ const settings = {
   dots: true,
   infinite: true,
   speed: 500,
-  slidesToShow: 3,
+  slidesToShow: 3, // ✅ default desktop/laptop
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 3500,
   pauseOnHover: false,
   pauseOnDotsHover: true,
   arrows: false,
-  centerMode: true,
+  centerMode: false,
   centerPadding: "0px",
   afterChange: (index: any) => setCurrentSlide(index),
   responsive: [
     {
-      breakpoint: 1024, // tablets
+      breakpoint: 1280, // ✅ tablets & small laptops
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -111,17 +111,7 @@ const settings = {
       },
     },
     {
-      breakpoint: 768, // mobile landscape
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: false,
-        centerPadding: "0px",
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 480, // small mobile
+      breakpoint: 768, // ✅ mobile
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -132,6 +122,37 @@ const settings = {
     },
   ],
 };
+const settingsmob = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,            // mobile-first: 1 card
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3500,
+  pauseOnHover: false,
+  pauseOnDotsHover: true,
+  arrows: false,
+  centerMode: false,          // no peeking on mobile
+  centerPadding: "0px",
+  afterChange: (index: any) => setCurrentSlide(index),
+  responsive: [
+    {
+      breakpoint: 1024,       // < 1024px -> still 1 (explicitly ok)
+      settings: { slidesToShow: 1, centerMode: false, centerPadding: "0px" },
+    },
+    {
+      breakpoint: 1280,       // < 1280px -> 2 cards (tablet/large tablet)
+      settings: { slidesToShow: 2, centerMode: false, centerPadding: "0px" },
+    },
+    {
+      breakpoint: 9999,       // desktop and beyond -> 3 cards, can enable center
+      settings: { slidesToShow: 3, centerMode: true, centerPadding: "0px" },
+    },
+  ],
+}
+
+
 
   return (
     <section className="relative bg-white py-16">
@@ -142,7 +163,7 @@ const settings = {
         </p>
       </div>
 
-      <div className="mt-12 px-4">
+      <div className="mt-12 px-4 hidden sm:block">
         <Slider {...settings}>
           {items.map((card, index) => {
             const isActive = currentSlide === index;
@@ -180,6 +201,54 @@ const settings = {
           })}
         </Slider>
       </div>
+        <div className="mt-12 px-4 block sm:hidden">
+        <Slider {...settingsmob}>
+          {items.map((card, index) => {
+            const isActive = currentSlide === index;
+            return (
+              <motion.div
+                key={index}
+                className="px-2"
+                animate={{
+                  scale: isActive ? 1.05 : 0.95,
+                  y: isActive ? -10 : 0,
+                  transition: { duration: 0.3 },
+                }}
+              >
+                <div
+                  className={`overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 ${
+                    isActive ? "shadow-2xl" : "opacity-90"
+                  }`}
+                >
+                  <Image
+                    src={card.img}
+                    alt={card.title}
+                    width={800}
+                    height={500}
+                    className="h-[280px] w-full object-cover"
+                  />
+                  <div className="flex flex-col items-center px-6 py-6 text-center">
+                    <h3 className="poppins-800 mb-2 text-[18px] text-[#0B3C7D] md:text-xl">
+                      {card.title}
+                    </h3>
+                    <p className="text-[14px] text-gray-700 md:text-base">{card.desc}</p>
+                  </div>
+                </div>
+              </motion.div>
+            );
+          })}
+        </Slider>
+      </div>
+      <style jsx global>{`
+      @media (max-width: 768px) {
+        .slick-list { padding: 0 !important; }
+        .slick-track { display: flex !important; align-items: stretch !important; }
+        .slick-slide { height: auto !important; }
+        .slick-slide > div { width: 100% !important; margin: 0 auto !important; display: flex !important; }
+        .slick-slide > div > div { width: 100% !important; max-width: 420px; } /* optional max width */
+      }
+    `}</style>
     </section>
   );
+  
 }
