@@ -6,7 +6,7 @@ import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import { useEffect, useState, useRef } from "react"
 import { X, ChevronLeft, ChevronRight } from "lucide-react"
-import BusinessAwards from "@/components/awards"
+import BusinessAwards from "@/components/leaders"
 
 /* ------------------------- THEME: same palette as before ------------------------- */
 const cardColors = [
