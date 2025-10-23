@@ -18,7 +18,7 @@ import { Journey } from "@/components/about/journey"
 
 export default function AboutPage() {
   return (
-    <main>
+    <main className="">
       <SiteHeader />
 
       <section className=" bg-white">

@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       {/* font-sans -> Poppins (via globals.css),
           bg-white guarantees the white canvas */}
-      <body className="font-sans antialiased bg-white">
+      <body className="font-sans antialiased bg-white ">
         <a
           href="#content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:bg-white focus:text-black focus:px-3 focus:py-2 focus:rounded-md"
@@ -28,7 +28,7 @@ export default function RootLayout({
         </a>
         <Suspense fallback={null}>
           <PageTransition>
-            <main id="content">{children}</main>
+            <main id="content" className="">{children}</main>
           </PageTransition>
         </Suspense>
         <Analytics />
