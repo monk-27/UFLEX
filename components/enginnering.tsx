@@ -14,19 +14,19 @@ import AccreditationsSlider from './accredition'
 
 const SliderItems: SliderItem[] = [
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-07011400114.jpg",
-        title: "Products",
-        desc: "High-performance inks for superior print quality, compliant with global food safety and sustainability standards.",
+        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-07180601806.jpg",
+        title: "Packaging Machines",
+        desc: "A range of packaging machines and special purpose machines for wrapping of products of any shape and size and with specialised requirements.",
     },
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-07110501105.jpg",
-        title: "Applications",
-        desc: "A range of adhesives that ensure strong bonding, efficient processing, and compliance with global food safety and sustainability standards.",
+        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-07180611806.jpg",
+        title: "Converting Machines",
+        desc: "A wide range of machines for various printing, lamination, slitting/rewinding, doctoring, and pouch making as per a client's requirement.",
     },
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-07110511105.jpg",
-        title: "Industries",
-        desc: "A diverse range of coatings that provide visual appeal and meet diverse industry needs while supporting compliance and sustainability.",
+        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-07180621806.jpg",
+        title: "Speciality Products ",
+        desc: "A range of specialized ancillary products essential for packaging applications.",
     },
 
 
@@ -37,7 +37,7 @@ const SliderItems: SliderItem[] = [
 const modules: OverlayModule[] = [
     {
         title: "Solvent free pigmented white PU adhesive",
-        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-06445504455.jpg",
+        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-07185901859.jpg",
         description:
             "Designed a cost effective and sustainable adhesive that provides opacity with adhesive lamination.The challenge before us was to disperse the pigment in SF PU adhesive without impacting the lay and the wettability. The...",
         cta: { label: "Read More", href: "/learning-academy" },
@@ -45,7 +45,7 @@ const modules: OverlayModule[] = [
     },
     {
         title: "POWERING SUSTAINABLE LABEL PRINTING AT KUMAR LABELS",
-        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-06445514455.jpg",
+        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-07190011900.jpg",
         description:
             "Industry: Label Printing & Packaging Customer: Kumar Labels, India Total sales volume in FY24-25 of Flexgreen LED inks: 59 MT Challenge Kumar Labels, a forward-thinking label converter known for quality and innov...",
         cta: { label: "Read More", href: "/culture" },
@@ -54,18 +54,18 @@ const modules: OverlayModule[] = [
 ];
 const buismodules: OverlayModule[] = [
     {
-        title: "Digital Stamping Foil",
-        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-06435704357.jpg",
+        title: "Double Head Coating-1650",
+        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-07255502555.jpg",
         description:
-            "  Digital Stamping Foil, a product designed for seamless compatibility with all digital presses. This high-performance foil offers a high-gloss finish, fine detailing, and versatile application on coated/uncoated paperboar...",
+            "  UFlex's Engineering Business meets market demand with coating machines covering up to 2500mm web widths. Recent offerings include a 1650mm double-headed model applying various coatings with methods like gravure and kiss ...",
         cta: { label: "Read More", href: "/learning-academy" },
         priority: true,
     },
     {
-        title: "Holography and Stamping Foils ",
-        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-06435714357.jpg",
+        title: "PFS-4U",
+        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-07255512555.jpg",
         description:
-            " Flex continues to set global benchmarks through advanced infrastructure, technical excellence, advanced R&D, and deep market intelligence, ensuring world-class quality and innovation across its offerings. Our state-o...",
+            "UFlex launched the LPFS-4U (4 UP Linear, Pick, Fill, and Seal) machine in Q3, 2022. This machine, driven entirely by servos, ensures speed, performance, safety, hygiene, and environmental sustainability for brands.With...",
         cta: { label: "Read More", href: "/culture" },
     },
 ];
@@ -86,24 +86,24 @@ const awards: AwardItem[] = [
 
 const keyPeopleMany: Leader[] = [
     {
-        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(Holo)-1.-Mr.-Vinod-Hariharan-45.jpg",
-        name: "Mr. Vinod Hariharan ",
-        role: "Executive Vice President – Holography Business",
+        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(Eng)-1.-Mr.-Ravi-Sharma-38.jpg",
+        name: "Mr. Ravi Sharma ",
+        role: "Joint President - Engineering and Solutions Delivery, Engineering Business",
         summary:
-            "With almost three decades of rich and diverse experience, Mr. Vinod Hariharan is a seasoned professional with deep expertise in strategic planning, business development, channel management, digital ma...",
+            "Mr. Ravi Sharma, joining in 1992, brings over 12 years of manufacturing experience, including tenure with notable multinationals like Allied Signals, Molins India Limited, and a subsidiary of Philips ...",
         cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
     },
     {
-        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(Holo)-1.-Mr.-G.P.-Pathak-09.jpg",
-        name: "Mr. G.P. Pathak ",
-        role: "Vice President - Operations and New Product Development, Holography Business",
+        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(Eng)-1.-Mr.-Akash-Khandelwal-58.jpg",
+        name: "Mr. Sumeet Arora ",
+        role: "Senior Vice President - Sales and Marketing, Engineering Business",
         summary:
             "With over three decades of invaluable experience, Mr. G.P. Pathak has established himself as a seasoned professional in the Holography and Anti-Counterfeiting industry. Throughout his career, he has b...",
         cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
     },
     {
-        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(Holo)-3.-Mr.-Rakesh-Khazanchi-33.jpg",
-        name: "Mr. Rakesh Khazanchi ",
+        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(Eng)-3.-Mr.-Sumeet-Arora-13.jpg",
+        name: "Mr. Akash Khandelwal ",
         role: "Vice President - Sales and Marketing, Holography Business",
         summary:
             "With over 35 years of rich experience in Sales and Marketing, Mr. Rakesh Khazanchi brings deep expertise in strategy, brand building, and sales management processes. Before joining UFlex’s Holograph...",
@@ -125,7 +125,7 @@ const accreditations: AccreditationItem[] = [
 
 
 ];
-const HoloGraphyComp = () => {
+const EngComp = () => {
     return (
         <div>
 
@@ -140,7 +140,7 @@ const HoloGraphyComp = () => {
                             viewport={{ once: true }}
                             className="text-4xl poppins-800 tracking-tight text-red-900 md:text-5xl"
                         >
-                            Holography
+                            Engineering
 
                         </motion.h1>
                         <motion.div
@@ -151,19 +151,14 @@ const HoloGraphyComp = () => {
                             className="poppins-400 mt-5 space-y-4 text-slate-700"
                         >
                             <p>
-                                The UFlex holography business is India’s largest and most trusted provider of brand protection and anti-counterfeiting solutions, as well as an emerging global player in the industry.
+                                A leading manufacturer specializing in top-tier packaging, printing, and allied machines, catering to diverse needs across industries.
 
-                                The Holography Business offer a comprehensive range of holographic solutions, including, Advanced Security Holograms, Security Paper Labels & Tax Stamps, Wide Web Holographic Films, Stamping Foils, Transfer Holographic Metallized Paper & Paperboard, Security documents, & Textile Application Films for Sequins, Hot Melt, and Glitter Powder.
+                                Established in 1985, UFlex Engineering is a leading manufacturer specializing in top-tier packaging, printing, and allied machines. Our commitment to delivering high-performance machines and tailored solutions has propelled us to the forefront of the industry. We offer a comprehensive range of products and cater to diverse needs across various sectors.
                             </p>
                             <p>
-                                UFlex Limited’s advanced manufacturing facilities in Noida and Jammu are equipped with advanced in-house capabilities, enabling high-volume production while maintaining the highest quality standards. Specializing in holography-based anti-counterfeiting packaging and brand protection solutions, our facilities empower brands to combat counterfeiting threats and safeguard their business interests.
-
-                                With support from NABL-accredited labs and manufacturing sites in Noida and Jammu, India, boasting certifications such as ISO 9001:2015, ISO 14001:2015, ISO45001:2018, ISO 50001:2018, and ISO 31000:2018, we consistently uphold global standards.
-                            </p>
+                                With high-end CAD software, streamlined processes, and collaborative efforts across departments, we deliver tailored products to meet evolving global demands. This dedication, coupled with our state-of-the-art facilities, positions UFlex as a leading provider capable of fulfilling our clients' diverse needs with precision and efficiency. </p>
                             <p>
-                                Our commitment to quality, security, and sustainability is reinforced by globally recognized certifications, including, ISO 9001:2015 – Quality Management System (QMS), ISO 14001:2015 – Environmental Management System, ISO/IEC 27001:2022 – Information Security Management System, ISO 14298:2021 – Graphic Technology & Security Printing Management, HSSMS Certification – Health & Safety Management System, & IBA Certified Security Printer
-
-                                As an industry leader, UFlex is a proud member of ITSA, IOTA (IHMA), and ASPA, actively contributing to the advancement of security printing and brand protection.</p>
+                                At UFlex Engineering, we prioritize client satisfaction by maintaining rigorous quality standards throughout our production process. Our dedication to innovation, productivity, and globalization has solidified our position as a trusted manufacturer, exporter, and supplier in the global market.</p>
                         </motion.div>
                     </div>
 
@@ -174,7 +169,7 @@ const HoloGraphyComp = () => {
                         className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl border-2 border-blue-400 shadow ring-4 ring-blue-200"
                     >
                         <Image
-                            src="https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Holography-Business58.jpg"
+                            src="https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Engineering-Business49.jpg"
                             alt="UFlex capabilities across the value chain"
                             fill
                             className="object-cover"
@@ -221,7 +216,7 @@ const HoloGraphyComp = () => {
                         >
 
                             <Image
-                                src="https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Holography-Sustainability18.jpg"
+                                src="https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Engineering-Sustainability48.jpg"
                                 alt="UFlex capabilities across the value chain"
                                 fill
                                 className="object-cover"
@@ -240,11 +235,8 @@ const HoloGraphyComp = () => {
 
                     >
                         <p className=''>
-                            In the process of providing the best fraud-preventive infallible seals of full-proof product security, we ensure that all emissions are well below the permissible levels. We continuously strive for minimum process waste generation and optimally recycle the same.
-                        </p>
-                        <p>
-                            We have many solutions of sustainability segment- holographic transfer on paper and board, cold transfer foils, recycled RSC certified sequins film, cast and cure holographic films among many other.</p>
-
+                            At UFlex, we prioritise environmental responsibility across our operations. UFlex engineering has undertaken several initiatives focussed on water conservation, waste management and enhancing biodiversity surrounding our facilities.</p>
+                        
 
                     </motion.div>
                 </div>
@@ -279,4 +271,4 @@ const HoloGraphyComp = () => {
     )
 }
 
-export default HoloGraphyComp
+export default EngComp
