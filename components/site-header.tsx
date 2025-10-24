@@ -292,6 +292,8 @@ const baseNav: NavItem[] = [
     ],
   },
   { href: "/sustainability", label: "Sustainability" },
+
+  { href: "/investors", label: "Investors" },
   { href: "/hall-of-fame", label: "Hall of Fame" },
   { href: "/careers", label: "Careers" },
   { href: "/press-room", label: "Press Room" },
