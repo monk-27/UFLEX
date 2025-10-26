@@ -4,10 +4,10 @@ import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { HeroVideo } from "@/components/hero-video"
 import { motion } from "framer-motion"
-import { WhatWeDoCarousel } from "@/components/what-we-do-grid"
 import SustainabilityComp from "@/components/sustainability"
 import LifeatModules from "@/components/life-at"
 import WhatSetsUsApart from "@/components/sets-us-apart"
+import BusinessCardsCarousel from "@/components/what-we-do-grid"
 
 
 export default function HomePage() {
@@ -21,14 +21,14 @@ export default function HomePage() {
       </section>
 
       <motion.section
-        className="mx-auto max-w-6xl px-6 text-center sm:px-0"
+        className="mx-auto max-w-6xl px-6 text-center sm:px-0 py-12"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
         <motion.h3
-          className="poppins-800 mb-6 mt-6 text-3xl text-[#255994] sm:text-6xl md:mb-12"
+          className="poppins-800 mb-6 mt-6 text-3xl text-[#117ABA] sm:text-6xl md:mb-12"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
@@ -47,7 +47,7 @@ export default function HomePage() {
           </span>
         </motion.h2>
 
-        <WhatWeDoCarousel />
+        <BusinessCardsCarousel />
       </motion.section>
 
       <div className="mt-12">
