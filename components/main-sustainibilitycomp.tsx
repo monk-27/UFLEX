@@ -234,14 +234,14 @@ function DropdownList({
       {items.map((item) => {
         const isOpen = openId === item.id
         return (
-          <div key={item.id} className="mb-3 rounded-lg border-[2px] border-[#86EFAC]  bg-[#DCFCE7]">
+          <div key={item.id} className="mb-3 rounded-lg  bg-white shadow">
             <button
               onClick={() => setOpenId(isOpen ? null : item.id)}
               aria-expanded={isOpen}
               className="flex w-full items-center justify-between rounded-lg px-5 py-4 text-left font-semibold text-[#1E1E1E]"
             >
               <div>
-                  <h3 className="text-[#156534] poppins-600 text-lg">
+                  <h3 className="text-gray-700 poppins-600 text-lg">
                     <p className="text-[14px] leading-relaxed opacity-90">{item.title}</p>
 
                   </h3>
@@ -261,7 +261,7 @@ function DropdownList({
                   className="overflow-hidden rounded-b-lg bg-white"
                 >
                   <div className="px-5 pb-5 pt-1 text-[#2A2A2A]">
-                    <div className="poppins-400 px-5 pb-5 pt-1 text-[#156534]">
+                    <div className="poppins-400 px-5 pb-5 pt-1 text-gray-700">
 
 
 
@@ -313,10 +313,10 @@ const DesktopSustainabilityComp = () => {
         {/* Left: Text / Dropdown Card */}
         <motion.div
           style={{ x: xLeft, opacity }}
-          className="will-change-transform z-10 h-[85vh] w-[70%] overflow-hidden rounded bg-white text-[#2A2A2A] shadow"
+          className="will-change-transform z-10 h-[85vh] w-[70%] overflow-hidden rounded bg-gray-100 text-[#2A2A2A] shadow"
         >
-          <div className="subheads flex h-[79px] w-full items-center justify-center overflow-hidden rounded text-4xl">
-            <span className="subheadtext text-center text-[26px]">Sustainability</span>
+          <div className=" flex h-[79px] w-full items-center justify-center overflow-hidden rounded text-4xl">
+            <span className=" text-[#117ABA] text-center text-[26px]">Sustainability</span>
           </div>
 
           <div className="content mx-auto flex w-[85%] flex-col items-stretch p-6">
@@ -359,13 +359,13 @@ const MobileSustainabilityComp = () => {
         />
       </div>
 
-      <div className="mobsubheads mt-4  w-full py-2">
-        <h2 className="subheadtext text-[14px]">
+      <div className="text-[#117ABA] mt-4  w-full py-2">
+        <h2 className=" text-[14px]">
           <span>Sustainability</span>
         </h2>
       </div>
 
-      <div className="w-full rounded-lg bg-white p-4 text-[#2A2A2A] shadow-lg">
+      <div className="w-full rounded-lg bg-gray-100 p-4 text-[#2A2A2A] ">
         <DropdownList items={DATA} buttonClass="mobsubheads mobbutton" />
       </div>
     </div>
