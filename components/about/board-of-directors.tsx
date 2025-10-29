@@ -59,12 +59,12 @@ const directors: Director[] = [
 ]
 
 const cardColors = [
-  { border: "border-green-400", bg: "bg-green-50", titleColor: "text-green-700", ring: "ring-green-200", tint: "bg-green-100", textOnTint: "text-green-900" },
-  { border: "border-blue-400", bg: "bg-blue-50", titleColor: "text-blue-700", ring: "ring-blue-200", tint: "bg-blue-100", textOnTint: "text-blue-900" },
-  { border: "border-pink-400", bg: "bg-pink-50", titleColor: "text-pink-700", ring: "ring-pink-200", tint: "bg-pink-100", textOnTint: "text-pink-900" },
-  { border: "border-purple-400", bg: "bg-purple-50", titleColor: "text-purple-700", ring: "ring-purple-200", tint: "bg-purple-100", textOnTint: "text-purple-900" },
-  { border: "border-yellow-400", bg: "bg-yellow-50", titleColor: "text-yellow-700", ring: "ring-yellow-200", tint: "bg-yellow-100", textOnTint: "text-yellow-900" },
-  { border: "border-cyan-400", bg: "bg-cyan-50", titleColor: "text-cyan-700", ring: "ring-cyan-200", tint: "bg-cyan-100", textOnTint: "text-cyan-900" },
+  { border: "border-gray-200", bg: "bg-gray-100", titleColor: "text-[#117ABA] ", ring: "ring-[#117ABA]", tint: "bg-green-100", textOnTint: "text-green-900" },
+  { border: "border-gray-200", bg: "bg-gray-100", titleColor: "text-[#117ABA] ", ring: "ring-[#117ABA]", tint: "bg-blue-100", textOnTint: "text-blue-900" },
+  { border: "border-gray-200", bg: "bg-gray-100", titleColor: "text-[#117ABA] ", ring: "ring-[#117ABA]", tint: "bg-pink-100", textOnTint: "text-pink-900" },
+  { border: "border-gray-200", bg: "bg-gray-100", titleColor: "text-[#117ABA] ", ring: "ring-[#117ABA]", tint: "bg-purple-100", textOnTint: "text-purple-900" },
+  { border: "border-gray-200", bg: "bg-gray-100", titleColor: "text-[#117ABA] ", ring: "ring-[#117ABA]", tint: "bg-yellow-100", textOnTint: "text-yellow-900" },
+  { border: "border-gray-200", bg: "bg-gray-100", titleColor: "text-[#117ABA] ", ring: "ring-[#117ABA]", tint: "bg-cyan-100", textOnTint: "text-cyan-900" },
 ]
 
 export function BoardOfDirectors() {
@@ -92,7 +92,7 @@ export function BoardOfDirectors() {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl poppins-800 text-center mb-4 text-red-900">Board of Directors</h2>
+        <h2 className="text-4xl poppins-800 text-center mb-4 text-[#117ABA]">Board of Directors</h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto poppins-600">Experienced leaders guiding UFlex's vision and strategy</p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -108,7 +108,7 @@ export function BoardOfDirectors() {
                 </div>
 
                 <div className={`border-2 ${colors.border} ${colors.bg} p-6 pt-16 rounded-lg hover:shadow-lg transition h-full flex flex-col`}>
-                  <h3 className="text-lg poppins-800 text-red-900 mb-2 text-center sm:text-left">{director.name}</h3>
+                  <h3 className="text-lg poppins-800 text-gray-600 mb-2 text-center sm:text-left">{director.name}</h3>
                   <p className={`poppins-700 mb-3 ${colors.titleColor} text-center sm:text-left`}>{director.position}</p>
 
                   {/* Clamp long bios so all cards equalize */}
@@ -186,7 +186,7 @@ export function BoardOfDirectors() {
                           <Image src={d.img} alt={d.name} fill className="object-cover" />
                         </div>
                         <div>
-                          <h3 id={`director-title-${openIdx}`} className={`text-xl poppins-800 text-red-900`}>{d.name}</h3>
+                          <h3 id={`director-title-${openIdx}`} className={`text-xl poppins-800 text-gray-600`}>{d.name}</h3>
                           <p className={`${c.titleColor} poppins-700`}>{d.position}</p>
                         </div>
                       </div>

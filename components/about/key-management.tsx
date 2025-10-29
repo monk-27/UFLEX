@@ -45,15 +45,8 @@ const executives: Executive[] = [
 ]
 
 const execCardColors = [
-  { border: "border-green-400", bg: "bg-green-50", titleColor: "text-green-700", ring: "ring-green-200", tint: "bg-green-100" },
-  { border: "border-blue-400", bg: "bg-blue-50", titleColor: "text-blue-700", ring: "ring-blue-200", tint: "bg-blue-100" },
-  { border: "border-pink-400", bg: "bg-pink-50", titleColor: "text-pink-700", ring: "ring-pink-200", tint: "bg-pink-100" },
-  { border: "border-purple-400", bg: "bg-purple-50", titleColor: "text-purple-700", ring: "ring-purple-200", tint: "bg-purple-100" },
-  { border: "border-yellow-400", bg: "bg-yellow-50", titleColor: "text-yellow-700", ring: "ring-yellow-200", tint: "bg-yellow-100" },
-  { border: "border-cyan-400", bg: "bg-cyan-50", titleColor: "text-cyan-700", ring: "ring-cyan-200", tint: "bg-cyan-100" },
-  { border: "border-orange-400", bg: "bg-orange-50", titleColor: "text-orange-700", ring: "ring-orange-200", tint: "bg-orange-100" },
-  { border: "border-red-400", bg: "bg-red-50", titleColor: "text-red-700", ring: "ring-red-200", tint: "bg-red-100" },
-  { border: "border-indigo-400", bg: "bg-indigo-50", titleColor: "text-indigo-700", ring: "ring-indigo-200", tint: "bg-indigo-100" },
+    { border: "border-gray-200", bg: "bg-gray-100", titleColor: "text-[#117ABA] ", ring: "ring-[#117ABA]", tint: "bg-green-100", textOnTint: "text-green-900" },
+
 ]
 
 export function KeyManagement() {
@@ -81,7 +74,7 @@ export function KeyManagement() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl poppins-800 text-center mb-4 text-red-900">Key Management</h2>
+        <h2 className="text-4xl poppins-800 text-center mb-4 text-[#117ABA]">Key Management</h2>
         <p className="poppins-600 text-center text-gray-600 mb-24 max-w-2xl mx-auto">Talented professionals driving operational excellence</p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -115,7 +108,7 @@ export function KeyManagement() {
                   </div>
                 </div>
 
-                <h3 className="text-lg poppins-800 text-red-900 mb-2 text-center sm:text-left">{exec.name}</h3>
+                <h3 className="text-lg poppins-800 text-gray-600 mb-2 text-center sm:text-left">{exec.name}</h3>
                 <p className={`poppins-700 text-sm ${colors.titleColor} text-center sm:text-left`}>{exec.position}</p>
 
                 <div className="mt-4 mb-4 flex justify-center sm:justify-start">

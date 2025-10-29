@@ -28,7 +28,7 @@ export default function HomePage() {
         viewport={{ once: true }}
       >
         <motion.h3
-          className="poppins-800 mb-6 mt-6 text-3xl text-[#117ABA] sm:text-6xl md:mb-12"
+          className="text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] mb-6 mt-6 text-3xl  sm:text-6xl md:mb-12"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
@@ -51,10 +51,10 @@ export default function HomePage() {
       </motion.section>
 
       <div className="mt-12">
-        <SustainabilityComp />
         <LifeatModules />
         <WhatSetsUsApart />
       </div>
+        <SustainabilityComp />
 
       <SiteFooter />
     </main>

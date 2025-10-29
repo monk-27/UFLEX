@@ -4,7 +4,7 @@ export function Journey() {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center mb-4 text-red-900">Our Journey</h2>
+        <h2 className="text-4xl poppins-800 text-center mb-4 text-[#117ABA]">Our Journey</h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
           Nearly four decades of innovation, growth, and excellence
         </p>
@@ -17,8 +17,9 @@ export function Journey() {
 
           />
           </div>
-          <div className="border-2 border-red-400 bg-red-50 p-8 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4 text-red-900 flex items-center gap-2">
+                    <div className="rounded-lg bg-gray-100 p-6 text-center transition-shadow hover:shadow-md ">
+
+            <h3 className="text-2xl font-bold mb-4 text-[#117ABA] flex items-center gap-2">
               <span className="text-2xl">📋</span> Corporate Presentation
             </h3>
             <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -32,28 +33,31 @@ export function Journey() {
               continue to invest in cutting-edge technology, sustainable practices, and talent development to maintain
               our position as an industry leader.
             </p>
-            <button className="bg-red-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-800 transition">
+            <button className="bg-[#CE2028] text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-800 transition">
               Download Presentation
             </button>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="border-2 border-green-400 bg-green-50 p-6 rounded-lg">
-              <h4 className="text-xl font-bold text-red-900 mb-3">1985</h4>
+                      <div className="rounded-lg bg-gray-100 p-6 text-center transition-shadow hover:shadow-md ">
+
+              <h4 className="text-xl font-bold text-[#117ABA] mb-3">1985</h4>
               <p className="text-gray-700 leading-relaxed">
                 UFlex founded as a first-generation entrepreneurial venture with a vision to revolutionize the flexible
                 packaging industry.
               </p>
             </div>
-            <div className="border-2 border-blue-400 bg-blue-50 p-6 rounded-lg">
-              <h4 className="text-xl font-bold text-red-900 mb-3">Growth Phase</h4>
+                      <div className="rounded-lg bg-gray-100 p-6 text-center transition-shadow hover:shadow-md ">
+
+              <h4 className="text-xl font-bold text-[#117ABA] mb-3">Growth Phase</h4>
               <p className="text-gray-700 leading-relaxed">
                 Expanded manufacturing capabilities and established presence across India with state-of-the-art
                 facilities.
               </p>
             </div>
-            <div className="border-2 border-purple-400 bg-purple-50 p-6 rounded-lg">
-              <h4 className="text-xl font-bold text-red-900 mb-3">Global Expansion</h4>
+                     <div className="rounded-lg bg-gray-100 p-6 text-center transition-shadow hover:shadow-md ">
+
+              <h4 className="text-xl font-bold text-[#117ABA] mb-3">Global Expansion</h4>
               <p className="text-gray-700 leading-relaxed">
                 Established international manufacturing facilities across five continents, serving 150+ countries
                 worldwide.
@@ -61,13 +65,14 @@ export function Journey() {
             </div>
           </div>
 
-          <div className="border-2 border-pink-400 bg-pink-50 p-8 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4 text-red-900">Our Commitment</h3>
+                   <div className="rounded-lg bg-gray-100 p-6  transition-shadow hover:shadow-md ">
+
+            <h3 className="text-2xl font-bold mb-4 text-[#117ABA]">Our Commitment</h3>
             <div className="space-y-4">
               <div className="flex gap-4">
                 <span className="text-2xl">✓</span>
                 <div>
-                  <h4 className="font-bold text-red-900 mb-1">Innovation & Technology</h4>
+                  <h4 className="font-bold text-gray-600 mb-1">Innovation & Technology</h4>
                   <p className="text-gray-700">
                     Continuous investment in R&D and cutting-edge manufacturing technology
                   </p>
@@ -76,21 +81,21 @@ export function Journey() {
               <div className="flex gap-4">
                 <span className="text-2xl">✓</span>
                 <div>
-                  <h4 className="font-bold text-red-900 mb-1">Sustainability</h4>
+                  <h4 className="font-bold text-gray-600 mb-1">Sustainability</h4>
                   <p className="text-gray-700">Eco-friendly packaging solutions and sustainable business practices</p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <span className="text-2xl">✓</span>
                 <div>
-                  <h4 className="font-bold text-red-900 mb-1">Customer Excellence</h4>
+                  <h4 className="font-bold text-gray-600 mb-1">Customer Excellence</h4>
                   <p className="text-gray-700">Delivering superior quality and value to customers across the globe</p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <span className="text-2xl">✓</span>
                 <div>
-                  <h4 className="font-bold text-red-900 mb-1">Talent Development</h4>
+                  <h4 className="font-bold text-gray-600 mb-1">Talent Development</h4>
                   <p className="text-gray-700">Investing in our people and fostering a culture of excellence</p>
                 </div>
               </div>

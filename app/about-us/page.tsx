@@ -21,7 +21,7 @@ export default function AboutPage() {
     <main className="">
       <SiteHeader />
 
-      <section className=" bg-white">
+      <section className=" bg-white  ">
         <Hero />
 
         <CompanyInfo />
