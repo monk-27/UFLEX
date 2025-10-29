@@ -235,14 +235,14 @@ const items = [
     title: "Packaging Films Business",
     href: "/packaging-films-business",
     desc: "High-performance BOPET/BOPP films for diverse applications.",
-    img:"/images/packaging.png"
+    img:"/images/films.jpeg"
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Packaging-Films-Business-faq-icon21.svg",
   },
   {
     title: "Flexible Packaging Business",
     href: "/flexible-packaging-business",
     desc: "Custom structures for brand impact and efficiency.",
-    img:"/images/flexible.png"
+    img:"/images/flexible.jpeg"
 
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Flexible-Packaging-Business-faq-icon36.svg",
   },
@@ -250,7 +250,7 @@ const items = [
     title: "Aseptic Packaging Business",
     href: "/aseptic-packaging-business",
     desc: "Safe, shelf-stable solutions with extended freshness.",
-    img:"/images/aseptic.png"
+    img:"/images/aseptic.jpeg"
 
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Aseptic-Packaging-Business-faq-icon56.svg",
   },
@@ -273,7 +273,7 @@ const items = [
     title: "Engineering Business",
     href: "/engineering-business",
     desc: "Turnkey packaging machinery and systems.",
-    img:"/images/eng.png"
+    img:"/images/eng.jpeg"
 
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Engineering-Business-faq-icon45.svg",
   },
@@ -281,14 +281,15 @@ const items = [
     title: "Printing Cylinders Business",
     href: "/printing-cylinder-business",
     desc: "Precision cylinders for consistent print quality.",
-    img:"/images/printing.png"
+    img:"/images/cyl.jpeg"
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Printing-Cylinder-Business-faq-icon03.svg",
   },
   {
     title: "FlexiTubes Business",
     href: "/flexitube-business",
     desc: "Durable, brandable tubes for personal care and more.",
-    img :"/images/flexitube.png"
+        img:"/images/flexible.jpeg"
+
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/FlexiTube-Business-faq-icon59.svg",
   },
 ]

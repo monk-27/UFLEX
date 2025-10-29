@@ -146,7 +146,7 @@ const CylComp = () => {
                             viewport={{ once: true }}
                             className="text-4xl poppins-800 tracking-tight text-red-900 md:text-5xl"
                         >
-                            Engineering
+                            Printing Cylinders Business
 
                         </motion.h1>
                         <motion.div
