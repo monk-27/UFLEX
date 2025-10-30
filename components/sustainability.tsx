@@ -138,49 +138,36 @@ import Image from 'next/image';
 
 export default function SustainabilityComp() {
   return (
-    <div className="hero-section relative h-[570px] w-full overflow-hidden bg-white md:w-full md:h-[580px]">
-      {/* Background Image Container */}
+    <div className="relative h-[570px] w-full overflow-hidden bg-white md:h-[580px]">
+      {/* Background Image - Full Bleed */}
       <motion.div
-        className="absolute top-0 left-0 h-[570px] w-full md:w-full md:h-full"
+        className="absolute inset-0"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        {/* Desktop Image with Overlay */}
-        <div className="relative hidden h-full w-full md:block">
-          <Image
-            src="/images/suscomp.png" // Replace with your actual desktop image path
-            alt="Sustainability"
-           height={1440}
-           width={569}
-           
-            className="object-contain h-full w-full"
-            priority
-          />
-        </div>
-
-        {/* Mobile Image without Overlay */}
         <Image
-           src="/images/suscomp.png" // Replace with your actual mobile image path
-          alt="Sustainability"
+          src="/images/suscomp.png"
           fill
-          className="object-cover h-[1440px] w-[569px] md:hidden"
+          className="object-cover object-center"
+          alt="Sustainability"
           priority
+          sizes="100vw"
         />
       </motion.div>
 
       {/* Header Bar */}
       <div className="absolute top-0 left-0 right-0 z-10 bg-white py-4 md:py-6">
-        <div className="container mx-auto px-5 md:px-20">
-          <h2 className="text-center text-[24px]  poppins-600 text-[#117ABA] md:text-[48px]">
+        <div className="mx-auto max-w-7xl px-5 md:px-20">
+          <h2 className="text-center text-[24px] font-semibold text-[#117ABA] md:text-[48px]">
             Sustainability
           </h2>
         </div>
       </div>
 
-      {/* Text Content with Staggered Animation */}
+      {/* Text Content */}
       <motion.div
-        className="absolute inset-0 flex flex-col justify-end px-5 pb-16 text-left text-white sm:px-20 md:bottom-20 md:pb-20 md:pl-20"
+        className="absolute inset-0 flex flex-col justify-end px-5 pb-16 text-white md:bottom-20 md:pb-20 md:pl-20"
         initial="hidden"
         animate="visible"
         variants={{
@@ -192,38 +179,27 @@ export default function SustainabilityComp() {
           },
         }}
       >
-        {/* Main Commitment Text */}
         <motion.h3
           className="text-[20px] font-medium leading-tight sm:text-[28px] md:text-[32px]"
-          variants={{
-            hidden: { opacity: 0, y: 20 },
-            visible: { opacity: 1, y: 0 },
-          }}
+          variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
         >
           Committed to achieving carbon neutrality by 2035
         </motion.h3>
 
-        {/* Sub Text */}
         <motion.p
           className="mt-2 max-w-2xl text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[18px]"
-          variants={{
-            hidden: { opacity: 0, y: 20 },
-            visible: { opacity: 1, y: 0 },
-          }}
+          variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
         >
-          Sustainability and environmental stewardship are <br className="hidden sm:block" />
+          Sustainability and environmental stewardship are
+          <br className="hidden sm:block" />
           at the forefront of our business practices.
         </motion.p>
 
-        {/* CTA Button */}
         <motion.div
-          variants={{
-            hidden: { opacity: 0, y: 20 },
-            visible: { opacity: 1, y: 0 },
-          }}
+          variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
           className="mt-6"
         >
-          <button className="flex items-center gap-2 rounded-full border border-white bg-white px-6 py-3 text-sm font-medium text-black transition-all hover:bg-white hover:text-black sm:text-base">
+          <button className="flex items-center gap-2 rounded-full border border-white bg-white px-6 py-3 text-sm font-medium text-black transition-all hover:bg-transparent hover:text-white">
             SEE MORE
             <svg
               width="16"
@@ -241,9 +217,6 @@ export default function SustainabilityComp() {
           </button>
         </motion.div>
       </motion.div>
-
-      {/* Decorative Elements (Wind Turbine & Moss Ball) */}
-   
     </div>
   );
 }
