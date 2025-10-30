@@ -28,7 +28,7 @@ export default function Page() {
           transition={{ duration: 1 }}
         >
           {/* Desktop Image with Overlay */}
-          <div className="relative  h-full w-fullk">
+          <div className="relative  h-full w-full">
             <Image src="/images/sus-top.png" height={842} width={1470} className="" alt="" />
 
             {/* <div className="absolute inset-0 bg-white" /> */}

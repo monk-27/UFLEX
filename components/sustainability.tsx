@@ -157,7 +157,6 @@ export default function SustainabilityComp() {
             className="object-contain h-full w-full"
             priority
           />
-          <div className="absolute inset-0 bg-black/40" />
         </div>
 
         {/* Mobile Image without Overlay */}
