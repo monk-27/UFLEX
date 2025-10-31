@@ -279,11 +279,11 @@ function OfficeCard({ o }: { o: Office }) {
       className="relative overflow-hidden rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5"
     >
       <div className="mb-3 flex items-center gap-3">
-        <span className="rounded-xl bg-[#0B3C7D] p-2 text-white">
+        <span className="rounded-xl bg-[#117ABA] p-2 text-white">
           <Building2 className="h-5 w-5" />
         </span>
         <div>
-          <h3 className="poppins-700 text-lg text-[#0B3C7D] underline underline-offset-4">
+          <h3 className="poppins-700 text-lg text-[#117ABA] underline underline-offset-4">
             {o.name}
           </h3>
           <p className="text-sm text-slate-600">
@@ -306,7 +306,7 @@ function OfficeCard({ o }: { o: Office }) {
         {o.email && (
           <p className="flex gap-2 text-sm">
             <Mail className="mt-0.5 h-4 w-4 flex-none text-slate-500" />
-            <a className="text-[#0B3C7D] underline" href={`mailto:${o.email}`}>
+            <a className="text-[#117ABA] underline" href={`mailto:${o.email}`}>
               {o.email}
             </a>
           </p>
@@ -394,22 +394,27 @@ export default function GetInTouch() {
         {/* STATS (exact palette you gave) */}
         <section className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid md:grid-cols-4 gap-6 mb-16">
-            <div className="border-2 border-green-400 bg-green-50 p-8 rounded-lg text-center hover:shadow-lg transition">
-              <div className="text-5xl poppins-800 text-green-700 mb-3">150+</div>
-              <p className="text-green-900 poppins-700 text-lg">Countries with Our Presence</p>
+            <div className="border-2 border-gray-400 bg-white p-8 rounded-lg text-center hover:shadow-lg transition">
+              <div className="text-5xl poppins-800 text-[#117ABA] mb-3">150+</div>
+              <p className="text-gray-600 poppins-700 text-lg">Countries with Our Presence</p>
             </div>
-            <div className="border-2 border-orange-400 bg-orange-50 p-8 rounded-lg text-center hover:shadow-lg transition">
-              <div className="text-5xl poppins-800 text-orange-700 mb-3">15,000</div>
-              <p className="text-orange-900 poppins-700 text-lg">Global Workforce</p>
+
+
+            <div className="border-2 border-gray-400 bg-white p-8 rounded-lg text-center hover:shadow-lg transition">
+              <div className="text-5xl poppins-800 text-[#117ABA] mb-3">15,000+</div>
+              <p className="text-gray-600 poppins-700 text-lg">Global Workforce</p>
             </div>
-            <div className="border-2 border-blue-400 bg-blue-50 p-8 rounded-lg text-center hover:shadow-lg transition">
-              <div className="text-5xl poppins-800 text-blue-700 mb-3">9</div>
-              <p className="text-blue-900 poppins-700 text-lg">Global Manufacturing Locations</p>
+
+             <div className="border-2 border-gray-400 bg-white p-8 rounded-lg text-center hover:shadow-lg transition">
+              <div className="text-5xl poppins-800 text-[#117ABA] mb-3">9</div>
+              <p className="text-gray-600 poppins-700 text-lg">Global Manufacturing Locations</p>
             </div>
-            <div className="border-2 border-purple-400 bg-purple-50 p-8 rounded-lg text-center hover:shadow-lg transition">
-              <div className="text-5xl poppins-800 text-purple-700 mb-3">5</div>
-              <p className="text-purple-900 poppins-700 text-lg">Continents</p>
+            
+             <div className="border-2 border-gray-400 bg-white p-8 rounded-lg text-center hover:shadow-lg transition">
+              <div className="text-5xl poppins-800 text-[#117ABA] mb-3">5</div>
+              <p className="text-gray-600 poppins-700 text-lg">Continents</p>
             </div>
+           
           </div>
         </section>
 
@@ -417,7 +422,7 @@ export default function GetInTouch() {
         <section className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid gap-4 md:grid-cols-3">
             <a href="mailto:corpcomm@uflexltd.com" className="group flex items-center gap-3 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-[2px] hover:shadow-md">
-              <div className="rounded-xl bg-[#0B3C7D] p-3 text-white"><Mail className="h-5 w-5" /></div>
+              <div className="rounded-xl bg-[#117ABA] p-3 text-white"><Mail className="h-5 w-5" /></div>
               <div>
                 <p className="poppins-700 text-slate-800">Corporate Communications</p>
                 <p className="text-sm text-slate-600 group-hover:text-slate-700">corpcomm@uflexltd.com</p>
@@ -425,7 +430,7 @@ export default function GetInTouch() {
             </a>
 
             <a href="mailto:feedback@uflexltd.com" className="group flex items-center gap-3 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-[2px] hover:shadow-md">
-              <div className="rounded-xl bg-[#0B3C7D] p-3 text-white"><Mail className="h-5 w-5" /></div>
+              <div className="rounded-xl bg-[#117ABA] p-3 text-white"><Mail className="h-5 w-5" /></div>
               <div>
                 <p className="poppins-700 text-slate-800">Feedback / Support</p>
                 <p className="text-sm text-slate-600 group-hover:text-slate-700">feedback@uflexltd.com</p>
@@ -433,7 +438,7 @@ export default function GetInTouch() {
             </a>
 
             <div className="flex items-center gap-3 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/5">
-              <div className="rounded-xl bg-[#0B3C7D] p-3 text-white"><Phone className="h-5 w-5" /></div>
+              <div className="rounded-xl bg-[#117ABA] p-3 text-white"><Phone className="h-5 w-5" /></div>
               <div>
                 <p className="poppins-700 text-slate-800">Board Line</p>
                 <p className="text-sm text-slate-600">+91 120 4002121</p>
@@ -444,7 +449,7 @@ export default function GetInTouch() {
 
         {/* DIRECTORY: Independent filters */}
         <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6">
-          <h2 className="poppins-800 text-2xl text-[#0B3C7D] text-center sm:text-left">Connect with us</h2>
+          <h2 className="poppins-800 text-2xl text-[#117ABA] text-center sm:text-left">Connect with us</h2>
 
           {/* Controls */}
           <div className="mt-4 grid gap-3 md:grid-cols-12">
@@ -514,7 +519,7 @@ export default function GetInTouch() {
 
           <p className="mt-10 text-center text-sm text-slate-700">
             Can’t find what you need? Write to{" "}
-            <a href="mailto:enquiry@uflexltd.com" className="font-semibold text-[#0B3C7D] underline underline-offset-4">
+            <a href="mailto:enquiry@uflexltd.com" className="font-semibold text-[#117ABA] underline underline-offset-4">
               enquiry@uflexltd.com
             </a>
             .
@@ -525,7 +530,7 @@ export default function GetInTouch() {
         <section className="border-t border-slate-200 bg-white py-14">
           <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-8 px-4 sm:px-6 md:grid-cols-2">
             <div>
-              <h2 className="poppins-800 text-2xl text-[#0B3C7D]">Other Queries</h2>
+              <h2 className="poppins-800 text-2xl text-[#117ABA]">Other Queries</h2>
               <p className="mt-2 text-slate-600">
                 For any other enquiries, fill the form below. Fields marked with (*) are mandatory.
               </p>
@@ -563,7 +568,7 @@ export default function GetInTouch() {
                   <textarea id="message" required rows={5} className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2" placeholder="Type your enquiry / feedback here..." />
                 </div>
 
-                <button type="submit" className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-[#0B3C7D] px-6 py-2.5 font-medium text-white shadow-sm transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[#0B3C7D] focus:ring-offset-2">
+                <button type="submit" className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-[#117ABA] px-6 py-2.5 font-medium text-white shadow-sm transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[#0B3C7D] focus:ring-offset-2">
                   <Send className="h-4 w-4" />
                   Submit Now
                 </button>

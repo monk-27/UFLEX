@@ -7,7 +7,7 @@ export default function LearnStatus() {
     <section className="relative h-auto w-full px-4 py-12 sm:py-24 md:px-12">
       {/* Background with gradient overlay */}
       <div className="bg-mobimg absolute inset-0 min-h-fit">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#f77768] via-[#f5775b5c] to-[#f3f4f633]" />
+        <div className="absolute inset-0 " />
       </div>
 
       {/* Content */}

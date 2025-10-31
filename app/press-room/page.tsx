@@ -132,13 +132,13 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6">
       <motion.h2
-        className="poppins-800 text-center text-2xl text-[#0B3C7D] sm:text-3xl"
+        className="poppins-800 text-center text-2xl text-[#117ABA] sm:text-3xl"
         {...fadeUp()}
       >
         {children}
       </motion.h2>
       <motion.div
-        className="mx-auto mt-3 h-1 w-20 rounded-full bg-[#0B3C7D]/80"
+        className="mx-auto mt-3 h-1 w-20 rounded-full bg-[#117ABA]/80"
         {...fadeUp(0.05)}
       />
     </div>
@@ -182,7 +182,7 @@ function ViewMoreButton({ href = "#" }: { href?: string }) {
     <div className="mt-6 flex justify-center">
       <a
         href={href}
-        className="rounded-full bg-[#0B3C7D] px-5 py-2 text-sm font-medium text-white shadow-sm transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[#0B3C7D] focus:ring-offset-2"
+        className="rounded-full bg-[#117ABA] px-5 py-2 text-sm font-medium text-white shadow-sm transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[#0B3C7D] focus:ring-offset-2"
       >
         View More
       </a>
@@ -274,7 +274,7 @@ export default function PressRoomPage() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-[30px] poppins-800 text-3xl text-[#255994] sm:text-6xl">Media Releases</h2>
+              <h2 className="text-[30px] poppins-800 text-3xl text-[#117ABA] sm:text-6xl">Media Releases</h2>
               
             </motion.div>
       
@@ -357,7 +357,7 @@ export default function PressRoomPage() {
               ))}
             </motion.div>
 
-            <button className="poppins-700 w-1/4 rounded-lg py-2 px-2 mt-8 bg-green-900 text-green-100">
+            <button className="poppins-700 w-1/4 rounded-lg py-2 px-2 mt-8 bg-[#117ABA] text-white">
               View More
             </button>
           </motion.section>

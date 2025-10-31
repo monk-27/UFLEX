@@ -23,15 +23,17 @@ const items: Item[] = [
 
 // Same palette you used for Board/Key Management
 const cardColors = [
-    { border: "border-green-400", bg: "bg-green-50/70", title: "text-green-700", ring: "ring-green-200", tint: "bg-green-100/70" },
-    { border: "border-blue-400", bg: "bg-blue-50/70", title: "text-blue-700", ring: "ring-blue-200", tint: "bg-blue-100/70" },
-    { border: "border-pink-400", bg: "bg-pink-50/70", title: "text-pink-700", ring: "ring-pink-200", tint: "bg-pink-100/70" },
-    { border: "border-purple-400", bg: "bg-purple-50/70", title: "text-purple-700", ring: "ring-purple-200", tint: "bg-purple-100/70" },
-    { border: "border-yellow-400", bg: "bg-yellow-50/70", title: "text-yellow-700", ring: "ring-yellow-200", tint: "bg-yellow-100/70" },
-    { border: "border-cyan-400", bg: "bg-cyan-50/70", title: "text-cyan-700", ring: "ring-cyan-200", tint: "bg-cyan-100/70" },
-    { border: "border-orange-400", bg: "bg-orange-50/70", title: "text-orange-700", ring: "ring-orange-200", tint: "bg-orange-100/70" },
-    { border: "border-red-400", bg: "bg-red-50/70", title: "text-red-700", ring: "ring-red-200", tint: "bg-red-100/70" },
-    { border: "border-indigo-400", bg: "bg-indigo-50/70", title: "text-indigo-700", ring: "ring-indigo-200", tint: "bg-indigo-100/70" },
+    // { border: "border-green-400", bg: "bg-green-50/70", title: "text-green-700", ring: "ring-green-200", tint: "bg-green-100/70" },
+    // { border: "border-blue-400", bg: "bg-blue-50/70", title: "text-blue-700", ring: "ring-blue-200", tint: "bg-blue-100/70" },
+    // { border: "border-pink-400", bg: "bg-pink-50/70", title: "text-pink-700", ring: "ring-pink-200", tint: "bg-pink-100/70" },
+    // { border: "border-purple-400", bg: "bg-purple-50/70", title: "text-purple-700", ring: "ring-purple-200", tint: "bg-purple-100/70" },
+    // { border: "border-yellow-400", bg: "bg-yellow-50/70", title: "text-yellow-700", ring: "ring-yellow-200", tint: "bg-yellow-100/70" },
+    // { border: "border-cyan-400", bg: "bg-cyan-50/70", title: "text-cyan-700", ring: "ring-cyan-200", tint: "bg-cyan-100/70" },
+    // { border: "border-orange-400", bg: "bg-orange-50/70", title: "text-orange-700", ring: "ring-orange-200", tint: "bg-orange-100/70" },
+    // { border: "border-red-400", bg: "bg-red-50/70", title: "text-red-700", ring: "ring-red-200", tint: "bg-red-100/70" },
+    // { border: "border-indigo-400", bg: "bg-indigo-50/70", title: "text-indigo-700", ring: "ring-indigo-200", tint: "bg-indigo-100/70" },
+    { border: "border-[#117ABA]", bg: "bg-gray-100", title: "text-[#117ABA] ", ring: "ring-[#117ABA]", tint: "", textOnTint: "text-green-900" },
+
 ]
 const Careers = () => {
     return (
@@ -43,7 +45,7 @@ const Careers = () => {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-4xl poppins-800 tracking-tight text-red-900 md:text-5xl"
+                            className="text-4xl poppins-800 tracking-tight text-[#117ABA] md:text-5xl"
                         >
                             Careers
                         </motion.h1>
@@ -68,7 +70,7 @@ const Careers = () => {
 
                                 Click the button to submit your application</p>
                             <div>
-                                <button className='rounded-sm texts-md poppins-600 bg-green-900 text-green-300 w-1/3 mx-2 py-2'>
+                                <button className='rounded-sm texts-md poppins-600 bg-[#117ABA] text-white w-1/3 mx-2 py-2'>
                                     Apply Now
                                 </button>
 
@@ -100,7 +102,7 @@ const Careers = () => {
                     viewport={{ once: true }}
                 >
                     <motion.h3
-                        className="poppins-800 mb-6 mt-6 text-3xl text-[#255994] sm:text-6xl md:mb-12"
+                        className="poppins-800 mb-6 mt-6 text-3xl text-[#117ABA] sm:text-6xl md:mb-12"
                         initial={{ opacity: 0, y: -20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.2 }}
@@ -144,7 +146,7 @@ const Careers = () => {
                                         </div>
 
                                         <div className="space-y-2 p-5">
-                                            <h3 className="text-lg poppins-800 text-red-900">{it.title}</h3>
+                                            <h3 className="text-lg poppins-800 text-gray-700">{it.title}</h3>
                                             <p className={`poppins-400 text-sm text-slate-700`}>
                                                 {it.desc}
                                             </p>

@@ -157,7 +157,7 @@ const settingsmob = {
   return (
     <section className="relative bg-white py-16">
       <div className="mx-auto max-w-6xl px-6 text-center">
-        <h2 className="poppins-800 text-4xl text-[#0B3C7D] md:text-5xl">People’s philosophy</h2>
+        <h2 className="poppins-800 text-4xl text-[#117ABA] md:text-5xl">People’s philosophy</h2>
         <p className="poppins-400 mx-auto mt-2 max-w-3xl text-[#222] md:text-lg">
           Our staunch beliefs, our DNA - Our values
         </p>
@@ -190,7 +190,7 @@ const settingsmob = {
                     className="h-[280px] w-full object-cover"
                   />
                   <div className="flex flex-col items-center px-6 py-6 text-center">
-                    <h3 className="poppins-800 mb-2 text-[18px] text-[#0B3C7D] md:text-xl">
+                    <h3 className="poppins-800 mb-2 text-[18px] text-[#117ABA] md:text-xl">
                       {card.title}
                     </h3>
                     <p className="text-[14px] text-gray-700 md:text-base">{card.desc}</p>
@@ -228,7 +228,7 @@ const settingsmob = {
                     className="h-[280px] w-full object-cover"
                   />
                   <div className="flex flex-col items-center px-6 py-6 text-center">
-                    <h3 className="poppins-800 mb-2 text-[18px] text-[#0B3C7D] md:text-xl">
+                    <h3 className="poppins-800 mb-2 text-[18px] text-[#117ABA] md:text-xl">
                       {card.title}
                     </h3>
                     <p className="text-[14px] text-gray-700 md:text-base">{card.desc}</p>
