@@ -40,8 +40,8 @@ function _LeaderSpotlight({
   people,
   bgClassName = "bg-[#ECECEC]",
   nameColorClass = "text-[#0F2B4F]",
-  roleColorClass = "text-[#1a2f57]",
-  buttonBgClass = "bg-[#24497D]",
+  roleColorClass = "text-gray-700",
+  buttonBgClass = "bg-[#117ABA]",
   buttonTextClass = "text-white",
   className = "",
   sliderSettings,
@@ -76,7 +76,7 @@ function _LeaderSpotlight({
         : false;
 
     return (
-      <section key={`${p.name}-${idx}`} className={`rounded-2xl border-2 border-pink-400 bg-pink-50/70 py-10 md:py-14 sm:mx-12`}>
+      <section key={`${p.name}-${idx}`} className={`rounded-2xl border-2 border-gray-400 bg-gray-100 py-10 md:py-14 sm:mx-12`}>
         <div
           className={`mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 px-4 md:grid-cols-2 md:px-8 ${className}`}
         >
@@ -109,7 +109,7 @@ function _LeaderSpotlight({
             transition={{ duration: 0.45, delay: 0.12 }}
           >
             <h3
-              className={`text-2xl font-semibold md:text-[28px] text-pink-700`}
+              className={`text-2xl font-semibold md:text-[28px] text-[#117ABA]`}
             >
               {p.name}
             </h3>

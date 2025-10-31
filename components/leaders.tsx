@@ -9,15 +9,17 @@ import { ChevronRight } from "lucide-react"
    Shared color palette (same scheme as BoD / Key Mgmt)
 ========================= */
 const cardColors = [
-  { border: "border-green-400",  bg: "bg-green-50",  title: "text-green-700",  ring: "ring-green-200",  tint: "bg-green-100"  },
-  { border: "border-blue-400",   bg: "bg-blue-50",   title: "text-blue-700",   ring: "ring-blue-200",   tint: "bg-blue-100"   },
-  { border: "border-pink-400",   bg: "bg-pink-50",   title: "text-pink-700",   ring: "ring-pink-200",   tint: "bg-pink-100"   },
-  { border: "border-purple-400", bg: "bg-purple-50", title: "text-purple-700", ring: "ring-purple-200", tint: "bg-purple-100" },
-  { border: "border-yellow-400", bg: "bg-yellow-50", title: "text-yellow-700", ring: "ring-yellow-200", tint: "bg-yellow-100" },
-  { border: "border-cyan-400",   bg: "bg-cyan-50",   title: "text-cyan-700",   ring: "ring-cyan-200",   tint: "bg-cyan-100"   },
-  { border: "border-orange-400", bg: "bg-orange-50", title: "text-orange-700", ring: "ring-orange-200", tint: "bg-orange-100" },
-  { border: "border-red-400",    bg: "bg-red-50",    title: "text-red-700",    ring: "ring-red-200",    tint: "bg-red-100"    },
-  { border: "border-indigo-400", bg: "bg-indigo-50", title: "text-indigo-700", ring: "ring-indigo-200", tint: "bg-indigo-100" },
+    { border: "border-[#117ABA]", bg: "bg-gray-100", title: "text-[#117ABA] ", ring: "ring-[#117ABA]", tint: "", textOnTint: "text-green-900" },
+
+  // { border: "border-green-400",  bg: "bg-green-50",  title: "text-green-700",  ring: "ring-green-200",  tint: "bg-green-100"  },
+  // { border: "border-blue-400",   bg: "bg-blue-50",   title: "text-blue-700",   ring: "ring-blue-200",   tint: "bg-blue-100"   },
+  // { border: "border-pink-400",   bg: "bg-pink-50",   title: "text-pink-700",   ring: "ring-pink-200",   tint: "bg-pink-100"   },
+  // { border: "border-purple-400", bg: "bg-purple-50", title: "text-purple-700", ring: "ring-purple-200", tint: "bg-purple-100" },
+  // { border: "border-yellow-400", bg: "bg-yellow-50", title: "text-yellow-700", ring: "ring-yellow-200", tint: "bg-yellow-100" },
+  // { border: "border-cyan-400",   bg: "bg-cyan-50",   title: "text-cyan-700",   ring: "ring-cyan-200",   tint: "bg-cyan-100"   },
+  // { border: "border-orange-400", bg: "bg-orange-50", title: "text-orange-700", ring: "ring-orange-200", tint: "bg-orange-100" },
+  // { border: "border-red-400",    bg: "bg-red-50",    title: "text-red-700",    ring: "ring-red-200",    tint: "bg-red-100"    },
+  // { border: "border-indigo-400", bg: "bg-indigo-50", title: "text-indigo-700", ring: "ring-indigo-200", tint: "bg-indigo-100" },
 ] as const
 
 /* =========================
@@ -139,7 +141,7 @@ export default function BusinessAwards() {
   return (
     <section className="py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <h2 className="mb-8 text-center text-3xl font-extrabold text-[#243B6B] sm:text-4xl">
+        <h2 className="mb-8 text-center text-3xl font-extrabold text-[#117ABA] sm:text-4xl">
           Business Awards
         </h2>
 
@@ -162,7 +164,7 @@ export default function BusinessAwards() {
                 onClick={() => setActive(t.key)}
                 onKeyDown={onKeyDown}
                 className={`relative whitespace-nowrap px-2 pb-2 text-[15px] font-semibold transition ${
-                  isActive ? "text-[#243B6B]" : "text-slate-700 hover:text-slate-900"
+                  isActive ? "text-[#117ABA]" : "text-slate-700 hover:text-slate-900"
                 }`}
               >
                 {t.label}

@@ -169,7 +169,7 @@ const AsepticComp = () => {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-4xl poppins-800 tracking-tight text-red-900 md:text-5xl"
+                            className="text-4xl poppins-800 tracking-tight text-[#117ABA] md:text-5xl"
                         >
                             Aseptic Packaging
 
@@ -234,7 +234,7 @@ const AsepticComp = () => {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="mb-12 text-4xl poppins-800 tracking-tight text-red-900 md:text-5xl"
+                            className="mb-12 text-4xl poppins-800 tracking-tight text-[#117ABA] md:text-5xl"
                         >
                             Sustainability
 
@@ -274,7 +274,7 @@ const AsepticComp = () => {
                         <p>
                             Enzymatic Delamination Technology (EDT) is Asepto’s sustainable solution to reprocess the aseptic cartons to bring them back into the circular economy. Through EDT, we can separate and recover valuable materials like aluminium, polymers, and paper pulp from these cartons. By doing so, we significantly reduce the environmental footprint associated with their disposal.
 
-                            Read More</p>
+                            </p>
 
 
                     </motion.div>

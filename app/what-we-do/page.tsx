@@ -30,15 +30,17 @@ const items: Item[] = [
 
 // Same palette you used for Board/Key Management
 const cardColors = [
-  { border: "border-green-400", bg: "bg-green-50/70", title: "text-green-700", ring: "ring-green-200", tint: "bg-green-100/70" },
-  { border: "border-blue-400", bg: "bg-blue-50/70", title: "text-blue-700", ring: "ring-blue-200", tint: "bg-blue-100/70" },
-  { border: "border-pink-400", bg: "bg-pink-50/70", title: "text-pink-700", ring: "ring-pink-200", tint: "bg-pink-100/70" },
-  { border: "border-purple-400", bg: "bg-purple-50/70", title: "text-purple-700", ring: "ring-purple-200", tint: "bg-purple-100/70" },
-  { border: "border-yellow-400", bg: "bg-yellow-50/70", title: "text-yellow-700", ring: "ring-yellow-200", tint: "bg-yellow-100/70" },
-  { border: "border-cyan-400", bg: "bg-cyan-50/70", title: "text-cyan-700", ring: "ring-cyan-200", tint: "bg-cyan-100/70" },
-  { border: "border-orange-400", bg: "bg-orange-50/70", title: "text-orange-700", ring: "ring-orange-200", tint: "bg-orange-100/70" },
-  { border: "border-red-400", bg: "bg-red-50/70", title: "text-red-700", ring: "ring-red-200", tint: "bg-red-100/70" },
-  { border: "border-indigo-400", bg: "bg-indigo-50/70", title: "text-indigo-700", ring: "ring-indigo-200", tint: "bg-indigo-100/70" },
+  // { border: "border-green-400", bg: "bg-green-50/70", title: "text-green-700", ring: "ring-green-200", tint: "bg-green-100/70" },
+  // { border: "border-blue-400", bg: "bg-blue-50/70", title: "text-blue-700", ring: "ring-blue-200", tint: "bg-blue-100/70" },
+  // { border: "border-pink-400", bg: "bg-pink-50/70", title: "text-pink-700", ring: "ring-pink-200", tint: "bg-pink-100/70" },
+  // { border: "border-purple-400", bg: "bg-purple-50/70", title: "text-purple-700", ring: "ring-purple-200", tint: "bg-purple-100/70" },
+  // { border: "border-yellow-400", bg: "bg-yellow-50/70", title: "text-yellow-700", ring: "ring-yellow-200", tint: "bg-yellow-100/70" },
+  // { border: "border-cyan-400", bg: "bg-cyan-50/70", title: "text-cyan-700", ring: "ring-cyan-200", tint: "bg-cyan-100/70" },
+  // { border: "border-orange-400", bg: "bg-orange-50/70", title: "text-orange-700", ring: "ring-orange-200", tint: "bg-orange-100/70" },
+  // { border: "border-red-400", bg: "bg-red-50/70", title: "text-red-700", ring: "ring-red-200", tint: "bg-red-100/70" },
+  // { border: "border-indigo-400", bg: "bg-indigo-50/70", title: "text-indigo-700", ring: "ring-indigo-200", tint: "bg-indigo-100/70" },
+  { border: "border-gray-200", bg: "bg-gray-100", title: "text-[#117ABA] ", ring: "ring-[#117ABA]", tint: "bg-[#117ABA]", textOnTint: "text-green-900" },
+
 ]
 
 export default function WhatWeDoPage() {
@@ -63,7 +65,7 @@ export default function WhatWeDoPage() {
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-4xl poppins-800 tracking-tight text-red-900 md:text-5xl"
+              className="text-4xl poppins-800 tracking-tight text-[#117ABA] md:text-5xl"
             >
               What We Do
             </motion.h1>
@@ -109,7 +111,7 @@ export default function WhatWeDoPage() {
       {/* FEATURED STRIP (like your screenshot with arrows) */}
       <section aria-labelledby="featured" className="relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <h2 id="featured" className="text-center text-6xl poppins-900 text-[#243B6B]">
+          <h2 id="featured" className="text-center text-6xl poppins-900 text-[#117ABA]">
             Our Expansion
           </h2>
 
@@ -144,7 +146,7 @@ export default function WhatWeDoPage() {
                     </div>
 
                     <div className="space-y-2 p-5">
-                      <h3 className="text-lg poppins-800 text-red-900">{it.title}</h3>
+                      <h3 className="text-lg poppins-800 text-gray-900">{it.title}</h3>
                       <p className={`poppins-400 text-sm text-slate-700`}>
                         Discover our offerings and success stories.
                       </p>

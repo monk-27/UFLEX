@@ -297,48 +297,7 @@ const items = [
 export default function BusinessCardsCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 3500,
-  //   pauseOnHover: false,
-  //   pauseOnDotsHover: true,
-  //   arrows: false,
-  //   centerMode: true,
-  //   centerPadding: "0px",
-  //   afterChange: (index:any) => setCurrentSlide(index),
-  //   responsive: [
-  //     {
-  //       breakpoint: 1024,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         centerMode: true,
-  //         centerPadding: "20px",
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         centerMode: false,
-  //         centerPadding: "0px",
-  //         dots: true,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         centerMode: false,
-  //         centerPadding: "0px",
-  //       },
-  //     },
-  //   ],
-  // };
+
   const settings = {
     dots: true,
     infinite: true,
@@ -416,32 +375,11 @@ export default function BusinessCardsCarousel() {
             return (
               <motion.div
                 key={index}
-                className="px-2"
-              // animate={{
-              //   scale: isActive ? 1.05 : 0.95,
-              //   y: isActive ? -10 : 0,
-              //   transition: { duration: 0.3 },
-              // }}
+                className="px-2  "
+             
               >
-                {/* <div
-                  className={`overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 ${isActive ? "shadow-2xl" : "opacity-90"
-                    }`}
-                >
-                  <Image
-                    src={card.img}
-                    alt={card.title}
-                    width={800}
-                    height={500}
-                    className="h-[280px] w-full object-cover"
-                  />
-                  <div className="flex flex-col items-center px-6 py-6 text-center">
-                    <h3 className="poppins-800 mb-2 text-[18px] text-[#0B3C7D] md:text-xl">
-                      {card.title}
-                    </h3>
-                    <p className="text-[14px] text-gray-700 md:text-base">{card.desc}</p>
-                  </div>
-                </div> */}
-                <div className="flex h-full flex-col">
+                
+                <div className="flex h-full flex-col bg-gray-100 shadow-sm rounded-lg gap-2">
                   {/* Photo: exactly like the shot — top half, 16:9 */}
                   <div className="relative aspect-[16/9] w-full">
                     <Image
@@ -458,15 +396,15 @@ export default function BusinessCardsCarousel() {
                   {/* Content */}
                   <div className="p-5 items-start ">
                     {/* Title with slim red accent bar */}
-                    <div className="flex items-start gap-2 flex-nowrap">
-                      <span className="inline-block h-4 w-[2px] rounded bg-[#D84A3B]" />
-                      <h3 className="text-[18px] md:text-[20px] poppins-500 leading-tight text-[#2C629F]">
+                    <div className="flex items-start gap-2 flex-nowrap justify-start">
+                      <span className="inline-block h-6 w-[2px] rounded bg-[#D84A3B]" />
+                      <h3 className="text-left text-[18px] md:text-[20px] poppins-500 leading-tight text-[#2C629F]">
                         {card.title}
                       </h3>
                     </div>
 
 
-                    <p className="items-start mt-3  leading-relaxed poppins-400 text-[#6D6E71]">
+                    <p className="items-start mt-3 text-left poppins-400 text-[#6D6E71]">
                       {card.desc}
                     </p>
 

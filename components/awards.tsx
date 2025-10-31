@@ -41,7 +41,7 @@ function _AwardsAccolades({
       <div className="mx-auto max-w-6xl px-4 md:px-8">
         {/* Title */}
         <div className="text-center">
-          <h2 className="poppins-800 text-[28px] text-[#1c3f72] md:text-[34px]">{heading}</h2>
+          <h2 className="poppins-800 text-[28px] text-[#117ABA] md:text-[34px]">{heading}</h2>
           {subheading && (
             <p className="mx-auto mt-2 max-w-2xl text-zinc-700 md:text-lg">{subheading}</p>
           )}
@@ -68,7 +68,7 @@ function _AwardsAccolades({
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-[#1f3b6a] md:text-2xl">{first.title}</h3>
+              <h3 className="text-xl font-semibold text-gray-700 md:text-2xl">{first.title}</h3>
               {first.description && (
                 <p className="mt-3 max-w-prose text-[15px] leading-relaxed text-zinc-700 md:text-[16px]">
                   {first.description}
@@ -77,7 +77,7 @@ function _AwardsAccolades({
               {first.cta && (
                 <Link
                   href={first.cta.href}
-                  className="mt-6 inline-flex items-center rounded-full bg-[#24497D] px-5 py-2.5 text-sm font-semibold text-white shadow-md transition hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#24497D]"
+                  className="mt-6 inline-flex items-center rounded-full bg-[#117ABA] px-5 py-2.5 text-sm font-semibold text-white shadow-md transition hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#24497D]"
                 >
                   {first.cta.label}
                 </Link>

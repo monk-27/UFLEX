@@ -39,28 +39,11 @@ export function GlobalFootprint() {
             height={1000} width={1000} alt={""} />
         </div>
 
-        <div className="grid md:grid-cols-4 gap-6 mb-16">
-          <div className="border-2 border-green-400 bg-green-50 p-8 rounded-lg text-center hover:shadow-lg transition">
-            <div className="text-5xl poppins-800 text-green-700 mb-3">150+</div>
-            <p className="text-green-900 poppins-700 text-lg">Countries with Our Presence</p>
-          </div>
-          <div className="border-2 border-orange-400 bg-orange-50 p-8 rounded-lg text-center hover:shadow-lg transition">
-            <div className="text-5xl poppins-800 text-orange-700 mb-3">15,000</div>
-            <p className="text-orange-900 poppins-700 text-lg">Global Workforce</p>
-          </div>
-          <div className="border-2 border-blue-400 bg-blue-50 p-8 rounded-lg text-center hover:shadow-lg transition">
-            <div className="text-5xl poppins-800 text-blue-700 mb-3">9</div>
-            <p className="text-blue-900 poppins-700 text-lg">Global Manufacturing Locations</p>
-          </div>
-          <div className="border-2 border-purple-400 bg-purple-50 p-8 rounded-lg text-center hover:shadow-lg transition">
-            <div className="text-5xl poppins-800 text-purple-700 mb-3">5</div>
-            <p className="text-purple-900 poppins-700 text-lg">Continents</p>
-          </div>
-        </div>
+        
 
         <div className="grid md:grid-cols-2 gap-12">
-          <div className="border-2 border-green-300 bg-green-50 p-8 rounded-lg">
-            <h3 className="text-2xl poppins-800 mb-6 text-red-900">Manufacturing Facilities in India</h3>
+          <div className="border-2 border-gray-400 bg-gray-100 p-8 rounded-lg">
+            <h3 className="text-2xl poppins-800 mb-6 text-[#117ABA] ">Manufacturing Facilities in India</h3>
             <ul className="space-y-4">
               {locations.India.map((location, idx) => (
                 <li key={idx} className="flex items-start gap-3">
@@ -71,12 +54,12 @@ export function GlobalFootprint() {
             </ul>
           </div>
 
-          <div className="border-2 border-blue-300 bg-blue-50 p-8 rounded-lg">
-            <h3 className="text-2xl poppins-800 mb-6 text-red-900">International Facilities</h3>
+          <div className="border-2 border-gray-400 bg-gray-100 p-8 rounded-lg">
+            <h3 className="text-2xl poppins-800 mb-6 text-[#117ABA]">International Facilities</h3>
             <ul className="space-y-4">
               {locations.International.map((location, idx) => (
                 <li key={idx} className="flex items-start gap-3">
-                  <span className="text-blue-600 poppins-800 text-xl mt-0.5">✓</span>
+                  <span className="text-[#117ABA] poppins-800 text-xl mt-0.5">✓</span>
                   <span className="text-gray-700 text-lg">{location}</span>
                 </li>
               ))}

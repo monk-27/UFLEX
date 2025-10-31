@@ -20,12 +20,12 @@ export type AccreditationsSliderProps = {
 };
 
 const CARD_COLORS = [
-    { border: "border-green-400", bg: "bg-green-50/70", ring: "ring-green-200" },
-    { border: "border-blue-400", bg: "bg-blue-50/70", ring: "ring-blue-200" },
-    { border: "border-pink-400", bg: "bg-pink-50/70", ring: "ring-pink-200" },
-    { border: "border-purple-400", bg: "bg-purple-50/70", ring: "ring-purple-200" },
-    { border: "border-orange-400", bg: "bg-orange-50/70", ring: "ring-orange-200" },
-    { border: "border-yellow-400", bg: "bg-yellow-50/70", ring: "ring-yellow-200" },
+    { border: "border-gray-100", bg: "bg-gray-50/70", ring: "ring-gray-200" },
+    // { border: "border-blue-400", bg: "bg-blue-50/70", ring: "ring-blue-200" },
+    // { border: "border-pink-400", bg: "bg-pink-50/70", ring: "ring-pink-200" },
+    // { border: "border-purple-400", bg: "bg-purple-50/70", ring: "ring-purple-200" },
+    // { border: "border-orange-400", bg: "bg-orange-50/70", ring: "ring-orange-200" },
+    // { border: "border-yellow-400", bg: "bg-yellow-50/70", ring: "ring-yellow-200" },
 ];
 
 export default function AccreditationsSlider({
@@ -127,7 +127,7 @@ export default function AccreditationsSlider({
                 viewport={{ once: true }}
             >
                 <motion.h3
-                    className="poppins-800 mb-10 text-3xl text-[#255994] sm:text-6xl md:mb-12"
+                    className="poppins-800 mb-10 text-3xl text-[#117ABA] sm:text-6xl md:mb-12"
                     initial={{ opacity: 0, y: -16 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.15 }}

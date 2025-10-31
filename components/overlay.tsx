@@ -76,13 +76,13 @@ function _OverlayModules({
       {/* Title block */}
       <div className="mx-auto max-w-4xl">
         {heading && (
-          <h2 className="text-[30px] poppins-800 text-3xl text-[#255994] sm:text-6xl">
+          <h2 className="text-[30px] poppins-800 text-3xl text-[#117ABA] sm:text-6xl">
             {heading}
           </h2>
         )}
         {subheading && (
           <h3
-            className="font-EB-extrabold mt-0 text-[16px] text-[#181818] sm:mt-2 md:text-3xl"
+            className="font-EB-extrabold mt-0 text-[16px] text-[#117ABA] sm:mt-2 md:text-3xl"
             style={{ lineHeight: "124%" }}
           >
             {subheading}
@@ -113,7 +113,7 @@ function _OverlayModules({
               className="group w-full overflow-hidden rounded-lg text-left"
               variants={disableStagger ? undefined : item}
             >
-              <h3 className="text-center poppins-800 mb-3 text-[18px] text-[#181818] md:text-2xl">
+              <h3 className="text-center poppins-800 mb-3 text-[18px] text-[#117ABA] md:text-2xl">
                 {m.title}
               </h3>
 

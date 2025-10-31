@@ -10,15 +10,18 @@ import BusinessAwards from "@/components/leaders"
 
 /* ------------------------- THEME: same palette as before ------------------------- */
 const cardColors = [
-  { border: "border-green-400",  bg: "bg-green-50",  title: "text-green-700",  ring: "ring-green-200",  tint: "bg-green-100"  },
-  { border: "border-blue-400",   bg: "bg-blue-50",   title: "text-blue-700",   ring: "ring-blue-200",   tint: "bg-blue-100"   },
-  { border: "border-pink-400",   bg: "bg-pink-50",   title: "text-pink-700",   ring: "ring-pink-200",   tint: "bg-pink-100"   },
-  { border: "border-purple-400", bg: "bg-purple-50", title: "text-purple-700", ring: "ring-purple-200", tint: "bg-purple-100" },
-  { border: "border-yellow-400", bg: "bg-yellow-50", title: "text-yellow-700", ring: "ring-yellow-200", tint: "bg-yellow-100" },
-  { border: "border-cyan-400",   bg: "bg-cyan-50",   title: "text-cyan-700",   ring: "ring-cyan-200",   tint: "bg-cyan-100"   },
-  { border: "border-orange-400", bg: "bg-orange-50", title: "text-orange-700", ring: "ring-orange-200", tint: "bg-orange-100" },
-  { border: "border-red-400",    bg: "bg-red-50",    title: "text-red-700",    ring: "ring-red-200",    tint: "bg-red-100"    },
-  { border: "border-indigo-400", bg: "bg-indigo-50", title: "text-indigo-700", ring: "ring-indigo-200", tint: "bg-indigo-100" },
+  // { border: "border-green-400",  bg: "bg-green-50",  title: "text-green-700",  ring: "ring-green-200",  tint: "bg-green-100"  },
+  // { border: "border-blue-400",   bg: "bg-blue-50",   title: "text-blue-700",   ring: "ring-blue-200",   tint: "bg-blue-100"   },
+  // { border: "border-pink-400",   bg: "bg-pink-50",   title: "text-pink-700",   ring: "ring-pink-200",   tint: "bg-pink-100"   },
+  // { border: "border-purple-400", bg: "bg-purple-50", title: "text-purple-700", ring: "ring-purple-200", tint: "bg-purple-100" },
+  // { border: "border-yellow-400", bg: "bg-yellow-50", title: "text-yellow-700", ring: "ring-yellow-200", tint: "bg-yellow-100" },
+  // { border: "border-cyan-400",   bg: "bg-cyan-50",   title: "text-cyan-700",   ring: "ring-cyan-200",   tint: "bg-cyan-100"   },
+  // { border: "border-orange-400", bg: "bg-orange-50", title: "text-orange-700", ring: "ring-orange-200", tint: "bg-orange-100" },
+  // { border: "border-red-400",    bg: "bg-red-50",    title: "text-red-700",    ring: "ring-red-200",    tint: "bg-red-100"    },
+  // { border: "border-indigo-400", bg: "bg-indigo-50", title: "text-indigo-700", ring: "ring-indigo-200", tint: "bg-indigo-100" },
+
+  { border: "border-gray-200", bg: "bg-gray-100", title: "text-[#117ABA] ", ring: "ring-[#117ABA]", tint: "bg-[#117ABA]", textOnTint: "text-green-900" },
+
 ] as const
 
 /* ------------------------------------ DATA ------------------------------------- */
@@ -132,7 +135,7 @@ function SpotlightModal({
                   <Image src={s.image} alt={s.title} fill className="object-cover" />
                 </div>
                 <div className="space-y-3">
-                  <h3 className="text-2xl font-extrabold text-red-900">{s.title}</h3>
+                  <h3 className="text-2xl font-extrabold text-[#117ABA]">{s.title}</h3>
                   <p className={`font-semibold ${c.title}`}>{s.byline}</p>
                   <p className="leading-relaxed text-slate-700">{s.excerpt}</p>
                 </div>
@@ -175,7 +178,7 @@ export default function HallPage() {
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-4xl poppins-800 tracking-tight text-red-900 md:text-5xl"
+              className="text-4xl poppins-800 tracking-tight text-[#117ABA] md:text-5xl"
             >
               Hall Of Fame
             </motion.h1>
@@ -218,7 +221,7 @@ export default function HallPage() {
       <section className="relative  py-14"
      >
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <h2 className="mb-10 text-center text-6xl poppins-900 text-[#243B6B]">In The Spotlight</h2>
+          <h2 className="mb-10 text-center text-6xl poppins-900 text-[#117ABA]">In The Spotlight</h2>
 
           <div className="relative">
             {/* Arrows */}
@@ -251,7 +254,7 @@ export default function HallPage() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: idx * 0.05 }}
-                    className={`mx-auto flex w-full max-w-6xl flex-col gap-6 rounded-2xl border-2 ${c.border} ${c.bg} p-4 shadow ring-4 ${c.ring} md:flex-row`}
+                    className={`mx-auto flex w-full max-w-6xl flex-col gap-6 rounded-2xl border-1 ${c.border} ${c.bg} p-4 shadow ring-1 ${c.ring} md:flex-row`}
                   >
                     {/* BIG rectangle image */}
                     <div className="md:w-[46%]">
@@ -263,9 +266,9 @@ export default function HallPage() {
 
                     {/* Text */}
                     <div className="flex min-h-[320px] flex-1 flex-col justify-center gap-3 px-1 md:px-2">
-                      <h3 className="text-2xl poppins-900 text-green-900 md:text-[28px]">{s.title}</h3>
-                      <p className="poppins-800 text-green-700">{s.byline}</p>
-                      <p className="max-w-2xl text-green-500">{s.excerpt}</p>
+                      <h3 className="text-2xl poppins-900 text-[#117ABA] md:text-[28px]">{s.title}</h3>
+                      <p className="poppins-800 text-gray-700">{s.byline}</p>
+                      <p className="max-w-2xl text-gray-500">{s.excerpt}</p>
 
                       <div className="mt-4">
                         <button
