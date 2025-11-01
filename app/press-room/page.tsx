@@ -1,58 +1,4 @@
-// "use client"
 
-// import { SiteHeader } from "@/components/site-header"
-// import { SiteFooter } from "@/components/site-footer"
-// import { AnimatedSection } from "@/components/animated-section"
-// import { ReadMoreModal } from "@/components/read-more-modal"
-
-// export default function Page() {
-//   return (
-//     <main>
-//       <SiteHeader />
-//       <section className="header-gradient text-white">
-//         <div className="section section-y">
-//           <h1 className="text-3xl md:text-5xl font-extrabold">The Press Room</h1>
-//           <p className="mt-3 max-w-3xl">Media releases, coverage, and resources.</p>
-//         </div>
-//       </section>
-
-//       <AnimatedSection>
-//         <h2 className="text-xl md:text-2xl font-bold">Media Releases</h2>
-//         <div className="mt-4 grid md:grid-cols-2 gap-6">
-//           {[
-//             {
-//               title: "Earnings release for the quarter ended June 30, 2025 | Stable growth amidst tariff challenges",
-//               date: "August 2025",
-//             },
-//             { title: "UFlex Limited recognised as a Top Employer 2025 in India", date: "August 2025" },
-//             { title: "UFlex secures Indian patent for sustainable waterborne heat seal coating", date: "July 2025" },
-//           ].map((r) => (
-//             <div key={r.title} className="card-elevated p-5">
-//               <h3 className="font-semibold">{r.title}</h3>
-//               <p className="mt-2 text-sm text-muted-foreground">{r.date}</p>
-//               <div className="mt-3">
-//                 <ReadMoreModal title={r.title} content={`${r.title} — ${r.date}`} />
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </AnimatedSection>
-
-//       <AnimatedSection>
-//         <h2 className="text-xl md:text-2xl font-bold">Media Resources</h2>
-//         <div className="mt-4 flex flex-wrap gap-3">
-//           <ReadMoreModal title="Photos" content="High-resolution brand photos for editorial use." />
-//           <ReadMoreModal title="Videos" content="B-roll and product reels for media coverage." />
-//         </div>
-//         <p className="mt-4 text-sm">
-//           For media queries: <span className="font-medium">corpcomm@uflexltd.com</span>
-//         </p>
-//       </AnimatedSection>
-
-//       <SiteFooter />
-//     </main>
-//   )
-// }
 
 
 "use client";
@@ -63,6 +9,7 @@ import { useMemo } from "react";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import type { MotionProps } from "framer-motion";
+import MediaReleasesCarousel from "./media-release";
 /* ----------------------------- DUMMY CONTENT ----------------------------- */
 // Replace these with your API/CMS data:
 const mediaReleases = [
@@ -260,107 +207,7 @@ export default function PressRoomPage() {
 
         <ViewMoreButton href="/press-room/media-releases" />
       </section> */}
-        <motion.section
-            className="mt-[60px] px-4 py-0 text-center sm:mt-16 sm:bg-gray-100 sm:py-20 md:px-12"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            {/* Title */}
-            <motion.div
-              className="mx-auto max-w-4xl"
-              initial={{ opacity: 0, y: -20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-[30px] poppins-800 text-3xl text-[#117ABA] sm:text-6xl">Media Releases</h2>
-              
-            </motion.div>
-      
-            {/* Modules → grid on laptop/desktop */}
-            <motion.div
-              className="mx-auto mt-8 max-w-6xl sm:pt-12 grid gap-8 lg:grid-cols-3"
-              initial="hidden"
-              animate="visible"
-              variants={{ hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.3 } } }}
-            >
-              {[
-                {
-                  title: "August 2025",
-                  image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/media-releases/images/Earnings-release-for-the-quarter-ended-June-30,-2025-%7C-Stable-growth-amidst-tariff-challenges35.jpg",
-                  description:
-                    "Earnings release for the quarter ended June 30, 2025 | Stable growth amidst tariff challenges",
-                },
-                {
-                  title: "August 2025",
-                  image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/media-releases/images/UFlex-Limited-recognised-as-a-Top-Employer-2025-in-India45.jpg",
-                  description:
-                    "UFlex Limited recognised as a Top Employer 2025 in India",
-                },
-                {
-                  title: "July 2025",
-                  image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/media-releases/images/UFlex-secures-Indian-patent-for-sustainable-waterborne-heat-seal-coating-for-food-and-consumer-goods-packaging37.jpg",
-                  description:
-                    "UFlex secures Indian patent for sustainable waterborne heat seal coating for food and consumer goods packaging",
-                },
-              ].map((module, index) => (
-                <motion.div
-                  key={index}
-                  className="group w-full overflow-hidden rounded-lg text-left"
-                  variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
-                >
-                  <h3 className="text-center poppins-800 mb-3 text-[18px] text-[#181818] md:text-2xl">{module.title}</h3>
-      
-                  {/* Card */}
-                  <div className="relative h-[360px] sm:h-[420px] lg:h-[520px]">
-                    <Image
-                      src={module.image}
-                      alt={module.title}
-                      fill
-                      className="rounded-lg object-cover shadow-lg"
-                      sizes="(max-width: 1024px) 100vw, 50vw"
-                      priority={index === 0}
-                    />
-      
-                    {/* Desktop overlay */}
-                    <motion.div
-                      className="absolute inset-0 hidden lg:flex flex-col justify-end rounded-lg p-6 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                      initial={{ y: 240, opacity: 0 }}
-                      whileHover={{ y: 0, opacity: 1 }}
-                      transition={{ duration: 0.3, ease: "easeOut" }}
-                    >
-                      <div className="absolute inset-0 rounded-lg bg-gradient-to-t from-black/45 via-black/10 to-transparent" />
-                      <div className="relative">
-                        <h4 className="poppins-800 text-white text-2xl md:text-3xl drop-shadow-[0_1px_1px_rgba(0,0,0,0.6)]">
-                          {module.title}
-                        </h4>
-                        <p className="mt-2 text-white/95 text-sm md:text-base leading-relaxed drop-shadow-[0_1px_1px_rgba(0,0,0,0.6)]">
-                          {module.description}
-                        </p>
-                      </div>
-                    </motion.div>
-      
-                    {/* Mobile overlay (lighter) */}
-                    <motion.div
-                      className="absolute inset-0 flex lg:hidden flex-col justify-end rounded-lg p-4 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                      whileHover={{ opacity: 1 }}
-                    >
-                      <div className="absolute inset-0 rounded-lg bg-gradient-to-t from-black/35 via-black/5 to-transparent" />
-                      <div className="relative">
-                        <h4 className="poppins-800 text-white text-lg">{module.title}</h4>
-                        <p className="mt-1 text-white/95 text-sm">{module.description}</p>
-                      </div>
-                    </motion.div>
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
-
-            <button className="poppins-700 w-1/4 rounded-lg py-2 px-2 mt-8 bg-[#117ABA] text-white">
-              View More
-            </button>
-          </motion.section>
+       <MediaReleasesCarousel/>
 
       {/* MEDIA COVERAGE */}
       <section className="py-12 sm:py-16">

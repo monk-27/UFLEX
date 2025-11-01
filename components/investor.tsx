@@ -9,9 +9,9 @@ import "slick-carousel/slick/slick-theme.css";
 
 /* ------------------------------- THEME ------------------------------- */
 const BRAND = {
-  primary: "#255994", // pulled from your provided palette
-  dark: "#0C2E57",
-  text: "#0F172A",
+  primary: "[#117ABA]", // pulled from your provided palette
+  dark: "[#117ABA]",
+  text: "[#117ABA]",
 };
 
 const CARD_COLORS = [
@@ -81,12 +81,12 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
     <section aria-labelledby={`${id}-heading`} className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-0 py-10">
       <motion.h2
         id={`${id}-heading`}
-        className="poppins-800 text-3xl sm:text-4xl md:text-5xl mb-6"
+        className="poppins-700 text-3xl sm:text-4xl md:text-4xl mb-6 text-[#117ABA]"
         initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        style={{ color: BRAND.primary }}
+        
       >
         {heading}
       </motion.h2>
@@ -101,7 +101,7 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
               transition={{ duration: 0.35 }}
               className="relative overflow-hidden rounded-2xl shadow ring-1 ring-slate-200"
             >
-              <div className="relative aspect-[16/9] sm:aspect-[21/9]">
+              <div className="relative aspect-[16/9] sm:aspect-[5/9]">
                 <Image
                   src={card.image}
                   alt={card.title}
@@ -111,7 +111,7 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
                   priority={idx < 2}
                 />
                 {/* gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-[#0b1f3b]/75 via-[#0b1f3b]/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-tr from-[#117ABA]/75 via-[#117ABA]/40 to-transparent" />
                 {/* text overlay */}
                 <div className="absolute inset-0 flex items-end p-5">
                   <div>
@@ -156,7 +156,7 @@ function InvestorsIntro() {
   return (
     <section className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-4 sm:px-6 lg:px-0 py-14">
       <div>
-        <h1 className="poppins-800 text-4xl sm:text-5xl md:text-6xl tracking-tight" style={{ color: BRAND.dark }}>
+        <h1 className="poppins-800 text-4xl sm:text-5xl md:text-6xl tracking-tight text-[#117ABA]">
           Investors
         </h1>
         <p className="mt-6 text-slate-700 text-lg leading-7">
@@ -172,11 +172,8 @@ function InvestorsIntro() {
         </p>
         <button
           onClick={() => setExpanded((v) => !v)}
-          className="mt-6 inline-flex items-center rounded-full bg-[var(--btn-bg,theme(colors.slate.800))] px-6 py-3 text-white shadow-md hover:opacity-95"
-          style={{
-            // soft brand button
-            ['--btn-bg' as any]: BRAND.primary,
-          }}
+          className="mt-6 inline-flex items-center rounded-full bg-[#117ABA] px-6 py-3 text-white shadow-md hover:opacity-95"
+          
         >
           {expanded ? "Read Less" : "Read More"}
         </button>
