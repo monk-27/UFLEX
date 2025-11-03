@@ -175,7 +175,7 @@ function _SliderCarousel({
                     sizes="100vw"
                   />
                   <div className="flex flex-col items-center px-6 py-6 text-center">
-                    <h3 className="poppins-800 mb-2 text-[18px] text-[#117ABA] md:text-xl">{card.title}</h3>
+                    <h3 className="text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">{card.title}</h3>
                     <p className="text-[14px] text-gray-700 md:text-base">{card.desc}</p>
                   </div>
                 </div>

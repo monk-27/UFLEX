@@ -27,7 +27,7 @@ export function GlobalFootprint() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <h2 className="text-4xl poppins-800 text-center mb-4 text-[#117ABA] ">Our Global Footprint</h2>
+        <h2 className=" text-center text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">Our Global Footprint</h2>
 
 
 
@@ -35,8 +35,8 @@ export function GlobalFootprint() {
           Manufacturing excellence across five continents
         </p>
         <div className="flex items-center justify-center">
-          <Image src="https://uflex.wpdevstudio.site/HTML/assets/images/Map-desktop-june.jpg"
-            height={1000} width={1000} alt={""} />
+          <Image src="/images/map.png"
+            height={1400} width={1400} alt={""} />
         </div>
 
         
@@ -47,7 +47,7 @@ export function GlobalFootprint() {
             <ul className="space-y-4">
               {locations.India.map((location, idx) => (
                 <li key={idx} className="flex items-start gap-3">
-                  <span className="text-green-600 poppins-800 text-xl mt-0.5">✓</span>
+                  <span className="text-[#117ABA] poppins-800 text-xl mt-0.5">✓</span>
                   <span className="text-gray-700 text-lg">{location}</span>
                 </li>
               ))}

@@ -1,9 +1,10 @@
+import { motion } from "framer-motion"
 import Image from "next/image"
 
 export function Journey() {
   return (
     <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl poppins-800 text-center mb-4 text-[#117ABA]">Our Journey</h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
           Nearly four decades of innovation, growth, and excellence
@@ -11,96 +12,94 @@ export function Journey() {
 
         <div className="space-y-8">
           <div className="flex items-center justify-center">
-          <Image 
-          src="https://uflex.wpdevstudio.site/HTML/assets/images/Adobe-Express-Milestone-new-30-september-2025.gif"
-           height={1000} width={1000} alt={""}
+            <Image
+              src="https://uflex.wpdevstudio.site/HTML/assets/images/Adobe-Express-Milestone-new-30-september-2025.gif"
+              height={1000} width={1000} alt={""}
 
-          />
+            />
           </div>
-                    <div className="rounded-lg bg-gray-100 p-6 text-center transition-shadow hover:shadow-md ">
+          <div className="relative h-[570px] w-full overflow-hidden bg-white md:h-[580px]">
+      {/* Background Image - Full Bleed */}
+      <motion.div
+        className="absolute inset-0"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <Image
+          src="/images/corp.png"
+          fill
+          className="object-cover object-center"
+          alt="Sustainability"
+          priority
+          sizes="100vw"
+        />
+      </motion.div>
 
-            <h3 className="text-2xl font-bold mb-4 text-[#117ABA] flex items-center gap-2">
-              <span className="text-2xl">📋</span> Corporate Presentation
-            </h3>
-            <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-              UFlex's journey spans nearly four decades of innovation, growth, and commitment to excellence in the
-              flexible packaging industry. From our humble beginnings in 1985 to becoming a global leader, we have
-              consistently delivered value to our customers, employees, and stakeholders.
-            </p>
-            <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-              Our expansion across nine countries and presence in over 150 nations demonstrates our commitment to
-              serving customers worldwide with innovative, cost-effective, and eco-friendly packaging solutions. We
-              continue to invest in cutting-edge technology, sustainable practices, and talent development to maintain
-              our position as an industry leader.
-            </p>
-            <button className="bg-[#CE2028] text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-800 transition">
-              Download Presentation
-            </button>
-          </div>
+      {/* Header Bar */}
+      <div className="absolute top-0 left-0 right-0 z-10 bg-white py-4 md:py-6">
+        <div className="mx-auto max-w-7xl px-5 md:px-20">
+          <h2 className="text-center text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">
+            Corporate Presentation
+          </h2>
+        </div>
+      </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-                      <div className="rounded-lg bg-gray-100 p-6 text-center transition-shadow hover:shadow-md ">
+      {/* Text Content */}
+      <motion.div
+        className="absolute inset-0 flex flex-col justify-end px-5 pb-16 text-white md:bottom-20 md:pb-20 md:pl-20"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: { opacity: 0, y: 30 },
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: { delayChildren: 0.3, staggerChildren: 0.3 },
+          },
+        }}
+      >
+        <motion.h3
+          className="text-[20px] font-medium leading-tight sm:text-[28px] md:text-[32px]"
+          variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+        >
+          Committed to achieving carbon neutrality by 2035
+        </motion.h3>
 
-              <h4 className="text-xl font-bold text-[#117ABA] mb-3">1985</h4>
-              <p className="text-gray-700 leading-relaxed">
-                UFlex founded as a first-generation entrepreneurial venture with a vision to revolutionize the flexible
-                packaging industry.
-              </p>
-            </div>
-                      <div className="rounded-lg bg-gray-100 p-6 text-center transition-shadow hover:shadow-md ">
+        {/* <motion.p
+          className="mt-2 max-w-2xl text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[18px]"
+          variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+        >
+          Sustainability and environmental stewardship are
+          <br className="hidden sm:block" />
+          at the forefront of our business practices.
+        </motion.p> */}
 
-              <h4 className="text-xl font-bold text-[#117ABA] mb-3">Growth Phase</h4>
-              <p className="text-gray-700 leading-relaxed">
-                Expanded manufacturing capabilities and established presence across India with state-of-the-art
-                facilities.
-              </p>
-            </div>
-                     <div className="rounded-lg bg-gray-100 p-6 text-center transition-shadow hover:shadow-md ">
+        <motion.div
+          variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+          className="mt-6"
+        >
+          <button className="flex items-center gap-2 rounded-md  bg-[#CE2027] px-6 py-3 text-sm font-medium text-white transition-all ">
+            Download
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="transition-transform group-hover:translate-x-1"
+            >
+              <path
+                d="M8 0L6.585 1.415L11.17 6H0V8H11.17L6.585 12.585L8 14L14 8L8 0Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+        </motion.div>
+      </motion.div>
+    </div>
 
-              <h4 className="text-xl font-bold text-[#117ABA] mb-3">Global Expansion</h4>
-              <p className="text-gray-700 leading-relaxed">
-                Established international manufacturing facilities across five continents, serving 150+ countries
-                worldwide.
-              </p>
-            </div>
-          </div>
-
-                   <div className="rounded-lg bg-gray-100 p-6  transition-shadow hover:shadow-md ">
-
-            <h3 className="text-2xl font-bold mb-4 text-[#117ABA]">Our Commitment</h3>
-            <div className="space-y-4">
-              <div className="flex gap-4">
-                <span className="text-2xl">✓</span>
-                <div>
-                  <h4 className="font-bold text-gray-600 mb-1">Innovation & Technology</h4>
-                  <p className="text-gray-700">
-                    Continuous investment in R&D and cutting-edge manufacturing technology
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <span className="text-2xl">✓</span>
-                <div>
-                  <h4 className="font-bold text-gray-600 mb-1">Sustainability</h4>
-                  <p className="text-gray-700">Eco-friendly packaging solutions and sustainable business practices</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <span className="text-2xl">✓</span>
-                <div>
-                  <h4 className="font-bold text-gray-600 mb-1">Customer Excellence</h4>
-                  <p className="text-gray-700">Delivering superior quality and value to customers across the globe</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <span className="text-2xl">✓</span>
-                <div>
-                  <h4 className="font-bold text-gray-600 mb-1">Talent Development</h4>
-                  <p className="text-gray-700">Investing in our people and fostering a culture of excellence</p>
-                </div>
-              </div>
-            </div>
-          </div>
+   
         </div>
       </div>
     </section>

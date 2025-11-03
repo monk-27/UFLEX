@@ -14,6 +14,7 @@ import { KeyManagement } from "@/components/about/key-management"
 // import AnimatedTimeline from "@/components/about/journey"
 import Image from "next/image";
 import { Journey } from "@/components/about/journey"
+import BodMob from "@/components/about/bod-mob"
 
 
 export default function AboutPage() {
@@ -30,7 +31,13 @@ export default function AboutPage() {
         
 
         <GlobalFootprint />
+        
+        <div className="hidden md:block">
         <BoardOfDirectors />
+      </div>
+      <div className="block space-y-4 sm:hidden">
+        <BodMob />
+      </div>
         <KeyManagement />
         <Journey />
         {/* <AnimatedTimeline/> */}

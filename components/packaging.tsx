@@ -8,6 +8,7 @@ import { Leader, LeaderSpotlight } from './leader'
 import { AwardItem, AwardsAccolades } from './awards'
 import Accreditions, { AccreditationItem } from './accredition'
 import AccreditationsSlider from './accredition'
+import ExpandableText from './expandabletext'
 
 
 
@@ -244,13 +245,13 @@ const accreditations: AccreditationItem[] = [
     { image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/client-image/clients_Intertek-ISO-22000-2018-Certificate-to-Packaging-Films-Business-Dubai-UAE.jpg" },
 
 
-        { image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/client-image/clients_Bureau-Veritas-NMX-CC-9001-IMNC-2015-ISO-9001-2015-Certificate-to-Packaging-Films-Business-Altamira-Mexico.jpg" },
+    { image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/client-image/clients_Bureau-Veritas-NMX-CC-9001-IMNC-2015-ISO-9001-2015-Certificate-to-Packaging-Films-Business-Altamira-Mexico.jpg" },
     { image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/client-image/clients_Bureau-Veritas-NMX-SAA-14001-IMNC-2015-ISO-14001-2015-Certificate-to-Packaging-Films-Business-Altamira-Mexico.jpg" },
     { image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/client-image/clients_Bureau-Veritas-FSSC-22000-Certificate-to-Packaging-Films-Business-Altamira-Mexico.jpg" },
     { image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/client-image/clients_Packaging-Consultants-International-FDA-IMS-2020-Certificate-to-Packaging-Films-Business-Altamira-Mexico.jpg" },
 
 
-         { image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/client-image/clients_AIB-International-905-1000-Certificate-to-Packaging-Films-Business-6th-October-City-Egypt.jpg" },
+    { image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/client-image/clients_AIB-International-905-1000-Certificate-to-Packaging-Films-Business-6th-October-City-Egypt.jpg" },
     { image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/client-image/clients_SGS-BRCGS-AA-Global-Standard-for-Packaging-Materials-Certificate-to-Packaging-Films-Business-6th-October-City-Egypt.jpg" },
     { image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/client-image/clients_SGS-ISO-45001-2018-Certificate-to-Packaging-Films-Business-6th-October-City-Egypt.jpg" },
     { image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/client-image/clients_SGS-ISO-9001-2015-Certificate-to-Packaging-Films-Business-6th-October-City-Egypt.jpg" },
@@ -267,6 +268,26 @@ const accreditations: AccreditationItem[] = [
 
 
 ];
+
+
+
+
+const packagingData = [
+    {
+        title: 'Packaging Films Business',
+        image: 'https://www.uflexltd.com/assets/images/film-aboutus.jpg',
+        paragraphs: [
+            `UFlex’s Packaging Films business, under the Flex Films brand, is a global leader offering innovative and sustainable packaging solutions, including BOPP, BOPET, CPP, specialty, and 100% PCR PET films, with manufacturing across 9 countries and presence in 150+ markets.`,
+
+            `All our manufacturing facilities are equipped with advance technologies and adhere to the highest global quality and safety standards. Our plants are ISO 9001 (Quality Management), ISO 14001 (Environmental Management), ISO 45001 (Occupational Health and Safety), and HACCP (Hazard Analysis and Critical Control Points) certified, ensuring consistent quality, environmental responsibility, and food-grade safety across our operations. These certifications reflect our unwavering commitment to excellence, compliance, and sustainability—reinforcing the trust our customers place in us for their most critical packaging needs.
+
+Further expanding its global manufacturing footprint, UFlex commissioned a virgin PET chips facility in Egypt in 2025, with an installed capacity of 216,000 MTPA, further strengthening the integrated supply chain. The company also operates a PCR (Post-Consumer Recyclate) PET chips plant in Egypt, reinforcing its commitment to sustainability and circular economy practices.`,
+
+            `UFlex manufactures high-quality Polyethylene Terephthalate (PET) resins, known for their high gloss, crack resistance, and excellent thermoplastic properties. These resins are widely used in the production of PET films, bottles, and a range of other applications across industries such as packaging and textiles, valued for their versatility, durability, and recyclability. UFlex commissioned its greenfield PET chips manufacturing facility at the Panipat plant on March 31, 2024, with an annual capacity of 168,000 MTPA. The unit produces poly condensed polyester chips, which serve as a crucial raw material for BOPET film and PET bottle production, supporting the needs of the packaging industry. This enhances quality control, ensures steady raw material availability, and promotes operational resilience, even in a volatile global environment.`,
+        ],
+    },
+
+];
 const PackageComp = () => {
     return (
         <div>
@@ -280,35 +301,20 @@ const PackageComp = () => {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-4xl poppins-800 tracking-tight text-red-900 md:text-5xl"
+                            className="text-[24px]  poppins-600 text-[#117ABA] md:text-[36px] md:text-5xl"
                         >
                             Packaging Films Business
 
                         </motion.h1>
-                        <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.05 }}
-                            className="poppins-400 mt-5 space-y-4 text-slate-700"
-                        >
-                            <p>
-                                UFlex’s Packaging Films business, under the Flex Films brand, is a global leader offering innovative and sustainable packaging solutions, including BOPP, BOPET, CPP, specialty, and 100% PCR PET films, with manufacturing across 9 countries and presence in 150+ markets.
-
-
-                            </p>
-                            <p>
-                                All our manufacturing facilities are equipped with advance technologies and adhere to the highest global quality and safety standards. Our plants are ISO 9001 (Quality Management), ISO 14001 (Environmental Management), ISO 45001 (Occupational Health and Safety), and HACCP (Hazard Analysis and Critical Control Points) certified, ensuring consistent quality, environmental responsibility, and food-grade safety across our operations. These certifications reflect our unwavering commitment to excellence, compliance, and sustainability—reinforcing the trust our customers place in us for their most critical packaging needs.
-
-                                Further expanding its global manufacturing footprint, UFlex commissioned a virgin PET chips facility in Egypt in 2025, with an installed capacity of 216,000 MTPA, further strengthening the integrated supply chain. The company also operates a PCR (Post-Consumer Recyclate) PET chips plant in Egypt, reinforcing its commitment to sustainability and circular economy practices.
-                            </p>
-
-                            <p>
-                                UFlex manufactures high-quality Polyethylene Terephthalate (PET) resins, known for their high gloss, crack resistance, and excellent thermoplastic properties. These resins are widely used in the production of PET films, bottles, and a range of other applications across industries such as packaging and textiles, valued for their versatility, durability, and recyclability. UFlex commissioned its greenfield PET chips manufacturing facility at the Panipat plant on March 31, 2024, with an annual capacity of 168,000 MTPA. The unit produces poly condensed polyester chips, which serve as a crucial raw material for BOPET film and PET bottle production, supporting the needs of the packaging industry. This enhances quality control, ensures steady raw material availability, and promotes operational resilience, even in a volatile global environment.
-
-
-                            </p>
-                        </motion.div>
+                        {packagingData.map((section, idx) => (
+                            <ExpandableText
+                                key={idx}
+                                modalTitle={section.title}
+                                imageSrc={section.image}
+                                imageAlt={section.title}
+                                paragraphs={section.paragraphs}
+                            />
+                        ))}
                     </div>
 
                     <motion.div
@@ -318,7 +324,7 @@ const PackageComp = () => {
                         className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl border-2 border-blue-400 shadow ring-4 ring-blue-200"
                     >
                         <Image
-                            src="https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Packaging-Films-Business35.jpg"
+                            src="https://www.uflexltd.com/assets/images/film-aboutus.jpg"
                             alt="UFlex capabilities across the value chain"
                             fill
                             className="object-cover"

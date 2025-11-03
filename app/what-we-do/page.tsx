@@ -18,14 +18,14 @@ type Item = {
 }
 
 const items: Item[] = [
-  { href: "/aseptic-packaging-business", title: "Aseptic Packaging Business", image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Aseptic-Packaging-Business54.jpg" },
-  { href: "/chemicals-business", title: "Chemicals Business", image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Chemicals-Business58.jpg" },
-  { href: "/holography-business", title: "Holography Business", image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Holography-Business58.jpg" },
-  { href: "/engineering-business", title: "Engineering Business", image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Engineering-Business49.jpg" },
-  { href: "/printing-cylinder-business", title: "Printing Cylinders Business", image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Printing-Cylinder-Business34.jpg" },
+  { href: "/aseptic-packaging-business", title: "Aseptic Packaging", image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Aseptic-Packaging-Business54.jpg" },
+  { href: "/chemicals-business", title: "Chemicals", image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Chemicals-Business58.jpg" },
+  { href: "/holography-business", title: "Holography", image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Holography-Business58.jpg" },
+  { href: "/engineering-business", title: "Engineering", image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Engineering-Business49.jpg" },
+  { href: "/printing-cylinder-business", title: "Printing Cylinders", image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Printing-Cylinder-Business34.jpg" },
   { href: "/flexitube-business", title: "Flexible Tubes", image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/FlexiTube-Business53.jpg" },
-  { href: "/packaging-films-business", title: "Packaging Films Business", image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Packaging-Films-Business35.jpg" },
-  { href: "/flexible-packaging-business", title: "Flexible Packaging Business", image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Flexible-Packaging-Business04.jpg" },
+  { href: "/packaging-films-business", title: "Packaging Films", image: "https://www.uflexltd.com/assets/images/film-aboutus.jpg" },
+  { href: "/flexible-packaging-business", title: "Flexible Packaging", image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Flexible-Packaging-Business04.jpg" },
 ]
 
 // Same palette you used for Board/Key Management
@@ -65,7 +65,7 @@ export default function WhatWeDoPage() {
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-4xl poppins-800 tracking-tight text-[#117ABA] md:text-5xl"
+              className="text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl"
             >
               What We Do
             </motion.h1>
@@ -111,7 +111,7 @@ export default function WhatWeDoPage() {
       {/* FEATURED STRIP (like your screenshot with arrows) */}
       <section aria-labelledby="featured" className="relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <h2 id="featured" className="text-center text-6xl poppins-900 text-[#117ABA]">
+          <h2 id="featured" className="text-center text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">
             Our Expansion
           </h2>
 
