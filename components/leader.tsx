@@ -109,12 +109,12 @@ function _LeaderSpotlight({
             transition={{ duration: 0.45, delay: 0.12 }}
           >
             <h3
-              className={`text-2xl font-semibold md:text-[28px] text-[#117ABA]`}
+              className={`text-2xl poppin-600 md:text-[28px] text-[#117ABA]`}
             >
               {p.name}
             </h3>
             <p
-              className={`mt-1 text-[15px] font-semibold md:text-base ${roleColorClass}`}
+              className={`mt-1 text-[15px] poppins-600 md:text-base ${roleColorClass}`}
             >
               {p.role}
             </p>

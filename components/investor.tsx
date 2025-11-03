@@ -81,7 +81,7 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
     <section aria-labelledby={`${id}-heading`} className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-0 py-10">
       <motion.h2
         id={`${id}-heading`}
-        className="poppins-700 text-3xl sm:text-4xl md:text-4xl mb-6 text-[#117ABA]"
+        className="text-[24px]  poppins-600 text-[#117ABA] md:text-[36px] md:text-5xl mb-6 "
         initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -101,7 +101,7 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
               transition={{ duration: 0.35 }}
               className="relative overflow-hidden rounded-2xl shadow ring-1 ring-slate-200"
             >
-              <div className="relative aspect-[16/9] sm:aspect-[5/9]">
+              <div className="relative aspect-[16/9] sm:aspect-[10/9]">
                 <Image
                   src={card.image}
                   alt={card.title}
@@ -156,7 +156,7 @@ function InvestorsIntro() {
   return (
     <section className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-4 sm:px-6 lg:px-0 py-14">
       <div>
-        <h1 className="poppins-800 text-4xl sm:text-5xl md:text-6xl tracking-tight text-[#117ABA]">
+        <h1 className="text-[24px]  poppins-600 text-[#117ABA] md:text-[36px] md:text-5xl">
           Investors
         </h1>
         <p className="mt-6 text-slate-700 text-lg leading-7">

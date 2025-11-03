@@ -76,7 +76,7 @@ function _OverlayModules({
       {/* Title block */}
       <div className="mx-auto max-w-4xl">
         {heading && (
-          <h2 className="text-[30px] poppins-800 text-3xl text-[#117ABA] sm:text-6xl">
+          <h2 className="text-[24px]  poppins-600 text-[#117ABA] md:text-[36px] md:text-5xl">
             {heading}
           </h2>
         )}
@@ -163,7 +163,7 @@ function _OverlayModules({
                 <div className="absolute inset-0 flex lg:hidden flex-col justify-end rounded-lg p-4 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                   <div className="absolute inset-0 rounded-lg bg-gradient-to-t from-black/35 via-black/5 to-transparent" />
                   <div className="relative">
-                    <h4 className="poppins-800 text-white text-lg">{m.title}</h4>
+                    <h4 className="text-[24px] poppins-600 text-[#117ABA] md:text-[36px] md:text-5xl">{m.title}</h4>
                     {m.description && (
                       <p className="mt-1 text-white/95 text-sm">{m.description}</p>
                     )}

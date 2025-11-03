@@ -45,7 +45,7 @@ const Careers = () => {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-4xl poppins-800 tracking-tight text-[#117ABA] md:text-5xl"
+                            className="text-[24px]  poppins-600 text-[#117ABA] md:text-[36px] md:text-5xl"
                         >
                             Careers
                         </motion.h1>
@@ -102,7 +102,7 @@ const Careers = () => {
                     viewport={{ once: true }}
                 >
                     <motion.h3
-                        className="poppins-800 mb-6 mt-6 text-3xl text-[#117ABA] sm:text-6xl md:mb-12"
+                        className="text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl"
                         initial={{ opacity: 0, y: -20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.2 }}

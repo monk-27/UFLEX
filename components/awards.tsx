@@ -41,7 +41,7 @@ function _AwardsAccolades({
       <div className="mx-auto max-w-6xl px-4 md:px-8">
         {/* Title */}
         <div className="text-center">
-          <h2 className="poppins-800 text-[28px] text-[#117ABA] md:text-[34px]">{heading}</h2>
+          <h2 className="text-[24px]  poppins-600 text-[#117ABA] md:text-[36px] md:text-5xl">{heading}</h2>
           {subheading && (
             <p className="mx-auto mt-2 max-w-2xl text-zinc-700 md:text-lg">{subheading}</p>
           )}
@@ -110,7 +110,7 @@ function _AwardsAccolades({
                 />
               </div>
               <div className="p-5">
-                <h4 className="text-[18px] font-semibold text-[#1f3b6a]">{a.title}</h4>
+                <h4 className="text-2xl poppin-600 md:text-[28px] text-[#117ABA]">{a.title}</h4>
                 {a.description && (
                   <p className="mt-2 line-clamp-4 text-[14px] leading-relaxed text-zinc-700">
                     {a.description}

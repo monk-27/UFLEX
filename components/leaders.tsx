@@ -141,7 +141,7 @@ export default function BusinessAwards() {
   return (
     <section className="py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <h2 className="mb-8 text-center text-3xl font-extrabold text-[#117ABA] sm:text-4xl">
+        <h2 className="mb-8 text-center text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">
           Business Awards
         </h2>
 
@@ -171,7 +171,7 @@ export default function BusinessAwards() {
                 {isActive && (
                   <motion.span
                     layoutId="tab-underline"
-                    className="absolute -bottom-[1px] left-0 right-0 h-[3px] rounded-full bg-[#5B7BB6]"
+                    className="absolute -bottom-[1px] left-0 right-0 h-[3px] rounded-full bg-[#117ABA]"
                   />
                 )}
               </button>
@@ -233,7 +233,7 @@ export default function BusinessAwards() {
             {/* View More */}
             {AWARDS[active].length > 0 && (
               <div className="mt-8 flex justify-center">
-                <button className="inline-flex items-center gap-1 rounded-full bg-[#2C4270] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#243B6B]">
+                <button className="inline-flex items-center gap-1 rounded-full bg-[#117ABA] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#243B6B]">
                   View More <ChevronRight size={16} />
                 </button>
               </div>
