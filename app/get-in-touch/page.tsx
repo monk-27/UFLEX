@@ -391,32 +391,7 @@ export default function GetInTouch() {
           </svg>
         </section>
 
-        {/* STATS (exact palette you gave) */}
-        <section className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="grid md:grid-cols-4 gap-6 mb-16">
-            <div className="border-2 border-gray-400 bg-white p-8 rounded-lg text-center hover:shadow-lg transition">
-              <div className="text-5xl poppins-800 text-[#117ABA] mb-3">150+</div>
-              <p className="text-gray-600 poppins-700 text-lg">Countries with Our Presence</p>
-            </div>
-
-
-            <div className="border-2 border-gray-400 bg-white p-8 rounded-lg text-center hover:shadow-lg transition">
-              <div className="text-5xl poppins-800 text-[#117ABA] mb-3">15,000+</div>
-              <p className="text-gray-600 poppins-700 text-lg">Global Workforce</p>
-            </div>
-
-             <div className="border-2 border-gray-400 bg-white p-8 rounded-lg text-center hover:shadow-lg transition">
-              <div className="text-5xl poppins-800 text-[#117ABA] mb-3">9</div>
-              <p className="text-gray-600 poppins-700 text-lg">Global Manufacturing Locations</p>
-            </div>
-            
-             <div className="border-2 border-gray-400 bg-white p-8 rounded-lg text-center hover:shadow-lg transition">
-              <div className="text-5xl poppins-800 text-[#117ABA] mb-3">5</div>
-              <p className="text-gray-600 poppins-700 text-lg">Continents</p>
-            </div>
-           
-          </div>
-        </section>
+       
 
         {/* QUICK CONTACT STRIP */}
         <section className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -578,10 +553,10 @@ export default function GetInTouch() {
             {/* Side visual */}
             <motion.div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl ring-1 ring-black/5 md:sticky md:top-24" {...fadeUp(0.1)}>
               <Image
-                src="https://uflex.wpdevstudio.site/HTML/assets/images/Map-desktop-june.jpg"
+                src="/images/map.png"
                 alt="Global Presence"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-black/10 to-transparent" />
               <div className="absolute bottom-3 left-3 rounded-xl bg-white/80 px-3 py-1.5 text-xs text-slate-700 backdrop-blur">

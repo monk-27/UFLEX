@@ -79,7 +79,7 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6">
       <motion.h2
-        className="poppins-800 text-center text-2xl text-[#117ABA] sm:text-3xl"
+        className="text-center text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl"
         {...fadeUp()}
       >
         {children}
