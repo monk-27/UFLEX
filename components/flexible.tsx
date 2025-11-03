@@ -8,6 +8,7 @@ import { Leader, LeaderSpotlight } from './leader'
 import { AwardItem, AwardsAccolades } from './awards'
 import Accreditions, { AccreditationItem } from './accredition'
 import AccreditationsSlider from './accredition'
+import ExpandableText from './expandabletext'
 
 
 
@@ -291,6 +292,22 @@ const accreditations: AccreditationItem[] = [
 
 
 ];
+
+
+const packagingData = [
+    {
+  "id": "flexible-packaging",
+ title: "Flexible Packaging",
+  image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Flexible-Packaging-Business04.jpg",
+  "imageAlt": "UFlex Flexible Packaging Solutions",
+  paragraphs: [
+    "We offer a comprehensive range of products, including flexible laminates, pre-formed pouches, Flexo-printed rolls and bags, laminated woven polypropylene (WPP) bags, electron beam and Cast n Cure technology, pharmaceutical packaging, FlexiTubes, hygiene films, Flexfresh™ modified atmosphere packaging, and big bags. At UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every solution we create.",
+    "UFlex Limited is India’s largest flexible packaging company, headquartered in Noida, Delhi NCR. With a legacy of innovation and excellence, we operate three advanced manufacturing facilities across India, including Noida and Jammu, and serve a diverse clientele both domestically and globally. Our robust international footprint spans North America, Europe, Africa, Southeast Asia, and the Middle East, positioning us as a leading manufacturer and exporter in the flexible packaging space.",
+    "With a manufacturing capacity of over 100,000 MTPA, UFlex offers a comprehensive range of flexible packaging solutions and laminated roll stocks. Our versatile portfolio includes a wide variety of pouch formats such as 3D and 4D pouches with re-closable options, wicketed bags for hygiene products, pet food pinch bottom bags, cement block bottom bags, FlexiTubes, and innovative offerings like innolock pouches, zip pouches, embossed foils, pocket PTC zippers, and Cast n Cure technologies. Whether it’s packaging for household use or industrial applications, our products are designed to combine functionality with visual appeal.\n\nWhat sets UFlex apart is our full backward integration across every key vertical—films (BOPET, BOPP, CPP, metalized films), chemicals (inks, coatings, adhesives), engineering (converting and packing machines), holography, and cylinders. This integration enables us to offer customized, end-to-end packaging solutions tailored to the evolving needs of our customers.\n\nOur four in-house R&D labs, approved by the Ministry of Industries, Government of India, are equipped with state-of-the-art instruments like FTIR, UTM, gas chromatograph, and differential scanning calorimeter. This empowers us to stay at the forefront of packaging innovation, driving quality, sustainability, and performance.\n\nAt UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every solution we create."
+  ]
+}
+
+];
 const FlexibleComp = () => {
     return (
         <div>
@@ -304,38 +321,20 @@ const FlexibleComp = () => {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-4xl poppins-800 tracking-tight text-red-900 md:text-5xl"
+                            className="text-[24px]  poppins-600 text-[#117ABA] md:text-[36px] md:text-5xl"
                         >
                             Flexible Packaging
 
                         </motion.h1>
-                        <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.05 }}
-                            className="poppins-400 mt-5 space-y-4 text-slate-700"
-                        >
-                            <p>
-                                We offer a comprehensive range of products, including flexible laminates, pre-formed pouches, Flexo-printed rolls and bags, laminated woven polypropylene (WPP) bags, electron beam and Cast n Cure technology, pharmaceutical packaging, FlexiTubes, hygiene films, Flexfresh™ modified atmosphere packaging, and big bags. At UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every solution we create.
-
-                            </p>
-                            <p>
-                                UFlex Limited is India’s largest flexible packaging company, headquartered in Noida, Delhi NCR. With a legacy of innovation and excellence, we operate three advanced manufacturing facilities across India, including Noida and Jammu, and serve a diverse clientele both domestically and globally. Our robust international footprint spans North America, Europe, Africa, Southeast Asia, and the Middle East, positioning us as a leading manufacturer and exporter in the flexible packaging space.
-
-                            </p>
-
-                            <p>
-                                With a manufacturing capacity of over 100,000 MTPA, UFlex offers a comprehensive range of flexible packaging solutions and laminated roll stocks. Our versatile portfolio includes a wide variety of pouch formats such as 3D and 4D pouches with re-closable options, wicketed bags for hygiene products, pet food pinch bottom bags, cement block bottom bags, FlexiTubes, and innovative offerings like innolock pouches, zip pouches, embossed foils, pocket PTC zippers, and Cast n Cure technologies. Whether it’s packaging for household use or industrial applications, our products are designed to combine functionality with visual appeal.
-
-                                What sets UFlex apart is our full backward integration across every key vertical—films (BOPET, BOPP, CPP, metalized films), chemicals (inks, coatings, adhesives), engineering (converting and packing machines), holography, and cylinders. This integration enables us to offer customized, end-to-end packaging solutions tailored to the evolving needs of our customers.
-
-                                Our four in-house R&D labs, approved by the Ministry of Industries, Government of India, are equipped with state-of-the-art instruments like FTIR, UTM, gas chromatograph, and differential scanning calorimeter. This empowers us to stay at the forefront of packaging innovation, driving quality, sustainability, and performance.
-
-                                At UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every solution we create.
-
-                            </p>
-                        </motion.div>
+                       {packagingData.map((section, idx) => (
+                                                   <ExpandableText
+                                                       key={idx}
+                                                       modalTitle={section.title}
+                                                       imageSrc={section.image}
+                                                       imageAlt={section.title}
+                                                       paragraphs={section.paragraphs}
+                                                   />
+                                               ))}
                     </div>
 
                     <motion.div
@@ -345,7 +344,7 @@ const FlexibleComp = () => {
                         className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl border-2 border-blue-400 shadow ring-4 ring-blue-200"
                     >
                         <Image
-                            src="https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Packaging-Films-Business35.jpg"
+                            src="https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Flexible-Packaging-Business04.jpg"
                             alt="UFlex capabilities across the value chain"
                             fill
                             className="object-cover"

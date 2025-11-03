@@ -8,6 +8,7 @@ import { Leader, LeaderSpotlight } from './leader'
 import { AwardItem, AwardsAccolades } from './awards'
 import Accreditions, { AccreditationItem } from './accredition'
 import AccreditationsSlider from './accredition'
+import ExpandableText from './expandabletext'
 
 
 
@@ -125,6 +126,22 @@ const accreditations: AccreditationItem[] = [
 
 
 ];
+
+
+const packagingData = [
+    {
+  "id": "holography",
+  title: "Holography Business",
+  image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Holography-Business58.jpg",
+  "imageAlt": "UFlex Holography Solutions",
+  paragraphs: [
+    "The UFlex holography business is India’s largest and most trusted provider of brand protection and anti-counterfeiting solutions, as well as an emerging global player in the industry.\n\nThe Holography Business offer a comprehensive range of holographic solutions, including, Advanced Security Holograms, Security Paper Labels & Tax Stamps, Wide Web Holographic Films, Stamping Foils, Transfer Holographic Metallized Paper & Paperboard, Security documents, & Textile Application Films for Sequins, Hot Melt, and Glitter Powder.",
+    "UFlex Limited’s advanced manufacturing facilities in Noida and Jammu are equipped with advanced in-house capabilities, enabling high-volume production while maintaining the highest quality standards. Specializing in holography-based anti-counterfeiting packaging and brand protection solutions, our facilities empower brands to combat counterfeiting threats and safeguard their business interests.\n\nWith support from NABL-accredited labs and manufacturing sites in Noida and Jammu, India, boasting certifications such as ISO 9001:2015, ISO 14001:2015, ISO45001:2018, ISO 50001:2018, and ISO 31000:2018, we consistently uphold global standards.",
+    "Our commitment to quality, security, and sustainability is reinforced by globally recognized certifications, including, ISO 9001:2015 – Quality Management System (QMS), ISO 14001:2015 – Environmental Management System, ISO/IEC 27001:2022 – Information Security Management System, ISO 14298:2021 – Graphic Technology & Security Printing Management, HSSMS Certification – Health & Safety Management System, & IBA Certified Security Printer\n\nAs an industry leader, UFlex is a proud member of ITSA, IOTA (IHMA), and ASPA, actively contributing to the advancement of security printing and brand protection."
+  ]
+}
+
+];
 const HoloGraphyComp = () => {
     return (
         <div>
@@ -138,33 +155,20 @@ const HoloGraphyComp = () => {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-4xl poppins-800 tracking-tight text-red-900 md:text-5xl"
+                            className="text-[24px]  poppins-600 text-[#117ABA] md:text-[36px] md:text-5xl"
                         >
                             Holography
 
                         </motion.h1>
-                        <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.05 }}
-                            className="poppins-400 mt-5 space-y-4 text-slate-700"
-                        >
-                            <p>
-                                The UFlex holography business is India’s largest and most trusted provider of brand protection and anti-counterfeiting solutions, as well as an emerging global player in the industry.
-
-                                The Holography Business offer a comprehensive range of holographic solutions, including, Advanced Security Holograms, Security Paper Labels & Tax Stamps, Wide Web Holographic Films, Stamping Foils, Transfer Holographic Metallized Paper & Paperboard, Security documents, & Textile Application Films for Sequins, Hot Melt, and Glitter Powder.
-                            </p>
-                            <p>
-                                UFlex Limited’s advanced manufacturing facilities in Noida and Jammu are equipped with advanced in-house capabilities, enabling high-volume production while maintaining the highest quality standards. Specializing in holography-based anti-counterfeiting packaging and brand protection solutions, our facilities empower brands to combat counterfeiting threats and safeguard their business interests.
-
-                                With support from NABL-accredited labs and manufacturing sites in Noida and Jammu, India, boasting certifications such as ISO 9001:2015, ISO 14001:2015, ISO45001:2018, ISO 50001:2018, and ISO 31000:2018, we consistently uphold global standards.
-                            </p>
-                            <p>
-                                Our commitment to quality, security, and sustainability is reinforced by globally recognized certifications, including, ISO 9001:2015 – Quality Management System (QMS), ISO 14001:2015 – Environmental Management System, ISO/IEC 27001:2022 – Information Security Management System, ISO 14298:2021 – Graphic Technology & Security Printing Management, HSSMS Certification – Health & Safety Management System, & IBA Certified Security Printer
-
-                                As an industry leader, UFlex is a proud member of ITSA, IOTA (IHMA), and ASPA, actively contributing to the advancement of security printing and brand protection.</p>
-                        </motion.div>
+                        {packagingData.map((section, idx) => (
+                                                                           <ExpandableText
+                                                                               key={idx}
+                                                                               modalTitle={section.title}
+                                                                               imageSrc={section.image}
+                                                                               imageAlt={section.title}
+                                                                               paragraphs={section.paragraphs}
+                                                                           />
+                                                                       ))}
                     </div>
 
                     <motion.div

@@ -8,6 +8,7 @@ import { Leader, LeaderSpotlight } from './leader'
 import { AwardItem, AwardsAccolades } from './awards'
 import Accreditions, { AccreditationItem } from './accredition'
 import AccreditationsSlider from './accredition'
+import ExpandableText from './expandabletext'
 
 
 
@@ -139,6 +140,22 @@ const accreditations: AccreditationItem[] = [
 
 
 ];
+
+
+const packagingData = [
+    {
+  "id": "Flexible Tube",
+ title: "Flexible Tube",
+  image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/FlexiTube-Business53.jpg",
+  "imageAlt": "UFlex Flexible Packaging Solutions",
+  paragraphs: [
+    "Our innovative multilayer flexible tube packaging solutions have been designed especially for the beauty, personal care and pharma industries.",
+    "At UFlex, we challenge conventions through design thinking—reimagining material choices, printing, lamination, and production to deliver packaging that’s as innovative as it is impactful. Our strengths include:\n\n• **Superior Print Quality**: Seamless 360° printing on laminate tubes with no side seam gaps, ensuring sharp image reproduction, intricate patterns, vibrant colors, and even fine vignette fonts.\n• **Advanced Substrate Layering**: Expertise in combining materials such as metallics, PE, BOPP, and PET to enhance aesthetics, barrier protection, and overall performance.\n• **Anti-Counterfeit Solutions**: Integrated holography for brand protection, authentication, and consumer trust.\n• **Vertical Integration**: End-to-end in-house capabilities that drive faster turnaround times and unmatched production agility.\n• **Sustainability Leadership**: Mono-material and PCR-compatible solutions that go beyond traditional multi-layer laminates.",
+    "The outcome: Packaging that’s truly brand-centric—distinctive on the shelf, enriching for the consumer, and built for a sustainable future."
+  ]
+}
+
+];
 const FlexiComp = () => {
     return (
         <div>
@@ -152,33 +169,20 @@ const FlexiComp = () => {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-4xl poppins-800 tracking-tight text-red-900 md:text-5xl"
+                            className="text-[24px]  poppins-600 text-[#117ABA] md:text-[36px] md:text-5xl"
                         >
                             Flexible Tubes
 
                         </motion.h1>
-                        <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.05 }}
-                            className="poppins-400 mt-5 space-y-4 text-slate-700"
-                        >
-                            <p>
-                                Our innovative multilayer flexible tube packaging solutions have been designed especially for the beauty, personal care and pharma industries.
-
-                            </p>
-                            <p>
-                                At UFlex, we challenge conventions through design thinking—reimagining material choices, printing, lamination, and production to deliver packaging that’s as innovative as it is impactful. Our strengths include:
-
-                                Superior Print Quality: Seamless 360° printing on laminate tubes with no side seam gaps, ensuring sharp image reproduction, intricate patterns, vibrant colors, and even fine vignette fonts.
-                                Advanced Substrate Layering: Expertise in combining materials such as metallics, PE, BOPP, and PET to enhance aesthetics, barrier protection, and overall performance.
-                                Anti-Counterfeit Solutions: Integrated holography for brand protection, authentication, and consumer trust.
-                                Vertical Integration: End-to-end in-house capabilities that drive faster turnaround times and unmatched production agility.
-                                Sustainability Leadership: Mono-material and PCR-compatible solutions that go beyond traditional multi-layer laminates.</p>
-                            <p>
-                                The outcome: Packaging that’s truly brand-centric—distinctive on the shelf, enriching for the consumer, and built for a sustainable future.</p>
-                        </motion.div>
+                        {packagingData.map((section, idx) => (
+                                                                           <ExpandableText
+                                                                               key={idx}
+                                                                               modalTitle={section.title}
+                                                                               imageSrc={section.image}
+                                                                               imageAlt={section.title}
+                                                                               paragraphs={section.paragraphs}
+                                                                           />
+                                                                       ))}
                     </div>
 
                     <motion.div

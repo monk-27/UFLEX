@@ -8,6 +8,7 @@ import { Leader, LeaderSpotlight } from './leader'
 import { AwardItem, AwardsAccolades } from './awards'
 import Accreditions, { AccreditationItem } from './accredition'
 import AccreditationsSlider from './accredition'
+import ExpandableText from './expandabletext'
 
 
 
@@ -131,6 +132,22 @@ const accreditations: AccreditationItem[] = [
 
 
 ];
+
+const packagingData = [
+    {
+  "id": "Printing Cylinders Business",
+ title: "Printing Cylinders Business",
+  image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Printing-Cylinder-Business34.jpg",
+  "imageAlt": "UFlex Flexible Packaging Solutions",
+  paragraphs: [
+    "UFlex printing cylinders business enforces stringent quality control at every stage of production to deliver world-class cylinders. With advanced technology, the business manages the complete cylinder production process, starting from the steel base, copper plating, and surface finishing to digital engraving, chrome plating, and final proof printing.",
+    "With high-end CAD software, streamlined processes, and collaborative efforts across departments, we deliver tailored products to meet evolving global demands. This dedication, coupled with our state-of-the-art facilities, positions UFlex as a leading provider capable of fulfilling our clients' diverse needs with precision and efficiency.",
+    "Our production facilities, located in Noida, Uttar Pradesh, and Jammu, J&K, India, are equipped with the latest innovations, including the Flexo ‘Xlarge’ laser for high-definition imaging up to 5080 DPI, and the Schepers laser for superior precision. These advancements place UFlex at the forefront of packaging, corrugated printing, specialized coatings, embossing, decorative laminates, and security features.\n\nOur digital processing technology ensures perfect registration during rotogravure production, offering a powerful combination of electronically engraved and chemically etched embossing cylinders. With ongoing innovations, UFlex continues to lead in delivering unparalleled quality and efficiency for all printing applications.",
+    "We enforce stringent quality control at every stage of production to deliver world-class cylinders. Our meticulous practices include regular calibration of scanners, monitors, and prepress digital-cylinder proofs, as well as detailed inspection of H/T images on color-calibrated monitors. We dynamically balance each cylinder at 500 RPM and ensure precise accuracy in cone and bore blueprints."
+  ]
+}
+
+];
 const CylComp = () => {
     return (
         <div>
@@ -144,31 +161,20 @@ const CylComp = () => {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-4xl poppins-800 tracking-tight text-red-900 md:text-5xl"
+                            className="text-[24px]  poppins-600 text-[#117ABA] md:text-[36px] md:text-5xl"
                         >
                             Printing Cylinders Business
 
                         </motion.h1>
-                        <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.05 }}
-                            className="poppins-400 mt-5 space-y-4 text-slate-700"
-                        >
-                            <p>
-                                UFlex printing cylinders business enforces stringent quality control at every stage of production to deliver world-class cylinders. With advanced technology, the business manages the complete cylinder production process, starting from the steel base, copper plating, and surface finishing to digital engraving, chrome plating, and final proof printing. </p>
-                            <p>
-                                With high-end CAD software, streamlined processes, and collaborative efforts across departments, we deliver tailored products to meet evolving global demands. This dedication, coupled with our state-of-the-art facilities, positions UFlex as a leading provider capable of fulfilling our clients' diverse needs with precision and efficiency. </p>
-                            <p>
-                                Our production facilities, located in Noida, Uttar Pradesh, and Jammu, J&K, India, are equipped with the latest innovations, including the Flexo ‘Xlarge’ laser for high-definition imaging up to 5080 DPI, and the Schepers laser for superior precision. These advancements place UFlex at the forefront of packaging, corrugated printing, specialized coatings, embossing, decorative laminates, and security features.
-
-Our digital processing technology ensures perfect registration during rotogravure production, offering a powerful combination of electronically engraved and chemically etched embossing cylinders. With ongoing innovations, UFlex continues to lead in delivering unparalleled quality and efficiency for all printing applications.
-</p>
-<p>
-    We enforce stringent quality control at every stage of production to deliver world-class cylinders. Our meticulous practices include regular calibration of scanners, monitors, and prepress digital-cylinder proofs, as well as detailed inspection of H/T images on color-calibrated monitors. We dynamically balance each cylinder at 500 RPM and ensure precise accuracy in cone and bore blueprints.
-</p>
-</motion.div>
+                        {packagingData.map((section, idx) => (
+                                                                           <ExpandableText
+                                                                               key={idx}
+                                                                               modalTitle={section.title}
+                                                                               imageSrc={section.image}
+                                                                               imageAlt={section.title}
+                                                                               paragraphs={section.paragraphs}
+                                                                           />
+                                                                       ))}
                     </div>
 
                     <motion.div
