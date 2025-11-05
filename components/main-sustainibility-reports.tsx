@@ -124,7 +124,7 @@ export default function ReportsGallery() {
     return (
         <section className="mx-auto max-w-7xl px-4 py-10 text-center xl:px-0">
             <motion.h2
-                className="poppins-800 mb-6 mt-6 text-3xl text-[#255994] sm:text-6xl md:mb-12"
+                className="manrope-800 mb-6 mt-6 text-3xl text-[#255994] sm:text-6xl md:mb-12"
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7 }}
@@ -165,7 +165,7 @@ export default function ReportsGallery() {
                             whileHover={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.3, ease: "easeOut" }}
                         >
-                            <div className="poppins-700 w-full bg-white px-4 py-2 text-green-700">
+                            <div className="manrope-700 w-full bg-white px-4 py-2 text-green-700">
                                 {image.main.title}
                             </div>
                         </motion.div>
@@ -201,7 +201,7 @@ export default function ReportsGallery() {
                             <div className="flex flex-col items-center">
                                 {/* Title large & centered at top */}
                                 <motion.h2
-                                    className="poppins-700 mb-4 w-full text-center text-2xl md:text-3xl text-green-900"
+                                    className="manrope-700 mb-4 w-full text-center text-2xl md:text-3xl text-green-900"
                                     initial={{ opacity: 0, y: -12 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.25, ease: "easeOut" }}

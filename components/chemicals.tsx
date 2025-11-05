@@ -143,7 +143,7 @@ const ChemicalsComp = () => {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl"
+                            className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"
                         >
                             Chemicals
 
@@ -153,7 +153,7 @@ const ChemicalsComp = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.05 }}
-                            className="poppins-400 mt-5 space-y-4 text-slate-700"
+                            className="manrope-400 mt-5 space-y-4 text-slate-700"
                         >
                             <p>
                                 Our various inks, adhesives, and coatings are meticulously crafted to enhance brand vibrancy, durability, and functionality while ensuring environmental protection. </p>
@@ -208,7 +208,7 @@ const ChemicalsComp = () => {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="mb-12 text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl"
+                            className="mb-12 text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"
                         >
                             Sustainability
 
@@ -238,10 +238,10 @@ const ChemicalsComp = () => {
                         initial={{ opacity: 0, scale: 0.98 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
-                        className="poppins-400 mt-5 space-y-4 text-slate-700"
+                        className="manrope-400 mt-5 space-y-4 text-slate-700"
 
                     >
-                        <p className='poppins-800'>
+                        <p className='manrope-800'>
                             Committed to reducing our carbon footprint
                         </p>
                         <p>

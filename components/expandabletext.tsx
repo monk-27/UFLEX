@@ -39,7 +39,7 @@ export default function ExpandableText({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.05 }}
-        className={clsx('text-sm poppins-400 mt-5 space-y-4 text-slate-700', className)}
+        className={clsx('text-sm manrope-400 mt-5 space-y-4 text-slate-700', className)}
       >
         {preview.map((para, i) => (
           <p key={i}>{para}</p>
@@ -59,7 +59,7 @@ export default function ExpandableText({
       <Dialog open={open} onOpenChange={setOpen} >
         <DialogContent className='max-w-3xl max-h-[85vh] overflow-y-auto bg-gray-100 text-gray-300'>
           <DialogHeader>
-            <DialogTitle className='text-xl poppins-600 text-[#117ABA]'>{modalTitle}</DialogTitle>
+            <DialogTitle className='text-xl manrope-600 text-[#117ABA]'>{modalTitle}</DialogTitle>
           </DialogHeader>
 
           <div className='mt-4 space-y-5 text-sm text-slate-700'>

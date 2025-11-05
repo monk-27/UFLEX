@@ -50,7 +50,7 @@
 //             <span className="subheadtext text-center text-[36px]">Sustainability</span>
 //           </div>
 //           <div className="content mx-auto flex w-[80%] flex-col items-center p-8">
-//             <p className="poppins-800 xxl:text-[24px] mb-6 text-center text-[18px] leading-tight">
+//             <p className="manrope-800 xxl:text-[24px] mb-6 text-center text-[18px] leading-tight">
 //               Committed to achieving carbon neutrality by 2035
 //               <br />
 //               <br />
@@ -147,7 +147,7 @@ export default function SustainabilityComp() {
         transition={{ duration: 1 }}
       >
         <Image
-          src="/images/suscomp.png"
+          src="/images/sus-top.png"
           fill
           className="object-cover object-center"
           alt="Sustainability"
@@ -155,11 +155,17 @@ export default function SustainabilityComp() {
           sizes="100vw"
         />
       </motion.div>
+      <motion.div
+        className="absolute inset-0 bg-black bg-opacity-100"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.5 }}
+        transition={{ duration: 1 }}
+      ></motion.div>
 
       {/* Header Bar */}
       <div className="absolute top-0 left-0 right-0 z-10 bg-white py-4 md:py-6">
         <div className="mx-auto max-w-7xl px-5 md:px-20">
-          <h2 className="text-center text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">
+          <h2 className="text-center text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">
             Sustainability
           </h2>
         </div>
@@ -167,7 +173,7 @@ export default function SustainabilityComp() {
 
       {/* Text Content */}
       <motion.div
-        className="absolute inset-0 flex flex-col justify-end px-5 pb-16 text-white md:bottom-20 md:pb-20 md:pl-20"
+        className="absolute inset-0 flex flex-col justify-end px-5 pb-20 text-white md:bottom-20 md:pb-10 md:pl-13"
         initial="hidden"
         animate="visible"
         variants={{
@@ -180,27 +186,25 @@ export default function SustainabilityComp() {
         }}
       >
         <motion.h3
-          className="text-[20px] font-medium leading-tight sm:text-[28px] md:text-[32px]"
+          className="text-left max-w-lg text-[20px] manrope-500 leading-tight sm:text-[28px] md:text-[32px]"
           variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
         >
-          Committed to achieving carbon neutrality by 2035
+          Committed to achieving {""} <span className=""> carbon neutrality by 2035</span>
         </motion.h3>
 
         <motion.p
-          className="mt-2 max-w-2xl text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[18px]"
+          className="text-left max-w-lg mt-2  text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[22px]"
           variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
         >
-          Sustainability and environmental stewardship are
-          <br className="hidden sm:block" />
-          at the forefront of our business practices.
+          Sustainability and environmental stewardship are at the forefront of our business practices.
         </motion.p>
 
         <motion.div
           variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
-          className="mt-6"
+          className="flex items-center mt-10"
         >
-          <button className="flex items-center gap-2 rounded-full border border-white bg-white px-6 py-3 text-sm font-medium text-black transition-all hover:bg-transparent hover:text-white">
-            SEE MORE
+          <button className="flex items-center gap-2 rounded-full border border-white bg-white px-6 py-3 text-sm manrope-400 text-black transition-all hover:bg-transparent hover:text-white">
+            KNOW MORE
             <svg
               width="16"
               height="16"

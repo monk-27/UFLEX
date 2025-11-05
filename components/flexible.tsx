@@ -321,7 +321,7 @@ const FlexibleComp = () => {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl"
+                            className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"
                         >
                             Flexible Packaging
 
@@ -376,7 +376,7 @@ const FlexibleComp = () => {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="mb-12 text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl"
+                            className="mb-12 text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"
                         >
                             Sustainability
 
@@ -406,10 +406,10 @@ const FlexibleComp = () => {
                         initial={{ opacity: 0, scale: 0.98 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
-                        className="poppins-400 mt-5 space-y-4 text-slate-700"
+                        className="manrope-400 mt-5 space-y-4 text-slate-700"
 
                     >
-                        <p className='poppins-800'>
+                        <p className='manrope-800'>
                             Driving Sustainable Growth Through Smarter Packaging Practices</p>
 
                         <p>

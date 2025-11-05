@@ -178,7 +178,7 @@
 //               initial={{ opacity: 0, y: 10 }}
 //               whileInView={{ opacity: 1, y: 0 }}
 //               viewport={{ once: true }}
-//               className="text-[24px]  poppins-600 text-[#117ABA] md:text-[36px] md:text-5xl"
+//               className="text-[24px]  manrope-600 text-[#117ABA] md:text-[36px] md:text-5xl"
 //             >
 //               Hall Of Fame
 //             </motion.h1>
@@ -187,7 +187,7 @@
 //               whileInView={{ opacity: 1, y: 0 }}
 //               viewport={{ once: true }}
 //               transition={{ delay: 0.05 }}
-//               className="poppins-400 mt-5 space-y-4 text-slate-700"
+//               className="manrope-400 mt-5 space-y-4 text-slate-700"
 //             >
 //               <p>
 //                Our journey of growth and leadership in flexible packaging has been consistently recognized by prestigious industry forums worldwide. 
@@ -221,7 +221,7 @@
 //       <section className="relative  py-14"
 //      >
 //         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-//           <h2 className="mb-10 text-center text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">In The Spotlight</h2>
+//           <h2 className="mb-10 text-center text-[24px]  manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">In The Spotlight</h2>
 
 //           <div className="relative">
 //             {/* Arrows */}
@@ -266,8 +266,8 @@
 
 //                     {/* Text */}
 //                     <div className="flex min-h-[320px] flex-1 flex-col justify-center gap-3 px-1 md:px-2">
-//                       <h3 className="text-2xl poppins-900 text-[#117ABA] md:text-[28px]">{s.title}</h3>
-//                       <p className="poppins-800 text-gray-700">{s.byline}</p>
+//                       <h3 className="text-2xl manrope-900 text-[#117ABA] md:text-[28px]">{s.title}</h3>
+//                       <p className="manrope-800 text-gray-700">{s.byline}</p>
 //                       <p className="max-w-2xl text-gray-500">{s.excerpt}</p>
 
 //                       <div className="mt-4">
@@ -492,7 +492,7 @@ export default function HallPage() {
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl"
+              className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"
             >
               Hall Of Fame
             </motion.h1>
@@ -501,7 +501,7 @@ export default function HallPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.05 }}
-              className="poppins-400 mt-5 space-y-4 text-slate-700"
+              className="manrope-400 mt-5 space-y-4 text-slate-700"
             >
               <p>
                 Our journey of growth and leadership in flexible packaging has been consistently recognized by prestigious industry forums worldwide.
@@ -533,7 +533,7 @@ export default function HallPage() {
       {/* ----------------------------- IN THE SPOTLIGHT ----------------------------- */}
       <section className="relative py-14">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <h2 className="mb-10 text-center text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">
+          <h2 className="mb-10 text-center text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">
             In The Spotlight
           </h2>
 
@@ -580,8 +580,8 @@ export default function HallPage() {
 
                     {/* Text */}
                     <div className="flex min-h-[320px] flex-1 flex-col justify-center gap-3 px-1 md:px-2">
-                      <h3 className="text-2xl poppins-900 text-[#117ABA] md:text-[28px]">{s.title}</h3>
-                      <p className="poppins-800 text-gray-700">{s.byline}</p>
+                      <h3 className="text-2xl manrope-900 text-[#117ABA] md:text-[28px]">{s.title}</h3>
+                      <p className="manrope-800 text-gray-700">{s.byline}</p>
                       <p className="max-w-2xl text-gray-500">{s.excerpt}</p>
 
                       <div className="mt-4">

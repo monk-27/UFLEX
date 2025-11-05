@@ -50,7 +50,7 @@
 //                         <span className="subheadtext text-center text-[26px]">Sustainability</span>
 //                     </div>
 //                     <div className="content mx-auto flex w-[80%] flex-col items-center p-8">
-//                         <p className="headstext poppins-400 xxl:text-[24px] mb-6 text-center text-[14px] leading-relaxed">
+//                         <p className="headstext manrope-400 xxl:text-[24px] mb-6 text-center text-[14px] leading-relaxed">
 //                             Empowering a Greener Tomorrow, Today
 //                             <br />
 //                             Sustainability is embedded at the heart of UFlex’s operations, driving the company to innovate responsibly and create packaging solutions that serve both the business and the environment.
@@ -104,7 +104,7 @@
 //             </div>
 //             <div className="w-full rounded-lg bg-white p-6 text-[#2A2A2A] shadow-lg">
 //                 <div className="text-center">
-//                     <p className="headstext poppins-600 xxl:text-[24px] mb-6 text-center text-[14px]">
+//                     <p className="headstext manrope-600 xxl:text-[24px] mb-6 text-center text-[14px]">
 //                             Empowering a Greener Tomorrow, Today
 //                             <br />
 //                             Sustainability is embedded at the heart of UFlex’s operations, driving the company to innovate responsibly and create packaging solutions that serve both the business and the environment.
@@ -241,7 +241,7 @@ function DropdownList({
               className="flex w-full items-center justify-between rounded-lg px-5 py-4 text-left font-semibold text-[#1E1E1E]"
             >
               <div>
-                  <h3 className="text-gray-700 poppins-600 text-lg">
+                  <h3 className="text-gray-700 manrope-600 text-lg">
                     <p className="text-[14px] leading-relaxed opacity-90">{item.title}</p>
 
                   </h3>
@@ -261,7 +261,7 @@ function DropdownList({
                   className="overflow-hidden rounded-b-lg bg-white"
                 >
                   <div className="px-5 pb-5 pt-1 text-[#2A2A2A]">
-                    <div className="poppins-400 px-5 pb-5 pt-1 text-gray-700">
+                    <div className="manrope-400 px-5 pb-5 pt-1 text-gray-700">
 
 
 

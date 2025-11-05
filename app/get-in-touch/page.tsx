@@ -283,7 +283,7 @@ function OfficeCard({ o }: { o: Office }) {
           <Building2 className="h-5 w-5" />
         </span>
         <div>
-          <h3 className="poppins-700 text-lg text-[#117ABA] underline underline-offset-4">
+          <h3 className="manrope-700 text-lg text-[#117ABA] underline underline-offset-4">
             {o.name}
           </h3>
           <p className="text-sm text-slate-600">
@@ -365,7 +365,7 @@ export default function GetInTouch() {
 
           <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 px-4 py-20 sm:px-6 md:flex-row md:gap-12 md:py-24">
             <motion.div {...fadeUp()}>
-              <h1 className="poppins-800 text-3xl text-white drop-shadow md:text-5xl">Get In Touch</h1>
+              <h1 className="manrope-800 text-3xl text-white drop-shadow md:text-5xl">Get In Touch</h1>
               <p className="mt-3 max-w-xl text-white/90">
                 A global leader in flexible packaging with presence across 150+ countries, 9 state-of-the-art
                 manufacturing locations and a workforce of 15,000+ employees.
@@ -399,7 +399,7 @@ export default function GetInTouch() {
             <a href="mailto:corpcomm@uflexltd.com" className="group flex items-center gap-3 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-[2px] hover:shadow-md">
               <div className="rounded-xl bg-[#117ABA] p-3 text-white"><Mail className="h-5 w-5" /></div>
               <div>
-                <p className="poppins-700 text-slate-800">Corporate Communications</p>
+                <p className="manrope-700 text-slate-800">Corporate Communications</p>
                 <p className="text-sm text-slate-600 group-hover:text-slate-700">corpcomm@uflexltd.com</p>
               </div>
             </a>
@@ -407,7 +407,7 @@ export default function GetInTouch() {
             <a href="mailto:feedback@uflexltd.com" className="group flex items-center gap-3 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-[2px] hover:shadow-md">
               <div className="rounded-xl bg-[#117ABA] p-3 text-white"><Mail className="h-5 w-5" /></div>
               <div>
-                <p className="poppins-700 text-slate-800">Feedback / Support</p>
+                <p className="manrope-700 text-slate-800">Feedback / Support</p>
                 <p className="text-sm text-slate-600 group-hover:text-slate-700">feedback@uflexltd.com</p>
               </div>
             </a>
@@ -415,7 +415,7 @@ export default function GetInTouch() {
             <div className="flex items-center gap-3 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/5">
               <div className="rounded-xl bg-[#117ABA] p-3 text-white"><Phone className="h-5 w-5" /></div>
               <div>
-                <p className="poppins-700 text-slate-800">Board Line</p>
+                <p className="manrope-700 text-slate-800">Board Line</p>
                 <p className="text-sm text-slate-600">+91 120 4002121</p>
               </div>
             </div>
@@ -424,7 +424,7 @@ export default function GetInTouch() {
 
         {/* DIRECTORY: Independent filters */}
         <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6">
-          <h2 className="poppins-800 text-2xl text-[#117ABA] text-center sm:text-left">Connect with us</h2>
+          <h2 className="manrope-800 text-2xl text-[#117ABA] text-center sm:text-left">Connect with us</h2>
 
           {/* Controls */}
           <div className="mt-4 grid gap-3 md:grid-cols-12">
@@ -505,29 +505,29 @@ export default function GetInTouch() {
         <section className="border-t border-slate-200 bg-white py-14">
           <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-8 px-4 sm:px-6 md:grid-cols-2">
             <div>
-              <h2 className="poppins-800 text-2xl text-[#117ABA]">Other Queries</h2>
+              <h2 className="manrope-800 text-2xl text-[#117ABA]">Other Queries</h2>
               <p className="mt-2 text-slate-600">
                 For any other enquiries, fill the form below. Fields marked with (*) are mandatory.
               </p>
 
               <form className="mt-6 grid grid-cols-1 gap-4" onSubmit={(e) => e.preventDefault()}>
                 <div className="grid gap-1">
-                  <label htmlFor="name" className="text-sm poppins-600 text-slate-700">Your Name*</label>
+                  <label htmlFor="name" className="text-sm manrope-600 text-slate-700">Your Name*</label>
                   <input id="name" required className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2" placeholder="Enter your name" />
                 </div>
 
                 <div className="grid gap-1">
-                  <label htmlFor="phone" className="text-sm poppins-600 text-slate-700">Contact Number*</label>
+                  <label htmlFor="phone" className="text-sm manrope-600 text-slate-700">Contact Number*</label>
                   <input id="phone" required inputMode="tel" className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2" placeholder="+91 XXXX XXXX" />
                 </div>
 
                 <div className="grid gap-1">
-                  <label htmlFor="email" className="text-sm poppins-600 text-slate-700">Your Email Address*</label>
+                  <label htmlFor="email" className="text-sm manrope-600 text-slate-700">Your Email Address*</label>
                   <input id="email" type="email" required className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2" placeholder="name@company.com" />
                 </div>
 
                 <div className="grid gap-1">
-                  <label htmlFor="enquiry" className="text-sm poppins-600 text-slate-700">Type of Enquiry*</label>
+                  <label htmlFor="enquiry" className="text-sm manrope-600 text-slate-700">Type of Enquiry*</label>
                   <select id="enquiry" required className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2" defaultValue="">
                     <option value="" disabled>Select</option>
                     <option>Media / PR</option>
@@ -539,7 +539,7 @@ export default function GetInTouch() {
                 </div>
 
                 <div className="grid gap-1">
-                  <label htmlFor="message" className="text-sm poppins-600 text-slate-700">Your Message*</label>
+                  <label htmlFor="message" className="text-sm manrope-600 text-slate-700">Your Message*</label>
                   <textarea id="message" required rows={5} className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2" placeholder="Type your enquiry / feedback here..." />
                 </div>
 

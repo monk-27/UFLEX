@@ -235,14 +235,14 @@ const items = [
     title: "Packaging Films Business",
     href: "/packaging-films-business",
     desc: "High-performance BOPET/BOPP films for diverse applications.",
-    img:"/images/films.jpeg"
+    img:"/images/flex.jpeg"
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Packaging-Films-Business-faq-icon21.svg",
   },
   {
     title: "Flexible Packaging Business",
     href: "/flexible-packaging-business",
     desc: "Custom structures for brand impact and efficiency.",
-    img:"/images/flexible.jpeg"
+    img:"/images/flexible.png"
 
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Flexible-Packaging-Business-faq-icon36.svg",
   },
@@ -250,7 +250,7 @@ const items = [
     title: "Aseptic Packaging Business",
     href: "/aseptic-packaging-business",
     desc: "Safe, shelf-stable solutions with extended freshness.",
-    img:"/images/aseptic.jpeg"
+    img:"/images/aseptic.png"
 
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Aseptic-Packaging-Business-faq-icon56.svg",
   },
@@ -258,14 +258,14 @@ const items = [
     title: "Chemicals",
     href: "/chemicals-business",
     desc: "Speciality chemicals powering packaging performance.",
-    img:"/images/chemical.png"
+    img:"/images/chem.jpeg"
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Chemicals-Business-faq-icon20.svg",
   },
   {
     title: "Holography Business",
     href: "/holography-business",
     desc: "Security and decorative holographic solutions.",
-    img:"/images/holography.png"
+    img:"/images/holographys.png"
 
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Holography-Business-faq-icon47.svg",
   },
@@ -273,7 +273,7 @@ const items = [
     title: "Engineering Business",
     href: "/engineering-business",
     desc: "Turnkey packaging machinery and systems.",
-    img:"/images/eng.jpeg"
+    img:"/images/engg.png"
 
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Engineering-Business-faq-icon45.svg",
   },
@@ -281,7 +281,7 @@ const items = [
     title: "Printing Cylinders Business",
     href: "/printing-cylinder-business",
     desc: "Precision cylinders for consistent print quality.",
-    img:"/images/cyl.jpeg"
+    img:"/images/cyls.png"
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Printing-Cylinder-Business-faq-icon03.svg",
   },
   {
@@ -398,13 +398,13 @@ export default function BusinessCardsCarousel() {
                     {/* Title with slim red accent bar */}
                     <div className="flex items-start gap-2 flex-nowrap justify-start">
                       <span className="inline-block h-6 w-[2px] rounded bg-[#D84A3B]" />
-                      <h3 className="text-left text-[18px] md:text-[20px] poppins-500 leading-tight text-[#2C629F]">
+                      <h3 className="text-left text-[18px] md:text-[20px] manrope-500 leading-tight text-[#2C629F]">
                         {card.title}
                       </h3>
                     </div>
 
 
-                    <p className="items-start mt-3 text-left poppins-400 text-[#6D6E71]">
+                    <p className="items-start mt-3 text-left manrope-400 text-[#6D6E71]">
                       {card.desc}
                     </p>
 
@@ -412,7 +412,7 @@ export default function BusinessCardsCarousel() {
                     {/* Arrow link – thin red arrow, aligned left */}
                     <Link
                       href={card.href}
-                      className="mt-6 inline-flex items-start gap-2 text-[#D84A3B] hover:opacity-80"
+                      className="mt-6 inline-flex items-center gap-2 text-[#D84A3B] hover:opacity-80"
                       aria-label={`Open ${card.title}`}
                     >
                       <svg width="38" height="12" viewBox="0 0 38 12" fill="none" aria-hidden="true">
@@ -454,7 +454,7 @@ export default function BusinessCardsCarousel() {
                     className="h-[280px] w-full object-cover"
                   />
                   <div className="flex flex-col items-center px-6 py-6 text-center">
-                    <h3 className="poppins-800 mb-2 text-[18px] text-[#0B3C7D] md:text-xl">
+                    <h3 className="manrope-800 mb-2 text-[18px] text-[#0B3C7D] md:text-xl">
                       {card.title}
                     </h3>
                     <p className="text-[14px] text-gray-700 md:text-base">{card.desc}</p>
@@ -474,11 +474,11 @@ export default function BusinessCardsCarousel() {
                   <div className="p-5 flex flex-col">
                     <div className="flex items-center gap-2 flex-nowrap">
                       <span className="inline-block h-4 w-[2px] rounded bg-[#D84A3B]" />
-                      <h3 className="text-[18px] md:text-[20px] poppins-500 leading-tight text-[#2C629F]">
+                      <h3 className="text-[18px] md:text-[20px] manrope-500 leading-tight text-[#2C629F]">
                         {card.title}
                       </h3>
                     </div>
-                    <p className="mt-3 text-sm leading-relaxed poppins-400 text-[#6D6E71]">{card.desc}</p>
+                    <p className="mt-3 text-sm leading-relaxed manrope-400 text-[#6D6E71]">{card.desc}</p>
                     <Link
                       href={card.href}
                       className="mt-6 inline-flex items-center gap-2 text-[#D84A3B] hover:opacity-80"

@@ -112,10 +112,10 @@ function _SliderCarousel({
     <section className={`relative bg-white py-16 ${className}`}>
       <div className="mx-auto max-w-6xl px-6 text-center">
         {heading && (
-          <h2 className="text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">{heading}</h2>
+          <h2 className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">{heading}</h2>
         )}
         {subheading && (
-          <p className="poppins-400 mx-auto mt-2 max-w-3xl text-[#222] md:text-lg">
+          <p className="manrope-400 mx-auto mt-2 max-w-3xl text-[#222] md:text-lg">
             {subheading}
           </p>
         )}
@@ -143,7 +143,7 @@ function _SliderCarousel({
                     sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <div className="flex flex-col items-center px-6 py-6 text-center">
-                    <h3 className="poppins-800 mb-2 text-[18px] text-[#117ABA] md:text-xl">{card.title}</h3>
+                    <h3 className="manrope-800 mb-2 text-[18px] text-[#117ABA] md:text-xl">{card.title}</h3>
                     <p className="text-[14px] text-gray-700 md:text-base">{card.desc}</p>
                   </div>
                 </div>
@@ -175,7 +175,7 @@ function _SliderCarousel({
                     sizes="100vw"
                   />
                   <div className="flex flex-col items-center px-6 py-6 text-center">
-                    <h3 className="text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">{card.title}</h3>
+                    <h3 className="text-[24px]  manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">{card.title}</h3>
                     <p className="text-[14px] text-gray-700 md:text-base">{card.desc}</p>
                   </div>
                 </div>

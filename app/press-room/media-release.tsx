@@ -41,7 +41,7 @@ export default function MediaReleasesCarousel() {
 
   return (
     <section className="py-10 bg-white">
-      <h2 className="text-center text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl mb-6">
+      <h2 className="text-center text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl mb-6">
         Media Releases
       </h2>
 

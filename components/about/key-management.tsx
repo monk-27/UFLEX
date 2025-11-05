@@ -71,7 +71,7 @@ const KeyManagement = () => {
   return (
     <div className="justify-center items-center min-h-screen mx-auto max-w-[90%] bg-white py-8 sm:py-12 lg:py-12 px-2 sm:px-6 lg:px-8 sm:pt-[78px] pt-[78px]">
       {/* Heading */}
-      <h2 className="text-center text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl"> Key Management</h2>
+      <h2 className="text-center text-[24px]  manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"> Key Management</h2>
 
 
 
@@ -112,18 +112,18 @@ const KeyManagement = () => {
               </div>
 
               {/* Team Member Name */}
-              <h3 className="poppins-600 text-gray-600 text-[16px] text-center sm:text-left mb-2">
+              <h3 className="manrope-600 text-gray-600 text-[16px] text-center sm:text-left mb-2">
                 {member.name}
               </h3>
 
               {/* Team Member Description */}
-              <p className="poppins-400 text-gray-800 text-[14px] sm:text-left mb-[57px] sm:mb-[60px]">
+              <p className="manrope-400 text-gray-800 text-[14px] sm:text-left mb-[57px] sm:mb-[60px]">
                 {member.position}
               </p>
               <div className="mt-4 mb-4 flex justify-center sm:justify-start">
                 <button
                   onClick={() => setOpenIdx(index)}
-                  className={`${colors.titleColor} poppins-700 flex items-center gap-1 hover:gap-2 transition`}
+                  className={`${colors.titleColor} manrope-700 flex items-center gap-1 hover:gap-2 transition`}
                   aria-haspopup="dialog"
                   aria-controls={`exec-modal-${index}`}
                   aria-expanded={openIdx === index}
@@ -188,8 +188,8 @@ const KeyManagement = () => {
                           <Image src={d.img ?? "/placeholder.png"} alt={d.name} fill className="object-cover" />
                         </div>
                         <div>
-                          <h3 id={`exec-title-${openIdx}`} className={`text-xl poppins-800 text-red-900`}>{d.name}</h3>
-                          <p className={`${c.titleColor} poppins-700`}>{d.position}</p>
+                          <h3 id={`exec-title-${openIdx}`} className={`text-xl manrope-800 text-red-900`}>{d.name}</h3>
+                          <p className={`${c.titleColor} manrope-700`}>{d.position}</p>
                         </div>
                       </div>
 
@@ -198,7 +198,7 @@ const KeyManagement = () => {
                       <div className="mt-5 flex justify-end">
                         <button
                           onClick={() => setOpenIdx(null)}
-                          className={`inline-flex items-center justify-center rounded-lg border-2 ${c.border} bg-white px-4 py-2 text-sm poppins-700 ${c.titleColor} hover:bg-white/80 transition`}
+                          className={`inline-flex items-center justify-center rounded-lg border-2 ${c.border} bg-white px-4 py-2 text-sm manrope-700 ${c.titleColor} hover:bg-white/80 transition`}
                         >
                           Close
                         </button>

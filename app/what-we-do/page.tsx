@@ -65,7 +65,7 @@ export default function WhatWeDoPage() {
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl"
+              className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"
             >
               What We Do
             </motion.h1>
@@ -74,7 +74,7 @@ export default function WhatWeDoPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.05 }}
-              className="poppins-400 mt-5 space-y-4 text-slate-700"
+              className="manrope-400 mt-5 space-y-4 text-slate-700"
             >
               <p>
                 We operate across the entire packaging value chain, offering unmatched integration and scale. Our
@@ -111,7 +111,7 @@ export default function WhatWeDoPage() {
       {/* FEATURED STRIP (like your screenshot with arrows) */}
       <section aria-labelledby="featured" className="relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <h2 id="featured" className="text-center text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">
+          <h2 id="featured" className="text-center text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">
             Our Expansion
           </h2>
 
@@ -146,12 +146,12 @@ export default function WhatWeDoPage() {
                     </div>
 
                     <div className="space-y-2 p-5">
-                      <h3 className="text-lg poppins-800 text-gray-900">{it.title}</h3>
-                      <p className={`poppins-400 text-sm text-slate-700`}>
+                      <h3 className="text-lg manrope-800 text-gray-900">{it.title}</h3>
+                      <p className={`manrope-400 text-sm text-slate-700`}>
                         Discover our offerings and success stories.
                       </p>
                       <span
-                        className={`inline-flex items-center text-sm poppins-700 ${c.title} hover:underline underline-offset-4`}
+                        className={`inline-flex items-center text-sm manrope-700 ${c.title} hover:underline underline-offset-4`}
                       >
                         Learn more →
                       </span>

@@ -119,7 +119,7 @@ export function SiteHeader() {
                                 <Link
                                   href={child.href}
                                   className={cn(
-                                    "block rounded-lg px-3 py-2 text-[14px] font-medium",
+                                    "block rounded-lg px-3 py-2 text-[14px] manrope-400",
                                     "text-white/90 hover:bg-white/10 hover:text-white",
                                     childActive && "bg-white/10 text-white"
                                   )}

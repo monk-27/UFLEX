@@ -1220,8 +1220,8 @@ swiper-pagination {
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  /* map font-sans to Poppins */
-  --font-sans: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  /* map font-sans to manrope */
+  --font-sans: "manrope", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
 }
 
 /* =========================================================
@@ -1232,47 +1232,132 @@ swiper-pagination {
 }
 
 /* =========================================================
-   Poppins only
+   manrope only
 ========================================================= */
 /* OPTION 1: self-hosted (recommended) */
 @font-face {
-  font-family: "Poppins";
+  font-family: "manrope";
   src:
-    url("/fonts/Poppins-VariableFont_wght.woff2") format("woff2-variations"),
-    url("/fonts/Poppins-VariableFont_wght.ttf") format("truetype");
+    url("/fonts/manrope-VariableFont_wght.woff2") format("woff2-variations"),
+    url("/fonts/manrope-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
+
+
+@font-face {
+  font-family: "manrope";
+  src:
+    url("/fonts/manrope-VariableFont_wght.woff2") format("woff2-variations"),
+    url("/fonts/manrope-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Extra Light - 200 */
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Light - 300 */
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Regular - 400 */
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Medium - 500 */
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* SemiBold - 600 */
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold - 700 */
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ExtraBold - 800 */
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
 /* OPTION 2: Google Fonts
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=manrope:wght@300;400;500;600;700;800;900&display=swap");
 */
 
 /* Minimal helpers (use only these when needed) */
-/* ---- Poppins helpers (keep once in globals.css) ---- */
-.poppins        { font-family: "Poppins", sans-serif; }
-.poppins-300    { font-family: "Poppins", sans-serif; font-weight: 300; }
-.poppins-400    { font-family: "Poppins", sans-serif; font-weight: 400; }
-.poppins-500    { font-family: "Poppins", sans-serif; font-weight: 500; }
-.poppins-600    { font-family: "Poppins", sans-serif; font-weight: 600; }
-.poppins-700    { font-family: "Poppins", sans-serif; font-weight: 700; }
-.poppins-800    { font-family: "Poppins", sans-serif; font-weight: 800; }
-.poppins-900    { font-family: "Poppins", sans-serif; font-weight: 900; }
+/* ---- manrope helpers (keep once in globals.css) ---- */
+.manrope        { font-family: "manrope", sans-serif; }
+.manrope-300    { font-family: "manrope", sans-serif; font-weight: 300; }
+.manrope-400    { font-family: "manrope", sans-serif; font-weight: 400; }
+.manrope-500    { font-family: "manrope", sans-serif; font-weight: 500; }
+.manrope-600    { font-family: "manrope", sans-serif; font-weight: 600; }
+.manrope-700    { font-family: "manrope", sans-serif; font-weight: 700; }
+.manrope-800    { font-family: "manrope", sans-serif; font-weight: 800; }
+.manrope-900    { font-family: "manrope", sans-serif; font-weight: 900; }
 
-/* Map Tailwind font-sans -> Poppins (already set in your @theme inline) */
+
+
+.manrope        { font-family: "Manrope", sans-serif; }
+.manrope-300    { font-family: "Manrope", sans-serif; font-weight: 300; }
+.manrope-400    { font-family: "Manrope", sans-serif; font-weight: 400; }
+.manrope-500    { font-family: "Manrope", sans-serif; font-weight: 500; }
+.manrope-600    { font-family: "Manrope", sans-serif; font-weight: 600; }
+.manrope-700    { font-family: "Manrope", sans-serif; font-weight: 700; }
+.manrope-800    { font-family: "Manrope", sans-serif; font-weight: 800; }
+.manrope-900    { font-family: "Manrope", sans-serif; font-weight: 900; }
+
+/* Map Tailwind font-sans -> manrope (already set in your @theme inline) */
 
 /* IMPORTANT: Make body white again */
 body {
   color: var(--foreground);
   background: var(--background);  /* <- previously was var(--foreground) */
-  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "manrope", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   letter-spacing: 0.02em;
   line-height: 1.6;
 }
 
 
 /* =========================================================
-   Existing UI styles (kept) — all font-family refs normalized to Poppins
+   Existing UI styles (kept) — all font-family refs normalized to manrope
 ========================================================= */
 
 /* gradient helpers for header and buttons */
@@ -1394,7 +1479,7 @@ swiper-pagination { bottom: 140px !important; }
 
 /* Nav link styles */
 .motion.nav { height: 100%; }
-.nav-link { transition: all .3s ease; display: flex; align-items: center; height: 100%; font-family: "Poppins", sans-serif; }
+.nav-link { transition: all .3s ease; display: flex; align-items: center; height: 100%; font-family: "manrope", sans-serif; }
 .nav-link.hover-effect:hover { background: #fff; }
 .nav-link.hover-effect:hover .text-content { background: -webkit-linear-gradient(left, #fb7165, #fe8854); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
@@ -1417,14 +1502,14 @@ swiper-pagination { bottom: 140px !important; }
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --font-sans: "manrope", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 @media (prefers-color-scheme: dark) {
   :root { --background: #0a0a0a; --foreground: #ededed; }
 }
 
-/* Typography classes previously using other families — now Poppins */
+/* Typography classes previously using other families — now manrope */
 .main,
 .submain,
 .initiative,
@@ -1488,7 +1573,7 @@ swiper-pagination { bottom: 140px !important; }
 .teamimages,
 .teamname,
 .teamdes {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "manrope", sans-serif !important;
 }
 
 

@@ -45,7 +45,7 @@ const Careers = () => {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl"
+                            className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"
                         >
                             Careers
                         </motion.h1>
@@ -54,23 +54,23 @@ const Careers = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.05 }}
-                            className="poppins-400 mt-5 space-y-4 text-slate-700"
+                            className="manrope-400 mt-5 space-y-4 text-slate-700"
                         >
                             <p>
                                 At UFlex, we pride ourselves on fostering an inclusive, caring, and productive environment for our people. As a leading player in the flexible packaging industry, we engage and retain purpose-driven talent through a fair and consistent HR framework. Our entrepreneurial culture empowers employees to drive UFlex’s growth and success.
                             </p>
                             <p>
-                                <span className='poppins-700'>Join us, and be part of a movement that's changing the world, {" "}</span> one package at a time.
+                                <span className='manrope-700'>Join us, and be part of a movement that's changing the world, {" "}</span> one package at a time.
 
                                 UFlex offers job seekers more than a job. It offers them a lifetime of growth with a number of opportunities for continuous development and growth in assorted fields of business.
 
-                                If you are looking for a rewarding career, <span className='poppins-700'> you may write to us at: hr@uflexltd.com</span>
+                                If you are looking for a rewarding career, <span className='manrope-700'> you may write to us at: hr@uflexltd.com</span>
 
                                 All current openings can be viewed at the link below.
 
                                 Click the button to submit your application</p>
                             <div>
-                                <button className='rounded-sm texts-md poppins-600 bg-[#117ABA] text-white w-1/3 mx-2 py-2'>
+                                <button className='rounded-sm texts-md manrope-600 bg-[#117ABA] text-white w-1/3 mx-2 py-2'>
                                     Apply Now
                                 </button>
 
@@ -102,7 +102,7 @@ const Careers = () => {
                     viewport={{ once: true }}
                 >
                     <motion.h3
-                        className="text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl mb-8"
+                        className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl mb-8"
                         initial={{ opacity: 0, y: -20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.2 }}
@@ -112,10 +112,10 @@ const Careers = () => {
 
                     <motion.h2
                         transition={{ duration: 0.7, delay: 0.4 }}
-                        className="text-gray-800 poppins-700 py-[2px] text-[18px] leading-tight md:text-[20px] mb-4"
+                        className="text-gray-800 manrope-700 py-[2px] text-[18px] leading-tight md:text-[20px] mb-4"
                     >
                         At UFlex, we're not just shaping the future of packaging, we're revolutionizing it.{" "}<br />
-                        <span className="text-gray-800 poppins-400">
+                        <span className="text-gray-800 manrope-400">
 
                             For over three decades, we've been at the forefront of innovation, developing advanced solutions that preserve products, protect our planet, and empower our people.</span>
                     </motion.h2>
@@ -146,8 +146,8 @@ const Careers = () => {
                                         </div>
 
                                         <div className="space-y-2 p-5">
-                                            <h3 className="text-lg poppins-800 text-gray-700">{it.title}</h3>
-                                            <p className={`poppins-400 text-sm text-slate-700`}>
+                                            <h3 className="text-lg manrope-800 text-gray-700">{it.title}</h3>
+                                            <p className={`manrope-400 text-sm text-slate-700`}>
                                                 {it.desc}
                                             </p>
 

@@ -18,7 +18,7 @@
 //         viewport={{ once: true }}
 //       >
 //         <motion.h2
-//           className="poppins-800 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent text-3xl md:text-4xl lg:text-5xl"
+//           className="manrope-800 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent text-3xl md:text-4xl lg:text-5xl"
 //           initial={{ opacity: 0, y: -20 }}
 //           whileInView={{ opacity: 1, y: 0 }}
 //           transition={{ duration: 0.7 }}
@@ -38,21 +38,21 @@
 //           viewport={{ once: true }}
 //         >
 //           <motion.p
-//             className="poppins-600 text-base md:text-lg leading-relaxed text-gray-200"
+//             className="manrope-600 text-base md:text-lg leading-relaxed text-gray-200"
 //             variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0 } }}
 //           >
 //             Launched in **2024** to revolutionize workforce development, the UFlex Learning Academy is a comprehensive platform delivering **digital, blended, and classroom courses** across business-critical subjects.<grok-card data-id="8e9d2b" data-type="citation_card"></grok-card>
 //           </motion.p>
 
 //           <motion.p
-//             className="poppins-500 text-sm md:text-base leading-relaxed text-gray-300"
+//             className="manrope-500 text-sm md:text-base leading-relaxed text-gray-300"
 //             variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0 } }}
 //           >
 //             With a dedicated team of certified delivery experts and **Wing Champions** from senior leadership, we create structured learning journeys tailored for Industry 4.0 reskilling—ensuring every employee thrives in a rapidly evolving landscape.<grok-card data-id="870ab3" data-type="citation_card"></grok-card>
 //           </motion.p>
 
 //           <motion.div
-//             className="poppins-700 mt-4 flex items-center gap-2 text-sm md:text-base text-blue-300"
+//             className="manrope-700 mt-4 flex items-center gap-2 text-sm md:text-base text-blue-300"
 //             variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0 } }}
 //           >
 //             <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
@@ -120,7 +120,7 @@ export default function LearnStatus() {
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl leading-tight mb-2">
+              <h2 className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl leading-tight mb-2">
                 UFlex Learning Academy
               </h2>
             </motion.div>
@@ -141,7 +141,7 @@ export default function LearnStatus() {
             >
               {/* Main Description */}
                <motion.p
-            className="poppins-600 text-base md:text-lg leading-relaxed text-gray-600"
+            className="manrope-600 text-base md:text-lg leading-relaxed text-gray-600"
             variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0 } }}
           >
             The UFlex Learning Academy fosters learning and development through a range of off-the-shelf digital, blended and classroom courses on a wide range of subjects.
@@ -151,7 +151,7 @@ Leveraging modern modules and subject matter experts, we strive to create a cult
           </motion.p>
 
           <motion.p
-            className="poppins-500 text-sm md:text-base leading-relaxed text-gray-400"
+            className="manrope-500 text-sm md:text-base leading-relaxed text-gray-400"
             variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0 } }}
           >
             With a dedicated team of certified delivery experts and **Wing Champions** from senior leadership, we create structured learning journeys tailored for Industry 4.0 reskilling—ensuring every employee thrives in a rapidly evolving landscape.
@@ -167,12 +167,12 @@ Leveraging modern modules and subject matter experts, we strive to create a cult
                 }}
                 className="pt-4"
               >
-                <p className="poppins-600 text-gray-700 dark:text-gray-300 text-base mb-3 leading-relaxed">
+                <p className="manrope-600 text-gray-700 dark:text-gray-300 text-base mb-3 leading-relaxed">
                   Ready to elevate your career? Connect with us:
                 </p>
                 <a
                   href="mailto:uflexlearningacademy@uflexltd.com"
-                  className="inline-flex items-center space-x-2 poppins-600 text-[#117ABA] hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold text-base transition-colors duration-200"
+                  className="inline-flex items-center space-x-2 manrope-600 text-[#117ABA] hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold text-base transition-colors duration-200"
                 >
                   <span>uflexlearningacademy@uflexltd.com</span>
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

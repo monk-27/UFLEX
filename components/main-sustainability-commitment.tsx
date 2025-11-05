@@ -104,7 +104,7 @@ function DropdownList({
               className="flex w-full items-center justify-between rounded-lg px-5 py-4 text-left font-semibold text-[#1E1E1E]"
             >
               <div>
-                  <h3 className="text-gray-600 poppins-600 text-lg">
+                  <h3 className="text-gray-600 manrope-600 text-lg">
                     <p className="text-[14px] leading-relaxed opacity-90">{item.title}</p>
 
                   </h3>
@@ -124,7 +124,7 @@ function DropdownList({
                   className="overflow-hidden rounded-b-lg bg-white"
                 >
                   <div className="px-5 pb-5 pt-1 text-[#2A2A2A]">
-                    <div className="poppins-400 px-5 pb-5 pt-1 text-gray-600">
+                    <div className="manrope-400 px-5 pb-5 pt-1 text-gray-600">
 
 
 

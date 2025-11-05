@@ -86,7 +86,7 @@ export default function BodMob() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-center text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">
+        <h2 className="text-center text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">
           Board Of Directors
         </h2>
       </motion.div>
@@ -153,14 +153,14 @@ export default function BodMob() {
                         />
                       </div>
                       <div className="col-span-3 mt-6 flex h-full flex-col place-content-center justify-between lg:col-span-2 lg:mt-0">
-                        <div className="poppins-400 text-center text-sm text-gray-600">
+                        <div className="manrope-400 text-center text-sm text-gray-600">
                           {testimonial.bio}
                         </div>
                         <div>
-                          <h4 className="poppins-600 mt-4 text-right text-gray-800">
+                          <h4 className="manrope-600 mt-4 text-right text-gray-800">
                             {testimonial.name}
                           </h4>
-                          <p className="poppins-400 text-right text-sm text-gray-500">
+                          <p className="manrope-400 text-right text-sm text-gray-500">
                             {testimonial.position}
                           </p>
                         </div>

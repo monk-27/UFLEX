@@ -17,7 +17,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      {/* font-sans -> Poppins (via globals.css),
+      {/* font-sans -> manrope (via globals.css),
           bg-white guarantees the white canvas */}
       <body className="font-sans antialiased bg-white ">
         <a
