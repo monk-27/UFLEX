@@ -6,6 +6,7 @@ import Slider, { Settings as SlickSettings } from "react-slick";
 import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ExpandableText from "./expandabletext";
 
 /* ------------------------------- THEME ------------------------------- */
 const BRAND = {
@@ -153,30 +154,57 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
 /* ---------------------------- PAGE SECTIONS --------------------------- */
 function InvestorsIntro() {
   const [expanded, setExpanded] = useState(false);
+
+
+  const packagingData = [
+    {
+        "id": "Investors",
+        title: "Investors",
+        image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1974&auto=format&fit=crop",
+        "imageAlt": "UFlex Flexible Packaging Solutions",
+        paragraphs: [
+           "At UFlex, we are focused on delivering sustainable, responsible, and profitable growth driven by innovation, operational efficiency, and prudent capital allocation. Supported by a strong balance sheet, we continue to strengthen our presence across packaging films, converting, and recycling, while expanding globally in a calibrated and future-focused manner.",
+           "As we grow, we remain committed to manufacturing excellence, cost competitiveness, and sustainable packaging leadership, underpinned by robust governance and environmental responsibility.",
+           "We are also progressing on a transformation journey to build a future-ready organization, leveraging digitalization, advanced recycling, circular material solutions, and customer-centric innovation. Through these efforts, we aim to create enduring stakeholder value and contribute meaningfully to a more resource-efficient global packaging ecosystem."
+        ]
+    }
+
+];
   return (
     <section className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-4 sm:px-6 lg:px-0 py-14">
       <div>
         <h1 className="text-[24px]  poppins-600 text-[#117ABA] md:text-[36px] md:text-5xl">
           Investors
         </h1>
-        <p className="mt-6 text-slate-700 text-lg leading-7">
-          Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-          a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+        {/* <p className="mt-6 text-slate-700 text-lg leading-7">
+          At UFlex, we are focused on delivering sustainable, 
+          responsible, and profitable growth driven by innovation, operational 
+          efficiency, and prudent capital allocation. Supported by a strong balance sheet, 
+          we continue to strengthen our presence across packaging films, converting, and recycling, 
+          while expanding globally in a calibrated and future-focused manner.
           {expanded && (
             <>
               {" "}Remaining essentially unchanged, it was popularised in the 1960s with the release of Letraset sheets
               containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker.
             </>
           )}
-        </p>
-        <button
+        </p> */}
+        {packagingData.map((section, idx) => (
+                                    <ExpandableText
+                                        key={idx}
+                                        modalTitle={section.title}
+                                        imageSrc={section.image}
+                                        imageAlt={section.title}
+                                        paragraphs={section.paragraphs}
+                                    />
+                                ))}
+        {/* <button
           onClick={() => setExpanded((v) => !v)}
           className="mt-6 inline-flex items-center rounded-full bg-[#117ABA] px-6 py-3 text-white shadow-md hover:opacity-95"
           
         >
           {expanded ? "Read Less" : "Read More"}
-        </button>
+        </button> */}
       </div>
 
       <div className="relative aspect-[16/9] w-full">

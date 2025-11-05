@@ -122,12 +122,12 @@ const keyPeopleMany: Leader[] = [
             "With nearly three decades of experience in strategic planning, project management, and business excellence, Mr. Izhar currently leads UFlex’s Printing cylinders business. His previous roles incl...",
         cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
     },
-    
+
 ];
 const accreditations: AccreditationItem[] = [
     { image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/client-image/clients_DNV-GL-Management-System-Certificate-ISO-14001-2015-for-Manufacture-of-cylinder-for-rotogravure-printing-applications.jpg" },
     { image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/client-image/clients_DNV-GL-Management-System-Certificate-ISO-9001-2015-for-Manufacture-of-cylinder-and-flexo-plates-for-rotogravure-flexo-printing-applications.jpg" },
-    
+
 
 
 
@@ -135,17 +135,17 @@ const accreditations: AccreditationItem[] = [
 
 const packagingData = [
     {
-  "id": "Printing Cylinders Business",
- title: "Printing Cylinders Business",
-  image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Printing-Cylinder-Business34.jpg",
-  "imageAlt": "UFlex Flexible Packaging Solutions",
-  paragraphs: [
-    "UFlex printing cylinders business enforces stringent quality control at every stage of production to deliver world-class cylinders. With advanced technology, the business manages the complete cylinder production process, starting from the steel base, copper plating, and surface finishing to digital engraving, chrome plating, and final proof printing.",
-    "With high-end CAD software, streamlined processes, and collaborative efforts across departments, we deliver tailored products to meet evolving global demands. This dedication, coupled with our state-of-the-art facilities, positions UFlex as a leading provider capable of fulfilling our clients' diverse needs with precision and efficiency.",
-    "Our production facilities, located in Noida, Uttar Pradesh, and Jammu, J&K, India, are equipped with the latest innovations, including the Flexo ‘Xlarge’ laser for high-definition imaging up to 5080 DPI, and the Schepers laser for superior precision. These advancements place UFlex at the forefront of packaging, corrugated printing, specialized coatings, embossing, decorative laminates, and security features.\n\nOur digital processing technology ensures perfect registration during rotogravure production, offering a powerful combination of electronically engraved and chemically etched embossing cylinders. With ongoing innovations, UFlex continues to lead in delivering unparalleled quality and efficiency for all printing applications.",
-    "We enforce stringent quality control at every stage of production to deliver world-class cylinders. Our meticulous practices include regular calibration of scanners, monitors, and prepress digital-cylinder proofs, as well as detailed inspection of H/T images on color-calibrated monitors. We dynamically balance each cylinder at 500 RPM and ensure precise accuracy in cone and bore blueprints."
-  ]
-}
+        "id": "Printing Cylinders Business",
+        title: "Printing Cylinders Business",
+        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Printing-Cylinder-Business34.jpg",
+        "imageAlt": "UFlex Flexible Packaging Solutions",
+        paragraphs: [
+            "UFlex printing cylinders business enforces stringent quality control at every stage of production to deliver world-class cylinders. With advanced technology, the business manages the complete cylinder production process, starting from the steel base, copper plating, and surface finishing to digital engraving, chrome plating, and final proof printing.",
+            "With high-end CAD software, streamlined processes, and collaborative efforts across departments, we deliver tailored products to meet evolving global demands. This dedication, coupled with our state-of-the-art facilities, positions UFlex as a leading provider capable of fulfilling our clients' diverse needs with precision and efficiency.",
+            "Our production facilities, located in Noida, Uttar Pradesh, and Jammu, J&K, India, are equipped with the latest innovations, including the Flexo ‘Xlarge’ laser for high-definition imaging up to 5080 DPI, and the Schepers laser for superior precision. These advancements place UFlex at the forefront of packaging, corrugated printing, specialized coatings, embossing, decorative laminates, and security features.\n\nOur digital processing technology ensures perfect registration during rotogravure production, offering a powerful combination of electronically engraved and chemically etched embossing cylinders. With ongoing innovations, UFlex continues to lead in delivering unparalleled quality and efficiency for all printing applications.",
+            "We enforce stringent quality control at every stage of production to deliver world-class cylinders. Our meticulous practices include regular calibration of scanners, monitors, and prepress digital-cylinder proofs, as well as detailed inspection of H/T images on color-calibrated monitors. We dynamically balance each cylinder at 500 RPM and ensure precise accuracy in cone and bore blueprints."
+        ]
+    }
 
 ];
 const CylComp = () => {
@@ -167,14 +167,14 @@ const CylComp = () => {
 
                         </motion.h1>
                         {packagingData.map((section, idx) => (
-                                                                           <ExpandableText
-                                                                               key={idx}
-                                                                               modalTitle={section.title}
-                                                                               imageSrc={section.image}
-                                                                               imageAlt={section.title}
-                                                                               paragraphs={section.paragraphs}
-                                                                           />
-                                                                       ))}
+                            <ExpandableText
+                                key={idx}
+                                modalTitle={section.title}
+                                imageSrc={section.image}
+                                imageAlt={section.title}
+                                paragraphs={section.paragraphs}
+                            />
+                        ))}
                     </div>
 
                     <motion.div
@@ -251,10 +251,10 @@ const CylComp = () => {
                     >
                         <p className='poppins-800'>
                             Acting today for a sustainable tomorrow</p>
-                        
-<p>
-    Through energy-efficient technologies, eco-friendly processes, and responsible waste management, we are proud to foster an eco-friendly environment at our plants.
-</p>
+
+                        <p>
+                            Through energy-efficient technologies, eco-friendly processes, and responsible waste management, we are proud to foster an eco-friendly environment at our plants.
+                        </p>
                     </motion.div>
                 </div>
                 <OverlayModules
