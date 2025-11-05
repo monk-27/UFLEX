@@ -141,7 +141,7 @@ export default function BusinessAwards() {
   return (
     <section className="py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <h2 className="mb-8 text-center text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">
+        <h2 className="mb-8 text-center text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">
           Business Awards
         </h2>
 

@@ -492,7 +492,7 @@ export default function HallPage() {
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-[24px]  poppins-600 text-[#117ABA] md:text-[36px] md:text-5xl"
+              className="text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl"
             >
               Hall Of Fame
             </motion.h1>
@@ -533,7 +533,7 @@ export default function HallPage() {
       {/* ----------------------------- IN THE SPOTLIGHT ----------------------------- */}
       <section className="relative py-14">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <h2 className="mb-10 text-center text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">
+          <h2 className="mb-10 text-center text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">
             In The Spotlight
           </h2>
 

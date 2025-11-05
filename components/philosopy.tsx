@@ -157,7 +157,7 @@ const settingsmob = {
   return (
     <section className="relative bg-white py-16">
       <div className="mx-auto max-w-6xl px-6 text-center">
-        <h2 className="text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">People’s philosophy</h2>
+        <h2 className="ttext-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">People’s philosophy</h2>
         <p className="poppins-400 mx-auto mt-2 max-w-3xl text-[#222] md:text-lg">
           Our staunch beliefs, our DNA - Our values
         </p>

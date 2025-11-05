@@ -28,7 +28,7 @@ export default function HomePage() {
         viewport={{ once: true }}
       >
         <motion.h3
-          className="text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl"
+          className="text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}

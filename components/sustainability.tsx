@@ -159,7 +159,7 @@ export default function SustainabilityComp() {
       {/* Header Bar */}
       <div className="absolute top-0 left-0 right-0 z-10 bg-white py-4 md:py-6">
         <div className="mx-auto max-w-7xl px-5 md:px-20">
-          <h2 className="text-center text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">
+          <h2 className="text-center text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">
             Sustainability
           </h2>
         </div>

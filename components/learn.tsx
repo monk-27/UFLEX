@@ -103,11 +103,11 @@ export default function LearnStatus() {
       
       {/* Card Container - 50/50 Split */}
       <div className="relative ">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch gap-0  overflow-hidden shadow-2xl bg-white/95 dark:bg-slate-900/95 border border-white/20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch gap-0  overflow-hidd">
           
           {/* Left: Text Content - Full Width on Mobile */}
           <motion.div
-            className="p-8 md:p-10 lg:p-12 space-y-6 text-left bg-gradient-to-br from-white/80 to-slate-50/80 dark:from-slate-900/80 dark:to-slate-800/80"
+            className="p-8 md:p-10 lg:p-12 space-y-6 text-left "
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -120,7 +120,7 @@ export default function LearnStatus() {
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-[24px]  poppins-600 text-[#117ABA] md:text-[36px] md:text-5xl leading-tight mb-2">
+              <h2 className="text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl leading-tight mb-2">
                 UFlex Learning Academy
               </h2>
             </motion.div>
@@ -191,7 +191,7 @@ Leveraging modern modules and subject matter experts, we strive to create a cult
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <div className="absolute inset-0 bg-white" />
+            <div className="absolute " />
             <Image
               src="https://uflex.wpdevstudio.site/HTML/uploaded-files/page-images/image07.jpg"
               alt="UFlex Learning Academy"

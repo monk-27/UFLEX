@@ -29,7 +29,7 @@ const GlobalFootprint = () => {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <h2 className=" text-center text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">Our Global Footprint</h2>
+        <h2 className="text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl text-center">Our Global Footprint</h2>
 
 
 

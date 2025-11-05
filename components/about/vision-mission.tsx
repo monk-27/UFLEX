@@ -4,7 +4,7 @@ const VisionMission = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className=" text-center text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl ">Our Vision & Mission</h2>
+        <h2 className=" text-center text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl ">Our Vision & Mission</h2>
         <p className="text-center poppins-600 text-gray-600 mb-12 max-w-2xl mx-auto">
           Guiding principles that drive our commitment to excellence and innovation
         </p>

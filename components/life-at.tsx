@@ -19,7 +19,7 @@ export default function LifeatModules() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">Life at UFlex</h2>
+        <h2 className="text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">Life at UFlex</h2>
         <h3
           className="font-EB-extrabold mt-0 text-[16px] text-[#181818] sm:mt-2 md:text-3xl"
           style={{ lineHeight: "124%" }}

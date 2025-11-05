@@ -65,7 +65,7 @@ export default function WhatWeDoPage() {
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl"
+              className="text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl"
             >
               What We Do
             </motion.h1>
@@ -111,7 +111,7 @@ export default function WhatWeDoPage() {
       {/* FEATURED STRIP (like your screenshot with arrows) */}
       <section aria-labelledby="featured" className="relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <h2 id="featured" className="text-center text-[24px]  poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">
+          <h2 id="featured" className="text-center text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">
             Our Expansion
           </h2>
 
