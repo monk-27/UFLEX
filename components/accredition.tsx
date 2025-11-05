@@ -127,7 +127,7 @@ export default function AccreditationsSlider({
                 viewport={{ once: true }}
             >
                 <motion.h3
-                    className="poppins-800 mb-10 text-3xl text-[#117ABA] sm:text-6xl md:mb-12"
+                    className="text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl md:mb-8"
                     initial={{ opacity: 0, y: -16 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.15 }}

@@ -143,7 +143,7 @@ const ChemicalsComp = () => {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-[24px]  poppins-600 text-[#117ABA] md:text-[36px] md:text-5xl"
+                            className="text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl"
                         >
                             Chemicals
 
@@ -208,7 +208,7 @@ const ChemicalsComp = () => {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="mb-12 text-[24px] poppins-600 text-[#117ABA] md:text-[36px] md:text-5xl"
+                            className="mb-12 text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl"
                         >
                             Sustainability
 

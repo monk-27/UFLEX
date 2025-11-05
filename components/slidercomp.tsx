@@ -112,7 +112,7 @@ function _SliderCarousel({
     <section className={`relative bg-white py-16 ${className}`}>
       <div className="mx-auto max-w-6xl px-6 text-center">
         {heading && (
-          <h2 className="poppins-800 text-4xl text-[#117ABA] md:text-5xl">{heading}</h2>
+          <h2 className="text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">{heading}</h2>
         )}
         {subheading && (
           <p className="poppins-400 mx-auto mt-2 max-w-3xl text-[#222] md:text-lg">

@@ -76,7 +76,19 @@ function _LeaderSpotlight({
         : false;
 
     return (
-      <section key={`${p.name}-${idx}`} className={`rounded-2xl border-2 border-gray-400 bg-gray-100 py-10 md:py-14 sm:mx-12`}>
+      <div>
+         <motion.h3
+                    className="text-center text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl md:mb-8 my-6"
+                    initial={{ opacity: 0, y: -16 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.15 }}
+                >
+                    Key People
+                </motion.h3>
+          <section key={`${p.name}-${idx}`} className={`rounded-2xl border-2 border-gray-400 bg-gray-100 py-10 md:py-14 sm:mx-12`}>
+
+        
+         
         <div
           className={`mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 px-4 md:grid-cols-2 md:px-8 ${className}`}
         >
@@ -133,6 +145,7 @@ function _LeaderSpotlight({
           </motion.div>
         </div>
       </section>
+      </div>
     );
   };
 

@@ -76,7 +76,7 @@ function _OverlayModules({
       {/* Title block */}
       <div className="mx-auto max-w-4xl">
         {heading && (
-          <h2 className="text-[24px]  poppins-600 text-[#117ABA] md:text-[36px] md:text-5xl">
+          <h2 className="text-[24px] poppins-600 text-[#117ABA] md:text-[48px] md:text-5xl">
             {heading}
           </h2>
         )}
