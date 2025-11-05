@@ -36,7 +36,7 @@ const baseNav: NavItem[] = [
   { href: "/investors", label: "Investors" },
   { href: "/hall-of-fame", label: "Hall of Fame" },
   { href: "/careers", label: "Careers" },
-  { href: "/press-room", label: "Press Room" },
+  { href: "/press-room", label: "Press\u00A0Room" },
 ]
 
 export function SiteHeader() {
@@ -97,6 +97,26 @@ export function SiteHeader() {
                   )}
                 >
                   {item.label}
+
+                  {hasChildren && (
+          <svg
+            className={cn(
+              "h-3.5 w-3.5 ml-2 transition-transform duration-200",
+              isOpen ? "rotate-180" : "rotate-0"
+            )}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2.5}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        )}
                 </Link>
 
                 {/* Desktop dropdown */}

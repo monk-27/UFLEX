@@ -8,7 +8,7 @@ import { Play } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <div className="hero-section relative h-[270px] w-full overflow-hidden bg-white md:w-full md:h-[580px]">
+    <div className=" relative h-[270px] w-full overflow-hidden bg-white md:w-full md:h-[580px]">
         {/* Background Image Container */}
         <motion.div
           className="absolute top-0 left-0 h-[270px] w-full md:w-full md:h-full"

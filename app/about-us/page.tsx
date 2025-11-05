@@ -28,21 +28,21 @@ export default function AboutPage() {
       <SiteHeader />
       <section className="bg-white">
         <Hero />
-         <CompanyInfo />
-         <VisionMission />
-         <GlobalFootprint />
-         <div className="hidden md:block">
+        <CompanyInfo />
+        <VisionMission />
+        <GlobalFootprint />
+        <div className="">
           <BoardOfDirectors />
         </div>
-        <div className="block sm:hidden space-y-4">
+        {/* <div className="block sm:hidden space-y-4">
           <BodMob />
-        </div>
-        {/*
+        </div> */}
+        
 
         
 
         <KeyManagement />
-        <Journey /> */}
+        <Journey /> 
       </section>
       <SiteFooter />
     </main>

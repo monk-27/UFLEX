@@ -26,24 +26,24 @@ const GlobalFootprint = () => {
   }
 
   return (
-    <section className="py-20 bg-white">
+    <section className="mt-[30px] px-4 py-0 text-center sm:mt-8  sm:py-10 md:px-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <h2 className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl text-center">Our Global Footprint</h2>
 
 
 
-        <p className="manrope-600  text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        <p className="text-center manrope-400 mt-0 text-[16px] text-[#181818] sm:mt-2 md:text-[20px]">
           Manufacturing excellence across five continents
         </p>
-        <div className="flex items-center justify-center">
+        <div className="mt-12 flex items-center justify-center">
           <Image src="/images/map.png"
-            height={1400} width={1400} alt={""} />
+            height={1500} width={1700} alt={""} />
         </div>
 
         
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="mt-12 grid md:grid-cols-2 gap-12">
           <div className="border-2 border-gray-400 bg-gray-100 p-8 rounded-lg">
             <h3 className="text-2xl manrope-800 mb-6 text-[#117ABA] ">Manufacturing Facilities in India</h3>
             <ul className="space-y-4">

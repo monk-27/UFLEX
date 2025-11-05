@@ -12,7 +12,7 @@ const CompanyInfo = () => {
       <section className="py-16 bg-white md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Top Label */}
-          <p className="text-sm font-medium uppercase tracking-wider text-gray-500">
+          <p className="text-sm manrope-400 uppercase tracking-wider text-gray-500">
             About Us
           </p>
 
@@ -46,7 +46,7 @@ const CompanyInfo = () => {
               {/* Read More Trigger */}
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="inline-flex items-center gap-2 manrope-400 text-gray-700 transition-colors"
+                className="inline-flex items-center gap-2 manrope-400 text-[#117ABA] transition-colors"
               >
                 Read More
                 <ArrowRight className="h-4 w-4" />
