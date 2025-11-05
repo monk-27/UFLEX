@@ -138,7 +138,7 @@ import Image from 'next/image';
 
 export default function SustainabilityComp() {
   return (
-    <div className="relative h-[570px] w-full overflow-hidden bg-white md:h-[580px]">
+    <div className="hero-section relative h-[245px] w-full overflow-hidden bg-white md:h-[842px]">
       {/* Background Image - Full Bleed */}
       <motion.div
         className="absolute inset-0"
@@ -173,7 +173,7 @@ export default function SustainabilityComp() {
 
       {/* Text Content */}
       <motion.div
-        className="absolute inset-0 flex flex-col justify-end px-5 pb-20 text-white md:bottom-20 md:pb-10 md:pl-13"
+        className="absolute inset-0 flex flex-col justify-end px-5 pb-20 text-white md:bottom-40 md:pb-20 md:pl-13"
         initial="hidden"
         animate="visible"
         variants={{
