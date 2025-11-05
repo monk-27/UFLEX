@@ -11,14 +11,14 @@ import Link from "next/link";
 
 const items = [
   {
-    title: "Packaging Films Business",
+    title: "Packaging Films",
     href: "/packaging-films-business",
     desc: "High-performance BOPET/BOPP films for diverse applications.",
     img: "/images/flex.jpeg"
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Packaging-Films-Business-faq-icon21.svg",
   },
   {
-    title: "Flexible Packaging Business",
+    title: "Flexible Packaging",
     href: "/flexible-packaging-business",
     desc: "Custom structures for brand impact and efficiency.",
     img: "/images/flexible.png"
@@ -26,7 +26,7 @@ const items = [
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Flexible-Packaging-Business-faq-icon36.svg",
   },
   {
-    title: "Aseptic Packaging Business",
+    title: "Aseptic Packaging",
     href: "/aseptic-packaging-business",
     desc: "Safe, shelf-stable solutions with extended freshness.",
     img: "/images/aseptic.png"
@@ -41,7 +41,7 @@ const items = [
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Chemicals-Business-faq-icon20.svg",
   },
   {
-    title: "Holography Business",
+    title: "Holography",
     href: "/holography-business",
     desc: "Security and decorative holographic solutions.",
     img: "/images/holographys.png"
@@ -49,7 +49,7 @@ const items = [
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Holography-Business-faq-icon47.svg",
   },
   {
-    title: "Engineering Business",
+    title: "Engineering",
     href: "/engineering-business",
     desc: "Turnkey packaging machinery and systems.",
     img: "/images/engg.png"
@@ -57,14 +57,14 @@ const items = [
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Engineering-Business-faq-icon45.svg",
   },
   {
-    title: "Printing Cylinders Business",
+    title: "Printing Cylinders",
     href: "/printing-cylinder-business",
     desc: "Precision cylinders for consistent print quality.",
     img: "/images/cyls.png"
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Printing-Cylinder-Business-faq-icon03.svg",
   },
   {
-    title: "FlexiTubes Business",
+    title: "FlexiTubes",
     href: "/flexitube-business",
     desc: "Durable, brandable tubes for personal care and more.",
     img: "/images/flexible.jpeg"
