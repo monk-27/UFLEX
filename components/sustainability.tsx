@@ -163,7 +163,7 @@ export default function SustainabilityComp() {
       ></motion.div>
 
       {/* Header Bar */}
-      <div className="absolute top-0 left-0 right-0 z-10 bg-white py-4 md:py-6">
+      <div className="absolute top-0 left-0 right-0 z-10 bg-white py-4 md:py-12">
         <div className="mx-auto max-w-7xl px-5 md:px-20">
           <h2 className="text-center text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">
             Sustainability
