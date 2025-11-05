@@ -67,7 +67,7 @@ export function SiteHeader() {
             width={180}
             height={48}
             className="h-12 w-auto"
-            priority
+            // priority
           />
         </Link>
 
@@ -103,11 +103,11 @@ export function SiteHeader() {
                 {hasChildren && (
                   <AnimatePresence>
                     {isOpen && (
-                      <motion.div
-                        initial={{ opacity: 0, y: -6 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -6 }}
-                        transition={{ duration: 0.18, ease: "easeOut" }}
+                      <div
+                        // initial={{ opacity: 0, y: -6 }}
+                        // animate={{ opacity: 1, y: 0 }}
+                        // exit={{ opacity: 0, y: -6 }}
+                        // transition={{ duration: 0.18, ease: "easeOut" }}
                         className="absolute left-0 top-[calc(100%+12px)] min-w-[280px] rounded-xl border border-white/15 bg-black/30 backdrop-blur-md p-2 shadow-lg"
                         onMouseLeave={() => setHoverMenu(null)}
                       >
@@ -130,7 +130,7 @@ export function SiteHeader() {
                             )
                           })}
                         </ul>
-                      </motion.div>
+                      </div>
                     )}
                   </AnimatePresence>
                 )}

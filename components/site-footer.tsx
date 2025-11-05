@@ -23,7 +23,7 @@ export function SiteFooter() {
                 width={180}
                 height={56}
                 className="h-[56px] w-auto"
-                priority
+                // priority
               />
             </Link>
           </div>

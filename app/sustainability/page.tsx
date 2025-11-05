@@ -61,7 +61,7 @@ export default function Page() {
       Sustainability
     </motion.h3>
 
-    <motion.p
+    <motion.span
       className="mt-2 max-w-2xl text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[18px]"
       variants={{
         hidden: { opacity: 0, y: 20 },
@@ -94,7 +94,7 @@ export default function Page() {
           </svg>
         </button>
       </motion.div>
-    </motion.p>
+    </motion.span>
   </motion.div>
 </div>
      

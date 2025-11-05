@@ -1,8 +1,10 @@
 
+"use client";
+import { de } from "date-fns/locale";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export function GlobalFootprint() {
+const GlobalFootprint = () => {
   const locations = {
     India: [
       "Sanand (Aseptic Packaging)",
@@ -70,3 +72,4 @@ export function GlobalFootprint() {
     </section>
   )
 }
+export default GlobalFootprint;

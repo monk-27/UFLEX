@@ -1,4 +1,6 @@
-export function VisionMission() {
+"use client";
+
+const VisionMission = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -29,3 +31,4 @@ export function VisionMission() {
     </section>
   )
 }
+export default VisionMission;
