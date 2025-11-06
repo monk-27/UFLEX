@@ -318,8 +318,7 @@ export default function BusinessCardsCarousel() {
 
 
   .slick-dots {
-  color: #A49F9EFF !important; /* red shade */
-    opacity: 0.4;
+  
     margin-top: 24px; /* adjust as needed */
     position: static !important; /* ensures it stays below slides */
   }

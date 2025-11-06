@@ -48,9 +48,9 @@ export default function ExpandableText({
         {paragraphs.length > 2 && (
           <button
             onClick={() => setOpen(true)}
-            className='text-white bg-[#117ABA] rounded-sm p-2 text-sm'
+            className='text-[#117ABA] rounded-sm p-2 text-sm manrope-500 cursor-pointer'
           >
-            Read More
+            Read More {">>"}
           </button>
         )}
       </motion.div>
