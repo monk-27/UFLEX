@@ -1,13 +1,6 @@
-"use client";
-import HallPage from '@/components/hall-off-fame'
-import React from 'react'
+// app/hall-of-fame/page.tsx  (or wherever your route is)
+import HallPage from '@/components/hall-off-fame';
 
-const page = () => {
-  return (
-    <div>
-      <HallPage/>
-    </div>
-  )
+export default function Page() {
+  return <HallPage />;
 }
-
-export default page
