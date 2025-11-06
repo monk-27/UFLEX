@@ -11,6 +11,7 @@ import MainSustainabilityVisionComp from "@/components/main-sustainibility-visio
 import MainSustainabilityCOMMComp from "@/components/main-sustainability-commitment"
 import ReportsGallery from "@/components/main-sustainibility-reports"
 import Image from "next/image"
+import SustainabilityReportsCarousel from "@/components/main-sustainability-commitment"
 
 export default function Page() {
   return (
@@ -100,8 +101,17 @@ export default function Page() {
 
 
       <MainSustainabilityComp />
+      <motion.h3
+          className="text-center text-[24px] manrope-700 text-[#117ABA] md:text-[42px] mb-8"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+        >
+          UFlex's Commitment to a Circular Economy
+        </motion.h3>
       <MainSustainabilityVisionComp />
-      <MainSustainabilityCOMMComp />
+      <SustainabilityReportsCarousel />
+
 
 
 
