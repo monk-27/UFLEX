@@ -177,7 +177,7 @@ export default function BusinessCardsCarousel() {
                     {/* Title with slim red accent bar */}
                     <div className="flex items-start gap-2 flex-nowrap justify-start">
                       <span className="inline-block h-6 w-[2px] rounded bg-[#D84A3B]" />
-                      <h3 className="text-left text-[18px] md:text-[20px] manrope-500 leading-tight text-[#2C629F]">
+                      <h3 className="text-left text-[18px] md:text-[20px] manrope-500 leading-tight text-[#117ABA]">
                         {card.title}
                       </h3>
                     </div>
@@ -257,7 +257,7 @@ export default function BusinessCardsCarousel() {
                     <p className="text-[14px] text-gray-700 md:text-base">{card.desc}</p>
                   </div>
                 </div> */}
-                <div className="md:grid md:grid-cols-2 h-full">
+                <div className="bg-gray-100 md:grid md:grid-cols-2 h-full">
                   <div className="relative h-48 md:h-auto">
                     <Image
                       src={card.img}
@@ -271,7 +271,7 @@ export default function BusinessCardsCarousel() {
                   <div className="p-5 flex flex-col">
                     <div className="flex items-center gap-2 flex-nowrap">
                       <span className="inline-block h-4 w-[2px] rounded bg-[#D84A3B]" />
-                      <h3 className="text-[18px] md:text-[20px] manrope-500 leading-tight text-[#2C629F]">
+                      <h3 className="text-[18px] md:text-[20px] manrope-500 leading-tight text-[#117ABA]">
                         {card.title}
                       </h3>
                     </div>
@@ -294,14 +294,45 @@ export default function BusinessCardsCarousel() {
         </Slider>
       </div>
       <style jsx global>{`
-      @media (max-width: 768px) {
-        .slick-list { padding: 0 !important; }
-        .slick-track { display: flex !important; align-items: stretch !important; }
-        .slick-slide { height: auto !important; }
-        .slick-slide > div { width: 100% !important; margin: 0 auto !important; display: flex !important; }
-        .slick-slide > div > div { width: 100% !important; max-width: 420px; } /* optional max width */
-      }
-    `}</style>
+  @media (max-width: 768px) {
+    .slick-list {
+      padding: 0 !important;
+    }
+    .slick-track {
+      display: flex !important;
+      align-items: stretch !important;
+    }
+    .slick-slide {
+      height: auto !important;
+    }
+    .slick-slide > div {
+      width: 100% !important;
+      margin: 0 auto !important;
+      display: flex !important;
+    }
+    .slick-slide > div > div {
+      width: 100% !important;
+      max-width: 420px;
+    }
+  }
+
+
+  .slick-dots {
+  color: #A49F9EFF !important; /* red shade */
+    opacity: 0.4;
+    margin-top: 24px; /* adjust as needed */
+    position: static !important; /* ensures it stays below slides */
+  }
+.slick-dots li.slick-active button:before {
+    color: #117ABA !important; /* blue shade */
+    opacity: 2;
+  }
+  /* Optional: center the dots perfectly */
+  .slick-dots li button:before {
+    font-size: 10px; /* smaller dots look cleaner on mobile */
+  }
+`}</style>
+
     </section>
   );
 }
