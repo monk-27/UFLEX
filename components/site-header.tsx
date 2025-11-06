@@ -99,6 +99,7 @@ export function SiteHeader() {
                   {item.label}
 
                   {hasChildren && (
+                    
           <svg
             className={cn(
               "h-3.5 w-3.5 ml-2 transition-transform duration-200",
