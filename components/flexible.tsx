@@ -341,10 +341,10 @@ const FlexibleComp = () => {
                         initial={{ opacity: 0, scale: 0.98 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
-                        className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl border-2 border-blue-400 shadow ring-4 ring-blue-200"
+                        className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl "
                     >
                         <Image
-                            src="https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Flexible-Packaging-Business04.jpg"
+                            src="/images/flexible.png"
                             alt="UFlex capabilities across the value chain"
                             fill
                             className="object-cover"

@@ -8,6 +8,7 @@ import { Leader, LeaderSpotlight } from './leader'
 import { AwardItem, AwardsAccolades } from './awards'
 import Accreditions, { AccreditationItem } from './accredition'
 import AccreditationsSlider from './accredition'
+import ExpandableText from './expandabletext'
 
 
 
@@ -40,11 +41,7 @@ const SliderItems: SliderItem[] = [
         title: "Asepto Design",
         desc: "The creative powerhouse within Asepto, dedicated to shaping the visual identity of your products.",
     },
-    {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-05023500235.jpg",
-        title: "Aseptic Carbons",
-        desc: "Our aseptic liquid packaging cartons encompass six layers of protection that keeps the freshness preserved.",
-    },
+    
     // ...add the rest
 ];
 
@@ -156,6 +153,22 @@ const accreditations: AccreditationItem[] = [
     { image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/client-image/clients_ISO-22000-2005-The-food-Safety-Management-System-Intertek.jpg" },
     { image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/client-image/clients_ISO-9001-20015-1SO-140001-2015-OHSAS-18001-2007-Design-manufacture-and-Supply-of-Aseptic-Liquid-Packaging-Material-T-V-S-D-South-Asia.jpg" },
 ];
+
+
+const packagingData = [
+    {
+        "id": "holography",
+        title: "Aseptic Packaging",
+        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Holography-Business58.jpg",
+        "imageAlt": "UFlex Aseptic Packaging Solutions",
+        paragraphs: [
+            " Asepto, the Aseptic Packaging brand of UFlex, is the world’s fastest-growing aseptic packaging company, proudly serving over 200 esteemed clients across more than 40 countries." ,
+        " As a leading provider of end-to-end aseptic liquid packaging solutions, we offer innovative designs, six-layered cartons, highly advanced filling machines, and exceptional service from highly trained engineers. In alignment with the Government’s 'Make in India' initiative, our state-of-the-art manufacturing facility in Sanand, Gujarat, spans 21 acres within a 72-acre land parcel and boasts a production capacity of 12 billion packs annually.",
+        "Our packaging solutions are designed for ultimate user convenience, easy opening, and maximum shelf life for products such as juices, non-aerated alcoholic beverages, and highly perishable liquids like milk and dairy products. Through innovative technology and advanced converting machines, we deliver superior aseptic packaging that meets the highest industry standards. Our product portfolio, including the Pillow Pack, Trio Pack, and Brick Pack, fulfils 90% of the domestic demand for aseptic liquid packaging, making Asepto the preferred choice in India."
+        ]
+    }
+
+];
 const AsepticComp = () => {
     return (
         <div>
@@ -174,35 +187,26 @@ const AsepticComp = () => {
                             Aseptic Packaging
 
                         </motion.h1>
-                        <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.05 }}
-                            className="text-sm manrope-400 mt-5 space-y-4 text-slate-700"
-                        >
-                            <p>
-                                Asepto, the Aseptic Packaging brand of UFlex, is the world’s fastest-growing aseptic packaging company, proudly serving over 200 esteemed clients across more than 40 countries.
-                            </p>
-                            <p>
-                                As a leading provider of end-to-end aseptic liquid packaging solutions, we offer innovative designs, six-layered cartons, highly advanced filling machines, and exceptional service from highly trained engineers. In alignment with the Government’s 'Make in India' initiative, our state-of-the-art manufacturing facility in Sanand, Gujarat, spans 21 acres within a 72-acre land parcel and boasts a production capacity of 12 billion packs annually.
-                            </p>
-                            <p>
-                                Our packaging solutions are designed for ultimate user convenience, easy opening, and maximum shelf life for products such as juices, non-aerated alcoholic beverages, and highly perishable liquids like milk and dairy products. Through innovative technology and advanced converting machines, we deliver superior aseptic packaging that meets the highest industry standards. Our product portfolio, including the Pillow Pack, Trio Pack, and Brick Pack, fulfils 90% of the domestic demand for aseptic liquid packaging, making Asepto the preferred choice in India.</p>
-                            <p>
-
-                            </p>
-                        </motion.div>
+                        
+                        {packagingData.map((section, idx) => (
+                                                    <ExpandableText
+                                                        key={idx}
+                                                        modalTitle={section.title}
+                                                        imageSrc={section.image}
+                                                        imageAlt={section.title}
+                                                        paragraphs={section.paragraphs}
+                                                    />
+                                                ))}
                     </div>
 
                     <motion.div
                         initial={{ opacity: 0, scale: 0.98 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
-                        className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl border-2 border-blue-400 shadow ring-4 ring-blue-200"
+                        className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl "
                     >
                         <Image
-                            src="https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Aseptic-Packaging-Business54.jpg"
+                            src="/images/aseptic.png"
                             alt="UFlex capabilities across the value chain"
                             fill
                             className="object-cover"

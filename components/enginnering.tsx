@@ -8,6 +8,7 @@ import { Leader, LeaderSpotlight } from './leader'
 import { AwardItem, AwardsAccolades } from './awards'
 import Accreditions, { AccreditationItem } from './accredition'
 import AccreditationsSlider from './accredition'
+import ExpandableText from './expandabletext'
 
 
 
@@ -125,6 +126,22 @@ const accreditations: AccreditationItem[] = [
 
 
 ];
+
+
+const packagingData = [
+    {
+        "id": "Engineering",
+        title: "Engineering",
+        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Holography-Business58.jpg",
+        "imageAlt": "UFlex Engineering",
+        paragraphs: [
+            " A leading manufacturer specializing in top-tier packaging, printing, and allied machines, catering to diverse needs across industries. Established in 1985, UFlex Engineering is a leading manufacturer specializing in top-tier packaging, printing, and allied machines. Our commitment to delivering high-performance machines and tailored solutions has propelled us to the forefront of the industry. We offer a comprehensive range of products and cater to diverse needs across various sectors." ,
+        " With high-end CAD software, streamlined processes, and collaborative efforts across departments, we deliver tailored products to meet evolving global demands. This dedication, coupled with our state-of-the-art facilities, positions UFlex as a leading provider capable of fulfilling our clients' diverse needs with precision and efficiency.",
+        " At UFlex Engineering, we prioritize client satisfaction by maintaining rigorous quality standards throughout our production process. Our dedication to innovation, productivity, and globalization has solidified our position as a trusted manufacturer, exporter, and supplier in the global market."
+        ]
+    }
+
+];
 const EngComp = () => {
     return (
         <div>
@@ -143,33 +160,25 @@ const EngComp = () => {
                             Engineering
 
                         </motion.h1>
-                        <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.05 }}
-                            className="manrope-400 mt-5 space-y-4 text-slate-700"
-                        >
-                            <p>
-                                A leading manufacturer specializing in top-tier packaging, printing, and allied machines, catering to diverse needs across industries.
-
-                                Established in 1985, UFlex Engineering is a leading manufacturer specializing in top-tier packaging, printing, and allied machines. Our commitment to delivering high-performance machines and tailored solutions has propelled us to the forefront of the industry. We offer a comprehensive range of products and cater to diverse needs across various sectors.
-                            </p>
-                            <p>
-                                With high-end CAD software, streamlined processes, and collaborative efforts across departments, we deliver tailored products to meet evolving global demands. This dedication, coupled with our state-of-the-art facilities, positions UFlex as a leading provider capable of fulfilling our clients' diverse needs with precision and efficiency. </p>
-                            <p>
-                                At UFlex Engineering, we prioritize client satisfaction by maintaining rigorous quality standards throughout our production process. Our dedication to innovation, productivity, and globalization has solidified our position as a trusted manufacturer, exporter, and supplier in the global market.</p>
-                        </motion.div>
+                        {packagingData.map((section, idx) => (
+                            <ExpandableText
+                                key={idx}
+                                modalTitle={section.title}
+                                imageSrc={section.image}
+                                imageAlt={section.title}
+                                paragraphs={section.paragraphs}
+                            />
+                        ))}
                     </div>
 
                     <motion.div
                         initial={{ opacity: 0, scale: 0.98 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
-                        className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl border-2 border-blue-400 shadow ring-4 ring-blue-200"
+                        className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl "
                     >
                         <Image
-                            src="https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Engineering-Business49.jpg"
+                            src="/images/engg.png"
                             alt="UFlex capabilities across the value chain"
                             fill
                             className="object-cover"

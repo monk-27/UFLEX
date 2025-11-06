@@ -8,6 +8,7 @@ import { Leader, LeaderSpotlight } from './leader'
 import { AwardItem, AwardsAccolades } from './awards'
 import Accreditions, { AccreditationItem } from './accredition'
 import AccreditationsSlider from './accredition'
+import ExpandableText from './expandabletext'
 
 
 
@@ -130,6 +131,22 @@ const accreditations: AccreditationItem[] = [
 
 
 ];
+
+const packagingData = [
+    {
+        "id": "holography",
+        title: "Chemicals ",
+        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Holography-Business58.jpg",
+        "imageAlt": "UFlex Aseptic Packaging Solutions",
+        paragraphs: [
+            " Discover the essence of unparalleled commitment at our innovative hub, where excellence seamlessly intertwines with sustainability. Our solutions are meticulously crafted to cater to the distinctive requirements of the brands and businesses looking for innovative and sustainable packaging solutions." ,
+        " With support from NABL-accredited labs and manufacturing sites in Noida and Jammu, India, boasting certifications such as ISO 9001:2015, ISO 14001:2015, ISO45001:2018, ISO 50001:2018, and ISO 31000:2018, we consistently uphold global standards.",
+                              " Our commitment transcends borders through a robust international distribution network, delivering bespoke solutions that redefine industry benchmarks."
+
+        ]
+    }
+
+];
 const ChemicalsComp = () => {
     return (
         <div>
@@ -148,35 +165,26 @@ const ChemicalsComp = () => {
                             Chemicals
 
                         </motion.h1>
-                        <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.05 }}
-                            className="manrope-400 mt-5 space-y-4 text-slate-700"
-                        >
-                            <p>
-                                Our various inks, adhesives, and coatings are meticulously crafted to enhance brand vibrancy, durability, and functionality while ensuring environmental protection. </p>
-                            <p>
-                                Discover the essence of unparalleled commitment at our innovative hub, where excellence seamlessly intertwines with sustainability. Our solutions are meticulously crafted to cater to the distinctive requirements of the brands and businesses looking for innovative and sustainable packaging solutions.</p>
-                            <p>
-                                With support from NABL-accredited labs and manufacturing sites in Noida and Jammu, India, boasting certifications such as ISO 9001:2015, ISO 14001:2015, ISO45001:2018, ISO 50001:2018, and ISO 31000:2018, we consistently uphold global standards.
-                            </p>
-                            <p>
-                                Our commitment transcends borders through a robust international distribution network, delivering bespoke solutions that redefine industry benchmarks.
-
-                            </p>
-                        </motion.div>
+                       
+                        {packagingData.map((section, idx) => (
+                                                    <ExpandableText
+                                                        key={idx}
+                                                        modalTitle={section.title}
+                                                        imageSrc={section.image}
+                                                        imageAlt={section.title}
+                                                        paragraphs={section.paragraphs}
+                                                    />
+                                                ))}
                     </div>
 
                     <motion.div
                         initial={{ opacity: 0, scale: 0.98 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
-                        className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl border-2 border-blue-400 shadow ring-4 ring-blue-200"
+                        className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl "
                     >
                         <Image
-                            src="https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Chemicals-Business58.jpg"
+                            src="/images/chem.jpeg"
                             alt="UFlex capabilities across the value chain"
                             fill
                             className="object-cover"

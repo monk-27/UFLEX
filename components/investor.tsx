@@ -390,7 +390,7 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
 
   return (
     <section aria-labelledby={`${id}-heading`} className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-0 py-10">
-      <h2 id={`${id}-heading`} className="text-center text-[24px] manrope-700 text-[#117ABA] md:text-[42px] mb-8">
+      <h2 id={`${id}-heading`} className="text-center text-[24px] manrope-700 text-[#117ABA] md:text-[38px] mb-8">
         {heading}
       </h2>
 
@@ -490,7 +490,7 @@ function HeroBanner({ image }: { image: string }) {
       <div className="absolute left-0 right-0 bottom-0 pointer-events-none">
         <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-0 ">
           <div className="relative">
-            <span className="text-center inline-block bg-[#117ABA] text-white manrope-400 w-[216px] h-[59px] text-[42px]  shadow-sm translate-y-1/2">
+            <span className="text-center inline-block bg-[#117ABA] text-white manrope-400 w-[216px] h-[59px] text-[36px]  shadow-sm translate-y-1/2">
               Investors
             </span>
           </div>

@@ -271,7 +271,7 @@ function Arrow({ onClick, disabled, direction }: ArrowProps) {
   onClick={onClick}
   disabled={disabled}
   className={`absolute top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-[45px] h-[45px] rounded-full bg-black text-white transition-all duration-200 ${
-    direction === "left" ? "-left-12" : "-right-12"
+    direction === "left" ? "-left-13" : "-right-13"
   } ${disabled ? "opacity-40 pointer-events-none" : "opacity-100"}`}
 >
   <svg

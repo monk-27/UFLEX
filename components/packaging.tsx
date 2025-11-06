@@ -321,10 +321,10 @@ const PackageComp = () => {
                         initial={{ opacity: 0, scale: 0.98 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
-                        className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl border-2 border-blue-400 shadow ring-4 ring-blue-200"
+                        className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl "
                     >
                         <Image
-                            src="https://www.uflexltd.com/assets/images/film-aboutus.jpg"
+                            src="/images/flex.jpeg"
                             alt="UFlex capabilities across the value chain"
                             fill
                             className="object-cover"
