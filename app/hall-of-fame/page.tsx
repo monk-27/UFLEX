@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import HallPage from '@/components/hall-off-fame'
 import React from 'react'
 
