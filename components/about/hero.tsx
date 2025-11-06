@@ -19,7 +19,7 @@ const Hero = () => {
           {/* Desktop Image with Overlay */}
           <div className="relative hidden h-full w-full md:block px-10">
             <Image
-              src="/images/mainabout.png" // Replace with your actual desktop image path
+              src="/images/about.png" // Replace with your actual desktop image path
               alt="Sustainability"
              height={1440}
              width={100}
@@ -32,7 +32,7 @@ const Hero = () => {
   
           {/* Mobile Image without Overlay */}
           <Image
-             src="/images/mainabout.png" // Replace with your actual mobile image path
+             src="/images/about.png" // Replace with your actual mobile image path
             alt="Sustainability"
             fill
             className="object-cover h-[1440px] w-[569px] md:hidden"
