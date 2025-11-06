@@ -10,7 +10,7 @@ export function SiteFooter() {
 
   return (
     <footer className="text-white bg-[#117ABA]">
-      <div className=" px-4 sm:px-6 lg:px-12 py-10 md:py-14">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12 py-10 md:py-14">
 
         {/* Top grid */}
         <div className="grid gap-10 md:grid-cols-3 lg:grid-cols-4 items-start">
@@ -33,15 +33,15 @@ export function SiteFooter() {
             <Link href="/" className="hover:underline underline-offset-4">Home</Link>
             <Link href="/about-us" className="hover:underline underline-offset-4">About Us</Link>
             <Link href="/what-we-do" className="hover:underline underline-offset-4">What We Do</Link>
-            <Link href="/investors" className="hover:underline underline-offset-4">Investors</Link>
             <Link href="/sustainability" className="hover:underline underline-offset-4">Sustainability</Link>
+            <Link href="/investors" className="hover:underline underline-offset-4">Investors</Link>
           </nav>
 
           {/* Links column 2 */}
           <nav className="grid gap-4 text-base font-semibold">
             <Link href="/hall-of-fame" className="hover:underline underline-offset-4">Hall of Fame</Link>
-            <Link href="/press-room" className="hover:underline underline-offset-4">The Press Room</Link>
             <Link href="/careers" className="hover:underline underline-offset-4">Work With Us</Link>
+            <Link href="/press-room" className="hover:underline underline-offset-4">The Press Room</Link>
             <Link href="/get-in-touch" className="hover:underline underline-offset-4">Get in Touch</Link>
           </nav>
 
