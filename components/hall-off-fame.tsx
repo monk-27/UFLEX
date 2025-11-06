@@ -326,7 +326,7 @@ import { useEffect, useState, useRef } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 /* --------------------- Dynamic import (client-only) --------------------- */
-const BusinessAwards = dynamic(() => import("@/components/leaders"), {
+const AwardsTabs = dynamic(() => import("@/components/leaders"), {
   ssr: false,
   loading: () => (
     <div className="mx-auto my-8 h-[320px] w-full max-w-6xl animate-pulse rounded-2xl bg-gray-100" />
@@ -628,11 +628,9 @@ const HallPage = () => {
             </div>
           </div>
 
-          {/* {hasMounted ? (
-            <BusinessAwards />
-          ) : (
-            <div className="mx-auto my-8 h-[320px] w-full max-w-6xl animate-pulse rounded-2xl bg-gray-100" />
-          )} */}
+          <section className="pb-16">
+        <AwardsTabs />
+      </section>
         </div>
       </section>
 
