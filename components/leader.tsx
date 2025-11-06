@@ -135,12 +135,12 @@ function _LeaderSpotlight({
             </p>
 
             {p.cta && (
-              <Link
-                href={p.cta.href}
+              <span
+               
                 className={`mt-6 inline-flex items-center rounded-full px-5 py-2.5 text-sm font-semibold shadow-md transition hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${buttonBgClass} ${buttonTextClass}`}
               >
                 {p.cta.label}
-              </Link>
+              </span>
             )}
           </motion.div>
         </div>

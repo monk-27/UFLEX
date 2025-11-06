@@ -386,15 +386,13 @@ export default function GetInTouch() {
             </motion.div>
           </div>
 
-          <svg className="block w-full text-[#EAF2FF]" height="56" viewBox="0 0 1440 56" preserveAspectRatio="none">
-            <path fill="currentColor" d="M0,64L80,58.7C160,53,320,43,480,37.3C640,32,800,32,960,37.3C1120,43,1280,53,1360,58.7L1440,64L1440,0L0,0Z" />
-          </svg>
+         
         </section>
 
        
 
         {/* QUICK CONTACT STRIP */}
-        <section className="mx-auto max-w-7xl px-4 sm:px-6">
+        <section className="mt-4 mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid gap-4 md:grid-cols-3">
             <a href="mailto:corpcomm@uflexltd.com" className="group flex items-center gap-3 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-[2px] hover:shadow-md">
               <div className="rounded-xl bg-[#117ABA] p-3 text-white"><Mail className="h-5 w-5" /></div>

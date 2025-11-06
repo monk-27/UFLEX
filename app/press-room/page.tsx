@@ -127,12 +127,12 @@ function Card({
 function ViewMoreButton({ href = "#" }: { href?: string }) {
   return (
     <div className="mt-6 flex justify-center">
-      <a
-        href={href}
+      <span
+        
         className="rounded-full bg-[#117ABA] px-5 py-2 text-sm font-medium text-white shadow-sm transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[#0B3C7D] focus:ring-offset-2"
       >
         View More
-      </a>
+      </span>
     </div>
   );
 }
@@ -180,17 +180,7 @@ export default function PressRoomPage() {
         </div>
 
         {/* subtle wave divider */}
-        <svg
-          className="block w-full text-slate-50"
-          height="64"
-          viewBox="0 0 1440 64"
-          preserveAspectRatio="none"
-        >
-          <path
-            fill="currentColor"
-            d="M0,64L80,58.7C160,53,320,43,480,37.3C640,32,800,32,960,37.3C1120,43,1280,53,1360,58.7L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
-          />
-        </svg>
+      
       </section>
 
       {/* MEDIA RELEASES */}

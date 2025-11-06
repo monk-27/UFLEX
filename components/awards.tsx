@@ -75,12 +75,12 @@ function _AwardsAccolades({
                 </p>
               )}
               {first.cta && (
-                <Link
-                  href={first.cta.href}
+                <span
+                  
                   className="mt-6 inline-flex items-center rounded-full bg-[#117ABA] px-5 py-2.5 text-sm font-semibold text-white shadow-md transition hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#24497D]"
                 >
                   {first.cta.label}
-                </Link>
+                </span>
               )}
             </div>
           </motion.div>
@@ -117,12 +117,12 @@ function _AwardsAccolades({
                   </p>
                 )}
                 {a.cta && (
-                  <Link
-                    href={a.cta.href}
+                  <span
+                    
                     className="mt-4 inline-flex items-center rounded-full bg-[#24497D] px-4 py-2 text-sm font-semibold text-white transition hover:brightness-110"
                   >
                     {a.cta.label}
-                  </Link>
+                  </span>
                 )}
               </div>
             </motion.article>

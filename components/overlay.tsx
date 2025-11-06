@@ -149,12 +149,12 @@ function _OverlayModules({
                       </p>
                     )}
                     {m.cta && (
-                      <Link
-                        href={m.cta.href}
+                      <span
+                        // href={m.cta.href}
                         className="mt-3 inline-flex items-center rounded-md bg-white/90 px-3 py-1.5 text-sm font-medium text-gray-900 shadow hover:bg-white"
                       >
                         {m.cta.label}
-                      </Link>
+                      </span>
                     )}
                   </div>
                 </motion.div>
@@ -168,12 +168,12 @@ function _OverlayModules({
                       <p className="mt-1 text-white/95 text-sm">{m.description}</p>
                     )}
                     {m.cta && (
-                      <Link
-                        href={m.cta.href}
+                      <span
+                        // href={m.cta.href}
                         className="mt-2 inline-flex items-center rounded-md bg-white/90 px-2.5 py-1 text-xs font-medium text-gray-900 shadow hover:bg-white"
                       >
                         {m.cta.label}
-                      </Link>
+                      </span>
                     )}
                   </div>
                 </div>
