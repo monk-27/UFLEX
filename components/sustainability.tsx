@@ -138,42 +138,33 @@ import Image from 'next/image';
 
 export default function SustainabilityComp() {
   return (
-    <div className="hero-section relative h-[245px] w-full overflow-hidden bg-white md:h-[842px]">
-      {/* Background Image - Full Bleed */}
-      <motion.div
-        className="absolute inset-0"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      >
-        <Image
-          src="/images/sus-top.png"
-          fill
-          className="object-cover object-center"
-          alt="Sustainability"
-          priority
-          sizes="100vw"
-        />
-      </motion.div>
-      <motion.div
-        className="absolute inset-0 bg-black bg-opacity-100"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.5 }}
-        transition={{ duration: 1 }}
-      ></motion.div>
-
-      {/* Header Bar */}
-      <div className="absolute top-0 left-0 right-0 z-10 bg-white py-4 md:py-12">
-        <div className="mx-auto max-w-7xl px-5 md:px-20">
-          <h2 className="text-center text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">
-            Sustainability
-          </h2>
-        </div>
-      </div>
-
-      {/* Text Content */}
-      <motion.div
-        className="absolute inset-0 flex flex-col justify-end px-5 pb-20 text-white md:bottom-40 md:pb-20 md:pl-13"
+  <div className="hero-section relative h-[245px] w-full overflow-hidden bg-white md:h-[842px]">
+         {/* Background Image Container */}
+         <motion.div
+           className="absolute inset-0"  // This ensures full coverage
+           initial={{ opacity: 0 }}
+           animate={{ opacity: 1 }}
+           transition={{ duration: 1 }}
+         >
+           {/* Fixed: Use object-cover, fill parent, remove fixed width */}
+           <Image
+             src="/images/sus-top.png"
+             fill
+             className="object-cover object-center"
+             alt="Sustainability"
+             priority
+           />
+         </motion.div>
+          <motion.div
+              className="absolute inset-0 bg-black bg-opacity-100"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.5 }}
+              transition={{ duration: 1 }}
+            ></motion.div>
+ 
+         {/* Text Content */}
+         <motion.div
+        className="absolute inset-0 flex flex-col justify-end px-5 pb-10 text-white md:bottom-45 md:pb-25 md:pl-13"
         initial="hidden"
         animate="visible"
         variants={{
@@ -221,6 +212,6 @@ export default function SustainabilityComp() {
           </button>
         </motion.div>
       </motion.div>
-    </div>
+       </div>
   );
 }

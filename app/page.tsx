@@ -21,7 +21,7 @@ export default function HomePage() {
       </section>
 
       <motion.section
-        className="mx-auto max-w-6xl px-6 text-center sm:px-0 py-12"
+        className="mx-auto max-w-7xl px-6 text-center sm:px-0 py-12"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
