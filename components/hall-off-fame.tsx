@@ -477,7 +477,7 @@ function SpotlightModal({
 }
 
 /* --------------------------- Page --------------------------- */
-export default function HallPage() {
+const HallPage = () => {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
   const rowRef = useRef<HTMLDivElement>(null);
   const [hasMounted, setHasMounted] = useState(false);
@@ -628,17 +628,16 @@ export default function HallPage() {
             </div>
           </div>
 
-          {/* ---- BusinessAwards (client-only) ---- */}
-          {hasMounted ? (
+          {/* {hasMounted ? (
             <BusinessAwards />
           ) : (
             <div className="mx-auto my-8 h-[320px] w-full max-w-6xl animate-pulse rounded-2xl bg-gray-100" />
-          )}
+          )} */}
         </div>
       </section>
 
       {/* ==== Modal ==== */}
-      <SpotlightModal index={openIdx} onClose={() => setOpenIdx(null)} />
+      {/* <SpotlightModal index={openIdx} onClose={() => setOpenIdx(null)} /> */}
 
       <SiteFooter />
 
@@ -655,3 +654,4 @@ export default function HallPage() {
     </main>
   );
 }
+export default HallPage;
