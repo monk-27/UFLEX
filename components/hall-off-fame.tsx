@@ -628,11 +628,11 @@ const HallPage = () => {
             </div>
           </div>
 
-          {hasMounted ? (
+          {/* {hasMounted ? (
             <BusinessAwards />
           ) : (
             <div className="mx-auto my-8 h-[320px] w-full max-w-6xl animate-pulse rounded-2xl bg-gray-100" />
-          )}
+          )} */}
         </div>
       </section>
 
