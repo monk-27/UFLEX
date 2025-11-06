@@ -39,7 +39,7 @@ export function SiteFooter() {
 
           {/* Links column 2 */}
           <nav className="grid gap-4 text-base font-semibold">
-            <Link href="/hall-of-fame" className="hover:underline underline-offset-4">Hall of Honours</Link>
+            <Link href="/hall-of-fame" className="hover:underline underline-offset-4">Hall of Fame</Link>
             <Link href="/press-room" className="hover:underline underline-offset-4">The Press Room</Link>
             <Link href="/careers" className="hover:underline underline-offset-4">Work With Us</Link>
             <Link href="/get-in-touch" className="hover:underline underline-offset-4">Get in Touch</Link>

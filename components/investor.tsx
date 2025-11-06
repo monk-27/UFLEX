@@ -412,7 +412,7 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
                   </div>
 
                   <div className="p-4 md:p-5">
-                    <h3 className="text-gray-600 text-sm manrope-600 text-[16px]">{card.title}</h3>
+                    <h3 className="text-center text-gray-600 text-sm manrope-600 text-[16px]">{card.title}</h3>
                   </div>
                 </div>
               </article>

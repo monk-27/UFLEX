@@ -64,7 +64,7 @@ export default function ExpandableText({
 
           <div className='mt-4 space-y-5 text-sm text-slate-700'>
             {/* Small image */}
-            <div className='flex justify-center'>
+            {/* <div className='flex justify-center'>
               <Image
                 src={imageSrc}
                 alt={imageAlt}
@@ -72,7 +72,7 @@ export default function ExpandableText({
                 height={135}
                 className='rounded-lg shadow-sm object-cover'
               />
-            </div>
+            </div> */}
 
             {/* Full paragraphs */}
             {paragraphs.map((para, idx) => (
