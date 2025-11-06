@@ -20,7 +20,7 @@ export default function Page() {
 
 
 
-   <div className="relative h-[300px] w-full overflow-hidden md:h-[842px]">
+   <div className="relative h-[500px] w-full overflow-hidden md:h-[842px]">
       {/* Background Image */}
       <motion.div
         className="absolute inset-0"
@@ -77,7 +77,7 @@ export default function Page() {
              
       
               <motion.p
-                className="text-left max-w-lg mt-2  text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[22px]"
+                className="text-left max-w-lg mt-12 sm:mt-2  text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[22px]"
                 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
               >
                 Sustainability is embedded at the heart of UFlex’s operations, driving the company to innovate responsibly and create packaging solutions that serve both the business and the environment.
