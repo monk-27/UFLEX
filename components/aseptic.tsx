@@ -179,7 +179,7 @@ const AsepticComp = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.05 }}
-                            className="manrope-400 mt-5 space-y-4 text-slate-700"
+                            className="text-sm manrope-400 mt-5 space-y-4 text-slate-700"
                         >
                             <p>
                                 Asepto, the Aseptic Packaging brand of UFlex, is the world’s fastest-growing aseptic packaging company, proudly serving over 200 esteemed clients across more than 40 countries.

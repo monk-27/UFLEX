@@ -62,7 +62,7 @@ export default function ExpandableText({
             <DialogTitle className='text-xl manrope-600 text-[#117ABA]'>{modalTitle}</DialogTitle>
           </DialogHeader>
 
-          <div className='mt-4 space-y-5 text-sm text-slate-700'>
+          <div className='mt-4 space-y-5 text-sm  manrope-500 text-slate-700'>
             {/* Small image */}
             {/* <div className='flex justify-center'>
               <Image
