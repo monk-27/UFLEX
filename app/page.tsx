@@ -57,6 +57,13 @@ export default function HomePage() {
         <BusinessCardsCarousel />
 
       </motion.section>
+      <div className=" z-10 bg-white py-4 md:py-12 mb-8">
+        <div className="mx-auto max-w-7xl px-5 md:px-20">
+          <h2 className="text-center text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">
+            Sustainability
+          </h2>
+        </div>
+      </div>
       <SustainabilityComp />
 
       <div className="mt-12">

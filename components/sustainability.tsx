@@ -138,6 +138,8 @@ import Image from 'next/image';
 
 export default function SustainabilityComp() {
   return (
+    <div>
+      
   <div className="hero-section relative h-[245px] w-full overflow-hidden bg-white md:h-[842px]">
          {/* Background Image Container */}
          <motion.div
@@ -213,5 +215,7 @@ export default function SustainabilityComp() {
         </motion.div>
       </motion.div>
        </div>
+    </div>
+
   );
 }
