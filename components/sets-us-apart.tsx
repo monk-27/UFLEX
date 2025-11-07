@@ -19,7 +19,7 @@ const items = [
     desc: "UFlex serves as a one-stop-shop flexible packaging solution provider serving varied sectors spanning FMCG, consumer product goods, pharmaceuticals, building materials, automobiles, and more.",
   },
   {
-    img: "/images/listing.png",
+    img: "/images/what1.jpeg",
     title: "India's first NABL-accredited R&D lab certified to ISO/IEC 17025:2017 standards",
     desc: "Located in Noida, our state-of-the-art facility leads innovation in inks, adhesives, and coatings with globally recognized quality and precision.",
   },
@@ -29,7 +29,7 @@ const items = [
     desc: "As the first Indian company to achieve this milestone, we proudly represent India in the global aseptic packaging industry with innovative and sustainable solutions.",
   },
   {
-    img: "/images/compressive.png",
+    img: "/images/what2.jpeg",
     title: "Comprehensive and sustainable packaging ecosystems",
     desc: "From producing films, converting, engineering, printing cylinders, chemicals, holography, and aseptic packaging to recycling solutions, we deliver eco-friendly packaging solutions for a sustainable future.",
   },
