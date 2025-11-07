@@ -518,7 +518,7 @@ const HallPage = () => {
               viewport={{ once: true }}
               className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"
             >
-              Hall Of Fame
+              Hall of Fame
             </motion.h1>
 
             <motion.div
