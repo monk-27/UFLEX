@@ -372,7 +372,7 @@ export default function GetInTouch() {
               </p>
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               className="relative h-52 w-full max-w-xl overflow-hidden rounded-2xl ring-1 ring-white/20 md:h-60"
               {...fadeUp(0.1)}
             >
@@ -383,7 +383,7 @@ export default function GetInTouch() {
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-black/20 to-transparent" />
-            </motion.div>
+            </motion.div> */}
           </div>
 
          

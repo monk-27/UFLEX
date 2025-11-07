@@ -169,7 +169,7 @@
 //             Our Expansion
 //           </h2>
 
-         
+
 //         </div>
 //       </section>
 
@@ -246,6 +246,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { useRouter } from "next/navigation";
 
 /* ------------------------------- THEME ------------------------------- */
 const BRAND = {
@@ -266,38 +267,37 @@ type ArrowProps = { onClick?: () => void; disabled?: boolean; direction: "left" 
 /* ------------------------------- ARROW -------------------------------- */
 function Arrow({ onClick, disabled, direction }: ArrowProps) {
   return (
-   <button
-  aria-label={direction === "left" ? "Previous" : "Next"}
-  onClick={onClick}
-  disabled={disabled}
-  className={`absolute top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-[45px] h-[45px] rounded-full bg-black text-white transition-all duration-200 ${
-    direction === "left" ? "-left-13" : "-right-13"
-  } ${disabled ? "opacity-40 pointer-events-none" : "opacity-100"}`}
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="none"
-    className="w-10 h-10"
-    aria-hidden="true"
-  >
-    {direction === "left" ? (
-      <>
-        {/* horizontal shaft */}
-        <path d="M16 12H8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        {/* chevron head pointing left */}
-        <path d="M12 16L8 12L12 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-      </>
-    ) : (
-      <>
-        {/* horizontal shaft */}
-        <path d="M8 12H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        {/* chevron head pointing right */}
-        <path d="M12 8L16 12L12 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-      </>
-    )}
-  </svg>
-</button>
+    <button
+      aria-label={direction === "left" ? "Previous" : "Next"}
+      onClick={onClick}
+      disabled={disabled}
+      className={`absolute top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-[45px] h-[45px] rounded-full bg-black text-white transition-all duration-200 ${direction === "left" ? "-left-13" : "-right-13"
+        } ${disabled ? "opacity-40 pointer-events-none" : "opacity-100"}`}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        className="w-10 h-10"
+        aria-hidden="true"
+      >
+        {direction === "left" ? (
+          <>
+            {/* horizontal shaft */}
+            <path d="M16 12H8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            {/* chevron head pointing left */}
+            <path d="M12 16L8 12L12 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          </>
+        ) : (
+          <>
+            {/* horizontal shaft */}
+            <path d="M8 12H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            {/* chevron head pointing right */}
+            <path d="M12 8L16 12L12 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          </>
+        )}
+      </svg>
+    </button>
 
 
 
@@ -307,7 +307,7 @@ function Arrow({ onClick, disabled, direction }: ArrowProps) {
 /* ---------------------------- INVESTOR SLIDER -------------------------- */
 function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading: string; id: string }) {
   const sliderRef = useRef<Slider | null>(null);
-
+  const router = useRouter()
   const settings: SlickSettings = useMemo(
     () => ({
       dots: true,
@@ -339,7 +339,9 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
       <div className="relative">
         <Slider ref={sliderRef} {...settings}>
           {items.map((card, idx) => (
-            <div className="px-2 sm:px-3" key={`${card.title}-${idx}`}>
+            <div className="px-2 sm:px-3 cursor-pointer" key={`${card.title}-${idx}`} onClick={() => {
+              router.push(`${card.href}`)
+            }}>
               <article className="relative overflow-hidden rounded-sm shadow-sm ring-1 ring-slate-200 h-full bg-white">
                 <div className="relative">
                   <div className="relative aspect-[16/9]">
@@ -427,68 +429,68 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
 /* --------------------------------- PAGE -------------------------------- */
 export default function WhatWeDoPage() {
   const investorRelations: any[] = [
-  {
-    title: "Packaging Films",
-    href: "/packaging-films-business",
-    desc: "High-performance BOPET/BOPP films for diverse applications.",
-    img: "/images/flex.jpeg"
-    // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Packaging-Films-Business-faq-icon21.svg",
-  },
-  {
-    title: "Flexible Packaging",
-    href: "/flexible-packaging-business",
-    desc: "Custom structures for brand impact and efficiency.",
-    img: "/images/flexible.png"
+    {
+      title: "Packaging Films",
+      href: "/packaging-films-business",
+      desc: "High-performance BOPET/BOPP films for diverse applications.",
+      img: "/images/flex.jpeg"
+      // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Packaging-Films-Business-faq-icon21.svg",
+    },
+    {
+      title: "Flexible Packaging",
+      href: "/flexible-packaging-business",
+      desc: "Custom structures for brand impact and efficiency.",
+      img: "/images/flexible.png"
 
-    // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Flexible-Packaging-Business-faq-icon36.svg",
-  },
-  {
-    title: "Aseptic Packaging",
-    href: "/aseptic-packaging-business",
-    desc: "Safe, shelf-stable solutions with extended freshness.",
-    img: "/images/aseptic.png"
+      // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Flexible-Packaging-Business-faq-icon36.svg",
+    },
+    {
+      title: "Aseptic Packaging",
+      href: "/aseptic-packaging-business",
+      desc: "Safe, shelf-stable solutions with extended freshness.",
+      img: "/images/aseptic.png"
 
-    // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Aseptic-Packaging-Business-faq-icon56.svg",
-  },
-  {
-    title: "Chemicals",
-    href: "/chemicals-business",
-    desc: "Speciality chemicals powering packaging performance.",
-    img: "/images/chem.jpeg"
-    // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Chemicals-Business-faq-icon20.svg",
-  },
-  {
-    title: "Holography",
-    href: "/holography-business",
-    desc: "Security and decorative holographic solutions.",
-    img: "/images/holographys.png"
+      // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Aseptic-Packaging-Business-faq-icon56.svg",
+    },
+    {
+      title: "Chemicals",
+      href: "/chemicals-business",
+      desc: "Speciality chemicals powering packaging performance.",
+      img: "/images/chem.jpeg"
+      // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Chemicals-Business-faq-icon20.svg",
+    },
+    {
+      title: "Holography",
+      href: "/holography-business",
+      desc: "Security and decorative holographic solutions.",
+      img: "/images/holographys.png"
 
-    // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Holography-Business-faq-icon47.svg",
-  },
-  {
-    title: "Engineering",
-    href: "/engineering-business",
-    desc: "Turnkey packaging machinery and systems.",
-    img: "/images/engg.png"
+      // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Holography-Business-faq-icon47.svg",
+    },
+    {
+      title: "Engineering",
+      href: "/engineering-business",
+      desc: "Turnkey packaging machinery and systems.",
+      img: "/images/engg.png"
 
-    // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Engineering-Business-faq-icon45.svg",
-  },
-  {
-    title: "Printing Cylinders",
-    href: "/printing-cylinder-business",
-    desc: "Precision cylinders for consistent print quality.",
-    img: "/images/cyls.png"
-    // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Printing-Cylinder-Business-faq-icon03.svg",
-  },
-  {
-    title: "FlexiTubes",
-    href: "/flexitube-business",
-    desc: "Durable, brandable tubes for personal care and more.",
-    img: "/images/flexible.jpeg"
+      // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Engineering-Business-faq-icon45.svg",
+    },
+    {
+      title: "Printing Cylinders",
+      href: "/printing-cylinder-business",
+      desc: "Precision cylinders for consistent print quality.",
+      img: "/images/cyls.png"
+      // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Printing-Cylinder-Business-faq-icon03.svg",
+    },
+    {
+      title: "FlexiTubes",
+      href: "/flexitube-business",
+      desc: "Durable, brandable tubes for personal care and more.",
+      img: "/images/flexible.jpeg"
 
-    // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/FlexiTube-Business-faq-icon59.svg",
-  },
-]
+      // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/FlexiTube-Business-faq-icon59.svg",
+    },
+  ]
 
   // const policiesDocs: InvestorCard[] = [
   //   { title: "Unpaid / Unclaimed Dividend", subtitle: "Check & claim.", image: "/images/policy1.png", href: "#" },
@@ -500,44 +502,44 @@ export default function WhatWeDoPage() {
   // ];
 
   return (
-    
+
     <main className="bg-gradient-to-b from-white to-slate-50">
- <SiteHeader />
-             <section className="bg-gradient-to-b from-white to-slate-50">
+      <SiteHeader />
+      <section className="bg-gradient-to-b from-white to-slate-50">
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:py-20">           <div>
-            <motion.h1
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"
-            >
-              What We Do
-            </motion.h1>
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.05 }}
-              className="text-sm manrope-400 mt-5 space-y-4 text-slate-700"
-            >
-              <p>
-                We operate across the entire packaging value chain, offering unmatched integration and scale. Our
-                capabilities span PET and rPET resins, packaging films, converting, aseptic packaging, inks and
-                adhesives, holography, printing cylinders, printing and packaging machinery.
-              </p>
-              <p>
-                We are the only Indian company offering both standalone components and fully integrated flexible
-                packaging solutions—from design and engineering to advanced printing and machinery—delivering true
-                end-to-end capabilities.
-              </p>
-            </motion.div>
-          </div>
+          <motion.h1
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"
+          >
+            What We Do
+          </motion.h1>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.05 }}
+            className="text-sm manrope-400 mt-5 space-y-4 text-slate-700"
+          >
+            <p>
+              We operate across the entire packaging value chain, offering unmatched integration and scale. Our
+              capabilities span PET and rPET resins, packaging films, converting, aseptic packaging, inks and
+              adhesives, holography, printing cylinders, printing and packaging machinery.
+            </p>
+            <p>
+              We are the only Indian company offering both standalone components and fully integrated flexible
+              packaging solutions—from design and engineering to advanced printing and machinery—delivering true
+              end-to-end capabilities.
+            </p>
+          </motion.div>
+        </div>
 
           <motion.div
             initial={{ opacity: 0, scale: 0.98 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl border-2 border-blue-400 shadow ring-4 ring-blue-200"
+            className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl "
           >
             <Image
               src="https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/What-We-Do01.jpg"
@@ -557,7 +559,7 @@ export default function WhatWeDoPage() {
       {/* <InvestorSlider id="policies" heading="Policies, announcements and other documents" items={policiesDocs} /> */}
 
       <div className="h-16" />
- <SiteFooter />
+      <SiteFooter />
       {/* global tweaks for slick */}
       <style jsx global>{`
         .slick-slide > div { display: block; }
