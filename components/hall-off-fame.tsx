@@ -548,7 +548,7 @@ const HallPage = () => {
             className="relative aspect-[16/10] overflow-hidden rounded-2xl "
           >
             <Image
-              src="https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/What-We-Do01.jpg"
+              src="/images/hall.jpeg"
               alt="UFlex capabilities across the value chain"
               fill
               className="object-cover"
