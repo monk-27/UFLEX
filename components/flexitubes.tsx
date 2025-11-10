@@ -9,6 +9,7 @@ import { AwardItem, AwardsAccolades } from './awards'
 import Accreditions, { AccreditationItem } from './accredition'
 import AccreditationsSlider from './accredition'
 import ExpandableText from './expandabletext'
+import ExpandableFlexiText from './expandable-flexi'
 
 
 
@@ -39,7 +40,7 @@ const SliderItems: SliderItem[] = [
         title: "EARTHIKA tubes",
         desc: "Tubes made with biodegradable polymer.",
     },
-    
+
 
 
 
@@ -96,7 +97,7 @@ const buismodules: OverlayModule[] = [
             " From in-house PCR, BOPP/PET/polyethylene production capabilities to water-based inks and chemicals, we offer sustainable options from source to shelf. Radical resource efficiency - In-house PCR production capability...",
         cta: { label: "Read More", href: "/culture" },
     },
-    
+
 ];
 
 const awards: AwardItem[] = [
@@ -144,16 +145,17 @@ const accreditations: AccreditationItem[] = [
 
 const packagingData = [
     {
-  "id": "Flexible Tube",
- title: "Flexible Tube",
-  image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/FlexiTube-Business53.jpg",
-  "imageAlt": "UFlex Flexible Packaging Solutions",
-  paragraphs: [
-    "Our innovative multilayer flexible tube packaging solutions have been designed especially for the beauty, personal care and pharma industries.",
-    "At UFlex, we challenge conventions through design thinking—reimagining material choices, printing, lamination, and production to deliver packaging that’s as innovative as it is impactful. Our strengths include:\n\n• **Superior Print Quality**: Seamless 360° printing on laminate tubes with no side seam gaps, ensuring sharp image reproduction, intricate patterns, vibrant colors, and even fine vignette fonts.\n• **Advanced Substrate Layering**: Expertise in combining materials such as metallics, PE, BOPP, and PET to enhance aesthetics, barrier protection, and overall performance.\n• **Anti-Counterfeit Solutions**: Integrated holography for brand protection, authentication, and consumer trust.\n• **Vertical Integration**: End-to-end in-house capabilities that drive faster turnaround times and unmatched production agility.\n• **Sustainability Leadership**: Mono-material and PCR-compatible solutions that go beyond traditional multi-layer laminates.",
-    "The outcome: Packaging that’s truly brand-centric—distinctive on the shelf, enriching for the consumer, and built for a sustainable future."
-  ]
-}
+        "id": "Flexible Tube",
+        title: "Flexible Tube",
+        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/FlexiTube-Business53.jpg",
+        "imageAlt": "UFlex Flexible Packaging Solutions",
+        paragraphs: [
+  "Our innovative multilayer flexible tube packaging solutions have been designed especially for the beauty, personal care and pharma industries.",
+  "At UFlex, we challenge conventions through design thinking—reimagining material choices, printing, lamination, and production to deliver packaging that’s as innovative as it is impactful. Our strengths include:",
+  "\n• **Superior Print Quality**: Seamless 360° printing on laminate tubes with no side seam gaps, ensuring sharp image reproduction, intricate patterns, vibrant colors, and even fine vignette fonts.\n• **Advanced Substrate Layering**: Expertise in combining materials such as metallics, PE, BOPP, and PET to enhance aesthetics, barrier protection, and overall performance.\n• **Anti-Counterfeit Solutions**: Integrated holography for brand protection, authentication, and consumer trust.\n• **Vertical Integration**: End-to-end in-house capabilities that drive faster turnaround times and unmatched production agility.\n• **Sustainability Leadership**: Mono-material and PCR-compatible solutions that go beyond traditional multi-layer laminates.",
+  "The outcome: Packaging that’s truly brand-centric—distinctive on the shelf, enriching for the consumer, and built for a sustainable future."
+]
+    }
 
 ];
 const FlexiComp = () => {
@@ -175,14 +177,14 @@ const FlexiComp = () => {
 
                         </motion.h1>
                         {packagingData.map((section, idx) => (
-                                                                           <ExpandableText
-                                                                               key={idx}
-                                                                               modalTitle={section.title}
-                                                                               imageSrc={section.image}
-                                                                               imageAlt={section.title}
-                                                                               paragraphs={section.paragraphs}
-                                                                           />
-                                                                       ))}
+                            <ExpandableFlexiText
+                                key={idx}
+                                modalTitle={section.title}
+                                imageSrc={section.image}
+                                imageAlt={section.title}
+                                paragraphs={section.paragraphs}
+                            />
+                        ))}
                     </div>
 
                     <motion.div

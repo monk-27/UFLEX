@@ -135,7 +135,7 @@ const Careers = () => {
                                         transition={{ delay: idx * 0.05 }}
                                         className={`group relative overflow-hidden rounded-2xl border-2 ${c.border} ${c.bg} p-0 shadow transition`}
                                     >
-                                        <div className="relative h-44 w-full overflow-hidden">
+                                        <div className="relative h-60 w-full overflow-hidden">
                                             <Image
                                                 src={it.image ?? "/images/whatwedo/placeholder.jpg"}
                                                 alt={it.title}
