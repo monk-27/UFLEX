@@ -117,7 +117,7 @@ const Careers = () => {
                         At UFlex, we're not just shaping the future of packaging, we're revolutionizing it.{" "}<br />
                         <span className="text-gray-800 manrope-400">
 
-                            For over three decades, we've been at the forefront of innovation, developing advanced solutions that preserve products, protect our planet, and empower our people.</span>
+                            For over  three decades, we've been at the forefront of innovation, developing advanced solutions that preserve products, protect our planet, and empower our people.</span>
                     </motion.h2>
 
                 </motion.section>
