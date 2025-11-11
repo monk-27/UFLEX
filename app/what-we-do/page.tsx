@@ -430,20 +430,21 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
 export default function WhatWeDoPage() {
   const investorRelations: any[] = [
     {
-      title: "Packaging Films",
+      title: "Packaging Films and PET Resin",
       href: "/packaging-films-business",
       desc: "High-performance BOPET/BOPP films for diverse applications.",
       img: "/images/flex.jpeg"
       // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Packaging-Films-Business-faq-icon21.svg",
     },
-    {
-      title: "Flexible Packaging",
-      href: "/flexible-packaging-business",
-      desc: "Custom structures for brand impact and efficiency.",
-      img: "/images/flexible.png"
 
-      // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Flexible-Packaging-Business-faq-icon36.svg",
+    {
+      title: "Chemicals",
+      href: "/chemicals-business",
+      desc: "Speciality chemicals powering packaging performance.",
+      img: "/images/chem.jpeg"
+      // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Chemicals-Business-faq-icon20.svg",
     },
+
     {
       title: "Aseptic Packaging",
       href: "/aseptic-packaging-business",
@@ -453,12 +454,15 @@ export default function WhatWeDoPage() {
       // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Aseptic-Packaging-Business-faq-icon56.svg",
     },
     {
-      title: "Chemicals",
-      href: "/chemicals-business",
-      desc: "Speciality chemicals powering packaging performance.",
-      img: "/images/chem.jpeg"
-      // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Chemicals-Business-faq-icon20.svg",
+      title: "Flexible Packaging",
+      href: "/flexible-packaging-business",
+      desc: "Custom structures for brand impact and efficiency.",
+      img: "/images/flexible.png"
+
+      // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Flexible-Packaging-Business-faq-icon36.svg",
     },
+    
+    
     {
       title: "Holography",
       href: "/holography-business",

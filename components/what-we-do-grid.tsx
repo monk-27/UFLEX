@@ -11,19 +11,18 @@ import Link from "next/link";
 
 const items = [
   {
-    title: "Packaging Films",
+    title: "Packaging Films and PET Resin",
     href: "/packaging-films-business",
     desc: "High-performance BOPET/BOPP films for diverse applications.",
     img: "/images/flex.jpeg"
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Packaging-Films-Business-faq-icon21.svg",
   },
-  {
-    title: "Flexible Packaging",
-    href: "/flexible-packaging-business",
-    desc: "Custom structures for brand impact and efficiency.",
-    img: "/images/flexible.png"
-
-    // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Flexible-Packaging-Business-faq-icon36.svg",
+   {
+    title: "Chemicals",
+    href: "/chemicals-business",
+    desc: "Speciality chemicals powering packaging performance.",
+    img: "/images/chem.jpeg"
+    // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Chemicals-Business-faq-icon20.svg",
   },
   {
     title: "Aseptic Packaging",
@@ -34,12 +33,15 @@ const items = [
     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Aseptic-Packaging-Business-faq-icon56.svg",
   },
   {
-    title: "Chemicals",
-    href: "/chemicals-business",
-    desc: "Speciality chemicals powering packaging performance.",
-    img: "/images/chem.jpeg"
-    // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Chemicals-Business-faq-icon20.svg",
+    title: "Flexible Packaging",
+    href: "/flexible-packaging-business",
+    desc: "Custom structures for brand impact and efficiency.",
+    img: "/images/flexible.png"
+
+    // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Flexible-Packaging-Business-faq-icon36.svg",
   },
+  
+ 
   {
     title: "Holography",
     href: "/holography-business",
