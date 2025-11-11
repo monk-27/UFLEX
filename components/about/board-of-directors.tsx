@@ -543,7 +543,7 @@ const BoardOfDirectors = () => {
                     </div>
 
                     {/* Tiny Read More (stays subtle; disappears on hover since image covers) */}
-                    <div className="absolute left-3 top-3">
+                    {/* <div className="absolute left-3 top-3">
                       <button
                         onClick={() => setSelected(d)}
                         className="
@@ -555,7 +555,7 @@ const BoardOfDirectors = () => {
                       >
                         Read More
                       </button>
-                    </div>
+                    </div> */}
 
                     {/* Make whole card clickable (doesn't affect hover because overlay is pointer-events-none) */}
                     <button
