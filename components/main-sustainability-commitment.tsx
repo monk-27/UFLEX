@@ -679,6 +679,121 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
   );
 }
 
+function InvestorSliders({ items, heading, id }: { items: InvestorCard[]; heading: string; id: string }) {
+  const sliderRef = useRef<Slider | null>(null);
+
+  const settings: SlickSettings = useMemo(
+    () => ({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 3500,
+      pauseOnHover: true,
+      arrows: true,
+      prevArrow: <Arrow direction="left" />,
+      nextArrow: <Arrow direction="right" />,
+      responsive: [
+        { breakpoint: 1280, settings: { slidesToShow: 3, slidesToScroll: 1 } },
+        { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+        { breakpoint: 768, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+      ],
+    }),
+    []
+  );
+
+  return (
+    <section aria-labelledby={`${id}-heading`} className=" px-4 sm:px-6 lg:px-0 py-10">
+      <h2 id={`${id}-heading`} className="text-center text-[24px] manrope-700 text-[#117ABA] md:text-[42px] mb-12">
+        {heading}
+      </h2>
+
+      <div className="relative">
+        <Slider ref={sliderRef} {...settings}>
+          {items.map((card, idx) => (
+            <div className=" w-[360px] h-[354px] pl-1 sm:pl-10" key={`${card.title}-${idx}`}>
+              <div className="border-1 border-gray-100 bg-gray-100  relative overflow-hidden pt-12">
+                <div className="relative">
+                  <div className="relative w-[320px] h-[254px]">
+                    <Image
+                      src={card.img}
+                      alt={card.title}
+                      fill
+                      className="object-cover object-center"
+                      sizes=""
+                      priority={idx < 2}
+                    />
+                  </div>
+
+                  <div className="p-4 md:p-5">
+                    <h3 className="text-center text-[#117ABA] text-sm manrope-600 text-[16px]">{card.title}</h3>
+
+                  </div>
+                  <div className="text-gray-400 manrope-400 text-right items-end">
+                    <button className="">
+                      Download {">>"}
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+
+      <style jsx global>{`
+        /* dots spacing and shape */
+        .slick-dots {
+          margin-top: 18px;
+          display: flex !important;
+          justify-content: center;
+          gap: 8px;
+          padding: 0;
+          margin-top: 24px;
+        }
+        .slick-dots li button:before {
+          content: "";
+          display: block;
+          width: 10px;
+          height: 10px;
+          border-radius: 9999px;
+          background-color: #D1D5DB;
+          opacity: 0.6;
+        }
+           .slick-dots {
+  
+    margin-top: 24px; /* adjust as needed */
+    position: static !important; /* ensures it stays below slides */
+  }
+        .slick-dots li.slick-active button:before {
+          background-color: ${BRAND.primary};
+          opacity: 1;
+          transform: scale(1.12);
+        }
+
+        /* show our custom arrows (we place them via prevArrow/nextArrow) */
+        .slick-prev,
+        .slick-next {
+          display: none !important;
+        }
+
+        /* ensure slides stretch height */
+        .slick-track {
+          display: flex;
+          align-items: stretch;
+        }
+        .slick-slide > div {
+          height: 100%;
+          display: flex;
+        }
+      `}</style>
+    </section>
+  );
+}
+
 /* -------------------------------- HERO/BANNER -------------------------- */
 /*
   Updated: pill (Investors) is positioned so it sits half on the banner image
@@ -695,14 +810,14 @@ export default function WhatWeDoPage() {
       title: "2023-24",
       href: "/packaging-films-business",
       desc: "High-performance BOPET/BOPP films for diverse applications.",
-      img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/2023-2418.jpg"
+      img: "/images/sr1.png"
       // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Packaging-Films-Business-faq-icon21.svg",
     },
     {
       title: "2022-23",
       href: "/flexible-packaging-business",
       desc: "Custom structures for brand impact and efficiency.",
-      img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/2022-2341.jpg"
+      img: "/images/sr2.png"
 
       // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Flexible-Packaging-Business-faq-icon36.svg",
     },
@@ -710,7 +825,7 @@ export default function WhatWeDoPage() {
       title: "2021-22",
       href: "/aseptic-packaging-business",
       desc: "Safe, shelf-stable solutions with extended freshness.",
-      img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/2021-2200.jpg"
+      img: "/images/sr3.png"
 
       // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Aseptic-Packaging-Business-faq-icon56.svg",
     },
@@ -733,7 +848,7 @@ export default function WhatWeDoPage() {
 
 
       {/* Sliders */}
-      <InvestorSlider id="investor-relations" heading="Sustainability Reports" items={investorRelations} />
+      <InvestorSliders id="investor-relations" heading="Sustainability Reports" items={investorRelations} />
       {/* <InvestorSlider id="policies" heading="Policies, announcements and other documents" items={policiesDocs} /> */}
 
       <div className="h-16" />

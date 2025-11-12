@@ -136,9 +136,14 @@ export default function LifeatModules() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
+        <div className="items-center justify-center flex text-center space-x-2">
+
+                      <Image src="/images/ula.png" width={75} height={10} alt={""}/>
         <h2 className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">
           Life at UFlex
         </h2>
+        </div>
+        
         <h3
           className="mt-0 text-[16px] text-[#181818] sm:mt-2 md:text-[20px]"
           style={{ lineHeight: "124%" }}
