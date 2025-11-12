@@ -510,8 +510,8 @@ const HallPage = () => {
 
       {/* ==== HERO ==== */}
       <section className="bg-gradient-to-b from-white to-slate-50">
-        <header className=" relative h-[360px] sm:h-[666.6px] w-auto sm:w-[1470px]">
-              <div className="relative h-[360px] w-auto sm:h-[666.6px] sm:w-[1470px] ">
+        <header className=" relative h-[360px] sm:h-[666.6px] w-auto ">
+              <div className="relative h-[360px] w-auto sm:h-[666.6px] ">
                 <Image src="/images/mainhall.png" alt="hero" fill className="object-cover object-top" priority />
         
                 {/* <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/18 to-transparent" /> */}
