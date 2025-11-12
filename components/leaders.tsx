@@ -295,10 +295,10 @@ type TabKey =
   | "engineering";
 
 const TABS: { key: TabKey; label: string }[] = [
-  { key: "packaging-films", label: "Packaging Films" },
-  { key: "flexible-packaging", label: "Flexible Packaging" },
-  { key: "aseptic-packaging", label: "Aseptic Packaging" },
+  { key: "packaging-films", label: "Packaging Films and PET Resin" },
   { key: "chemicals", label: "Chemicals" },
+  { key: "aseptic-packaging", label: "Aseptic Packaging" },
+  { key: "flexible-packaging", label: "Flexible Packaging" },
   { key: "holography", label: "Holography" },
   { key: "engineering", label: "Engineering" },
 ];
@@ -457,7 +457,7 @@ export default function AwardsTabs() {
                   return (
                     <article
                       key={card.title + idx}
-                      className={`group overflow-hidden rounded-2xl border-2 ${c.border} ${c.bg} shadow transition`}
+                      className={`group overflow-hidden rounded-2xl border-1 ${c.border} ${c.bg} shadow transition`}
                     >
                       {/* Image wrapper must be relative for `fill` */}
                       <div className="relative h-60 w-full overflow-hidden">
@@ -468,12 +468,11 @@ export default function AwardsTabs() {
                           className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
                           priority={idx === 0}
                         />
-                        <div className={`absolute inset-x-0 bottom-0 h-1.5 ${c.tint}`} />
                       </div>
 
                       <div className="space-y-3 p-5">
-                        <h3 className="text-lg font-extrabold text-[#365072]">{card.title}</h3>
-                        <p className="text-[13.5px] font-semibold text-slate-900">
+                        <h3 className="text-lg manrope-700 text-[#117ABA]">{card.title}</h3>
+                        <p className="text-[13.5px] manrope-600 text-slate-900">
                           {card.byline}
                         </p>
                         <p className="line-clamp-6 text-[14px] leading-6 text-slate-700">
@@ -494,13 +493,13 @@ export default function AwardsTabs() {
               )}
             </div>
 
-            {AWARDS[active].length > 0 && (
+            {/* {AWARDS[active].length > 0 && (
               <div className="mt-8 flex justify-center">
                 <button className="inline-flex items-center gap-1 rounded-full bg-[#117ABA] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#243B6B]">
                   View More <ChevronRight size={16} />
                 </button>
               </div>
-            )}
+            )} */}
           </motion.div>
         </AnimatePresence>
       </div>

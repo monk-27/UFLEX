@@ -481,7 +481,7 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
 function HeroBanner({ image }: { image: string }) {
   return (
     <header className=" relative w-full bg-white">
-      <div className="relative h-[360px] md:h-[520px] lg:h-[530px] w-full overflow-hidden">
+      <div className="relative h-[360px] md:h-[520px] lg:h-[654px] w-full overflow-hidden">
         <Image src={image} alt="hero" fill className="object-cover object-top" priority />
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/18 to-transparent" />
@@ -497,7 +497,6 @@ function HeroBanner({ image }: { image: string }) {
         </div>
       </div>
 
-      {/* (optional) an absolutely-positioned content card area could go here if you need it */}
     </header>
   );
 }

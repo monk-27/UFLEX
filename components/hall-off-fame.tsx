@@ -463,8 +463,8 @@ function SpotlightModal({
                 </div>
 
                 <div className="space-y-3">
-                  <h3 className="text-2xl font-extrabold text-[#117ABA]">{s.title}</h3>
-                  <p className={`font-semibold ${c.title}`}>{s.byline}</p>
+                  <h3 className="text-2xl manrope-700 text-[#117ABA]">{s.title}</h3>
+                  <p className={`manrope-600 ${c.title}`}>{s.byline}</p>
                   <p className="leading-relaxed text-slate-700">{s.excerpt}</p>
                 </div>
               </div>
@@ -510,16 +510,27 @@ const HallPage = () => {
 
       {/* ==== HERO ==== */}
       <section className="bg-gradient-to-b from-white to-slate-50">
-        <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:py-20">
+        <header className=" relative h-[360px] sm:h-[666.6px] w-auto sm:w-[1470px]">
+              <div className="relative h-[360px] w-auto sm:h-[666.6px] sm:w-[1470px] ">
+                <Image src="/images/mainhall.png" alt="hero" fill className="object-cover object-top" priority />
+        
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/18 to-transparent" /> */}
+              </div>
+        
+              <div className="absolute left-0 right-0 bottom-0 pointer-events-none">
+                <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-0 ">
+                  <div className="relative">
+                    <span className="text-center inline-block bg-[#117ABA] text-white manrope-400 w-[216px] h-[59px] text-[36px]  shadow-sm translate-y-1/2">
+                      Hall of Fame
+                    </span>
+                  </div>
+                </div>
+              </div>
+        
+            </header>
+        <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:py-10">
           <div>
-            <motion.h1
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"
-            >
-              Hall of Fame
-            </motion.h1>
+            
 
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -548,7 +559,7 @@ const HallPage = () => {
             className="relative aspect-[16/10] overflow-hidden rounded-2xl "
           >
             <Image
-              src="/images/hall.jpeg"
+              src="/images/hallhero.png"
               alt="UFlex capabilities across the value chain"
               fill
               className="object-cover"
@@ -568,20 +579,7 @@ const HallPage = () => {
 
           <div className="relative">
             {/* arrows */}
-            <button
-              aria-label="Previous"
-              onClick={() => scrollRow("left")}
-              className="absolute left-2 top-1/2 z-10 -translate-y-1/2 rounded-xl bg-white/25 p-2 text-white backdrop-blur hover:bg-white/35"
-            >
-              <ChevronLeft />
-            </button>
-            <button
-              aria-label="Next"
-              onClick={() => scrollRow("right")}
-              className="absolute right-2 top-1/2 z-10 -translate-y-1/2 rounded-xl bg-white/25 p-2 text-white backdrop-blur hover:bg-white/35"
-            >
-              <ChevronRight />
-            </button>
+            
 
             {/* scrollable row */}
             <div
@@ -597,30 +595,30 @@ const HallPage = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: idx * 0.05 }}
-                    className={`flex w-full max-w-6xl flex-col gap-6 rounded-2xl border ${c.border} ${c.bg} p-4 shadow ring-1 ${c.ring} md:flex-row`}
+                    className={`flex w-full max-w-6xl flex-col gap-6 rounded-2xl border ${c.border} ${c.bg} p-4 shadow md:flex-row`}
                   >
                     {/* image */}
                     <div className="md:w-[46%]">
                       <div className="relative h-[260px] w-full overflow-hidden rounded-xl md:h-[320px]">
                         <Image src={s.image} alt={s.title} fill className="object-cover" />
-                        <div className={`absolute bottom-0 h-2 w-full ${c.tint}`} />
+                        <div className={`absolute bottom-0 h-2 w-full `} />
                       </div>
                     </div>
 
                     {/* text */}
                     <div className="flex min-h-[320px] flex-1 flex-col justify-center gap-3 px-1 md:px-2">
-                      <h3 className="text-2xl font-extrabold text-[#117ABA] md:text-[28px]">
+                      <h3 className="text-xl manrope-700 text-[#117ABA] md:text-[20px]">
                         {s.title}
                       </h3>
-                      <p className="font-medium text-gray-700">{s.byline}</p>
+                      <p className="manrope-400 text-gray-700">{s.byline}</p>
                       <p className="text-gray-500">{s.excerpt}</p>
 
-                      <button
+                      {/* <button
                         onClick={() => setOpenIdx(idx)}
                         className={`mt-4 inline-flex items-center rounded-lg border-2 ${c.border} bg-white px-4 py-2 text-sm font-semibold ${c.title} hover:bg-white/90`}
                       >
                         Read More
-                      </button>
+                      </button> */}
                     </div>
                   </motion.article>
                 );
