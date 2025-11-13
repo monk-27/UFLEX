@@ -83,7 +83,7 @@ const GlobalFootprint = () => {
         "Noida, Uttar Pradesh, India",
         "Dharwad, Karnataka, India",
       ],
-      "Packaging Films – PET Chip Resin": [
+      "PET Chip Resin": [
         "Panipat, Haryana, India",
       ],
       "Flexible Packaging": [
@@ -111,7 +111,18 @@ const GlobalFootprint = () => {
       "Flexible Tubes": [
         "Noida, Uttar Pradesh, India",
       ],
+       Recycling: [
+        "Noida, Uttar Pradesh, India",
+        "Jammu, J&K, India",
+        "Malanpur, Madhya Pradesh, India",
+      ],
+      // "Outside India": [
+      //   "Altamira, Tamaulipas, Mexico",
+      //   "North Extension of Industrial Zones, 6th October City, Egypt",
+      //   "Września, Sikorskiego 48, Poland",
+      // ],
     },
+    
 
     International: {
       "Packaging Films": [
@@ -133,6 +144,13 @@ const GlobalFootprint = () => {
       "Flexible Packaging – WPP Bags (Upcoming)": [
         "Altamira, Tamaulipas, Mexico",
       ],
+      Recycling: [
+       
+    
+        "Altamira, Tamaulipas, Mexico",
+        "North Extension of Industrial Zones, 6th October City, Egypt",
+        "Września, Sikorskiego 48, Poland",
+      ],
     },
 
     Recycling: {
@@ -148,12 +166,17 @@ const GlobalFootprint = () => {
       ],
     },
 
-    Marketing: {
+    Marketingind: {
       India: [
         "Mumbai, Maharashtra, India",
         "Kolkata, West Bengal, India",
         "Bengaluru, Karnataka, India",
       ],
+      
+    },
+
+     Marketingworld: {
+      
       "Outside India": [
         "New Jersey, USA",
         "London, UK",
@@ -174,7 +197,7 @@ const GlobalFootprint = () => {
         </p>
 
         <div className="mt-12 flex items-center justify-center">
-          <Image src="/images/map.png" height={1500} width={1700} alt="" className="object-cover w-full h-full"/>
+          <Image src="/images/map.png" width={100} height={100} priority alt="" className="object-contain w-[1400px] h-[487px]"/>
         </div>
 
         {/* CATEGORY WISE CARDS */}
@@ -191,7 +214,6 @@ const GlobalFootprint = () => {
                 <ul className="space-y-2">
                   {items.map((location, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="text-[#117ABA] manrope-800 text-xl mt-0.5">✓</span>
                       <span className="manrope-400 text-gray-700 text-lg">{location}</span>
                     </li>
                   ))}
@@ -212,7 +234,6 @@ const GlobalFootprint = () => {
                 <ul className="space-y-2">
                   {items.map((location, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="text-[#117ABA] manrope-800 text-xl mt-0.5">✓</span>
                       <span className="text-gray-700 text-lg">{location}</span>
                     </li>
                   ))}
@@ -221,26 +242,7 @@ const GlobalFootprint = () => {
             ))}
           </div>
 
-          {/* RECYCLING */}
-          <div className="border-2 border-gray-400 bg-gray-100 p-8 rounded-lg">
-            <h3 className="text-2xl manrope-800 mb-6 text-[#117ABA]">
-              Recycling Plants
-            </h3>
-
-            {Object.entries(categories.Recycling).map(([region, items], idx) => (
-              <div key={idx} className="mb-6">
-                <h4 className="text-xl manrope-700 text-[#117ABA] mb-2">{region}</h4>
-                <ul className="space-y-2">
-                  {items.map((location, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <span className="text-[#117ABA] manrope-800 text-xl mt-0.5">✓</span>
-                      <span className="text-gray-700 text-lg">{location}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+        
 
           {/* MARKETING OFFICES */}
           <div className="border-2 border-gray-400 bg-gray-100 p-8 rounded-lg">
@@ -248,13 +250,30 @@ const GlobalFootprint = () => {
               Marketing Offices
             </h3>
 
-            {Object.entries(categories.Marketing).map(([region, items], idx) => (
+            {Object.entries(categories.Marketingind).map(([region, items], idx) => (
               <div key={idx} className="mb-6">
-                <h4 className="text-xl manrope-700 text-[#117ABA] mb-2">{region}</h4>
+                <h4 className="flex justify-start text-xl manrope-400 text-[#117ABA] mb-2">{region}</h4>
                 <ul className="space-y-2">
                   {items.map((location, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="text-[#117ABA] manrope-800 text-xl mt-0.5">✓</span>
+                      <span className="text-gray-700 text-lg">{location}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <div className="border-2 border-gray-400 bg-gray-100 p-8 rounded-lg">
+            <h3 className="text-2xl manrope-800 mb-6 text-[#117ABA]">
+              Marketing Offices
+            </h3>
+
+            {Object.entries(categories.Marketingworld).map(([region, items], idx) => (
+              <div key={idx} className="mb-6">
+                <h4 className="flex justify-start text-xl manrope-400 text-[#117ABA] mb-2">{region}</h4>
+                <ul className="space-y-2">
+                  {items.map((location, i) => (
+                    <li key={i} className="flex items-start gap-3">
                       <span className="text-gray-700 text-lg">{location}</span>
                     </li>
                   ))}
