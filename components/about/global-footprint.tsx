@@ -148,7 +148,7 @@ const GlobalFootprint = () => {
        
     
         "Altamira, Tamaulipas, Mexico",
-        "North Extension of Industrial Zones, 6th October City, Egypt",
+        "6th October City, Egypt",
         "Września, Sikorskiego 48, Poland",
       ],
     },
@@ -161,7 +161,7 @@ const GlobalFootprint = () => {
       ],
       "Outside India": [
         "Altamira, Tamaulipas, Mexico",
-        "North Extension of Industrial Zones, 6th October City, Egypt",
+        "6th October City, Egypt",
         "Września, Sikorskiego 48, Poland",
       ],
     },
@@ -245,7 +245,7 @@ const GlobalFootprint = () => {
         
 
           {/* MARKETING OFFICES */}
-          <div className="border-2 border-gray-400 bg-gray-100 p-8 rounded-lg">
+          {/* <div className="border-2 border-gray-400 bg-gray-100 p-8 rounded-lg">
             <h3 className="text-2xl manrope-800 mb-6 text-[#117ABA]">
               Marketing Offices
             </h3>
@@ -262,8 +262,8 @@ const GlobalFootprint = () => {
                 </ul>
               </div>
             ))}
-          </div>
-          <div className="border-2 border-gray-400 bg-gray-100 p-8 rounded-lg">
+          </div> */}
+          {/* <div className="border-2 border-gray-400 bg-gray-100 p-8 rounded-lg">
             <h3 className="text-2xl manrope-800 mb-6 text-[#117ABA]">
               Marketing Offices
             </h3>
@@ -280,7 +280,7 @@ const GlobalFootprint = () => {
                 </ul>
               </div>
             ))}
-          </div>
+          </div> */}
 
         </div>
       </div>
