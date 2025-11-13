@@ -127,7 +127,7 @@ const GlobalFootprint = () => {
     International: {
       "Packaging Films": [
         "Jebel Ali Free Zone Area, Dubai, UAE",
-        "North Extension of Industrial Zones, 6th October City, Egypt",
+        "6th October City, Egypt",
         "Altamira, Tamaulipas, Mexico",
         "Elizabethtown, Kentucky, USA",
         "Września, Sikorskiego 48, Poland",
