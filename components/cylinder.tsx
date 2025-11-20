@@ -16,16 +16,21 @@ import ExpandableText from './expandabletext'
 const SliderItems: SliderItem[] = [
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-05492704927.jpg",
+        dynamiclink:"/printing-cylinder-business/printing-Our-Offerings",
         title: "Gravure Cylinders",
         desc: "High-precision gravure, printing, coating, and special-purpose cylinders for diverse applications, including rotogravure (gravure) cylinders.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-05492714927.jpg",
+        dynamiclink:"/printing-cylinder-business/printing-Our-Offerings",
+
         title: "CTP Flexo Plates",
         desc: "An advanced manufacturing setup, featuring laser imaging with 5080 DPI, for high-definition flexographic plates.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-05492724927.jpg",
+        dynamiclink:"/printing-cylinder-business/printing-Our-Offerings",
+
         title: "Flexo Printing Sleeves",
         desc: "Our flexo printing sleeves offer superior print quality, operational ease, and cost-efficiency in flexography printing.",
     },
