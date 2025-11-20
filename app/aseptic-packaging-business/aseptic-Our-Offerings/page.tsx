@@ -10,29 +10,43 @@ const Page = () => {
         <>
             <SiteHeader />
             <div className="bg-gradient-to-b from-white to-slate-50">
-                <DynamicHero image="/images/chemicals-banner.jpg" text="Chemicals Our Offerings" />
+                <DynamicHero image="/images/asepto-banner.jpg" text=" Aseptic Our Offerings" />
                 <ReusablePropsCOMMComp
-                    image="/images/chem.jpeg"
+                    image="/images/aseptic.png"
                     heading="Our Offerings"
                     introText=""
 
                     items={[
                         {
-                            title: "Inks",
-                            description: "High-performance inks for superior print quality, compliant with global food safety and sustainability standards.",
-                        },
-                        {
-                            title: "Adhesives",
-                            description: "A range of adhesives that ensure strong bonding, efficient processing, and compliance with global food safety and sustainability standards.",
-                        },
-                        {
-                            title: "Coatings",
-                            description: "A diverse range of coatings that provide visual appeal and meet diverse industry needs while supporting compliance and sustainability.",
-                        },
-                        {
-                            title: "Specialty Chemicals",
-                            description: "From functional additives to performance enhancers and process aids, our solutions are designed to meet the evolving demands of modern packaging."
-                        },
+        title: "Aseptic Cartons",
+
+        description: "Our aseptic liquid packaging cartons encompass six layers of protection that keeps the freshness preserved.",
+    },
+    {
+        title: "A SIP",
+
+
+        description: "India’s first food-grade and moisture-resistant U-shaped paper straw that is 100% recyclable.",
+    },
+    {
+        title: "Filling Machines",
+
+
+        description: "A range of machines that are at the core of the aseptic beverage production and packaging line.",
+    },
+
+    {
+        title: "Asepto Pro",
+
+
+        description: "Technical assistance, skill enhancement services, quality assurance, performance management, and remote assistance for machines.",
+    },
+
+    {
+        title: "Asepto Design",
+
+        description: "The creative powerhouse within Asepto, dedicated to shaping the visual identity of your products.",
+    },
                         
                     ]}
                 />
@@ -42,32 +56,26 @@ const Page = () => {
                     items={[
                         {
                             id: 1,
-                            image: "/images/flexglide.jpg",
-                            title: "FLEXGLIDE INK",
+                            image: "/images/care.jpg",
+                            title: "Care Pro",
                             shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
                             longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
                         },
                         {
                             id: 2,
-                            image: "/images/Flexglide-NT.jpg",
-                            title: "FLEXGLIDE NT INK",
+                            image: "/images/max.jpg",
+                            title: "Max Pro",
                             shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
                             longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
                         },
                         {
                             id: 3,
-                            image: "/images/GR-Flexglide.jpg",
-                            title: "GR FLEXGLIDE INK",
+                            image: "/images/sip.jpg",
+                            title: "A SIP 125 mm",
                             shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
                             longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
                         },
-                        {
-                            id: 4,
-                            image: "/images/gr.jpg",
-                            title: "GR FLEXGLIDE MONO SOLVENT INK",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
+                        
                         
                     ]}
                 />
@@ -76,32 +84,26 @@ const Page = () => {
                     items={[
                         {
                             id: 1,
-                            image: "/images/flexlam.jpg",
-                            title: "FLEXLAM INK",
+                            image: "/images/pillow.jpg",
+                            title: "Pillow",
                             shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
                             longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
                         },
                         {
                             id: 2,
-                            image: "/images/flexlamnt.jpg",
-                            title: "FLEXLAM NT INK",
+                            image: "/images/curve.jpg",
+                            title: "Curve",
                             shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
                             longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
                         },
                         {
                             id: 3,
-                            image: "/images/Flextrusion.jpg",
-                            title: "FLEXTRUSION INK",
+                            image: "/images/spectra.jpg",
+                            title: "Spectra",
                             shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
                             longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
                         },
-                        {
-                            id: 4,
-                            image: "/images/flexnt.jpg",
-                            title: "FLEXTRUSION NT INK",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
+                        
                         
                     ]}
                 />

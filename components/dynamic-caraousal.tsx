@@ -36,7 +36,7 @@ export default function DynamicCarouselModal({
 
   return (
     <>
-      {/* ===== CAROUSEL - NO GAP ABOVE IMAGE ===== */}
+      {/* ===== CAROUSEL - BIGGER IMAGE HEIGHT ===== */}
       <section className="py-16 bg-gray-50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center text-[24px] manrope-700 text-[#117ABA] md:text-[42px] mb-12">
@@ -44,22 +44,21 @@ export default function DynamicCarouselModal({
           </h2>
 
           <div className="relative">
-            <div className="overflow-hidden" ref={emblaRef}>
+            <div className="" ref={emblaRef}>
               <div className="flex">
                 {items.map((item) => (
                   <div
                     key={item.id}
                     className="flex-shrink-0 w-full sm:w-[360px] lg:w-[400px] px-4"
                   >
-                    {/* Clean card - no extra padding, image touches top */}
                     <div
                       className="cursor-pointer rounded-2xl bg-white 
-                                 h-[460px] flex flex-col transition-all duration-500 
-                                 "
+                                 h-[480px] flex flex-col transition-all duration-500 
+                                 hover:shadow-2xl hover:scale-[1.02]"
                       onClick={() => setSelectedItem(item)}
                     >
-                      {/* Image - flush with top */}
-                      <div className="relative h-[196px] w-full">
+                      {/* IMAGE HEIGHT INCREASED */}
+                      <div className="relative h-[280px] w-full">
                         <Image
                           src={item.image}
                           alt={item.title}
@@ -80,7 +79,7 @@ export default function DynamicCarouselModal({
                           </p>
                         </div>
                         <button className="mt-6 text-[#117ABA] manrope-500 hover:underline">
-                          Read More
+                          Read More {">>"}
                         </button>
                       </div>
                     </div>
@@ -89,7 +88,7 @@ export default function DynamicCarouselModal({
               </div>
             </div>
 
-            {/* Navigation Buttons */}
+            {/* Navigation */}
             <div className="flex justify-center gap-8 mt-12">
               <button
                 onClick={scrollPrev}
@@ -108,7 +107,7 @@ export default function DynamicCarouselModal({
         </div>
       </section>
 
-      {/* ===== MODAL - 100% WORKING & BEAUTIFUL ===== */}
+      {/* MODAL - UNCHANGED */}
       {selectedItem && (
         <motion.div
           className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 p-4"
@@ -125,16 +124,13 @@ export default function DynamicCarouselModal({
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Close Button */}
             <button
               onClick={() => setSelectedItem(null)}
-              aria-label="Close"
-              className="absolute right-3 top-3 z-10 bg-white border border-gray-300 p-2 rounded-full shadow-md hover:bg-gray-50 transition"
+              className="absolute right-3 top-3 z-10 bg-white border border-gray-300 p-2 rounded-full shadow-md hover:bg-gray-50"
             >
               <X className="h-5 w-5 text-gray-700" />
             </button>
 
-            {/* Left: Square Image */}
             <div className="p-6 md:p-8">
               <div className="relative aspect-square w-full border border-gray-100 overflow-hidden">
                 <Image
@@ -147,13 +143,11 @@ export default function DynamicCarouselModal({
               </div>
             </div>
 
-            {/* Right: Content */}
             <div className="p-6 md:p-10 flex flex-col justify-center">
               <h3 className="text-2xl md:text-3xl manrope-600 text-gray-900 leading-tight">
                 {selectedItem.title}
               </h3>
-
-              <div className="mt-6 text-gray-700 manrope-400 md:text-lg leading-relaxed space-y-4">
+              <div className="mt-6 text-gray-700 manrope-400 text-base md:text-lg leading-relaxed space-y-4">
                 {selectedItem.longDesc.split("\n\n").map((para, i) => (
                   <p key={i}>{para}</p>
                 ))}
