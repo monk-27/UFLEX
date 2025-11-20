@@ -16,16 +16,21 @@ import ExpandableText from './expandabletext'
 const SliderItems: SliderItem[] = [
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-07180601806.jpg",
+        dynamiclink:"/engineering-business/engineering-Our-Offerings",
         title: "Packaging Machines",
         desc: "A range of packaging machines and special purpose machines for wrapping of products of any shape and size and with specialised requirements.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-07180611806.jpg",
+        dynamiclink:"/engineering-business/engineering-Our-Offerings",
+
         title: "Converting Machines",
         desc: "A wide range of machines for various printing, lamination, slitting/rewinding, doctoring, and pouch making as per a client's requirement.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-07180621806.jpg",
+        dynamiclink:"/engineering-business/engineering-Our-Offerings",
+
         title: "Speciality Products ",
         desc: "A range of specialized ancillary products essential for packaging applications.",
     },
