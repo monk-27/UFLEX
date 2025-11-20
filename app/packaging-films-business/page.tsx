@@ -10,13 +10,13 @@ import PackageComp from "@/components/packaging"
 export default function Page() {
   return (
     <>
-        <SiteHeader />
+      <SiteHeader />
 
-<PackageComp />
+      <PackageComp />
 
 
 
-        <SiteFooter />
+      <SiteFooter />
 
     </>
   )

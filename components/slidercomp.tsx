@@ -6,12 +6,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Link from "next/link";
 
 /* -------------------- Types -------------------- */
 export type SliderItem = {
   img: string;
   title: string;
   desc: string;
+  dynamiclink ?:string;
 };
 
 export type SliderCarouselProps = {
@@ -146,6 +148,13 @@ function _SliderCarousel({
                     <h3 className="manrope-800 mb-2 text-[18px] text-[#117ABA] md:text-xl">{card.title}</h3>
                     <p className="text-[14px] text-gray-700 md:text-base">{card.desc}</p>
                   </div>
+                  {card.dynamiclink ? (
+                    <Link href={card.dynamiclink} className="flex items-center p-4 text-[18px] text-[#117ABA] cursor-pointer">
+                      Read more {">>"}
+                    </Link>
+                  ) : (
+                    ""
+                  )}
                 </div>
               </motion.div>
             );

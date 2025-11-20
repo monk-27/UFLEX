@@ -18,30 +18,41 @@ const SliderItems: SliderItem[] = [
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-19285202852.jpg",
         title: "Biaxially Oriented Polyethylene Terepthalate (BOPET) films",
         desc: "A type of polyester film made through biaxial orientation,leading to a thin, transparent, and uniform thermoplastic film.",
+        dynamiclink:"/packaging-films-business/packaging-our-offerings"
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-19285212852.jpg",
         title: "Biaxially Oriented Polyethylene (BOPET) films",
+        dynamiclink:"/packaging-films-business/packaging-our-offerings",
+
         desc: "An ideal option for packaging food, beverages, and electronics due to this films' transparency, high rigidity, heat stability, and low cost.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-06130301303.jpg",
         title: "Cast Polypropylene (CPP) films",
+        dynamiclink:"/packaging-films-business/packaging-our-offerings",
+
         desc: "A film manufactured through a cast extrusion process in which polypropylene resins are melted and extruded into a flat film.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-06130311303.jpg",
         title: "Metalized films",
+        dynamiclink:"/packaging-films-business/packaging-our-offerings",
+
         desc: "Decorative films and foils are developed with advanced metallization technology, depositing a thin metal layer onto the substrate.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-06130321303.jpg",
         title: "AlOx-coated films",
+        dynamiclink:"/packaging-films-business/packaging-our-offerings",
+
         desc: "Films with a transparent aluminium oxide layer that provide strong moisture and gas barriers while keeping the product visible.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item4-06130331303.jpg",
         title: "Speciality films",
+        dynamiclink:"/packaging-films-business/packaging-our-offerings",
+
         desc: "A range of films that provide value addition for converters by enhancing the quality, performance, and functionality of the final packaging.",
     },
 
@@ -339,6 +350,8 @@ const PackageComp = () => {
                     subheading=""
                     items={SliderItems}
                     imageHeight={280}
+
+
 
                 />
                 <OverlayModules
