@@ -17,28 +17,41 @@ const SliderItems: SliderItem[] = [
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-05023500235.jpg",
         title: "Aseptic Cartons",
+                dynamiclink:"/aseptic-packaging-business/aseptic-Our-Offerings",
+
         desc: "Our aseptic liquid packaging cartons encompass six layers of protection that keeps the freshness preserved.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-05023510235.jpg",
         title: "A SIP",
+                dynamiclink:"/aseptic-packaging-business/aseptic-Our-Offerings",
+
+
         desc: "India’s first food-grade and moisture-resistant U-shaped paper straw that is 100% recyclable.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-05023520235.jpg",
         title: "Filling Machines",
+               dynamiclink:"/aseptic-packaging-business/aseptic-Our-Offerings",
+
+
         desc: "A range of machines that are at the core of the aseptic beverage production and packaging line.",
     },
 
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item4-05023530235.jpg",
         title: "Asepto Pro",
+                dynamiclink:"/aseptic-packaging-business/aseptic-Our-Offerings",
+
+
         desc: "Technical assistance, skill enhancement services, quality assurance, performance management, and remote assistance for machines.",
     },
 
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item5-05023540235.jpg",
         title: "Asepto Design",
+        dynamiclink:"/aseptic-packaging-business/aseptic-Our-Offerings",
+
         desc: "The creative powerhouse within Asepto, dedicated to shaping the visual identity of your products.",
     },
     
