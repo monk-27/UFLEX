@@ -17,26 +17,35 @@ import ExpandableFlexiText from './expandable-flexi'
 const SliderItems: SliderItem[] = [
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-12332103321.jpg",
+        dynamiclink:"/flexitube-business/flexiTube-Our-Offerings",
         title: "METALIKA tubes",
         desc: "Tubes with high-shine metallization and holographic features for that premium appeal. We also offer matte and de-metallized options.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-12332113321.jpg",
+        dynamiclink:"/flexitube-business/flexiTube-Our-Offerings",
+
         title: "REMIKA tubes",
         desc: "Sustainable web, mono-material, lightweight, low-carbon footprint solutions",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-12332123321.jpg",
+        dynamiclink:"/flexitube-business/flexiTube-Our-Offerings",
+
         title: "GREENIKA tubes",
         desc: "PCR tubes with up to 30% PCR in the sleeves. These tubes use PCR developed in-house by us.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item4-12332133321.jpg",
+        dynamiclink:"/flexitube-business/flexiTube-Our-Offerings",
+
         title: "KRAFTIKA tubes",
         desc: "Our flexo printing sleeves offer superior print quality, operational ease, and cost-efficiency in flexography printing.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item5-12332143321.jpg",
+        dynamiclink:"/flexitube-business/flexiTube-Our-Offerings",
+
         title: "EARTHIKA tubes",
         desc: "Tubes made with biodegradable polymer.",
     },
