@@ -25,7 +25,16 @@ export default function DynamicCarouselModal({
   items,
 }: DynamicCarouselModalProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel(
-    { loop: true, align: "center", containScroll: "trimSnaps" },
+    {
+      loop: true,
+      align: "center",
+      slidesToScroll: 1,
+      containScroll: "trimSnaps",
+      breakpoints: {
+        "(min-width: 640px)": { slidesToScroll: 1 },
+        "(min-width: 1024px)": { slidesToScroll: 1 },
+      },
+    },
     [Autoplay({ delay: 4000, stopOnInteraction: false })]
   );
 
@@ -36,7 +45,7 @@ export default function DynamicCarouselModal({
 
   return (
     <>
-      {/* ===== CAROUSEL - BIGGER IMAGE HEIGHT ===== */}
+      {/* ===== CAROUSEL - 3 CARDS VISIBLE AT ONCE ===== */}
       <section className="py-16 bg-gray-50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center text-[24px] manrope-700 text-[#117ABA] md:text-[42px] mb-12">
@@ -44,12 +53,13 @@ export default function DynamicCarouselModal({
           </h2>
 
           <div className="relative">
-            <div className="" ref={emblaRef}>
+            {/* Embla Carousel Viewport */}
+            <div className="overflow-hidden" ref={emblaRef}>
               <div className="flex">
                 {items.map((item) => (
                   <div
                     key={item.id}
-                    className="flex-shrink-0 w-full sm:w-[360px] lg:w-[400px] px-4"
+                    className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 px-4"
                   >
                     <div
                       className="cursor-pointer rounded-2xl bg-white 
@@ -57,7 +67,7 @@ export default function DynamicCarouselModal({
                                  hover:shadow-2xl hover:scale-[1.02]"
                       onClick={() => setSelectedItem(item)}
                     >
-                      {/* IMAGE HEIGHT INCREASED */}
+                      {/* Image */}
                       <div className="relative h-[280px] w-full">
                         <Image
                           src={item.image}
@@ -78,8 +88,8 @@ export default function DynamicCarouselModal({
                             {item.shortDesc}
                           </p>
                         </div>
-                        <button className="mt-6 text-[#117ABA] manrope-500 hover:underline">
-                          Read More {">>"}
+                        <button className="mt-6 text-[#117ABA] manrope-500 font-medium hover:underline">
+                          Read More
                         </button>
                       </div>
                     </div>
@@ -88,7 +98,7 @@ export default function DynamicCarouselModal({
               </div>
             </div>
 
-            {/* Navigation */}
+            {/* Navigation Buttons */}
             <div className="flex justify-center gap-8 mt-12">
               <button
                 onClick={scrollPrev}
@@ -107,7 +117,7 @@ export default function DynamicCarouselModal({
         </div>
       </section>
 
-      {/* MODAL - UNCHANGED */}
+      {/* ===== MODAL - UNCHANGED ===== */}
       {selectedItem && (
         <motion.div
           className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 p-4"

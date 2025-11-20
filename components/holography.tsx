@@ -16,16 +16,21 @@ import ExpandableText from './expandabletext'
 const SliderItems: SliderItem[] = [
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-07011400114.jpg",
+        dynamiclink:"/holography-business/holography-Our-Offerings",
         title: "Products",
         desc: "High-performance inks for superior print quality, compliant with global food safety and sustainability standards.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-07110501105.jpg",
+        dynamiclink:"/holography-business/holography-Our-Offerings",
+
         title: "Applications",
         desc: "A range of adhesives that ensure strong bonding, efficient processing, and compliance with global food safety and sustainability standards.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-07110511105.jpg",
+        dynamiclink:"/holography-business/holography-Our-Offerings",
+
         title: "Industries",
         desc: "A diverse range of coatings that provide visual appeal and meet diverse industry needs while supporting compliance and sustainability.",
     },

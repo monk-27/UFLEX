@@ -16,60 +16,81 @@ import ExpandableText from './expandabletext'
 const SliderItems: SliderItem[] = [
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-08511505115.jpg",
+        dynamiclink:"/flexible-packaging-business/flexible-Our-Offerings",
         title: "Flexible Laminates",
         desc: "Our range of flexible laminates are made from various combinations of plastic, aluminum, and paper to suit diverse packaging needs.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-08533105331.jpg",
+        dynamiclink:"/flexible-packaging-business/flexible-Our-Offerings",
+        
         title: "Pre-formed pouches",
         desc: "Our wide array of flexible pouches designed to cater to diverse product categories and packaging needs across industries.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-08533115331.jpg",
+        dynamiclink:"/flexible-packaging-business/flexible-Our-Offerings",
+        
         title: "FlexFreshTM – Active & Modified Atmosphere Packaging (AMAP)",
         desc: "A breakthrough innovation designed to extend the shelf life of perishable goods such as fresh vegetables, fruits, and flowers.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-09042700427.jpg",
+        dynamiclink:"/flexible-packaging-business/flexible-Our-Offerings",
+        
         title: "Flexo printed rolls and bags",
         desc: "High-quality printed bags, in multiple formats, that protect products while delivering superior print clarity and shelf appeal.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-09042710427.jpg",
+        
+        dynamiclink:"/flexible-packaging-business/flexible-Our-Offerings",
         title: "Laminated Woven Poly Propylene (WPP) bags",
         desc: "Bags with high strength, durability, and superior printability, ideal for a variety of industrial and consumer applications.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-09042720427.jpg",
+        
+        dynamiclink:"/flexible-packaging-business/flexible-Our-Offerings",
         title: "Electron beam and Cast n Cure",
         desc: "Advanced e-beam and Cast n Cure print finishing solutions that boost packaging appeal, performance, and brand value.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item4-09042730427.jpg",
+        
+        dynamiclink:"/flexible-packaging-business/flexible-Our-Offerings",
         title: "Pharmaceutical Packaging",
         desc: "High-performance pharmaceutical packaging materials tailored to diverse dosage forms and global regulations.",
     },
 
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item5-09042740427.jpg",
+        
+        dynamiclink:"/flexible-packaging-business/flexible-Our-Offerings",
         title: "Hygiene Films",
         desc: "High-performance films, made with advanced processes, ensure hygiene, safety, and quality to meet the personal care industry's critical needs.",
     },
 
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item6-09042750427.jpg",
+        
+        dynamiclink:"/flexible-packaging-business/flexible-Our-Offerings",
         title: "Premium shower-proof bag",
         desc: "An advanced packaging solution tailored for the building materials industry, combining durability, safety, and high-performance design.",
     },
 
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item7-09042760427.jpg",
+        
+        dynamiclink:"/flexible-packaging-business/flexible-Our-Offerings",
         title: "ZipouchR",
         desc: "Versatile reclosable and reusable pouches, crafted from premium laminated films to meet modern food storage needs.",
     },
 
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item8-09042770427.jpg",
+        dynamiclink:"/flexible-packaging-business/flexible-Our-Offerings",
+        
         title: "Injection Moulding Products",
         desc: "Precision-engineered injection moulded plastic packaging components, designed to meet the diverse requirements of the packaging industry.",
     },
