@@ -137,7 +137,7 @@ const packagingData = [
     {
         "id": "Printing Cylinders Business",
         title: "Printing Cylinders Business",
-        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Printing-Cylinder-Business34.jpg",
+        image: "/images/cyls.png",
         "imageAlt": "UFlex Flexible Packaging Solutions",
         paragraphs: [
             "UFlex printing cylinders business enforces stringent quality control at every stage of production to deliver world-class cylinders. With advanced technology, the business manages the complete cylinder production process, starting from the steel base, copper plating, and surface finishing to digital engraving, chrome plating, and final proof printing.",

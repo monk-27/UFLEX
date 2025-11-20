@@ -132,7 +132,7 @@ const packagingData = [
     {
         "id": "holography",
         title: "Holography Business",
-        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Holography-Business58.jpg",
+        image: "/images/holographys.png",
         "imageAlt": "UFlex Holography Solutions",
         paragraphs: [
             "The UFlex holography business is India’s largest and most trusted provider of brand protection and anti-counterfeiting solutions, as well as an emerging global player in the industry.\n\nThe Holography Business offer a comprehensive range of holographic solutions, including, Advanced Security Holograms, Security Paper Labels & Tax Stamps, Wide Web Holographic Films, Stamping Foils, Transfer Holographic Metallized Paper & Paperboard, Security documents, & Textile Application Films for Sequins, Hot Melt, and Glitter Powder.",

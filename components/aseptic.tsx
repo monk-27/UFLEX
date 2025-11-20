@@ -159,7 +159,7 @@ const packagingData = [
     {
         "id": "holography",
         title: "Aseptic Packaging",
-        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Holography-Business58.jpg",
+        image: "/images/aseptic.png",
         "imageAlt": "UFlex Aseptic Packaging Solutions",
         paragraphs: [
             " Asepto, the Aseptic Packaging brand of UFlex, is the world’s fastest-growing aseptic packaging company, proudly serving over 200 esteemed clients across more than 40 countries." ,

@@ -298,7 +298,7 @@ const packagingData = [
     {
   "id": "flexible-packaging",
  title: "Flexible Packaging",
-  image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Flexible-Packaging-Business04.jpg",
+  image: "/images/flexible.png",
   "imageAlt": "UFlex Flexible Packaging Solutions",
   paragraphs: [
     "We offer a comprehensive range of products, including flexible laminates, pre-formed pouches, Flexo-printed rolls and bags, laminated woven polypropylene (WPP) bags, electron beam and Cast n Cure technology, pharmaceutical packaging, FlexiTubes, hygiene films, Flexfresh™ modified atmosphere packaging, and big bags. At UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every solution we create.",

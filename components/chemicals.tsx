@@ -136,7 +136,7 @@ const packagingData = [
     {
         "id": "holography",
         title: "Chemicals ",
-        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Holography-Business58.jpg",
+        image: "/images/chem.jpeg",
         "imageAlt": "UFlex Aseptic Packaging Solutions",
         paragraphs: [
             " Discover the essence of unparalleled commitment at our innovative hub, where excellence seamlessly intertwines with sustainability. Our solutions are meticulously crafted to cater to the distinctive requirements of the brands and businesses looking for innovative and sustainable packaging solutions." ,
