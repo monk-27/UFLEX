@@ -17,14 +17,14 @@ const SliderItems: SliderItem[] = [
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-05023500235.jpg",
         title: "Aseptic Cartons",
-                dynamiclink:"/aseptic-packaging-business/aseptic-Our-Offerings",
+        dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offerings",
 
         desc: "Our aseptic liquid packaging cartons encompass six layers of protection that keeps the freshness preserved.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-05023510235.jpg",
         title: "A SIP",
-                dynamiclink:"/aseptic-packaging-business/aseptic-Our-Offerings",
+        dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offerings",
 
 
         desc: "India’s first food-grade and moisture-resistant U-shaped paper straw that is 100% recyclable.",
@@ -32,7 +32,7 @@ const SliderItems: SliderItem[] = [
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-05023520235.jpg",
         title: "Filling Machines",
-               dynamiclink:"/aseptic-packaging-business/aseptic-Our-Offerings",
+        dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offerings",
 
 
         desc: "A range of machines that are at the core of the aseptic beverage production and packaging line.",
@@ -41,7 +41,7 @@ const SliderItems: SliderItem[] = [
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item4-05023530235.jpg",
         title: "Asepto Pro",
-                dynamiclink:"/aseptic-packaging-business/aseptic-Our-Offerings",
+        dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offerings",
 
 
         desc: "Technical assistance, skill enhancement services, quality assurance, performance management, and remote assistance for machines.",
@@ -50,11 +50,11 @@ const SliderItems: SliderItem[] = [
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item5-05023540235.jpg",
         title: "Asepto Design",
-        dynamiclink:"/aseptic-packaging-business/aseptic-Our-Offerings",
+        dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offerings",
 
         desc: "The creative powerhouse within Asepto, dedicated to shaping the visual identity of your products.",
     },
-    
+
     // ...add the rest
 ];
 
@@ -62,6 +62,8 @@ const modules: OverlayModule[] = [
     {
         title: "Learn with UFlex",
         image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-04515505155.jpg",
+        longdesc:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+
         description:
             "The UFlex Learning Academy fosters learning and development through digital, blended, and classroom courses.",
         cta: { label: "Read More", href: "/learning-academy" },
@@ -69,6 +71,8 @@ const modules: OverlayModule[] = [
     },
     {
         title: "Your growth, our success",
+               longdesc:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+
         image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-04515515155.jpg",
         description:
             "A vibrant work culture that empowers people to transform capabilities into meaningful achievements.",
@@ -175,9 +179,9 @@ const packagingData = [
         image: "/images/aseptic.png",
         "imageAlt": "UFlex Aseptic Packaging Solutions",
         paragraphs: [
-            " Asepto, the Aseptic Packaging brand of UFlex, is the world’s fastest-growing aseptic packaging company, proudly serving over 200 esteemed clients across more than 40 countries." ,
-        " As a leading provider of end-to-end aseptic liquid packaging solutions, we offer innovative designs, six-layered cartons, highly advanced filling machines, and exceptional service from highly trained engineers. In alignment with the Government’s 'Make in India' initiative, our state-of-the-art manufacturing facility in Sanand, Gujarat, spans 21 acres within a 72-acre land parcel and boasts a production capacity of 12 billion packs annually.",
-        "Our packaging solutions are designed for ultimate user convenience, easy opening, and maximum shelf life for products such as juices, non-aerated alcoholic beverages, and highly perishable liquids like milk and dairy products. Through innovative technology and advanced converting machines, we deliver superior aseptic packaging that meets the highest industry standards. Our product portfolio, including the Pillow Pack, Trio Pack, and Brick Pack, fulfils 90% of the domestic demand for aseptic liquid packaging, making Asepto the preferred choice in India."
+            " Asepto, the Aseptic Packaging brand of UFlex, is the world’s fastest-growing aseptic packaging company, proudly serving over 200 esteemed clients across more than 40 countries.",
+            " As a leading provider of end-to-end aseptic liquid packaging solutions, we offer innovative designs, six-layered cartons, highly advanced filling machines, and exceptional service from highly trained engineers. In alignment with the Government’s 'Make in India' initiative, our state-of-the-art manufacturing facility in Sanand, Gujarat, spans 21 acres within a 72-acre land parcel and boasts a production capacity of 12 billion packs annually.",
+            "Our packaging solutions are designed for ultimate user convenience, easy opening, and maximum shelf life for products such as juices, non-aerated alcoholic beverages, and highly perishable liquids like milk and dairy products. Through innovative technology and advanced converting machines, we deliver superior aseptic packaging that meets the highest industry standards. Our product portfolio, including the Pillow Pack, Trio Pack, and Brick Pack, fulfils 90% of the domestic demand for aseptic liquid packaging, making Asepto the preferred choice in India."
         ]
     }
 
@@ -200,16 +204,16 @@ const AsepticComp = () => {
                             Aseptic Packaging
 
                         </motion.h1>
-                        
+
                         {packagingData.map((section, idx) => (
-                                                    <ExpandableText
-                                                        key={idx}
-                                                        modalTitle={section.title}
-                                                        imageSrc={section.image}
-                                                        imageAlt={section.title}
-                                                        paragraphs={section.paragraphs}
-                                                    />
-                                                ))}
+                            <ExpandableText
+                                key={idx}
+                                modalTitle={section.title}
+                                imageSrc={section.image}
+                                imageAlt={section.title}
+                                paragraphs={section.paragraphs}
+                            />
+                        ))}
                     </div>
 
                     <motion.div
@@ -291,7 +295,7 @@ const AsepticComp = () => {
                         <p>
                             Enzymatic Delamination Technology (EDT) is Asepto’s sustainable solution to reprocess the aseptic cartons to bring them back into the circular economy. Through EDT, we can separate and recover valuable materials like aluminium, polymers, and paper pulp from these cartons. By doing so, we significantly reduce the environmental footprint associated with their disposal.
 
-                            </p>
+                        </p>
 
 
                     </motion.div>
