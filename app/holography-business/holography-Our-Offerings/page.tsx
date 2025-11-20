@@ -15,7 +15,7 @@ export default function Page() {
         <>
             <SiteHeader />
             <div className="bg-gradient-to-b from-white to-slate-50">
-                <DynamicHero image="/images/flexible-pack.jpg" text="Flexible Our Offerings" />
+                <DynamicHero image="/images/flexible-pack.jpg" text="Holography Our Offerings" />
                 <ReusablePropsCOMMComp
                     image="/images/holographys.png"
                     heading="Our Offerings"
