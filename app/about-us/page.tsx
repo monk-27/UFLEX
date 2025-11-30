@@ -100,14 +100,7 @@ export default function AboutPage() {
                 Committed to achieving carbon neutrality by 2035
               </motion.h3>
 
-              {/* <motion.p
-          className="mt-2 max-w-2xl text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[18px]"
-          variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
-        >
-          Sustainability and environmental stewardship are
-          <br className="hidden sm:block" />
-          at the forefront of our business practices.
-        </motion.p> */}
+            
 
               <motion.div
                 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}

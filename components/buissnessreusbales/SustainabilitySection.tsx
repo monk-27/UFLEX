@@ -1,0 +1,46 @@
+// src/components/business/SustainabilitySection.tsx
+import { HighlightBlock } from "@/app/business/data";
+import Image from "next/image";
+
+type Props = {
+  data: HighlightBlock;
+};
+
+export function SustainabilitySection({ data }: Props) {
+  return (
+    <section className="bg-white">
+      <div className="section section-y">
+        <div className="bg-white rounded-md shadow-sm overflow-hidden grid gap-0 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.2fr)]">
+          {/* Text */}
+          <div className="p-6 md:p-8 flex flex-col justify-center">
+            <h2 className="lato-700 text-[20px] md:text-[22px] text-[#1c1c1c] mb-3">
+              {data.title}
+            </h2>
+            <p className="lato-400 text-[14px] leading-relaxed text-[#4f4f4f] mb-4">
+              {data.description}
+            </p>
+            {data.linkHref && data.linkLabel && (
+              <a
+                href={data.linkHref}
+                className="inline-flex items-center gap-1 lato-700 text-[13px] uppercase tracking-wide text-[#117ABA]"
+              >
+                {data.linkLabel}
+                <span aria-hidden>↗</span>
+              </a>
+            )}
+          </div>
+
+          {/* Image */}
+          <div className="relative h-[200px] md:h-[260px] lg:h-[280px]">
+            <Image
+              src={data.image}
+              alt={data.title}
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
