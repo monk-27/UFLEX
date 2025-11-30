@@ -8,37 +8,46 @@ type Props = {
 
 export function AwardsSection({ data }: Props) {
   return (
-    <section className="bg-white">
-      <div className="section section-y">
-        <div className="relative h-[220px] md:h-[260px] lg:h-[300px] overflow-hidden rounded-md">
-          <Image
-            src={data.image}
-            alt={data.title}
-            fill
-            className="object-cover"
-          />
-          {/* dark tint */}
-          <div className="absolute inset-0 bg-black/50" />
+    <section className="relative w-screen left-1/2 right-1/2 -mx-[50vw]">
+      <div className="relative h-[260px] md:h-[360px] lg:h-[500px] overflow-hidden">
+        
+        {/* Background image */}
+        <Image
+          src={data.image}
+          alt={data.title}
+          fill
+          priority
+          className="object contain sm:object-cover w-full h-full"
+        />
 
-          {/* copy block */}
-          <div className="absolute inset-0 flex items-center">
-            <div className="px-6 md:px-10 max-w-xl">
-              <h2 className="lato-700 text-[18px] md:text-[20px] text-white mb-2">
-                {data.title}
-              </h2>
-              <p className="lato-400 text-[14px] leading-relaxed text-white/90 mb-4">
-                {data.description}
-              </p>
-              {data.linkHref && data.linkLabel && (
-                <a
-                  href={data.linkHref}
-                  className="inline-flex items-center gap-1 lato-700 text-[13px] uppercase tracking-wide text-white"
-                >
-                  {data.linkLabel}
-                  <span aria-hidden>↗</span>
-                </a>
-              )}
-            </div>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/55" />
+
+        {/* Content */}
+        <div className="max-w-5xl mx-auto absolute inset-0 flex items-center">
+          <div className="max-w-5xl px-6 md:px-8 lg:px-0">
+            <h2 className="lato-700 text-[24px] md:text-[28px] text-white mb-3">
+              {data.title}
+            </h2>
+
+            <h3 className="flex items-center gap-2 text-white lato-700 text-[18px] md:text-[24px] mb-3">
+              <span className="text-[#117ABA] text-xl leading-none">▶</span>
+              <span>Recognized for our sustainability efforts</span>
+            </h3>
+
+            <p className="max-w-2xl  lato-400 text-[12px] sm:text-[18px] leading-relaxed text-white/90 mb-4">
+              {data.description}
+            </p>
+
+            {data.linkHref && data.linkLabel && (
+              <a
+                href={data.linkHref}
+                className="inline-flex items-center gap-1 lato-700 text-[14px] text-[#117ABA] underline underline-offset-4 decoration-white"
+              >
+                {data.linkLabel}
+                <span aria-hidden>↗</span>
+              </a>
+            )}
           </div>
         </div>
       </div>

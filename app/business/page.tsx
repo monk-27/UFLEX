@@ -50,6 +50,7 @@ export default function BusinessesPage() {
 
       {/* Tabs + per-tab hero + per-tab content */}
       <BusinessTabs tabs={tabs} defaultId={defaultKey} />
+      
 
       <SiteFooter />
     </main>

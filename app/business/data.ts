@@ -1,5 +1,8 @@
 // src/data/businesses.ts
 "use client";
+
+import { title } from "process";
+
 export type BusinessKey =
   | "packaging-films"
   | "chemicals"
@@ -31,6 +34,16 @@ export type HighlightBlock = {
   linkLabel?: string;
   linkHref?: string;
 };
+export type KeyPerson = {
+  photo: string;
+  name: string;
+  role: string;
+  summary: string;
+  cta?: {
+    label: string;
+    href: string;
+  };
+};
 
 export interface BusinessConfig {
   key: BusinessKey;
@@ -58,7 +71,12 @@ export interface BusinessConfig {
     heading: string;
     items: InnovationSlide[];
   };
+  accreditation?: { image: string }[];
   sustainability: HighlightBlock;
+   keypeople?: {
+    title: string;
+    details: KeyPerson[];
+  };
   awards: HighlightBlock;
 }
 
@@ -151,10 +169,74 @@ export const businesses: BusinessConfig[] = [
           id: "f-mex-m",
           title: "F-MEX-M",
           description:
-            "F-MEX-M is an advanced one-side MST-coated transparent BOPET film, specially engineered for " +
-            "secondary packaging of pharmaceutical tablets and pills. Developed using proprietary technology, it serves " +
-            "as a superior alternative to traditional cellophane-coated films for strip-to-paper sealing applications.",
-          image: "/images/innovations/f-mex-m.jpg",
+            "F-ETS is an advanced one-side MST-coated transparent BOPET film, specially engineered " +
+            "for secondary packaging of pharmaceutical tablets and pills." +
+            "Developed using proprietary technology, it serves as a superior alternative to traditional cellophane-coated films for strip-to-paper sealing applications. ",
+          image: "/images/fmex.png",
+        },
+        {
+          id: "f-mex-m",
+          title: "F-ETS: One side MST coated transparent BOPET film",
+          description:
+            "F-ETS is an advanced one-side MST-coated transparent BOPET film, specially engineered for secondary packaging of pharmaceutical tablets and pills. Developed using proprietary technology, it serves as a superior alternative to traditional cellophane-coated films for strip-to-paper sealing applications." ,
+            
+          image: "/images/fets.png",
+        },
+
+        {
+          id: "b-tcm-m",
+          title: "B-TCM-M: Ultra-thin high-barrier metallized BOPP film",
+          description:
+            "B-TCM-M is an innovative, non-heat sealable metallized BOPP film developed for sustainable and high-performance packaging applications. At just 8 microns, it is the thinnest metallized BOPP film available, offering low GSM and high linear mileage- making it a resource-efficient choice." ,
+            
+          image: "/images/btcm.png",
+        },
+         {
+          id: "f-hsa",
+          title: "F-HSA: Heat sealable anti-fogtransparent BOPET film",
+          description:
+            "F-HSA is a high-performance transparent BOPET film designed with a heat sealable anti-fog surface on one side and an untreated surface on the other. Its exceptional clarity, transparency, and reliable sealing capabilities make it ideal for food packaging applications. " ,
+            
+          image: "/images/fhsa.png",
+        },
+
+
+         {
+          id: "b-dsc-aa",
+          title: "B-DSC-AA – Both side acrylic coated BOPP film",
+          description:
+            "This high-performance packaging film is engineered for modern flexible packaging needs, offering excellent heat sealability, hot-tack, and compatibility with lap/fin seals and PVDC-coated films. Ideal for monolayer pouches, it ensures tamper-proof, transparent packaging with strong aroma and flavor barriers.  " ,
+            
+          image: "/images/bdsc.png",
+        },
+
+        {
+          id: "b-dsc-al",
+          title: "B-DSC-AL – Low SIT and acrylic coated BOPP film",
+          description:
+            "This is an advanced BOPP film coated with acrylic and a low-temperature seal layer that activates at just 65°C. Engineered for high-performance packaging, this film offers exceptional low-temperature sealability and hot-tack strength on the coated side, ensuring strong seals even under minimal heat." ,
+            
+          image: "/images/bdscda.png",
+        },
+
+
+
+        {
+          id: "b-dsc-ds",
+          title: "B-DSC-DA – High barrier PVDC-acrylic coated BOPP film",
+          description:
+            "B-DSC-DA is a high-performance BOPP film with one side PVDC and the other side acrylic coating, designed to meet the evolving needs of flexible packaging. This film delivers outstanding barrier performance, with an oxygen transmission rate (OTR) of less than 15 cc/m²/day and water vapor transmission rate (WVTR) under 5 gm/m²/day, while maintaining excellent clarity." ,
+            
+          image: "/images/bdscas.png",
+        },
+
+         {
+          id: "b-dsc-dl",
+          title: "B-DSC-DL: High barrier PVDC coated BOPP film",
+          description:
+            "A specialized BOPP film featuring one side PVDC coating and the other side low temperature seal (LTS) coating, which activates at just 65°C. Engineered for monolayer pouch applications, this film delivers outstanding oxygen barrier properties (<15 cc/m²/day) while maintaining excellent clarity. It offers superior low-temperature sealability and hot tack performance on the LTS side. " ,
+            
+          image: "/images/bdscdl.png",
         },
         // add more slides if you need
       ],
@@ -165,20 +247,105 @@ export const businesses: BusinessConfig[] = [
         "Single-pellet solution: Pioneering innovation in recyclable packaging. Our breakthrough FSSAI-compliant single-pellet solution " +
         "enables the incorporation of recycled PET (rPET) in food and beverage packaging, combining recycled and virgin PET into a " +
         "single, high-purity pellet with excellent strength, stability and clarity.",
-      image: "/images/sustainability/pet-recycle.jpg",
+      image: "/images/sus.png",
       linkLabel: "Know more",
       linkHref: "#",
+    },
+    keypeople:{
+      title: "Key People",
+      details:[
+        {
+        photo: "/images/ajay.png",
+        name: " Mr. Ajay Gupta",
+        role: "Sr. Vice President - Flex Films, Hungary",
+        summary:
+            "Mr. Ajay Gupta brings over three decades of experience in the flexible packaging industry, with expertise spanning manufacturing, R&D, and business development. Currently based in Hungary, he plays a ... His previous roles incl...",
+        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+    },
+    {
+        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-1.-Mr.-Jagmohan-Mongia-29.jpg",
+        name: "Mr. Jagmohan Mongia ",
+        role: "President, Packaging Films business (India)",
+        summary:
+            "With four decades of industry experience, Jagmohan Mongia leads the Films business – India operations, UFlex. A commerce graduates with a diploma in sales and marketing from Bhartiya Vidya Bhawan, h...",
+        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+    },
+    {
+        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-2.-Mr.-P.-L.-Sirsamkar35.jpg",
+        name: "Mr. P. L. Sirsamkar",
+        role: "President - Technical and New Product Development, Packaging films business",
+        summary:
+            "Mr. Sirsamkar has been with the UFlex for over three decades. He has previously worked with leading organizations such as Garware and Polyplex. With nearly four decades of experience in the packaging ...",
+        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+    },
+    {
+        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-3.-Mr.-Sanjay-Tiku47.jpg",
+        name: "Mr. Sanjay Tiku",
+        role: "Business Head, Packaging Films Business (Flex Films Egypt)",
+        summary:
+            "A seasoned professional with nearly three decades of experience in the Flexible Packaging industry, specializing in operations, marketing, finance, business strategy, and people management. A CMA from...",
+        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+    },
+
+    {
+        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-4.-Mr.-Sundeep-Saksena-01.jpg",
+        name: "Mr. Sundeep Saksena ",
+        role: "Business Head, Packaging Films Business (Flex Films Poland)",
+        summary:
+            "With close to three decades of experience, including seven years of international exposure, across packaging, telecom, consumer durables, and FMCG sectors, Sundeep Saksena has consistently driven busi...",
+        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+    },
+    {
+        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-5.-Mr.-Junaid-Iqbal-Khan-37.jpg",
+        name: "Mr. Junaid Iqbal Khan  ",
+        role: "General Director, Packaging Films Business (Flex Films CIS)",
+        summary:
+            "With nearly two decades at UFlex, Junaid Khan has played a pivotal role in expanding the company’s global footprint across the packaging films business. In 2019, he was appointed as the General Dire...",
+        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+    },
+    {
+        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-6.-Mr.-Avinash-Kumar-51.jpg",
+        name: "Mr. Avinash Kumar ",
+        role: "Business Head, Packaging Films Business (Flex Films UAE)",
+        summary:
+            "With more than three decades of experience in the flexible packaging industry, Avinash Kumar has successfully led key functions across marketing, production, finance, commercial operations, and genera...",
+        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+    },
+
+    {
+        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-7.-Mr.-Vijay-Yadav13.jpg",
+        name: "Mr. Vijay Yadav",
+        role: "Business Head, Packaging Films Business (Flex Films USA)",
+        summary:
+            "With three decades of global experience, Vijay Yadav has successfully led roles in strategy, operations, R&D, and organizational transformation, having worked with renowned companies like SEKISUI (USA...",
+        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+    },
+
+    {
+        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-8.-Mr.-Suhas-More33.jpg",
+        name: "Mr. Suhas More",
+        role: "Business Head - Flex Films, Nigeria",
+        summary:
+            "A seasoned leader with more than two decades of experience. He drives growth in the Packaging Films Business and leads Flex Films' expansion in Russia, positioning UFlex as a preferred supplier in the...",
+        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+    },
+      ]
     },
     awards: {
       title: "Awards & Accolades",
       description:
-        "Recognized for our sustainability efforts. UFlex’s Packaging Films business, under the Flex Films brand, is a " +
-        "global leader offering innovative and sustainable packaging solutions, with manufacturing across 9 countries and " +
-        "presence in 150+ markets.",
-      image: "/images/awards/packaging-films-award.jpg",
+        "UFlex’s Packaging Films business, under the Flex Films brand, is a global leader offering innovative and sustainable packaging solutions, including BOPP, BOPET, CPP, specialty, and 100% PCR PET films, with manufacturing across 9 countries and presence in 150+ markets.",
+      image: "/images/awards.png",
       linkLabel: "Know more",
       linkHref: "#",
     },
+    accreditation: [
+      { image: "/images/acc1.png" },
+      { image: "/images/acc2.png" },
+      { image: "/images/acc3.png" },
+      { image: "/images/acc4.png" },
+      // { image: "/images/accredition5.png" },
+    ]
   },
 
    {

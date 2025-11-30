@@ -22,9 +22,9 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
 
   return (
     <section className="bg-white">
-      <div className="section section-y pt-6 pb-4">
+      <div className=" section section-y pt-6 pb-4">
         {/* Tabs row */}
-        <div className="border-b border-[#e0e0e0] flex gap-6 overflow-x-auto">
+        <div className=" border-b border-[#e0e0e0] flex gap-6 overflow-x-auto">
           {tabs.map((tab) => {
             const isActive = tab.id === activeId;
             return (

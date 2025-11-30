@@ -2,211 +2,138 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Slider, { Settings as SlickSettings } from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { AnimatedSection } from "./animated-section";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export type AccreditationItem = { image: string };
 
 export type AccreditationsSliderProps = {
-    /** Pass images from the parent */
-    items: AccreditationItem[];
-    /** Optional heading. Defaults to "Accreditations" */
-    heading?: string;
-    /** Optional slick overrides */
-    settings?: SlickSettings;
+  items: AccreditationItem[];
+  heading?: string;
 };
 
 const CARD_COLORS = [
-    { border: "border-gray-100", bg: "bg-gray-50/70", ring: "ring-gray-200" },
-    // { border: "border-blue-400", bg: "bg-blue-50/70", ring: "ring-blue-200" },
-    // { border: "border-pink-400", bg: "bg-pink-50/70", ring: "ring-pink-200" },
-    // { border: "border-purple-400", bg: "bg-purple-50/70", ring: "ring-purple-200" },
-    // { border: "border-orange-400", bg: "bg-orange-50/70", ring: "ring-orange-200" },
-    // { border: "border-yellow-400", bg: "bg-yellow-50/70", ring: "ring-yellow-200" },
+  { border: "border-gray-100", bg: "bg-gray-50", ring: "ring-gray-100" },
 ];
 
 export default function AccreditationsSlider({
-    items,
-    heading = "Accreditations",
-    settings,
-
+  items,
+  heading = "Accreditations",
 }: AccreditationsSliderProps) {
-    // Base slider config (desktop: 4, tablet: 2–3, mobile: 1)
-    //   const sliderSettings: SlickSettings = {
-    //     dots: true,
-    //     arrows: false,
-    //     infinite: true,
-    //     autoplay: true,
-    //     autoplaySpeed: 2500,
-    //     pauseOnHover: true,
-    //     speed: 600,
-    //     slidesToShow: 4,
-    //     slidesToScroll: 1,
-    //     centerMode: false,
-    //     responsive: [
-    //       { breakpoint: 1280, settings: { slidesToShow: 3, slidesToScroll: 1, centerMode: false } },
-    //       { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1, centerMode: false } },
-    //       { breakpoint: 768,  settings: { slidesToShow: 1, slidesToScroll: 1, centerMode: false } }, // ← phones
-    //     ],
-    //     ...settings,
-    //   };
+  const [columns, setColumns] = useState(4); // how many cards per view
+  const [page, setPage] = useState(0); // current “slide/page”
 
-    const [currentSlide, setCurrentSlide] = useState(0);
-
-    const DEFAULT_DESKTOP: SlickSettings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3, // desktop/laptop default
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3500,
-        pauseOnHover: false,
-        pauseOnDotsHover: true,
-        arrows: false,
-        centerMode: false,
-        centerPadding: "0px",
-        responsive: [
-            {
-                breakpoint: 1280, // tablets & small laptops
-                settings: { slidesToShow: 2, slidesToScroll: 1, centerMode: false, centerPadding: "0px" },
-            },
-            {
-                breakpoint: 768, // mobile
-                settings: { slidesToShow: 1, slidesToScroll: 1, centerMode: false, centerPadding: "0px", dots: true },
-            },
-        ],
+  // Decide how many cards to show based on viewport width
+  useEffect(() => {
+    const updateColumns = () => {
+      if (typeof window === "undefined") return;
+      const w = window.innerWidth;
+      if (w < 768) setColumns(1);         // mobile
+      else if (w < 1280) setColumns(2);   // tablet
+      else setColumns(4);                 // laptop/desktop
     };
 
-    const DEFAULT_MOBILE: SlickSettings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1, // strict 1-per-row on phones
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3500,
-        pauseOnHover: false,
-        pauseOnDotsHover: true,
-        arrows: false,
-        centerMode: false,
-        centerPadding: "0px",
-        responsive: [
-            { breakpoint: 1024, settings: { slidesToShow: 1, centerMode: false, centerPadding: "0px" } },
-            { breakpoint: 1280, settings: { slidesToShow: 2, centerMode: false, centerPadding: "0px" } },
-            { breakpoint: 9999, settings: { slidesToShow: 3, centerMode: true, centerPadding: "0px" } },
-        ],
-    };
+    updateColumns();
+    window.addEventListener("resize", updateColumns);
+    return () => window.removeEventListener("resize", updateColumns);
+  }, []);
 
-    const desktopCfg: SlickSettings = {
-        ...DEFAULT_DESKTOP,
-        afterChange: (i: number) => {
-            setCurrentSlide(i);
-            //   settingsDesktop?.afterChange?.(i);
-        },
-    };
+  // Total pages for current column count
+  const pageCount = Math.max(1, Math.ceil(items.length / columns));
 
-    const mobileCfg: SlickSettings = {
-        ...DEFAULT_MOBILE,
-        afterChange: (i: number) => {
-            setCurrentSlide(i);
-            //   settingsMobile?.afterChange?.(i);
-        },
-    };
-    return (
-        <div className="bg-gradient-to-b from-white to-slate-50">
-            {/* Heading */}
-            <motion.section
-                className="mx-auto max-w-6xl px-6 text-center sm:px-0 pt-16"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.9 }}
-                viewport={{ once: true }}
-            >
-                <motion.h3
-                    className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl md:mb-8"
-                    initial={{ opacity: 0, y: -16 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.15 }}
+  // Clamp page if columns or items change
+  useEffect(() => {
+    setPage((prev) => (prev >= pageCount ? pageCount - 1 : prev));
+  }, [pageCount]);
+
+  const startIndex = page * columns;
+  const visibleItems = items.slice(startIndex, startIndex + columns);
+
+  const canPrev = page > 0;
+  const canNext = page < pageCount - 1;
+  const showArrows = items.length > columns;
+
+  return (
+    <div>
+      {/* Heading */}
+      <motion.section
+        className="sm:mx-12 max-w-6xl px-6 text-center sm:px-0 "
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.9 }}
+        viewport={{ once: true }}
+      >
+        <motion.h3
+          className="text-start text-[18px] lato-700 text-[#117ABA] md:text-[28px] "
+          initial={{ opacity: 0, y: -16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+        >
+          {heading}
+        </motion.h3>
+      </motion.section>
+
+      {/* “Slider” – just paging through items */}
+      <AnimatedSection>
+        <div className="max-w-6xl mx-auto px-4 lg:px-0 ">
+          <motion.div
+            key={page} // animate when page changes
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.25 }}
+            className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4"
+          >
+            {visibleItems.map((it, idx) => {
+              const globalIdx = startIndex + idx;
+              const c = CARD_COLORS[globalIdx % CARD_COLORS.length];
+              return (
+                <div
+                  key={it.image + globalIdx}
+                  className="flex justify-center"
                 >
-                    {heading}
-                </motion.h3>
-            </motion.section>
-
-            {/* Slider */}
-            <AnimatedSection>
-                <div className="max-w-6xl mx-auto px-2 sm:px-4 lg:px-0 pb-20">
-                    <div className=" hidden sm:block">
-                        <Slider {...desktopCfg}>
-                            {items.map((it, idx) => {
-                                const c = CARD_COLORS[idx % CARD_COLORS.length];
-                                return (
-                                    <div key={it.image + idx} className="px-2 sm:px-3">
-                                        <motion.div
-                                            initial={{ opacity: 0, y: 10 }}
-                                            whileInView={{ opacity: 1, y: 0 }}
-                                            viewport={{ once: true }}
-                                            transition={{ duration: 0.35 }}
-                                            className={`relative aspect-square overflow-hidden rounded-2xl border-2 ${c.border} ${c.bg} shadow ring-4 ${c.ring}`}
-                                        >
-                                            <Image
-                                                src={it.image}
-                                                alt={`Accreditation ${idx + 1}`}
-                                                fill
-                                                className="object-cover rounded-2xl"
-                                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                                                priority={idx === 0}
-                                            />
-                                        </motion.div>
-                                    </div>
-                                );
-                            })}
-                        </Slider>
-                    </div>
-                    <div className=" block sm:hidden">
-                        <Slider {...mobileCfg}>
-                            {items.map((it, idx) => {
-                                const c = CARD_COLORS[idx % CARD_COLORS.length];
-                                return (
-                                    <div key={it.image + idx} className="px-2 sm:px-3">
-                                        <motion.div
-                                            initial={{ opacity: 0, y: 10 }}
-                                            whileInView={{ opacity: 1, y: 0 }}
-                                            viewport={{ once: true }}
-                                            transition={{ duration: 0.35 }}
-                                            className={`relative aspect-square overflow-hidden rounded-2xl border-2 ${c.border} ${c.bg} shadow ring-4 ${c.ring}`}
-                                        >
-                                            <Image
-                                                src={it.image}
-                                                alt={`Accreditation ${idx + 1}`}
-                                                fill
-                                                className="object-cover rounded-2xl"
-                                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                                                priority={idx === 0}
-                                            />
-                                        </motion.div>
-                                    </div>
-                                );
-                            })}
-                        </Slider>
-                    </div>
-                    {/* Hard guarantee: 1 card per row on mobile, no peeking */}
-                    <style jsx global>{`
-            .slick-slide > div { display: block; }
-            .slick-dots li button:before { color: #255994 !important; opacity: 0.6; }
-            .slick-dots li.slick-active button:before { opacity: 1; }
-            @media (max-width: 768px) {
-              .slick-list { padding: 0 8px !important; }
-              .slick-track { display: flex !important; align-items: stretch !important; }
-              .slick-slide { height: auto !important; }
-              .slick-slide > div { width: 100% !important; margin: 0 auto !important; }
-            }
-          `}</style>
+                  <div
+                    className={`relative w-full h-[176px] max-w-[260px] aspect-[4/3]  flex items-center justify-center`}
+                  >
+                    <Image
+                      src={it.image}
+                      alt={`Accreditation ${globalIdx + 1}`}
+                      fill
+                      className="object-contain p-4"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 30vw"
+                      priority={globalIdx === 0}
+                    />
+                  </div>
                 </div>
-            </AnimatedSection>
+              );
+            })}
+          </motion.div>
+
+          {/* Prev / Next – centered below, conditional */}
+          {showArrows && (
+            <div className="mt-6 flex items-center justify-center gap-6">
+              <button
+                type="button"
+                onClick={() => canPrev && setPage((p) => p - 1)}
+                disabled={!canPrev}
+                aria-label="Previous"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#117ABA]/30 bg-white shadow-sm hover:bg-[#117ABA]/5 disabled:opacity-40 disabled:cursor-not-allowed"
+              >
+                <ChevronLeft className="h-5 w-5 text-[#117ABA]" />
+              </button>
+              <button
+                type="button"
+                onClick={() => canNext && setPage((p) => p + 1)}
+                disabled={!canNext}
+                aria-label="Next"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#117ABA]/30 bg-white shadow-sm hover:bg-[#117ABA]/5 disabled:opacity-40 disabled:cursor-not-allowed"
+              >
+                <ChevronRight className="h-5 w-5 text-[#117ABA]" />
+              </button>
+            </div>
+          )}
         </div>
-    );
+      </AnimatedSection>
+    </div>
+  );
 }
