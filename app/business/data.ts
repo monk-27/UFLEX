@@ -774,7 +774,131 @@ export const businesses: BusinessConfig[] = [
     { image: "/images/accc14.png" },
     { image: "/images/accc15.png" }
   ]
+},
+
+{
+  key: "engineering",
+  label: "Engineering",
+  hero: {
+    heading: "Engineering",
+    image: "/images/heroengg.png",
+    body:
+      "A leading manufacturer specializing in top-tier packaging, printing, and allied machines, catering to diverse needs across industries. Established in 1985, UFlex Engineering is a leading manufacturer specializing in top-tier packaging, printing, and allied machines. Our commitment to delivering high-performance machines and tailored solutions has propelled us to the forefront of the industry. We offer a comprehensive range of products and cater to diverse needs across various sectors.",
+  },
+  offerings: {
+    heading: "Our Offerings",
+    items: [
+      {
+        id: "packaging-machines",
+        title: "Packaging Machines",
+        image: "/images/packagingmacines.png",
+        description: "",
+      },
+      {
+        id: "converting-machines",
+        title: "Converting Machines",
+        image: "/images/converting.png",
+        description: "",
+      },
+    ],
+  },
+  innovations: {
+    heading: "Business Highlights and Innovations",
+    items: [
+      {
+        id: "double-head-coating-1650",
+        title: "Double Head Coating-1650",
+        description:
+          "UFlex's Engineering Business meets market demand with coating machines covering up to 2500mm web widths. Recent offerings include a 1650mm double-headed model applying various coatings with methods like gravure and kiss coating.",
+        image: "/images/double.png",
+      },
+      {
+        id: "pfs-4u",
+        title: "PFS-4U",
+        description:
+          "UFlex launched the LPFS-4U (4 UP Linear, Pick, Fill, and Seal) machine in Q3, 2022. This machine, driven entirely by servos, ensures speed, performance, safety, hygiene, and environmental sustainability for brands. With an operator-friendly interface and efficient filling system, it accommodates various applications, running up to 20 PPM per track with four channels.",
+        image: "/images/pfs4u.png",
+      },
+      {
+        id: "rotary-horizontal-high-speed-form-fill-and-seal",
+        title: "Rotary Horizontal High-Speed Form Fill and Seal Machine with Gripper",
+        description:
+          "UFlex Engineering's innovative design for a Rotary Horizontal High-Speed Form Fill and Seal machine features grippers that hold pouches without conveyor belts, enhancing pouch quality and preventing leaks.",
+        image: "/images/rotary.png",
+      },
+      {
+        id: "accu-slit-3300",
+        title: "Accu Slit-3300",
+        description:
+          "After the successful performance of Accu Slit2500 and Accu Eco Slit-3000, the UFlex Engineering Business design team developed Accu Slit-3300, the new slitter of width 3300, for slitting Metalized BOPP and other substrates in FY23.",
+        image: "/images/accu.png",
+      },
+      {
+        id: "asepto-speed-25000",
+        title: "Asepto Speed 25000 machine",
+        description:
+          "UFlex, under the flagship of Asepto, introduced the next-gen, superpower Asepto Speed 25000 machine, an innovative engineering marvel that can process 25,000 aseptic liquid cartons per hour. It is the next-generation aseptic liquid filling machine with state-of-the-art technology that works at lightning speed with the convenience of an all-in-one portion-pack filling facility.",
+        image: "/images/asepto.png",
+      },
+      {
+        id: "uflex-flexi-liquid-double-head",
+        title: "UFlex-flexi-liquid (double head)",
+        description:
+          "The newly introduced machinery boasts an array of features designed to optimize operation efficiency. Its user-friendly interface ensures easy operation, while its low maintenance requirements minimize downtime. Despite its compact design and small footprint, it integrates seven servos, enabling high-speed performance.",
+        image: "/images/flexiuflex.png",
+      },
+    ],
+  },
+  sustainability: {
+    title: "Sustainability",
+    description:
+      "At UFlex, we prioritise environmental responsibility across our operations. UFlex engineering has undertaken several initiatives focussed on water conservation, waste management and enhancing biodiversity surrounding our facilities.",
+    image: "/images/sus.png",
+    linkLabel: "Know more",
+    linkHref: "#",
+  },
+  keypeople: {
+    title: "Key People",
+    details: [
+      {
+        photo: "/images/ravi.png",
+        name: "Mr. Ravi Sharma",
+        role: "Joint President - Engineering and Solutions Delivery, Engineering Business",
+        summary:
+          "Mr. Ravi Sharma is responsible for leading Engineering and Solutions Delivery for the Engineering Business.",
+        cta: { label: "Read More", href: "/leadership/ravi-sharma" },
+      },
+      {
+        photo: "/images/akash.png",
+        name: "Mr. Akash Khandelwal",
+        role: "Executive Vice President – Operations, Engineering Business",
+        summary:
+          "Mr. Akash Khandelwal leads Operations for the Engineering Business as Executive Vice President.",
+        cta: { label: "Read More", href: "/leadership/akash-khandelwal" },
+      },
+      {
+        photo: "/images/summet.png",
+        name: "Mr. Sumeet Arora",
+        role: "Senior Vice President - Sales and Marketing, Engineering Business",
+        summary:
+          "Mr. Sumeet Arora heads Sales and Marketing for the Engineering Business as Senior Vice President.",
+        cta: { label: "Read More", href: "/leadership/sumeet-arora" },
+      },
+    ],
+  },
+  awards: {
+    title: "Awards & Accolades",
+    description: "Over the last several years, UFlex’s Flexible Packaging business has received various awards and certifications for its innovative and sustainable packaging solutions.",
+    image: "/images/awards.png",
+    linkLabel: "Know more",
+    linkHref: "#",
+  },
+  accreditation: [
+    { image: "/images/accc13.png" },
+    { image: "/images/accc14.png" },
+  ],
 }
+
 
 ];
 
