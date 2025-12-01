@@ -661,6 +661,26 @@ export const businesses: BusinessConfig[] = [
         id: "holographic-paper",
         title: "Holographic Metallized Paper",
         image: "/images/holographic.png"
+      },
+      {
+        id: "transfer-holographic-metallized-paper",
+        title: "Stamping Foils ",
+        image: "/images/digital.png"
+      },
+      {
+        id: "transfer-paper-board",
+        title: "Transfer Paper/ Board",
+        image: "/images/transfer.png"
+      },
+      {
+        id: "wide-web-holographic-films",
+        title: "Wide Web Holographic Films ",
+        image: "/images/wide.png"
+      },
+      {
+        id: "stamping-foils-2",
+        title: "Stamping Foils",
+        image: "/images/stampingfoil.png"
       }
     ]
   },
@@ -897,7 +917,265 @@ export const businesses: BusinessConfig[] = [
     { image: "/images/accc13.png" },
     { image: "/images/accc14.png" },
   ],
-}
+},
+
+{
+  key: "printing-cylinders",
+  label: "Printing Cylinders",
+  hero: {
+    heading: "Printing Cylinders",
+    image: "/images/heroprinting.png",
+    body:
+      "UFlex printing cylinders business enforces stringent quality control at every stage of production to deliver world-class cylinders. With advanced technology, the business manages the complete cylinder production process, starting from the steel base, copper plating, and surface finishing to digital engraving, chrome plating, and final proof printing.",
+  },
+
+  offerings: {
+    heading: "Our Offerings",
+    items: [
+      {
+        id: "gravure-cylinders",
+        title: "Gravure Cylinders",
+        image: "/images/gravure.png",
+        description:
+          "High-performance cylinders for precision gravure printing.",
+      },
+      {
+        id: "ctp-flexo-plates",
+        title: "CTP Flexo Plates",
+        image: "/images/ctp.png",
+        description:
+          "Computer-to-plate flexographic plates for consistent, high-quality impressions.",
+      },
+      {
+        id: "flexo-printing-sleeves",
+        title: "Flexo Printing Sleeves",
+        image: "/images/flexo.png",
+        description:
+          "Durable sleeves designed for efficient and flexible flexo printing.",
+      },
+    ],
+  },
+
+  innovations: {
+    heading: "Business Highlights and Innovations",
+    items: [
+      {
+        id: "holographic-effect-leatherettes",
+        title:
+          "Holographic effect on leatherettes through steel embossed cylinders",
+        description:
+          "The holographic effect on leatherettes like PU and PVC-based materials through steel embossed cylinders have multiple applications that enhance the aesthetics of products used for home decor, handbags, car seat cover, and raincoat and shoes.",
+        image: "/images/leather.png",
+      },
+      {
+        id: "twining-effect-leatherettes-steel",
+        title:
+          "Twining effect on leatherettes and steel through laser embossed cylinders",
+        description:
+          "The twining effect on leatherettes and steel provides an array of applications and enhances the product finish and aesthetics in fashion, lift wall decorations, curtains, handbags, car seat covers, flooring, shopping malls, and hospital floors.",
+        image: "/images/pfs4u.png",
+      },
+      {
+        id: "carving-effect-pvc",
+        title: "Carving effect through laser embossing on PVC",
+        description:
+          "Carving effect through laser embossing on PVC has many attractive applications for home decoration. It can enhance the attractiveness and aesthetics of home interiors like modular kitchens, table covers, door mats, floor mats, and even in-car floor mats. It is durable, easy to maintain, cost-effective, and can be installed in a short time.",
+        image: "/images/pvc.png",
+      },
+      {
+        id: "laser-embossing-shoe-soles",
+        title: "Laser embossing on the shoe soles",
+        description:
+          "Carving effect through laser embossing on PVC has many attractive applications for home decoration. It can enhance the attractiveness and aesthetics of home interiors like modular kitchens, table covers, door mats, floor mats, and even in-car floor mats. It is durable, easy to maintain, cost-effective, and can be installed in a short time.",
+        image: "/images/shoes.png",
+      },
+      {
+        id: "aesthetic-effect-shoe-foxing",
+        title: "Aesthetic effect on shoe foxing through laser embossing",
+        description:
+          "Solutions that make footwear more attractive and appealing to customers. The aesthetic effect of shoe foxing (the upper layer of shoe sides) makes footwear more attractive and appealing to customers. This effect helps shoe manufacturers to rapidly multiply their revenues. In addition, this embossing on shoe foxing creates a higher demand for such footwear in the market.",
+        image: "/images/laser.png",
+      },
+      {
+        id: "anti-skidding-foot-mat",
+        title: "Anti-skidding pattern on foot mat through laser embossing",
+        description:
+          "3D anti-skidding effect on PVC sheets through laser embossing. This innovation creates a 3D anti-skidding effect on PVC sheets through laser embossing. Such skid-free embossing can be used in the manufacturing of foot mats.",
+        image: "/images/antiskiding.png",
+      },
+    ],
+  },
+
+  sustainability: {
+    title: "Sustainability",
+    description:
+      "Acting today for a sustainable tomorrow. Through energy-efficient technologies, eco-friendly processes, and responsible waste management, we are proud to foster an eco-friendly environment at our plants.",
+    image: "/images/sus.png",
+    linkLabel: "Know more",
+    linkHref: "#",
+  },
+
+  keypeople: {
+    title: "Key People",
+    details: [
+      {
+        photo: "/images/parvez.png",
+        name: "Mr. Parwez Izhar",
+        role: "Executive Vice President - Printing Cylinders Business",
+        summary:
+          "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+      },
+    ],
+  },
+
+  awards: {
+    title: "Awards & Accolades",
+    description:
+      "Over the last several years, UFlex’s Printing Cylinder business has received various awards and certifications.",
+    image: "/images/awards.png",
+    linkLabel: "Know more",
+    linkHref: "#",
+  },
+
+  accreditation: [
+   {image: "/images/accc16.png"},
+   {image: "/images/accc16.png"}
+
+  ],
+},
+
+{
+    key: "flexible-tubes",
+    label: "Flexible Tubes",
+    hero: {
+      heading: "Flexible Tubes",
+      image: "/images/heroflexi.png",
+      body: `Our innovative multilayer flexible tube packaging solutions have been designed especially for the beauty, personal care and pharma industries.
+At UFlex, we challenge conventions through design thinking—reimagining material choices, printing, lamination, and production to deliver packaging that’s as innovative as it is impactful.`,
+    },
+    offerings: {
+      heading: "Our Offerings",
+      items: [
+        {
+          id: "greenika",
+          title: "GREENIKA",
+          image: "/images/greenika.png",
+        },
+        {
+          id: "gloss-tubes",
+          title: "Gloss Tubes",
+          image: "/images/glosstubes.png",
+        },
+        {
+          id: "mettalika",
+          title: "METTALIKA",
+          image: "/images/metalika.png",
+        },
+        {
+          id: "mattika",
+          title: "MATTIKA",
+          image: "/images/matika.png",
+        },
+        {
+          id: "matte-metallica",
+          title: "Matte Metallica",
+          image: "/images/matte.png",
+        },
+        {
+          id: "de-mettalized",
+          title: "DE METTALIZED",
+          image: "/images/de.png",
+        },
+        {
+          id: "optika",
+          title: "OPTIKA",
+          image: "/images/optika.png",
+        },
+      ],
+    },
+    innovations: {
+      heading: "Business Highlights and Innovations",
+      items: [
+        {
+          id: "gravure-reverse-megapixel",
+          title:
+            "Gravure-reverse printed tubes with high Megapixel Print Quality",
+          description: `Our Gravure-reverse printed tubes with ultra-HD resolution provide vibrant, razor-sharp branding. The photorealistic imagery enhances the shelf presence of the brand.
+
+With 75% of purchasing decisions made by consumers at the shelf, aesthetically designed packaging is a brand’s silent salesperson.`,
+          image: "/images/matika.png",
+        },
+        {
+          id: "metallized-holographic-films",
+          title: "Metallized and holographic films",
+          description:
+            "Our metallized and holographic films, developed in-house, offer premium aesthetics like a luxurious finish and light-reflective effects, as well as provide enhanced product like oxygen/moisture barriers.",
+          image: "/images/matika.png",
+        },
+        {
+          id: "anti-counterfeiting-brand-protection",
+          title:
+            "Built-in anti-counterfeiting tech–brand protection",
+          description: `Our laser engraving and covert printing technologies offer brand protection and authenticity for pharmaceuticals and premium cosmetics through:
+• Tamper-proof designs (overt and covert security features)
+• Lensing effect (single or multiple lensing)`,
+          image: "/images/optika.png",
+        },
+        {
+          id: "sustainability-measurable",
+          title: "Sustainability That’s Measurable",
+          description: `From in-house PCR, BOPP/PET/polyethylene production capabilities to water-based inks and chemicals, we offer sustainable options from source to shelf.
+• Radical resource efficiency - In-house PCR production capability
+• In-house BOPP/PET/polyethylene production - Lower carbon vs. outsourced supply chains
+• Water-based inks/chemicals - Safer end-of-life processing
+• Circularity Pathways - Lightweighting (up to 20% material reduction) and recyclability-ready designs (mono-material structures)`,
+          image: "/images/de.png",
+        },
+      ],
+    },
+    sustainability: {
+      title: "Sustainability",
+      description:
+        "Driving Sustainable Growth Through Smarter Packaging Practices.\nOur commitment to Environmental & Social Responsibility (ESR) and sustainability is more than a value—it’s a strategy. We foster collaborative, long-term partnerships with brand owners to co-create packaging that is not only beautiful and secure but also future-ready and planet-positive.",
+      image: "/images/sus.png",
+      linkLabel: "Know more",
+      linkHref: "#",
+    },
+    keypeople: {
+      title: "Key People",
+      details: [
+        {
+          photo: "/images/bose.png",
+          name: "Mr. Subrata Bose",
+          role:
+            "Senior Vice President - Tubes, Flexible Packaging Business",
+          summary: "",
+        },
+        {
+          photo: "/images/venkatesh.png",
+          name: "Mr. Venkatesh Rajagopalan",
+          role:
+            "Senior Vice President - Flexible Tubes Business",
+          summary: "",
+        },
+      ],
+    },
+    awards: {
+      title: "Awards & Accolades",
+      description: "Over the last several years, UFlex’s Printing Cylinder business has received various awards and certifications.",
+      image: "/images/awards.png",
+      linkLabel: "Know more",
+      linkHref: "#",
+    },
+    accreditation: [
+      
+      { image: "/images/accc16.png" },
+      { image: "/images/accc16.png" },
+
+    ],
+  }
+
 
 
 ];
