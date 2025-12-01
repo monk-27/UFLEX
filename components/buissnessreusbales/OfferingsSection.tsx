@@ -1,102 +1,4 @@
-// // src/components/business/OfferingsSection.tsx
-// "use client";
 
-// import { businesses, BusinessKey, Offering } from "@/app/business/data";
-// import Image from "next/image";
-// import { useEffect, useState } from "react";
-// import { SubBusinessHero } from "./subhero";
-// import { BusinessDetail } from "./BusinessDetail";
-
-// type Props = {
-//   heading: string;
-//   items: Offering[];
-//   businessKey: BusinessKey;
-//   subheading?: string;
-//   subitems?: Offering[];
-// };
-
-// export function OfferingsSection({ heading, items, businessKey, subheading, subitems }: Props) {
-
-
-//   const business = businesses.find((b) => b.key === businessKey);
-//   const [index, setIndex] = useState(0);
-// console.log("buissness",business)
-//   // auto rotate on mobile – simple interval
-//   useEffect(() => {
-//     const timer = setInterval(() => {
-//       setIndex((prev) => (prev + 1) % items.length);
-//     }, 2500);
-//     return () => clearInterval(timer);
-//   }, [items.length]);
-
-//   return (
-//     <section className="bg-white">
-//       <div className="">
-//         <h2 className="flex items-center justify-center text-center lato-700 text-[18px] md:text-[22px] text-[#000000] mb-6">
-//           {heading}
-//         </h2>
-
-//         {/* Desktop / tablet – 5 cards in a row */}
-//         <div className="hidden md:grid grid-cols-5 gap-4">
-//           {items.map((item) => (
-//             <OfferingCard key={item.id} item={item} subitems={subitems} />
-//           ))}
-//         </div>
-
-//         {/* Mobile slider – single card, auto, no nav */}
-//         <div className="md:hidden">
-//           <OfferingCard item={items[index]} subitems={subitems} />
-//         </div>
-//         {business?.subhero && (
-//           <SubBusinessHero business={business} />
-//         )}
-
-//       </div>
-//     </section>
-//   );
-// }
-
-// function OfferingCard({ item, subitems }: { item: Offering, subitems?: any }) {
-//   return (
-//     <div className="group relative overflow-hidden rounded-md">
-//       <div className="relative h-[195px] sm:h-[195px] sm:w-[278px]">
-//         <Image
-//           src={item.image}
-//           alt={item.title}
-//           fill
-//           className="object-cover transform group-hover:scale-105 transition-transform duration-300"
-//         />
-//       </div>
-
-//       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300" />
-
-//       <div className="absolute inset-0 flex items-end justify-center pb-5">
-//         <p className="lato-700 text-[16px] text-white tracking-wide text-center">
-//           {item.title}
-//         </p>
-//       </div>
-
-//     {/*  */}
-//         <div className="relative h-[195px] sm:h-[195px] sm:w-[278px]">
-//         <Image
-//           src={subitems?.image || ""}
-//           alt={subitems?.title || ""}
-//           fill
-//           className="object-cover transform group-hover:scale-105 transition-transform duration-300"
-//         />
-//       </div>
-
-//       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300" />
-
-//       <div className="absolute inset-0 flex items-end justify-center pb-5">
-//         <p className="lato-700 text-[16px] text-white tracking-wide text-center">
-//           {subitems?.title}
-//         </p>
-//       </div>
-//     </div>
-//   );
-// }
-// src/components/business/OfferingsSection.tsx
 "use client";
 
 import { BusinessConfig, Offering } from "@/app/business/data";
@@ -138,11 +40,13 @@ export function OfferingsSection({
         </h2>
 
         {/* Desktop – main offerings */}
-        <div className="hidden md:grid grid-cols-5 gap-4">
-          {items.map((item) => (
-            <OfferingCard key={item.id} item={item} />
-          ))}
-        </div>
+        {/* Desktop – main offerings */}
+<div className="hidden md:flex md:justify-center md:items-stretch md:gap-4">
+  {items.map((item) => (
+    <OfferingCard key={item.id} item={item} />
+  ))}
+</div>
+
 
         
 
@@ -174,11 +78,10 @@ export function OfferingsSection({
     </section>
   );
 }
-
 function OfferingCard({ item }: { item: Offering }) {
   return (
-    <div className="group relative overflow-hidden rounded-md">
-      <div className="relative h-[195px] sm:h-[195px] sm:w-[278px]">
+    <div className="group relative overflow-hidden rounded-md md:w-[200px] lg:w-[220px] xl:w-[240px]">
+      <div className="relative h-[195px] w-full">
         <Image
           src={item.image}
           alt={item.title}
@@ -199,3 +102,28 @@ function OfferingCard({ item }: { item: Offering }) {
     </div>
   );
 }
+
+// function OfferingCard({ item }: { item: Offering }) {
+//   return (
+//     <div className="group relative overflow-hidden rounded-md">
+//       <div className="relative h-[195px] sm:h-[195px] sm:w-[278px]">
+//         <Image
+//           src={item.image}
+//           alt={item.title}
+//           fill
+//           className="object-cover transform group-hover:scale-105 transition-transform duration-300"
+//         />
+//       </div>
+
+//       {/* Overlay */}
+//       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300" />
+
+//       {/* Title at bottom-center */}
+//       <div className="absolute inset-0 flex items-end justify-center pb-5">
+//         <p className="lato-700 text-[16px] text-white tracking-wide text-center">
+//           {item.title}
+//         </p>
+//       </div>
+//     </div>
+//   );
+// }

@@ -6,6 +6,7 @@ import { OfferingsSection } from "./OfferingsSection";
 import { SustainabilitySection } from "./SustainabilitySection";
 import Keypeople from "./keypeople";
 import AccreditationsSlider from "../accredition";
+import { CaseStudySection } from "./case-studies";
 
 type Props = {
   business: BusinessConfig;
@@ -19,7 +20,7 @@ export function BusinessDetail({ business }: Props) {
         items={business.offerings.items}
         subheading={business.subofferings?.heading}
         subitems={business.subofferings?.subitems}
-        business={business}         
+        business={business}
       />
       <InnovationSlider
         heading={business.innovations.heading}
@@ -32,10 +33,17 @@ export function BusinessDetail({ business }: Props) {
           people={business.keypeople.details}
         />
       )}
+      {business.caseStudies && business.caseStudies.length > 0 && (
+      <CaseStudySection
+        sectionTitle="Case Studies"
+        imageSrc="/images/chemcase.png" // Replace with actual image path
+        items={business.caseStudies}
+      />
+      )}
       <AwardsSection data={business.awards} />
 
-                      <AccreditationsSlider items={business.accreditation ?? []} />;
-      
+      <AccreditationsSlider items={business.accreditation ?? []} />;
+
     </div>
   );
 }

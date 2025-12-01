@@ -39,7 +39,7 @@ console.log("Current slide", current);
               <h3 className="lato-700 text-[18px] md:text-[24px] text-[#000000] mb-3">
                 {current.title}
               </h3>
-              <p className="lato-400 text-[18px] sm:text-[20px] leading-relaxed text-[#4f4f4f]">
+              <p className="whitespace-pre-line lato-400 text-[18px] sm:text-[20px] leading-relaxed text-[#4f4f4f]">
                 {current.description}
               </p>
             </div>

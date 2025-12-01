@@ -77,6 +77,12 @@ export interface BusinessConfig {
     title: string;
     details: KeyPerson[];
   };
+  caseStudies?: {
+    id: number;
+    title: string;
+    description: string;
+    href: string;
+  }[];
   awards: HighlightBlock;
 }
 
@@ -262,47 +268,11 @@ export const businesses: BusinessConfig[] = [
             "Mr. Ajay Gupta brings over three decades of experience in the flexible packaging industry, with expertise spanning manufacturing, R&D, and business development. Currently based in Hungary, he plays a ... His previous roles incl...",
         cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
     },
-    {
-        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-1.-Mr.-Jagmohan-Mongia-29.jpg",
-        name: "Mr. Jagmohan Mongia ",
-        role: "President, Packaging Films business (India)",
-        summary:
-            "With four decades of industry experience, Jagmohan Mongia leads the Films business – India operations, UFlex. A commerce graduates with a diploma in sales and marketing from Bhartiya Vidya Bhawan, h...",
-        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-    },
-    {
-        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-2.-Mr.-P.-L.-Sirsamkar35.jpg",
-        name: "Mr. P. L. Sirsamkar",
-        role: "President - Technical and New Product Development, Packaging films business",
-        summary:
-            "Mr. Sirsamkar has been with the UFlex for over three decades. He has previously worked with leading organizations such as Garware and Polyplex. With nearly four decades of experience in the packaging ...",
-        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-    },
-    {
-        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-3.-Mr.-Sanjay-Tiku47.jpg",
-        name: "Mr. Sanjay Tiku",
-        role: "Business Head, Packaging Films Business (Flex Films Egypt)",
-        summary:
-            "A seasoned professional with nearly three decades of experience in the Flexible Packaging industry, specializing in operations, marketing, finance, business strategy, and people management. A CMA from...",
-        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-    },
+    
+    
+    
 
-    {
-        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-4.-Mr.-Sundeep-Saksena-01.jpg",
-        name: "Mr. Sundeep Saksena ",
-        role: "Business Head, Packaging Films Business (Flex Films Poland)",
-        summary:
-            "With close to three decades of experience, including seven years of international exposure, across packaging, telecom, consumer durables, and FMCG sectors, Sundeep Saksena has consistently driven busi...",
-        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-    },
-    {
-        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-5.-Mr.-Junaid-Iqbal-Khan-37.jpg",
-        name: "Mr. Junaid Iqbal Khan  ",
-        role: "General Director, Packaging Films Business (Flex Films CIS)",
-        summary:
-            "With nearly two decades at UFlex, Junaid Khan has played a pivotal role in expanding the company’s global footprint across the packaging films business. In 2019, he was appointed as the General Dire...",
-        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-    },
+    
     {
         photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-6.-Mr.-Avinash-Kumar-51.jpg",
         name: "Mr. Avinash Kumar ",
@@ -353,83 +323,154 @@ export const businesses: BusinessConfig[] = [
     label: "Chemicals",
     subheading: "Chemicals",
     hero: {
-      heading: "Our Businesses++++++",
-      image: "/images/resin.png", // keep same aspect as screenshot
+      heading: "Our Businesses",
+      image: "/images/herochem.png", // keep same aspect as screenshot
       body:
-        "We operate across the entire packaging value chain, offering unmatched integration and scale. " +
-        "Our capabilities span PET and rPET resins, packaging films, converting, aseptic packaging, inks and adhesives, " +
-        "holography, printing cylinders, printing and packaging machinery, and more.",
+        "Our various inks, adhesives, and coatings are meticulously crafted to enhance brand vibrancy, durability, and functionality while ensuring environmental protection. " +
+        "Discover the essence of unparalleled commitment at our innovative hub, where excellence seamlessly intertwines with sustainability.  " +
+        "Our solutions are meticulously crafted to cater to the distinctive requirements of the brands and businesses looking for innovative and sustainable packaging solutions.",
     },
+
     offerings: {
       heading: "Our Offerings",
       items: [
         {
-          id: "bopet",
-          title: "BOPET Film",
-          image: "/images/offerings/bopet.jpg",
+          id: "printing-inks",
+          title: "Printing Inks",
+          image: "/images/printinginks.png",
           description: "High-performance polyester films for diverse packaging applications.",
         },
         {
-          id: "bopp",
-          title: "BOPP Film",
-          image: "/images/offerings/bopp.jpg",
+          id: "coatings",
+          title: "Coatings",
+          image: "/images/coatings.png",
           description: "Biaxially oriented polypropylene films for flexible packaging.",
         },
         {
-          id: "cpp",
-          title: "CPP Film",
-          image: "/images/offerings/cpp.jpg",
+          id: "specialty-chemicals",
+          title: "Specialty Chemicals",
+          image: "/images/speciality.png",
           description: "Cast polypropylene films for specialty and general packaging.",
         },
-        {
-          id: "metallized",
-          title: "Metallized Film",
-          image: "/images/offerings/metallized.jpg",
-          description: "High-barrier metallized films for enhanced shelf life.",
-        },
-        {
-          id: "pcr",
-          title: "PCR Film",
-          image: "/images/offerings/pcr.jpg",
-          description: "100% PCR PET films for sustainable packaging solutions.",
-        },
+        
       ],
     },
+    
     innovations: {
       heading: "Business Highlights and Innovations",
       items: [
         {
-          id: "f-mex-m",
-          title: "F-MEX-M",
+          id: "uv-digi-gloss",
+          title: "UV Digi Gloss Coating – Flexcure high slip digi coating",
           description:
-            "F-MEX-M is an advanced one-side MST-coated transparent BOPET film, specially engineered for " +
-            "secondary packaging of pharmaceutical tablets and pills. Developed using proprietary technology, it serves " +
-            "as a superior alternative to traditional cellophane-coated films for strip-to-paper sealing applications.",
-          image: "/images/innovations/f-mex-m.jpg",
+            "It is an advanced solution engineered specifically for LED digitally printed PVC sheets, widely used in decor and signage applications. This advanced coating offers excellent adhesion on digitally printed surfaces, ensuring a long-lasting finish. Its high-gloss finish adds a premium visual appeal, while its superior scratch and abrasion resistance protects the print surface from everyday wear and tear. Additionally, the coating cures rapidly under UV lamps, significantly enhancing the durability and lifespan of printed materials.",
+          image: "/images/uvgloss.png",
         },
-        // add more slides if you need
-      ],
-    },
+        {
+          id: "flexcure-hf-gr-gloss-coating",
+          title: "High Flexibility UV Coating for Flexible Packaging – FLEXCURE HF GR GLOSS COATING",
+          description:
+            "It is an advanced UV coating solution developed specifically for flexible packaging. Ideal for use on flexible laminates, pouches, and specialty packaging, this coating offers exceptional flexibility and fold-crack resistance, making it suitable for dynamic packaging formats." ,
+           image: "/images/glosscoating.png",
+        },
+         {
+          id: "water-based-adhesives",
+          title: "Water Based Dry Lamination Adhesives – FLEXBOND FB DL–502 and FLEXBOND FB DL– 504",
+          description:
+            "These are water-based synthetic copolymer emulsion adhesives developed for high-speed dry lamination applications in offset packaging. These ready-to-use, 100% aqueous adhesives are ideal for laminating a wide range of films—including clear BOPP, matt BOPP, METPET, clear PET, and PVC—to printed or unprinted paper and duplex board substrates." ,
+            
+          image: "/images/waterbased.png",
+        },
+          {
+          id: "thermoplastic-polyurethane-resin",
+          title: "Thermoplastic Polyurethane Resin - FLEXPAK 5300",
+          description:
+            "It is a newly developed thermoplastic polyurethane resin with high molecular weight, formulated using aliphatic urethane technology. Designed to support sustainable packaging solutions, this advanced binder system demonstrates excellent solubility in a range of alcohols, esters, and co-solvents, making it ideally suited for flexographic ink systems." ,
+          image: "/images/thermo.png",
+        },
+
+         {
+  id: "inks-latest-updates",
+  title: "Inks: latest updates",
+  description: 
+`• Water based ink application areas have been extended by developing new inks for corrugation, Paper Cups, Paper bags, Tissue paper & Notebook printing. Brand owners like Subway, KFC, Adidas have approved of our inks
+• 4S Non-Toluene Polyurethane ink has been rolled out successfully in the Domestic market
+• In CI Flexo the new inks series developed for corona treated PET, breathable & non breathable PE printing`,
+  image: "/images/latestink.png",
+}
+
+
+        
+      ],},
     sustainability: {
       title: "Sustainability",
       description:
-        "Single-pellet solution: Pioneering innovation in recyclable packaging. Our breakthrough FSSAI-compliant single-pellet solution " +
-        "enables the incorporation of recycled PET (rPET) in food and beverage packaging, combining recycled and virgin PET into a " +
-        "single, high-purity pellet with excellent strength, stability and clarity.",
-      image: "/images/sustainability/pet-recycle.jpg",
+        "Committed to reducing our carbon footprint Development of sustainable products such as water-based inks and adhesives, along with focused water and energy conservation efforts and a reduction in hazardous waste generation, are some of the key initiatives undertaken by our Chemicals business to reduce its carbon footprint. These efforts are supported by process optimisation, responsible sourcing, improved effluent management practices, and continuous monitoring to enhance environmental performance across operations",
+      image: "/images/sus.png",
       linkLabel: "Know more",
       linkHref: "#",
     },
+    keypeople:{
+      title: "Key People",
+      details:[
+        {
+        photo: "/images/desh.png",
+        name: "Mr. Rajesh Srivastava",
+        role: "Executive Vice President, Sales and Marketing - Chemicals Business",
+        summary:
+            "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum has been the indus...",
+        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+    },
+        {
+        photo: "/images/rajesh.png",
+        name: "Desh Deepak Misra",
+        role: "Joint President, Chemicals Business",
+        summary:
+            "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum has been the indus...",
+        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+    },
+    
+      ]
+    },
+    caseStudies: [
+  {
+    id: 1,
+    title: "Solvent Free Pigmented White PU Adhesive",
+    description:
+      "Designed a cost effective and sustainable adhesive that provides opacity with adhesive lamination.",
+    href: "/case-studies/solvent-free-pu-adhesive",
+  },
+  {
+    id: 2,
+    title: "Powering Sustainable Label Printing At Kumar Labels",
+    description:
+      "Industry: Label Printing & Packaging Customer: Kumar Labels, India Total sales volume in FY24-25 of Flexgreen LED inks: 59 MT Challenge Kumar Labels, a forward-thinking label converter known for quality and innovation",
+    href: "/case-studies/kumar-labels",
+  },
+  {
+    id: 3,
+    title:
+      "ADVANCING EB OFFSET PRINTING WITH FLEXBEAM SERIES AT OKIL SATO",
+    description:
+      "Industry: Flexible Packaging Customer: Okil Sato, Russia Total sales volume in FY24-25 of Flexbeam Offset ink series: 14 MT Challenge Okil Sato, a renowned packaging converter in Russia, required a high-performance.",
+    href: "/case-studies/okil-sato",
+  },
+],
     awards: {
       title: "Awards & Accolades",
       description:
-        "Recognized for our sustainability efforts. UFlex’s Packaging Films business, under the Flex Films brand, is a " +
-        "global leader offering innovative and sustainable packaging solutions, with manufacturing across 9 countries and " +
-        "presence in 150+ markets.",
-      image: "/images/awards/packaging-films-award.jpg",
+        "Over the last several years, UFlex's Chemicals business has received various awards and certifications for its innovative and sustainable products and solutions, reflecting its strong commitment to responsible manufacturing, safety excellence, regulatory compliance, and continuous improvement in environmental and operational performance.",
+      image: "/images/awards.png",
       linkLabel: "Know more",
       linkHref: "#",
     },
+    accreditation: [
+      { image: "/images/acc1.png" },
+      { image: "/images/acc2.png" },
+      { image: "/images/acc3.png" },
+      { image: "/images/acc4.png" },
+      // { image: "/images/accredition5.png" },
+    ]
   },
   // add other businesses here...
 ];
