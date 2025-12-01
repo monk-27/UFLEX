@@ -34,6 +34,7 @@ export type HighlightBlock = {
   linkLabel?: string;
   linkHref?: string;
 };
+
 export type KeyPerson = {
   photo: string;
   name: string;
@@ -67,13 +68,13 @@ export interface BusinessConfig {
     heading: string;
     subitems: Offering[];
   };
-  innovations: {
+  innovations?: {
     heading: string;
     items: InnovationSlide[];
   };
   accreditation?: { image: string }[];
   sustainability: HighlightBlock;
-   keypeople?: {
+  keypeople?: {
     title: string;
     details: KeyPerson[];
   };
@@ -87,20 +88,19 @@ export interface BusinessConfig {
 }
 
 export const businesses: BusinessConfig[] = [
-  // Packaging Films Business
   {
     key: "packaging-films",
     label: "Packaging Films & PET Resin",
     subheading: "Packaging Films",
     hero: {
       heading: "Our Businesses",
-      image: "/images/resin.png", // keep same aspect as screenshot
+      image: "/images/resin.png",
       body:
-        "UFlex’s Packaging Films business, under the Flex Films brand, is a global leader offering innovative and sustainable packaging solutions, including BOPP, BOPET, CPP, specialty, and 100% PCR PET films, with manufacturing across 9 countries and presence in 150+ markets.",
+        "UFlex's Packaging Films business, under the Flex Films brand, is a global leader offering innovative and sustainable packaging solutions, including BOPP, BOPET, CPP, specialty, and 100% PCR PET films, with manufacturing across 9 countries and presence in 150+ markets.",
     },
     subhero: {
       heading: "PET Resin",
-      image: "/images/resin.png", 
+      image: "/images/resin.png",
       body:
         "UFlex manufactures high-quality PET Resin in India and Egypt, supporting the global packaging ecosystem with reliable, high-performance material solutions. Poly-condensed polyester resin is a preferred raw material for producing BOPET films and rigid packaging. Known for its strength, optical clarity.",
     },
@@ -111,19 +111,22 @@ export const businesses: BusinessConfig[] = [
           id: "bopet",
           title: "BOPET Film",
           image: "/images/bopet.png",
-          description: "High-performance polyester films for diverse packaging applications.",
+          description:
+            "High-performance polyester films for diverse packaging applications.",
         },
         {
           id: "bopp",
           title: "BOPP Film",
           image: "/images/bopp.png",
-          description: "Biaxially oriented polypropylene films for flexible packaging.",
+          description:
+            "Biaxially oriented polypropylene films for flexible packaging.",
         },
         {
           id: "cpp",
           title: "CPP Film",
           image: "/images/cpp.png",
-          description: "Cast polypropylene films for specialty and general packaging.",
+          description:
+            "Cast polypropylene films for specialty and general packaging.",
         },
         {
           id: "metallized",
@@ -135,30 +138,34 @@ export const businesses: BusinessConfig[] = [
           id: "pcr",
           title: "PCR Film",
           image: "/images/pcr.png",
-          description: "100% PCR PET films for sustainable packaging solutions.",
+          description:
+            "100% PCR PET films for sustainable packaging solutions.",
         },
       ],
     },
-     subofferings: {
+    subofferings: {
       heading: "Our Offerings",
       subitems: [
         {
           id: "bottle-grade",
           title: "Bottle Grade",
           image: "/images/bottlegrade.png",
-          description: "High-performance polyester films for diverse packaging applications.",
+          description:
+            "High-performance polyester films for diverse packaging applications.",
         },
         {
           id: "film-grade",
           title: "Film Grade",
           image: "/images/film.png",
-          description: "Biaxially oriented polypropylene films for flexible packaging.",
+          description:
+            "Biaxially oriented polypropylene films for flexible packaging.",
         },
         {
           id: "rpet",
           title: "rPET",
           image: "/images/rpet.png",
-          description: "Cast polypropylene films for specialty and general packaging.",
+          description:
+            "Cast polypropylene films for specialty and general packaging.",
         },
         {
           id: "Single-Pellet Soultion ",
@@ -166,7 +173,6 @@ export const businesses: BusinessConfig[] = [
           image: "/images/single-pellet.png",
           description: "High-barrier metallized films for enhanced shelf life.",
         },
-
       ],
     },
     innovations: {
@@ -176,136 +182,113 @@ export const businesses: BusinessConfig[] = [
           id: "f-mex-m",
           title: "F-MEX-M",
           description:
-            "F-ETS is an advanced one-side MST-coated transparent BOPET film, specially engineered " +
-            "for secondary packaging of pharmaceutical tablets and pills." +
-            "Developed using proprietary technology, it serves as a superior alternative to traditional cellophane-coated films for strip-to-paper sealing applications. ",
+            "F-ETS is an advanced one-side MST-coated transparent BOPET film, specially engineered for secondary packaging of pharmaceutical tablets and pills. Developed using proprietary technology, it serves as a superior alternative to traditional cellophane-coated films for strip-to-paper sealing applications.",
           image: "/images/fmex.png",
         },
         {
-          id: "f-mex-m",
+          id: "f-mex-m-2",
           title: "F-ETS: One side MST coated transparent BOPET film",
           description:
-            "F-ETS is an advanced one-side MST-coated transparent BOPET film, specially engineered for secondary packaging of pharmaceutical tablets and pills. Developed using proprietary technology, it serves as a superior alternative to traditional cellophane-coated films for strip-to-paper sealing applications." ,
-            
+            "F-ETS is an advanced one-side MST-coated transparent BOPET film, specially engineered for secondary packaging of pharmaceutical tablets and pills. Developed using proprietary technology, it serves as a superior alternative to traditional cellophane-coated films for strip-to-paper sealing applications.",
           image: "/images/fets.png",
         },
-
         {
           id: "b-tcm-m",
           title: "B-TCM-M: Ultra-thin high-barrier metallized BOPP film",
           description:
-            "B-TCM-M is an innovative, non-heat sealable metallized BOPP film developed for sustainable and high-performance packaging applications. At just 8 microns, it is the thinnest metallized BOPP film available, offering low GSM and high linear mileage- making it a resource-efficient choice." ,
-            
+            "B-TCM-M is an innovative, non-heat sealable metallized BOPP film developed for sustainable and high-performance packaging applications. At just 8 microns, it is the thinnest metallized BOPP film available, offering low GSM and high linear mileage- making it a resource-efficient choice.",
           image: "/images/btcm.png",
         },
-         {
+        {
           id: "f-hsa",
           title: "F-HSA: Heat sealable anti-fogtransparent BOPET film",
           description:
-            "F-HSA is a high-performance transparent BOPET film designed with a heat sealable anti-fog surface on one side and an untreated surface on the other. Its exceptional clarity, transparency, and reliable sealing capabilities make it ideal for food packaging applications. " ,
-            
+            "F-HSA is a high-performance transparent BOPET film designed with a heat sealable anti-fog surface on one side and an untreated surface on the other. Its exceptional clarity, transparency, and reliable sealing capabilities make it ideal for food packaging applications.",
           image: "/images/fhsa.png",
         },
-
-
-         {
+        {
           id: "b-dsc-aa",
           title: "B-DSC-AA – Both side acrylic coated BOPP film",
           description:
-            "This high-performance packaging film is engineered for modern flexible packaging needs, offering excellent heat sealability, hot-tack, and compatibility with lap/fin seals and PVDC-coated films. Ideal for monolayer pouches, it ensures tamper-proof, transparent packaging with strong aroma and flavor barriers.  " ,
-            
+            "This high-performance packaging film is engineered for modern flexible packaging needs, offering excellent heat sealability, hot-tack, and compatibility with lap/fin seals and PVDC-coated films. Ideal for monolayer pouches, it ensures tamper-proof, transparent packaging with strong aroma and flavor barriers.",
           image: "/images/bdsc.png",
         },
-
         {
           id: "b-dsc-al",
           title: "B-DSC-AL – Low SIT and acrylic coated BOPP film",
           description:
-            "This is an advanced BOPP film coated with acrylic and a low-temperature seal layer that activates at just 65°C. Engineered for high-performance packaging, this film offers exceptional low-temperature sealability and hot-tack strength on the coated side, ensuring strong seals even under minimal heat." ,
-            
+            "This is an advanced BOPP film coated with acrylic and a low-temperature seal layer that activates at just 65°C. Engineered for high-performance packaging, this film offers exceptional low-temperature sealability and hot-tack strength on the coated side, ensuring strong seals even under minimal heat.",
           image: "/images/bdscda.png",
         },
-
-
-
         {
           id: "b-dsc-ds",
           title: "B-DSC-DA – High barrier PVDC-acrylic coated BOPP film",
           description:
-            "B-DSC-DA is a high-performance BOPP film with one side PVDC and the other side acrylic coating, designed to meet the evolving needs of flexible packaging. This film delivers outstanding barrier performance, with an oxygen transmission rate (OTR) of less than 15 cc/m²/day and water vapor transmission rate (WVTR) under 5 gm/m²/day, while maintaining excellent clarity." ,
-            
+            "B-DSC-DA is a high-performance BOPP film with one side PVDC and the other side acrylic coating, designed to meet the evolving needs of flexible packaging. This film delivers outstanding barrier performance, with an oxygen transmission rate (OTR) of less than 15 cc/m²/day and water vapor transmission rate (WVTR) under 5 gm/m²/day, while maintaining excellent clarity.",
           image: "/images/bdscas.png",
         },
-
-         {
+        {
           id: "b-dsc-dl",
           title: "B-DSC-DL: High barrier PVDC coated BOPP film",
           description:
-            "A specialized BOPP film featuring one side PVDC coating and the other side low temperature seal (LTS) coating, which activates at just 65°C. Engineered for monolayer pouch applications, this film delivers outstanding oxygen barrier properties (<15 cc/m²/day) while maintaining excellent clarity. It offers superior low-temperature sealability and hot tack performance on the LTS side. " ,
-            
+            "A specialized BOPP film featuring one side PVDC coating and the other side low temperature seal (LTS) coating, which activates at just 65°C. Engineered for monolayer pouch applications, this film delivers outstanding oxygen barrier properties (<15 cc/m²/day) while maintaining excellent clarity. It offers superior low-temperature sealability and hot tack performance on the LTS side.",
           image: "/images/bdscdl.png",
         },
-        // add more slides if you need
       ],
     },
     sustainability: {
       title: "Sustainability",
       description:
-        "Single-pellet solution: Pioneering innovation in recyclable packaging. Our breakthrough FSSAI-compliant single-pellet solution " +
-        "enables the incorporation of recycled PET (rPET) in food and beverage packaging, combining recycled and virgin PET into a " +
-        "single, high-purity pellet with excellent strength, stability and clarity.",
+        "Single-pellet solution: Pioneering innovation in recyclable packaging. Our breakthrough FSSAI-compliant single-pellet solution enables the incorporation of recycled PET (rPET) in food and beverage packaging, combining recycled and virgin PET into a single, high-purity pellet with excellent strength, stability and clarity.",
       image: "/images/sus.png",
       linkLabel: "Know more",
       linkHref: "#",
     },
-    keypeople:{
+    keypeople: {
       title: "Key People",
-      details:[
+      details: [
         {
-        photo: "/images/ajay.png",
-        name: " Mr. Ajay Gupta",
-        role: "Sr. Vice President - Flex Films, Hungary",
-        summary:
+          photo: "/images/ajay.png",
+          name: " Mr. Ajay Gupta",
+          role: "Sr. Vice President - Flex Films, Hungary",
+          summary:
             "Mr. Ajay Gupta brings over three decades of experience in the flexible packaging industry, with expertise spanning manufacturing, R&D, and business development. Currently based in Hungary, he plays a ... His previous roles incl...",
-        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-    },
-    
-    
-    
-
-    
-    {
-        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-6.-Mr.-Avinash-Kumar-51.jpg",
-        name: "Mr. Avinash Kumar ",
-        role: "Business Head, Packaging Films Business (Flex Films UAE)",
-        summary:
+          cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+        },
+        {
+          photo:
+            "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-6.-Mr.-Avinash-Kumar-51.jpg",
+          name: "Mr. Avinash Kumar ",
+          role:
+            "Business Head, Packaging Films Business (Flex Films UAE)",
+          summary:
             "With more than three decades of experience in the flexible packaging industry, Avinash Kumar has successfully led key functions across marketing, production, finance, commercial operations, and genera...",
-        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-    },
-
-    {
-        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-7.-Mr.-Vijay-Yadav13.jpg",
-        name: "Mr. Vijay Yadav",
-        role: "Business Head, Packaging Films Business (Flex Films USA)",
-        summary:
+          cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+        },
+        {
+          photo:
+            "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-7.-Mr.-Vijay-Yadav13.jpg",
+          name: "Mr. Vijay Yadav",
+          role: "Business Head, Packaging Films Business (Flex Films USA)",
+          summary:
             "With three decades of global experience, Vijay Yadav has successfully led roles in strategy, operations, R&D, and organizational transformation, having worked with renowned companies like SEKISUI (USA...",
-        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-    },
-
-    {
-        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-8.-Mr.-Suhas-More33.jpg",
-        name: "Mr. Suhas More",
-        role: "Business Head - Flex Films, Nigeria",
-        summary:
+          cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+        },
+        {
+          photo:
+            "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-8.-Mr.-Suhas-More33.jpg",
+          name: "Mr. Suhas More",
+          role: "Business Head - Flex Films, Nigeria",
+          summary:
             "A seasoned leader with more than two decades of experience. He drives growth in the Packaging Films Business and leads Flex Films' expansion in Russia, positioning UFlex as a preferred supplier in the...",
-        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-    },
-      ]
+          cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+        },
+      ],
     },
     awards: {
       title: "Awards & Accolades",
       description:
-        "UFlex’s Packaging Films business, under the Flex Films brand, is a global leader offering innovative and sustainable packaging solutions, including BOPP, BOPET, CPP, specialty, and 100% PCR PET films, with manufacturing across 9 countries and presence in 150+ markets.",
+        "UFlex's Packaging Films business, under the Flex Films brand, is a global leader offering innovative and sustainable packaging solutions, including BOPP, BOPET, CPP, specialty, and 100% PCR PET films, with manufacturing across 9 countries and presence in 150+ markets.",
       image: "/images/awards.png",
       linkLabel: "Know more",
       linkHref: "#",
@@ -315,21 +298,18 @@ export const businesses: BusinessConfig[] = [
       { image: "/images/acc2.png" },
       { image: "/images/acc3.png" },
       { image: "/images/acc4.png" },
-      // { image: "/images/accredition5.png" },
-    ]
+    ],
   },
-// Chemicals Business
-   {
+
+  {
     key: "chemicals",
     label: "Chemicals",
-    // subheading: "Chemicals",
+    subheading: "Chemicals",
     hero: {
       heading: "Our Businesses",
-      image: "/images/herochem.png", // keep same aspect as screenshot
+      image: "/images/herochem.png",
       body:
-        "Our various inks, adhesives, and coatings are meticulously crafted to enhance brand vibrancy, durability, and functionality while ensuring environmental protection. " +
-        "Discover the essence of unparalleled commitment at our innovative hub, where excellence seamlessly intertwines with sustainability.  " +
-        "Our solutions are meticulously crafted to cater to the distinctive requirements of the brands and businesses looking for innovative and sustainable packaging solutions.",
+        "Our various inks, adhesives, and coatings are meticulously crafted to enhance brand vibrancy, durability, and functionality while ensuring environmental protection. Discover the essence of unparalleled commitment at our innovative hub, where excellence seamlessly intertwines with sustainability. Our solutions are meticulously crafted to cater to the distinctive requirements of the brands and businesses looking for innovative and sustainable packaging solutions.",
     },
 
     offerings: {
@@ -339,24 +319,26 @@ export const businesses: BusinessConfig[] = [
           id: "printing-inks",
           title: "Printing Inks",
           image: "/images/printinginks.png",
-          description: "High-performance polyester films for diverse packaging applications.",
+          description:
+            "High-performance polyester films for diverse packaging applications.",
         },
         {
           id: "coatings",
           title: "Coatings",
           image: "/images/coatings.png",
-          description: "Biaxially oriented polypropylene films for flexible packaging.",
+          description:
+            "Biaxially oriented polypropylene films for flexible packaging.",
         },
         {
           id: "specialty-chemicals",
           title: "Specialty Chemicals",
           image: "/images/speciality.png",
-          description: "Cast polypropylene films for specialty and general packaging.",
+          description:
+            "Cast polypropylene films for specialty and general packaging.",
         },
-        
       ],
     },
-    
+
     innovations: {
       heading: "Business Highlights and Innovations",
       items: [
@@ -369,40 +351,37 @@ export const businesses: BusinessConfig[] = [
         },
         {
           id: "flexcure-hf-gr-gloss-coating",
-          title: "High Flexibility UV Coating for Flexible Packaging – FLEXCURE HF GR GLOSS COATING",
+          title:
+            "High Flexibility UV Coating for Flexible Packaging – FLEXCURE HF GR GLOSS COATING",
           description:
-            "It is an advanced UV coating solution developed specifically for flexible packaging. Ideal for use on flexible laminates, pouches, and specialty packaging, this coating offers exceptional flexibility and fold-crack resistance, making it suitable for dynamic packaging formats." ,
-           image: "/images/glosscoating.png",
+            "It is an advanced UV coating solution developed specifically for flexible packaging. Ideal for use on flexible laminates, pouches, and specialty packaging, this coating offers exceptional flexibility and fold-crack resistance, making it suitable for dynamic packaging formats.",
+          image: "/images/glosscoating.png",
         },
-         {
+        {
           id: "water-based-adhesives",
-          title: "Water Based Dry Lamination Adhesives – FLEXBOND FB DL–502 and FLEXBOND FB DL– 504",
+          title:
+            "Water Based Dry Lamination Adhesives – FLEXBOND FB DL–502 and FLEXBOND FB DL– 504",
           description:
-            "These are water-based synthetic copolymer emulsion adhesives developed for high-speed dry lamination applications in offset packaging. These ready-to-use, 100% aqueous adhesives are ideal for laminating a wide range of films—including clear BOPP, matt BOPP, METPET, clear PET, and PVC—to printed or unprinted paper and duplex board substrates." ,
-            
+            "These are water-based synthetic copolymer emulsion adhesives developed for high-speed dry lamination applications in offset packaging. These ready-to-use, 100% aqueous adhesives are ideal for laminating a wide range of films—including clear BOPP, matt BOPP, METPET, clear PET, and PVC—to printed or unprinted paper and duplex board substrates.",
           image: "/images/waterbased.png",
         },
-          {
+        {
           id: "thermoplastic-polyurethane-resin",
           title: "Thermoplastic Polyurethane Resin - FLEXPAK 5300",
           description:
-            "It is a newly developed thermoplastic polyurethane resin with high molecular weight, formulated using aliphatic urethane technology. Designed to support sustainable packaging solutions, this advanced binder system demonstrates excellent solubility in a range of alcohols, esters, and co-solvents, making it ideally suited for flexographic ink systems." ,
+            "It is a newly developed thermoplastic polyurethane resin with high molecular weight, formulated using aliphatic urethane technology. Designed to support sustainable packaging solutions, this advanced binder system demonstrates excellent solubility in a range of alcohols, esters, and co-solvents, making it ideally suited for flexographic ink systems.",
           image: "/images/thermo.png",
         },
-
-         {
-  id: "inks-latest-updates",
-  title: "Inks: latest updates",
-  description: 
-`• Water based ink application areas have been extended by developing new inks for corrugation, Paper Cups, Paper bags, Tissue paper & Notebook printing. Brand owners like Subway, KFC, Adidas have approved of our inks
+        {
+          id: "inks-latest-updates",
+          title: "Inks: latest updates",
+          description: `• Water based ink application areas have been extended by developing new inks for corrugation, Paper Cups, Paper bags, Tissue paper & Notebook printing. Brand owners like Subway, KFC, Adidas have approved of our inks
 • 4S Non-Toluene Polyurethane ink has been rolled out successfully in the Domestic market
 • In CI Flexo the new inks series developed for corona treated PET, breathable & non breathable PE printing`,
-  image: "/images/latestink.png",
-}
-
-
-        
-      ],},
+          image: "/images/latestink.png",
+        },
+      ],
+    },
     sustainability: {
       title: "Sustainability",
       description:
@@ -411,52 +390,52 @@ export const businesses: BusinessConfig[] = [
       linkLabel: "Know more",
       linkHref: "#",
     },
-    keypeople:{
+    keypeople: {
       title: "Key People",
-      details:[
+      details: [
         {
-        photo: "/images/desh.png",
-        name: "Mr. Rajesh Srivastava",
-        role: "Executive Vice President, Sales and Marketing - Chemicals Business",
-        summary:
+          photo: "/images/desh.png",
+          name: "Mr. Rajesh Srivastava",
+          role:
+            "Executive Vice President, Sales and Marketing - Chemicals Business",
+          summary:
             "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum has been the indus...",
-        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-    },
+          cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+        },
         {
-        photo: "/images/rajesh.png",
-        name: "Desh Deepak Misra",
-        role: "Joint President, Chemicals Business",
-        summary:
+          photo: "/images/rajesh.png",
+          name: "Desh Deepak Misra",
+          role: "Joint President, Chemicals Business",
+          summary:
             "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum has been the indus...",
-        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-    },
-    
-      ]
+          cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+        },
+      ],
     },
     caseStudies: [
-  {
-    id: 1,
-    title: "Solvent Free Pigmented White PU Adhesive",
-    description:
-      "Designed a cost effective and sustainable adhesive that provides opacity with adhesive lamination.",
-    href: "/case-studies/solvent-free-pu-adhesive",
-  },
-  {
-    id: 2,
-    title: "Powering Sustainable Label Printing At Kumar Labels",
-    description:
-      "Industry: Label Printing & Packaging Customer: Kumar Labels, India Total sales volume in FY24-25 of Flexgreen LED inks: 59 MT Challenge Kumar Labels, a forward-thinking label converter known for quality and innovation",
-    href: "/case-studies/kumar-labels",
-  },
-  {
-    id: 3,
-    title:
-      "ADVANCING EB OFFSET PRINTING WITH FLEXBEAM SERIES AT OKIL SATO",
-    description:
-      "Industry: Flexible Packaging Customer: Okil Sato, Russia Total sales volume in FY24-25 of Flexbeam Offset ink series: 14 MT Challenge Okil Sato, a renowned packaging converter in Russia, required a high-performance.",
-    href: "/case-studies/okil-sato",
-  },
-],
+      {
+        id: 1,
+        title: "Solvent Free Pigmented White PU Adhesive",
+        description:
+          "Designed a cost effective and sustainable adhesive that provides opacity with adhesive lamination.",
+        href: "/case-studies/solvent-free-pu-adhesive",
+      },
+      {
+        id: 2,
+        title: "Powering Sustainable Label Printing At Kumar Labels",
+        description:
+          "Industry: Label Printing & Packaging Customer: Kumar Labels, India Total sales volume in FY24-25 of Flexgreen LED inks: 59 MT Challenge Kumar Labels, a forward-thinking label converter known for quality and innovation",
+        href: "/case-studies/kumar-labels",
+      },
+      {
+        id: 3,
+        title:
+          "ADVANCING EB OFFSET PRINTING WITH FLEXBEAM SERIES AT OKIL SATO",
+        description:
+          "Industry: Flexible Packaging Customer: Okil Sato, Russia Total sales volume in FY24-25 of Flexbeam Offset ink series: 14 MT Challenge Okil Sato, a renowned packaging converter in Russia, required a high-performance.",
+        href: "/case-studies/okil-sato",
+      },
+    ],
     awards: {
       title: "Awards & Accolades",
       description:
@@ -470,20 +449,17 @@ export const businesses: BusinessConfig[] = [
       { image: "/images/acc2.png" },
       { image: "/images/acc3.png" },
       { image: "/images/acc4.png" },
-      // { image: "/images/accredition5.png" },
-    ]
+    ],
   },
-//Aseptic Business
 
- {
+  {
     key: "aseptic",
     label: "Aseptic Packaging",
-    // subheading: "Aseptic Packaging",
     hero: {
       heading: "Our Businesses",
-      image: "/images/3.png", // keep same aspect as screenshot
+      image: "/images/3.png",
       body:
-        "Asepto, the Aseptic Packaging brand of UFlex, is the world’s fastest-growing aseptic packaging company, proudly serving over 200 esteemed clients across more than 40 countries. As a leading provider of end-to-end aseptic liquid packaging solutions, we offer innovative designs, six-layered cartons, highly advanced filling machines, and exceptional service from highly trained engineers.",
+        "Asepto, the Aseptic Packaging brand of UFlex, is the world's fastest-growing aseptic packaging company, proudly serving over 200 esteemed clients across more than 40 countries. As a leading provider of end-to-end aseptic liquid packaging solutions, we offer innovative designs, six-layered cartons, highly advanced filling machines, and exceptional service from highly trained engineers.",
     },
 
     offerings: {
@@ -493,30 +469,33 @@ export const businesses: BusinessConfig[] = [
           id: "aseptic-cartons",
           title: "Aseptic Cartons",
           image: "/images/asepcticcartons.png",
-          description: "High-performance polyester films for diverse packaging applications.",
+          description:
+            "High-performance polyester films for diverse packaging applications.",
         },
         {
           id: "sip",
           title: "A Sip",
           image: "/images/asip.png",
-          description: "Biaxially oriented polypropylene films for flexible packaging.",
+          description:
+            "Biaxially oriented polypropylene films for flexible packaging.",
         },
         {
           id: "filling-machines",
           title: "Filling Machines",
           image: "/images/filling.png",
-          description: "Cast polypropylene films for specialty and general packaging.",
+          description:
+            "Cast polypropylene films for specialty and general packaging.",
         },
         {
           id: "asepto-pro",
           title: "Asepto Pro",
           image: "/images/aseptopro.png",
-          description: "Cast polypropylene films for specialty and general packaging.",
+          description:
+            "Cast polypropylene films for specialty and general packaging.",
         },
-        
       ],
     },
-    
+
     innovations: {
       heading: "Business Highlights and Innovations",
       items: [
@@ -531,37 +510,33 @@ export const businesses: BusinessConfig[] = [
           id: "holography-stamping-foils",
           title: "Holography and Stamping Foils",
           description:
-            "Flex continues to set global benchmarks through advanced infrastructure, technical excellence, advanced R&D, and deep market intelligence, ensuring world-class quality and innovation across its offerings. Our state-of-the-art in-house manufacturing facilities, equipped with Origination, Coatings, Metallizers, and Slitting machines, enable advanced transfer technology, enhancing both surface appeal and tactile experience. " ,
-           image: "/images/invps.png",
+            "Flex continues to set global benchmarks through advanced infrastructure, technical excellence, advanced R&D, and deep market intelligence, ensuring world-class quality and innovation across its offerings. Our state-of-the-art in-house manufacturing facilities, equipped with Origination, Coatings, Metallizers, and Slitting machines, enable advanced transfer technology, enhancing both surface appeal and tactile experience.",
+          image: "/images/invps.png",
         },
-         
-
-
-        
-      ],},
+      ],
+    },
     sustainability: {
       title: "Sustainability",
-      description: "At Asepto, sustainability isn't just a commitment; it's a driving force behind innovation. Asepto brings a sustainable solution to this pressing concern of aseptic cartons reaching landfills. With their proper extraction and assimilation, Asepto paves the way for a Circular Economy.Enzymatic Delamination Technology (EDT) is Asepto’s sustainable solution to reprocess the aseptic cartons to bring them back into the circular economy. Through EDT, we can separate and recover valuable materials like aluminium, polymers, and paper pulp from these cartons. By doing so, we significantly reduce the environmental footprint associated with their disposal.",
+      description:
+        "At Asepto, sustainability isn't just a commitment; it's a driving force behind innovation. Asepto brings a sustainable solution to this pressing concern of aseptic cartons reaching landfills. With their proper extraction and assimilation, Asepto paves the way for a Circular Economy. Enzymatic Delamination Technology (EDT) is Asepto’s sustainable solution to reprocess the aseptic cartons to bring them back into the circular economy. Through EDT, we can separate and recover valuable materials like aluminium, polymers, and paper pulp from these cartons. By doing so, we significantly reduce the environmental footprint associated with their disposal.",
       image: "/images/sus.png",
       linkLabel: "Know more",
       linkHref: "#",
     },
-    keypeople:{
+    keypeople: {
       title: "Key People",
-      details:[
+      details: [
         {
-        photo: "/images/ashwani.png",
-        name: "Mr. Ashwani K. Sharma",
-        role: "President and CEO, Aseptic packaging business",
-        summary:
+          photo: "/images/ashwani.png",
+          name: "Mr. Ashwani K. Sharma",
+          role: "President and CEO, Aseptic packaging business",
+          summary:
             "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum has been the indus...",
-        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+          cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+        },
+      ],
     },
-        
-    
-      ]
-    },
-  
+
     awards: {
       title: "Awards & Accolades",
       description:
@@ -575,14 +550,86 @@ export const businesses: BusinessConfig[] = [
       { image: "/images/accc5.png" },
       { image: "/images/accc6.png" },
       { image: "/images/accc7.png" },
-      // { image: "/images/accredition5.png" },
-    ]
+    ],
+  },
+{
+  key: "flexible-packaging",
+  label: "Flexible Packaging",
+  hero: {
+    heading: "Our Businesses",
+    image: "/images/flexi.png",
+    body:
+      "We offer a comprehensive range of products, including flexible laminates, pre-formed pouches, Flexo-printed rolls and bags, laminated woven polypropylene (WPP) bags, electron beam and Cast n Cure technology, pharmaceutical packaging, FlexiTubes, hygiene films, Flexfresh™ modified atmosphere packaging, and big bags. At UFlex, we don’t just deliver packaging—we deliver excellence, innovation.",
   },
 
+  offerings: {
+    heading: "Our Offerings",
+    items: [
+      {
+        id: "flexible-laminates",
+        title: "Flexible Laminates",
+        image: "/images/flexiblelaminates.png",
+        description:
+          "High-performance polyester films for diverse packaging applications.",
+      },
+      {
+        id: "pre-formed-pouches",
+        title: "Pre Formed Pouches",
+        image: "/images/preformpouches.png",
+        description:
+          "Biaxially oriented polypropylene films for flexible packaging.",
+      },
+      {
+        id: "electron-bar",
+        title: "Electron Bar",
+        image: "/images/elctron.png",
+        description:
+          "Cast polypropylene films for specialty and general packaging.",
+      },
+    ],
+  },
 
+  sustainability: {
+    title: "Sustainability",
+    description:
+      "Driving Sustainable Growth Through Smarter Packaging Practices. UFlex is deeply committed to environmental sustainability and has undertaken several impactful initiatives across India to reduce its carbon footprint and enhance operational productivity. The company consistently invests in advanced technologies that consume less energy per ton of flexible packaging, promoting more efficient and responsible manufacturing practices. All in-house production waste is recycled and reintegrated into the manufacturing cycle, significantly reducing landfill pressure and helping curb pollution.",
+    image: "/images/sus.png",
+    linkLabel: "Know more",
+    linkHref: "#",
+  },
 
+  keypeople: {
+    title: "Key People",
+    details: [
+      {
+        photo:
+          "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Mr.-Jeevaraj-Gopal-Pillai-(BOD)05.jpg",
+        name: "Mr. Jeevaraj Gopal Pillai",
+        role: "Whole Time Director",
+        summary:
+          "Mr. Jeevaraj Pillai brings over 35 years of experience in packaging and packaging technology, with expertise in printing cylinders, packaging films, and advanced flexible packaging material conversion. As Director-Sustainability, he leads the development and implementation of the company's ESG strategy, along with developing sustainable products and solutions. He has been serving on the board of UFlex Limited as a whole-time director since November 14, 2023. His extensive background is complemented by qualifications in mechanical engineering and an MBA.",
+        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+      },
+    ],
+  },
 
-  // add other businesses here...
+  awards: {
+    title: "Awards & Accolades",
+    description:
+      "Over the last several years, UFlex’s Flexible Packaging business has received various awards and certifications for its innovative and sustainable packaging solutions.",
+    image: "/images/awards.png",
+    linkLabel: "Know more",
+    linkHref: "#",
+  },
+
+  accreditation: [
+    { image: "/images/accc8.png" },
+    { image: "/images/accc9.png" },
+    { image: "/images/accc10.png" },
+    { image: "/images/accc11.png" },
+  ],
+}
+
 ];
 
 export const businessTabs = businesses.map((b) => ({

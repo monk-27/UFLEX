@@ -22,10 +22,12 @@ export function BusinessDetail({ business }: Props) {
         subitems={business.subofferings?.subitems}
         business={business}
       />
+      {business.innovations && (
       <InnovationSlider
         heading={business.innovations.heading}
         items={business.innovations.items}
       />
+      )}
       <SustainabilitySection data={business.sustainability} />
       {business.keypeople && (
         <Keypeople
