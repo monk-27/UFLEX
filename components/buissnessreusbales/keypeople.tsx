@@ -202,35 +202,41 @@ const Keypeople = ({ title, people }: Props) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(emblaOptions);
   const [canPrev, setCanPrev] = useState(false);
   const [canNext, setCanNext] = useState(true);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
     setCanPrev(emblaApi.canScrollPrev());
     setCanNext(emblaApi.canScrollNext());
+    setSelectedIndex(emblaApi.selectedScrollSnap());
   }, [emblaApi]);
 
   useEffect(() => {
     if (!emblaApi) return;
+
+    setScrollSnaps(emblaApi.scrollSnapList());
     onSelect();
+
     emblaApi.on("select", onSelect);
-    emblaApi.on("reInit", onSelect);
+    emblaApi.on("reInit", () => {
+      setScrollSnaps(emblaApi.scrollSnapList());
+      onSelect();
+    });
   }, [emblaApi, onSelect]);
 
   if (!people || people.length === 0) return null;
 
-  const showArrows = people.length > 4;
-  const isFourOrLess = people.length <= 4; // ✅ helper
-
   return (
     <>
-      <section className="mt-[30px] py-0 text-center sm:mt-8">
+      <section className="pb-12 mt-[30px] py-0 text-center sm:mt-8 bg-[#f7f7f7]">
         <div className="px-4 md:px-8">
-          <h2 className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl text-center mb-12">
+          <h2 className="text-start lato-700 text-[20px] md:text-[28px] text-[#000000] mb-3">
             {title}
           </h2>
 
-          {/* Mobile: slider (Embla) */}
-          <div className="relative md:hidden">
+          {/* Embla slider – used on mobile & desktop */}
+          <div className="relative">
             <div ref={emblaRef} className="overflow-hidden">
               <div className="flex gap-6">
                 {people.map((p, i) => (
@@ -243,11 +249,11 @@ const Keypeople = ({ title, people }: Props) => {
                     onClick={() => setSelected(p)}
                     className="
                       relative min-w-0 cursor-pointer
-                      flex-[0_0_80%]
-                      bg-white
+                      flex-[0_0_80%] sm:flex-[0_0_50%] md:flex-[0_0_25%]
+                      bg-[#f7f7f7]
                     "
                   >
-                    <div className="p-4 flex flex-col w-full max-w-[260px] mx-auto">
+                    <div className="p-4 flex flex-col w-full max-w-[260px] mx-auto md:max-w-none">
                       <div className="relative w-full h-[225px] overflow-hidden">
                         <Image
                           src={p.photo}
@@ -271,13 +277,15 @@ const Keypeople = ({ title, people }: Props) => {
               </div>
             </div>
 
-            {showArrows && (
-              <div className="flex items-center justify-center mt-6 pt-6 gap-6">
+            {/* Arrows + dots – always shown (mobile & laptop) */}
+            <div className="flex flex-col items-center justify-center mt-6 pt-4 gap-3">
+              {/* arrows */}
+              <div className="flex items-center justify-center gap-6">
                 <button
                   onClick={() => emblaApi?.scrollPrev()}
                   disabled={!canPrev}
                   aria-label="Previous"
-                  className="z-10 inline-flex items-center justify-center p-3 disabled:opacity-40"
+                  className="z-10 inline-flex items-center justify-center h-9 w-9 rounded-full border border-gray-300 disabled:opacity-40 hover:bg-gray-100"
                 >
                   <ChevronLeft className="h-5 w-5 text-[#117ABA]" />
                 </button>
@@ -285,51 +293,27 @@ const Keypeople = ({ title, people }: Props) => {
                   onClick={() => emblaApi?.scrollNext()}
                   disabled={!canNext}
                   aria-label="Next"
-                  className="z-10 inline-flex items-center justify-center p-3 disabled:opacity-40"
+                  className="z-10 inline-flex items-center justify-center h-9 w-9 rounded-full border border-gray-300 disabled:opacity-40 hover:bg-gray-100"
                 >
                   <ChevronRight className="h-5 w-5 text-[#117ABA]" />
                 </button>
               </div>
-            )}
-          </div>
 
-          {/* Desktop / Laptop: centered row */}
-          <div
-            className={`hidden md:flex md:justify-center md:gap-8 ${
-              isFourOrLess ? "md:flex-nowrap" : "md:flex-wrap"
-            }`} // ✅ no-wrap till 4, wrap if more
-          >
-            {people.map((p, i) => (
-              <motion.article
-                key={p.name + i}
-                initial={{ opacity: 0, y: 18 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.06 }}
-                onClick={() => setSelected(p)}
-                className="relative cursor-pointer bg-white w-[220px] lg:w-[240px]"
-              >
-                <div className="p-4 flex flex-col w-full">
-                  <div className="relative w-full h-[225px] overflow-hidden">
-                    <Image
-                      src={p.photo}
-                      alt={p.name}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-
-                  <div className="mt-4 text-left">
-                    <p className="text-sm md:text-base manrope-700 text-[#1C1C1C]">
-                      {p.name}
-                    </p>
-                    <p className="mt-1 text-xs md:text-sm text-[#4F4F4F]">
-                      {p.role}
-                    </p>
-                  </div>
-                </div>
-              </motion.article>
-            ))}
+              {/* dots */}
+              <div className="flex items-center justify-center gap-2">
+                {scrollSnaps.map((_, i) => (
+                  <button
+                    key={i}
+                    type="button"
+                    onClick={() => emblaApi?.scrollTo(i)}
+                    className={`h-2.5 w-2.5 rounded-full transition ${
+                      i === selectedIndex ? "bg-[#117ABA]" : "bg-gray-300"
+                    }`}
+                    aria-label={`Go to slide ${i + 1}`}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -2,11 +2,11 @@
 import { BusinessConfig } from "@/app/business/data";
 import { AwardsSection } from "./AwardsSection";
 import { InnovationSlider } from "./InnovationSlider";
-import { OfferingsSection } from "./OfferingsSection";
 import { SustainabilitySection } from "./SustainabilitySection";
 import Keypeople from "./keypeople";
 import AccreditationsSlider from "../accredition";
 import { CaseStudySection } from "./case-studies";
+import { OfferingadvSection } from "./OfferingsSection";
 
 type Props = {
   business: BusinessConfig;
@@ -15,7 +15,7 @@ type Props = {
 export function BusinessDetail({ business }: Props) {
   return (
     <div className=" space-y-10 md:space-y-12">
-      <OfferingsSection
+      <OfferingadvSection
         heading={business.offerings.heading}
         items={business.offerings.items}
         subheading={business.subofferings?.heading}
