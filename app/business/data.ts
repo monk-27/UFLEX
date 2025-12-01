@@ -48,7 +48,7 @@ export type KeyPerson = {
 export interface BusinessConfig {
   key: BusinessKey;
   label: string;
-  subheading: string;
+  subheading?: string;
   hero: {
     heading: string;
     image: string;
@@ -87,6 +87,7 @@ export interface BusinessConfig {
 }
 
 export const businesses: BusinessConfig[] = [
+  // Packaging Films Business
   {
     key: "packaging-films",
     label: "Packaging Films & PET Resin",
@@ -317,11 +318,11 @@ export const businesses: BusinessConfig[] = [
       // { image: "/images/accredition5.png" },
     ]
   },
-
+// Chemicals Business
    {
     key: "chemicals",
     label: "Chemicals",
-    subheading: "Chemicals",
+    // subheading: "Chemicals",
     hero: {
       heading: "Our Businesses",
       image: "/images/herochem.png", // keep same aspect as screenshot
@@ -472,6 +473,115 @@ export const businesses: BusinessConfig[] = [
       // { image: "/images/accredition5.png" },
     ]
   },
+//Aseptic Business
+
+ {
+    key: "aseptic",
+    label: "Aseptic Packaging",
+    // subheading: "Aseptic Packaging",
+    hero: {
+      heading: "Our Businesses",
+      image: "/images/3.png", // keep same aspect as screenshot
+      body:
+        "Asepto, the Aseptic Packaging brand of UFlex, is the world’s fastest-growing aseptic packaging company, proudly serving over 200 esteemed clients across more than 40 countries. As a leading provider of end-to-end aseptic liquid packaging solutions, we offer innovative designs, six-layered cartons, highly advanced filling machines, and exceptional service from highly trained engineers.",
+    },
+
+    offerings: {
+      heading: "Our Offerings",
+      items: [
+        {
+          id: "aseptic-cartons",
+          title: "Aseptic Cartons",
+          image: "/images/asepcticcartons.png",
+          description: "High-performance polyester films for diverse packaging applications.",
+        },
+        {
+          id: "sip",
+          title: "A Sip",
+          image: "/images/asip.png",
+          description: "Biaxially oriented polypropylene films for flexible packaging.",
+        },
+        {
+          id: "filling-machines",
+          title: "Filling Machines",
+          image: "/images/filling.png",
+          description: "Cast polypropylene films for specialty and general packaging.",
+        },
+        {
+          id: "asepto-pro",
+          title: "Asepto Pro",
+          image: "/images/aseptopro.png",
+          description: "Cast polypropylene films for specialty and general packaging.",
+        },
+        
+      ],
+    },
+    
+    innovations: {
+      heading: "Business Highlights and Innovations",
+      items: [
+        {
+          id: "first-aseptic-carton-package",
+          title: "India’s First Aseptic Carton Package",
+          description:
+            "As the first aseptic carton package in India featuring 5% certified recycled polymers, and the first paper-based beverage carton producer in the country to use recycled plastic, UFlex is setting new benchmarks in sustainable packaging, supporting circularity, resource efficiency, and reduced environmental impact.",
+          image: "/images/invp.png",
+        },
+        {
+          id: "holography-stamping-foils",
+          title: "Holography and Stamping Foils",
+          description:
+            "Flex continues to set global benchmarks through advanced infrastructure, technical excellence, advanced R&D, and deep market intelligence, ensuring world-class quality and innovation across its offerings. Our state-of-the-art in-house manufacturing facilities, equipped with Origination, Coatings, Metallizers, and Slitting machines, enable advanced transfer technology, enhancing both surface appeal and tactile experience. " ,
+           image: "/images/invps.png",
+        },
+         
+
+
+        
+      ],},
+    sustainability: {
+      title: "Sustainability",
+      description: "At Asepto, sustainability isn't just a commitment; it's a driving force behind innovation. Asepto brings a sustainable solution to this pressing concern of aseptic cartons reaching landfills. With their proper extraction and assimilation, Asepto paves the way for a Circular Economy.Enzymatic Delamination Technology (EDT) is Asepto’s sustainable solution to reprocess the aseptic cartons to bring them back into the circular economy. Through EDT, we can separate and recover valuable materials like aluminium, polymers, and paper pulp from these cartons. By doing so, we significantly reduce the environmental footprint associated with their disposal.",
+      image: "/images/sus.png",
+      linkLabel: "Know more",
+      linkHref: "#",
+    },
+    keypeople:{
+      title: "Key People",
+      details:[
+        {
+        photo: "/images/ashwani.png",
+        name: "Mr. Ashwani K. Sharma",
+        role: "President and CEO, Aseptic packaging business",
+        summary:
+            "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum has been the indus...",
+        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+    },
+        
+    
+      ]
+    },
+  
+    awards: {
+      title: "Awards & Accolades",
+      description:
+        "Our circular initiatives and recycling programmes have been recognised by leading global industry bodies, reflecting Asepto’s commitment to responsible and sustainable packaging. These recognitions highlight our consistent efforts to reduce waste, improve material efficiency, and support recycling across our operations.",
+      image: "/images/awards.png",
+      linkLabel: "Know more",
+      linkHref: "#",
+    },
+    accreditation: [
+      { image: "/images/accc4.png" },
+      { image: "/images/accc5.png" },
+      { image: "/images/accc6.png" },
+      { image: "/images/accc7.png" },
+      // { image: "/images/accredition5.png" },
+    ]
+  },
+
+
+
+
   // add other businesses here...
 ];
 
