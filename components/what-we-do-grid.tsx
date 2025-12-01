@@ -190,34 +190,7 @@ export default function BusinessCardsCarousel() {
                     </p>
 
 
-                    {/* Arrow link – thin red arrow, aligned left */}
-                    <Link
-                      href={card.href}
-                      className="mt-6 flex items-center gap-2 text-[#D84A3B] hover:opacity-80 justify-start"
-                      aria-label={`Open ${card.title}`}
-                    >
-                      <svg
-                        width="38"
-                        height="12"
-                        viewBox="0 0 38 12"
-                        fill="none"
-                        aria-hidden="true"
-                      >
-                        <path
-                          d="M1 6H34"
-                          stroke="currentColor"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                        />
-                        <path
-                          d="M29.5 1L35 6L29.5 11"
-                          stroke="currentColor"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </Link>
+                 
 
                   </div>
                 </div>
@@ -278,16 +251,7 @@ export default function BusinessCardsCarousel() {
                       </h3>
                     </div>
                     <p className="mt-3 text-sm leading-relaxed manrope-400 text-[#6D6E71]">{card.desc}</p>
-                    <Link
-                      href={card.href}
-                      className="mt-6 inline-flex items-center gap-2 text-[#D84A3B] hover:opacity-80"
-                      aria-label={`Open ${card.title}`}
-                    >
-                      <svg width="38" height="12" viewBox="0 0 38 12" fill="none" aria-hidden="true">
-                        <path d="M1 6H34" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                        <path d="M29.5 1L35 6L29.5 11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </Link>
+                    
                   </div>
                 </div>
               </motion.div>
