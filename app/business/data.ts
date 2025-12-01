@@ -552,8 +552,7 @@ export const businesses: BusinessConfig[] = [
       { image: "/images/accc7.png" },
     ],
   },
-
-      {
+{
   key: "flexible-packaging",
   label: "Flexible Packaging",
   hero: {
@@ -604,7 +603,7 @@ export const businesses: BusinessConfig[] = [
     details: [
       {
         photo:
-          "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Mr.-Jeevaraj-Gopal-Pillai-(BOD)05.jpg",
+          "/images/jeevaraj.png",
         name: "Mr. Jeevaraj Gopal Pillai",
         role: "Whole Time Director",
         summary:
@@ -630,8 +629,6 @@ export const businesses: BusinessConfig[] = [
     { image: "/images/accc11.png" },
   ],
 }
-  
-    
 ];
 
 export const businessTabs = businesses.map((b) => ({
