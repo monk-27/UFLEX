@@ -7,7 +7,7 @@ type Props = {
     business: BusinessConfig;
 };
 
-export function SubBusinessHero({ business }: Props) {
+export function SubBusinessHero({ business }: any) {
     const { hero } = business;
 
     return (

@@ -7,7 +7,7 @@ type Props = {
   data: HighlightBlock;
 };
 
-export function AwardsSection({ data }: Props) {
+export function AwardsSection({ data }: any) {
   if (!data || !data.image) return null;
   return (
     <section className="relative w-screen left-1/2 right-1/2 -mx-[50vw]">

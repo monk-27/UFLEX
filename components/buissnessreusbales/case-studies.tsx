@@ -23,7 +23,7 @@ export function CaseStudySection({
   imageSrc,
   imageAlt = "Case study image",
   items,
-}: CaseStudyProps) {
+}: any) {
   if (!items || items.length === 0) return null;
 
   return (
@@ -53,7 +53,7 @@ export function CaseStudySection({
 
   {/* Centered content container */}
   <div className="flex flex-col justify-center flex-1 px-0">
-    {items.map((item, index) => {
+    {items.map((item:any, index:any) => {
       const isPrimary = index === 0;
 
       return (

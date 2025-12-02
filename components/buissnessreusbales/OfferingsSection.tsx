@@ -149,7 +149,7 @@ export function OfferingadvSection({
   subheading,
   subitems,
   business,
-}: Props) {
+}: any) {
   const [mobileIndex, setMobileIndex] = useState(0);
   const [desktopPage, setDesktopPage] = useState(0);
 
@@ -200,7 +200,7 @@ export function OfferingadvSection({
         {/* Desktop – main offerings */}
         {items.length <= itemsPerPage ? (
           <div className="hidden md:flex md:justify-center md:items-stretch md:gap-4">
-            {items.map((item) => (
+            {items.map((item:any) => (
               <OfferingCard key={item.id} item={item} />
             ))}
           </div>
@@ -208,7 +208,7 @@ export function OfferingadvSection({
           <div className="hidden md:flex md:flex-col md:items-center">
             {/* cards */}
             <div className="flex justify-center items-stretch gap-4">
-              {visibleDesktopItems.map((item) => (
+              {visibleDesktopItems.map((item:any) => (
                 <OfferingCard key={item.id} item={item} />
               ))}
             </div>
@@ -255,7 +255,7 @@ export function OfferingadvSection({
         <div className="md:hidden">
           {items.length > 0 && <OfferingCard item={items[mobileIndex]} />}
 <div className="flex items-center justify-center gap-2 mt-4 ">
-                {items.map((_, i) => (
+                {items.map((_:any, i:any) => (
                   <button
                     key={i}
                     type="button"
@@ -307,7 +307,7 @@ export function OfferingadvSection({
             )}
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {subitems.map((sub) => (
+              {subitems.map((sub:any) => (
                 <OfferingCard key={sub.id} item={sub} />
               ))}
             </div>
@@ -318,13 +318,13 @@ export function OfferingadvSection({
   );
 }
 
-function OfferingCard({ item }: { item: Offering }) {
+function OfferingCard({ item }: { item: any }) {
   return (
     <div className="group relative overflow-hidden  md:w-[200px] lg:w-[220px] xl:w-[240px]">
       <div className="relative h-[195px] w-full">
         <Image
-          src={item.image}
-          alt={item.title}
+          src={item?.image}
+          alt={item?.title}
           fill
           className="object-cover transform group-hover:scale-105 transition-transform duration-300"
         />
@@ -336,7 +336,7 @@ function OfferingCard({ item }: { item: Offering }) {
       {/* Title at bottom-center */}
       <div className="absolute inset-0 flex items-end justify-center pb-5">
         <p className="lato-700 text-[16px] text-white tracking-wide text-center">
-          {item.title}
+          {item?.title}
         </p>
       </div>
     </div>

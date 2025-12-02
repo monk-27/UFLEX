@@ -8,7 +8,7 @@ type Props = {
   data: HighlightBlock;
 };
 
-export function SustainabilitySection({ data }: Props) {
+export function SustainabilitySection({ data }: any) {
   if (!data) return null;
 
   return (
@@ -48,7 +48,7 @@ export function SustainabilitySection({ data }: Props) {
         </div>
       </div>
     </section>
-    <section className=" block sm:hidde bg-[#f7f7f7] ">
+    <section className=" block sm:hidden bg-[#f7f7f7] ">
       <div className="">
         <div className="  overflow-hidden grid gap-0 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.2fr)]">
           {/* Text */}

@@ -108,7 +108,7 @@ const slideVariants = {
   }),
 };
 
-export function InnovationSlider({ heading, items }: Props) {
+export function InnovationSlider({ heading, items }: any) {
 
   if (!items || items.length === 0) return null;
   const [index, setIndex] = useState(0);

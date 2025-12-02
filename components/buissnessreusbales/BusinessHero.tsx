@@ -9,7 +9,7 @@ type Props = {
   business: BusinessConfig;
 };
 
-export function BusinessHero({ business }: Props) {
+export function BusinessHero({ business }: any) {
   const { hero } = business;
   if (!hero) return null;
 

@@ -190,7 +190,7 @@ type Props = {
   people: KeyPerson[];
 };
 
-const Keypeople = ({ title, people }: Props) => {
+const Keypeople = ({ title, people }: any) => {
   const [selected, setSelected] = useState<KeyPerson | null>(null);
   const [canPrev, setCanPrev] = useState(false);
   const [canNext, setCanNext] = useState(true);
@@ -247,7 +247,7 @@ const Keypeople = ({ title, people }: Props) => {
               <div className={`flex gap-6 ${
       people.length <= 2 ? "justify-center" : ""
     }`}>
-                {people.map((p, i) => (
+                {people.map((p:any, i:any) => (
                   <motion.article
                     key={p.name + i}
                     initial={{ opacity: 0, y: 18 }}
