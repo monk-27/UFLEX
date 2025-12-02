@@ -81,7 +81,7 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
 
         {/* Animated content below hero */}
         <div className="mt-6">
-          {/* <AnimatePresence mode="wait"> */}
+          <AnimatePresence mode="wait">
             <motion.div
               key={activeTab.id}
               initial={{ opacity: 0, y: 8 }}
@@ -91,7 +91,7 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
             >
               {activeTab.render()}
             </motion.div>
-          {/* </AnimatePresence> */}
+          </AnimatePresence>
         </div>
       </div>
     </section>

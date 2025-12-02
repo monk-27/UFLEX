@@ -1,4 +1,4 @@
-
+"use client";
 import { BusinessConfig } from "@/app/business/data";
 import { AwardsSection } from "./AwardsSection";
 import { InnovationSlider } from "./InnovationSlider";
