@@ -72,7 +72,7 @@ export function BusinessDetail({ business }: Props) {
   return (
     <div className="space-y-10 md:space-y-12">
       {/* Offerings – guard items */}
-      {business.offerings?.items?.length ? (
+      {/* {business.offerings?.items?.length ? (
         <OfferingadvSection
           heading={business.offerings.heading}
           items={business.offerings.items}
@@ -80,15 +80,15 @@ export function BusinessDetail({ business }: Props) {
           subitems={business.subofferings?.subitems}
           business={business}
         />
-      ) : null}
+      ) : null} */}
 
       {/* Innovations – guard and ensure there are slides */}
-      {/* {business.innovations?.items?.length ? (
+      {business.innovations?.items?.length ? (
         <InnovationSlider
           heading={business.innovations.heading}
           items={business.innovations.items}
         />
-      ) : null} */}
+      ) : null}
 
       {/* Sustainability – data can be missing on some businesses */}
       {/* {business.sustainability && (
