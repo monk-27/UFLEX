@@ -49,7 +49,7 @@ export default function BusinessesPage() {
       </div>
 
       {/* Tabs + per-tab hero + per-tab content */}
-      <BusinessTabs tabs={tabs} defaultId={defaultKey} />
+      {/* <BusinessTabs tabs={tabs} defaultId={defaultKey} /> */}
       
 
       <SiteFooter />
