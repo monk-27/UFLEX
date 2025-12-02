@@ -245,7 +245,7 @@ const Keypeople = ({ title, people }: any) => {
           <div className="relative">
             <div ref={emblaRef} className="overflow-hidden">
               <div className={`flex gap-6 ${
-      people.length <= 2 ? "justify-center" : ""
+      people.length <= 3 ? "justify-center" : ""
     }`}>
                 {people.map((p:any, i:any) => (
                   <motion.article
