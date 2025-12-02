@@ -80,7 +80,7 @@
 //   );
 // }
 // src/components/business/InnovationSlider.tsx
-"use client";
+"use client"
 
 import { useState } from "react";
 import Image from "next/image";
@@ -109,6 +109,8 @@ const slideVariants = {
 };
 
 export function InnovationSlider({ heading, items }: Props) {
+
+  if (!items || items.length === 0) return null;
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState<1 | -1>(1);
 

@@ -1,4 +1,6 @@
 // src/components/business/SustainabilitySection.tsx
+
+"use client"
 import { HighlightBlock } from "@/app/business/data";
 import Image from "next/image";
 
@@ -7,6 +9,8 @@ type Props = {
 };
 
 export function SustainabilitySection({ data }: Props) {
+  if (!data) return null;
+
   return (
     <>
     

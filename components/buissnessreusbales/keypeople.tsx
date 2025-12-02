@@ -175,7 +175,7 @@
 // };
 
 // export default Keypeople;
-"use client";
+"use client"
 
 import { useEffect, useState, useCallback, useMemo } from "react";
 import Image from "next/image";

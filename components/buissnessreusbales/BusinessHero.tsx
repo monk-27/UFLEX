@@ -1,4 +1,7 @@
 // src/components/business/BusinessHero.tsx
+
+
+"use client"
 import { BusinessConfig } from "@/app/business/data";
 import Image from "next/image";
 
@@ -8,6 +11,7 @@ type Props = {
 
 export function BusinessHero({ business }: Props) {
   const { hero } = business;
+  if (!hero) return null;
 
   return (
     <section className="w-full bg-white">

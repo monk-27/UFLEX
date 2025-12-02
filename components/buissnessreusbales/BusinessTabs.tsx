@@ -109,7 +109,7 @@
 //   );
 // }
 // src/components/buissnessreusbales/BusinessTabs.tsx
-"use client";
+"use client"
 
 import { ReactNode, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";

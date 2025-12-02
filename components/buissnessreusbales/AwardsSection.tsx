@@ -1,4 +1,5 @@
 // src/components/business/AwardsSection.tsx
+"use client"
 import { HighlightBlock } from "@/app/business/data";
 import Image from "next/image";
 
@@ -7,6 +8,7 @@ type Props = {
 };
 
 export function AwardsSection({ data }: Props) {
+  if (!data || !data.image) return null;
   return (
     <section className="relative w-screen left-1/2 right-1/2 -mx-[50vw]">
       <div className="relative h-[260px] md:h-[360px] lg:h-[500px] overflow-hidden">

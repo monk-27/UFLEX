@@ -128,7 +128,7 @@
 // //   );
 // // }
 
-"use client";
+"use client"
 
 import { BusinessConfig, Offering } from "@/app/business/data";
 import Image from "next/image";

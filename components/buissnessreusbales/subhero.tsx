@@ -1,4 +1,5 @@
 // src/components/business/BusinessHero.tsx
+"use client"
 import { BusinessConfig } from "@/app/business/data";
 import Image from "next/image";
 
