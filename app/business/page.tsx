@@ -12,14 +12,12 @@ import Image from "next/image";
 export default function BusinessesPage() {
   const defaultKey = "packaging-films";
 
-  // const tabs = businesses.map((b) => ({
-  //   id: b.key,
-  //   label: b.label,
-  //   // hero shown just below the tab row
-  //   hero: <BusinessHero business={b} />,
-  //   // main content for the business
-  //   render: () => <BusinessDetail business={b} />,
-  // }));
+  const tabs = businesses.map((b:any) => ({
+    id: b.key,
+    label: b.label,
+    hero: <BusinessHero business={b} />,
+    render: () => <BusinessDetail business={b} />,
+  }));
 
   return (
     <main className="bg-white">
@@ -49,8 +47,8 @@ export default function BusinessesPage() {
       </div>
 
       {/* Tabs + per-tab hero + per-tab content */}
-      {/* <BusinessTabs tabs={tabs} defaultId={defaultKey} /> */}
-       <BusinessDetail business={businesses.find(b => b.key === defaultKey)!} />
+      <BusinessTabs tabs={tabs} defaultId={defaultKey} />
+       {/* <BusinessDetail business={businesses.find(b => b.key === defaultKey)!} /> */}
       
 
       <SiteFooter />

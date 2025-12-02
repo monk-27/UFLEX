@@ -111,6 +111,7 @@
 // src/components/buissnessreusbales/BusinessTabs.tsx
 // src/components/buissnessreusbales/BusinessTabs.tsx
 // src/components/buissnessreusbales/BusinessTabs.tsx
+// src/components/buissnessreusbales/BusinessTabs.tsx
 "use client";
 
 import React, { ReactNode, useState } from "react";
@@ -127,18 +128,21 @@ type Props = {
   defaultId: string;
 };
 
-export function BusinessTabs({ tabs, defaultId }: Props) {
+export function BusinessTabs({ tabs, defaultId }: any) {
+  console.log("tavs+++",tabs)
   const safeTabs = Array.isArray(tabs) ? tabs : [];
+  console.log("safeTabs", safeTabs);
 
   // Initial tab: default if exists, otherwise first
   const [activeId, setActiveId] = useState<string>(() => {
     if (safeTabs.length === 0) return "";
     const hasDefault = safeTabs.some((t) => t.id === defaultId);
+    console.log("hasdefault",hasDefault)
     return hasDefault ? defaultId : safeTabs[0].id;
   });
 
   const activeTab = safeTabs.find((t) => t.id === activeId) ?? safeTabs[0];
-
+console.log("activetab",activeTab)
   // No tabs at all – simple fallback
   if (!activeTab) {
     if (typeof window !== "undefined") {
