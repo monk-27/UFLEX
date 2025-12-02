@@ -83,42 +83,42 @@ export function BusinessDetail({ business }: Props) {
       ) : null}
 
       {/* Innovations – guard and ensure there are slides */}
-      {business.innovations?.items?.length ? (
+      {/* {business.innovations?.items?.length ? (
         <InnovationSlider
           heading={business.innovations.heading}
           items={business.innovations.items}
         />
-      ) : null}
+      ) : null} */}
 
       {/* Sustainability – data can be missing on some businesses */}
-      {business.sustainability && (
+      {/* {business.sustainability && (
         <SustainabilitySection data={business.sustainability} />
-      )}
+      )} */}
 
       {/* Key People */}
-      {business.keypeople && business.keypeople.details?.length ? (
+      {/* {business.keypeople && business.keypeople.details?.length ? (
         <Keypeople
           title={business.keypeople.title}
           people={business.keypeople.details}
         />
-      ) : null}
+      ) : null} */}
 
       {/* Case Studies */}
-      {business.caseStudies && business.caseStudies.length > 0 && (
+      {/* {business.caseStudies && business.caseStudies.length > 0 && (
         <CaseStudySection
           sectionTitle="Case Studies"
           imageSrc="/images/chemcase.png"
           items={business.caseStudies}
         />
-      )}
+      )} */}
 
       {/* Awards – this is very likely where it was crashing if awards is missing */}
-      {business.awards && <AwardsSection data={business.awards} />}
+      {/* {business.awards && <AwardsSection data={business.awards} />} */}
 
       {/* Accreditations */}
-      {business.accreditation && business.accreditation.length > 0 && (
+      {/* {business.accreditation && business.accreditation.length > 0 && (
         <AccreditationsSlider items={business.accreditation} />
-      )}
+      )} */}
     </div>
   );
 }
