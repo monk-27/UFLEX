@@ -33,7 +33,7 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
                 onClick={() => setActiveId(tab.id)}
                 className="relative px-1 pb-3 pt-1 flex-shrink-0 lato-400 text-[13px] md:text-[14px]"
               >
-                <span
+                {/* <span
                   className={
                     isActive
                       ? "text-[#117ABA] font-semibold"
@@ -41,8 +41,8 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
                   }
                 >
                   {tab.label}
-                </span>
-                {/* <motion.span
+                </span> */}
+                <motion.span
   animate={{
     color: isActive ? "#117ABA" : "#4f4f4f",
     scale: isActive ? 1.05 : 1,
@@ -51,7 +51,7 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
   className={isActive ? "font-semibold" : ""}
 >
   {tab.label}
-</motion.span> */}
+</motion.span>
 
 
                 {/* red underline for active */}
@@ -81,7 +81,7 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
 
         {/* Animated content below hero */}
         <div className="mt-6">
-          <AnimatePresence mode="wait">
+          {/* <AnimatePresence mode="wait"> */}
             <motion.div
               key={activeTab.id}
               initial={{ opacity: 0, y: 8 }}
@@ -91,7 +91,7 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
             >
               {activeTab.render()}
             </motion.div>
-          </AnimatePresence>
+          {/* </AnimatePresence> */}
         </div>
       </div>
     </section>
