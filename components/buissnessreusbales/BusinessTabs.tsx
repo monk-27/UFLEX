@@ -110,11 +110,11 @@
 // }
 // src/components/buissnessreusbales/BusinessTabs.tsx
 // src/components/buissnessreusbales/BusinessTabs.tsx
+// src/components/buissnessreusbales/BusinessTabs.tsx
 "use client";
 
 import React, { ReactNode, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { TabErrorBoundary } from "./errorboundary";
+import { motion } from "framer-motion";
 
 type TabDef = {
   id: string;
@@ -129,10 +129,9 @@ type Props = {
 };
 
 export function BusinessTabs({ tabs, defaultId }: Props) {
-  // Always work with a safe array
   const safeTabs = Array.isArray(tabs) ? tabs : [];
 
-  // Initial activeId – only computed once
+  // ✅ initial tab: default if exists, otherwise first
   const [activeId, setActiveId] = useState<string>(() => {
     if (safeTabs.length === 0) return "";
     const hasDefault = safeTabs.some((t) => t.id === defaultId);
@@ -141,9 +140,14 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
 
   const activeTab = safeTabs.find((t) => t.id === activeId) ?? safeTabs[0];
 
-  // Extra guard – no tabs at all
+  // No tabs at all – render a small fallback instead of blowing up
   if (!activeTab) {
-    console.warn("[BusinessTabs] No tabs available", { tabs: safeTabs, defaultId });
+    if (typeof window !== "undefined") {
+      console.warn("[BusinessTabs] No active tab resolved", {
+        tabs: safeTabs,
+        defaultId,
+      });
+    }
     return (
       <section className="bg-white">
         <div className="section section-y pt-6 pb-4 text-sm text-gray-500">
@@ -153,9 +157,21 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
     );
   }
 
-  // Debug logging – remove later if you want
+  // Safely render tab content; if anything throws, show a small message
+  let content: ReactNode = null;
+  try {
+    content = activeTab.render();
+  } catch (err) {
+    console.error("[BusinessTabs] Error rendering tab", activeTab.id, err);
+    content = (
+      <div className="mt-6 text-sm text-red-600">
+        Something went wrong while loading this section.
+      </div>
+    );
+  }
+
   if (typeof window !== "undefined") {
-    console.debug("[BusinessTabs] activeId", activeId, "activeTab", activeTab.id);
+    console.debug("[BusinessTabs] activeId:", activeId, "activeTab:", activeTab.id);
   }
 
   return (
@@ -194,26 +210,11 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
           })}
         </div>
 
-        {/* Wrap hero + content with ErrorBoundary */}
-        <TabErrorBoundary>
-          {/* per-tab hero just below the tabs */}
-          {activeTab.hero && <div className="mt-6">{activeTab.hero}</div>}
+        {/* per-tab hero just below the tabs */}
+        {activeTab.hero && <div className="mt-6">{activeTab.hero}</div>}
 
-          {/* Animated content below hero */}
-          <div className="mt-6">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={activeTab.id}
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                transition={{ duration: 0.25, ease: "easeOut" }}
-              >
-                {activeTab.render()}
-              </motion.div>
-            </AnimatePresence>
-          </div>
-        </TabErrorBoundary>
+        {/* Content (no extra AnimatePresence wrapper) */}
+        <div className="mt-6">{content}</div>
       </div>
     </section>
   );
