@@ -110,10 +110,10 @@
 // }
 // src/components/buissnessreusbales/BusinessTabs.tsx
 // src/components/buissnessreusbales/BusinessTabs.tsx
+// src/components/buissnessreusbales/BusinessTabs.tsx
 "use client";
 
 import React, { ReactNode, useState } from "react";
-import { motion } from "framer-motion";
 
 type TabDef = {
   id: string;
@@ -130,7 +130,7 @@ type Props = {
 export function BusinessTabs({ tabs, defaultId }: Props) {
   const safeTabs = Array.isArray(tabs) ? tabs : [];
 
-  // initial tab: default if exists, otherwise first
+  // Initial tab: default if exists, otherwise first
   const [activeId, setActiveId] = useState<string>(() => {
     if (safeTabs.length === 0) return "";
     const hasDefault = safeTabs.some((t) => t.id === defaultId);
@@ -139,6 +139,7 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
 
   const activeTab = safeTabs.find((t) => t.id === activeId) ?? safeTabs[0];
 
+  // No tabs at all – simple fallback
   if (!activeTab) {
     if (typeof window !== "undefined") {
       console.warn("[BusinessTabs] No active tab resolved", {
@@ -148,7 +149,7 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
     }
     return (
       <section className="bg-white">
-        <div className="max-w-6xl mx-auto px-4 pt-6 pb-4 text-sm text-gray-500">
+        <div className="max-w-6xl mx-auto px-4 py-6 text-sm text-gray-500">
           No business tabs available.
         </div>
       </section>
@@ -167,13 +168,8 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
     );
   }
 
-  if (typeof window !== "undefined") {
-    console.debug("[BusinessTabs] activeId:", activeId, "activeTab:", activeTab.id);
-  }
-
   return (
     <section className="bg-white">
-      {/* ⬇️ normal container instead of `section section-y` */}
       <div className="max-w-6xl mx-auto px-4 pt-6 pb-4">
         {/* Tabs row */}
         <div className="border-b border-[#e0e0e0] flex gap-6 overflow-x-auto">
@@ -183,25 +179,14 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
               <button
                 key={tab.id}
                 onClick={() => setActiveId(tab.id)}
-                className="relative px-1 pb-3 pt-1 flex-shrink-0 lato-400 text-[13px] md:text-[14px]"
+                className={[
+                  "relative px-1 pb-3 pt-1 flex-shrink-0 lato-400 text-[13px] md:text-[14px]",
+                  isActive ? "text-[#117ABA] font-semibold" : "text-[#4f4f4f]",
+                ].join(" ")}
               >
-                <motion.span
-                  animate={{
-                    color: isActive ? "#117ABA" : "#4f4f4f",
-                    scale: isActive ? 1.05 : 1,
-                  }}
-                  transition={{ duration: 0.25 }}
-                  className={isActive ? "font-semibold" : ""}
-                >
-                  {tab.label}
-                </motion.span>
-
+                {tab.label}
                 {isActive && (
-                  <motion.span
-                    layoutId="underline"
-                    className="absolute left-0 right-0 -bottom-[1px] h-[3px] bg-[#CF2328]"
-                    transition={{ duration: 0.25, ease: "easeOut" }}
-                  />
+                  <span className="absolute left-0 right-0 -bottom-[1px] h-[3px] bg-[#CF2328]" />
                 )}
               </button>
             );

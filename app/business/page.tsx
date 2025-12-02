@@ -49,8 +49,8 @@ export default function BusinessesPage() {
       </div>
 
       {/* Tabs + per-tab hero + per-tab content */}
-      <BusinessTabs tabs={tabs} defaultId={defaultKey} />
-       {/* <BusinessDetail business={businesses.find(b => b.key === defaultKey)!} /> */}
+      {/* <BusinessTabs tabs={tabs} defaultId={defaultKey} /> */}
+       <BusinessDetail business={businesses.find(b => b.key === defaultKey)!} />
       
 
       <SiteFooter />
