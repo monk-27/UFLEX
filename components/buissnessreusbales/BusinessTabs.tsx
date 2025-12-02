@@ -109,10 +109,12 @@
 //   );
 // }
 // src/components/buissnessreusbales/BusinessTabs.tsx
-"use client"
+// src/components/buissnessreusbales/BusinessTabs.tsx
+"use client";
 
-import { ReactNode, useState } from "react";
+import React, { ReactNode, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { TabErrorBoundary } from "./errorboundary";
 
 type TabDef = {
   id: string;
@@ -127,21 +129,21 @@ type Props = {
 };
 
 export function BusinessTabs({ tabs, defaultId }: Props) {
-  // ✅ Always work with a safe array
+  // Always work with a safe array
   const safeTabs = Array.isArray(tabs) ? tabs : [];
 
-  // ✅ Initial activeId – computed once on mount
+  // Initial activeId – only computed once
   const [activeId, setActiveId] = useState<string>(() => {
     if (safeTabs.length === 0) return "";
     const hasDefault = safeTabs.some((t) => t.id === defaultId);
     return hasDefault ? defaultId : safeTabs[0].id;
   });
 
-  // ✅ Find active tab safely
   const activeTab = safeTabs.find((t) => t.id === activeId) ?? safeTabs[0];
 
-  // If still nothing, bail out with a small fallback instead of crashing
+  // Extra guard – no tabs at all
   if (!activeTab) {
+    console.warn("[BusinessTabs] No tabs available", { tabs: safeTabs, defaultId });
     return (
       <section className="bg-white">
         <div className="section section-y pt-6 pb-4 text-sm text-gray-500">
@@ -149,6 +151,11 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
         </div>
       </section>
     );
+  }
+
+  // Debug logging – remove later if you want
+  if (typeof window !== "undefined") {
+    console.debug("[BusinessTabs] activeId", activeId, "activeTab", activeTab.id);
   }
 
   return (
@@ -187,23 +194,26 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
           })}
         </div>
 
-        {/* per-tab hero just below the tabs */}
-        {activeTab.hero && <div className="mt-6">{activeTab.hero}</div>}
+        {/* Wrap hero + content with ErrorBoundary */}
+        <TabErrorBoundary>
+          {/* per-tab hero just below the tabs */}
+          {activeTab.hero && <div className="mt-6">{activeTab.hero}</div>}
 
-        {/* Animated content below hero */}
-        <div className="mt-6">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={activeTab.id}
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={{ duration: 0.25, ease: "easeOut" }}
-            >
-              {activeTab.render()}
-            </motion.div>
-          </AnimatePresence>
-        </div>
+          {/* Animated content below hero */}
+          <div className="mt-6">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={activeTab.id}
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -8 }}
+                transition={{ duration: 0.25, ease: "easeOut" }}
+              >
+                {activeTab.render()}
+              </motion.div>
+            </AnimatePresence>
+          </div>
+        </TabErrorBoundary>
       </div>
     </section>
   );

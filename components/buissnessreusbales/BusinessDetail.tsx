@@ -83,17 +83,17 @@ export function BusinessDetail({ business }: Props) {
       ) : null} */}
 
       {/* Innovations – guard and ensure there are slides */}
-      {business.innovations?.items?.length ? (
+      {/* {business.innovations?.items?.length ? (
         <InnovationSlider
           heading={business.innovations.heading}
           items={business.innovations.items}
         />
-      ) : null}
+      ) : null} */}
 
       {/* Sustainability – data can be missing on some businesses */}
-      {/* {business.sustainability && (
+      {business.sustainability && (
         <SustainabilitySection data={business.sustainability} />
-      )} */}
+      )}
 
       {/* Key People */}
       {/* {business.keypeople && business.keypeople.details?.length ? (
