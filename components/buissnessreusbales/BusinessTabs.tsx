@@ -33,7 +33,7 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
                 onClick={() => setActiveId(tab.id)}
                 className="relative px-1 pb-3 pt-1 flex-shrink-0 lato-400 text-[13px] md:text-[14px]"
               >
-                <span
+                {/* <span
                   className={
                     isActive
                       ? "text-[#117ABA] font-semibold"
@@ -41,13 +41,31 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
                   }
                 >
                   {tab.label}
-                </span>
+                </span> */}
+                <motion.span
+  animate={{
+    color: isActive ? "#117ABA" : "#4f4f4f",
+    scale: isActive ? 1.05 : 1,
+  }}
+  transition={{ duration: 0.25 }}
+  className={isActive ? "font-semibold" : ""}
+>
+  {tab.label}
+</motion.span>
+
 
                 {/* red underline for active */}
-                {isActive && (
+                {/* {isActive && (
                   <span className="absolute left-0 right-0 -bottom-[1px] h-[3px] bg-[#CF2328]" />
-                )}
-                
+                )} */}
+                {isActive && (
+  <motion.span
+    layoutId="underline"
+    className="absolute left-0 right-0 -bottom-[1px] h-[3px] bg-[#CF2328]"
+    transition={{ duration: 0.25, ease: "easeOut" }}
+  />
+)}
+
               </button>
             );
           })}

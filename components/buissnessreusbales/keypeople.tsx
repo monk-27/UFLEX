@@ -235,7 +235,7 @@ const Keypeople = ({ title, people }: Props) => {
 
   return (
     <>
-      <section className="pb-12 mt-[30px] py-0 text-center sm:mt-8 bg-[#f7f7f7]">
+      <section className="pb-12 mt-[30px] py-12 sm:py-0 text-center sm:mt-8 bg-[#f7f7f7]">
         <div className="px-4 md:px-1">
           <h2 className="px-6 text-start lato-700 text-[20px] md:text-[28px] text-[#000000] mb-3">
             {title}
@@ -257,7 +257,7 @@ const Keypeople = ({ title, people }: Props) => {
                     onClick={() => setSelected(p)}
                     className="
                       relative min-w-0 cursor-pointer
-                      flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_23%]
+                      flex-[0_0_55%] sm:flex-[0_0_50%] md:flex-[0_0_23%]
                       bg-[#f7f7f7]
                     "
                   >
