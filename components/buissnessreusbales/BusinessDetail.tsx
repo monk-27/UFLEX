@@ -44,7 +44,7 @@ export function BusinessDetail({ business }: Props) {
       )}
       <AwardsSection data={business.awards} />
 
-      <AccreditationsSlider items={business.accreditation ?? []} />;
+      <AccreditationsSlider items={business.accreditation ?? []} />
 
     </div>
   );

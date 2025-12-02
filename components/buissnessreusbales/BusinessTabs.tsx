@@ -1,7 +1,7 @@
 // src/components/buissnessreusbales/BusinessTabs.tsx
 "use client";
 
-import { ReactNode, useState } from "react";
+import { ReactNode, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 type TabDef = {
@@ -17,9 +17,20 @@ type Props = {
 };
 
 export function BusinessTabs({ tabs, defaultId }: Props) {
-  const [activeId, setActiveId] = useState(defaultId);
-  const activeTab = tabs.find((t) => t.id === activeId) ?? tabs[0];
+  const initialId = useMemo(() => {
+    if (!tabs || tabs.length === 0) return "";
+    return tabs.some((t) => t.id === defaultId) ? defaultId : tabs[0].id;
+  }, [tabs, defaultId]);
 
+  const [activeId, setActiveId] = useState(initialId);
+
+  const activeTab = useMemo(
+    () => tabs.find((t) => t.id === activeId) ?? tabs[0],
+    [tabs, activeId]
+  );
+
+  // If still no tab, render nothing instead of crashing
+  if (!activeTab) return null;
   return (
     <section className="bg-white">
       <div className=" section section-y pt-6 pb-4">
