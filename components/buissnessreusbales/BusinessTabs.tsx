@@ -110,7 +110,6 @@
 // }
 // src/components/buissnessreusbales/BusinessTabs.tsx
 // src/components/buissnessreusbales/BusinessTabs.tsx
-// src/components/buissnessreusbales/BusinessTabs.tsx
 "use client";
 
 import React, { ReactNode, useState } from "react";
@@ -131,7 +130,7 @@ type Props = {
 export function BusinessTabs({ tabs, defaultId }: Props) {
   const safeTabs = Array.isArray(tabs) ? tabs : [];
 
-  // ✅ initial tab: default if exists, otherwise first
+  // initial tab: default if exists, otherwise first
   const [activeId, setActiveId] = useState<string>(() => {
     if (safeTabs.length === 0) return "";
     const hasDefault = safeTabs.some((t) => t.id === defaultId);
@@ -140,7 +139,6 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
 
   const activeTab = safeTabs.find((t) => t.id === activeId) ?? safeTabs[0];
 
-  // No tabs at all – render a small fallback instead of blowing up
   if (!activeTab) {
     if (typeof window !== "undefined") {
       console.warn("[BusinessTabs] No active tab resolved", {
@@ -150,14 +148,13 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
     }
     return (
       <section className="bg-white">
-        <div className="section section-y pt-6 pb-4 text-sm text-gray-500">
+        <div className="max-w-6xl mx-auto px-4 pt-6 pb-4 text-sm text-gray-500">
           No business tabs available.
         </div>
       </section>
     );
   }
 
-  // Safely render tab content; if anything throws, show a small message
   let content: ReactNode = null;
   try {
     content = activeTab.render();
@@ -176,7 +173,8 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
 
   return (
     <section className="bg-white">
-      <div className=" pt-6 pb-4">
+      {/* ⬇️ normal container instead of `section section-y` */}
+      <div className="max-w-6xl mx-auto px-4 pt-6 pb-4">
         {/* Tabs row */}
         <div className="border-b border-[#e0e0e0] flex gap-6 overflow-x-auto">
           {safeTabs.map((tab) => {
@@ -213,7 +211,7 @@ export function BusinessTabs({ tabs, defaultId }: Props) {
         {/* per-tab hero just below the tabs */}
         {activeTab.hero && <div className="mt-6">{activeTab.hero}</div>}
 
-        {/* Content (no extra AnimatePresence wrapper) */}
+        {/* Content */}
         <div className="mt-6">{content}</div>
       </div>
     </section>
