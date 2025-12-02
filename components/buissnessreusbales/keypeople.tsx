@@ -177,7 +177,7 @@
 // export default Keypeople;
 "use client";
 
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useMemo } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import useEmblaCarousel from "embla-carousel-react";
@@ -190,20 +190,24 @@ type Props = {
   people: KeyPerson[];
 };
 
-const emblaOptions: EmblaOptionsType = {
-  loop: false,
-  align: "start",
-  containScroll: "trimSnaps",
-};
-
 const Keypeople = ({ title, people }: Props) => {
   const [selected, setSelected] = useState<KeyPerson | null>(null);
-
-  const [emblaRef, emblaApi] = useEmblaCarousel(emblaOptions);
   const [canPrev, setCanPrev] = useState(false);
   const [canNext, setCanNext] = useState(true);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
+
+  // Center when 4 or fewer people, otherwise align start
+  const emblaOptions: EmblaOptionsType = useMemo(
+    () => ({
+      loop: false,
+      align: people.length <= 4 ? "center" : "start",
+      containScroll: "trimSnaps",
+    }),
+    [people.length]
+  );
+
+  const [emblaRef, emblaApi] = useEmblaCarousel(emblaOptions);
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
@@ -227,18 +231,22 @@ const Keypeople = ({ title, people }: Props) => {
 
   if (!people || people.length === 0) return null;
 
+  const hasDesktopOverflow = people.length > 4; // for md+ only
+
   return (
     <>
       <section className="pb-12 mt-[30px] py-0 text-center sm:mt-8 bg-[#f7f7f7]">
-        <div className="px-4 md:px-8">
-          <h2 className="text-start lato-700 text-[20px] md:text-[28px] text-[#000000] mb-3">
+        <div className="px-4 md:px-1">
+          <h2 className="px-6 text-start lato-700 text-[20px] md:text-[28px] text-[#000000] mb-3">
             {title}
           </h2>
 
           {/* Embla slider – used on mobile & desktop */}
           <div className="relative">
             <div ref={emblaRef} className="overflow-hidden">
-              <div className="flex gap-6">
+              <div className={`flex gap-6 ${
+      people.length <= 2 ? "justify-center" : ""
+    }`}>
                 {people.map((p, i) => (
                   <motion.article
                     key={p.name + i}
@@ -249,7 +257,7 @@ const Keypeople = ({ title, people }: Props) => {
                     onClick={() => setSelected(p)}
                     className="
                       relative min-w-0 cursor-pointer
-                      flex-[0_0_80%] sm:flex-[0_0_50%] md:flex-[0_0_25%]
+                      flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_23%]
                       bg-[#f7f7f7]
                     "
                   >
@@ -277,10 +285,16 @@ const Keypeople = ({ title, people }: Props) => {
               </div>
             </div>
 
-            {/* Arrows + dots – always shown (mobile & laptop) */}
+            {/* Arrows + dots – 
+                - mobile: ALWAYS visible
+                - desktop: only when there are more than 4 people */}
             <div className="flex flex-col items-center justify-center mt-6 pt-4 gap-3">
               {/* arrows */}
-              <div className="flex items-center justify-center gap-6">
+              <div
+                className={`flex items-center justify-center gap-6 ${
+                  hasDesktopOverflow ? "md:flex" : "md:hidden"
+                }`}
+              >
                 <button
                   onClick={() => emblaApi?.scrollPrev()}
                   disabled={!canPrev}
@@ -300,7 +314,11 @@ const Keypeople = ({ title, people }: Props) => {
               </div>
 
               {/* dots */}
-              <div className="flex items-center justify-center gap-2">
+              <div
+                className={`flex items-center justify-center gap-2 ${
+                  hasDesktopOverflow ? "md:flex" : "md:hidden"
+                }`}
+              >
                 {scrollSnaps.map((_, i) => (
                   <button
                     key={i}

@@ -153,7 +153,7 @@ export function OfferingadvSection({
   const [mobileIndex, setMobileIndex] = useState(0);
   const [desktopPage, setDesktopPage] = useState(0);
 
-  const itemsPerPage = 4;
+  const itemsPerPage = 5;
   const pageCount = Math.ceil(items.length / itemsPerPage);
 
   // auto slider for mobile
@@ -230,10 +230,10 @@ export function OfferingadvSection({
               <button
                 type="button"
                 onClick={handlePrevDesktop}
-                className="h-9 w-9 rounded-full border border-gray-300 flex items-center justify-center text-sm hover:bg-gray-100"
+                className="h-9 w-9  flex items-center justify-center text-sm "
                 aria-label="Previous"
               >
-                <span className="lato-700 text-[14px] text-[#117ABA]">{"<"}</span>
+                <span className="lato-700 text-[22px] text-[#117ABA]">{"<"}</span>
               </button>
 
              
@@ -241,10 +241,10 @@ export function OfferingadvSection({
               <button
                 type="button"
                 onClick={handleNextDesktop}
-                className="h-9 w-9 rounded-full border border-gray-300 flex items-center justify-center text-sm hover:bg-gray-100"
+                className="h-9 w-9 r flex items-center justify-center text-sm "
                 aria-label="Next"
               >
-               <span className="lato-700 text-[14px] text-[#117ABA]">{">"}</span>
+               <span className="lato-700 text-[22px] text-[#117ABA]">{">"}</span>
                 
               </button>
             </div>
@@ -272,11 +272,11 @@ export function OfferingadvSection({
               <button
                 type="button"
                 onClick={handlePrevMobile}
-                className="h-9 w-9 text-[#117ABA] rounded-full border border-gray-700 flex items-center justify-center text-sm"
+                className="h-9 w-9 text-[#117ABA]  flex items-center justify-center text-sm"
                 aria-label="Previous"
               >
               
-               <span className="lato-700 text-[14px] text-[#117ABA]">{"<"}</span>
+               <span className="lato-700 text-[22px] text-[#117ABA]">{"<"}</span>
               </button>
 
               
@@ -284,10 +284,10 @@ export function OfferingadvSection({
               <button
                 type="button"
                 onClick={handleNextMobile}
-                className="h-9 w-9  text-[#117ABA] rounded-full border border-gray-300 flex items-center justify-center text-sm hover:bg-gray-100"
+                className="h-9 w-9  text-[#117ABA]  flex items-center justify-center text-sm hover:bg-gray-100"
                 aria-label="Next"
               >
-               <span className="lato-700 text-[14px] text-[#117ABA]">{">"}</span>
+               <span className="lato-700 text-[22px] text-[#117ABA]">{">"}</span>
                  
               </button>
             </div>
@@ -320,7 +320,7 @@ export function OfferingadvSection({
 
 function OfferingCard({ item }: { item: Offering }) {
   return (
-    <div className="group relative overflow-hidden rounded-md md:w-[200px] lg:w-[220px] xl:w-[240px]">
+    <div className="group relative overflow-hidden  md:w-[200px] lg:w-[220px] xl:w-[240px]">
       <div className="relative h-[195px] w-full">
         <Image
           src={item.image}

@@ -8,9 +8,9 @@ type Props = {
 
 export function SustainabilitySection({ data }: Props) {
   return (
-    <section className="bg-white">
+    <section className=" bg-[#f7f7f7] h-[200px] md:h-[413px]">
       <div className="">
-        <div className="bg-white  overflow-hidden grid gap-0 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.2fr)]">
+        <div className="  overflow-hidden grid gap-0 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.2fr)]">
           {/* Text */}
           <div className="p-6 md:p-8 flex flex-col justify-center">
             <h2 className="lato-700 text-[20px] md:text-[28px] text-[#000000] mb-3">
@@ -31,7 +31,7 @@ export function SustainabilitySection({ data }: Props) {
           </div>
 
           {/* Image */}
-          <div className="relative h-[200px] md:h-[410px]">
+          <div className="relative h-[200px] md:h-[413px]">
             <Image
               src={data.image}
               alt={data.title}

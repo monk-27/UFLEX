@@ -304,7 +304,7 @@ export const businesses: BusinessConfig[] = [
   {
     key: "chemicals",
     label: "Chemicals",
-    subheading: "Chemicals",
+    // subheading: "Chemicals",
     hero: {
       heading: "Our Businesses",
       image: "/images/herochem.png",

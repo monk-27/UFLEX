@@ -26,7 +26,7 @@ console.log("Current slide", current);
   };
 
   return (
-    <section className="bg-[#f7f7f7]">
+    <section className="bg-[#f7f7f7] relative w-screen left-1/2 right-1/2 -mx-[50vw]">
       <div className="section section-y">
         <h2 className="lato-700 text-[22px] md:text-[28px] text-[#000000] mb-6">
           {heading}
@@ -52,24 +52,26 @@ console.log("Current slide", current);
                 fill
                 className="object-contain"
               />
+              
             </div>
+            
           </div>
 
           {/* Arrows centred below image */}
           <div className="mt-4 flex justify-center gap-6">
             <button
               onClick={() => go("prev")}
-              className="w-8 h-8 rounded-full border border-[#d0d0d0] flex items-center justify-center hover:bg-[#f0f0f0] transition"
+              className="w-8 h-8  flex items-center justify-center hover:bg-[#f0f0f0] transition"
             >
               <span className="sr-only">Previous</span>
-              <span className="lato-700 text-[14px] text-[#117ABA]">&lt;</span>
+              <span className="lato-700 text-[22px] text-[#117ABA]">&lt;</span>
             </button>
             <button
               onClick={() => go("next")}
-              className="w-8 h-8 rounded-full border border-[#d0d0d0] flex items-center justify-center hover:bg-[#f0f0f0] transition"
+              className="w-8 h-8  flex items-center justify-center hover:bg-[#f0f0f0] transition"
             >
               <span className="sr-only">Next</span>
-              <span className="lato-700 text-[14px] text-[#117ABA]">&gt;</span>
+              <span className="lato-700 text-[22px] text-[#117ABA]">&gt;</span>
             </button>
           </div>
         </div>
