@@ -91,17 +91,17 @@ export function BusinessDetail({ business }: Props) {
       ) : null} */}
 
       {/* Sustainability – data can be missing on some businesses */}
-      {business.sustainability && (
+      {/* {business.sustainability && (
         <SustainabilitySection data={business.sustainability} />
-      )}
+      )} */}
 
       {/* Key People */}
-      {/* {business.keypeople && business.keypeople.details?.length ? (
+      {business.keypeople && business.keypeople.details?.length ? (
         <Keypeople
           title={business.keypeople.title}
           people={business.keypeople.details}
         />
-      ) : null} */}
+      ) : null}
 
       {/* Case Studies */}
       {/* {business.caseStudies && business.caseStudies.length > 0 && (
