@@ -86,3 +86,74 @@ export const buttonlink = [
     ],
   },
 ];
+// src/app/investors/corporate-policies/data.ts
+export const investorAccordionItems = [
+  {
+    id: "agm",
+    title: "Annual General Meeting",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere, velit sed aliquet euismod, nibh ligula fringilla dui, ut volutpat lacus lorem non nisl.",
+  },
+  {
+    id: "buyback",
+    title: "Buy Back",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in vestibulum arcu, vitae laoreet mi. Suspendisse potenti.",
+  },
+  {
+    id: "contacts",
+    title: "Contacts",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at felis in est commodo ullamcorper.",
+  },
+  {
+    id: "credit-rating",
+    title: "Credit Rating",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, metus ac convallis dictum, lacus nunc vulputate mauris.",
+  },
+  {
+    id: "esop",
+    title: "ESOP",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida lectus vitae risus malesuada, at tristique arcu vehicula.",
+  },
+  {
+    id: "annual-return",
+    title: "Annual Return / Extract of Annual Return",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan lacus ac magna hendrerit, eget convallis justo pulvinar.",
+  },
+  {
+    id: "iepf",
+    title: "IEPF",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in felis luctus, gravida dolor quis, rhoncus velit.",
+  },
+  {
+    id: "listing",
+    title: "Listing",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non dapibus elit, vitae ullamcorper lacus.",
+  },
+  {
+    id: "shareholding",
+    title: "Shareholding Pattern",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porta, ipsum nec aliquet egestas, erat arcu cursus nisl.",
+  },
+  {
+    id: "forms",
+    title: "Forms required to be submitted by Physical Shareholders",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at erat faucibus, dapibus mauris sed, varius mauris.",
+  },
+  {
+    id: "tripartite",
+    title:
+      "Tripartite Agreement as per Regulation 7(4) of SEBI (LODR) Regulation, 2015",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend mi nec tortor dapibus, id suscipit urna mattis.",
+  },
+];
+

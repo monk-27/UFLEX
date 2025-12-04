@@ -5,6 +5,8 @@ import React from 'react'
 import Image from "next/image";
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
+import { InvestorAccordion } from './accordian';
+import { investorAccordionItems } from '../invdata';
 
 const page = () => {
     return (
@@ -30,17 +32,19 @@ const page = () => {
                             Shareholder's Information
                         </h1>
 
-                        
+
                     </div>
                 </section>
-<div className="bg-[#EFEFEF]">
+                <div className="bg-[#EFEFEF]">
                     <div className="max-w-7xl mx-auto pl-2 h-12 flex items-center">
                         <span className="text-black text-xs lato-700 lato-600">
                             Investors Relations &gt;  Shareholder's Information
                         </span>
                     </div>
                 </div>
-
+<section className="max-w-6xl mx-auto px-6 sm:px-12 md:px-20 lg:px-28 py-10">
+        <InvestorAccordion items={investorAccordionItems} />
+      </section>
             </main>
             <SiteFooter />
 
