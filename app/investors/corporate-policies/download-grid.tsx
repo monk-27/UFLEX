@@ -17,7 +17,7 @@ export default function DownloadCorporateGrid({
       {items.map((item, idx) => (
         <a
           key={idx}
-          href={item.file}
+          // href={item.file}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-4 border border-[#FF6400] px-4 py-4  hover:bg-orange-50 transition"
