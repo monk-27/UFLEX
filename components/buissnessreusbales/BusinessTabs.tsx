@@ -174,9 +174,9 @@ console.log("activetab",activeTab)
 
   return (
     <section className="bg-white">
-      <div className="max-w-6xl mx-auto px-4 pt-6 pb-4">
+      <div className="max-w-7xl mx-auto px-4 pt-6 pb-4">
         {/* Tabs row */}
-        <div className="border-b border-[#e0e0e0] flex gap-6 overflow-x-auto">
+        <div className="border-b border-[#e0e0e0] flex gap-6 overflow-x-hidden overflow-y-hidden ">
           {safeTabs.map((tab) => {
             const isActive = tab.id === activeId;
             return (
@@ -190,7 +190,7 @@ console.log("activetab",activeTab)
               >
                 {tab.label}
                 {isActive && (
-                  <span className="absolute left-0 right-0 -bottom-[1px] h-[3px] bg-[#CF2328]" />
+                  <span className="absolute left-0 right-0 -bottom-[1px] h-[3px] bg-[#CF2328] rounded-md" />
                 )}
               </button>
             );

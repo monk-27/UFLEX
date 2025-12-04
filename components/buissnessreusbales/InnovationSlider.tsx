@@ -52,9 +52,9 @@
 //                 fill
 //                 className="object-contain"
 //               />
-              
+
 //             </div>
-            
+
 //           </div>
 
 //           {/* Arrows centred below image */}
@@ -127,9 +127,9 @@ export function InnovationSlider({ heading, items }: any) {
   };
 
   return (
-    <section className="bg-[#f7f7f7] relative w-screen left-1/2 right-1/2 -mx-[50vw]">
-      <div className="section section-y">
-        <h2 className="lato-700 text-[22px] md:text-[28px] text-[#000000] mb-6">
+    <section className="bg-[#f7f7f7] relative w-screen left-1/2 right-1/2 -mx-[50vw] py-12 ">
+      <div className="max-w-7xl mx-auto ">
+        <h2 className="lato-700 text-[22px] md:text-[28px] text-[#000000] mb-8">
           {heading}
         </h2>
 
@@ -145,13 +145,15 @@ export function InnovationSlider({ heading, items }: any) {
               exit="exit"
               transition={{ duration: 0.35, ease: "easeInOut" }}
             >
-              <div className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.4fr)] items-center">
+              <div className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.4fr)] items-start">
                 {/* Text */}
                 <div>
                   <h3 className="lato-700 text-[18px] md:text-[24px] text-[#000000] mb-3">
                     {current.title}
                   </h3>
-                  <p className="whitespace-pre-line lato-400 text-[18px] sm:text-[20px] leading-relaxed text-[#4f4f4f]">
+
+                  {/* Add mt-4 to keep description where it was */}
+                  <p className="whitespace-pre-line lato-400 text-[16px] sm:text-[20px] leading-relaxed text-[#4f4f4f] mt-8">
                     {current.description}
                   </p>
                 </div>
@@ -166,6 +168,7 @@ export function InnovationSlider({ heading, items }: any) {
                   />
                 </div>
               </div>
+
             </motion.div>
           </AnimatePresence>
 

@@ -29,12 +29,12 @@ export default function BusinessesPage() {
           src="/images/herobuisness.png"
           alt="Business Hero"
           width={1440}
-          height={471}
+          height={451}
           className="w-full h-auto"
         />
 
-        <div className="max-w-6xl mx-auto px-4">
-          <p className="lato-400 text-[16px] leading-tight text-[#6B6B6B] text-left mt-6">
+        <div className="max-w-7xl mx-auto px-4">
+          <p className="lato-400 text-[16px] leading-relaxed  text-[#6B6B6B] text-left mt-6">
             We operate across the entire packaging value chain, offering unmatched
             integration and scale. Our capabilities span PET and rPET resins,
             packaging films, converting, aseptic packaging, inks and adhesives,

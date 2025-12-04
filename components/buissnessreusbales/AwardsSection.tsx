@@ -26,8 +26,8 @@ export function AwardsSection({ data }: any) {
         <div className="absolute inset-0 bg-black/55" />
 
         {/* Content */}
-        <div className="max-w-5xl mx-auto absolute inset-0 flex items-center">
-          <div className="max-w-5xl px-6 md:px-8 lg:px-0">
+        <div className="max-w-7xl mx-auto absolute inset-0 flex items-center">
+          <div className="max-w-7xl  px-6 md:px-8 lg:px-0">
             <h2 className="lato-700 text-[24px] md:text-[28px] text-white mb-3">
               {data.title}
             </h2>
@@ -44,10 +44,15 @@ export function AwardsSection({ data }: any) {
             {data.linkHref && data.linkLabel && (
               <a
                 href={data.linkHref}
-                className="inline-flex items-center gap-1 lato-700 text-[14px] text-[#117ABA] underline underline-offset-4 decoration-white"
+                className="inline-flex items-center gap-1 lato-700 text-[14px] text-[#117ABA] "
               >
+                                <div className="underline underline-offset-2">
+
                 {data.linkLabel}
+                
                 <span aria-hidden>↗</span>
+          </div>
+
               </a>
             )}
           </div>

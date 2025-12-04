@@ -58,7 +58,7 @@ export default function AccreditationsSlider({
     <div>
       {/* Heading */}
       <motion.section
-        className="sm:mx-12 max-w-6xl px-6 text-center sm:px-0 "
+        className="sm:mx-auto max-w-7xl px-6 text-center sm:px-0 "
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.9 }}

@@ -430,7 +430,7 @@ export const businesses: BusinessConfig[] = [
       {
         id: 3,
         title:
-          "ADVANCING EB OFFSET PRINTING WITH FLEXBEAM SERIES AT OKIL SATO",
+          "Advancing Eb Offset Printing with Flexbeam Series at Okil Sato",
         description:
           "Industry: Flexible Packaging Customer: Okil Sato, Russia Total sales volume in FY24-25 of Flexbeam Offset ink series: 14 MT Challenge Okil Sato, a renowned packaging converter in Russia, required a high-performance.",
         href: "/case-studies/okil-sato",

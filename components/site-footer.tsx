@@ -23,22 +23,23 @@ export function SiteFooter() {
                 width={180}
                 height={56}
                 className="h-[56px] w-auto"
-                // priority
+              // priority
               />
             </Link>
           </div>
 
           {/* Links column 1 */}
-          <nav className="grid gap-4 text-base font-semibold">
+          <nav className="grid gap-4 text-base lato-700">
             <Link href="/" className="hover:underline underline-offset-4">Home</Link>
             <Link href="/about-us" className="hover:underline underline-offset-4">About Us</Link>
-            <Link href="/what-we-do" className="hover:underline underline-offset-4">What We Do</Link>
+            <Link href="/business" className="hover:underline underline-offset-4">Our Business</Link>
+
             <Link href="/sustainability" className="hover:underline underline-offset-4">Sustainability</Link>
             <Link href="/investors" className="hover:underline underline-offset-4">Investors</Link>
           </nav>
 
           {/* Links column 2 */}
-          <nav className="grid gap-4 text-base font-semibold">
+          <nav className="grid gap-4 text-base lato-500">
             <Link href="/hall-of-fame" className="hover:underline underline-offset-4">Hall of Fame</Link>
             <Link href="/careers" className="hover:underline underline-offset-4">Work With Us</Link>
             <Link href="/press-room" className="hover:underline underline-offset-4">The Press Room</Link>

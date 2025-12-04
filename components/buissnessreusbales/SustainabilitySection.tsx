@@ -16,7 +16,7 @@ export function SustainabilitySection({ data }: any) {
     
     <section className=" hidden sm:block bg-[#f7f7f7] h-[430px] sm:h-[410px]">
       <div className="">
-        <div className="  overflow-hidden grid gap-0 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.2fr)]">
+        <div className="overflow-hidden grid gap-0 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.2fr)]">
           {/* Text */}
           <div className="p-6 md:p-8 flex flex-col justify-center">
             <h2 className="lato-700 text-[20px] md:text-[28px] text-[#000000] mb-3">
@@ -28,10 +28,13 @@ export function SustainabilitySection({ data }: any) {
             {data.linkHref && data.linkLabel && (
               <a
                 href={data.linkHref}
-                className="inline-flex items-center gap-1 lato-700 text-[13px] uppercase tracking-wide text-[#000000] underline underline-offset-2"
+                className="inline-flex items-center gap-1 lato-700 text-[13px] uppercase tracking-wide text-[#000000] "
               >
+                <div className="underline underline-offset-2">
+
                 {data.linkLabel}
                 <span aria-hidden>↗</span>
+                </div>
               </a>
             )}
           </div>
@@ -64,8 +67,11 @@ export function SustainabilitySection({ data }: any) {
                 href={data.linkHref}
                 className="inline-flex items-center gap-1 lato-700 text-[13px] uppercase tracking-wide text-[#000000] underline underline-offset-2"
               >
+                <div className="">
+
                 {data.linkLabel}
                 <span aria-hidden>↗</span>
+                </div>
               </a>
             )}
           </div>
