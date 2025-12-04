@@ -23,7 +23,6 @@ export default function BusinessesPage() {
     <main className="bg-white">
       <SiteHeader />
 
-      {/* Top global hero (Our Businesses banner + copy) */}
       <div>
         <Image
           src="/images/herobuisness.png"

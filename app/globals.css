@@ -1532,7 +1532,18 @@ swiper-pagination { bottom: 140px !important; }
   }
 }
 
+.burger{
+  background-color: #EFEFEF;
+  font-family: Lato;
+font-weight: 600;
+font-style: Semibold;
+font-size: 12px;
+line-height: 48px;
+letter-spacing: 0%;
+text-align: start;
+color:#000000
 
+}
 
 
 /* Nav link styles */

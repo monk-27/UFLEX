@@ -1,11 +1,12 @@
-import InvestorsPage from '@/components/investor'
+import InvestorsPage from '@/components/investors/investor'
 import { SiteFooter } from '@/components/site-footer'
 import { SiteHeader } from '@/components/site-header'
 import React from 'react'
 
 const page = () => {
   return (
-    <><SiteHeader />
+    <>
+    <SiteHeader />
     <InvestorsPage/>
     
     <SiteFooter /></>
