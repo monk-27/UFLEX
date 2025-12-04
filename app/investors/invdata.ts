@@ -189,6 +189,33 @@ export const corporatePolicies = [
 ];
 
 
+// src/app/investors/annual-reports/data.ts
+export const annualReports = [
+  [
+    { label: "FY 2024-25", file: "/downloads/FY-2024-25.pdf" },
+    { label: "FY 2023-24", file: "/downloads/FY-2023-24.pdf" },
+    { label: "FY 2022-23", file: "/downloads/FY-2022-23.pdf" },
+    { label: "FY 2021-22", file: "/downloads/FY-2021-22.pdf" },
+  ],
+  [
+    { label: "FY 2020-21", file: "/downloads/FY-2020-21.pdf" },
+    { label: "FY 2019-20", file: "/downloads/FY-2019-20.pdf" },
+    { label: "FY 2018-19", file: "/downloads/FY-2018-19.pdf" },
+    { label: "FY 2017-18", file: "/downloads/FY-2017-18.pdf" },
+  ],
+  [
+    { label: "FY 2016-17", file: "/downloads/FY-2016-17.pdf" },
+    { label: "FY 2015-16", file: "/downloads/FY-2015-16.pdf" },
+    { label: "FY 2014-15", file: "/downloads/FY-2014-15.pdf" },
+    { label: "FY 2013-14", file: "/downloads/FY-2013-14.pdf" },
+  ],
+  [
+    { label: "FY 2012-13", file: "/downloads/FY-2012-13.pdf" },
+    { label: "FY 2011-12", file: "/downloads/FY-2011-12.pdf" },
+    { label: "FY 2010-11", file: "/downloads/FY-2010-11.pdf" },
+  ],
+];
+
 
 
 export const pressReleaseAccordionItems = [

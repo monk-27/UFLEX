@@ -20,7 +20,7 @@ export default function DownloadCorporateGrid({
           href={item.file}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-4 border border-[#FF6400] px-4 py-4 rounded-md hover:bg-orange-50 transition"
+          className="flex items-center gap-4 border border-[#FF6400] px-4 py-4  hover:bg-orange-50 transition"
         >
           {/* Icon */}
           <FileText size={32} strokeWidth={2} className="text-[#FF6400]" />

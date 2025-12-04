@@ -6,6 +6,10 @@ import Image from "next/image";
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { ImpactStats } from './impactstat';
+import { ESGSection } from './esgsection';
+import DownloadCorporateGrid from '../corporate-policies/download-grid';
+import { annualReports } from '../invdata';
+import { AnnualReportsSection } from './download-grid';
 
 const page = () => {
     return (
@@ -51,7 +55,16 @@ const page = () => {
             </main>
             <div className='bg-white max-w-7xl mx-auto px-4 sm:px-0'>
                 <ImpactStats />
+
+                
             </div>
+            <ESGSection />
+
+             <div className="bg-white max-w-7xl mx-auto px-4 sm:px-0">
+            
+            
+                                <AnnualReportsSection reports={annualReports} />
+                            </div>
             <SiteFooter />
 
         </div>
