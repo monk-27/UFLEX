@@ -5,6 +5,8 @@ import React from 'react'
 import Image from "next/image";
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
+import DownloadCorporateGrid from './download-grid';
+import { corporatePolicies } from '../invdata';
 
 const page = () => {
     return (
@@ -30,7 +32,7 @@ const page = () => {
                             Corporate Policies
                         </h1>
 
-                        
+
                     </div>
                 </section>
                 <div className="bg-[#EFEFEF]">
@@ -40,7 +42,11 @@ const page = () => {
                         </span>
                     </div>
                 </div>
+                <div className="bg-white max-w-7xl mx-auto ">
 
+
+                    <DownloadCorporateGrid items={corporatePolicies} />
+                </div>
 
             </main>
             <SiteFooter />
