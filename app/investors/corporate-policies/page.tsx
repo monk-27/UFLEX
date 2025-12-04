@@ -42,7 +42,7 @@ const page = () => {
                         </span>
                     </div>
                 </div>
-                <div className="bg-white max-w-7xl mx-auto ">
+                <div className="bg-white max-w-7xl mx-auto px-4 sm:px-0">
 
 
                     <DownloadCorporateGrid items={corporatePolicies} />

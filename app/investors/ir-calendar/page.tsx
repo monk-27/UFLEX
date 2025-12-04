@@ -5,6 +5,7 @@ import React from 'react'
 import Image from "next/image";
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
+import { FYQuarterAccordion } from './year';
 
 const page = () => {
     return (
@@ -30,7 +31,7 @@ const page = () => {
                             IR Calendar
                         </h1>
 
-                        
+
                     </div>
                 </section>
                 <div className="bg-[#EFEFEF]">
@@ -40,8 +41,10 @@ const page = () => {
                         </span>
                     </div>
                 </div>
-
-
+<div className="bg-white max-w-7xl mx-auto px-4 sm:px-0 pt-4 pb-4 ">
+                    
+                <FYQuarterAccordion />
+                </div>
             </main>
             <SiteFooter />
 

@@ -45,7 +45,7 @@ const page = () => {
                 </div>
 
 
-                <div className="bg-white max-w-7xl mx-auto ">
+                <div className="bg-white max-w-7xl mx-auto px-4 sm:px-0">
                     <Image
                         src="/images/investors/Group1.png"
                         alt="Investors Relations"
