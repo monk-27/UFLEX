@@ -449,7 +449,8 @@ const KeyManagement = () => {
                 aria-label="Close"
                 className="absolute right-3 top-3 border bg-white p-2"
               >
-                <X className="h-5 w-5" />
+                                                <X className="h-5 w-5 text-black" />
+
               </button>
 
               {/* Smaller, square image */}

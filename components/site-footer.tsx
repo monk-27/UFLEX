@@ -29,7 +29,7 @@ export function SiteFooter() {
           </div>
 
           {/* Links column 1 */}
-          <nav className="grid gap-4 text-base lato-700">
+          <nav className="grid gap-4 text-base lato-400">
             <Link href="/" className="hover:underline underline-offset-4">Home</Link>
             <Link href="/about-us" className="hover:underline underline-offset-4">About Us</Link>
             <Link href="/business" className="hover:underline underline-offset-4">Our Business</Link>
@@ -39,7 +39,7 @@ export function SiteFooter() {
           </nav>
 
           {/* Links column 2 */}
-          <nav className="grid gap-4 text-base lato-500">
+          <nav className="grid gap-4 text-base lato-400">
             <Link href="/hall-of-fame" className="hover:underline underline-offset-4">Hall of Fame</Link>
             <Link href="/careers" className="hover:underline underline-offset-4">Work With Us</Link>
             <Link href="/press-room" className="hover:underline underline-offset-4">The Press Room</Link>

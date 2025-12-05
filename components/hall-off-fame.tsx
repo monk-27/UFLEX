@@ -452,7 +452,8 @@ function SpotlightModal({
                 aria-label="Close"
                 className="absolute right-3 top-3 z-10 rounded-full bg-white/80 p-2 text-slate-700 shadow hover:bg-white"
               >
-                <X size={18} />
+                                <X className="h-5 w-5 text-black" />
+
               </button>
 
               <div className="grid gap-5 p-5 sm:grid-cols-2">

@@ -127,7 +127,7 @@ export default function LifeatModules() {
   ]
 
   return (
-    <section className="mt-[30px] px-4 py-0 text-center sm:mt-8 sm:bg-gray-100 sm:py-10 md:px-12">
+    <section className="px-4 py-0 text-center  sm:bg-gray-100 sm:py-10 md:px-12">
       {/* Title */}
       <motion.div
         className="mx-auto max-w-4xl"
@@ -138,7 +138,7 @@ export default function LifeatModules() {
       >
         <div className="items-center justify-center flex text-center space-x-2">
 
-                      <Image src="/images/ula.png" width={75} height={10} alt={""}/>
+                      {/* <Image src="/images/ula.png" width={75} height={10} alt={""}/> */}
         <h2 className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">
           Life at UFlex
         </h2>

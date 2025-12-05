@@ -45,8 +45,7 @@ export default function AboutPage() {
 
         <KeyManagement />
         <Journey /> 
-         <div className="relative h-[570px] w-full overflow-hidden mt-[30px] px-4 py-0 text-center sm:mt-8  sm:py-10 md:px-12 md:h-[580px]">
-            {/* Background Image - Full Bleed */}
+         {/* <div className="relative h-[570px] w-full overflow-hidden mt-[30px] px-4 py-0 text-center sm:mt-8  sm:py-10 md:px-12 md:h-[580px]">
             <motion.div
               className="absolute inset-0"
               initial={{ opacity: 0 }}
@@ -70,7 +69,6 @@ export default function AboutPage() {
             ></motion.div>
 
 
-            {/* Header Bar */}
             <div className="absolute top-0 left-0 right-0 z-10 bg-white py-4 md:py-6">
               <div className="mx-auto max-w-7xl px-5 md:px-20">
                 <h2 className="text-center text-[24px]  manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl mb-12">
@@ -79,7 +77,6 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Text Content */}
             <motion.div
               className="absolute inset-0 flex flex-col justify-end px-5 pb-16 text-white md:bottom-20 md:pb-20 md:pl-20"
               initial="hidden"
@@ -124,7 +121,7 @@ export default function AboutPage() {
                 </button>
               </motion.div>
             </motion.div>
-          </div>
+          </div> */}
       </section>
       <SiteFooter />
     </main>

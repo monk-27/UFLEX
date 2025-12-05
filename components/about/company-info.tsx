@@ -76,7 +76,8 @@ const CompanyInfo = () => {
               onClick={() => setIsModalOpen(false)}
               className="absolute right-4 top-4 text-gray-500 transition hover:text-gray-700"
             >
-              <X className="h-6 w-6" />
+                              <X className="h-5 w-5 text-black" />
+
             </button>
 
             {/* Full Content */}
