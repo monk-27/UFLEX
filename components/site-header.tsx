@@ -59,7 +59,7 @@ export function SiteHeader() {
       onMouseLeave={closeHoverMenus}
     >
       {/* Top bar */}
-      <div className="site-header__bar w-full flex items-center justify-between px-6 md:px-12">
+      <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 flex items-center justify-between ">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3" aria-label="UFlex Home">
           <Image

@@ -174,7 +174,7 @@ console.log("activetab",activeTab)
 
   return (
     <section className="bg-white">
-      <div className="max-w-7xl mx-auto px-4 pt-6 pb-4">
+      <div className="max-w-7xl mx-auto px-1 sm:px-0 pt-6 pb-4">
         {/* Tabs row */}
         <div className="border-b border-[#e0e0e0] flex gap-6 overflow-x-hidden overflow-y-hidden ">
           {safeTabs.map((tab) => {

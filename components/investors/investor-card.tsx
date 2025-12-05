@@ -40,7 +40,7 @@ const cardVariants = {
 export function InvestorCardsGrid({ cards }: Props) {
   return (
     <section className="w-full bg-white">
-      <div className="mx-auto max-w-7xl px-4 py-10 md:py-16">
+      <div className="mx-auto max-w-7xl sm:px-0 px-4  py-10 md:py-16">
         <motion.div
           variants={containerVariants}
           initial="hidden"

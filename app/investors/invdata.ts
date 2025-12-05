@@ -45,7 +45,7 @@ export const investorCards = [
     id: "archive",
     title: "Archive",
     image: "/images/investors/8.png",
-    href: "/investors/investors-archive",
+    href: "/investors/investors-archives",
   },
   {
     id: "esg",
