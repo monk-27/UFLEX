@@ -38,6 +38,7 @@ const baseNav: NavItem[] = [
   { href: "/hall-of-fame", label: "Hall of Fame" },
   { href: "/careers", label: "Careers" },
   { href: "/press-room", label: "Press\u00A0Room" },
+  { href: "/get-in-touch", label: "Get in Touch" }
 ]
 
 export function SiteHeader() {
@@ -68,12 +69,12 @@ export function SiteHeader() {
             width={180}
             height={48}
             className="h-12 w-auto"
-            // priority
+          // priority
           />
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-10 ml-auto relative">
+        <nav className="hidden md:flex items-center gap-7 ml-auto relative">
           {nav.map((item) => {
             const active = isActive(item.href)
             const hasChildren = !!item.children?.length
@@ -100,25 +101,25 @@ export function SiteHeader() {
                   {item.label}
 
                   {hasChildren && (
-                    
-          <svg
-            className={cn(
-              "h-3.5 w-3.5 ml-2 transition-transform duration-200",
-              isOpen ? "rotate-180" : "rotate-0"
-            )}
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2.5}
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        )}
+
+                    <svg
+                      className={cn(
+                        "h-3.5 w-3.5 ml-2 transition-transform duration-200",
+                        isOpen ? "rotate-180" : "rotate-0"
+                      )}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2.5}
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  )}
                 </Link>
 
                 {/* Desktop dropdown */}
