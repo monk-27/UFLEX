@@ -21,7 +21,7 @@ export default function HomePage() {
       </section>
 
       <motion.section
-        className="mx-auto max-w-7xl px-6 text-center sm:px-0 py-12"
+        className="max-w-7xl mx-auto w-full px-4 sm:px-0 text-center  py-12"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -58,7 +58,7 @@ export default function HomePage() {
 
       </motion.section>
       <div className=" z-10 bg-white py-4 md:py-12 mb-8">
-        <div className="mx-auto max-w-7xl px-5 md:px-20">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-0">
           <h2 className="text-center text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">
             Sustainability
           </h2>

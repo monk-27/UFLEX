@@ -529,7 +529,7 @@ const HallPage = () => {
               </div>
         
             </header>
-        <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:py-10">
+        <div className=" grid max-w-7xl mx-auto w-full px-4 sm:px-0 items-center gap-10  py-12  lg:grid-cols-2 lg:gap-14 lg:py-10">
           <div>
             
 
@@ -573,7 +573,7 @@ const HallPage = () => {
 
       {/* ==== IN THE SPOTLIGHT ==== */}
       <section className="relative py-14">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-0">
           <h2 className="mb-10 text-center text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">
             In The Spotlight
           </h2>
@@ -627,7 +627,7 @@ const HallPage = () => {
             </div>
           </div>
 
-          <section className="pb-16">
+          <section className="pb-16 max-w-7xl mx-auto w-full px-4 sm:px-0">
         <AwardsTabs />
       </section>
         </div>

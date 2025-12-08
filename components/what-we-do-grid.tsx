@@ -146,7 +146,7 @@ export default function BusinessCardsCarousel() {
   }
 
   return (
-    <section className="relative ">
+    <section className="relative max-w-7xl mx-auto w-full px-4 sm:px-0">
 
 
       <div className="mt-12 px-4 hidden sm:block">

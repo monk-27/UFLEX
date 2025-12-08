@@ -9,7 +9,7 @@ const VisionMission = () => {
           Guiding principles that drive our commitment to excellence and innovation
         </p>
 
-        <div className="mt-12 grid md:grid-cols-2 gap-8">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 mt-12 grid md:grid-cols-2 gap-8">
           <div className="rounded-lg bg-gray-100 p-6 text-center transition-shadow hover:shadow-md ">
             <h3 className="text-2xl manrope-800 mb-4 text-[#117ABA] ">Vision</h3>
             <p className="text-gray-700  leading-relaxed text-lg">

@@ -45,7 +45,7 @@ export default function MediaReleasesCarousel() {
         Media Releases
       </h2>
 
-      <div className="relative max-w-6xl mx-auto overflow-x-hidden">
+      <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 relative  overflow-x-hidden">
         {/* Desktop/tablet arrows (NOT on images) */}
         <button
           onClick={() => scrollByStep(-1)}
@@ -66,7 +66,7 @@ export default function MediaReleasesCarousel() {
           {mediaData.map((item, i) => (
             <article
               key={i}
-              className="
+              className=" 
                 snap-start shrink-0
                 w-full md:w-[calc(50%-12px)]
                 border border-gray-200 rounded-2xl overflow-hidden

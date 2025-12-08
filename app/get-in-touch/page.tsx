@@ -319,7 +319,9 @@ function OfficeCard({ o }: { o: Office }) {
 /* --------------------------------- Page --------------------------------- */
 export default function GetInTouch() {
   /* Independent filters */
-  const [biz, setBiz] = useState<string>("all");
+  // const [biz, setBiz] = useState<string>("all");
+  const [biz, setBiz] = useState<string>("Corporate");
+
   const [loc, setLoc] = useState<string>("all");
   const [q, setQ] = useState<string>("");
 
@@ -363,7 +365,7 @@ export default function GetInTouch() {
             <div className="absolute inset-0 bg-gradient-to-r from-[#0B3C7D]/70 via-[#0B3C7D]/55 to-transparent" />
           </div>
 
-          <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 px-4 py-20 sm:px-6 md:flex-row md:gap-12 md:py-24">
+          <div className="mx-auto flex max-w-7xl  w-full px-4 sm:px-0 flex-col items-center gap-4  py-20  md:flex-row md:gap-12 md:py-24">
             <motion.div {...fadeUp()}>
               <h1 className="manrope-800 text-3xl text-white drop-shadow md:text-5xl">Get In Touch</h1>
               <p className="mt-3 max-w-xl text-white/90">
@@ -392,7 +394,7 @@ export default function GetInTouch() {
        
 
         {/* QUICK CONTACT STRIP */}
-        <section className="mt-4 mx-auto max-w-7xl px-4 sm:px-6">
+        <section className="mt-4 max-w-7xl mx-auto w-full px-4 sm:px-0">
           <div className="grid gap-4 md:grid-cols-3">
             <a href="mailto:corpcomm@uflexltd.com" className="group flex items-center gap-3 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-[2px] hover:shadow-md">
               <div className="rounded-xl bg-[#117ABA] p-3 text-white"><Mail className="h-5 w-5" /></div>
@@ -421,7 +423,7 @@ export default function GetInTouch() {
         </section>
 
         {/* DIRECTORY: Independent filters */}
-        <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6">
+        <section className="max-w-7xl mx-auto w-full px-4 sm:px-0 py-14 ">
           <h2 className="manrope-800 text-2xl text-[#117ABA] text-center sm:text-left">Connect with us</h2>
 
           {/* Controls */}
@@ -501,7 +503,7 @@ export default function GetInTouch() {
 
         {/* CONTACT FORM */}
         <section className="border-t border-slate-200 bg-white py-14">
-          <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-8 px-4 sm:px-6 md:grid-cols-2">
+          <div className=" grid max-w-7xl mx-auto w-full px-4 sm:px-0 grid-cols-1 items-start gap-8  md:grid-cols-2">
             <div>
               <h2 className="manrope-800 text-2xl text-[#117ABA]">Other Queries</h2>
               <p className="mt-2 text-slate-600">
@@ -566,7 +568,7 @@ export default function GetInTouch() {
         </section>
 
         {/* MAP */}
-        <section className="mx-auto max-w-7xl px-4 pb-16 sm:px-6">
+        <section className="max-w-7xl mx-auto w-full px-4 sm:px-0 pb-16 ">
           <div className="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
             <iframe
               title="UFlex Corporate Office Map"

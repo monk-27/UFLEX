@@ -257,7 +257,7 @@ export default function MainSustainabilityCOMMComp({
   image?: string;
 }) {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:py-20">
+    <section className="max-w-7xl mx-auto w-full px-4 sm:px-0 lg:py-20">
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start">
         {/* IMAGE SIDE */}
         <figure className="order-1 lg:order-1">

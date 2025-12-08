@@ -203,7 +203,7 @@ export default function PressRoomPage() {
       <section className="py-12 sm:py-16">
         <SectionTitle>Media Coverage</SectionTitle>
 
-        <div className="mx-auto mt-8 grid max-w-6xl grid-cols-1 gap-6 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 mt-8 grid  grid-cols-1 gap-6  md:grid-cols-2 lg:grid-cols-3">
           {coverage.map((c, i) => (
             <motion.div key={c.href} {...fadeUp(i * 0.06)}>
               <Card img={c.img} title={c.title} href={c.href} />

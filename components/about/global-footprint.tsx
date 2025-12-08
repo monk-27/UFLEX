@@ -201,7 +201,7 @@ const GlobalFootprint = () => {
         </div>
 
         {/* CATEGORY WISE CARDS */}
-        <div className="mt-12 grid md:grid-cols-2 gap-12">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 mt-12 grid md:grid-cols-2 gap-12">
           {/* INDIA */}
           <div className="border-2 border-gray-400 bg-gray-100 p-8 rounded-lg">
             <h3 className="text-2xl manrope-800 mb-6 text-[#117ABA]">

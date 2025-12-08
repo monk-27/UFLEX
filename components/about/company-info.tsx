@@ -9,8 +9,8 @@ const CompanyInfo = () => {
 
   return (
     <>
-      <section className="py-16 bg-white md:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="max-w-7xl mx-auto w-full px-4 sm:px-0 py-16 bg-white md:py-24">
+        <div className="">
           {/* Top Label */}
           <p className="text-sm manrope-400 uppercase tracking-wider text-gray-500">
             About Us

@@ -103,11 +103,11 @@ export default function LearnStatus() {
       
       {/* Card Container - 50/50 Split */}
       <div className="relative ">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch gap-0  overflow-hidd">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 grid grid-cols-1 lg:grid-cols-2 items-stretch gap-0  overflow-hidd">
           
           {/* Left: Text Content - Full Width on Mobile */}
           <motion.div
-            className="p-8 md:p-10 lg:p-12 space-y-6 text-left "
+            className=" space-y-6 text-left "
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -124,7 +124,7 @@ export default function LearnStatus() {
               <h2 className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl leading-tight mb-2">
                 UFlex Learning Academy
               </h2>
-              <Image src="/images/ula.png" width={115} height={15} alt={""}/>
+              {/* <Image src="/images/ula.png" width={115} height={15} alt={""}/> */}
             </motion.div>
 
             {/* Improved Text Content */}

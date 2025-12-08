@@ -135,6 +135,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function SustainabilityComp() {
   return (
@@ -166,7 +167,7 @@ export default function SustainabilityComp() {
 
         {/* Text Content */}
         <motion.div
-          className="absolute inset-0 flex flex-col justify-end px-5 pb-10 text-white md:bottom-45 md:pb-25 md:pl-13"
+          className="absolute inset-0 flex flex-col justify-end  pb-10 text-white md:bottom-45 md:pb-25 max-w-7xl mx-auto w-full px-4 sm:px-0"
           initial="hidden"
           animate="visible"
           variants={{
@@ -193,26 +194,29 @@ export default function SustainabilityComp() {
           </motion.p>
 
           <motion.div
-            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
-            className="flex items-center mt-10"
-          >
-            <button className="flex items-center gap-2 rounded-full border border-white bg-white px-6 py-3 text-sm manrope-400 text-black transition-all hover:bg-transparent hover:text-white">
-              KNOW MORE
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="transition-transform group-hover:translate-x-1"
-              >
-                <path
-                  d="M8 0L6.585 1.415L11.17 6H0V8H11.17L6.585 12.585L8 14L14 8L8 0Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </button>
-          </motion.div>
+  variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+  className="flex items-center mt-10"
+>
+  <Link href="/sustainability" className="group">
+    <button className="flex items-center gap-2 rounded-full border border-white bg-white px-6 py-3 text-sm manrope-400 text-black transition-all hover:bg-transparent hover:text-white">
+      KNOW MORE
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="transition-transform group-hover:translate-x-1"
+      >
+        <path
+          d="M8 0L6.585 1.415L11.17 6H0V8H11.17L6.585 12.585L8 14L14 8L8 0Z"
+          fill="currentColor"
+        />
+      </svg>
+    </button>
+  </Link>
+</motion.div>
+
         </motion.div>
       </div>
     </div>

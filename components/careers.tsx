@@ -38,8 +38,8 @@ const cardColors = [
 const Careers = () => {
     return (
         <div>
-            <section className="bg-gradient-to-b from-white to-slate-50">
-                <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:py-20">
+            <section className="bg-gradient-to-b from-white to-slate-50 ">
+                <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 grid  items-center gap-10  py-12  lg:grid-cols-2 lg:gap-14 lg:py-20">
                     <div>
                         <motion.h1
                             initial={{ opacity: 0, y: 10 }}
@@ -95,7 +95,7 @@ const Careers = () => {
                     </motion.div>
                 </div>
                 <motion.section
-                    className="mx-auto max-w-6xl px-6 text-center sm:px-0"
+                    className="max-w-7xl mx-auto w-full px-4 sm:px-0 text-center "
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 1 }}
@@ -122,7 +122,7 @@ const Careers = () => {
 
                 </motion.section>
                 <AnimatedSection>
-                    <div className="max-w-6xl px-4 py-12 sm:px-2 lg:py-16">
+                    <div className="py-12 max-w-7xl mx-auto w-full px-4 sm:px-0 lg:py-16">
                         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                             {items.map((it, idx) => {
                                 const c = cardColors[idx % cardColors.length]
@@ -133,7 +133,7 @@ const Careers = () => {
                                         whileInView={{ opacity: 1, y: 0 }}
                                         viewport={{ once: true }}
                                         transition={{ delay: idx * 0.05 }}
-                                        className={`group relative overflow-hidden rounded-2xl border-2 ${c.border} ${c.bg} p-0 shadow transition`}
+                                        className={`max-w-7xl mx-auto w-full px-4 sm:px-0 group relative overflow-hidden rounded-2xl border-2 ${c.border} ${c.bg} p-0 shadow transition`}
                                     >
                                         <div className="relative h-75 sm:h-60 w-full overflow-hidden">
                                             <Image
