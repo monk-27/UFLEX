@@ -528,11 +528,21 @@ swiper-pagination {
 
 .man {
   display: flex;
+  width: 100%;                     /* Fill the container */
+  max-width: var(--page-max-width);/* Never wider than the page width */
+  flex-direction: column;
+  align-items: center;
+  gap: 140px;
+  margin-inline: auto;             /* Extra safety centering */
+}
+
+/* .man {
+  display: flex;
   width: 1490px;
   flex-direction: column;
   align-items: center;
   gap: 140px;
-}
+} */
 .swiper-button-next,
 .swiper-button-prev {
   color: #fc7f6f !important; /* Match your gradient color */
@@ -1196,6 +1206,11 @@ swiper-pagination {
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --page-max-width: 80rem;      /* ~1280px container */
+  --page-padding-mobile: 1rem;  /* 16px */
+  --page-padding-desktop: 1rem; /* 32px → increase if you want more */
+  --page-font-size-mobile: 15px;
+  --page-font-size-desktop: 16px;
 }
 
 .dark {
@@ -1233,6 +1248,7 @@ swiper-pagination {
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(0.269 0 0);
   --sidebar-ring: oklch(0.439 0 0);
+  
 }
 
 /* =========================================================
@@ -1313,6 +1329,35 @@ swiper-pagination {
   font-style: normal;
   font-display: swap;
 }
+/* Global page container */
+/* Global override for max-w-7xl so it behaves exactly like:
+   max-w-7xl mx-auto px-4 sm:px-0
+*/
+.max-w-7xl {
+  max-width: var(--page-max-width);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-inline: var(--page-padding-mobile); /* mobile padding */
+  box-sizing: border-box;
+  font-size: var(--page-font-size-mobile);     /* mobile font size */
+}
+
+/* sm: (640px+) — keep padding but increase a bit */
+@media (min-width: 640px) {
+  .max-w-7xl {
+    padding-inline: 1.5rem; /* override sm:px-0 → more padding */
+  }
+}
+
+/* md: (768px+) — apply BIGGER padding + bigger font */
+@media (min-width: 768px) {
+  .max-w-7xl {
+    padding-inline: var(--page-padding-desktop);  /* desktop padding */
+    font-size: var(--page-font-size-desktop);     /* desktop font size */
+  }
+}
+
 
 /* Extra Light - 200 */
 @font-face {
