@@ -191,7 +191,7 @@ export function SiteFooter() {
           <span className="h-9 w-9 flex items-center justify-center rounded-full bg-white/15">
             <Phone className="h-4 w-4" />
           </span>
-          <a href="tel:+911202556040" className="text-lg font-semibold">
+          <a href="tel:+911202556040" className="text-base lato-40">
             +91 120 2556040
           </a>
         </div>
@@ -200,7 +200,7 @@ export function SiteFooter() {
           <span className="h-9 w-9 flex items-center justify-center rounded-full bg-white/15">
             <Mail className="h-4 w-4" />
           </span>
-          <a href="mailto:enquiry@uflexltd.com" className="text-lg font-semibold">
+          <a href="mailto:enquiry@uflexltd.com" className="text-base lato-40">
             enquiry@uflexltd.com
           </a>
         </div>
