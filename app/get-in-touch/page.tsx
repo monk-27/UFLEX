@@ -276,45 +276,63 @@ function OfficeCard({ o }: { o: Office }) {
   return (
     <motion.article
       {...fadeUp()}
-      className="relative overflow-hidden rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5"
+      className="relative overflow-hidden rounded-sm bg-white p-6 shadow-sm ring-1 ring-black/5"
     >
-      <div className="mb-3 flex items-center gap-3">
-        <span className="rounded-xl bg-[#117ABA] p-2 text-white">
-          <Building2 className="h-5 w-5" />
-        </span>
-        <div>
-          <h3 className="manrope-700 text-lg text-[#117ABA] underline underline-offset-4">
+      <div className="flex gap-4">
+        {/* LEFT: blue icon block */}
+        <div className="flex items-start">
+          <div className="bg-[#117ABA] rounded-2xl px-3 py-3 flex items-center justify-center">
+            <Building2 className="h-6 w-6 text-white" />
+          </div>
+        </div>
+
+        {/* RIGHT: all text + small icons */}
+        <div className="flex-1">
+          <h3 className="lato-700 text-lg text-[#117ABA] underline underline-offset-4">
             {o.name}
           </h3>
-          <p className="text-sm text-slate-600">
+          <p className="text-sm text-slate-600 mt-1">
             {o.business} · {o.city ? `${o.city}, ` : ""}{o.country}
           </p>
-        </div>
-      </div>
 
-      <div className="grid gap-2 text-slate-800">
-        <p className="flex gap-2 text-sm">
-          <MapPin className="mt-0.5 h-4 w-4 flex-none text-slate-500" />
-          <span className="whitespace-pre-line">{o.address.join("\n")}</span>
-        </p>
-        {o.phone && (
-          <p className="flex gap-2 text-sm">
-            <Phone className="mt-0.5 h-4 w-4 flex-none text-slate-500" />
-            <span>Ph : {o.phone}</span>
-          </p>
-        )}
-        {o.email && (
-          <p className="flex gap-2 text-sm">
-            <Mail className="mt-0.5 h-4 w-4 flex-none text-slate-500" />
-            <a className="text-[#117ABA] underline" href={`mailto:${o.email}`}>
-              {o.email}
-            </a>
-          </p>
-        )}
+          <div className="mt-3 space-y-3 text-sm text-slate-800">
+            {/* Address */}
+            <div className="flex gap-3">
+              <MapPin className="h-5 w-5 text-slate-500 flex-none" />
+              <span className="whitespace-pre-line">
+                {o.address.join("\n")}
+              </span>
+            </div>
+
+            {/* Phone */}
+            {o.phone && (
+              <div className="flex gap-3">
+                <Phone className="h-5 w-5 text-slate-500 flex-none" />
+                <span>Ph : {o.phone}</span>
+              </div>
+            )}
+
+            {/* Email */}
+            {o.email && (
+              <div className="flex gap-3">
+                <Mail className="h-5 w-5 text-slate-500 flex-none" />
+                <a
+                  className="text-[#117ABA] underline"
+                  href={`mailto:${o.email}`}
+                >
+                  {o.email}
+                </a>
+              </div>
+            )}
+          </div>
+        </div>
       </div>
     </motion.article>
   );
 }
+
+
+
 
 /* --------------------------------- Page --------------------------------- */
 export default function GetInTouch() {
@@ -353,69 +371,54 @@ export default function GetInTouch() {
       <main className="min-h-screen bg-gradient-to-b from-[#EAF2FF] to-white">
 
         {/* HERO */}
-        <section className="relative isolate">
-          <div className="absolute inset-0 -z-10">
-            <Image
-              src="https://uflex.wpdevstudio.site/HTML/uploaded-files/page-banners/banner50.jpg"
-              alt="Contact UFlex"
-              fill
-              priority
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0B3C7D]/70 via-[#0B3C7D]/55 to-transparent" />
+        <section className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[450px] overflow-hidden">
+
+          <Image
+            src="/images/careers/contact.png"
+            alt="Investors Relations"
+            fill
+            className="object-cover w-full h-full"
+            priority
+          />
+
+          <div className="absolute inset-0 bg-black/40"></div>
+
+          <div className="absolute inset-0 flex flex-col justify-center px-6 sm:px-12 md:px-20 lg:px-28">
+            <h1 className="text-white text-2xl sm:text-3xl md:text-[38px] lato-700 mb-4">
+              Get In Touch
+
+            </h1>
+
+
           </div>
 
-          <div className="mx-auto flex max-w-7xl  w-full px-4 sm:px-0 flex-col items-center gap-4  py-20  md:flex-row md:gap-12 md:py-24">
-            <motion.div {...fadeUp()}>
-              <h1 className="manrope-800 text-3xl text-white drop-shadow md:text-5xl">Get In Touch</h1>
-              <p className="mt-3 max-w-xl text-white/90">
-                A global leader in flexible packaging with presence across 150+ countries, 9 state-of-the-art
-                manufacturing locations and a workforce of 15,000+ employees.
-              </p>
-            </motion.div>
-
-            {/* <motion.div
-              className="relative h-52 w-full max-w-xl overflow-hidden rounded-2xl ring-1 ring-white/20 md:h-60"
-              {...fadeUp(0.1)}
-            >
-              <Image
-                src="https://uflex.wpdevstudio.site/HTML/uploaded-files/page-images/image24.jpg"
-                alt="Connect with UFlex"
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-tr from-black/20 to-transparent" />
-            </motion.div> */}
-          </div>
-
-         
         </section>
 
-       
+
 
         {/* QUICK CONTACT STRIP */}
         <section className="mt-4 max-w-7xl mx-auto w-full px-4 sm:px-0">
           <div className="grid gap-4 md:grid-cols-3">
-            <a href="mailto:corpcomm@uflexltd.com" className="group flex items-center gap-3 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-[2px] hover:shadow-md">
+            <a href="mailto:corpcomm@uflexltd.com" className="group flex items-center gap-3 rounded-sm bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-[2px] hover:shadow-md">
               <div className="rounded-xl bg-[#117ABA] p-3 text-white"><Mail className="h-5 w-5" /></div>
               <div>
-                <p className="manrope-700 text-slate-800">Corporate Communications</p>
+                <p className="lato-700 text-slate-800">Corporate Communications</p>
                 <p className="text-sm text-slate-600 group-hover:text-slate-700">corpcomm@uflexltd.com</p>
               </div>
             </a>
 
-            <a href="mailto:enquiry@uflexltd.com" className="group flex items-center gap-3 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-[2px] hover:shadow-md">
+            <a href="mailto:enquiry@uflexltd.com" className="group flex items-center gap-3 rounded-sm bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-[2px] hover:shadow-md">
               <div className="rounded-xl bg-[#117ABA] p-3 text-white"><Mail className="h-5 w-5" /></div>
               <div>
-                <p className="manrope-700 text-slate-800">Feedback / Support</p>
+                <p className="lato-700 text-slate-800">Feedback / Support</p>
                 <p className="text-sm text-slate-600 group-hover:text-slate-700">enquiry@uflexltd.com</p>
               </div>
             </a>
 
-            <div className="flex items-center gap-3 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/5">
+            <div className="flex items-center gap-3 rounded-sm bg-white p-4 shadow-sm ring-1 ring-black/5">
               <div className="rounded-xl bg-[#117ABA] p-3 text-white"><Phone className="h-5 w-5" /></div>
               <div>
-                <p className="manrope-700 text-slate-800">Board Line</p>
+                <p className="lato-700 text-slate-800">Board Line</p>
                 <p className="text-sm text-slate-600">+91 120 4002121</p>
               </div>
             </div>
@@ -424,12 +427,12 @@ export default function GetInTouch() {
 
         {/* DIRECTORY: Independent filters */}
         <section className="max-w-7xl mx-auto w-full px-4 sm:px-0 py-14 ">
-          <h2 className="manrope-800 text-2xl text-[#117ABA] text-center sm:text-left">Connect with us</h2>
+          <h2 className="lato-800 text-2xl text-[#117ABA] text-center sm:text-left">Connect with us</h2>
 
           {/* Controls */}
           <div className="mt-4 grid gap-3 md:grid-cols-12">
             <div className="md:col-span-4">
-              <div className="flex items-center gap-2 rounded-xl border border-slate-900 bg-white px-3 py-2">
+              <div className="flex items-center gap-2 rounded-sm border border-slate-900 bg-white px-3 py-2">
                 <Filter className="h-4 w-4 text-slate-500" />
                 <select
                   aria-label="Filter by Business"
@@ -447,7 +450,7 @@ export default function GetInTouch() {
             </div>
 
             <div className="md:col-span-4">
-              <div className="flex items-center gap-2 rounded-xl border border-slate-900 bg-white px-3 py-2">
+              <div className="flex items-center gap-2 rounded-sm border border-slate-900 bg-white px-3 py-2">
                 <Filter className="h-4 w-4 text-slate-500" />
                 <select
                   aria-label="Filter by Location"
@@ -465,7 +468,7 @@ export default function GetInTouch() {
             </div>
 
             <div className="md:col-span-4">
-              <div className="flex items-center gap-2 rounded-xl border border-slate-900 bg-white px-3 py-2">
+              <div className="flex items-center gap-2 rounded-sm border border-slate-900 bg-white px-3 py-2">
                 <Search className="h-4 w-4 text-slate-500" />
                 <input
                   value={q}
@@ -502,70 +505,185 @@ export default function GetInTouch() {
         </section>
 
         {/* CONTACT FORM */}
-        <section className="border-t border-slate-200 bg-white py-14">
-          <div className=" grid max-w-7xl mx-auto w-full px-4 sm:px-0 grid-cols-1 items-start gap-8  md:grid-cols-2">
-            <div>
-              <h2 className="manrope-800 text-2xl text-[#117ABA]">Other Queries</h2>
-              <p className="mt-2 text-slate-600">
-                For any other enquiries, fill the form below. Fields marked with (*) are mandatory.
-              </p>
+       <section className="border-t border-slate-200 bg-white py-14">
+  <div className="mx-auto max-w-7xl px-4">
+    {/* Heading */}
+    <div className="text-start mb-4">
+      <h2 className="lato-800 text-2xl text-[#117ABA]">Other Queries</h2>
+      <p className="mt-2 text-slate-600">
+        For any other enquiries, fill the form below. Fields marked with (*) are mandatory.
+      </p>
+    </div>
 
-              <form className="mt-6 grid grid-cols-1 gap-4" onSubmit={(e) => e.preventDefault()}>
-                <div className="grid gap-1">
-                  <label htmlFor="name" className="text-sm manrope-600 text-slate-700">Your Name*</label>
-                  <input id="name" required className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2" placeholder="Enter your name" />
-                </div>
+    {/* Image + Form */}
+    <div className="mt-6 grid w-full grid-cols-1 items-stretch gap-8 md:grid-cols-2">
+      {/* LEFT: full-height image, edge-to-edge within container */}
+      <motion.div
+        {...fadeUp(0.1)}
+        className="relative h-72 md:h-auto md:min-h-[460px]"
+      >
+        <Image
+          src="/images/careers/contacts.png"
+          alt="Contact illustration"
+          fill
+          className="rounded-none object-cover"
+        />
+      </motion.div>
 
-                <div className="grid gap-1">
-                  <label htmlFor="phone" className="text-sm manrope-600 text-slate-700">Contact Number*</label>
-                  <input id="phone" required inputMode="tel" className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2" placeholder="+91 XXXX XXXX" />
-                </div>
-
-                <div className="grid gap-1">
-                  <label htmlFor="email" className="text-sm manrope-600 text-slate-700">Your Email Address*</label>
-                  <input id="email" type="email" required className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2" placeholder="name@company.com" />
-                </div>
-
-                <div className="grid gap-1">
-                  <label htmlFor="enquiry" className="text-sm manrope-600 text-slate-700">Type of Enquiry*</label>
-                  <select id="enquiry" required className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2" defaultValue="">
-                    <option value="" disabled>Select</option>
-                    <option>Media / PR</option>
-                    <option>Investor Relations</option>
-                    <option>Sales / Business</option>
-                    <option>Careers / HR</option>
-                    <option>Support / Others</option>
-                  </select>
-                </div>
-
-                <div className="grid gap-1">
-                  <label htmlFor="message" className="text-sm manrope-600 text-slate-700">Your Message*</label>
-                  <textarea id="message" required rows={5} className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2" placeholder="Type your enquiry / feedback here..." />
-                </div>
-
-                <button type="submit" className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-[#117ABA] px-6 py-2.5 font-medium text-white shadow-sm transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[#0B3C7D] focus:ring-offset-2">
-                  <Send className="h-4 w-4" />
-                  Submit Now
-                </button>
-              </form>
-            </div>
-
-            {/* Side visual */}
-            <motion.div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl ring-1 ring-black/5 md:sticky md:top-24" {...fadeUp(0.1)}>
-              <Image
-                src="/images/map.png"
-                alt="Global Presence"
-                fill
-                className="object-contain"
-              />
-              <div className="absolute inset-0 bg-gradient-to-tr from-black/10 to-transparent" />
-              <div className="absolute bottom-3 left-3 rounded-xl bg-white/80 px-3 py-1.5 text-xs text-slate-700 backdrop-blur">
-                <Globe2 className="mr-1 inline h-3.5 w-3.5" />
-                Global presence across 5+ continents
-              </div>
-            </motion.div>
+      {/* RIGHT: form, aligned to image height */}
+      <form
+        className="flex flex-col"
+        onSubmit={(e) => e.preventDefault()}
+      >
+        {/* Top grid fields */}
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div className="grid gap-1">
+            <label
+              htmlFor="name"
+              className="text-sm lato-600 text-slate-700"
+            >
+              Full Name*
+            </label>
+            <input
+              id="name"
+              required
+              className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
+              placeholder="Enter full name"
+            />
           </div>
-        </section>
+
+          <div className="grid gap-1">
+            <label
+              htmlFor="email"
+              className="text-sm lato-600 text-slate-700"
+            >
+              Email Address*
+            </label>
+            <input
+              id="email"
+              type="email"
+              required
+              className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
+              placeholder="Enter email address"
+            />
+          </div>
+
+          <div className="grid gap-1">
+            <label
+              htmlFor="phone"
+              className="text-sm lato-600 text-slate-700"
+            >
+              Phone Number*
+            </label>
+            <input
+              id="phone"
+              required
+              inputMode="tel"
+              className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
+              placeholder="Enter phone number"
+            />
+          </div>
+
+          <div className="grid gap-1">
+            <label
+              htmlFor="enquiryType"
+              className="text-sm lato-600 text-slate-700"
+            >
+              Enquiry Type*
+            </label>
+            <select
+              id="enquiryType"
+              required
+              className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
+              defaultValue=""
+            >
+              <option value="" disabled>
+                Select type
+              </option>
+              <option>Media / PR</option>
+              <option>Investor Relations</option>
+              <option>Sales / Business</option>
+              <option>Careers / HR</option>
+              <option>Support / Others</option>
+            </select>
+          </div>
+
+          <div className="grid gap-1">
+            <label
+              htmlFor="product"
+              className="text-sm lato-600 text-slate-700"
+            >
+              Product
+            </label>
+            <select
+              id="product"
+              className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
+              defaultValue=""
+            >
+              <option value="" disabled>
+                Select product
+              </option>
+              <option>Packaging films</option>
+              <option>Chemicals</option>
+              <option>Holography</option>
+              <option>Engineering</option>
+              <option>Others</option>
+            </select>
+          </div>
+
+          <div className="grid gap-1">
+            <label
+              htmlFor="location"
+              className="text-sm lato-600 text-slate-700"
+            >
+              Location
+            </label>
+            <select
+              id="location"
+              className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
+              defaultValue=""
+            >
+              <option value="" disabled>
+                Select location
+              </option>
+              <option>India</option>
+              <option>USA</option>
+              <option>Poland</option>
+              <option>UAE</option>
+              <option>Others</option>
+            </select>
+          </div>
+        </div>
+
+        {/* Message + button (full width, aligned with fields) */}
+        <div className="mt-4 grid gap-1">
+          <label
+            htmlFor="message"
+            className="text-sm lato-600 text-slate-700"
+          >
+            Message*
+          </label>
+          <textarea
+            id="message"
+            required
+            rows={5}
+            className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
+            placeholder="Write message"
+          />
+        </div>
+
+        <button
+          type="submit"
+          className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-sm bg-[#117ABA] px-6 py-2.5 lato-500 text-white shadow-sm transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[#0B3C7D] focus:ring-offset-2"
+        >
+          <Send className="h-4 w-4" />
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
 
         {/* MAP */}
         <section className="max-w-7xl mx-auto w-full px-4 sm:px-0 pb-16 ">

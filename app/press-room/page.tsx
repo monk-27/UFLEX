@@ -79,7 +79,7 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6">
       <motion.h2
-        className="text-center text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"
+        className="text-center text-[24px] lato-600 text-[#117ABA] md:text-[28px] md:text-5xl"
         {...fadeUp()}
       >
         {children}
@@ -118,7 +118,7 @@ function Card({
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
       </div>
       {/* <div className="p-4">
-        <h3 className="manrope-700 text-[15px] text-slate-800">{title}</h3>
+        <h3 className="lato-700 text-[15px] text-slate-800">{title}</h3>
       </div> */}
     </motion.div>
   );
@@ -129,7 +129,7 @@ function ViewMoreButton({ href = "#" }: { href?: string }) {
     <div className="mt-6 flex justify-center">
       <span
         
-        className="rounded-full bg-[#117ABA] px-5 py-2 text-sm font-medium text-white shadow-sm transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[#0B3C7D] focus:ring-offset-2"
+        className="rounded-full bg-[#117ABA] px-5 py-2 text-sm lato-500 text-white shadow-sm transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[#0B3C7D] focus:ring-offset-2"
       >
         View More
       </span>
@@ -166,7 +166,7 @@ export default function PressRoomPage() {
 
         <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 md:py-28">
           <motion.h1
-            className="manrope-800 text-center text-3xl text-white drop-shadow sm:text-4xl md:text-5xl"
+            className="lato-800 text-center text-3xl text-white drop-shadow sm:text-4xl md:text-5xl"
             {...fadeUp()}
           >
             The Press Room
@@ -236,7 +236,7 @@ export default function PressRoomPage() {
                   />
                 </div>
                 <div className="p-4">
-                  <h3 className="manrope-700 text-[15px] text-slate-800">
+                  <h3 className="lato-700 text-[15px] text-slate-800">
                     {res.title}
                   </h3>
                 </div>
@@ -258,7 +258,7 @@ export default function PressRoomPage() {
                   />
                 </div>
                 <div className="p-4">
-                  <h3 className="manrope-700 text-[15px] text-slate-800">
+                  <h3 className="lato-700 text-[15px] text-slate-800">
                     {res.title}
                   </h3>
                 </div>
@@ -271,7 +271,7 @@ export default function PressRoomPage() {
       {/* CONTACT BAR */}
       <section className="border-t border-slate-200 bg-slate-50 py-8">
         <div className="mx-auto max-w-6xl px-4 text-center sm:px-6">
-          <p className="manrope-600 text-slate-700">
+          <p className="lato-600 text-slate-700">
             For any media queries, please email the Global Corporate
             Communications Team:&nbsp;
             <a
