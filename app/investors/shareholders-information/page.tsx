@@ -165,7 +165,7 @@ export default function Page() {
                         {communicationList.map((item, i) => (
                             <Link key={i} href={item.link} target="_blank">
                                 <div className="w-full bg-[#F7F7F7] py-3 px-6 flex items-center justify-between border-b-[2px] border-white hover:bg-[#ececec] transition">
-                                    
+
                                     <span className="text-[14px] text-black lato-400">{item.text}</span>
 
                                     <Image
