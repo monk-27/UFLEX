@@ -1,6 +1,7 @@
 
 "use client";
 
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import React, { ReactNode, useEffect, useState } from "react";
 
 type TabDef = {
@@ -16,6 +17,9 @@ type Props = {
 };
 
 export function BusinessTabs({ tabs, defaultId }: any) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
   // console.log("tavs+++",tabs)
   const safeTabs = Array.isArray(tabs) ? tabs : [];
   // console.log("safeTabs", safeTabs);
@@ -42,6 +46,9 @@ useEffect(() => {
         defaultId,
       });
     }
+
+
+   
     return (
       <section className="bg-white">
         <div className="max-w-6xl mx-auto px-4 py-6 text-sm text-gray-500">
@@ -50,6 +57,19 @@ useEffect(() => {
       </section>
     );
   }
+
+  const handleTabClick = (tabId: string) => {
+    setActiveId(tabId);
+
+    // clone current params and set new tab
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("tab", tabId);
+
+    // soft-navigation, no full reload
+    router.replace(`${pathname}?${params.toString()}`, {
+      scroll: false,
+    });
+  };
 
   let content: ReactNode = null;
   try {
@@ -71,9 +91,22 @@ useEffect(() => {
           {safeTabs.map((tab) => {
             const isActive = tab.id === activeId;
             return (
+              // <button
+              //   key={tab.id}
+              //   onClick={() => setActiveId(tab.id)}
+              //   className={[
+              //     "relative px-1 pb-3 pt-1 flex-shrink-0 lato-400 text-[13px] md:text-[16px]",
+              //     isActive ? "text-[#117ABA] lato-700" : "text-[#4f4f4f]",
+              //   ].join(" ")}
+              // >
+              //   {tab.label}
+              //   {isActive && (
+              //     <span className="absolute left-0 right-0 -bottom-[1px] h-[3px] bg-[#CF2328] rounded-md" />
+              //   )}
+              // </button>
               <button
                 key={tab.id}
-                onClick={() => setActiveId(tab.id)}
+                onClick={() => handleTabClick(tab.id)}
                 className={[
                   "relative px-1 pb-3 pt-1 flex-shrink-0 lato-400 text-[13px] md:text-[16px]",
                   isActive ? "text-[#117ABA] lato-700" : "text-[#4f4f4f]",
