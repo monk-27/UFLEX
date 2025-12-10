@@ -505,197 +505,198 @@ export default function GetInTouch() {
         </section>
 
         {/* CONTACT FORM */}
-       <section className="border-t border-slate-200 bg-white py-14">
-  <div className="mx-auto max-w-7xl px-4">
-    {/* Heading */}
-    <div className="text-start mb-4">
-      <h2 className="lato-800 text-2xl text-[#117ABA]">Other Queries</h2>
-      <p className="mt-2 text-slate-600">
-        For any other enquiries, fill the form below. Fields marked with (*) are mandatory.
-      </p>
-    </div>
+        <section className="border-t border-slate-200 bg-white py-14">
+          <div className="mx-auto max-w-7xl px-4">
+            {/* Heading */}
+            <div className="text-start mb-4">
+              <h2 className="lato-800 text-2xl text-[#117ABA]">Other Queries</h2>
+              <p className="mt-2 text-slate-600">
+                For any other enquiries, fill the form below. Fields marked with (*) are mandatory.
+              </p>
+            </div>
 
-    {/* Image + Form */}
-    <div className="mt-6 grid w-full grid-cols-1 items-stretch gap-8 md:grid-cols-2">
-      {/* LEFT: full-height image, edge-to-edge within container */}
-      <motion.div
-        {...fadeUp(0.1)}
-        className="relative h-72 md:h-auto md:min-h-[460px]"
-      >
-        <Image
-          src="/images/careers/contacts.png"
-          alt="Contact illustration"
-          fill
-          className="rounded-none object-cover"
-        />
-      </motion.div>
+            {/* Image + Form */}
+            <div className="mt-6 grid w-full grid-cols-1 items-stretch gap-8 md:grid-cols-2">
+              {/* LEFT: full-height image, edge-to-edge within container */}
+              <motion.div
+                {...fadeUp(0.1)}
+                className="relative h-72 md:h-auto md:min-h-[460px]"
+              >
+                <Image
+                  src="/images/careers/contacts.png"
+                  alt="Contact illustration"
+                  fill
+                  className="rounded-none object-cover"
+                />
+              </motion.div>
 
-      {/* RIGHT: form, aligned to image height */}
-      <form
-        className="flex flex-col"
-        onSubmit={(e) => e.preventDefault()}
-      >
-        {/* Top grid fields */}
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          <div className="grid gap-1">
-            <label
-              htmlFor="name"
-              className="text-sm lato-600 text-slate-700"
-            >
-              Full Name*
-            </label>
-            <input
-              id="name"
-              required
-              className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
-              placeholder="Enter full name"
-            />
+              {/* RIGHT: form, aligned to image height */}
+              <form
+                className="flex flex-col"
+                onSubmit={(e) => e.preventDefault()}
+              >
+                {/* Top grid fields */}
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                  <div className="grid gap-1">
+                    <label
+                      htmlFor="name"
+                      className="text-sm lato-600 text-slate-700"
+                    >
+                      Full Name*
+                    </label>
+                    <input
+                      id="name"
+                      required
+                      className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                      placeholder="Enter full name"
+                    />
+                  </div>
+
+                  <div className="grid gap-1">
+                    <label
+                      htmlFor="email"
+                      className="text-sm lato-600 text-slate-700"
+                    >
+                      Email Address*
+                    </label>
+                    <input
+                      id="email"
+                      type="email"
+                      required
+                      className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                      placeholder="Enter email address"
+                    />
+                  </div>
+
+                  <div className="grid gap-1">
+                    <label
+                      htmlFor="phone"
+                      className="text-sm lato-600 text-slate-700"
+                    >
+                      Phone Number*
+                    </label>
+                    <input
+                      id="phone"
+                      required
+                      inputMode="tel"
+                      className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                      placeholder="Enter phone number"
+                    />
+                  </div>
+
+                  <div className="grid gap-1">
+                    <label
+                      htmlFor="enquiryType"
+                      className="text-sm lato-600 text-slate-700"
+                    >
+                      Enquiry Type*
+                    </label>
+                    <select
+                      id="enquiryType"
+                      required
+                      className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                      defaultValue=""
+                    >
+                      <option value="" disabled>
+                        Select type
+                      </option>
+                      <option>Media / PR</option>
+                      <option>Investor Relations</option>
+                      <option>Sales / Business</option>
+                      <option>Careers / HR</option>
+                      <option>Support / Others</option>
+                    </select>
+                  </div>
+
+                  <div className="grid gap-1">
+                    <label
+                      htmlFor="product"
+                      className="text-sm lato-600 text-slate-700"
+                    >
+                      Product
+                    </label>
+                    <select
+                      id="product"
+                      className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                      defaultValue=""
+                    >
+                      <option value="" disabled>
+                        Select product
+                      </option>
+                      <option>Packaging films</option>
+                      <option>Chemicals</option>
+                      <option>Holography</option>
+                      <option>Engineering</option>
+                      <option>Others</option>
+                    </select>
+                  </div>
+
+                  <div className="grid gap-1">
+                    <label
+                      htmlFor="location"
+                      className="text-sm lato-600 text-slate-700"
+                    >
+                      Location
+                    </label>
+                    <select
+                      id="location"
+                      className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                      defaultValue=""
+                    >
+                      <option value="" disabled>
+                        Select location
+                      </option>
+                      <option>India</option>
+                      <option>USA</option>
+                      <option>Poland</option>
+                      <option>UAE</option>
+                      <option>Others</option>
+                    </select>
+                  </div>
+                </div>
+
+                {/* Message + button (full width, aligned with fields) */}
+                <div className="mt-4 grid gap-1">
+                  <label
+                    htmlFor="message"
+                    className="text-sm lato-600 text-slate-700"
+                  >
+                    Message*
+                  </label>
+                  <textarea
+                    id="message"
+                    required
+                    rows={5}
+                    className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                    placeholder="Write message"
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-sm bg-[#117ABA] px-6 py-2.5 lato-500 text-white shadow-sm transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[#0B3C7D] focus:ring-offset-2"
+                >
+                  <Send className="h-4 w-4" />
+                  Submit
+                </button>
+              </form>
+            </div>
           </div>
-
-          <div className="grid gap-1">
-            <label
-              htmlFor="email"
-              className="text-sm lato-600 text-slate-700"
-            >
-              Email Address*
-            </label>
-            <input
-              id="email"
-              type="email"
-              required
-              className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
-              placeholder="Enter email address"
-            />
-          </div>
-
-          <div className="grid gap-1">
-            <label
-              htmlFor="phone"
-              className="text-sm lato-600 text-slate-700"
-            >
-              Phone Number*
-            </label>
-            <input
-              id="phone"
-              required
-              inputMode="tel"
-              className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
-              placeholder="Enter phone number"
-            />
-          </div>
-
-          <div className="grid gap-1">
-            <label
-              htmlFor="enquiryType"
-              className="text-sm lato-600 text-slate-700"
-            >
-              Enquiry Type*
-            </label>
-            <select
-              id="enquiryType"
-              required
-              className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
-              defaultValue=""
-            >
-              <option value="" disabled>
-                Select type
-              </option>
-              <option>Media / PR</option>
-              <option>Investor Relations</option>
-              <option>Sales / Business</option>
-              <option>Careers / HR</option>
-              <option>Support / Others</option>
-            </select>
-          </div>
-
-          <div className="grid gap-1">
-            <label
-              htmlFor="product"
-              className="text-sm lato-600 text-slate-700"
-            >
-              Product
-            </label>
-            <select
-              id="product"
-              className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
-              defaultValue=""
-            >
-              <option value="" disabled>
-                Select product
-              </option>
-              <option>Packaging films</option>
-              <option>Chemicals</option>
-              <option>Holography</option>
-              <option>Engineering</option>
-              <option>Others</option>
-            </select>
-          </div>
-
-          <div className="grid gap-1">
-            <label
-              htmlFor="location"
-              className="text-sm lato-600 text-slate-700"
-            >
-              Location
-            </label>
-            <select
-              id="location"
-              className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
-              defaultValue=""
-            >
-              <option value="" disabled>
-                Select location
-              </option>
-              <option>India</option>
-              <option>USA</option>
-              <option>Poland</option>
-              <option>UAE</option>
-              <option>Others</option>
-            </select>
-          </div>
-        </div>
-
-        {/* Message + button (full width, aligned with fields) */}
-        <div className="mt-4 grid gap-1">
-          <label
-            htmlFor="message"
-            className="text-sm lato-600 text-slate-700"
-          >
-            Message*
-          </label>
-          <textarea
-            id="message"
-            required
-            rows={5}
-            className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
-            placeholder="Write message"
-          />
-        </div>
-
-        <button
-          type="submit"
-          className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-sm bg-[#117ABA] px-6 py-2.5 lato-500 text-white shadow-sm transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[#0B3C7D] focus:ring-offset-2"
-        >
-          <Send className="h-4 w-4" />
-          Submit
-        </button>
-      </form>
-    </div>
-  </div>
-</section>
+        </section>
 
 
         {/* MAP */}
         <section className="max-w-7xl mx-auto w-full px-4 sm:px-0 pb-16 ">
           <div className="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
             <iframe
-              title="UFlex Corporate Office Map"
+              title="UFlex Limited Map"
               className="h-[360px] w-full"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=A-1%20Sector%2060%20Noida&output=embed"
+              src="https://www.google.com/maps?q=UFlex%20Limited%20Block%20A%20107-108%20Sector%20IV%20Noida%20Uttar%20Pradesh%20201301&output=embed"
             />
           </div>
+
         </section>
       </main>
       <SiteFooter />
