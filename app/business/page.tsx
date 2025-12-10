@@ -27,9 +27,9 @@ export default function BusinessesPage() {
         <Image
           src="/images/herobuisness.png"
           alt="Business Hero"
-          width={1440}
-          height={450}
-          className="w-full h-auto"
+          width={100}
+          height={100}
+          className="w-[1470px] h-[430px]"
         />
 
         <div className="max-w-7xl mx-auto px-4">

@@ -686,7 +686,7 @@ export default function GetInTouch() {
 
 
         {/* MAP */}
-        <section className="pt-10 max-w-7xl mx-auto w-full px-4 sm:px-0 pb-16 ">
+        <section className="mt-10 max-w-7xl mx-auto w-full px-4 sm:px-0 pb-16 ">
           <div className="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
             <iframe
               title="UFlex Limited Map"
