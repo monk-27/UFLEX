@@ -12,8 +12,80 @@ import MainSustainabilityCOMMComp from "@/components/main-sustainability-commitm
 import ReportsGallery from "@/components/main-sustainibility-reports"
 import Image from "next/image"
 import SustainabilityReportsCarousel from "@/components/main-sustainability-commitment"
+import Link from "next/link"
+import { useState } from "react"
+
+type SusTabId = "reports" | "materiality" | "assurance"
+
+type SimpleLink = { href: string }
+
+const csrAnnualActionPlan: SimpleLink[] = [
+  {
+    href: "https://www.uflexltd.com/pdf/Sustainability/UFlex_Sustainability_Report_2024-25.pdf",
+  },
+  {
+    href: "https://www.uflexltd.com/pdf/Sustainability/UFlex_Sustainability_Report_2023-24.pdf",
+  },
+  {
+    href: "https://www.uflexltd.com/pdf/Sustainability/UFlex_Sustainability_Report_2022-23.pdf",
+  },
+  {
+    href: "https://www.uflexltd.com/pdf/Sustainability/UFlex_Sustainability_Report_2021-22.pdf",
+  },
+]
+
+const materialityReports: SimpleLink[] = [
+  {
+    href: "https://www.uflexltd.com/pdf/Sustainability/MAR/FF_Hungary_2025.pdf",
+  },
+  {
+    href: "https://www.uflexltd.com/pdf/Sustainability/MAR/FF_Poland_2025.pdf",
+  },
+]
+
+const assuranceStatements: SimpleLink[] = [
+  {
+    href: "https://www.uflexltd.com/pdf/Sustainability/AS/UF_BRSR_2024-25.pdf",
+  },
+  {
+    href: "https://www.uflexltd.com/pdf/Sustainability/AS/UF_CDP_2024-25.pdf",
+  },
+  {
+    href: "https://www.uflexltd.com/pdf/Sustainability/AS/UF_SR_2024-25.pdf",
+  },
+]
+
+const susTabs: { id: SusTabId; label: string }[] = [
+  { id: "reports", label: "Sustainability Reports" },
+  { id: "materiality", label: "Materiality Assessment Reports" },
+  { id: "assurance", label: "Assurance Statements" },
+]
 
 export default function Page() {
+  const [activeTab, setActiveTab] = useState<SusTabId>("reports")
+
+  const renderRow = (item: SimpleLink, idx: number) => (
+    <Link key={idx} href={item.href} target="_blank" className="block">
+      <div className="w-full bg-[#F8F8F8] px-6 py-3 text-[14px] text-[#000000] border-t border-white">
+        {item.href}
+      </div>
+    </Link>
+  )
+
+  const currentHeading =
+    activeTab === "reports"
+      ? "CSR Annual Action Plan"
+      : activeTab === "materiality"
+      ? "Materiality Assessment Reports"
+      : "Assurance Statements"
+
+  const currentList =
+    activeTab === "reports"
+      ? csrAnnualActionPlan
+      : activeTab === "materiality"
+      ? materialityReports
+      : assuranceStatements
+
   return (
     <main className="bg-white">
       <SiteHeader />
@@ -121,7 +193,44 @@ export default function Page() {
       <SustainabilityReportsCarousel />
 
 
+<section className="max-w-6xl mx-auto px-4 sm:px-12 md:px-20 lg:px-28 pt-10 pb-12">
+        {/* Tab bar */}
+        <div className="flex w-fit border-b border-[#d6d6d6] mb-6">
+          {susTabs.map((tab) => {
+            const active = tab.id === activeTab
+            return (
+              <button
+                key={tab.id}
+                type="button"
+                onClick={() => setActiveTab(tab.id)}
+                className={[
+                  "relative px-6 py-2 text-sm lato-400",
+                  "border border-[#d6d6d6] border-b-0",
+                  "first:rounded-t-sm last:rounded-t-sm -mb-[1px]",
+                  active ? "bg-white text-black" : "bg-[#F5F5F5] text-[#555]",
+                ].join(" ")}
+              >
+                {tab.label}
+                {active && (
+                  <span className="absolute left-0 right-0 bottom-0 h-[3px] bg-[#117ABA]" />
+                )}
+              </button>
+            )
+          })}
+        </div>
 
+        {/* Blue header */}
+        <div className="w-full bg-[#117ABA] py-3 px-4">
+          <h2 className="text-white text-sm sm:text-base lato-700 text-center">
+            {currentHeading}
+          </h2>
+        </div>
+
+        {/* List */}
+        <div className="bg-white">
+          {currentList.map((item, idx) => renderRow(item, idx))}
+        </div>
+      </section>
 
       <SiteFooter />
     </main>
