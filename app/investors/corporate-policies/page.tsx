@@ -74,62 +74,62 @@ type PolicyItem = {
 };
 
 const policies: PolicyItem[] = [
-  { text: "Nomination and Remuneration Policy", link: "#" },
-  { text: "Dividend Distribution Policy", link: "#" },
-  { text: "Whistle Blower Policy", link: "#" },
-  { text: "Risk Management Policy", link: "#" },
-  { text: "Corporate Social Responsibility Policy", link: "#" },
-  { text: "Board Diversity Policy", link: "#" },
-  { text: "Code of Conduct", link: "#" },
-  { text: "Related Party Transactions Policy", link: "#" },
+  { text: "Nomination and Remuneration Policy", link: "https://www.uflexltd.com/pdf/Policies/Uflex-Nomination-Remuneration-Policy.pdf" },
+  { text: "Dividend Distribution Policy", link: "https://www.uflexltd.com/pdf/Policies/UFLEX_Dividend_Distribution_Policy.pdf" },
+  { text: "Whistle Blower Policy", link: "https://www.uflexltd.com/pdf/Policies/Uflex-Whistle-Blower-Policy.pdf" },
+  { text: "Risk Management Policy", link: "https://www.uflexltd.com/pdf/Policies/Uflex-Risk-Management-Policy.pdf" },
+  { text: "Corporate Social Responsibility Policy", link: "https://www.uflexltd.com/pdf/Policies/Uflex-CSR-Policy.pdf" },
+  { text: "Board Diversity Policy", link: "https://www.uflexltd.com/pdf/Policies/Uflex-Board-Diversity-Policy.pdf" },
+  { text: "Code of Conduct", link: "https://www.uflexltd.com/pdf/Policies/Uflex-CODE-OF-CONDUCT.pdf" },
+  { text: "Related Party Transactions Policy", link: "https://www.uflexltd.com/pdf/Policies/Uflex-RELATED-PARTY-TRANSACTIONS-POLICY.pdf" },
   {
     text: "Environment, Health and Safety (EHS) Policy",
-    link: "#",
+    link: "https://www.uflexltd.com/pdf/Policies/Uflex-ehspolicy.pdf",
   },
   {
     text: "Code of Conduct – Insider Trading 2015",
-    link: "#",
+    link: "https://www.uflexltd.com/pdf/Policies/Uflex-code-of-insider-trading-regulation-2015.pdf",
   },
   {
     text: "Terms and Conditions of Appointment of Independent Directors",
-    link: "#",
+    link: "https://www.uflexltd.com/pdf/Policies/UFlex-terms-conditions-of-appointment-of-independent-directors.pdf",
   },
   {
     text: "Criteria For Making Payment To Non-Executive Directors",
-    link: "#",
+    link: "https://www.uflexltd.com/pdf/Policies/Uflex-criteria-for-making-payment-to-non-executive-directors.pdf",
   },
   {
     text: "Policy to Determine Material Events or Information",
-    link: "#",
+    link: "https://www.uflexltd.com/pdf/Policies/Uflex-policy-to-determine-material-events-or-information.pdf",
   },
   {
     text: "Policy on Preservation of Documents",
-    link: "#",
+    link: "https://www.uflexltd.com/pdf/Policies/Uflex-policy-on-preservation-of-documents.pdf",
   },
   {
     text:
       "Code of Practices and Procedures for Fair Disclosure of Unpublished Price Sensitive Information",
-    link: "#",
+    link: "https://www.uflexltd.com/pdf/Policies/Uflex-Fair-Disclosure-Code.pdf",
   },
   {
     text: "Archival Policy",
-    link: "#",
+    link: "https://www.uflexltd.com/pdf/Policies/Uflex-Archival-Policy.pdf",
   },
 ];
 
 const familiarizationPrograms: PolicyItem[] = [
-  { text: "Familiarization Programme - 2024-2025", link: "#" },
-  { text: "Familiarization Programme - 2023-2024", link: "#" },
-  { text: "Familiarization Programme - 2022-2023", link: "#" },
-  { text: "Familiarization Programme - 2021-2022", link: "#" },
-  { text: "Familiarization Programme - 2020-2021", link: "#" },
-  { text: "Familiarization Programme - 2019-2020", link: "#" },
-  { text: "Familiarization Programme - 2018-2019", link: "#" },
-  { text: "Familiarization Programme - 2017-2018", link: "#" },
-  { text: "Familiarization Programme - 2016-2017", link: "#" },
+  { text: "Familiarization Programme - 2024-2025", link: "https://www.uflexltd.com/pdf/Policies/UFlex_FP-Independent-Directors_24-25.pdf" },
+  { text: "Familiarization Programme - 2023-2024", link: "https://www.uflexltd.com/pdf/Policies/UFlex_FP-Independent-Directors_23-24.pdf" },
+  { text: "Familiarization Programme - 2022-2023", link: "https://www.uflexltd.com/pdf/Policies/UFlex_FP-Independent-Directors_22-23.pdf" },
+  { text: "Familiarization Programme - 2021-2022", link: "https://www.uflexltd.com/pdf/Policies/UFlex_FP-Independent-Directors_21-22.pdf" },
+  { text: "Familiarization Programme - 2020-2021", link: "https://www.uflexltd.com/pdf/Policies/UFlex_FP-Independent-Directors_20-21.pdf" },
+  { text: "Familiarization Programme - 2019-2020", link: "https://www.uflexltd.com/pdf/Policies/Uflex-FP-Independent-Directors-19-20.pdf" },
+  { text: "Familiarization Programme - 2018-2019", link: "https://www.uflexltd.com/pdf/Policies/Uflex-FP-Independent-Directors-18-19.pdf" },
+  { text: "Familiarization Programme - 2017-2018", link: "https://www.uflexltd.com/pdf/Policies/Uflex-FP-Independent-Directors-17-18.pdf" },
+  { text: "Familiarization Programme - 2016-2017", link: "https://www.uflexltd.com/pdf/Policies/Uflex-FP-Independent-Directors-16-17.pdf" },
   {
     text: "Familiarization Programme for Independent Directors",
-    link: "#",
+    link: "https://www.uflexltd.com/pdf/Policies/Uflex-familiarization-program-for-ids.pdf",
   },
 ];
 
