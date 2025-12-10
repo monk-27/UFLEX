@@ -427,7 +427,7 @@ export default function SustainabilityShowcase() {
   const colHeightClass = "h-[82vh]";
 
   return (
-    <section ref={sectionRef} className="bg-[#E6E7E7] mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 lg:py-20">
+    <section ref={sectionRef} className="bg-[#E6E7E7] mx-auto w-full max-w-7xl px-4 py-12 sm:px-4 lg:py-20">
       {/* Desktop layout */}
       <div className="hidden sm:flex gap-8 items-start">
         {/* Left panel: fixed height, internal scroll but scrollbar hidden visually */}

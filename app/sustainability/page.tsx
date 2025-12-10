@@ -66,7 +66,7 @@ export default function Page() {
 
   const renderRow = (item: SimpleLink, idx: number) => (
     <Link key={idx} href={item.href} target="_blank" className="block">
-      <div className="w-full bg-[#F8F8F8] px-6 py-3 text-[14px] text-[#000000] border-t border-white">
+      <div className="text-center w-full bg-[#F8F8F8] px-6 py-3 text-[14px] text-[#000000] border-t border-white">
         {item.href}
       </div>
     </Link>
@@ -116,7 +116,7 @@ export default function Page() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-[32px] font-medium leading-tight text-white md:text-[48px] lg:text-[56px] lato-500"
+            className="text-[32px] lato-500 leading-tight text-white md:text-[48px] lg:text-[56px] lato-500"
           >
             Sustainability
           </motion.h1>
@@ -190,10 +190,10 @@ export default function Page() {
         UFlex's Commitment to a Circular Economy
       </motion.h3>
       <MainSustainabilityVisionComp />
-      <SustainabilityReportsCarousel />
+      {/* <SustainabilityReportsCarousel /> */}
 
 
-<section className="max-w-6xl mx-auto px-4 sm:px-12 md:px-20 lg:px-28 pt-10 pb-12">
+<section className="max-w-7xl mx-auto px-4 sm:px-12 md:px-20 lg:px-6 pt-10 pb-12">
         {/* Tab bar */}
         <div className="flex w-fit border-b border-[#d6d6d6] mb-6">
           {susTabs.map((tab) => {
