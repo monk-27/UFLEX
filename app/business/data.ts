@@ -253,7 +253,7 @@ export const businesses: BusinessConfig[] = [
         name: "Mr. Jagmohan Mongia ",
         role: "President, Packaging Films business (India)",
         summary:
-            "With four decades of industry experience, Jagmohan Mongia leads the Films business – India operations, UFlex. A commerce graduates with a diploma in sales and marketing from Bhartiya Vidya Bhawan, h...",
+            "With four decades of industry experience, Jagmohan Mongia leads the Films business – India operations, UFlex. A commerce graduates with a diploma in sales and marketing from Bhartiya Vidya Bhawan, he has worked with leading companies like Berger Paints and Garware before joining UFlex, where he has been a key contributor for over 25 years. Jagmohan brings deep expertise in sales, marketing, and business development, with a strong track record of building sustainable, growth-driven operations. Under his leadership, the films business in India has consistently delivered strong revenue growth and increased market share.",
         cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
     },
 
@@ -262,7 +262,7 @@ export const businesses: BusinessConfig[] = [
         name: "Mr. Sanjay Tiku",
         role: "Business Head, Packaging Films Business (Flex Films Egypt)",
         summary:
-            "A seasoned professional with nearly three decades of experience in the Flexible Packaging industry, specializing in operations, marketing, finance, business strategy, and people management. A CMA from...",
+            "A seasoned professional with nearly three decades of experience in the Flexible Packaging industry, specializing in operations, marketing, finance, business strategy, and people management. A CMA from the Institute of Cost Accountants of India and a science graduate from the University of Kashmir, he has played a key role in UFlex’s global expansion. Sanjay was instrumental in setting up Flex Middle East FZE, UFlex’s first overseas greenfield project, and has successfully led the initiative for over 14 years.",
         cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
     },
     {
@@ -270,7 +270,7 @@ export const businesses: BusinessConfig[] = [
         name: "Mr. Sundeep Saksena ",
         role: "Business Head, Packaging Films Business (Flex Films Poland)",
         summary:
-            "With close to three decades of experience, including seven years of international exposure, across packaging, telecom, consumer durables, and FMCG sectors, Sundeep Saksena has consistently driven busi...",
+            "With close to three decades of experience, including seven years of international exposure, across packaging, telecom, consumer durables, and FMCG sectors, Sundeep Saksena has consistently driven business growth, turnarounds, and strategic expansion. His expertise spans profit-centre operations, new business setups, and market leadership initiatives. An alumnus of REC Srinagar, IIT Mumbai (M.Tech), and Podar Institute of Management (MBA – Marketing), he blends technical excellence with strategic foresight. He currently heads Flex Films Europa Sp. Z.o.o., Poland, spearheading operations and business development across Europe.",
         cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
     },
      {
@@ -278,7 +278,7 @@ export const businesses: BusinessConfig[] = [
         name: "Mr. Junaid Iqbal Khan  ",
         role: "General Director, Packaging Films Business (Flex Films CIS)",
         summary:
-            "With nearly two decades at UFlex, Junaid Khan has played a pivotal role in expanding the company’s global footprint across the packaging films business. In 2019, he was appointed as the General Dire...",
+            "With nearly two decades at UFlex, Junaid Khan has played a pivotal role in expanding the company’s global footprint across the packaging films business. In 2019, he was appointed as the General Director of Flex Films CIS, where he has since led significant growth and market consolidation. Junaid has been instrumental in developing the CIS market, leading to the successful setup of UFlex’s greenfield project in the Moscow region. A production engineer and post-graduate in machine building technology from Kursk State Technical University, he continues to drive operational excellence, market expansion, and a culture of customer-centricity across global markets.",
         cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
     },
     {
@@ -288,7 +288,7 @@ export const businesses: BusinessConfig[] = [
           role:
             "Business Head, Packaging Films Business (Flex Films UAE)",
           summary:
-            "With more than three decades of experience in the flexible packaging industry, Avinash Kumar has successfully led key functions across marketing, production, finance, commercial operations, and genera...",
+            "With more than three decades of experience in the flexible packaging industry, Avinash Kumar has successfully led key functions across marketing, production, finance, commercial operations, and general management. His global leadership experience spans Africa, Europe, and the Middle East, where he served as CEO of a packaging company and held senior roles in multiple markets. A Master’s in Science from St. Andrews College, Avinash is known for his innovative thinking and ability to drive strategic growth and operational excellence. He currently serves as business head of Flex Middle East FZE, oversees marketing for Africa, and holds directorships at Flex P. Films (Egypt) S.A.E. and Flex Films Rus LLC.",
           cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
         },
         {
@@ -297,7 +297,7 @@ export const businesses: BusinessConfig[] = [
           name: "Mr. Vijay Yadav",
           role: "Business Head, Packaging Films Business (Flex Films USA)",
           summary:
-            "With three decades of global experience, Vijay Yadav has successfully led roles in strategy, operations, R&D, and organizational transformation, having worked with renowned companies like SEKISUI (USA...",
+            "With three decades of global experience, Vijay Yadav has successfully led roles in strategy, operations, R&D, and organizational transformation, having worked with renowned companies like SEKISUI (USA), Arjobex, and British Petroleum. He holds a BSc (Hons) in polymer technology from Brunel University, UK, an MBA from East London Business School, and has completed executive programs at Wharton, Stanford, and Harvard. He joined the organization in 2016, contributing significantly to its strategic growth and innovation.",
           cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
         },
         {
@@ -306,7 +306,7 @@ export const businesses: BusinessConfig[] = [
           name: "Mr. Suhas More",
           role: "Business Head - Flex Films, Nigeria",
           summary:
-            "A seasoned leader with more than two decades of experience. He drives growth in the Packaging Films Business and leads Flex Films' expansion in Russia, positioning UFlex as a preferred supplier in the...",
+            "A seasoned leader with more than two decades of experience. He drives growth in the Packaging Films Business and leads Flex Films' expansion in Russia, positioning UFlex as a preferred supplier in the region and strengthening global operations and customer partnerships.",
           cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
         },
         {
@@ -314,7 +314,7 @@ export const businesses: BusinessConfig[] = [
           name: " Mr. Ajay Gupta",
           role: "Sr. Vice President - Flex Films, Hungary",
           summary:
-            "Mr. Ajay Gupta brings over three decades of experience in the flexible packaging industry, with expertise spanning manufacturing, R&D, and business development. Currently based in Hungary, he plays a ... His previous roles incl...",
+            "Mr. Ajay Gupta brings over three decades of experience in the flexible packaging industry, with expertise spanning manufacturing, R&D, and business development. Currently based in Hungary, he plays a key role in leading UFlex’s presence in the PP films segment (BOPP and CPP) across Europe and the USA. Known for his steady focus on product development, particularly in barrier and value-added films, he is committed to driving continuous improvement and operational efficiency across the business.",
           cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
         },
         
@@ -577,7 +577,7 @@ export const businesses: BusinessConfig[] = [
           name: "Mr. Ashwani K. Sharma",
           role: "President and CEO, Aseptic packaging business",
           summary:
-            "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum has been the indus...",
+            "Mr. Ashwani Sharma brings with him almost three decades of rich and diverse experience in leading large organizations across the globe. He has held several senior leadership roles in the pulp, paper, and packaging industries, combining strategic vision with deep operational expertise.Prior to joining UFlex, Mr. Sharma served as Managing Director at Asia Pulp & Paper (APP), a USD 25 billion company headquartered in Jakarta. His global exposure includes a tenure in Europe as CEO and Chairman of the Board at Horizon Pulp & Paper, and leadership of APP’s business in the United States as Business Head for both the north and south regions. In India, he held key leadership roles as CEO and Senior President at Century Pulp & Paper (BK Birla Group) and Ballarpur Industries.At UFlex, Mr. Sharma currently heads the Aseptic Packaging Business under the brand ‘Asepto’—India’s first and only manufacturer in the aseptic packaging segment. Under his leadership, Asepto continues to drive innovation and excellence in this fast-growing market.Mr. Sharma holds an MBA and is a graduate in Mathematics and Chemistry, bringing a strong academic foundation to his strategic and operational endeavors.",
           cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
         },
       ],
@@ -653,7 +653,7 @@ export const businesses: BusinessConfig[] = [
         name: "Mr. Jeevaraj Gopal Pillai",
         role: "Whole Time Director",
         summary:
-          "Mr. Jeevaraj Pillai brings over 35 years of experience in packaging and packaging technology, with expertise in printing cylinders, packaging films, and advanced flexible packaging material conversion. As Director-Sustainability, he leads the development and implementation of the company's ESG strategy, along with developing sustainable products and solutions. He has been serving on the board of UFlex Limited as a whole-time director since November 14, 2023. His extensive background is complemented by qualifications in mechanical engineering and an MBA.",
+          "Mr. Jeevaraj Pillai brings close to four decades of experience in packaging and packaging technology, with expertise in printing cylinders, packaging films, and advanced flexible packaging material conversion. As Director-Sustainability, he leads the development and implementation of the company’s ESG strategy, along with the development of sustainable products and solutions. He has been serving on the board of UFlex Limited as a whole-time director since November 14, 2023. His extensive background in the industry is complemented by his qualifications in mechanical engineering and an MBA.",
         cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
       },
     //     {
