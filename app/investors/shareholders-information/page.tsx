@@ -98,7 +98,7 @@ const communicationList = [
     { text: "02 Jul 2022: Communication for Deduction of Tax on Dividend For FY 2021-2022", link: "https://www.uflexltd.com/pdf/SC/2022/UFlex_Communication_TDS_FY21-22.pdf" },
     { text: "23 Feb 2022: Newspaper Publication", link: "https://www.uflexltd.com/pdf/SC/2022/UFLEX_NSEBSE_ADVERTISEMENT_23FEB2022.pdf" },
     { text: "23 Feb 2022: Newspaper Publication", link: "https://www.uflexltd.com/pdf/SC/2022/UFLEX_NSEBSE_ADVERTISEMENT_23FEB2022.pdf" },
-    { text: "29 Dec 2021: Mandatory furnishing of PAN, KYC details and Nomination by holders of physical securitiesUFlex Shareholders Communication", link: "https://www.uflexltd.com/pdf/SC/2021/UFlex_Mandotry_KYC_Letter.pdf" },
+    { text: "29 Dec 2021: Mandatory furnishing of PAN, KYC details and Nomination by   holders of physical securitiesUFlex Shareholders Communication", link: "https://www.uflexltd.com/pdf/SC/2021/UFlex_Mandotry_KYC_Letter.pdf" },
     { text: "01 Oct 2021: Transcript of 32nd Annual General Meeting", link: "https://www.uflexltd.com/pdf/SC/2021/UFLEX_32nd_AGM_Transcript.pdf" },
     { text: "04 Sep 2021: Newspaper Publication", link: "https://www.uflexltd.com/pdf/SC/2021/UFLEX_BSENSE_AGMADVT_04SEP2021.pdf" },
     { text: "02 Sep 2021: Notice of 32nd Annual General Meeting", link: "https://www.uflexltd.com/pdf/SC/2021/UFLEX_Notice_32nd_AGM_2021.pdf" },

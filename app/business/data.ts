@@ -148,31 +148,31 @@ export const businesses: BusinessConfig[] = [
       subitems: [
         {
           id: "bottle-grade",
-          title: "Bottle Grade",
+          title: "Bottle Grade PET",
           image: "/images/bottlegrade.png",
           description:
             "High-performance polyester films for diverse packaging applications.",
         },
         {
           id: "film-grade",
-          title: "Film Grade",
+          title: "Film Grade Polyester",
           image: "/images/film.png",
           description:
             "Biaxially oriented polypropylene films for flexible packaging.",
         },
         {
           id: "rpet",
-          title: "rPET",
+          title: "Recycled PET",
           image: "/images/rpet.png",
           description:
             "Cast polypropylene films for specialty and general packaging.",
         },
-        {
-          id: "Single-Pellet Soultion ",
-          title: "Single-Pellet Soultion ",
-          image: "/images/single-pellet.png",
-          description: "High-barrier metallized films for enhanced shelf life.",
-        },
+        // {
+        //   id: "Single-Pellet Soultion ",
+        //   title: "Single-Pellet Soultion ",
+        //   image: "/images/single-pellet.png",
+        //   description: "High-barrier metallized films for enhanced shelf life.",
+        // },
       ],
     },
     innovations: {

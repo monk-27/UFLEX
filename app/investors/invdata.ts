@@ -37,7 +37,7 @@ export const investorCards = [
   },
   {
     id: "csr",
-    title: "CSR",
+    title: "CSR Annual Action Plan",
     image: "/images/investors/7.png",
     href: "/investors/csr",
   },
