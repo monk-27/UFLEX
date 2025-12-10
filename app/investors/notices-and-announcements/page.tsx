@@ -65,6 +65,7 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { Calendar } from "lucide-react";
+import { title } from "process";
 
 /* -------------------------- Tabs & data types -------------------------- */
 
@@ -96,6 +97,22 @@ type DocItem = {
 type AnnouncementGroup = {
     date: string;
     items: DocItem[];
+};
+
+export type GrievanceItem = {
+    title?: string;
+    address?: string;
+    contactPerson?: string;
+    phone?: string;
+    fax?: string;
+    email?: string;
+
+    // Second block
+    info?: string;
+    name?: string;
+    phone2?: string;
+    fax2?: string;
+    email2?: string;
 };
 /* ----------------------------- Tab metadata ---------------------------- */
 
@@ -157,8 +174,8 @@ const tabs: Tab[] = [
 
 
 
-const tabItems: Record<TabId, AnnouncementGroup[]> = {
-    announcements: [
+const tabItems: any = {
+    "announcements": [
         {
             date: "08/12/2025",
             items: [
@@ -681,19 +698,285 @@ const tabItems: Record<TabId, AnnouncementGroup[]> = {
     ],
 
     "shareholding-pattern": [
-
+        { text: "SHAREHOLDING PATTERN AS ON 30.09.2025", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30SEP2025.pdf" },
+        { text: "SHAREHOLDING PATTERN AS ON 30.06.2025", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30JUN2025.pdf" },
+        { text: "SHAREHOLDING PATTERN AS ON 31.03.2025", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_31MAR2025.pdf" },
+        { text: "SHAREHOLDING PATTERN AS ON 31.12.2024", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_31DEC2024.pdf" },
+        { text: "SHAREHOLDING PATTERN AS ON 30.09.2024", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30SEP2024.pdf" },
+        { text: "SHAREHOLDING PATTERN AS ON 30.06.2024", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30JUN2024.pdf" },
+        { text: "SHAREHOLDING PATTERN AS ON 31.03.2024", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_31MAR2024.pdf" },
+        { text: "SHAREHOLDING PATTERN AS ON 31.12.2023", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_31DEC2023.pdf" },
+        { text: "SHAREHOLDING PATTERN AS ON 30.09.2023", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30SEP2023.pdf" },
+        { text: "SHAREHOLDING PATTERN AS ON 30.06.2023", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30JUN2023.pdf" },
+        { text: "SHAREHOLDING PATTERN AS ON 31.03.2023", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_31MAR2023.pdf" },
+        { text: "SHAREHOLDING PATTERN AS ON 31.12.2022", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_31DEC2022.pdf" },
+        { text: "SHAREHOLDING PATTERN AS ON 30.09.2022", link: "https://www.uflexltd.com/pdf/SHP/UFLEX-SHP-30SEP2022.pdf" },
+        { text: "SHAREHOLDING PATTERN AS ON 30.06.2022", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30JUN2022.pdf" },
+        { text: "SHAREHOLDING PATTERN AS ON 31.03.2022", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_31MAR2022.pdf" },
     ],
-    "unpaid-dividend": [],
-    "transfer-to-iepF": [],
-    registrar: [],
-    "governance-structure": [],
-    "grievance-redressal": [],
-    "kmp-contacts": [],
-    "credit-ratings": [],
-    "annual-return": [],
-    "business-responsibility": [],
-    "secretarial-compliance": [],
-    "memorandum-articles": [],
+    "unpaid-dividend": [
+        {
+            text: "Unpaid/unclaimed Status as on 30.09.2025 for Year 2024-2025",
+            link: "https://www.uflexltd.com/pdf/Unclaimed-Dividend/UF-UD-30SEP2025.pdf",
+        },
+        {
+            text: "Unclaimed Dividend Details 2025",
+            link: "https://www.uflexltd.com/pdf/Unclaimed-Dividend/UF-Unclaimed-Dividend-FY-2025.pdf",
+        },
+        {
+            text: "Unclaimed Dividend Details 2024",
+            link: "https://www.uflexltd.com/pdf/Unclaimed-Dividend/UF-Unclaimed-Dividend-FY-2024.pdf",
+        },
+        {
+            text: "Unpaid/unclaimed Status as on 22.11.2024 for Year 2023-2024",
+            link: "https://www.uflexltd.com/pdf/Unclaimed-Dividend/UF-Unclaimed-Dividend.pdf",
+        },
+    ],
+    "transfer-to-iepF": [
+        {
+            text: "PARTICULARS OF UNCLAIMED SHARES TRANSFERRED TO IEPF 2025",
+            link: "https://www.uflexltd.com/pdf/IEPF/UF-PARTICULARS-OF-UNCLAIMED-SHARES-TRANSFERRED-TO-IEPF-2025.pdf"
+        },
+        {
+            text: "PARTICULARS OF UNCLAIMED SHARES TRANSFERRED TO IEPF 2024",
+            link: "https://www.uflexltd.com/pdf/IEPF/UF-PARTICULARS-OF-UNCLAIMED-SHARES-TRANSFERRED-TO-IEPF-2024.pdf"
+        },
+        {
+            text: "PARTICULARS OF UNCLAIMED SHARES TRANSFERRED TO IEPF 2023",
+            link: "https://www.uflexltd.com/pdf/IEPF/UF-PARTICULARS-OF-UNCLAIMED-SHARES-TRANSFERRED-TO-IEPF-2023.pdf"
+        },
+        {
+            text: "PARTICULARS OF UNCLAIMED SHARES TRANSFERRED TO IEPF 2022",
+            link: "https://www.uflexltd.com/pdf/IEPF/UF-PARTICULARS-OF-UNCLAIMED-SHARES-TRANSFERRED-TO-IEPF-2022.pdf"
+        },
+        {
+            text: "PARTICULARS OF UNCLAIMED SHARES TRANSFERRED TO IEPF 2021",
+            link: "https://www.uflexltd.com/pdf/IEPF/UF-PARTICULARS-OF-UNCLAIMED-SHARES-TRANSFERRED-TO-IEPF-2021.pdf"
+        },
+        {
+            text: "PUBLICATION OF NOTICE TRANSFER OF EQUITY SHARES TO IEPF 2022",
+            link: "https://www.uflexltd.com/pdf/IEPF/UFlex_Advt_FE_JS_17May2022.pdf"
+        },
+        {
+            text: "PUBLICATION OF NOTICE TRANSFER OF EQUITY SHARES TO IEPF 2022",
+            link: "https://www.uflexltd.com/pdf/IEPF/UFlex_Advt_FE_JS_17May2022.pdf"
+        },
+        {
+            text: "PUBLICATION OF NOTICE TRANSFER OF EQUITY SHARES TO IEPF 2021",
+            link: "https://www.uflexltd.com/pdf/IEPF/Uflex-Iepf-Advertisement-2021.pdf"
+        },
+        {
+            text: "PARTICULARS OF UNCLAIMED SHARES TRANSFERRED TO IEPF 2020",
+            link: "https://www.uflexltd.com/pdf/IEPF/UF-PARTICULARS-OF-UNCLAIMED-SHARES-TRANSFERRED-TO-IEPF-2020.pdf"
+        },
+        {
+            text: "PUBLICATION OF NOTICE TRANSFER OF EQUITY SHARES TO IEPF 2019",
+            link: "https://www.uflexltd.com/pdf/IEPF/Uflex-Iepf-Advertisement-2019.pdf"
+        },
+        {
+            text: "PARTICULARS OF UNCLAIMED SHARES TRANSFERRED TO IEPF 2019",
+            link: "https://www.uflexltd.com/pdf/IEPF/Unclaimed-Shares-Transferred-to-IEPF-2019.pdf"
+        },
+        {
+            text: "PARTICULARS OF UNCLAIMED SHARES TRANSFERRED TO IEPF 2018",
+            link: "https://www.uflexltd.com/pdf/IEPF/Unclaimed-Shares-Transferred-to-IEPF-2018.pdf"
+        },
+        {
+            text: "PARTICULARS OF UNCLAIMED SHARES TRANSFERRED TO IEPF 2017",
+            link: "https://www.uflexltd.com/pdf/IEPF/Unclaimed-Shares-Transferred-to-IEPF-2017.pdf"
+        },
+        {
+            text: "APPOINTMENT OF NODAL OFFICER",
+            link: "https://www.uflexltd.com/pdf/IEPF/UFLEX-Nodal-Officer-2023.pdf"
+        },
+        {
+            text: "Investor Education and Protection Fund Authority (Accounting Audit, Transfer, Transfer and Refund) Rules, 2016",
+            link: "https://www.uflexltd.com/pdf/IEPF/Investor-Education-and-Protection-Fund-Authority.pdf"
+        },
+        {
+            text: "Details of Equity Share liable for transfer to the IEPF Authority",
+            link: "https://www.uflexltd.com/pdf/IEPF/Details-of-Equity-Share-liable-for-transfer-to-the-IEPF-Authority.pdf"
+        }
+    ],
+
+    "registrar": [
+        {
+            text: "Frequently asked questions (FAQ) - Process for Dematerialization",
+            link: "https://www.uflexltd.com/pdf/Uflex-FAQ-Dematerialisation-of-Shares.pdf"
+        }
+    ],
+    "governance-structure": [
+        {
+            text: "GOVERNANCE STRUCTURE",
+            link: "https://www.uflexltd.com/pdf/Governance_Structure_May2023.pdf"
+        }
+    ],
+    "grievance-redressal": [
+        {
+            title: "M/S BEETAL FINANCIAL & COMPUTER SERVICES (P) LIMITED",
+            address: "Beetal House, 3rd Floor, 99 Madangir, Behind Local Shopping Centre, Near Dada Harsukhdas Mandir, New Delhi - 110062",
+            contactPerson: "Mr. Punit Mittal, General Manager",
+            phone: "+91 - 11 - 2996 1281 - 83",
+            fax: "+91 - 11 - 2996 1284",
+            email: "beetal@beetalfinancial.com"
+        },
+        {
+            info: "For any unresolved matters or further queries/clarification, investors may contact:",
+            name: "Mr. Kapil Kumar, General Manager - Secretarial",
+            phone: "+91 - 120 - 2442903",
+            fax: "+91 - 120 - 4012345",
+            email: "kapil.kumar1@uflexltd.com"
+        }
+    ],
+
+    "kmp-contacts": [
+        {
+            text: "KEY MANAGERIAL PERSONNEL(S) FOR MAKING DISCLOSURES OF EVENTS OR INFORMATION TO STOCK EXCHANGES",
+            link: "https://www.uflexltd.com/pdf/contact-details-of-kmps.pdf"
+        }
+    ],
+    "credit-ratings": [
+        {
+            text: "CRISIL RATINGS – REAFFIRMED",
+            link: "https://www.uflexltd.com/pdf/CreditRatings/2025/SIGNED_UFLEX_NSEBSE_CRISILCR_28NOV25.pdf"
+        },
+        {
+            text: "CRISIL RATINGS – REAFFIRMED",
+            link: "https://www.uflexltd.com/pdf/CreditRatings/2025/SIGNED_UFLEX_NSEBSE_CRISILRATING_08MAY25.pdf"
+        },
+        {
+            text: "CRISIL RATINGS – REAFFIRMED",
+            link: "https://www.uflexltd.com/pdf/CreditRatings/2025/SIGNED_UFLEX_NSEBSE_CRISILRATING_02APR25.pdf"
+        },
+        {
+            text: "INDIA RATINGS & RESEARCH (IND-RA) RATINGS – AFFIRMED",
+            link: "https://www.uflexltd.com/pdf/CreditRatings/2024/SIGNED_UFLENSEBSE_CREDITRAGINGS_19JUN24.pdf"
+        },
+        {
+            text: "CRISIL RATINGS – REAFFIRMED",
+            link: "https://www.uflexltd.com/pdf/CreditRatings/2024/SIGNED_UFLEX_NSEBE_CREDITRATING_JAN24.pdf"
+        },
+        {
+            text: "CRISIL RATINGS – REAFFIRMED",
+            link: "https://www.uflexltd.com/pdf/CreditRatings/2023/SIGNED_UFLEX_CRISIL_RATING_24AUG23.pdf"
+        },
+        {
+            text: "CRISIL RATINGS – REAFFIRMED",
+            link: "https://www.uflexltd.com/pdf/CreditRatings/2023/SIGNED_UFLEX_CREDITRATING_04JUL23.pdf"
+        },
+        {
+            text: "INDIA RATINGS & RESEARCH (IND-RA) RATINGS – AFFIRMED",
+            link: "https://www.uflexltd.com/pdf/CreditRatings/2023/SIGNED_UFLEX_NSENSE_24MAR2023.pdf"
+        },
+        {
+            text: "INDIA RATINGS & RESEARCH (IND-RA) RATINGS – AFFIRMED",
+            link: "https://www.uflexltd.com/pdf/CreditRatings/2023/SIGNED_UFLEX_CRNSEBSE_31JAN23.pdf"
+        }
+    ],
+
+    "annual-return": [
+        {
+            text: "FINANCIAL YEAR ENDED 31ST MARCH, 2025",
+            link: "https://www.uflexltd.com/pdf/Extract-Annual-Return/UFLEX-Annual-Return-2024-2025.pdf"
+        },
+        {
+            text: "FINANCIAL YEAR ENDED 31ST MARCH, 2024",
+            link: "https://www.uflexltd.com/pdf/Extract-Annual-Return/UFLEX-Annual-Return-2023-2024.pdf"
+        },
+        {
+            text: "FINANCIAL YEAR ENDED 31ST MARCH, 2023",
+            link: "https://www.uflexltd.com/pdf/Extract-Annual-Return/UFLEX-Annual-Return-2022-2023.pdf"
+        },
+        {
+            text: "FINANCIAL YEAR ENDED 31ST MARCH, 2022",
+            link: "https://www.uflexltd.com/pdf/Extract-Annual-Return/UFLEX-Annual-Return-2021-2022.pdf"
+        },
+        {
+            text: "FINANCIAL YEAR ENDED 31ST MARCH, 2021",
+            link: "https://www.uflexltd.com/pdf/Extract-Annual-Return/UFLEX-Annual-Return-2020-2021.pdf"
+        },
+        {
+            text: "FINANCIAL YEAR ENDED 31ST MARCH, 2020",
+            link: "https://www.uflexltd.com/pdf/Extract-Annual-Return/UFLEX-Extract-of-Annual-Return-2019-2020.pdf"
+        },
+        {
+            text: "FINANCIAL YEAR ENDED 31ST MARCH, 2019",
+            link: "https://www.uflexltd.com/pdf/Extract-Annual-Return/UFLEX-Extract-of-Annual-Return-2018-2019.pdf"
+        },
+        {
+            text: "FINANCIAL YEAR ENDED 31ST MARCH, 2018",
+            link: "https://www.uflexltd.com/pdf/Extract-Annual-Return/UFLEX-Extract-of-Annual-Return-2017-2018.pdf"
+        }
+    ],
+
+    "business-responsibility": [
+        {
+            text: "Business Responsibility & Sustainability Report (BRSR) for the Year 2024-25",
+            link: "https://www.uflexltd.com/pdf/BRR/UFLEX-BRSR-2024-2025.pdf"
+        },
+        {
+            text: "Limited Assurance Statement on Business Responsibility & Sustainability Report (BRSR) FY 2023-24",
+            link: "https://www.uflexltd.com/pdf/BRR/UFLEX_BRSR_AS_FY2023-24.pdf"
+        },
+        {
+            text: "Business Responsibility & Sustainability Report (BRSR) for the Year 2023-24",
+            link: "https://www.uflexltd.com/pdf/BRR/UFLEX-BRSR-2023-2024.pdf"
+        },
+        {
+            text: "Business Responsibility & Sustainability Report (BRSR) for the Year 2022-23",
+            link: "https://www.uflexltd.com/pdf/BRR/UFLEX-BRSR-2022-2023.pdf"
+        },
+        {
+            text: "Business Responsibility Report for the Year 2021-22",
+            link: "https://www.uflexltd.com/pdf/BRR/UFLEX-BRR-2021-2022.pdf"
+        },
+        {
+            text: "Business Responsibility Report for the Year 2020-21",
+            link: "https://www.uflexltd.com/pdf/BRR/UFLEX-BRR-2020-2021.pdf"
+        },
+        {
+            text: "Business Responsibility Report for the Year 2019-20",
+            link: "https://www.uflexltd.com/pdf/BRR/UFLEX-BRR-2019-2020.pdf"
+        }
+    ],
+
+    "secretarial-compliance": [
+        {
+            text: "FINANCIAL YEAR ENDED 31ST MARCH, 2025",
+            link: "https://www.uflexltd.com/pdf/ASCR/UFLEX_SCR_2025.pdf"
+        },
+        {
+            text: "FINANCIAL YEAR ENDED 31ST MARCH, 2024",
+            link: "https://www.uflexltd.com/pdf/ASCR/UFLEX_SCR_2024.pdf"
+        },
+        {
+            text: "FINANCIAL YEAR ENDED 31ST MARCH, 2023",
+            link: "https://www.uflexltd.com/pdf/ASCR/UFLEX_SCR_2023.pdf"
+        },
+        {
+            text: "FINANCIAL YEAR ENDED 31ST MARCH, 2022",
+            link: "https://www.uflexltd.com/pdf/ASCR/UFLEX_SCR_2022.pdf"
+        },
+        {
+            text: "FINANCIAL YEAR ENDED 31ST MARCH, 2021",
+            link: "https://www.uflexltd.com/pdf/ASCR/UFLEX_SCR_2021.pdf"
+        },
+        {
+            text: "FINANCIAL YEAR ENDED 31ST MARCH, 2020",
+            link: "https://www.uflexltd.com/pdf/ASCR/UFLEX_SCR_2020.pdf"
+        },
+        {
+            text: "FINANCIAL YEAR ENDED 31ST MARCH, 2019",
+            link: "https://www.uflexltd.com/pdf/ASCR/UFLEX_SCR_2019.pdf"
+        }
+    ],
+
+    "memorandum-articles": [
+        {
+            text: "Memorandum & Articles of Association",
+            link: "https://www.uflexltd.com/pdf/IR/UFLEX_MOA_AOA.pdf"
+        }
+    ],
 };
 
 /* --------------------------------- Page -------------------------------- */
@@ -702,8 +985,18 @@ export default function Page() {
     const [activeTabId, setActiveTabId] = useState<TabId>("announcements");
 
     const activeTab = tabs.find((t) => t.id === activeTabId)!;
-    const items = tabItems[activeTabId] || [];
-    const groups = tabItems[activeTabId] || [];
+    // const items = tabItems[activeTabId] || [];
+    // const groups = tabItems[activeTabId] || [];
+    const rawData = tabItems[activeTabId] || [];
+
+const isAnnouncements = activeTabId === "announcements";
+const isGrievance = activeTabId === "grievance-redressal";
+
+const groups = isAnnouncements ? (rawData as AnnouncementGroup[]) : [];
+const flatItems =
+  !isAnnouncements && !isGrievance ? (rawData as DocItem[]) : [];
+
+
 
     return (
         <div>
@@ -803,58 +1096,125 @@ export default function Page() {
                     </div>
 
                     {/* List */}
-                    <div className="mt-1">
-                        {groups.length === 0 ? (
-                            <div className="w-full bg-[#F7F7F7] py-6 px-6 text-center text-[13px] text-gray-500">
-                                Documents will be listed here.
-                            </div>
-                        ) : (
-                            groups.map((group) => (
-                                <div
-                                    key={group.date}
-                                    className="bg-gray-200  mb-1"  // << gray block + spacing
-                                >
-                                    {/* Date row */}
-                                    <div className="flex items-center gap-2 text-[#CF3438] font-semibold text-[15px] pt-4 px-4">
-                                        <Calendar />
-                                        <span>{group.date}</span>
-                                    </div>
+                  <div className="mt-1">
+  {isGrievance ? (
+    /* ---------- GRIEVANCE SPECIAL UI ---------- */
+    <div className="bg-white px-6 py-6 leading-relaxed text-[15px] lato-400">
+      {/* First Block */}
+      <h2 className="text-[#117ABA] text-lg lato-700 mb-2">
+        {tabItems["grievance-redressal"][0].title}
+      </h2>
 
-                                    {/* blue line under date */}
-                                    <div className="mt-1 h-[3px] bg-[#117ABA] mx-4" />
+      <p className="lato-400 text-[16px] text-gray-500"><strong className="lato-500 text-[#000000] text-[16px]">Address:</strong> {tabItems["grievance-redressal"][0].address}</p>
+      <p className="lato-400 text-[16px] text-gray-500"><strong className="lato-500 text-[16px] text-[#000000]">Contact Person:</strong> {tabItems["grievance-redressal"][0].contactPerson}</p>
+      <p className="lato-400 text-[16px] text-gray-500"><strong className="lato-500 text-[16px] text-[#000000]">Phone Nos.:</strong> {tabItems["grievance-redressal"][0].phone}</p>
+      <p className="lato-400 text-[16px] text-gray-500"><strong className="lato-500 text-[16px] text-[#000000]">Fax No.:</strong> {tabItems["grievance-redressal"][0].fax}</p>
+      <p className="lato-400 text-[16px] text-gray-500">
+        <strong className="lato-500 text-[16px] text-[#000000]">Email:</strong>{" "}
+        <a
+          href={`mailto:${tabItems["grievance-redressal"][0].email}`}
+          className="text-[#117ABA]"
+        >
+          {tabItems["grievance-redressal"][0].email}
+        </a>
+      </p>
 
-                                    {/* items under this date */}
-                                    <div className="px-4 pb-4">
-                                        {group.items.map((doc, idx) => (
-                                            <Link key={idx} href={doc.link} target="_blank">
-                                                <div className="flex items-start justify-between border-b border-dashed border-[#CF3438] py-2 bg-white px-2 rounded">
-                                                    {/* left: arrow + text */}
-                                                    <div className="flex items-start gap-2 pr-4">
-                                                        <span className="mt-[2px] text-[#555]">&raquo;</span>
-                                                        <span className="text-[14px] text-black leading-snug">
-                                                            {doc.text}
-                                                        </span>
-                                                    </div>
+      <div className="h-[1px] bg-gray-300 my-6" />
 
-                                                    {/* PDF icon */}
-                                                    <Image
-                                                        src="/images/vector.png"
-                                                        alt="PDF"
-                                                        width={22}
-                                                        height={22}
-                                                        className="shrink-0"
-                                                    />
-                                                </div>
-                                            </Link>
-                                        ))}
-                                    </div>
-                                </div>
-                            ))
-                        )}
-                    </div>
+      {/* Second Block */}
+      <p className="lato-400 text-[16px] text-gray-500">{tabItems["grievance-redressal"][1].info}</p>
+      <p className="lato-400 text-[16px] text-gray-500">
+        <strong className="lato-500 text-[16px] text-[#000000]">{tabItems["grievance-redressal"][1].name}</strong>
+      </p>
+      <p className="lato-400 text-[16px] text-gray-500">
+        <strong className="lato-500 text-[16px] text-[#000000]">Phone Number:</strong>{" "}
+        {tabItems["grievance-redressal"][1].phone}
+      </p>
+      <p className="lato-400 text-[16px] text-gray-500">
+        <strong className="lato-500 text-[16px] text-[#000000]">Fax Number:</strong> {tabItems["grievance-redressal"][1].fax}
+      </p>
+      <p className="lato-400 text-[16px] text-gray-500">
+        <strong className="lato-500 text-[16px] text-[#000000]">Email:</strong>{" "}
+        <a
+          href={`mailto:${tabItems["grievance-redressal"][1].email}`}
+          className="text-[#117ABA]"
+        >
+          {tabItems["grievance-redressal"][1].email}
+        </a>
+      </p>
+    </div>
+  ) : isAnnouncements ? (
+    /* ---------- GROUPED LAYOUT FOR ANNOUNCEMENTS ---------- */
+    groups.length === 0 ? (
+      <div className="w-full bg-[#F7F7F7] py-6 px-6 text-center text-[13px] text-gray-500">
+        Documents will be listed here.
+      </div>
+    ) : (
+      groups.map((group) => (
+        <div key={group.date} className="bg-gray-200 mb-1">
+          <div className="flex items-center gap-2 text-[#CF3438] font-semibold text-[15px] pt-4 px-4">
+            <Calendar />
+            <span>{group.date}</span>
+          </div>
 
+          <div className="mt-1 h-[3px] bg-[#117ABA] mx-4" />
+
+          <div className="px-4 pb-4">
+            {group.items.map((doc, idx) => (
+              <Link key={idx} href={doc.link} target="_blank">
+                <div className="flex items-start justify-between border-b border-dashed border-[#CF3438] py-2 bg-white px-2 rounded">
+                  <div className="flex items-start gap-2 pr-4">
+                    <span className="mt-[0px] text-[#555]">&raquo;</span>
+                    <span className="text-[14px] text-black leading-snug">
+                      {doc.text}
+                    </span>
+                  </div>
+                  <Image
+                    src="/images/vector.png"
+                    alt="PDF"
+                    width={22}
+                    height={22}
+                    className="shrink-0"
+                  />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      ))
+    )
+  ) : (
+    /* --------- FLAT LAYOUT FOR OTHER TABS ---------- */
+    flatItems.length === 0 ? (
+      <div className="w-full bg-[#F7F7F7] py-6 px-6 text-center text-[13px] text-gray-500">
+        Documents will be listed here.
+      </div>
+    ) : (
+      flatItems.map((doc, idx) => (
+        <Link key={idx} href={doc.link} target="_blank">
+          <div className="flex items-start justify-between border-b border-dashed border-[#CF3438] py-2 bg-white px-4">
+            <div className="flex items-start gap-2 pr-4">
+              <span className="mt-[0px] text-[#555]">&raquo;</span>
+              <span className="text-[14px] text-[#245CA5] leading-snug">
+                {doc.text}
+              </span>
+            </div>
+            <Image
+              src="/images/vector.png"
+              alt="PDF"
+              width={22}
+              height={22}
+              className="shrink-0"
+            />
+          </div>
+        </Link>
+      ))
+    )
+  )}
+</div>
 
                 </section>
+
             </main>
 
             <SiteFooter />
