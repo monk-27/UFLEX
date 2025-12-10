@@ -169,7 +169,7 @@ export default function Page() {
                                     <span className="text-[14px] text-black lato-400">{item.text}</span>
 
                                     <Image
-                                        src="/images/vector.png"
+                                        src="/images/pdf.png"
                                         alt="PDF"
                                         width={22}
                                         height={22}

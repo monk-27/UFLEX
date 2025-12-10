@@ -170,7 +170,7 @@ const Page = () => {
         </div>
 
         {/* CONTENT */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-12 md:px-20 lg:px-28 py-10 space-y-10">
+        <section className="max-w-6xl mx-auto px-4 sm:px-12 md:px-20 lg:px-28 py-8">
           {/* ---------- POLICIES BLOCK (BLUE HEADER) ---------- */}
           <div>
             <div className="w-full bg-[#117ABA] py-3 px-4">
@@ -188,7 +188,7 @@ const Page = () => {
                     </span>
 
                     <Image
-                      src="/images/vector.png"
+                      src="/images/pdf.png"
                       alt="PDF"
                       width={22}
                       height={22}
@@ -216,7 +216,7 @@ const Page = () => {
                     </span>
 
                     <Image
-                      src="/images/vector.png"
+                      src="/images/pdf.png"
                       alt="PDF"
                       width={22}
                       height={22}

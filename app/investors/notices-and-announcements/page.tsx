@@ -989,12 +989,12 @@ export default function Page() {
     // const groups = tabItems[activeTabId] || [];
     const rawData = tabItems[activeTabId] || [];
 
-const isAnnouncements = activeTabId === "announcements";
-const isGrievance = activeTabId === "grievance-redressal";
+    const isAnnouncements = activeTabId === "announcements";
+    const isGrievance = activeTabId === "grievance-redressal";
 
-const groups = isAnnouncements ? (rawData as AnnouncementGroup[]) : [];
-const flatItems =
-  !isAnnouncements && !isGrievance ? (rawData as DocItem[]) : [];
+    const groups = isAnnouncements ? (rawData as AnnouncementGroup[]) : [];
+    const flatItems =
+        !isAnnouncements && !isGrievance ? (rawData as DocItem[]) : [];
 
 
 
@@ -1031,7 +1031,7 @@ const flatItems =
 
                 {/* TAB BAR */}
 
-                <div className="bg-white ]">
+                <div className="bg-white ">
                     <div className="max-w-7xl mx-auto px-4 sm:px-12 md:px-20 lg:px-28 py-4">
 
                         {/* Mobile: horizontal scroll */}
@@ -1096,122 +1096,122 @@ const flatItems =
                     </div>
 
                     {/* List */}
-                  <div className="mt-1">
-  {isGrievance ? (
-    /* ---------- GRIEVANCE SPECIAL UI ---------- */
-    <div className="bg-white px-6 py-6 leading-relaxed text-[15px] lato-400">
-      {/* First Block */}
-      <h2 className="text-[#117ABA] text-lg lato-700 mb-2">
-        {tabItems["grievance-redressal"][0].title}
-      </h2>
+                    <div className="mt-1">
+                        {isGrievance ? (
+                            /* ---------- GRIEVANCE SPECIAL UI ---------- */
+                            <div className="bg-white px-6 py-6 leading-relaxed text-[15px] lato-400">
+                                {/* First Block */}
+                                <h2 className="text-[#117ABA] text-lg lato-700 mb-2">
+                                    {tabItems["grievance-redressal"][0].title}
+                                </h2>
 
-      <p className="lato-400 text-[16px] text-gray-500"><strong className="lato-500 text-[#000000] text-[16px]">Address:</strong> {tabItems["grievance-redressal"][0].address}</p>
-      <p className="lato-400 text-[16px] text-gray-500"><strong className="lato-500 text-[16px] text-[#000000]">Contact Person:</strong> {tabItems["grievance-redressal"][0].contactPerson}</p>
-      <p className="lato-400 text-[16px] text-gray-500"><strong className="lato-500 text-[16px] text-[#000000]">Phone Nos.:</strong> {tabItems["grievance-redressal"][0].phone}</p>
-      <p className="lato-400 text-[16px] text-gray-500"><strong className="lato-500 text-[16px] text-[#000000]">Fax No.:</strong> {tabItems["grievance-redressal"][0].fax}</p>
-      <p className="lato-400 text-[16px] text-gray-500">
-        <strong className="lato-500 text-[16px] text-[#000000]">Email:</strong>{" "}
-        <a
-          href={`mailto:${tabItems["grievance-redressal"][0].email}`}
-          className="text-[#117ABA]"
-        >
-          {tabItems["grievance-redressal"][0].email}
-        </a>
-      </p>
+                                <p className="lato-400 text-[16px] text-gray-500"><strong className="lato-500 text-[#000000] text-[16px]">Address:</strong> {tabItems["grievance-redressal"][0].address}</p>
+                                <p className="lato-400 text-[16px] text-gray-500"><strong className="lato-500 text-[16px] text-[#000000]">Contact Person:</strong> {tabItems["grievance-redressal"][0].contactPerson}</p>
+                                <p className="lato-400 text-[16px] text-gray-500"><strong className="lato-500 text-[16px] text-[#000000]">Phone Nos.:</strong> {tabItems["grievance-redressal"][0].phone}</p>
+                                <p className="lato-400 text-[16px] text-gray-500"><strong className="lato-500 text-[16px] text-[#000000]">Fax No.:</strong> {tabItems["grievance-redressal"][0].fax}</p>
+                                <p className="lato-400 text-[16px] text-gray-500">
+                                    <strong className="lato-500 text-[16px] text-[#000000]">Email:</strong>{" "}
+                                    <a
+                                        href={`mailto:${tabItems["grievance-redressal"][0].email}`}
+                                        className="text-[#117ABA]"
+                                    >
+                                        {tabItems["grievance-redressal"][0].email}
+                                    </a>
+                                </p>
 
-      <div className="h-[1px] bg-gray-300 my-6" />
+                                <div className="h-[1px] bg-gray-300 my-6" />
 
-      {/* Second Block */}
-      <p className="lato-400 text-[16px] text-gray-500">{tabItems["grievance-redressal"][1].info}</p>
-      <p className="lato-400 text-[16px] text-gray-500">
-        <strong className="lato-500 text-[16px] text-[#000000]">{tabItems["grievance-redressal"][1].name}</strong>
-      </p>
-      <p className="lato-400 text-[16px] text-gray-500">
-        <strong className="lato-500 text-[16px] text-[#000000]">Phone Number:</strong>{" "}
-        {tabItems["grievance-redressal"][1].phone}
-      </p>
-      <p className="lato-400 text-[16px] text-gray-500">
-        <strong className="lato-500 text-[16px] text-[#000000]">Fax Number:</strong> {tabItems["grievance-redressal"][1].fax}
-      </p>
-      <p className="lato-400 text-[16px] text-gray-500">
-        <strong className="lato-500 text-[16px] text-[#000000]">Email:</strong>{" "}
-        <a
-          href={`mailto:${tabItems["grievance-redressal"][1].email}`}
-          className="text-[#117ABA]"
-        >
-          {tabItems["grievance-redressal"][1].email}
-        </a>
-      </p>
-    </div>
-  ) : isAnnouncements ? (
-    /* ---------- GROUPED LAYOUT FOR ANNOUNCEMENTS ---------- */
-    groups.length === 0 ? (
-      <div className="w-full bg-[#F7F7F7] py-6 px-6 text-center text-[13px] text-gray-500">
-        Documents will be listed here.
-      </div>
-    ) : (
-      groups.map((group) => (
-        <div key={group.date} className="bg-gray-200 mb-1">
-          <div className="flex items-center gap-2 text-[#CF3438] font-semibold text-[15px] pt-4 px-4">
-            <Calendar />
-            <span>{group.date}</span>
-          </div>
+                                {/* Second Block */}
+                                <p className="lato-400 text-[16px] text-gray-500">{tabItems["grievance-redressal"][1].info}</p>
+                                <p className="lato-400 text-[16px] text-gray-500">
+                                    <strong className="lato-500 text-[16px] text-[#000000]">{tabItems["grievance-redressal"][1].name}</strong>
+                                </p>
+                                <p className="lato-400 text-[16px] text-gray-500">
+                                    <strong className="lato-500 text-[16px] text-[#000000]">Phone Number:</strong>{" "}
+                                    {tabItems["grievance-redressal"][1].phone}
+                                </p>
+                                <p className="lato-400 text-[16px] text-gray-500">
+                                    <strong className="lato-500 text-[16px] text-[#000000]">Fax Number:</strong> {tabItems["grievance-redressal"][1].fax}
+                                </p>
+                                <p className="lato-400 text-[16px] text-gray-500">
+                                    <strong className="lato-500 text-[16px] text-[#000000]">Email:</strong>{" "}
+                                    <a
+                                        href={`mailto:${tabItems["grievance-redressal"][1].email}`}
+                                        className="text-[#117ABA]"
+                                    >
+                                        {tabItems["grievance-redressal"][1].email}
+                                    </a>
+                                </p>
+                            </div>
+                        ) : isAnnouncements ? (
+                            /* ---------- GROUPED LAYOUT FOR ANNOUNCEMENTS ---------- */
+                            groups.length === 0 ? (
+                                <div className="w-full bg-[#F7F7F7] py-6 px-6 text-center text-[13px] text-gray-500">
+                                    Documents will be listed here.
+                                </div>
+                            ) : (
+                                groups.map((group) => (
+                                    <div key={group.date} className="bg-gray-200 mb-1">
+                                        <div className="flex items-center gap-2 text-[#CF3438] font-semibold text-[15px] pt-4 px-4">
+                                            <Calendar />
+                                            <span>{group.date}</span>
+                                        </div>
 
-          <div className="mt-1 h-[3px] bg-[#117ABA] mx-4" />
+                                        <div className="mt-1 h-[3px] bg-[#117ABA] mx-4" />
 
-          <div className="px-4 pb-4">
-            {group.items.map((doc, idx) => (
-              <Link key={idx} href={doc.link} target="_blank">
-                <div className="flex items-start justify-between border-b border-dashed border-[#CF3438] py-2 bg-white px-2 rounded">
-                  <div className="flex items-start gap-2 pr-4">
-                    <span className="mt-[0px] text-[#555]">&raquo;</span>
-                    <span className="text-[14px] text-black leading-snug">
-                      {doc.text}
-                    </span>
-                  </div>
-                  <Image
-                    src="/images/vector.png"
-                    alt="PDF"
-                    width={22}
-                    height={22}
-                    className="shrink-0"
-                  />
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      ))
-    )
-  ) : (
-    /* --------- FLAT LAYOUT FOR OTHER TABS ---------- */
-    flatItems.length === 0 ? (
-      <div className="w-full bg-[#F7F7F7] py-6 px-6 text-center text-[13px] text-gray-500">
-        Documents will be listed here.
-      </div>
-    ) : (
-      flatItems.map((doc, idx) => (
-        <Link key={idx} href={doc.link} target="_blank">
-          <div className="flex items-start justify-between border-b border-dashed border-[#CF3438] py-2 bg-white px-4">
-            <div className="flex items-start gap-2 pr-4">
-              <span className="mt-[0px] text-[#555]">&raquo;</span>
-              <span className="text-[14px] text-[#245CA5] leading-snug">
-                {doc.text}
-              </span>
-            </div>
-            <Image
-              src="/images/vector.png"
-              alt="PDF"
-              width={22}
-              height={22}
-              className="shrink-0"
-            />
-          </div>
-        </Link>
-      ))
-    )
-  )}
-</div>
+                                        <div className="px-4 pb-4">
+                                            {group.items.map((doc, idx) => (
+                                                <Link key={idx} href={doc.link} target="_blank">
+                                                    <div className="flex items-start justify-between border-b border-dashed border-[#CF3438] py-2 bg-white px-2 rounded">
+                                                        <div className="flex items-start gap-2 pr-4">
+                                                            <span className="mt-[0px] text-[#555]">&raquo;</span>
+                                                            <span className="text-[14px] text-black leading-snug">
+                                                                {doc.text}
+                                                            </span>
+                                                        </div>
+                                                        <Image
+                                                            src="/images/pdf.png"
+                                                            alt="PDF"
+                                                            width={22}
+                                                            height={22}
+                                                            className="shrink-0"
+                                                        />
+                                                    </div>
+                                                </Link>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))
+                            )
+                        ) : (
+                            /* --------- FLAT LAYOUT FOR OTHER TABS ---------- */
+                            flatItems.length === 0 ? (
+                                <div className="w-full bg-[#F7F7F7] py-6 px-6 text-center text-[13px] text-gray-500">
+                                    Documents will be listed here.
+                                </div>
+                            ) : (
+                                flatItems.map((doc, idx) => (
+                                    <Link key={idx} href={doc.link} target="_blank">
+                                        <div className="flex items-start justify-between border-b border-dashed border-[#CF3438] py-2 bg-white px-4">
+                                            <div className="flex items-start gap-2 pr-4">
+                                                <span className="mt-[0px] text-[#555]">&raquo;</span>
+                                                <span className="text-[14px] text-[#245CA5] leading-snug">
+                                                    {doc.text}
+                                                </span>
+                                            </div>
+                                            <Image
+                                                src="/images/pdf.png"
+                                                alt="PDF"
+                                                width={22}
+                                                height={22}
+                                                className="shrink-0"
+                                            />
+                                        </div>
+                                    </Link>
+                                ))
+                            )
+                        )}
+                    </div>
 
                 </section>
 
