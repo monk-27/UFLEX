@@ -1,9 +1,9 @@
 export const investorCards = [
   {
     id: "financial-reports",
-    title: "Financial Reports and Results",
+    title: "Financial Results",
     image: "/images/investors/1.png",
-    href: "/investors/financial-reports",
+    href: "/investors/financial-results",
   },
   {
     id: "shareholders-info",
@@ -13,7 +13,7 @@ export const investorCards = [
   },
   {
     id: "notices",
-    title: "Notices and Announcements",
+    title: "IR Announcements & Updates",
     image: "/images/investors/3.png",
     href: "/investors/notices-and-announcements",
   },
@@ -25,7 +25,7 @@ export const investorCards = [
   },
   {
     id: "ir-calendar",
-    title: "IR Calendar",
+    title: "IR Presentations & Quarterly Earnings Reports",
     image: "/images/investors/5.png",
     href: "/investors/ir-calendar",
   },
@@ -47,12 +47,12 @@ export const investorCards = [
     image: "/images/investors/8.png",
     href: "/investors/investors-archives",
   },
-  {
-    id: "esg",
-    title: "ESG",
-    image: "/images/investors/9.png",
-    href: "/investors/esg",
-  },
+  // {
+  //   id: "esg",
+  //   title: "ESG",
+  //   image: "/images/investors/9.png",
+  //   href: "/investors/esg",
+  // },
 ];
 
 

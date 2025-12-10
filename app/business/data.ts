@@ -247,15 +247,41 @@ export const businesses: BusinessConfig[] = [
     keypeople: {
       title: "Key People",
       details: [
+
         {
-          photo: "/images/ajay.png",
-          name: " Mr. Ajay Gupta",
-          role: "Sr. Vice President - Flex Films, Hungary",
-          summary:
-            "Mr. Ajay Gupta brings over three decades of experience in the flexible packaging industry, with expertise spanning manufacturing, R&D, and business development. Currently based in Hungary, he plays a ... His previous roles incl...",
-          cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-        },
-        {
+        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-1.-Mr.-Jagmohan-Mongia-29.jpg",
+        name: "Mr. Jagmohan Mongia ",
+        role: "President, Packaging Films business (India)",
+        summary:
+            "With four decades of industry experience, Jagmohan Mongia leads the Films business – India operations, UFlex. A commerce graduates with a diploma in sales and marketing from Bhartiya Vidya Bhawan, h...",
+        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+    },
+
+    {
+        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-3.-Mr.-Sanjay-Tiku47.jpg",
+        name: "Mr. Sanjay Tiku",
+        role: "Business Head, Packaging Films Business (Flex Films Egypt)",
+        summary:
+            "A seasoned professional with nearly three decades of experience in the Flexible Packaging industry, specializing in operations, marketing, finance, business strategy, and people management. A CMA from...",
+        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+    },
+    {
+        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-4.-Mr.-Sundeep-Saksena-01.jpg",
+        name: "Mr. Sundeep Saksena ",
+        role: "Business Head, Packaging Films Business (Flex Films Poland)",
+        summary:
+            "With close to three decades of experience, including seven years of international exposure, across packaging, telecom, consumer durables, and FMCG sectors, Sundeep Saksena has consistently driven busi...",
+        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+    },
+     {
+        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-5.-Mr.-Junaid-Iqbal-Khan-37.jpg",
+        name: "Mr. Junaid Iqbal Khan  ",
+        role: "General Director, Packaging Films Business (Flex Films CIS)",
+        summary:
+            "With nearly two decades at UFlex, Junaid Khan has played a pivotal role in expanding the company’s global footprint across the packaging films business. In 2019, he was appointed as the General Dire...",
+        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+    },
+    {
           photo:
             "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-6.-Mr.-Avinash-Kumar-51.jpg",
           name: "Mr. Avinash Kumar ",
@@ -283,6 +309,16 @@ export const businesses: BusinessConfig[] = [
             "A seasoned leader with more than two decades of experience. He drives growth in the Packaging Films Business and leads Flex Films' expansion in Russia, positioning UFlex as a preferred supplier in the...",
           cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
         },
+        {
+          photo: "/images/ajay.png",
+          name: " Mr. Ajay Gupta",
+          role: "Sr. Vice President - Flex Films, Hungary",
+          summary:
+            "Mr. Ajay Gupta brings over three decades of experience in the flexible packaging industry, with expertise spanning manufacturing, R&D, and business development. Currently based in Hungary, he plays a ... His previous roles incl...",
+          cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+        },
+        
+        
       ],
     },
     awards: {
@@ -394,6 +430,14 @@ export const businesses: BusinessConfig[] = [
       title: "Key People",
       details: [
         {
+          photo: "/images/rajesh.png",
+          name: "Desh Deepak Misra",
+          role: "Joint President, Chemicals Business",
+          summary:
+            "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum has been the indus...",
+          cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+        },
+        {
           photo: "/images/desh.png",
           name: "Mr. Rajesh Srivastava",
           role:
@@ -402,14 +446,16 @@ export const businesses: BusinessConfig[] = [
             "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum has been the indus...",
           cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
         },
-        {
-          photo: "/images/rajesh.png",
-          name: "Desh Deepak Misra",
-          role: "Joint President, Chemicals Business",
-          summary:
+      {
+        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(CH)-3.-Mr.-Sanjiv-Satishchandra-Desai-17.jpg",
+        name: "Mr. Sanjiv Satishchandra Desai",
+        role: "Vice President, Manufacturing - Chemicals Business",
+        summary:
             "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum has been the indus...",
-          cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-        },
+        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+    },
+
+        
       ],
     },
     caseStudies: [
@@ -610,6 +656,14 @@ export const businesses: BusinessConfig[] = [
           "Mr. Jeevaraj Pillai brings over 35 years of experience in packaging and packaging technology, with expertise in printing cylinders, packaging films, and advanced flexible packaging material conversion. As Director-Sustainability, he leads the development and implementation of the company's ESG strategy, along with developing sustainable products and solutions. He has been serving on the board of UFlex Limited as a whole-time director since November 14, 2023. His extensive background is complemented by qualifications in mechanical engineering and an MBA.",
         cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
       },
+        {
+        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(FP)-2.-Mr.-Amit-Shah38.jpg",
+        name: "Mr. Amit Shah",
+        role: "President and Chief Marketing Officer, Flexible Packaging Business",
+        summary:
+            "Mr. Amit Shah brings close to three decades of experience, including nearly a decade in the FMCG sector. As a member of the UFlex leadership team, he plays a key role in driving strategic growth and l...",
+        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+    },
     ],
   },
 

@@ -29,7 +29,7 @@ const page = () => {
 
                     <div className="absolute inset-0 flex flex-col justify-center px-6 sm:px-12 md:px-20 lg:px-28">
                         <h1 className="text-white text-2xl sm:text-3xl md:text-[38px] lato-700 mb-4">
-                            Financial Reports and Results
+                            Financial Results
                         </h1>
 
 
@@ -39,7 +39,7 @@ const page = () => {
                 <div className="bg-[#EFEFEF]">
                     <div className="max-w-7xl mx-auto pl-2 h-12 flex items-center">
                         <span className="text-black text-xs lato-700 lato-600">
-                            Investors Relations &gt; Financial Reports and Results
+                            Investors Relations &gt; Financial Results
                         </span>
                     </div>
                 </div>

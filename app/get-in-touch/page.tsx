@@ -38,7 +38,7 @@ const OFFICES: Office[] = [
     country: "India",
     city: "Noida, Uttar Pradesh",
     address: ["A-1, Sector-60", "Noida – 201307, Uttar Pradesh, India"],
-    phone: "+91 120 4002121",
+    phone: "+91 120 4012345/6108444 ",
     email: "corpcomm@uflexltd.com",
   },
   {
@@ -52,7 +52,7 @@ const OFFICES: Office[] = [
       "Greater Kailash-I, New Delhi – 110048, India",
     ],
     phone: "+91 11 2644091",
-    email: "feedback@uflexltd.com",
+    email: "enquiry@uflexltd.com",
   },
 
   /* ---------- Packaging Films (India) ---------- */
@@ -404,11 +404,11 @@ export default function GetInTouch() {
               </div>
             </a>
 
-            <a href="mailto:feedback@uflexltd.com" className="group flex items-center gap-3 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-[2px] hover:shadow-md">
+            <a href="mailto:enquiry@uflexltd.com" className="group flex items-center gap-3 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-[2px] hover:shadow-md">
               <div className="rounded-xl bg-[#117ABA] p-3 text-white"><Mail className="h-5 w-5" /></div>
               <div>
                 <p className="manrope-700 text-slate-800">Feedback / Support</p>
-                <p className="text-sm text-slate-600 group-hover:text-slate-700">feedback@uflexltd.com</p>
+                <p className="text-sm text-slate-600 group-hover:text-slate-700">enquiry@uflexltd.com</p>
               </div>
             </a>
 
