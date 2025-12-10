@@ -30,11 +30,13 @@ const InvestorsPage = () => {
           </h1>
 
           <div className="space-y-2">
-            <h1
+            <a
+            href='/investors/annual-report'
+            target='self'
               className="text-white text-sm sm:text-base md:text-lg underline-offset-8 underline decoration-[#CF2328] hover:text-gray-200 transition"
             >
               Annual Report 2024–25
-            </h1>
+            </a>
 
 
             

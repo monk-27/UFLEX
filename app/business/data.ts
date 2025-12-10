@@ -327,7 +327,7 @@ export const businesses: BusinessConfig[] = [
         "UFlex's Packaging Films business, under the Flex Films brand, is a global leader offering innovative and sustainable packaging solutions, including BOPP, BOPET, CPP, specialty, and 100% PCR PET films, with manufacturing across 9 countries and presence in 150+ markets.",
       image: "/images/awards.png",
       linkLabel: "Know more",
-      linkHref: "#",
+      linkHref: "/hall-of-fame",
     },
     accreditation: [
       { image: "/images/acc1.png" },
@@ -488,7 +488,7 @@ export const businesses: BusinessConfig[] = [
         "Over the last several years, UFlex's Chemicals business has received various awards and certifications for its innovative and sustainable products and solutions, reflecting its strong commitment to responsible manufacturing, safety excellence, regulatory compliance, and continuous improvement in environmental and operational performance.",
       image: "/images/awards.png",
       linkLabel: "Know more",
-      linkHref: "#",
+      linkHref: "/hall-of-fame",
     },
     accreditation: [
       { image: "/images/acc1.png" },
@@ -589,7 +589,7 @@ export const businesses: BusinessConfig[] = [
         "Our circular initiatives and recycling programmes have been recognised by leading global industry bodies, reflecting Asepto’s commitment to responsible and sustainable packaging. These recognitions highlight our consistent efforts to reduce waste, improve material efficiency, and support recycling across our operations.",
       image: "/images/awards.png",
       linkLabel: "Know more",
-      linkHref: "#",
+      linkHref: "/hall-of-fame",
     },
     accreditation: [
       { image: "/images/accc4.png" },
@@ -673,7 +673,7 @@ export const businesses: BusinessConfig[] = [
       "Over the last several years, UFlex’s Flexible Packaging business has received various awards and certifications for its innovative and sustainable packaging solutions.",
     image: "/images/awards.png",
     linkLabel: "Know more",
-    linkHref: "#",
+    linkHref: "/hall-of-fame",
   },
 
   accreditation: [
@@ -839,7 +839,7 @@ export const businesses: BusinessConfig[] = [
       "Over the last several years, UFlex’s Flexible Packaging business has received various awards and certifications for its innovative and sustainable packaging solutions.",
     image: "/images/awards.png",
     linkLabel: "Know more",
-    linkHref: "#"
+    linkHref: "/hall-of-fame"
   },
 
   accreditation: [
@@ -965,7 +965,7 @@ export const businesses: BusinessConfig[] = [
     description: "Over the last several years, UFlex’s Flexible Packaging business has received various awards and certifications for its innovative and sustainable packaging solutions.",
     image: "/images/awards.png",
     linkLabel: "Know more",
-    linkHref: "#",
+    linkHref: "/hall-of-fame",
   },
   accreditation: [
     { image: "/images/accc13.png" },
@@ -1089,7 +1089,7 @@ export const businesses: BusinessConfig[] = [
       "Over the last several years, UFlex’s Printing Cylinder business has received various awards and certifications.",
     image: "/images/awards.png",
     linkLabel: "Know more",
-    linkHref: "#",
+    linkHref: "/hall-of-fame",
   },
 
   accreditation: [
@@ -1220,7 +1220,7 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
       description: "Over the last several years, UFlex’s Printing Cylinder business has received various awards and certifications.",
       image: "/images/awards.png",
       linkLabel: "Know more",
-      linkHref: "#",
+      linkHref: "/hall-of-fame",
     },
     accreditation: [
       
