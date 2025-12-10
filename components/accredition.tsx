@@ -117,19 +117,22 @@ export default function AccreditationsSlider({
                 onClick={() => canPrev && setPage((p) => p - 1)}
                 disabled={!canPrev}
                 aria-label="Previous"
-                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#117ABA]/30 bg-white shadow-sm hover:bg-[#117ABA]/5 disabled:opacity-40 disabled:cursor-not-allowed"
-              >
-                <ChevronLeft className="h-5 w-5 text-[#117ABA]" />
+                className=" z-10 -translate-y-1/2 inline-flex items-center justify-center
+             rounded-full border border-gray-600 bg-white/80 p-3 shadow-sm
+             opacity-50 hover:opacity-100 transition md:left-0"
+            >
+              <ChevronLeft className="h-5 w-5 text-gray-400" />
               </button>
               <button
                 type="button"
                 onClick={() => canNext && setPage((p) => p + 1)}
                 disabled={!canNext}
                 aria-label="Next"
-                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#117ABA]/30 bg-white shadow-sm hover:bg-[#117ABA]/5 disabled:opacity-40 disabled:cursor-not-allowed"
-              >
-                <ChevronRight className="h-5 w-5 text-[#117ABA]" />
-              </button>
+                className=" z-10 -translate-y-1/2 inline-flex items-center justify-center
+             rounded-full border border-gray-600 bg-white/80 p-3 shadow-sm
+             opacity-50 hover:opacity-100 transition md:right-0"
+            >
+              <ChevronRight className="h-5 w-5 text-gray-400" /></button>
             </div>
           )}
         </div>

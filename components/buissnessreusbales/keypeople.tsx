@@ -299,18 +299,21 @@ const Keypeople = ({ title, people }: any) => {
                   onClick={() => emblaApi?.scrollPrev()}
                   disabled={!canPrev}
                   aria-label="Previous"
-                  className="z-10 inline-flex items-center justify-center h-9 w-9 rounded-full border border-gray-300 disabled:opacity-40 hover:bg-gray-100"
-                >
-                  <ChevronLeft className="h-5 w-5 text-[#117ABA]" />
+                  className=" z-10 -translate-y-1/2 inline-flex items-center justify-center
+             rounded-full border border-gray-600 bg-white/80 p-3 shadow-sm
+             opacity-50 hover:opacity-100 transition md:left-0"
+            >
+              <ChevronLeft className="h-5 w-5 text-gray-400" />
                 </button>
                 <button
                   onClick={() => emblaApi?.scrollNext()}
                   disabled={!canNext}
                   aria-label="Next"
-                  className="z-10 inline-flex items-center justify-center h-9 w-9 rounded-full border border-gray-300 disabled:opacity-40 hover:bg-gray-100"
-                >
-                  <ChevronRight className="h-5 w-5 text-[#117ABA]" />
-                </button>
+                  className=" z-10 -translate-y-1/2 inline-flex items-center justify-center
+             rounded-full border border-gray-600 bg-white/80 p-3 shadow-sm
+             opacity-50 hover:opacity-100 transition md:right-0"
+            >
+              <ChevronRight className="h-5 w-5 text-gray-400" /></button>
               </div>
 
               {/* dots */}

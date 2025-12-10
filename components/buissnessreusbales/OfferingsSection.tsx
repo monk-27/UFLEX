@@ -134,6 +134,7 @@ import { BusinessConfig, Offering } from "@/app/business/data";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { SubBusinessHero } from "./subhero";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 type Props = {
   heading: string;
@@ -226,14 +227,16 @@ export function OfferingadvSection({
                 ))}
               </div>
             {/* arrows + dots BELOW */}
-            <div className="mt-4 flex items-center justify-center gap-4">
+            <div className="mt-8 flex items-center justify-center gap-4">
               <button
                 type="button"
                 onClick={handlePrevDesktop}
-                className="h-9 w-9  flex items-center justify-center text-sm "
                 aria-label="Previous"
-              >
-                <span className="lato-700 text-[22px] text-[#117ABA]">{"<"}</span>
+                className=" z-10 -translate-y-1/2 inline-flex items-center justify-center
+             rounded-full border border-gray-600 bg-white/80 p-3 shadow-sm
+             opacity-50 hover:opacity-100 transition md:left-0"
+            >
+              <ChevronLeft className="h-5 w-5 text-gray-400" />
               </button>
 
              
@@ -241,12 +244,12 @@ export function OfferingadvSection({
               <button
                 type="button"
                 onClick={handleNextDesktop}
-                className="h-9 w-9 r flex items-center justify-center text-sm "
                 aria-label="Next"
-              >
-               <span className="lato-700 text-[22px] text-[#117ABA]">{">"}</span>
-                
-              </button>
+                className=" z-10 -translate-y-1/2 inline-flex items-center justify-center
+             rounded-full border border-gray-600 bg-white/80 p-3 shadow-sm
+             opacity-50 hover:opacity-100 transition md:right-0"
+            >
+              <ChevronRight className="h-5 w-5 text-gray-400" /></button>
             </div>
           </div>
         )}

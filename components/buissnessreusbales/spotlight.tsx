@@ -28,7 +28,7 @@ const slideVariants = {
   }),
 };
 
-export function InnovationSlider({ heading, items }: any) {
+export function SpotLightSlider({ heading, items }: any) {
 
   if (!items || items.length === 0) return null;
   const [index, setIndex] = useState(0);
@@ -93,7 +93,7 @@ export function InnovationSlider({ heading, items }: any) {
           </AnimatePresence>
 
           {/* Arrows centred below image */}
-          <div className="mt-8 flex justify-center gap-6">
+          <div className="mt-4 flex justify-center gap-6">
             <button
               onClick={() => go("prev")}
               className=" z-10 -translate-y-1/2 inline-flex items-center justify-center
