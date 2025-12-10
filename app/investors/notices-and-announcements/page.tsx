@@ -1152,7 +1152,7 @@ export default function Page() {
                             ) : (
                                 groups.map((group) => (
                                     <div key={group.date} className="bg-gray-200 mb-1">
-                                        <div className="flex items-center gap-2 text-[#CF3438] font-semibold text-[15px] pt-4 px-4">
+                                        <div className="flex items-center gap-2 text-[#CF3438] lato-700 text-[15px] pt-4 px-4">
                                             <Calendar />
                                             <span>{group.date}</span>
                                         </div>
@@ -1162,9 +1162,9 @@ export default function Page() {
                                         <div className="px-4 pb-4">
                                             {group.items.map((doc, idx) => (
                                                 <Link key={idx} href={doc.link} target="_blank">
-                                                    <div className="flex items-start justify-between border-b border-dashed border-[#CF3438] py-2 bg-white px-2 rounded">
+                                                    <div className=" bg-[#F7F7F7] py-3 px-4 flex items-center justify-between border-b-[2px] border-white hover:bg-[#ececec] transition">
                                                         <div className="flex items-start gap-2 pr-4">
-                                                            <span className="mt-[0px] text-[#555]">&raquo;</span>
+                                                            {/* <span className="mt-[0px] text-[#555]">&raquo;</span> */}
                                                             <span className="text-[14px] text-black leading-snug">
                                                                 {doc.text}
                                                             </span>
@@ -1192,10 +1192,10 @@ export default function Page() {
                             ) : (
                                 flatItems.map((doc, idx) => (
                                     <Link key={idx} href={doc.link} target="_blank">
-                                        <div className="flex items-start justify-between border-b border-dashed border-[#CF3438] py-2 bg-white px-4">
+                                        <div className="bg-[#F7F7F7] py-3 px-4 flex items-center justify-between border-b-[2px] border-white hover:bg-[#ececec] transition">
                                             <div className="flex items-start gap-2 pr-4">
-                                                <span className="mt-[0px] text-[#555]">&raquo;</span>
-                                                <span className="text-[14px] text-[#245CA5] leading-snug">
+                                                {/* <span className="mt-[0px] text-[#555]">&raquo;</span> */}
+                                                <span className="text-[14px] text-[#000000] leading-snug">
                                                     {doc.text}
                                                 </span>
                                             </div>
