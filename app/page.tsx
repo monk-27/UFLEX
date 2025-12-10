@@ -47,7 +47,7 @@ export default function HomePage() {
           </span>
         </motion.h2>
         <motion.h3
-          className="text-center text-[14px] lato-400 text-[#117ABA] md:text-[28px] mb-2 pt-4"
+          className="text-center text-[14px] lato-400 text-[#117ABA] md:text-[28px]  pt-4"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
@@ -57,11 +57,14 @@ export default function HomePage() {
         <BusinessCardsCarousel />
 
       </motion.section>
-      <div className=" z-10 bg-white py-4 md:py-12 mb-8">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-0">
+      <div className="z-10 bg-white py-4 md:py-6">
+        <div className="text-center max-w-7xl mx-auto w-full px-4 sm:px-0">
           <h2 className="text-center text-[14px] lato-600 text-[#117ABA] md:text-[28px]">
             Sustainability
           </h2>
+          <span className=" text-[#181818] text-center lato-400  text-[14px] sm:text-[20px]">
+             Embedding sustainability across materials, operations, and value chains
+          </span>
         </div>
       </div>
       <SustainabilityComp />

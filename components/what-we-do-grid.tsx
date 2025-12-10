@@ -9,72 +9,136 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 
-const items = [
-  {
-    title: "Packaging Films and PET Resin",
-    href: "/packaging-films-business",
-    desc: "High-performance BOPET/BOPP films for diverse applications.",
-    img: "/images/flex.jpeg"
-    // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Packaging-Films-Business-faq-icon21.svg",
-  },
-   {
-    title: "Chemicals",
-    href: "/chemicals-business",
-    desc: "Speciality chemicals powering packaging performance.",
-    img: "/images/chem.jpeg"
-    // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Chemicals-Business-faq-icon20.svg",
-  },
-  {
-    title: "Aseptic Packaging",
-    href: "/aseptic-packaging-business",
-    desc: "Safe, shelf-stable solutions with extended freshness.",
-    img: "/images/aseptic.png"
+// const items = [
+//   {
+//     title: "Packaging Films and PET Resin",
+//     href: "/packaging-films-business",
+//     desc: "High-performance BOPET/BOPP films for diverse applications.",
+//     img: "/images/flex.jpeg"
+//     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Packaging-Films-Business-faq-icon21.svg",
+//   },
+//    {
+//     title: "Chemicals",
+//     href: "/chemicals-business",
+//     desc: "Speciality chemicals powering packaging performance.",
+//     img: "/images/chem.jpeg"
+//     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Chemicals-Business-faq-icon20.svg",
+//   },
+//   {
+//     title: "Aseptic Packaging",
+//     href: "/aseptic-packaging-business",
+//     desc: "Safe, shelf-stable solutions with extended freshness.",
+//     img: "/images/aseptic.png"
 
-    // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Aseptic-Packaging-Business-faq-icon56.svg",
-  },
-  {
-    title: "Flexible Packaging",
-    href: "/flexible-packaging-business",
-    desc: "Custom structures for brand impact and efficiency.",
-    img: "/images/flexible.png"
+//     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Aseptic-Packaging-Business-faq-icon56.svg",
+//   },
+//   {
+//     title: "Flexible Packaging",
+//     href: "/flexible-packaging-business",
+//     desc: "Custom structures for brand impact and efficiency.",
+//     img: "/images/flexible.png"
 
-    // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Flexible-Packaging-Business-faq-icon36.svg",
-  },
-  
- 
-  {
-    title: "Holography",
-    href: "/holography-business",
-    desc: "Security and decorative holographic solutions.",
-    img: "/images/holographys.png"
+//     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Flexible-Packaging-Business-faq-icon36.svg",
+//   },
 
-    // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Holography-Business-faq-icon47.svg",
-  },
-  {
-    title: "Engineering",
-    href: "/engineering-business",
-    desc: "Turnkey packaging machinery and systems.",
-    img: "/images/engg.png"
 
-    // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Engineering-Business-faq-icon45.svg",
-  },
-  {
-    title: "Printing Cylinders",
-    href: "/printing-cylinder-business",
-    desc: "Precision cylinders for consistent print quality.",
-    img: "/images/cyls.png"
-    // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Printing-Cylinder-Business-faq-icon03.svg",
-  },
-  {
-    title: "FlexiTubes",
-    href: "/flexitube-business",
-    desc: "Durable, brandable tubes for personal care and more.",
-    img: "/images/flexible.jpeg"
+//   {
+//     title: "Holography",
+//     href: "/holography-business",
+//     desc: "Security and decorative holographic solutions.",
+//     img: "/images/holographys.png"
 
-    // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/FlexiTube-Business-faq-icon59.svg",
-  },
-]
+//     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Holography-Business-faq-icon47.svg",
+//   },
+//   {
+//     title: "Engineering",
+//     href: "/engineering-business",
+//     desc: "Turnkey packaging machinery and systems.",
+//     img: "/images/engg.png"
 
+//     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Engineering-Business-faq-icon45.svg",
+//   },
+//   {
+//     title: "Printing Cylinders",
+//     href: "/printing-cylinder-business",
+//     desc: "Precision cylinders for consistent print quality.",
+//     img: "/images/cyls.png"
+//     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Printing-Cylinder-Business-faq-icon03.svg",
+//   },
+//   {
+//     title: "FlexiTubes",
+//     href: "/flexitube-business",
+//     desc: "Durable, brandable tubes for personal care and more.",
+//     img: "/images/flexible.jpeg"
+
+//     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/FlexiTube-Business-faq-icon59.svg",
+//   },
+// ]
+export type BusinessKey =
+  | "packaging-films"
+  | "chemicals"
+  | "aseptic"
+  | "flexible-packaging"
+  | "holography"
+  | "engineering"
+  | "printing-cylinders"
+  | "flexible-tubes";
+
+const items: {
+  title: string;
+  desc: string;
+  img: string;
+  key: BusinessKey;
+}[] = [
+    {
+      title: "Packaging Films and PET Resin",
+      key: "packaging-films",
+      desc: "High-performance BOPET/BOPP films for diverse applications.",
+      img: "/images/flex.jpeg",
+    },
+    {
+      title: "Chemicals",
+      key: "chemicals",
+      desc: "Speciality chemicals powering packaging performance.",
+      img: "/images/chem.jpeg",
+    },
+    {
+      title: "Aseptic Packaging",
+      key: "aseptic",
+      desc: "Safe, shelf-stable solutions with extended freshness.",
+      img: "/images/aseptic.png",
+    },
+    {
+      title: "Flexible Packaging",
+      key: "flexible-packaging",
+      desc: "Custom structures for brand impact and efficiency.",
+      img: "/images/flexible.png",
+    },
+    {
+      title: "Holography",
+      key: "holography",
+      desc: "Security and decorative holographic solutions.",
+      img: "/images/holographys.png",
+    },
+    {
+      title: "Engineering",
+      key: "engineering",
+      desc: "Turnkey packaging machinery and systems.",
+      img: "/images/engg.png",
+    },
+    {
+      title: "Printing Cylinders",
+      key: "printing-cylinders",
+      desc: "Precision cylinders for consistent print quality.",
+      img: "/images/cyls.png",
+    },
+    {
+      title: "FlexiTubes",
+      key: "flexible-tubes",
+      desc: "Durable, brandable tubes for personal care and more.",
+      img: "/images/flexible.jpeg",
+    },
+  ];
 export default function BusinessCardsCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -149,19 +213,16 @@ export default function BusinessCardsCarousel() {
     <section className="relative max-w-7xl mx-auto w-full px-4 sm:px-0">
 
 
+      {/* DESKTOP */}
       <div className="mt-12 px-4 hidden sm:block">
         <Slider {...settings}>
-          {items.map((card, index) => {
-            const isActive = currentSlide === index;
-            return (
-              <motion.div
-                key={index}
-                className="px-2  "
-
+          {items.map((card, index) => (
+            <motion.div key={card.key} className="px-2">
+              <Link
+                href={`/business?tab=${card.key}`}
+                className="block h-full"
               >
-
                 <div className="flex h-full flex-col bg-gray-100 shadow-sm rounded-lg gap-2">
-                  {/* Photo: exactly like the shot — top half, 16:9 */}
                   <div className="relative aspect-[16/9] w-full">
                     <Image
                       src={card.img}
@@ -169,69 +230,35 @@ export default function BusinessCardsCarousel() {
                       fill
                       className="object-cover"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-
                     />
                   </div>
-
-
-                  {/* Content */}
-                  <div className="p-5 items-start ">
-                    {/* Title with slim red accent bar */}
+                  <div className="p-5 items-start">
                     <div className="flex items-start gap-2 flex-nowrap justify-start">
                       <span className="inline-block h-6 w-[2px] rounded bg-[#D84A3B]" />
                       <h3 className="text-left text-[18px] md:text-[20px] manrope-500 leading-tight text-[#117ABA]">
                         {card.title}
                       </h3>
                     </div>
-
-
                     <p className="items-start mt-3 text-left manrope-400 text-[#6D6E71]">
                       {card.desc}
                     </p>
-
-
-                 
-
                   </div>
                 </div>
-              </motion.div>
-            );
-          })}
+              </Link>
+            </motion.div>
+          ))}
         </Slider>
       </div>
+
+      {/* MOBILE */}
       <div className="mt-12 px-4 block sm:hidden">
         <Slider {...settingsmob}>
-          {items.map((card, index) => {
-            const isActive = currentSlide === index;
-            return (
-              <motion.div
-                key={index}
-                className="px-2"
-              // animate={{
-              //   scale: isActive ? 1.05 : 0.95,
-              //   y: isActive ? -10 : 0,
-              //   transition: { duration: 0.3 },
-              // }}
+          {items.map((card, index) => (
+            <motion.div key={card.key} className="px-2">
+              <Link
+                href={`/business?tab=${card.key}`}
+                className="block h-full"
               >
-                {/* <div
-                  className={`overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 ${
-                    isActive ? "shadow-2xl" : "opacity-90"
-                  }`}
-                >
-                  <Image
-                    src={card.img}
-                    alt={card.title}
-                    width={800}
-                    height={500}
-                    className="h-[280px] w-full object-cover"
-                  />
-                  <div className="flex flex-col items-center px-6 py-6 text-center">
-                    <h3 className="manrope-800 mb-2 text-[18px] text-[#0B3C7D] md:text-xl">
-                      {card.title}
-                    </h3>
-                    <p className="text-[14px] text-gray-700 md:text-base">{card.desc}</p>
-                  </div>
-                </div> */}
                 <div className="bg-gray-100 md:grid md:grid-cols-2 h-full">
                   <div className="relative h-48 md:h-auto">
                     <Image
@@ -240,7 +267,6 @@ export default function BusinessCardsCarousel() {
                       fill
                       className="object-cover"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-
                     />
                   </div>
                   <div className="p-5 flex flex-col">
@@ -250,15 +276,17 @@ export default function BusinessCardsCarousel() {
                         {card.title}
                       </h3>
                     </div>
-                    <p className="mt-3 text-sm leading-relaxed manrope-400 text-[#6D6E71]">{card.desc}</p>
-                    
+                    <p className="mt-3 text-sm leading-relaxed manrope-400 text-[#6D6E71]">
+                      {card.desc}
+                    </p>
                   </div>
                 </div>
-              </motion.div>
-            );
-          })}
+              </Link>
+            </motion.div>
+          ))}
         </Slider>
       </div>
+
       <style jsx global>{`
   @media (max-width: 768px) {
     .slick-list {

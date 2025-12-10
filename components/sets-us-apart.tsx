@@ -26,7 +26,7 @@ const items = [
   {
     img: "/images/putting.png",
     title: "Putting India on the global map for aseptic packaging",
-    desc: "As the first Indian company to achieve this milestone, we proudly represent India in the global aseptic packaging industry with innovative and sustainable solutions.",
+    desc: "UFlex proudly represents India on the global aseptic packaging map, delivering innovative and sustainable solutions that meet the evolving needs of the beverage industry worldwide.",
   },
   {
     img: "/images/what2.jpeg",
@@ -147,7 +147,7 @@ const settingsmob = {
 }
 
   return (
-    <section className="relative bg-white py-16">
+    <section className="relative bg-white py-8">
       <div className="mx-auto max-w-6xl px-6 text-center">
         <h2 className="text-[24px] lato-600 text-[#117ABA] md:text-[28px] ">What Sets Us Apart</h2>
         <p className="lato-400 mx-auto mt-2 max-w-3xl text-[#222] md:text-[20px]">

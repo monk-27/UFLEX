@@ -2,15 +2,25 @@
 "use client";
 
 import { BusinessDetail } from "@/components/buissnessreusbales/BusinessDetail";
-import { businesses } from "./data";
+import { businesses, BusinessKey } from "./data";
 import { BusinessHero } from "@/components/buissnessreusbales/BusinessHero";
 import { BusinessTabs } from "@/components/buissnessreusbales/BusinessTabs";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import Image from "next/image";
-
+import { useSearchParams } from "next/navigation";
 export default function BusinessesPage() {
-  const defaultKey = "packaging-films";
+  const searchParams = useSearchParams();
+  // const defaultKey = "packaging-films";
+  const tabParam = (searchParams.get("tab") || "") as BusinessKey | "";
+
+  const availableKeys = businesses.map((b: any) => b.key as BusinessKey);
+  const fallbackKey: BusinessKey = "packaging-films";
+
+  const defaultKey: BusinessKey = availableKeys.includes(tabParam as BusinessKey)
+    ? (tabParam as BusinessKey)
+    : fallbackKey;
+
 
   const tabs = businesses.map((b:any) => ({
     id: b.key,

@@ -430,7 +430,7 @@ export const businesses: BusinessConfig[] = [
       title: "Key People",
       details: [
         {
-          photo: "/images/rajesh.png",
+          photo: "/images/desh.png",
           name: "Desh Deepak Misra",
           role: "Joint President, Chemicals Business",
           summary:
@@ -438,7 +438,7 @@ export const businesses: BusinessConfig[] = [
           cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
         },
         {
-          photo: "/images/desh.png",
+          photo: "/images/rajesh.png",
           name: "Mr. Rajesh Srivastava",
           role:
             "Executive Vice President, Sales and Marketing - Chemicals Business",
