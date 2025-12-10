@@ -656,14 +656,14 @@ export const businesses: BusinessConfig[] = [
           "Mr. Jeevaraj Pillai brings over 35 years of experience in packaging and packaging technology, with expertise in printing cylinders, packaging films, and advanced flexible packaging material conversion. As Director-Sustainability, he leads the development and implementation of the company's ESG strategy, along with developing sustainable products and solutions. He has been serving on the board of UFlex Limited as a whole-time director since November 14, 2023. His extensive background is complemented by qualifications in mechanical engineering and an MBA.",
         cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
       },
-        {
-        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(FP)-2.-Mr.-Amit-Shah38.jpg",
-        name: "Mr. Amit Shah",
-        role: "President and Chief Marketing Officer, Flexible Packaging Business",
-        summary:
-            "Mr. Amit Shah brings close to three decades of experience, including nearly a decade in the FMCG sector. As a member of the UFlex leadership team, he plays a key role in driving strategic growth and l...",
-        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-    },
+    //     {
+    //     photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(FP)-2.-Mr.-Amit-Shah38.jpg",
+    //     name: "Mr. Amit Shah",
+    //     role: "President and Chief Marketing Officer, Flexible Packaging Business",
+    //     summary:
+    //         "Mr. Amit Shah brings close to three decades of experience, including nearly a decade in the FMCG sector. As a member of the UFlex leadership team, he plays a key role in driving strategic growth and l...",
+    //     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+    // },
     ],
   },
 

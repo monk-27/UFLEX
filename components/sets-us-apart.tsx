@@ -149,7 +149,7 @@ const settingsmob = {
   return (
     <section className="relative bg-white py-16">
       <div className="mx-auto max-w-6xl px-6 text-center">
-        <h2 className="text-[24px] lato-600 text-[#117ABA] md:text-[42px] md:text-5xl">What Sets Us Apart</h2>
+        <h2 className="text-[24px] lato-600 text-[#117ABA] md:text-[28px] ">What Sets Us Apart</h2>
         <p className="lato-400 mx-auto mt-2 max-w-3xl text-[#222] md:text-[20px]">
           At UFlex, research-led innovation is the pillar of our business strategy.
         </p>

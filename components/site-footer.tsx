@@ -152,14 +152,15 @@ export function SiteFooter() {
 
         <div className="flex gap-3 flex-wrap">
           {[
-            { Icon: Twitter, href: "#" },
-            { Icon: Facebook, href: "#" },
-            { Icon: Instagram, href: "#" },
-            { Icon: Linkedin, href: "#" },
+            { Icon: Twitter, href: " https://twitter.com/uflexltd" },
+            { Icon: Facebook, href: "https://www.facebook.com/uflexltd" },
+            { Icon: Instagram, href: "https://www.instagram.com/uflexltd" },
+            { Icon: Linkedin, href: "https://www.linkedin.com/company/uflexltd" },
           ].map(({ Icon, href }, i) => (
             <Link
               key={i}
               href={href}
+              target="_blank"
               className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#4E74A6] ring-1 ring-white/40"
             >
               <Icon className="h-5 w-5" />

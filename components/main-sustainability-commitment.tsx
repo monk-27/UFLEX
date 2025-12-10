@@ -104,7 +104,7 @@
 //               className="flex w-full items-center justify-between rounded-lg px-5 py-4 text-left font-semibold text-[#1E1E1E]"
 //             >
 //               <div>
-//                   <h3 className="text-gray-600 manrope-600 text-lg">
+//                   <h3 className="text-gray-600 lato-600 text-lg">
 //                     <p className="text-[14px] leading-relaxed opacity-90">{item.title}</p>
 
 //                   </h3>
@@ -124,7 +124,7 @@
 //                   className="overflow-hidden rounded-b-lg bg-white"
 //                 >
 //                   <div className="px-5 pb-5 pt-1 text-[#2A2A2A]">
-//                     <div className="manrope-400 px-5 pb-5 pt-1 text-gray-600">
+//                     <div className="lato-400 px-5 pb-5 pt-1 text-gray-600">
 
 
 
@@ -379,7 +379,7 @@
 //               initial={{ opacity: 0, y: 10 }}
 //               whileInView={{ opacity: 1, y: 0 }}
 //               viewport={{ once: true }}
-//               className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"
+//               className="text-[24px] lato-600 text-[#117ABA] md:text-[42px] md:text-5xl"
 //             >
 //               What We Do
 //             </motion.h1>
@@ -388,7 +388,7 @@
 //               whileInView={{ opacity: 1, y: 0 }}
 //               viewport={{ once: true }}
 //               transition={{ delay: 0.05 }}
-//               className="manrope-400 mt-5 space-y-4 text-slate-700"
+//               className="lato-400 mt-5 space-y-4 text-slate-700"
 //             >
 //               <p>
 //                 We operate across the entire packaging value chain, offering unmatched integration and scale. Our
@@ -425,7 +425,7 @@
 //       {/* FEATURED STRIP (like your screenshot with arrows) */}
 //       <section aria-labelledby="featured" className="relative">
 //         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-//           <h2 id="featured" className="text-center text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">
+//           <h2 id="featured" className="text-center text-[24px] lato-600 text-[#117ABA] md:text-[42px] md:text-5xl">
 //             Our Expansion
 //           </h2>
 
@@ -460,12 +460,12 @@
 //                     </div>
 
 //                     <div className="space-y-2 p-5">
-//                       <h3 className="text-lg manrope-800 text-gray-900">{it.title}</h3>
-//                       <p className={`manrope-400 text-sm text-slate-700`}>
+//                       <h3 className="text-lg lato-800 text-gray-900">{it.title}</h3>
+//                       <p className={`lato-400 text-sm text-slate-700`}>
 //                         {it.desc}
 //                       </p>
 //                       <span
-//                         className={`inline-flex items-center text-sm manrope-700 ${c.title} hover:underline underline-offset-4`}
+//                         className={`inline-flex items-center text-sm lato-700 ${c.title} hover:underline underline-offset-4`}
 //                       >
 //                         Learn more →
 //                       </span>
@@ -591,7 +591,7 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
 
   return (
     <section aria-labelledby={`${id}-heading`} className=" px-4 sm:px-6 lg:px-0 py-10">
-      <h2 id={`${id}-heading`} className="text-center text-[24px] manrope-700 text-[#117ABA] md:text-[42px] mb-12">
+      <h2 id={`${id}-heading`} className="text-center text-[24px] lato-700 text-[#117ABA] md:text-[42px] mb-12">
         {heading}
       </h2>
 
@@ -613,10 +613,10 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
                   </div>
 
                   <div className="p-4 md:p-5">
-                    <h3 className="text-center text-[#117ABA] text-sm manrope-600 text-[16px]">{card.title}</h3>
+                    <h3 className="text-center text-[#117ABA] text-sm lato-600 text-[16px]">{card.title}</h3>
 
                   </div>
-                  <div className="text-gray-400 manrope-400 text-right items-end">
+                  <div className="text-gray-400 lato-400 text-right items-end">
                     <button className="">
                       Download {">>"}
                     </button>
@@ -706,7 +706,7 @@ function InvestorSliders({ items, heading, id }: { items: InvestorCard[]; headin
 
   return (
     <section aria-labelledby={`${id}-heading`} className=" px-4 sm:px-6 lg:px-0 py-10">
-      <h2 id={`${id}-heading`} className="text-center text-[24px] manrope-700 text-[#117ABA] md:text-[42px] mb-12">
+      <h2 id={`${id}-heading`} className="text-center text-[24px] lato-400 text-[#117ABA] md:text-[28px] mb-12">
         {heading}
       </h2>
 
@@ -728,10 +728,10 @@ function InvestorSliders({ items, heading, id }: { items: InvestorCard[]; headin
                   </div>
 
                   <div className="p-4 md:p-5">
-                    <h3 className="text-center text-[#117ABA] text-sm manrope-600 text-[16px]">{card.title}</h3>
+                    <h3 className="text-center text-[#117ABA] text-sm lato-600 text-[16px]">{card.title}</h3>
 
                   </div>
-                  <div className="text-gray-400 manrope-400 text-right items-end">
+                  <div className="text-gray-400 lato-400 text-right items-end">
                     <button className="">
                       Download {">>"}
                     </button>

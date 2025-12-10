@@ -106,7 +106,7 @@
 //               className="flex w-full items-center justify-between rounded-lg px-5 py-4 text-left font-semibold text-[#1E1E1E]"
 //             >
 //               <div>
-//                   <h3 className="text-gray-700 manrope-600 text-lg">
+//                   <h3 className="text-gray-700 lato-600 text-lg">
 //                     <p className="text-[14px] leading-relaxed opacity-90">{item.title}</p>
 
 //                   </h3>
@@ -126,7 +126,7 @@
 //                   className="overflow-hidden rounded-b-lg bg-white"
 //                 >
 //                   <div className="px-5 pb-5 pt-1 text-[#2A2A2A]">
-//                     <div className="manrope-400 px-5 pb-5 pt-1 text-gray-700">
+//                     <div className="lato-400 px-5 pb-5 pt-1 text-gray-700">
 
 
 
@@ -266,8 +266,8 @@ export default function MainSustainabilityCOMMComp({
               <Image src={image} alt="People planting trees" fill className="object-cover" />
             </div>
 
-            <figcaption className="text-center px-4 py-4 manrope-600 text-[24px] text-slate-700">
-              <span className="manrope-600 text-[24px]">Empowering a </span>
+            <figcaption className="text-center px-4 py-4 lato-600 text-[24px] text-slate-700">
+              <span className="lato-600 text-[24px]">Empowering a </span>
               <span className=" text-green-500">Greener </span>
               <span className="">Tomorrow, Today</span>
             </figcaption>
@@ -276,8 +276,8 @@ export default function MainSustainabilityCOMMComp({
 
         {/* TEXT SIDE */}
         <div className="order-2 lg:order-2">
-          <h3 className="text-xl manrope-600 text-[#117ABA] md:text-2xl lg:text-3xl">UFlex’s sustainability vision</h3>
-          <p className="mt-3 manrope-600 text-slate-600 text-[16px] max-w-2xl">
+          <h3 className="text-xl lato-600 text-[#117ABA] md:text-2xl lg:text-3xl">UFlex’s sustainability vision</h3>
+          <p className="mt-3 lato-600 text-slate-600 text-[16px] max-w-2xl">
             UFlex’s sustainability initiatives are extensive and feature a variety of advanced projects and
             products, such as:
           </p>
@@ -296,9 +296,9 @@ export default function MainSustainabilityCOMMComp({
               </div>
               <div>
                 <p className="text-sm">
-                  <strong className="manrope-600 text-slate-600 text-[24px]">Promoting Mixed Plastic Recycling</strong>
+                  <strong className="lato-600 text-slate-600 text-[24px]">Promoting Mixed Plastic Recycling</strong>
                 </p>
-                <p className="mt-1 manrope-600 text-slate-400 text-[16px]">Extensively recycling mixed plastic waste and promoting the use of recycled material.</p>
+                <p className="mt-1 lato-600 text-slate-400 text-[16px]">Extensively recycling mixed plastic waste and promoting the use of recycled material.</p>
               </div>
             </li>
 
@@ -315,9 +315,9 @@ export default function MainSustainabilityCOMMComp({
               </div>
               <div>
                 <p className="text-sm">
-                  <strong className="manrope-600 text-slate-600 text-[24px]">Advanced Plastic Waste Management</strong>
+                  <strong className="lato-600 text-slate-600 text-[24px]">Advanced Plastic Waste Management</strong>
                 </p>
-                <p className="mt-1 manrope-600 text-slate-400 text-[16px]">Tackling plastic waste issue on a long-term basis through the strategic adoption of advanced technologies to revolutionize the management of plastic waste segregation and collection.</p>
+                <p className="mt-1 lato-600 text-slate-400 text-[16px]">Tackling plastic waste issue on a long-term basis through the strategic adoption of advanced technologies to revolutionize the management of plastic waste segregation and collection.</p>
               </div>
             </li>
 
@@ -334,9 +334,9 @@ export default function MainSustainabilityCOMMComp({
               </div>
               <div>
                 <p className="text-sm">
-                  <strong className="manrope-600 text-slate-600 text-[24px]">Comprehensive Waste Management Strategy</strong>
+                  <strong className="lato-600 text-slate-600 text-[24px]">Comprehensive Waste Management Strategy</strong>
                 </p>
-                <p className="mt-1 manrope-600 text-slate-400 text-[16px]">Addressing uncollected waste and recycling of collected waste and biodegradation of uncollected waste.</p>
+                <p className="mt-1 lato-600 text-slate-400 text-[16px]">Addressing uncollected waste and recycling of collected waste and biodegradation of uncollected waste.</p>
               </div>
             </li>
 
@@ -353,9 +353,9 @@ export default function MainSustainabilityCOMMComp({
               </div>
               <div>
                 <p className="text-sm">
-                  <strong className="manrope-600 text-slate-600 text-[24px]">Multi-faceted Water Conservation Strategy</strong>
+                  <strong className="lato-600 text-slate-600 text-[24px]">Multi-faceted Water Conservation Strategy</strong>
                 </p>
-                <p className="mt-1 manrope-600 text-slate-400 text-[16px]">Option of a multi-faceted approach to water conservation and recycling, which includes implementing zero liquid discharge (ZLD) systems at our manufacturing facilities.</p>
+                <p className="mt-1 lato-600 text-slate-400 text-[16px]">Option of a multi-faceted approach to water conservation and recycling, which includes implementing zero liquid discharge (ZLD) systems at our manufacturing facilities.</p>
               </div>
             </li>
 
@@ -372,9 +372,9 @@ export default function MainSustainabilityCOMMComp({
               </div>
               <div>
                 <p className="text-sm">
-                  <strong className="manrope-600 text-slate-600 text-[24px]">Sustainable Technology Integration</strong>
+                  <strong className="lato-600 text-slate-600 text-[24px]">Sustainable Technology Integration</strong>
                 </p>
-                <p className="mt-1 manrope-600 text-slate-400 text-[16px]">Integration of energy-efficient technologies, renewable sources and sustainable materials.</p>
+                <p className="mt-1 lato-600 text-slate-400 text-[16px]">Integration of energy-efficient technologies, renewable sources and sustainable materials.</p>
               </div>
             </li>
           </ul>

@@ -98,7 +98,7 @@
 //                   className="object-contain"
 //                 /> */}
 //                 <div>
-//                   <h3 className="text-gray-600 manrope-600 text-lg">
+//                   <h3 className="text-gray-600 lato-600 text-lg">
 //                     <p className="text-[14px] leading-relaxed opacity-90">{item.title}</p>
 
 //                   </h3>
@@ -119,7 +119,7 @@
 //                   transition={{ duration: 0.28, ease: "easeInOut" }}
 //                   className="overflow-hidden rounded-b-lg bg-white"
 //                 >
-//                   <div className="manrope-400 px-5 pb-5 pt-1 text-gray-600">
+//                   <div className="lato-400 px-5 pb-5 pt-1 text-gray-600">
 
 
 

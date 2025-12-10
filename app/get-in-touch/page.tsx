@@ -38,7 +38,7 @@ const OFFICES: Office[] = [
     country: "India",
     city: "Noida, Uttar Pradesh",
     address: ["A-1, Sector-60", "Noida – 201307, Uttar Pradesh, India"],
-    phone: "+91 120 4012345/6108444 ",
+    phone: "+91 120 4012345/6108444 (30 lines) ",
     email: "corpcomm@uflexltd.com",
   },
   {
@@ -495,17 +495,17 @@ export default function GetInTouch() {
             )}
           </div>
 
-          <p className="mt-10 text-center text-sm text-slate-700">
+          <p className="mt-12 text-center text-sm text-slate-700 ">
             Can’t find what you need? Write to{" "}
             <a href="mailto:enquiry@uflexltd.com" className="font-semibold text-[#117ABA] underline underline-offset-4">
               enquiry@uflexltd.com
             </a>
-            .
+            
           </p>
         </section>
 
         {/* CONTACT FORM */}
-        <section className="border-t border-slate-200 bg-white py-14">
+        <section className="border-t border-slate-200 bg-white py-1">
           <div className="mx-auto max-w-7xl px-4">
             {/* Heading */}
             <div className="text-start mb-4">
@@ -686,7 +686,7 @@ export default function GetInTouch() {
 
 
         {/* MAP */}
-        <section className="max-w-7xl mx-auto w-full px-4 sm:px-0 pb-16 ">
+        <section className="pt-10 max-w-7xl mx-auto w-full px-4 sm:px-0 pb-16 ">
           <div className="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
             <iframe
               title="UFlex Limited Map"

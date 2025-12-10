@@ -188,11 +188,11 @@ const GlobalFootprint = () => {
     <section className="mt-[30px] px-4 py-0 text-center sm:mt-8 sm:py-10 md:px-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <h2 className="text-[24px] lato-600 text-[#117ABA] md:text-[42px] text-center">
+        <h2 className="text-[24px] lato-400 text-[#117ABA] md:text-[28px] text-start">
           Our Global Footprint
         </h2>
 
-        <p className="text-center lato-400 mt-0 text-[16px] text-[#181818] md:text-[20px]">
+        <p className="text-start lato-400 mt-0 text-[16px] text-[#181818] md:text-[20px]">
           Manufacturing excellence across five continents
         </p>
 
@@ -204,7 +204,7 @@ const GlobalFootprint = () => {
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 mt-12 grid md:grid-cols-2 gap-12">
           {/* INDIA */}
           <div className=" bg-gray-100 p-8 rounded-lg">
-            <h3 className="text-2xl lato-800 mb-6 text-[#117ABA]">
+            <h3 className="text-2xl lato-700 mb-6 text-[#117ABA]">
               India – Manufacturing Facilities
             </h3>
 
@@ -224,7 +224,7 @@ const GlobalFootprint = () => {
 
           {/* INTERNATIONAL */}
           <div className="bg-gray-100  rounded-lg p-8 ">
-            <h3 className="text-2xl lato-800 mb-6 text-[#117ABA]">
+            <h3 className="text-2xl lato-700 mb-6 text-[#117ABA]">
               International Facilities
             </h3>
 

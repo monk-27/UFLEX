@@ -474,8 +474,8 @@ const BoardOfDirectors = () => {
     <>
       <section className="mt-[30px] px-4 py-0 text-center sm:mt-8 sm:bg-gray-100 sm:py-10 md:px-12">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
-          <h2 className="text-[24px] lato-600 text-[#117ABA] md:text-[42px] md:text-5xl text-center mb-12">
-            Board Of Directors
+          <h2 className="text-[24px] lato-400 text-[#117ABA] md:text-[28px]  text-start mb-12">
+            Board of Directors
           </h2>
 
           <div className="relative">

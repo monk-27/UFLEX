@@ -44,7 +44,7 @@ export default function Page() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-[32px] font-medium leading-tight text-white md:text-[48px] lg:text-[56px] manrope-500"
+            className="text-[32px] font-medium leading-tight text-white md:text-[48px] lg:text-[56px] lato-500"
           >
             Sustainability
           </motion.h1>
@@ -54,7 +54,7 @@ export default function Page() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="mt-3 max-w-4xl text-[18px] leading-snug text-white opacity-95 md:text-[24px] lg:text-[28px] manrope-500"
+            className="mt-3 max-w-4xl text-[18px] leading-snug text-white opacity-95 md:text-[24px] lg:text-[28px] lato-500"
           >
             Committed to achieving carbon neutrality by 2035.
           </motion.h3>
@@ -87,7 +87,7 @@ export default function Page() {
             variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
             className="flex items-center mt-10"
           >
-            <button className="flex items-center gap-2 rounded-full border border-white bg-white px-6 py-3 text-sm manrope-400 text-black transition-all hover:bg-transparent hover:text-white">
+            <button className="flex items-center gap-2 rounded-full border border-white bg-white px-6 py-3 text-sm lato-400 text-black transition-all hover:bg-transparent hover:text-white">
               READ MORE
               <svg
                 width="16"
@@ -110,7 +110,7 @@ export default function Page() {
 
       <MainSustainabilityComp />
       <motion.h3
-        className="text-center text-[24px] manrope-700 text-[#117ABA] md:text-[42px] mb-8"
+        className="text-center text-[24px] lato-400 text-[#117ABA] md:text-[28px] mb-8"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.2 }}

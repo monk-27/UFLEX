@@ -124,7 +124,7 @@ export default function LearnStatus() {
               <h2 className="text-[24px] lato-600 text-[#117ABA] md:text-[28px] leading-tight mb-1">
                 UFlex Learning Academy
               </h2>
-              {/* <Image src="/images/ula.png" width={115} height={15} alt={""}/> */}
+              <Image src="/images/ula.png" width={115} height={15} alt={""}/>
             </motion.div>
 
             {/* Improved Text Content */}
