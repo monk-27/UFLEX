@@ -41,7 +41,7 @@ const Careers = () => {
             <section className="bg-gradient-to-b from-white to-slate-50 ">
                 <section className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[450px] overflow-hidden">
                     <Image
-                        src="/images/investors/na.png"
+                        src="/images/careers/main.png"
                         alt="Notices and Announcements"
                         fill
                         className="object-cover"
@@ -80,9 +80,15 @@ const Careers = () => {
                 </div>
                 <div className='mt-8 w-full px-4 sm:px-0 text-center'>
 
-                    <button className='text-center rounded-sm texts-md lato-600 bg-[#117ABA] text-white w-auto mx-2 py-2 px-12 '>
+                    <a
+                        href="https://aa193.taleo.net/careersection/ex/jobsearch.ftl?lang=en"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-center rounded-sm texts-md lato-600 bg-[#117ABA] text-white w-auto mx-2 py-2 px-12 inline-block"
+                    >
                         Apply Now
-                    </button>
+                    </a>
+
                 </div>
                 <motion.section
                     className="max-w-7xl mx-auto w-full px-4 sm:px-0 text-start "
