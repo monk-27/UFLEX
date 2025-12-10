@@ -19,7 +19,7 @@
 //         transition={{ duration: 0.6 }}
 //         viewport={{ once: true }}
 //       >
-//         <h2 className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">Life at UFlex</h2>
+//         <h2 className="text-[24px] lato-600 text-[#117ABA] md:text-[42px] md:text-5xl">Life at UFlex</h2>
 //         <h3
 //           className="font-EB-extrabold mt-0 text-[16px] text-[#181818] sm:mt-2 md:text-3xl"
 //           style={{ lineHeight: "124%" }}
@@ -54,7 +54,7 @@
 //             className="group w-full overflow-hidden rounded-lg text-left"
 //             variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
 //           >
-//             <h3 className="text-center manrope-400 mb-3 text-[18px] text-[#181818] md:text-2xl">{module.title}</h3>
+//             <h3 className="text-center lato-400 mb-3 text-[18px] text-[#181818] md:text-2xl">{module.title}</h3>
 
 //             {/* Card */}
 //             <div className="relative h-[360px] sm:h-[420px] lg:h-[445px]">
@@ -77,7 +77,7 @@
 //               >
 //                 <div className="absolute inset-0 rounded-lg bg-gradient-to-t from-black/45 via-black/10 to-transparent" />
 //                 <div className="relative">
-//                   <h4 className="manrope-800 text-white text-2xl md:text-3xl drop-shadow-[0_1px_1px_rgba(243,244,246,0.9)]">
+//                   <h4 className="lato-800 text-white text-2xl md:text-3xl drop-shadow-[0_1px_1px_rgba(243,244,246,0.9)]">
 //                     {module.title}
 //                   </h4>
 //                   <p className="mt-2 text-white/95 text-sm md:text-base leading-relaxed drop-shadow-[0_1px_1px_rgba(243,244,246,0.9)]">
@@ -93,7 +93,7 @@
 //               >
 //                 <div className="absolute inset-0 rounded-lg bg-gradient-to-t from-black/35 via-black/5 to-transparent" />
 //                 <div className="relative">
-//                   <h4 className="manrope-800 text-white text-lg">{module.title}</h4>
+//                   <h4 className="lato-800 text-white text-lg">{module.title}</h4>
 //                   <p className="mt-1 text-white/95 text-sm">{module.description}</p>
 //                 </div>
 //               </motion.div>
@@ -108,6 +108,7 @@
 "use client"
 import { motion } from "framer-motion"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function LifeatModules() {
   const modules = [
@@ -139,7 +140,7 @@ export default function LifeatModules() {
         <div className="items-center justify-center flex text-center space-x-2">
 
                       {/* <Image src="/images/ula.png" width={75} height={10} alt={""}/> */}
-        <h2 className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">
+        <h2 className="text-[24px] lato-600 text-[#117ABA] md:text-[42px] md:text-5xl">
           Life at UFlex
         </h2>
         </div>
@@ -173,8 +174,10 @@ export default function LifeatModules() {
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0 },
             }}
-            className="flex flex-col overflow-hidden rounded-lg bg-white shadow-md transition-shadow hover:shadow-xl"
+            className="flex flex-col overflow-hidden rounded-sm bg-white  hover:shadow-xl"
           >
+            <Link href="/careers">
+           
             {/* Image */}
             <div className="relative h-64 sm:h-72 md:h-80">
               <Image
@@ -189,13 +192,14 @@ export default function LifeatModules() {
 
             {/* Text Content */}
             <div className="flex flex-col p-6 text-left">
-              <h3 className="text-center manrope-600 text-xl text-[#117ABA] md:text-2xl">
+              <h3 className="text-center lato-600 text-xl text-[#117ABA] md:text-2xl">
                 {module.title}
               </h3>
-              <p className="manrope-400 mt-3 text-sm text-[#5F5F5F] md:text-base leading-relaxed">
+              <p className="lato-400 mt-3 text-sm text-[#5F5F5F] md:text-base leading-relaxed">
                 {module.description}
               </p>
             </div>
+             </Link>
           </motion.div>
         ))}
       </motion.div>

@@ -23,12 +23,12 @@ export default function BusinessesPage() {
     <main className="bg-white">
       <SiteHeader />
 
-      <div>
+      <div >
         <Image
           src="/images/herobuisness.png"
           alt="Business Hero"
           width={1440}
-          height={451}
+          height={450}
           className="w-full h-auto"
         />
 

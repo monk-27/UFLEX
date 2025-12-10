@@ -15,10 +15,10 @@ type Item = {
 }
 
 const items: Item[] = [
-    { desc: "Every package we create has a story. It's about protecting the food families love, reducing waste, and building a more sustainable future.", title: "Making a difference", image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/home-pointer/image1_20250923095732.jpg" },
-    { desc: "We don't just follow trends, we set them. Our commitment to quality innovation means you'll be surrounded by brilliant minds, pushing the boundaries of what's possible in packaging.", title: "Innovation", image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/home-pointer/image2_20250923095732.jpg" },
-    { title: "Growth", desc: "We believe in investing in our people. You'll have the opportunity to learn, grow, and lead, taking on challenging projects and shaping your career alongside industry experts.", image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/home-pointer/image3_20250923095732.jpg" },
-    { title: "Building relationships", desc: "At UFlex, we're more than just colleagues, we're a family. We foster a culture of collaboration, support, and mutual respect, creating a workplace where you can thrive.", image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/home-pointer/image4_20250923095732.jpg" },
+    { desc: "Every package we create has a story. It's about protecting the food families love, reducing waste, and building a more sustainable future.", title: "Making a difference", image: "/images/careers/c1.png" },
+    { desc: "We don't just follow trends, we set them. Our commitment to quality innovation means you will be surrounded by brilliant minds, pushing the boundaries of what's possible in packaging.", title: "Innovation", image: "/images/careers/c2.png" },
+    { title: "Growth", desc: "We believe in investing in our people. You'll have the opportunity to learn, grow, and lead, taking on challenging projects and shaping your career alongside industry experts.", image: "/images/careers/c3.png" },
+    { title: "Building relationships", desc: "At UFlex, we're more than just colleagues, we're a family. We foster a culture of collaboration, support, and mutual respect, creating a workplace where you can thrive.", image: "/images/careers/c4.png" },
 ]
 
 // Same palette you used for Board/Key Management
@@ -39,70 +39,60 @@ const Careers = () => {
     return (
         <div>
             <section className="bg-gradient-to-b from-white to-slate-50 ">
-                <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 grid  items-center gap-10  py-12  lg:grid-cols-2 lg:gap-14 lg:py-20">
-                    <div>
-                        <motion.h1
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"
-                        >
+                <section className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[450px] overflow-hidden">
+                    <Image
+                        src="/images/investors/na.png"
+                        alt="Notices and Announcements"
+                        fill
+                        className="object-cover"
+                        priority
+                    />
+                    <div className="absolute inset-0 bg-black/40" />
+                    <div className="absolute inset-0 flex flex-col justify-center px-6 sm:px-12 md:px-20 lg:px-28">
+                        <h1 className="text-white text-2xl sm:text-3xl md:text-[38px] lato-700 mb-1">
                             Careers
-                        </motion.h1>
-                        <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.05 }}
-                            className="manrope-400 mt-5 space-y-4 text-slate-700"
-                        >
-                            <p>
-                                At UFlex, we pride ourselves on fostering an inclusive, caring, and productive environment for our people. As a leading player in the flexible packaging industry, we engage and retain purpose-driven talent through a fair and consistent HR framework. Our entrepreneurial culture empowers employees to drive UFlex’s growth and success.
-                            </p>
-                            <p>
-                                <span className='manrope-700'>Join us, and be part of a movement that's changing the world, {" "}</span> one package at a time.
-
-                                UFlex offers job seekers more than a job. It offers them a lifetime of growth with a number of opportunities for continuous development and growth in assorted fields of business.
-
-                                If you are looking for a rewarding career, <span className='manrope-700'> you may write to us at: hr@uflexltd.com</span>
-
-                                All current openings can be viewed at the link below.
-
-                                Click the button to submit your application</p>
-                            <div>
-                                <button className='rounded-sm texts-md manrope-600 bg-[#117ABA] text-white w-1/3 mx-2 py-2'>
-                                    Apply Now
-                                </button>
-
-                            </div>
-                        </motion.div>
+                        </h1>
                     </div>
+                </section>
 
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.98 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl "
-                    >
-                        <Image
-                            src="https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/What-We-Do01.jpg"
-                            alt="UFlex capabilities across the value chain"
-                            fill
-                            className="object-cover"
-                            priority
-                        />
-                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
-                    </motion.div>
+                {/* <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 grid  items-center gap-10  py-12  lg:grid-cols-2 lg:gap-14 lg:py-20"> */}
+                <div className="max-w-7xl mx-auto px-4">
+                    <p className="lato-400 text-[15px] leading-relaxed text-[#6B6B6B] text-left mt-6">
+                        At UFlex, we pride ourselves on fostering an inclusive, caring, and productive environment for our people. As a leading player in the flexible packaging industry, we engage and retain purpose-driven talent through a fair and consistent HR framework. Our entrepreneurial culture empowers employees to drive UFlex’s growth and success.
+                        <span className="text-[#117ABA]">
+                            Join us, and be part of a movement that's changing the world, one package at a time.
+                        </span>
+                        UFlex offers job seekers more than a job. It offers them a lifetime of growth with a number of opportunities for continuous development and growth in assorted fields of business.
+                    </p>
+
+                    <p className="lato-400 text-[15px] leading-relaxed text-[#6B6B6B] text-left mt-6">
+                        If you are looking for a rewarding career, you may write to us at:
+                        <span className="text-[#117ABA]">hr@uflexltd.com</span>
+                    </p>
+
+                    <p className="lato-400 text-[15px] leading-relaxed text-[#6B6B6B] text-left mt-6">
+                        All current openings can be viewed at the link below. Click the button to submit your application.
+                    </p>
+                    {/* </div> */}
+
+
+
+                </div>
+                <div className='mt-8 w-full px-4 sm:px-0 text-center'>
+
+                    <button className='text-center rounded-sm texts-md lato-600 bg-[#117ABA] text-white w-auto mx-2 py-2 px-12 '>
+                        Apply Now
+                    </button>
                 </div>
                 <motion.section
-                    className="max-w-7xl mx-auto w-full px-4 sm:px-0 text-center "
+                    className="max-w-7xl mx-auto w-full px-4 sm:px-0 text-start "
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
                 >
                     <motion.h3
-                        className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl mb-8"
+                        className="pt-8 text-[24px] lato-600 text-[#117ABA] md:text-[28px] md:text-5xl mb-2"
                         initial={{ opacity: 0, y: -20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.2 }}
@@ -112,18 +102,15 @@ const Careers = () => {
 
                     <motion.h2
                         transition={{ duration: 0.7, delay: 0.4 }}
-                        className="text-gray-800 manrope-700 py-[2px] text-[18px] leading-tight md:text-[20px] mb-4"
+                        className="text-[#6B6B6B] lato-400 py-[2px] text-[16px] leading-relaxed md:text-[16px] mb-1"
                     >
-                        At UFlex, we're not just shaping the future of packaging, we're revolutionizing it.{" "}<br />
-                        <span className="text-gray-800 manrope-400">
-
-                            For over three decades, we've been at the forefront of innovation, developing advanced solutions that preserve products, protect our planet, and empower our people.</span>
+                        At UFlex, we're not just shaping the future of packaging, we're revolutionizing it. For over three decades, we've been at the forefront of innovation, developing advanced solutions that preserve products, protect our planet, and empower our people.
                     </motion.h2>
 
                 </motion.section>
                 <AnimatedSection>
-                    <div className="py-12 max-w-7xl mx-auto w-full px-4 sm:px-0 lg:py-16">
-                        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                    <div className="py-16 max-w-7xl mx-auto w-full px-4 sm:px-0 lg:py-4">
+                        <div className="grid gap-1 sm:grid-cols-2 lg:grid-cols-4">
                             {items.map((it, idx) => {
                                 const c = cardColors[idx % cardColors.length]
                                 return (
@@ -133,21 +120,21 @@ const Careers = () => {
                                         whileInView={{ opacity: 1, y: 0 }}
                                         viewport={{ once: true }}
                                         transition={{ delay: idx * 0.05 }}
-                                        className={`max-w-7xl mx-auto w-full px-4 sm:px-0 group relative overflow-hidden rounded-2xl border-2 ${c.border} ${c.bg} p-0 shadow transition`}
+                                        className={` relative overflow-hidden p-0  transition`}
                                     >
-                                        <div className="relative h-75 sm:h-60 w-full overflow-hidden">
+                                        <div className="relative h-75 w-[286px] sm:h-[369px] overflow-hidden">
                                             <Image
                                                 src={it.image ?? "/images/whatwedo/placeholder.jpg"}
                                                 alt={it.title}
                                                 fill
-                                                className="rounded-b-none object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                                                className="h-75 w-[286px] sm:h-[369px] rounded-b-none object-cover transition-transform duration-300 group-hover:scale-[1.03]"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent" />
                                         </div>
 
-                                        <div className="space-y-2 p-5">
-                                            <h3 className="text-lg manrope-800 text-gray-700">{it.title}</h3>
-                                            <p className={`manrope-400 text-sm text-slate-700`}>
+                                        <div className="space-y-2 p-1">
+                                            <h3 className="text-center text-lg lato-400 text-[#117ABA]">{it.title}</h3>
+                                            <p className={`lato-400 text-sm text-slate-700`}>
                                                 {it.desc}
                                             </p>
 

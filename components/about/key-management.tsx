@@ -71,7 +71,7 @@
 //   return (
 //     <div className="justify-center items-center min-h-screen mx-auto max-w-[90%] bg-white py-8 sm:py-12 lg:py-12 px-2 sm:px-6 lg:px-8 sm:pt-[78px] pt-[78px]">
 //       {/* Heading */}
-//       <h2 className="text-center text-[24px]  manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"> Key Management</h2>
+//       <h2 className="text-center text-[24px]  lato-600 text-[#117ABA] md:text-[42px] md:text-5xl"> Key Management</h2>
 
 
 
@@ -112,18 +112,18 @@
 //               </div>
 
 //               {/* Team Member Name */}
-//               <h3 className="manrope-600 text-gray-600 text-[16px] text-center sm:text-left mb-2">
+//               <h3 className="lato-600 text-gray-600 text-[16px] text-center sm:text-left mb-2">
 //                 {member.name}
 //               </h3>
 
 //               {/* Team Member Description */}
-//               <p className="manrope-400 text-gray-800 text-[14px] sm:text-left mb-[57px] sm:mb-[60px]">
+//               <p className="lato-400 text-gray-800 text-[14px] sm:text-left mb-[57px] sm:mb-[60px]">
 //                 {member.position}
 //               </p>
 //               <div className="mt-4 mb-4 flex justify-center sm:justify-start">
 //                 <button
 //                   onClick={() => setOpenIdx(index)}
-//                   className={`${colors.titleColor} manrope-700 flex items-center gap-1 hover:gap-2 transition`}
+//                   className={`${colors.titleColor} lato-700 flex items-center gap-1 hover:gap-2 transition`}
 //                   aria-haspopup="dialog"
 //                   aria-controls={`exec-modal-${index}`}
 //                   aria-expanded={openIdx === index}
@@ -188,8 +188,8 @@
 //                           <Image src={d.img ?? "/placeholder.png"} alt={d.name} fill className="object-cover" />
 //                         </div>
 //                         <div>
-//                           <h3 id={`exec-title-${openIdx}`} className={`text-xl manrope-800 text-red-900`}>{d.name}</h3>
-//                           <p className={`${c.titleColor} manrope-700`}>{d.position}</p>
+//                           <h3 id={`exec-title-${openIdx}`} className={`text-xl lato-800 text-red-900`}>{d.name}</h3>
+//                           <p className={`${c.titleColor} lato-700`}>{d.position}</p>
 //                         </div>
 //                       </div>
 
@@ -198,7 +198,7 @@
 //                       <div className="mt-5 flex justify-end">
 //                         <button
 //                           onClick={() => setOpenIdx(null)}
-//                           className={`inline-flex items-center justify-center rounded-lg border-2 ${c.border} bg-white px-4 py-2 text-sm manrope-700 ${c.titleColor} hover:bg-white/80 transition`}
+//                           className={`inline-flex items-center justify-center rounded-lg border-2 ${c.border} bg-white px-4 py-2 text-sm lato-700 ${c.titleColor} hover:bg-white/80 transition`}
 //                         >
 //                           Close
 //                         </button>
@@ -304,7 +304,7 @@ const KeyManagement = () => {
     <>
       <section className="mt-[30px] px-4 py-0 text-center sm:mt-8 sm:bg-gray-100 sm:py-10 md:px-12">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
-          <h2 className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl text-center mb-12">
+          <h2 className="text-[24px] lato-600 text-[#117ABA] md:text-[42px] md:text-5xl text-center mb-12">
             Key Management
           </h2>
 
@@ -341,7 +341,7 @@ const KeyManagement = () => {
                         {/* Small name/role on B/W image */}
                         <div className="pointer-events-none absolute inset-x-0 bottom-0 p-3">
                           <div className="rounded-none bg-black/55 px-2 py-1 max-w-auto">
-                            <p className="text-xs manrope-700 leading-tight text-white">{d.name}</p>
+                            <p className="text-xs lato-700 leading-tight text-white">{d.name}</p>
                             <p className="text-[10px] text-white/90">{d.position}</p>
                           </div>
                         </div>
@@ -365,7 +365,7 @@ const KeyManagement = () => {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                       <div className="absolute bottom-3 left-3 right-3">
-                        <p className="text-sm md:text-base manrope-700 leading-tight text-white">
+                        <p className="text-sm md:text-base lato-700 leading-tight text-white">
                           {d.name}
                         </p>
                         <p className="text-white/90 text-xs md:text-sm">{d.position}</p>
@@ -462,7 +462,7 @@ const KeyManagement = () => {
 
               <div className="p-6 md:p-8">
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900">{selected.name}</h3>
-                <p className="mt-1 manrope-700 text-[#117ABA]">{selected.position}</p>
+                <p className="mt-1 lato-700 text-[#117ABA]">{selected.position}</p>
                 <p className="mt-4 text-sm md:text-base leading-relaxed text-gray-700">
                   {selected.bio}
                 </p>

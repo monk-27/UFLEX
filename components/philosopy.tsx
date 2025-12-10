@@ -156,14 +156,14 @@ const settingsmob = {
 
   return (
     <section className="relative bg-white py-16">
-      <div className="mx-auto max-w-6xl px-6 text-center">
-        <h2 className="ttext-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">People’s philosophy</h2>
-        <p className="manrope-400 mx-auto mt-2 max-w-3xl text-[#222] md:text-lg">
+      <div className="mx-auto max-w-7xl px-6 text-start">
+        <h2 className="ttext-[24px] lato-600 text-[#117ABA] md:text-[28px] ">People’s philosophy</h2>
+        <p className="text-start lato-400 mt-1 max-w-3xl text-gray-500 md:text-lg">
           Our staunch beliefs, our DNA - Our values
         </p>
       </div>
 
-      <div className="mt-12 px-4 hidden sm:block">
+      <div className="mt-12 max-w-7xl mx-auto px-4 hidden sm:block">
         <Slider {...settings}>
           {items.map((card, index) => {
             const isActive = currentSlide === index;
@@ -178,8 +178,8 @@ const settingsmob = {
                 }}
               >
                 <div
-                  className={`overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 ${
-                    isActive ? "shadow-2xl" : "opacity-90"
+                  className={`overflow-hidden rounded-sm bg-white  transition-all duration-300 ${
+                    isActive ? "shadow-xl" : "opacity-90"
                   }`}
                 >
                   <Image
@@ -190,7 +190,7 @@ const settingsmob = {
                     className="h-[280px] w-full object-cover"
                   />
                   <div className="flex flex-col items-center px-6 py-6 text-center">
-                    <h3 className="manrope-800 mb-2 text-[18px] text-[#117ABA] md:text-xl">
+                    <h3 className="lato-800 mb-2 text-[18px] text-[#117ABA] md:text-xl">
                       {card.title}
                     </h3>
                     <p className="text-[14px] text-gray-700 md:text-base">{card.desc}</p>
@@ -228,7 +228,7 @@ const settingsmob = {
                     className="h-[280px] w-full object-cover"
                   />
                   <div className="flex flex-col items-center px-6 py-6 text-center">
-                    <h3 className="manrope-800 mb-2 text-[18px] text-[#117ABA] md:text-xl">
+                    <h3 className="lato-800 mb-2 text-[18px] text-[#117ABA] md:text-xl">
                       {card.title}
                     </h3>
                     <p className="text-[14px] text-gray-700 md:text-base">{card.desc}</p>

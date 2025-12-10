@@ -75,7 +75,7 @@
 //         transition={{ duration: 0.6 }}
 //         viewport={{ once: true }}
 //       >
-//         <h2 className="text-[24px]  manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">
+//         <h2 className="text-[24px]  lato-600 text-[#117ABA] md:text-[42px] md:text-5xl">
 //           Board Of Directors
 //         </h2>
 //       </motion.div>
@@ -150,16 +150,16 @@
 //                     </div>
 //                     {/* Testimonial Text */}
 //                     <div className="col-span-3 mt-8 flex h-full flex-col place-content-center justify-between lg:col-span-2 lg:mt-0">
-//                       <div className="manrope-400 text-center  text-gray-600">
+//                       <div className="lato-400 text-center  text-gray-600">
 
 //                         {testimonial.bio}
 
 //                       </div>
 //                       <div>
-//                         <h4 className="manrope-600 mt-4 text-right text-gray-800">
+//                         <h4 className="lato-600 mt-4 text-right text-gray-800">
 //                           {testimonial.name}
 //                         </h4>
-//                         <p className="manrope-400 text-right text-sm text-gray-500">
+//                         <p className="lato-400 text-right text-sm text-gray-500">
 //                           {testimonial.position}
 //                         </p>
 //                       </div>
@@ -274,7 +274,7 @@
 //         transition={{ duration: 0.6 }}
 //         viewport={{ once: true }}
 //       >
-//         <h2 className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">
+//         <h2 className="text-[24px] lato-600 text-[#117ABA] md:text-[42px] md:text-5xl">
 //           Board Of Directors
 //         </h2>
 //       </motion.div>
@@ -347,10 +347,10 @@
 //                         />
 //                       </div>
 //                       <div className="col-span-3 mt-8 flex h-full flex-col place-content-center justify-between lg:col-span-2 lg:mt-0">
-//                         <div className="manrope-400 text-center text-gray-600">{d.bio}</div>
+//                         <div className="lato-400 text-center text-gray-600">{d.bio}</div>
 //                         <div>
-//                           <h4 className="manrope-600 mt-4 text-right text-gray-800">{d.name}</h4>
-//                           <p className="manrope-400 text-right text-sm text-gray-500">
+//                           <h4 className="lato-600 mt-4 text-right text-gray-800">{d.name}</h4>
+//                           <p className="lato-400 text-right text-sm text-gray-500">
 //                             {d.position}
 //                           </p>
 //                         </div>
@@ -474,7 +474,7 @@ const BoardOfDirectors = () => {
     <>
       <section className="mt-[30px] px-4 py-0 text-center sm:mt-8 sm:bg-gray-100 sm:py-10 md:px-12">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
-          <h2 className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl text-center mb-12">
+          <h2 className="text-[24px] lato-600 text-[#117ABA] md:text-[42px] md:text-5xl text-center mb-12">
             Board Of Directors
           </h2>
 
@@ -511,7 +511,7 @@ const BoardOfDirectors = () => {
                         {/* Small name/role on B/W image */}
                         <div className="pointer-events-none absolute inset-x-0 bottom-0 p-3">
                           <div className="rounded-none bg-black/55 px-2 py-1 w-max">
-                            <p className="text-xs manrope-700 leading-tight text-white">{d.name}</p>
+                            <p className="text-xs lato-700 leading-tight text-white">{d.name}</p>
                             <p className="text-[10px] text-white/90">{d.position}</p>
                           </div>
                         </div>
@@ -535,7 +535,7 @@ const BoardOfDirectors = () => {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                       <div className="absolute bottom-3 left-3 right-3">
-                        <p className="text-sm md:text-base manrope-700 leading-tight text-white">
+                        <p className="text-sm md:text-base lato-700 leading-tight text-white">
                           {d.name}
                         </p>
                         <p className="text-white/90 text-xs md:text-sm">{d.position}</p>
@@ -631,7 +631,7 @@ const BoardOfDirectors = () => {
 
               <div className="p-6 md:p-8">
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900">{selected.name}</h3>
-                <p className="mt-1 manrope-700 text-[#117ABA]">{selected.position}</p>
+                <p className="mt-1 lato-700 text-[#117ABA]">{selected.position}</p>
                 <p className="mt-4 text-sm md:text-base leading-relaxed text-gray-700">
                   {selected.bio}
                 </p>

@@ -160,13 +160,13 @@ export function InvestorCardsGrid({ cards }: Props) {
 
   return (
     <section className="w-full bg-white">
-      <div className="mx-auto max-w-7xl sm:px-0 px-4 py-10 md:py-16">
+      <div className="mx-auto max-w-7xl sm:px-0 px-4 py-10 md:py-12">
         {/* Top 2 rows: 3 columns on desktop */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="show"
-          className="grid gap-4 sm:gap-5 lg:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+          className="grid gap-1 sm:gap-2 lg:gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
         >
           {firstRows.map(renderCard)}
         </motion.div>
@@ -177,7 +177,7 @@ export function InvestorCardsGrid({ cards }: Props) {
             variants={containerVariants}
             initial="hidden"
             animate="show"
-            className="mt-4 grid gap-4 sm:gap-5 lg:gap-6 grid-cols-1 sm:grid-cols-2 lg:flex lg:justify-center"
+            className="mt-3 gap-1 sm:gap-2 lg:gap-2 grid-cols-1 sm:grid-cols-2 lg:flex lg:justify-center"
           >
             {lastRow.map((card) => (
               <div

@@ -37,11 +37,7 @@ const InvestorsPage = () => {
             </h1>
 
 
-            <h2
-              className="text-white text-sm sm:text-base md:text-lg underline-offset-8 underline decoration-[#CF2328] hover:text-gray-200 transition"
-            >
-              Annual Report Archives
-            </h2>
+            
           </div>
         </div>
       </section>

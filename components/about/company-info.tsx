@@ -12,7 +12,7 @@ const CompanyInfo = () => {
       <section className="max-w-7xl mx-auto w-full px-4 sm:px-0 py-16 bg-white md:py-24">
         <div className="">
           {/* Top Label */}
-          <p className="text-sm manrope-400 uppercase tracking-wider text-gray-500">
+          <p className="text-sm lato-400 uppercase tracking-wider text-gray-500">
             About Us
           </p>
 
@@ -20,17 +20,17 @@ const CompanyInfo = () => {
           <div className="mt-6 grid gap-8 md:grid-cols-2 md:gap-12">
             {/* Left Column – Headings */}
             <div className="space-y-4">
-              <h3 className="text-2xl manrope-700 text-gray-900 md:text-3xl">
+              <h3 className="text-2xl lato-700 text-gray-900 md:text-3xl">
                 Established in 1985.
               </h3>
-              <h1 className="text-3xl manrope-500 text-[#117ABA] md:text-4xl">
+              <h1 className="text-3xl lato-500 text-[#117ABA] md:text-4xl">
                 India’s Largest Multinational <br />
                 Flexible Packaging Leader.
               </h1>
             </div>
 
             {/* Right Column – Truncated + Read More */}
-            <div className="space-y-5 manrope-400 leading-relaxed text-gray-700 md:text-lg">
+            <div className="space-y-5 lato-400 leading-relaxed text-gray-700 md:text-lg">
               <p>
                 UFlex is India’s largest fully integrated multinational flexible packaging
                 and solutions company with state-of-the-art manufacturing facilities in
@@ -46,7 +46,7 @@ const CompanyInfo = () => {
               {/* Read More Trigger */}
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="inline-flex items-center gap-2 manrope-400 text-[#117ABA] transition-colors"
+                className="inline-flex items-center gap-2 lato-400 text-[#117ABA] transition-colors"
               >
                 Read More
                 <ArrowRight className="h-4 w-4" />
@@ -81,7 +81,7 @@ const CompanyInfo = () => {
             </button>
 
             {/* Full Content */}
-            <div className="space-y-5 manrope-400 leading-relaxed text-gray-700 md:text-lg">
+            <div className="space-y-5 lato-400 leading-relaxed text-gray-700 md:text-lg">
               <p>
                 UFlex is India’s largest fully integrated multinational flexible packaging
                 and solutions company with state-of-the-art manufacturing facilities in
@@ -129,7 +129,7 @@ const CompanyInfo = () => {
 function StatCard({ number, label }: { number: string; label: string }) {
   return (
     <div className="flex flex-col items-center rounded-lg bg-gray-50 p-6 text-center transition-shadow hover:shadow-md">
-      <div className="text-5xl manrope-500 text-[#117ABA]  md:text-6xl">{number}</div>
+      <div className="text-5xl lato-500 text-[#117ABA]  md:text-6xl">{number}</div>
       <p className="mt-2 text-sm font-medium text-gray-600 md:text-base">{label}</p>
     </div>
   );

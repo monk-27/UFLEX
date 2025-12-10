@@ -15,7 +15,7 @@ export function AnimatedSection({
 }) {
   return (
     <motion.section
-      className={cn("section section-y", className)}
+      className={cn("", className)}
       initial={{ opacity: 0, y: 16 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}

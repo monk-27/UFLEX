@@ -65,29 +65,29 @@ export function SpotLightSlider({ heading, items }: any) {
               exit="exit"
               transition={{ duration: 0.35, ease: "easeInOut" }}
             >
-              <div className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.4fr)] items-start">
-                {/* Text */}
-                <div>
-                  <h3 className="lato-700 text-[18px] md:text-[24px] text-[#000000] mb-3">
-                    {current.title}
-                  </h3>
+             <div className="grid gap-6 lg:grid-cols-2 items-start">
+  {/* LEFT: Text */}
+  <div className="flex flex-col justify-start">
+    <h3 className="lato-700 text-[18px] md:text-[24px] text-[#000000] mb-4">
+      {current.title}
+    </h3>
 
-                  {/* Add mt-4 to keep description where it was */}
-                  <p className="whitespace-pre-line lato-400 text-[16px] sm:text-[20px] leading-relaxed text-[#4f4f4f] mt-8">
-                    {current.description}
-                  </p>
-                </div>
+    <p className="whitespace-pre-line lato-400 text-[16px] sm:text-[20px] leading-relaxed text-[#4f4f4f]">
+      {current.description}
+    </p>
+  </div>
 
-                {/* Image */}
-                <div className="relative w-full h-[220px] md:h-[260px] lg:h-[447px] overflow-hidden">
-                  <Image
-                    src={current.image}
-                    alt={current.title}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-              </div>
+  {/* RIGHT: Image */}
+  <div className="relative w-full h-[220px] md:h-[260px] lg:h-[447px] overflow-hidden flex items-start">
+    <Image
+      src={current.image}
+      alt={current.title}
+      fill
+      className="object-contain object-top"
+    />
+  </div>
+</div>
+
 
             </motion.div>
           </AnimatePresence>

@@ -399,7 +399,7 @@ export default function AwardsTabs() {
   return (
     <section className="py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <h2 className="mb-8 text-center text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">
+        <h2 className="mb-8 text-center text-[24px] lato-700 text-[#117ABA] md:text-[28px] ">
           Business Awards
         </h2>
 
@@ -457,7 +457,7 @@ export default function AwardsTabs() {
                   return (
                     <article
                       key={card.title + idx}
-                      className={`group overflow-hidden rounded-2xl border-1 ${c.border} ${c.bg} shadow transition`}
+                      className={`group overflow-hidden rounded-sm  shadow transition`}
                     >
                       {/* Image wrapper must be relative for `fill` */}
                       <div className="relative h-60 w-full overflow-hidden">

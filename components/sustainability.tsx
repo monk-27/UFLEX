@@ -50,7 +50,7 @@
 //             <span className="subheadtext text-center text-[36px]">Sustainability</span>
 //           </div>
 //           <div className="content mx-auto flex w-[80%] flex-col items-center p-8">
-//             <p className="manrope-800 xxl:text-[24px] mb-6 text-center text-[18px] leading-tight">
+//             <p className="lato-800 xxl:text-[24px] mb-6 text-center text-[18px] leading-tight">
 //               Committed to achieving carbon neutrality by 2035
 //               <br />
 //               <br />
@@ -180,7 +180,7 @@ export default function SustainabilityComp() {
           }}
         >
           <motion.h3
-            className="text-left max-w-lg text-[20px] manrope-500 leading-tight sm:text-[28px] md:text-[32px]"
+            className="text-left max-w-lg text-[20px] lato-500 leading-tight sm:text-[28px] md:text-[32px]"
             variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
           >
             Committed to achieving {""} <span className=""> carbon neutrality by 2035</span>
@@ -198,7 +198,7 @@ export default function SustainabilityComp() {
   className="flex items-center mt-10"
 >
   <Link href="/sustainability" className="group">
-    <button className="flex items-center gap-2 rounded-full border border-white bg-white px-6 py-3 text-sm manrope-400 text-black transition-all hover:bg-transparent hover:text-white">
+    <button className="flex items-center gap-2 rounded-full border border-white bg-white px-6 py-3 text-sm lato-400 text-black transition-all hover:bg-transparent hover:text-white">
       KNOW MORE
       <svg
         width="16"

@@ -8,7 +8,7 @@ import { Play } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <div className=" relative h-[270px] w-full overflow-hidden bg-white md:w-full md:h-[580px]">
+    <div className=" relative h-[270px] w-full overflow-hidden bg-white md:w-full md:h-[451px]">
         {/* Background Image Container */}
         <motion.div
           className="absolute top-0 left-0 h-[270px] w-full md:w-full md:h-full"
@@ -17,14 +17,14 @@ const Hero = () => {
           transition={{ duration: 1 }}
         >
           {/* Desktop Image with Overlay */}
-          <div className="relative hidden h-full w-full md:block px-10">
+          <div className="relative hidden h-full w-full md:block ">
             <Image
               src="/images/about.png" // Replace with your actual desktop image path
               alt="Sustainability"
-             height={1440}
+             height={451}
              width={100}
              
-              className="object-contain h-full w-full"
+              className="object-cover h-full w-full"
               priority
             />
             {/* <div className="absolute inset-0 bg-black/40" /> */}

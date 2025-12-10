@@ -71,7 +71,7 @@ export default function AboutPage() {
 
             <div className="absolute top-0 left-0 right-0 z-10 bg-white py-4 md:py-6">
               <div className="mx-auto max-w-7xl px-5 md:px-20">
-                <h2 className="text-center text-[24px]  manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl mb-12">
+                <h2 className="text-center text-[24px]  lato-600 text-[#117ABA] md:text-[42px] md:text-5xl mb-12">
                   Corporate Presentation
                 </h2>
               </div>
@@ -91,7 +91,7 @@ export default function AboutPage() {
               }}
             >
               <motion.h3
-                className="text-left max-w-lg text-[20px] manrope-500 leading-tight sm:text-[28px] md:text-[32px]"
+                className="text-left max-w-lg text-[20px] lato-500 leading-tight sm:text-[28px] md:text-[32px]"
                 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
               >
                 Committed to achieving carbon neutrality by 2035
