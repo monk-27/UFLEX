@@ -219,14 +219,14 @@ const keyPeopleMany: Leader[] = [
             "Mr. Jeevaraj Pillai brings close to four decades of experience in packaging and packaging technology, with expertise in printing cylinders, packaging films, and advanced flexible packaging material co...",
         cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
     },
-    {
-        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(FP)-2.-Mr.-Amit-Shah38.jpg",
-        name: "Mr. Amit Shah",
-        role: "Joint President, Flexible Packaging Business",
-        summary:
-            "Mr. Amit Shah brings close to three decades of experience, including nearly a decade in the FMCG sector. As a member of the UFlex leadership team, he plays a key role in driving strategic growth and l...",
-        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-    },
+    // {
+    //     photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(FP)-2.-Mr.-Amit-Shah38.jpg",
+    //     name: "Mr. Amit Shah",
+    //     role: "Joint President, Flexible Packaging Business",
+    //     summary:
+    //         "Mr. Amit Shah brings close to three decades of experience, including nearly a decade in the FMCG sector. As a member of the UFlex leadership team, he plays a key role in driving strategic growth and l...",
+    //     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+    // },
     {
         photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-2.-Mr.-P.-L.-Sirsamkar35.jpg",
         name: "Mr. P. L. Sirsamkar",
@@ -326,9 +326,9 @@ const packagingData = [
   image: "/images/flexible.png",
   "imageAlt": "UFlex Flexible Packaging Solutions",
   paragraphs: [
-    "We offer a comprehensive range of products, including flexible laminates, pre-formed pouches, Flexo-printed rolls and bags, laminated woven polypropylene (WPP) bags, electron beam and Cast n Cure technology, pharmaceutical packaging, FlexiTubes, hygiene films, Flexfresh™ modified atmosphere packaging, and big bags. At UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every solution we create.",
+    "We offer a comprehensive range of products, including flexible laminates, pre-formed pouches, Flexo-printed rolls and bags, laminated woven polypropylene (WPP) bags, electron beam and Cast n Cure technology, pharmaceutical packaging, Flexible Tubes, hygiene films, Flexfresh™ modified atmosphere packaging, and big bags. At UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every solution we create.",
     "UFlex Limited is India’s largest flexible packaging company, headquartered in Noida, Delhi NCR. With a legacy of innovation and excellence, we operate three advanced manufacturing facilities across India, including Noida and Jammu, and serve a diverse clientele both domestically and globally. Our robust international footprint spans North America, Europe, Africa, Southeast Asia, and the Middle East, positioning us as a leading manufacturer and exporter in the flexible packaging space.",
-    "With a manufacturing capacity of over 100,000 MTPA, UFlex offers a comprehensive range of flexible packaging solutions and laminated roll stocks. Our versatile portfolio includes a wide variety of pouch formats such as 3D and 4D pouches with re-closable options, wicketed bags for hygiene products, pet food pinch bottom bags, cement block bottom bags, FlexiTubes, and innovative offerings like innolock pouches, zip pouches, embossed foils, pocket PTC zippers, and Cast n Cure technologies. Whether it’s packaging for household use or industrial applications, our products are designed to combine functionality with visual appeal.\n\nWhat sets UFlex apart is our full backward integration across every key vertical—films (BOPET, BOPP, CPP, metalized films), chemicals (inks, coatings, adhesives), engineering (converting and packing machines), holography, and cylinders. This integration enables us to offer customized, end-to-end packaging solutions tailored to the evolving needs of our customers.\n\nOur four in-house R&D labs, approved by the Ministry of Industries, Government of India, are equipped with state-of-the-art instruments like FTIR, UTM, gas chromatograph, and differential scanning calorimeter. This empowers us to stay at the forefront of packaging innovation, driving quality, sustainability, and performance.\n\nAt UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every solution we create."
+    "With a manufacturing capacity of over 100,000 MTPA, UFlex offers a comprehensive range of flexible packaging solutions and laminated roll stocks. Our versatile portfolio includes a wide variety of pouch formats such as 3D and 4D pouches with re-closable options, wicketed bags for hygiene products, pet food pinch bottom bags, cement block bottom bags, Flexible Tubes, and innovative offerings like innolock pouches, zip pouches, embossed foils, pocket PTC zippers, and Cast n Cure technologies. Whether it’s packaging for household use or industrial applications, our products are designed to combine functionality with visual appeal.\n\nWhat sets UFlex apart is our full backward integration across every key vertical—films (BOPET, BOPP, CPP, metalized films), chemicals (inks, coatings, adhesives), engineering (converting and packing machines), holography, and cylinders. This integration enables us to offer customized, end-to-end packaging solutions tailored to the evolving needs of our customers.\n\nOur four in-house R&D labs, approved by the Ministry of Industries, Government of India, are equipped with state-of-the-art instruments like FTIR, UTM, gas chromatograph, and differential scanning calorimeter. This empowers us to stay at the forefront of packaging innovation, driving quality, sustainability, and performance.\n\nAt UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every solution we create."
   ]
 }
 

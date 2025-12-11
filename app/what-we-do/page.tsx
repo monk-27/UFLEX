@@ -73,7 +73,7 @@
 //     // image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Printing-Cylinder-Business-faq-icon03.svg",
 //   },
 //   {
-//     title: "FlexiTubes",
+//     title: "Flexible Tubes",
 //     href: "/flexitube-business",
 //     desc: "Durable, brandable tubes for personal care and more.",
 //     image: "/images/flexible.jpeg"
@@ -487,7 +487,7 @@ export default function WhatWeDoPage() {
       // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Printing-Cylinder-Business-faq-icon03.svg",
     },
     {
-      title: "FlexiTubes",
+      title: "Flexible Tubes",
       href: "/flexitube-business",
       desc: "Durable, brandable tubes for personal care and more.",
       img: "/images/flexible.jpeg"

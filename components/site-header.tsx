@@ -28,7 +28,7 @@ const baseNav: NavItem[] = [
   //     { href: "/holography-business", label: "Holography" },
   //     { href: "/engineering-business", label: "Engineering" },
   //     { href: "/printing-cylinder-business", label: "Printing Cylinders" },
-  //     { href: "/flexitube-business", label: "FlexiTubes" },
+  //     { href: "/flexitube-business", label: "Flexible Tubes" },
   //   ],
   // },
   { href: "/business", label: "Our Businesses" },

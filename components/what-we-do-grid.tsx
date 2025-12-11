@@ -66,7 +66,7 @@ import Link from "next/link";
 //     // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Printing-Cylinder-Business-faq-icon03.svg",
 //   },
 //   {
-//     title: "FlexiTubes",
+//     title: "Flexible Tubes",
 //     href: "/flexitube-business",
 //     desc: "Durable, brandable tubes for personal care and more.",
 //     img: "/images/flexible.jpeg"
@@ -133,7 +133,7 @@ const items: {
       img: "/images/cyls.png",
     },
     {
-      title: "FlexiTubes",
+      title: "Flexible Tubes",
       key: "flexible-tubes",
       desc: "Durable, brandable tubes for personal care and more.",
       img: "/images/flexible.jpeg",
