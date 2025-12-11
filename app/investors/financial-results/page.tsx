@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import Breadcrumb from "../breadcrumb";
 
 /* ----------------------------- Types ----------------------------- */
 
@@ -425,13 +426,19 @@ const Page = () => {
         </section>
 
         {/* BREADCRUMB */}
-        <div className="bg-[#EFEFEF]">
+        {/* <div className="bg-[#EFEFEF]">
           <div className="max-w-7xl mx-auto pl-2 h-12 flex items-center">
             <span className="text-black text-xs lato-700">
               Investors Relations &gt; Financial Results
             </span>
           </div>
-        </div>
+        </div> */}
+        <Breadcrumb
+          items={[
+            { label: "Investors Relations", href: "/investors" },
+            { label: "Financial Results" },
+          ]}
+        />
 
         {/* CONTENT */}
         <section className="max-w-6xl mx-auto px-4 sm:px-12 md:px-20 lg:px-28 pt-6 pb-10">

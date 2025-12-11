@@ -60,6 +60,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import Breadcrumb from "../breadcrumb";
 
 const communicationList = [
     { text: "30 Sep 2025: Transcript of the 36th Annual General Meeting", link: "https://www.uflexltd.com/pdf/SC/2025/UFLEX_TRANSCRIPT_36AGM.pdf" },
@@ -130,13 +131,19 @@ export default function Page() {
                 </section>
 
                 {/* --- BREADCRUMB --- */}
-                <div className="bg-[#EFEFEF] border-b border-[#d6d6d6]">
+                {/* <div className="bg-[#EFEFEF] border-b border-[#d6d6d6]">
                     <div className="max-w-7xl mx-auto px-4 py-3 flex items-center">
                         <span className="text-black text-xs lato-600">
                             Investors Relations &gt; Shareholders Information
                         </span>
                     </div>
-                </div>
+                </div> */}
+                <Breadcrumb
+                                          items={[
+                                            { label: "Investors Relations", href: "/investors" },
+                                            { label: "Shareholders Information" },
+                                          ]}
+                                        />
 
                 {/* --- RED BUTTONS --- */}
                 <div className="bg-white">

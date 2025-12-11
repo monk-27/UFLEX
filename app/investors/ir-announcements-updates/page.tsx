@@ -66,6 +66,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { Calendar } from "lucide-react";
 import { title } from "process";
+import Breadcrumb from "../breadcrumb";
 
 /* -------------------------- Tabs & data types -------------------------- */
 
@@ -1018,16 +1019,23 @@ export default function Page() {
                             IR Announcements & Updates
                         </h1>
                     </div>
+                    
                 </section>
 
                 {/* BREADCRUMB */}
-                <div className="bg-[#EFEFEF] border-b border-[#d6d6d6]">
+                {/* <div className="bg-[#EFEFEF] border-b border-[#d6d6d6]">
                     <div className="max-w-7xl mx-auto px-4 py-3 flex items-center">
                         <span className="text-black text-xs lato-600">
                             Investors Relations &gt; IR Announcements &amp; Updates
                         </span>
                     </div>
-                </div>
+                </div> */}
+                <Breadcrumb
+          items={[
+            { label: "Investors Relations", href: "/investors" },
+            { label: "IR Announcements & Updates" },
+          ]}
+        />
 
                 {/* TAB BAR */}
 
