@@ -17,43 +17,59 @@ import { useState } from "react"
 
 type SusTabId = "reports" | "materiality" | "assurance"
 
-type SimpleLink = { href: string }
+type SimpleLink = {
+  title: string;
+  href: string;
+};
 
-const csrAnnualActionPlan: SimpleLink[] = [
+
+const sustainabilityReports = [
   {
+    title: "Sustainability Report 2024–25",
     href: "https://www.uflexltd.com/pdf/Sustainability/UFlex_Sustainability_Report_2024-25.pdf",
   },
   {
+    title: "Sustainability Report 2023–24",
     href: "https://www.uflexltd.com/pdf/Sustainability/UFlex_Sustainability_Report_2023-24.pdf",
   },
   {
+    title: "Sustainability Report 2022–23",
     href: "https://www.uflexltd.com/pdf/Sustainability/UFlex_Sustainability_Report_2022-23.pdf",
   },
   {
+    title: "Sustainability Report 2021–22",
     href: "https://www.uflexltd.com/pdf/Sustainability/UFlex_Sustainability_Report_2021-22.pdf",
   },
-]
+];
 
-const materialityReports: SimpleLink[] = [
+
+const materialityReports = [
   {
+    title: "Materiality Assessment Report – Hungary 2025",
     href: "https://www.uflexltd.com/pdf/Sustainability/MAR/FF_Hungary_2025.pdf",
   },
   {
+    title: "Materiality Assessment Report – Poland 2025",
     href: "https://www.uflexltd.com/pdf/Sustainability/MAR/FF_Poland_2025.pdf",
   },
-]
+];
 
-const assuranceStatements: SimpleLink[] = [
+
+const assuranceStatements = [
   {
+    title: "Assurance Statement – BRSR 2024–25",
     href: "https://www.uflexltd.com/pdf/Sustainability/AS/UF_BRSR_2024-25.pdf",
   },
   {
+    title: "Assurance Statement – CDP 2024–25",
     href: "https://www.uflexltd.com/pdf/Sustainability/AS/UF_CDP_2024-25.pdf",
   },
   {
+    title: "Assurance Statement – Sustainability Report 2024–25",
     href: "https://www.uflexltd.com/pdf/Sustainability/AS/UF_SR_2024-25.pdf",
   },
-]
+];
+
 
 const susTabs: { id: SusTabId; label: string }[] = [
   { id: "reports", label: "Sustainability Reports" },
@@ -64,27 +80,33 @@ const susTabs: { id: SusTabId; label: string }[] = [
 export default function Page() {
   const [activeTab, setActiveTab] = useState<SusTabId>("reports")
 
-  const renderRow = (item: SimpleLink, idx: number) => (
-    <Link key={idx} href={item.href} target="_blank" className="block">
-      <div className="text-center w-full bg-[#F8F8F8] px-6 py-3 text-[14px] text-[#000000] border-t border-white">
-        {item.href}
-      </div>
-    </Link>
-  )
+
+
+  // helper - put near the top of the file (above renderRow)
+
+const renderRow = (item: SimpleLink, idx: number) => (
+  <Link key={idx} href={item.href} target="_blank" className="block">
+    <div className="flex items-center justify-between w-full bg-[#F8F8F8] px-6 py-3 text-[14px] text-black border-t border-white">
+      <span>{item.title}</span>
+      <Image src="/images/pdf.png" alt="PDF" width={20} height={20} />
+    </div>
+  </Link>
+);
+
 
   const currentHeading =
     activeTab === "reports"
-      ? "CSR Annual Action Plan"
+      ? "Sustainability Reports"
       : activeTab === "materiality"
-      ? "Materiality Assessment Reports"
-      : "Assurance Statements"
+        ? "Materiality Assessment Reports"
+        : "Assurance Statements"
 
   const currentList =
     activeTab === "reports"
-      ? csrAnnualActionPlan
+      ? sustainabilityReports
       : activeTab === "materiality"
-      ? materialityReports
-      : assuranceStatements
+        ? materialityReports
+        : assuranceStatements
 
   return (
     <main className="bg-white">
@@ -193,7 +215,7 @@ export default function Page() {
       {/* <SustainabilityReportsCarousel /> */}
 
 
-<section className="max-w-7xl mx-auto px-4 sm:px-12 md:px-20 lg:px-6 pt-10 pb-12">
+      <section className="max-w-7xl mx-auto px-4 sm:px-4 pt-10 pb-12">
         {/* Tab bar */}
         <div className="flex w-fit border-b border-[#d6d6d6] mb-6">
           {susTabs.map((tab) => {

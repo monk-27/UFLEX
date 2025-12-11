@@ -523,7 +523,7 @@ const Page = () => {
         {/* CONTENT */}
         <section className="max-w-6xl mx-auto px-4 sm:px-12 md:px-20 lg:px-28 pt-6 pb-10">
           {/* TOP TAB STRIP */}
-          <div className="flex w-fit border border-[#d6d6d6] rounded-sm overflow-hidden mb-4">
+          {/* <div className="flex w-fit border border-[#d6d6d6] rounded-sm overflow-hidden mb-4">
             {tabs.map((tab) => {
               const active = tab.id === activeTab;
               return (
@@ -543,7 +543,7 @@ const Page = () => {
                 </button>
               );
             })}
-          </div>
+          </div> */}
 
           {/* UFLEX TAB CONTENT */}
           {isUFLEX && (
