@@ -3,6 +3,7 @@
 
 import React, { useState } from 'react';
 import { ArrowRight, X } from 'lucide-react';
+import StatCard from './statcard';
 
 const CompanyInfo = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -57,9 +58,10 @@ const CompanyInfo = () => {
           {/* Stats Grid */}
           <div className="mt-16 grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8">
             <StatCard number="150" label="Countries we operate in" />
-            <StatCard number="15000+" label="Global Workforce" />
-            <StatCard number="5" label="Continents Served" />
-            <StatCard number="9" label="Manufacturing Locations" />
+<StatCard number="15000+" label="Global Workforce" />
+<StatCard number="5" label="Continents Served" />
+<StatCard number="9" label="Manufacturing Locations" />
+
           </div>
         </div>
       </section>
@@ -126,13 +128,6 @@ const CompanyInfo = () => {
 }
 
 /* Reusable Stat Card */
-function StatCard({ number, label }: { number: string; label: string }) {
-  return (
-    <div className="flex flex-col items-center rounded-lg bg-gray-50 p-6 text-center transition-shadow hover:shadow-md">
-      <div className="text-5xl lato-500 text-[#117ABA]  md:text-6xl">{number}</div>
-      <p className="mt-2 text-sm font-medium text-gray-600 md:text-base">{label}</p>
-    </div>
-  );
-}
+
 
 export default CompanyInfo;
