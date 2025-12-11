@@ -15,7 +15,7 @@ export const investorCards = [
     id: "notices",
     title: "IR Announcements & Updates",
     image: "/images/investors/3.png",
-    href: "/investors/notices-and-announcements",
+    href: "/investors/ir-announcements-updates",
   },
   {
     id: "corporate-policies",
@@ -27,7 +27,7 @@ export const investorCards = [
     id: "ir-calendar",
     title: "IR Presentations & Quarterly Earnings Reports",
     image: "/images/investors/5.png",
-    href: "/investors/ir-calendar",
+    href: "/investors/ir-presentation-quarterly-earnings",
   },
   {
     id: "annual-report",
