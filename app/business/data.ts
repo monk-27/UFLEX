@@ -318,7 +318,7 @@ export const businesses: BusinessConfig[] = [
           cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
         },
         {
-          photo: "/images/ajay.png",
+          photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-9.-Mr.-Ajay-Gupta08.jpg",
           name: " Mr. Ajay Gupta",
           role: "Sr. Vice President - Flex Films, Hungary",
           summary:

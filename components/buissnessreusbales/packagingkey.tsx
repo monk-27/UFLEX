@@ -16,7 +16,7 @@ type Props = {
   people: KeyPerson[];
 };
 
-const Keypeople = ({ title, people }: Props) => {
+const PackagingKeypeople = ({ title, people }: Props) => {
   const [selected, setSelected] = useState<KeyPerson | null>(null);
   const [canPrev, setCanPrev] = useState(false);
   const [canNext, setCanNext] = useState(true);
@@ -63,10 +63,10 @@ const Keypeople = ({ title, people }: Props) => {
     <>
       <section className="pb-12 mt-[30px] py-12 sm:py-0 text-center sm:mt-8 bg-[#f7f7f7]">
         <div className="px-4 md:px-1">
-          <h2 className="px-6 text-start lato-700 text-[20px] md:text-[28px] text-[#117ABA] mb-3">
+          <h2 className="px-6 text-start lato-700 text-[20px] md:text-[28px] text-[#000000] mb-3">
             {title}
-          </h2>
 
+          </h2>
           {/* Embla slider – used on mobile & desktop */}
           <div className="relative">
             <div ref={emblaRef} className="overflow-hidden">
@@ -97,7 +97,7 @@ const Keypeople = ({ title, people }: Props) => {
                           alt={p.name}
                           fill
                           sizes="(max-width:640px) 85vw, (max-width:1024px) 46vw, (max-width:1280px) 30vw, 23vw"
-                          className="object-cover grayscale transition duration-300 ease-out"
+                          className="object-contain grayscale transition duration-300 ease-out"
                         />
                         <div className="pointer-events-none absolute inset-x-0 bottom-0 p-3">
                           <div className="rounded-none bg-black/55 px-2 py-1 w-full">
@@ -125,7 +125,7 @@ const Keypeople = ({ title, people }: Props) => {
                         alt={p.name}
                         fill
                         sizes="100vw"
-                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                        className="object-contain transition-transform duration-700 ease-out group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                       <div className="absolute bottom-3 left-3 right-3">
@@ -260,5 +260,5 @@ const Keypeople = ({ title, people }: Props) => {
   );
 };
 
-export default Keypeople;
+export default PackagingKeypeople;
 
