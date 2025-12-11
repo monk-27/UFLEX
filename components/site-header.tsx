@@ -17,21 +17,21 @@ type NavItem = {
 const baseNav: NavItem[] = [
   { href: "/", label: "Home" },
   { href: "/about-us", label: "About Us" },
-  // {
-  //   href: "/what-we-do",
-  //   label: "What We Do",
-  //   children: [
-  //     { href: "/packaging-films-business", label: "Packaging Films and PET Resin" },
-  //     { href: "/chemicals-business", label: "Chemicals" },
-  //     { href: "/aseptic-packaging-business", label: "Aseptic Packaging" },
-  //     { href: "/flexible-packaging-business", label: "Flexible Packaging" },
-  //     { href: "/holography-business", label: "Holography" },
-  //     { href: "/engineering-business", label: "Engineering" },
-  //     { href: "/printing-cylinder-business", label: "Printing Cylinders" },
-  //     { href: "/flexitube-business", label: "Flexible Tubes" },
-  //   ],
-  // },
-  { href: "/business", label: "Our Businesses" },
+  {
+    href: "/what-we-do",
+    label: "What We Do",
+    children: [
+      { href: "/packaging-films-business", label: "Packaging Films and PET Resin" },
+      { href: "/chemicals-business", label: "Chemicals" },
+      { href: "/aseptic-packaging-business", label: "Aseptic Packaging" },
+      { href: "/flexible-packaging-business", label: "Flexible Packaging" },
+      { href: "/holography-business", label: "Holography" },
+      { href: "/engineering-business", label: "Engineering" },
+      { href: "/printing-cylinder-business", label: "Printing Cylinders" },
+      { href: "/flexitube-business", label: "Flexible Tubes" },
+    ],
+  },
+  // { href: "/business", label: "Our Businesses" },
   { href: "/sustainability", label: "Sustainability" },
 
   { href: "/investors", label: "Investors" },
