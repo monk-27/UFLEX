@@ -35,12 +35,13 @@ export default function BusinessesPage() {
 
       <div >
         <Image
-          src="/images/herobuisness.png"
-          alt="Business Hero"
-          width={100}
-          height={100}
-          className="w-[1470px] h-[430px]"
-        />
+  src="/images/herobuisness.png"
+  alt="Business Hero"
+  width={1920}
+  height={430}
+  className="w-full h-[430px] object-cover"
+  priority
+/>
 
         <div className="max-w-7xl mx-auto px-4">
           <p className="lato-400 text-[16px] leading-relaxed  text-[#6B6B6B] text-left mt-6">
