@@ -2,13 +2,19 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import { SiteFooter } from './site-footer'
 import Image from 'next/image'
-import { SliderCarousel, SliderItem } from './slidercomp'
 import { OverlayModule, OverlayModules } from './overlay'
 import { Leader, LeaderSpotlight } from './leader'
 import { AwardItem, AwardsAccolades } from './awards'
 import Accreditions, { AccreditationItem } from './accredition'
 import AccreditationsSlider from './accredition'
 import ExpandableText from './expandabletext'
+import { AwardsSection } from './buissnessreusbales/AwardsSection'
+import { CaseStudySection } from './buissnessreusbales/case-studies'
+import { InnovationSlider } from './buissnessreusbales/InnovationSlider'
+import Keypeople from './buissnessreusbales/keypeople'
+import { SustainabilitySection } from './buissnessreusbales/SustainabilitySection'
+import { BusinessConfig } from '@/app/business/data'
+import SliderCarousel, { SliderItem } from './slidercomp'
 
 
 
@@ -58,125 +64,15 @@ const SliderItems: SliderItem[] = [
     // ...add the rest
 ];
 
-const modules: OverlayModule[] = [
-    {
-        title: "Learn with UFlex",
-        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-04515505155.jpg",
-        longdesc:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
 
-        description:
-            "The UFlex Learning Academy fosters learning and development through digital, blended, and classroom courses.",
-        cta: { label: "Read More", href: "/learning-academy" },
-        priority: true,
-    },
-    {
-        title: "Your growth, our success",
-               longdesc:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
 
-        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-04515515155.jpg",
-        description:
-            "A vibrant work culture that empowers people to transform capabilities into meaningful achievements.",
-        cta: { label: "Read More", href: "/culture" },
-    },
-];
-const buismodules: OverlayModule[] = [
-    {
-        title: "India’s First Aseptic Carton Package",
-        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-05043600436.jpg",
-        description:
-            " As the first aseptic carton package Of India featuring 5% certified recycled polymers. setting a new benchmark in sustainable packaging. As the first paper-based beverage carton producer in India to use recycled plastic ...",
-        cta: { label: "Read More", href: "/learning-academy" },
-        priority: true,
-    },
-    {
-        title: "Your growth, our success",
-        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-04515515155.jpg",
-        description:
-            "A vibrant work culture that empowers people to transform capabilities into meaningful achievements.",
-        cta: { label: "Read More", href: "/culture" },
-    },
-];
-
-const awards: AwardItem[] = [
-    {
-        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/banners/Aseptic-Packaging-Business-banner54.jpg",
-        title: "Recognized for our sustainability efforts",
-        description:
-            "Our circular initiatives and recycling programs were recognized by global industry bodies.",
-        cta: { label: "View More", href: "/awards/sustainability" },
-    },
-
-];
-//   const team: PersonCard[] = [
-
-//     {
-//       photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Speed-in-all-directions-47.jpg",
-//       name: "Growth",
-//       role: "",
-//       summary:
-//         "We believe in investing in our people. You'll have the opportunity to learn, grow, and lead alongside industry experts.",
-//       color: "pink",
-//     },
-//     {
-//       photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Global-perspective04.jpg",
-//       name: "Building relationships",
-//       role: "",
-//       summary:
-//         "At UFlex, we're more than just colleagues—we're a family. We foster collaboration, support, and respect, creating a workplace where you can thrive.",
-//       color: "purple",
-//     },
-//   ];
-
-const keyPeopleSingle: Leader[] = [
-    {
-        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(AP)-1.-Mr.-Ashwani-K.-Sharma36.jpg",
-        name: "Mr. Ashwani K. Sharma",
-        role: "President and CEO, Aseptic packaging business",
-        summary:
-            "Mr. Ashwani Sharma brings with him almost three decades of rich and diverse experience in leading large organizations across the globe...",
-        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-    },
-];
-
-const keyPeopleMany: Leader[] = [
-    {
-        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(AP)-1.-Mr.-Ashwani-K.-Sharma36.jpg",
-        name: "Mr. Ashwani K. Sharma",
-        role: "President and CEO, Aseptic packaging business",
-        summary:
-            "Mr. Ashwani Sharma brings with him almost three decades of rich and diverse experience in leading large organizations across the globe...",
-        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-    },
-    {
-        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(AP)-1.-Mr.-Ashwani-K.-Sharma36.jpg",
-        name: "Mr. Ashwani K. Sharma",
-        role: "President and CEO, Aseptic packaging business",
-        summary:
-            "Mr. Ashwani Sharma brings with him almost three decades of rich and diverse experience in leading large organizations across the globe...",
-        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-    },
-    {
-        photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(AP)-1.-Mr.-Ashwani-K.-Sharma36.jpg",
-        name: "Mr. Ashwani K. Sharma",
-        role: "President and CEO, Aseptic packaging business",
-        summary:
-            "Mr. Ashwani Sharma brings with him almost three decades of rich and diverse experience in leading large organizations across the globe...",
-        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-    },
-];
-const accreditations: AccreditationItem[] = [
-    { image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/client-image/clients_BRC-GLOBAL-STANDARD-FOR-PACKAGING-AND-PACKAGING-MATERIALS-Intertek.jpg" },
-    { image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/client-image/clients_HALAL-CERTIFICATE-Halal-in-accordance-with-Shariah-Islamic-Board-Guidelines-HALAL-INDIA.jpg" },
-    { image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/client-image/clients_ISO-22000-2005-The-food-Safety-Management-System-Intertek.jpg" },
-    { image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/client-image/clients_ISO-9001-20015-1SO-140001-2015-OHSAS-18001-2007-Design-manufacture-and-Supply-of-Aseptic-Liquid-Packaging-Material-T-V-S-D-South-Asia.jpg" },
-];
 
 
 const packagingData = [
     {
         "id": "holography",
         title: "Aseptic Packaging",
-        image: "/images/aseptic.png",
+        image: "/images/3.png",
         "imageAlt": "UFlex Aseptic Packaging Solutions",
         paragraphs: [
             " Asepto, the Aseptic Packaging brand of UFlex, is the world’s fastest-growing aseptic packaging company, proudly serving over 200 esteemed clients across more than 40 countries.",
@@ -186,147 +82,214 @@ const packagingData = [
     }
 
 ];
-const AsepticComp = () => {
+
+
+export const businesses: BusinessConfig[] = [
+   {
+    key: "aseptic",
+    label: "Aseptic Packaging",
+    hero: {
+      heading: "Our Businesses",
+      image: "/images/3.png",
+      body:
+        "Asepto, the Aseptic Packaging brand of UFlex, is the world's fastest-growing aseptic packaging company, proudly serving over 200 esteemed clients across more than 40 countries. As a leading provider of end-to-end aseptic liquid packaging solutions, we offer innovative designs, six-layered cartons, highly advanced filling machines, and exceptional service from highly trained engineers.",
+    },
+
+    offerings: {
+      heading: "Our Offerings",
+      items: [
+        {
+          id: "aseptic-cartons",
+          title: "Aseptic Cartons",
+          image: "/images/asepcticcartons.png",
+          description:
+            "High-performance polyester films for diverse packaging applications.",
+        },
+        {
+          id: "sip",
+          title: "A Sip",
+          image: "/images/asip.png",
+          description:
+            "Biaxially oriented polypropylene films for flexible packaging.",
+        },
+        {
+          id: "filling-machines",
+          title: "Filling Machines",
+          image: "/images/filling.png",
+          description:
+            "Cast polypropylene films for specialty and general packaging.",
+        },
+        {
+          id: "asepto-pro",
+          title: "Asepto Pro",
+          image: "/images/aseptopro.png",
+          description:
+            "Cast polypropylene films for specialty and general packaging.",
+        },
+      ],
+    },
+
+    innovations: {
+      heading: "Business Highlights and Innovations",
+      items: [
+        {
+          id: "first-aseptic-carton-package",
+          title: "India’s First Aseptic Carton Package",
+          description:
+            "As the first aseptic carton package in India featuring 5% certified recycled polymers, and the first paper-based beverage carton producer in the country to use recycled plastic, UFlex is setting new benchmarks in sustainable packaging, supporting circularity, resource efficiency, and reduced environmental impact.",
+          image: "/images/invp.png",
+        },
+        {
+          id: "holography-stamping-foils",
+          title: "Holography and Stamping Foils",
+          description:
+            "Flex continues to set global benchmarks through advanced infrastructure, technical excellence, advanced R&D, and deep market intelligence, ensuring world-class quality and innovation across its offerings. Our state-of-the-art in-house manufacturing facilities, equipped with Origination, Coatings, Metallizers, and Slitting machines, enable advanced transfer technology, enhancing both surface appeal and tactile experience.",
+          image: "/images/invps.png",
+        },
+      ],
+    },
+    sustainability: {
+      title: "Sustainability",
+      description:
+        "At Asepto, sustainability isn't just a commitment; it's a driving force behind innovation. Asepto brings a sustainable solution to this pressing concern of aseptic cartons reaching landfills. With their proper extraction and assimilation, Asepto paves the way for a Circular Economy. Enzymatic Delamination Technology (EDT) is Asepto’s sustainable solution to reprocess the aseptic cartons to bring them back into the circular economy. Through EDT, we can separate and recover valuable materials like aluminium, polymers, and paper pulp from these cartons. By doing so, we significantly reduce the environmental footprint associated with their disposal.",
+      image: "/images/sus.png",
+      linkLabel: "Know more",
+      linkHref: "#",
+    },
+    keypeople: {
+      title: "Key People",
+      details: [
+        {
+          photo: "/images/ashwani.png",
+          name: "Mr. Ashwani K. Sharma",
+          role: "President and CEO, Aseptic packaging business",
+          summary:
+            "Mr. Ashwani Sharma brings with him almost three decades of rich and diverse experience in leading large organizations across the globe. He has held several senior leadership roles in the pulp, paper, and packaging industries, combining strategic vision with deep operational expertise.Prior to joining UFlex, Mr. Sharma served as Managing Director at Asia Pulp & Paper (APP), a USD 25 billion company headquartered in Jakarta. His global exposure includes a tenure in Europe as CEO and Chairman of the Board at Horizon Pulp & Paper, and leadership of APP’s business in the United States as Business Head for both the north and south regions. In India, he held key leadership roles as CEO and Senior President at Century Pulp & Paper (BK Birla Group) and Ballarpur Industries.At UFlex, Mr. Sharma currently heads the Aseptic Packaging Business under the brand ‘Asepto’—India’s first and only manufacturer in the aseptic packaging segment. Under his leadership, Asepto continues to drive innovation and excellence in this fast-growing market.Mr. Sharma holds an MBA and is a graduate in Mathematics and Chemistry, bringing a strong academic foundation to his strategic and operational endeavors.",
+          cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+        },
+      ],
+    },
+
+    awards: {
+      title: "Awards & Accolades",
+      description:
+        "Our circular initiatives and recycling programmes have been recognised by leading global industry bodies, reflecting Asepto’s commitment to responsible and sustainable packaging. These recognitions highlight our consistent efforts to reduce waste, improve material efficiency, and support recycling across our operations.",
+      image: "/images/awards.png",
+      linkLabel: "Know more",
+      linkHref: "/hall-of-fame",
+    },
+    accreditation: [
+      { image: "/images/accc4.png" },
+      { image: "/images/accc5.png" },
+      { image: "/images/accc6.png" },
+      { image: "/images/accc7.png" },
+    ],
+  },
+
+
+
+
+
+];
+type Props = {
+    business: BusinessConfig;
+};
+const AsepticComp: React.FC<Props> = ({ business }) => {
     return (
+
+
+
+
+
         <div>
 
 
             {/* HERO */}
-            <section className="bg-gradient-to-b from-white to-slate-50">
-                <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:py-20">
-                    <div>
-                        <motion.h1
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"
-                        >
-                            Aseptic Packaging
+            <section className='bg-white'>
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="space-y-10 md:space-y-12">
+                        <div className="grid py-12 lg:grid-cols-2 lg:py-20 gap-10">
+                            <div>
+                                <motion.h1
+                                    initial={{ opacity: 0, y: 10 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    className="text-[24px] lato-400 text-[#117ABA] md:text-[28px] "
+                                >
+                                    Aseptic Packaging
 
-                        </motion.h1>
+                                </motion.h1>
 
-                        {packagingData.map((section, idx) => (
-                            <ExpandableText
-                                key={idx}
-                                modalTitle={section.title}
-                                imageSrc={section.image}
-                                imageAlt={section.title}
-                                paragraphs={section.paragraphs}
-                            />
-                        ))}
-                    </div>
+                                {packagingData.map((section, idx) => (
+                                    <ExpandableText
+                                        key={idx}
+                                        modalTitle={section.title}
+                                        imageSrc={section.image}
+                                        imageAlt={section.title}
+                                        paragraphs={section.paragraphs}
+                                    />
+                                ))}
+                            </div>
 
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.98 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl "
-                    >
-                        <Image
-                            src="/images/aseptic.png"
-                            alt="UFlex capabilities across the value chain"
-                            fill
-                            className="object-cover"
-                            priority
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.98 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl "
+                            >
+                                <Image
+                                    src="/images/3.png"
+                                    alt="UFlex capabilities across the value chain"
+                                    fill
+                                    className="object-cover"
+                                    priority
+                                />
+
+                                <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
+                            </motion.div>
+                        </div>
+                        <SliderCarousel
+                            heading="Our Offerings"
+                            subheading=""
+                            items={SliderItems}
+                            imageHeight={280}
+
                         />
 
-                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
-                    </motion.div>
-                </div>
-                <SliderCarousel
-                    heading="Our Offerings"
-                    subheading=""
-                    items={SliderItems}
-                    imageHeight={280}
-
-                />
-                <OverlayModules
-                    heading="Case Studies"
-                    subheading=""
-                    modules={modules}
-                    heights={{ base: 360, sm: 420, lg: 520 }}
-                    lgCols={2}
-                    imageSizes="(max-width:1024px) 100vw, 50vw"
-                    className=""
-                />
-                <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:py-20">
-                    <div>
-                        <motion.h1
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            className="mb-12 text-center text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"
-                        >
-                            Sustainability
-
-                        </motion.h1>
-                        <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.05 }}
-                            className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl border-2 border-blue-400 shadow ring-4 ring-blue-200"
-
-                        >
-
-                            <Image
-                                src="https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/Aseptic-Sustainability16.jpg"
-                                alt="UFlex capabilities across the value chain"
-                                fill
-                                className="object-cover"
-                                priority
+                        {business.innovations && (
+                            <InnovationSlider
+                                heading={business.innovations.heading}
+                                items={business.innovations.items}
                             />
+                        )}
+                        <SustainabilitySection data={business.sustainability} />
 
-                            <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
-                        </motion.div>
+                        {(business.keypeople) && (
+                            <Keypeople
+                                title={business.keypeople.title}
+                                people={business.keypeople.details}
+                            />
+                        )}
+
+                        {business.caseStudies && business.caseStudies.length > 0 && (
+                            <CaseStudySection
+                                sectionTitle="Case Studies"
+                                imageSrc="/images/chemcase.png"
+                                items={business.caseStudies}
+                            />
+                        )}
+                        <AwardsSection data={business.awards} />
+
+                        <AccreditationsSlider items={business.accreditation ?? []} />
                     </div>
-
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.98 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        className="manrope-400 mt-5 space-y-4 text-slate-700"
-
-                    >
-                        <p>
-                            At Asepto, sustainability isn't just a commitment; it's a driving force behind innovation. Asepto brings a sustainable solution to this pressing concern of aseptic cartons reaching landfills. With their proper extraction and assimilation, Asepto paves the way for a Circular Economy.
-
-                        </p>
-                        <p>
-                            Enzymatic Delamination Technology (EDT) is Asepto’s sustainable solution to reprocess the aseptic cartons to bring them back into the circular economy. Through EDT, we can separate and recover valuable materials like aluminium, polymers, and paper pulp from these cartons. By doing so, we significantly reduce the environmental footprint associated with their disposal.
-
-                        </p>
-
-
-                    </motion.div>
                 </div>
-                <OverlayModules
-                    heading="Business Highlights and Innovations"
-                    subheading=""
-                    modules={buismodules}
-                    heights={{ base: 360, sm: 420, lg: 520 }}
-                    lgCols={2}
-                    imageSizes="(max-width:1024px) 100vw, 50vw"
-                    className=""
-                />
-                <LeaderSpotlight people={keyPeopleSingle} />
 
 
-                <AwardsAccolades
-                    heading="Awards & Accolades"
-                    subheading="Milestones that celebrate our ambition and execution."
-                    items={awards}
-                    split       // feature the first award as a hero row; remove to show pure grid
-                    gridColsLg={2}
-                />
-                <AccreditationsSlider items={accreditations} />;
+
+
+
+
             </section>
-
-
-
-
-
-
         </div>
     )
 }

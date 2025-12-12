@@ -251,91 +251,91 @@ const ChemicalsComp: React.FC<Props> = ({ business }) => {
 
             {/* HERO */}
             <section className='bg-white'>
-            <div className="max-w-7xl mx-auto px-4">
-                <div className="space-y-10 md:space-y-12">
-                    <div className="grid py-12 lg:grid-cols-2 lg:py-20 gap-10">
-                    <div>
-                        <motion.h1
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            className="text-[24px] lato-400 text-[#117ABA] md:text-[28px] "
-                        >
-                            Chemicals
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="space-y-10 md:space-y-12">
+                        <div className="grid py-12 lg:grid-cols-2 lg:py-20 gap-10">
+                            <div>
+                                <motion.h1
+                                    initial={{ opacity: 0, y: 10 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    className="text-[24px] lato-400 text-[#117ABA] md:text-[28px] "
+                                >
+                                    Chemicals
 
-                        </motion.h1>
+                                </motion.h1>
 
-                        {packagingData.map((section, idx) => (
-                            <ExpandableText
-                                key={idx}
-                                modalTitle={section.title}
-                                imageSrc={section.image}
-                                imageAlt={section.title}
-                                paragraphs={section.paragraphs}
-                            />
-                        ))}
-                    </div>
+                                {packagingData.map((section, idx) => (
+                                    <ExpandableText
+                                        key={idx}
+                                        modalTitle={section.title}
+                                        imageSrc={section.image}
+                                        imageAlt={section.title}
+                                        paragraphs={section.paragraphs}
+                                    />
+                                ))}
+                            </div>
 
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.98 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl "
-                    >
-                        <Image
-                            src="/images/herochem.png"
-                            alt="UFlex capabilities across the value chain"
-                            fill
-                            className="object-cover"
-                            priority
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.98 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl "
+                            >
+                                <Image
+                                    src="/images/herochem.png"
+                                    alt="UFlex capabilities across the value chain"
+                                    fill
+                                    className="object-cover"
+                                    priority
+                                />
+
+                                <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
+                            </motion.div>
+                        </div>
+                        <SliderCarousel
+                            heading="Our Offerings"
+                            subheading=""
+                            items={SliderItems}
+                            imageHeight={280}
+
                         />
 
-                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
-                    </motion.div>
+                        {business.innovations && (
+                            <InnovationSlider
+                                heading={business.innovations.heading}
+                                items={business.innovations.items}
+                            />
+                        )}
+                        <SustainabilitySection data={business.sustainability} />
+
+                        {(business.keypeople) && (
+                            <Keypeople
+                                title={business.keypeople.title}
+                                people={business.keypeople.details}
+                            />
+                        )}
+
+                        {business.caseStudies && business.caseStudies.length > 0 && (
+                            <CaseStudySection
+                                sectionTitle="Case Studies"
+                                imageSrc="/images/chemcase.png"
+                                items={business.caseStudies}
+                            />
+                        )}
+                        <AwardsSection data={business.awards} />
+
+                        <AccreditationsSlider items={business.accreditation ?? []} />
+                    </div>
                 </div>
-                <SliderCarousel
-                    heading="Our Offerings"
-                    subheading=""
-                    items={SliderItems}
-                    imageHeight={280}
-
-                />
-
-                {business.innovations && (
-                    <InnovationSlider
-                        heading={business.innovations.heading}
-                        items={business.innovations.items}
-                    />
-                )}
-                <SustainabilitySection data={business.sustainability} />
-
-                {(business.keypeople) && (
-                    <Keypeople
-                        title={business.keypeople.title}
-                        people={business.keypeople.details}
-                    />
-                )}
-
-                {business.caseStudies && business.caseStudies.length > 0 && (
-                    <CaseStudySection
-                        sectionTitle="Case Studies"
-                        imageSrc="/images/chemcase.png"
-                        items={business.caseStudies}
-                    />
-                )}
-                <AwardsSection data={business.awards} />
-
-                <AccreditationsSlider items={business.accreditation ?? []} />
-            </div>
-            </div>
 
 
 
 
 
 
-        </section>
-            </div>
+            </section>
+        </div>
 
     )
 }
