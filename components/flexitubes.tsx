@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import { SiteFooter } from './site-footer'
 import Image from 'next/image'
-import { SliderCarousel, SliderItem } from './slidercomp'
+import SimpleCarousel, {  SliderItem } from './slidercomp'
 import { OverlayModule, OverlayModules } from './overlay'
 import { Leader, LeaderSpotlight } from './leader'
 import { AwardItem, AwardsAccolades } from './awards'
@@ -10,7 +10,12 @@ import Accreditions, { AccreditationItem } from './accredition'
 import AccreditationsSlider from './accredition'
 import ExpandableText from './expandabletext'
 import ExpandableFlexiText from './expandable-flexi'
-
+import { InnovationSlider } from './buissnessreusbales/InnovationSlider'
+import { SustainabilitySection } from './buissnessreusbales/SustainabilitySection'
+import Keypeople from './buissnessreusbales/keypeople'
+import { CaseStudySection } from './buissnessreusbales/case-studies'
+import { AwardsSection } from './buissnessreusbales/AwardsSection'
+import { BusinessConfig } from '@/app/business/data'
 
 
 
@@ -160,153 +165,249 @@ const packagingData = [
     {
         "id": "Flexible Tube",
         title: "Flexible Tube",
-        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/FlexiTube-Business53.jpg",
+        image: "images/heroflexi.png",
         "imageAlt": "UFlex Flexible Packaging Solutions",
         paragraphs: [
   "Our innovative multilayer flexible tube packaging solutions have been designed especially for the beauty, personal care and pharma industries.",
   "At UFlex, we challenge conventions through design thinking—reimagining material choices, printing, lamination, and production to deliver packaging that’s as innovative as it is impactful. Our strengths include:",
-  "\n• **Superior Print Quality**: Seamless 360° printing on laminate tubes with no side seam gaps, ensuring sharp image reproduction, intricate patterns, vibrant colors, and even fine vignette fonts.\n• **Advanced Substrate Layering**: Expertise in combining materials such as metallics, PE, BOPP, and PET to enhance aesthetics, barrier protection, and overall performance.\n• **Anti-Counterfeit Solutions**: Integrated holography for brand protection, authentication, and consumer trust.\n• **Vertical Integration**: End-to-end in-house capabilities that drive faster turnaround times and unmatched production agility.\n• **Sustainability Leadership**: Mono-material and PCR-compatible solutions that go beyond traditional multi-layer laminates.",
+  "\n•Superior Print Quality: Seamless 360° printing on laminate tubes with no side seam gaps, ensuring sharp image reproduction, intricate patterns, vibrant colors, and even fine vignette fonts.\n• **Advanced Substrate Layering**: Expertise in combining materials such as metallics, PE, BOPP, and PET to enhance aesthetics, barrier protection, and overall performance.\n• **Anti-Counterfeit Solutions**: Integrated holography for brand protection, authentication, and consumer trust.\n• **Vertical Integration**: End-to-end in-house capabilities that drive faster turnaround times and unmatched production agility.\n• **Sustainability Leadership**: Mono-material and PCR-compatible solutions that go beyond traditional multi-layer laminates.",
   "The outcome: Packaging that’s truly brand-centric—distinctive on the shelf, enriching for the consumer, and built for a sustainable future."
 ]
     }
 
 ];
-const FlexiComp = () => {
+
+
+export const businesses: BusinessConfig[] = [
+{
+    key: "flexible-tubes",
+    label: "Flexible Tubes",
+    hero: {
+      heading: "Flexible Tubes",
+      image: "/images/heroflexi.png",
+      body: `Our innovative multilayer flexible tube packaging solutions have been designed especially for the beauty, personal care and pharma industries.
+At UFlex, we challenge conventions through design thinking—reimagining material choices, printing, lamination, and production to deliver packaging that’s as innovative as it is impactful.`,
+    },
+    offerings: {
+      heading: "Our Offerings",
+      items: [
+        {
+          id: "greenika",
+          title: "GREENIKA",
+          image: "/images/greenika.png",
+        },
+        {
+          id: "gloss-tubes",
+          title: "Gloss Tubes",
+          image: "/images/glosstubes.png",
+        },
+        {
+          id: "mettalika",
+          title: "METTALIKA",
+          image: "/images/metalika.png",
+        },
+        {
+          id: "mattika",
+          title: "MATTIKA",
+          image: "/images/matika.png",
+        },
+        {
+          id: "matte-metallica",
+          title: "Matte Metallica",
+          image: "/images/matte.png",
+        },
+        {
+          id: "de-mettalized",
+          title: "DE METTALIZED",
+          image: "/images/de.png",
+        },
+        {
+          id: "optika",
+          title: "OPTIKA",
+          image: "/images/optika.png",
+        },
+      ],
+    },
+    innovations: {
+      heading: "Business Highlights and Innovations",
+      items: [
+        {
+          id: "gravure-reverse-megapixel",
+          title:
+            "Gravure-reverse printed tubes with high Megapixel Print Quality",
+          description: `Our Gravure-reverse printed tubes with ultra-HD resolution provide vibrant, razor-sharp branding. The photorealistic imagery enhances the shelf presence of the brand.
+
+With 75% of purchasing decisions made by consumers at the shelf, aesthetically designed packaging is a brand’s silent salesperson.`,
+          image: "/images/matika.png",
+        },
+        {
+          id: "metallized-holographic-films",
+          title: "Metallized and holographic films",
+          description:
+            "Our metallized and holographic films, developed in-house, offer premium aesthetics like a luxurious finish and light-reflective effects, as well as provide enhanced product like oxygen/moisture barriers.",
+          image: "/images/matika.png",
+        },
+        {
+          id: "anti-counterfeiting-brand-protection",
+          title:
+            "Built-in anti-counterfeiting tech–brand protection",
+          description: `Our laser engraving and covert printing technologies offer brand protection and authenticity for pharmaceuticals and premium cosmetics through:
+• Tamper-proof designs (overt and covert security features)
+• Lensing effect (single or multiple lensing)`,
+          image: "/images/optika.png",
+        },
+        {
+          id: "sustainability-measurable",
+          title: "Sustainability That’s Measurable",
+          description: `From in-house PCR, BOPP/PET/polyethylene production capabilities to water-based inks and chemicals, we offer sustainable options from source to shelf.
+• Radical resource efficiency - In-house PCR production capability
+• In-house BOPP/PET/polyethylene production - Lower carbon vs. outsourced supply chains
+• Water-based inks/chemicals - Safer end-of-life processing
+• Circularity Pathways - Lightweighting (up to 20% material reduction) and recyclability-ready designs (mono-material structures)`,
+          image: "/images/de.png",
+        },
+      ],
+    },
+    sustainability: {
+      title: "Sustainability",
+      description:
+        "Driving Sustainable Growth Through Smarter Packaging Practices.\nOur commitment to Environmental & Social Responsibility (ESR) and sustainability is more than a value—it’s a strategy. We foster collaborative, long-term partnerships with brand owners to co-create packaging that is not only beautiful and secure but also future-ready and planet-positive.",
+      image: "/images/sus.png",
+      linkLabel: "Know more",
+      linkHref: "#",
+    },
+    keypeople: {
+      title: "Key People",
+      details: [
+        {
+          photo: "/images/bose.png",
+          name: "Mr. Subrata Bose",
+          role:
+            "Senior Vice President - Tubes, Flexible Packaging Business",
+          summary: "",
+        },
+        {
+          photo: "/images/venkatesh.png",
+          name: "Mr. Venkatesh Rajagopalan",
+          role:
+            "Senior Vice President - Flexible Tubes Business",
+          summary: "",
+        },
+      ],
+    },
+    awards: {
+      title: "Awards & Accolades",
+      description: "Over the last several years, UFlex’s Printing Cylinder business has received various awards and certifications.",
+      image: "/images/awards.png",
+      linkLabel: "Know more",
+      linkHref: "/hall-of-fame",
+    },
+    accreditation: [
+      
+      { image: "/images/accc16.png" },
+      { image: "/images/accc16.png" },
+
+    ],
+  }
+
+
+
+
+
+];
+type Props = {
+    business: BusinessConfig;
+};
+const FlexiComp : React.FC<Props> = ({ business }) => {
     return (
-        <div>
+        
+
+
+  <div>
 
 
             {/* HERO */}
-            <section className="bg-gradient-to-b from-white to-slate-50">
-                <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:py-20">
-                    <div>
-                        <motion.h1
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"
-                        >
-                            Flexible Tubes
+            <section className='bg-white'>
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="space-y-10 md:space-y-12">
+                        <div className="grid py-12 lg:grid-cols-2 lg:py-20 gap-10">
+                            <div>
+                                <motion.h1
+                                    initial={{ opacity: 0, y: 10 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    className="text-[24px] lato-400 text-[#117ABA] md:text-[28px] "
+                                >
+                                    Flexible Tubes
 
-                        </motion.h1>
-                        {packagingData.map((section, idx) => (
-                            <ExpandableFlexiText
-                                key={idx}
-                                modalTitle={section.title}
-                                imageSrc={section.image}
-                                imageAlt={section.title}
-                                paragraphs={section.paragraphs}
+
+                                </motion.h1>
+
+                                {packagingData.map((section, idx) => (
+                                    <ExpandableText
+                                        key={idx}
+                                        modalTitle={section.title}
+                                        imageSrc={section.image}
+                                        imageAlt={section.title}
+                                        paragraphs={section.paragraphs}
+                                    />
+                                ))}
+                            </div>
+
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.98 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                className="relative aspect-[16/10] w-full overflow-hidden "
+                            >
+                                <Image
+                                    src="images/heroflexi.png"
+                                    alt="UFlex capabilities across the value chain"
+                                    fill
+                                    className="object-cover"
+                                    priority
+                                />
+
+                                <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
+                            </motion.div>
+                        </div>
+                        <SimpleCarousel heading="Our Offerings" items={SliderItems} imageHeight={280} />
+
+
+                        {business.innovations && (
+                            <InnovationSlider
+                                heading={business.innovations.heading}
+                                items={business.innovations.items}
                             />
-                        ))}
-                    </div>
+                        )}
+                        <SustainabilitySection data={business.sustainability} />
 
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.98 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl "
-                    >
-                        <Image
-                            src="/images/flexible.jpeg"
-                            alt="UFlex capabilities across the value chain"
-                            fill
-                            className="object-cover"
-                            priority
-                        />
-
-                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
-                    </motion.div>
-                </div>
-                <SliderCarousel
-                    heading="Our Offerings"
-                    subheading=""
-                    items={SliderItems}
-                    imageHeight={280}
-
-                />
-                <OverlayModules
-                    heading="Case Studies"
-                    subheading=""
-                    modules={modules}
-                    heights={{ base: 360, sm: 420, lg: 520 }}
-                    lgCols={2}
-                    imageSizes="(max-width:1024px) 100vw, 50vw"
-                    className=""
-                />
-                <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:py-20">
-                    <div>
-                        <motion.h1
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            className="mb-12 text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"
-                        >
-                            Sustainability
-
-                        </motion.h1>
-                        <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.05 }}
-                            className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl border-2 border-blue-400 shadow ring-4 ring-blue-200"
-
-                        >
-
-                            <Image
-                                src="https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/FlexiTube-Sustainability51.jpg"
-                                alt="UFlex capabilities across the value chain"
-                                fill
-                                className="object-cover"
-                                priority
+                        {(business.keypeople) && (
+                            <Keypeople
+                                title={business.keypeople.title}
+                                people={business.keypeople.details}
                             />
+                        )}
 
-                            <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
-                        </motion.div>
+                        {business.caseStudies && business.caseStudies.length > 0 && (
+                            <CaseStudySection
+                                sectionTitle="Case Studies"
+                                imageSrc="/images/chemcase.png"
+                                items={business.caseStudies}
+                            />
+                        )}
+                        <AwardsSection data={business.awards} />
+
+                        <AccreditationsSlider items={business.accreditation ?? []} />
                     </div>
-
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.98 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        className="manrope-400 mt-5 space-y-4 text-slate-700"
-
-                    >
-                        <p className='manrope-800'>
-                            Driving Sustainable Growth Through Smarter Packaging Practices</p>
-
-                        <p>
-                            Our commitment to Environmental & Social Responsibility (ESR) and sustainability is more than a value—it’s a strategy. We foster collaborative, long-term partnerships with brand owners to co-create packaging that is not only beautiful and secure but also future-ready and planet-positive.
-                        </p>
-                    </motion.div>
                 </div>
-                <OverlayModules
-                    heading="Business Highlights and Innovations"
-                    subheading=""
-                    modules={buismodules}
-                    heights={{ base: 360, sm: 420, lg: 520 }}
-                    lgCols={2}
-                    imageSizes="(max-width:1024px) 100vw, 50vw"
-                    className=""
-                />
-                <LeaderSpotlight people={keyPeopleMany} />
 
 
-                <AwardsAccolades
-                    heading="Awards & Accolades"
-                    subheading="Milestones that celebrate our ambition and execution."
-                    items={awards}
-                    split       // feature the first award as a hero row; remove to show pure grid
-                    gridColsLg={2}
-                />
-                <AccreditationsSlider items={accreditations} />;
+
+
+
+
             </section>
-
-
-
-
-
-
         </div>
     )
 }
