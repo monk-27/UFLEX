@@ -373,8 +373,8 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                         />
                     )}
                     <SustainabilitySection data={business.sustainability} />
-                   
-                    {(business.keypeople)  && (
+
+                    {(business.keypeople) && (
                         <PackagingKeypeople
                             title={business.keypeople.title}
                             people={business.keypeople.details}

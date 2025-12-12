@@ -27,8 +27,8 @@ export function CaseStudySection({
   if (!items || items.length === 0) return null;
 
   return (
-    <section className="w-full bg-[#f5f5f5]">
-      <div className="mx-auto flex max-w-7xl flex-col md:h-[571px] md:flex-row">
+    <section className="w-full ">
+      <div className="flex  flex-col md:h-[571px] md:flex-row">
         {/* Left image */}
         <div className="relative h-[571px] w-full md:h-full md:w-1/2">
           <Image
