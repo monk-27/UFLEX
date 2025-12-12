@@ -189,33 +189,33 @@ export function OfferingadvSection({
         {business?.subhero && <SubBusinessHero business={business} />}
 
         {/* Optional subofferings grid */}
-       {subitems.length > 0 && (
-  <div className="mt-10">
-    {subheading && (
-      <h3 className="flex items-center justify-center text-center lato-400 text-[16px] md:text-[22px] text-[#000000] mb-6">
-        {subheading}
-      </h3>
-    )}
+        {subitems.length > 0 && (
+          <div className="mt-10">
+            {subheading && (
+              <h3 className="flex items-center justify-center text-center lato-400 text-[16px] md:text-[22px] text-[#000000] mb-6">
+                {subheading}
+              </h3>
+            )}
 
-    {/* Use a full-width grid so mobile displays correctly */}
-    <div className="flex justify-center">
-      <div
-        className={`
-          w-full max-w-6xl
+            {/* Use a full-width grid so mobile displays correctly */}
+            <div className="flex justify-center">
+              <div
+                className={`
+          w-full max-w-5xl
           grid gap-4
           ${subitems.length === 1 ? "grid-cols-1" : ""}
           ${subitems.length === 2 ? "grid-cols-1 sm:grid-cols-2" : ""}
-          ${subitems.length === 3 ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3" : ""}
+          ${subitems.length === 3 ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 " : ""}
           ${subitems.length >= 4 ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4" : ""}
         `}
-      >
-        {subitems.map((sub) => (
-          <OfferingCard key={sub.id} item={sub} />
-        ))}
-      </div>
-    </div>
-  </div>
-)}
+              >
+                {subitems.map((sub) => (
+                  <OfferingCard key={sub.id} item={sub} />
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
 
       </div>
     </section>
