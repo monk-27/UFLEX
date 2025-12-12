@@ -38,18 +38,18 @@ function Arrow({ onClick, disabled, direction }: ArrowProps) {
       className={`absolute top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-[45px] h-[45px] rounded-full border-[1px] border-black text-white transition-all duration-200 ${direction === "left" ? "-left-13" : "-right-13"
         } ${disabled ? "opacity-40 pointer-events-none" : "opacity-100"}`}
     >
-      
-        {direction === "left" ? (
-          <>
-                          <ChevronLeft className="h-5 w-5 text-gray-600" />
 
-          </>
-        ) : (
-          <>
-                          <ChevronRight className="h-5 w-5 text-gray-600" />
+      {direction === "left" ? (
+        <>
+          <ChevronLeft className="h-5 w-5 text-gray-600" />
 
-          </>
-        )}
+        </>
+      ) : (
+        <>
+          <ChevronRight className="h-5 w-5 text-gray-600" />
+
+        </>
+      )}
       {/* </svg> */}
     </button>
 
@@ -86,7 +86,7 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
 
   return (
     <section aria-labelledby={`${id}-heading`} className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-0 py-10">
-      <h2 id={`${id}-heading`} className="text-center text-[24px] manrope-700 text-[#117ABA] md:text-[42px] mb-12">
+      <h2 id={`${id}-heading`} className="text-center text-[24px] lato-700 text-[#117ABA] md:text-[42px] mb-12">
         {heading}
       </h2>
 
@@ -110,7 +110,7 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
                   </div>
 
                   <div className="p-4 md:p-5">
-                    <h3 className="text-center text-gray-600 text-sm manrope-600 text-[16px]">{card.title}</h3>
+                    <h3 className="text-center text-gray-600 text-sm lato-400 text-[16px]">{card.title}</h3>
                   </div>
                 </div>
               </article>
@@ -219,7 +219,7 @@ export default function WhatWeDoPage() {
     },
     {
       title: "Printing Cylinders",
-     href: "/printing-cylinder-business",
+      href: "/printing-cylinder-business",
       desc: "UFlex Printing Cylinders Business has a State-of-the-art manufacturing facility for producing Rotogravure Cylinders, Flexo Plates & Sleeves.",
       img: "/images/cyls.png",
     },
@@ -251,7 +251,7 @@ export default function WhatWeDoPage() {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl"
+            className="text-[24px] lato-600 text-[#117ABA] md:text-[42px] md:text-5xl"
           >
             What We Do
           </motion.h1>
@@ -260,7 +260,7 @@ export default function WhatWeDoPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.05 }}
-            className="text-sm manrope-400 mt-5 space-y-4 text-slate-700"
+            className="text-sm lato-400 mt-5 space-y-4 text-slate-700"
           >
             <p>
               We operate across the entire packaging value chain, offering unmatched integration and scale. Our
