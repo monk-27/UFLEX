@@ -3,12 +3,15 @@ import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { BusinessPage } from "@/components/business-page"
 import CylComp from "@/components/cylinder"
+import { businesses } from "../business/data"
 
 export default function Page() {
+      const business = businesses.find(b => b.key === "printing-cylinders")!;
+  
   return (
     <>
       <SiteHeader />
-      <CylComp/>
+      <CylComp business={business}/>
       <SiteFooter />
     </>
   )
