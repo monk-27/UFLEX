@@ -88,53 +88,54 @@ const items: {
   title: string;
   desc: string;
   img: string;
-  key: BusinessKey;
+  href: any;
 }[] = [
     {
       title: "Packaging Films and PET Resin",
-      key: "packaging-films",
+      href: "/packaging-films-business",
       desc: "UFlex is India’s largest end to end flexible packaging solutions company serving as a one stop shop for all flexible packaging needs.",
       img: "/images/flex.jpeg",
     },
     {
       title: "Chemicals",
-      key: "chemicals",
+      href: "/chemicals-business",
       desc: "UFlex’s Chemicals Business is a leading manufacturer of Liquid Inks, Adhesives and Speciality Coatings.",
       img: "/images/chem.jpeg",
     },
     {
       title: "Aseptic Packaging",
-      key: "aseptic",
+      href: "/aseptic-packaging-business",
       desc: "Asepto is the Aseptic Liquid Packaging Brand from the House of UFlex Limited.",
       img: "/images/aseptic.png",
     },
     {
       title: "Flexible Packaging",
-      key: "flexible-packaging",
+      href: "/flexible-packaging-business",
       desc: "UFlex is the largest Flexible Packaging Exporter with manufacturing capacity of over 80000 TPA.",
       img: "/images/flexible.png",
     },
     {
       title: "Holography",
-      key: "holography",
+      href: "/holography-business",
       desc: "UFlex is one of the world’s leading organizations providing brand protection and anti-counterfeiting solutions to its customers.",
       img: "/images/holographys.png",
     },
     {
       title: "Engineering",
-      key: "engineering",
+      href: "/engineering-business",
       desc: "Engineering Business of UFlex has grown to be the manufacturing major of top of the line packaging, printing and allied machines.",
       img: "/images/engg.png",
     },
     {
       title: "Printing Cylinders",
-      key: "printing-cylinders",
+     href: "/printing-cylinder-business",
       desc: "UFlex Printing Cylinders Business has a State-of-the-art manufacturing facility for producing Rotogravure Cylinders, Flexo Plates & Sleeves.",
       img: "/images/cyls.png",
     },
     {
       title: "Flexible Tubes",
-      key: "flexible-tubes",
+      // key: "flexible-tubes",
+      href: "/flexitube-business",
       desc: "Our innovative multilayer flexible tube packaging solutions have been designed especially for the beauty, personal care and pharma industries.",
       img: "/images/flexible.jpeg",
     },
@@ -217,9 +218,9 @@ export default function BusinessCardsCarousel() {
       <div className="mt-12 px-4 hidden sm:block">
         <Slider {...settings}>
           {items.map((card, index) => (
-            <motion.div key={card.key} className="px-2">
+            <motion.div key={card.href} className="px-2">
               <Link
-                href={`/business?tab=${card.key}`}
+                href={card.href}
                 className="block h-full"
               >
                 <div className="flex h-full flex-col bg-gray-100 shadow-sm rounded-lg gap-2">
@@ -254,9 +255,9 @@ export default function BusinessCardsCarousel() {
       <div className="mt-12 px-4 block sm:hidden">
         <Slider {...settingsmob}>
           {items.map((card, index) => (
-            <motion.div key={card.key} className="px-2">
+            <motion.div key={card.href} className="px-2">
               <Link
-                href={`/business?tab=${card.key}`}
+                href={`/business?tab=${card.href}`}
                 className="block h-full"
               >
                 <div className="bg-gray-100 md:grid md:grid-cols-2 h-full">
