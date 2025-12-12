@@ -17,13 +17,13 @@ console.log("business",businesses)
 export function BusinessDetail({ business }: Props) {
   return (
     <div className=" space-y-10 md:space-y-12">
-      <OfferingadvSection
+      {/* <OfferingadvSection
         heading={business.offerings.heading}
         items={business.offerings.items}
         subheading={business.subofferings?.heading}
         subitems={business.subofferings?.subitems}
         business={business}
-      />
+      /> */}
       {business.innovations && (
       <InnovationSlider
         heading={business.innovations.heading}

@@ -60,7 +60,7 @@ export interface BusinessConfig {
     image: string;
     body: string;
   };
-  offerings: {
+  offerings?: {
     heading: string;
     items: Offering[];
   };
