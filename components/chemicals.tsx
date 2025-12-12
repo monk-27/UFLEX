@@ -16,6 +16,7 @@ import PackagingKeypeople from './buissnessreusbales/packagingkey'
 import { CaseStudySection } from './buissnessreusbales/case-studies'
 import { AwardsSection } from './buissnessreusbales/AwardsSection'
 import Keypeople from './buissnessreusbales/keypeople'
+import SimpleCarousel from './slidercomp'
 
 
 
@@ -293,13 +294,8 @@ const ChemicalsComp: React.FC<Props> = ({ business }) => {
                                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
                             </motion.div>
                         </div>
-                        <SliderCarousel
-                            heading="Our Offerings"
-                            subheading=""
-                            items={SliderItems}
-                            imageHeight={280}
-
-                        />
+                                            <SimpleCarousel heading="Our Offerings" items={SliderItems} imageHeight={280}  />
+                        
 
                         {business.innovations && (
                             <InnovationSlider
