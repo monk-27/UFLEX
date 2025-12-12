@@ -48,7 +48,7 @@ export default function DynamicCarouselModal({
       {/* ===== CAROUSEL - 3 CARDS VISIBLE AT ONCE ===== */}
       <section className="py-16 bg-gray-50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-[24px] manrope-700 text-[#117ABA] md:text-[42px] mb-12">
+          <h2 className="text-center text-[20px] lato-400 text-[#117ABA] md:text-[28px] mb-12">
             {heading}
           </h2>
 
@@ -81,14 +81,14 @@ export default function DynamicCarouselModal({
                       {/* Content */}
                       <div className="p-6 flex flex-col justify-between flex-grow">
                         <div>
-                          <h3 className="text-2xl manrope-600 text-slate-800 mb-3 line-clamp-2">
+                          <h3 className="text-2xl lato-400 text-slate-800 mb-3 line-clamp-2">
                             {item.title}
                           </h3>
                           <p className="text-slate-600 text-base line-clamp-3">
                             {item.shortDesc}
                           </p>
                         </div>
-                        <button className="mt-6 text-[#117ABA] manrope-500 font-medium hover:underline">
+                        <button className="mt-6 text-[#117ABA] lato-400  hover:underline">
                           Read More
                         </button>
                       </div>
@@ -99,7 +99,7 @@ export default function DynamicCarouselModal({
             </div>
 
             {/* Navigation Buttons */}
-            <div className="flex justify-center gap-8 mt-12">
+            {/* <div className="flex justify-center gap-8 mt-12">
               <button
                 onClick={scrollPrev}
                 className="p-5 bg-white rounded-full shadow-2xl hover:scale-110 transition-all"
@@ -112,7 +112,7 @@ export default function DynamicCarouselModal({
               >
                 <ChevronRight className="w-8 h-8 text-[#117ABA]" />
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -154,10 +154,10 @@ export default function DynamicCarouselModal({
             </div>
 
             <div className="p-6 md:p-10 flex flex-col justify-center">
-              <h3 className="text-2xl md:text-3xl manrope-600 text-gray-900 leading-tight">
+              <h3 className="text-2xl md:text-3xl lato-400 text-gray-900 leading-tight">
                 {selectedItem.title}
               </h3>
-              <div className="mt-6 text-gray-700 manrope-400 text-base md:text-lg leading-relaxed space-y-4">
+              <div className="mt-6 text-gray-700 lato-400 text-base md:text-lg leading-relaxed space-y-4">
                 {selectedItem.longDesc.split("\n\n").map((para, i) => (
                   <p key={i}>{para}</p>
                 ))}
