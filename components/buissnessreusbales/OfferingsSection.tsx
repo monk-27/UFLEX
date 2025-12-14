@@ -192,7 +192,7 @@ export function OfferingadvSection({
         {subitems.length > 0 && (
           <div className="mt-10">
             {subheading && (
-              <h3 className="flex items-center justify-center text-center lato-400 text-[16px] md:text-[22px] text-[#000000] mb-6">
+              <h3 className="flex items-center justify-center text-center lato-400 text-[16px] md:text-[28px] text-[#000000] mb-6">
                 {subheading}
               </h3>
             )}
@@ -201,8 +201,8 @@ export function OfferingadvSection({
             <div className="flex justify-center">
               <div
                 className={`
-          w-full max-w-5xl
-          grid gap-4
+          w-full max-w-5xl  rounded-md items-center justify-center
+          grid gap-2
           ${subitems.length === 1 ? "grid-cols-1" : ""}
           ${subitems.length === 2 ? "grid-cols-1 sm:grid-cols-2" : ""}
           ${subitems.length === 3 ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 " : ""}
@@ -228,7 +228,7 @@ function OfferingCard({ item }: { item: Offering }) {
   const title = item?.title ?? "";
 
   return (
-    <div className="group relative overflow-hidden md:w-[200px] lg:w-[220px] xl:w-[240px]">
+    <div className="rounded-md group relative overflow-hidden md:w-[200px] lg:w-[220px] xl:w-[240px]">
       <div className="relative h-[195px] w-full">
         <Image
           src={src}

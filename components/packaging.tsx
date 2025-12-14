@@ -309,10 +309,10 @@ type Props = {
 };
 const PackageComp: React.FC<Props> = ({ business }) => {
     return (
-        <section className='bg-white'>
+        <section className='bg-white pt-12'>
             <div className="max-w-7xl mx-auto px-4">
-                <div className="space-y-10 md:space-y-12">
-                    <div className="grid py-12 lg:grid-cols-2 lg:py-20 gap-10">
+                <div className="space-y-4">
+                    <div className="grid py-12 lg:grid-cols-2 lg:py-1  gap-10">
                         <div>
                             <motion.h1
                                 initial={{ opacity: 0, y: 10 }}
@@ -351,7 +351,7 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                             <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
                         </motion.div>
                     </div>
-                    <SimpleCarousel heading="Our Offerings" items={SliderItems} imageHeight={280}  />
+                    <SimpleCarousel heading="Our Offerings" items={SliderItems} imageHeight={280} />
 
                     <OfferingadvSection
                         // heading={business.offerings.heading}

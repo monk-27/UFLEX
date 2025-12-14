@@ -43,7 +43,7 @@ export default function SimpleCarousel({
   if (!items.length) return null;
 
   return (
-    <section className=" py-1">
+    <section className="py-1">
       {heading && (
         <h2 className="text-[28px] text-[#000000] lato-400 text-center mb-2">{heading}</h2>
       )}

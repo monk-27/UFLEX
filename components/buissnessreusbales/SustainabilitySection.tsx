@@ -12,9 +12,9 @@ export function SustainabilitySection({ data }: any) {
   if (!data) return null;
 
   return (
-    <>
+    <div className="pt-8">
     
-    <section className=" hidden sm:block bg-[#f7f7f7] h-[430px] sm:h-[410px]">
+    <section className="  hidden sm:block bg-[#f7f7f7] h-[430px] sm:h-[410px]">
       <div className="">
         <div className="overflow-hidden grid gap-0 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.2fr)]">
           {/* Text */}
@@ -88,6 +88,6 @@ export function SustainabilitySection({ data }: any) {
         </div>
       </div>
     </section>
-    </>
+    </div>
   );
 }

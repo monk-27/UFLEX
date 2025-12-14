@@ -55,7 +55,7 @@ export default function AccreditationsSlider({
   const showArrows = items.length > columns;
 
   return (
-    <div>
+    <div className="py-12">
       {/* Heading */}
       <motion.section
         className=" px-6 text-center sm:px-0 "
@@ -74,7 +74,6 @@ export default function AccreditationsSlider({
         </motion.h3>
       </motion.section>
 
-      {/* “Slider” – just paging through items */}
       <AnimatedSection>
         <div className="max-w-6xl mx-auto px-4 lg:px-0 ">
           <motion.div

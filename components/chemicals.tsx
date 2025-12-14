@@ -251,10 +251,10 @@ const ChemicalsComp: React.FC<Props> = ({ business }) => {
 
 
             {/* HERO */}
-            <section className='bg-white'>
+            <section className='bg-white pt-12'>
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="space-y-10 md:space-y-12">
-                        <div className="grid py-12 lg:grid-cols-2 lg:py-20 gap-10">
+                    <div className="space-y-4">
+                        <div className="grid py-12 lg:grid-cols-2 lg:py-1 gap-10">
                             <div>
                                 <motion.h1
                                     initial={{ opacity: 0, y: 10 }}
