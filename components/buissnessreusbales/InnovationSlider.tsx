@@ -68,7 +68,7 @@ export function InnovationSlider({ heading, items }: any) {
               <div className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.4fr)] items-start">
                 {/* Text */}
                 <div>
-                  <h3 className="lato-700 text-[18px] md:text-[24px] text-[#000000] mb-3">
+                  <h3 className="lato-400 text-[18px] md:text-[24px] text-[#000000] mb-3">
                     {current.title}
                   </h3>
 

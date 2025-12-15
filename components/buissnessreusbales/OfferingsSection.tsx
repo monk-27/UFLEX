@@ -1,10 +1,7 @@
-
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import { SubBusinessHero } from "./subhero";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { BusinessConfig, Offering } from "@/app/business/data";
 
 type Props = {
@@ -12,7 +9,7 @@ type Props = {
   items?: Offering[] | null;
   subheading?: string;
   subitems?: Offering[] | null;
-  business?: BusinessConfig | null; // make optional so component is flexible
+  business?: BusinessConfig | null;
 };
 
 export function OfferingadvSection({
@@ -22,228 +19,102 @@ export function OfferingadvSection({
   subitems: subitemsProp,
   business,
 }: Props) {
-  // normalize optional inputs to arrays
   const items = itemsProp ?? [];
   const subitems = subitemsProp ?? [];
 
-  const [mobileIndex, setMobileIndex] = useState(0);
-  const [desktopPage, setDesktopPage] = useState(0);
-
-  const itemsPerPage = 5;
-  const pageCount = items.length > 0 ? Math.ceil(items.length / itemsPerPage) : 0;
-
-  // auto slider for mobile — only if more than 1 item
-  useEffect(() => {
-    if (items.length <= 1) return;
-
-    const timer = setInterval(
-      () => setMobileIndex((prev) => (prev + 1) % items.length),
-      2500
-    );
-    return () => clearInterval(timer);
-  }, [items.length]);
-
-  // ensure desktopPage is within range when items change
-  useEffect(() => {
-    if (pageCount === 0) {
-      setDesktopPage(0);
-    } else if (desktopPage >= pageCount) {
-      setDesktopPage(0);
-    }
-  }, [pageCount, desktopPage]);
-
-  const handlePrevDesktop = () => {
-    if (pageCount <= 1) return;
-    setDesktopPage((prev) => (prev - 1 + pageCount) % pageCount);
-  };
-
-  const handleNextDesktop = () => {
-    if (pageCount <= 1) return;
-    setDesktopPage((prev) => (prev + 1) % pageCount);
-  };
-
-  const handlePrevMobile = () => {
-    if (items.length <= 1) return;
-    setMobileIndex((prev) => (prev - 1 + items.length) % items.length);
-  };
-
-  const handleNextMobile = () => {
-    if (items.length <= 1) return;
-    setMobileIndex((prev) => (prev + 1) % items.length);
-  };
-
-  const start = desktopPage * itemsPerPage;
-  const visibleDesktopItems =
-    items.length > itemsPerPage ? items.slice(start, start + itemsPerPage) : items;
-
-  // If nothing to show, render null (or you can render an empty section)
-  const nothingToShow =
-    !heading && items.length === 0 && subitems.length === 0 && !business?.subhero;
-  if (nothingToShow) return null;
+  if (
+    !heading &&
+    items.length === 0 &&
+    subitems.length === 0 &&
+    !business?.subhero
+  ) {
+    return null;
+  }
 
   return (
-    <section className="bg-white">
-      <div>
-        {/* Main offerings heading */}
+    <section className="bg-white py-8 md:py-12 overflow-x-hidden">
+      <div className="max-w-7xl mx-auto px-4">
+        {/* Heading */}
         {heading && (
-          <h2 className="flex items-center justify-center text-center lato-400 text-[18px] md:text-[28px] text-[#000000] mb-6">
+          <h2 className="mb-10 text-center lato-400 text-[18px] md:text-[28px] text-[#000000]">
             {heading}
           </h2>
         )}
 
-        {/* Desktop – main offerings */}
-        {items.length === 0 ? null : items.length <= itemsPerPage ? (
-          <div className="hidden md:flex md:justify-center md:items-stretch md:gap-4">
+        {/* Main offerings — GRID (auto-centering) */}
+        {items.length > 0 && (
+          <div
+            className="
+              grid
+              justify-center
+              justify-items-center
+              gap-6 md:gap-8
+              [grid-template-columns:repeat(auto-fit,minmax(260px,1fr))]
+            "
+          >
             {items.map((item) => (
               <OfferingCard key={item.id} item={item} />
             ))}
           </div>
-        ) : (
-          <div className="hidden md:flex md:flex-col md:items-center">
-            {/* cards */}
-            <div className="flex justify-center items-stretch gap-4">
-              {visibleDesktopItems.map((item) => (
-                <OfferingCard key={item.id} item={item} />
-              ))}
-            </div>
+        )}
 
-            {/* pager dots */}
-            <div className="flex items-center justify-center gap-2 mt-4">
-              {Array.from({ length: pageCount }).map((_, i) => (
-                <button
-                  key={i}
-                  type="button"
-                  onClick={() => setDesktopPage(i)}
-                  className={`h-2.5 w-2.5 rounded-full transition ${i === desktopPage ? "bg-[#117ABA]" : "bg-gray-300"}`}
-                  aria-label={`Go to slide ${i + 1}`}
-                />
-              ))}
-            </div>
-
-            {/* arrows */}
-            <div className="mt-8 flex items-center justify-center gap-4">
-              <button
-                type="button"
-                onClick={handlePrevDesktop}
-                aria-label="Previous"
-                className="inline-flex items-center justify-center rounded-full border border-gray-600 bg-white/80 p-3 shadow-sm opacity-50 hover:opacity-100 transition"
-                disabled={pageCount <= 1}
-              >
-                <ChevronLeft className="h-5 w-5 text-gray-400" />
-              </button>
-
-              <button
-                type="button"
-                onClick={handleNextDesktop}
-                aria-label="Next"
-                className="inline-flex items-center justify-center rounded-full border border-gray-600 bg-white/80 p-3 shadow-sm opacity-50 hover:opacity-100 transition"
-                disabled={pageCount <= 1}
-              >
-                <ChevronRight className="h-5 w-5 text-gray-400" />
-              </button>
-            </div>
+        {/* Optional sub hero */}
+        {business?.subhero && (
+          <div className="mt-16">
+            <SubBusinessHero business={business} />
           </div>
         )}
 
-        {/* Mobile – slider */}
-        {items.length > 0 && (
-          <div className="md:hidden">
-            <OfferingCard item={items[mobileIndex]} />
-            <div className="flex items-center justify-center gap-2 mt-4">
-              {items.map((_, i) => (
-                <button
-                  key={i}
-                  type="button"
-                  onClick={() => setMobileIndex(i)}
-                  className={`h-2.5 w-2.5 rounded-full transition ${i === mobileIndex ? "bg-[#117ABA]" : "bg-gray-300"}`}
-                  aria-label={`Go to slide ${i + 1}`}
-                />
-              ))}
-            </div>
-
-            {items.length > 1 && (
-              <div className="mt-4 flex items-center justify-center gap-4">
-                <button
-                  type="button"
-                  onClick={handlePrevMobile}
-                  className="h-9 w-9 text-[#117ABA] flex items-center justify-center text-sm"
-                  aria-label="Previous"
-                >
-                  <span className="lato-700 text-[22px] text-[#117ABA]">{"<"}</span>
-                </button>
-
-                <button
-                  type="button"
-                  onClick={handleNextMobile}
-                  className="h-9 w-9 text-[#117ABA] flex items-center justify-center text-sm hover:bg-gray-100"
-                  aria-label="Next"
-                >
-                  <span className="lato-700 text-[22px] text-[#117ABA]">{">"}</span>
-                </button>
-              </div>
-            )}
-          </div>
-        )}
-
-        {/* Optional subhero */}
-        {business?.subhero && <SubBusinessHero business={business} />}
-
-        {/* Optional subofferings grid */}
+        {/* Sub offerings — same grid logic */}
         {subitems.length > 0 && (
-          <div className="mt-10">
+          <div className="mt-16">
             {subheading && (
-              <h3 className="flex items-center justify-center text-center lato-400 text-[16px] md:text-[28px] text-[#000000] mb-6">
+              <h3 className="mb-10 text-center lato-400 text-[16px] md:text-[28px] text-[#000000]">
                 {subheading}
               </h3>
             )}
 
-            {/* Use a full-width grid so mobile displays correctly */}
-            <div className="flex justify-center">
-              <div
-                className={`
-          w-full max-w-5xl  rounded-md items-center justify-center
-          grid gap-2
-          ${subitems.length === 1 ? "grid-cols-1" : ""}
-          ${subitems.length === 2 ? "grid-cols-1 sm:grid-cols-2" : ""}
-          ${subitems.length === 3 ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 " : ""}
-          ${subitems.length >= 4 ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4" : ""}
-        `}
-              >
-                {subitems.map((sub) => (
-                  <OfferingCard key={sub.id} item={sub} />
-                ))}
-              </div>
+            <div
+              className="
+                grid
+                justify-center
+                justify-items-center
+                gap-6 md:gap-8
+                [grid-template-columns:repeat(auto-fit,minmax(260px,1fr))]
+              "
+            >
+              {subitems.map((sub) => (
+                <OfferingCard key={sub.id} item={sub} />
+              ))}
             </div>
           </div>
         )}
-
       </div>
     </section>
   );
 }
 
+/* ───────────── Card ───────────── */
+
 function OfferingCard({ item }: { item: Offering }) {
-  // defensive: ensure at least an image string to avoid next/image runtime error
   const src = item?.image ?? "/images/placeholder.png";
   const title = item?.title ?? "";
 
   return (
-    <div className="rounded-md group relative overflow-hidden md:w-[200px] lg:w-[220px] xl:w-[240px]">
+    <div className="w-full max-w-[260px] rounded-md overflow-hidden group relative">
       <div className="relative h-[195px] w-full">
         <Image
           src={src}
           alt={title}
           fill
-          className="object-cover transform group-hover:scale-105 transition-transform duration-300"
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300" />
+      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition" />
 
-      {/* Title at bottom-center */}
       <div className="absolute inset-0 flex items-end justify-center pb-5">
-        <p className="lato-700 text-[16px] text-white tracking-wide text-center px-2">
+        <p className="text-white lato-700 text-[16px] text-center px-2">
           {title}
         </p>
       </div>

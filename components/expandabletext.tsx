@@ -39,7 +39,7 @@ export default function ExpandableText({
         viewport={{ once: true }}
         transition={{ delay: 0.05 }}
         className={clsx(
-          'max-w-[550px] lato-400 text-[16px] sm:text-[20px] leading-relaxed text-slate-700 lato-400 mt-5 ',
+          'max-w-[550px] lato-400 text-[16px] sm:text-[20px] leading-relaxed text-[#4f4f4f]  mt-5 ',
           className
         )}
       >

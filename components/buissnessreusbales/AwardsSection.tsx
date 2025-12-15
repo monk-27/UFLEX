@@ -37,7 +37,7 @@ export function AwardsSection({ data }: any) {
               <span>Recognized for our sustainability efforts</span>
             </h3>
 
-            <p className="max-w-2xl  lato-400 text-[12px] sm:text-[18px] leading-relaxed text-white/90 mb-4">
+            <p className="max-w-2xl  lato-400 text-[16px] sm:text-[20px] leading-relaxed  text-white/90 mb-4">
               {data.description}
             </p>
 
