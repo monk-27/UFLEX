@@ -86,7 +86,7 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
 
   return (
     <section aria-labelledby={`${id}-heading`} className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-0 py-10">
-      <h2 id={`${id}-heading`} className="text-center text-[24px] lato-700 text-[#117ABA] md:text-[42px] mb-12">
+      <h2 id={`${id}-heading`} className="text-center text-[20px] lato-400 text-[#117ABA] md:text-[28px] mb-12">
         {heading}
       </h2>
 
@@ -253,7 +253,7 @@ export default function WhatWeDoPage() {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[24px] lato-600 text-[#117ABA] md:text-[42px] md:text-5xl"
+            className="text-[20px] lato-400 text-[#117ABA] md:text-[28px] "
           >
             What We Do
           </motion.h1>
@@ -262,7 +262,7 @@ export default function WhatWeDoPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.05 }}
-            className="text-sm lato-400 mt-5 space-y-4 text-slate-700"
+            className="lato-400 text-[16px] sm:text-[20px] leading-relaxed text-[#4f4f4f] mt-5 space-y-4 "
           >
             <p>
               We operate across the entire packaging value chain, offering unmatched integration and scale. Our
