@@ -46,7 +46,7 @@ export default function FloatingButton() {
           hidden md:block
         "
       >
-        Get a quote
+        Get a Quote
       </span>
     </Link>
   );
