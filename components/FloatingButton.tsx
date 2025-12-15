@@ -37,7 +37,7 @@ export default function FloatingButton() {
         className="
           ml-2
           whitespace-nowrap
-          text-sm font-medium
+          text-sm lato-400
           opacity-0
           translate-x-2
           transition-all duration-300 ease-out
