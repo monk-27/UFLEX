@@ -97,23 +97,25 @@ const items: {
       img: "/images/flex.jpeg",
     },
     {
-      title: "Chemicals",
-      href: "/chemicals-business",
-      desc: "UFlex’s Chemicals Business is a leading manufacturer of Liquid Inks, Adhesives and Speciality Coatings.",
-      img: "/images/chem.jpeg",
+      title: "Flexible Packaging",
+      href: "/flexible-packaging-business",
+      desc: "UFlex is the largest Flexible Packaging Exporter with manufacturing capacity of over 80000 TPA.",
+      img: "/images/flexible.png",
     },
+   
     {
       title: "Aseptic Packaging",
       href: "/aseptic-packaging-business",
       desc: "Asepto is the Aseptic Liquid Packaging Brand from the House of UFlex Limited.",
       img: "/images/aseptic.png",
     },
-    {
-      title: "Flexible Packaging",
-      href: "/flexible-packaging-business",
-      desc: "UFlex is the largest Flexible Packaging Exporter with manufacturing capacity of over 80000 TPA.",
-      img: "/images/flexible.png",
+     {
+      title: "Chemicals",
+      href: "/chemicals-business",
+      desc: "UFlex’s Chemicals Business is a leading manufacturer of Liquid Inks, Adhesives and Speciality Coatings.",
+      img: "/images/chem.jpeg",
     },
+    
     {
       title: "Holography",
       href: "/holography-business",

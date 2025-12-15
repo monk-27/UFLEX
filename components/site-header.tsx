@@ -22,9 +22,10 @@ const baseNav: NavItem[] = [
     label: "What We Do",
     children: [
       { href: "/packaging-films-business", label: "Packaging Films and PET Resin" },
-      { href: "/chemicals-business", label: "Chemicals" },
-      { href: "/aseptic-packaging-business", label: "Aseptic Packaging" },
       { href: "/flexible-packaging-business", label: "Flexible Packaging" },
+      { href: "/aseptic-packaging-business", label: "Aseptic Packaging" },
+      { href: "/chemicals-business", label: "Chemicals" },
+
       { href: "/holography-business", label: "Holography" },
       { href: "/engineering-business", label: "Engineering" },
       { href: "/printing-cylinder-business", label: "Printing Cylinders" },
