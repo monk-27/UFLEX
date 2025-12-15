@@ -281,7 +281,7 @@ export default function WhatWeDoPage() {
             initial={{ opacity: 0, scale: 0.98 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl "
+            className="relative aspect-[16/10] w-full overflow-hidden  "
           >
             <Image
               src="https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/What-We-Do01.jpg"

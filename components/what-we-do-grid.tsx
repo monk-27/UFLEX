@@ -242,9 +242,9 @@ export default function BusinessCardsCarousel() {
                         {card.title}
                       </h3>
                     </div>
-                    <p className="items-start mt-3 text-left manrope-400 text-[#6D6E71]">
+                    {/* <p className="items-start mt-3 text-left manrope-400 text-[#6D6E71]">
                       {card.desc}
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </Link>

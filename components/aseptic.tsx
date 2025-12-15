@@ -236,7 +236,7 @@ const AsepticComp: React.FC<Props> = ({ business }) => {
                                 initial={{ opacity: 0, scale: 0.98 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true }}
-                                className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl "
+                                className="relative aspect-[16/10] w-full overflow-hidden "
                             >
                                 <Image
                                     src="/images/3.png"
