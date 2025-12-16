@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import React from 'react'
+import React, { useState } from 'react'
 import { SiteFooter } from './site-footer'
 import Image from 'next/image'
 import SimpleCarousel, { SliderItem } from './slidercomp'
@@ -8,7 +8,7 @@ import { Leader, LeaderSpotlight } from './leader'
 import { AwardItem, AwardsAccolades } from './awards'
 import Accreditions, { AccreditationItem } from './accredition'
 import AccreditationsSlider from './accredition'
-import ExpandableText from './expandabletext'
+import { ReadMoreDialog } from './expandabletext'
 import { InnovationSlider } from './buissnessreusbales/InnovationSlider'
 import { SustainabilitySection } from './buissnessreusbales/SustainabilitySection'
 import Keypeople from './buissnessreusbales/keypeople'
@@ -117,9 +117,9 @@ const packagingData = [
         image: "/images/flexi.png",
         "imageAlt": "UFlex Flexible Packaging Solutions",
         paragraphs: [
-            "We offer a comprehensive range of products, including flexible laminates, pre-formed pouches, Flexo-printed rolls and bags, laminated woven polypropylene (WPP) bags, electron beam and Cast n Cure technology, pharmaceutical packaging, Flexible Tubes, hygiene films, Flexfresh™ modified atmosphere packaging, and big bags. At UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every solution we create.",
-            "UFlex Limited is India’s largest flexible packaging company, headquartered in Noida, Delhi NCR. With a legacy of innovation and excellence, we operate three advanced manufacturing facilities across India, including Noida and Jammu, and serve a diverse clientele both domestically and globally. Our robust international footprint spans North America, Europe, Africa, Southeast Asia, and the Middle East, positioning us as a leading manufacturer and exporter in the flexible packaging space.",
-            "With a manufacturing capacity of over 100,000 MTPA, UFlex offers a comprehensive range of flexible packaging solutions and laminated roll stocks. Our versatile portfolio includes a wide variety of pouch formats such as 3D and 4D pouches with re-closable options, wicketed bags for hygiene products, pet food pinch bottom bags, cement block bottom bags, Flexible Tubes, and innovative offerings like innolock pouches, zip pouches, embossed foils, pocket PTC zippers, and Cast n Cure technologies. Whether it’s packaging for household use or industrial applications, our products are designed to combine functionality with visual appeal.\n\nWhat sets UFlex apart is our full backward integration across every key vertical—films (BOPET, BOPP, CPP, metalized films), chemicals (inks, coatings, adhesives), engineering (converting and packing machines), holography, and cylinders. This integration enables us to offer customized, end-to-end packaging solutions tailored to the evolving needs of our customers.\n\nOur four in-house R&D labs, approved by the Ministry of Industries, Government of India, are equipped with state-of-the-art instruments like FTIR, UTM, gas chromatograph, and differential scanning calorimeter. This empowers us to stay at the forefront of packaging innovation, driving quality, sustainability, and performance.\n\nAt UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every solution we create."
+            `We offer a comprehensive range of products, including flexible laminates, pre-formed pouches, Flexo-printed rolls and bags, laminated woven polypropylene (WPP) bags, electron beam and Cast n Cure technology, pharmaceutical packaging, Flexible Tubes, hygiene films, Flexfresh™ modified atmosphere packaging, and big bags. At UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every solution we create.`,
+            `UFlex Limited is India’s largest flexible packaging company, headquartered in Noida, Delhi NCR. With a legacy of innovation and excellence, we operate three advanced manufacturing facilities across India, including Noida and Jammu, and serve a diverse clientele both domestically and globally. Our robust international footprint spans North America, Europe, Africa, Southeast Asia, and the Middle East, positioning us as a leading manufacturer and exporter in the flexible packaging space.`,
+            `With a manufacturing capacity of over 100,000 MTPA, UFlex offers a comprehensive range of flexible packaging solutions and laminated roll stocks. Our versatile portfolio includes a wide variety of pouch formats such as 3D and 4D pouches with re-closable options, wicketed bags for hygiene products, pet food pinch bottom bags, cement block bottom bags, Flexible Tubes, and innovative offerings like innolock pouches, zip pouches, embossed foils, pocket PTC zippers, and Cast n Cure technologies. Whether it’s packaging for household use or industrial applications, our products are designed to combine functionality with visual appeal.\n\nWhat sets UFlex apart is our full backward integration across every key vertical—films (BOPET, BOPP, CPP, metalized films), chemicals (inks, coatings, adhesives), engineering (converting and packing machines), holography, and cylinders. This integration enables us to offer customized, end-to-end packaging solutions tailored to the evolving needs of our customers.\n\nOur four in-house R&D labs, approved by the Ministry of Industries, Government of India, are equipped with state-of-the-art instruments like FTIR, UTM, gas chromatograph, and differential scanning calorimeter. This empowers us to stay at the forefront of packaging innovation, driving quality, sustainability, and performance.\n\nAt UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every solution we create.`
         ]
     }
 
@@ -221,6 +221,8 @@ type Props = {
     business: BusinessConfig;
 };
 const FlexibleComp: React.FC<Props> = ({ business }) => {
+    const [open, setOpen] = useState(false);
+
     return (
 
 
@@ -230,11 +232,11 @@ const FlexibleComp: React.FC<Props> = ({ business }) => {
 
 
             {/* HERO */}
-            <section className='bg-white pt-12'>
+            <section className='bg-white pt-4 sm:pt-12'>
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="space-y-4">
-                        <div className="grid py-12 lg:grid-cols-2 lg:py-1 gap-10">
-                            <div>
+                        <div className="grid py-4 lg:grid-cols-2 lg:py-1  gap-10">
+                            {/* <div>
                                 <motion.h1
                                     initial={{ opacity: 0, y: 10 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -255,6 +257,39 @@ const FlexibleComp: React.FC<Props> = ({ business }) => {
                                         paragraphs={section.paragraphs}
                                     />
                                 ))}
+                            </div> */}
+
+                            <div>
+                                <motion.h1
+                                    initial={{ opacity: 0, y: 10 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    className="text-[18px] lato-700 text-[#117ABA] md:text-[28px]"
+                                >
+                                    Flexible Packaging
+                                </motion.h1>
+
+                                <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
+                                    {packagingData[0].paragraphs[0]}
+                                </p>
+
+                                <button
+                                    onClick={() => setOpen(true)}
+                                    className="mt-4 lato-700 text-[14px] text-[#117ABA]  hover:underline"
+                                >
+                                    Read more →
+                                </button>
+
+                                {/* ---- Modal ---- */}
+                                <ReadMoreDialog
+                                    open={open}
+                                    onClose={() => setOpen(false)}
+                                    title={packagingData[0].title}
+                                    imageSrc={packagingData[0].image}
+                                    imageAlt={packagingData[0].title}
+                                    paragraphs={packagingData[0].paragraphs}
+                                />
+
                             </div>
 
                             <motion.div

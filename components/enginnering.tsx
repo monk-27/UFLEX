@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import React from 'react'
+import React, { useState } from 'react'
 import { SiteFooter } from './site-footer'
 import Image from 'next/image'
 import SimpleCarousel, { SliderItem } from './slidercomp'
@@ -8,13 +8,14 @@ import { Leader, LeaderSpotlight } from './leader'
 import { AwardItem, AwardsAccolades } from './awards'
 import Accreditions, { AccreditationItem } from './accredition'
 import AccreditationsSlider from './accredition'
-import ExpandableText from './expandabletext'
+
 import { InnovationSlider } from './buissnessreusbales/InnovationSlider'
 import { SustainabilitySection } from './buissnessreusbales/SustainabilitySection'
 import Keypeople from './buissnessreusbales/keypeople'
 import { CaseStudySection } from './buissnessreusbales/case-studies'
 import { AwardsSection } from './buissnessreusbales/AwardsSection'
 import { BusinessConfig } from '@/app/business/data'
+import { ReadMoreDialog } from './expandabletext'
 
 
 
@@ -56,9 +57,32 @@ const packagingData = [
         image: "/images/heroengg.png",
         "imageAlt": "UFlex Engineering",
         paragraphs: [
-            " A leading manufacturer specializing in top-tier packaging, printing, and allied machines, catering to diverse needs across industries. Established in 1985, UFlex Engineering is a leading manufacturer specializing in top-tier packaging, printing, and allied machines. Our commitment to delivering high-performance machines and tailored solutions has propelled us to the forefront of the industry. We offer a comprehensive range of products and cater to diverse needs across various sectors.",
-            " With high-end CAD software, streamlined processes, and collaborative efforts across departments, we deliver tailored products to meet evolving global demands. This dedication, coupled with our state-of-the-art facilities, positions UFlex as a leading provider capable of fulfilling our clients' diverse needs with precision and efficiency.",
-            " At UFlex Engineering, we prioritize client satisfaction by maintaining rigorous quality standards throughout our production process. Our dedication to innovation, productivity, and globalization has solidified our position as a trusted manufacturer, exporter, and supplier in the global market."
+            `A leading manufacturer specializing in top-tier
+packaging, printing, and allied machines,
+catering to diverse needs across industries.`,
+            `Established in 1985, UFlex Engineering is
+committed to delivering high-performance
+machines and tailored solutions, which has
+propelled us to the forefront of the
+industry. We offer a comprehensive range
+of products and cater to diverse needs
+across various sectors.`,
+            `With high-end CAD software, streamlined
+processes, and collaborative efforts across
+departments, we deliver tailored products
+to meet evolving global demands. This
+dedication, coupled with our state-of-the-
+art facilities, positions UFlex as a leading
+provider capable of fulfilling our clients&#39;
+diverse needs with precision and efficiency.`,
+`At UFlex Engineering, we prioritize client
+satisfaction by maintaining rigorous quality
+standards throughout our production
+process. Our dedication to innovation,
+productivity, and globalization has
+solidified our position as a trusted
+manufacturer, exporter, and supplier in the
+global market.`
         ]
     }
 
@@ -200,6 +224,8 @@ type Props = {
     business: BusinessConfig;
 };
 const EngComp: React.FC<Props> = ({ business }) => {
+        const [open, setOpen] = useState(false);
+    
     return (
 
 
@@ -209,11 +235,11 @@ const EngComp: React.FC<Props> = ({ business }) => {
 
 
             {/* HERO */}
-            <section className='bg-white pt-12'>
-                <div className="max-w-7xl mx-auto px-4">
-                    <div className="space-y-4">
-                        <div className="grid py-12 lg:grid-cols-2 lg:py-1 pt-12 gap-10">
-                            <div>
+            <section className='bg-white pt-4 sm:pt-12'>
+            <div className="max-w-7xl mx-auto px-4">
+                <div className="space-y-4">
+                    <div className="grid py-4 lg:grid-cols-2 lg:py-1  gap-10">
+                            {/* <div>
                                 <motion.h1
                                     initial={{ opacity: 0, y: 10 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -234,7 +260,39 @@ const EngComp: React.FC<Props> = ({ business }) => {
                                         paragraphs={section.paragraphs}
                                     />
                                 ))}
-                            </div>
+                            </div> */}
+                             <div>
+                                            <motion.h1
+                                              initial={{ opacity: 0, y: 10 }}
+                                              whileInView={{ opacity: 1, y: 0 }}
+                                              viewport={{ once: true }}
+                                              className="text-[18px] lato-700 text-[#117ABA] md:text-[28px]"
+                                            >
+                                              Engineering
+                                            </motion.h1>
+                            
+                                            <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
+                                              {packagingData[0].paragraphs[0]}
+                                            </p>
+                            
+                                            <button
+                                              onClick={() => setOpen(true)}
+                                              className="mt-4 lato-700 text-[14px] text-[#117ABA]  hover:underline"
+                                            >
+                                              Read more →
+                                            </button>
+                            
+                                            {/* ---- Modal ---- */}
+                                            <ReadMoreDialog
+                                              open={open}
+                                              onClose={() => setOpen(false)}
+                                              title={packagingData[0].title}
+                                              imageSrc={packagingData[0].image}
+                                              imageAlt={packagingData[0].title}
+                                              paragraphs={packagingData[0].paragraphs}
+                                            />
+                            
+                                          </div>
 
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.98 }}

@@ -57,10 +57,10 @@ const CompanyInfo = () => {
 
           {/* Stats Grid */}
           <div className="mt-16 grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8">
-            <StatCard number="150" label="Countries we operate in" />
+            <StatCard number="150+" label="Countries with our global presence" />
 <StatCard number="15000+" label="Global Workforce" />
 <StatCard number="5" label="Continents Served" />
-<StatCard number="9" label="Manufacturing Locations" />
+<StatCard number="9" label="Global Manufacturing Locations" />
 
           </div>
         </div>

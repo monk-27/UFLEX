@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import React from 'react'
+import React, { useState } from 'react'
 import { SiteFooter } from './site-footer'
 import Image from 'next/image'
 import SimpleCarousel, {  SliderItem } from './slidercomp'
@@ -8,7 +8,7 @@ import { Leader, LeaderSpotlight } from './leader'
 import { AwardItem, AwardsAccolades } from './awards'
 import Accreditions, { AccreditationItem } from './accredition'
 import AccreditationsSlider from './accredition'
-import ExpandableText from './expandabletext'
+
 import ExpandableFlexiText from './expandable-flexi'
 import { InnovationSlider } from './buissnessreusbales/InnovationSlider'
 import { SustainabilitySection } from './buissnessreusbales/SustainabilitySection'
@@ -16,6 +16,7 @@ import Keypeople from './buissnessreusbales/keypeople'
 import { CaseStudySection } from './buissnessreusbales/case-studies'
 import { AwardsSection } from './buissnessreusbales/AwardsSection'
 import { BusinessConfig } from '@/app/business/data'
+import { ReadMoreDialog } from './expandabletext'
 
 
 
@@ -319,6 +320,8 @@ type Props = {
     business: BusinessConfig;
 };
 const FlexiComp : React.FC<Props> = ({ business }) => {
+      const [open, setOpen] = useState(false);
+  
     return (
         
 
@@ -327,11 +330,11 @@ const FlexiComp : React.FC<Props> = ({ business }) => {
 
 
             {/* HERO */}
-            <section className='bg-white pt-12'>
-                <div className="max-w-7xl mx-auto px-4">
-                    <div className="space-y-4">
-                        <div className="grid py-12 lg:grid-cols-2 lg:py-1 gap-10">
-                            <div>
+             <section className='bg-white pt-4 sm:pt-12'>
+            <div className="max-w-7xl mx-auto px-4">
+                <div className="space-y-4">
+                    <div className="grid py-4 lg:grid-cols-2 lg:py-1  gap-10">
+                            {/* <div>
                                 <motion.h1
                                     initial={{ opacity: 0, y: 10 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -352,7 +355,39 @@ const FlexiComp : React.FC<Props> = ({ business }) => {
                                         paragraphs={section.paragraphs}
                                     />
                                 ))}
-                            </div>
+                            </div> */}
+                              <div>
+                                                                        <motion.h1
+                                                                          initial={{ opacity: 0, y: 10 }}
+                                                                          whileInView={{ opacity: 1, y: 0 }}
+                                                                          viewport={{ once: true }}
+                                                                          className="text-[18px] lato-700 text-[#117ABA] md:text-[28px]"
+                                                                        >
+                                                                          Flexible Tubes
+                                                                        </motion.h1>
+                                                        
+                                                                        <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
+                                                                          {packagingData[0].paragraphs[0]}
+                                                                        </p>
+                                                        
+                                                                        <button
+                                                                          onClick={() => setOpen(true)}
+                                                                          className="mt-4 lato-700 text-[14px] text-[#117ABA]  hover:underline"
+                                                                        >
+                                                                          Read more →
+                                                                        </button>
+                                                        
+                                                                        {/* ---- Modal ---- */}
+                                                                        <ReadMoreDialog
+                                                                          open={open}
+                                                                          onClose={() => setOpen(false)}
+                                                                          title={packagingData[0].title}
+                                                                          imageSrc={packagingData[0].image}
+                                                                          imageAlt={packagingData[0].title}
+                                                                          paragraphs={packagingData[0].paragraphs}
+                                                                        />
+                                                        
+                                                                      </div>
 
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.98 }}

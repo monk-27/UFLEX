@@ -69,50 +69,13 @@ const packagingData = [
         title: 'Packaging Films & PET Resin',
         image: '/images/resin.png',
         paragraphs: [
-            `UFlex Printing Cylinders business boasts a
-state-of-the-art manufacturing unit for
-the production of rotogravure printing
-cylinders, flexo plates, and flexo printing
-sleeves. With advanced technology, the
-business manages the complete cylinder
-production process, starting from the
-steel base, copper plating, and surface
-finishing to digital engraving, chrome
-plating, and final proof printing.`,
+            `UFlex’s Packaging Films business, under the Flex Films brand, is a global leader offering innovative and sustainable packaging solutions, including BOPP, BOPET, CPP, specialty, and 100% PCR PET films, with manufacturing across 9 countries and presence in 150+ markets.`,
 
-            `Our production facilities, located in
-Noida, Uttar Pradesh, and Jammu, J&amp;K,
-India, are equipped with the latest
-innovations, including the Flexo ‘Xlarge’
-laser for high-definition imaging up to
-5080 DPI, and the Schepers laser for
-superior precision. These advancements
-place UFlex at the forefront of packaging,
-corrugated printing, specialized coatings,
-embossing, decorative laminates, and
-security features.`,
+            `All our manufacturing facilities are equipped with advance technologies and adhere to the highest global quality and safety standards. Our plants are ISO 9001 (Quality Management), ISO 14001 (Environmental Management), ISO 45001 (Occupational Health and Safety), and HACCP (Hazard Analysis and Critical Control Points) certified, ensuring consistent quality, environmental responsibility, and food-grade safety across our operations. These certifications reflect our unwavering commitment to excellence, compliance, and sustainability—reinforcing the trust our customers place in us for their most critical packaging needs.
 
-            `Our digital processing technology ensures
-perfect registration during rotogravure
-production, offering a powerful
-combination of electronically engraved
-and chemically etched embossing
-cylinders. With ongoing innovations,
-UFlex continues to lead in delivering
-unparalleled quality and efficiency for all
-printing applications.`,
+Further expanding its global manufacturing footprint, UFlex commissioned a virgin PET chips facility in Egypt in 2025, with an installed capacity of 216,000 MTPA, further strengthening the integrated supply chain. The company also operates a PCR (Post-Consumer Recyclate) PET chips plant in Egypt, reinforcing its commitment to sustainability and circular economy practices.`,
 
-            `We enforce stringent quality control at
-every stage of production to deliver
-world-class cylinders. Our meticulous
-practices include regular calibration of
-scanners, monitors, and prepress digital-
-cylinder proofs, as well as detailed
-inspection of H/T images on color-Video/photos 
-Awaited calibrated monitors. We dynamically
-balance each cylinder at 500 RPM and
-ensure precise accuracy in cone and bore
-blueprints.`
+            `UFlex manufactures high-quality Polyethylene Terephthalate (PET) resins, known for their high gloss, crack resistance, and excellent thermoplastic properties. These resins are widely used in the production of PET films, bottles, and a range of other applications across industries such as packaging and textiles, valued for their versatility, durability, and recyclability. UFlex commissioned its greenfield PET chips manufacturing facility at the Panipat plant on March 31, 2024, with an annual capacity of 168,000 MTPA. The unit produces poly condensed polyester chips, which serve as a crucial raw material for BOPET film and PET bottle production, supporting the needs of the packaging industry. This enhances quality control, ensures steady raw material availability, and promotes operational resilience, even in a volatile global environment.`,
         ],
     },
 

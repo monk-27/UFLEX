@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import React from 'react'
+import React, { useState } from 'react'
 import { SiteFooter } from './site-footer'
 import Image from 'next/image'
 import { OverlayModule, OverlayModules } from './overlay'
@@ -7,7 +7,7 @@ import { Leader, LeaderSpotlight } from './leader'
 import { AwardItem, AwardsAccolades } from './awards'
 import Accreditions, { AccreditationItem } from './accredition'
 import AccreditationsSlider from './accredition'
-import ExpandableText from './expandabletext'
+
 import { BusinessConfig } from '@/app/business/data'
 import SliderCarousel, { SliderItem } from './slidercomp'
 import { InnovationSlider } from './buissnessreusbales/InnovationSlider'
@@ -17,6 +17,7 @@ import { CaseStudySection } from './buissnessreusbales/case-studies'
 import { AwardsSection } from './buissnessreusbales/AwardsSection'
 import Keypeople from './buissnessreusbales/keypeople'
 import SimpleCarousel from './slidercomp'
+import { ReadMoreDialog } from './expandabletext'
 
 
 
@@ -64,9 +65,9 @@ const packagingData = [
         image: "/images/herochem.png",
         "imageAlt": "UFlex Aseptic Packaging Solutions",
         paragraphs: [
-            " Discover the essence of unparalleled commitment at our innovative hub, where excellence seamlessly intertwines with sustainability. Our solutions are meticulously crafted to cater to the distinctive requirements of the brands and businesses looking for innovative and sustainable packaging solutions.",
-            " With support from NABL-accredited labs and manufacturing sites in Noida and Jammu, India, boasting certifications such as ISO 9001:2015, ISO 14001:2015, ISO45001:2018, ISO 50001:2018, and ISO 31000:2018, we consistently uphold global standards.",
-            " Our commitment transcends borders through a robust international distribution network, delivering bespoke solutions that redefine industry benchmarks."
+            ` Discover the essence of unparalleled commitment at our innovative hub, where excellence seamlessly intertwines with sustainability. Our solutions are meticulously crafted to cater to the distinctive requirements of the brands and businesses looking for innovative and sustainable packaging solutions.`,
+            `With support from NABL-accredited labs and manufacturing sites in Noida and Jammu, India, boasting certifications such as ISO 9001:2015, ISO 14001:2015, ISO45001:2018, ISO 50001:2018, and ISO 31000:2018, we consistently uphold global standards.`,
+            `Our commitment transcends borders through a robust international distribution network, delivering bespoke solutions that redefine industry benchmarks.`
 
         ]
     }
@@ -246,16 +247,18 @@ type Props = {
 
 
 const ChemicalsComp: React.FC<Props> = ({ business }) => {
+        const [open, setOpen] = useState(false);
+    
     return (
         <div>
 
 
             {/* HERO */}
-            <section className='bg-white pt-12'>
-                <div className="max-w-7xl mx-auto px-4">
-                    <div className="space-y-4">
-                        <div className="grid py-12 lg:grid-cols-2 lg:py-1 gap-10">
-                            <div>
+            <section className='bg-white pt-4 sm:pt-12'>
+            <div className="max-w-7xl mx-auto px-4">
+                <div className="space-y-4">
+                    <div className="grid py-4 lg:grid-cols-2 lg:py-1  gap-10">
+                            {/* <div>
                                 <motion.h1
                                     initial={{ opacity: 0, y: 10 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -275,7 +278,39 @@ const ChemicalsComp: React.FC<Props> = ({ business }) => {
                                         paragraphs={section.paragraphs}
                                     />
                                 ))}
-                            </div>
+                            </div> */}
+                            <div>
+                                            <motion.h1
+                                              initial={{ opacity: 0, y: 10 }}
+                                              whileInView={{ opacity: 1, y: 0 }}
+                                              viewport={{ once: true }}
+                                              className="text-[18px] lato-700 text-[#117ABA] md:text-[28px]"
+                                            >
+                                              Chemicals
+                                            </motion.h1>
+                            
+                                            <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
+                                              {packagingData[0].paragraphs[0]}
+                                            </p>
+                            
+                                            <button
+                                              onClick={() => setOpen(true)}
+                                              className="mt-4 lato-700 text-[14px] text-[#117ABA]  hover:underline"
+                                            >
+                                              Read more →
+                                            </button>
+                            
+                                            {/* ---- Modal ---- */}
+                                            <ReadMoreDialog
+                                              open={open}
+                                              onClose={() => setOpen(false)}
+                                              title={packagingData[0].title}
+                                              imageSrc={packagingData[0].image}
+                                              imageAlt={packagingData[0].title}
+                                              paragraphs={packagingData[0].paragraphs}
+                                            />
+                            
+                                          </div>
 
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.98 }}

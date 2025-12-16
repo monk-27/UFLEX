@@ -92,14 +92,25 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { X } from "lucide-react";
 
+type ContentBlock =
+  | { type: "heading"; text: string }
+  | { type: "paragraph"; text: string; strong?: string[] }
+  | { type: "list"; items: { label: string; value?: string }[] };
+
 type ReadMoreDialogProps = {
   open: boolean;
   onClose: () => void;
   title: string;
   imageSrc?: string;
   imageAlt?: string;
-  paragraphs: string[];
+
+  // OLD (kept)
+  paragraphs?: string[];
+
+  // NEW (optional)
+  content?: ContentBlock[];
 };
+
 
 export function ReadMoreDialog({
   open,
@@ -108,7 +119,8 @@ export function ReadMoreDialog({
   imageSrc,
   imageAlt,
   paragraphs,
-}: ReadMoreDialogProps) {
+  content,
+}: any) {
   return (
     <AnimatePresence>
       {open && (
@@ -158,11 +170,57 @@ export function ReadMoreDialog({
                 />
               )}
 
-              <div className="space-y-4 text-sm leading-relaxed text-gray-700 md:text-base">
+              {/* <div className="space-y-4 text-sm leading-relaxed text-gray-700 md:text-base">
                 {paragraphs.map((p, i) => (
                   <p key={i}>{p}</p>
                 ))}
-              </div>
+              </div> */}
+              <div className="space-y-4 text-sm leading-relaxed text-gray-700 md:text-base">
+  {content
+    ? content.map((block:any, i:any) => {
+        if (block.type === "heading") {
+          return (
+            <p key={i} className="font-semibold text-gray-900">
+              {block.text}
+            </p>
+          );
+        }
+
+        if (block.type === "paragraph") {
+          let text = block.text;
+          block.strong?.forEach((word:any) => {
+            text = text.replace(
+              word,
+              `<strong>${word}</strong>`
+            );
+          });
+
+          return (
+            <p
+              key={i}
+              dangerouslySetInnerHTML={{ __html: text }}
+            />
+          );
+        }
+
+        if (block.type === "list") {
+          return (
+            <ul key={i} className="list-disc pl-5 space-y-2">
+              {block.items.map((item:any, idx:any) => (
+                <li key={idx}>
+                  <strong>{item.label}</strong>
+                  {item.value ? ` – ${item.value}` : ""}
+                </li>
+              ))}
+            </ul>
+          );
+        }
+
+        return null;
+      })
+    : paragraphs?.map((p:any, i:any) => <p key={i}>{p}</p>)}
+</div>
+
             </div>
           </motion.div>
         </>

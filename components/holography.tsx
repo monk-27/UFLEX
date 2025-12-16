@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import React from 'react'
+import React, { useState } from 'react'
 import { SiteFooter } from './site-footer'
 import Image from 'next/image'
 import SimpleCarousel, { SliderItem } from './slidercomp'
@@ -8,7 +8,7 @@ import { Leader, LeaderSpotlight } from './leader'
 import { AwardItem, AwardsAccolades } from './awards'
 import Accreditions, { AccreditationItem } from './accredition'
 import AccreditationsSlider from './accredition'
-import ExpandableText from './expandabletext'
+
 
 import { InnovationSlider } from './buissnessreusbales/InnovationSlider'
 import { SustainabilitySection } from './buissnessreusbales/SustainabilitySection'
@@ -16,6 +16,7 @@ import Keypeople from './buissnessreusbales/keypeople'
 import { CaseStudySection } from './buissnessreusbales/case-studies'
 import { AwardsSection } from './buissnessreusbales/AwardsSection'
 import { BusinessConfig } from '@/app/business/data'
+import { ReadMoreDialog } from './expandabletext'
 
 
 
@@ -225,26 +226,82 @@ export const businesses: BusinessConfig[] = [
 
 ];
 
-const packagingData = [
-    {
-        "id": "holography",
-        title: "Holography Business",
-        image: "/images/advanced.png",
-        "imageAlt": "UFlex Holography Solutions",
-        paragraphs: [
-            "The UFlex holography business is India’s largest and most trusted provider of brand protection and anti-counterfeiting solutions, as well as an emerging global player in the industry.\n\nThe Holography Business offer a comprehensive range of holographic solutions, including, Advanced Security Holograms, Security Paper Labels & Tax Stamps, Wide Web Holographic Films, Stamping Foils, Transfer Holographic Metallized Paper & Paperboard, Security documents, & Textile Application Films for Sequins, Hot Melt, and Glitter Powder.",
-            "UFlex Limited’s advanced manufacturing facilities in Noida and Jammu are equipped with advanced in-house capabilities, enabling high-volume production while maintaining the highest quality standards. Specializing in holography-based anti-counterfeiting packaging and brand protection solutions, our facilities empower brands to combat counterfeiting threats and safeguard their business interests.\n\nWith support from NABL-accredited labs and manufacturing sites in Noida and Jammu, India, boasting certifications such as ISO 9001:2015, ISO 14001:2015, ISO45001:2018, ISO 50001:2018, and ISO 31000:2018, we consistently uphold global standards.",
-            "Our commitment to quality, security, and sustainability is reinforced by globally recognized certifications, including, ISO 9001:2015 – Quality Management System (QMS), ISO 14001:2015 – Environmental Management System, ISO/IEC 27001:2022 – Information Security Management System, ISO 14298:2021 – Graphic Technology & Security Printing Management, HSSMS Certification – Health & Safety Management System, & IBA Certified Security Printer\n\nAs an industry leader, UFlex is a proud member of ITSA, IOTA (IHMA), and ASPA, actively contributing to the advancement of security printing and brand protection."
-        ]
-    }
+// const packagingData = [
+//     {
+//         "id": "holography",
+//         title: "Holography Business",
+//         image: "/images/advanced.png",
+//         "imageAlt": "UFlex Holography Solutions",
+//         paragraphs: [
+//             `Holography business of UFlex
+// is India’s largest and most
+// trusted provider of brand
+// protection and anti-
+// counterfeiting solutions, as
+// well as an emerging global
+// player in the industry.`,
+//             `UFlex Limited’s advanced manufacturing facilities in Noida and Jammu are equipped with advanced in-house capabilities, enabling high-volume production while maintaining the highest quality standards. Specializing in holography-based anti-counterfeiting packaging and brand protection solutions, our facilities empower brands to combat counterfeiting threats and safeguard their business interests.\n\nWith support from NABL-accredited labs and manufacturing sites in Noida and Jammu, India, boasting certifications such as ISO 9001:2015, ISO 14001:2015, ISO45001:2018, ISO 50001:2018, and ISO 31000:2018, we consistently uphold global standards.`,
+//             `Our commitment to quality, security, and sustainability is reinforced by globally recognized certifications, including, ISO 9001:2015 – Quality Management System (QMS), ISO 14001:2015 – Environmental Management System, ISO/IEC 27001:2022 – Information Security Management System, ISO 14298:2021 – Graphic Technology & Security Printing Management, HSSMS Certification – Health & Safety Management System, & IBA Certified Security Printer\n\nAs an industry leader, UFlex is a proud member of ITSA, IOTA (IHMA), and ASPA, actively contributing to the advancement of security printing and brand protection.`
+//         ]
+//     }
 
+// ];
+const packagingData = [
+  {
+    id: "holography",
+    title: "Holography Business",
+    image: "/images/advanced.png",
+    imageAlt: "UFlex Holography Solutions",
+
+    content: [
+      {
+        type: "paragraph",
+        text: "The Holography Business of UFlex offers a comprehensive range of holographic solutions, including advanced security holograms, security paper labels & tax stamps, wide web holographic films, stamping foils, transfer holographic metallized paper & paperboard, security documents, and textile application films for sequins, hot melt, and glitter powder.",
+        strong: ["Holography Business of UFlex"]
+      },
+      {
+        type: "paragraph",
+        text: "UFlex Limited’s advanced manufacturing facilities in Noida and Jammu are equipped with advanced in-house capabilities, enabling high-volume production while maintaining the highest quality standards. Specializing in holography-based anti-counterfeiting packaging and brand protection solutions, our facilities empower brands to combat counterfeiting threats and safeguard their business interests.",
+        strong: ["UFlex Limited’s advanced manufacturing facilities"]
+      },
+      {
+        type: "heading",
+        text: "Global Certifications & Industry Recognition"
+      },
+      {
+        type: "paragraph",
+        text: "Our commitment to quality, security, and sustainability is reinforced by globally recognized certifications, including:",
+        strong: ["quality, security, and sustainability"]
+      },
+      {
+        type: "list",
+        items: [
+          { label: "ISO 9001:2015", value: "Quality Management System (QMS)" },
+          { label: "ISO 14001:2015", value: "Environmental Management System" },
+          { label: "ISO/IEC 27001:2022", value: "Information Security Management System" },
+          { label: "ISO 14298:2021", value: "Graphic Technology & Security Printing Management" },
+          { label: "HSSMS Certification", value: "Health & Safety Management System" },
+          { label: "IBA Certified Security Printer" }
+        ]
+      },
+      {
+        type: "paragraph",
+        text: "As an industry leader, UFlex is a proud member of ITSA, IOTA (IHMA), and ASPA, actively contributing to the advancement of security printing and brand protection.",
+        strong: ["industry leader", "ITSA", "IOTA (IHMA)", "ASPA"]
+      }
+    ]
+  }
 ];
+
+
 
 
 type Props = {
     business: BusinessConfig;
 };
 const HoloGraphyComp: React.FC<Props> = ({ business }) => {
+    const [open, setOpen] = useState(false);
+
     return (
 
 
@@ -254,11 +311,11 @@ const HoloGraphyComp: React.FC<Props> = ({ business }) => {
 
 
             {/* HERO */}
-            <section className='bg-white pt-12'>
+            <section className='bg-white pt-4 sm:pt-12'>
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="space-y-4">
-                        <div className="grid py-12 lg:grid-cols-2 lg:py-1 gap-10">
-                            <div>
+                        <div className="grid py-4 lg:grid-cols-2 lg:py-1  gap-10">
+                            {/* <div>
                                 <motion.h1
                                     initial={{ opacity: 0, y: 10 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -279,6 +336,59 @@ const HoloGraphyComp: React.FC<Props> = ({ business }) => {
                                         paragraphs={section.paragraphs}
                                     />
                                 ))}
+                            </div> */}
+                            <div>
+                                <motion.h1
+                                    initial={{ opacity: 0, y: 10 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    className="text-[18px] lato-700 text-[#117ABA] md:text-[28px]"
+                                >
+                                    Holography
+                                </motion.h1>
+
+                                <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
+                                    {packagingData[0].content[0].text}
+                                </p>
+
+                                <div className="space-y-3  text-gray-800 lato-400 text-[16px] sm:text-[18px] leading-relaxed">
+                                    <p>
+                                        The Holography Business offers a <strong>comprehensive range of holographic solutions</strong>, including:
+                                    </p>
+
+                                    <ul className="list-disc space-y-1 pl-5">
+                                        <li><strong>Advanced Security Holograms</strong></li>
+                                        <li><strong>Security Paper Labels &amp; Tax Stamps</strong></li>
+                                        <li><strong>Wide Web Holographic Films</strong></li>
+                                        <li><strong>Stamping Foils</strong></li>
+                                        <li><strong>Transfer Holographic Metallized Paper &amp; Paperboard</strong></li>
+                                        <li><strong>Security Documents</strong></li>
+                                        <li>
+                                            <strong>Textile Application Films for: Sequins ,Hot Melt ,Glitter Powder</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <button
+                                    onClick={() => setOpen(true)}
+                                    className="mt-4 lato-700 text-[14px] text-[#117ABA]  hover:underline"
+                                >
+                                    Read more →
+                                </button>
+
+                                {/* ---- Modal ---- */}
+                                <ReadMoreDialog
+  open={open}
+  onClose={() => setOpen(false)}
+  title={packagingData[0].title}
+  imageSrc={packagingData[0].image}
+  imageAlt={packagingData[0].imageAlt}
+  content={packagingData[0].content}
+/>
+
+
+
                             </div>
 
                             <motion.div
