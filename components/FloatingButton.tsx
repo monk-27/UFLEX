@@ -13,7 +13,7 @@ export default function FloatingButton() {
         group
         flex items-center
         h-14
-        w-14 hover:w-44
+        w-14 hover:w-40
         overflow-hidden
         rounded-full
         bg-[#117ABA]
@@ -28,21 +28,21 @@ export default function FloatingButton() {
       "
     >
       {/* Icon */}
-      <span className="flex h-14 w-14 items-center justify-center shrink-0">
+      {/* <span className="flex h-14 w-14 items-center justify-center shrink-0"> */}
+      <span className="flex h-14 w-14 items-center justify-center shrink-0  group-hover:w-12 transition-all">
+
         <MessageCircle className="h-6 w-6" />
       </span>
 
       {/* Text */}
       <span
         className="
-          ml-2
+          ml-0.5
           whitespace-nowrap
           text-sm lato-400
           opacity-0
-          translate-x-2
           transition-all duration-300 ease-out
           group-hover:opacity-100
-          group-hover:translate-x-0
           hidden md:block
         "
       >
