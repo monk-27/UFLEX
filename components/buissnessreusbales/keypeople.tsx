@@ -61,9 +61,9 @@ const Keypeople = ({ title, people }: Props) => {
 
   return (
     <>
-      <section className=" pb-12 mt-[30px] py-12 sm:py-0 text-center sm:mt-8 ">
-        <div className="px-4 md:px-1">
-          <h2 className="px-6 text-start lato-400 text-[20px] md:text-[24px] text-[#117ABA] mb-3">
+      <section className=" pb-12 mt-[30px] py-12  text-center sm:py-12 ">
+        <div className="">
+          <h2 className=" text-start lato-400 text-[20px] md:text-[24px] text-[#117ABA] mb-3">
             {title}
           </h2>
 
@@ -183,7 +183,7 @@ const Keypeople = ({ title, people }: Props) => {
               </div>
 
               {/* dots */}
-              <div
+              {/* <div
                 className={`flex items-center justify-center gap-2 ${
                   hasDesktopOverflow ? "md:flex" : "md:hidden"
                 }`}
@@ -199,7 +199,7 @@ const Keypeople = ({ title, people }: Props) => {
                     aria-label={`Go to slide ${i + 1}`}
                   />
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

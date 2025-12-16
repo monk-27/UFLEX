@@ -43,7 +43,7 @@ export default function SimpleCarousel({
   if (!items.length) return null;
 
   return (
-    <section className="py-1">
+    <section className="pt-12">
       {heading && (
         <h2 className="text-[24px] text-[#000000] lato-400 text-center mb-2">{heading}</h2>
       )}
@@ -70,10 +70,10 @@ export default function SimpleCarousel({
 
             <div className="p-5 flex flex-col flex-1 justify-between">
               <div>
-                <h3 className="text-lg text-[#117ABA] font-semibold mb-2">
+                <h3 className="text-lg text-[#117ABA] lato-700 mb-2">
                   {card.title}
                 </h3>
-                <p className="text-gray-600 text-sm">{card.desc}</p>
+                <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">{card.desc}</p>
               </div>
 
               {card.dynamiclink && (

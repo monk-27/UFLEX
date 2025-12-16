@@ -349,10 +349,10 @@ type Props = {
 const PackageComp: React.FC<Props> = ({ business }) => {
     const [open, setOpen] = useState(false);
     return (
-        <section className='bg-white pt-12'>
+        <section className='bg-white pt-4 sm:pt-12'>
             <div className="max-w-7xl mx-auto px-4">
                 <div className="space-y-4">
-                    <div className="grid py-12 lg:grid-cols-2 lg:py-1  gap-10">
+                    <div className="grid py-4 lg:grid-cols-2 lg:py-1  gap-10">
                         {/* <div>
                             <motion.h1
                                 initial={{ opacity: 0, y: 10 }}
@@ -383,7 +383,7 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                                 Packaging Films & PET Resin
                             </motion.h1>
 
-                            <p className="mt-4 text-sm leading-relaxed text-gray-700 md:text-base">
+                            <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
                                 {packagingData[0].paragraphs[0]}
                             </p>
 

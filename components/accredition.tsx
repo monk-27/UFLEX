@@ -58,7 +58,7 @@ export default function AccreditationsSlider({
     <div className="py-12">
       {/* Heading */}
       <motion.section
-        className=" px-6 text-center sm:px-0 "
+        className="px-0 text-center sm:px-0 "
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.9 }}

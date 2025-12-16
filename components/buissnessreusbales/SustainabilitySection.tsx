@@ -12,7 +12,7 @@ export function SustainabilitySection({ data }: any) {
   if (!data) return null;
 
   return (
-    <div className="pt-8">
+    <div className="pt-12">
     
     <section className="hidden sm:block bg-[#f7f7f7] h-[430px] sm:h-[410px]">
       <div className="">
@@ -22,7 +22,7 @@ export function SustainabilitySection({ data }: any) {
             <h2 className="lato-400 text-[20px] md:text-[24px] text-[#117ABA] mb-3">
               {data.title}
             </h2>
-            <p className="lato-400 text-[16px] sm:text-[20px] leading-relaxed text-[#4f4f4f] mb-4">
+            <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f] mb-4">
               {data.description}
             </p>
             {data.linkHref && data.linkLabel && (
@@ -56,7 +56,7 @@ export function SustainabilitySection({ data }: any) {
         <div className="overflow-hidden grid gap-0 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.2fr)]">
           {/* Text */}
           <div className="p-6 md:p-8 flex flex-col justify-center">
-            <h2 className="lato-700 text-[18px] md:text-[28px] text-[#117ABA] mb-3">
+            <h2 className="lato-400 text-[18px] md:text-[28px] text-[#117ABA] mb-3">
               {data.title}
             </h2>
             <p className="lato-400 text-[16px] leading-relaxed text-[#5B5B5B] mb-4">

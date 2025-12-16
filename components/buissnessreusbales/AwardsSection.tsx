@@ -11,7 +11,7 @@ export function AwardsSection({ data }: any) {
   if (!data || !data.image) return null;
   return (
     <section className="relative w-screen left-1/2 right-1/2 -mx-[50vw]">
-      <div className="relative h-[260px] md:h-[360px] lg:h-[500px] overflow-hidden">
+      <div className="relative h-[350px] md:h-[360px] lg:h-[500px] overflow-hidden">
         
         {/* Background image */}
         <Image
@@ -37,7 +37,7 @@ export function AwardsSection({ data }: any) {
               <span>Recognized for our sustainability efforts</span>
             </h3>
 
-            <p className="max-w-2xl  lato-400 text-[16px] sm:text-[20px] leading-relaxed  text-white/90 mb-4">
+            <p className="max-w-2xl  lato-400 text-[16px] sm:text-[18px] leading-relaxed  text-white/90 mb-4">
               {data.description}
             </p>
 

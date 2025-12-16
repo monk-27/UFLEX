@@ -47,7 +47,7 @@ export function InnovationSlider({ heading, items }: any) {
   };
 
   return (
-    <section className="bg-[#f7f7f7] relative w-screen left-1/2 right-1/2 -mx-[50vw] py-1 ">
+    <section className="bg-[#f7f7f7] relative w-screen left-1/2 right-1/2 -mx-[50vw] py-12 ">
       <div className="max-w-7xl mx-auto ">
         <h2 className="pt-8 lato-700 text-[22px] md:text-[28px] text-[#117ABA] mb-8">
           {heading}
@@ -73,7 +73,7 @@ export function InnovationSlider({ heading, items }: any) {
                   </h3>
 
                   {/* Add mt-4 to keep description where it was */}
-                  <p className="whitespace-pre-line lato-400 text-[16px] sm:text-[20px] leading-relaxed text-[#4f4f4f] mt-8">
+                  <p className="whitespace-pre-line lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f] mt-8">
                     {current.description}
                   </p>
                 </div>

@@ -33,7 +33,7 @@ export function OfferingadvSection({
 
   return (
     <section className="bg-white py-8 md:py-12 overflow-x-hidden">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto">
         {/* Heading */}
         {heading && (
           <h2 className="mb-10 text-center lato-400 text-[18px] md:text-[28px] text-[#000000]">
@@ -67,9 +67,9 @@ export function OfferingadvSection({
 
         {/* Sub offerings — same grid logic */}
         {subitems.length > 0 && (
-          <div className="mt-16">
+          <div className="py-12">
             {subheading && (
-              <h3 className="mb-10 text-center lato-400 text-[16px] md:text-[28px] text-[#000000]">
+              <h3 className="mb-10 text-center lato-400 text-[16px] md:text-[24px] text-[#000000]">
                 {subheading}
               </h3>
             )}

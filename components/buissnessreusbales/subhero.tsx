@@ -11,12 +11,12 @@ export function SubBusinessHero({ business }: any) {
     const { hero } = business;
 
     return (
-        <section className=" bg-white  max-w-8xl">
+        <section className=" bg-white  ">
             {/* Hero image */}
 
 
 
-            <div className="mt-2 ">
+            <div className="">
                 <h2 className="lato-700 text-[20px] md:text-[28px] text-[#117ABA] mb-4">
                     {business.subhero?.heading}
                 </h2>
