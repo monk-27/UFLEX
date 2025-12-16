@@ -11,13 +11,13 @@ export function SubBusinessHero({ business }: any) {
     const { hero } = business;
 
     return (
-        <section className="  bg-white pt-4 max-w-8xl">
+        <section className=" bg-white  max-w-8xl">
             {/* Hero image */}
 
 
 
             <div className="mt-2 ">
-                <h2 className="lato-400 text-[20px] md:text-[28px] text-[#117ABA] mb-4">
+                <h2 className="lato-700 text-[20px] md:text-[28px] text-[#117ABA] mb-4">
                     {business.subhero?.heading}
                 </h2>
                 <p className="lato-400 text-[16px] sm:text-[20px] leading-relaxed text-[#4f4f4f]">

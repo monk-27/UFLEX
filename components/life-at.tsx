@@ -140,7 +140,7 @@ export default function LifeatModules() {
         <div className="items-center justify-center flex text-center space-x-2">
 
                       {/* <Image src="/images/ula.png" width={75} height={10} alt={""}/> */}
-        <h2 className="text-[24px] lato-600 text-[#117ABA] md:text-[28px]">
+        <h2 className="text-[24px] lato-400 text-[#117ABA] md:text-[28px]">
           Life at UFlex
         </h2>
         </div>

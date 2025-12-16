@@ -1358,6 +1358,15 @@ swiper-pagination {
   }
 }
 
+/* Hide scrollbar but keep scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
 
 /* Extra Light - 200 */
 @font-face {

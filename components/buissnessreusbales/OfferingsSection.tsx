@@ -60,7 +60,7 @@ export function OfferingadvSection({
 
         {/* Optional sub hero */}
         {business?.subhero && (
-          <div className="mt-16">
+          <div className="">
             <SubBusinessHero business={business} />
           </div>
         )}

@@ -199,7 +199,7 @@ export default function SustainabilityComp() {
 >
   <Link href="/sustainability" className="group">
     <button className="flex items-center gap-2 rounded-full border border-white bg-white px-6 py-3 text-sm lato-400 text-black transition-all hover:bg-transparent hover:text-white">
-      KNOW MORE
+      Know More
       <svg
         width="16"
         height="16"

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import React from 'react'
+import React, { useState } from 'react'
 import { SiteFooter } from './site-footer'
 import Image from 'next/image'
 import { OverlayModule, OverlayModules } from './overlay'
@@ -7,7 +7,7 @@ import { Leader, LeaderSpotlight } from './leader'
 import { AwardItem, AwardsAccolades } from './awards'
 import Accreditions, { AccreditationItem } from './accredition'
 import AccreditationsSlider from './accredition'
-import ExpandableText from './expandabletext'
+// import ExpandableText from './expandabletext'
 import { OfferingadvSection } from './buissnessreusbales/OfferingsSection'
 import { BusinessConfig } from '@/app/business/data'
 import { InnovationSlider } from './buissnessreusbales/InnovationSlider'
@@ -18,6 +18,8 @@ import { CaseStudySection } from './buissnessreusbales/case-studies'
 import { AwardsSection } from './buissnessreusbales/AwardsSection'
 import SliderCarousel from './slidercomp'
 import SimpleCarousel from './slidercomp'
+import { ReadMoreModal } from './read-more-modal'
+import { ReadMoreDialog } from './expandabletext'
 
 
 
@@ -67,13 +69,50 @@ const packagingData = [
         title: 'Packaging Films & PET Resin',
         image: '/images/resin.png',
         paragraphs: [
-            `UFlex’s Packaging Films business, under the Flex Films brand, is a global leader offering innovative and sustainable packaging solutions, including BOPP, BOPET, CPP, specialty, and 100% PCR PET films, with manufacturing across 9 countries and presence in 150+ markets.`,
+            `UFlex Printing Cylinders business boasts a
+state-of-the-art manufacturing unit for
+the production of rotogravure printing
+cylinders, flexo plates, and flexo printing
+sleeves. With advanced technology, the
+business manages the complete cylinder
+production process, starting from the
+steel base, copper plating, and surface
+finishing to digital engraving, chrome
+plating, and final proof printing.`,
 
-            `All our manufacturing facilities are equipped with advance technologies and adhere to the highest global quality and safety standards. Our plants are ISO 9001 (Quality Management), ISO 14001 (Environmental Management), ISO 45001 (Occupational Health and Safety), and HACCP (Hazard Analysis and Critical Control Points) certified, ensuring consistent quality, environmental responsibility, and food-grade safety across our operations. These certifications reflect our unwavering commitment to excellence, compliance, and sustainability—reinforcing the trust our customers place in us for their most critical packaging needs.
+            `Our production facilities, located in
+Noida, Uttar Pradesh, and Jammu, J&amp;K,
+India, are equipped with the latest
+innovations, including the Flexo ‘Xlarge’
+laser for high-definition imaging up to
+5080 DPI, and the Schepers laser for
+superior precision. These advancements
+place UFlex at the forefront of packaging,
+corrugated printing, specialized coatings,
+embossing, decorative laminates, and
+security features.`,
 
-Further expanding its global manufacturing footprint, UFlex commissioned a virgin PET chips facility in Egypt in 2025, with an installed capacity of 216,000 MTPA, further strengthening the integrated supply chain. The company also operates a PCR (Post-Consumer Recyclate) PET chips plant in Egypt, reinforcing its commitment to sustainability and circular economy practices.`,
+            `Our digital processing technology ensures
+perfect registration during rotogravure
+production, offering a powerful
+combination of electronically engraved
+and chemically etched embossing
+cylinders. With ongoing innovations,
+UFlex continues to lead in delivering
+unparalleled quality and efficiency for all
+printing applications.`,
 
-            `UFlex manufactures high-quality Polyethylene Terephthalate (PET) resins, known for their high gloss, crack resistance, and excellent thermoplastic properties. These resins are widely used in the production of PET films, bottles, and a range of other applications across industries such as packaging and textiles, valued for their versatility, durability, and recyclability. UFlex commissioned its greenfield PET chips manufacturing facility at the Panipat plant on March 31, 2024, with an annual capacity of 168,000 MTPA. The unit produces poly condensed polyester chips, which serve as a crucial raw material for BOPET film and PET bottle production, supporting the needs of the packaging industry. This enhances quality control, ensures steady raw material availability, and promotes operational resilience, even in a volatile global environment.`,
+            `We enforce stringent quality control at
+every stage of production to deliver
+world-class cylinders. Our meticulous
+practices include regular calibration of
+scanners, monitors, and prepress digital-
+cylinder proofs, as well as detailed
+inspection of H/T images on color-Video/photos 
+Awaited calibrated monitors. We dynamically
+balance each cylinder at 500 RPM and
+ensure precise accuracy in cone and bore
+blueprints.`
         ],
     },
 
@@ -308,12 +347,13 @@ type Props = {
     business: BusinessConfig;
 };
 const PackageComp: React.FC<Props> = ({ business }) => {
+    const [open, setOpen] = useState(false);
     return (
         <section className='bg-white pt-12'>
             <div className="max-w-7xl mx-auto px-4">
                 <div className="space-y-4">
                     <div className="grid py-12 lg:grid-cols-2 lg:py-1  gap-10">
-                        <div>
+                        {/* <div>
                             <motion.h1
                                 initial={{ opacity: 0, y: 10 }}
                                 whileInView={{ opacity: 1, y: 0 }}
@@ -332,6 +372,38 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                                     paragraphs={section.paragraphs}
                                 />
                             ))}
+                        </div> */}
+                        <div>
+                            <motion.h1
+                                initial={{ opacity: 0, y: 10 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                className="text-[18px] lato-700 text-[#117ABA] md:text-[28px]"
+                            >
+                                Packaging Films & PET Resin
+                            </motion.h1>
+
+                            <p className="mt-4 text-sm leading-relaxed text-gray-700 md:text-base">
+                                {packagingData[0].paragraphs[0]}
+                            </p>
+
+                            <button
+                                onClick={() => setOpen(true)}
+                                className="mt-4 lato-700 text-[14px] text-[#117ABA]  hover:underline"
+                            >
+                                Read more →
+                            </button>
+
+                            {/* ---- Modal ---- */}
+                            <ReadMoreDialog
+                                open={open}
+                                onClose={() => setOpen(false)}
+                                title={packagingData[0].title}
+                                imageSrc={packagingData[0].image}
+                                imageAlt={packagingData[0].title}
+                                paragraphs={packagingData[0].paragraphs}
+                            />
+
                         </div>
 
                         <motion.div

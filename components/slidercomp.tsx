@@ -45,7 +45,7 @@ export default function SimpleCarousel({
   return (
     <section className="py-1">
       {heading && (
-        <h2 className="text-[28px] text-[#000000] lato-400 text-center mb-2">{heading}</h2>
+        <h2 className="text-[24px] text-[#000000] lato-400 text-center mb-2">{heading}</h2>
       )}
       {subheading && (
         <p className="text-gray-600 text-center mb-6">{subheading}</p>
@@ -79,7 +79,7 @@ export default function SimpleCarousel({
               {card.dynamiclink && (
                 <Link
                   href={card.dynamiclink}
-                  className="mt-4 text-sm text-[#117ABA] lato-500 hover:underline"
+                  className="mt-4 lato-700 text-[14px] text-[#117ABA]  hover:underline"
                 >
                   Read more →
                 </Link>

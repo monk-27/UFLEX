@@ -63,7 +63,7 @@ const Keypeople = ({ title, people }: Props) => {
     <>
       <section className=" pb-12 mt-[30px] py-12 sm:py-0 text-center sm:mt-8 ">
         <div className="px-4 md:px-1">
-          <h2 className="px-6 text-start lato-400 text-[20px] md:text-[28px] text-[#000000] mb-3">
+          <h2 className="px-6 text-start lato-400 text-[20px] md:text-[24px] text-[#117ABA] mb-3">
             {title}
           </h2>
 
