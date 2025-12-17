@@ -14,7 +14,7 @@ export function SustainabilitySection({ data }: any) {
   return (
     <div className="pt-12">
     
-    <section className="hidden sm:block bg-[#f7f7f7] h-[430px] sm:h-[410px]">
+    <section className="hidden sm:block bg-[#f7f7f7] h-[430px] sm:h-[450px]">
       <div className="">
         <div className="overflow-hidden grid gap-0 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.2fr)]">
           {/* Text */}
@@ -28,7 +28,7 @@ export function SustainabilitySection({ data }: any) {
             {data.linkHref && data.linkLabel && (
               <a
                 href={data.linkHref}
-                className="inline-flex items-center gap-1 lato-700 text-[14px] text-[#117ABA]  "
+                className="py-6 inline-flex items-center gap-1 lato-700 text-[14px] text-[#117ABA]  "
               >
                 <div className="underline underline-offset-2">
 
@@ -40,7 +40,7 @@ export function SustainabilitySection({ data }: any) {
           </div>
 
           {/* Image */}
-          <div className="relative h-[200px] md:h-[410px]">
+          <div className="relative h-[200px] md:h-[450px]">
             <Image
               src={data.image}
               alt={data.title}
@@ -65,7 +65,7 @@ export function SustainabilitySection({ data }: any) {
             {data.linkHref && data.linkLabel && (
               <a
                 href={data.linkHref}
-                className="inline-flex items-center gap-1 lato-700 text-[13px]  tracking-wide text-[#000000] underline underline-offset-2"
+                className="py-6 inline-flex items-center gap-1 lato-700 text-[13px]  tracking-wide text-[#000000] underline underline-offset-2"
               >
                 <div className="">
 
