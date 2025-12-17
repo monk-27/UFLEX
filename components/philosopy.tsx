@@ -83,10 +83,8 @@ const [emblaRef, emblaApi] = useEmblaCarousel({
                 className="
                 flex-[0_0_100%]
   sm:flex-[0_0_50%]
-  lg:flex-[0_0_33.3333%]
+  lg:flex-[0_0_32.01%]
   flex-shrink-0 gap-6
-                
-                
               "
               >
                 <div className="block h-full">
@@ -102,13 +100,15 @@ const [emblaRef, emblaApi] = useEmblaCarousel({
                     </div>
 
                     {/* Content */}
-                    <div className="p-5">
-                      <div className="flex gap-2">
-                        <span className="mt-1 h-6 w-[2px] bg-[#D84A3B]" />
-                        <h3 className="text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
-                          {card.title}
-                        </h3>
-                      </div>
+                    <div className="relative p-5 pl-8">
+                      {/* Corner red line */}
+                      <span
+                        className="absolute left-4 top-6 h-6 w-[2px] bg-[#D84A3B]"
+                      />
+
+                      <h3 className="text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
+                        {card.title}
+                      </h3>
 
                       <p className="mt-3 text-sm text-[#6D6E71]">
                         {card.desc}

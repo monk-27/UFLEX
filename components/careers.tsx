@@ -150,18 +150,20 @@ const Careers = () => {
                                                 {it.desc}
                                             </p>
                                         </div> */}
-                                        <div className="p-5">
-                                            <div className="flex gap-2">
-                                                <span className="mt-1 h-6 w-[2px] bg-[#D84A3B]" />
-                                                <h3 className="text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
-                                                    {it.title}
-                                                </h3>
-                                            </div>
+                                       <div className="relative p-5 pl-8">
+                      {/* Corner red line */}
+                      <span
+                        className="absolute left-4 top-6 h-6 w-[2px] bg-[#D84A3B]"
+                      />
 
-                                            <p className="mt-3 text-sm text-[#6D6E71]">
-                                                {it.desc}
-                                            </p>
-                                        </div>
+                      <h3 className="text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
+                        {it.title}
+                      </h3>
+
+                      <p className="mt-3 text-sm text-[#6D6E71]">
+                        {it.desc}
+                      </p>
+                    </div>
 
                                         {/* COLOR BAND (always aligned) */}
                                         {/* <div className={`h-1 w-full ${c.tint}`} /> */}
