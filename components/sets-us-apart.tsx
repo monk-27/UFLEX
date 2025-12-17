@@ -362,8 +362,8 @@ export default function WhatSetsUsApartCarousel() {
                       </div>
 
                       <p className="mt-3 text-sm text-[#6D6E71]">
-                      {card.desc}
-                    </p>
+                        {card.desc}
+                      </p>
                     </div>
                   </div>
                 </div>

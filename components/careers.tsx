@@ -115,10 +115,11 @@ const Careers = () => {
 
                 </motion.section>
                 <AnimatedSection>
-                    <div className="py-16 max-w-7xl mx-auto w-full px-4 sm:px-0 lg:py-4">
-                        <div className="grid gap-1 sm:grid-cols-2 lg:grid-cols-4">
+                    <div className="max-w-7xl mx-auto w-full px-4 py-16 lg:py-4">
+                        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                             {items.map((it, idx) => {
-                                const c = cardColors[idx % cardColors.length]
+                                const c = cardColors[idx % cardColors.length];
+
                                 return (
                                     <motion.div
                                         key={it.desc}
@@ -126,34 +127,51 @@ const Careers = () => {
                                         whileInView={{ opacity: 1, y: 0 }}
                                         viewport={{ once: true }}
                                         transition={{ delay: idx * 0.05 }}
-                                        className={` relative overflow-hidden p-0  transition`}
+                                        className="flex h-full flex-col overflow-hidden bg-white shadow-sm"
                                     >
-                                        <div className="relative h-75 w-[286px] sm:h-[369px] overflow-hidden">
+                                        {/* IMAGE */}
+                                        <div className="relative h-[400px] sm:h-[360px] overflow-hidden">
                                             <Image
                                                 src={it.image ?? "/images/whatwedo/placeholder.jpg"}
                                                 alt={it.title}
                                                 fill
-                                                className="h-75 w-[286px] sm:h-[369px] rounded-b-none object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                                                className="object-cover sm:object-cover transition-transform duration-300 hover:scale-[1.03]"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent" />
                                         </div>
 
-                                        <div className="space-y-2 p-1">
-                                            <h3 className="text-center text-lg lato-400 text-[#117ABA]">{it.title}</h3>
-                                            <p className={`lato-400 text-sm text-slate-700`}>
+                                        {/* CONTENT */}
+                                        {/* <div className="flex flex-1 flex-col items-center px-4 py-4 text-center">
+                                            <h3 className="mb-2 text-lg lato-400 text-[#117ABA]">
+                                                {it.title}
+                                            </h3>
+
+                                            <p className="lato-400 text-sm text-slate-700">
                                                 {it.desc}
                                             </p>
+                                        </div> */}
+                                        <div className="p-5">
+                                            <div className="flex gap-2">
+                                                <span className="mt-1 h-6 w-[2px] bg-[#D84A3B]" />
+                                                <h3 className="text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
+                                                    {it.title}
+                                                </h3>
+                                            </div>
 
+                                            <p className="mt-3 text-sm text-[#6D6E71]">
+                                                {it.desc}
+                                            </p>
                                         </div>
 
-                                        {/* subtle color band on bottom to match theme */}
-                                        <div className={`h-1 w-full ${c.tint}`} />
+                                        {/* COLOR BAND (always aligned) */}
+                                        {/* <div className={`h-1 w-full ${c.tint}`} /> */}
                                     </motion.div>
-                                )
+                                );
                             })}
                         </div>
                     </div>
                 </AnimatedSection>
+
             </section>
         </div>
     )
