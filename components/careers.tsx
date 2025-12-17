@@ -98,7 +98,7 @@ const Careers = () => {
                     viewport={{ once: true }}
                 >
                     <motion.h3
-                        className="pt-8 text-[24px] lato-600 text-[#117ABA] md:text-[28px] md:text-5xl mb-2"
+                        className=" text-[24px] lato-600 text-[#117ABA] md:text-[28px] md:text-5xl mb-2 pt-12"
                         initial={{ opacity: 0, y: -20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.2 }}
@@ -108,7 +108,7 @@ const Careers = () => {
 
                     <motion.h2
                         transition={{ duration: 0.7, delay: 0.4 }}
-                        className="text-[#6B6B6B] lato-400 py-[2px] text-[16px] leading-relaxed md:text-[16px] mb-1"
+                        className="text-[#6B6B6B] lato-400  text-[16px] leading-relaxed md:text-[16px] mb-1 py-6"
                     >
                         At UFlex, we're not just shaping the future of packaging, we're revolutionizing it. For over three decades, we've been at the forefront of innovation, developing advanced solutions that preserve products, protect our planet, and empower our people.
                     </motion.h2>
