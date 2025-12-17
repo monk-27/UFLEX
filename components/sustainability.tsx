@@ -141,7 +141,7 @@ export default function SustainabilityComp() {
   return (
     <div>
 
-      <div className="hero-section relative h-[245px] w-full overflow-hidden bg-white md:h-[842px]">
+      <div className="py-12  relative h-[245px] w-full overflow-hidden bg-white md:h-[842px]">
         {/* Background Image Container */}
         <motion.div
           className="absolute inset-0"  // This ensures full coverage

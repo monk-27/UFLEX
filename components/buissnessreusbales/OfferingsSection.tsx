@@ -33,7 +33,7 @@ export function OfferingadvSection({
 
   return (
     <section className="bg-white py-8 md:py-12 overflow-x-hidden">
-      <div className="max-w-7xl mx-auto">
+      <div className="">
         {/* Heading */}
         {heading && (
           <h2 className="mb-10 text-center lato-400 text-[18px] md:text-[28px] text-[#000000]">

@@ -508,7 +508,7 @@ export default function GetInTouch() {
         <section className="border-t border-slate-200 bg-white py-1">
           <div className="mx-auto max-w-7xl px-4">
             {/* Heading */}
-            <div className="text-start mb-4">
+            <div className="text-start mb-4 py-6">
               <h2 className="lato-800 text-2xl text-[#117ABA]">Other Queries</h2>
               <p className="mt-2 text-slate-600">
                 For any other enquiries, fill the form below. Fields marked with (*) are mandatory.

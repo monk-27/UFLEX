@@ -38,7 +38,7 @@ export default function HomePage() {
 
         <motion.h2
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="text-[#5F5F5F] lato-400 py-[2px] text-[14px] leading-tight md:text-[20px] mb-4"
+          className="max-w-7xl  text-[#5F5F5F] lato-400 py-[2px] text-[14px] leading-tight md:text-[20px] mb-4"
         >
           As India's largest multinational flexible packaging and solutions company,{" "}
           <span className="text-[#5F5F5F] lato-400">
@@ -57,12 +57,12 @@ export default function HomePage() {
         <BusinessCardsCarousel />
 
       </motion.section>
-      <div className="z-10 bg-white py-4 md:py-6">
-        <div className="text-center max-w-7xl mx-auto w-full px-4 sm:px-0">
-          <h2 className="text-center text-[14px] lato-400 text-[#117ABA] md:text-[28px]">
+      <div className="z-10 bg-white ">
+        <div className="text-center max-w-7xl mx-auto w-full px-4 sm:px-0 pb-12">
+          <h2 className="text-center text-[14px] lato-400 text-[#117ABA] md:text-[28px] ">
             Sustainability
           </h2>
-          <span className=" text-[#181818] text-center lato-400  text-[14px] sm:text-[20px]">
+          <span className=" text-[#181818] text-center lato-400  text-[14px] sm:text-[20px] ">
              Embedding sustainability across materials, operations, and value chains
           </span>
         </div>
