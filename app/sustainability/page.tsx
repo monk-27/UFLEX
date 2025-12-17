@@ -203,15 +203,18 @@ const renderRow = (item: SimpleLink, idx: number) => (
 
 
       <MainSustainabilityComp />
+      <div className="max-w-7xl mx-auto px-4">
+
       <motion.h3
         className="text-center text-[24px] lato-400 text-[#117ABA] md:text-[28px] mb-8"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.2 }}
-      >
+        >
         UFlex's Commitment to a Circular Economy
       </motion.h3>
       <MainSustainabilityVisionComp />
+        </div>
       {/* <SustainabilityReportsCarousel /> */}
 
 
