@@ -88,6 +88,69 @@ const quarterlyConsolidated: DocItem[] = [
     text: "Financial results for the Quarter and Year ended 31.03.2024 (Audited)",
     link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_AUDITED_RESULTS_31MAR2023.pdf",
   },
+
+
+  { text: "Financial results for the Quarter ended 31.12.2023", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_31DEC2023.pdf" },
+  { text: "Financial results for the Quarter ended 30.09.2023", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_30SEP2023.pdf" },
+  { text: "Financial results for the Quarter ended 30.06.2023", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_30JUN2023.pdf" },
+  { text: "Financial results for the Quarter and Year ended 31.03.2023 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_AUDITED_RESULTS_31MAR2023.pdf" },
+
+  { text: "Financial results for the Quarter ended 31.12.2022", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_31DEC2022.pdf" },
+  { text: "Financial results for the Quarter ended 30.09.2022", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_30SEP2022.pdf" },
+  { text: "Financial results for the Quarter ended 30.06.2022", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_30JUN2022.pdf" },
+  { text: "Financial results for the Quarter and Year ended 31.03.2022 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_AUDITED_RESULTS_31MAR2022.pdf" },
+
+  { text: "Financial results for the Quarter ended 31.12.2021", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_QTRLY_RES_CON_31DEC2021.pdf" },
+  { text: "Financial results for the Quarter ended 30.09.2021", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_QTRLY_RES_CON_30SEP2021.pdf" },
+  { text: "Financial results for the Quarter ended 30.06.2021", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_QTRLY_RES_CON_30062021.pdf" },
+  { text: "Financial results for the Quarter and Year ended 31.03.2021 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_AUDITED_RESULTS_31MAR2021.pdf" },
+
+  { text: "Financial results for the Quarter ended 31.12.2020", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_QTRLYRESULTS_CONS_31122020.pdf" },
+  { text: "Financial results for the Quarter ended 30.09.2020", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_QTRLYRESULTS_CONS_30092020.pdf" },
+  { text: "Financial results for the Quarter ended 30.06.2020", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_QTR_UARES_CON_30062020.pdf" },
+  { text: "Financial results for the Quarter and Year ended 31.03.2020 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX-AUDITED-CONSOLIDATED-RESULTS-31ST-MARCH-2020.pdf" },
+
+  { text: "Financial results for the Quarter ended 31.12.2019", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_Cons_31DEC2019.pdf" },
+  { text: "Financial results for the Quarter ended 30.09.2019", link: "https://www.uflexltd.com/pdf/financials/Consolidated/Uflex-Unaudited-Cons-30092019.pdf" },
+  { text: "Financial results for the Quarter ended 30.06.2019", link: "https://www.uflexltd.com/pdf/financials/Consolidated/Uflex-Unaudited-Cons-30062019.pdf" },
+  { text: "Financial results for the Quarter and Year ended 31.03.2019 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX-AUDITED-CONSOLIDATED-RESULTS-31ST-MARCH-2019.pdf" },
+
+
+
+  { text: "Financial results for the Quarter ended 31.12.2018", link: "https://www.uflexltd.com/pdf/financials/Consolidated/Uflex-Unaudited-CONS-31122018.pdf" },
+  { text: "Financial results for the Quarter ended 30.09.2018", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX-RESULTS-30SEP2018.pdf" },
+  { text: "Financial results for the Quarter ended 30.06.2018", link: "https://www.uflexltd.com/pdf/financials/Consolidated/Uflex-Unaudited-Cons-30062018.pdf" },
+  { text: "Financial results for the Quarter and Year ended 31.03.2018 (Audited)", link: "" },
+
+  { text: "Financial results for the Quarter ended 31.12.2017", link: "" },
+  { text: "Financial results for the Quarter ended 30.09.2017", link: "" },
+  { text: "Financial results for the Quarter ended 30.06.2017", link: "" },
+  { text: "Financial results for the Quarter and Year ended 31.03.2017 (Audited)", link: "" },
+
+  { text: "Financial results for the Quarter ended 31.12.2016", link: "" },
+  { text: "Financial results for the Quarter ended 30.09.2016", link: "" },
+  { text: "Financial results for the Quarter ended 30.06.2016", link: "" },
+  { text: "Financial results for the year ended 31.03.2016 (Audited)", link: "" },
+
+  { text: "FINANCIAL RESULTS FOR THE QUARTER ENDED 31.12.2015", link: "" },
+  { text: "Financial results for the Quarter ended 30.09.2015", link: "" },
+  { text: "Financial results for the Quarter ended 30.06.2015", link: "" },
+  { text: "Financial results for the year ended 31.03.2015 (Audited)", link: "" },
+
+  { text: "Financial results for the quarter ended 31.12.2014", link: "" },
+  { text: "Financial results for the quarter ended 30.09.2014", link: "" },
+  { text: "Financial results for the quarter ended 30.06.2014", link: "" },
+  { text: "Financial results for the year ended 31.03.2014 (Audited)", link: "" },
+
+  { text: "Financial results for the quarter ended 31.12.2013", link: "" },
+  { text: "Financial results for the quarter ended 30.09.2013", link: "" },
+  { text: "Financial results for the quarter ended 30.06.2013", link: "" },
+  { text: "Financial results for the year ended 31.03.2013 (Audited)", link: "" },
+
+  { text: "Financial results for the quarter ended 31.12.2012", link: "" },
+  { text: "Financial results for the quarter ended 30.09.2012", link: "" },
+  { text: "Financial results for the quarter ended 30.06.2012", link: "" },
+  { text: "Financial results for the year ended 31.03.2012 (Audited)", link: "" },
 ];
 
 /* Quarterly Results – Standalone */
