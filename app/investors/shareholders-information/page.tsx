@@ -123,7 +123,7 @@ export default function Page() {
                 <section className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[450px] overflow-hidden">
                     <Image src="/images/investors/si.png" alt="Shareholder's Information" fill className="object-cover" priority />
                     <div className="absolute inset-0 bg-black/40" />
-                    <div className="absolute inset-0 flex flex-col justify-center px-6 sm:px-12 md:px-20 lg:px-28">
+                    <div className="max-w-7xl mx-auto absolute inset-0 flex flex-col justify-center px-6 sm:px-12 md:px-20 lg:px-28">
                         <h1 className="text-white text-2xl sm:text-3xl md:text-[38px] lato-700">
                             Shareholder's Information
                         </h1>

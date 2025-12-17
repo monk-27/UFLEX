@@ -383,7 +383,7 @@ export default function GetInTouch() {
 
           <div className="absolute inset-0 bg-black/40"></div>
 
-          <div className="absolute inset-0 flex flex-col justify-center px-6 sm:px-12 md:px-20 lg:px-28">
+          <div className="max-w-7xl mx-auto absolute inset-0 flex flex-col justify-center px-6 sm:px-12 md:px-20 lg:px-28">
             <h1 className="text-white text-2xl sm:text-3xl md:text-[38px] lato-700 mb-4">
               Get In Touch
 
