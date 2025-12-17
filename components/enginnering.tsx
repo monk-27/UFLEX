@@ -32,7 +32,14 @@ const SliderItems: SliderItem[] = [
         dynamiclink: "/engineering-business/engineering-Our-Offerings",
 
         title: "Converting Machines",
-        desc: "A wide range of machines for various printing, lamination, slitting/rewinding, doctoring, and pouch making as per a client's requirement.",
+        desc: `UFlex brings the latest innovations in
+printing and packaging technology, offering
+state-of-the-art solutions such as high-
+performance CI Flexo presses, advanced
+ELS printing machines, and extrusion
+lamination machines. These machines are
+designed to enhance both the efficiency
+and quality of the final product.`,
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-07180621806.jpg",
@@ -128,37 +135,36 @@ export const businesses: BusinessConfig[] = [
                 },
                 {
                     id: "pfs-4u",
-                    title: "PFS-4U",
+                    title: "LPFS-4U",
                     description:
-                        "UFlex launched the LPFS-4U (4 UP Linear, Pick, Fill, and Seal) machine in Q3, 2022. This machine, driven entirely by servos, ensures speed, performance, safety, hygiene, and environmental sustainability for brands. With an operator-friendly interface and efficient filling system, it accommodates various applications, running up to 20 PPM per track with four channels.",
+                        "UFlex launched the LPFS-4U (4 UP Linear, Pick, Fill, and Seal) machine in Q3, 2022. This machine, driven entirely by servos, ensures speed, performance, safety, hygiene, and environmental sustainability for brands. ",
                     image: "/images/pfs4u.png",
                 },
                 {
                     id: "rotary-horizontal-high-speed-form-fill-and-seal",
                     title: "Rotary Horizontal High-Speed Form Fill and Seal Machine with Gripper",
-                    description:
-                        "UFlex Engineering's innovative design for a Rotary Horizontal High-Speed Form Fill and Seal machine features grippers that hold pouches without conveyor belts, enhancing pouch quality and preventing leaks.",
-                    image: "/images/rotary.png",
+                    description:"UFlex Engineering new design for a rotary horizontal high-speed form fill and seal machine features grippers that hold pouches without conveyor belts, enhancing Picture of Highlight and Innovation pouch quality and preventing leaks."
+                           ,image: "/images/rotary.png",
                 },
                 {
                     id: "accu-slit-3300",
                     title: "Accu Slit-3300",
                     description:
-                        "After the successful performance of Accu Slit2500 and Accu Eco Slit-3000, the UFlex Engineering Business design team developed Accu Slit-3300, the new slitter of width 3300, for slitting Metalized BOPP and other substrates in FY23.",
+                        "UFlex developed Accu Slit-3300, the new slitter of width 3300, for slitting Metalized BOPP and other substrates.",
                     image: "/images/accu.png",
                 },
                 {
                     id: "asepto-speed-25000",
                     title: "Asepto Speed 25000 machine",
                     description:
-                        "UFlex, under the flagship of Asepto, introduced the next-gen, superpower Asepto Speed 25000 machine, an innovative engineering marvel that can process 25,000 aseptic liquid cartons per hour. It is the next-generation aseptic liquid filling machine with state-of-the-art technology that works at lightning speed with the convenience of an all-in-one portion-pack filling facility.",
+                        "UFlex, under the flagship of Asepto, introduced the next-gen, superpower Asepto Speed 25000 machine, an innovative engineering marvel that can process 25,000 aseptic liquid cartons per hour. ",
                     image: "/images/asepto.png",
                 },
                 {
                     id: "uflex-flexi-liquid-double-head",
                     title: "UFlex-flexi-liquid (double head)",
                     description:
-                        "The newly introduced machinery boasts an array of features designed to optimize operation efficiency. Its user-friendly interface ensures easy operation, while its low maintenance requirements minimize downtime. Despite its compact design and small footprint, it integrates seven servos, enabling high-speed performance.",
+                        "The newly introduced machinery boasts an array of features designed to optimize operation efficiency. Its user-friendly interface ensures easy operation, while its low maintenance requirements minimize downtime. ",
                     image: "/images/flexiuflex.png",
                 },
             ],
@@ -178,26 +184,45 @@ export const businesses: BusinessConfig[] = [
                     photo: "/images/ravi.png",
                     name: "Mr. Ravi Sharma",
                     role: "Joint President - Engineering and Solutions Delivery, Engineering Business",
-                    summary:
-                        "Mr. Ravi Sharma is responsible for leading Engineering and Solutions Delivery for the Engineering Business.",
-                    cta: { label: "Read More", href: "/leadership/ravi-sharma" },
+                    summary: `Mr. Ravi Sharma, joining in 1992, brings
+over 12 years of manufacturing experience,
+including tenure with notable
+multinationals like Allied Signals, Molins
+India Limited, and a subsidiary of Philips
+
+Carbon Black Limited (RPG Group). Holding
+a mechanical engineering degree from
+Thapar Institute of Engineering &amp;
+Technology, Patiala, Ravi has attended
+numerous management and leadership
+seminars globally. His expertise spans
+plant management, R&amp;D, innovation,
+supply chain, and customer relations.
+Ravi&#39;s leadership has significantly
+enhanced the company&#39;s production of
+reliable, high-quality packaging machines.
+Guiding a team of skilled technocrats, his
+innovative initiatives have bolstered sales.
+His experience, dedication, and
+motivational skills inspire the
+organization&#39;s workforce.`,
+                         cta: { label: "Read More", href: "/leadership/ravi-sharma" },
                 },
-                {
-                    photo: "/images/akash.png",
-                    name: "Mr. Akash Khandelwal",
-                    role: "Executive Vice President – Operations, Engineering Business",
-                    summary:
-                        "Mr. Akash Khandelwal leads Operations for the Engineering Business as Executive Vice President.",
-                    cta: { label: "Read More", href: "/leadership/akash-khandelwal" },
-                },
-                {
-                    photo: "/images/summet.png",
-                    name: "Mr. Sumeet Arora",
-                    role: "Senior Vice President - Sales and Marketing, Engineering Business",
-                    summary:
-                        "Mr. Sumeet Arora heads Sales and Marketing for the Engineering Business as Senior Vice President.",
-                    cta: { label: "Read More", href: "/leadership/sumeet-arora" },
-                },
+                // {
+                //     photo: "/images/akash.png",
+                //     name: "Mr. Akash Khandelwal",
+                //     role: "Executive Vice President – Operations, Engineering Business",
+                //     summary:``
+                //       cta: { label: "Read More", href: "/leadership/akash-khandelwal" },
+                // },
+                // {
+                //     photo: "/images/summet.png",
+                //     name: "Mr. Sumeet Arora",
+                //     role: "Senior Vice President - Sales and Marketing, Engineering Business",
+                //     summary:
+                //         "Mr. Sumeet Arora heads Sales and Marketing for the Engineering Business as Senior Vice President.",
+                //     cta: { label: "Read More", href: "/leadership/sumeet-arora" },
+                // },
             ],
         },
         awards: {

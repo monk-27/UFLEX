@@ -153,58 +153,45 @@ export const businesses: BusinessConfig[] = [
 
   innovations: {
     heading: "Business Highlights and Innovations",
-    items: [
-      {
-        id: "holographic-effect-leatherettes",
-        title:
-          "Holographic effect on leatherettes through steel embossed cylinders",
-        description:`The holographic effect on leatherettes
-like PU and PVC-based materials through
-steel embossed cylinders have multiple
-applications that enhance the aesthetics
-of products.`,
-           image: "/images/leather.png",
-      },
-      {
-        id: "twining-effect-leatherettes-steel",
-        title:
-          "Twining effect on leatherettes and steel through laser embossed cylinders",
-        description:`The twining effect on leatherettes and
-steel provides an array of applications
-and enhances the product finish and
-aesthetics of wide range of products.`,
-          image: "/images/pfs4u.png",
-      },
-      {
-        id: "carving-effect-pvc",
-        title: "Carving effect through laser embossing on PVC",
-        description:`Carving effect through laser embossing
-on PVC has many attractive applications
-for home decoration.`,
-          image: "/images/pvc.png",
-      },
-      {
-        id: "laser-embossing-shoe-soles",
-        title: "Laser embossing on the shoe soles",
-        description:`Laser embossing on the soles of shoes,
-making them skid-free.`,
-          image: "/images/shoes.png",
-      },
-      {
-        id: "aesthetic-effect-shoe-foxing",
-        title: "Aesthetic effect on shoe foxing through laser embossing",
-        description: `Solutions that make footwear more
-attractive and appealing to customers`,
-          image: "/images/laser.png",
-      },
-      {
-        id: "anti-skidding-foot-mat",
-        title: "Anti-skidding pattern on foot mat through laser embossing",
-        description: `3D anti-skidding effect on PVC sheets
-through laser embossing.`,
-           image: "/images/antiskiding.png",
-      },
-    ],
+ items: [
+  {
+    id: "holographic-effect-leatherettes",
+    title: "Holographic effect on leatherettes through steel embossed cylinders",
+    description: "The holographic effect on leatherettes like PU and PVC-based materials through steel embossed cylinders have multiple applications that enhance the aesthetics of products.",
+    image: "/images/leather.png",
+  },
+  {
+    id: "twining-effect-leatherettes-steel",
+    title: "Twining effect on leatherettes and steel through laser embossed cylinders",
+    description: "The twining effect on leatherettes and steel provides an array of applications and enhances the product finish and aesthetics of wide range of products.",
+    image: "/images/pfs4u.png",
+  },
+  {
+    id: "carving-effect-pvc",
+    title: "Carving effect through laser embossing on PVC",
+    description: "Carving effect through laser embossing on PVC has many attractive applications for home decoration.",
+    image: "/images/pvc.png",
+  },
+  {
+    id: "laser-embossing-shoe-soles",
+    title: "Laser embossing on the shoe soles",
+    description: "Laser embossing on the soles of shoes, making them skid-free.",
+    image: "/images/shoes.png",
+  },
+  {
+    id: "aesthetic-effect-shoe-foxing",
+    title: "Aesthetic effect on shoe foxing through laser embossing",
+    description: "Solutions that make footwear more attractive and appealing to customers.",
+    image: "/images/laser.png",
+  },
+  {
+    id: "anti-skidding-foot-mat",
+    title: "Anti-skidding pattern on foot mat through laser embossing",
+    description: "3D anti-skidding effect on PVC sheets through laser embossing.",
+    image: "/images/antiskiding.png",
+  },
+],
+
   },
 
   sustainability: {
@@ -221,7 +208,7 @@ through laser embossing.`,
     details: [
       {
         photo: "/images/parvez.png",
-        name: "Mr. Parwe Izhar",
+        name: "Mr. Parwez Izhar",
         role: "Executive Vice President - Printing Cylinders Business",
         summary:`With nearly three decades of experience
 in strategic planning, project

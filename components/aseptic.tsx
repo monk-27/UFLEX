@@ -186,7 +186,7 @@ export const businesses: BusinessConfig[] = [
     sustainability: {
       title: "Sustainability",
       description:
-        "At Asepto, sustainability isn't just a commitment; it's a driving force behind innovation. Asepto brings a sustainable solution to this pressing concern of aseptic cartons reaching landfills. With their proper extraction and assimilation, Asepto paves the way for a Circular Economy. Enzymatic Delamination Technology (EDT) is Asepto’s sustainable solution to reprocess the aseptic cartons to bring them back into the circular economy. Through EDT, we can separate and recover valuable materials like aluminium, polymers, and paper pulp from these cartons. By doing so, we significantly reduce the environmental footprint associated with their disposal.",
+        "At Asepto, sustainability isn't just a commitment; it's a driving force behind innovation. Asepto brings a sustainable solution to this pressing concern of aseptic cartons reaching landfills. With their proper extraction and assimilation, Asepto paves the way for a Circular Economy. ",
       image: "/images/sus.png",
       linkLabel: "Know more",
       linkHref: "#",
@@ -322,12 +322,12 @@ const AsepticComp: React.FC<Props> = ({ business }) => {
             <SimpleCarousel heading="Our Offerings" items={SliderItems} imageHeight={280} />
 
 
-            {business.innovations && (
+            {/* {business.innovations && (
               <InnovationSlider
                 heading={business.innovations.heading}
                 items={business.innovations.items}
               />
-            )}
+            )} */}
             <SustainabilitySection data={business.sustainability} />
 
             {(business.keypeople) && (

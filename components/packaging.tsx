@@ -178,211 +178,63 @@ export const businesses: BusinessConfig[] = [
         },
         innovations: {
             heading: "Business Highlights and Innovations",
-            items: [
-              
-                {
-                    id: "f-mex-m-2",
-                    title: "F-ETS: One side MST coated transparent BOPET film",
-                    description:`F-ETS is an advanced one-side MST-coated
-transparent BOPET film, specially engineered
-for secondary packaging of pharmaceutical
-tablets and pills. Developed using proprietary
-technology, it serves as a superior alternative
-to traditional cellophane-coated films for strip-
-to-paper sealing applications. The film offers
-excellent tearing properties in both machine
-and transverse directions, along with a water-
-based coating, calibrated heat-seal strength
-with paper, and high gloss with good
-transparency. Ideal for tablet strip packaging,
-the MST-coated side ensures easy fiber tearing
-when sealed with pharmaceutical-grade
-wrapper paper. It is also suitable for single-
-web lamination with aluminum foil, with the
-untreated side laminated to foil and the MST-
-coated side used for sealing.`, image: "/images/fets.png",
-                },
-                  {
-                    id: "f-mex-m",
-                    title: "F-MEX-M",
-                    description:`F-MEX-M is a high-performance metallized
-BOPET film designed to offer excellent
-versatility across a wide range of packaging
-applications. With optical densities ranging
-from 2.2 to 2.8, it provides customizable
-barrier properties to suit diverse
-requirements. Engineered for both-side
-extrusion coating, this film eliminates the need
-for additional priming and ensures no solvent
-emissions or residuals during the coating
-process. Its strong adhesion to extruded
-polyethylene without primers and suitability
-for hot-fill applications make F-MEX-M an ideal
-choice for brands seeking efficiency,
-sustainability, and performance in their
-packaging solutions.`,
-                    image: "/images/fmex.png",
-                },
-                {
-                    id: "b-tcm-m",
-                    title: "B-TCM-M: Ultra-thin high-barrier metallized BOPP film",
-                    description:`B-TCM-M is an innovative, non-heat sealable
-metallized BOPP film developed for
-sustainable and high-performance packaging
-applications. At just 8 microns, it is the
-thinnest metallized BOPP film available,
-offering low GSM and high linear
-mileage—making it a resource-efficient choice.
-With an optical density of 2.8, the film delivers
-outstanding barrier protection against
-moisture, oxygen, and light, while also offering
-excellent metal brilliance and adhesion. Its superior adhesive bonding makes it ideal for
-cold release applications and paperboard
-lamination, where performance and aesthetics
-are equally critical.`,
-                           image: "/images/btcm.png",
-                },
-                {
-                    id: "B-TDF:",
-                    title: `B-TDF: Heat sealable
-transparent BOPP
-film for heavy-duty
-packaging`,
-                    description:`B-TDF is a high-performance, heat sealable
-transparent BOPP film engineered to meet the
-rigorous demands of heavy-duty packaging
-applications. It features a diamond COF of 0.80
-on the sealing side for consistent performance
-and a treated reverse surface that ensures
-excellent printability and strong lamination.
-With superior extrusion bond, dimensional
-stability, and optical clarity, B-TDF is an ideal
-choice for packaging pet foods, rice bags, and
-other heavy-duty products requiring durability
-and visual appeal.`,
-                        image: "/images/fhsa.png",
-                },
-                {
-                    id: "f-hsa",
-                    title: "F-HSA: Heat sealable anti-fogtransparent BOPET film",
-                    description:`F-HSA is a high-performance transparent
-BOPET film designed with a heat sealable anti-
-fog surface on one side and an untreated
-surface on the other. Its exceptional clarity,
-transparency, and reliable sealing capabilities
-make it ideal for food packaging applications.
-The film offers excellent hot and cold anti-fog
-performance and can seal to itself as well as to
-substrates like APET, CPET, PVDC, and PVC. F-
-HSA is particularly well-suited for food tray
-sealing and tack seal applications, ensuring
-product visibility and freshness throughout the
-packaging lifecycle.`,
-                       image: "/images/fhsa.png",
-                },
-                {
-                    id: "b-dsc-aa",
-                    title: "B-DSC-AA – Both side acrylic coated BOPP film",
-                    description:`This high-performance packaging film is
-engineered for modern flexible packaging
-needs, offering excellent heat sealability, hot-
-tack, and compatibility with lap/fin seals and
-PVDC-coated films. Ideal for monolayer
-pouches, it ensures tamper-proof, transparent
-packaging with strong aroma and flavor
-barriers. With high clarity, gloss, and excellent
-ink and lamination adhesion, it&#39;s perfect for
-formats like stand-up and pillow pouches.
-Common applications include baby food, snacks, biscuits, tobacco, personal care items,
-confectionery, tea, and other fragrance-rich
-products.`,
-                         image: "/images/bdsc.png",
-                },
-                {
-                    id: "b-dsc-al",
-                    title: "B-DSC-AL – Low SIT and acrylic coated BOPP film",
-                    description: `This is an advanced BOPP film coated with
-acrylic and a low-temperature seal layer that
-activates at just 65°C. Engineered for high-
-performance packaging, this film offers
-exceptional low-temperature sealability and
-hot-tack strength on the coated side, ensuring
-strong seals even under minimal heat. It
-features an excellent barrier to flavor and
-aroma, a wide sealing range, and is suitable for
-monolayer pouch applications. Designed for
-“see-through packaging”, it is ideal for use in
-stand-up pouches (SUP) and pillow pouches,
-offering high clarity, gloss, and excellent ink
-and lamination adhesion. Its end-use
-applications include overwraps for
-confectionery, dairy products, ice cream,
-chocolates, biscuits, cookies, crackers, and
-other bakery items, making it a versatile
-solution for modern packaging needs.`,
-                         image: "/images/bdscda.png",
-                },
-                {
-                    id: "b-dsc-ds",
-                    title: "B-DSC-DA – High barrier PVDC-acrylic coated BOPP film",
-                    description:`B-DSC-DA is a high-performance BOPP film
-with one side PVDC and the other side acrylic
-coating, designed to meet the evolving needs
-of flexible packaging. This film delivers
-outstanding barrier performance, with an
-oxygen transmission rate (OTR) of less than 15
-cc/m²/day and water vapor transmission rate
-(WVTR) under 5 gm/m²/day, while maintaining
-excellent clarity. It ensures superior heat
-sealability across combinations like acrylic-to-
-acrylic, PVDC-to-PVDC, and acrylic-to-PVDC,
-making it suitable for both fin and lap seal
-applications. Ideal for monolayer pouch
-structures, it maintains its barrier integrity
-even under high humidity. Designed for see-
-through packaging formats such as stand-up
-pouches (SUP) and pillow pouches, it also
-offers excellent aroma, oxygen, and moisture
-barrier properties, along with hot tack
-strength, seal integrity, machinability, and
-printability. With high gloss and transparency,
-B-DSC-DA is perfectly suited for food
-packaging—especially for oxygen-sensitive and
-high-fat content products, and is compatible
-with HFFS and VFFS machinery. End-use applications include dairy products, biscuits,
-cookies, crackers, and bakery items, as well as
-various overwrapping needs.`,
-                         image: "/images/bdscas.png",
-                },
-                {
-                    id: "b-dsc-dl",
-                    title: "B-DSC-DL: High barrier PVDC coated BOPP film",
-                    description:`A specialized BOPP film featuring one side
-PVDC coating and the other side low
-temperature seal (LTS) coating, which activates
-at just 65°C. Engineered for monolayer pouch
-applications, this film delivers outstanding
-oxygen barrier properties (&lt;15 cc/m²/day)
-while maintaining excellent clarity. It offers
-superior low-temperature sealability and hot
-tack performance on the LTS side. The film
-retains its barrier property in high humidity,
-making it ideal for “see-through” packaging
-formats such as stand-up pouches (SUP) and
-pillow pouches. With excellent gas, flavor, and
-aroma barrier properties, B-DSC-DL also boasts
-excellent optical clarity, strong compatibility
-with normal ink systems and water-based
-coatings, and brings substantial improvement
-in fat migration. This film is highly suitable for
-plain and printed lamination as well as
-overwrapping applications, with end uses
-including biscuits, cookies, crackers, crisps,
-snacks, dry foods, beverage powders,
-confectionery items, and pet food.`,
-                         image: "/images/bdscdl.png",
-                },
-            ],
+           items: [
+  {
+    id: "f-mex-m-2",
+    title: "F-ETS: One side MST coated transparent BOPET film",
+    description: "F-ETS is an advanced one-side MST-coated transparent BOPET film, specially engineered for secondary packaging of pharmaceutical tablets and pills. Developed using proprietary technology, it serves as a superior alternative to traditional cellophane-coated films for strip-to-paper sealing applications. The film offers excellent tearing properties in both machine and transverse directions, along with a water-based coating, calibrated heat-seal strength with paper, and high gloss with good transparency. Ideal for tablet strip packaging, the MST-coated side ensures easy fiber tearing when sealed with pharmaceutical-grade wrapper paper. It is also suitable for single-web lamination with aluminum foil, with the untreated side laminated to foil and the MST-coated side used for sealing.",
+    image: "/images/fets.png",
+  },
+  {
+    id: "f-mex-m",
+    title: "F-MEX-M",
+    description: "F-MEX-M is a high-performance metallized BOPET film designed to offer excellent versatility across a wide range of packaging applications. With optical densities ranging from 2.2 to 2.8, it provides customizable barrier properties to suit diverse requirements. Engineered for both-side extrusion coating, this film eliminates the need for additional priming and ensures no solvent emissions or residuals during the coating process. Its strong adhesion to extruded polyethylene without primers and suitability for hot-fill applications make F-MEX-M an ideal choice for brands seeking efficiency, sustainability, and performance in their packaging solutions.",
+    image: "/images/fmex.png",
+  },
+  {
+    id: "b-tcm-m",
+    title: "B-TCM-M: Ultra-thin high-barrier metallized BOPP film",
+    description: "B-TCM-M is an innovative, non-heat sealable metallized BOPP film developed for sustainable and high-performance packaging applications. At just 8 microns, it is the thinnest metallized BOPP film available, offering low GSM and high linear mileage, making it a resource-efficient choice. With an optical density of 2.8, the film delivers outstanding barrier protection against moisture, oxygen, and light, while also offering excellent metal brilliance and adhesion. Its superior adhesive bonding makes it ideal for cold release applications and paperboard lamination, where performance and aesthetics are equally critical.",
+    image: "/images/btcm.png",
+  },
+  {
+    id: "B-TDF:",
+    title: "B-TDF: Heat sealable transparent BOPP film for heavy-duty packaging",
+    description: "B-TDF is a high-performance, heat sealable transparent BOPP film engineered to meet the rigorous demands of heavy-duty packaging applications. It features a diamond COF of 0.80 on the sealing side for consistent performance and a treated reverse surface that ensures excellent printability and strong lamination. With superior extrusion bond, dimensional stability, and optical clarity, B-TDF is an ideal choice for packaging pet foods, rice bags, and other heavy-duty products requiring durability and visual appeal.",
+    image: "/images/fhsa.png",
+  },
+  {
+    id: "f-hsa",
+    title: "F-HSA: Heat sealable anti-fog transparent BOPET film",
+    description: "F-HSA is a high-performance transparent BOPET film designed with a heat sealable anti-fog surface on one side and an untreated surface on the other. Its exceptional clarity, transparency, and reliable sealing capabilities make it ideal for food packaging applications. The film offers excellent hot and cold anti-fog performance and can seal to itself as well as to substrates like APET, CPET, PVDC, and PVC. F-HSA is particularly well-suited for food tray sealing and tack seal applications, ensuring product visibility and freshness throughout the packaging lifecycle.",
+    image: "/images/fhsa.png",
+  },
+  {
+    id: "b-dsc-aa",
+    title: "B-DSC-AA – Both side acrylic coated BOPP film",
+    description: "This high-performance packaging film is engineered for modern flexible packaging needs, offering excellent heat sealability, hot-tack, and compatibility with lap and fin seals and PVDC-coated films. Ideal for monolayer pouches, it ensures tamper-proof, transparent packaging with strong aroma and flavor barriers. With high clarity, gloss, and excellent ink and lamination adhesion, it is perfect for formats like stand-up and pillow pouches. Common applications include baby food, snacks, biscuits, tobacco, personal care items, confectionery, tea, and other fragrance-rich products.",
+    image: "/images/bdsc.png",
+  },
+  {
+    id: "b-dsc-al",
+    title: "B-DSC-AL – Low SIT and acrylic coated BOPP film",
+    description: "This is an advanced BOPP film coated with acrylic and a low-temperature seal layer that activates at just 65°C. Engineered for high-performance packaging, this film offers exceptional low-temperature sealability and hot-tack strength on the coated side, ensuring strong seals even under minimal heat. It features an excellent barrier to flavor and aroma, a wide sealing range, and is suitable for monolayer pouch applications. Designed for see-through packaging, it is ideal for use in stand-up pouches and pillow pouches, offering high clarity, gloss, and excellent ink and lamination adhesion. Its end-use applications include overwraps for confectionery, dairy products, ice cream, chocolates, biscuits, cookies, crackers, and other bakery items, making it a versatile solution for modern packaging needs.",
+    image: "/images/bdscda.png",
+  },
+  {
+    id: "b-dsc-ds",
+    title: "B-DSC-DA – High barrier PVDC-acrylic coated BOPP film",
+    description: "B-DSC-DA is a high-performance BOPP film with one side PVDC and the other side acrylic coating, designed to meet the evolving needs of flexible packaging. This film delivers outstanding barrier performance, with an oxygen transmission rate of less than 15 cc/m²/day and water vapor transmission rate under 5 gm/m²/day, while maintaining excellent clarity. It ensures superior heat sealability across combinations like acrylic-to-acrylic, PVDC-to-PVDC, and acrylic-to-PVDC, making it suitable for both fin and lap seal applications. Ideal for monolayer pouch structures, it maintains its barrier integrity even under high humidity. Designed for see-through packaging formats such as stand-up pouches and pillow pouches, it also offers excellent aroma, oxygen, and moisture barrier properties, along with hot tack strength, seal integrity, machinability, and printability. With high gloss and transparency, B-DSC-DA is perfectly suited for food packaging, especially for oxygen-sensitive and high-fat content products, and is compatible with HFFS and VFFS machinery. End-use applications include dairy products, biscuits, cookies, crackers, bakery items, and various overwrapping needs.",
+    image: "/images/bdscas.png",
+  },
+  {
+    id: "b-dsc-dl",
+    title: "B-DSC-DL: High barrier PVDC coated BOPP film",
+    description: "A specialized BOPP film featuring one side PVDC coating and the other side low temperature seal coating, which activates at just 65°C. Engineered for monolayer pouch applications, this film delivers outstanding oxygen barrier properties of less than 15 cc/m²/day while maintaining excellent clarity. It offers superior low-temperature sealability and hot tack performance on the low temperature seal side. The film retains its barrier property in high humidity, making it ideal for see-through packaging formats such as stand-up pouches and pillow pouches. With excellent gas, flavor, and aroma barrier properties, B-DSC-DL also boasts excellent optical clarity, strong compatibility with normal ink systems and water-based coatings, and brings substantial improvement in fat migration. This film is highly suitable for plain and printed lamination as well as overwrapping applications, with end uses including biscuits, cookies, crackers, crisps, snacks, dry foods, beverage powders, confectionery items, and pet food.",
+    image: "/images/bdscdl.png",
+  },
+],
+
         },
         sustainability: {
             title: "Sustainability",

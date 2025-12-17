@@ -123,42 +123,39 @@ export const businesses: BusinessConfig[] = [
                     id: "holography-and-stamping",
                     title: "Holography and Stamping Foils",
                     description:
-                        "Flex continues to set global benchmarks through advanced infrastructure, technical excellence, advanced R&D, and deep market intelligence, ensuring world-class quality and innovation across its offerings. Our state-of-the-art in-house manufacturing facilities, equipped with Origination, Coatings, Metallizers, and Slitting machines, enable advanced transfer technology, enhancing both surface appeal and tactile experience.",
+                        "UFlex continues to set global benchmarks through advanced infrastructure, technical excellence, advanced R&D, and deep market intelligence, ensuring world-class quality and innovation across its offerings. Our state-of-the-art in-house manufacturing facilities, equipped with Origination, Coatings, Metallizers, and Slitting machines, enable advanced transfer technology, enhancing both surface appeal and tactile experience.",
                     image: "/images/foils.png"
                 },
                 {
                     id: "alu-alu-blister",
                     title: "Holographic Alu-Alu Blister",
-                    description:
-                        "With a growing demand for secure and overt packaging solutions, UFlex’s Holographic Alu-Alu Blister is making a significant impact, with sustained adoption expected among pharmaceutical companies seeking advanced anti-counterfeiting measures.",
-                    image: "/images/blister.png"
+                    description: "Holographic Alu-Alu Blister marks a major breakthrough in pharmaceutical packaging, reinforcing UFlex’s commitment to industry-leading brand protection. Integrated with covert security features, this innovative solution provides an enhanced layer of anti-counterfeiting protection, ensuring product authenticity and consumer safety."
+
+                    ,image: "/images/blister.png"
                 },
                 {
                     id: "decorative-products",
                     title: "Decorative Products Segment",
-                    description:
-                        "Designed using specialized holographic foils and intricate patterns, these products create vibrant multi-dimensional effects. Their surfaces capture and reflect light from various angles, delivering a premium and dynamic visual appeal.",
+                    description: "As part of UFlex’s strategic diversification, the decorative holographic calendar represents a distinctive offering within the holographic product segment. This unique application combines high-end aesthetics with functional design, creating a visually striking product ideal for festive and promotional use.",
                     image: "/images/decorative.png"
                 },
                 {
                     id: "advanced-blister-packs",
                     title: "Advanced holographic blister packs",
-                    description:
-                        "UFlex’s enhanced holographic blister packs are engineered with advanced security features, making replication virtually impossible. In the pharmaceutical industry- where safety and efficacy are critical- UFlex's cutting-edge holographic technology offers unparalleled protection for both brands and consumers.",
-                    image: "/images/advanced.png"
+                    description: "UFlex’s enhanced holographic blister packs are engineered with advanced security features, making replication virtually impossible.", image: "/images/advanced.png"
                 },
                 {
                     id: "high-refractive-sequins",
                     title: "High-Refractive Holographic Sequins Film",
-                    description:
-                        "UFlex’s high-refractive holographic sequins film delivers exceptional brilliance and luster. Targeted at premium markets, it combines advanced holographic technology with precision coatings to create stunning light and color effects.",
+                    description: "UFlex’s high-refractive holographic sequins film delivers exceptional brilliance and luster. Targeted at premium markets, it combines advanced holographic technology with precision coatings to create stunning light and color effects. Ideally suited for premium fashion, accessories, haute couture, and upscale décor, this cutting-edge sequins film enhances embellishments with a touch of luxury and sophistication. With this high-performance solution, UFlex Holography continues to set industry benchmarks, demonstrating its ongoing commitment to innovation, quality, and excellence in high-end decorative applications.",
+
                     image: "/images/refractive.png"
                 },
                 {
                     id: "3d-flipogram",
                     title: "3D Flipogram – Advanced Visual Anti-Counterfeiting Technology",
-                    description:
-                        "UFlex’s 3D Flipogram revolutionizes brand protection with its advanced micro-optical technology, delivering unparalleled visual anti-counterfeiting solutions. Comprising hundreds of thousands of micro-lenses, this highly secure technology, also used in currency notes, creates a unique and dynamic 3D visual effect that is virtually impossible to replicate.",
+                    description: "UFlex’s 3D Flipogram revolutionizes brand protection with its advanced micro-optical technology, delivering unparalleled visual anti-counterfeiting solutions. Comprising hundreds of thousands of micro-lenses, this highly secure technology—also used in currency notes—creates a unique and dynamic 3D visual effect that is virtually impossible to replicate. Effortless to use, the Flipogram effect allows consumers to instantly verify authenticity by simply viewing the imagery, with no special lighting or devices required. Beyond its powerful security benefits, this innovation also enhances product appeal, reinforcing trust and elevating brand value.",
+
                     image: "/images/flipogram.png"
                 }
             ]
@@ -166,8 +163,16 @@ export const businesses: BusinessConfig[] = [
 
         sustainability: {
             title: "Sustainability",
-            description:
-                "In the process of providing the best fraud-preventive infallible seals of full-proof product security, we ensure that all emissions are well below the permissible levels. We continuously strive for minimum process waste generation and optimally recycle the same. We have many solutions of sustainability segment- holographic transfer on paper and board, cold transfer foils, recycled RSC certified sequins film, cast and cure holographic films among many other",
+            description: `In the process of providing the
+best fraud-preventive
+infallible seals of full-proof
+product security, we ensure
+that all emissions are well
+below the permissible levels.
+We continuously strive for
+minimum process waste
+generation and optimally
+recycle the same.`,
             image: "/images/sus.png",
             linkLabel: "Know more",
             linkHref: "#"
@@ -177,29 +182,120 @@ export const businesses: BusinessConfig[] = [
             title: "Key People",
             details: [
                 {
-                    photo: "/images/vinod.png",
-                    name: "Mr. Vinod Hariharan",
-                    role: "Executive Vice President – Holography Business",
-                    summary:
-                        "Mr. Vinod Hariharan plays a key leadership role in driving innovation and excellence in the Holography Business.",
-                    cta: { label: "Read More", href: "/leadership/vinod-hariharan" }
-                },
-                {
                     photo: "/images/pathak.png",
                     name: "Mr. G.P. Pathak",
                     role: "Vice President – Operations and New Product Development, Holography Business",
-                    summary:
-                        "Mr. Pathak oversees operations and product development, ensuring technological advancement and strong process control.",
+                    summary: `With over three decades of
+                    invaluable experience, Mr.
+                    G.P. Pathak has established
+                    himself as a seasoned
+                    professional in the Holography
+                    and Anti-Counterfeiting
+                    industry. Throughout his
+                    career, he has been associated
+                    with several leading
+                    organizations, bringing deep
+                    expertise and innovative
+                    thinking to every role. For the
+                    past 14 years, he has been an
+                    integral part of UFlex, where
+                    he is a founding member of
+                    the company’s Holography
+                    Business. Mr. Pathak has
+                    played a pivotal role in driving
+                    UFlex’s ambitious growth
+                    strategy, leveraging his ability
+                    to blend new ideas and
+                    spearhead product
+                    innovation. His forward-
+                    thinking approach has
+                    significantly contributed to
+                    positioning the business as a
+                    prominent player in the global
+                    holography anti-counterfeiting
+                    space. Mr. Pathak holds a
+                    Master of Science (M.Sc.)
+                    degree, underscoring his
+                    strong academic foundation.`,
                     cta: { label: "Read More", href: "/leadership/gp-pathak" }
                 },
                 {
                     photo: "/images/rakesh.png",
                     name: "Mr. Rakesh Khazanchi",
                     role: "Vice President – Sales and Marketing, Holography Business",
-                    summary:
-                        "Mr. Khazanchi leads sales and marketing initiatives, strengthening global market reach and customer engagement.",
+                    summary: `With over 35 years of rich
+                    
+                    Pics of G.P. Pathak and Rakesh
+                    Khazanchi
+                    
+                    experience in Sales and
+                    Marketing, Mr. Rakesh
+                    Khazanchi brings deep
+                    expertise in strategy, brand
+                    building, and sales
+                    management processes.
+                    Before joining UFlex’s
+                    Holography business in 2012
+                    as AVP-Marketing, he held key
+                    roles at several prestigious
+                    organizations, including
+                    Escorts Limited and Xerox
+                    INDIA LTD., where he honed
+                    his leadership and strategic
+                    acumen. In his current role,
+                    Mr. Khazanchi heads the Sales
+                    &amp; Marketing team of the
+                    Holography Business, driving
+                    transformational growth
+                    through a sharp focus on
+                    customer-centric solutions.
+                    Under his dynamic leadership,
+                    the business has witnessed
+                    remarkable three-digit growth
+                    and is well on its path to
+                    becoming a global leader in
+                    Holographic Solutions. Mr.
+                    Khazanchi holds a
+                    postgraduate degree, which
+                    complements his extensive
+                    professional experience.`,
                     cta: { label: "Read More", href: "/leadership/rakesh-khazanchi" }
-                }
+                },
+                {
+                    photo: "/images/vinod.png",
+                    name: "Mr. Vinod Hariharan",
+                    role: "Executive Vice President – Holography Business",
+                    summary: `With almost three decades of
+rich and diverse experience,
+Mr. Vinod Hariharan is a
+seasoned professional with
+deep expertise in strategic
+planning, business
+development, channel
+management, digital
+marketing, sales, and general
+management. He has held key
+leadership roles in reputed
+international organizations,
+including American and
+European companies, several
+
+of which are part of the
+Fortune 500 group. His
+extensive global exposure and
+well-rounded skill set have
+consistently contributed to
+business growth and
+operational excellence. Mr.
+Hariharan holds a B.Tech in
+Mechanical Engineering from
+NIT Kozhikode and has further
+strengthened his leadership
+credentials through the Senior
+Management Program at IIM
+Kolkata.`,
+                    cta: { label: "Read More", href: "/leadership/vinod-hariharan" }
+                },
             ]
         },
 
@@ -247,50 +343,50 @@ export const businesses: BusinessConfig[] = [
 
 // ];
 const packagingData = [
-  {
-    id: "holography",
-    title: "Holography Business",
-    image: "/images/advanced.png",
-    imageAlt: "UFlex Holography Solutions",
+    {
+        id: "holography",
+        title: "Holography Business",
+        image: "/images/advanced.png",
+        imageAlt: "UFlex Holography Solutions",
 
-    content: [
-      {
-        type: "paragraph",
-        text: "The Holography Business of UFlex offers a comprehensive range of holographic solutions, including advanced security holograms, security paper labels & tax stamps, wide web holographic films, stamping foils, transfer holographic metallized paper & paperboard, security documents, and textile application films for sequins, hot melt, and glitter powder.",
-        strong: ["Holography Business of UFlex"]
-      },
-      {
-        type: "paragraph",
-        text: "UFlex Limited’s advanced manufacturing facilities in Noida and Jammu are equipped with advanced in-house capabilities, enabling high-volume production while maintaining the highest quality standards. Specializing in holography-based anti-counterfeiting packaging and brand protection solutions, our facilities empower brands to combat counterfeiting threats and safeguard their business interests.",
-        strong: ["UFlex Limited’s advanced manufacturing facilities"]
-      },
-      {
-        type: "heading",
-        text: "Global Certifications & Industry Recognition"
-      },
-      {
-        type: "paragraph",
-        text: "Our commitment to quality, security, and sustainability is reinforced by globally recognized certifications, including:",
-        strong: ["quality, security, and sustainability"]
-      },
-      {
-        type: "list",
-        items: [
-          { label: "ISO 9001:2015", value: "Quality Management System (QMS)" },
-          { label: "ISO 14001:2015", value: "Environmental Management System" },
-          { label: "ISO/IEC 27001:2022", value: "Information Security Management System" },
-          { label: "ISO 14298:2021", value: "Graphic Technology & Security Printing Management" },
-          { label: "HSSMS Certification", value: "Health & Safety Management System" },
-          { label: "IBA Certified Security Printer" }
+        content: [
+            {
+                type: "paragraph",
+                text: "The Holography Business of UFlex offers a comprehensive range of holographic solutions, including advanced security holograms, security paper labels & tax stamps, wide web holographic films, stamping foils, transfer holographic metallized paper & paperboard, security documents, and textile application films for sequins, hot melt, and glitter powder.",
+                strong: ["Holography Business of UFlex"]
+            },
+            {
+                type: "paragraph",
+                text: "UFlex Limited’s advanced manufacturing facilities in Noida and Jammu are equipped with advanced in-house capabilities, enabling high-volume production while maintaining the highest quality standards. Specializing in holography-based anti-counterfeiting packaging and brand protection solutions, our facilities empower brands to combat counterfeiting threats and safeguard their business interests.",
+                strong: ["UFlex Limited’s advanced manufacturing facilities"]
+            },
+            {
+                type: "heading",
+                text: "Global Certifications & Industry Recognition"
+            },
+            {
+                type: "paragraph",
+                text: "Our commitment to quality, security, and sustainability is reinforced by globally recognized certifications, including:",
+                strong: ["quality, security, and sustainability"]
+            },
+            {
+                type: "list",
+                items: [
+                    { label: "ISO 9001:2015", value: "Quality Management System (QMS)" },
+                    { label: "ISO 14001:2015", value: "Environmental Management System" },
+                    { label: "ISO/IEC 27001:2022", value: "Information Security Management System" },
+                    { label: "ISO 14298:2021", value: "Graphic Technology & Security Printing Management" },
+                    { label: "HSSMS Certification", value: "Health & Safety Management System" },
+                    { label: "IBA Certified Security Printer" }
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "As an industry leader, UFlex is a proud member of ITSA, IOTA (IHMA), and ASPA, actively contributing to the advancement of security printing and brand protection.",
+                strong: ["industry leader", "ITSA", "IOTA (IHMA)", "ASPA"]
+            }
         ]
-      },
-      {
-        type: "paragraph",
-        text: "As an industry leader, UFlex is a proud member of ITSA, IOTA (IHMA), and ASPA, actively contributing to the advancement of security printing and brand protection.",
-        strong: ["industry leader", "ITSA", "IOTA (IHMA)", "ASPA"]
-      }
-    ]
-  }
+    }
 ];
 
 
@@ -374,20 +470,20 @@ const HoloGraphyComp: React.FC<Props> = ({ business }) => {
                                     onClick={() => setOpen(true)}
                                     className="mt-4 lato-700 text-[14px] text-[#117ABA]  hover:underline"
                                 >
-                                    Read more 
-                <span aria-hidden>↗</span>
+                                    Read more
+                                    <span aria-hidden>↗</span>
 
                                 </button>
 
                                 {/* ---- Modal ---- */}
                                 <ReadMoreDialog
-  open={open}
-  onClose={() => setOpen(false)}
-  title={packagingData[0].title}
-  imageSrc={packagingData[0].image}
-  imageAlt={packagingData[0].imageAlt}
-  content={packagingData[0].content}
-/>
+                                    open={open}
+                                    onClose={() => setOpen(false)}
+                                    title={packagingData[0].title}
+                                    imageSrc={packagingData[0].image}
+                                    imageAlt={packagingData[0].imageAlt}
+                                    content={packagingData[0].content}
+                                />
 
 
 
