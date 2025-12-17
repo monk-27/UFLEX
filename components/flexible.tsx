@@ -117,10 +117,32 @@ const packagingData = [
         image: "/images/flexi.png",
         "imageAlt": "UFlex Flexible Packaging Solutions",
         paragraphs: [
-            `We offer a comprehensive range of products, including flexible laminates, pre-formed pouches, Flexo-printed rolls and bags, laminated woven polypropylene (WPP) bags, electron beam and Cast n Cure technology, pharmaceutical packaging, Flexible Tubes, hygiene films, Flexfresh™ modified atmosphere packaging, and big bags. At UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every solution we create.`,
-            `UFlex Limited is India’s largest flexible packaging company, headquartered in Noida, Delhi NCR. With a legacy of innovation and excellence, we operate three advanced manufacturing facilities across India, including Noida and Jammu, and serve a diverse clientele both domestically and globally. Our robust international footprint spans North America, Europe, Africa, Southeast Asia, and the Middle East, positioning us as a leading manufacturer and exporter in the flexible packaging space.`,
-            `With a manufacturing capacity of over 100,000 MTPA, UFlex offers a comprehensive range of flexible packaging solutions and laminated roll stocks. Our versatile portfolio includes a wide variety of pouch formats such as 3D and 4D pouches with re-closable options, wicketed bags for hygiene products, pet food pinch bottom bags, cement block bottom bags, Flexible Tubes, and innovative offerings like innolock pouches, zip pouches, embossed foils, pocket PTC zippers, and Cast n Cure technologies. Whether it’s packaging for household use or industrial applications, our products are designed to combine functionality with visual appeal.\n\nWhat sets UFlex apart is our full backward integration across every key vertical—films (BOPET, BOPP, CPP, metalized films), chemicals (inks, coatings, adhesives), engineering (converting and packing machines), holography, and cylinders. This integration enables us to offer customized, end-to-end packaging solutions tailored to the evolving needs of our customers.\n\nOur four in-house R&D labs, approved by the Ministry of Industries, Government of India, are equipped with state-of-the-art instruments like FTIR, UTM, gas chromatograph, and differential scanning calorimeter. This empowers us to stay at the forefront of packaging innovation, driving quality, sustainability, and performance.\n\nAt UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every solution we create.`
-        ]
+            `UFlex Limited is India’s largest flexible packaging company, headquartered in Noida, Delhi NCR. With
+a legacy of innovation and excellence, we operate three advanced manufacturing facilities across
+India, including Noida and Jammu, and serve a diverse clientele both domestically and globally. Our
+robust international footprint spans North America, Europe, Africa, Southeast Asia, and the Middle
+East, positioning us as a leading manufacturer and exporter in the flexible packaging space.`,
+`With a manufacturing capacity of over 100,000 MTPA, UFlex offers a comprehensive range of
+flexible packaging solutions and laminated roll stocks. Our versatile portfolio includes a wide variety
+of pouch formats such as 3D and 4D pouches with re-closable options, wicketed bags for hygiene
+products, pet food pinch bottom bags, cement block bottom bags, FlexiTubes, and innovative
+offerings like innolock pouches, zip pouches, embossed foils, pocket PTC zippers, and Cast n Cure
+technologies. Whether it’s packaging for household use or industrial applications, our products are
+designed to combine functionality with visual appeal.`,
+`What sets UFlex apart is our full backward integration across every key vertical—films (BOPET, BOPP,
+CPP, metalized films), chemicals (inks, coatings, adhesives), engineering (converting and packing
+machines), holography, and cylinders. This integration enables us to offer customized, end-to-end
+packaging solutions tailored to the evolving needs of our customers.`,
+`Our four in-house R&amp;D labs, approved by the Ministry of Industries, Government of India, are
+equipped with state-of-the-art instruments like FTIR, UTM, gas chromatograph, and differential
+scanning calorimeter. This empowers us to stay at the forefront of packaging innovation, driving
+quality, sustainability, and performance.`,
+`At UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every
+solution we create.`
+
+
+
+             ]
     }
 
 ];
@@ -135,13 +157,67 @@ export const businesses: BusinessConfig[] = [
             body:
                 "We offer a comprehensive range of products, including flexible laminates, pre-formed pouches, Flexo-printed rolls and bags, laminated woven polypropylene (WPP) bags, electron beam and Cast n Cure technology, pharmaceutical packaging, Flexible Tubes, hygiene films, Flexfresh™ modified atmosphere packaging, and big bags. At UFlex, we don’t just deliver packaging—we deliver excellence, innovation.",
         },
+  innovations: {
+      heading: "Business Highlights and Innovations",
+  items: [
+  {
+    id: "itc-rte-pouch-ulp-pet",
+    title: "ITC RTE Pouch – ULP PET pouches",
+    image: "/images/flexiblelaminates.png",
+    description: "These pouches are designed for convenient microwave heating and are ideal for hot-fill applications such as gravies, ketchups, sauces, jams, and marinades. They are also well-suited for packaging meat, cheese, frozen foods, and dry fruits.",
+  },
+  {
+    id: "flexitube-laminate-metallica-holographic",
+    title: "FlexiTube Laminate",
+    image: "/images/preformpouches.png",
+    description: "Silver and Gold Metallica 280 Micron: This laminate consists of multiple layers, including 70-micron natural PE, 34-micron extruded PE, 12-micron special-grade metallized PET, another 34-micron extruded PE, and 130-micron natural EVOH PE. Silver Holographic Laminate: The silver holographic laminate features a multilayer structure comprising 70-micron natural PE, 13-micron metallized holographic film, 30-micron extruded PE, 12-micron aluminum foil, another 30-micron extruded PE, and 130-micron natural PE.",
+  },
+  {
+    id: "jay-baba-bakreswar-farm-house-rice-bag",
+    title: "Jay Baba Bakreswar – Farm House rice bag",
+    image: "/images/preformpouches.png",
+    description: "UFlex has developed packaging for Jay Baba Bakreswar Rice Mill Pvt. Ltd. under the Farm House brand. This marks a significant milestone, as it is the first 50 kg SKU rice bag developed by UFlex, highlighting the company’s advancement in bulk packaging solutions.",
+  },
+  {
+    id: "itc-eco-friendly-packaging-savlon",
+    title: "ITC’s eco-friendly packaging",
+    image: "/images/preformpouches.png",
+    description: "UFlex has developed a sustainable packaging solution for Savlon brand of ITC Limited, featuring an 8.2g SKU designed for the domestic market. A key highlight is the use of a PCR-based laminate, reinforcing ITC’s commitment to eco-friendly packaging solutions.",
+  },
+  {
+    id: "double-spout-pouch-clean-drinking-water",
+    title: "10 Litre Double Spout Pouch for clean drinking water",
+    image: "/images/preformpouches.png",
+    description: "UFlex has developed an innovative pouch for a start-up focused on tackling the critical issue of clean drinking water availability for underprivileged communities. The 10-litre double spout pouch is a portable water filtration solution equipped with a durable plastic handle for easy carrying. It features a laminate structure comprising 12μ PET, 15μ BON, and 165μ natural PE, offering both strength and sustainability. A 40 mm spout enables convenient water dispensing, while the brand’s patented natural filter ensures safe drinking water reaches those who need it most.",
+  },
+  {
+    id: "50mm-oval-tubes-packaging",
+    title: "50mm dia Oval tubes",
+    image: "/images/elctron.png",
+    description: "These oval tubes offer 20% more space on the front and back panels compared to traditional round tubes, giving brands additional room to effectively communicate their message to consumers. The unique shape also enables more efficient use of retail shelf space, allowing brand owners to display more units at the same cost. Furthermore, the ability to accommodate more tubes per pallet contributes to reduced transportation costs. This innovation underscores UFlex’s commitment to helping brands succeed through superior and efficient packaging solutions.",
+  },
+  {
+    id: "matte-effect-hair-dye-sachets",
+    title: "New Packaging Solution for Frozen Food",
+    image: "/images/elctron.png",
+    description: "UFlex supported Hygienic Research Institute Pvt. Ltd. to develop innovative gel-based hair dye sachets in 24ml and 45ml sizes. This premium packaging solution features a unique matte effect, a first in the hair dye segment. The design is further enhanced with elegant touches such as detailed hair graphics and a gold-colored logo, adding to the pouch’s overall visual appeal and shelf presence.",
+  },
+  {
+    id: "vacuum-sealed-marinated-chicken-packaging",
+    title: "New Packaging Solution for Frozen Food",
+    image: "/images/elctron.png",
+    description: "UFlex has partnered with Jubilant FoodWorks to enhance the packaging of their marinated chicken, which is distributed in 500 gm packs from their Bangalore facility. The innovative laminate used in this packaging is thermoformed and vacuum-sealed, featuring a barrier film that protects the food from contamination by preventing exposure to air.",
+  },
+]
 
+
+    },
         offerings: {
             heading: "Our Offerings",
             items: [
                 {
                     id: "flexible-laminates",
-                    title: "Flexible Laminates",
+                    title: "ITC RTE Pouch – UL PET pouches",
                     image: "/images/flexiblelaminates.png",
                     description:
                         "High-performance polyester films for diverse packaging applications.",
@@ -165,9 +241,13 @@ export const businesses: BusinessConfig[] = [
 
         sustainability: {
             title: "Sustainability",
-            description:
-                "Driving Sustainable Growth Through Smarter Packaging Practices. UFlex is deeply committed to environmental sustainability and has undertaken several impactful initiatives across India to reduce its carbon footprint and enhance operational productivity. The company consistently invests in advanced technologies that consume less energy per ton of flexible packaging, promoting more efficient and responsible manufacturing practices. All in-house production waste is recycled and reintegrated into the manufacturing cycle, significantly reducing landfill pressure and helping curb pollution.",
-            image: "/images/sus.png",
+            description: `UFlex is deeply committed to environmental sustainability and has undertaken several impactful
+initiatives across India to reduce its carbon footprint and enhance operational productivity. The
+company consistently invests in advanced technologies that consume less energy per ton of flexible
+packaging, promoting more efficient and responsible manufacturing practices. All in-house
+production waste is recycled and reintegrated into the manufacturing cycle, significantly reducing
+landfill pressure and helping curb pollution.`,
+                image: "/images/sus.png",
             linkLabel: "Know more",
             linkHref: "#",
         },
