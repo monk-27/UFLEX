@@ -1084,9 +1084,19 @@ export const businesses: BusinessConfig[] = [
         photo: "/images/parvez.png",
         name: "Mr. Parwez Izhar",
         role: "Executive Vice President - Printing Cylinders Business",
-        summary:
-          "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+        summary:`With nearly three decades of experience
+in strategic planning, project
+management, and business excellence,
+Mr. Izhar currently leads UFlex’s Printing
+cylinders business. His previous roles
+include COO at Fine Chemicals in Nigeria,
+as well as leadership positions at
+Primetech, Avon Crown Caps and
+Containers, Delphi Automotive Systems,
+and TATA Motors. Mr. Izhar holds a
+master’s degree in finance, operations,
+and strategy from XLRI Jamshedpur and is
+a Lean Six Sigma black belt champion.`,cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
       },
     ],
   },

@@ -3,8 +3,8 @@
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { BusinessPage } from "@/components/business-page"
-import FlexibleComp from "@/components/flexible"
-import { businesses } from "../business/data"
+import FlexibleComp , { businesses } from "@/components/flexible"
+
 
 export default function Page() {
     const business = businesses.find(b => b.key === "flexible-packaging")!;

@@ -25,21 +25,30 @@ const SliderItems: SliderItem[] = [
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-05492704927.jpg",
         dynamiclink:"/printing-cylinder-business/printing-Our-Offerings",
         title: "Gravure Cylinders",
-        desc: "High-precision gravure, printing, coating, and special-purpose cylinders for diverse applications, including rotogravure (gravure) cylinders.",
+        desc: `UFlex manufactures high-precision
+gravure, printing, coating, and special-
+purpose cylinders for diverse
+applications.`,
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-05492714927.jpg",
         dynamiclink:"/printing-cylinder-business/printing-Our-Offerings",
 
         title: "CTP Flexo Plates",
-        desc: "An advanced manufacturing setup, featuring laser imaging with 5080 DPI, for high-definition flexographic plates.",
+        desc: `The advanced flexo plate manufacturing
+setup, featuring laser imaging with 5080
+DPI, sets a new standard for high-
+definition flexographic plates.`,
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-05492724927.jpg",
         dynamiclink:"/printing-cylinder-business/printing-Our-Offerings",
 
         title: "Flexo Printing Sleeves",
-        desc: "Our flexo printing sleeves offer superior print quality, operational ease, and cost-efficiency in flexography printing.",
+        desc: `UFlex’s flexo printing sleeves provide
+superior print quality, operational ease
+and cost-efficiency in flexography
+printing.`,
     },
 
 
@@ -149,45 +158,51 @@ export const businesses: BusinessConfig[] = [
         id: "holographic-effect-leatherettes",
         title:
           "Holographic effect on leatherettes through steel embossed cylinders",
-        description:
-          "The holographic effect on leatherettes like PU and PVC-based materials through steel embossed cylinders have multiple applications that enhance the aesthetics of products used for home decor, handbags, car seat cover, and raincoat and shoes.",
-        image: "/images/leather.png",
+        description:`The holographic effect on leatherettes
+like PU and PVC-based materials through
+steel embossed cylinders have multiple
+applications that enhance the aesthetics
+of products.`,
+           image: "/images/leather.png",
       },
       {
         id: "twining-effect-leatherettes-steel",
         title:
           "Twining effect on leatherettes and steel through laser embossed cylinders",
-        description:
-          "The twining effect on leatherettes and steel provides an array of applications and enhances the product finish and aesthetics in fashion, lift wall decorations, curtains, handbags, car seat covers, flooring, shopping malls, and hospital floors.",
-        image: "/images/pfs4u.png",
+        description:`The twining effect on leatherettes and
+steel provides an array of applications
+and enhances the product finish and
+aesthetics of wide range of products.`,
+          image: "/images/pfs4u.png",
       },
       {
         id: "carving-effect-pvc",
         title: "Carving effect through laser embossing on PVC",
-        description:
-          "Carving effect through laser embossing on PVC has many attractive applications for home decoration. It can enhance the attractiveness and aesthetics of home interiors like modular kitchens, table covers, door mats, floor mats, and even in-car floor mats. It is durable, easy to maintain, cost-effective, and can be installed in a short time.",
-        image: "/images/pvc.png",
+        description:`Carving effect through laser embossing
+on PVC has many attractive applications
+for home decoration.`,
+          image: "/images/pvc.png",
       },
       {
         id: "laser-embossing-shoe-soles",
         title: "Laser embossing on the shoe soles",
-        description:
-          "Carving effect through laser embossing on PVC has many attractive applications for home decoration. It can enhance the attractiveness and aesthetics of home interiors like modular kitchens, table covers, door mats, floor mats, and even in-car floor mats. It is durable, easy to maintain, cost-effective, and can be installed in a short time.",
-        image: "/images/shoes.png",
+        description:`Laser embossing on the soles of shoes,
+making them skid-free.`,
+          image: "/images/shoes.png",
       },
       {
         id: "aesthetic-effect-shoe-foxing",
         title: "Aesthetic effect on shoe foxing through laser embossing",
-        description:
-          "Solutions that make footwear more attractive and appealing to customers. The aesthetic effect of shoe foxing (the upper layer of shoe sides) makes footwear more attractive and appealing to customers. This effect helps shoe manufacturers to rapidly multiply their revenues. In addition, this embossing on shoe foxing creates a higher demand for such footwear in the market.",
-        image: "/images/laser.png",
+        description: `Solutions that make footwear more
+attractive and appealing to customers`,
+          image: "/images/laser.png",
       },
       {
         id: "anti-skidding-foot-mat",
         title: "Anti-skidding pattern on foot mat through laser embossing",
-        description:
-          "3D anti-skidding effect on PVC sheets through laser embossing. This innovation creates a 3D anti-skidding effect on PVC sheets through laser embossing. Such skid-free embossing can be used in the manufacturing of foot mats.",
-        image: "/images/antiskiding.png",
+        description: `3D anti-skidding effect on PVC sheets
+through laser embossing.`,
+           image: "/images/antiskiding.png",
       },
     ],
   },
@@ -206,11 +221,22 @@ export const businesses: BusinessConfig[] = [
     details: [
       {
         photo: "/images/parvez.png",
-        name: "Mr. Parwez Izhar",
+        name: "Mr. Parwe Izhar",
         role: "Executive Vice President - Printing Cylinders Business",
-        summary:
-          "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+        summary:`With nearly three decades of experience
+in strategic planning, project
+management, and business excellence,
+Mr. Izhar currently leads UFlex’s Printing
+cylinders business. His previous roles
+include COO at Fine Chemicals in Nigeria,
+as well as leadership positions at
+Primetech, Avon Crown Caps and
+Containers, Delphi Automotive Systems,
+and TATA Motors. Mr. Izhar holds a
+master’s degree in finance, operations,
+and strategy from XLRI Jamshedpur and is
+a Lean Six Sigma black belt champion.`,
+           cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
       },
     ],
   },
