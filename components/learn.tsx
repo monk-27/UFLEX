@@ -97,7 +97,7 @@ import Image from "next/image";
 
 export default function LearnStatus() {
   return (
-    <section className="relative w-full overflow-hidden px-4 py-1 sm:py-6">
+    <section className="relative w-full overflow-hidden px-4 pb-12">
       {/* Background Image with Subtle Overlay */}
       {/* <div className="absolute inset-0 bg-gradient-to-r from-slate-900/20 via-transparent to-slate-900/20" /> */}
 
