@@ -354,7 +354,9 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                                 onClick={() => setOpen(true)}
                                 className="mt-4 lato-700 text-[14px] text-[#117ABA]  hover:underline"
                             >
-                                Read more →
+                                Read more 
+                <span aria-hidden>↗</span>
+
                             </button>
 
                             {/* ---- Modal ---- */}

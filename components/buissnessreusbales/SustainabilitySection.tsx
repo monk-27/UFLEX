@@ -14,7 +14,7 @@ export function SustainabilitySection({ data }: any) {
   return (
     <div className="pt-12">
     
-    <section className="hidden sm:block bg-[#f7f7f7] h-[430px] sm:h-[450px]">
+    <section className="hidden sm:block bg-[#f7f7f7] h-[430px] sm:h-[480px]">
       <div className="">
         <div className="overflow-hidden grid gap-0 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.2fr)]">
           {/* Text */}
@@ -40,7 +40,7 @@ export function SustainabilitySection({ data }: any) {
           </div>
 
           {/* Image */}
-          <div className="relative h-[200px] md:h-[450px]">
+          <div className="relative h-[200px] md:h-[480px]">
             <Image
               src={data.image}
               alt={data.title}

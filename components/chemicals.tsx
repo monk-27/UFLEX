@@ -247,17 +247,17 @@ type Props = {
 
 
 const ChemicalsComp: React.FC<Props> = ({ business }) => {
-        const [open, setOpen] = useState(false);
-    
+    const [open, setOpen] = useState(false);
+
     return (
         <div>
 
 
             {/* HERO */}
             <section className='bg-white pt-4 sm:pt-12'>
-            <div className="max-w-7xl mx-auto px-4">
-                <div className="space-y-4">
-                    <div className="grid py-4 lg:grid-cols-2 lg:py-1  gap-10">
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="space-y-4">
+                        <div className="grid py-4 lg:grid-cols-2 lg:py-1  gap-10">
                             {/* <div>
                                 <motion.h1
                                     initial={{ opacity: 0, y: 10 }}
@@ -280,37 +280,39 @@ const ChemicalsComp: React.FC<Props> = ({ business }) => {
                                 ))}
                             </div> */}
                             <div>
-                                            <motion.h1
-                                              initial={{ opacity: 0, y: 10 }}
-                                              whileInView={{ opacity: 1, y: 0 }}
-                                              viewport={{ once: true }}
-                                              className="text-[18px] lato-700 text-[#117ABA] md:text-[28px]"
-                                            >
-                                              Chemicals
-                                            </motion.h1>
-                            
-                                            <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
-                                              {packagingData[0].paragraphs[0]}
-                                            </p>
-                            
-                                            <button
-                                              onClick={() => setOpen(true)}
-                                              className="mt-4 lato-700 text-[14px] text-[#117ABA]  hover:underline"
-                                            >
-                                              Read more →
-                                            </button>
-                            
-                                            {/* ---- Modal ---- */}
-                                            <ReadMoreDialog
-                                              open={open}
-                                              onClose={() => setOpen(false)}
-                                              title={packagingData[0].title}
-                                              imageSrc={packagingData[0].image}
-                                              imageAlt={packagingData[0].title}
-                                              paragraphs={packagingData[0].paragraphs}
-                                            />
-                            
-                                          </div>
+                                <motion.h1
+                                    initial={{ opacity: 0, y: 10 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    className="text-[18px] lato-700 text-[#117ABA] md:text-[28px]"
+                                >
+                                    Chemicals
+                                </motion.h1>
+
+                                <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
+                                    {packagingData[0].paragraphs[0]}
+                                </p>
+
+                                <button
+                                    onClick={() => setOpen(true)}
+                                    className="mt-4 lato-700 text-[14px] text-[#117ABA]  hover:underline"
+                                >
+                                    Read more
+                                    <span aria-hidden>↗</span>
+
+                                </button>
+
+                                {/* ---- Modal ---- */}
+                                <ReadMoreDialog
+                                    open={open}
+                                    onClose={() => setOpen(false)}
+                                    title={packagingData[0].title}
+                                    imageSrc={packagingData[0].image}
+                                    imageAlt={packagingData[0].title}
+                                    paragraphs={packagingData[0].paragraphs}
+                                />
+
+                            </div>
 
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.98 }}
@@ -329,8 +331,8 @@ const ChemicalsComp: React.FC<Props> = ({ business }) => {
                                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
                             </motion.div>
                         </div>
-                                            <SimpleCarousel heading="Our Offerings" items={SliderItems} imageHeight={280}  />
-                        
+                        <SimpleCarousel heading="Our Offerings" items={SliderItems} imageHeight={280} />
+
 
                         {business.innovations && (
                             <InnovationSlider
