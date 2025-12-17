@@ -44,11 +44,11 @@ export default function ReusablePropsCOMMComp({
 
         {/* ===== TEXT - Right on Desktop, Below Image on Mobile ===== */}
         <div className="order-2 lg:order-2 lg:flex lg:flex-col lg:justify-center">
-          <h3 className="text-2xl sm:text-3xl lg:text-4xl manrope-700 text-[#117ABA] leading-tight">
+          <h3 className="text-[20px] sm:text-[28px] lato-700 text-[#117ABA] leading-tight">
             {heading}
           </h3>
 
-          <p className="mt-4 text-base sm:text-lg text-slate-600 manrope-500 max-w-2xl">
+          <p className="mt-4 text-base sm:text-lg text-slate-600 lato-500 max-w-2xl">
             {introText}
           </p>
 
@@ -59,10 +59,10 @@ export default function ReusablePropsCOMMComp({
                 <div className="mt-2 w-8 h-8 flex-shrink-0" aria-hidden="true" />
 
                 <div className="flex-1">
-                  <h4 className="text-xl sm:text-2xl manrope-600 text-slate-700 leading-snug">
+                  <h4 className="text-[18px] sm:text-[24px] lato-600 text-slate-700 leading-snug">
                     {item.title}
                   </h4>
-                  <p className="mt-2 text-slate-500 manrope-400 text-base leading-relaxed">
+                  <p className="mt-2 text-slate-500 lato-400 text-[12px] sm:text-[16px] leading-relaxed">
                     {item.description}
                   </p>
                 </div>

@@ -24,27 +24,92 @@ export default function Page() {
                     items={[
                         {
                             title: "Biaxially Oriented Polyethylene Terepthalate (BOPET) films",
-                            description: "A type of polyester film made through biaxial orientation,leading to a thin, transparent, and uniform thermoplastic film.",
+                            description: `BOPET is a type of polyester film made
+through biaxial orientation, which is the
+most preferred technology as it leads to
+improved properties, forming a thin,
+transparent, and uniform thermoplastic
+film. BOPET exhibits superior mechanical
+properties, improved resistance to
+chemicals, good barrier to oxygen, excellent
+receptivity to surface treatment and
+coatings, and high resistance to abrasion.
+BOPET films display higher performance
+characteristics, including high tensile
+strength, transparency, and barrier
+protection.`,
                         },
                         {
-                            title: "Biaxially Oriented Polyethylene (BOPET) films   ",
-                            description: "An ideal option for packaging food, beverages, and electronics due to this films' transparency, high rigidity, heat stability, and low cost.",
+                            title: "Biaxially-Oriented Polypropylene (BOPP) films ",
+                            description: `It is a thin, polypropylene film, having
+excellent tensile strength, optical clarity,
+and superior moisture resistance. The
+transparency, high rigidity, heat stability,
+and low cost of BOPP sheets make them an
+ideal option for packaging food, beverages,
+electronics. BOPP films are resistant against
+oils, grease, dangerous chemicals, and
+pollution. It is unaffected by moisture and
+does not shrink or wrinkle upon external
+environment changes.`,
                         },
                         {
                             title: "Cast Polypropylene (CPP) films ",
-                            description: "A film manufactured through a cast extrusion process in which polypropylene resins are melted and extruded into a flat film. ",
+                            description: `CPP, or Cast Polypropylene, is manufactured
+through a cast extrusion process in which
+polypropylene resins are melted and
+extruded into a flat film. The film is then
+biaxially oriented—stretched in both the
+machine and transverse
+directions—enhancing its mechanical and
+optical properties. This process imparts
+excellent clarity, sealability, and strength,
+making CPP films ideal for a wide range of
+packaging applications.`,
                         },
                         {
                             title: "Metalized films",
-                            description: "Decorative films and foils are developed with advanced metallization technology, depositing a thin metal layer onto the substrate."
-                        },
+                            description: `UFlex’s decorative films and foils, developed
+using advanced metallization technology,
+involve the deposition of a thin layer of
+metal—typically aluminum—onto a film or
+foil substrate. This process not only
+enhances the material’s appearance but
+also imparts valuable functional properties,
+making it ideal for a wide range of
+applications such as packaging, labels, and
+other decorative finishes. These films offer
+excellent barrier properties against oxygen
+and water vapor, making them especially
+suitable for packaging products that require
+extended shelf life. Additionally, they are
+widely used in the textile and capacitor
+industries due to their aesthetic appeal and
+performance advantages.`},
                         {
 
                             title: "AlOx-coated films",
-                            description: "Films with a transparent aluminium oxide layer that provide strong moisture and gas barriers while keeping the product visible."
+                            description: `UFlex’s AlOx coated films feature a thin,
+transparent layer of aluminum oxide that
+offers excellent barrier properties against
+moisture and gases—comparable to
+aluminum foils and metalized films—while
+keeping the packaged product visible.
+Unlike traditional materials, these films are
+microwavable and retortable, making them
+ideal for processed and ready-to-eat foods.
+As one of the few manufacturers equipped
+with this advanced technology, UFlex
+delivers high-barrier, transparent packaging
+solutions with enhanced functionality.`
                         }, {
                             title: "Speciality films",
-                            description: "A range of films that provide value addition for converters by enhancing the quality, performance, and functionality of the final packaging."
+                            description: `Our diverse range of specialty films delivers
+true value addition for converters by
+enhancing the quality, performance, and
+functionality of the final
+packaging—creating a win-win solution for
+both brands and consumers.`
                         }
                     ]}
                 />

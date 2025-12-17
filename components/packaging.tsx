@@ -26,38 +26,73 @@ import { ReadMoreDialog } from './expandabletext'
 
 const SliderItems: any = [
     {
-        title: "BOPET Film",
+        title: "Biaxially Oriented Polyethylene Terepthalate (BOPET) films",
         img: "/images/bopet.png",
-        desc: "A type of polyester film made through biaxial orientation,leading to a thin, transparent, and uniform thermoplastic film.",
+        desc: `Printing and lamination,
+metallizing, industrial
+coating, thermal
+lamination, hot stamping,
+cable wrapping, release
+film, siliconized coating.`,
         dynamiclink: "/packaging-films-business/packaging-our-offerings"
     },
     {
-        title: "BOPP Film",
+        title: "Biaxially-Oriented Polypropylene (BOPP) films",
         img: "/images/bopp.png",
         dynamiclink: "/packaging-films-business/packaging-our-offerings",
 
-        desc: "An ideal option for packaging food, beverages, and electronics due to this films' transparency, high rigidity, heat stability, and low cost.",
+        desc: `Release films,
+encapsulation, photo
+albums, overwraps (CDs,
+cigarettes, cartons),
+packaging and conversion,
+synthetic papers, cable
+overwrap, biscuit/
+sandwich overwrap, inner
+wrap.`,
     },
     {
-        title: "CPP Film",
+        title: "Cast Polypropylene (CPP) films",
         img: "/images/cpp.png",
         dynamiclink: "/packaging-films-business/packaging-our-offerings",
 
-        desc: "A film manufactured through a cast extrusion process in which polypropylene resins are melted and extruded into a flat film.",
+        desc: `Bakery products,
+packaging and conversion,
+food wraps, candy/
+confectionery wrap,
+stationery packaging,
+deep freeze application.`,
     },
     {
         title: "Metallized Film",
         img: "/images/metallized.png",
         dynamiclink: "/packaging-films-business/packaging-our-offerings",
 
-        desc: "Decorative films and foils are developed with advanced metallization technology, depositing a thin metal layer onto the substrate.",
+        desc: `Converting and
+laminating, synthetic zari and metallic yarn,
+electronic goods
+packaging, insulation
+ducting, decorative
+applications, lidding
+applications, embossing
+and holograms, sandwich
+lamination, twist wrap
+and confectionery and
+many more.`,
     },
-    {
-        title: "PCR Film",
-        img: "/images/pcr.png",
+{
+        title: "AlOx-coated films",
+        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-06130321303.jpg",
         dynamiclink: "/packaging-films-business/packaging-our-offerings",
 
-        desc: "Films with a transparent aluminium oxide layer that provide strong moisture and gas barriers while keeping the product visible.",
+        desc: "",
+    },
+    {
+        title: "Speciality films",
+        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item4-06130331303.jpg",
+        dynamiclink: "/packaging-films-business/packaging-our-offerings",
+
+        desc: "",
     },
 
 
@@ -69,13 +104,23 @@ const packagingData = [
         title: 'Packaging Films & PET Resin',
         image: '/images/resin.png',
         paragraphs: [
-            `UFlex’s Packaging Films business, under the Flex Films brand, is a global leader offering innovative and sustainable packaging solutions, including BOPP, BOPET, CPP, specialty, and 100% PCR PET films, with manufacturing across 9 countries and presence in 150+ markets.`,
-
-            `All our manufacturing facilities are equipped with advance technologies and adhere to the highest global quality and safety standards. Our plants are ISO 9001 (Quality Management), ISO 14001 (Environmental Management), ISO 45001 (Occupational Health and Safety), and HACCP (Hazard Analysis and Critical Control Points) certified, ensuring consistent quality, environmental responsibility, and food-grade safety across our operations. These certifications reflect our unwavering commitment to excellence, compliance, and sustainability—reinforcing the trust our customers place in us for their most critical packaging needs.
-
-Further expanding its global manufacturing footprint, UFlex commissioned a virgin PET chips facility in Egypt in 2025, with an installed capacity of 216,000 MTPA, further strengthening the integrated supply chain. The company also operates a PCR (Post-Consumer Recyclate) PET chips plant in Egypt, reinforcing its commitment to sustainability and circular economy practices.`,
-
-            `UFlex manufactures high-quality Polyethylene Terephthalate (PET) resins, known for their high gloss, crack resistance, and excellent thermoplastic properties. These resins are widely used in the production of PET films, bottles, and a range of other applications across industries such as packaging and textiles, valued for their versatility, durability, and recyclability. UFlex commissioned its greenfield PET chips manufacturing facility at the Panipat plant on March 31, 2024, with an annual capacity of 168,000 MTPA. The unit produces poly condensed polyester chips, which serve as a crucial raw material for BOPET film and PET bottle production, supporting the needs of the packaging industry. This enhances quality control, ensures steady raw material availability, and promotes operational resilience, even in a volatile global environment.`,
+            `UFlex’s Packaging Films business, operating globally under the flagship brand Flex Films, is a leader in
+delivering innovative, sustainable, and high-performance packaging films for a wide range of
+industries. As India’s largest multinational flexible packaging and solutions company and the world’s
+second-largest supplier of thin polyester (BOPET) films, we offer a comprehensive portfolio that
+includes BOPP, BOPET, CPP, metallized, AlOx-coated, specialty, and 100% PCR-content PET films
+(Asclepius™).`,
+`In addition, we manufacture PET chips to ensure consistent raw material quality and
+supply for diverse industry needs. With world-class manufacturing facilities across India, the UAE,
+Mexico, Egypt, Poland, the USA, CIS, Hungary, and Nigeria, we serve customers in over 150 countries
+with customized, high-quality packaging films that meet the evolving demands of global markets.`,
+`All our manufacturing facilities are equipped with advance technologies and adhere to the highest
+global quality and safety standards. Our plants are ISO 9001 (Quality Management), ISO 14001
+(Environmental Management), ISO 45001 (Occupational Health and Safety), and HACCP (Hazard
+Analysis and Critical Control Points) certified, ensuring consistent quality, environmental
+responsibility, and food-grade safety across our operations. These certifications reflect our
+unwavering commitment to excellence, compliance, and sustainability—reinforcing the trust our
+customers place in us for their most critical packaging needs.`
         ],
     },
 
@@ -134,69 +179,222 @@ export const businesses: BusinessConfig[] = [
         innovations: {
             heading: "Business Highlights and Innovations",
             items: [
-                {
-                    id: "f-mex-m",
-                    title: "F-MEX-M",
-                    description:
-                        "F-ETS is an advanced one-side MST-coated transparent BOPET film, specially engineered for secondary packaging of pharmaceutical tablets and pills. Developed using proprietary technology, it serves as a superior alternative to traditional cellophane-coated films for strip-to-paper sealing applications.",
-                    image: "/images/fmex.png",
-                },
+              
                 {
                     id: "f-mex-m-2",
                     title: "F-ETS: One side MST coated transparent BOPET film",
-                    description:
-                        "F-ETS is an advanced one-side MST-coated transparent BOPET film, specially engineered for secondary packaging of pharmaceutical tablets and pills. Developed using proprietary technology, it serves as a superior alternative to traditional cellophane-coated films for strip-to-paper sealing applications.",
-                    image: "/images/fets.png",
+                    description:`F-ETS is an advanced one-side MST-coated
+transparent BOPET film, specially engineered
+for secondary packaging of pharmaceutical
+tablets and pills. Developed using proprietary
+technology, it serves as a superior alternative
+to traditional cellophane-coated films for strip-
+to-paper sealing applications. The film offers
+excellent tearing properties in both machine
+and transverse directions, along with a water-
+based coating, calibrated heat-seal strength
+with paper, and high gloss with good
+transparency. Ideal for tablet strip packaging,
+the MST-coated side ensures easy fiber tearing
+when sealed with pharmaceutical-grade
+wrapper paper. It is also suitable for single-
+web lamination with aluminum foil, with the
+untreated side laminated to foil and the MST-
+coated side used for sealing.`, image: "/images/fets.png",
+                },
+                  {
+                    id: "f-mex-m",
+                    title: "F-MEX-M",
+                    description:`F-MEX-M is a high-performance metallized
+BOPET film designed to offer excellent
+versatility across a wide range of packaging
+applications. With optical densities ranging
+from 2.2 to 2.8, it provides customizable
+barrier properties to suit diverse
+requirements. Engineered for both-side
+extrusion coating, this film eliminates the need
+for additional priming and ensures no solvent
+emissions or residuals during the coating
+process. Its strong adhesion to extruded
+polyethylene without primers and suitability
+for hot-fill applications make F-MEX-M an ideal
+choice for brands seeking efficiency,
+sustainability, and performance in their
+packaging solutions.`,
+                    image: "/images/fmex.png",
                 },
                 {
                     id: "b-tcm-m",
                     title: "B-TCM-M: Ultra-thin high-barrier metallized BOPP film",
-                    description:
-                        "B-TCM-M is an innovative, non-heat sealable metallized BOPP film developed for sustainable and high-performance packaging applications. At just 8 microns, it is the thinnest metallized BOPP film available, offering low GSM and high linear mileage- making it a resource-efficient choice.",
-                    image: "/images/btcm.png",
+                    description:`B-TCM-M is an innovative, non-heat sealable
+metallized BOPP film developed for
+sustainable and high-performance packaging
+applications. At just 8 microns, it is the
+thinnest metallized BOPP film available,
+offering low GSM and high linear
+mileage—making it a resource-efficient choice.
+With an optical density of 2.8, the film delivers
+outstanding barrier protection against
+moisture, oxygen, and light, while also offering
+excellent metal brilliance and adhesion. Its superior adhesive bonding makes it ideal for
+cold release applications and paperboard
+lamination, where performance and aesthetics
+are equally critical.`,
+                           image: "/images/btcm.png",
+                },
+                {
+                    id: "B-TDF:",
+                    title: `B-TDF: Heat sealable
+transparent BOPP
+film for heavy-duty
+packaging`,
+                    description:`B-TDF is a high-performance, heat sealable
+transparent BOPP film engineered to meet the
+rigorous demands of heavy-duty packaging
+applications. It features a diamond COF of 0.80
+on the sealing side for consistent performance
+and a treated reverse surface that ensures
+excellent printability and strong lamination.
+With superior extrusion bond, dimensional
+stability, and optical clarity, B-TDF is an ideal
+choice for packaging pet foods, rice bags, and
+other heavy-duty products requiring durability
+and visual appeal.`,
+                        image: "/images/fhsa.png",
                 },
                 {
                     id: "f-hsa",
                     title: "F-HSA: Heat sealable anti-fogtransparent BOPET film",
-                    description:
-                        "F-HSA is a high-performance transparent BOPET film designed with a heat sealable anti-fog surface on one side and an untreated surface on the other. Its exceptional clarity, transparency, and reliable sealing capabilities make it ideal for food packaging applications.",
-                    image: "/images/fhsa.png",
+                    description:`F-HSA is a high-performance transparent
+BOPET film designed with a heat sealable anti-
+fog surface on one side and an untreated
+surface on the other. Its exceptional clarity,
+transparency, and reliable sealing capabilities
+make it ideal for food packaging applications.
+The film offers excellent hot and cold anti-fog
+performance and can seal to itself as well as to
+substrates like APET, CPET, PVDC, and PVC. F-
+HSA is particularly well-suited for food tray
+sealing and tack seal applications, ensuring
+product visibility and freshness throughout the
+packaging lifecycle.`,
+                       image: "/images/fhsa.png",
                 },
                 {
                     id: "b-dsc-aa",
                     title: "B-DSC-AA – Both side acrylic coated BOPP film",
-                    description:
-                        "This high-performance packaging film is engineered for modern flexible packaging needs, offering excellent heat sealability, hot-tack, and compatibility with lap/fin seals and PVDC-coated films. Ideal for monolayer pouches, it ensures tamper-proof, transparent packaging with strong aroma and flavor barriers.",
-                    image: "/images/bdsc.png",
+                    description:`This high-performance packaging film is
+engineered for modern flexible packaging
+needs, offering excellent heat sealability, hot-
+tack, and compatibility with lap/fin seals and
+PVDC-coated films. Ideal for monolayer
+pouches, it ensures tamper-proof, transparent
+packaging with strong aroma and flavor
+barriers. With high clarity, gloss, and excellent
+ink and lamination adhesion, it&#39;s perfect for
+formats like stand-up and pillow pouches.
+Common applications include baby food, snacks, biscuits, tobacco, personal care items,
+confectionery, tea, and other fragrance-rich
+products.`,
+                         image: "/images/bdsc.png",
                 },
                 {
                     id: "b-dsc-al",
                     title: "B-DSC-AL – Low SIT and acrylic coated BOPP film",
-                    description:
-                        "This is an advanced BOPP film coated with acrylic and a low-temperature seal layer that activates at just 65°C. Engineered for high-performance packaging, this film offers exceptional low-temperature sealability and hot-tack strength on the coated side, ensuring strong seals even under minimal heat.",
-                    image: "/images/bdscda.png",
+                    description: `This is an advanced BOPP film coated with
+acrylic and a low-temperature seal layer that
+activates at just 65°C. Engineered for high-
+performance packaging, this film offers
+exceptional low-temperature sealability and
+hot-tack strength on the coated side, ensuring
+strong seals even under minimal heat. It
+features an excellent barrier to flavor and
+aroma, a wide sealing range, and is suitable for
+monolayer pouch applications. Designed for
+“see-through packaging”, it is ideal for use in
+stand-up pouches (SUP) and pillow pouches,
+offering high clarity, gloss, and excellent ink
+and lamination adhesion. Its end-use
+applications include overwraps for
+confectionery, dairy products, ice cream,
+chocolates, biscuits, cookies, crackers, and
+other bakery items, making it a versatile
+solution for modern packaging needs.`,
+                         image: "/images/bdscda.png",
                 },
                 {
                     id: "b-dsc-ds",
                     title: "B-DSC-DA – High barrier PVDC-acrylic coated BOPP film",
-                    description:
-                        "B-DSC-DA is a high-performance BOPP film with one side PVDC and the other side acrylic coating, designed to meet the evolving needs of flexible packaging. This film delivers outstanding barrier performance, with an oxygen transmission rate (OTR) of less than 15 cc/m²/day and water vapor transmission rate (WVTR) under 5 gm/m²/day, while maintaining excellent clarity.",
-                    image: "/images/bdscas.png",
+                    description:`B-DSC-DA is a high-performance BOPP film
+with one side PVDC and the other side acrylic
+coating, designed to meet the evolving needs
+of flexible packaging. This film delivers
+outstanding barrier performance, with an
+oxygen transmission rate (OTR) of less than 15
+cc/m²/day and water vapor transmission rate
+(WVTR) under 5 gm/m²/day, while maintaining
+excellent clarity. It ensures superior heat
+sealability across combinations like acrylic-to-
+acrylic, PVDC-to-PVDC, and acrylic-to-PVDC,
+making it suitable for both fin and lap seal
+applications. Ideal for monolayer pouch
+structures, it maintains its barrier integrity
+even under high humidity. Designed for see-
+through packaging formats such as stand-up
+pouches (SUP) and pillow pouches, it also
+offers excellent aroma, oxygen, and moisture
+barrier properties, along with hot tack
+strength, seal integrity, machinability, and
+printability. With high gloss and transparency,
+B-DSC-DA is perfectly suited for food
+packaging—especially for oxygen-sensitive and
+high-fat content products, and is compatible
+with HFFS and VFFS machinery. End-use applications include dairy products, biscuits,
+cookies, crackers, and bakery items, as well as
+various overwrapping needs.`,
+                         image: "/images/bdscas.png",
                 },
                 {
                     id: "b-dsc-dl",
                     title: "B-DSC-DL: High barrier PVDC coated BOPP film",
-                    description:
-                        "A specialized BOPP film featuring one side PVDC coating and the other side low temperature seal (LTS) coating, which activates at just 65°C. Engineered for monolayer pouch applications, this film delivers outstanding oxygen barrier properties (<15 cc/m²/day) while maintaining excellent clarity. It offers superior low-temperature sealability and hot tack performance on the LTS side.",
-                    image: "/images/bdscdl.png",
+                    description:`A specialized BOPP film featuring one side
+PVDC coating and the other side low
+temperature seal (LTS) coating, which activates
+at just 65°C. Engineered for monolayer pouch
+applications, this film delivers outstanding
+oxygen barrier properties (&lt;15 cc/m²/day)
+while maintaining excellent clarity. It offers
+superior low-temperature sealability and hot
+tack performance on the LTS side. The film
+retains its barrier property in high humidity,
+making it ideal for “see-through” packaging
+formats such as stand-up pouches (SUP) and
+pillow pouches. With excellent gas, flavor, and
+aroma barrier properties, B-DSC-DL also boasts
+excellent optical clarity, strong compatibility
+with normal ink systems and water-based
+coatings, and brings substantial improvement
+in fat migration. This film is highly suitable for
+plain and printed lamination as well as
+overwrapping applications, with end uses
+including biscuits, cookies, crackers, crisps,
+snacks, dry foods, beverage powders,
+confectionery items, and pet food.`,
+                         image: "/images/bdscdl.png",
                 },
             ],
         },
         sustainability: {
             title: "Sustainability",
             description:
-                "Single-pellet solution: Pioneering innovation in recyclable packaging. Our breakthrough FSSAI-compliant single-pellet solution enables the incorporation of recycled PET (rPET) in food and beverage packaging, combining recycled and virgin PET into a single, high-purity pellet with excellent strength, stability and clarity.",
-            image: "/images/sus.png",
+            `At UFlex Packaging films business, sustainability is deeply embedded in our innovation journey. We
+are committed to minimizing our environmental footprint through a range of focused initiatives that
+include lowering energy consumption, adopting renewable resources, increasing the use of post-
+consumer recyclates, reducing production waste, reusing recyclable materials, and recovering
+energy from non-recyclable waste. These strategies reflect our dedication to building a circular
+economy and delivering advanced packaging solutions that are both high-performing and
+environmentally responsible.`,
+                  image: "/images/sus.png",
             linkLabel: "Know more",
             linkHref: "#",
         },
