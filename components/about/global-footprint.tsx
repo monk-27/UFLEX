@@ -186,7 +186,7 @@ const GlobalFootprint = () => {
 
   return (
     <section className="mt-[30px] px-4 py-0 text-center sm:mt-8 sm:py-10 md:px-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="">
 
         <h2 className="text-[24px] lato-400 text-[#117ABA] md:text-[28px] text-start">
           Our Global Footprint
@@ -197,11 +197,11 @@ const GlobalFootprint = () => {
         </p>
 
         <div className="mt-12 flex items-center justify-center">
-          <Image src="/images/map.png" width={100} height={100} priority alt="" className="object-contain w-[1400px] h-[487px]"/>
+          <Image src="/images/maps.png" width={100} height={100} priority alt="" className="object-cover sm:object-cover w-[1800px] sm:w-[1800px] h-[100px] sm:h-[617px]"/>
         </div>
 
         {/* CATEGORY WISE CARDS */}
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 mt-12 grid md:grid-cols-2 gap-12">
+        <div className=" w-full px-0 sm:px-0 mt-12 grid md:grid-cols-2 gap-12">
           {/* INDIA */}
           <div className=" bg-gray-100 p-8 rounded-lg">
             <h3 className="text-2xl lato-700 mb-6 text-[#117ABA]">
