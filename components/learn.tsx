@@ -149,7 +149,7 @@ export default function LearnStatus() {
               width={100}
               height={100}
 
-              className="w-[550px] h-[338px] object-cover"
+              className="w-full h-[338px] object-contain sm:object-fill"
               priority
             />
             {/* Optional: Overlay Text */}
