@@ -21,17 +21,17 @@ export function HeroVideo() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2 }}
       >
-        <source src="/video/video.mp4" type="video/mp4" />
+        <source src="/video/herovideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </motion.video>
 
       {/* Dark Overlay */}
-      <motion.div
-        className="absolute inset-0 bg-black bg-opacity-100"
+      {/* <motion.div
+        className="absolute inset-0 bg-black bg-opacity-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.5 }}
         transition={{ duration: 1 }}
-      ></motion.div>
+      ></motion.div> */}
 
       {/* Text Content with Staggered Animation */}
       <motion.div
