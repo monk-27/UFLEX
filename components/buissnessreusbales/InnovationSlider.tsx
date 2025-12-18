@@ -49,7 +49,7 @@ export function InnovationSlider({ heading, items }: any) {
   return (
     <section className="bg-[#f7f7f7] relative w-screen left-1/2 right-1/2 -mx-[50vw] pt-12 mt-12 ">
       <div className="max-w-7xl mx-auto ">
-        <h2 className="pt-8 lato-700 text-[22px] md:text-[28px] text-[#117ABA] mb-8">
+        <h2 className="pt-8 lato-400 text-[22px] md:text-[28px] text-[#117ABA] mb-8">
           {heading}
         </h2>
 
