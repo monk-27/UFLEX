@@ -21,7 +21,7 @@ export function HeroVideo() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2 }}
       >
-        <source src="/video/herovideo.mp4" type="video/mp4" />
+        <source src="/video/hero.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </motion.video>
 
