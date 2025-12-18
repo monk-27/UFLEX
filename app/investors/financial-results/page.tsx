@@ -120,37 +120,62 @@ const quarterlyConsolidated: DocItem[] = [
   { text: "Financial results for the Quarter ended 31.12.2018", link: "https://www.uflexltd.com/pdf/financials/Consolidated/Uflex-Unaudited-CONS-31122018.pdf" },
   { text: "Financial results for the Quarter ended 30.09.2018", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX-RESULTS-30SEP2018.pdf" },
   { text: "Financial results for the Quarter ended 30.06.2018", link: "https://www.uflexltd.com/pdf/financials/Consolidated/Uflex-Unaudited-Cons-30062018.pdf" },
-  { text: "Financial results for the Quarter and Year ended 31.03.2018 (Audited)", link: "" },
+  { text: "Financial results for the Quarter and Year ended 31.03.2018 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX-AUDITED-CONSOLIDATED-RESULTS-31ST-MARCH-2018.pdf" },
 
-  { text: "Financial results for the Quarter ended 31.12.2017", link: "" },
-  { text: "Financial results for the Quarter ended 30.09.2017", link: "" },
-  { text: "Financial results for the Quarter ended 30.06.2017", link: "" },
-  { text: "Financial results for the Quarter and Year ended 31.03.2017 (Audited)", link: "" },
+  { text: "Financial results for the Quarter ended 31.12.2017", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX-UNAUDITED-CONS-31DEC2017.pdf" },
+  { text: "Financial results for the Quarter ended 30.09.2017", link: "https://www.uflexltd.com/pdf/financials/Consolidated/Uflex-Unaudited-Cons-30092017.pdf" },
+  { text: "Financial results for the Quarter ended 30.06.2017", link: "https://www.uflexltd.com/pdf/financials/Consolidated/Uflex-Unaudited-Cons-30062017.pdf" },
+  { text: "Financial results for the Quarter and Year ended 31.03.2017 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX-AUDITED-CONSOLIDATED-RESULTS-31ST-MARCH-2017.pdf" },
 
-  { text: "Financial results for the Quarter ended 31.12.2016", link: "" },
-  { text: "Financial results for the Quarter ended 30.09.2016", link: "" },
-  { text: "Financial results for the Quarter ended 30.06.2016", link: "" },
-  { text: "Financial results for the year ended 31.03.2016 (Audited)", link: "" },
+  { text: "Financial results for the Quarter ended 31.12.2016", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited_31122016.pdf" },
+  { text: "Financial results for the Quarter ended 30.09.2016", link: "https://www.uflexltd.com/pdf/financials/Consolidated/Unaudited_30092016.pdf" },
+  { text: "Financial results for the Quarter ended 30.06.2016", link: "https://www.uflexltd.com/pdf/financials/Consolidated/Unaudited_30062016.pdf" },
+  { text: "Financial results for the year ended 31.03.2016 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Consolidated/Uflex-Aud-Res-Cons-31032016.pdf" },
 
-  { text: "FINANCIAL RESULTS FOR THE QUARTER ENDED 31.12.2015", link: "" },
-  { text: "Financial results for the Quarter ended 30.09.2015", link: "" },
-  { text: "Financial results for the Quarter ended 30.06.2015", link: "" },
-  { text: "Financial results for the year ended 31.03.2015 (Audited)", link: "" },
+  { text: "FINANCIAL RESULTS FOR THE QUARTER ENDED 31.12.2015", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited-311215.pdf" },
+  { text: "Financial results for the Quarter ended 30.09.2015", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited30092015.pdf" },
+  { text: "Financial results for the Quarter ended 30.06.2015", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited300615.pdf" },
+  { text: "Financial results for the year ended 31.03.2015 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Consolidated/audited_310315.pdf" },
 
-  { text: "Financial results for the quarter ended 31.12.2014", link: "" },
-  { text: "Financial results for the quarter ended 30.09.2014", link: "" },
-  { text: "Financial results for the quarter ended 30.06.2014", link: "" },
-  { text: "Financial results for the year ended 31.03.2014 (Audited)", link: "" },
+  { text: "Financial results for the quarter ended 31.12.2014", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited_311214.pdf" },
+  { text: "Financial results for the quarter ended 30.09.2014", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited_300914.pdf" },
+  { text: "Financial results for the quarter ended 30.06.2014", link: "https://www.uflexltd.com/pdf/financials/Consolidated/audited300614.pdf" },
+  { text: "Financial results for the year ended 31.03.2014 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Consolidated/audited_310314.pdf" },
 
-  { text: "Financial results for the quarter ended 31.12.2013", link: "" },
-  { text: "Financial results for the quarter ended 30.09.2013", link: "" },
-  { text: "Financial results for the quarter ended 30.06.2013", link: "" },
-  { text: "Financial results for the year ended 31.03.2013 (Audited)", link: "" },
+  { text: "Financial results for the quarter ended 31.12.2013", link: "https://www.uflexltd.com/pdf/financials/Consolidated/31122013-Consolidated%20Financial%20Results.pdf" },
+  { text: "Financial results for the quarter ended 30.09.2013", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited_300913.pdf" },
+  { text: "Financial results for the quarter ended 30.06.2013", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited300613.pdf" },
+  { text: "Financial results for the year ended 31.03.2013 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Consolidated/audited_310313ad.pdf" },
 
-  { text: "Financial results for the quarter ended 31.12.2012", link: "" },
-  { text: "Financial results for the quarter ended 30.09.2012", link: "" },
-  { text: "Financial results for the quarter ended 30.06.2012", link: "" },
-  { text: "Financial results for the year ended 31.03.2012 (Audited)", link: "" },
+  { text: "Financial results for the quarter ended 31.12.2012", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited311212.pdf" },
+  { text: "Financial results for the quarter ended 30.09.2012", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited300912.pdf" },
+  { text: "Financial results for the quarter ended 30.06.2012", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited300612.pdf" },
+  { text: "Financial results for the year ended 31.03.2012 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Consolidated/audited_310312a.pdf" },
+
+  { text: "Financial results for the quarter ended 31.03.2012", link: "https://www.uflexltd.com/pdf/financials/Consolidated/Unaudited310312.pdf" },
+  { text: "Financial results for the quarter ended 31.12.2011", link: "https://www.uflexltd.com/pdf/financials/Consolidated/Unaudited311211.pdf" },
+  { text: "Financial results for the quarter ended 30.09.2011", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited300911.pdf" },
+  { text: "Financial results for the quarter ended 30.06.2011", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited300611.pdf" },
+  { text: "Financial results for the quarter ended 31.03.2011", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited310311.pdf" },
+
+  { text: "Financial results for the quarter ended 31.12.2010", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited311210.pdf" },
+  { text: "Financial results for the quarter ended 30.09.2010", link: "https://www.uflexltd.com/pdf/financials/Consolidated/Unaudited300910.pdf" },
+  { text: "Financial results for the quarter ended 30.06.2010", link: "https://www.uflexltd.com/pdf/financials/Consolidated/Unaudited300610.pdf" },
+  { text: "Financial results for the quarter ended 31.03.2010", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited310310.pdf" },
+
+  { text: "Financial results for the quarter ended 31.12.2009", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited311209.pdf" },
+  { text: "Financial results for the quarter ended 30.09.2009", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited300909.pdf" },
+  { text: "Financial results for the quarter ended 30.06.2009", link: "https://www.uflexltd.com/pdf/financials/Consolidated/Unaudited300609.pdf" },
+  { text: "Financial results for the quarter ended 31.03.2009", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited310309.pdf" },
+
+  { text: "Financial results for the quarter ended 31.12.2008", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited311208.pdf" },
+  { text: "Financial results for the quarter ended 30.09.2008", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited300908.pdf" },
+  { text: "Financial results for the quarter ended 30.06.2008", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited300608.pdf" },
+  { text: "Financial results for the quarter ended 31.03.2008", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited310308.pdf" },
+
+  { text: "Financial results for the quarter ended 31.12.2007", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited311207.pdf" },
+  { text: "Financial results for the quarter ended 30.09.2007", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited300907.pdf" },
+  { text: "Financial results for the quarter ended 30.06.2007", link: "https://www.uflexltd.com/pdf/financials/Consolidated/unaudited300607.pdf" },
 ];
 
 /* Quarterly Results – Standalone */
@@ -182,7 +207,93 @@ const quarterlyStandalone: DocItem[] = [
   {
     text: "Financial results for the Quarter and Year ended 31.03.2024 (Audited)",
     link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_STA_AUDITED_RESULTS_31MAR2024.pdf",
+
   },
+  { text: "Financial results for the Quarter ended 31.12.2023", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_31122023.pdf" },
+  { text: "Financial results for the Quarter ended 30.09.2023", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_30092023.pdf" },
+  { text: "Financial results for the Quarter ended 30.06.2023", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_30062023.pdf" },
+  { text: "Financial results for the Quarter and Year ended 31.03.2023 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_STA_AUDITED_RESULTS_31MAR2023.pdf" },
+
+  { text: "Financial results for the Quarter ended 31.12.2022", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_31DEC2022.pdf" },
+  { text: "Financial results for the Quarter ended 30.09.2022", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_30092022.pdf" },
+  { text: "Financial results for the Quarter ended 30.06.2022", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_30062022.pdf" },
+  { text: "Financial results for the Quarter and Year ended 31.03.2022 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_STA_AUDITED_RESULTS_31MAR2022.pdf" },
+
+  { text: "Financial results for the Quarter ended 31.12.2021", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_31122021.pdf" },
+  { text: "Financial results for the Quarter ended 30.09.2021", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_30092021.pdf" },
+  { text: "Financial results for the Quarter ended 30.06.2021", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_30062021.pdf" },
+  { text: "Financial results for the Quarter and Year ended 31.03.2021 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_STA_AUDITED_RESULTS_31MAR2021.pdf" },
+
+  { text: "Financial results for the Quarter ended 31.12.2020", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLYRESULTS_STAN_31122020.pdf" },
+  { text: "Financial results for the Quarter ended 30.09.2020", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLYRESULTS_STAN_30092020.pdf" },
+  { text: "Financial results for the Quarter ended 30.06.2020", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_QTR_UARES_STA_30062020.pdf" },
+  { text: "Financial results for the Quarter and Year ended 31.03.2020 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX-AUDITED-STANDALONE-RESULTS-31ST-MARCH-2020.pdf" },
+
+  { text: "Financial results for the Quarter ended 31.12.2019", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_STA_31DEC2019.pdf" },
+  { text: "Financial results for the Quarter ended 30.09.2019", link: "https://www.uflexltd.com/pdf/financials/Standalone/Uflex-Unaudited-STA-30092019.pdf" },
+  { text: "Financial results for the Quarter ended 30.06.2019", link: "https://www.uflexltd.com/pdf/financials/Standalone/Uflex-Unaudited-STA-30062019.pdf" },
+  { text: "Financial results for the Quarter and Year ended 31.03.2019 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX-AUDITED-STANDALONE-RESULTS-31ST-MARCH-2019.pdf" },
+
+  { text: "Financial results for the Quarter ended 31.12.2018", link: "https://www.uflexltd.com/pdf/financials/Standalone/Uflex-Unaudited-STA-31122018.pdf" },
+  { text: "Financial results for the Quarter ended 30.09.2018", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX-RESULTS-30SEP2018.pdf" },
+  { text: "Financial results for the Quarter ended 30.06.2018", link: "https://www.uflexltd.com/pdf/financials/Standalone/Uflex-Unaudited-STA-30062018.pdf" },
+  { text: "Financial results for the Quarter and Year ended 31.03.2018 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX-AUDITED-STANDALONE-RESULTS-31ST-MARCH-2018.pdf" },
+
+  { text: "Financial results for the Quarter ended 31.12.2017", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX-UNAUDITED-STA-31DEC2017.pdf" },
+  { text: "Financial results for the Quarter ended 30.09.2017", link: "https://www.uflexltd.com/pdf/financials/Standalone/Uflex-Unaudited-STA-30092017.pdf" },
+  { text: "Financial results for the Quarter ended 30.06.2017", link: "https://www.uflexltd.com/pdf/financials/Standalone/Uflex-Unaudited-STA-30062017.pdf" },
+  { text: "Financial results for the Quarter and Year ended 31.03.2017 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX-AUDITED-STANDALONE-RESULTS-31ST-MARCH-2017.pdf" },
+
+  { text: "Financial results for the Quarter ended 31.12.2016", link: "https://www.uflexltd.com/pdf/financials/Standalone/standalone_31122016.pdf" },
+  { text: "Financial results for the Quarter ended 30.09.2016", link: "https://www.uflexltd.com/pdf/financials/Standalone/Standalone_30092016.pdf" },
+  { text: "Financial results for the Quarter ended 30.06.2016", link: "https://www.uflexltd.com/pdf/financials/Standalone/Standalone_30062016.pdf" },
+  { text: "Financial results for the year ended 31.03.2016 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Standalone/Uflex-Aud-Res-sta-31032016.pdf" },
+
+  { text: "FINANCIAL RESULTS FOR THE QUARTER ENDED 31.12.2015", link: "https://www.uflexltd.com/pdf/financials/Standalone/Standalone-311215.pdf" },
+  { text: "Financial results for the Quarter ended 30.09.2015", link: "https://www.uflexltd.com/pdf/financials/Standalone/standlone_30092015.pdf" },
+  { text: "Financial results for the Quarter ended 30.06.2015", link: "https://www.uflexltd.com/pdf/financials/Standalone/standalone_300615.pdf" },
+  { text: "Financial results for the year ended 31.03.2015 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Standalone/sta_310315.pdf" },
+
+  { text: "Financial results for the quarter ended 31.12.2014", link: "https://www.uflexltd.com/pdf/financials/Standalone/Standalone_311214.pdf" },
+  { text: "Financial results for the quarter ended 30.09.2014", link: "https://www.uflexltd.com/pdf/financials/Standalone/sta_300914.pdf" },
+  { text: "Financial results for the quarter ended 30.06.2014", link: "https://www.uflexltd.com/pdf/financials/Standalone/sta_300614.pdf" },
+  { text: "Financial results for the year ended 31.03.2014 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Standalone/sta_310314.pdf" },
+
+  { text: "Financial results for the quarter ended 31.12.2013", link: "https://www.uflexltd.com/pdf/financials/Standalone/31122013-Standalone%20Financial%20Results.pdf" },
+  { text: "Financial results for the quarter ended 30.09.2013", link: "https://www.uflexltd.com/pdf/financials/Standalone/sta_300913.pdf" },
+  { text: "Financial results for the quarter ended 30.06.2013", link: "https://www.uflexltd.com/pdf/financials/Standalone/sta_300613.pdf" },
+  { text: "Financial results for the year ended 31.03.2013 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Standalone/sta_310312ad.pdf" },
+
+  { text: "Financial results for the quarter ended 31.12.2012", link: "https://www.uflexltd.com/pdf/financials/Standalone/sta_311212.pdf" },
+  { text: "Financial results for the quarter ended 30.09.2012", link: "https://www.uflexltd.com/pdf/financials/Standalone/sta_300912.pdf" },
+  { text: "Financial results for the quarter ended 30.06.2012", link: "https://www.uflexltd.com/pdf/financials/Standalone/Sta_300612.pdf" },
+  { text: "Financial results for the year ended 31.03.2012 (Audited)", link: "https://www.uflexltd.com/pdf/financials/Standalone/sta_310312a.pdf" },
+  { text: "Financial results for the quarter ended 31.03.2012", link: "https://www.uflexltd.com/" },
+
+  { text: "Financial results for the quarter ended 31.12.2011", link: "https://www.uflexltd.com/pdf/financials/Standalone/Sta_311211.pdf" },
+  { text: "Financial results for the quarter ended 30.09.2011", link: "https://www.uflexltd.com/pdf/financials/Standalone/sta_300911.pdf" },
+  { text: "Financial results for the quarter ended 30.06.2011", link: "https://www.uflexltd.com/pdf/financials/Standalone/Sta_300611.pdf" },
+  { text: "Financial results for the quarter ended 31.03.2011", link: "https://www.uflexltd.com/pdf/financials/Standalone/Sta_310311.pdf" },
+
+  { text: "Financial results for the quarter ended 31.12.2010", link: "https://www.uflexltd.com/" },
+  { text: "Financial results for the quarter ended 30.09.2010", link: "https://www.uflexltd.com/pdf/financials/Standalone/Sta_300910.pdf" },
+  { text: "Financial results for the quarter ended 30.06.2010", link: "https://www.uflexltd.com/pdf/financials/Standalone/Sta_300610.pdf" },
+  { text: "Financial results for the quarter ended 31.03.2010", link: "https://www.uflexltd.com/pdf/financials/Standalone/Sta_310310.pdf" },
+
+  { text: "Financial results for the quarter ended 31.12.2009", link: "https://www.uflexltd.com/" },
+  { text: "Financial results for the quarter ended 30.09.2009", link: "https://www.uflexltd.com/pdf/financials/Standalone/Sta_300909.pdf" },
+  { text: "Financial results for the quarter ended 30.06.2009", link: "https://www.uflexltd.com/pdf/financials/Standalone/Sta_300609.pdf" },
+  { text: "Financial results for the quarter ended 31.03.2009", link: "https://www.uflexltd.com/pdf/financials/Standalone/Sta_310309.pdf" },
+
+  { text: "Financial results for the quarter ended 31.12.2008", link: "https://www.uflexltd.com/pdf/financials/Standalone/Sta_311208.pdf" },
+  { text: "Financial results for the quarter ended 30.09.2008", link: "https://www.uflexltd.com/pdf/financials/Standalone/Sta_300908.pdf" },
+  { text: "Financial results for the quarter ended 30.06.2008", link: "https://www.uflexltd.com/pdf/financials/Standalone/Sta_300608.pdf" },
+  { text: "Financial results for the quarter ended 31.03.2008", link: "https://www.uflexltd.com/pdf/financials/Standalone/Sta_310308.pdf" },
+
+  { text: "Financial results for the quarter ended 31.12.2007", link: "https://www.uflexltd.com/pdf/financials/Standalone/Sta_311207.pdf" },
+  { text: "Financial results for the quarter ended 30.09.2007", link: "https://www.uflexltd.com/pdf/financials/Standalone/Sta_300907.pdf" },
+  { text: "Financial results for the quarter ended 30.06.2007", link: "https://www.uflexltd.com/pdf/financials/Standalone/Sta_300607.pdf" },
+  
 ];
 
 /* Subsidiaries */
@@ -211,7 +322,124 @@ export const subsidiariesData: SubsidiaryItem[] = [
     title: "Flex Films Europa Sp.zo.o., Poland",
     link: "https://www.uflexltd.com/",
   },
+
+  {
+    title: "UPET Holdings Ltd., Mauritius",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "UPET (Singapore) Pte. Ltd., Singapore",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Americas S.A. de C.V., Mexico",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Films Africa Private Limited, Nigeria",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "LLC Flex Chemicals Private Limited, Russia",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Films Rus, LLC, Russia",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Films Europa Korlatolt Feleossegu Tarsasag, Hungary",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Specialty Chemicals (Egypt) S.A.E., Egypt",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Foils Bangladesh Private Limited, Bangladesh",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex PET (Egypt) S.A.E., Egypt",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Plasticfix Europa Spolka Z Organizowana Odpowiedzialnoscia, Poland",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Americas Brasil Ltda, Brazil",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "UFlex Woven Bags, S.A. DE C.V., Mexico",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Asepto (Egypt) S.A.E.",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "USC Holograms Pvt. Ltd., India",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "UFlex Charitable Foundation, India",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex FME Pte. Limited, Singapore",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Films AZB AFEZCO., Azerbaijan",
+    link: "https://www.uflexltd.com/",
+  },
+
+  { title: "FLEX MIDDLE EAST FZE, DUBAI", link: "https://www.uflexltd.com/" },
+  { title: "UFLEX EUROPE LIMITED, UK", link: "https://www.uflexltd.com/" },
+  { title: "UFLEX PACKAGING INC., USA", link: "https://www.uflexltd.com/" },
+  { title: "UPET HOLDINGS LIMITED, MAURITIUS", link: "https://www.uflexltd.com/" },
+  { title: "FLEX AMERICAS S.A. de C.V., MEXICO", link: "https://www.uflexltd.com/" },
+  { title: "FLEX P. FILMS (EGYPT) S.A.E, EGYPT", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FILMS (USA) INC., USA", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FILMS EUROPA SP. ZO.O.,POLAND", link: "https://www.uflexltd.com/" },
+  { title: "UPET (SINGAPORE) PTE. LIMITED, SINGAPORE", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FILMS AFRICA PRIVATE LIMITED, NIGERIA", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FILMS RUS, LLC, RUSSIA", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FILMS EUROPA KFT, HUNGARY", link: "https://www.uflexltd.com/" },
+  { title: "FLEX SPECIALTY CHEMICALS EGYPT", link: "https://www.uflexltd.com/" },
+  { title: "FLEX PET (EGYPT) S.A.E, EGYPT", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FOILS BD PVT. LTD, BANGLA DESH", link: "https://www.uflexltd.com/" },
+  { title: "LLC FLEX CHEMICALS PRIVATE LIMITED, RUSSIA", link: "https://www.uflexltd.com/" },
+  { title: "PLASTICFIX EUROPA SPOLKA Z ORGANICZONA ODPOWIEDZIALNOSCIA, POLAND", link: "https://www.uflexltd.com/" },
+  { title: "FLEX AMERICAS BRASIL LTDA, BRAZIL", link: "https://www.uflexltd.com/" },
+  { title: "UFLEX WOVEN BAGS, S.A. DE C.V., MEXICO", link: "https://www.uflexltd.com/" },
+  { title: "FLEX ASEPTO EGYPT, EGYPT", link: "https://www.uflexltd.com/" },
+  { title: "USC HOLOGRAMS PRIVATE LIMITED, INDIA", link: "https://www.uflexltd.com/" },
+
+  // repeated block (kept intentionally)
+  { title: "FLEX MIDDLE EAST FZE, DUBAI", link: "https://www.uflexltd.com/" },
+  { title: "UFLEX EUROPE LIMITED, UK", link: "https://www.uflexltd.com/" },
+  { title: "UFLEX PACKAGING INC., USA", link: "https://www.uflexltd.com/" },
+  { title: "UPET HOLDINGS LIMITED, MAURITIUS", link: "https://www.uflexltd.com/" },
+  { title: "FLEX AMERICAS S.A. de C.V., MEXICO", link: "https://www.uflexltd.com/" },
+  { title: "FLEX P. FILMS (EGYPT) S.A.E, EGYPT", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FILMS (USA) INC., USA", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FILMS EUROPA SP. ZO.O.,POLAND", link: "https://www.uflexltd.com/" },
+  { title: "UPET (SINGAPORE) PTE. LIMITED, SINGAPORE", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FILMS AFRICA PRIVATE LIMITED, NIGERIA", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FILMS RUS, LLC, RUSSIA", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FILMS EUROPA KFT, HUNGARY", link: "https://www.uflexltd.com/" },
+  { title: "LLC FLEX CHEMICALS PRIVATE LIMITED, RUSSIA", link: "https://www.uflexltd.com/" },
+  { title: "USC HOLOGRAMS PRIVATE LIMITED, INDIA", link: "https://www.uflexltd.com/" },
+
+  // final extended entries shown
+  { title: "UTECH DEVELOPERS LIMITED, INDIA", link: "https://www.uflexltd.com/" },
+  { title: "SD BUILDWELL (P) LIMITED, INDIA", link: "https://www.uflexltd.com/" },
+
 ];
+
 
 /* Advertisements – FY-wise cards */
 export const advertisementFYData: AdvertisementFY[] = [
@@ -307,6 +535,125 @@ export const advertisementFYData: AdvertisementFY[] = [
             label: "English",
             href: "https://www.uflexltd.com/pdf/financials/advertisements/2024-25/ADV-FR-30062024-FE.pdf",
           },
+        ],
+      },
+    ],
+  },
+
+
+
+   {
+    id: "FY2023-2024",
+    label: "FY2023–2024",
+    cards: [
+      {
+        id: "2024-03",
+        quarterLabel: "QUARTER ENDED - 31st March, 2024",
+        docs: [
+          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2023-24/ADV-FR-31032024-JS.pdf" },
+          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2023-24/ADV-FR-31032024-FE.pdf" },
+        ],
+      },
+      {
+        id: "2023-12",
+        quarterLabel: "QUARTER ENDED - 31st December, 2023",
+        docs: [
+          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2023-24/ADV-FR-31122023-JS.pdf" },
+          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2023-24/ADV-FR-31122023-FE.pdf" },
+        ],
+      },
+      {
+        id: "2023-09",
+        quarterLabel: "QUARTER ENDED - 30th September, 2023",
+        docs: [
+          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2023-24/ADV-FR-30092023-JS.pdf" },
+          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2023-24/ADV-FR-30092023-FE.pdf" },
+        ],
+      },
+      {
+        id: "2023-06",
+        quarterLabel: "QUARTER ENDED - 30th June, 2023",
+        docs: [
+          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2023-24/ADV-FR-30062023-JS.pdf" },
+          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2023-24/ADV-FR-30062023-FE.pdf" },
+        ],
+      },
+    ],
+  },
+
+  {
+    id: "FY2022-2023",
+    label: "FY2022–2023",
+    cards: [
+      {
+        id: "2023-03",
+        quarterLabel: "QUARTER ENDED - 31st March, 2023",
+        docs: [
+          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2022-23/ADV-FR-310323-JS.pdf" },
+          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2022-23/ADV-FR-310323-FE.pdf" },
+        ],
+      },
+      {
+        id: "2022-12",
+        quarterLabel: "QUARTER ENDED - 31st December, 2022",
+        docs: [
+          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2022-23/ADV-FR-3112022-JS.pdf" },
+          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2022-23/ADV-FR-3112022-FE.pdf" },
+        ],
+      },
+      {
+        id: "2022-09",
+        quarterLabel: "QUARTER ENDED - 30th September, 2022",
+        docs: [
+          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2022-23/ADV-FR-30092022-JS.pdf" },
+          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2022-23/ADV-FR-30092022-FE.pdf" },
+        ],
+      },
+      {
+        id: "2022-06",
+        quarterLabel: "QUARTER ENDED - 30th June, 2022",
+        docs: [
+          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2022-23/ADV-FR-30062022-JS.pdf" },
+          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2022-23/ADV-FR-30062022-FE.pdf" },
+        ],
+      },
+    ],
+  },
+
+  {
+    id: "FY2021-2022",
+    label: "FY2021–2022",
+    cards: [
+      {
+        id: "2022-03",
+        quarterLabel: "QUARTER ENDED - 31st March, 2022",
+        docs: [
+          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2021-22/ADV-FR-31032022-JS.pdf" },
+          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2021-22/ADV-FR-31032022-FE.pdf" },
+        ],
+      },
+      {
+        id: "2021-12",
+        quarterLabel: "QUARTER ENDED - 31st December, 2021",
+        docs: [
+          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2021-22/ADV-FR-31122021-JS.pdf" },
+          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2021-22/ADV-FR-31122021-FE.pdf" },
+        ],
+      },
+      {
+        id: "2021-09",
+        quarterLabel: "QUARTER ENDED - 30th SEPTEMBER, 2021",
+        docs: [
+          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2021-22/ADV-FR-30092021-JS.pdf" },
+          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2021-22/ADV-FR-30092021-FE.pdf" },
+        ],
+      },
+      {
+        id: "2021-06",
+        quarterLabel: "QUARTER ENDED - 30th June, 2021",
+        docs: [
+          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2021-22/ADV-FR-30062021-JS.pdf" },
+          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2021-22/ADV-FR-30062021-FE.pdf" },
         ],
       },
     ],
