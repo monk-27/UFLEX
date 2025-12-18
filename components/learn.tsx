@@ -90,7 +90,6 @@
 // </section>
 //   );
 // }
-
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -103,47 +102,23 @@ export default function LearnStatus() {
 
       {/* Card Container - 50/50 Split */}
       <div className="relative ">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-4 grid grid-cols-1 lg:grid-cols-2 items-center gap-0  overflow-hidden">
+        <div className="max-w-7xl mx-auto w-full px-4">
 
-          {/* Left: Text Content - Full Width on Mobile */}
-          <motion.div
-            className=" space-y-1 text-left "
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            {/* Headline */}
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
-              viewport={{ once: true }}
+      
 
-            >
-              <h2 className="text-[24px] lato-600 text-[#117ABA] md:text-[28px] leading-tight mb-1">
+ <div className="grid py-4 lg:grid-cols-2 lg:py-1  gap-10">
+
+            <div>
+              
+              <motion.h1 className="text-[24px] lato-600 text-[#117ABA] md:text-[28px] leading-tight mb-1">
                 UFlex Learning Academy
-              </h2>
-              <Image src="/images/ula.png" width={115} height={15} alt={""}/>
-            </motion.div>
+              </motion.h1>
+              <Image src="/images/ula.png" width={115} height={15} alt={""} />
 
-            {/* Improved Text Content */}
-            <motion.div
-              className="space-y-2 "
-              initial="hidden"
-              whileInView="visible"
-              variants={{
-                hidden: { opacity: 0 },
-                visible: {
-                  opacity: 1,
-                  transition: { staggerChildren: 0.15, delayChildren: 0.2 },
-                },
-              }}
-              viewport={{ once: true }}
-            >
-              {/* Main Description */}
+
+
               <motion.p
-                className="max-w-3xl mx-auto lato-400 text-sm md:text-base leading-relaxed text-gray-600"
+                className="max-w-x mx-auto lato-400 text-sm md:text-base leading-relaxed text-gray-600"
                 variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0 } }}
               >
                 The UFlex Learning Academy fosters learning and development through a range of off-the-shelf digital, blended and classroom courses on a wide range of subjects.
@@ -154,23 +129,13 @@ export default function LearnStatus() {
 
               </motion.p>
 
-              {/* <motion.p
-            className="lato-400 text-sm md:text-base leading-relaxed text-gray-600"
-            variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0 } }}
-          >
-          </motion.p> */}
+
+              {/* ---- Modal ---- */}
 
 
+            </div>
 
-              {/* CTA */}
-
-            </motion.div>
-
-          </motion.div>
-
-
-          {/* Right: Full-Height Image */}
-          <motion.div
+             <motion.div
             className="relative overflow-hidden "
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -184,12 +149,13 @@ export default function LearnStatus() {
               width={100}
               height={100}
 
-              className="w-[527px] h-[338px] object-contain"
+              className="w-[550px] h-[338px] object-cover"
               priority
             />
             {/* Optional: Overlay Text */}
 
           </motion.div>
+          </div>
 
         </div>
         <motion.div

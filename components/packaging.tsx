@@ -151,8 +151,8 @@ const OfferingTabs: React.FC<{
                             >
                                 <span
                                     className={`transition-colors ${isActive
-                                            ? "text-[#117ABA]"
-                                            : "text-gray-500 hover:text-gray-700"
+                                        ? "text-[#117ABA]"
+                                        : "text-gray-500 hover:text-gray-700"
                                         }`}
                                 >
                                     {tab.label}
@@ -422,26 +422,7 @@ const PackageComp: React.FC<Props> = ({ business }) => {
             <div className="max-w-7xl mx-auto px-4">
                 <div className="space-y-4">
                     <div className="grid py-4 lg:grid-cols-2 lg:py-1  gap-10">
-                        {/* <div>
-                            <motion.h1
-                                initial={{ opacity: 0, y: 10 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                className="text-[18px] lato-400 text-[#117ABA] md:text-[28px] "
-                            >
-                                Packaging Films & PET Resin
 
-                            </motion.h1>
-                            {packagingData.map((section, idx) => (
-                                <ExpandableText
-                                    key={idx}
-                                    modalTitle={section.title}
-                                    imageSrc={section.image}
-                                    imageAlt={section.title}
-                                    paragraphs={section.paragraphs}
-                                />
-                            ))}
-                        </div> */}
                         <div>
                             <motion.h1
                                 initial={{ opacity: 0, y: 10 }}
@@ -505,10 +486,10 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                     /> */}
 
                     <section className="pt-12">
-                         <h2 className="px-0 text-start lato-400 text-[20px] md:text-[24px] text-[#117ABA] mb-3">
-            Our Offerings
+                        <h2 className="px-0 text-start lato-400 text-[20px] md:text-[24px] text-[#117ABA] mb-3">
+                            Our Offerings
 
-          </h2>
+                        </h2>
                         <OfferingTabs active={activeTab} onChange={setActiveTab} />
 
                         <AnimatePresence mode="wait">
