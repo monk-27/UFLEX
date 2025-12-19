@@ -21,7 +21,7 @@ export default function HomePage() {
       </section>
 
       <motion.section
-        className="max-w-7xl mx-auto w-full px-4 sm:px-0 text-center  py-12"
+        className="max-w-7xl mx-auto w-full px-4 sm:px-0 text-center pt-12"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -57,7 +57,7 @@ export default function HomePage() {
         <BusinessCardsCarousel />
 
       </motion.section>
-      <div className="z-10 bg-white ">
+      <div className="z-10 bg-white pt-6">
         <div className="text-center max-w-7xl mx-auto w-full px-4 sm:px-0 pb-12">
           <h2 className="text-center text-[14px] lato-400 text-[#117ABA] md:text-[28px] ">
             Sustainability
