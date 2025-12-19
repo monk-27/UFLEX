@@ -478,54 +478,201 @@ const PRESS_ROOM_DATA = {
   hero: {
     title: "The Press Room",
     image:
-      "https://uflex.wpdevstudio.site/HTML/assets/images/the-press-banner.jpg",
+      "/images/press/mainpress.png",
   },
 
-  mediaReleases: {
-    pressRelease: {
-      2025: [
-        {
-          title:
-            "Quarter Ended June 30, 2025 | Stable growth amidst tariff challenges",
-          link: "#",
-        },
-        {
-          title:
-            "Quarter Ended March 31, 2025 | Back on the growth track",
-          link: "#",
-        },
-      ],
-      2024: [
-        {
-          title:
-            "Quarter Ended December 31, 2024 | Robust performance led by Packaging Films in India, Europe, Nigeria",
-          link: "#",
-        },
-      ],
-    } satisfies Record<Year, PdfItem[]>,
+mediaReleases: {
+  pressRelease: {
+    2025: [
+      {
+        title:
+          "13 Nov 2025: Earnings Release for the Quarter ended September 30, 2025 | GST reforms, evolving trade dynamics set to catalyze growth ahead",
+        link: "https://www.uflexltd.com/pdf/Press-Release/2025/PR_13Nov25_UFlex_Q2FY26_Earnings.pdf",
+      },
+      {
+        title:
+          "13 Aug 2025: Earnings Release for the Quarter ended June 30, 2025 | Stable growth amidst tariff challenges",
+        link: "https://www.uflexltd.com/pdf/Press-Release/2025/PR_13Aug25_UFlex_Q1FY26_Earnings.pdf",
+      },
+      {
+        title:
+          "19 May 2025: Earnings Release for the Quarter ended March 31, 2025 | Back on the growth track",
+        link: "https://www.uflexltd.com/pdf/Press-Release/2025/PR_19May25_UFlex_Q4FY25_Earnings.pdf",
+      },
+      {
+        title:
+          "14 Feb 2025: Earnings Release for the Quarter ended December 31, 2024 | Robust Performance led by Packaging Films in India, Europe, Nigeria",
+        link: "https://www.uflexltd.com/pdf/Press-Release/2025/PR_14Feb25_Uflex_Q3FY25_Earnings.pdf",
+      },
+    ],
+     2024: [
+    {
+      title: "14 November 2024: Continued Strong Revival in Packaging Films Business",
+      link: "https://www.uflexltd.com/pdf/Press-Release/2024/PR_14Nov24_2QFY25_Release.pdf",
+    },
+    {
+      title: "12 August 2024: UFlex reports total net revenue of INR 36,825 million in Q1, 2024, underpinned by strong sales volume in packaging films",
+      link: "https://www.uflexltd.com/pdf/Press-Release/2024/PR_12Aug24_UFlex_Q1FY25_Results.pdf",
+    },
+    {
+      title: "29 May 2024: UFlex clocks a 6.8% increase in sales volume in QoQ and 10.5% YoY Clocks 8.7% increase in sales volume in flexible packaging in Q4",
+      link: "https://www.uflexltd.com/pdf/Press-Release/2024/PR_29May24_UFlex_Q4FY24_Results.pdf",
+    },
+    {
+      title: "13 Feb 2024: UFlex Announces Q3 Financial Results",
+      link: "https://www.uflexltd.com/pdf/Press-Release/2024/PR_13Feb24_UFlex_Q3FY24_Result.pdf",
+    },
+  ],
+  } satisfies Record<Year, PdfItem[]>,
 
-    pressNotes: {
-      2025: [
-        {
-          title:
-            "UFlex Limited recognised as a Top Employer 2025 in India",
-          link: "#",
-        },
-        {
-          title:
-            "UFlex secures Indian patent for sustainable waterborne heat seal coating for food and consumer goods packaging",
-          link: "#",
-        },
-      ],
-      2024: [
-        {
-          title:
-            "UFlex introduces FSSAI compliant single-pellet solution for food packaging",
-          link: "#",
-        },
-      ],
-    } satisfies Record<Year, PdfItem[]>,
-  },
+  pressNotes: {
+    2025: [
+      {
+        title:
+          "28 Nov 2025: UFlex’s FlexiTubes to Showcase Advanced Tube Packaging Solutions for the Beauty Industry at Cosmoprof India 2025",
+        link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_28Nov25_UFlex_Cosmoprof_Mumbai2025.pdf",
+      },
+      {
+        title:
+          "28 Oct 2025: UFlex to Showcase a Comprehensive Range of Pet Food Packaging Solutions at Pet Fair South East Asia 2025",
+        link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_28Oct25_UFlex_PetFair_SEA2025.pdf",
+      },
+      {
+        title:
+          "23 Oct 2025: UFlex’s FlexiTubes to Showcase Next-Gen Sustainable and Aesthetic Tube Packaging Solutions at Beautyworld Middle East 2025",
+        link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_23Oct25_UFlex_Beautyworld_ME2025.pdf",
+      },
+      {
+        title:
+          "30 Sep 2025: Morris Packaging LLC and UFlex Packaging Inc. Forge Strategic Partnership to Deliver Innovative & Sustainable Woven Bag Series",
+        link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_30Sep2025_UFlex-Morris_WPPBags%20.pdf",
+      },
+      {
+        title:
+          "07 Aug 2025: UFlex Limited Recognised as a Top Employer 2025 in India",
+        link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_07Aug25_UFlex_TE2025.pdf",
+      },
+      {
+        title:
+          "22 Jul 2025: UFlex Secures Indian Patent for Sustainable Waterborne Heat Seal Coating for Food and Consumer Goods Packaging",
+        link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_22Jul25_UFlex_IP_HSCoating.pdf",
+      },
+      {
+        title:
+          "14 Jul 2025: UFlex’s FlexiTubes to Showcase Sustainable Tube Packaging for the Beauty Industry at Cosmopack North America 2025",
+        link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_14Jul25_%20UFlex_Cosmopack_NA_2025.pdf",
+      },
+      {
+        title:
+          "07 Jul 2025: UFlex to Showcase Sustainable Tubes Incorporating USFDA-Approved Recycled Content at CMPL Expo 2025",
+        link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_07Jul25_UFlex_CMPL_Expo_2025.pdf",
+      },
+      {
+        title:
+          "19 Jun 2025: UFlex Introduces FSSAI compliant Single-Pellet Solution for Food Packaging | Enables Food and Beverage Brands to Meet EPR Compliance",
+        link: "https://www.uflexltd.com/pdf/Press-Release/2025/PR_190625_UFlex_Single_Pellet_Solution.pdf",
+      },
+      {
+        title:
+          "13 Jun 2025: UFlex to Showcase Sustainable Packaging Innovations & Recycling Technology at GCPRS 2025",
+        link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_13Jun25_UFlex_GCPRS2025.pdf",
+      },
+      {
+        title:
+          "19 Mar 2025: UFlex’s FlexiTubes to lead the way in sustainable beauty packaging at COSMOPROF Italy 2025",
+        link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_19Mar25_UFlex_COSMOPROF_Italy.pdf",
+      },
+      {
+        title:
+          "12 Mar 2025: UFlex Secures USFDA Approval for Recycled PE in Food Packaging",
+        link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_12Mar25_UFlex_USFDA.pdf",
+      },
+      {
+        title:
+          "04 Feb 2025: UFlex Advocates for PLI Support to Strengthen India's Packaging Industry at PHDCCI Forum",
+        link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_04Feb25_UFlex_PHDCCI.pdf",
+      },
+      {
+        title:
+          "30 Jan 2025: UFlex’s Chemicals and Engineering Businesses to Exhibit Innovative Packaging and Printing Solutions at Print Pack 2025",
+        link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_30Jan25_UFlex_PP2025.pdf",
+      },
+      {
+        title:
+          "24 Jan 2025: UFlex to Present Sustainable and Customizable Tube Solutions at Paris Packaging Week 2025",
+        link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_24Jan25_UFlex_PPW2025.pdf",
+      },
+      {
+        title:
+          "09 Jan 2025: UFlex Partners with IIP Delhi to Promote Recycling Awareness and Sustainable Innovations",
+        link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_09Jan25_UFlex_IIPDelh.pdf",
+      },
+    ],
+     2024: [
+    {
+      title: "30 Dec 2024: UFlex Triumphs at IFCA Star Awards 2024",
+      link: "https://www.uflexltd.com/pdf/Press-Release/2024/PN_30Dec24_UFlex_IFCA2024.pdf",
+    },
+    {
+      title: "03 Dec 2024: UFlex’s FlexiTubes to Showcase Sustainable Products for the Beauty Industry at COSMOPROF INDIA 2024",
+      link: "https://www.uflexltd.com/pdf/Press-Release/2024/PN_03Dec24_CosmoprofIndia2024.pdf",
+    },
+    {
+      title: "30 Sep 2024: Mr. Ashok Chaturvedi highlights the role of Artificial Intelligence in addressing the problem of flexible packaging waste at ElitePlus++ Global Business Summit 2024",
+      link: "https://www.uflexltd.com/pdf/Press-Release/2024/PN_30Sep24_UFlex_CMD_ElitePlus2024.pdf",
+    },
+    {
+      title: "24 Sep 2024: UFlex Founder, Chairman and Managing Director, Mr. Ashok Chaturvedi recognized as “Business Leader of the Decade” at the 21st Indo-US Economic Summit 2024",
+      link: "https://www.uflexltd.com/pdf/Press-Release/2024/PN_24Sep24_IACC2024.pdf",
+    },
+    {
+      title: "19 Sep 2024: Enabling food security and Empowering India’s food processing sector: UFlex at World Food India 2024",
+      link: "https://www.uflexltd.com/pdf/Press-Release/2024/PN_19Sep24_UFlex_WFI2024.pdf",
+    },
+    {
+      title: "13 Sep 2024: UFlex partners with PHDCCI for the Global Sustainability Summit 2024",
+      link: "https://www.uflexltd.com/pdf/Press-Release/2024/PN_13Sep24_UFlex_PHDCCI_GSS2024.pdf",
+    },
+    {
+      title: "27 May 2024: UFlex to showcase innovative and sustainable printing and packaging solutions at DRUPA 2024",
+      link: "https://www.uflexltd.com/pdf/Press-Release/2024/PN_27May24_DRUPA2024.pdf",
+    },
+    {
+      title: "10 May 2024: Mr. Ashok Chaturvedi, CMD, UFlex Limited, releases a report: “Proposed National Standard for Scientific Estimation of Recycled Content” at an industry event",
+      link: "https://www.uflexltd.com/pdf/Press-Release/2024/PN_10May24_PPRDC2024.pdf",
+    },
+    {
+      title: "25 Apr 2024: In line with its net zero commitment, UFlex inks an agreement for the supply of renewable power for its packaging films plant in Karnataka",
+      link: "https://www.uflexltd.com/pdf/Press-Release/2024/PN_25Apr24_UFlex_Renewable_Power.pdf",
+    },
+    {
+      title: "22 Apr 2024: UFlex Reiterates Commitment to Environmental Stewardship This Earth Day",
+      link: "https://www.uflexltd.com/pdf/Press-Release/2024/PN_22Apr24_UFlex_CSRWorkshop.pdf",
+    },
+    {
+      title: "08 Apr 2024: UFlex bags the second-highest number of printing and packaging industry awards | Wins 10 awards across categories at SIES SOP Star Awards 2023",
+      link: "https://www.uflexltd.com/pdf/Press-Release/2024/PN_09Apr24_UFlex_SIES2024.pdf",
+    },
+    {
+      title: "02 Apr 2024: UFlex Begins Commercial Production of Poly-Condensed Polyester Chips in Panipat, India",
+      link: "#https://www.uflexltd.com/pdf/Press-Release/2024/PN_02Apr24_UFlex_Panipat_India.pdf",
+    },
+    {
+      title: "06 Mar 2024: UFlex to showcase innovative food-grade packaging solutions at Aahar, a leading international food and hospitality fair",
+      link: "https://www.uflexltd.com/pdf/Press-Release/2024/PN_06Mar24_UFlex_Aahar2024.pdf",
+    },
+    {
+      title: "01 Feb 2024: UFlex to Showcase Advanced Machine Technology at PlastFocus 2024",
+      link: "https://www.uflexltd.com/pdf/Press-Release/2024/PN_01Feb24_UFlex_PlastFocus2024.pdf",
+    },
+    {
+      title: "08 Jan 2024: UFlex Showcases Pioneering Packaging Solutions for the Food and Beverage Industry at Indusfood Tech 2024",
+      link: "https://www.uflexltd.com/pdf/Press-Release/2024/PN_08Jan24_UFlex_IndusfoodTech2024.pdf",
+    },
+  ],
+  } satisfies Record<Year, PdfItem[]>,
+},
+
 
   mediaResources: [
     {
@@ -658,14 +805,14 @@ export default function PressRoomPage() {
 
         {/* -------- MEDIA RELEASES -------- */}
         <section>
-          <h2 className="text-[#117ABA] text-xl lato-600 mb-6 text-center">
+          <h2 className="text-[#117ABA] text-[16px] sm:text-[28px] lato-400 mb-6 text-center">
             Media Releases
           </h2>
 
           <div className="mb-10 ">
             <div className="max-w-7xl flex space-x-5">
 
-              <h3 className="text-[#117ABA] text-sm lato-700 mb-2">
+              <h3 className="text-[#117ABA] text-[14px] lato-400 mb-2">
                 Press Release
               </h3>
               <YearTabs
@@ -679,7 +826,7 @@ export default function PressRoomPage() {
 
           <div className="max-w-7xl flex space-x-8">
 
-            <h3 className="text-[#117ABA] text-sm lato-700 mb-2">
+            <h3 className="text-[#117ABA] text-[14px]  lato-400 mb-2">
               Press Notes
             </h3>
             <YearTabs
@@ -693,7 +840,7 @@ export default function PressRoomPage() {
 
         {/* -------- MEDIA RESOURCES -------- */}
         <section className="max-w-7xl mx-auto px-4">
-          <h2 className="text-[#117ABA] text-xl lato-600 text-center mb-6">
+          <h2 className="text-[#117ABA] text-[16px] sm:text-[28px] lato-400 text-center mb-6">
             Media Resources
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
@@ -712,7 +859,7 @@ export default function PressRoomPage() {
 
         {/* -------- MEDIA COVERAGE -------- */}
         <section className="max-w-7xl mx-auto px-4">
-          <h2 className="text-[#117ABA] text-xl lato-600 text-center mb-6">
+          <h2 className="text-[#117ABA] text-[16px] sm:text-[28px] lato-400 text-center mb-6">
             Media Coverage
           </h2>
 
@@ -800,10 +947,19 @@ export default function PressRoomPage() {
 
 
           <div className="mt-6 text-left">
-            <a className="text-[#117ABA] lato-600 underline underline-offset-4 inline-flex items-center gap-1">
-              View More <span>↗</span>
-            </a>
+            <a
+                
+                className="inline-flex items-center gap-1 lato-700 text-[14px] text-[#117ABA] "
+              >
+                                <div className="underline underline-offset-2">
+
+                View More
+                
+                <span aria-hidden>↗</span>
           </div>
+                </a>
+          </div>
+
         </section>
       </main>
 
