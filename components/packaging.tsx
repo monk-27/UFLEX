@@ -161,10 +161,11 @@ const OfferingTabs: React.FC<{
                                 {/* Elegant underline */}
                                 {isActive && (
                                     <motion.span
-                                        layoutId="offering-tab-underline"
+                                        initial={false}
                                         className="absolute left-1/2 bottom-0 h-[2px] w-16 -translate-x-1/2 rounded-full bg-[#117ABA]"
                                     />
                                 )}
+
                             </button>
                         );
                     })}
@@ -492,7 +493,7 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                         </h2>
                         <OfferingTabs active={activeTab} onChange={setActiveTab} />
 
-                        <AnimatePresence mode="wait">
+                        <AnimatePresence initial={false}>
                             {activeTab === "films" && (
                                 <motion.div
                                     key="films"
@@ -502,7 +503,7 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                                     transition={{ duration: 0.25 }}
                                 >
                                     <SimpleCarousel
-                                        heading="Packaging Films – Our Offerings"
+                                        heading=""
                                         items={packagingFilmsItems}
                                         imageHeight={280}
                                     />
@@ -518,7 +519,7 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                                     transition={{ duration: 0.25 }}
                                 >
                                     <OfferingadvSection
-                                        subheading="PET Resin – Our Offerings"
+                                        subheading=""
                                         subitems={petResinSubitems}
                                         business={business}
                                     />
