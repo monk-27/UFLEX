@@ -45,7 +45,7 @@ export default function SimpleCarousel({
   return (
     <section className="pt-12">
       {heading && (
-        <h2 className="text-[24px] text-[#000000] lato-400 text-center mb-2">{heading}</h2>
+        <h2 className="text-[24px] text-[#117ABA] lato-400 text-start pb-12">{heading}</h2>
       )}
       {subheading && (
         <p className="text-gray-600 text-center mb-6">{subheading}</p>

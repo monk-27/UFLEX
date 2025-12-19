@@ -14,11 +14,11 @@ export function SustainabilitySection({ data }: any) {
   return (
     <div className="pt-12">
     
-    <section className="hidden sm:block bg-[#f7f7f7] h-[430px] sm:h-[480px]">
-      <div className="">
+    <section className="hidden sm:block relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#f7f7f7] h-[430px] sm:h-[480px]">
+      <div className="max-w-7xl ">
         <div className="overflow-hidden grid gap-0 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.2fr)]">
           {/* Text */}
-          <div className="p-6 md:p-8 flex flex-col justify-center">
+          <div className="pr-12 flex flex-col justify-center">
             <h2 className="lato-400 text-[20px] md:text-[24px] text-[#117ABA] mb-3">
               {data.title}
             </h2>
@@ -51,11 +51,11 @@ export function SustainabilitySection({ data }: any) {
         </div>
       </div>
     </section>
-    <section className=" block sm:hidden bg-[#f7f7f7] ">
-      <div className="">
+    <section className="relative w-screen left-1/2 right-1/2 -mx-[50vw] block sm:hidden bg-[#f7f7f7] ">
+      <div className="max-w-7xl ">
         <div className="overflow-hidden grid gap-0 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.2fr)]">
           {/* Text */}
-          <div className="p-6 md:p-8 flex flex-col justify-center">
+          <div className="pt-4 flex flex-col justify-center">
             <h2 className="lato-400 text-[18px] md:text-[28px] text-[#117ABA] mb-3">
               {data.title}
             </h2>
