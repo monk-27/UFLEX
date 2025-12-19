@@ -745,7 +745,7 @@ function PdfList({ items }: { items: PdfItem[] }) {
   return (
     <div className="max-w-5xl mx-auto px-4 ">
       {items.map((item, i) => (
-        <a key={i} href={item.link} className="group block">
+        <a key={i} href={item.link} target="_blank" className="group block">
           <div className={[
             "w-full flex items-center justify-between px-6 py-4",
             "bg-[#F8F8F8] group-hover:bg-[#EDEDED]",
