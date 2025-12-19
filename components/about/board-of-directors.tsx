@@ -90,7 +90,7 @@ const BoardOfDirectors = () => {
 
   return (
     <>
-      <section className="mt-[30px] px-4 py-0 text-center sm:mt-8 sm:bg-gray-100 sm:py-10 md:px-12">
+      <section className="mt-[30px] px-4 py-0 text-center sm:mt-8 sm:bg-gray-100 sm:pt-12 md:px-12">
         <div className="mx-auto max-w-7xl  md:px-8">
           <h2 className="text-[24px] lato-400 text-[#117ABA] md:text-[28px]  text-start mb-12">
             Board of Directors

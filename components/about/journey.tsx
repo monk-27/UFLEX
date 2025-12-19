@@ -8,7 +8,7 @@ const Journey = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-start text-[24px] lato-400 text-[#117ABA] md:text-[28px] ">Our Journey</h2>
         <p className="text-start mt-0 text-[16px] text-[#181818] sm:mt-2 md:text-[20px]" style={{ lineHeight: "124%" }}>
-          Nearly four decades of innovation, growth, and excellence
+          Nearly four decades of innovation, growth, and excellence.
         </p>
 
         <div className="space-y-8 mt-12 ">
