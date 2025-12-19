@@ -722,13 +722,13 @@ function YearTabs({
   onChange: (y: Year) => void;
 }) {
   return (
-    <div className="flex gap-2 ml-5 mb-2">
+    <div className="flex gap-2 py-12 mb-2">
       {years.map((y) => (
         <button
           key={y}
           onClick={() => onChange(y)}
           className={[
-            "px-10 py-3 text-xs transition",
+            "px-10 py-3 text-xs lato-400 transition",
             activeYear === y
               ? "bg-[#F5F5F5]  text-[#555]  border-b-[0.7px] border-b-[#117ABA] "
               : "bg-[#F5F5F5]  text-[#555]",
@@ -743,7 +743,7 @@ function YearTabs({
 
 function PdfList({ items }: { items: PdfItem[] }) {
   return (
-    <div className="max-w-5xl mx-auto px-4 ">
+    <div className="max-w-7xl mx-auto px-4 ">
       {items.map((item, i) => (
         <a key={i} href={item.link} target="_blank" className="group block">
           <div className={[
@@ -753,7 +753,7 @@ function PdfList({ items }: { items: PdfItem[] }) {
           ].join(" ")}>
 
 
-            <span className="text-[15px] lato-400 text-[#000000]">{item.title}</span>
+            <span className="text-[15px] lato-400 text-[#000000] lato-400">{item.title}</span>
             <Image src="/images/pdf.png" alt="PDF" width={18} height={18} />
           </div>
         </a>
@@ -801,7 +801,7 @@ export default function PressRoomPage() {
       </section>
 
       {/* ================= CONTENT ================= */}
-      <main className=" py-10 space-y-14">
+      <main className=" py-1 space-y-14">
 
         {/* -------- MEDIA RELEASES -------- */}
         <section>
@@ -810,7 +810,7 @@ export default function PressRoomPage() {
           </h2>
 
           <div className="mb-10 ">
-            <div className="max-w-7xl flex space-x-5">
+            <div className="max-w-7xl ">
 
               <h3 className="text-[#117ABA] text-[14px] lato-400 mb-2">
                 Press Release
@@ -824,7 +824,7 @@ export default function PressRoomPage() {
             <PdfList items={mediaReleases.pressRelease[releaseYear]} />
           </div>
 
-          <div className="max-w-7xl flex space-x-8">
+          <div className="max-w-7xl ">
 
             <h3 className="text-[#117ABA] text-[14px]  lato-400 mb-2">
               Press Notes
@@ -946,7 +946,7 @@ export default function PressRoomPage() {
 
 
 
-          <div className="mt-6 text-left">
+          <div className="mt-6 text-left py-6">
             <a
                 
                 className="inline-flex items-center gap-1 lato-700 text-[14px] text-[#117ABA] "
