@@ -192,10 +192,10 @@ export default function LifeatModules() {
 
             {/* Text Content */}
             <div className="flex flex-col p-6 text-left">
-              <h3 className="text-center lato-600 text-xl text-[#117ABA] md:text-2xl">
+              <h3 className="text-center lato-600  text-[#117ABA] text-[14px] md:text-[18px]">
                 {module.title}
               </h3>
-              <p className="lato-400 mt-3 text-sm text-[#5F5F5F] md:text-base leading-relaxed">
+              <p className="lato-400 mt-3 text-[12px] md:text-[14px] text-[#5F5F5F]  leading-relaxed">
                 {module.description}
               </p>
             </div>

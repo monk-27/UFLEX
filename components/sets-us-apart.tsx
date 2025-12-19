@@ -63,7 +63,7 @@ export default function WhatSetsUsApartCarousel() {
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   return (
-    <section className="bg-white py-12 ">
+    <section className="bg-white pt-12 ">
       {/* Heading */}
       <div className="text-center">
         <h2 className="text-[24px] lato-400 text-[#117ABA] md:text-[28px]">
@@ -115,11 +115,11 @@ export default function WhatSetsUsApartCarousel() {
                         className="absolute left-4 top-6 h-6 w-[2px] bg-[#D84A3B]"
                       /> */}
 
-                      <h3 className="text-[14px] md:text-[16px] leading-tight text-[#117ABA]">
+                      <h3 className="text-[14px] md:text-[16px] leading-relaxed text-[#117ABA]">
                         {card.title}
                       </h3>
 
-                      <p className="mt-6 text-[14px] md:text-[16px] text-[#6D6E71]">
+                      <p className="mt-6 text-[12px] md:text-[14px] text-[#6D6E71]">
                         {card.desc}
                       </p>
                     </div>
