@@ -1,183 +1,192 @@
+
 // "use client";
 // import { motion } from "framer-motion";
 // import Image from "next/image";
 
 // export default function LearnStatus() {
 //   return (
-//    <section className="relative w-full overflow-hidden px-4 py-12 sm:py-16 md:py-24">
-//   {/* Card Container - Perfect 50/50 on desktop */}
-//   <div className="relative mx-auto max-w-7xl">
-//     <div className="grid grid-cols-1 gap-8 rounded-2xl bg-white/10 p-6 md:grid-cols-2 md:gap-0 md:p-10">
+//     <section className="relative w-full overflow-hidden px-4 pb-12">
+      
+//       <div className="relative ">
+//         <div className="max-w-7xl mx-auto w-full px-4">
 
-//       {/* Left: Enhanced Text (50%) */}
-//       <motion.div
-//         className="space-y-6 text-left"
-//         initial={{ opacity: 0, x: -30 }}
-//         whileInView={{ opacity: 1, x: 0 }}
-//         transition={{ duration: 0.8 }}
-//         viewport={{ once: true }}
-//       >
-//         <motion.h2
-//           className="lato-800 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent text-3xl md:text-4xl lg:text-5xl"
-//           initial={{ opacity: 0, y: -20 }}
-//           whileInView={{ opacity: 1, y: 0 }}
-//           transition={{ duration: 0.7 }}
-//           viewport={{ once: true }}
-//         >
-//           UFlex Learning Academy
-//         </motion.h2>
+      
 
-//         <motion.div
-//           className="space-y-4"
-//           initial="hidden"
-//           whileInView="visible"
-//           variants={{
-//             hidden: { opacity: 0 },
-//             visible: { opacity: 1, transition: { staggerChildren: 0.15 } },
-//           }}
-//           viewport={{ once: true }}
-//         >
-//           <motion.p
-//             className="lato-600 text-base md:text-lg leading-relaxed text-gray-200"
-//             variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0 } }}
+//  <div className="grid py-4 lg:grid-cols-2 lg:py-1  gap-10">
+
+//             <div>
+              
+//               <motion.h1 className="text-[24px] lato-600 text-[#117ABA] md:text-[28px] leading-tight mb-1">
+//                 UFlex Learning Academy
+//               </motion.h1>
+//               <Image src="/images/ula.png" width={115} height={15} alt={""} />
+
+
+
+//               <motion.p
+//                 className="max-w-x mx-auto lato-400 text-sm md:text-base leading-relaxed text-gray-600"
+//                 variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0 } }}
+//               >
+//                 The UFlex Learning Academy fosters learning and development through a range of off-the-shelf digital, blended and classroom courses on a wide range of subjects.
+//                 The academy brings together a range of off-the-shelf digital, blended, and classroom courses on a wide range of business-driven subjects, delivered through our secure and accessible online platform. Our customized programs cater to the needs of every individual, offering them an opportunity to excel in their careers.
+//                 Leveraging modern modules and subject matter experts, we strive to create a culture of learning and upskilling our employees across the organization.
+//                 With a dedicated team of certified delivery experts and **Wing Champions** from senior leadership, we create structured learning journeys tailored for Industry 4.0 reskilling—ensuring every employee thrives in a rapidly evolving landscape.
+
+
+//               </motion.p>
+
+
+//               {/* ---- Modal ---- */}
+
+
+//             </div>
+
+//              <motion.div
+//             className="relative overflow-hidden "
+//             initial={{ opacity: 0, x: 30 }}
+//             whileInView={{ opacity: 1, x: 0 }}
+//             transition={{ duration: 0.8, delay: 0.3 }}
+//             viewport={{ once: true }}
 //           >
-//             Launched in **2024** to revolutionize workforce development, the UFlex Learning Academy is a comprehensive platform delivering **digital, blended, and classroom courses** across business-critical subjects.<grok-card data-id="8e9d2b" data-type="citation_card"></grok-card>
-//           </motion.p>
+//             {/* <div className="absolute" /> */}
+//             <Image
+//               src="/images/learn.jpg"
+//               alt="UFlex Learning Academy"
+//               width={100}
+//               height={100}
 
-//           <motion.p
-//             className="lato-500 text-sm md:text-base leading-relaxed text-gray-300"
-//             variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0 } }}
-//           >
-//             With a dedicated team of certified delivery experts and **Wing Champions** from senior leadership, we create structured learning journeys tailored for Industry 4.0 reskilling—ensuring every employee thrives in a rapidly evolving landscape.<grok-card data-id="870ab3" data-type="citation_card"></grok-card>
-//           </motion.p>
+//               className="w-full h-[338px] object-contain sm:object-fill"
+//               priority
+//             />
+//             {/* Optional: Overlay Text */}
 
-//           <motion.div
-//             className="lato-700 mt-4 flex items-center gap-2 text-sm md:text-base text-blue-300"
-//             variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0 } }}
-//           >
-//             <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-//               <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 .68-.057 1.347-.166 1.997C17.994 9.33 17.52 10.64 16.7 11.73a11.83 11.83 0 01-2.572 2.649 11.955 11.955 0 01-4.158 1.721c-.65.11-1.323.165-2.002.165s-1.351-.055-2.001-.165a11.955 11.955 0 01-4.159-1.721 11.832 11.832 0 01-2.57-2.65C2.006 10.638 1.526 9.33 1.166 7.997A11.954 11.954 0 001 5c0-.68.057-1.35.166-2.001z" clipRule="evenodd" />
-//             </svg>
-//             Ready to upskill? Email us: 
-//             <a
-//               href="mailto:learning_academy@uflexltd.com"
-//               className="underline decoration-blue-400 underline-offset-2 transition hover:decoration-blue-200"
-//             >
-//               learning_academy@uflexltd.com
-//             </a>
 //           </motion.div>
-//         </motion.div>
-//       </motion.div>
+//           </div>
 
-//       {/* Right: Full-Height Image (50%) */}
-//       <motion.div
-//         initial={{ opacity: 0, x: 30 }}
-//         whileInView={{ opacity: 1, x: 0 }}
-//         transition={{ duration: 0.8, delay: 0.2 }}
-//         viewport={{ once: true }}
-//         className="relative h-[500px] md:h-auto"
-//       >
-//         <Image
-//           src="https://uflex.wpdevstudio.site/HTML/uploaded-files/page-images/image07.jpg"
-//           alt="UFlex Learning Academy"
-//           fill
-//           className="rounded-r-2xl object-cover md:rounded-none md:rounded-r-2xl"
-//           priority
-//         />
-//       </motion.div>
-//     </div>
-//   </div>
-// </section>
+//         </div>
+//         <motion.div
+//           variants={{
+//             hidden: { opacity: 0, y: 20 },
+//             visible: { opacity: 1, y: 0 },
+//           }}
+//           className="pt-4 text-center"
+//         >
+//           <p className="lato-600 text-[#117ABA] dark:text-gray-300 text-base mb-3 leading-relaxed">
+//             Ready to elevate your career? Connect with us:
+//           </p>
+//           <a
+//             href="mailto:uflexlearningacademy@uflexltd.com"
+//             className="text-gray-800 inline-flex items-center space-x-2 lato-600 underline underline-offset-4 text-base transition-colors duration-200"
+//           >
+//             <span>uflexlearningacademy@uflexltd.com</span>
+
+//           </a>
+//         </motion.div>
+//       </div>
+
+//     </section>
 //   );
 // }
 "use client";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function LearnStatus() {
   return (
     <section className="relative w-full overflow-hidden px-4 pb-12">
-      {/* Background Image with Subtle Overlay */}
-      {/* <div className="absolute inset-0 bg-gradient-to-r from-slate-900/20 via-transparent to-slate-900/20" /> */}
+      <div className="max-w-7xl mx-auto px-4">
 
-      {/* Card Container - 50/50 Split */}
-      <div className="relative ">
-        <div className="max-w-7xl mx-auto w-full px-4">
+        {/* ================= Main Content ================= */}
+        <div className="grid lg:grid-cols-2 gap-10 items-start py-4 lg:py-1">
 
-      
+          {/* ---------- Text Column ---------- */}
+          <div className="space-y-4">
+            <div className="flex space-x-1.5 ">
+              <Image
+              src="/images/ula.png"
+              width={90}
+              height={15}
+              alt="UFlex Learning Academy"
+              priority
+            />
+               <motion.h1
+              className="text-[24px] lato-600 text-[#117ABA] md:text-[28px] leading-tight"
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              UFlex Learning Academy
+            </motion.h1>
 
- <div className="grid py-4 lg:grid-cols-2 lg:py-1  gap-10">
+            
+              </div>
+           
 
-            <div>
-              
-              <motion.h1 className="text-[24px] lato-600 text-[#117ABA] md:text-[28px] leading-tight mb-1">
-                UFlex Learning Academy
-              </motion.h1>
-              <Image src="/images/ula.png" width={115} height={15} alt={""} />
+            <motion.p
+              className="lato-400 text-sm md:text-base leading-relaxed text-gray-600"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              The UFlex Learning Academy fosters learning and development through
+              a range of off-the-shelf digital, blended and classroom courses on
+              a wide range of subjects. The academy brings together digital,
+              blended, and classroom programs delivered through our secure and
+              accessible online platform.
+              <br />
+              <br />
+              Our customized programs cater to individual needs, enabling
+              employees to excel in their careers. Leveraging modern modules and
+              subject-matter experts, we build a culture of continuous learning
+              and upskilling across the organization.
+              <br />
+              <br />
+              With a dedicated team of certified delivery experts and Wing
+              Champions from senior leadership, we design structured learning
+              journeys for Industry 4.0 reskilling—ensuring every employee thrives
+              in a rapidly evolving landscape.
+            </motion.p>
+          </div>
 
-
-
-              <motion.p
-                className="max-w-x mx-auto lato-400 text-sm md:text-base leading-relaxed text-gray-600"
-                variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0 } }}
-              >
-                The UFlex Learning Academy fosters learning and development through a range of off-the-shelf digital, blended and classroom courses on a wide range of subjects.
-                The academy brings together a range of off-the-shelf digital, blended, and classroom courses on a wide range of business-driven subjects, delivered through our secure and accessible online platform. Our customized programs cater to the needs of every individual, offering them an opportunity to excel in their careers.
-                Leveraging modern modules and subject matter experts, we strive to create a culture of learning and upskilling our employees across the organization.
-                With a dedicated team of certified delivery experts and **Wing Champions** from senior leadership, we create structured learning journeys tailored for Industry 4.0 reskilling—ensuring every employee thrives in a rapidly evolving landscape.
-
-
-              </motion.p>
-
-
-              {/* ---- Modal ---- */}
-
-
-            </div>
-
-             <motion.div
-            className="relative overflow-hidden "
+          {/* ---------- Image Column ---------- */}
+          <motion.div
+            className="relative w-full aspect-[16/10] overflow-hidden "
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            {/* <div className="absolute" /> */}
             <Image
               src="/images/learn.jpg"
               alt="UFlex Learning Academy"
-              width={100}
-              height={100}
-
-              className="w-full h-[338px] object-contain sm:object-fill"
+              fill
+              className="object-cover"
               priority
             />
-            {/* Optional: Overlay Text */}
-
           </motion.div>
-          </div>
-
         </div>
+
+        {/* ================= CTA Section ================= */}
         <motion.div
-          variants={{
-            hidden: { opacity: 0, y: 20 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          className="pt-4 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="pt-6 text-center"
         >
-          <p className="lato-600 text-[#117ABA] dark:text-gray-300 text-base mb-3 leading-relaxed">
+          <p className="lato-600 text-[#117ABA] text-base mb-3 leading-relaxed">
             Ready to elevate your career? Connect with us:
           </p>
+
           <a
             href="mailto:uflexlearningacademy@uflexltd.com"
-            className="text-gray-800 inline-flex items-center space-x-2 lato-600 underline underline-offset-4 text-base transition-colors duration-200"
+            className="text-gray-800 inline-flex items-center lato-600 underline underline-offset-4 text-base transition-colors duration-200 hover:text-[#117ABA]"
           >
-            <span>uflexlearningacademy@uflexltd.com</span>
-
+            uflexlearningacademy@uflexltd.com
           </a>
         </motion.div>
-      </div>
 
+      </div>
     </section>
   );
 }
