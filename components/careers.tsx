@@ -17,7 +17,7 @@ type Item = {
 const items: Item[] = [
     { desc: "Every package we create has a story. It's about protecting the food families love, reducing waste, and building a more sustainable future.", title: "Making a difference", image: "/images/careers/c1.png" },
     { desc: "We don't just follow trends, we set them. Our commitment to quality innovation means you will be surrounded by brilliant minds, pushing the boundaries of what's possible in packaging.", title: "Innovation", image: "/images/careers/c2.png" },
-    { title: "Growth", desc: "We believe in investing in our people. You'll have the opportunity to learn, grow, and lead, taking on challenging projects and shaping your career alongside industry experts.", image: "/images/careers/growth.png" },
+    { title: "Growth", desc: "We believe in investing in our people. You'll have the opportunity to learn, grow, and lead, taking on challenging projects and shaping your career alongside industry experts.", image: "/images/careers/c3.png" },
     { title: "Building relationships", desc: "At UFlex, we're more than just colleagues, we're a family. We foster a culture of collaboration, support, and mutual respect, creating a workplace where you can thrive.", image: "/images/careers/c4.png" },
 ]
 
@@ -56,30 +56,60 @@ const Careers = () => {
                 </section>
 
                 {/* <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 grid  items-center gap-10  py-12  lg:grid-cols-2 lg:gap-14 lg:py-20"> */}
-                <div className="max-w-7xl mx-auto px-4">
-                    <p className="lato-400 text-[15px] leading-relaxed text-[#6B6B6B] text-left mt-6">
-                        At UFlex, we pride ourselves on fostering an inclusive, caring, and productive environment for our people. As a leading player in the flexible packaging industry, we engage and retain purpose-driven talent through a fair and consistent HR framework. Our entrepreneurial culture empowers employees to drive UFlex’s growth and success.
-                        <span className="text-[#117ABA]">
-                            Join us, and be part of a movement that's changing the world, one package at a time.
-                        </span>
-                        UFlex offers job seekers more than a job. It offers them a lifetime of growth with a number of opportunities for continuous development and growth in assorted fields of business.
-                    </p>
+                <div className="max-w-7xl mx-auto px-4 pt-12">
+                    <div className="grid lg:grid-cols-2 gap-10 items-start">
 
-                    <p className="lato-400 text-[15px] leading-relaxed text-[#6B6B6B] text-left mt-6">
-                        If you are looking for a rewarding career, you may write to us at:
-                        <span className="text-[#117ABA]">hr@uflexltd.com</span>
-                    </p>
+                        {/* Text */}
+                        <div className="space-y-6">
+                            <p className="lato-400 text-[16px] leading-relaxed text-[#6B6B6B]">
+                                At UFlex, we pride ourselves on fostering an inclusive, caring, and
+                                productive environment for our people. As a leading player in the
+                                flexible packaging industry, we engage and retain purpose-driven talent
+                                through a fair and consistent HR framework.
+                            </p>
 
-                    <p className="lato-400 text-[15px] leading-relaxed text-[#6B6B6B] text-left mt-6">
+                            <p className="lato-400 text-[16px] leading-relaxed text-[#6B6B6B]">
+                                Our entrepreneurial culture empowers employees to drive UFlex’s growth
+                                and success. UFlex offers job seekers more than a job. It offers them a
+                                lifetime of growth with a number of opportunities for continuous
+                                development and growth in assorted fields of business.
+                            </p>
+
+                            <p className="lato-500 text-[16px] text-[#117ABA]">
+                                Join us, and be part of a movement that’s changing the world, one package
+                                at a time.
+                            </p>
+
+                            <p className="lato-400 text-[16px] text-[#6B6B6B]">
+                                If you are looking for a rewarding career, you may write to us at{" "}
+                                <span className="text-[#117ABA]">hr@uflexltd.com</span>
+                            </p>
+                        </div>
+
+                        {/* Image */}
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.98 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                            className="relative aspect-[16/10] w-full overflow-hidden "
+                        >
+                            <Image
+                                src="/images/careers/careershero.png"
+                                alt="UFlex team"
+                                fill
+                                className="object-cover"
+                                priority
+                            />
+                        </motion.div>
+
+                    </div>
+                </div>
+
+
+                <div className='mt-8 w-full px-4 sm:px-0 text-center '>
+                    <p className="pb-6 lato-400 text-[15px] leading-relaxed text-[#6B6B6B] text-center ">
                         All current openings can be viewed at the link below. Click the button to submit your application.
                     </p>
-                    {/* </div> */}
-
-
-
-                </div>
-                <div className='mt-8 w-full px-4 sm:px-0 text-center'>
-
                     <a
                         href="https://aa193.taleo.net/careersection/ex/jobsearch.ftl?lang=en"
                         target="_blank"
@@ -108,7 +138,7 @@ const Careers = () => {
 
                     <motion.h2
                         transition={{ duration: 0.7, delay: 0.4 }}
-                        className="text-[#6B6B6B] lato-400  text-[16px] leading-relaxed md:text-[16px] mb-1 py-6"
+                        className="text-center text-[#6B6B6B] lato-400  text-[16px] leading-relaxed md:text-[16px] mb-1 py-6"
                     >
                         At UFlex, we're not just shaping the future of packaging, we're revolutionizing it. For over three decades, we've been at the forefront of innovation, developing advanced solutions that preserve products, protect our planet, and empower our people.
                     </motion.h2>
@@ -150,20 +180,20 @@ const Careers = () => {
                                                 {it.desc}
                                             </p>
                                         </div> */}
-                                       <div className="relative p-5 pl-8">
-                      {/* Corner red line */}
-                      {/* <span
+                                        <div className="relative p-5 pl-8">
+                                            {/* Corner red line */}
+                                            {/* <span
                         className="absolute left-4 top-6 h-6 w-[2px] bg-[#D84A3B]"
                       /> */}
 
-                      <h3 className="text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
-                        {it.title}
-                      </h3>
+                                            <h3 className="text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
+                                                {it.title}
+                                            </h3>
 
-                      <p className="mt-3 text-sm text-[#6D6E71]">
-                        {it.desc}
-                      </p>
-                    </div>
+                                            <p className="mt-3 text-sm text-[#6D6E71]">
+                                                {it.desc}
+                                            </p>
+                                        </div>
 
                                         {/* COLOR BAND (always aligned) */}
                                         {/* <div className={`h-1 w-full ${c.tint}`} /> */}
