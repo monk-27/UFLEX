@@ -100,7 +100,7 @@
 //     year: 2024,
 //     type: "online" as const,
 //   },
-  
+
 //   {
 //     title: "CNBC Bajar",
 //     img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/media-coverage/images/CNBC-Bajar18.jpg",
@@ -531,12 +531,12 @@ const PRESS_ROOM_DATA = {
     {
       label: "PHOTO GALLERY",
       image:
-        "https://uflex.wpdevstudio.site/HTML/uploaded-files/media-resources/images/gallery07.jpg",
+        "/images/press/press1.png",
     },
     {
       label: "WATCH VIDEOS",
       image:
-        "https://uflex.wpdevstudio.site/HTML/uploaded-files/media-resources/images/video-thumb.jpg",
+        "/images/press/press2.png",
     },
   ],
 
@@ -546,16 +546,16 @@ const PRESS_ROOM_DATA = {
 
     data: {
       "Print Media": {
-        2025: ["m1.png", "m2.png", "m3.png", "m4.png", "m5.png"],
-        2024: ["m1.png", "m2.png"],
+        2025: ["/images/press/pm1.png", "/images/press/pm2.png", "/images/press/pm3.png", "/images/press/pm4.png", "/images/press/pm5.png"],
+        2024: ["/images/press/pm1.png", "/images/press/pm2.png"],
       },
       "Electronic Media": {
-        2025: ["e1.png", "e2.png", "e3.png"],
-        2024: ["e1.png"],
+        2025: ["/images/press/pm1.png", "/images/press/pm2.png", "/images/press/pm3.png"],
+        2024: ["/images/press/pm1.png"],
       },
       "Online Media": {
-        2025: ["o1.png", "o2.png", "o3.png", "o4.png"],
-        2024: ["o1.png", "o2.png"],
+        2025: ["/images/press/pm1.png", "/images/press/pm2.png", "/images/press/pm3.png", "/images/press/pm4.png"],
+        2024: ["/images/press/pm1.png", "/images/press/pm2.png"],
       },
     } satisfies Record<CoverageTab, Record<Year, string[]>>,
   },
@@ -575,16 +575,16 @@ function YearTabs({
   onChange: (y: Year) => void;
 }) {
   return (
-    <div className="flex gap-2 mb-2">
+    <div className="flex gap-2 ml-5 mb-2">
       {years.map((y) => (
         <button
           key={y}
           onClick={() => onChange(y)}
           className={[
-            "px-4 py-2 text-xs border transition",
+            "px-10 py-3 text-xs transition",
             activeYear === y
-              ? "bg-white border-[#117ABA] text-[#117ABA]"
-              : "bg-[#F5F5F5] border-[#d6d6d6] text-[#555]",
+              ? "bg-[#F5F5F5]  text-[#555]  border-b-[0.7px] border-b-[#117ABA] "
+              : "bg-[#F5F5F5]  text-[#555]",
           ].join(" ")}
         >
           {y}
@@ -596,11 +596,17 @@ function YearTabs({
 
 function PdfList({ items }: { items: PdfItem[] }) {
   return (
-    <div className="border border-[#d6d6d6]">
+    <div className="max-w-5xl mx-auto px-4 ">
       {items.map((item, i) => (
         <a key={i} href={item.link} className="group block">
-          <div className="flex justify-between items-center px-4 py-3 bg-[#F8F8F8] group-hover:bg-[#EDEDED] border-b last:border-b-0">
-            <span className="text-sm lato-400">{item.title}</span>
+          <div className={[
+            "w-full flex items-center justify-between px-6 py-4",
+            "bg-[#F8F8F8] group-hover:bg-[#EDEDED]",
+            "border-b border-white",
+          ].join(" ")}>
+
+
+            <span className="text-[15px] lato-400 text-[#000000]">{item.title}</span>
             <Image src="/images/pdf.png" alt="PDF" width={18} height={18} />
           </div>
         </a>
@@ -624,7 +630,8 @@ export default function PressRoomPage() {
 
   const { hero, mediaReleases, mediaResources, mediaCoverage } =
     PRESS_ROOM_DATA;
-
+  const coverageItems =
+    mediaCoverage.data[activeCoverageTab][activeCoverageYear];
   return (
     <div className="bg-white">
       <SiteHeader />
@@ -647,7 +654,7 @@ export default function PressRoomPage() {
       </section>
 
       {/* ================= CONTENT ================= */}
-      <main className="max-w-6xl mx-auto px-4 sm:px-12 md:px-20 py-10 space-y-14">
+      <main className=" py-10 space-y-14">
 
         {/* -------- MEDIA RELEASES -------- */}
         <section>
@@ -655,19 +662,23 @@ export default function PressRoomPage() {
             Media Releases
           </h2>
 
-          <div className="mb-10">
-            <h3 className="text-[#117ABA] text-sm lato-700 mb-2">
-              Press Release
-            </h3>
-            <YearTabs
-              years={[2025, 2024]}
-              activeYear={releaseYear}
-              onChange={setReleaseYear}
-            />
+          <div className="mb-10 ">
+            <div className="max-w-7xl flex space-x-5">
+
+              <h3 className="text-[#117ABA] text-sm lato-700 mb-2">
+                Press Release
+              </h3>
+              <YearTabs
+                years={[2025, 2024]}
+                activeYear={releaseYear}
+                onChange={setReleaseYear}
+              />
+            </div>
             <PdfList items={mediaReleases.pressRelease[releaseYear]} />
           </div>
 
-          <div>
+          <div className="max-w-7xl flex space-x-8">
+
             <h3 className="text-[#117ABA] text-sm lato-700 mb-2">
               Press Notes
             </h3>
@@ -676,21 +687,19 @@ export default function PressRoomPage() {
               activeYear={notesYear}
               onChange={setNotesYear}
             />
-            <div className="bg-[#F8F8F8]">
-              <PdfList items={mediaReleases.pressNotes[notesYear]} />
-            </div>
           </div>
+          <PdfList items={mediaReleases.pressNotes[notesYear]} />
         </section>
 
         {/* -------- MEDIA RESOURCES -------- */}
-        <section>
+        <section className="max-w-7xl mx-auto px-4">
           <h2 className="text-[#117ABA] text-xl lato-600 text-center mb-6">
             Media Resources
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {mediaResources.map((item) => (
-              <div key={item.label} className="relative h-[240px]">
-                <Image src={item.image} alt={item.label} fill className="object-cover" />
+              <div key={item.label} className="relative w-[540px] h-[359px]">
+                <Image src={item.image} alt={item.label} width={100} height={100} className="w-[540px] h-[359px] object-contain" />
                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                   <span className="text-white lato-700 text-lg">
                     {item.label}
@@ -702,7 +711,7 @@ export default function PressRoomPage() {
         </section>
 
         {/* -------- MEDIA COVERAGE -------- */}
-        <section>
+        <section className="max-w-7xl mx-auto px-4">
           <h2 className="text-[#117ABA] text-xl lato-600 text-center mb-6">
             Media Coverage
           </h2>
@@ -714,10 +723,11 @@ export default function PressRoomPage() {
                 key={tab}
                 onClick={() => setActiveCoverageTab(tab)}
                 className={[
-                  "px-6 py-2 text-sm border transition",
+                  "px-6 py-2 text-sm  transition",
+                  "px-10 py-3 text-xs transition",
                   tab === activeCoverageTab
-                    ? "bg-white border-[#117ABA] text-[#117ABA]"
-                    : "bg-[#F5F5F5] border-[#d6d6d6] text-[#666]",
+                    ? "bg-[#F5F5F5]  text-[#555]  border-b-[0.7px] border-b-[#117ABA] "
+                    : "bg-[#F5F5F5]  text-[#555]"
                 ].join(" ")}
               >
                 {tab}
@@ -734,6 +744,7 @@ export default function PressRoomPage() {
                 className={[
                   "px-5 py-2 text-sm",
                   year === activeCoverageYear
+
                     ? "bg-[#6E6E6E] text-white"
                     : "bg-[#E6E6E6] text-[#666]",
                 ].join(" ")}
@@ -744,24 +755,49 @@ export default function PressRoomPage() {
           </div>
 
           {/* Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-            {mediaCoverage.data[activeCoverageTab][activeCoverageYear].map(
-              (img) => (
+
+
+          {coverageItems.length < 5 ? (
+            /* CENTERED LAYOUT */
+            <div className="flex justify-center">
+              <div className="grid grid-cols-2 md:grid-flow-col gap-6">
+                {coverageItems.map((img) => (
+                  <div
+                    key={img}
+                    className="bg-white border h-[180px] w-[220px] flex items-center justify-center"
+                  >
+                    <Image
+                      src={img}
+                      alt="Media Coverage"
+                      width={220}
+                      height={140}
+                      className="object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : (
+            /* NORMAL 5-COLUMN GRID */
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+              {coverageItems.map((img) => (
                 <div
                   key={img}
-                  className="bg-white border h-[180px] flex items-center justify-center"
+                  className="bg-white border h-[180px] w-[220px] flex items-center justify-center"
                 >
                   <Image
-                    src={`/images/media/${img}`}
+                    src={img}
                     alt="Media Coverage"
                     width={220}
                     height={140}
                     className="object-contain"
                   />
                 </div>
-              )
-            )}
-          </div>
+              ))}
+            </div>
+          )}
+
+
 
           <div className="mt-6 text-left">
             <a className="text-[#117ABA] lato-600 underline underline-offset-4 inline-flex items-center gap-1">
