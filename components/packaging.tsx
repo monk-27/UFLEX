@@ -409,7 +409,7 @@ type Props = {
     business: BusinessConfig;
 };
 const PackageComp: React.FC<Props> = ({ business }) => {
-    const [activeTab, setActiveTab] = useState<OfferingTab>("films");
+    const [activeTab, setActiveTab] = useState<any>("films");
 
     const [open, setOpen] = useState(false);
 

@@ -152,9 +152,9 @@ const Careers = () => {
                                         </div> */}
                                        <div className="relative p-5 pl-8">
                       {/* Corner red line */}
-                      <span
+                      {/* <span
                         className="absolute left-4 top-6 h-6 w-[2px] bg-[#D84A3B]"
-                      />
+                      /> */}
 
                       <h3 className="text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
                         {it.title}
