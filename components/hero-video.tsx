@@ -8,7 +8,7 @@ import Link from "next/link"
 
 export function HeroVideo() {
   return (
-    <div className="relative mx-auto h-[60vh] w-full overflow-hidden bg-white px-4 sm:h-screen xl:px-0">
+    <div className="relative mx-auto h-[60vh] w-full overflow-hidden bg-white px-4 sm:h-[720px] xl:px-0">
       {/* Background Video */}
       <motion.video
         className="absolute left-0 top-0 h-full w-full bg-white object-cover"
