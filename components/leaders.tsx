@@ -458,10 +458,10 @@ const AWARDS_DATA: Record<
         },
       ], 2022: [
         {
-          title: "Gold & Silver Awards for Krattika (Paper-Based Tube)",
+          title: "Gold & Silver Awards for Kraftika (Paper-Based Tube)",
           by: "Flexible Packaging Awards 2022",
           description:
-            "UFlex won multiple awards for Krattika, its sustainability-driven paper-based tube solution. The recognition honours breakthroughs in eco-friendly packaging that reduce plastic usage while maintaining product strength, barrier integrity, and design appeal.",
+            "UFlex won multiple awards for Kraftika, its sustainability-driven paper-based tube solution. The recognition honours breakthroughs in eco-friendly packaging that reduce plastic usage while maintaining product strength, barrier integrity, and design appeal.",
           image: "/images/awards/fp32022.png",
         },
         {
@@ -558,17 +558,31 @@ export default function BusinessAwards() {
   const [activeYear, setActiveYear] = useState<Year>(business.years[0]);
 
   const cards = business.data[activeYear] ?? [];
+
+  console.log("")
   const isSingleCard = cards.length === 1;
 
   return (
-    <section className="py-20">
-      <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-center text-[28px] lato-700 text-[#117ABA] mb-10">
+    <section className="py-1">
+      <div className="">
+        <h2 className="text-center text-[28px] lato-400 text-[#117ABA] mb-1">
           Business Awards
         </h2>
 
         {/* Business Tabs */}
-        <div className="flex justify-center gap-6 border-b mb-8">
+        {/* Business Tabs */}
+        <div
+          className="
+    mb-8
+    flex
+    gap-6
+    border-b
+    overflow-x-auto
+    whitespace-nowrap
+    px-1
+    md:justify-center
+  "
+        >
           {Object.entries(AWARDS_DATA).map(([key, val]) => (
             <button
               key={key}
@@ -576,7 +590,7 @@ export default function BusinessAwards() {
                 setActiveBusiness(key as BusinessKey);
                 setActiveYear(val.years[0]);
               }}
-              className={`pb-2 text-sm font-semibold ${activeBusiness === key
+              className={`pb-2 text-sm lato-700 shrink-0 ${activeBusiness === key
                 ? "text-[#117ABA] border-b-2 border-[#117ABA]"
                 : "text-gray-600"
                 }`}
@@ -586,15 +600,27 @@ export default function BusinessAwards() {
           ))}
         </div>
 
+
         {/* Year Tabs */}
-        <div className="flex justify-center gap-3 mb-10">
+        {/* Year Tabs */}
+        <div
+          className="
+    mb-10
+    flex
+    gap-3
+    overflow-x-auto
+    whitespace-nowrap
+    px-1
+    md:justify-center
+  "
+        >
           {business.years.map((y) => (
             <button
               key={y}
               onClick={() => setActiveYear(y)}
-              className={`px-6 py-2 text-sm ${activeYear === y
+              className={`lato-400 shrink-0 px-6 py-2 text-sm ${activeYear === y
                 ? "bg-[#E6E6E6] text-black border-b-2 border-[#117ABA]"
-                : "bg-[#E6E6E6] text-black "
+                : "bg-[#E6E6E6] text-black"
                 }`}
             >
               {y}
@@ -602,63 +628,69 @@ export default function BusinessAwards() {
           ))}
         </div>
 
+
         {/* Cards */}
         <div
           className={[
-            "grid gap-8",
-            cards.length === 1
-              ? "lg:grid-cols-1 lg:justify-items-center"
-              : cards.length === 2
-                ? "lg:grid-cols-2 lg:justify-center"
-                : "lg:grid-cols-3",
+            "grid gap-8 ",
+            "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3",
+            cards.length < 3 ? "lg:justify-center" : "",
           ].join(" ")}
         >
+          {/* <div
+                className={`grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ${
+                  cards.length <= 3 ? "justify-center" : "justify-center"
+                }`}
+              > */}
           {cards.map((card, idx) => (
-            <article
-              key={card.title + idx}
-              className={[
-                "group h-full overflow-hidden bg-white ",
-                isSingleCard
-                  ? "lg:flex lg:items-stretch lg:gap-6"
-                  : "flex flex-col",
-              ].join(" ")}
-            >
+            <article className="group flex h-full  flex-col overflow-hidden bg-white  ">
               {/* Image */}
-              <div
-                className={[
-                  "relative overflow-hidden shrink-0",
-                  isSingleCard
-                    ? "h-[160px] w-full lg:w-[300px]"
-                    : "h-[360px] w-full",
-                ].join(" ")}
-              >
+              <div className="relative h-[350px] w-full overflow-hidden bg-[#BDBCB7]">
                 <Image
                   src={card.image}
                   alt={card.title}
                   fill
-                  className="object-cover bg-[#BDBCB7]"
-                  priority={idx === 0}
+                  className="object-cover"
                 />
               </div>
 
               {/* Content */}
-              <div className="flex h-full flex-col py-4">
-                <h3 className="mb-2 text-[16px] font-semibold text-[#117ABA] leading-snug">
+              <div className="flex flex-1 flex-col py-4">
+                {/* TITLE BLOCK — fixed vertical rhythm */}
+                <h3
+                  className="
+      text-[16px]
+      lato-700
+      text-[#117ABA]
+      leading-snug
+      h-[48px]
+      overflow-hidden
+      line-clamp-2
+    "
+                >
                   {card.title}
                 </h3>
 
-                <p className="mb-3 text-[13.5px] font-semibold text-gray-900">
-                  {card.by}
+                {/* BYLINE — always starts at same Y position */}
+                <p className=" text-[14px] lato-700 text-[#000000] leading-snug
+      h-[48px]
+      overflow-hidden
+      line-clamp-2">
+                  By: {card.by}
                 </p>
 
-                <p className="mt-auto line-clamp-6 text-[14px] leading-6 text-gray-700">
+                {/* DESCRIPTION */}
+                <p className=" text-[14px] lato-400 leading-6 text-gray-700">
                   {card.description}
                 </p>
               </div>
-            </article>
-          ))}
 
+
+            </article>
+
+          ))}
         </div>
+
       </div>
     </section>
   );

@@ -9,12 +9,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { SpotLightSlider } from "./buissnessreusbales/spotlight";
+import AutoMarquee from "./autoslider";
+import LeadershipAwards from "./spotlight";
+import Link from "next/link";
 
 /* --------------------- Dynamic import (client-only) --------------------- */
 const AwardsTabs = dynamic(() => import("@/components/leaders"), {
   ssr: false,
   loading: () => (
-    <div className="mx-auto my-8 h-[320px] w-full max-w-6xl animate-pulse rounded-2xl bg-gray-100" />
+    <div className="mx-auto my-8 h-[320px] w-full max-w-7xl animate-pulse rounded-2xl bg-gray-100" />
   ),
 });
 
@@ -37,46 +40,78 @@ type Spotlight = {
   image: string;
 };
 
-export const HALL_SPOTLIGHT_SLIDES: any[] = [
+export type LeadershipAwardItem = {
+  image: string;
+  title: string;
+  by: string;
+  description: string;
+};
+
+
+
+export const MARQUEE_ITEMS = [
   {
-    title: "ET Sustainable Organisations 2025",
-    image:
-      "/images/hall/1.png",
-    description:
-      "By The Times Group\n\n" +
-      "UFlex is recognized as an ‘ET Sustainable Organization 2025’ for our continuous efforts in responsible growth through ESG-aligned strategies and innovative sustainability.",
+    id: 1,
+    title: "ET Sustainable Organization 2025",
+    by: "ET Now",
+    image: "/images/awards/s1.png",
   },
   {
-    title: "Top Employer 2025 in India",
-    image:
-      "/images/hall/2.png",
-    description:
-      "By the Top Employers Institute\n\n" +
-      "UFlex is recognised as a Top Employer 2025, reflecting our continued commitment to building an environment where everyone can learn, grow, and reach their full potential.",
+    id: 2,
+    title: "ET Now Best Organisations to Work 2025",
+    by: "ET Now",
+
+    image: "/images/awards/s2.png",
+  },
+  // {
+  //   id: 3,
+  //   title: "Business Leader of the Decade 2024 – Mr. Ashok Chaturvedi",
+
+  //   by: "Indo-American Chamber of Commerce (IACC)",
+
+  //   image: "/images/awards/s3.png",
+  // },
+  {
+    id: 4,
+    title: "ET Edge Top 100 CSOs – Mr. Jeevaraj Pillai",
+    by: "ET Edge Global Sustainability Alliance",
+
+    image: "/images/awards/s4.png",
+  },
+  // {
+  //   id: 5,
+  //   title: "Top Employer India 2025",
+  //   by: "Top Employers Institute (TEI)",
+
+  //   image: "/images/awards/s5.png",
+  // },
+  // {
+  //   id: 6,
+  //   title: "IFCA Star Awards 2025",
+  //   by: "Indian Flexible Packaging and Folding Carton Association (IFCA)",
+
+  //   image: "/images/awards/s6.png",
+  // },
+  // {
+  //   id: 7,
+  //   title: "Innovation in Awareness – POSH Excellence Awards 2025",
+  //   by: "National POSH Conclave & Excellence Awards",
+
+  //   image: "/images/awards/s7.png",
+  // },
+  {
+    id: 8,
+    title: "Times Now Sustainable Organization 2024",
+    by: "Times Now",
+
+    image: "/images/awards/s8.png",
   },
   {
-    title: "President’s Award for Sustainability",
-    image:
-      "/images/hall/3.png",
-    description:
-      "SIES SOP Star Awards 2025\n\n" +
-      "UFlex’s chemicals business won the prestigious President’s Award for Sustainability and two awards in the Materials & Components category at the SIES SOP Star Awards 2025.",
-  },
-  {
-    title: "Best Organisations to Work 2025",
-    image:
-      "/images/hall/4.png",
-    description:
-      "By ET Now\n\n" +
-      "UFlex has been recognized as one of the ‘Best Organisations to Work 2025’ by ET Now, a testament to our commitment to fostering a work culture that empowers our people and promotes inclusion.",
-  },
-  {
-    title: "Mr. Ashok Chaturvedi – Business Leader of the Decade",
-    image:
-      "/images/hall/5.png",
-    description:
-      "By Indo-American Chamber of Commerce, India\n\n" +
-      "At the 8th Business Leadership Awards, Mr. Ashok Chaturvedi, Chairman & Managing Director, was honoured with the “Business Leader of the Decade” award.",
+    id: 9,
+    title: "CII  Award 2024 – Top 75 Innovators",
+    by: "Confederation of Indian Industry (CII)",
+
+    image: "/images/awards/s9.png",
   },
 ];
 
@@ -151,36 +186,46 @@ const HallPage = () => {
         </div>
       </section>
       <div className="max-w-7xl mx-auto px-4">
-          <p className="lato-400 text-[15px] leading-relaxed  text-[#6B6B6B] text-left mt-6">
-            Our journey of growth and leadership in flexible packaging has been consistently recognized by prestigious industry forums worldwide. From accolades in sustainability and product innovation to honors as a top employer, our awards reflect more than achievements—they embody our commitment to shaping a responsible, forward-looking future.
-          </p>
-        </div>
+        <p className="lato-400 text-[15px] leading-relaxed  text-[#6B6B6B] text-center mt-6">
+          Our journey of growth and leadership in flexible packaging has been consistently recognized by prestigious industry forums worldwide. From accolades in sustainability and product innovation to honors as a top employer, our awards reflect more than achievements—they embody our commitment to shaping a responsible, forward-looking future.
+        </p>
+      </div>
 
       {/* ==== IN THE SPOTLIGHT ==== */}
       <section className="relative py-8">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-0">
-          <h2 className="mb-10 text-center text-[24px] lato-700 text-[#117ABA] md:text-[28px] ">
-            In The Spotlight
-          </h2>
 
-          <div className="relative">
-            {/* arrows */}
+          <div className="mb-10 flex flex-col items-center text-center">
+            <h2 className="text-[28px] lato-400 text-[#117ABA]">
+              In The Spotlight
+            </h2>
 
-
-            {/* scrollable row */}
-
-            <SpotLightSlider heading="" items={HALL_SPOTLIGHT_SLIDES} />
-
+            <span className="mt-2 block text-[20px] lato-400 text-[#117ABA]">
+              Corporate, HR & Sustainability Awards
+            </span>
           </div>
 
-          <section className="pb-16 max-w-7xl mx-auto w-full px-4 sm:px-0">
+
+          <AutoMarquee items={MARQUEE_ITEMS} speed={40} />
+
+          <Link href="/hall-of-fame/buisness-awards">
+            <div className="mb-10 flex justify-center">
+              <span className="text-center text-[12px] lato-700 text-[#117ABA] md:text-[16px]">
+                View all Awards {">>"}
+              </span>
+            </div>
+          </Link>
+
+
+
+
+          <section className="pb-16  w-full ">
             <AwardsTabs />
           </section>
         </div>
       </section>
 
-      {/* ==== Modal ==== */}
-      {/* <SpotlightModal index={openIdx} onClose={() => setOpenIdx(null)} /> */}
+
 
       <SiteFooter />
 
