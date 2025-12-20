@@ -103,7 +103,7 @@ export default function MainSustainabilityCOMMComp({
     <section className="max-w-7xl mx-auto w-full px-4 py-14">
       {/* Heading */}
       <div className="text-center mb-10">
-        <h2 className="text-[24px] md:text-[28px] lato-600 text-[#117ABA]">
+        <h2 className="text-[24px] md:text-[28px] lato-400 text-[#117ABA]">
           UFlex’s Sustainability Vision
         </h2>
         <p className="mt-2 text-[14px] md:text-[16px] text-slate-500">
@@ -166,7 +166,7 @@ export default function MainSustainabilityCOMMComp({
                 desc: "Integration of energy-efficient technologies, renewable sources, and sustainable materials.",
               },
             ].map((item, idx) => (
-              <li key={idx} className="flex gap-4 items-start">
+              <li key={idx} className=" py-4 flex gap-4 items-start">
                 {/* Icon */}
                 <div className="mt-1 flex h-15 w-15 flex-none items-center justify-center">
                   <Image
