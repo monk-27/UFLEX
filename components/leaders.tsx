@@ -293,7 +293,7 @@ const AWARDS_DATA: Record<
 > = {
   /* ================= PACKAGING FILMS ================= */
   "packaging-films": {
-    label: "Packaging Films Business Awards",
+    label: "Packaging Films",
     years: [2025, 2024, 2023, 2021, 2019],
     data: {
       2025: [
