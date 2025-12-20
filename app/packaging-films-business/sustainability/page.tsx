@@ -9,7 +9,7 @@ const page = () => {
         <div className='bg-white'>
             <SiteHeader />
             <div className='bg-white'>
-                <section className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[450px] overflow-hidden">
+                <section className="relative w-full h-[260px] sm:h-[549px] overflow-hidden">
                     <Image
                         src="/images/sus/sp.png"
                         alt="Investors Relations"
