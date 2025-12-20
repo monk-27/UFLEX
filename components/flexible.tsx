@@ -249,7 +249,7 @@ production waste is recycled and reintegrated into the manufacturing cycle, sign
 landfill pressure and helping curb pollution.`,
                 image: "/images/sus.png",
             linkLabel: "Know more",
-            linkHref: "#",
+            linkHref: "/flexible-packaging-business/sustainability",
         },
 
         keypeople: {
