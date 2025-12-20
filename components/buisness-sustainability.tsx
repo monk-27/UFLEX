@@ -1,82 +1,56 @@
 "use client";
 
 import Image from "next/image";
+
 export type SustainabilityGridCardItem = {
   image: string;
   title: string;
-  by: string;
   description: string;
 };
 
 export type SustainabilityGridProps = {
   items: SustainabilityGridCardItem[];
-  columns?: {
-    base?: number;   // mobile
-    sm?: number;     // tablet
-    lg?: number;     // desktop
-  };
 };
 
-export default function SustainabilityGrid({
-  items,
-  columns = { base: 1, sm: 2, lg: 3 },
-}: SustainabilityGridProps) {
-  const gridCols = `
-    grid-cols-${columns.base}
-    sm:grid-cols-${columns.sm}
-    lg:grid-cols-${columns.lg}
-  `;
+export default function SustainabilityGrid({ items }: SustainabilityGridProps) {
+  const desktopCols =
+    items.length >= 5 || items.length === 3
+      ? "lg:grid-cols-3"
+      : "lg:grid-cols-[360px_360px] lg:justify-center";
 
   return (
-    <section className="py-1 pb-8">
-      <div className="">
+    <section className="py-2 pb-8">
+      <div className="max-w-7xl mx-auto px-4">
         <div
           className={`
             grid
-            gap-8
-            ${gridCols}
-            justify-items-center
+            grid-cols-1
+            sm:grid-cols-2
+            ${desktopCols}
+            gap-y-8
+            gap-x-6
             items-start
           `}
         >
           {items.map((item, idx) => (
-            <article
-              key={idx}
-              className="flex w-full  flex-col h-full"
-            >
+            <article key={idx} className="flex flex-col w-full">
               {/* Image */}
-              <div className="relative w-full h-[350px] overflow-hidden rounded-md bg-white flex items-center justify-center">
+              <div className="relative w-full h-[240px] overflow-hidden rounded-md bg-white">
                 <Image
                   src={item.image}
                   alt={item.title}
-                  width={360}
-                  height={350}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
 
               {/* Content */}
-              <div className="flex flex-1 flex-col pt-4">
-                {/* Title */}
-                <h3
-                  className="
-                    
-                    text-[16px]
-                    lato-400
-                    text-[#117ABA]
-                    leading-[22px]
-                    line-clamp-2
-                    min-h-[30px]
-                  "
-                >
+              <div className="pt-3">
+                <h3 className="text-[16px] lato-400 text-[#117ABA] leading-[22px] line-clamp-2 min-h-[30px]">
                   {item.title}
                 </h3>
 
-                {/* By */}
-                
-
-                {/* Description */}
-                <p className="text-[16px] leading-6 lato-400 text-gray-700 line-clamp-8 min-h-[120px]">
+                <p className="mt-1 text-[16px] leading-6 lato-400 text-gray-700 line-clamp-6">
                   {item.description}
                 </p>
               </div>

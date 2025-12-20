@@ -200,7 +200,7 @@ export const businesses: BusinessConfig[] = [
       "Acting today for a sustainable tomorrow. Through energy-efficient technologies, eco-friendly processes, and responsible waste management, we are proud to foster an eco-friendly environment at our plants.",
     image: "/images/sus.png",
     linkLabel: "Know more",
-    linkHref: "#",
+    linkHref: "/printing-cylinder-business/sustainability",
   },
 
   keypeople: {

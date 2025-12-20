@@ -27,7 +27,7 @@ const page = () => {
                   </div> */}
                 </section>
                 <section className="max-w-7xl mx-auto px-4 ">
-                    <h2 className='py-6 text-center text-[20px] sm:text-[28px] text-[#000000]'>
+                    <h2 className='py-6 text-center lato-700 text-[20px] sm:text-[28px] text-[#000000] leading-tight'>
                         Packaging  Films & PET Resin
                     </h2>
                     <div className="pb-6 grid grid-cols-1 lg:grid-cols-2 gap-12">
