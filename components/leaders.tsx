@@ -630,21 +630,17 @@ export default function BusinessAwards() {
 
 
         {/* Cards */}
-        <div
+        {/* <div
           className={[
             "grid gap-8 ",
             "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3",
             cards.length < 3 ? "lg:justify-center" : "",
           ].join(" ")}
         >
-          {/* <div
-                className={`grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ${
-                  cards.length <= 3 ? "justify-center" : "justify-center"
-                }`}
-              > */}
+         
           {cards.map((card, idx) => (
             <article className="group flex h-full  flex-col overflow-hidden bg-white  ">
-              {/* Image */}
+            
               <div className="relative h-[350px] w-full overflow-hidden bg-[#BDBCB7]">
                 <Image
                   src={card.image}
@@ -654,9 +650,9 @@ export default function BusinessAwards() {
                 />
               </div>
 
-              {/* Content */}
+              
               <div className="flex flex-1 flex-col py-4">
-                {/* TITLE BLOCK — fixed vertical rhythm */}
+              
                 <h3
                   className="
       text-[16px]
@@ -671,7 +667,7 @@ export default function BusinessAwards() {
                   {card.title}
                 </h3>
 
-                {/* BYLINE — always starts at same Y position */}
+                
                 <p className=" text-[14px] lato-700 text-[#000000] leading-snug
       h-[48px]
       overflow-hidden
@@ -679,7 +675,7 @@ export default function BusinessAwards() {
                   By: {card.by}
                 </p>
 
-                {/* DESCRIPTION */}
+                
                 <p className=" text-[14px] lato-400 leading-6 text-gray-700">
                   {card.description}
                 </p>
@@ -689,7 +685,56 @@ export default function BusinessAwards() {
             </article>
 
           ))}
+        </div> */}
+
+
+        {/* Cards */}
+<div className="flex justify-center">
+  <div
+    className={[
+      "grid gap-8",
+      cards.length === 1
+        ? "grid-cols-1 max-w-[560px]"
+        : cards.length === 2
+        ? "grid-cols-1 sm:grid-cols-2 max-w-[1260px]"
+        : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-[1140px]",
+      "w-full",
+    ].join(" ")}
+  >
+    {cards.map((card, idx) => (
+      <article
+        key={idx}
+        className="rounded-sm group flex h-full flex-col overflow-hidden bg-white"
+      >
+        {/* Image */}
+        <div className="relative h-[370px] w-full overflow-hidden bg-[#BDBCB7]">
+          <Image
+            src={card.image}
+            alt={card.title}
+            fill
+            className="object-cover"
+          />
         </div>
+
+        {/* Content */}
+        <div className="flex flex-1 flex-col py-4">
+          <h3 className="text-[16px] lato-700 text-[#117ABA] leading-snug h-[48px] line-clamp-2">
+            {card.title}
+          </h3>
+
+          <p className="text-[14px] lato-700 text-black leading-snug h-[48px] line-clamp-2">
+            By: {card.by}
+          </p>
+
+          <p className="text-[14px] lato-400 leading-6 text-gray-700">
+            {card.description}
+          </p>
+        </div>
+      </article>
+    ))}
+  </div>
+</div>
+
 
       </div>
     </section>
