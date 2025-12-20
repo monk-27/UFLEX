@@ -189,7 +189,7 @@ export const businesses: BusinessConfig[] = [
         "At Asepto, sustainability isn't just a commitment; it's a driving force behind innovation. Asepto brings a sustainable solution to this pressing concern of aseptic cartons reaching landfills. With their proper extraction and assimilation, Asepto paves the way for a Circular Economy. ",
       image: "/images/sus.png",
       linkLabel: "Know more",
-      linkHref: "#",
+      linkHref: "/aseptic-packaging-business/sustainability",
     },
     keypeople: {
       title: "Key People",
