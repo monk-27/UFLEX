@@ -180,10 +180,10 @@ export default function MainSustainabilityCOMMComp({
 
                 {/* Text */}
                 <div>
-                  <h4 className="text-[18px] lato-600 text-[#117ABA] leading-snug">
+                  <h4 className="text-[18px] lato-400 text-[#117ABA] leading-snug">
                     {item.title}
                   </h4>
-                  <p className="mt-1 text-[14px] text-slate-500 leading-relaxed">
+                  <p className="mt-1 text-[14px] lato-400 text-slate-500 leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
