@@ -168,18 +168,18 @@ const HallPage = () => {
         </header>
 
       </section> */}
-      <section className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[450px] overflow-hidden">
+      <section className="relative w-full h-[260px] sm:h-[471px] md:h-[471px] lg:h-[471px] overflow-hidden">
         <Image
           src="/images/awards/awardsmain.png"
           alt="Corporate Policies"
           fill
-          className="object-cover w-full h-full"
+          className="object-cover w-full h-[260px] sm:h-[471px] md:h-[471px] lg:h-[471px]"
           priority
         />
 
         <div className="absolute inset-0 bg-black/40" />
 
-        <div className="absolute inset-0 flex flex-col justify-center px-6 sm:px-12 md:px-20 lg:px-28">
+        <div className="max-w-7xl mx-auto px-4 absolute inset-0 flex flex-col justify-center ">
           <h1 className="text-start text-white text-2xl sm:text-3xl md:text-[38px] lato-700 mb-4">
             Hall of Fame
           </h1>
