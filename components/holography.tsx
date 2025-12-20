@@ -175,7 +175,7 @@ generation and optimally
 recycle the same.`,
             image: "/images/sus.png",
             linkLabel: "Know more",
-            linkHref: "#"
+            linkHref: "/holography-business/sustainability"
         },
 
         keypeople: {
