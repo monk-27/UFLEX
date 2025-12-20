@@ -722,7 +722,7 @@ function YearTabs({
   onChange: (y: Year) => void;
 }) {
   return (
-    <div className="flex gap-2 py-12 mb-2">
+    <div className="flex gap-2 py-1 mb-2">
       {years.map((y) => (
         <button
           key={y}
@@ -812,7 +812,7 @@ export default function PressRoomPage() {
           <div className="mb-10 ">
             <div className="max-w-7xl ">
 
-              <h3 className="text-[#117ABA] text-[14px] lato-400 mb-2">
+              <h3 className="text-[#117ABA] text-[14px] lato-400">
                 Press Release
               </h3>
               <YearTabs
@@ -826,7 +826,7 @@ export default function PressRoomPage() {
 
           <div className="max-w-7xl ">
 
-            <h3 className="text-[#117ABA] text-[14px]  lato-400 mb-2">
+            <h3 className="text-[#117ABA] text-[14px]  lato-400 ">
               Press Notes
             </h3>
             <YearTabs
@@ -839,23 +839,42 @@ export default function PressRoomPage() {
         </section>
 
         {/* -------- MEDIA RESOURCES -------- */}
-        <section className="max-w-7xl mx-auto px-4">
-          <h2 className="text-[#117ABA] text-[16px] sm:text-[28px] lato-400 text-center mb-6">
-            Media Resources
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {mediaResources.map((item) => (
-              <div key={item.label} className="relative w-[540px] h-[359px]">
-                <Image src={item.image} alt={item.label} width={100} height={100} className="w-[540px] h-[359px] object-contain" />
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                  <span className="text-white lato-700 text-lg">
-                    {item.label}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+        {/* -------- MEDIA RESOURCES -------- */}
+<section className="max-w-7xl mx-auto px-4">
+  <h2 className="text-[#117ABA] text-[16px] sm:text-[28px] lato-400 text-center mb-6">
+    Media Resources
+  </h2>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    {mediaResources.map((item) => (
+      <div
+        key={item.label}
+        className="
+          relative
+          w-full
+          aspect-[16/10]
+          overflow-hidden
+          rounded-md
+          bg-black
+        "
+      >
+        <Image
+          src={item.image}
+          alt={item.label}
+          fill
+          className="object-cover"
+        />
+
+        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+          <span className="text-white lato-700 text-base sm:text-lg text-center px-4">
+            {item.label}
+          </span>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
 
         {/* -------- MEDIA COVERAGE -------- */}
         <section className="max-w-7xl mx-auto px-4">
@@ -911,7 +930,7 @@ export default function PressRoomPage() {
                 {coverageItems.map((img) => (
                   <div
                     key={img}
-                    className="bg-white border h-[180px] w-[220px] flex items-center justify-center"
+                    className="bg-white  h-[180px] w-[220px] flex items-center justify-center"
                   >
                     <Image
                       src={img}
