@@ -712,7 +712,7 @@ export default function BusinessAwards() {
             src={card.image}
             alt={card.title}
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </div>
 

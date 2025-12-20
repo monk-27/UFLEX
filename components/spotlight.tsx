@@ -144,7 +144,7 @@ export default function LeadershipAwards() {
                   alt={item.title}
                   width={360}
                   height={360}
-                  className="max-h-full w-[360px] h-[350px] object-cover"
+                  className="max-h-full w-[360px] h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 

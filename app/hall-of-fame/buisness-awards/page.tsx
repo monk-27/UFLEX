@@ -17,7 +17,7 @@ const page = () => {
                         src="/images/awards/awardsmain.png"
                         alt="Investors Relations"
                         fill
-                        className="object-cover w-full h-full"
+                        className="object-cover w-full h-full "
                         priority
                       />
             

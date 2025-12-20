@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useState, useMemo, useRef } from "react";
+import { useState, useMemo, useRef, useCallback } from "react";
 import Image from "next/image";
 import Slider, { Settings as SlickSettings } from "react-slick";
 import { motion } from "framer-motion";
@@ -11,6 +11,8 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { useRouter } from "next/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import useEmblaCarousel from "embla-carousel-react";
+import Link from "next/link";
 
 /* ------------------------------- THEME ------------------------------- */
 const BRAND = {
@@ -242,7 +244,15 @@ export default function WhatWeDoPage() {
   //   { title: "Registrar", subtitle: "RTA contact.", image: "/images/policy3.png", href: "#" },
 
   // ];
+const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: false,        // ❌ no infinite autoplay feel
+    align: "start",
+    skipSnaps: false,
+    dragFree: false,
+  });
 
+  const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
+  const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
   return (
 
     <main className="bg-gradient-to-b from-white to-slate-50">
@@ -296,9 +306,74 @@ export default function WhatWeDoPage() {
         </div>
       </section>
 
-      {/* Sliders */}
-      <InvestorSlider id="investor-relations" heading="Our Expansion" items={investorRelations} />
-      {/* <InvestorSlider id="policies" heading="Policies, announcements and other documents" items={policiesDocs} /> */}
+      <section className="pt-12 max-w-7xl mx-auto px-4">
+      {/* Viewport */}
+      <div ref={emblaRef} className="overflow-hidden">
+        {/* Container */}
+        <div className="flex gap-6">
+          {investorRelations.map((card, index) => (
+            <motion.div
+              key={card.href}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="
+              flex-[0_0_100%]
+  sm:flex-[0_0_50%]
+  lg:flex-[0_0_33.3333%]
+  flex-shrink-0 gap-6
+              "
+            >
+              <Link href={card.href} className="block h-full">
+                <div className="group flex h-full flex-col overflow-hidden rounded-sm bg-gray-100 shadow-sm hover:shadow-md transition">
+                  {/* Image */}
+                  <div className="relative aspect-[16/9] overflow-hidden">
+                    <Image
+                      src={card.img}
+                      alt={card.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-5">
+                    <div className="flex gap-2">
+                      {/* <span className="mt-1 h-6 w-[2px] bg-[#D84A3B]" /> */}
+                      <h3 className="text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
+                        {card.title}
+                      </h3>
+                    </div>
+
+                    {/* <p className="mt-3 text-sm text-[#6D6E71]">
+                      {card.desc}
+                    </p> */}
+                  </div>
+                </div>
+              </Link>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
+      {/* Controls */}
+      <div className="mt-6 flex justify-center gap-4">
+        <button
+          onClick={scrollPrev}
+          className="rounded-full border border-gray-400 p-3 hover:bg-gray-100 transition"
+        >
+          <ChevronLeft className="h-5 w-5 text-gray-400" />
+        </button>
+
+        <button
+          onClick={scrollNext}
+          className="rounded-full border border-gray-400 p-3 hover:bg-gray-100 transition"
+        >
+          <ChevronRight className="h-5 w-5 text-gray-400" />
+        </button>
+      </div>
+    </section>
 
       <div className="h-16" />
       <SiteFooter />
