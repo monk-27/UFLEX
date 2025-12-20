@@ -563,14 +563,13 @@ export default function BusinessAwards() {
   const isSingleCard = cards.length === 1;
 
   return (
-    <section className="py-1">
+    <section className="">
       <div className="">
-        <h2 className="text-center text-[28px] lato-400 text-[#117ABA] mb-1">
+        <h2 className="text-center text-[28px] lato-400 text-[#117ABA] mb-6">
           Business Awards
         </h2>
 
-        {/* Business Tabs */}
-        {/* Business Tabs */}
+        
         <div
           className="
     mb-8
@@ -718,15 +717,15 @@ export default function BusinessAwards() {
 
         {/* Content */}
         <div className="flex flex-1 flex-col py-4">
-          <h3 className="text-[16px] lato-700 text-[#117ABA] leading-snug h-[48px] line-clamp-2">
+          <h3 className="text-[16px] lato-400 text-[#117ABA] leading-snug h-[48px] line-clamp-2">
             {card.title}
           </h3>
 
-          <p className="text-[14px] lato-700 text-black leading-snug h-[48px] line-clamp-2">
+          <p className="text-[16px] lato-400 text-black leading-snug h-[48px] line-clamp-2">
             By: {card.by}
           </p>
 
-          <p className="text-[14px] lato-400 leading-6 text-gray-700">
+          <p className="text-[16px] lato-400 leading-6 text-gray-700">
             {card.description}
           </p>
         </div>

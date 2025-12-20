@@ -192,15 +192,15 @@ const HallPage = () => {
       </div>
 
       {/* ==== IN THE SPOTLIGHT ==== */}
-      <section className="relative py-8">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-0">
+      <section className="relative py-6">
+        <div className="max-w-7xl mx-auto  w-full px-4 sm:px-0">
 
-          <div className="mb-10 flex flex-col items-center text-center">
+          <div className=" flex flex-col items-center text-center">
             <h2 className="text-[28px] lato-400 text-[#117ABA]">
               In The Spotlight
             </h2>
 
-            <span className="mt-2 block text-[20px] lato-400 text-[#117ABA]">
+            <span className=" block text-[20px] lato-400 text-[#117ABA]">
               Corporate, HR & Sustainability Awards
             </span>
           </div>
@@ -209,7 +209,7 @@ const HallPage = () => {
           <AutoMarquee items={MARQUEE_ITEMS} speed={40} />
 
           <Link href="/hall-of-fame/buisness-awards">
-            <div className="mb-10 flex justify-center">
+            <div className=" flex justify-center">
               <span className="text-center text-[12px] lato-700 text-[#117ABA] md:text-[16px]">
                 View all Awards {">>"}
               </span>
@@ -219,7 +219,7 @@ const HallPage = () => {
 
 
 
-          <section className="pb-16  w-full ">
+          <section className="pt-6 pb-16  w-full ">
             <AwardsTabs />
           </section>
         </div>

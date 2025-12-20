@@ -36,7 +36,7 @@ export default function AutoMarquee({
               />
             </div>
 
-            <p className="marquee-title  lato-400 text-[#000000]">{item.title}</p>
+            <p className="marquee-title  lato-700 text-[#000000]">{item.title}</p>
             <p className="marquee-by line-clamp-2 lato-400 text-[#000000]">By: {item.by}</p>
           </div>
         ))}
