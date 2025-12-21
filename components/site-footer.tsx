@@ -173,7 +173,7 @@ export function SiteFooter() {
       <nav className="grid gap-4 text-base lato-400">
         <Link href="/">Home</Link>
         <Link href="/about-us">About Us</Link>
-        <Link href="/business">Our Business</Link>
+        {/* <Link href="/business">Our Business</Link> */}
         <Link href="/sustainability">Sustainability</Link>
         <Link href="/investors">Investors</Link>
       </nav>
