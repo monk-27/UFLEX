@@ -25,7 +25,7 @@ export function SustainabilitySection({ data }: any) {
             <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f] mb-4">
               {data.description}
             </p>
-            {data.linkHref && data.linkLabel && (
+            {/* {data.linkHref && data.linkLabel && (
               <a
                 href={data.linkHref}
                 className="py-6 inline-flex items-center gap-1 lato-700 text-[14px] text-[#117ABA]  "
@@ -36,7 +36,7 @@ export function SustainabilitySection({ data }: any) {
                 <span aria-hidden>↗</span>
                 </div>
               </a>
-            )}
+            )} */}
           </div>
 
           {/* Image */}
@@ -62,7 +62,7 @@ export function SustainabilitySection({ data }: any) {
             <p className="lato-400 text-[16px] leading-relaxed text-[#5B5B5B] mb-4">
               {data.description}
             </p>
-            {data.linkHref && data.linkLabel && (
+            {/* {data.linkHref && data.linkLabel && (
               <a
                 href={data.linkHref}
                 className="py-6 inline-flex items-center gap-1 lato-700 text-[13px]  tracking-wide text-[#000000] underline underline-offset-2"
@@ -73,7 +73,7 @@ export function SustainabilitySection({ data }: any) {
                 <span aria-hidden>↗</span>
                 </div>
               </a>
-            )}
+            )} */}
           </div>
 
           {/* Image */}
