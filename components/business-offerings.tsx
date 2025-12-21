@@ -34,8 +34,7 @@ export default function OfferingsGrid({ items }: OfferingsProps) {
         >
           {items.map((item, idx) => (
             <article key={idx} className="flex flex-col w-full">
-              {/* Image */}
-              <div className="relative w-full h-[240px] overflow-hidden rounded-md bg-white">
+              <div className="relative w-full h-[360px] overflow-hidden rounded-md bg-white">
                {
                 item.image &&(<>
                 <Image
@@ -48,13 +47,12 @@ export default function OfferingsGrid({ items }: OfferingsProps) {
                } 
               </div>
 
-              {/* Content */}
               <div className="pt-3">
                 <h3 className="text-[16px] lato-400 text-[#117ABA] leading-[22px] line-clamp-2 min-h-[30px]">
                   {item.title}
                 </h3>
 
-                <p className="mt-1 text-[16px] leading-6 lato-400 text-gray-700 line-clamp-15">
+                <p className="mt-1 text-[16px] leading-6 lato-400 text-gray-700 line-clamp-20">
                   {item.description}
                 </p>
               </div>

@@ -24,49 +24,49 @@ const SliderItems: SliderItem[] = [
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-08511505115.jpg",
         dynamiclink: "/flexible-packaging-business/flexible-Our-Offerings",
         title: "Flexible Laminates",
-        desc: "Our range of flexible laminates are made from various combinations of plastic, aluminum, and paper to suit diverse packaging needs.",
+        desc: "UFlex offers a comprehensive range of flexible laminates made from various combinations of plastic, aluminum, and paper to suit diverse packaging needs. These include structures like PET/PE, PET/Foil/PE, PET/BOPP, BOPP/CPP, and advanced multilayer laminates such as PET/Extr/Foil/Extr/PE and AlOx PET/BON/CPP for retort applications. ",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-08533105331.jpg",
         dynamiclink: "/flexible-packaging-business/flexible-Our-Offerings",
 
         title: "Pre-formed pouches",
-        desc: "Our wide array of flexible pouches designed to cater to diverse product categories and packaging needs across industries.",
+        desc: "UFlex offers a wide array of flexible pouches designed to cater to diverse product categories and packaging needs across industries. Our portfolio includes advanced formats such as slider zipper pouches, ideal for powders and granules, and pouring spout pouches, perfectly suited for liquid applications.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-08533115331.jpg",
         dynamiclink: "/flexible-packaging-business/flexible-Our-Offerings",
 
         title: "FlexFreshTM – Active & Modified Atmosphere Packaging (AMAP)",
-        desc: "A breakthrough innovation designed to extend the shelf life of perishable goods such as fresh vegetables, fruits, and flowers.",
+        desc: "MAP solution is a breakthrough innovation designed to extend the shelf life of perishable goods such as fresh vegetables, fruits, and flowers. By regulating the internal atmosphere without the use of chemicals, FlexFreshTM helps slow spoilage and preserve freshness for up to 30 days. ",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-09042700427.jpg",
         dynamiclink: "/flexible-packaging-business/flexible-Our-Offerings",
 
         title: "Flexo printed rolls and bags",
-        desc: "High-quality printed bags, in multiple formats, that protect products while delivering superior print clarity and shelf appeal.",
+        desc: "Our Flexo printed rolls and bags are a key offering within our Flexible Packaging business, designed to meet the specific needs of the baby and feminine hygiene product segments. We provide high-quality flexo surface printed bags in a variety of formats, including surface printed poly rolls, bottom gusset bags, wicketed bottom gusset bags, and handle gusseted bags.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-09042710427.jpg",
 
         dynamiclink: "/flexible-packaging-business/flexible-Our-Offerings",
         title: "Laminated Woven Poly Propylene (WPP) bags",
-        desc: "Bags with high strength, durability, and superior printability, ideal for a variety of industrial and consumer applications.",
+        desc: "Our range of laminated Woven Polypropylene (WPP) bags offers high strength, durability, and superior printability—making them ideal for a wide variety of industrial and consumer applications.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-09042720427.jpg",
 
         dynamiclink: "/flexible-packaging-business/flexible-Our-Offerings",
         title: "Electron beam and Cast n Cure",
-        desc: "Advanced e-beam and Cast n Cure print finishing solutions that boost packaging appeal, performance, and brand value.",
+        desc: "UFlex offers advanced print finishing solutions using electron beam (e-beam) and Cast n Cure technologies, enhancing the visual and functional appeal of flexible packaging. Our portfolio includes a variety of premium finishes such as super gloss for high-impact shelf presence, matte finish for a premium tactile feel, and registered cast n cure for precise, design-specific effects.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item4-09042730427.jpg",
 
         dynamiclink: "/flexible-packaging-business/flexible-Our-Offerings",
         title: "Pharmaceutical Packaging",
-        desc: "High-performance pharmaceutical packaging materials tailored to diverse dosage forms and global regulations.",
+        desc: "UFlex offers a comprehensive range of high-performance packaging materials designed specifically for the pharmaceutical industry. Our offerings include cold form alu laminates, strip foil, blister foil, child-resistant foil, and suppository films—each engineered to ensure superior protection against moisture, oxygen, and light.",
     },
 
     {
@@ -74,7 +74,7 @@ const SliderItems: SliderItem[] = [
 
         dynamiclink: "/flexible-packaging-business/flexible-Our-Offerings",
         title: "Hygiene Films",
-        desc: "High-performance films, made with advanced processes, ensure hygiene, safety, and quality to meet the personal care industry's critical needs.",
+        desc: "UFlex offers high-performance hygiene films designed to meet the critical requirements of the personal care industry. Our range includes breathable films for diapers and back sheet films for sanitary napkins, engineered for comfort, protection, and reliability. ",
     },
 
     {
@@ -82,7 +82,7 @@ const SliderItems: SliderItem[] = [
 
         dynamiclink: "/flexible-packaging-business/flexible-Our-Offerings",
         title: "Premium shower-proof bag",
-        desc: "An advanced packaging solution tailored for the building materials industry, combining durability, safety, and high-performance design.",
+        desc: "UFlex’s premium shower-proof bag is an advanced packaging solution tailored for the building materials industry, combining durability, safety, and high-performance design. Made from polypropylene-based multi-component block bottom structures, the bag features nano technology that prevents water ingress—validated through a stringent “Shower Test”—thereby extending shelf life and eliminating lumping in humid conditions.",
     },
 
     {
@@ -90,7 +90,7 @@ const SliderItems: SliderItem[] = [
 
         dynamiclink: "/flexible-packaging-business/flexible-Our-Offerings",
         title: "ZipouchR",
-        desc: "Versatile reclosable and reusable pouches, crafted from premium laminated films to meet modern food storage needs.",
+        desc: "ZipouchR is a versatile range of reclosable and reusable pouches made from high-quality laminated films, designed to meet the everyday food storage needs of modern consumers. Ideal for storing and refrigerating vegetables, fruits, meats, breads, and even reheating food, ZipouchR offers convenience from shelf to refrigerator to microwave.",
     },
 
     {
@@ -98,7 +98,7 @@ const SliderItems: SliderItem[] = [
         dynamiclink: "/flexible-packaging-business/flexible-Our-Offerings",
 
         title: "Injection Moulding Products",
-        desc: "Precision-engineered injection moulded plastic packaging components, designed to meet the diverse requirements of the packaging industry.",
+        desc: "UFlex offers a wide range of precision-engineered injection moulded plastic packaging components such as caps, spouts, tube caps, shoulders, zippers, sliders, and core plugs. Manufactured using machines with capacities of 150, 180, and 250 tons, these products are designed to meet the diverse requirements of the packaging industry.",
     },
 
 
@@ -122,27 +122,27 @@ a legacy of innovation and excellence, we operate three advanced manufacturing f
 India, including Noida and Jammu, and serve a diverse clientele both domestically and globally. Our
 robust international footprint spans North America, Europe, Africa, Southeast Asia, and the Middle
 East, positioning us as a leading manufacturer and exporter in the flexible packaging space.`,
-`With a manufacturing capacity of over 100,000 MTPA, UFlex offers a comprehensive range of
+            `With a manufacturing capacity of over 100,000 MTPA, UFlex offers a comprehensive range of
 flexible packaging solutions and laminated roll stocks. Our versatile portfolio includes a wide variety
 of pouch formats such as 3D and 4D pouches with re-closable options, wicketed bags for hygiene
 products, pet food pinch bottom bags, cement block bottom bags, FlexiTubes, and innovative
 offerings like innolock pouches, zip pouches, embossed foils, pocket PTC zippers, and Cast n Cure
 technologies. Whether it’s packaging for household use or industrial applications, our products are
 designed to combine functionality with visual appeal.`,
-`What sets UFlex apart is our full backward integration across every key vertical—films (BOPET, BOPP,
+            `What sets UFlex apart is our full backward integration across every key vertical—films (BOPET, BOPP,
 CPP, metalized films), chemicals (inks, coatings, adhesives), engineering (converting and packing
 machines), holography, and cylinders. This integration enables us to offer customized, end-to-end
 packaging solutions tailored to the evolving needs of our customers.`,
-`Our four in-house R&amp;D labs, approved by the Ministry of Industries, Government of India, are
+            `Our four in-house R&amp;D labs, approved by the Ministry of Industries, Government of India, are
 equipped with state-of-the-art instruments like FTIR, UTM, gas chromatograph, and differential
 scanning calorimeter. This empowers us to stay at the forefront of packaging innovation, driving
 quality, sustainability, and performance.`,
-`At UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every
+            `At UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every
 solution we create.`
 
 
 
-             ]
+        ]
     }
 
 ];
@@ -157,61 +157,61 @@ export const businesses: BusinessConfig[] = [
             body:
                 "We offer a comprehensive range of products, including flexible laminates, pre-formed pouches, Flexo-printed rolls and bags, laminated woven polypropylene (WPP) bags, electron beam and Cast n Cure technology, pharmaceutical packaging, Flexible Tubes, hygiene films, Flexfresh™ modified atmosphere packaging, and big bags. At UFlex, we don’t just deliver packaging—we deliver excellence, innovation.",
         },
-  innovations: {
-      heading: "Business Highlights and Innovations",
-  items: [
-  {
-    id: "itc-rte-pouch-ulp-pet",
-    title: "ITC RTE Pouch – ULP PET pouches",
-    image: "/images/flexiblelaminates.png",
-    description: "These pouches are designed for convenient microwave heating and are ideal for hot-fill applications such as gravies, ketchups, sauces, jams, and marinades. They are also well-suited for packaging meat, cheese, frozen foods, and dry fruits.",
-  },
-  {
-    id: "flexitube-laminate-metallica-holographic",
-    title: "FlexiTube Laminate",
-    image: "/images/preformpouches.png",
-    description: "Silver and Gold Metallica 280 Micron: This laminate consists of multiple layers, including 70-micron natural PE, 34-micron extruded PE, 12-micron special-grade metallized PET, another 34-micron extruded PE, and 130-micron natural EVOH PE. Silver Holographic Laminate: The silver holographic laminate features a multilayer structure comprising 70-micron natural PE, 13-micron metallized holographic film, 30-micron extruded PE, 12-micron aluminum foil, another 30-micron extruded PE, and 130-micron natural PE.",
-  },
-  {
-    id: "jay-baba-bakreswar-farm-house-rice-bag",
-    title: "Jay Baba Bakreswar – Farm House rice bag",
-    image: "/images/preformpouches.png",
-    description: "UFlex has developed packaging for Jay Baba Bakreswar Rice Mill Pvt. Ltd. under the Farm House brand. This marks a significant milestone, as it is the first 50 kg SKU rice bag developed by UFlex, highlighting the company’s advancement in bulk packaging solutions.",
-  },
-  {
-    id: "itc-eco-friendly-packaging-savlon",
-    title: "ITC’s eco-friendly packaging",
-    image: "/images/preformpouches.png",
-    description: "UFlex has developed a sustainable packaging solution for Savlon brand of ITC Limited, featuring an 8.2g SKU designed for the domestic market. A key highlight is the use of a PCR-based laminate, reinforcing ITC’s commitment to eco-friendly packaging solutions.",
-  },
-  {
-    id: "double-spout-pouch-clean-drinking-water",
-    title: "10 Litre Double Spout Pouch for clean drinking water",
-    image: "/images/preformpouches.png",
-    description: "UFlex has developed an innovative pouch for a start-up focused on tackling the critical issue of clean drinking water availability for underprivileged communities. The 10-litre double spout pouch is a portable water filtration solution equipped with a durable plastic handle for easy carrying. It features a laminate structure comprising 12μ PET, 15μ BON, and 165μ natural PE, offering both strength and sustainability. A 40 mm spout enables convenient water dispensing, while the brand’s patented natural filter ensures safe drinking water reaches those who need it most.",
-  },
-  {
-    id: "50mm-oval-tubes-packaging",
-    title: "50mm dia Oval tubes",
-    image: "/images/elctron.png",
-    description: "These oval tubes offer 20% more space on the front and back panels compared to traditional round tubes, giving brands additional room to effectively communicate their message to consumers. The unique shape also enables more efficient use of retail shelf space, allowing brand owners to display more units at the same cost. Furthermore, the ability to accommodate more tubes per pallet contributes to reduced transportation costs. This innovation underscores UFlex’s commitment to helping brands succeed through superior and efficient packaging solutions.",
-  },
-  {
-    id: "matte-effect-hair-dye-sachets",
-    title: "New Packaging Solution for Frozen Food",
-    image: "/images/elctron.png",
-    description: "UFlex supported Hygienic Research Institute Pvt. Ltd. to develop innovative gel-based hair dye sachets in 24ml and 45ml sizes. This premium packaging solution features a unique matte effect, a first in the hair dye segment. The design is further enhanced with elegant touches such as detailed hair graphics and a gold-colored logo, adding to the pouch’s overall visual appeal and shelf presence.",
-  },
-  {
-    id: "vacuum-sealed-marinated-chicken-packaging",
-    title: "New Packaging Solution for Frozen Food",
-    image: "/images/elctron.png",
-    description: "UFlex has partnered with Jubilant FoodWorks to enhance the packaging of their marinated chicken, which is distributed in 500 gm packs from their Bangalore facility. The innovative laminate used in this packaging is thermoformed and vacuum-sealed, featuring a barrier film that protects the food from contamination by preventing exposure to air.",
-  },
-]
+        innovations: {
+            heading: "Business Highlights and Innovations",
+            items: [
+                {
+                    id: "itc-rte-pouch-ulp-pet",
+                    title: "ITC RTE Pouch – ULP PET pouches",
+                    image: "/images/flexiblelaminates.png",
+                    description: "These pouches are designed for convenient microwave heating and are ideal for hot-fill applications such as gravies, ketchups, sauces, jams, and marinades. They are also well-suited for packaging meat, cheese, frozen foods, and dry fruits.",
+                },
+                {
+                    id: "flexitube-laminate-metallica-holographic",
+                    title: "FlexiTube Laminate",
+                    image: "/images/preformpouches.png",
+                    description: "Silver and Gold Metallica 280 Micron: This laminate consists of multiple layers, including 70-micron natural PE, 34-micron extruded PE, 12-micron special-grade metallized PET, another 34-micron extruded PE, and 130-micron natural EVOH PE. Silver Holographic Laminate: The silver holographic laminate features a multilayer structure comprising 70-micron natural PE, 13-micron metallized holographic film, 30-micron extruded PE, 12-micron aluminum foil, another 30-micron extruded PE, and 130-micron natural PE.",
+                },
+                {
+                    id: "jay-baba-bakreswar-farm-house-rice-bag",
+                    title: "Jay Baba Bakreswar – Farm House rice bag",
+                    image: "/images/preformpouches.png",
+                    description: "UFlex has developed packaging for Jay Baba Bakreswar Rice Mill Pvt. Ltd. under the Farm House brand. This marks a significant milestone, as it is the first 50 kg SKU rice bag developed by UFlex, highlighting the company’s advancement in bulk packaging solutions.",
+                },
+                {
+                    id: "itc-eco-friendly-packaging-savlon",
+                    title: "ITC’s eco-friendly packaging",
+                    image: "/images/preformpouches.png",
+                    description: "UFlex has developed a sustainable packaging solution for Savlon brand of ITC Limited, featuring an 8.2g SKU designed for the domestic market. A key highlight is the use of a PCR-based laminate, reinforcing ITC’s commitment to eco-friendly packaging solutions.",
+                },
+                {
+                    id: "double-spout-pouch-clean-drinking-water",
+                    title: "10 Litre Double Spout Pouch for clean drinking water",
+                    image: "/images/preformpouches.png",
+                    description: "UFlex has developed an innovative pouch for a start-up focused on tackling the critical issue of clean drinking water availability for underprivileged communities. The 10-litre double spout pouch is a portable water filtration solution equipped with a durable plastic handle for easy carrying. It features a laminate structure comprising 12μ PET, 15μ BON, and 165μ natural PE, offering both strength and sustainability. A 40 mm spout enables convenient water dispensing, while the brand’s patented natural filter ensures safe drinking water reaches those who need it most.",
+                },
+                {
+                    id: "50mm-oval-tubes-packaging",
+                    title: "50mm dia Oval tubes",
+                    image: "/images/elctron.png",
+                    description: "These oval tubes offer 20% more space on the front and back panels compared to traditional round tubes, giving brands additional room to effectively communicate their message to consumers. The unique shape also enables more efficient use of retail shelf space, allowing brand owners to display more units at the same cost. Furthermore, the ability to accommodate more tubes per pallet contributes to reduced transportation costs. This innovation underscores UFlex’s commitment to helping brands succeed through superior and efficient packaging solutions.",
+                },
+                {
+                    id: "matte-effect-hair-dye-sachets",
+                    title: "New Packaging Solution for Frozen Food",
+                    image: "/images/elctron.png",
+                    description: "UFlex supported Hygienic Research Institute Pvt. Ltd. to develop innovative gel-based hair dye sachets in 24ml and 45ml sizes. This premium packaging solution features a unique matte effect, a first in the hair dye segment. The design is further enhanced with elegant touches such as detailed hair graphics and a gold-colored logo, adding to the pouch’s overall visual appeal and shelf presence.",
+                },
+                {
+                    id: "vacuum-sealed-marinated-chicken-packaging",
+                    title: "New Packaging Solution for Frozen Food",
+                    image: "/images/elctron.png",
+                    description: "UFlex has partnered with Jubilant FoodWorks to enhance the packaging of their marinated chicken, which is distributed in 500 gm packs from their Bangalore facility. The innovative laminate used in this packaging is thermoformed and vacuum-sealed, featuring a barrier film that protects the food from contamination by preventing exposure to air.",
+                },
+            ]
 
 
-    },
+        },
         offerings: {
             heading: "Our Offerings",
             items: [
@@ -247,7 +247,7 @@ company consistently invests in advanced technologies that consume less energy p
 packaging, promoting more efficient and responsible manufacturing practices. All in-house
 production waste is recycled and reintegrated into the manufacturing cycle, significantly reducing
 landfill pressure and helping curb pollution.`,
-                image: "/images/sus.png",
+            image: "/images/sus.png",
             linkLabel: "Know more",
             linkHref: "/flexible-packaging-business/sustainability",
         },
@@ -304,11 +304,7 @@ const FlexibleComp: React.FC<Props> = ({ business }) => {
     const [open, setOpen] = useState(false);
 
     return (
-
-
-
-
-        <div>
+    <div>
 
 
             {/* HERO */}
@@ -357,8 +353,8 @@ const FlexibleComp: React.FC<Props> = ({ business }) => {
                                     onClick={() => setOpen(true)}
                                     className="mt-4 lato-700 text-[14px] text-[#117ABA]  hover:underline"
                                 >
-                                    Read more 
-                <span aria-hidden>↗</span>
+                                    Read more
+                                    <span aria-hidden>↗</span>
 
                                 </button>
 
@@ -391,7 +387,7 @@ const FlexibleComp: React.FC<Props> = ({ business }) => {
                                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
                             </motion.div>
                         </div>
-                        <SimpleCarousel heading="Our Offerings" items={SliderItems} imageHeight={280} />
+                        <SimpleCarousel heading="Our Offerings" items={SliderItems} imageHeight={360} />
 
 
                         {business.innovations && (
