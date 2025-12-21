@@ -288,7 +288,7 @@ type AwardsData = {
 };
 
 const AWARDS_DATA: Record<
-  "packaging-films" | "printing-cylinders" | "holography" | "flexible-packaging",
+  "packaging-films" | "printing-cylinders" | "holography" | "flexible-packaging" ,
   AwardsData
 > = {
   /* ================= PACKAGING FILMS ================= */
@@ -617,7 +617,7 @@ export default function BusinessAwards() {
             <button
               key={y}
               onClick={() => setActiveYear(y)}
-              className={`lato-400 shrink-0 px-6 py-2 text-sm ${activeYear === y
+              className={`lato-400 shrink-0 px-6 py-2 text-[21px] ${activeYear === y
                 ? "bg-[#E6E6E6] text-black border-b-2 border-[#117ABA]"
                 : "bg-[#E6E6E6] text-black"
                 }`}

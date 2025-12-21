@@ -321,16 +321,16 @@ environmentally responsible.`,
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
                 },
 
-                
+
 
 
             ],
         },
-          keypeopleabroad: {
+        keypeopleabroad: {
             title: "Key People Abroad",
             details: [
 
-                
+
 
                 {
                     photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-3.-Mr.-Sanjay-Tiku47.jpg",
@@ -546,21 +546,21 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                         />
                     )}
                     <SustainabilitySection data={business.sustainability} />
-<div className='py-8'>
-{(business.keypeopleIndia) && (
-                        <PackagingKeypeople
-                            title={business.keypeopleIndia.title}
-                            people={business.keypeopleIndia.details}
-                        />
-                    )}
-                    {(business.keypeopleabroad) && (
-                        <PackagingKeypeople
-                            title={business.keypeopleabroad.title}
-                            people={business.keypeopleabroad.details}
-                        />
-                    )}
-</div>
-                    
+                    <div className='py-8'>
+                        {(business.keypeopleIndia) && (
+                            <PackagingKeypeople
+                                title={business.keypeopleIndia.title}
+                                people={business.keypeopleIndia.details}
+                            />
+                        )}
+                        {(business.keypeopleabroad) && (
+                            <PackagingKeypeople
+                                title={business.keypeopleabroad.title}
+                                people={business.keypeopleabroad.details}
+                            />
+                        )}
+                    </div>
+
 
                     {business.caseStudies && business.caseStudies.length > 0 && (
                         <CaseStudySection
