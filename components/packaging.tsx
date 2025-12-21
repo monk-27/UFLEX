@@ -300,8 +300,8 @@ environmentally responsible.`,
             linkLabel: "Know more",
             linkHref: "/packaging-films-business/sustainability",
         },
-        keypeople: {
-            title: "Key People",
+        keypeopleIndia: {
+            title: "Key People India",
             details: [
 
                 {
@@ -320,6 +320,17 @@ environmentally responsible.`,
                         "Mr. Ashish Saxena is Joint President of the packaging films and polyester chips business in India. He has over 25 years’ of experience in Packaging, Petroleum and Management Consulting industries in India, Europe and North America. Prior to UFlex, he was CEO of Jindal Films’ European Business, Vice President and General Manager for Amcor Ltd in the US and a management consultant at McKinsey & Co in London, UK. He holds an MBA degree from the London Business School, UK and BA from St. Stephen’s College, Delhi, India",
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
                 },
+
+                
+
+
+            ],
+        },
+          keypeopleabroad: {
+            title: "Key People Abroad",
+            details: [
+
+                
 
                 {
                     photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-3.-Mr.-Sanjay-Tiku47.jpg",
@@ -535,13 +546,21 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                         />
                     )}
                     <SustainabilitySection data={business.sustainability} />
-
-                    {(business.keypeople) && (
+<div className='py-8'>
+{(business.keypeopleIndia) && (
                         <PackagingKeypeople
-                            title={business.keypeople.title}
-                            people={business.keypeople.details}
+                            title={business.keypeopleIndia.title}
+                            people={business.keypeopleIndia.details}
                         />
                     )}
+                    {(business.keypeopleabroad) && (
+                        <PackagingKeypeople
+                            title={business.keypeopleabroad.title}
+                            people={business.keypeopleabroad.details}
+                        />
+                    )}
+</div>
+                    
 
                     {business.caseStudies && business.caseStudies.length > 0 && (
                         <CaseStudySection

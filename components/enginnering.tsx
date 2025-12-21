@@ -80,7 +80,7 @@ departments, we deliver tailored products
 to meet evolving global demands. This
 dedication, coupled with our state-of-the-
 art facilities, positions UFlex as a leading
-provider capable of fulfilling our clients&#39;
+provider capable of fulfilling our clients
 diverse needs with precision and efficiency.`,
 `At UFlex Engineering, we prioritize client
 satisfaction by maintaining rigorous quality
@@ -198,14 +198,14 @@ numerous management and leadership
 seminars globally. His expertise spans
 plant management, R&amp;D, innovation,
 supply chain, and customer relations.
-Ravi&#39;s leadership has significantly
-enhanced the company&#39;s production of
+Ravi's leadership has significantly
+enhanced the company's production of
 reliable, high-quality packaging machines.
 Guiding a team of skilled technocrats, his
 innovative initiatives have bolstered sales.
 His experience, dedication, and
 motivational skills inspire the
-organization&#39;s workforce.`,
+organization's workforce.`,
                          cta: { label: "Read More", href: "/leadership/ravi-sharma" },
                 },
                 // {

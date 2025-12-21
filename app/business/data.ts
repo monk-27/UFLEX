@@ -78,6 +78,14 @@ export interface BusinessConfig {
     title: string;
     details: KeyPerson[];
   };
+  keypeopleIndia?: {
+    title: string;
+    details: KeyPerson[];
+  };
+  keypeopleabroad?: {
+    title: string;
+    details: KeyPerson[];
+  };
   caseStudies?: {
     id: number;
     title: string;

@@ -90,7 +90,7 @@ cartons, highly advanced filling
 machines, and exceptional service
 from highly trained engineers. In
 alignment with the Government’s
-&#39;Make in India&#39; initiative, our state-
+Make in India initiative, our state-
 of-the-art manufacturing facility in
 Sanand, Gujarat, spans 21 acres
 within a 72-acre land parcel and

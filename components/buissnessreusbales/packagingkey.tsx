@@ -61,7 +61,7 @@ const PackagingKeypeople = ({ title, people }: Props) => {
 
   return (
     <>
-      <section className=" pb-12 mt-[30px] py-12 text-center sm:py-12 ">
+      <section className="text-center pt-6">
         <div className="">
           <h2 className="px-0 text-start lato-400 text-[20px] md:text-[24px] text-[#117ABA] mb-3">
             {title}
