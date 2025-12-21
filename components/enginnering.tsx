@@ -130,14 +130,17 @@ export const businesses: BusinessConfig[] = [
                     id: "double-head-coating-1650",
                     title: "Double Head Coating-1650",
                     description:
-                        "UFlex's Engineering Business meets market demand with coating machines covering up to 2500mm web widths. Recent offerings include a 1650mm double-headed model applying various coatings with methods like gravure and kiss coating.",
+                        `UFlex's Engineering Business meets market demand with coating machines covering up to 2500mm web widths. Recent offerings include a 1650mm double-headed model applying various coatings with methods like gravure and kiss coating. 
+                        \n Ceramic IR heaters ensure smooth coating, while safety measures like the LEL system are integrated. Additional features like floor lifting unwind, sleeve-type impression rollers, and chamber doctor blades enhance versatility. With corona treaters, these machines offer coatings from 0.2 to 6 GSM, adding value to substrates.
+ `,
                     image: "/images/double.png",
                 },
                 {
                     id: "pfs-4u",
                     title: "LPFS-4U",
                     description:
-                        "UFlex launched the LPFS-4U (4 UP Linear, Pick, Fill, and Seal) machine in Q3, 2022. This machine, driven entirely by servos, ensures speed, performance, safety, hygiene, and environmental sustainability for brands. ",
+                        `UFlex launched the LPFS-4U (4 UP Linear, Pick, Fill, and Seal) machine in Q3, 2022. This machine, driven entirely by servos, ensures speed, performance, safety, hygiene, and environmental sustainability for brands. 
+                        \nWith an operator-friendly interface and efficient filling system, it accommodates various applications, running up to 20 PPM per track with four channels. `,
                     image: "/images/pfs4u.png",
                 },
                 {
@@ -157,14 +160,18 @@ export const businesses: BusinessConfig[] = [
                     id: "asepto-speed-25000",
                     title: "Asepto Speed 25000 machine",
                     description:
-                        "UFlex, under the flagship of Asepto, introduced the next-gen, superpower Asepto Speed 25000 machine, an innovative engineering marvel that can process 25,000 aseptic liquid cartons per hour. ",
+                        `UFlex, under the flagship of Asepto, introduced the next-gen, superpower Asepto Speed 25000 machine, an innovative engineering marvel that can process 25,000 aseptic liquid cartons per hour. 
+                        \nIt is the next-generation aseptic liquid filling machine with state-of-the-art technology that works at lightning speed with the convenience of an all-in-one portion-pack filling facility. One needs to fit in the paper roll and the machine works automatically to process it into the final folder. The machine has inbuilt chambers for splicing, stripping, sterilizing, filling, sealing, and dispensing processes that work with a click of a button. It is easy to operate, and the complete process can be controlled through a human-machine interface. It is designed to boost the production capacity by more than double the speed of your current production.
+`,
                     image: "/images/asepto.png",
                 },
                 {
                     id: "uflex-flexi-liquid-double-head",
                     title: "UFlex-flexi-liquid (double head)",
                     description:
-                        "The newly introduced machinery boasts an array of features designed to optimize operation efficiency. Its user-friendly interface ensures easy operation, while its low maintenance requirements minimize downtime. ",
+                        `The newly introduced machinery boasts an array of features designed to optimize operation efficiency. Its user-friendly interface ensures easy operation, while its low maintenance requirements minimize downtime. 
+                        \nDespite its compact design and small footprint, it integrates seven servos, enabling high-speed performance. A specialized forming tool ensures uniform and superior forming, while the engineered filling system with positive cut-off guarantees precision. Additionally, a servo-controlled continuous sealing mechanism maximizes sealing time, enhancing sealing quality and strength. The servo-pulling method ensures accurate and uniform eye-mark-to-eye-mark pulling. Notably, the machine facilitates seamless roll changes without halting operations. Optional features include an auto splicing system, online coding system, and outfeed conveyor, further enhancing productivity. Customer color preferences are accommodated, and pouch-making capacity varies depending on film material and thickness. The equipment improvements may lead to changes in appearance and optional features are sold separately from standard equipment.
+`,
                     image: "/images/flexiuflex.png",
                 },
             ],

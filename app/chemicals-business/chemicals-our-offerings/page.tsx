@@ -9,107 +9,83 @@ import PackageComp from "@/components/packaging"
 import ReusablePropsCOMMComp from "@/components/reusableoffering"
 import DynamicHero from "@/components/dynamic-hero"
 import DynamicCarouselModal from "@/components/dynamic-caraousal"
+import SustainabilityTabs, { TabConfig } from "@/components/offeringstab"
+
+import Image from "next/image"
+import OfferingsTabs from "@/components/offeringstab"
+
+
+const TAB_DATA = [
+    {
+        id: "offerings",
+        label: "Our Offerings",
+        items: [
+            {
+        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-05512105121.jpg",
+        title: "Inks",
+        // dynamiclink:"/packaging-films-business/packaging-our-offerings"
+
+        description: "High-performance inks for superior print quality, compliant with global food safety and sustainability standards.",
+    },
+    {
+        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-05512115121.jpg",
+        title: "Adhesives",
+
+        description: "A range of adhesives that ensure strong bonding, efficient processing, and compliance with global food safety and sustainability standards.",
+    },
+    {
+        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-05512125121.jpg",
+        title: "Coatings",
+
+        description: "A diverse range of coatings that provide visual appeal and meet diverse industry needs while supporting compliance and sustainability.",
+    },
+
+    {
+        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item4-05512135121.jpg",
+        title: "Specialty Chemicals ",
+
+        description: "From functional additives to performance enhancers and process aids, our solutions are designed to meet the evolving demands of modern packaging.",
+    },
+        ],
+    },
+    {
+        id: "featured",
+        label: "Featured Products",
+        items: [
+
+        ],
+    },
+    {
+        id: "new",
+        label: "New Arrivals",
+        items: [
+
+        ],
+    },
+] satisfies TabConfig[];
+
 
 export default function Page() {
     return (
         <>
             <SiteHeader />
             <div className="bg-gradient-to-b from-white to-slate-50">
-                <DynamicHero image="/images/chemicals-banner.jpg" text="Chemicals Our Offerings" />
-                <ReusablePropsCOMMComp
-                    image="/images/chem.jpeg"
-                    heading="Our Offerings"
-                    introText=""
+                <section className="relative w-full h-[260px] sm:h-[549px] overflow-hidden">
+                    <Image
+                        src="/images/sus/sc.png"
+                        alt="Investors Relations"
+                        fill
+                        className="object-cover w-full h-full"
+                        priority
+                    />
 
-                    items={[
-                        {
-                            title: "Inks",
-                            description: "High-performance inks for superior print quality, compliant with global food safety and sustainability standards.",
-                        },
-                        {
-                            title: "Adhesives",
-                            description: "A range of adhesives that ensure strong bonding, efficient processing, and compliance with global food safety and sustainability standards.",
-                        },
-                        {
-                            title: "Coatings",
-                            description: "A diverse range of coatings that provide visual appeal and meet diverse industry needs while supporting compliance and sustainability.",
-                        },
-                        {
-                            title: "Specialty Chemicals",
-                            description: "From functional additives to performance enhancers and process aids, our solutions are designed to meet the evolving demands of modern packaging."
-                        },
-                        
-                    ]}
-                />
+                    <div className="absolute inset-0 bg-black/40" />
 
-                <DynamicCarouselModal
-                    heading="Featured Products"
-                    items={[
-                        {
-                            id: 1,
-                            image: "/images/flexglide.jpg",
-                            title: "FLEXGLIDE INK",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 2,
-                            image: "/images/Flexglide-NT.jpg",
-                            title: "FLEXGLIDE NT INK",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 3,
-                            image: "/images/GR-Flexglide.jpg",
-                            title: "GR FLEXGLIDE INK",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 4,
-                            image: "/images/gr.jpg",
-                            title: "GR FLEXGLIDE MONO SOLVENT INK",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        
-                    ]}
-                />
-                <DynamicCarouselModal
-                    heading="New Arrivals"
-                    items={[
-                        {
-                            id: 1,
-                            image: "/images/flexlam.jpg",
-                            title: "FLEXLAM INK",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 2,
-                            image: "/images/flexlamnt.jpg",
-                            title: "FLEXLAM NT INK",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 3,
-                            image: "/images/Flextrusion.jpg",
-                            title: "FLEXTRUSION INK",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 4,
-                            image: "/images/flexnt.jpg",
-                            title: "FLEXTRUSION NT INK",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        
-                    ]}
-                />
+
+                </section>
+
+
+                <OfferingsTabs tabs={TAB_DATA} />
             </div>
 
 

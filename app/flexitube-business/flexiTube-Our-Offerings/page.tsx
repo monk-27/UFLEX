@@ -9,118 +9,86 @@ import PackageComp from "@/components/packaging"
 import ReusablePropsCOMMComp from "@/components/reusableoffering"
 import DynamicHero from "@/components/dynamic-hero"
 import DynamicCarouselModal from "@/components/dynamic-caraousal"
+import SustainabilityTabs, { TabConfig } from "@/components/offeringstab"
+
+import Image from "next/image"
+import OfferingsTabs from "@/components/offeringstab"
+
+
+const TAB_DATA = [
+    {
+        id: "offerings",
+        label: "Our Offerings",
+        items: [
+      {
+    image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-12332103321.jpg",
+    title: "METALIKA tubes",
+    description: "Tubes with high-shine metallization and holographic features for that premium appeal. We also offer matte and de-metallized options.",
+  },
+  {
+    image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-12332113321.jpg",
+
+    title: "REMIKA tubes",
+    description: "Sustainable web, mono-material, lightweight, low-carbon footprint solutions",
+  },
+  {
+    image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-12332123321.jpg",
+
+    title: "GREENIKA tubes",
+    description: "PCR tubes with up to 30% PCR in the sleeves. These tubes use PCR developed in-house by us.",
+  },
+  {
+    image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item4-12332133321.jpg",
+
+    title: "KRAFTIKA tubes",
+    description: "Our flexo printing sleeves offer superior print quality, operational ease, and cost-efficiency in flexography printing.",
+  },
+  {
+    image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item5-12332143321.jpg",
+
+    title: "EARTHIKA tubes",
+    description: "Tubes made with biodegradable polymer.",
+  },
+        ],
+    },
+    {
+        id: "featured",
+        label: "Featured Products",
+        items: [
+
+        ],
+    },
+    {
+        id: "new",
+        label: "New Arrivals",
+        items: [
+
+        ],
+    },
+] satisfies TabConfig[];
+
 
 export default function Page() {
     return (
         <>
             <SiteHeader />
             <div className="bg-gradient-to-b from-white to-slate-50">
-                <DynamicHero image="/images/engineering-banner.jpg" text="FlexiTube Our Offerings" />
-                <ReusablePropsCOMMComp
-                    image="/images/flexible.jpeg"
-                    heading="Our Offerings"
-                    introText=""
+                <section className="relative w-full h-[260px] sm:h-[549px] overflow-hidden">
+                    <Image
+                        src="/images/flexible.jpeg"
+                        alt="Investors Relations"
+                        fill
+                        className="object-cover w-full h-full"
+                        priority
+                    />
 
-                    items={[
-                        {
-       
-        title: "METALIKA tubes",
-        description: "Tubes with high-shine metallization and holographic features for that premium appeal. We also offer matte and de-metallized options.",
-    },
-    {
-       
+                    <div className="absolute inset-0 bg-black/40" />
 
-        title: "REMIKA tubes",
-        description: "Sustainable web, mono-material, lightweight, low-carbon footprint solutions",
-    },
-    {
-        
-        title: "GREENIKA tubes",
-        description: "PCR tubes with up to 30% PCR in the sleeves. These tubes use PCR developed in-house by us.",
-    },
-    {
-        
-        title: "KRAFTIKA tubes",
-        description: "Our flexo printing sleeves offer superior print quality, operational ease, and cost-efficiency in flexography printing.",
-    },
-    {
-       
 
-        title: "EARTHIKA tubes",
-        description: "Tubes made with biodegradable polymer.",
-    },
+                </section>
 
-                    ]}
-                />
 
-                <DynamicCarouselModal
-                    heading="Featured Products"
-                    items={[
-                        {
-                            id: 1,
-                            image: "/images/vol.jpg",
-                            title: "Volumetric Cup Filler",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 2,
-                            image: "/images/uflexo.jpg",
-                            title: "UFlexo Elisa",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 3,
-                            image: "/images/vaccum.jpg",
-                            title: "Vaccum Brick Pack",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 4,
-                            image: "/images/toro.jpg",
-                            title: "Toro Slit",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-
-                    ]}
-                />
-                <DynamicCarouselModal
-                    heading="New Arrivals"
-                    items={[
-                        {
-                            id: 1,
-                            image: "/images/ffs.jpg",
-                            title: "FFS High Speed",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 2,
-                            image: "/images/ffscollar.jpg",
-                            title: "FFS Collar Type SSD",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 3,
-                            image: "/images/flow.jpg",
-                            title: "Flow Wrap",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 4,
-                            image: "/images/weigh.jpg",
-                            title: "Weigh Filler",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-
-                    ]}
-                />
+                <OfferingsTabs tabs={TAB_DATA} />
             </div>
 
 

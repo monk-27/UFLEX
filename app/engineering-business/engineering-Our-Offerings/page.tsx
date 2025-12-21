@@ -9,107 +9,81 @@ import PackageComp from "@/components/packaging"
 import ReusablePropsCOMMComp from "@/components/reusableoffering"
 import DynamicHero from "@/components/dynamic-hero"
 import DynamicCarouselModal from "@/components/dynamic-caraousal"
+import SustainabilityTabs, { TabConfig } from "@/components/offeringstab"
+
+import Image from "next/image"
+import OfferingsTabs from "@/components/offeringstab"
+
+
+const TAB_DATA = [
+    {
+        id: "offerings",
+        label: "Our Offerings",
+        items: [
+               {
+        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-07180601806.jpg",
+        title: "Packaging Machines",
+        description: "A range of packaging machines and special purpose machines for wrapping of products of any shape and size and with specialised requirements.",
+    },
+    {
+        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-07180611806.jpg",
+
+        title: "Converting Machines",
+        description: `UFlex brings the latest innovations in
+printing and packaging technology, offering
+state-of-the-art solutions such as high-
+performance CI Flexo presses, advanced
+ELS printing machines, and extrusion
+lamination machines. These machines are
+designed to enhance both the efficiency
+and quality of the final product.`,
+    },
+    {
+        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-07180621806.jpg",
+
+        title: "Speciality Products ",
+        description: "A range of specialized ancillary products essential for packaging applications.",
+    },
+        ],
+    },
+    {
+        id: "featured",
+        label: "Featured Products",
+        items: [
+
+        ],
+    },
+    {
+        id: "new",
+        label: "New Arrivals",
+        items: [
+
+        ],
+    },
+] satisfies TabConfig[];
+
 
 export default function Page() {
     return (
         <>
             <SiteHeader />
             <div className="bg-gradient-to-b from-white to-slate-50">
-                <DynamicHero image="/images/engineering-banner.jpg" text="Engineering Our Offerings" />
-                <ReusablePropsCOMMComp
-                    image="/images/engg.png"
-                    heading="Our Offerings"
-                    introText=""
+                <section className="relative w-full h-[260px] sm:h-[549px] overflow-hidden">
+                    <Image
+                        src="/images/sus/es.png"
+                        alt="Investors Relations"
+                        fill
+                        className="object-cover w-full h-full"
+                        priority
+                    />
 
-                    items={[
-                        {
-
-                            title: "Packaging Machines",
-                            description: "A range of packaging machines and special purpose machines for wrapping of products of any shape and size and with specialised requirements.",
-                        },
-                        {
+                    <div className="absolute inset-0 bg-black/40" />
 
 
-                            title: "Converting Machines",
-                            description: "A wide range of machines for various printing, lamination, slitting/rewinding, doctoring, and pouch making as per a client's requirement.",
-                        },
-                        {
+                </section>
 
 
-                            title: "Speciality Products ",
-                            description: "A range of specialized ancillary products essential for packaging applications.",
-                        },
-                    ]}
-                />
-
-                <DynamicCarouselModal
-                    heading="Featured Products"
-                    items={[
-                        {
-                            id: 1,
-                            image: "/images/vol.jpg",
-                            title: "Volumetric Cup Filler",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 2,
-                            image: "/images/uflexo.jpg",
-                            title: "UFlexo Elisa",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 3,
-                            image: "/images/vaccum.jpg",
-                            title: "Vaccum Brick Pack",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 4,
-                            image: "/images/toro.jpg",
-                            title: "Toro Slit",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-
-                    ]}
-                />
-                <DynamicCarouselModal
-                    heading="New Arrivals"
-                    items={[
-                        {
-                            id: 1,
-                            image: "/images/ffs.jpg",
-                            title: "FFS High Speed",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 2,
-                            image: "/images/ffscollar.jpg",
-                            title: "FFS Collar Type SSD",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 3,
-                            image: "/images/flow.jpg",
-                            title: "Flow Wrap",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 4,
-                            image: "/images/weigh.jpg",
-                            title: "Weigh Filler",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-
-                    ]}
-                />
+                <OfferingsTabs tabs={TAB_DATA} />
             </div>
 
 

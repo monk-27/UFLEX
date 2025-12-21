@@ -9,107 +9,74 @@ import PackageComp from "@/components/packaging"
 import ReusablePropsCOMMComp from "@/components/reusableoffering"
 import DynamicHero from "@/components/dynamic-hero"
 import DynamicCarouselModal from "@/components/dynamic-caraousal"
+import SustainabilityTabs, { TabConfig } from "@/components/offeringstab"
+
+import Image from "next/image"
+import OfferingsTabs from "@/components/offeringstab"
+
+
+const TAB_DATA = [
+    {
+        id: "offerings",
+        label: "Our Offerings",
+        items: [
+            {
+                image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-07011400114.jpg",
+                title: "Products",
+                description: "High-performance inks for superior print quality, compliant with global food safety and sustainability standards.",
+            },
+            {
+                image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-07110501105.jpg",
+
+                title: "Applications",
+                description: "A range of adhesives that ensure strong bonding, efficient processing, and compliance with global food safety and sustainability standards.",
+            },
+            {
+                image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-07110511105.jpg",
+
+                title: "Industries",
+                description: "A diverse range of coatings that provide visual appeal and meet diverse industry needs while supporting compliance and sustainability.",
+            },
+        ],
+    },
+    {
+        id: "featured",
+        label: "Featured Products",
+        items: [
+
+        ],
+    },
+    {
+        id: "new",
+        label: "New Arrivals",
+        items: [
+
+        ],
+    },
+] satisfies TabConfig[];
+
 
 export default function Page() {
     return (
         <>
             <SiteHeader />
             <div className="bg-gradient-to-b from-white to-slate-50">
-                <DynamicHero image="/images/flexible-pack.jpg" text="Holography Our Offerings" />
-                <ReusablePropsCOMMComp
-                    image="/images/holographys.png"
-                    heading="Our Offerings"
-                    introText=""
+                <section className="relative w-full h-[260px] sm:h-[549px] overflow-hidden">
+                    <Image
+                        src="/images/sus/hs.png"
+                        alt="Investors Relations"
+                        fill
+                        className="object-cover w-full h-full"
+                        priority
+                    />
 
-                    items={[
-                        {
-        
-        title: "Products",
-        description: "High-performance inks for superior print quality, compliant with global food safety and sustainability standards.",
-    },
-    {
-        
+                    <div className="absolute inset-0 bg-black/40" />
 
-        title: "Applications",
-        description: "A range of adhesives that ensure strong bonding, efficient processing, and compliance with global food safety and sustainability standards.",
-    },
-    {
-        
 
-        title: "Industries",
-        description: "A diverse range of coatings that provide visual appeal and meet diverse industry needs while supporting compliance and sustainability.",
-    },
-                    ]}
-                />
+                </section>
 
-                <DynamicCarouselModal
-                    heading="Featured Products"
-                    items={[
-                        {
-                            id: 1,
-                            image: "/images/lensf1.jpg",
-                            title: "Lens Film (F1 & F2)",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 2,
-                            image: "/images/holo.jpg",
-                            title: "Holographic PVC Film",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 3,
-                            image: "/images/analog.jpg",
-                            title: "Analog 2D/3D Conventional",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 4,
-                            image: "/images/sequin.jpg",
-                            title: "Sequin Film",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
 
-                    ]}
-                />
-                <DynamicCarouselModal
-                    heading="New Arrivals"
-                    items={[
-                        {
-                            id: 1,
-                            image: "/images/soft.jpg",
-                            title: "Soft Embossing Film",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 2,
-                            image: "/images/hard.jpg",
-                            title: "Hard Embossing Film",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 3,
-                            image: "/images/uv.jpg",
-                            title: "UV Embossing Film",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 4,
-                            image: "/images/hri.jpg",
-                            title: "HRI Holographic Film",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-
-                    ]}
-                />
+                <OfferingsTabs tabs={TAB_DATA} />
             </div>
 
 

@@ -9,107 +9,97 @@ import PackageComp from "@/components/packaging"
 import ReusablePropsCOMMComp from "@/components/reusableoffering"
 import DynamicHero from "@/components/dynamic-hero"
 import DynamicCarouselModal from "@/components/dynamic-caraousal"
+import SustainabilityTabs, { TabConfig } from "@/components/offeringstab"
+
+import Image from "next/image"
+import OfferingsTabs from "@/components/offeringstab"
+
+
+const TAB_DATA = [
+    {
+        id: "offerings",
+        label: "Our Offerings",
+        items: [
+     {
+        image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-05492704927.jpg",
+        title: "Gravure Cylinders",
+        description: `UFlex manufactures high-precision gravure, printing, coating, and special-purpose cylinders for diverse applications.`,
+    },
+    {
+        image: "",
+
+        title: "Printing Cylinders",
+        description: `With advanced technology and skilled manpower, UFlex Cylinders business have earned the reputation of being a trusted manufacturer of rotogravure (gravure) cylinders for packaging and other industries. Whether printing for the first time or using re-engraved cylinders, UFlex ensures consistent sharpness, contrast, and gamma levels, preserving the brand identity.`,
+    },
+    {
+        image: "",
+
+        title: "Coating cylinders",
+        description: `UFlex is widely recognized for its expertise in manufacturing special-purpose cylinders designed for various coating applications. These include anilox coating, specialty coating, hot melt coating (high GSM), lamination coating, lacquer coating, and low GSM coating cylinders. Each cylinder is meticulously crafted to meet the specific requirements of these processes, ensuring precision and high-quality results across different industries.
+`,
+    },
+
+    {
+        image: "",
+
+        title: "Special purpose cylinders",
+        description: `UFlex specializes in producing special-purpose cylinders, including embossing cylinders created through laser engraving. These cylinders are designed for a variety of applications, such as wooden laminates, wallpaper designs, gift wrappers, and greeting cards. Each cylinder is crafted with precision to deliver detailed and intricate designs, catering to the unique needs of these decorative and functional products.
+`,
+    },
+    {
+        image: "",
+
+        title: "CTP Flexo Plates",
+        description: `The advanced flexo plate manufacturing setup, featuring laser imaging with 5080 DPI, sets a new standard for high-definition flexographic plates. 
+`,
+    },
+    {
+        image: "",
+
+        title: "Flexo Printing Sleeves",
+        description: `UFlex’s flexo printing sleeves provide superior print quality, operational ease and cost-efficiency in flexography printing.  
+`,
+    },
+        ],
+    },
+    {
+        id: "featured",
+        label: "Featured Products",
+        items: [
+
+        ],
+    },
+    {
+        id: "new",
+        label: "New Arrivals",
+        items: [
+
+        ],
+    },
+] satisfies TabConfig[];
+
 
 export default function Page() {
     return (
         <>
             <SiteHeader />
             <div className="bg-gradient-to-b from-white to-slate-50">
-                <DynamicHero image="/images/cylinders-banner.jpg" text="Printing Our Offerings" />
-                <ReusablePropsCOMMComp
-                    image="/images/cyls.png"
-                    heading="Our Offerings"
-                    introText=""
+                <section className="relative w-full h-[260px] sm:h-[549px] overflow-hidden">
+                    <Image
+                        src="/images/sus/pc.png"
+                        alt="Investors Relations"
+                        fill
+                        className="object-cover w-full h-full"
+                        priority
+                    />
 
-                    items={[
-                         {
-        
-        title: "Gravure Cylinders",
-        description: "High-precision gravure, printing, coating, and special-purpose cylinders for diverse applications, including rotogravure (gravure) cylinders.",
-    },
-    {
-        
+                    <div className="absolute inset-0 bg-black/40" />
 
-        title: "CTP Flexo Plates",
-        description: "An advanced manufacturing setup, featuring laser imaging with 5080 DPI, for high-definition flexographic plates.",
-    },
-    {
-        
 
-        title: "Flexo Printing Sleeves",
-        description: "Our flexo printing sleeves offer superior print quality, operational ease, and cost-efficiency in flexography printing.",
-    },
-                    ]}
-                />
+                </section>
 
-                <DynamicCarouselModal
-                    heading="Featured Products"
-                    items={[
-                        {
-                            id: 1,
-                            image: "/images/vol.jpg",
-                            title: "Volumetric Cup Filler",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 2,
-                            image: "/images/uflexo.jpg",
-                            title: "UFlexo Elisa",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 3,
-                            image: "/images/vaccum.jpg",
-                            title: "Vaccum Brick Pack",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 4,
-                            image: "/images/toro.jpg",
-                            title: "Toro Slit",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
 
-                    ]}
-                />
-                <DynamicCarouselModal
-                    heading="New Arrivals"
-                    items={[
-                        {
-                            id: 1,
-                            image: "/images/ffs.jpg",
-                            title: "FFS High Speed",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 2,
-                            image: "/images/ffscollar.jpg",
-                            title: "FFS Collar Type SSD",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 3,
-                            image: "/images/flow.jpg",
-                            title: "Flow Wrap",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-                        {
-                            id: 4,
-                            image: "/images/weigh.jpg",
-                            title: "Weigh Filler",
-                            shortDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-                            longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                        },
-
-                    ]}
-                />
+                <OfferingsTabs tabs={TAB_DATA} />
             </div>
 
 
