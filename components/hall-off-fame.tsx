@@ -200,9 +200,9 @@ const HallPage = () => {
               In The Spotlight
             </h2>
 
-            <span className=" block text-[20px] lato-400 text-[#117ABA]">
+            {/* <span className=" block text-[20px] lato-400 text-[#117ABA]">
               Corporate, HR & Sustainability Awards
-            </span>
+            </span> */}
           </div>
 
 

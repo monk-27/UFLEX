@@ -73,7 +73,7 @@ export function InnovationSlider({ heading, items }: any) {
                   </h3>
 
                   {/* Add mt-4 to keep description where it was */}
-                  <p className="whitespace-pre-line lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f] mt-8">
+                  <p className="text-wrap max-w-xl whitespace-pre-line lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f] mt-8">
                     {current.description}
                   </p>
                 </div>

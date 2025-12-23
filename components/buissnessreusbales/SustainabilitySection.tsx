@@ -59,7 +59,7 @@ export function SustainabilitySection({ data }: any) {
             <h2 className="lato-400 text-[18px] md:text-[28px] text-[#117ABA] mb-3">
               {data.title}
             </h2>
-            <p className="lato-400 text-[16px] leading-relaxed text-[#5B5B5B] mb-4">
+            <p className="text-wrap max-w-xl lato-400 text-[16px] leading-relaxed text-[#5B5B5B] mb-4">
               {data.description}
             </p>
             {/* {data.linkHref && data.linkLabel && (

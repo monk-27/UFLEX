@@ -445,7 +445,7 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                                 Packaging Films & PET Resin
                             </motion.h1>
 
-                            <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
+                            <p className=" text-wrap max-w-xl lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
                                 {packagingData[0].paragraphs[0]}
                             </p>
 

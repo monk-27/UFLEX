@@ -443,11 +443,11 @@ const HoloGraphyComp: React.FC<Props> = ({ business }) => {
                                     Holography
                                 </motion.h1>
 
-                                <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
+                                <p className="text-wrap max-w-xl lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
                                     {packagingData[0].content[0].text}
                                 </p>
 
-                                <div className="space-y-3  text-gray-800 lato-400 text-[16px] sm:text-[18px] leading-relaxed">
+                                <div className="text-wrap max-w-xl space-y-3  text-gray-800 lato-400 text-[16px] sm:text-[18px] leading-relaxed">
                                     <p>
                                         The Holography Business offers a <strong>comprehensive range of holographic solutions</strong>, including:
                                     </p>
