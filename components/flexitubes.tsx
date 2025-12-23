@@ -401,7 +401,7 @@ const FlexiComp: React.FC<Props> = ({ business }) => {
                   src="images/heroflexi.png"
                   alt="UFlex capabilities across the value chain"
                   fill
-                  className="object-fill"
+                  className="object-fill rounded-sm"
                   priority
                 />
 

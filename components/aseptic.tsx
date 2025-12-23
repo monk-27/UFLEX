@@ -312,7 +312,7 @@ const AsepticComp: React.FC<Props> = ({ business }) => {
                   src="/images/3.png"
                   alt="UFlex capabilities across the value chain"
                   fill
-                  className="object-cover"
+                  className="object-cover rounded-sm"
                   priority
                 />
 

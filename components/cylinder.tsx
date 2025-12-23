@@ -334,7 +334,7 @@ const CylComp : React.FC<Props> = ({ business }) => {
                                     src="/images/heroprinting.png"
                                     alt="UFlex capabilities across the value chain"
                                     fill
-                                    className="object-cover"
+                                    className="object-cover rounded-sm"
                                     priority
                                 />
 
