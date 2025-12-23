@@ -3,6 +3,7 @@ import React from 'react'
 import Image from "next/image"
 import Link from 'next/link'
 import { AnimatedSection } from './animated-section'
+import CareersMainCarousel from './careers-main'
 
 
 
@@ -40,7 +41,7 @@ const Careers = () => {
         <div>
             <section className="bg-gradient-to-b from-white to-slate-50 ">
                 <section className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[450px] overflow-hidden">
-                    <Image
+                    {/* <Image
                         src="/images/careers/main.png"
                         alt="Notices and Announcements"
                         fill
@@ -52,16 +53,17 @@ const Careers = () => {
                         <h1 className="text-white text-2xl sm:text-3xl md:text-[38px] lato-700 mb-1">
                             Careers
                         </h1>
-                    </div>
+                    </div> */}
+                    <CareersMainCarousel/>
                 </section>
 
                 {/* <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 grid  items-center gap-10  py-12  lg:grid-cols-2 lg:gap-14 lg:py-20"> */}
                 <div className="max-w-7xl mx-auto px-4 pt-12">
-                    <div className="grid lg:grid-cols-2 gap-10 items-start">
+                    <div className=" items-center ">
 
                         {/* Text */}
                         <div className="space-y-6">
-                            <p className="lato-400 text-[16px] leading-relaxed text-[#6B6B6B]">
+                            <p className="  lato-400 text-[16px] leading-relaxed text-[#6B6B6B]">
                                 At UFlex, we pride ourselves on fostering an inclusive, caring, and
                                 productive environment for our people. As a leading player in the
                                 flexible packaging industry, we engage and retain purpose-driven talent
@@ -87,7 +89,7 @@ const Careers = () => {
                         </div>
 
                         {/* Image */}
-                        <motion.div
+                        {/* <motion.div
                             initial={{ opacity: 0, scale: 0.98 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
@@ -100,7 +102,7 @@ const Careers = () => {
                                 className="object-cover rounded-sm"
                                 priority
                             />
-                        </motion.div>
+                        </motion.div> */}
 
                     </div>
                 </div>

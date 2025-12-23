@@ -457,6 +457,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import PressMainCarousel from "@/components/press-main";
 
 /* ==========================
    TYPES
@@ -785,7 +786,7 @@ export default function PressRoomPage() {
 
       {/* ================= HERO ================= */}
       <section className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[450px] overflow-hidden">
-        <Image
+        {/* <Image
           src={hero.image}
           alt={hero.title}
           fill
@@ -797,7 +798,8 @@ export default function PressRoomPage() {
           <h1 className="text-white text-2xl sm:text-3xl md:text-[38px] lato-700">
             {hero.title}
           </h1>
-        </div>
+        </div> */}
+        <PressMainCarousel/>
       </section>
 
       {/* ================= CONTENT ================= */}
