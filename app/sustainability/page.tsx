@@ -24,20 +24,26 @@ type SimpleLink = {
 
 
 const sustainabilityReports = [
+  // {
+  //   title: "Sustainability Report 2024–25",
+  //   href: "https://www.uflexltd.com/pdf/Sustainability/UFlex_Sustainability_Report_2024-25.pdf",
+  // },
   {
-    title: "Sustainability Report 2024–25",
-    href: "https://www.uflexltd.com/pdf/Sustainability/UFlex_Sustainability_Report_2024-25.pdf",
-  },
-  {
-    title: "Sustainability Report 2023–24",
+    year: "2023–24",
+    // title: "Sustainability Report 2023–24",
+    image: "/images/sus/2024.png",
     href: "https://www.uflexltd.com/pdf/Sustainability/UFlex_Sustainability_Report_2023-24.pdf",
   },
   {
-    title: "Sustainability Report 2022–23",
+     year: "2022–23",
+    // title: "Sustainability Report 2022–23",
+    image: "/images/sus/2023.png",
     href: "https://www.uflexltd.com/pdf/Sustainability/UFlex_Sustainability_Report_2022-23.pdf",
   },
   {
-    title: "Sustainability Report 2021–22",
+    year: "2021–22",
+    // title: "Sustainability Report 2021–22",
+    image: "/images/sus/2022.png",
     href: "https://www.uflexltd.com/pdf/Sustainability/UFlex_Sustainability_Report_2021-22.pdf",
   },
 ];
@@ -84,7 +90,7 @@ export default function Page() {
 
   // helper - put near the top of the file (above renderRow)
 
-  const renderRow = (item: SimpleLink, idx: number) => (
+  const renderRow = (item: any, idx: any) => (
     <Link key={idx} href={item.href} target="_blank" className="block">
       <div className="flex items-center justify-between w-full bg-[#F8F8F8] px-6 py-3 text-[14px] text-black border-t border-white">
         <span>{item.title}</span>
@@ -252,9 +258,44 @@ export default function Page() {
         </div>
 
         {/* List */}
-        <div className="bg-white">
+        {/* <div className="bg-white">
           {currentList.map((item, idx) => renderRow(item, idx))}
-        </div>
+        </div> */}
+        {/* CONTENT */}
+{activeTab === "reports" ? (
+  /* IMAGE GRID LAYOUT */
+ <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12 bg-white py-12">
+  {sustainabilityReports.map((item, idx) => (
+    <Link
+      key={idx}
+      href={item.href}
+      target="_blank"
+      className="flex flex-col items-center group"
+    >
+      <div className="relative w-full max-w-[280px] h-[380px] bg-white shadow-md transition-transform duration-300 group-hover:scale-[1.02]">
+        <Image
+          src={item.image}
+          alt={`Sustainability Report ${item.year}`}
+          fill
+          className="object-contain"
+        />
+      </div>
+
+      <span className="mt-3 text-[#117ABA] text-lg lato-500">
+        {item.year}
+      </span>
+    </Link>
+  ))}
+</div>
+
+
+) : (
+  /* DEFAULT LIST FOR OTHER TABS */
+  <div className="bg-white">
+    {currentList.map((item, idx) => renderRow(item, idx))}
+  </div>
+)}
+
       </section>
 
       <SiteFooter />
