@@ -297,7 +297,7 @@ const [emblaRef, emblaApi] = useEmblaCarousel({
               src="https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/What-We-Do01.jpg"
               alt="UFlex capabilities across the value chain"
               fill
-              className="object-cover"
+              className="object-cover rounded-sm"
               priority
             />
             {/* subtle overlay gradient for readability */}
@@ -333,7 +333,7 @@ const [emblaRef, emblaApi] = useEmblaCarousel({
                       src={card.img}
                       alt={card.title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105 "
                     />
                   </div>
 

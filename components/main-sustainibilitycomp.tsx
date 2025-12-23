@@ -95,7 +95,9 @@
 import Image from "next/image";
 
 export default function MainSustainabilityCOMMComp({
-  image = "/images/sus/susmain.png",
+  // image = "/images/sus/susmain.png",
+  image = "/images/Mask.png",
+
 }: {
   image?: string;
 }) {

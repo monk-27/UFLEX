@@ -177,7 +177,7 @@ export function InvestorCardsGrid({ cards }: Props) {
             variants={containerVariants}
             initial="hidden"
             animate="show"
-            className="mt-3 gap-1 sm:gap-2 lg:gap-2 grid-cols-1 sm:grid-cols-2 lg:flex lg:justify-center"
+            className="mt-2 gap-1 sm:gap-2 lg:gap-2 grid-cols-1 sm:grid-cols-2 lg:flex lg:justify-center"
           >
             {lastRow.map((card) => (
               <div

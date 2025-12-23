@@ -187,7 +187,7 @@ export default function SustainabilityShowcase() {
         {/* Right panel — STICKY */}
         <div className="h-[680px] w-1/2 sticky top-24 flex items-center justify-center">
           <div className="w-full max-w-[680px]">
-            <div className="rounded-lg  overflow-hidden">
+            <div className="overflow-hidden">
               <div className="relative h-[680px] w-full rounded-sm">
                 <Image
                   src="/images/susworld.png"
