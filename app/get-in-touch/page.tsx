@@ -415,11 +415,11 @@ export default function GetInTouch() {
               </div>
             </a>
 
-            <div className="flex items-center gap-3 rounded-sm bg-white p-4 shadow-sm ring-1 ring-black/5">
+            <div className="flex items-center gap-3 rounded-sm bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-[2px] hover:shadow-md">
               <div className="rounded-xl bg-[#117ABA] p-3 text-white"><Phone className="h-5 w-5" /></div>
               <div>
                 <p className="lato-700 text-slate-800">Board Line</p>
-                <p className="text-sm text-slate-600">+91 120 4002121</p>
+                <p className="text-sm text-slate-600 group-hover:text-slate-700">+91 120 4002121</p>
               </div>
             </div>
           </div>
