@@ -84,14 +84,14 @@ export default function Page() {
 
   // helper - put near the top of the file (above renderRow)
 
-const renderRow = (item: SimpleLink, idx: number) => (
-  <Link key={idx} href={item.href} target="_blank" className="block">
-    <div className="flex items-center justify-between w-full bg-[#F8F8F8] px-6 py-3 text-[14px] text-black border-t border-white">
-      <span>{item.title}</span>
-      <Image src="/images/pdf.png" alt="PDF" width={20} height={20} />
-    </div>
-  </Link>
-);
+  const renderRow = (item: SimpleLink, idx: number) => (
+    <Link key={idx} href={item.href} target="_blank" className="block">
+      <div className="flex items-center justify-between w-full bg-[#F8F8F8] px-6 py-3 text-[14px] text-black border-t border-white">
+        <span>{item.title}</span>
+        <Image src="/images/pdf.png" alt="PDF" width={20} height={20} />
+      </div>
+    </Link>
+  );
 
 
   const currentHeading =
@@ -203,18 +203,18 @@ const renderRow = (item: SimpleLink, idx: number) => (
 
 
       <MainSustainabilityComp />
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="">
 
-      <motion.h3
-        className="text-center text-[24px] lato-400 text-[#117ABA] md:text-[28px] mb-8"
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.2 }}
+        <motion.h3
+          className="text-center text-[24px] lato-400 text-[#117ABA] md:text-[28px] mb-8"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
         >
-        UFlex's Commitment to a Circular Economy
-      </motion.h3>
-      <MainSustainabilityVisionComp />
-        </div>
+          UFlex's Commitment to a Circular Economy
+        </motion.h3>
+        <MainSustainabilityVisionComp />
+      </div>
       {/* <SustainabilityReportsCarousel /> */}
 
 

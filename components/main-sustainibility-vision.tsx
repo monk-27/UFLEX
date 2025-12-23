@@ -172,12 +172,12 @@ export default function SustainabilityShowcase() {
 
 
   return (
-    <section className="bg-[#E6E7E7] py-12 max-auto px-4 lg:py-20 max-w-7xl ">
+    <section className="bg-[#E6E7E7] py-12 lg:py-20 ">
       {/* Desktop layout */}
       {/* Desktop layout */}
-      <div className="hidden sm:flex gap-8 items-start min-w-[1024px]">
+      <div className="hidden sm:flex gap-8 items-start max-w-7xl ">
         {/* Left panel */}
-        <div className="h-[680px] w-1/2 bg-[#E6E7E7] p-8 overflow-auto rounded no-scrollbar">
+        <div className="h-[680px] w-1/2 bg-[#E6E7E7] py-8 overflow-auto rounded no-scrollbar">
           <div className="max-w-[520px]">
             <DropdownList items={DATA} />
             <div className="h-6" />
@@ -187,13 +187,13 @@ export default function SustainabilityShowcase() {
         {/* Right panel — STICKY */}
         <div className="h-[680px] w-1/2 sticky top-24 flex items-center justify-center">
           <div className="w-full max-w-[680px]">
-            <div className="rounded-lg bg-[#E6E7E7] overflow-hidden">
-              <div className="relative h-[680px] w-full">
+            <div className="rounded-lg  overflow-hidden">
+              <div className="relative h-[680px] w-full rounded-sm">
                 <Image
                   src="/images/susworld.png"
                   alt="sustainability"
                   fill
-                  className="object-contain"
+                  className="object-contain rounded-sm"
                 />
               </div>
             </div>

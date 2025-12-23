@@ -161,7 +161,7 @@ export default function LearnStatus() {
               src="/images/learn.jpg"
               alt="UFlex Learning Academy"
               fill
-              className="object-cover"
+              className="object-cover rounded-sm"
               priority
             />
           </motion.div>

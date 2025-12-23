@@ -389,6 +389,18 @@ const items = [
     desc: "Engineering Business of UFlex has grown to be the manufacturing major of top of the line packaging, printing and allied machines.",
     img: "/images/engg.png",
   },
+  {
+    title: "Printing Cylinders",
+    href: "/printing-cylinder-business",
+    desc: "Engineering Business of UFlex has grown to be the manufacturing major of top of the line packaging, printing and allied machines.",
+    img: "/images/engg.png",
+  },
+  {
+    title: "Flexible Tubes",
+    href: "/flexitube-business",
+    desc: "Engineering Business of UFlex has grown to be the manufacturing major of top of the line packaging, printing and allied machines.",
+    img: "/images/engg.png",
+  },
 ];
 
 export default function BusinessCardsCarousel() {
@@ -438,7 +450,7 @@ export default function BusinessCardsCarousel() {
                   <div className="p-5">
                     <div className="flex gap-2">
                       {/* <span className="mt-1 h-6 w-[2px] bg-[#D84A3B]" /> */}
-                      <h3 className="text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
+                      <h3 className="lato-700 text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
                         {card.title}
                       </h3>
                     </div>

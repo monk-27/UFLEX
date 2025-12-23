@@ -189,7 +189,7 @@ const BoardOfDirectors = () => {
           
 
           </div>
-            <div className="flex items-center justify-center mt-6 pt-6 gap-6 ">
+            <div className="flex items-center justify-center mt-10 pt-6 gap-6 ">
 
             <button
               onClick={() => emblaApi?.scrollPrev()}

@@ -805,7 +805,7 @@ export default function PressRoomPage() {
 
         {/* -------- MEDIA RELEASES -------- */}
         <section>
-          <h2 className="text-[#117ABA] text-[16px] sm:text-[28px] lato-400 mb-6 text-center">
+          <h2 className="text-[#117ABA] text-[16px] sm:text-[28px] lato-400 py-6 text-center">
             Media Releases
           </h2>
 

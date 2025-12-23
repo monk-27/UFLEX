@@ -97,7 +97,7 @@ const Careers = () => {
                                 src="/images/careers/careershero.png"
                                 alt="UFlex team"
                                 fill
-                                className="object-cover"
+                                className="object-cover rounded-sm"
                                 priority
                             />
                         </motion.div>
@@ -157,7 +157,7 @@ const Careers = () => {
                                         whileInView={{ opacity: 1, y: 0 }}
                                         viewport={{ once: true }}
                                         transition={{ delay: idx * 0.05 }}
-                                        className="flex h-full flex-col overflow-hidden bg-white shadow-sm"
+                                        className="flex h-full flex-col overflow-hidden bg-white shadow-sm rounded-sm "
                                     >
                                         {/* IMAGE */}
                                         <div className="relative h-[400px] sm:h-[360px] overflow-hidden">

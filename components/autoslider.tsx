@@ -32,7 +32,7 @@ export default function AutoMarquee({
                 alt={item.title}
                 width={120}
                 height={100}
-                className="object-cover w-[635px] h-[212px]"
+                className="object-cover w-[635px] h-[212px] rounded-sm"
               />
             </div>
 
