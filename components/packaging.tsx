@@ -327,7 +327,7 @@ environmentally responsible.`,
             ],
         },
         keypeopleabroad: {
-            title: "Key People Abroad",
+            title: "Key People International",
             details: [
 
 

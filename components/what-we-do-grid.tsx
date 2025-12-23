@@ -387,19 +387,19 @@ const items = [
     title: "Engineering",
     href: "/engineering-business",
     desc: "Engineering Business of UFlex has grown to be the manufacturing major of top of the line packaging, printing and allied machines.",
-    img: "/images/engg.png",
+    img: "/images/heroengg.png",
   },
   {
     title: "Printing Cylinders",
     href: "/printing-cylinder-business",
     desc: "Engineering Business of UFlex has grown to be the manufacturing major of top of the line packaging, printing and allied machines.",
-    img: "/images/engg.png",
+    img: "/images/heroprinting.png",
   },
   {
     title: "Flexible Tubes",
     href: "/flexitube-business",
     desc: "Engineering Business of UFlex has grown to be the manufacturing major of top of the line packaging, printing and allied machines.",
-    img: "/images/engg.png",
+    img: "images/heroflexi.png",
   },
 ];
 

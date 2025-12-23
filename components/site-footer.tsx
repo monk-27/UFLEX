@@ -119,7 +119,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Phone, Mail, Twitter, Facebook, Instagram, Linkedin } from "lucide-react"
+import { Phone, Mail, Twitter, Facebook, Instagram, Linkedin,Youtube } from "lucide-react"
 
 export function SiteFooter() {
   const year = new Date().getFullYear()
@@ -156,6 +156,8 @@ export function SiteFooter() {
             { Icon: Facebook, href: "https://www.facebook.com/uflexltd" },
             { Icon: Instagram, href: "https://www.instagram.com/uflexltd" },
             { Icon: Linkedin, href: "https://www.linkedin.com/company/uflexltd" },
+            { Icon: Youtube, href: "https://www.youtube.com/@uflexltdpackaging" },
+
           ].map(({ Icon, href }, i) => (
             <Link
               key={i}
