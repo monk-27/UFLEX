@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import { LeadershipAwardItem } from "./hall-off-fame";
-export const LEADERSHIP_AWARDS: LeadershipAwardItem[] = [
+export const LEADERSHIP_AWARDS: LeadershipAwardItem[] = 
+[
   {
     image: "/images/awards/b1.png",
     title: "ET Sustainable Organization 2025",

@@ -288,10 +288,131 @@ type AwardsData = {
 };
 
 const AWARDS_DATA: Record<
-  "packaging-films" | "printing-cylinders" | "holography" | "flexible-packaging" ,
+  "corporate-awards"|"packaging-films" | "printing-cylinders" | "holography" | "flexible-packaging" |"chemicals" | "aseptic-packaging" | "engineering"|"flexible-tubes",
   AwardsData
 > = {
   /* ================= PACKAGING FILMS ================= */
+  "corporate-awards": {
+    label: "Corporate Awards",
+    years: [2025],
+    data: {
+      2025:[
+        {
+    image: "/images/awards/b1.png",
+    title: "ET Sustainable Organization 2025",
+    by: " ET Now",
+    description:
+      "UFlex was recognised as an ET Sustainable Organization for its commitment to circularity, responsible manufacturing, and long-term ESG goals. The award honours businesses that demonstrate measurable progress in environmental stewardship and sustainability-led transformation.",
+  },
+  {
+    image: "/images/awards/b2.png",
+    title: "ET Now Best Organisations to Work 2025",
+    by: "ET Now",
+    description:
+      "UFlex received this recognition for fostering a high-performance workplace built on innovation, employee engagement, and strong leadership. The award honours companies that excel in culture-building, talent development, and employee well-being.",
+  },
+  {
+    image: "/images/awards/b3.png",
+    title: "Business Leader of the Decade 2024 – Mr. Ashok Chaturvedi",
+    by: "Indo-American Chamber of Commerce (IACC)",
+    description:
+      "UFlex Founder & Chairman Mr. Ashok Chaturvedi was honoured for his visionary leadership and contribution to the packaging industry. The award recognises leaders who have significantly influenced India–US business relations and driven industrial, technological, and economic growth over the decade.",
+  },
+
+  {
+    image: "/images/awards/b4.png",
+    title: "IFCA Star Awards 2025",
+    by: "Indian Flexible Packaging and Folding Carton Association (IFCA)",
+    description:
+      "UFlex won 16 awards—the highest among all entrants—recognising its excellence in packaging design, sustainability, and innovation. The IFCA Star Awards celebrate the most advanced and impactful solutions in flexible packaging, highlighting UFlex's leadership in delivering functional, visually appealing, and environmentally responsible packaging.",
+  },
+  {
+    image: "/images/awards/b5.png",
+    title: "Top Employer India 2025",
+    by: "Top Employers Institute (TEI)",
+    description:
+      "UFlex earned the Top Employer certification for its outstanding HR practices, employee development initiatives, and inclusive workplace culture. The TEI recognition is awarded to organisations that meet rigorous global standards in people strategy, leadership, and talent experience.",
+  },
+  {
+    image: "/images/awards/b6.png",
+    title: "ET Edge Top 100 CSOs – Mr. Jeevaraj Pillai",
+    by: "ET Edge Global Sustainability Alliance",
+    description:
+      "UFlex’s Mr. Jeevaraj Pillai was named among the Top 100 CSOs for his leadership in driving sustainability strategy, innovation, and ESG alignment. The recognition honours global leaders who are shaping sustainable business models and accelerating responsible transformation across industries.",
+  },
+
+  {
+    image: "/images/awards/b7.png",
+    title: "SIES SOP Star Awards 2025",
+    by: "SIES School of Packaging",
+    description:
+      "UFlex was honoured for outstanding packaging innovations that advance sustainability, functionality, and consumer convenience. Winning eight awards, including the prestigious President’s Sustainability Award, reflects UFlex’s commitment to environmentally responsible and high-performance packaging.",
+  },
+  {
+    image: "/images/awards/b8.png",
+    title: "Most Preferred Workplaces 2024–25",
+    by: "Team Marksmen & India Today Group",
+    description:
+      "UFlex received this recognition for fostering a resilient, future-ready workplace driven by innovation, employee well-being, and strong cultural values. The award honours brands that excel in leadership, employee experience, and organisational development.",
+  },
+  {
+    image: "/images/awards/b9.png",
+    title: "Dream Employer of the Year – Multiple Categories",
+    by: "World HRD Congress 2025",
+    description:
+      "UFlex was honoured across categories for exemplary HR processes, including training excellence, employee engagement, and HR technology adoption. These awards recognise organisations that prioritise learning culture, workforce transformation, and people-centric innovation.",
+  },
+
+  {
+    image: "/images/awards/b10.png",
+    title: "North India Best Employer Brand Award 2024",
+    by: "Employer Branding Institute / World HRD Congress",
+    description:
+      "UFlex received this award for building a strong employer brand through innovative HR practices, leadership development, and employee engagement. It recognises organisations that align culture, communication, and talent strategy to create sustained workplace excellence.",
+  },
+  {
+    image: "/images/awards/b11.png",
+    title: "Sustainable Packaging Challenge Winner – PACK.NXT 2024",
+    by: "PACK.NXT",
+    description:
+      "UFlex won this award for its next-generation sustainable packaging technologies designed to promote recyclability and reduce environmental impact. The recognition highlights leading innovations that support circularity and deliver practical, scalable sustainability solutions.",
+  },
+  {
+    image: "/images/awards/b12.png",
+    title: "ET Sustainable Organization 2023",
+    by: "ET Edge",
+    description:
+      "UFlex Limited was recognised as an Economic Times Sustainable Organization 2023 for its contributions to sustainable development. This honour reflects the company’s ESG-driven growth, responsible manufacturing, and commitment to creating long-term value for all stakeholders.",
+  },
+
+  {
+    image: "/images/awards/b13.png",
+    title: "CII Industrial Innovation Award 2024 – Top 75 Innovators",
+    by: "Confederation of Indian Industry (CII)",
+    description:
+      "UFlex was recognised as one of India’s Top 75 Most Innovative Companies for its technological advancements in packaging, recycling, and material science. The award evaluates innovation capability, product breakthroughs, and R&D impact across industries.",
+  },
+  {
+    image: "/images/awards/b14.png",
+    title: "Times Now Sustainable Organization 2024",
+    by: "Times Now",
+    description:
+      "UFlex was honoured for integrating sustainability into core operations, advancing recyclable packaging, and promoting responsible resource use. The award celebrates companies demonstrating meaningful progress toward environmental protection and sustainable business growth.",
+  },
+  {
+    image: "/images/awards/b15.png",
+    title: "Innovation in Awareness – POSH Excellence Awards 2025",
+    by: "National POSH Conclave & Excellence Awards",
+    description:
+      "UFlex received the award for its proactive efforts in creating awareness and strengthening workplace safety under POSH guidelines. It recognises organisations that promote respectful, secure, and gender-sensitive work environments through effective training and sensitisation initiatives.",
+  },
+      ],
+      2024:[],
+      2023:[],
+      2022:[],
+      2021: [],
+
+    },},
   "packaging-films": {
     label: "Packaging Films",
     years: [2025, 2024, 2023, 2021, 2019],
@@ -546,13 +667,57 @@ const AWARDS_DATA: Record<
 
     },
   },
+  "chemicals": {
+    label: "Chemicals",
+    years: [2025, 2024, 2023, 2022, 2021],
+    data: {
+      2025:[],
+      2024:[],
+      2023:[],
+      2022:[],
+      2021: [],
+      
+    },},
+    "aseptic-packaging": {
+    label: "Aseptic Packaging",
+    years: [2025, 2024, 2023, 2022, 2021],
+    data: {
+      2025:[],
+      2024:[],
+      2023:[],
+      2022:[],
+      2021: [],
+      
+    },},"engineering": {
+    label: "Engineering",
+    years: [2025, 2024, 2023, 2022, 2021],
+    data: {
+      2025:[],
+      2024:[],
+      2023:[],
+      2022:[],
+      2021: [],
+      
+    },},
+    "flexible-tubes": {
+    label: "Flexible Tubes",
+    years: [2025, 2024, 2023, 2022, 2021],
+    data: {
+      2025:[],
+      2024:[],
+      2023:[],
+      2022:[],
+      2021: [],
+      
+    },}
+
 };
 
 type BusinessKey = keyof typeof AWARDS_DATA;
 
 export default function BusinessAwards() {
   const [activeBusiness, setActiveBusiness] =
-    useState<BusinessKey>("packaging-films");
+    useState<BusinessKey>("corporate-awards");
 
   const business = AWARDS_DATA[activeBusiness];
   const [activeYear, setActiveYear] = useState<Year>(business.years[0]);
@@ -602,7 +767,9 @@ export default function BusinessAwards() {
 
         {/* Year Tabs */}
         {/* Year Tabs */}
-        <div
+        {
+          activeBusiness !== "corporate-awards" && (
+            <div
           className="
     mb-10
     flex
@@ -626,6 +793,9 @@ export default function BusinessAwards() {
             </button>
           ))}
         </div>
+          ) 
+        }
+       
 
 
         {/* Cards */}
