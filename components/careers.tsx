@@ -63,26 +63,26 @@ const Careers = () => {
 
                         {/* Text */}
                         <div className="space-y-6">
-                            <p className="  lato-400 text-[16px] leading-relaxed text-[#6B6B6B]">
+                            <p className=" text-center  lato-400 text-[16px] leading-relaxed text-[#6B6B6B]">
                                 At UFlex, we pride ourselves on fostering an inclusive, caring, and
                                 productive environment for our people. As a leading player in the
                                 flexible packaging industry, we engage and retain purpose-driven talent
                                 through a fair and consistent HR framework.
                             </p>
 
-                            <p className="lato-400 text-[16px] leading-relaxed text-[#6B6B6B]">
+                            <p className="text-center lato-400 text-[16px] leading-relaxed text-[#6B6B6B]">
                                 Our entrepreneurial culture empowers employees to drive UFlex’s growth
                                 and success. UFlex offers job seekers more than a job. It offers them a
                                 lifetime of growth with a number of opportunities for continuous
                                 development and growth in assorted fields of business.
                             </p>
 
-                            <p className="lato-500 text-[16px] text-[#117ABA]">
+                            <p className="text-center lato-500 text-[16px] text-[#117ABA]">
                                 Join us, and be part of a movement that’s changing the world, one package
                                 at a time.
                             </p>
 
-                            <p className="lato-400 text-[16px] text-[#6B6B6B]">
+                            <p className="text-center lato-400 text-[16px] text-[#6B6B6B]">
                                 If you are looking for a rewarding career, you may write to us at{" "}
                                 <span className="text-[#117ABA]">hr@uflexltd.com</span>
                             </p>

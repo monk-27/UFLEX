@@ -932,14 +932,14 @@ export default function PressRoomPage() {
                 {coverageItems.map((img) => (
                   <div
                     key={img}
-                    className="bg-white  h-[180px] w-[220px] flex items-center justify-center"
+                    className="bg-white  h-[180px] w-[220px] flex items-center justify-center overflow-hidden"
                   >
                     <Image
                       src={img}
                       alt="Media Coverage"
                       width={220}
                       height={140}
-                      className="object-contain"
+                      className="object-contain overflow-hidden"
                     />
                   </div>
                 ))}
@@ -951,14 +951,14 @@ export default function PressRoomPage() {
               {coverageItems.map((img) => (
                 <div
                   key={img}
-                  className="bg-white border h-[180px] w-[220px] flex items-center justify-center"
+                  className="bg-white   h-[150px] w-[220px] sm:h-[180px] sm:w-[220px] flex items-center justify-center overflow-hidden"
                 >
                   <Image
                     src={img}
                     alt="Media Coverage"
                     width={220}
                     height={140}
-                    className="object-contain"
+                    className="object-contain overflow-hidden"
                   />
                 </div>
               ))}

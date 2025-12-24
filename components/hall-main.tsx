@@ -42,20 +42,20 @@ export default function SustainabilityCarousel() {
 
 
           {/* TEXT */}
-          <div className="min-h-[64px] text-center md:text-left">
-            <AnimatePresence mode="wait">
-              <motion.h2
-                key={SLIDES[active].title}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.4 }}
-                className="text-white text-xl sm:text-[24px] lato-700 leading-snug"
-              >
-                {SLIDES[active].title}
-              </motion.h2>
-            </AnimatePresence>
-          </div>
+          <div className="min-h-[64px] text-center  sm:text-left max-w-lg ">
+                         <AnimatePresence mode="wait">
+                           <motion.h2
+                             key={SLIDES[active].title}
+                             initial={{ opacity: 0 }}
+                             animate={{ opacity: 1 }}
+                             exit={{ opacity: 0 }}
+                             transition={{ duration: 0.4 }}
+                             className="text-white text-md sm:text-[16px] lato-700 leading-snug"
+                           >
+                             {SLIDES[active].title}
+                           </motion.h2>
+                         </AnimatePresence>
+                       </div>
 
           {/* IMAGE + DOTS */}
           <div className="flex flex-col items-center">

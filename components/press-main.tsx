@@ -6,16 +6,16 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const SLIDES = [
   {
-    title: "Press Room",
-    image: "/images/press/press.png",
+    title: "UFlex to Showcase a Comprehensive Range of Pet Food  Packaging Solutions at Pet Fair South East Asia 2025",
+    image: "/images/press/dog.png",
   },
   {
-    title: "Press Room",
-    image: "/images/press/press.png",
+    title: "UFlex’s FlexiTubes to Showcase Advanced Tube Packaging Solutions  for the Beauty Industry at Cosmoprof India 2025",
+    image: "/images/press/flexitube.png",
   },
   {
-    title: "Press Room",
-    image: "/images/press/press.png",
+    title: "UFlex Introduces FSSAI compliant Single-Pellet Solution for Food Packaging - Enables Food and Beverage Brands to Meet EPR Compliance",
+    image: "/images/press/man.png",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function PressMainCarousel() {
    
    
              {/* TEXT */}
-             <div className="min-h-[64px] text-center md:text-left">
+             <div className="min-h-[64px] text-center  sm:text-left max-w-lg ">
                <AnimatePresence mode="wait">
                  <motion.h2
                    key={SLIDES[active].title}
@@ -50,7 +50,7 @@ export default function PressMainCarousel() {
                    animate={{ opacity: 1 }}
                    exit={{ opacity: 0 }}
                    transition={{ duration: 0.4 }}
-                   className="text-white text-xl sm:text-[24px] lato-700 leading-snug"
+                   className="text-white text-md sm:text-[16px] lato-700 leading-snug"
                  >
                    {SLIDES[active].title}
                  </motion.h2>
@@ -59,7 +59,7 @@ export default function PressMainCarousel() {
    
              {/* IMAGE + DOTS */}
              <div className="flex flex-col items-center">
-               <div className="relative h-[80px] sm:h-[360px] w-full overflow-hidden rounded-md">
+               <div className="relative h-[100px] sm:h-[360px] w-full overflow-hidden rounded-md">
    
                  <AnimatePresence mode="wait">
                    <motion.div
@@ -74,7 +74,7 @@ export default function PressMainCarousel() {
                        src={SLIDES[active].image}
                        alt={SLIDES[active].title}
                        fill
-                       className="object-contain sm:object-cover relative h-[80px] sm:h-[360px] w-full overflow-hidden rounded-sm"
+                       className="object-contain sm:object-fit  relative h-[80px] sm:h-[360px] w-full overflow-hidden rounded-sm"
                        priority
                      />
                    </motion.div>

@@ -6,16 +6,19 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const SLIDES = [
   {
-    title: "Careers",
-    image: "/images/careers/careershero.png",
+    title: "Global Perspective",
+    subtitle:" Thinking globally and acting locally, we leverage the power of global insight, relationships, collaborations, and learnings to deliver exceptional packaging solutions for the clients.",
+    image: "/images/careers/global.png",
   },
   {
-    title: "Careers ",
-    image: "/images/careers/careershero.png",
+    title: "Trust & Respect ",
+    subtitle:"Proactively build inclusive and egalitarian partnerships with all stakeholders, through the virtues of honesty of purpose, mutual trust, and respect.",
+    image: "/images/careers/trust.png",
   },
   {
-    title: "Careers ",
-    image: "/images/careers/careershero.png",
+    title: "Socio-environmental Sustainability",
+    subtitle:" Upholding that society and environment are cornerstones for sustainability, we support and promote inclusive social development and strive towards the conservation of the environment and protection of our planet.",
+    image: "/images/careers/socio.png",
   },
 ];
 
@@ -42,7 +45,7 @@ export default function CareersMainCarousel() {
    
    
              {/* TEXT */}
-             <div className="min-h-[64px] text-center md:text-left">
+             <div className="min-h-[64px] text-center  sm:text-left max-w-lg ">
                <AnimatePresence mode="wait">
                  <motion.h2
                    key={SLIDES[active].title}
@@ -50,16 +53,26 @@ export default function CareersMainCarousel() {
                    animate={{ opacity: 1 }}
                    exit={{ opacity: 0 }}
                    transition={{ duration: 0.4 }}
-                   className="text-white text-xl sm:text-[24px] lato-700 leading-snug"
+                   className="text-white text-xs sm:text-[16px] lato-700 leading-snug"
                  >
                    {SLIDES[active].title}
+                 </motion.h2>
+                 <motion.h2
+                   key={SLIDES[active].title}
+                   initial={{ opacity: 0 }}
+                   animate={{ opacity: 1 }}
+                   exit={{ opacity: 0 }}
+                   transition={{ duration: 0.4 }}
+                   className="text-gray-300 text-xs sm:text-[16px] lato-700 leading-snug mt-2"
+                 >
+                   {SLIDES[active].subtitle}
                  </motion.h2>
                </AnimatePresence>
              </div>
    
              {/* IMAGE + DOTS */}
              <div className="flex flex-col items-center">
-               <div className="relative h-[80px] sm:h-[360px] w-full overflow-hidden rounded-md">
+               <div className="relative h-[80px] sm:h-[360px] w-full sm:w-[711px overflow-hidden rounded-md">
    
                  <AnimatePresence mode="wait">
                    <motion.div
@@ -74,7 +87,7 @@ export default function CareersMainCarousel() {
                        src={SLIDES[active].image}
                        alt={SLIDES[active].title}
                        fill
-                       className="object-contain sm:object-cover relative h-[80px] sm:h-[360px] w-full overflow-hidden rounded-sm"
+                       className="object-contain sm:object-fill  relative h-[80px] sm:h-[340px] w-full sm:w-[711px]  rounded-sm"
                        priority
                      />
                    </motion.div>
