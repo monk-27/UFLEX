@@ -61,17 +61,18 @@ const PackagingKeypeople = ({ title, people }: Props) => {
 
   return (
     <>
-      <section className="text-center pt-6">
+      <section className="text-center pt-6 ">
         <div className="">
-          <h2 className="px-0 text-start lato-400 text-[20px] md:text-[24px] text-[#117ABA] mb-3">
+          
+          {/* Embla slider – used on mobile & desktop */}
+          <div className="">
+            <div ref={emblaRef} className="overflow-hidden max-w-7xl mx-auto ">
+              <h2 className=" px-0 text-start lato-400 text-[20px] md:text-[24px] text-[#117ABA] mb-3">
             {title}
 
           </h2>
-          {/* Embla slider – used on mobile & desktop */}
-          <div className="relative">
-            <div ref={emblaRef} className="overflow-hidden">
               <div
-                className={`flex gap-6 ${
+                className={`flex gap-6  ${
                   people.length <= 3 ? "justify-center" : ""
                 }`}
               >

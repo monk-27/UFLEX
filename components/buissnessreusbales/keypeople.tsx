@@ -61,15 +61,16 @@ const Keypeople = ({ title, people }: Props) => {
 
   return (
     <>
-      <section className=" pb-12 mt-[30px] py-12  text-center sm:py-12 ">
+      <section className=" pb-12 mt-[30px] py-12  text-center sm:py-12 relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#f7f7f7]">
         <div className="">
-          <h2 className=" text-start lato-400 text-[20px] md:text-[24px] text-[#117ABA] mb-3">
+          
+          {/* Embla slider – used on mobile & desktop */}
+          <div className="">
+            <div ref={emblaRef} className="overflow-hidden max-w-7xl mx-auto ">
+              <h2 className=" text-start lato-400 text-[20px] md:text-[24px] text-[#117ABA] mb-3">
             {title}
           </h2>
 
-          {/* Embla slider – used on mobile & desktop */}
-          <div className="relative">
-            <div ref={emblaRef} className="overflow-hidden">
               <div
                 className={`flex gap-6 ${
                   people.length <= 3 ? "justify-center" : ""

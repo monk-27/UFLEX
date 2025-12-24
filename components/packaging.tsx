@@ -546,7 +546,7 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                         />
                     )}
                     <SustainabilitySection data={business.sustainability} />
-                    <div className='py-8'>
+                    <div className='py-8 '>
                         {(business.keypeopleIndia) && (
                             <PackagingKeypeople
                                 title={business.keypeopleIndia.title}
