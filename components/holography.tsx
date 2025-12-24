@@ -20,26 +20,49 @@ import { ReadMoreDialog } from './expandabletext'
 
 
 
-const SliderItems: SliderItem[] = [
-    {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-07011400114.jpg",
+const SliderItems: SliderItem[] = 
+[
+   {
+        img: "/images/holography/h1.png",
         dynamiclink: "/holography-business/holography-Our-Offerings",
-        title: "Products",
-        desc: "High-performance inks for superior print quality, compliant with global food safety and sustainability standards.",
+        title: "Security Paper Labels & Tax Stamps",
+        desc: "",
     },
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-07110501105.jpg",
+        img: "/images/holography/h2.png",
         dynamiclink: "/holography-business/holography-Our-Offerings",
-
-        title: "Applications",
-        desc: "A range of adhesives that ensure strong bonding, efficient processing, and compliance with global food safety and sustainability standards.",
+        title: "Security Documents",
+        desc: "",
     },
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-07110511105.jpg",
+        img: "/images/holography/h3.png",
         dynamiclink: "/holography-business/holography-Our-Offerings",
-
-        title: "Industries",
-        desc: "A diverse range of coatings that provide visual appeal and meet diverse industry needs while supporting compliance and sustainability.",
+        title: "Textile Application Films for: Sequins ,Hot Melt ,Glitter Powder",
+        desc: "",
+    },
+    {
+        img: "/images/holography/h4.png",
+        dynamiclink: "/holography-business/holography-Our-Offerings",
+        title: "Wide Web Holographic Films",
+        desc: "",
+    },
+    {
+        img: "/images/holography/h5.png",
+        dynamiclink: "/holography-business/holography-Our-Offerings",
+        title: "Transfer Holographic Metallized Paper & Paperboard",
+        desc: "",
+    },
+    {
+        img: "/images/holography/h6.png",
+        dynamiclink: "/holography-business/holography-Our-Offerings",
+        title: "Stamping Foils",
+        desc: "",
+    },
+    {
+        img: "/images/holography/h7.png",
+        dynamiclink: "/holography-business/holography-Our-Offerings",
+        title: "Advanced Security Holograms",
+        desc: "",
     },
 
 
@@ -346,7 +369,7 @@ const packagingData = [
     {
         id: "holography",
         title: "Holography Business",
-        image: "/images/advanced.png",
+        image: "/images/holography/hall.png",
         imageAlt: "UFlex Holography Solutions",
 
         content: [
@@ -447,7 +470,7 @@ const HoloGraphyComp: React.FC<Props> = ({ business }) => {
                                     {packagingData[0].content[0].text}
                                 </p>
 
-                                <div className="text-wrap max-w-xl space-y-3  text-gray-800 lato-400 text-[16px] sm:text-[18px] leading-relaxed">
+                                {/* <div className="text-wrap max-w-xl space-y-3  text-gray-800 lato-400 text-[16px] sm:text-[18px] leading-relaxed">
                                     <p>
                                         The Holography Business offers a <strong>comprehensive range of holographic solutions</strong>, including:
                                     </p>
@@ -463,7 +486,7 @@ const HoloGraphyComp: React.FC<Props> = ({ business }) => {
                                             <strong>Textile Application Films for: Sequins ,Hot Melt ,Glitter Powder</strong>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> */}
 
 
                                 <button
@@ -496,7 +519,7 @@ const HoloGraphyComp: React.FC<Props> = ({ business }) => {
                                 className="relative aspect-[16/10] w-full overflow-hidden "
                             >
                                 <Image
-                                    src="/images/advanced.png"
+                                    src="/images/holography/hall.png"
                                     alt="UFlex capabilities across the value chain"
                                     fill
                                     className="object-cover rounded-sm"

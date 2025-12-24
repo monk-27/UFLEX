@@ -22,9 +22,10 @@ export function SustainabilitySection({ data }: any) {
             <h2 className="lato-400 text-[20px] md:text-[24px] text-[#117ABA] mb-3">
               {data.title}
             </h2>
-            <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f] mb-4">
+            {data.description && <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f] mb-4">
               {data.description}
-            </p>
+            </p>}
+            
             {/* {data.linkHref && data.linkLabel && (
               <a
                 href={data.linkHref}
@@ -59,9 +60,12 @@ export function SustainabilitySection({ data }: any) {
             <h2 className="lato-400 text-[18px] md:text-[28px] text-[#117ABA] mb-3">
               {data.title}
             </h2>
-            <p className="text-wrap max-w-xl lato-400 text-[16px] leading-relaxed text-[#5B5B5B] mb-4">
+            {
+              data.description && <p className="text-wrap max-w-xl lato-400 text-[16px] leading-relaxed text-[#5B5B5B] mb-4">
               {data.description}
             </p>
+            }
+            
             {/* {data.linkHref && data.linkLabel && (
               <a
                 href={data.linkHref}

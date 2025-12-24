@@ -20,24 +20,47 @@ const TAB_DATA = [
         id: "offerings",
         label: "Our Offerings",
         items: [
-            {
-                image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-07011400114.jpg",
-                title: "Products",
-                description: "High-performance inks for superior print quality, compliant with global food safety and sustainability standards.",
-            },
-            {
-                image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-07110501105.jpg",
+   {
+        image: "/images/holography/h1.png",
+        title: "Security Paper Labels & Tax Stamps",
+        description: "",
+    },
+    {
+        image: "/images/holography/h2.png",
+        title: "Security Documents",
+        description: "",
+    },
+    {
+        image: "/images/holography/h3.png",
+    title: "Textile Application Films for: Sequins ,Hot Melt ,Glitter Powder",
 
-                title: "Applications",
-                description: "A range of adhesives that ensure strong bonding, efficient processing, and compliance with global food safety and sustainability standards.",
-            },
-            {
-                image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-07110511105.jpg",
+        description: "",
+    },
+    {
+        image: "/images/holography/h4.png",
+        title: "Wide Web Holographic Films",
+        description: "",
+    },
+    {
+        image: "/images/holography/h5.png",
+        title: "Transfer Holographic Metallized Paper & Paperboard",
+        description: "",
+    },
+    {
+        image: "/images/holography/h6.png",
+        title: "Stamping Foils",
+        description: "",
+    },
+    {
+        image: "/images/holography/h7.png",
+        title: "Advanced Security Holograms",
+        description: "",
+    },
 
-                title: "Industries",
-                description: "A diverse range of coatings that provide visual appeal and meet diverse industry needs while supporting compliance and sustainability.",
-            },
-        ],
+
+
+
+]
     },
     {
         id: "featured",

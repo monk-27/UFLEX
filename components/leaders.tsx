@@ -669,45 +669,29 @@ const AWARDS_DATA: Record<
   },
   "chemicals": {
     label: "Chemicals",
-    years: [2025, 2024, 2023, 2022, 2021],
+    years: [],
     data: {
-      2025:[],
-      2024:[],
-      2023:[],
-      2022:[],
-      2021: [],
+     
       
     },},
     "aseptic-packaging": {
     label: "Aseptic Packaging",
-    years: [2025, 2024, 2023, 2022, 2021],
+    years: [],
     data: {
-      2025:[],
-      2024:[],
-      2023:[],
-      2022:[],
-      2021: [],
+      
       
     },},"engineering": {
     label: "Engineering",
-    years: [2025, 2024, 2023, 2022, 2021],
+    years: [],
     data: {
-      2025:[],
-      2024:[],
-      2023:[],
-      2022:[],
-      2021: [],
+      
       
     },},
     "flexible-tubes": {
     label: "Flexible Tubes",
-    years: [2025, 2024, 2023, 2022, 2021],
+    years: [],
     data: {
-      2025:[],
-      2024:[],
-      2023:[],
-      2022:[],
-      2021: [],
+      
       
     },}
 
@@ -870,37 +854,49 @@ export default function BusinessAwards() {
       "w-full",
     ].join(" ")}
   >
-    {cards.map((card, idx) => (
-      <article
-        key={idx}
-        className="rounded-sm group flex h-full flex-col overflow-hidden bg-white"
-      >
-        {/* Image */}
-        <div className="relative h-[370px] w-full overflow-hidden bg-[#BDBCB7]">
-          <Image
-            src={card.image}
-            alt={card.title}
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-          />
-        </div>
+    {cards?.length ? (
+  cards.map((card, idx) => (
+    <article
+      key={idx}
+      className="group flex h-full flex-col overflow-hidden rounded-sm bg-white"
+    >
+      {/* Image */}
+      <div className="relative h-[370px] w-full overflow-hidden bg-[#BDBCB7]">
+        <Image
+          src={card.image}
+          alt={card.title}
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+      </div>
 
-        {/* Content */}
-        <div className="flex flex-1 flex-col py-4">
-          <h3 className="text-[16px] lato-400 text-[#117ABA] leading-snug h-[48px] line-clamp-2">
-            {card.title}
-          </h3>
+      {/* Content */}
+      <div className="flex flex-1 flex-col py-4">
+        <h3 className="h-[48px] line-clamp-2 text-[16px] lato-400 leading-snug text-[#117ABA]">
+          {card.title}
+        </h3>
 
-          <p className="text-[16px] lato-400 text-black leading-snug h-[48px] line-clamp-2">
-            By: {card.by}
-          </p>
+        <p className="h-[48px] line-clamp-2 text-[16px] lato-400 leading-snug text-black">
+          By: {card.by}
+        </p>
 
-          <p className="text-[16px] lato-400 leading-6 text-gray-700">
-            {card.description}
-          </p>
-        </div>
-      </article>
-    ))}
+        <p className="text-[16px] lato-400 leading-6 text-gray-700">
+          {card.description}
+        </p>
+      </div>
+    </article>
+  ))
+) : (
+  <article className="flex h-full flex-col items-center justify-center rounded-sm bg-white border border-dashed border-gray-300 p-8 text-center">
+    {/* Placeholder visual */}
+    <div className="mb-6 flex h-[120px] w-[120px] items-center justify-center rounded-full bg-[#117ABA]/10">
+      <span className="text-[14px] lato-500 text-[#117ABA]">Coming Soon</span>
+    </div>
+
+   
+  </article>
+)}
+
   </div>
 </div>
 
