@@ -61,7 +61,7 @@ const PackagingKeypeople = ({ title, people }: Props) => {
 
   return (
     <>
-      <section className="text-center pt-6 ">
+      <section className="text-center pt-6 relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#f7f7f7]">
         <div className="">
           
           {/* Embla slider – used on mobile & desktop */}
