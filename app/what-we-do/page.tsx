@@ -225,7 +225,7 @@ export default function WhatWeDoPage() {
       title: "Printing Cylinders",
       href: "/printing-cylinder-business",
       desc: "UFlex Printing Cylinders Business has a State-of-the-art manufacturing facility for producing Rotogravure Cylinders, Flexo Plates & Sleeves.",
-      img: "/images/cyls.png",
+      img: "/images/heroprinting.png",
     },
     {
       title: "Flexible Tubes",
@@ -294,10 +294,10 @@ const [emblaRef, emblaApi] = useEmblaCarousel({
             className="relative aspect-[16/10] w-full overflow-hidden  "
           >
             <Image
-              src="https://uflex.wpdevstudio.site/HTML/uploaded-files/category/images/What-We-Do01.jpg"
+              src="/images/what.png"
               alt="UFlex capabilities across the value chain"
               fill
-              className="object-cover rounded-sm"
+              className="object-fill rounded-sm"
               priority
             />
             {/* subtle overlay gradient for readability */}
