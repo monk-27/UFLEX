@@ -547,7 +547,7 @@ export default function GetInTouch() {
                     <input
                       id="name"
                       required
-                      className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                      className="text-gray-800 rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
                       placeholder="Enter full name"
                     />
                   </div>
@@ -563,7 +563,7 @@ export default function GetInTouch() {
                       id="email"
                       type="email"
                       required
-                      className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                      className="text-gray-800 rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
                       placeholder="Enter email address"
                     />
                   </div>
@@ -579,7 +579,7 @@ export default function GetInTouch() {
                       id="phone"
                       required
                       inputMode="tel"
-                      className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                      className="text-gray-800 rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
                       placeholder="Enter phone number"
                     />
                   </div>
@@ -594,13 +594,13 @@ export default function GetInTouch() {
                     <select
                       id="enquiryType"
                       required
-                      className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                      className="text-gray-800 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
                       defaultValue=""
                     >
-                      <option value="" disabled>
+                      <option value="" disabled className="text-gray-800">
                         Select type
                       </option>
-                      <option>Media / PR</option>
+                      <option >Media / PR</option>
                       <option>Investor Relations</option>
                       <option>Sales / Business</option>
                       <option>Careers / HR</option>
@@ -617,7 +617,7 @@ export default function GetInTouch() {
                     </label>
                     <select
                       id="product"
-                      className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                      className="text-gray-800 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
                       defaultValue=""
                     >
                       <option value="" disabled>
@@ -640,17 +640,17 @@ export default function GetInTouch() {
                     </label>
                     <select
                       id="location"
-                      className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                      className="text-gray-800 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
                       defaultValue=""
                     >
-                      <option value="" disabled>
+                      <option value="" disabled className="text-gray-800">
                         Select location
                       </option>
-                      <option>India</option>
-                      <option>USA</option>
-                      <option>Poland</option>
-                      <option>UAE</option>
-                      <option>Others</option>
+                      <option className="text-gray-800">India</option>
+                      <option className="text-gray-800">USA</option>
+                      <option className="text-gray-800">Poland</option>
+                      <option className="text-gray-800">UAE</option>
+                      <option className="text-gray-800">Others</option>
                     </select>
                   </div>
                 </div>
@@ -667,7 +667,7 @@ export default function GetInTouch() {
                     id="message"
                     required
                     rows={5}
-                    className="rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                    className="text-gray-800 rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
                     placeholder="Write message"
                   />
                 </div>
