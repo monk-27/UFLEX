@@ -169,29 +169,11 @@ const HallPage = () => {
         </header>
 
       </section> */}
-      <section className="relative w-full h-[260px] sm:h-[471px] md:h-[471px] lg:h-[471px] overflow-hidden">
-        {/* <Image
-          src="/images/awards/awardsmain.png"
-          alt="Corporate Policies"
-          fill
-          className="object-cover w-full h-[260px] sm:h-[471px] md:h-[471px] lg:h-[471px]"
-          priority
-        />
-
-        <div className="absolute inset-0 bg-black/40" />
-
-        <div className="max-w-7xl mx-auto px-4 absolute inset-0 flex flex-col justify-center ">
-          <h1 className="text-start text-white text-2xl sm:text-3xl md:text-[38px] lato-700 mb-4">
-            Hall of Fame
-          </h1>
-        </div> */}
+      <section className="relative w-full  overflow-hidden">
+        
         <SustainabilityCarousel />
       </section>
-      <div className="max-w-7xl">
-        <p className="lato-400 text-[15px] leading-relaxed  text-[#6B6B6B] text-center mt-6">
-          Our journey of growth and leadership in flexible packaging has been consistently recognized by prestigious industry forums worldwide. From accolades in sustainability and product innovation to honors as a top employer, our awards reflect more than achievements—they embody our commitment to shaping a responsible, forward-looking future.
-        </p>
-      </div>
+      
 
       {/* ==== IN THE SPOTLIGHT ==== */}
       <section className="relative py-6">

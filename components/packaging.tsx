@@ -432,8 +432,8 @@ const PackageComp: React.FC<Props> = ({ business }) => {
     return (
         <section className='bg-white pt-4 sm:pt-12'>
             <div className="max-w-7xl mx-auto px-4">
-                <div className="space-y-4">
-                    <div className="grid py-4 lg:grid-cols-2 lg:py-1  gap-10">
+                <div className="space-y-0">
+                    <div className="grid py-4 lg:grid-cols-2 lg:py-1 gap-10">
 
                         <div>
                             <motion.h1
@@ -546,7 +546,7 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                         />
                     )}
                     <SustainabilitySection data={business.sustainability} />
-                    <div className='py-8 '>
+                    <div className='pt-8 '>
                         {(business.keypeopleIndia) && (
                             <PackagingKeypeople
                                 title={business.keypeopleIndia.title}

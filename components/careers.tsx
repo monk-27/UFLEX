@@ -40,7 +40,7 @@ const Careers = () => {
     return (
         <div>
             <section className="bg-gradient-to-b from-white to-slate-50 ">
-                <section className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[450px] overflow-hidden">
+                <section className="relative w-full  overflow-hidden">
                     {/* <Image
                         src="/images/careers/main.png"
                         alt="Notices and Announcements"
@@ -54,74 +54,38 @@ const Careers = () => {
                             Careers
                         </h1>
                     </div> */}
-                    <CareersMainCarousel/>
+                    <CareersMainCarousel />
+                    <div className='text-center max-w-7xl mx-auto pt-4'>
+                        <p className=" lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
+                            Join us, and be part of a movement that’s changing the world, one package
+                            at a time.
+
+
+
+                            If you are looking for a rewarding career, you may write to us at{" "}
+                            <span className="text-[#117ABA]">hr@uflexltd.com . </span>
+                            <span className='lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]'>
+                                All current openings can be viewed at the link below. Click the button to submit your application.
+                            </span>
+
+                        </p>
+
+                        <a
+                            href="https://aa193.taleo.net/careersection/ex/jobsearch.ftl?lang=en"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-start rounded-sm texts-md lato-600 bg-[#117ABA] text-white w-auto mx-2 py-2 mt-4 px-12 inline-block"
+                        >
+                            Apply Now
+                        </a>
+                    </div>
                 </section>
 
                 {/* <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 grid  items-center gap-10  py-12  lg:grid-cols-2 lg:gap-14 lg:py-20"> */}
-                <div className="max-w-7xl mx-auto px-4 pt-12">
-                    <div className=" items-center ">
-
-                        {/* Text */}
-                        <div className="space-y-6">
-                            <p className=" text-center  lato-400 text-[16px] leading-relaxed text-[#6B6B6B]">
-                                At UFlex, we pride ourselves on fostering an inclusive, caring, and
-                                productive environment for our people. As a leading player in the
-                                flexible packaging industry, we engage and retain purpose-driven talent
-                                through a fair and consistent HR framework.
-                            </p>
-
-                            <p className="text-center lato-400 text-[16px] leading-relaxed text-[#6B6B6B]">
-                                Our entrepreneurial culture empowers employees to drive UFlex’s growth
-                                and success. UFlex offers job seekers more than a job. It offers them a
-                                lifetime of growth with a number of opportunities for continuous
-                                development and growth in assorted fields of business.
-                            </p>
-
-                            <p className="text-center lato-500 text-[16px] text-[#117ABA]">
-                                Join us, and be part of a movement that’s changing the world, one package
-                                at a time.
-                            </p>
-
-                            <p className="text-center lato-400 text-[16px] text-[#6B6B6B]">
-                                If you are looking for a rewarding career, you may write to us at{" "}
-                                <span className="text-[#117ABA]">hr@uflexltd.com</span>
-                            </p>
-                        </div>
-
-                        {/* Image */}
-                        {/* <motion.div
-                            initial={{ opacity: 0, scale: 0.98 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true }}
-                            className="relative aspect-[16/10] w-full overflow-hidden "
-                        >
-                            <Image
-                                src="/images/careers/careershero.png"
-                                alt="UFlex team"
-                                fill
-                                className="object-cover rounded-sm"
-                                priority
-                            />
-                        </motion.div> */}
-
-                    </div>
-                </div>
 
 
-                <div className='mt-8 w-full px-4 sm:px-0 text-center '>
-                    <p className="pb-6 lato-400 text-[15px] leading-relaxed text-[#6B6B6B] text-center ">
-                        All current openings can be viewed at the link below. Click the button to submit your application.
-                    </p>
-                    <a
-                        href="https://aa193.taleo.net/careersection/ex/jobsearch.ftl?lang=en"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-center rounded-sm texts-md lato-600 bg-[#117ABA] text-white w-auto mx-2 py-2 px-12 inline-block"
-                    >
-                        Apply Now
-                    </a>
 
-                </div>
+
                 <motion.section
                     className="max-w-7xl mx-auto w-full px-4 sm:px-0 text-start "
                     initial={{ opacity: 0 }}
@@ -140,7 +104,7 @@ const Careers = () => {
 
                     <motion.h2
                         transition={{ duration: 0.7, delay: 0.4 }}
-                        className="text-center text-[#6B6B6B] lato-400  text-[16px] leading-relaxed md:text-[16px] mb-1 py-6"
+                        className="text-center lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f] mb-1 py-6"
                     >
                         At UFlex, we're not just shaping the future of packaging, we're revolutionizing it. For over three decades, we've been at the forefront of innovation, developing advanced solutions that preserve products, protect our planet, and empower our people.
                     </motion.h2>
@@ -192,7 +156,7 @@ const Careers = () => {
                                                 {it.title}
                                             </h3>
 
-                                            <p className="mt-3 text-sm text-[#6D6E71]">
+                                            <p className="mt-3 lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
                                                 {it.desc}
                                             </p>
                                         </div>
