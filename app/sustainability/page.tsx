@@ -29,6 +29,12 @@ const sustainabilityReports = [
   //   href: "https://www.uflexltd.com/pdf/Sustainability/UFlex_Sustainability_Report_2024-25.pdf",
   // },
   {
+    year: "2024–25",
+    // title: "Sustainability Report 2023–24",
+    image: "/images/sus/25.png",
+    href: "https://www.uflexltd.com/pdf/Sustainability/UFlex_Sustainability_Report_2024-25.pdf",
+  },
+  {
     year: "2023–24",
     // title: "Sustainability Report 2023–24",
     image: "/images/sus/2024.png",
@@ -264,7 +270,7 @@ export default function Page() {
         {/* CONTENT */}
 {activeTab === "reports" ? (
   /* IMAGE GRID LAYOUT */
- <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12 bg-white py-12">
+ <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 bg-white py-12">
   {sustainabilityReports.map((item, idx) => (
     <Link
       key={idx}
