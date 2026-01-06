@@ -974,14 +974,21 @@ export default function PressRoomPage() {
 
 
 
-
+ <div className="py-4 flex justify-center ">
+        <span className="text-[#000000]">
+         For any media queries, please send an email to the Global Corporate Communications Team : {""}
+         <span className="text-[#117ABA]">
+           corpcomm@uflexltd.com
+          </span>   
+          </span>
+      </div>
 
 
         </section>
 
 
         {/* -------- MEDIA COVERAGE -------- */}
-      
+     
       </main>
 
       <SiteFooter />
