@@ -215,21 +215,21 @@ motivational skills inspire the
 organization's workforce.`,
                          cta: { label: "Read More", href: "/leadership/ravi-sharma" },
                 },
-                // {
-                //     photo: "/images/akash.png",
-                //     name: "Mr. Akash Khandelwal",
-                //     role: "Executive Vice President – Operations, Engineering Business",
-                //     summary:``
-                //       cta: { label: "Read More", href: "/leadership/akash-khandelwal" },
-                // },
-                // {
-                //     photo: "/images/summet.png",
-                //     name: "Mr. Sumeet Arora",
-                //     role: "Senior Vice President - Sales and Marketing, Engineering Business",
-                //     summary:
-                //         "Mr. Sumeet Arora heads Sales and Marketing for the Engineering Business as Senior Vice President.",
-                //     cta: { label: "Read More", href: "/leadership/sumeet-arora" },
-                // },
+                {
+                    photo: "/images/akash.png",
+                    name: "Mr. Akash Khandelwal",
+                    role: "Executive Vice President – Operations, Engineering Business",
+                    summary:``,
+                      cta: { label: "Read More", href: "/leadership/akash-khandelwal" },
+                },
+                {
+                    photo: "/images/summet.png",
+                    name: "Mr. Sumeet Arora",
+                    role: "Senior Vice President - Sales and Marketing, Engineering Business",
+                    summary:
+                        "Mr. Sumeet Arora heads Sales and Marketing for the Engineering Business as Senior Vice President.",
+                    cta: { label: "Read More", href: "/leadership/sumeet-arora" },
+                },
             ],
         },
         awards: {

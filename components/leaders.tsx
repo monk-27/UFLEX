@@ -288,7 +288,15 @@ type AwardsData = {
 };
 
 const AWARDS_DATA: Record<
-  "corporate-awards"|"packaging-films" | "printing-cylinders" | "holography" | "flexible-packaging" |"chemicals" | "aseptic-packaging" | "engineering"|"flexible-tubes",
+  "corporate-awards"
+  |"packaging-films" 
+  | "flexible-packaging" 
+  | "aseptic-packaging" 
+  |"chemicals" 
+  | "holography" 
+  | "engineering"
+  |"printing-cylinders" 
+  |"flexible-tubes",
   AwardsData
 > = {
   /* ================= PACKAGING FILMS ================= */
@@ -510,55 +518,7 @@ const AWARDS_DATA: Record<
       ],
     },
   },
-
-  /* ================= PRINTING CYLINDERS ================= */
-  "printing-cylinders": {
-    label: "Printing Cylinders",
-    years: [2025],
-    data: {
-      2025: [
-        {
-          title: "IFCA Star Awards 2025",
-          by: "Indian Flexible Packaging and Folding Carton Association (IFCA)",
-          description: "UFlex’s Printing Cylinders business won four Innovation awards at the IFCA Star Awards 2025 for advanced laser-engraved and laser-embossed cylinder solutions, including Ginkgo Leaves, Golden Python Glaze, and Pebble Stone patterns for premium leather applications.",
-          image: "/images/awards/p12025.png",
-        },
-      ],
-      2024: [],
-      2023: [],
-      2021: [],
-      2019: []
-    },
-  },
-
-  /* ================= HOLOGRAPHY ================= */
-  "holography": {
-    label: "Holography",
-    years: [2025],
-    data: {
-      2025: [
-        {
-          title: "IFCA Star Awards 2025",
-          by: "Indian Flexible Packaging and Folding Carton Association (IFCA)",
-          description: "UFlex’s Holography Business won two IFCA Star Awards 2025 for its Hybrid Hologram and 3D Optical Label—innovations that elevate brand protection, authentication, and visual impact through advanced creativity and high-security holographic solutions.",
-          image: "/images/awards/h12025.png",
-        },
-        {
-          title: "Top 10 Pharma Brand Protection & Anti-Counterfeiting Solutions Company",
-          by: "India Pharma Outlook",
-          description: "UFlex was recognised as a leading provider of anti-counterfeiting and brand protection solutions for the pharmaceutical sector. The award honours organisations delivering advanced holography, security features, and authentication technologies that safeguard product integrity and help pharma brands fight counterfeiting across global supply chains.",
-          image: "/images/awards/h22025.png",
-        },
-      ],
-      2024: [],
-      2023: [],
-      2021: [],
-      2019: []
-    },
-  },
-
-
-  "flexible-packaging": {
+"flexible-packaging": {
     label: "Flexible Packaging",
     years: [2025, 2022, 2021, 2020, 2019, 2018],
     data: {
@@ -667,26 +627,78 @@ const AWARDS_DATA: Record<
 
     },
   },
-  "chemicals": {
+   "aseptic-packaging": {
+    label: "Aseptic Packaging",
+    years: [],
+    data: {
+      
+      
+    },},
+  /* ================= PRINTING CYLINDERS ================= */
+ 
+ "chemicals": {
     label: "Chemicals",
     years: [],
     data: {
      
       
     },},
-    "aseptic-packaging": {
-    label: "Aseptic Packaging",
-    years: [],
+  /* ================= HOLOGRAPHY ================= */
+  "holography": {
+    label: "Holography",
+    years: [2025],
     data: {
-      
-      
-    },},"engineering": {
+      2025: [
+        {
+          title: "IFCA Star Awards 2025",
+          by: "Indian Flexible Packaging and Folding Carton Association (IFCA)",
+          description: "UFlex’s Holography Business won two IFCA Star Awards 2025 for its Hybrid Hologram and 3D Optical Label—innovations that elevate brand protection, authentication, and visual impact through advanced creativity and high-security holographic solutions.",
+          image: "/images/awards/h12025.png",
+        },
+        {
+          title: "Top 10 Pharma Brand Protection & Anti-Counterfeiting Solutions Company",
+          by: "India Pharma Outlook",
+          description: "UFlex was recognised as a leading provider of anti-counterfeiting and brand protection solutions for the pharmaceutical sector. The award honours organisations delivering advanced holography, security features, and authentication technologies that safeguard product integrity and help pharma brands fight counterfeiting across global supply chains.",
+          image: "/images/awards/h22025.png",
+        },
+      ],
+      2024: [],
+      2023: [],
+      2021: [],
+      2019: []
+    },
+  },
+
+
+  
+ 
+
+   
+    "engineering": {
     label: "Engineering",
     years: [],
     data: {
       
       
     },},
+ "printing-cylinders": {
+    label: "Printing Cylinders",
+    years: [2025],
+    data: {
+      2025: [
+        {
+          title: "IFCA Star Awards 2025",
+          by: "Indian Flexible Packaging and Folding Carton Association (IFCA)",
+          description: "UFlex’s Printing Cylinders business won four Innovation awards at the IFCA Star Awards 2025 for advanced laser-engraved and laser-embossed cylinder solutions, including Ginkgo Leaves, Golden Python Glaze, and Pebble Stone patterns for premium leather applications.",
+          image: "/images/awards/p12025.png",
+        },
+      ],
+      2024: [],
+      2023: [],
+      2021: [],
+      2019: []
+    },
+  },
     "flexible-tubes": {
     label: "Flexible Tubes",
     years: [],
@@ -712,10 +724,10 @@ export default function BusinessAwards() {
   const isSingleCard = cards.length === 1;
 
   return (
-    <section className="">
+    <section className="max-w-7xl mx-auto">
       <div className="">
         <h2 className="text-center text-[28px] lato-400 text-[#117ABA] mb-6">
-          Business Awards
+           Awards
         </h2>
 
         
@@ -850,7 +862,7 @@ export default function BusinessAwards() {
         ? "grid-cols-1 max-w-[560px]"
         : cards.length === 2
         ? "grid-cols-1 sm:grid-cols-2 max-w-[1260px]"
-        : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-[1140px]",
+        : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-[1400px]",
       "w-full",
     ].join(" ")}
   >

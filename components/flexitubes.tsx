@@ -135,6 +135,14 @@ const awards: AwardItem[] = [
 
 const keyPeopleMany: Leader[] = [
   {
+    photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(FT)-1.-Mr.-Subrata-Bose34.jpg",
+    name: "Mr. Subrata Bose",
+    role: "Senior Vice President - Flexible Tubes Business",
+    summary:
+      "Mr. Subrata Bose is a seasoned professional with nearly three decades of experience across the packaging, healthcare, and engineering industries. He has a strong track record of driving growth, leadin...",
+    cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+  },
+  {
     photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(FT)-2.-Mr.-Venkatesh-Rajagopalan55.jpg",
     name: "Mr. Venkatesh Rajagopalan",
     role: "Senior Vice President - Flexible Tubes Business",
@@ -142,14 +150,7 @@ const keyPeopleMany: Leader[] = [
       "With nearly three decades of experience in strategic planning, project management, and business excellence, Mr. Izhar currently leads UFlex’s Printing cylinders business. His previous roles incl...",
     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
   },
-  {
-    photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(FT)-1.-Mr.-Subrata-Bose34.jpg",
-    name: "Mr. Subrata Bose",
-    role: "Senior Vice President - Tubes, Flexible Packaging Business",
-    summary:
-      "Mr. Subrata Bose is a seasoned professional with nearly three decades of experience across the packaging, healthcare, and engineering industries. He has a strong track record of driving growth, leadin...",
-    cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-  },
+  
 
 ];
 const accreditations: AccreditationItem[] = [

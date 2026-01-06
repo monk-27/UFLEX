@@ -5,18 +5,18 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const SLIDES = [
-  {
-    title: "ET Sustainable Organisations 2025",
-    image: "/images/hall/6.png",
-  },
+  // {
+  //   title: "ET Sustainable Organisations 2025",
+  //   image: "/images/hall/6.png",
+  // },
   {
     title: "Best Organisations to Work 2025",
     image: "/images/hall/7.png",
   },
-  {
-    title: "Top Employer 2025 in India",
-    image: "/images/hall/8.png",
-  },
+  // {
+  //   title: "Top Employer 2025 in India",
+  //   image: "/images/hall/8.png",
+  // },
 ];
 
 export default function SustainabilityCarousel() {
@@ -49,12 +49,7 @@ export default function SustainabilityCarousel() {
                 </motion.h1>
 
                 <p className=" text-wrap max-w-xl lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
-                  Our journey of growth and leadership in flexible packaging has been
-                  consistently recognized by prestigious industry forums worldwide.
-                  From accolades in sustainability and product innovation to honors
-                  as a top employer, our awards reflect more than achievements—they
-                  embody our commitment to shaping a responsible, forward-looking
-                  future.
+                  Our journey of growth and leadership in flexible packaging has been consistently recognized by prestigious industry forums worldwide. From accolades in sustainability and product innovation to honors as a top employer, our awards reflect more than achievements- they embody our commitment to shaping a responsible, forward-looking future. Each recognition is a testament to the passion, ingenuity, and dedication of our people, and to our vision of delivering packaging solutions that combine performance, innovation, and sustainability.
                 </p>
 
 
@@ -68,7 +63,8 @@ export default function SustainabilityCarousel() {
           <div className="flex flex-col items-center">
 
             {/* IMAGE */}
-            <div className="relative w-full aspect-[16/9] rounded-md overflow-hidden">
+            <div className="relative w-full aspect-[16/9] rounded-md overflow-hidden group cursor-pointer">
+              {/* Image */}
               <AnimatePresence mode="wait">
                 <motion.div
                   key={SLIDES[active].image}
@@ -82,29 +78,42 @@ export default function SustainabilityCarousel() {
                     src={SLIDES[active].image}
                     alt={SLIDES[active].title}
                     fill
-                    className="object-contain"
+                    className="object-cover"
                     priority
                   />
                 </motion.div>
               </AnimatePresence>
-            </div>
 
-            {/* TITLE */}
-            <AnimatePresence mode="wait">
-              <motion.h2
-                key={SLIDES[active].title}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.4 }}
-                className="mt-4 text-black text-md sm:text-[16px] lato-700 leading-snug text-center"
-              >
-                {SLIDES[active].title}
-              </motion.h2>
-            </AnimatePresence>
+              {/* Hover Overlay + Title at Bottom */}
+              <div className="absolute inset-0 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+                {/* Dark gradient overlay from bottom */}
+                {/* <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/80 via-black/40 to-transparent" /> */}
+
+                {/* Title */}
+                <div className="absolute inset-x-0 bottom-0  bg-gradient-to-t from-black/90 via-transparent to-transparent" >
+
+                <motion.h2
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  className="relative text-white text-lg sm:text-xl md:text-2xl lato-700 text-center pb-6 px-4 z-10"
+                >
+                  {SLIDES[active].title}
+                </motion.h2>
+                
+              </div>
+              </div>
+ <motion.div
+          className="absolute inset-0 bg-black bg-opacity-100"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.5 }}
+          transition={{ duration: 1 }}
+        ></motion.div>
+            </div>
+          {/* </div> */}
 
             {/* DOTS */}
-            <div className="mt-4 flex gap-2">
+            {/* <div className="mt-4 flex gap-2">
               {SLIDES.map((_, i) => (
                 <button
                   key={i}
@@ -116,7 +125,7 @@ export default function SustainabilityCarousel() {
                   aria-label={`Go to slide ${i + 1}`}
                 />
               ))}
-            </div>
+            </div> */}
 
           </div>
         </div>

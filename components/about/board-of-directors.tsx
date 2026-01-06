@@ -26,7 +26,7 @@ const directors: Director[] = [
   },
   {
     name: "Mr. Jeevaraj Gopal Pillai",
-    position: "Whole Time Director",
+    position: "Whole Time Director, President - Flexible Packaging and New Product Development and Director– Sustainability",
     bio:
       "Mr. Jeevaraj Pillai brings over 35 years of experience in packaging and packaging technology, with expertise in printing cylinders, packaging films, and advanced flexible packaging material conversion. As Director-Sustainability, he leads the development and implementation of the company's ESG strategy, along with the development of sustainable products and solutions. He has been serving on the board of UFlex Limited as a whole-time director since November 14, 2023. His extensive background in the industry is complemented by his qualifications in mechanical engineering and an MBA.",
     img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Mr.-Jeevaraj-Gopal-Pillai-(BOD)05.jpg",

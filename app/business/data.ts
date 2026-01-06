@@ -26,6 +26,12 @@ export type InnovationSlide = {
   description: string;
   image: string;
 };
+export type AwardsSlide = {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+};
 
 export type HighlightBlock = {
   title: string;

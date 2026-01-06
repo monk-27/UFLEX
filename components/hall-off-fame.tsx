@@ -13,6 +13,7 @@ import AutoMarquee from "./autoslider";
 import LeadershipAwards from "./spotlight";
 import Link from "next/link";
 import SustainabilityCarousel from "./hall-main";
+import { AwardsSlider } from "./buissnessreusbales/awards-slider";
 
 /* --------------------- Dynamic import (client-only) --------------------- */
 const AwardsTabs = dynamic(() => import("@/components/leaders"), {
@@ -116,6 +117,39 @@ export const MARQUEE_ITEMS = [
   },
 ];
 
+
+// File: app/business/data.ts  (or wherever you keep your data)
+
+export const business = {
+  innovations: {
+    heading: "In The Spotlight",
+    items: [
+      {
+    image: "/images/awards/b3.png",
+    title: "Business Leader of the Decade 2024 – Mr. Ashok Chaturvedi",
+    by: "Indo-American Chamber of Commerce (IACC)",
+    description:
+      "UFlex Founder & Chairman Mr. Ashok Chaturvedi was honoured for his visionary leadership and contribution to the packaging industry. The award recognises leaders who have significantly influenced India–US business relations and driven industrial, technological, and economic growth over the decade.",
+  },
+      {
+        image: "/images/awards/b1.png",
+    title: "ET Sustainable Organization 2025",
+    by: " ET Now",
+    description:
+      "UFlex was recognised as an ET Sustainable Organization for its commitment to circularity, responsible manufacturing, and long-term ESG goals. The award honours businesses that demonstrate measurable progress in environmental stewardship and sustainability-led transformation.",
+  
+      },
+      {
+    image: "/images/awards/b7.png",
+    title: "SIES SOP Star Awards 2025",
+    by: "SIES School of Packaging",
+    description:
+      "UFlex was honoured for outstanding packaging innovations that advance sustainability, functionality, and consumer convenience. Winning eight awards, including the prestigious President’s Sustainability Award, reflects UFlex’s commitment to environmentally responsible and high-performance packaging.",
+  },
+    ],
+  },
+};
+
 /* --------------------------- Page --------------------------- */
 const HallPage = () => {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
@@ -176,10 +210,14 @@ const HallPage = () => {
       
 
       {/* ==== IN THE SPOTLIGHT ==== */}
-      <section className="relative py-6">
+      <section className=" relative   py-6">
+          <div className=" ">
         <div className="max-w-7xl mx-auto  w-full px-4 sm:px-0">
 
-          <div className=" flex flex-col items-center text-center">
+          
+
+          <div className=" flex flex-col items-center text-center ">
+
             <h2 className="text-[28px] lato-400 text-[#117ABA]">
               In The Spotlight
             </h2>
@@ -190,23 +228,21 @@ const HallPage = () => {
           </div>
 
 
-          <AutoMarquee items={MARQUEE_ITEMS} speed={40} />
+          {/* <AutoMarquee items={MARQUEE_ITEMS} speed={40} /> */}
+          <AwardsSlider
+                                      heading={business.innovations.heading}
+                                      items={business.innovations.items}
+                                  />
 
-          <Link href="/hall-of-fame/buisness-awards">
-            <div className=" flex justify-center">
-              <span className="text-center text-[12px] lato-700 text-[#117ABA] md:text-[16px]">
-                View all Awards {">>"}
-              </span>
-            </div>
-          </Link>
+          
+</div>
 
-
+        </div>
 
 
           <section className="pt-6 pb-16  w-full ">
             <AwardsTabs />
           </section>
-        </div>
       </section>
 
 

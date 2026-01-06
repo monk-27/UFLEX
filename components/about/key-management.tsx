@@ -240,7 +240,7 @@ const directors: Director[] = [
   { name: "Mr. Rajesh Bhatia", position: "Group President (F&A) and CFO", img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Mr.Rajesh-Bhatia32.jpg", bio: "Mr. Rajesh Bhatia brings nearly three decades of extensive experience in finance, accounting, taxation, administration, and commercial and business development. He holds a degree in commerce and is an associate member of the Institute of Chartered Accountants of India (ICAI). At UFlex, his primary responsibilities include formulating financial plans and strategies, assisting in the finalization of corporate plans and strategies, and overseeing financial management, taxation, and corporate governance. His role also encompasses investor relations, information technology, and other areas." },
   {
     name: "Mr. Jeevaraj Gopal Pillai",
-    position: "Whole Time Director; President – Flexible Packaging & NPD; Director – Sustainability",
+    position: "Whole Time Director, President - Flexible Packaging and New Product Development and Director– Sustainability",
     img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Mr.-Jeevaraj-Gopal-Pillai-(KM)56.jpg",
     bio: "Mr. Jeevaraj Pillai brings over 35 years of experience in packaging and packaging technology, with expertise in printing cylinders, packaging films, and advanced flexible packaging material conversion. As Director - Sustainability, he leads the development and implementation of the company’s ESG strategy, along with the development of sustainable products and solutions. His extensive background in the industry is complemented by his qualifications in mechanical engineering and an MBA.",
   },
@@ -371,6 +371,7 @@ const KeyManagement = () => {
                         <p className="text-white/90 text-xs md:text-sm">{d.position}</p>
                       </div>
                     </div>
+                    
 
                     {/* Tiny Read More (stays subtle; disappears on hover since image covers) */}
                     {/* <div className="absolute left-3 top-3">

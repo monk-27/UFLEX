@@ -315,9 +315,9 @@ environmentally responsible.`,
                 {
                     photo: "/images/careers/ashish.png",
                     name: "Mr. Ashish Saxena",
-                    role: "Joint President of the Packaging Films and polyester chips business",
+                    role: "Joint President – Packaging Films Business",
                     summary:
-                        "Mr. Ashish Saxena is Joint President of the packaging films and polyester chips business in India. He has over 25 years’ of experience in Packaging, Petroleum and Management Consulting industries in India, Europe and North America. Prior to UFlex, he was CEO of Jindal Films’ European Business, Vice President and General Manager for Amcor Ltd in the US and a management consultant at McKinsey & Co in London, UK. He holds an MBA degree from the London Business School, UK and BA from St. Stephen’s College, Delhi, India",
+                        "Mr. Ashish Saxena is Joint President of the packaging films business in India. He has over 25 years’ of experience in Packaging, Petroleum and Management Consulting industries in India, Europe and North America. Prior to UFlex, he was CEO of Jindal Films’ European Business, Vice President and General Manager for Amcor Ltd in the US and a management consultant at McKinsey & Co in London, UK. He holds an MBA degree from the London Business School, UK and BA from St. Stephen’s College, Delhi, India",
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
                 },
 
@@ -335,7 +335,7 @@ environmentally responsible.`,
                 {
                     photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-3.-Mr.-Sanjay-Tiku47.jpg",
                     name: "Mr. Sanjay Tiku",
-                    role: "Business Head, Packaging Films Business (Flex Films Egypt)",
+                    role: "Business Head - Flex Films, Egypt",
                     summary:
                         "A seasoned professional with nearly three decades of experience in the Flexible Packaging industry, specializing in operations, marketing, finance, business strategy, and people management. A CMA from the Institute of Cost Accountants of India and a science graduate from the University of Kashmir, he has played a key role in UFlex’s global expansion. Sanjay was instrumental in setting up Flex Middle East FZE, UFlex’s first overseas greenfield project, and has successfully led the initiative for over 14 years.",
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
@@ -343,15 +343,15 @@ environmentally responsible.`,
                 {
                     photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-4.-Mr.-Sundeep-Saksena-01.jpg",
                     name: "Mr. Sundeep Saksena ",
-                    role: "Business Head, Packaging Films Business (Flex Films Poland)",
+                    role: "Business Head - Flex Films, Poland and Hungary",
                     summary:
                         "With close to three decades of experience, including seven years of international exposure, across packaging, telecom, consumer durables, and FMCG sectors, Sundeep Saksena has consistently driven business growth, turnarounds, and strategic expansion. His expertise spans profit-centre operations, new business setups, and market leadership initiatives. An alumnus of REC Srinagar, IIT Mumbai (M.Tech), and Podar Institute of Management (MBA – Marketing), he blends technical excellence with strategic foresight. He currently heads Flex Films Europa Sp. Z.o.o., Poland, spearheading operations and business development across Europe.",
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
                 },
                 {
                     photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-5.-Mr.-Junaid-Iqbal-Khan-37.jpg",
-                    name: "Mr. Junaid Iqbal Khan  ",
-                    role: "General Director, Packaging Films Business (Flex Films CIS)",
+                    name: "Mr. Junaid Khan  ",
+                    role: "General Director - Flex Films, Russia",
                     summary:
                         "With nearly two decades at UFlex, Junaid Khan has played a pivotal role in expanding the company’s global footprint across the packaging films business. In 2019, he was appointed as the General Director of Flex Films CIS, where he has since led significant growth and market consolidation. Junaid has been instrumental in developing the CIS market, leading to the successful setup of UFlex’s greenfield project in the Moscow region. A production engineer and post-graduate in machine building technology from Kursk State Technical University, he continues to drive operational excellence, market expansion, and a culture of customer-centricity across global markets.",
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
@@ -361,7 +361,7 @@ environmentally responsible.`,
                         "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-6.-Mr.-Avinash-Kumar-51.jpg",
                     name: "Mr. Avinash Kumar ",
                     role:
-                        "Business Head, Packaging Films Business (Flex Films UAE)",
+                        "Business Head - Flex Films, UAE",
                     summary:
                         "With more than three decades of experience in the flexible packaging industry, Avinash Kumar has successfully led key functions across marketing, production, finance, commercial operations, and general management. His global leadership experience spans Africa, Europe, and the Middle East, where he served as CEO of a packaging company and held senior roles in multiple markets. A Master’s in Science from St. Andrews College, Avinash is known for his innovative thinking and ability to drive strategic growth and operational excellence. He currently serves as business head of Flex Middle East FZE, oversees marketing for Africa, and holds directorships at Flex P. Films (Egypt) S.A.E. and Flex Films Rus LLC.",
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
@@ -370,7 +370,7 @@ environmentally responsible.`,
                     photo:
                         "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-7.-Mr.-Vijay-Yadav13.jpg",
                     name: "Mr. Vijay Yadav",
-                    role: "Business Head, Packaging Films Business (Flex Films USA)",
+                    role: "Business Head - Flex Films, USA",
                     summary:
                         "With three decades of global experience, Vijay Yadav has successfully led roles in strategy, operations, R&D, and organizational transformation, having worked with renowned companies like SEKISUI (USA), Arjobex, and British Petroleum. He holds a BSc (Hons) in polymer technology from Brunel University, UK, an MBA from East London Business School, and has completed executive programs at Wharton, Stanford, and Harvard. He joined the organization in 2016, contributing significantly to its strategic growth and innovation.",
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },

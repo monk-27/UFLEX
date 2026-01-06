@@ -259,7 +259,7 @@ landfill pressure and helping curb pollution.`,
                     photo:
                         "/images/jeevaraj.png",
                     name: "Mr. Jeevaraj Gopal Pillai",
-                    role: "Whole Time Director",
+                    role: "Whole Time Director, President - Flexible Packaging and New Product Development and Director– Sustainability",
                     summary:
                         "Mr. Jeevaraj Pillai brings close to four decades of experience in packaging and packaging technology, with expertise in printing cylinders, packaging films, and advanced flexible packaging material conversion. As Director-Sustainability, he leads the development and implementation of the company’s ESG strategy, along with the development of sustainable products and solutions. He has been serving on the board of UFlex Limited as a whole-time director since November 14, 2023. His extensive background in the industry is complemented by his qualifications in mechanical engineering and an MBA.",
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },

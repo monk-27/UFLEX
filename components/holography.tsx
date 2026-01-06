@@ -204,7 +204,43 @@ recycle the same.`,
         keypeople: {
             title: "Key People",
             details: [
+              
                 {
+                    photo: "/images/vinod.png",
+                    name: "Mr. Vinod Hariharan",
+                    role: "Executive Vice President – Holography Business",
+                    summary: `With almost three decades of
+rich and diverse experience,
+Mr. Vinod Hariharan is a
+seasoned professional with
+deep expertise in strategic
+planning, business
+development, channel
+management, digital
+marketing, sales, and general
+management. He has held key
+leadership roles in reputed
+international organizations,
+including American and
+European companies, several
+
+of which are part of the
+Fortune 500 group. His
+extensive global exposure and
+well-rounded skill set have
+consistently contributed to
+business growth and
+operational excellence. Mr.
+Hariharan holds a B.Tech in
+Mechanical Engineering from
+NIT Kozhikode and has further
+strengthened his leadership
+credentials through the Senior
+Management Program at IIM
+Kolkata.`,
+                    cta: { label: "Read More", href: "/leadership/vinod-hariharan" }
+                },
+                  {
                     photo: "/images/pathak.png",
                     name: "Mr. G.P. Pathak",
                     role: "Vice President – Operations and New Product Development, Holography Business",
@@ -283,41 +319,6 @@ recycle the same.`,
                     complements his extensive
                     professional experience.`,
                     cta: { label: "Read More", href: "/leadership/rakesh-khazanchi" }
-                },
-                {
-                    photo: "/images/vinod.png",
-                    name: "Mr. Vinod Hariharan",
-                    role: "Executive Vice President – Holography Business",
-                    summary: `With almost three decades of
-rich and diverse experience,
-Mr. Vinod Hariharan is a
-seasoned professional with
-deep expertise in strategic
-planning, business
-development, channel
-management, digital
-marketing, sales, and general
-management. He has held key
-leadership roles in reputed
-international organizations,
-including American and
-European companies, several
-
-of which are part of the
-Fortune 500 group. His
-extensive global exposure and
-well-rounded skill set have
-consistently contributed to
-business growth and
-operational excellence. Mr.
-Hariharan holds a B.Tech in
-Mechanical Engineering from
-NIT Kozhikode and has further
-strengthened his leadership
-credentials through the Senior
-Management Program at IIM
-Kolkata.`,
-                    cta: { label: "Read More", href: "/leadership/vinod-hariharan" }
                 },
             ]
         },
