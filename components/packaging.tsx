@@ -307,7 +307,7 @@ environmentally responsible.`,
                 {
                     photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-1.-Mr.-Jagmohan-Mongia-29.jpg",
                     name: "Mr. Jagmohan Mongia ",
-                    role: "President, Packaging Films business (India)",
+                    role: "President, Packaging Films business",
                     summary:
                         "With four decades of industry experience, Jagmohan Mongia leads the Films business – India operations, UFlex. A commerce graduates with a diploma in sales and marketing from Bhartiya Vidya Bhawan, he has worked with leading companies like Berger Paints and Garware before joining UFlex, where he has been a key contributor for over 25 years. Jagmohan brings deep expertise in sales, marketing, and business development, with a strong track record of building sustainable, growth-driven operations. Under his leadership, the films business in India has consistently delivered strong revenue growth and increased market share.",
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
