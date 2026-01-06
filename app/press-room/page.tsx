@@ -458,13 +458,18 @@ import Image from "next/image";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import PressMainCarousel from "@/components/press-main";
+import MediaCardsCarousel from "../media-releases/media-resource";
+import Link from "next/link";
 
 /* ==========================
    TYPES
 ========================== */
 
 type Year = 2025 | 2024;
-type CoverageTab = "Print Media" | "Electronic Media" | "Online Media";
+type CoverageTab = "Print Media" | "Online Media";
+// "Electronic Media" 
+
+
 
 type PdfItem = {
   title: string;
@@ -689,7 +694,7 @@ mediaReleases: {
   ],
 
   mediaCoverage: {
-    tabs: ["Print Media", "Electronic Media", "Online Media"] as const,
+    tabs: ["Print Media",  "Online Media"] as const,
     years: [2025, 2024] as const,
 
     data: {
@@ -697,10 +702,10 @@ mediaReleases: {
         2025: ["/images/press/pm1.png", "/images/press/pm2.png", "/images/press/pm3.png", "/images/press/pm4.png", "/images/press/pm5.png"],
         2024: ["/images/press/pm1.png", "/images/press/pm2.png"],
       },
-      "Electronic Media": {
-        2025: ["/images/press/pm1.png", "/images/press/pm2.png", "/images/press/pm3.png"],
-        2024: ["/images/press/pm1.png"],
-      },
+      // "Electronic Media": {
+      //   2025: ["/images/press/pm1.png", "/images/press/pm2.png", "/images/press/pm3.png"],
+      //   2024: ["/images/press/pm1.png"],
+      // },
       "Online Media": {
         2025: ["/images/press/pm1.png", "/images/press/pm2.png", "/images/press/pm3.png", "/images/press/pm4.png"],
         2024: ["/images/press/pm1.png", "/images/press/pm2.png"],
@@ -811,7 +816,7 @@ export default function PressRoomPage() {
             Media Releases
           </h2>
 
-          <div className="mb-10 ">
+          {/* <div className="mb-10 ">
             <div className="max-w-7xl ">
 
               <h3 className="text-[#117ABA] text-[14px] lato-400">
@@ -836,8 +841,23 @@ export default function PressRoomPage() {
               activeYear={notesYear}
               onChange={setNotesYear}
             />
-          </div>
-          <PdfList items={mediaReleases.pressNotes[notesYear]} />
+          </div> */}
+          {/* <PdfList items={mediaReleases.pressNotes[notesYear]} /> */}
+  <MediaCardsCarousel/>
+  <div className=" text-center flex ">
+                  <Link href ="/media-releases" 
+                      
+                      className="inline-flex items-center gap-1 lato-700 text-[14px] text-[#117ABA] "
+                    >
+                                      <div className="underline underline-offset-2">
+      
+                      View More
+                      
+                      <span aria-hidden>↗</span>
+                </div>
+                      </Link>
+                </div>
+
         </section>
 
         {/* -------- MEDIA RESOURCES -------- */}
@@ -886,7 +906,7 @@ export default function PressRoomPage() {
 
           {/* Tabs */}
           <div className="flex justify-center gap-4 mb-6">
-            {mediaCoverage.tabs.map((tab) => (
+            {mediaCoverage.tabs.map((tab:any) => (
               <button
                 key={tab}
                 onClick={() => setActiveCoverageTab(tab)}
