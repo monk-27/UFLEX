@@ -55,7 +55,7 @@ const Careers = () => {
                         </h1>
                     </div> */}
                     <CareersMainCarousel />
-                    <div className='text-center max-w-7xl mx-auto pt-4'>
+                    {/* <div className='text-center max-w-7xl mx-auto pt-4'>
                         <p className=" lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
                             Join us, and be part of a movement that’s changing the world, one package
                             at a time.
@@ -78,66 +78,67 @@ const Careers = () => {
                         >
                             Apply Now
                         </a>
-                    </div>
+                    </div> */}
                 </section>
 
                 {/* <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 grid  items-center gap-10  py-12  lg:grid-cols-2 lg:gap-14 lg:py-20"> */}
 
 
 
+                <section className="w-screen relative bg-[#117ABA] mt-6 pb-4">
 
-                <motion.section
-                    className="max-w-7xl mx-auto w-full px-4 sm:px-0 text-start "
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 1 }}
-                    viewport={{ once: true }}
-                >
-                    <motion.h3
-                        className=" text-[24px] lato-600 text-[#117ABA] md:text-[28px] md:text-5xl mb-2 pt-12"
-                        initial={{ opacity: 0, y: -20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.7, delay: 0.2 }}
+                    <motion.section
+                        className="max-w-7xl mx-auto w-full px-4 sm:px-0 text-start "
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
                     >
-                        Why UFlex
-                    </motion.h3>
+                        <motion.h3
+                            className=" text-center flex justify-center text-[24px] lato-600 text-white md:text-[28px] md:text-5xl mb-2 pt-12"
+                            initial={{ opacity: 0, y: -20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.7, delay: 0.2 }}
+                        >
+                            Why UFlex
+                        </motion.h3>
 
-                    <motion.h2
-                        transition={{ duration: 0.7, delay: 0.4 }}
-                        className="text-center lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f] mb-1 py-6"
-                    >
-                        At UFlex, we're not just shaping the future of packaging, we're revolutionizing it. For over three decades, we've been at the forefront of innovation, developing advanced solutions that preserve products, protect our planet, and empower our people.
-                    </motion.h2>
+                        <motion.h2
+                            transition={{ duration: 0.7, delay: 0.4 }}
+                            className="text-center lato-400 text-[16px] sm:text-[18px] leading-relaxed text-white mb-1 py-6"
+                        >
+                            At UFlex, we're not just shaping the future of packaging, we're revolutionizing it. For over three decades, we've been at the forefront of innovation, developing advanced solutions that preserve products, protect our planet, and empower our people.
+                        </motion.h2>
 
-                </motion.section>
-                <AnimatedSection>
-                    <div className="max-w-7xl mx-auto w-full px-4 py-16 lg:py-4">
-                        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                            {items.map((it, idx) => {
-                                const c = cardColors[idx % cardColors.length];
+                    </motion.section>
+                    <AnimatedSection>
+                        <div className="max-w-7xl mx-auto w-full px-4 py-16 lg:py-4">
+                            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                                {items.map((it, idx) => {
+                                    const c = cardColors[idx % cardColors.length];
 
-                                return (
-                                    <motion.div
-                                        key={it.desc}
-                                        initial={{ opacity: 0, y: 14 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{ once: true }}
-                                        transition={{ delay: idx * 0.05 }}
-                                        className="flex h-full flex-col overflow-hidden bg-white shadow-sm rounded-sm "
-                                    >
-                                        {/* IMAGE */}
-                                        <div className="relative h-[400px] sm:h-[360px] overflow-hidden">
-                                            <Image
-                                                src={it.image ?? "/images/whatwedo/placeholder.jpg"}
-                                                alt={it.title}
-                                                fill
-                                                className="object-cover sm:object-cover transition-transform duration-300 hover:scale-[1.03]"
-                                            />
-                                            <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent" />
-                                        </div>
+                                    return (
+                                        <motion.div
+                                            key={it.desc}
+                                            initial={{ opacity: 0, y: 14 }}
+                                            whileInView={{ opacity: 1, y: 0 }}
+                                            viewport={{ once: true }}
+                                            transition={{ delay: idx * 0.05 }}
+                                            className="flex h-full flex-col overflow-hidden bg-white shadow-sm rounded-sm "
+                                        >
+                                            {/* IMAGE */}
+                                            <div className="relative h-[400px] sm:h-[360px] overflow-hidden">
+                                                <Image
+                                                    src={it.image ?? "/images/whatwedo/placeholder.jpg"}
+                                                    alt={it.title}
+                                                    fill
+                                                    className="object-cover sm:object-cover transition-transform duration-300 hover:scale-[1.03]"
+                                                />
+                                                <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent" />
+                                            </div>
 
-                                        {/* CONTENT */}
-                                        {/* <div className="flex flex-1 flex-col items-center px-4 py-4 text-center">
+                                            {/* CONTENT */}
+                                            {/* <div className="flex flex-1 flex-col items-center px-4 py-4 text-center">
                                             <h3 className="mb-2 text-lg lato-400 text-[#117ABA]">
                                                 {it.title}
                                             </h3>
@@ -146,29 +147,32 @@ const Careers = () => {
                                                 {it.desc}
                                             </p>
                                         </div> */}
-                                        <div className="relative p-5 pl-8">
-                                            {/* Corner red line */}
-                                            {/* <span
+                                            <div className="relative p-5 pl-8">
+                                                {/* Corner red line */}
+                                                {/* <span
                         className="absolute left-4 top-6 h-6 w-[2px] bg-[#D84A3B]"
                       /> */}
 
-                                            <h3 className="text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
-                                                {it.title}
-                                            </h3>
+                                                <h3 className="text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
+                                                    {it.title}
+                                                </h3>
 
-                                            <p className="mt-3 lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
-                                                {it.desc}
-                                            </p>
-                                        </div>
+                                                <p className="mt-3 lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
+                                                    {it.desc}
+                                                </p>
+                                            </div>
 
-                                        {/* COLOR BAND (always aligned) */}
-                                        {/* <div className={`h-1 w-full ${c.tint}`} /> */}
-                                    </motion.div>
-                                );
-                            })}
+                                            {/* COLOR BAND (always aligned) */}
+                                            {/* <div className={`h-1 w-full ${c.tint}`} /> */}
+                                        </motion.div>
+                                    );
+                                })}
+                            </div>
                         </div>
-                    </div>
-                </AnimatedSection>
+                    </AnimatedSection>
+
+                </section>
+
 
             </section>
         </div>

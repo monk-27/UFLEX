@@ -857,7 +857,7 @@ export default function PressRoomPage() {
           </div> */}
           {/* <PdfList items={mediaReleases.pressNotes[notesYear]} /> */}
           <MediaCardsCarousel />
-          <div className=" text-center flex justify-center">
+          <div className="text-center flex justify-center pt-4">
             <Link href="/media-releases"
 
               className="inline-flex items-center gap-1 lato-700 text-[18px] text-[#117ABA] "
@@ -872,7 +872,31 @@ export default function PressRoomPage() {
           </div>
 
         </section>
-        <section className="max-w-7xl mx-auto px-4">
+          <section className="max-w-7xl mx-auto px-4">
+          <h2 className="text-[#117ABA] text-[16px] sm:text-[28px] lato-400 text-center  pt-4">
+            Media Coverage
+          </h2>
+
+
+
+          <MediaCoverageCardsCarousel />
+
+          <div className="text-center flex justify-center pt-4">
+            <Link href="/media-releases"
+
+              className="inline-flex items-center gap-1 lato-700 text-[18px] text-[#117ABA] "
+            >
+              <div className="underline underline-offset-2">
+
+                View More
+
+                <span aria-hidden>↗</span>
+              </div>
+            </Link>
+          </div>
+
+        </section>
+        <section className="max-w-7xl mx-auto px-4 pb-12">
           <h2 className="py-4 text-[#117ABA] text-[16px] sm:text-[28px] lato-400 text-center">
             Media Resources
           </h2>
@@ -912,7 +936,7 @@ export default function PressRoomPage() {
               res.type === "video" ? (
                 <div
                   key={res.youtubeId}
-                  className="relative overflow-hidden"
+                  className="relative overflow-hidden rounded-sm"
                 >
                   <div className="relative aspect-[16/9] bg-black">
                     <iframe
@@ -930,7 +954,7 @@ export default function PressRoomPage() {
               ) : (
                 <div
                   key={res.href}
-                  className="relative overflow-hidden"
+                  className="relative overflow-hidden rounded-sm"
                 >
                   <div className="relative aspect-[16/9] bg-[#f2f2f2]">
                     <Image
@@ -957,30 +981,7 @@ export default function PressRoomPage() {
 
 
         {/* -------- MEDIA COVERAGE -------- */}
-        <section className="max-w-7xl mx-auto px-4">
-          <h2 className="text-[#117ABA] text-[16px] sm:text-[28px] lato-400 text-center  py-4">
-            Media Coverage
-          </h2>
-
-
-
-          <MediaCoverageCardsCarousel />
-
-          <div className="text-center flex justify-center py-4">
-            <Link href="/media-releases"
-
-              className="inline-flex items-center gap-1 lato-700 text-[18px] text-[#117ABA] "
-            >
-              <div className="underline underline-offset-2">
-
-                View More
-
-                <span aria-hidden>↗</span>
-              </div>
-            </Link>
-          </div>
-
-        </section>
+      
       </main>
 
       <SiteFooter />

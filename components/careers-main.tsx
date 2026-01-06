@@ -10,16 +10,16 @@ const SLIDES = [
     subtitle: " Thinking globally and acting locally, we leverage the power of global insight, relationships, collaborations, and learnings to deliver exceptional packaging solutions for the clients.",
     image: "/images/careers/global.png",
   },
-  {
-    title: "Trust & Respect ",
-    subtitle: "Proactively build inclusive and egalitarian partnerships with all stakeholders, through the virtues of honesty of purpose, mutual trust, and respect.",
-    image: "/images/careers/trust.png",
-  },
-  {
-    title: "Socio-environmental Sustainability",
-    subtitle: " Upholding that society and environment are cornerstones for sustainability, we support and promote inclusive social development and strive towards the conservation of the environment and protection of our planet.",
-    image: "/images/careers/socio.png",
-  },
+  // {
+  //   title: "Trust & Respect ",
+  //   subtitle: "Proactively build inclusive and egalitarian partnerships with all stakeholders, through the virtues of honesty of purpose, mutual trust, and respect.",
+  //   image: "/images/careers/trust.png",
+  // },
+  // {
+  //   title: "Socio-environmental Sustainability",
+  //   subtitle: " Upholding that society and environment are cornerstones for sustainability, we support and promote inclusive social development and strive towards the conservation of the environment and protection of our planet.",
+  //   image: "/images/careers/socio.png",
+  // },
 ];
 
 export default function CareersMainCarousel() {
@@ -136,18 +136,23 @@ export default function CareersMainCarousel() {
                 <p className=" text-wrap max-w-xl lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
                   <div className="space-y-0">
                     <p className=" text-start  ">
-                      At UFlex, we pride ourselves on fostering an inclusive, caring, and
-                      productive environment for our people. As a leading player in the
-                      flexible packaging industry, we engage and retain purpose-driven talent
-                      through a fair and consistent HR framework.
+                      At UFlex, we pride ourselves on fostering an inclusive, caring, and productive environment for our people. As a leading player in the flexible packaging industry, we engage and retain purpose-driven talent through a fair and consistent HR framework. Our entrepreneurial culture empowers employees to drive UFlex’s growth and success.
                     </p>
 
-                    <p className="text-start ">
+                    {/* <p className="text-start ">
                       Our entrepreneurial culture empowers employees to drive UFlex’s growth
                       and success. UFlex offers job seekers more than a job. It offers them a
                       lifetime of growth with a number of opportunities for continuous
                       development and growth in assorted fields of business.
-                    </p>
+                    </p> */}
+                    <a
+                            href="https://aa193.taleo.net/careersection/ex/jobsearch.ftl?lang=en"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-start rounded-sm texts-md lato-600 bg-[#117ABA] text-white w-auto py-2 mt-4 px-12 inline-block"
+                        >
+                            Apply Now
+                        </a>
 
                     
                   </div>
@@ -165,43 +170,56 @@ export default function CareersMainCarousel() {
           <div className="flex flex-col items-center">
 
             {/* IMAGE */}
-            <div className="relative w-full aspect-[16/9] rounded-md overflow-hidden">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={SLIDES[active].image}
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -20 }}
-                  transition={{ duration: 0.5, ease: "easeOut" }}
-                  className="absolute inset-0"
-                >
-                  <Image
-                    src={SLIDES[active].image}
-                    alt={SLIDES[active].title}
-                    fill
-                    className="object-contain"
-                    priority
-                  />
-                </motion.div>
-              </AnimatePresence>
-            </div>
-
-            {/* TITLE */}
-            <AnimatePresence mode="wait">
-              <motion.h2
-                key={SLIDES[active].title}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.4 }}
-                className="mt-4 text-black text-md sm:text-[16px] lato-700 leading-snug text-center"
-              >
-                {SLIDES[active].title}
-              </motion.h2>
-            </AnimatePresence>
+        <div className="relative w-full aspect-[16/9] rounded-md overflow-hidden group cursor-pointer">
+                     {/* Image */}
+                     <AnimatePresence mode="wait">
+                       <motion.div
+                         key={SLIDES[active].image}
+                         initial={{ opacity: 0, x: 20 }}
+                         animate={{ opacity: 1, x: 0 }}
+                         exit={{ opacity: 0, x: -20 }}
+                         transition={{ duration: 0.5, ease: "easeOut" }}
+                         className="absolute inset-0"
+                       >
+                         <Image
+                           src={SLIDES[active].image}
+                           alt={SLIDES[active].title}
+                           fill
+                           className="object-cover"
+                           priority
+                         />
+                       </motion.div>
+                     </AnimatePresence>
+       
+                     {/* Hover Overlay + Title at Bottom */}
+                     <div className="absolute inset-0 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+                       {/* Dark gradient overlay from bottom */}
+                       {/* <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/80 via-black/40 to-transparent" /> */}
+       
+                       {/* Title */}
+                       <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-transparent to-transparent" >
+       
+                         <motion.h2
+                           initial={{ opacity: 0, y: 20 }}
+                           animate={{ opacity: 1, y: 0 }}
+                           transition={{ duration: 0.5, delay: 0.1 }}
+                           className="relative text-white text-lg sm:text-xl md:text-2xl lato-700 text-center pb-6 px-4 z-10"
+                         >
+                           {SLIDES[active].title}
+                         </motion.h2>
+       
+                       </div>
+                     </div>
+                     <motion.div
+                       className="absolute inset-0 bg-black bg-opacity-100"
+                       initial={{ opacity: 0 }}
+                       animate={{ opacity: 0.5 }}
+                       transition={{ duration: 1 }}
+                     ></motion.div>
+                   </div>
 
             {/* DOTS */}
-            <div className="mt-4 flex gap-2">
+            {/* <div className="mt-4 flex gap-2">
               {SLIDES.map((_, i) => (
                 <button
                   key={i}
@@ -213,7 +231,7 @@ export default function CareersMainCarousel() {
                   aria-label={`Go to slide ${i + 1}`}
                 />
               ))}
-            </div>
+            </div> */}
 
           </div>
         </div>
