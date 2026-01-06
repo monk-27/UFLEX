@@ -9,24 +9,24 @@ import Link from "next/link";
 
 const items = [
   {
-    title: "August 2025",
+    title: "CNBC Bajar",
     desc: "Earnings release for the quarter ended June 30, 2025 | Stable growth amidst tariff challenges",
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/media-releases/images/Earnings-release-for-the-quarter-ended-June-30,-2025-|-Stable-growth-amidst-tariff-challenges35.jpg",
+    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/media-coverage/images/CNBC-Bajar18.jpg",
   },
   {
-    title: "August 2025",
+    title: "NDTV Profit",
     desc: "UFlex Limited recognised as a Top Employer 2025 in India",
-    img: "/images/awards/b5.png",
+    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/media-coverage/images/NDTV-Profit34.jpg",
   },
   {
-    title: "July 2025",
+    title: "NDTV Profit",
     desc: "UFlex secures Indian patent for sustainable waterborne heat seal coating for food and consumer goods packaging",
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/media-releases/images/UFlex-secures-Indian-patent-for-sustainable-waterborne-heat-seal-coating-for-food-and-consumer-goods-packaging37.jpg",
+    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/media-coverage/images/NDTV-Profit53.jpg",
   },
   // Add more items as needed
 ];
 
-export default function MediaCardsCarousel() {
+export default function MediaCoverageCardsCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: false,
     align: "start",
@@ -38,14 +38,14 @@ export default function MediaCardsCarousel() {
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   return (
-    <div className="w-screen relative bg-[#117ABA]">
+    <div className="relative ">
 
     
-    <section className="pt-8 pb-4 max-w-7xl mx-auto">
+    <section className="pt-8 pb-4  ">
       {/* Viewport */}
       <div ref={emblaRef} className="overflow-hidden">
         {/* Container */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
           {items.map((card, index) => (
             <motion.div
               key={index}
@@ -68,13 +68,13 @@ export default function MediaCardsCarousel() {
                     />
 
                     {/* Strong Dark Overlay + Description on Hover */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    {/* <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
                       <div className="p-6 pb-8 text-white">
                         <p className="text-base md:text-lg leading-relaxed font-light tracking-wide">
                           {card.desc}
                         </p>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
 
                   {/* Title Below */}
