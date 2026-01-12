@@ -35,12 +35,12 @@ coating, thermal
 lamination, hot stamping,
 cable wrapping, release
 film, siliconized coating.`,
-        dynamiclink: "/packaging-films-business/packaging-our-offerings"
+        dynamiclink: "/packaging-films-business/packaging-our-offering"
     },
     {
         title: "Biaxially-Oriented Polypropylene (BOPP) films",
         img: "/images/bopp.png",
-        dynamiclink: "/packaging-films-business/packaging-our-offerings",
+        dynamiclink: "/packaging-films-business/packaging-our-offering",
 
         desc: `Release films,
 encapsulation, photo
@@ -55,7 +55,7 @@ wrap.`,
     {
         title: "Cast Polypropylene (CPP) films",
         img: "/images/cpp.png",
-        dynamiclink: "/packaging-films-business/packaging-our-offerings",
+        dynamiclink: "/packaging-films-business/packaging-our-offering",
 
         desc: `Bakery products,
 packaging and conversion,
@@ -67,7 +67,7 @@ deep freeze application.`,
     {
         title: "Metallized Film",
         img: "/images/metallized.png",
-        dynamiclink: "/packaging-films-business/packaging-our-offerings",
+        dynamiclink: "/packaging-films-business/packaging-our-offering",
 
         desc: `Converting and
 laminating, synthetic zari and metallic yarn,
@@ -84,14 +84,14 @@ many more.`,
     {
         title: "AlOx-coated films",
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-06130321303.jpg",
-        dynamiclink: "/packaging-films-business/packaging-our-offerings",
+        dynamiclink: "/packaging-films-business/packaging-our-offering",
 
         desc: "",
     },
     {
         title: "Speciality films",
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item4-06130331303.jpg",
-        dynamiclink: "/packaging-films-business/packaging-our-offerings",
+        dynamiclink: "/packaging-films-business/packaging-our-offering",
 
         desc: "",
     },
