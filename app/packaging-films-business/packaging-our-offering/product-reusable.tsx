@@ -121,9 +121,9 @@ export default function ProductCategorySection({
                             ))}
                         </nav>
 
-                        {/* {quickLinks.length > 0 && (
+                        {quickLinks.length > 0 && (
               <div className="p-6 border-t border-gray-100">
-                <h3 className="text-sm font-semibold text-gray-800 mb-3 uppercase tracking-wider">
+                <h3 className="text-sm lato-700 text-gray-800 mb-3 uppercase tracking-wider">
                   Quick Links
                 </h3>
                 <ul className="space-y-2">
@@ -131,17 +131,17 @@ export default function ProductCategorySection({
                     <li key={link.label}>
                       <a
                         href={link.href}
-                        className="text-blue-700 hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
+                        className="text-gray-700 hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
                         {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
                       >
                         {link.label}
-                        {link.external && <span aria-hidden>↗</span>}
+                        {/* {link.external && <span aria-hidden>↗</span>} */}
                       </a>
                     </li>
                   ))}
                 </ul>
               </div>
-            )} */}
+            )}
                     </motion.div>
 
                     {/* Mobile Accordion */}
@@ -187,7 +187,7 @@ export default function ProductCategorySection({
                             )}
                         </AnimatePresence>
 
-                        {/* {quickLinks.length > 0 && (
+                        {quickLinks.length > 0 && (
               <div className="p-6 border-t border-gray-100">
                 <h3 className="text-sm font-semibold text-gray-800 mb-3 uppercase tracking-wider">
                   Quick Links
@@ -207,7 +207,7 @@ export default function ProductCategorySection({
                   ))}
                 </ul>
               </div>
-            )} */}
+            )}
                     </div>
                 </aside>
 
