@@ -105,7 +105,7 @@ export default function ProductCategorySection({
   transition-colors text-left border-l-4
   ${category.isActive
                                                 ? "bg-blue-100 border-l-[#117ABA] text-[#117ABA]"
-                                                : "border-transparent text-gray-800 hover:bg-blue-50"
+                                                : " border-[1px] border-gray-200  text-gray-800 hover:bg-blue-50"
                                             }`}
 
                                     >
@@ -127,7 +127,7 @@ export default function ProductCategorySection({
                         </div>
 
                         {quickLinks.length > 0 && (
-                            <div className="p-6 rounded-xl border-[1px] border-gray-200 mt-4">
+                            <div className="hidden lg:block p-6 rounded-xl border-[1px] border-gray-200 mt-4">
                                 <h3 className="text-sm lato-700 text-gray-800 mb-3 uppercase tracking-wider">
                                     Quick Links
                                 </h3>
@@ -195,22 +195,26 @@ export default function ProductCategorySection({
                         
                     </div>
                     {quickLinks.length > 0 && (
-                            <div className="p-6 mt-4 rounded-xl border-[1px] border-gray-200">
+                            <div className="block lg:hidden p-6 mt-4 rounded-xl border-[1px] border-gray-200">
                                 <h3 className="text-sm lato-700 text-gray-800 mb-3 uppercase tracking-wider">
                                     Quick Links
                                 </h3>
                                 <ul className="space-y-2">
                                     {quickLinks.map((link) => (
+                                        <ul className="space-y-2">
+                                    {quickLinks.map((link) => (
                                         <li key={link.label}>
                                             <a
                                                 href={link.href}
-                                                className="text-[#117ABA] hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
+                                                className="text-gray-700 hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
                                                 {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
                                             >
                                                 {link.label}
                                                 {/* {link.external && <span aria-hidden>↗</span>} */}
                                             </a>
                                         </li>
+                                    ))}
+                                </ul>
                                     ))}
                                 </ul>
                             </div>
