@@ -236,12 +236,12 @@ export default function ProductCategorySection({
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.3 }}
-                                    className="inline-block bg-[#117ABA]/90 px-5 py-2 rounded text-sm lato-700 mb-4 tracking-wide"
+                                    className="inline-block bg-[#117ABA]/90 px-5 py-2 rounded-full text-sm lato-700 mb-4 tracking-wide"
                                 >
                                     {brandTag}
                                 </motion.div>
                             )}
-                            <h1 className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-white lato-400">{title}</h1>
+                            <h1 className="lato-400 text-[16px] sm:text-[20px] leading-relaxed text-white lato-700">{title}</h1>
                         </div>
                     </motion.div>
 
@@ -308,7 +308,7 @@ export default function ProductCategorySection({
                                                 variants={cardVariants}
                                                 custom={i}
                                                 whileHover={{ scale: 1.03, boxShadow: "0 10px 25px rgba(0,0,0,0.1)" }}
-                                                className="bg-blue-50 text-[#117ABA] px-2 py-2 rounded-xl lato-400 text-[12px] sm:text-[10px] leading-relaxed  border border-blue-100 shadow-sm"
+                                                className="bg-blue-50 text-[#117ABA] px-2 py-2 rounded-2xl lato-400 text-[12px] sm:text-[10px] leading-relaxed  border border-blue-100 shadow-sm"
                                             >
                                                 {app}
                                             </motion.div>
