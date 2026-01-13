@@ -86,66 +86,71 @@ export default function ProductCategorySection({
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="bg-white rounded-xl shadow-md overflow-hidden hidden lg:block sticky top-6"
+                        className="bg-white  overflow-hidden hidden lg:block sticky top-6"
                     >
-                        <div className="bg-[#117ABA] text-white px-6 py-5">
-                            <h2 className="text-lg font-semibold tracking-wide">PRODUCT CATEGORIES</h2>
-                        </div>
+                        <div className="rounded-xl border-[1px] border-gray-200">
 
-                        <nav className="divide-y divide-gray-100">
-                            {categories.map((category) => (
-                                <motion.button
-                                    key={category.name}
-                                    onClick={category.onClick}
-                                    // whileHover={{ backgroundColor: "#eff6ff" }}
-                                    whileTap={{ scale: 0.98 }}
-                                    className={`w-full flex items-center justify-between px-6 py-4
+                            <div className="bg-[#117ABA] text-white px-6 py-5">
+                                <h2 className="text-lg lato-700 tracking-wide">PRODUCT CATEGORIES</h2>
+                            </div>
+
+                            <nav className="divide-y divide-gray-100">
+                                {categories.map((category) => (
+                                    <motion.button
+                                        key={category.name}
+                                        onClick={category.onClick}
+                                        // whileHover={{ backgroundColor: "#eff6ff" }}
+                                        whileTap={{ scale: 0.98 }}
+                                        className={`w-full flex items-center justify-between px-6 py-4
   transition-colors text-left border-l-4
   ${category.isActive
-                                            ? "bg-blue-100 border-l-[#117ABA] text-[#117ABA]"
-                                            : "border-transparent text-gray-800 hover:bg-blue-50"
-                                        }`}
+                                                ? "bg-blue-100 border-l-[#117ABA] text-[#117ABA]"
+                                                : "border-transparent text-gray-800 hover:bg-blue-50"
+                                            }`}
 
-                                >
-                                    <span
-                                        className={`lato-400 text-[16px] sm:text-[18px] leading-relaxed ${category.isActive ? "text-[#117ABA]" : "text-[#4f4f4f]"
-                                            }`}
                                     >
-                                        {category.name}</span>
-                                    <ChevronRight
-                                        size={18}
-                                        className={`transition-transform duration-300 ${category.isActive ? "rotate-90" : ""
-                                            }`}
-                                    />
-                                </motion.button>
-                            ))}
-                        </nav>
+                                        <span
+                                            className={`lato-400 text-[16px] sm:text-[18px] leading-relaxed ${category.isActive ? "text-[#117ABA]" : "text-[#4f4f4f]"
+                                                }`}
+                                        >
+                                            {category.name}</span>
+                                        <ChevronRight
+                                            size={18}
+                                            className={`transition-transform duration-300 ${category.isActive ? "rotate-90" : ""
+                                                }`}
+                                        />
+                                    </motion.button>
+                                ))}
+                            </nav>
+
+
+                        </div>
 
                         {quickLinks.length > 0 && (
-              <div className="p-6 border-t border-gray-100">
-                <h3 className="text-sm lato-700 text-gray-800 mb-3 uppercase tracking-wider">
-                  Quick Links
-                </h3>
-                <ul className="space-y-2">
-                  {quickLinks.map((link) => (
-                    <li key={link.label}>
-                      <a
-                        href={link.href}
-                        className="text-gray-700 hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
-                        {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
-                      >
-                        {link.label}
-                        {/* {link.external && <span aria-hidden>↗</span>} */}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
+                            <div className="p-6 rounded-xl border-[1px] border-gray-200 mt-4">
+                                <h3 className="text-sm lato-700 text-gray-800 mb-3 uppercase tracking-wider">
+                                    Quick Links
+                                </h3>
+                                <ul className="space-y-2">
+                                    {quickLinks.map((link) => (
+                                        <li key={link.label}>
+                                            <a
+                                                href={link.href}
+                                                className="text-gray-700 hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
+                                                {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
+                                            >
+                                                {link.label}
+                                                {/* {link.external && <span aria-hidden>↗</span>} */}
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
                     </motion.div>
 
                     {/* Mobile Accordion */}
-                    <div className="lg:hidden bg-white rounded-xl shadow-md overflow-hidden">
+                    <div className="lg:hidden bg-white rounded-xl border-[1px] border-gray-200  overflow-hidden">
                         <button
                             onClick={() => setIsMobileOpen(!isMobileOpen)}
                             className="w-full flex items-center justify-between bg-[#117ABA] text-white px-6 py-5 lato-400 text-[16px] sm:text-[18px] leading-relaxed "
@@ -187,28 +192,29 @@ export default function ProductCategorySection({
                             )}
                         </AnimatePresence>
 
-                        {quickLinks.length > 0 && (
-              <div className="p-6 border-t border-gray-100">
-                <h3 className="text-sm font-semibold text-gray-800 mb-3 uppercase tracking-wider">
-                  Quick Links
-                </h3>
-                <ul className="space-y-2">
-                  {quickLinks.map((link) => (
-                    <li key={link.label}>
-                      <a
-                        href={link.href}
-                        className="text-[#117ABA] hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
-                        {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
-                      >
-                        {link.label}
-                        {link.external && <span aria-hidden>↗</span>}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
+                        
                     </div>
+                    {quickLinks.length > 0 && (
+                            <div className="p-6 mt-4 rounded-xl border-[1px] border-gray-200">
+                                <h3 className="text-sm lato-700 text-gray-800 mb-3 uppercase tracking-wider">
+                                    Quick Links
+                                </h3>
+                                <ul className="space-y-2">
+                                    {quickLinks.map((link) => (
+                                        <li key={link.label}>
+                                            <a
+                                                href={link.href}
+                                                className="text-[#117ABA] hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
+                                                {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
+                                            >
+                                                {link.label}
+                                                {/* {link.external && <span aria-hidden>↗</span>} */}
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
                 </aside>
 
                 {/* Main Content */}

@@ -135,8 +135,8 @@ export default function ProductsPage() {
 
             quickLinks: [
                 { label: "Flex Films Website ↗", href: "https://www.flexfilm.com/", external: true },
-                { label: "Request Quote", href: "/request-quote" },
-                { label: "Download Catalog", href: "/catalog.pdf" },
+                { label: "Request Quote", href: "https://www.flexfilm.com/" },
+                { label: "Download Catalog", href: "https://www.flexfilm.com/" },
             ],
         },
 
@@ -235,8 +235,8 @@ export default function ProductsPage() {
 
             quickLinks: [
                 { label: "Flex Films Website ↗", href: "https://www.flexfilm.com/", external: true },
-                { label: "Request Quote", href: "/request-quote" },
-                { label: "Download Catalog", href: "/catalog.pdf" },
+                { label: "Request Quote", href: "https://www.flexfilm.com/" },
+                { label: "Download Catalog", href: "https://www.flexfilm.com/" },
             ],
         },
 
@@ -306,8 +306,8 @@ export default function ProductsPage() {
 
             quickLinks: [
                 { label: "Flex Films Website ↗", href: "https://www.flexfilm.com/", external: true },
-                { label: "Request Quote", href: "/request-quote" },
-                { label: "Download Catalog", href: "/catalog.pdf" },
+                { label: "Request Quote", href: "https://www.flexfilm.com/" },
+                { label: "Download Catalog", href: "https://www.flexfilm.com/" },
             ],
         },
 
@@ -372,8 +372,8 @@ export default function ProductsPage() {
 
             quickLinks: [
                 { label: "Flex Films Website ↗", href: "https://www.flexfilm.com/", external: true },
-                { label: "Request Quote", href: "/request-quote" },
-                { label: "Download Catalog", href: "/catalog.pdf" },
+                { label: "Request Quote", href: "https://www.flexfilm.com/" },
+                { label: "Download Catalog", href: "https://www.flexfilm.com/" },
             ],
         },
 
@@ -455,8 +455,8 @@ export default function ProductsPage() {
 
   quickLinks: [
     { label: "Flex Films Website ↗", href: "https://www.flexfilms.com", external: true },
-    { label: "Request Quote", href: "/request-quote" },
-    { label: "Download Catalog", href: "/catalog.pdf" },
+    { label: "Request Quote", href: "https://www.flexfilm.com/" },
+    { label: "Download Catalog", href: "https://www.flexfilm.com/" },
   ],
 },
     };
