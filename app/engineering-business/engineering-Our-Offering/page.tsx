@@ -23,7 +23,7 @@ export default function ProductsPage() {
 
       packaging: {
   title: "Packaging Machines",
-  heroImageUrl: "/images/packaging-machines.png",
+  heroImageUrl: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-07180601806.jpg",
 
   overview: `We at UFlex Engineering Division manufacture wide range of Packaging Machines like Form Fill & Seal Machines, which are both Single as well as Multi-Track; Wrapping machines, that are capable of wrapping products of any shape and size; Special Purpose machines, in which the products are packed not only in center seal / three side or four side seal pouches but also in other attractive pouches like Stand up or as Three Side Gusset Pouches.`,
 
@@ -175,6 +175,8 @@ export default function ProductsPage() {
 },
 
 converting: {
+  heroImageUrl: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-07180611806.jpg",
+
   title: "Converting Machines",
   overview: `We at UFlex offer end to end flexible packaging solutions. We manufacture a wide range of converting machines for carrying out various operations like printing, lamination, slitting/ rewinding, inspection, doctoring and pouch making. We have different models in these machine categories that vary according to speed / output, level of technical sophistication and specifications as per clients’ requirements.
 
@@ -492,7 +494,7 @@ categories: [
 },
 speciality: {
   title: "Speciality Products",
-  heroImageUrl: "/images/speciality-hero.png",
+  heroImageUrl: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-07180621806.jpg",
 
   overview:
     "UFlex also offers speciality products that are ancillary yet important for the purpose of packaging.",
