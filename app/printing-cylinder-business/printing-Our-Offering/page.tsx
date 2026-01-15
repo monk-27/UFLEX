@@ -10,7 +10,7 @@ export default function ProductsPage() {
   const printingCylindersData = {
     title: "Printing Cylinders",
     heroImageUrl:
-      "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item4-07180631806.jpg",
+      "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-05492704927.jpg",
 
     overview:
       "Our product range extends from rotogravure cylinders to Anilox rollers, lamination and coating rollers, embossing rollers to mica & wood-grain cylinders.\n\nUFlex’ Printing Cylinders business products range includes a variety of Gravure Printing Cylinders, Flexo Plates and Flexo Printing Sleeves.",
@@ -23,6 +23,8 @@ export default function ProductsPage() {
 
     sections: {
       gravure: {
+        heroImageUrl:
+      "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-05492704927.jpg",
         blocks: [
           {
             heading: "1. Printing Cylinders:",
@@ -78,6 +80,8 @@ export default function ProductsPage() {
 
       ctp: {
         title: "CTP FLEXO PLATES",
+        heroImageUrl:
+      "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-05492714927.jpg",
         overview:
           "The advanced flexo plate manufacturing set-up with laser imaging can produce high definition images.",
         bullets: [
@@ -91,6 +95,7 @@ export default function ProductsPage() {
 
       sleeves: {
         title: "FLEXO PRINTING SLEEVES",
+        heroImageUrl :"https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-05492724927.jpg",
         overview:
           "Flexography printing has been gaining popularity due to its impeccable print quality, easy operability and lower costs as compared to gravure printing. Flexo printing sleeves technology has brought an acceleration in speed, simplification in processes and lower costs when replacing a printing form and within printing itself for that matter.",
         bullets: [
@@ -125,16 +130,18 @@ export default function ProductsPage() {
           <div className="grid lg:grid-cols-2 gap-10 mb-8">
             <div>
               <h1 className="text-[28px] lato-700 text-[#117ABA]">
-                Printing Business Products
+                Printing Cylinders Products
               </h1>
               <p className="lato-400 text-[18px] text-[#4f4f4f]">
-                High precision printing cylinder solutions by UFlex.
+                Our product range extends from rotogravure cylinders to Anilox rollers, lamination and coating rollers, embossing rollers to mica & wood-grain cylinders.
+
+UFlex’ Printing Cylinders business products range includes a variety of Gravure Printing Cylinders, Flexo Plates and Flexo Printing Sleeves
               </p>
             </div>
 
             <div className="relative aspect-[16/10]">
               <Image
-                src={printingCylindersData.heroImageUrl}
+                src="/images/heroprinting.png"
                 alt="Printing Cylinders"
                 fill
                 className="object-cover"

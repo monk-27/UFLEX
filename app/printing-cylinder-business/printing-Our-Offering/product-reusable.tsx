@@ -129,7 +129,13 @@ export default function ProductCategorySection({
 
           {/* HERO */}
           <div className="relative h-[420px] rounded-t-xl overflow-hidden">
-            <Image src={heroImageUrl} alt={title} fill className="object-cover" />
+            <Image
+  src={sectionData.heroImageUrl}
+  alt={title}
+  fill
+  className="object-cover"
+/>
+
             <div className="absolute inset-0 bg-black/50" />
             <h1 className="absolute bottom-4 left-4 text-white text-2xl lato-800">
               {title}
