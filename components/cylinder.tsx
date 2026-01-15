@@ -23,7 +23,7 @@ import { ReadMoreDialog } from './expandabletext'
 const SliderItems: SliderItem[] = [
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-05492704927.jpg",
-        dynamiclink:"/printing-cylinder-business/printing-Our-Offerings",
+        dynamiclink:"/printing-cylinder-business/printing-Our-Offering",
         title: "Gravure Cylinders",
         desc: `UFlex manufactures high-precision
 gravure, printing, coating, and special-
@@ -32,7 +32,7 @@ applications.`,
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-05492714927.jpg",
-        dynamiclink:"/printing-cylinder-business/printing-Our-Offerings",
+        dynamiclink:"/printing-cylinder-business/printing-Our-Offering",
 
         title: "CTP Flexo Plates",
         desc: `The advanced flexo plate manufacturing
@@ -42,7 +42,7 @@ definition flexographic plates.`,
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-05492724927.jpg",
-        dynamiclink:"/printing-cylinder-business/printing-Our-Offerings",
+        dynamiclink:"/printing-cylinder-business/printing-Our-Offering",
 
         title: "Flexo Printing Sleeves",
         desc: `UFlex’s flexo printing sleeves provide
