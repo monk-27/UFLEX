@@ -272,7 +272,7 @@ export default function ProductCategorySection({
                     </motion.div>
 
                     {/* Overview */}
-                    <div className=" space-y-12 py-6">
+                    <div className=" py-6">
                         <motion.div variants={itemVariants}>
                             <div className="flex gap-2">
                                 {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
@@ -286,18 +286,18 @@ export default function ProductCategorySection({
                             </p>
                         </motion.div>
 
-                        <div className=" grid md:grid-cols-2 gap-10 lg:gap-12">
+                        <div className="grid md:grid-cols-2 gap-10 lg:gap-12">
                             {/* Performance Properties */}
                             {performanceProperties.length > 0 && (<div>
                                 <motion.div variants={itemVariants}>
 
-                                    <div className="flex gap-2 py-6">
+                                    <div className="flex gap-2  py-6 pb-4">
                                         {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
                                         <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">
                                             Performance Properties
                                         </h3>
                                     </div>
-                                    <ul className="space-y-3 py-1">
+                                    <ul className="space-y-1">
                                         {performanceProperties.map((prop, i) => (
                                             <motion.li
                                                 key={prop}
@@ -305,7 +305,7 @@ export default function ProductCategorySection({
                                                 custom={i}
                                                 className="flex items-start gap-3 text-black"
                                             >
-                                                <span className="text-[#117ABA] lato-400 text-xl leading-none mt-1">✓</span>
+                                                <span className="text-black lato-400 text-xl leading-none mt-1">•</span>
                                                 <span className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">{prop}</span>
                                             </motion.li>
                                         ))}
@@ -321,35 +321,34 @@ export default function ProductCategorySection({
 
                                 <motion.div variants={itemVariants}>
 
-                                    <div className="flex gap-2 py-6">
+                                    <div className="flex gap-2  py-6 pb-4">
                                         {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
                                         <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">
                                             Applications
                                         </h3>
                                     </div>
-                                    <div className="py-1 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5 md:gap-3">
-                                        {applications.map((app, i) => (
-                                            <motion.div
-                                                key={app}
-                                                variants={cardVariants}
-                                                custom={i}
-                                                whileHover={{ scale: 1.04 }}
-                                                whileTap={{ scale: 0.98 }}
-                                                className={`
-        flex items-center justify-center text-center
-         w-[163px] h-[48px]   
-        px-3 py-2.5 sm:px-4 sm:py-3
-        bg-gray-100 hover:bg-gray-200
-        text-[#333] lato-400
-        text-[12px] sm:text-[14px] md:text-[13px]
-        leading-tight
-        transition-colors duration-200
+                                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
+  {applications.map((app, i) => (
+    <motion.div
+      key={app}
+      variants={cardVariants}
+      custom={i}
+      whileHover={{ scale: 1.03, y: -4 }}
+      className={`
+        flex flex-col items-center justify-center text-center
+        w-[110px] h-[60px]  
+        px-4 py-4 sm:px-5 sm:py-1
+        bg-[#F9F9F9] hover:bg-blue-50
+        text-black 
+        text-[13px] sm:text-[8px] lg:text-[8px]
+        leading-tight lato-400
+        transition-all duration-200
       `}
-                                            >
-                                                {app}
-                                            </motion.div>
-                                        ))}
-                                    </div>
+    >
+      {app}
+    </motion.div>
+  ))}
+</div>
                                 </motion.div>
                             </div>
 
@@ -361,7 +360,7 @@ export default function ProductCategorySection({
 
                         {innovations.length > 0 && (
                             <div className="">
-                                <div className="flex gap-2 py-4">
+                                <div className="flex gap-2  py-6">
                                     {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
                                     <h3 className="lato-400 text-[20px] md:text-[24px] text-[#117ABA]">
                                         Special Innovations
