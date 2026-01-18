@@ -6,6 +6,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Breadcrumb from "@/components/breadcrumb";
 
 export default function ProductsPage() {
     const engineeringProductsData: any = {
@@ -558,29 +559,62 @@ Our converting machines are tailored as per the clients’ needs and are enabled
         <>
             <SiteHeader />
 
-            <section className="bg-white pt-6">
-                <div className="max-w-7xl mx-auto px-4">
-                    <div className="grid lg:grid-cols-2 gap-10">
-                        <div>
-                            <h1 className="text-[28px] lato-700 text-[#117ABA]">
-                                Engineering Business Products
-                            </h1>
-                            <p className="lato-400 text-[18px] leading-relaxed text-black">
-                                We at UFlex, manufacture Packaging Machines, Converting Machines, Pillow Pouch Machines, Multilane Machines, PFS Machines, Pouch packing machines, Stick pack machines, FFS & VFFS machines, Multi-track machines, Flow Wrap Machines, Rotary FFS machines, Collar type Machines, pouch packing machines, stick packaging machines, in India and around the globe.
+            <section className="bg-white ">
+                <div className="">
+                   
+
+                    <section className="relative w-full h-[580px] sm:h-[641px] overflow-hidden">
+
+                        <Image
+                            src="/images/heroengg.png"
+                            alt="Investors Relations"
+                            fill
+                            className="object-cover w-full h-full"
+                            priority
+                        />
+
+                        <div className="absolute inset-0 bg-black/40"></div>
 
 
-                            </p>
-                        </div>
+                        <motion.div
+                            className="absolute inset-0 flex flex-col justify-end  text-white"
+                            initial="hidden"
+                            animate="visible"
+                            variants={{
+                                hidden: { opacity: 0, y: 30 },
+                                visible: {
+                                    opacity: 1,
+                                    y: 0,
+                                    transition: { delayChildren: 0.3, staggerChildren: 0.3 },
+                                },
+                            }}
+                        >
 
-                        <div className="relative aspect-[16/10]">
-                            <Image
-                                src="/images/heroengg.png"
-                                alt={product.title}
-                                fill
-                                className="object-cover"
-                            />
-                        </div>
-                    </div>
+
+                            <motion.div
+                                className="bg-[#117ABA] lato-400 text-left w-[450px] h-[350px] sm:w-[706px] sm:h-[441px] text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[20px] pl-4 pt-2 pb-4 pr-4 md:pl-24 lg:pl-28 sm:pt-8 sm:pb-4 sm:pr-12 mb-12 sm:mb-24"
+                                variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+                            >
+                                <div className="w-[300px] sm:w-[537px]">
+
+
+                                    <h1 className="text-white text-[14px] md:text-[28px] lato-700 ">
+                                        Engineering Business Products
+
+                                    </h1>
+                                    We at UFlex, manufacture Packaging Machines, Converting Machines, Pillow Pouch Machines, Multilane Machines, PFS Machines, Pouch packing machines, Stick pack machines, FFS & VFFS machines, Multi-track machines, Flow Wrap Machines, Rotary FFS machines, Collar type Machines, pouch packing machines, stick packaging machines, in India and around the globe.
+                                </div>
+                            </motion.div>
+
+
+                        </motion.div>
+                    </section>
+                    <Breadcrumb
+                        items={[
+                            { label: "Engineering Business", href: "/engineering-business" },
+                            { label: "Engineering Business Products" },
+                        ]}
+                    />
 
                     <ProductCategorySection
                         {...product}

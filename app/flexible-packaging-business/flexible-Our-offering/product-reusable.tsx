@@ -283,11 +283,12 @@ export default function ProductCategorySection({
                             {title?.toLowerCase() != "flexitubes" &&
                                 (
                                     <div className="flex gap-2">
-                                        {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
-                                        <h3 className="lato-400 text-[20px] md:text-[24px] text-[#117ABA]">
-                                            Overview
-                                        </h3>
-                                    </div>
+                                {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
+                                <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">
+                                    Overview
+                                </h3>
+                            </div>
+                            
                                 )
                             }
 

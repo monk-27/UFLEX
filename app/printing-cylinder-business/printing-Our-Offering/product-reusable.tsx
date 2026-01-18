@@ -177,15 +177,16 @@ export default function ProductCategorySection({
           </div>
 
           {/* OVERVIEW */}
-          <div className="">
-            <div className="flex gap-2 mb-2">
-              {/* <span className="h-6 w-[4px] bg-[#117ABA]" /> */}
-              <h3 className="text-[#117ABA] lato-700 text-xl">Overview</h3>
-            </div>
-            <p className="whitespace-pre-line text-black leading-relaxed">
-              {overview}
-            </p>
-          </div>
+          <div className="flex gap-2">
+                                {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
+                                <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">
+                                    Overview
+                                </h3>
+                            </div>
+                            <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
+                                {overview
+                                }
+                            </p>
 
           {/* ================= GRAVURE (SPECIAL LAYOUT) ================= */}
           {activeKey === "gravure" &&

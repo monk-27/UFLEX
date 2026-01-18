@@ -97,7 +97,7 @@ export default function ProductCategorySection({
     const [isMobileOpen, setIsMobileOpen] = useState(false);
 
     return (
-        <section className="py-10">
+        <section className="max-w-7xl mx-auto py-12">
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
 
                 {/* LEFT SIDEBAR */}
@@ -109,36 +109,46 @@ export default function ProductCategorySection({
                         transition={{ duration: 0.6 }}
                         className="bg-white  overflow-hidden hidden lg:block sticky top-6"
                     >
-                        <div className="rounded-xl border-[1px] border-gray-200">
+                        <div className="">
 
                             <div className="bg-[#117ABA] text-white px-6 py-5">
                                 <h2 className="text-lg lato-700 tracking-wide">PRODUCT CATEGORIES</h2>
                             </div>
 
                             <nav className="divide-y divide-gray-100">
-                                {categories.map((category) => (
+
+                                {categories.map((category: any) => (
                                     <motion.button
                                         key={category.name}
                                         onClick={category.onClick}
-                                        // whileHover={{ backgroundColor: "#eff6ff" }}
                                         whileTap={{ scale: 0.98 }}
-                                        className={`w-full flex items-center justify-between px-6 py-4
-  transition-colors text-left border-l-4
-  ${category.isActive
-                                                ? "bg-blue-100 border-l-[#117ABA] text-[#117ABA]"
-                                                : " border-[1px] border-gray-200  text-gray-800 hover:bg-blue-50"
-                                            }`}
-
+                                        className={`
+      w-full flex items-center justify-between px-6 py-4
+      text-left transition-colors duration-200
+      bg-white
+      hover:bg-[#F9F9F9]
+     
+      ${category.isActive
+                                                ? " text-[#117ABA]"
+                                                : " text-black"
+                                            }
+    `}
                                     >
                                         <span
-                                            className={`lato-400 text-[16px] sm:text-[18px] leading-relaxed ${category.isActive ? "text-[#117ABA]" : "text-black"
-                                                }`}
+                                            className={`
+        lato-400 text-[16px] sm:text-[18px] leading-relaxed
+        ${category.isActive ? "text-[#117ABA] " : "text-black"}
+      `}
                                         >
-                                            {category.name}</span>
+                                            {category.name}
+                                        </span>
+
                                         <ChevronRight
                                             size={18}
-                                            className={`transition-transform duration-300 ${category.isActive ? "rotate-90" : ""
-                                                }`}
+                                            className={`
+        transition-transform duration-300
+        ${category.isActive ? "rotate-90 text-[#117ABA]" : "text-gray-500"}
+      `}
                                         />
                                     </motion.button>
                                 ))}
@@ -147,11 +157,10 @@ export default function ProductCategorySection({
 
                         </div>
 
-
                     </motion.div>
 
                     {/* Mobile Accordion */}
-                    <div className="lg:hidden bg-white rounded-xl border-[1px] border-gray-200  overflow-hidden">
+                    <div className="lg:hidden bg-white   overflow-hidden">
                         <button
                             onClick={() => setIsMobileOpen(!isMobileOpen)}
                             className="w-full flex items-center justify-between bg-[#117ABA] text-white px-6 py-5 lato-400 text-[16px] sm:text-[18px] leading-relaxed "
@@ -171,21 +180,39 @@ export default function ProductCategorySection({
                                 >
                                     <div className="divide-y divide-gray-100">
                                         {categories.map((category) => (
-                                            <button
+                                            <motion.button
                                                 key={category.name}
-                                                onClick={() => {
-                                                    category.onClick?.();
-                                                    setIsMobileOpen(false);
-                                                }}
-                                                className={`w-full flex items-center justify-between px-6 py-4 transition-colors text-left border-l-4
-                                                    ${category.isActive
-                                                        ? "bg-blue-100 border-l-[#117ABA] text-[#117ABA]"
-                                                        : "border-transparent text-gray-800 hover:bg-blue-50"
-                                                    }`}
-
+                                                onClick={category.onClick}
+                                                whileTap={{ scale: 0.98 }}
+                                                className={`
+      w-full flex items-center justify-between px-6 py-4
+      text-left transition-colors duration-200
+      bg-white
+      hover:bg-gray-100
+     
+      ${category.isActive
+                                                        ? "bg-blue-100  text-[#117ABA]"
+                                                        : "border-l-transparent text-black"
+                                                    }
+    `}
                                             >
-                                                {category.name}
-                                            </button>
+                                                <span
+                                                    className={`
+        lato-400 text-[16px] sm:text-[18px] leading-relaxed
+        ${category.isActive ? "text-[#117ABA]" : "text-black"}
+      `}
+                                                >
+                                                    {category.name}
+                                                </span>
+
+                                                <ChevronRight
+                                                    size={18}
+                                                    className={`
+        transition-transform duration-300
+        ${category.isActive ? "rotate-90 text-[#117ABA]" : "text-gray-500"}
+      `}
+                                                />
+                                            </motion.button>
                                         ))}
                                     </div>
                                 </motion.nav>
@@ -194,32 +221,31 @@ export default function ProductCategorySection({
 
 
                     </div>
-
+                    
                 </aside>
 
                 {/* MAIN CONTENT */}
                 <main className="lg:col-span-3">
 
                     {/* HERO */}
-                    <div className="relative h-[420px] rounded-t-xl overflow-hidden">
+                    <div className="relative h-[420px]  overflow-hidden">
                         <Image src={heroImageUrl} alt={title} fill className="object-cover" />
                         <div className="absolute inset-0 bg-black/50" />
-                        <h1 className="absolute bottom-4 left-4 text-white text-2xl lato-800">
-                            {title}
-                        </h1>
+                        
                     </div>
 
                     {/* OVERVIEW */}
                     <div className="border border-gray-200 p-6">
                         <div className="flex gap-2">
-                            <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" />
-                            <h3 className="lato-400 text-[20px] md:text-[24px] text-[#117ABA]">
-                                Overview:
-                            </h3>
-                        </div>
-                        <p className="text-black whitespace-pre-line leading-relaxed">
-                            {overview}
-                        </p>
+                                {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
+                                <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">
+                                    Overview
+                                </h3>
+                            </div>
+                            <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
+                                {overview
+                                }
+                            </p>
                     </div>
 
                     {/* SECTIONS A–D */}
