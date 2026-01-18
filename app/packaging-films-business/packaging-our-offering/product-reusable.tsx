@@ -327,28 +327,28 @@ export default function ProductCategorySection({
                                             Applications
                                         </h3>
                                     </div>
-                                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
-  {applications.map((app, i) => (
-    <motion.div
-      key={app}
-      variants={cardVariants}
-      custom={i}
-      whileHover={{ scale: 1.03, y: -4 }}
-      className={`
+                                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
+                                        {applications.map((app, i) => (
+                                            <motion.div
+                                                key={app}
+                                                variants={cardVariants}
+                                                custom={i}
+                                                whileHover={{ scale: 1.03, y: -4 }}
+                                                className={`
         flex flex-col items-center justify-center text-center
         w-[110px] h-[60px]  
         px-4 py-4 sm:px-5 sm:py-1
         bg-[#F9F9F9] hover:bg-blue-50
         text-black 
-        text-[13px] sm:text-[8px] lg:text-[8px]
+        text-[13px] sm:text-[12px] 
         leading-tight lato-400
         transition-all duration-200
       `}
-    >
-      {app}
-    </motion.div>
-  ))}
-</div>
+                                            >
+                                                {app}
+                                            </motion.div>
+                                        ))}
+                                    </div>
                                 </motion.div>
                             </div>
 

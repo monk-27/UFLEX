@@ -8,6 +8,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { motion } from "framer-motion";
 import { ReadMoreDialog } from "@/components/expandabletext";
 import Image from 'next/image';
+import Breadcrumb from "@/components/breadcrumb";
 
 export default function ProductsPage() {
     const productsData: any = {
@@ -310,7 +311,7 @@ export default function ProductsPage() {
             brandTag: "FlexiTubes",
             highlightText: "",
             bulletList: [],
-            learnlink:"https://www.uflexltd.com/pdf/FlexitubeBrochure.pdf",
+            learnlink: "https://www.uflexltd.com/pdf/FlexitubeBrochure.pdf",
             categories: [
                 { name: "FLEXIBLE LAMINATES", productKey: "flexible" },
                 { name: "PRE-FORMED POUCHES", productKey: "pre-formed" },
@@ -362,7 +363,7 @@ export default function ProductsPage() {
             heroImageUrl: "https://www.uflexltd.com/assets/images/packaging/UFlex_N95_Masks.jpg",
             brandTag: "Six Layered Cotton N95 Mask",
             highlightText: "",
-            learnlink :"https://www.uflexltd.com/pdf/UFlex_N95_Masks_Brochure.pdf",
+            learnlink: "https://www.uflexltd.com/pdf/UFlex_N95_Masks_Brochure.pdf",
             bulletList: [],
             categories: [
                 { name: "FLEXIBLE LAMINATES", productKey: "flexible" },
@@ -438,46 +439,66 @@ export default function ProductsPage() {
         <>
 
             <SiteHeader />
-            <section className='bg-white pt-4 sm:pt-12'>
-                <div className="max-w-7xl mx-auto px-4">
+            <section className='bg-white '>
+                <div className="">
                     <div className="space-y-0">
-                        <div className="grid py-4 lg:grid-cols-2 lg:py-1 gap-10">
-
-                            <div>
-                                <motion.h1
-                                    initial={{ opacity: 0, y: 10 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    className="text-[18px] lato-700 text-[#117ABA] md:text-[28px]"
-                                >
-                                    Flexible Packaging Products
-                                </motion.h1>
-
-                                <p className=" text-wrap max-w-xl lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
-                                    UFlex’s Flexible Packaging Business’s products range from Flexible Laminates, Pre-Formed Pouches, Flexo Printed Rolls & Bags, Laminated Woven Polypropylene (WPP) Bags, Electron Beam & Cast N Cure, Pharmaceutical Packaging, FlexiTubes, Hygiene Films, Flexfresh™ Modified Atmosphere Packaging, Big Bags and N-95 Mask. As an end-to-end flexible packaging solutions company, UFlex also holds the expertise to develop flexible tube Tube Packaging for a large number of FMCG brands in India and overseas
-                                </p>
 
 
 
-                            </div>
+
+
+                        <section className="relative w-full h-[580px] sm:h-[641px] overflow-hidden">
+
+                            <Image
+                                src="/images/flexi.png"
+                                alt="Investors Relations"
+                                fill
+                                className="object-cover w-full h-full"
+                                priority
+                            />
+
+                            <div className="absolute inset-0 bg-black/40"></div>
+
 
                             <motion.div
-                                initial={{ opacity: 0, scale: 0.98 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                viewport={{ once: true }}
-                                className="relative aspect-[16/10] w-full overflow-hidden  "
+                                className="absolute inset-0 flex flex-col justify-end  text-white"
+                                initial="hidden"
+                                animate="visible"
+                                variants={{
+                                    hidden: { opacity: 0, y: 30 },
+                                    visible: {
+                                        opacity: 1,
+                                        y: 0,
+                                        transition: { delayChildren: 0.3, staggerChildren: 0.3 },
+                                    },
+                                }}
                             >
-                                <Image
-                                    src="/images/flexi.png"
-                                    alt="UFlex capabilities across the value chain"
-                                    fill
-                                    className="object-cover rounded-sm"
-                                    priority
-                                />
 
-                                <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
+
+                                <motion.div
+                                    className="bg-[#117ABA] lato-400 text-left w-[450px] h-[350px] sm:w-[706px] sm:h-[441px] text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[20px] pl-4 pt-2 pb-4 pr-4 md:pl-24 lg:pl-28 sm:pt-8 sm:pb-4 sm:pr-12 mb-12 sm:mb-24"
+                                    variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+                                >
+                                    <div className="w-[300px] sm:w-[537px]">
+
+
+                                        <h1 className="text-white text-[14px] md:text-[28px] lato-700 ">
+                                            Flexible Packaging Products
+
+                                        </h1>
+                                        UFlex’s Flexible Packaging Business’s products range from Flexible Laminates, Pre-Formed Pouches, Flexo Printed Rolls & Bags, Laminated Woven Polypropylene (WPP) Bags, Electron Beam & Cast N Cure, Pharmaceutical Packaging, FlexiTubes, Hygiene Films, Flexfresh™ Modified Atmosphere Packaging, Big Bags and N-95 Mask. As an end-to-end flexible packaging solutions company, UFlex also holds the expertise to develop flexible tube Tube Packaging for a large number of FMCG brands in India and overseas
+                                    </div>
+                                </motion.div>
+
+
                             </motion.div>
-                        </div>
+                        </section>
+                        <Breadcrumb
+                            items={[
+                                { label: "Flexible Packaging", href: "/flexible-packaging-business" },
+                                { label: "Flexible Packaging Products" },
+                            ]}
+                        />
                         <ProductCategorySection
                             {...productProps}
                             categories={enhancedCategories}

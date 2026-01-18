@@ -227,7 +227,7 @@ export default function ProductCategorySection({
                         <div key={idx} className="mt-8 border border-gray-200">
 
                             {/* SECTION TITLE BAR */}
-                            <div className="bg-[#E06F65] text-white px-4 py-3 lato-700 text-lg">
+                            <div className="bg-[#117ABA] text-white px-4 py-3 lato-700 text-lg">
                                 {section.title}
                             </div>
 
@@ -313,7 +313,7 @@ export default function ProductCategorySection({
 
                                                         {/* RED MARKER + SUB TITLE */}
                                                         <div className="flex gap-3 items-start mb-4">
-                                                            <span className="w-[4px] bg-[#E06F65]" />
+                                                            <span className="w-[4px] bg-[#117ABA]" />
                                                             <h4 className="italic text-lg text-gray-800">
                                                                 {sub.title}
                                                             </h4>
@@ -360,7 +360,7 @@ export default function ProductCategorySection({
                                                     <div key={gIdx}>
                                                         {/* RED MARKER + GROUP TITLE */}
                                                         <div className="flex gap-3 items-start mb-4">
-                                                            <span className="w-[4px] bg-[#E06F65]" />
+                                                            <span className="w-[4px] bg-[#117ABA]" />
                                                             <h4 className="italic text-lg text-gray-800">
                                                                 {group.groupTitle}
                                                             </h4>
