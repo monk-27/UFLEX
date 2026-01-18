@@ -752,7 +752,7 @@ export default function BusinessAwards() {
               }}
               className={`pb-2 text-sm lato-400 shrink-0 ${activeBusiness === key
                 ? "text-[#117ABA] border-b-2 border-[#117ABA]"
-                : "text-gray-600"
+                : "text-black"
                 }`}
             >
               {val.label}

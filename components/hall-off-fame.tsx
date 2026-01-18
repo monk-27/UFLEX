@@ -216,16 +216,6 @@ const HallPage = () => {
 
           
 
-          <div className=" flex flex-col items-center text-center ">
-
-            <h2 className="text-[28px] lato-400 text-[#117ABA]">
-              In The Spotlight
-            </h2>
-
-            {/* <span className=" block text-[20px] lato-400 text-[#117ABA]">
-              Corporate, HR & Sustainability Awards
-            </span> */}
-          </div>
 
 
           {/* <AutoMarquee items={MARQUEE_ITEMS} speed={40} /> */}

@@ -48,11 +48,21 @@ export function AwardsSlider({ heading, items }: any) {
   };
 
   return (
-    <section className="bg-[#117ABA] relative w-screen left-1/2 right-1/2 -mx-[50vw] pt-12 mt-4  ">
+    <section className="bg-[#117ABA] relative w-screen left-1/2 right-1/2 -mx-[50vw] py-8  mt-4">
       <div className="max-w-7xl mx-auto ">
         {/* <h2 className="pt-8 lato-400 text-[22px] md:text-[28px] text-[#117ABA] mb-8">
           {heading}
         </h2> */}
+        <div className=" flex flex-col items-center text-center mb-4">
+
+            <h2 className="text-[28px] lato-400 text-white ">
+              In The Spotlight
+            </h2>
+
+            {/* <span className=" block text-[20px] lato-400 text-[#117ABA]">
+              Corporate, HR & Sustainability Awards
+            </span> */}
+          </div>
 
         <div>
           {/* Animated slide wrapper */}

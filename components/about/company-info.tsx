@@ -21,7 +21,7 @@ const CompanyInfo = () => {
           <div className="mt-6 grid gap-8 md:grid-cols-2 md:gap-12">
             {/* Left Column – Headings */}
             <div className="space-y-4">
-              <h3 className="text-2xl lato-700 text-gray-900 md:text-3xl">
+              <h3 className="text-2xl lato-700 text-black md:text-3xl">
                 Established in 1985.
               </h3>
               <h1 className="text-3xl lato-500 text-[#117ABA] md:text-4xl">

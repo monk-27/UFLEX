@@ -82,10 +82,10 @@ export default function MediaReleasesCarousel() {
                 priority={i === 0}
               />
               <div className="p-5 text-center">
-                <h3 className="font-semibold text-gray-900 text-xl md:text-2xl">
+                <h3 className="font-semibold text-black text-xl md:text-2xl">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 text-sm md:text-base mt-2">
+                <p className="text-black text-sm md:text-base mt-2">
                   {item.description}
                 </p>
               </div>
@@ -120,7 +120,7 @@ export default function MediaReleasesCarousel() {
         </button>
       </div>
 
-      <p className="text-center text-sm mt-8 text-gray-600">
+      <p className="text-center text-sm mt-8 text-black">
         For any media queries, please email{" "}
         <a href="mailto:corpcomm@uflexltd.com" className="text-[#117ABA] underline">
           corpcomm@uflexltd.com

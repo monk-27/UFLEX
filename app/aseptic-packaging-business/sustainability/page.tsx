@@ -31,7 +31,7 @@ const page = () => {
                         Aseptic Packaging
                     </h2>
                     <section className="max-w-5xl mx-auto px-4 pt-4 pb-8 ">
-      <div className="text-center text-gray-600 space-y-6">
+      <div className="text-center text-black space-y-6">
         
         {/* Intro paragraph */}
         <p className="lato-700 text-[16px] leading-7">

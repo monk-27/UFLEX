@@ -154,7 +154,7 @@ export default function DynamicCarouselModal({
             </div>
 
             <div className="p-6 md:p-10 flex flex-col justify-center">
-              <h3 className="text-2xl md:text-3xl lato-400 text-gray-900 leading-tight">
+              <h3 className="text-2xl md:text-3xl lato-400 text-black leading-tight">
                 {selectedItem.title}
               </h3>
               <div className="mt-6 text-gray-700 lato-400 text-base md:text-lg leading-relaxed space-y-4">

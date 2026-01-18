@@ -243,7 +243,7 @@ const Keypeople = ({ title, people }: Props) => {
               </div>
 
               <div className="p-6 md:p-8">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900">
+                <h3 className="text-xl md:text-2xl font-bold text-black">
                   {selected.name}
                 </h3>
                 <p className="mt-1 lato-700 text-[#117ABA]">

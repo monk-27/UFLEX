@@ -46,7 +46,7 @@ export default function EnquiryForm() {
           <form className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {/* Name */}
             <div>
-              <label className="mb-1 lato-400 block text-[14px] text-gray-600">Name</label>
+              <label className="mb-1 lato-400 block text-[14px] text-black">Name</label>
               <input
                 type="text"
                 className="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:border-[#117ABA] focus:outline-none"
@@ -55,7 +55,7 @@ export default function EnquiryForm() {
 
             {/* Phone */}
             <div>
-              <label className="lato-400  mb-1 block text-[14px] text-gray-600">Phone</label>
+              <label className="lato-400  mb-1 block text-[14px] text-black">Phone</label>
               <input
                 type="tel"
                 className="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:border-[#117ABA] focus:outline-none"
@@ -64,7 +64,7 @@ export default function EnquiryForm() {
 
             {/* Company Name */}
             <div>
-              <label className="lato-400  mb-1 block text-[14px] text-gray-600">
+              <label className="lato-400  mb-1 block text-[14px] text-black">
                 Company Name
               </label>
               <input
@@ -75,7 +75,7 @@ export default function EnquiryForm() {
 
             {/* Enquiry for */}
            <div>
-  <label className="lato-400 mb-1 block text-[14px] text-gray-600">
+  <label className="lato-400 mb-1 block text-[14px] text-black">
     Enquiry for
   </label>
 
@@ -92,11 +92,11 @@ export default function EnquiryForm() {
       text-gray-400
       focus:border-[#117ABA]
       focus:outline-none
-      focus:text-gray-900
+      focus:text-black
     "
     onChange={(e) => {
       e.currentTarget.classList.remove("text-gray-400");
-      e.currentTarget.classList.add("text-gray-900");
+      e.currentTarget.classList.add("text-black");
     }}
   >
     <option value="" disabled>
@@ -104,7 +104,7 @@ export default function EnquiryForm() {
     </option>
 
     {BUSINESS_OPTIONS.map((item) => (
-      <option key={item} value={item} className="text-gray-900">
+      <option key={item} value={item} className="text-black">
         {item}
       </option>
     ))}
@@ -114,7 +114,7 @@ export default function EnquiryForm() {
 
             {/* Email */}
             <div className="md:col-span-2">
-              <label className="lato-400  mb-1 block text-[14px] text-gray-600">Email</label>
+              <label className="lato-400  mb-1 block text-[14px] text-black">Email</label>
               <input
                 type="email"
                 className="w-full lato-400  rounded border border-gray-300 px-3 py-2 text-sm focus:border-[#117ABA] focus:outline-none"
@@ -123,7 +123,7 @@ export default function EnquiryForm() {
 
             {/* Message */}
             <div className="md:col-span-2">
-              <label className="lato-400  mb-1 block text-[14px] text-gray-600">
+              <label className="lato-400  mb-1 block text-[14px] text-black">
                 Message
               </label>
               <textarea

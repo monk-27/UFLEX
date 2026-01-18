@@ -243,7 +243,7 @@
 //               </div>
 
 //               <div className="p-6 md:p-8">
-//                 <h3 className="text-xl md:text-2xl font-bold text-gray-900">
+//                 <h3 className="text-xl md:text-2xl font-bold text-black">
 //                   {selected.name}
 //                 </h3>
 //                 <p className="mt-1 lato-700 text-[#117ABA]">
@@ -456,7 +456,7 @@ const PackagingKeypeople = ({ title, people }: Props) => {
               </div>
 
               <div className="p-6 md:p-8 flex flex-col justify-center">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900">{selected.name}</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-black">{selected.name}</h3>
                 <p className="mt-1 text-lg text-[#117ABA] lato-700">{selected.role}</p>
                 <p className="mt-6 text-sm md:text-base leading-relaxed text-gray-700">
                   {selected.summary}

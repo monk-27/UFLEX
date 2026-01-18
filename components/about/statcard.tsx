@@ -32,7 +32,7 @@ function StatCard({ number, label }: { number: string; label: string }) {
         <span>{suffix}</span>
       </motion.div>
 
-      <p className="mt-2 text-sm font-medium text-gray-600 md:text-base">
+      <p className="mt-2 text-sm font-medium text-black md:text-base">
         {label}
       </p>
     </div>

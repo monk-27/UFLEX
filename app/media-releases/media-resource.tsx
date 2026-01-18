@@ -97,14 +97,14 @@ export default function MediaCardsCarousel() {
           className="rounded-full bg-white border-2 border-gray-300 p-3 shadow-md hover:bg-gray-50 transition"
           aria-label="Previous"
         >
-          <ChevronLeft className="h-6 w-6 text-gray-600" />
+          <ChevronLeft className="h-6 w-6 text-black" />
         </button>
         <button
           onClick={scrollNext}
           className="rounded-full bg-white border-2 border-gray-300 p-3 shadow-md hover:bg-gray-50 transition"
           aria-label="Next"
         >
-          <ChevronRight className="h-6 w-6 text-gray-600 text-center " />
+          <ChevronRight className="h-6 w-6 text-black text-center " />
         </button>
       </div>
       {/* <Link href="/media-releases" className="text-white text-lg cursour-pointer text-center flex justify-center py-4">

@@ -220,7 +220,7 @@ export default function ReportsGallery() {
 
                                 {/* Description under image */}
                                 <motion.p
-                                    className="font-helvetica-regular mt-4 w-full text-left text-base md:text-lg text-gray-900"
+                                    className="font-helvetica-regular mt-4 w-full text-left text-base md:text-lg text-black"
                                     initial={{ opacity: 0, y: 12 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.25, ease: "easeOut" }}

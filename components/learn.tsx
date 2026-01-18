@@ -36,7 +36,7 @@ export default function LearnStatus() {
            
 
             <motion.p
-              className="lato-400 text-sm md:text-base leading-relaxed text-gray-600"
+              className="lato-400 text-sm md:text-base leading-relaxed text-black"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}

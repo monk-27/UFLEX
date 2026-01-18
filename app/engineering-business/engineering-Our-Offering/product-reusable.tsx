@@ -298,7 +298,7 @@ export default function ProductCategorySection({
           {item.label}
         </h4>
 
-        <p className="mt-2 text-gray-600 leading-relaxed">
+        <p className="mt-2 text-black leading-relaxed">
           {item.description}
         </p>
       </div>

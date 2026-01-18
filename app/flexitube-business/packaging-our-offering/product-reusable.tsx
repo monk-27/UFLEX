@@ -355,7 +355,7 @@ export default function ProductCategorySection({
                                         whileHover={{ y: -8, boxShadow: "0 15px 30px rgba(0,0,0,0.1)" }}
                                         className="bg-gray-100 p-6 rounded-xl shadow-md border-l-4 border-[#117ABA] transition-all duration-300"
                                     >
-                                        <h3 className="lato-700 text-[16px] sm:text-[18px] leading-relaxed text-gray-900 mb-3">
+                                        <h3 className="lato-700 text-[16px] sm:text-[18px] leading-relaxed text-black mb-3">
                                             {item.title}
                                         </h3>
 

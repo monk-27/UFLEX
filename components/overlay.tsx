@@ -151,7 +151,7 @@
 //                     {m.cta && (
 //                       <span
 //                         // href={m.cta.href}
-//                         className="mt-3 inline-flex items-center rounded-md bg-white/90 px-3 py-1.5 text-sm font-medium text-gray-900 shadow hover:bg-white"
+//                         className="mt-3 inline-flex items-center rounded-md bg-white/90 px-3 py-1.5 text-sm font-medium text-black shadow hover:bg-white"
 //                       >
 //                         {m.cta.label}
 //                       </span>
@@ -170,7 +170,7 @@
 //                     {m.cta && (
 //                       <span
 //                         // href={m.cta.href}
-//                         className="mt-2 inline-flex items-center rounded-md bg-white/90 px-2.5 py-1 text-xs font-medium text-gray-900 shadow hover:bg-white"
+//                         className="mt-2 inline-flex items-center rounded-md bg-white/90 px-2.5 py-1 text-xs font-medium text-black shadow hover:bg-white"
 //                       >
 //                         {m.cta.label}
 //                       </span>
@@ -396,7 +396,7 @@ function _OverlayModules({
                       {m.cta && (
                         <button
                           onClick={() => setSelectedModule(m)}
-                          className="mt-4 inline-flex items-center rounded-md bg-white px-4 py-2 text-sm font-semibold text-gray-900 shadow-lg hover:bg-gray-100 transition"
+                          className="mt-4 inline-flex items-center rounded-md bg-white px-4 py-2 text-sm font-semibold text-black shadow-lg hover:bg-gray-100 transition"
                         >
                           {m.cta.label}
                         </button>
@@ -416,7 +416,7 @@ function _OverlayModules({
                       {m.cta && (
                         <button
                           onClick={() => setSelectedModule(m)}
-                          className="mt-3 inline-flex items-center rounded-md bg-white/95 px-3 py-1.5 text-sm font-medium text-gray-900 shadow hover:bg-white"
+                          className="mt-3 inline-flex items-center rounded-md bg-white/95 px-3 py-1.5 text-sm font-medium text-black shadow hover:bg-white"
                         >
                           {m.cta.label}
                         </button>

@@ -48,7 +48,7 @@ export default function SimpleCarousel({
         <h2 className="text-[24px] text-[#117ABA] lato-400 text-start pb-12">{heading}</h2>
       )}
       {subheading && (
-        <p className="text-gray-600 text-center mb-6">{subheading}</p>
+        <p className="text-black text-center mb-6">{subheading}</p>
       )}
 
       {/* animate the whole grid on index change for a smooth, subtle effect */}
@@ -97,14 +97,14 @@ export default function SimpleCarousel({
           onClick={prev}
           className="p-3 rounded-full border bg-white shadow hover:bg-gray-50"
         >
-          <ChevronLeft className="h-5 w-5 text-gray-600" />
+          <ChevronLeft className="h-5 w-5 text-black" />
         </button>
 
         <button
           onClick={next}
           className="p-3 rounded-full border bg-white shadow hover:bg-gray-50"
         >
-          <ChevronRight className="h-5 w-5 text-gray-600" />
+          <ChevronRight className="h-5 w-5 text-black" />
         </button>
       </div>
     </section>

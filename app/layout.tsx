@@ -28,9 +28,9 @@ export default function RootLayout({
           Skip to content
         </a>
         <Suspense fallback={null}>
-          <PageTransition>
+          {/* <PageTransition> */}
             <main id="content" className="">{children}</main>
-          </PageTransition>
+          {/* </PageTransition> */}
         </Suspense>
          <FloatingButton />
         <Analytics />

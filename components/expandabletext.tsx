@@ -180,7 +180,7 @@ export function ReadMoreDialog({
     ? content.map((block:any, i:any) => {
         if (block.type === "heading") {
           return (
-            <p key={i} className="font-semibold text-gray-900">
+            <p key={i} className="font-semibold text-black">
               {block.text}
             </p>
           );

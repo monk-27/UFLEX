@@ -43,12 +43,12 @@ function Arrow({ onClick, disabled, direction }: ArrowProps) {
 
       {direction === "left" ? (
         <>
-          <ChevronLeft className="h-5 w-5 text-gray-600" />
+          <ChevronLeft className="h-5 w-5 text-black" />
 
         </>
       ) : (
         <>
-          <ChevronRight className="h-5 w-5 text-gray-600" />
+          <ChevronRight className="h-5 w-5 text-black" />
 
         </>
       )}
@@ -112,7 +112,7 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
                   </div>
 
                   <div className="p-4 md:p-5">
-                    <h3 className="text-center text-gray-600 text-sm lato-400 text-[16px]">{card.title}</h3>
+                    <h3 className="text-center text-black text-sm lato-400 text-[16px]">{card.title}</h3>
                   </div>
                 </div>
               </article>

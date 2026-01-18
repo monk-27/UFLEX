@@ -112,7 +112,7 @@
 //               </div>
 
 //               {/* Team Member Name */}
-//               <h3 className="lato-600 text-gray-600 text-[16px] text-center sm:text-left mb-2">
+//               <h3 className="lato-600 text-black text-[16px] text-center sm:text-left mb-2">
 //                 {member.name}
 //               </h3>
 
@@ -462,7 +462,7 @@ const KeyManagement = () => {
               </div>
 
               <div className="p-6 md:p-8">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900">{selected.name}</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-black">{selected.name}</h3>
                 <p className="mt-1 lato-700 text-[#117ABA]">{selected.position}</p>
                 <p className="mt-4 text-sm md:text-base leading-relaxed text-gray-700">
                   {selected.bio}

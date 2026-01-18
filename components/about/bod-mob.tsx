@@ -153,7 +153,7 @@ export default function BodMob() {
                         />
                       </div>
                       <div className="col-span-3 mt-6 flex h-full flex-col place-content-center justify-between lg:col-span-2 lg:mt-0">
-                        <div className="manrope-400 text-center text-sm text-gray-600">
+                        <div className="manrope-400 text-center text-sm text-black">
                           {testimonial.bio}
                         </div>
                         <div>

@@ -35,7 +35,7 @@ const page = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
         
         {/* ================= LEFT TEXT ================= */}
-        <div className="lato-700 space-y-4 text-[16px] leading-7 text-gray-600">
+        <div className="lato-700 space-y-4 text-[16px] leading-7 text-black">
           <p>
             In the process of providing the best fraud-preventive infallible
             seals of full-proof product security, we ensure that all emissions

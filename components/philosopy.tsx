@@ -110,7 +110,7 @@ const [emblaRef, emblaApi] = useEmblaCarousel({
                         {card.title}
                       </h3>
 
-                      <p className="mt-3 lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
+                      <p className="mt-3 lato-400 text-sm md:text-base leading-relaxed text-black">
                         {card.desc}
                       </p>
                     </div>
