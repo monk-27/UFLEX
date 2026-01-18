@@ -117,7 +117,7 @@ export default function ProductCategorySection({
 
                                     >
                                         <span
-                                            className={`lato-400 text-[16px] sm:text-[18px] leading-relaxed ${category.isActive ? "text-[#117ABA]" : "text-[#4f4f4f]"
+                                            className={`lato-400 text-[16px] sm:text-[18px] leading-relaxed ${category.isActive ? "text-[#117ABA]" : "text-black"
                                                 }`}
                                         >
                                             {category.name}</span>
@@ -143,7 +143,7 @@ export default function ProductCategorySection({
                                         <li key={link.label}>
                                             <a
                                                 href={link.href}
-                                                className="text-gray-700 hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
+                                                className="text-black hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
                                                 {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
                                             >
                                                 {link.label}
@@ -213,7 +213,7 @@ export default function ProductCategorySection({
                                             <li key={link.label}>
                                                 <a
                                                     href={link.href}
-                                                    className="text-gray-700 hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
+                                                    className="text-black hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
                                                     {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
                                                 >
                                                     {link.label}
@@ -380,7 +380,7 @@ export default function ProductCategorySection({
                             <div className="space-y-6">
 
                                 {/* Overview text */}
-                                <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
+                                <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                                     An excellent example of packaging innovation at its best; UFlex presents a
                                     winner in building material packaging due to excellence in technological
                                     advancements. With the impressive use of nano technology to address
@@ -433,7 +433,7 @@ export default function ProductCategorySection({
                                 </h4>
 
                                 {/* Description paragraph */}
-                                <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
+                                <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                                     The company responded with innovative pivot to its line of business by
                                     venturing into manufacturing of safety solutions like N95 Masks. These
                                     are 6-layered personal protection masks without valve which are capable
@@ -534,7 +534,7 @@ export default function ProductCategorySection({
                             <div className="space-y-6">
 
                                 {/* Overview paragraph */}
-                                <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
+                                <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                                     The operations for Moulding Business started in the year 2017 with the aim
                                     of building Injection Moulded products of Flexible Packaging as well as
                                     other industries like Electricals, Auto, Home appliances, Industrial,
@@ -544,7 +544,7 @@ export default function ProductCategorySection({
                                 </p>
 
                                 {/* Quote block 1 */}
-                                <div className="border-l-4 border-[#E06F65] pl-4 italic lato-400 text-[16px] sm:text-[18px] text-[#4f4f4f]">
+                                <div className="border-l-4 border-[#E06F65] pl-4 italic lato-400 text-[16px] sm:text-[18px] text-black">
                                     Our avant-garde Moulding plant Noida is equipped with world-class machines
                                     including Injection Moulding Machines from manufacturers like Arburg,
                                     Toshiba and Milacron; and has an able technical workforce that caters to
@@ -552,7 +552,7 @@ export default function ProductCategorySection({
                                 </div>
 
                                 {/* Paragraph */}
-                                <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
+                                <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                                     Machine capacities available are of 150 Tons, 180 Tons and 250 Tons. The
                                     unit comes armed with capabilities to make all moulding products
                                     biodegradable (enzymes based) also. It has its own well equipped Quality
@@ -561,7 +561,7 @@ export default function ProductCategorySection({
                                 </p>
 
                                 {/* Quote block 2 */}
-                                <div className="border-l-4 border-[#E06F65] pl-4 italic lato-400 text-[16px] sm:text-[18px] text-[#4f4f4f]">
+                                <div className="border-l-4 border-[#E06F65] pl-4 italic lato-400 text-[16px] sm:text-[18px] text-black">
                                     We, at UFlex, provide customized range of Precision Plastic Components for
                                     various segments like Packaging, Industrial, Electrical, Automobile,
                                     Medical and Home Appliances using the latest technology and well-equipped

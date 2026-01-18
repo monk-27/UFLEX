@@ -68,7 +68,7 @@ function _AwardsAccolades({
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-gray-700 md:text-2xl">{first.title}</h3>
+              <h3 className="text-xl font-semibold text-black md:text-2xl">{first.title}</h3>
               {first.description && (
                 <p className="mt-3 max-w-prose text-[15px] leading-relaxed text-zinc-700 md:text-[16px]">
                   {first.description}

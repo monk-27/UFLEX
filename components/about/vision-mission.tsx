@@ -12,7 +12,7 @@ const VisionMission = () => {
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 mt-12 grid md:grid-cols-2 gap-8">
           <div className="rounded-lg bg-gray-100 p-6 text-center transition-shadow hover:shadow-md ">
             <h3 className="text-2xl lato-400 mb-4 text-[#117ABA] ">Vision</h3>
-            <p className="text-gray-700  leading-relaxed text-lg">
+            <p className="text-black  leading-relaxed text-lg">
               Be a leading company and preferred supplier for providing flexible packaging solutions to customers across
               the world maximizing value for all stakeholders.
             </p>
@@ -21,7 +21,7 @@ const VisionMission = () => {
                     <div className="rounded-lg bg-gray-100 p-6 text-center transition-shadow hover:shadow-md ">
 
             <h3 className="text-2xl lato-400 mb-4 text-[#117ABA] ">Mission</h3>
-            <p className="text-gray-700 lato-400 leading-relaxed text-lg">
+            <p className="text-black lato-400 leading-relaxed text-lg">
               To meet customers' dynamic packaging needs by providing innovative, productive, cost-effective, optimised
               and eco-friendly packaging solutions, continually adding value to their business.
             </p>

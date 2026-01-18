@@ -73,7 +73,7 @@ export default function SimpleCarousel({
                 <h3 className="text-lg text-[#117ABA] lato-700 mb-2">
                   {card.title}
                 </h3>
-                <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">{card.desc}</p>
+                <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">{card.desc}</p>
               </div>
 
               {card.dynamiclink && (

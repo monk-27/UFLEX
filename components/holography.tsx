@@ -467,7 +467,7 @@ const HoloGraphyComp: React.FC<Props> = ({ business }) => {
                                     Holography
                                 </motion.h1>
 
-                                <p className="text-wrap max-w-xl lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
+                                <p className="text-wrap max-w-xl lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                                     {packagingData[0].content[0].text}
                                 </p>
 

@@ -132,7 +132,7 @@ export default function ProductsPage() {
               <h1 className="text-[28px] lato-700 text-[#117ABA]">
                 Printing Cylinders Products
               </h1>
-              <p className="lato-400 text-[18px] text-[#4f4f4f]">
+              <p className="lato-400 text-[18px] text-black">
                 Our product range extends from rotogravure cylinders to Anilox rollers, lamination and coating rollers, embossing rollers to mica & wood-grain cylinders.
 
 UFlex’ Printing Cylinders business products range includes a variety of Gravure Printing Cylinders, Flexo Plates and Flexo Printing Sleeves

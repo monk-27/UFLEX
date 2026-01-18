@@ -249,7 +249,7 @@ const Keypeople = ({ title, people }: Props) => {
                 <p className="mt-1 lato-700 text-[#117ABA]">
                   {selected.role}
                 </p>
-                <p className="mt-4 text-sm md:text-base leading-relaxed text-gray-700">
+                <p className="mt-4 text-sm md:text-base leading-relaxed text-black">
                   {selected.summary}
                 </p>
               </div>

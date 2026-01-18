@@ -96,7 +96,7 @@ useEffect(() => {
               //   onClick={() => setActiveId(tab.id)}
               //   className={[
               //     "relative px-1 pb-3 pt-1 flex-shrink-0 lato-400 text-[13px] md:text-[16px]",
-              //     isActive ? "text-[#117ABA] lato-700" : "text-[#4f4f4f]",
+              //     isActive ? "text-[#117ABA] lato-700" : "text-black",
               //   ].join(" ")}
               // >
               //   {tab.label}
@@ -109,7 +109,7 @@ useEffect(() => {
                 onClick={() => handleTabClick(tab.id)}
                 className={[
                   "relative px-1 pb-3 pt-1 flex-shrink-0 lato-400 text-[13px] md:text-[16px]",
-                  isActive ? "text-[#117ABA] lato-700" : "text-[#4f4f4f]",
+                  isActive ? "text-[#117ABA] lato-700" : "text-black",
                 ].join(" ")}
               >
                 {tab.label}

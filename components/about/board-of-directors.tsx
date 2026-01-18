@@ -250,7 +250,7 @@ const BoardOfDirectors = () => {
               <div className="p-6 md:p-8">
                 <h3 className="text-xl md:text-2xl font-bold text-black">{selected.name}</h3>
                 <p className="mt-1 lato-700 text-[#117ABA]">{selected.position}</p>
-                <p className="mt-4 text-sm md:text-base leading-relaxed text-gray-700">
+                <p className="mt-4 text-sm md:text-base leading-relaxed text-black">
                   {selected.bio}
                 </p>
                 {/* <div className="mt-6">

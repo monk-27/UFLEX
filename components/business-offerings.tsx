@@ -52,7 +52,7 @@ export default function OfferingsGrid({ items }: OfferingsProps) {
                   {item.title}
                 </h3>
 
-                <p className="mt-1 text-[16px] leading-6 lato-400 text-gray-700 line-clamp-20">
+                <p className="mt-1 text-[16px] leading-6 lato-400 text-black line-clamp-20">
                   {item.description}
                 </p>
               </div>

@@ -111,7 +111,7 @@ export function AwardsSlider({ heading, items }: any) {
              rounded-full border border-gray-100 bg-white p-3 shadow-sm
               hover:opacity-100 transition md:left-0"
             >
-              <ChevronLeft className="h-5 w-5 text-gray-700" />
+              <ChevronLeft className="h-5 w-5 text-black" />
            </button>
             <button
               onClick={() => go("next")}
@@ -119,7 +119,7 @@ export function AwardsSlider({ heading, items }: any) {
              rounded-full border border-gray-200 bg-white p-3 shadow-sm
               hover:opacity-100 transition md:right-0"
             >
-              <ChevronRight className="h-5 w-5 text-gray-700" /></button>
+              <ChevronRight className="h-5 w-5 text-black" /></button>
           </div>
         </div>
         <Link href="/hall-of-fame/buisness-awards">

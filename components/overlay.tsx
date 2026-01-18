@@ -276,18 +276,18 @@ const Modal = ({ module, onClose }: { module: OverlayModule; onClose: () => void
             <div className="p-8 md:p-12">
               <div className="max-w-3xl mx-auto space-y-8">
                 {module.description && (
-                  <p className="text-lg text-gray-700 leading-relaxed">
+                  <p className="text-lg text-black leading-relaxed">
                     {module.description}
                   </p>
                 )}
 
                 {module.longdesc && (
                   <div 
-                    className="text-gray-700 text-base md:text-lg leading-relaxed prose prose-lg max-w-none"
+                    className="text-black text-base md:text-lg leading-relaxed prose prose-lg max-w-none"
                     dangerouslySetInnerHTML={{ __html: module.longdesc }} // if HTML, otherwise just render text
                   />
                   // Or if plain text:
-                  // <div className="text-gray-700 text-base md:text-lg leading-relaxed whitespace-pre-line">
+                  // <div className="text-black text-base md:text-lg leading-relaxed whitespace-pre-line">
                   //   {module.longdesc}
                   // </div>
                 )}

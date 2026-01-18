@@ -138,7 +138,7 @@ export default function DynamicCarouselModal({
               onClick={() => setSelectedItem(null)}
               className="absolute right-3 top-3 z-10 bg-white border border-gray-300 p-2 rounded-full shadow-md hover:bg-gray-50"
             >
-              <X className="h-5 w-5 text-gray-700" />
+              <X className="h-5 w-5 text-black" />
             </button>
 
             <div className="p-6 md:p-8">
@@ -157,7 +157,7 @@ export default function DynamicCarouselModal({
               <h3 className="text-2xl md:text-3xl lato-400 text-black leading-tight">
                 {selectedItem.title}
               </h3>
-              <div className="mt-6 text-gray-700 lato-400 text-base md:text-lg leading-relaxed space-y-4">
+              <div className="mt-6 text-black lato-400 text-base md:text-lg leading-relaxed space-y-4">
                 {selectedItem.longDesc.split("\n\n").map((para, i) => (
                   <p key={i}>{para}</p>
                 ))}

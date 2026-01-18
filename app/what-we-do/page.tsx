@@ -272,7 +272,7 @@ const [emblaRef, emblaApi] = useEmblaCarousel({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.05 }}
-            className="lato-400 text-[16px] sm:text-[20px] leading-relaxed text-[#4f4f4f] mt-5 space-y-4 "
+            className="lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black mt-5 space-y-4 "
           >
             <p>
               We operate across the entire packaging value chain, offering unmatched integration and scale. Our

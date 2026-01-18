@@ -176,7 +176,7 @@
 
 //                     <button
 //                       onClick={() => setOpenIdx(null)}
-//                       className={`absolute right-3 top-3 rounded-full p-2 bg-white/80 hover:bg-white text-gray-700 shadow`}
+//                       className={`absolute right-3 top-3 rounded-full p-2 bg-white/80 hover:bg-white text-black shadow`}
 //                       aria-label="Close"
 //                     >
 //                       <X size={18} />
@@ -193,7 +193,7 @@
 //                         </div>
 //                       </div>
 
-//                       {d.bio && <p className="mt-4 text-gray-700 leading-relaxed">{d.bio}</p>}
+//                       {d.bio && <p className="mt-4 text-black leading-relaxed">{d.bio}</p>}
 
 //                       <div className="mt-5 flex justify-end">
 //                         <button
@@ -464,7 +464,7 @@ const KeyManagement = () => {
               <div className="p-6 md:p-8">
                 <h3 className="text-xl md:text-2xl font-bold text-black">{selected.name}</h3>
                 <p className="mt-1 lato-700 text-[#117ABA]">{selected.position}</p>
-                <p className="mt-4 text-sm md:text-base leading-relaxed text-gray-700">
+                <p className="mt-4 text-sm md:text-base leading-relaxed text-black">
                   {selected.bio}
                 </p>
                 {/* <div className="mt-6">

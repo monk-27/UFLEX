@@ -43,7 +43,7 @@ const page = () => {
         </p>
 
         {/* Sub-heading */}
-        <p className="lato-700 text-[16px] text-gray-700">
+        <p className="lato-700 text-[16px] text-black">
           Enzymatic Delamination Technology (EDT)
         </p>
 

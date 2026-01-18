@@ -50,7 +50,7 @@
 //               {locations.India.map((location, idx) => (
 //                 <li key={idx} className="flex items-start gap-3">
 //                   <span className="text-[#117ABA] lato-800 text-xl mt-0.5">✓</span>
-//                   <span className="text-gray-700 text-lg">{location}</span>
+//                   <span className="text-black text-lg">{location}</span>
 //                 </li>
 //               ))}
 //             </ul>
@@ -62,7 +62,7 @@
 //               {locations.International.map((location, idx) => (
 //                 <li key={idx} className="flex items-start gap-3">
 //                   <span className="text-[#117ABA] lato-800 text-xl mt-0.5">✓</span>
-//                   <span className="text-gray-700 text-lg">{location}</span>
+//                   <span className="text-black text-lg">{location}</span>
 //                 </li>
 //               ))}
 //             </ul>
@@ -214,7 +214,7 @@ const GlobalFootprint = () => {
                 <ul className="space-y-2">
                   {items.map((location, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="lato-400 text-gray-700 text-lg">{location}</span>
+                      <span className="lato-400 text-black text-lg">{location}</span>
                     </li>
                   ))}
                 </ul>
@@ -234,7 +234,7 @@ const GlobalFootprint = () => {
                 <ul className="space-y-2">
                   {items.map((location, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="text-gray-700 text-lg">{location}</span>
+                      <span className="text-black text-lg">{location}</span>
                     </li>
                   ))}
                 </ul>
@@ -256,7 +256,7 @@ const GlobalFootprint = () => {
                 <ul className="space-y-2">
                   {items.map((location, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="text-gray-700 text-lg">{location}</span>
+                      <span className="text-black text-lg">{location}</span>
                     </li>
                   ))}
                 </ul>
@@ -274,7 +274,7 @@ const GlobalFootprint = () => {
                 <ul className="space-y-2">
                   {items.map((location, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="text-gray-700 text-lg">{location}</span>
+                      <span className="text-black text-lg">{location}</span>
                     </li>
                   ))}
                 </ul>

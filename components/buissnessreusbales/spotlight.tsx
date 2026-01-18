@@ -72,7 +72,7 @@ export function SpotLightSlider({ heading, items }: any) {
       {current.title}
     </h3>
 
-    <p className="whitespace-pre-line lato-400 text-[16px] sm:text-[20px] leading-relaxed text-[#4f4f4f]">
+    <p className="whitespace-pre-line lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black">
       {current.description}
     </p>
   </div>

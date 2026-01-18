@@ -110,7 +110,7 @@ export default function ProductCategorySection({
 
                                     >
                                         <span
-                                            className={`lato-400 text-[16px] sm:text-[18px] leading-relaxed ${category.isActive ? "text-[#117ABA]" : "text-[#4f4f4f]"
+                                            className={`lato-400 text-[16px] sm:text-[18px] leading-relaxed ${category.isActive ? "text-[#117ABA]" : "text-black"
                                                 }`}
                                         >
                                             {category.name}</span>
@@ -136,7 +136,7 @@ export default function ProductCategorySection({
                                         <li key={link.label}>
                                             <a
                                                 href={link.href}
-                                                className="text-gray-700 hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
+                                                className="text-black hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
                                                 {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
                                             >
                                                 {link.label}
@@ -206,7 +206,7 @@ export default function ProductCategorySection({
                                         <li key={link.label}>
                                             <a
                                                 href={link.href}
-                                                className="text-gray-700 hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
+                                                className="text-black hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
                                                 {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
                                             >
                                                 {link.label}
@@ -264,7 +264,7 @@ export default function ProductCategorySection({
                                     Overview
                                 </h3>
                             </div>
-                            <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
+                            <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                                 {overview
                                 }
                             </p>
@@ -287,10 +287,10 @@ export default function ProductCategorySection({
                                                 key={prop}
                                                 variants={itemVariants}
                                                 custom={i}
-                                                className="flex items-start gap-3 text-gray-700"
+                                                className="flex items-start gap-3 text-black"
                                             >
                                                 <span className="text-[#117ABA] lato-400 text-xl leading-none mt-1">✓</span>
-                                                <span className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">{prop}</span>
+                                                <span className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">{prop}</span>
                                             </motion.li>
                                         ))}
                                     </ul>
@@ -359,7 +359,7 @@ export default function ProductCategorySection({
                                             {item.title}
                                         </h3>
 
-                                        <div className="lato-400 text-[16px] sm:text-[18px] text-[#4f4f4f] whitespace-pre-line">
+                                        <div className="lato-400 text-[16px] sm:text-[18px] text-black whitespace-pre-line">
 
                                             {description.map((text, index) => (
                                                 <p key={index} className="leading-relaxed">

@@ -31,7 +31,7 @@ const CompanyInfo = () => {
             </div>
 
             {/* Right Column – Truncated + Read More */}
-            <div className="space-y-5 lato-400 leading-relaxed text-gray-700 md:text-lg">
+            <div className="space-y-5 lato-400 leading-relaxed text-black md:text-lg">
               <p>
                 UFlex is India’s largest fully integrated multinational flexible packaging
                 and solutions company with state-of-the-art manufacturing facilities in
@@ -76,14 +76,14 @@ const CompanyInfo = () => {
             {/* Close Button */}
             <button
               onClick={() => setIsModalOpen(false)}
-              className="absolute right-4 top-4 text-gray-500 transition hover:text-gray-700"
+              className="absolute right-4 top-4 text-gray-500 transition hover:text-black"
             >
                               <X className="h-5 w-5 text-black" />
 
             </button>
 
             {/* Full Content */}
-            <div className="space-y-5 lato-400 leading-relaxed text-gray-700 md:text-lg">
+            <div className="space-y-5 lato-400 leading-relaxed text-black md:text-lg">
               <p>
                 UFlex is India’s largest fully integrated multinational flexible packaging
                 and solutions company with state-of-the-art manufacturing facilities in

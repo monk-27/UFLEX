@@ -8,6 +8,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { motion } from "framer-motion";
 import { ReadMoreDialog } from "@/components/expandabletext";
 import Image from 'next/image';
+import Breadcrumb from "@/components/breadcrumb";
 
 export default function ProductsPage() {
     const productsData: any = {
@@ -424,41 +425,41 @@ export default function ProductsPage() {
 
 
         "alox-coated": {
-  key: "alox-coated",
-  title: "AlOx Coated Films",
-  heroImageUrl:
-    "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-06130321303.jpg", // suitable transparent/high-tech film image
-  brandTag: "AlOx Coated",
-  overview: `AlOx coating is the application of a thin and highly transparent aluminium oxide on packaging films that imparts high moisture and gas barrier properties giving a tough fight to aluminium foils and metalized films. It is the only true high-barrier flexible packaging material available, that is transparent and allows packaged product to be clearly visible. AlOx coating is a cutting edge technology that only a very select/ handful of film manufacturers are equipped with.`,
+            key: "alox-coated",
+            title: "AlOx Coated Films",
+            heroImageUrl:
+                "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-06130321303.jpg", // suitable transparent/high-tech film image
+            brandTag: "AlOx Coated",
+            overview: `AlOx coating is the application of a thin and highly transparent aluminium oxide on packaging films that imparts high moisture and gas barrier properties giving a tough fight to aluminium foils and metalized films. It is the only true high-barrier flexible packaging material available, that is transparent and allows packaged product to be clearly visible. AlOx coating is a cutting edge technology that only a very select/ handful of film manufacturers are equipped with.`,
 
-  categories: [
-    { name: "BOPET Films", productKey: "bopet" },
-    { name: "BOPP Films", productKey: "bopp" },
-    { name: "CPP Films", productKey: "cpp" },
-    { name: "Metallised Films", productKey: "metallised" },
-    { name: "Special Effects Films", productKey: "special-effects" },
-    { name: "AlOx Coated Films", productKey: "alox-coated" },
-  ],
+            categories: [
+                { name: "BOPET Films", productKey: "bopet" },
+                { name: "BOPP Films", productKey: "bopp" },
+                { name: "CPP Films", productKey: "cpp" },
+                { name: "Metallised Films", productKey: "metallised" },
+                { name: "Special Effects Films", productKey: "special-effects" },
+                { name: "AlOx Coated Films", productKey: "alox-coated" },
+            ],
 
-  performanceProperties: [
-    "Facilitates operations like optical scanning/ inspection and metal detection during and after the packaging process – a property which is not achievable with aluminium foils or metalized films",
-    "Enhanced barrier level in comparison to other transparent flexible packaging materials like Polyvinylidene Chloride (PVDC) based structures and Ethylene Vinyl Alcohol (EVOH) co-extrusions",
-    "Moisture and gas permeability is not affected by high levels of temperature or relative humidity and are independent of the base film thickness thus enabling maximum down-gauging of packaging materials",
-    "These films are microwavable unlike aluminium foils and metalized films",
-  ],
+            performanceProperties: [
+                "Facilitates operations like optical scanning/ inspection and metal detection during and after the packaging process – a property which is not achievable with aluminium foils or metalized films",
+                "Enhanced barrier level in comparison to other transparent flexible packaging materials like Polyvinylidene Chloride (PVDC) based structures and Ethylene Vinyl Alcohol (EVOH) co-extrusions",
+                "Moisture and gas permeability is not affected by high levels of temperature or relative humidity and are independent of the base film thickness thus enabling maximum down-gauging of packaging materials",
+                "These films are microwavable unlike aluminium foils and metalized films",
+            ],
 
-  // No applications section in screenshot → omitted
-//   applications: [],
+            // No applications section in screenshot → omitted
+            //   applications: [],
 
-  // No innovations section in screenshot → omitted
-//   innovations: [],
+            // No innovations section in screenshot → omitted
+            //   innovations: [],
 
-  quickLinks: [
-    { label: "Flex Films Website ↗", href: "https://www.flexfilms.com", external: true },
-    { label: "Request Quote", href: "https://www.flexfilm.com/" },
-    { label: "Download Catalog", href: "https://www.flexfilm.com/" },
-  ],
-},
+            quickLinks: [
+                { label: "Flex Films Website ↗", href: "https://www.flexfilms.com", external: true },
+                { label: "Request Quote", href: "https://www.flexfilm.com/" },
+                { label: "Download Catalog", href: "https://www.flexfilm.com/" },
+            ],
+        },
     };
 
     const [selectedKey, setSelectedKey] = useState("bopet");
@@ -482,62 +483,61 @@ export default function ProductsPage() {
         <>
 
             <SiteHeader />
-            <section className='bg-white pt-4 sm:pt-12'>
-                <div className="max-w-7xl mx-auto px-4">
+            <section className='bg-white '>
+                <div className="">
                     <div className="space-y-0">
-                        <div className="grid py-4 lg:grid-cols-2 lg:py-1 gap-10">
 
-                            <div>
-                                <motion.h1
-                                    initial={{ opacity: 0, y: 10 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    className="text-[18px] lato-700 text-[#117ABA] md:text-[28px]"
-                                >
-                                    Packaging Films Products
-                                </motion.h1>
+                        <section className="relative w-full h-[380px] sm:h-[641px] overflow-hidden">
 
-                                <p className=" text-wrap max-w-xl lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
-                                    Flex’s Packaging Films Business’s products range from Biaxially Oriented Polyethylene Terepthalate (BOPET) Films "F L E X P E T", Biaxially Oriented Polypropylene (BOPP) Films "F L E X O P P", Cast Polypropylene (CPP) Films "F L E X C P P", Metallised BOPP, BOPET & CPP Films "F L E X M E T P R O T E C T", Special Effects Films, AIOx Coated Films.
-                                </p>
+                            <Image
+                                src="/images/resin.png"
+                                alt="Investors Relations"
+                                fill
+                                className="object-cover w-full h-full"
+                                priority
+                            />
 
-                                {/* <button
-                                onClick={() => setOpen(true)}
-                                className="mt-4 lato-700 text-[14px] text-[#117ABA]  hover:underline"
-                            >
-                                Read more
-                                <span aria-hidden>↗</span>
+                            <div className="absolute inset-0 bg-black/40"></div>
 
-                            </button>
-
-                            <ReadMoreDialog
-                                open={open}
-                                onClose={() => setOpen(false)}
-                                title={packagingData[0].title}
-                                imageSrc={packagingData[0].image}
-                                imageAlt={packagingData[0].title}
-                                paragraphs={packagingData[0].paragraphs}
-                            /> */}
-
-                            </div>
 
                             <motion.div
-                                initial={{ opacity: 0, scale: 0.98 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                viewport={{ once: true }}
-                                className="relative aspect-[16/10] w-full overflow-hidden  "
+                                className="absolute inset-0 flex flex-col justify-end  text-white"
+                                initial="hidden"
+                                animate="visible"
+                                variants={{
+                                    hidden: { opacity: 0, y: 30 },
+                                    visible: {
+                                        opacity: 1,
+                                        y: 0,
+                                        transition: { delayChildren: 0.3, staggerChildren: 0.3 },
+                                    },
+                                }}
                             >
-                                <Image
-                                    src="/images/resin.png"
-                                    alt="UFlex capabilities across the value chain"
-                                    fill
-                                    className="object-cover rounded-sm"
-                                    priority
-                                />
 
-                                <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
+
+                                <motion.div
+                                    className="bg-[#117ABA] lato-400 text-left w-[450px] h-[250px] sm:w-[706px] sm:h-[341px] text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[20px] pl-4 pt-2 pb-4 pr-4 md:pl-24 lg:pl-28 sm:pt-8 sm:pb-4 sm:pr-12 mb-12 sm:mb-24"
+                                    variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+                                >
+                                    <div className="w-[300px] sm:w-[537px]">
+
+
+                                        <h1 className="text-white text-[14px] md:text-[28px] lato-700 ">
+                                            Packaging Films Products
+                                        </h1>
+                                        Flex’s Packaging Films Business’s products range from Biaxially Oriented Polyethylene Terepthalate (BOPET) Films "F L E X P E T", Biaxially Oriented Polypropylene (BOPP) Films "F L E X O P P", Cast Polypropylene (CPP) Films "F L E X C P P", Metallised BOPP, BOPET & CPP Films "F L E X M E T P R O T E C T", Special Effects Films, AIOx Coated Films.
+                                    </div>
+                                </motion.div>
+
+
                             </motion.div>
-                        </div>
+                        </section>
+                        <Breadcrumb
+                            items={[
+                                { label: "Packaging films Business", href: "/packaging-films-business" },
+                                { label: "Packaging Films Products" },
+                            ]}
+                        />
                         <ProductCategorySection
                             {...productProps}
                             categories={enhancedCategories}

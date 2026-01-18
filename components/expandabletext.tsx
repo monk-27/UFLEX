@@ -39,7 +39,7 @@
 //         viewport={{ once: true }}
 //         transition={{ delay: 0.05 }}
 //         className={clsx(
-//           'max-w-[550px] lato-400 text-[16px] sm:text-[20px] leading-relaxed text-[#4f4f4f]  mt-5 ',
+//           'max-w-[550px] lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black  mt-5 ',
 //           className
 //         )}
 //       >
@@ -170,12 +170,12 @@ export function ReadMoreDialog({
                 />
               )}
 
-              {/* <div className="space-y-4 text-sm leading-relaxed text-gray-700 md:text-base">
+              {/* <div className="space-y-4 text-sm leading-relaxed text-black md:text-base">
                 {paragraphs.map((p, i) => (
                   <p key={i}>{p}</p>
                 ))}
               </div> */}
-              <div className="space-y-4 text-sm leading-relaxed text-gray-700 md:text-base">
+              <div className="space-y-4 text-sm leading-relaxed text-black md:text-base">
   {content
     ? content.map((block:any, i:any) => {
         if (block.type === "heading") {

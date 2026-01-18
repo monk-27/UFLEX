@@ -35,7 +35,7 @@ export function BusinessHero({ business }: any) {
         <h2 className="lato-700 text-[28px] md:text-[32px] text-[#117ABA] mb-4">
           {business.subheading}
         </h2>
-        <p className="lato-400 text-[14px] md:text-[15px] leading-relaxed text-[#4f4f4f] ">
+        <p className="lato-400 text-[14px] md:text-[15px] leading-relaxed text-black ">
           {hero.body}
         </p>
         <button className="group flex items-center gap-1 mt-4 text-[16px] lato-700 text-black hover:text-[#0e5d8a] transition">

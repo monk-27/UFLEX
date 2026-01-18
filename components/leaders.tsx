@@ -841,7 +841,7 @@ export default function BusinessAwards() {
                 </p>
 
                 
-                <p className=" text-[14px] lato-400 leading-6 text-gray-700">
+                <p className=" text-[14px] lato-400 leading-6 text-black">
                   {card.description}
                 </p>
               </div>
@@ -892,7 +892,7 @@ export default function BusinessAwards() {
           By: {card.by}
         </p>
 
-        <p className="text-[16px] lato-400 leading-6 text-gray-700">
+        <p className="text-[16px] lato-400 leading-6 text-black">
           {card.description}
         </p>
       </div>

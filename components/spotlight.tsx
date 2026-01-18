@@ -169,7 +169,7 @@ export default function LeadershipAwards() {
                   {item.by}
                 </p>
 
-                <p className="text-[16px] leading-6 lato-400 text-gray-700 line-clamp-8 min-h-[120px]">
+                <p className="text-[16px] leading-6 lato-400 text-black line-clamp-8 min-h-[120px]">
                   {item.description}
                 </p>
               </div>

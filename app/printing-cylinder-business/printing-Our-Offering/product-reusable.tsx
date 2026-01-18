@@ -148,7 +148,7 @@ export default function ProductCategorySection({
               <span className="h-6 w-[4px] bg-[#117ABA]" />
               <h3 className="text-[#117ABA] lato-700 text-xl">Overview</h3>
             </div>
-            <p className="whitespace-pre-line text-gray-700 leading-relaxed">
+            <p className="whitespace-pre-line text-black leading-relaxed">
               {overview}
             </p>
           </div>
@@ -164,13 +164,13 @@ export default function ProductCategorySection({
 
                 <div className="p-6 space-y-6">
                   {block.text && (
-                    <p className="whitespace-pre-line text-gray-700">
+                    <p className="whitespace-pre-line text-black">
                       {block.text}
                     </p>
                   )}
 
                   {block.bullets && (
-                    <ul className="list-disc pl-6 text-gray-700">
+                    <ul className="list-disc pl-6 text-black">
                       {block.bullets.map((b: string, i: number) => (
                         <li key={i}>{b}</li>
                       ))}
@@ -196,7 +196,7 @@ export default function ProductCategorySection({
                   )}
 
                   {block.subText && (
-                    <p className="whitespace-pre-line text-gray-700">
+                    <p className="whitespace-pre-line text-black">
                       {block.subText}
                     </p>
                   )}
@@ -227,11 +227,11 @@ export default function ProductCategorySection({
           {/* ================= SIMPLE LAYOUT (CTP / SLEEVES) ================= */}
           {activeKey !== "gravure" && (
             <div className="border border-gray-200 p-6 space-y-6">
-              <h3 className="lato-700 text-xl text-gray-700">{sectionData.title}</h3>
-              <p className="text-gray-700">{sectionData.overview}</p>
+              <h3 className="lato-700 text-xl text-black">{sectionData.title}</h3>
+              <p className="text-black">{sectionData.overview}</p>
 
               {sectionData.bullets && (
-                <ul className="list-disc pl-6 text-gray-700">
+                <ul className="list-disc pl-6 text-black">
                   {sectionData.bullets.map((b: string, i: number) => (
                     <li key={i}>{b}</li>
                   ))}

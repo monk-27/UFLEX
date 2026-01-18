@@ -56,7 +56,7 @@ const Careers = () => {
                     </div> */}
                     <CareersMainCarousel />
                     {/* <div className='text-center max-w-7xl mx-auto pt-4'>
-                        <p className=" lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]">
+                        <p className=" lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                             Join us, and be part of a movement that’s changing the world, one package
                             at a time.
 
@@ -64,7 +64,7 @@ const Careers = () => {
 
                             If you are looking for a rewarding career, you may write to us at{" "}
                             <span className="text-[#117ABA]">hr@uflexltd.com . </span>
-                            <span className='lato-400 text-[16px] sm:text-[18px] leading-relaxed text-[#4f4f4f]'>
+                            <span className='lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black'>
                                 All current openings can be viewed at the link below. Click the button to submit your application.
                             </span>
 

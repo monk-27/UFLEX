@@ -40,7 +40,7 @@ function _LeaderSpotlight({
   people,
   bgClassName = "bg-[#ECECEC]",
   nameColorClass = "text-[#0F2B4F]",
-  roleColorClass = "text-gray-700",
+  roleColorClass = "text-black",
   buttonBgClass = "bg-[#117ABA]",
   buttonTextClass = "text-white",
   className = "",

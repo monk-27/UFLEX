@@ -131,7 +131,7 @@ export default function ProductCategorySection({
 
                                     >
                                         <span
-                                            className={`lato-400 text-[16px] sm:text-[18px] leading-relaxed ${category.isActive ? "text-[#117ABA]" : "text-[#4f4f4f]"
+                                            className={`lato-400 text-[16px] sm:text-[18px] leading-relaxed ${category.isActive ? "text-[#117ABA]" : "text-black"
                                                 }`}
                                         >
                                             {category.name}</span>
@@ -217,7 +217,7 @@ export default function ProductCategorySection({
                                 Overview:
                             </h3>
                         </div>
-                        <p className="text-gray-700 whitespace-pre-line leading-relaxed">
+                        <p className="text-black whitespace-pre-line leading-relaxed">
                             {overview}
                         </p>
                     </div>
@@ -235,7 +235,7 @@ export default function ProductCategorySection({
 
                                 {/* INTRO TEXT */}
                                 {section.intro && (
-                                    <p className="text-gray-700 leading-relaxed">
+                                    <p className="text-black leading-relaxed">
                                         {section.intro}
                                     </p>
                                 )}
@@ -275,7 +275,7 @@ export default function ProductCategorySection({
                                             </div>
                                         )}
                                         {section.type === "standard" && section.bullets && (
-                                            <ul className="list-disc pl-6 space-y-1 text-gray-700">
+                                            <ul className="list-disc pl-6 space-y-1 text-black">
                                                 {section.bullets.map((bullet, i) => (
                                                     <li key={i}>{bullet}</li>
                                                 ))}
@@ -321,7 +321,7 @@ export default function ProductCategorySection({
 
                                                         {/* SUB INTRO */}
                                                         {sub.intro && (
-                                                            <p className="text-gray-700 leading-relaxed mb-4">
+                                                            <p className="text-black leading-relaxed mb-4">
                                                                 {sub.intro}
                                                             </p>
                                                         )}
