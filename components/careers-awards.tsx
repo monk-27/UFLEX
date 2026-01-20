@@ -6,19 +6,19 @@ import Image from "next/image";
 
 export default function CarresStatus() {
   return (
-    <section className="relative w-full overflow-hidden px-4 pb-12">
+    <section className="w-screen relative bg-[#117ABA]  overflow-hidden px-4 pb-12">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* ================= Main Content ================= */}
-        <div className="grid lg:grid-cols-2 gap-10 items-start py-4 lg:pt-1">
+        <div className="grid lg:grid-cols-2 gap-10 items-start py-4 lg:pt-6">
 
           {/* ---------- Text Column ---------- */}
           <div className="space-y-4">
-            
-           
+
+
 
             <motion.p
-              className="lato-400 lato-400 text-sm md:text-base leading-relaxed text-black lg:pt-24"
+              className="lato-400 lato-400 text-sm md:text-base leading-relaxed text-white lg:pt-24"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -27,21 +27,34 @@ export default function CarresStatus() {
 
 
             </motion.p>
-             <a
-                            href="/hall-of-fame/buisness-awards"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-start rounded-sm texts-md lato-600 bg-[#117ABA] text-white w-auto  py-2 mt-4 px-12 inline-block"
-                        >
-                            View More
-                        </a>
+            <a
+              href="/hall-of-fame/buisness-awards"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2  text-sm lato-400 text-white transition-all "
+            >
+              View More
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="transition-transform group-hover:translate-x-1"
+              >
+                <path
+                  d="M8 0L6.585 1.415L11.17 6H0V8H11.17L6.585 12.585L8 14L14 8L8 0Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
 
 
           </div>
 
           {/* ---------- Image Column ---------- */}
           <motion.div
-            className="relative w-full aspect-[16/10] overflow-hidden "
+            className="relative w-full aspect-[16/10] overflow-hidden pt-4"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -51,14 +64,14 @@ export default function CarresStatus() {
               src="https://uflex.wpdevstudio.site/HTML/uploaded-files/page-banners/life_at_image56.jpg"
               alt="UFlex Learning Academy"
               fill
-              className="object-cover rounded-sm"
+              className="object-cover rounded-sm pt-8"
               priority
             />
           </motion.div>
         </div>
 
         {/* ================= CTA Section ================= */}
-        
+
 
       </div>
     </section>

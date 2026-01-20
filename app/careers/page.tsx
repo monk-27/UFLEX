@@ -23,11 +23,11 @@ export default function Page() {
 
 
 
-        <section className="relative w-full overflow-hidden px-4 pb-12">
+        <section className="relative w-full overflow-hidden px-4 pb-12 mt-6">
             <div className="max-w-7xl mx-auto px-4">
       
               {/* ================= Main Content ================= */}
-              <div className="grid lg:grid-cols-2 gap-10 items-start py-4 lg:py-1">
+              <div className="grid lg:grid-cols-2 gap-10 items-start py-4 lg:py-1 mt-6">
       
                 {/* ---------- Text Column ---------- */}
                 <div className="space-y-4">
