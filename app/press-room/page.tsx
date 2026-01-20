@@ -824,8 +824,8 @@ export default function PressRoomPage() {
       <main className=" py-1 space-y-1">
 
         {/* -------- MEDIA RELEASES -------- */}
-        <section>
-          <h2 className="text-[#117ABA] text-[16px] sm:text-[28px] lato-400 py-4 text-center ">
+        <section className="w-screen relative bg-[#117ABA] mt-8 py-6">
+          <h2 className="text-white text-[16px] sm:text-[28px] lato-400 py-4 text-center ">
             Media Releases
           </h2>
 
@@ -857,10 +857,10 @@ export default function PressRoomPage() {
           </div> */}
           {/* <PdfList items={mediaReleases.pressNotes[notesYear]} /> */}
           <MediaCardsCarousel />
-          <div className="text-center flex justify-center pt-4">
+          <div className="text-center flex justify-center py-4">
             <Link href="/media-releases"
 
-              className="inline-flex items-center gap-1 lato-700 text-[18px] text-[#117ABA] "
+              className="inline-flex items-center gap-1 lato-700 text-[18px] text-white "
             >
               <div className="underline underline-offset-2">
 
