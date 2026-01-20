@@ -69,7 +69,7 @@ export function CaseStudySection({
             <h3 className="text-sm lato-700 leading-snug md:text-base">
               {item.title}
             </h3>
-            <p className="mt-2 lato-400 text-xs leading-snug text-gray-100 md:text-sm">
+            <p className="mt-2 lato-400 text-xs leading-snug text-white md:text-sm">
               {item.description}
             </p>
           </div>

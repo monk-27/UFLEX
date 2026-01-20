@@ -79,12 +79,12 @@ export function AwardsSlider({ heading, items }: any) {
               <div className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.4fr)] items-start">
                 {/* Text */}
                 <div>
-                  <h3 className="lato-400 text-[18px] md:text-[24px] text-gray-200 mb-3">
+                  <h3 className="lato-400 text-[18px] md:text-[24px] text-white mb-3">
                     {current.title}
                   </h3>
 
                   {/* Add mt-4 to keep description where it was */}
-                  <p className="text-wrap max-w-xl whitespace-pre-line lato-400 text-[16px] sm:text-[18px] leading-relaxed text-gray-300 mt-8">
+                  <p className="text-wrap max-w-xl whitespace-pre-line lato-400 text-[16px] sm:text-[18px] leading-relaxed text-white mt-8">
                     {current.description}
                   </p>
                 </div>
