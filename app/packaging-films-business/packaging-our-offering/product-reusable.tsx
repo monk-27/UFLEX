@@ -327,7 +327,7 @@ export default function ProductCategorySection({
                                             Applications
                                         </h3>
                                     </div>
-                                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
+                                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-2">
                                         {applications.map((app, i) => (
                                             <motion.div
                                                 key={app}
@@ -336,8 +336,8 @@ export default function ProductCategorySection({
                                                 whileHover={{ scale: 1.03, y: -4 }}
                                                 className={`
         flex flex-col items-center justify-center text-center
-        w-[110px] h-[60px]  
-        px-4 py-4 sm:px-5 sm:py-1
+         h-[60px]  
+        px-4 py-4 sm:px-5 sm:py-0
         bg-[#F9F9F9] hover:bg-blue-50
         text-black 
         text-[13px] sm:text-[12px] 
