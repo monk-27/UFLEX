@@ -8,32 +8,40 @@ export default function LearnStatus() {
   return (
     <section className="relative w-full overflow-hidden px-4 pb-12">
       <div className="max-w-7xl mx-auto px-4">
+        <div className="mx-auto max-w-7xl px-6 text-center">
+          <div className="flex justify-center text-center pt-2">
+            <div className="flex space-x-0.5">
+
+
+              <Image
+                src="/images/ula.png"
+                width={90}
+                height={15}
+                alt="UFlex Learning Academy"
+                priority
+              />
+              <motion.h1
+                className="text-[24px] lato-600 text-[#117ABA] md:text-[28px] leading-tight"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+              >
+                UFlex Learning Academy
+              </motion.h1>
+            </div>
+
+
+          </div>
+
+        </div>
 
         {/* ================= Main Content ================= */}
-        <div className="grid lg:grid-cols-2 gap-10 items-start py-4 lg:py-1">
+        <div className="grid lg:grid-cols-2 gap-10 items-start py-4 lg:py-4">
 
           {/* ---------- Text Column ---------- */}
           <div className="space-y-4">
-            <div className="flex space-x-1.5 ">
-              <Image
-              src="/images/ula.png"
-              width={90}
-              height={15}
-              alt="UFlex Learning Academy"
-              priority
-            />
-               <motion.h1
-              className="text-[24px] lato-600 text-[#117ABA] md:text-[28px] leading-tight"
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              UFlex Learning Academy
-            </motion.h1>
 
-            
-              </div>
-           
+
 
             <motion.p
               className="lato-400 text-sm md:text-base leading-relaxed text-black"

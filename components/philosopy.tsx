@@ -68,7 +68,7 @@ const [emblaRef, emblaApi] = useEmblaCarousel({
         </p>
       </div>
 
-       <section className="py-12 mx-auto max-w-7xl ">
+       <section className="py-6 mx-auto max-w-7xl ">
         {/* Viewport */}
         <div ref={emblaRef} className="overflow-hidden">
           {/* Container */}
