@@ -137,7 +137,7 @@ export default function ProductCategorySection({
 
                         </div>
 
-                        {quickLinks.length > 0 && (
+                        {/* {quickLinks.length > 0 && (
                             <div className="hidden lg:block p-6 bg-[#F9F9F9] mt-4">
                                 <h3 className="text-sm lato-700 text-gray-800 mb-3 uppercase tracking-wider">
                                     Quick Links
@@ -151,13 +151,13 @@ export default function ProductCategorySection({
                                                 {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
                                             >
                                                 {link.label}
-                                                {/* {link.external && <span aria-hidden>↗</span>} */}
+                                                
                                             </a>
                                         </li>
                                     ))}
                                 </ul>
                             </div>
-                        )}
+                        )} */}
                     </motion.div>
 
                     {/* Mobile Accordion */}
@@ -222,7 +222,7 @@ export default function ProductCategorySection({
 
 
                     </div>
-                    {quickLinks.length > 0 && (
+                    {/* {quickLinks.length > 0 && (
                         <div className="block lg:hidden p-6 mt-4 bg-[#F9F9F9]">
                             <h3 className="text-sm lato-700 text-gray-800 mb-3 uppercase tracking-wider">
                                 Quick Links
@@ -238,7 +238,7 @@ export default function ProductCategorySection({
                                                     {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
                                                 >
                                                     {link.label}
-                                                    {/* {link.external && <span aria-hidden>↗</span>} */}
+                                                   
                                                 </a>
                                             </li>
                                         ))}
@@ -246,7 +246,7 @@ export default function ProductCategorySection({
                                 ))}
                             </ul>
                         </div>
-                    )}
+                    )} */}
                 </aside>
 
                 {/* Main Content */}
