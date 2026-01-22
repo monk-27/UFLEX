@@ -280,7 +280,7 @@ export default function Page() {
         />
       </div>
 
-      <span className="mt-3 text-[#117ABA] text-lg lato-500">
+      <span className="mt-3 lato-700 text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
         {item.year}
       </span>
     </Link>

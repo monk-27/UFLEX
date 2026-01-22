@@ -341,7 +341,7 @@ const [emblaRef, emblaApi] = useEmblaCarousel({
                   <div className="p-5">
                     <div className="flex gap-2">
                       {/* <span className="mt-1 h-6 w-[2px] bg-[#D84A3B]" /> */}
-                      <h3 className="text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
+                      <h3 className="lato-700 text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
                         {card.title}
                       </h3>
                     </div>

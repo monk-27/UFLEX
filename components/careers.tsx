@@ -95,7 +95,7 @@ const Careers = () => {
                         viewport={{ once: true }}
                     >
                         <motion.h3
-                            className=" text-center flex justify-center text-[24px] lato-600 text-white md:text-[28px] md:text-5xl mb-2 pt-12"
+                            className=" text-center flex justify-center text-white text-[24px] lato-700  md:text-[42px]   mb-2 pt-12"
                             initial={{ opacity: 0, y: -20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7, delay: 0.2 }}
@@ -153,7 +153,7 @@ const Careers = () => {
                         className="absolute left-4 top-6 h-6 w-[2px] bg-[#D84A3B]"
                       /> */}
 
-                                                <h3 className="text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
+                                                <h3 className="lato-700 text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
                                                     {it.title}
                                                 </h3>
 

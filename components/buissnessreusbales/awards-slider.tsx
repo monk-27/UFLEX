@@ -55,7 +55,7 @@ export function AwardsSlider({ heading, items }: any) {
         </h2> */}
         <div className=" flex flex-col items-center text-center mb-4">
 
-            <h2 className="text-[28px] lato-400 text-white ">
+            <h2 className="text-white text-[24px] lato-700  md:text-[42px]   ">
               In The Spotlight
             </h2>
 

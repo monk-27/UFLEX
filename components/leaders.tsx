@@ -301,7 +301,7 @@ const AWARDS_DATA: Record<
 > = {
   /* ================= PACKAGING FILMS ================= */
   "corporate-awards": {
-    label: "Corporate Awards",
+    label: "Corporate",
     years: [2025],
     data: {
       2025:[
@@ -726,7 +726,7 @@ export default function BusinessAwards() {
   return (
     <section className="max-w-7xl mx-auto">
       <div className="">
-        <h2 className="text-center text-[28px] lato-400 text-[#117ABA] mb-6">
+        <h2 className="text-center  text-[24px] lato-700  md:text-[42px]   text-[#117ABA] mb-6">
            Awards
         </h2>
 
@@ -884,7 +884,7 @@ export default function BusinessAwards() {
 
       {/* Content */}
       <div className="flex flex-1 flex-col py-4">
-        <h3 className="h-[48px] line-clamp-2 text-[16px] lato-400 leading-snug text-[#117ABA]">
+        <h3 className="h-[58px] line-clamp-3 lato-700 text-[18px] md:text-[20px] leading-tight text-[#117ABA] pb-12">
           {card.title}
         </h3>
 

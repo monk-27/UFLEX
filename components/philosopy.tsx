@@ -106,7 +106,7 @@ const [emblaRef, emblaApi] = useEmblaCarousel({
                         className="absolute left-4 top-6 h-6 w-[2px] bg-[#D84A3B]"
                       /> */}
 
-                      <h3 className="text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
+                      <h3 className="lato-700 text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
                         {card.title}
                       </h3>
 
