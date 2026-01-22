@@ -44,7 +44,7 @@ export default function LearnStatus() {
 
 
             <motion.p
-              className="lato-400 text-sm md:text-base leading-relaxed text-black"
+              className="text-[14px] md:text-[18px] leading-relaxed lato-400 text-black"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -55,23 +55,33 @@ export default function LearnStatus() {
               blended, and classroom programs delivered through our secure and
               accessible online platform.
               <br />
-              <br />
+              {/* <br /> */}
               Our customized programs cater to individual needs, enabling
               employees to excel in their careers. Leveraging modern modules and
               subject-matter experts, we build a culture of continuous learning
               and upskilling across the organization.
               <br />
-              <br />
+              {/* <br /> */}
               With a dedicated team of certified delivery experts and Wing
               Champions from senior leadership, we design structured learning
               journeys for Industry 4.0 reskilling—ensuring every employee thrives
               in a rapidly evolving landscape.
             </motion.p>
+             <p className="text-[14px] md:text-[18px] leading-relaxed lato-700 text-[#117ABA] text-base mb-3 ">
+            Ready to elevate your career? Connect with us:
+          </p>
+
+          <a
+            href="mailto:uflexlearningacademy@uflexltd.com"
+            className="text-[14px] md:text-[18px] text-black leading-relaxed lato-700 inline-flex items-center lato-600 underline underline-offset-4  transition-colors duration-200 hover:text-[#117ABA]"
+          >
+            uflexlearningacademy@uflexltd.com
+          </a>
           </div>
 
           {/* ---------- Image Column ---------- */}
           <motion.div
-            className="relative w-full aspect-[16/10] overflow-hidden "
+            className="relative w-full aspect-[16/12] overflow-hidden "
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -88,23 +98,14 @@ export default function LearnStatus() {
         </div>
 
         {/* ================= CTA Section ================= */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="pt-6 text-center"
         >
-          <p className="lato-600 text-[#117ABA] text-base mb-3 leading-relaxed">
-            Ready to elevate your career? Connect with us:
-          </p>
-
-          <a
-            href="mailto:uflexlearningacademy@uflexltd.com"
-            className="text-gray-800 inline-flex items-center lato-600 underline underline-offset-4 text-base transition-colors duration-200 hover:text-[#117ABA]"
-          >
-            uflexlearningacademy@uflexltd.com
-          </a>
-        </motion.div>
+         
+        </motion.div> */}
 
       </div>
     </section>

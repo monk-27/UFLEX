@@ -125,27 +125,27 @@ export const business = {
     heading: "In The Spotlight",
     items: [
       {
-    image: "/images/awards/b3.png",
-    title: "Business Leader of the Decade 2024 – Mr. Ashok Chaturvedi",
-    by: "Indo-American Chamber of Commerce (IACC)",
-    description:
-      "UFlex Founder & Chairman Mr. Ashok Chaturvedi was honoured for his visionary leadership and contribution to the packaging industry. The award recognises leaders who have significantly influenced India–US business relations and driven industrial, technological, and economic growth over the decade.",
-  },
-      {
-        image: "/images/awards/b1.png",
-    title: "ET Sustainable Organization 2025",
-    by: " ET Now",
-    description:
-      "UFlex was recognised as an ET Sustainable Organization for its commitment to circularity, responsible manufacturing, and long-term ESG goals. The award honours businesses that demonstrate measurable progress in environmental stewardship and sustainability-led transformation.",
-  
+        image: "/images/awards/b3.png",
+        title: "Business Leader of the Decade 2024 – Mr. Ashok Chaturvedi",
+        by: "Indo-American Chamber of Commerce (IACC)",
+        description:
+          "UFlex Founder & Chairman Mr. Ashok Chaturvedi was honoured for his visionary leadership and contribution to the packaging industry. The award recognises leaders who have significantly influenced India–US business relations and driven industrial, technological, and economic growth over the decade.",
       },
       {
-    image: "/images/awards/b7.png",
-    title: "SIES SOP Star Awards 2025",
-    by: "SIES School of Packaging",
-    description:
-      "UFlex was honoured for outstanding packaging innovations that advance sustainability, functionality, and consumer convenience. Winning eight awards, including the prestigious President’s Sustainability Award, reflects UFlex’s commitment to environmentally responsible and high-performance packaging.",
-  },
+        image: "/images/awards/b1.png",
+        title: "ET Sustainable Organization 2025",
+        by: " ET Now",
+        description:
+          "UFlex was recognised as an ET Sustainable Organization for its commitment to circularity, responsible manufacturing, and long-term ESG goals. The award honours businesses that demonstrate measurable progress in environmental stewardship and sustainability-led transformation.",
+
+      },
+      {
+        image: "/images/awards/b7.png",
+        title: "SIES SOP Star Awards 2025",
+        by: "SIES School of Packaging",
+        description:
+          "UFlex was honoured for outstanding packaging innovations that advance sustainability, functionality, and consumer convenience. Winning eight awards, including the prestigious President’s Sustainability Award, reflects UFlex’s commitment to environmentally responsible and high-performance packaging.",
+      },
     ],
   },
 };
@@ -204,35 +204,35 @@ const HallPage = () => {
 
       </section> */}
       <section className="relative w-full  overflow-hidden">
-        
+
         <SustainabilityCarousel />
       </section>
-      
+
 
       {/* ==== IN THE SPOTLIGHT ==== */}
       <section className=" relative   py-6">
-          <div className=" ">
-        <div className="max-w-7xl mx-auto  w-full px-4 sm:px-0">
-
-          
+        <div className=" ">
+          <div className="max-w-7xl mx-auto  w-full px-4 sm:px-0">
 
 
 
-          {/* <AutoMarquee items={MARQUEE_ITEMS} speed={40} /> */}
-          <AwardsSlider
-                                      heading={business.innovations.heading}
-                                      items={business.innovations.items}
-                                  />
 
-          
-</div>
+
+            {/* <AutoMarquee items={MARQUEE_ITEMS} speed={40} /> */}
+            <AwardsSlider
+              heading={business.innovations.heading}
+              items={business.innovations.items}
+            />
+
+
+          </div>
 
         </div>
 
 
-          <section className="pt-6 pb-16  w-full ">
-            <AwardsTabs />
-          </section>
+        <section className="pt-6 pb-16  w-full ">
+          <AwardsTabs />
+        </section>
       </section>
 
 

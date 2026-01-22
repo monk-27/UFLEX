@@ -28,7 +28,7 @@ export function AwardsSection({ data }: any) {
         {/* Content */}
         <div className=" absolute inset-0 flex items-center">
           <div className="max-w-7xl  px-1 lg:px-0">
-            <h2 className="lato-700 text-[24px] md:text-[28px] text-white mb-3">
+            <h2 className="lato-700 lato-700 text-[28px] md:text-[32px] text-white mb-3">
               {data.title}
             </h2>
 

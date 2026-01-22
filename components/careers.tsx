@@ -157,7 +157,7 @@ const Careers = () => {
                                                     {it.title}
                                                 </h3>
 
-                                                <p className="mt-3 lato-400 lato-400 text-sm md:text-base leading-relaxed text-black">
+                                                <p className="mt-3 text-[14px] md:text-[18px] leading-relaxed lato-400 text-black">
                                                     {it.desc}
                                                 </p>
                                             </div>

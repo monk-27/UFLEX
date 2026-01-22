@@ -19,7 +19,7 @@ export function SustainabilitySection({ data }: any) {
         <div className="overflow-hidden grid gap-0 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.2fr)]">
           {/* Text */}
           <div className="pr-12 flex flex-col justify-center">
-            <h2 className="lato-400 text-[20px] md:text-[24px] text-[#117ABA] mb-3">
+            <h2 className="lato-700 text-[28px] md:text-[32px] text-[#117ABA] mb-3">
               {data.title}
             </h2>
             {data.description && <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black mb-4">
@@ -61,7 +61,7 @@ export function SustainabilitySection({ data }: any) {
               {data.title}
             </h2>
             {
-              data.description && <p className="text-wrap max-w-xl lato-400 text-[16px] leading-relaxed text-[#5B5B5B] mb-4">
+              data.description && <p className="text-wrap max-w-xl lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black mb-4">
               {data.description}
             </p>
             }

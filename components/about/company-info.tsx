@@ -31,7 +31,7 @@ const CompanyInfo = () => {
             </div>
 
             {/* Right Column – Truncated + Read More */}
-            <div className="space-y-5 lato-400 leading-relaxed text-black md:text-lg">
+            <div className="space-y-5 lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black">
               <p>
                 UFlex is India’s largest fully integrated multinational flexible packaging
                 and solutions company with state-of-the-art manufacturing facilities in

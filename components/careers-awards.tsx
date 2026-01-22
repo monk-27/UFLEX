@@ -9,16 +9,18 @@ export default function CarresStatus() {
     <section className="w-screen relative bg-[#117ABA]  overflow-hidden px-4 pb-12">
       <div className="max-w-7xl mx-auto px-4">
 
+        <h2 className="text-center text-white text-[24px] lato-700  md:text-[42px] py-4">
+          Awards & Accolades
+        </h2>
         {/* ================= Main Content ================= */}
-        <div className="grid lg:grid-cols-2 gap-10 items-start py-4 lg:pt-6">
+        <div className="grid lg:grid-cols-2 gap-10 items-start">
 
           {/* ---------- Text Column ---------- */}
           <div className="space-y-4">
 
 
-
             <motion.p
-              className="lato-400 lato-400 text-sm md:text-base leading-relaxed text-white lg:pt-24"
+              className="text-[14px] md:text-[18px] leading-relaxed lato-400 text-white lg:pt-24"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -31,7 +33,7 @@ export default function CarresStatus() {
               href="/hall-of-fame/buisness-awards"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2  text-sm lato-400 text-white transition-all "
+              className="flex items-center gap-2  text-[14px] md:text-[18px] leading-relaxed lato-400 text-white transition-all "
             >
               View More
               <svg

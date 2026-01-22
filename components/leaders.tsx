@@ -750,7 +750,7 @@ export default function BusinessAwards() {
                 setActiveBusiness(key as BusinessKey);
                 setActiveYear(val.years[0]);
               }}
-              className={`pb-2 text-sm lato-400 shrink-0 ${activeBusiness === key
+              className={`pb-2 text-[12px] md:text-[14px] leading-relaxed lato-700 shrink-0 ${activeBusiness === key
                 ? "text-[#117ABA] border-b-2 border-[#117ABA]"
                 : "text-black"
                 }`}
@@ -780,7 +780,7 @@ export default function BusinessAwards() {
             <button
               key={y}
               onClick={() => setActiveYear(y)}
-              className={`lato-400 shrink-0 px-6 py-2 text-xs ${activeYear === y
+              className={`text-[14px] md:text-[18px] leading-relaxed lato-700 shrink-0 px-6 py-2 text-xs ${activeYear === y
                 ? "bg-[#F5F5F5]  text-[#555]  border-b-[0.7px] border-b-[#117ABA]"
                 : "bg-[#F5F5F5]  text-[#555]"
                 }`}
@@ -892,7 +892,7 @@ export default function BusinessAwards() {
           By: {card.by}
         </p>
 
-        <p className="text-[16px] lato-400 leading-6 text-black">
+        <p className="lato-400 text-[14px] md:text-[18px] text-black  leading-relaxed">
           {card.description}
         </p>
       </div>

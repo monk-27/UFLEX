@@ -325,7 +325,7 @@ const PackagingKeypeople = ({ title, people }: Props) => {
       <section className="py-8 md:py-12 w-screen -mx-[50vw] relative left-1/2 right-1/2 bg-[#f7f7f7]">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           {/* Title */}
-          <h2 className="text-left lato-400 text-[20px] md:text-[24px] text-[#117ABA] mb-8">
+          <h2 className="text-left lato-700 text-[28px] md:text-[32px] text-[#117ABA] mb-8">
             {title}
           </h2>
 

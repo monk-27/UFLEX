@@ -24,6 +24,10 @@ export default function Page() {
 
 
       <section className="relative w-full overflow-hidden px-4 pb-12 mt-6">
+        <h2 className="text-center text-[24px] lato-700 text-[#117ABA] md:text-[42px]  py-4">
+          Current Opportunities
+
+        </h2>
         <div className="max-w-7xl mx-auto px-4">
 
           {/* ================= Main Content ================= */}
@@ -53,7 +57,7 @@ export default function Page() {
 
 
               <motion.p
-                className="lato-400 text-sm md:text-base leading-relaxed text-black"
+                className="text-[14px] md:text-[18px] leading-relaxed lato-400 text-black"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}

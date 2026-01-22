@@ -154,10 +154,8 @@ export default function LeadershipAwards() {
                 <h3
                   className="
         mb-2
-        text-[16px]
-        lato-400
+       text-[14px] md:text-[18px] leading-relaxed lato-700
         text-[#117ABA]
-        leading-[22px]
         line-clamp-2
         min-h-[44px]
       "
@@ -169,7 +167,7 @@ export default function LeadershipAwards() {
                   {item.by}
                 </p>
 
-                <p className="text-[16px] leading-6 lato-400 text-black line-clamp-8 min-h-[120px]">
+                <p className="text-[14px] md:text-[18px] leading-relaxed lato-400  lato-400 text-black line-clamp-8 min-h-[120px]">
                   {item.description}
                 </p>
               </div>

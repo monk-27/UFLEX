@@ -67,7 +67,7 @@ const Keypeople = ({ title, people }: Props) => {
           {/* Embla slider – used on mobile & desktop */}
           <div className="">
             <div ref={emblaRef} className="overflow-hidden max-w-7xl mx-auto ">
-              <h2 className=" text-start lato-400 text-[20px] md:text-[24px] text-[#117ABA] mb-3">
+              <h2 className=" text-start lato-700 text-[28px] md:text-[32px] text-[#117ABA] mb-3">
             {title}
           </h2>
 

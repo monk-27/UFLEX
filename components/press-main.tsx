@@ -117,7 +117,7 @@ export default function PressMainCarousel() {
                   Press Room
                 </motion.h1>
 
-                <p className=" text-wrap max-w-xl lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
+                <p className=" text-wrap max-w-xl lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black">
                   <div className="space-y-0">
                     <p className=" text-start  ">
                       Bringing updates on business, innovation, sustainability, manufacturing milestones, and industry perspectives. Explore official press releases, media coverage, leadership interactions, and stories that display progress across the global packaging value chain. </p>

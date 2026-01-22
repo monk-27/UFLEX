@@ -303,7 +303,7 @@ const EngComp: React.FC<Props> = ({ business }) => {
                                               Engineering
                                             </motion.h1>
                             
-                                            <p className="text-wrap max-w-xl lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
+                                            <p className="text-wrap max-w-xl lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black">
                                               {packagingData[0].paragraphs[0]}
                                             </p>
                             

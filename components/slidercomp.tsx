@@ -45,7 +45,7 @@ export default function SimpleCarousel({
   return (
     <section className="pt-12">
       {heading && (
-        <h2 className="text-[24px] text-[#117ABA] lato-400 text-start pb-12">{heading}</h2>
+        <h2 className="lato-700 text-[28px] md:text-[32px] text-[#117ABA] text-start pb-12">{heading}</h2>
       )}
       {subheading && (
         <p className="text-black text-center mb-6">{subheading}</p>
@@ -70,7 +70,7 @@ export default function SimpleCarousel({
 
             <div className="p-5 flex flex-col flex-1 justify-between">
               <div>
-                <h3 className="text-lg text-[#117ABA] lato-700 mb-2">
+                <h3 className="lato-700 text-[18px] md:text-[20px] leading-tight text-[#117ABA] mb-2">
                   {card.title}
                 </h3>
                 <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">{card.desc}</p>
