@@ -66,7 +66,7 @@ export default function WhatSetsUsApartCarousel() {
     <section className="bg-white pt-12 ">
       {/* Heading */}
       <div className="text-center">
-        <h2 className="text-[24px] lato-400 text-[#117ABA] md:text-[28px]">
+        <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] ">
           What Sets Us Apart
         </h2>
         <p className="mx-auto mt-2 max-w-3xl text-[#222] md:text-[20px]">

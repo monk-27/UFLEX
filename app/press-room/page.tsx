@@ -825,7 +825,7 @@ export default function PressRoomPage() {
 
         {/* -------- MEDIA RELEASES -------- */}
         <section className="w-screen relative bg-[#117ABA] mt-8 py-6">
-          <h2 className="text-white text-[16px] sm:text-[28px] lato-400 py-4 text-center ">
+          <h2 className="text-white text-[24px] lato-700  md:text-[42px]  py-4 text-center ">
             Media Releases
           </h2>
 
@@ -873,7 +873,7 @@ export default function PressRoomPage() {
 
         </section>
           <section className="max-w-7xl mx-auto px-4">
-          <h2 className="text-[#117ABA] text-[16px] sm:text-[28px] lato-400 text-center  pt-4">
+          <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px]  text-center  pt-4">
             Media Coverage
           </h2>
 
@@ -897,7 +897,7 @@ export default function PressRoomPage() {
 
         </section>
         <section className="max-w-7xl mx-auto px-4 pb-12">
-          <h2 className="py-4 text-[#117ABA] text-[16px] sm:text-[28px] lato-400 text-center">
+          <h2 className="py-4 text-[24px] lato-700 text-[#117ABA] md:text-[42px]  text-center">
             Media Resources
           </h2>
 

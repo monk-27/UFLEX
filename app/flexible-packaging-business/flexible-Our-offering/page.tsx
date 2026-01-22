@@ -482,8 +482,8 @@ export default function ProductsPage() {
                                     <div className="w-[300px] sm:w-[537px]">
 
 
-                                        <h1 className="text-white text-[14px] md:text-[28px] lato-700 ">
-                                            Flexible Packaging Products
+                                        <h1 className="text-white text-[24px] lato-700  md:text-[42px]  ">
+                                            Flexible Packaging
 
                                         </h1>
                                         UFlex’s Flexible Packaging Business’s products range from Flexible Laminates, Pre-Formed Pouches, Flexo Printed Rolls & Bags, Laminated Woven Polypropylene (WPP) Bags, Electron Beam & Cast N Cure, Pharmaceutical Packaging, FlexiTubes, Hygiene Films, Flexfresh™ Modified Atmosphere Packaging, Big Bags and N-95 Mask. As an end-to-end flexible packaging solutions company, UFlex also holds the expertise to develop flexible tube Tube Packaging for a large number of FMCG brands in India and overseas

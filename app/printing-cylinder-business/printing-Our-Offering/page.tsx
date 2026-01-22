@@ -168,8 +168,8 @@ export default function ProductsPage() {
                                     <div className="w-[300px] sm:w-[537px]">
 
 
-                                        <h1 className="text-white text-[14px] md:text-[28px] lato-700 ">
-                                                            Printing Cylinders Products
+                                        <h1 className="text-white text-[24px] lato-700  md:text-[42px]   ">
+                                                            Printing Cylinders
 
                                         </h1>
                                         Our product range extends from rotogravure cylinders to Anilox rollers, lamination and coating rollers, embossing rollers to mica & wood-grain cylinders.

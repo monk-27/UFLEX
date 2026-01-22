@@ -522,8 +522,8 @@ export default function ProductsPage() {
                                     <div className="w-[300px] sm:w-[537px]">
 
 
-                                        <h1 className="text-white text-[14px] md:text-[28px] lato-700 ">
-                                            Packaging Films Products
+                                        <h1 className="text-white text-[24px] lato-700  md:text-[42px]  ">
+                                            Packaging Films
                                         </h1>
                                         UFlex’s Packaging Films Business’s products range from Biaxially Oriented Polyethylene Terepthalate (BOPET) Films "F L E X P E T", Biaxially Oriented Polypropylene (BOPP) Films "F L E X O P P", Cast Polypropylene (CPP) Films "F L E X C P P", Metallised BOPP, BOPET & CPP Films "F L E X M E T P R O T E C T", Special Effects Films, AIOx Coated Films.
                                     </div>

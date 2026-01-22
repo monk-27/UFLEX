@@ -284,7 +284,7 @@ const ChemicalsComp: React.FC<Props> = ({ business }) => {
                                     initial={{ opacity: 0, y: 10 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
-                                    className="text-[18px] lato-700 text-[#117ABA] md:text-[28px]"
+                                    className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] "
                                 >
                                     Chemicals
                                 </motion.h1>

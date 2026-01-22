@@ -307,7 +307,7 @@ const pages = () => {
       <SiteHeader />
 
       <section>
-        <h2 className="text-[#117ABA] text-[16px] sm:text-[28px] lato-400 py-6 text-center">
+        <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px]  py-6 text-center">
           Media Releases
         </h2>
 
@@ -340,7 +340,7 @@ const pages = () => {
         <PdfList items={mediaReleases.pressNotes[notesYear]} />
       </section>
         <section className="max-w-7xl mx-auto px-4">
-                <h2 className="text-[#117ABA] text-[16px] sm:text-[28px] lato-400 text-center mb-6">
+                <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px]  text-center mb-6">
                   Media Coverage
                 </h2>
       

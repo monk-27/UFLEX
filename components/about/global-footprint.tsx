@@ -188,7 +188,7 @@ const GlobalFootprint = () => {
     <section className="mt-[30px] px-4 py-0 text-center sm:mt-8 sm:py-10 md:px-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <h2 className="text-[24px] lato-400 text-[#117ABA] md:text-[28px] text-start">
+        <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px]  text-start">
           Our Global Footprint
         </h2>
 

@@ -105,7 +105,7 @@ export default function MainSustainabilityCOMMComp({
     <section className="max-w-7xl mx-auto w-full px-4 py-14">
       {/* Heading */}
       <div className="text-center mb-10">
-        <h2 className="text-[24px] md:text-[28px] lato-400 text-[#117ABA]">
+        <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] ">
           UFlex’s Sustainability Vision
         </h2>
         <p className="mt-2 text-[14px] md:text-[16px] text-slate-500">

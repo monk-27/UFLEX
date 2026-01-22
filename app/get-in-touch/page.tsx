@@ -427,7 +427,7 @@ export default function GetInTouch() {
 
         {/* DIRECTORY: Independent filters */}
         <section className="max-w-7xl mx-auto w-full px-4 sm:px-0 py-14 ">
-          <h2 className="lato-800 text-2xl text-[#117ABA] text-center sm:text-left">Connect with us</h2>
+          <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px]  text-center sm:text-left">Connect with us</h2>
 
           {/* Controls */}
           <div className="mt-4 grid gap-3 md:grid-cols-12">
@@ -509,7 +509,7 @@ export default function GetInTouch() {
           <div className="mx-auto max-w-7xl px-4">
             {/* Heading */}
             <div className="text-start mb-4 py-6">
-              <h2 className="lato-800 text-2xl text-[#117ABA]">Other Queries</h2>
+              <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] ">Other Queries</h2>
               <p className="mt-2 text-black">
                 For any other enquiries, fill the form below. Fields marked with (*) are mandatory.
               </p>

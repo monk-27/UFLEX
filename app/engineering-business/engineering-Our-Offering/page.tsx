@@ -598,8 +598,8 @@ Our converting machines are tailored as per the clients’ needs and are enabled
                                 <div className="w-[300px] sm:w-[537px]">
 
 
-                                    <h1 className="text-white text-[14px] md:text-[28px] lato-700 ">
-                                        Engineering Business Products
+                                    <h1 className="text-white text-[24px] lato-700  md:text-[42px]  ">
+                                        Engineering Business
 
                                     </h1>
                                     We at UFlex, manufacture Packaging Machines, Converting Machines, Pillow Pouch Machines, Multilane Machines, PFS Machines, Pouch packing machines, Stick pack machines, FFS & VFFS machines, Multi-track machines, Flow Wrap Machines, Rotary FFS machines, Collar type Machines, pouch packing machines, stick packaging machines, in India and around the globe.

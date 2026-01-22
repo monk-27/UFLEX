@@ -13,15 +13,15 @@ export default function LearnStatus() {
             <div className="flex space-x-0.5">
 
 
-              <Image
+              {/* <Image
                 src="/images/ula.png"
                 width={90}
                 height={15}
                 alt="UFlex Learning Academy"
                 priority
-              />
+              /> */}
               <motion.h1
-                className="text-[24px] lato-600 text-[#117ABA] md:text-[28px] leading-tight"
+                className="text-[24px] lato-700 text-[#117ABA] md:text-[42px]  leading-tight"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
