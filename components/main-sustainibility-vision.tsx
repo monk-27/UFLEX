@@ -129,7 +129,7 @@ function DropdownList({ items }: { items: SustainabilityItem[] }) {
             >
               <div className="flex items-center gap-4">
 
-                <div className="text-[15px] font-semibold text-[#111]">{item.title}</div>
+                <div className="lato-400 text-[14px] md:text-[18px] text-black  leading-relaxed">{item.title}</div>
               </div>
 
               <Chevron open={isOpen} />
@@ -146,7 +146,7 @@ function DropdownList({ items }: { items: SustainabilityItem[] }) {
                 willChange: "height, opacity",
                 background: "white",
               }}
-              className="px-6 pb-4"
+              className="px-6 pb-1"
             >
               <div
                 ref={(el) => {
@@ -154,7 +154,7 @@ function DropdownList({ items }: { items: SustainabilityItem[] }) {
                 }}
                 className="py-1"
               >
-                <p className="text-[14px] leading-relaxed text-slate-700">{item.summary}</p>
+                <p className="lato-400 text-[14px] md:text-[18px] text-black  leading-relaxed">{item.summary}</p>
               </div>
             </div>
           </div>

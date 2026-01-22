@@ -119,7 +119,7 @@ export default function WhatSetsUsApartCarousel() {
                         {card.title}
                       </h3>
 
-                      <p className="mt-6 text-[12px] md:text-[14px] text-black">
+                      <p className="mt-6 lato-400 text-[14px] md:text-[18px] text-black  leading-relaxed">
                         {card.desc}
                       </p>
                     </div>

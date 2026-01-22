@@ -237,7 +237,7 @@ export default function Page() {
                   "relative px-6 py-2 text-sm lato-400",
                   "border border-[#d6d6d6] border-b-0",
                   "first:rounded-t-sm last:rounded-t-sm -mb-[1px]",
-                  active ? "bg-white text-black" : "bg-[#F5F5F5] text-[#555]",
+                  active ? "bg-white lato-400 text-[14px] md:text-[18px] text-black  leading-relaxed" : "bg-[#F5F5F5] lato-400 text-[14px] md:text-[18px] text-black  leading-relaxed",
                 ].join(" ")}
               >
                 {tab.label}
@@ -251,7 +251,7 @@ export default function Page() {
 
         {/* Blue header */}
         <div className="w-full bg-[#117ABA] py-3 px-4">
-          <h2 className="text-white text-sm sm:text-base lato-700 text-center">
+          <h2 className="text-white text-[14px] md:text-[18px] leading-relaxed lato-700 text-center">
             {currentHeading}
           </h2>
         </div>
