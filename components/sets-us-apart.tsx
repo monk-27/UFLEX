@@ -69,7 +69,7 @@ export default function WhatSetsUsApartCarousel() {
         <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] ">
           What Sets Us Apart
         </h2>
-        <p className="mx-auto mt-2 max-w-3xl text-[#222] md:text-[20px]">
+        <p className="mx-auto mt-2 max-w-5xl text-[#222] md:text-[24px]">
           At UFlex, research-led innovation is the pillar of our business strategy.
         </p>
       </div>

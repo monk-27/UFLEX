@@ -510,7 +510,7 @@ export default function GetInTouch() {
             {/* Heading */}
             <div className="text-start mb-4 py-6">
               <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] ">Other Queries</h2>
-              <p className="mt-2 text-black">
+              <p className="mt-2  text-black lato-400 py-[2px] text-[14px] leading-relaxed md:text-[24px]">
                 For any other enquiries, fill the form below. Fields marked with (*) are mandatory.
               </p>
             </div>

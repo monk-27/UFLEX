@@ -105,7 +105,7 @@ const Careers = () => {
 
                         <motion.h2
                             transition={{ duration: 0.7, delay: 0.4 }}
-                            className="text-center lato-400 text-[16px] sm:text-[18px] leading-relaxed text-white mb-1 py-6"
+                            className="text-center lato-400 text-[14px] leading-relaxed md:text-[24px] text-white mb-1 py-6"
                         >
                             At UFlex, we're not just shaping the future of packaging, we're revolutionizing it. For over three decades, we've been at the forefront of innovation, developing advanced solutions that preserve products, protect our planet, and empower our people.
                         </motion.h2>

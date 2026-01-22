@@ -750,7 +750,7 @@ export default function BusinessAwards() {
                 setActiveBusiness(key as BusinessKey);
                 setActiveYear(val.years[0]);
               }}
-              className={`pb-2 text-[12px] md:text-[14px] leading-relaxed lato-700 shrink-0 ${activeBusiness === key
+              className={`pb-2 text-[12px] md:text-[16px] leading-relaxed lato-700 shrink-0 ${activeBusiness === key
                 ? "text-[#117ABA] border-b-2 border-[#117ABA]"
                 : "text-black"
                 }`}

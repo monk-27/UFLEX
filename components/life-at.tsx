@@ -146,7 +146,7 @@ export default function LifeatModules() {
         </div>
         
         <h3
-          className="mt-0 text-[16px] text-[#181818] sm:mt-2 md:text-[20px]"
+         className="text-black lato-400 py-[2px] text-[14px] leading-relaxed md:text-[24px]"
           style={{ lineHeight: "124%" }}
         >
           Where Innovation Meets Community

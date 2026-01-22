@@ -108,7 +108,7 @@ export default function MainSustainabilityCOMMComp({
         <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] ">
           UFlex’s Sustainability Vision
         </h2>
-        <p className="mt-2 text-[14px] md:text-[16px] text-slate-500">
+        <p className="mt-2 text-black lato-400 py-[2px] text-[14px] leading-relaxed md:text-[24px]">
           UFlex’s sustainability initiatives are extensive and feature a variety
           of advanced projects and products, such as:
         </p>

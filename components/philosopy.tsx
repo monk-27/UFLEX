@@ -63,7 +63,7 @@ const [emblaRef, emblaApi] = useEmblaCarousel({
     <section className="relative bg-white pt-12">
       <div className="mx-auto max-w-7xl px-6 text-center">
         <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] ">People’s philosophy</h2>
-        <p className="text-center lato-400 mt-1  text-gray-500 md:text-lg">
+        <p className="text-center text-black lato-400 py-[2px] text-[14px] leading-relaxed md:text-[24px]">
           Our staunch beliefs, our DNA - Our values .
         </p>
       </div>
