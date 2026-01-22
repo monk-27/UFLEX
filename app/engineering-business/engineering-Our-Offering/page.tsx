@@ -563,7 +563,7 @@ Our converting machines are tailored as per the clients’ needs and are enabled
                 <div className="">
                    
 
-                    <section className="relative w-full h-[580px] sm:h-[641px] overflow-hidden">
+                    <section className="relative w-full h-[580px] sm:h-[451px] overflow-hidden">
 
                         <Image
                             src="/images/heroengg.png"
@@ -592,7 +592,7 @@ Our converting machines are tailored as per the clients’ needs and are enabled
 
 
                             <motion.div
-                                className="bg-[#117ABA] lato-400 text-left w-[450px] h-[350px] sm:w-[706px] sm:h-[441px] text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[20px] pl-4 pt-2 pb-4 pr-4 md:pl-24 lg:pl-28 sm:pt-8 sm:pb-4 sm:pr-12 mb-12 sm:mb-24"
+                                className="bg-[#117ABA] lato-400 text-left w-[450px] h-[350px] sm:w-[706px] sm:h-[351px] text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[20px] pl-4 pt-2 pb-4 pr-4 md:pl-24 lg:pl-28 sm:pt-2 sm:pb-4 sm:pr-12 mb-12 sm:mb-8"
                                 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
                             >
                                 <div className="w-[300px] sm:w-[537px]">
