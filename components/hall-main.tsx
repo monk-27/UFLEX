@@ -90,7 +90,7 @@ export default function SustainabilityCarousel() {
                 {/* <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/80 via-black/40 to-transparent" /> */}
 
                 {/* Title */}
-                <div className="absolute inset-x-0 bottom-0  bg-gradient-to-t from-black/90 via-transparent to-transparent" >
+                {/* <div className="absolute inset-x-0 bottom-0  bg-gradient-to-t from-black/90 via-transparent to-transparent" >
 
                 <motion.h2
                   initial={{ opacity: 0, y: 20 }}
@@ -101,14 +101,14 @@ export default function SustainabilityCarousel() {
                   {SLIDES[active].title}
                 </motion.h2>
                 
+              </div> */}
               </div>
-              </div>
- <motion.div
+ {/* <motion.div
           className="absolute inset-0 bg-black bg-opacity-100"
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.5 }}
           transition={{ duration: 1 }}
-        ></motion.div>
+        ></motion.div> */}
             </div>
           {/* </div> */}
 

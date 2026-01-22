@@ -201,23 +201,23 @@ export default function PressMainCarousel() {
                 {/* Title */}
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-transparent to-transparent" >
 
-                  <motion.h2
+                  {/* <motion.h2
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
                     className="relative text-white text-lg sm:text-xl md:text-2xl lato-700 text-center pb-6 px-4 z-10"
                   >
                     {SLIDES[active].title}
-                  </motion.h2>
+                  </motion.h2> */}
 
                 </div>
               </div>
-              <motion.div
+              {/* <motion.div
                 className="absolute inset-0 bg-black bg-opacity-100"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 0.5 }}
                 transition={{ duration: 1 }}
-              ></motion.div>
+              ></motion.div> */}
             </div>
 
             {/* DOTS */}
