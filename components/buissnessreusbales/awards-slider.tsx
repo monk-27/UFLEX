@@ -122,13 +122,13 @@ export function AwardsSlider({ heading, items }: any) {
               <ChevronRight className="h-5 w-5 text-black" /></button>
           </div>
         </div>
-        <Link href="/hall-of-fame/buisness-awards">
+        {/* <Link href="/hall-of-fame/buisness-awards">
             <div className=" flex justify-center py-4">
               <span className="text-center text-[12px] lato-700 text-white md:text-[16px]">
                 View all Awards {">>"}
               </span>
             </div>
-          </Link>
+          </Link> */}
       </div>
     </section>
   );
