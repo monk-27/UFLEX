@@ -88,7 +88,7 @@ export default function LearnStatus() {
             viewport={{ once: true }}
           >
             <Image
-              src="/images/learn.jpg"
+              src="/images/awards/uln.png"
               alt="UFlex Learning Academy"
               fill
               className="object-cover rounded-sm"

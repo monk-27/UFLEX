@@ -53,7 +53,7 @@ export function AwardsSlider({ heading, items }: any) {
         {/* <h2 className="pt-8 lato-400 text-[22px] md:text-[28px] text-[#117ABA] mb-8">
           {heading}
         </h2> */}
-        <div className=" flex flex-col items-center text-center mb-4">
+        <div className="flex flex-col items-center text-center mb-4">
 
           <h2 className="text-white text-[24px] lato-700  md:text-[42px]   ">
             In The Spotlight
@@ -76,10 +76,10 @@ export function AwardsSlider({ heading, items }: any) {
               exit="exit"
               transition={{ duration: 0.35, ease: "easeInOut" }}
             >
-              <div className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.4fr)] items-start">
+              <div className="grid  lg:grid-cols-2 items-start">
                 {/* Text */}
-                <div className="bg-red-500">
-                  <h3 className="lato-400 text-[18px] md:text-[24px] text-white mb-3">
+                <div className=" w-full h-[200px] md:h-[240px] lg:h-[267px]">
+                  <h3 className="lato-400 text-[18px] md:text-[24px] text-white mb-3 leading-relaxed">
                     {current.title}
                   </h3>
 
@@ -90,12 +90,12 @@ export function AwardsSlider({ heading, items }: any) {
                 </div>
 
                 {/* Image */}
-                <div className="relative w-full h-[200px] md:h-[240px] lg:h-[267px] overflow-hidden">
+                <div className="rounded-sm relative w-full h-[200px] md:h-[240px] lg:h-[267px] overflow-hidden mt-3">
                   <Image
                     src={current.image}
                     alt={current.title}
                     fill
-                    className="object-contain"
+                    className="object-cover rounded-sm"
                   />
                 </div>
               </div>
