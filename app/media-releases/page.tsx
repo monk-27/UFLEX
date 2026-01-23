@@ -306,7 +306,7 @@ const pages = () => {
     <div className="bg-white">
       <SiteHeader />
 
-      <section>
+      <section className='py-6'>
         <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px]  py-6 text-center">
           Media Releases
         </h2>
@@ -339,109 +339,7 @@ const pages = () => {
         </div>
         <PdfList items={mediaReleases.pressNotes[notesYear]} />
       </section>
-        <section className="max-w-7xl mx-auto px-4">
-                <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px]  text-center mb-6">
-                  Media Coverage
-                </h2>
-      
-                {/* Tabs */}
-                <div className="flex justify-center gap-4 mb-6">
-                  {mediaCoverage.tabs.map((tab:any) => (
-                    <button
-                      key={tab}
-                      onClick={() => setActiveCoverageTab(tab)}
-                      className={[
-                        "px-6 py-2 text-sm  transition",
-                        "px-10 py-3 text-xs transition",
-                        tab === activeCoverageTab
-                          ? "bg-[#F5F5F5]  text-[#555]  border-b-[0.7px] border-b-[#117ABA] "
-                          : "bg-[#F5F5F5]  text-[#555]"
-                      ].join(" ")}
-                    >
-                      {tab}
-                    </button>
-                  ))}
-                </div>
-      
-                {/* Year Tabs */}
-                <div className="flex justify-center gap-2 mb-8">
-                  {mediaCoverage.years.map((year) => (
-                    <button
-                      key={year}
-                      onClick={() => setActiveCoverageYear(year)}
-                      className={[
-                        "px-5 py-2 text-sm",
-                        year === activeCoverageYear
-      
-                          ? "bg-[#6E6E6E] text-white"
-                          : "bg-[#E6E6E6] text-[#666]",
-                      ].join(" ")}
-                    >
-                      {year}
-                    </button>
-                  ))}
-                </div>
-      
-                {/* Grid */}
-      
-      
-                {coverageItems.length < 5 ? (
-                  /* CENTERED LAYOUT */
-                  <div className="flex justify-center">
-                    <div className="grid grid-cols-2 md:grid-flow-col gap-6">
-                      {coverageItems.map((img) => (
-                        <div
-                          key={img}
-                          className="bg-white  h-[180px] w-[220px] flex items-center justify-center overflow-hidden"
-                        >
-                          <Image
-                            src={img}
-                            alt="Media Coverage"
-                            width={220}
-                            height={140}
-                            className="object-contain overflow-hidden"
-                          />
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ) : (
-                  /* NORMAL 5-COLUMN GRID */
-                  <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-                    {coverageItems.map((img) => (
-                      <div
-                        key={img}
-                        className="bg-white   h-[150px] w-[220px] sm:h-[180px] sm:w-[220px] flex items-center justify-center overflow-hidden"
-                      >
-                        <Image
-                          src={img}
-                          alt="Media Coverage"
-                          width={220}
-                          height={140}
-                          className="object-contain overflow-hidden"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                )}
-      
-      
-      
-                <div className="mt-6 text-left py-6">
-                  <a
-                      
-                      className="inline-flex items-center gap-1 lato-700 text-[14px] text-[#117ABA] "
-                    >
-                                      <div className="underline underline-offset-2">
-      
-                      View More
-                      
-                      <span aria-hidden>↗</span>
-                </div>
-                      </a>
-                </div>
-      
-              </section>
+    
       <SiteFooter />
     </div>
   )

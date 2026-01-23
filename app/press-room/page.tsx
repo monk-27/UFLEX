@@ -882,7 +882,7 @@ export default function PressRoomPage() {
           <MediaCoverageCardsCarousel />
 
           <div className="text-center flex justify-center pt-4">
-            <Link href="/media-releases"
+            <Link href="/media-coverage"
 
               className="inline-flex items-center gap-1 lato-700 text-[18px] text-[#117ABA] "
             >
