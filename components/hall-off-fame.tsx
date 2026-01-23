@@ -125,7 +125,7 @@ export const business = {
     heading: "In The Spotlight",
     items: [
       {
-        image: "/images/awards/b3.png",
+        image: "/images/awards/newspot.png",
         title: "Business Leader of the Decade 2024 – Mr. Ashok Chaturvedi",
         by: "Indo-American Chamber of Commerce (IACC)",
         description:

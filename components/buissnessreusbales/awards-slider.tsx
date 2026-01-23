@@ -55,14 +55,14 @@ export function AwardsSlider({ heading, items }: any) {
         </h2> */}
         <div className=" flex flex-col items-center text-center mb-4">
 
-            <h2 className="text-white text-[24px] lato-700  md:text-[42px]   ">
-              In The Spotlight
-            </h2>
+          <h2 className="text-white text-[24px] lato-700  md:text-[42px]   ">
+            In The Spotlight
+          </h2>
 
-            {/* <span className=" block text-[20px] lato-400 text-[#117ABA]">
+          {/* <span className=" block text-[20px] lato-400 text-[#117ABA]">
               Corporate, HR & Sustainability Awards
             </span> */}
-          </div>
+        </div>
 
         <div>
           {/* Animated slide wrapper */}
@@ -78,7 +78,7 @@ export function AwardsSlider({ heading, items }: any) {
             >
               <div className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.4fr)] items-start">
                 {/* Text */}
-                <div>
+                <div className="bg-red-500">
                   <h3 className="lato-400 text-[18px] md:text-[24px] text-white mb-3">
                     {current.title}
                   </h3>
@@ -90,7 +90,7 @@ export function AwardsSlider({ heading, items }: any) {
                 </div>
 
                 {/* Image */}
-                <div className="relative w-full h-[220px] md:h-[260px] lg:h-[447px] overflow-hidden">
+                <div className="relative w-full h-[200px] md:h-[240px] lg:h-[267px] overflow-hidden">
                   <Image
                     src={current.image}
                     alt={current.title}
@@ -112,7 +112,7 @@ export function AwardsSlider({ heading, items }: any) {
               hover:opacity-100 transition md:left-0"
             >
               <ChevronLeft className="h-5 w-5 text-black" />
-           </button>
+            </button>
             <button
               onClick={() => go("next")}
               className=" z-10 -translate-y-1/2 inline-flex items-center justify-center
