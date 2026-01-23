@@ -170,7 +170,7 @@ export default function CareersMainCarousel() {
           <div className="flex flex-col items-center">
 
             {/* IMAGE */}
-        <div className="relative w-full aspect-[16/9] rounded-md overflow-hidden group cursor-pointer">
+        <div className="mt-0 sm:mt-4 relative w-full aspect-[16/9] rounded-md overflow-hidden group cursor-pointer">
                      {/* Image */}
                      <AnimatePresence mode="wait">
                        <motion.div

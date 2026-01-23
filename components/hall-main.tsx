@@ -36,7 +36,7 @@ export default function SustainabilityCarousel() {
         <div className="grid py-4 lg:grid-cols-2 lg:py-1 gap-10">
 
           {/* TEXT */}
-          <div className="text-center sm:text-left max-w-lg">
+          <div className="text-center sm:text-left max-w-lg ">
             <AnimatePresence mode="wait">
               <div>
                 <motion.h1
@@ -64,7 +64,7 @@ export default function SustainabilityCarousel() {
           <div className="flex flex-col items-center">
 
             {/* IMAGE */}
-            <div className="relative w-full aspect-[16/9] rounded-md overflow-hidden group cursor-pointer">
+            <div className="mt-0 sm:mt-4 relative w-full aspect-[16/9] rounded-md overflow-hidden group cursor-pointer">
               {/* Image */}
               <AnimatePresence mode="wait">
                 <motion.div

@@ -172,7 +172,7 @@ export default function PressMainCarousel() {
                   {SLIDES[active].title}
                 </motion.h2>
               </AnimatePresence> */}
-            <div className="relative w-full aspect-[16/9] rounded-md overflow-hidden group cursor-pointer">
+            <div className="mt-0 sm:mt-4 relative w-full aspect-[16/9] rounded-md overflow-hidden group cursor-pointer">
               {/* Image */}
               <AnimatePresence mode="wait">
                 <motion.div
