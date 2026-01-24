@@ -318,15 +318,15 @@ export default function ProductCategorySection(props: any) {
               {activeTab === "cartons" && (
                 <div className="bg-white space-y-12">
                   <div>
-                    <h2 className="text-3xl font-bold text-[#117ABA] mb-6">Explore our Packaging Solutions</h2>
-                    <p className="text-lg leading-relaxed text-gray-800 mb-8">
+                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Explore our Packaging Solutions</h2>
+                    <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black mb-2">
                       Asepto innovatively incorporates the 3P's of Packaging - PRESERVE, PROTECT and PROMOTE. Our aseptic liquid packaging cartons encompass six layers of protection that keeps the freshness preserved in varieties of beverages, be it dairy and dairy-based beverages, nectar-based beverages, or beverages from the distillery industry. We augment your product positioning through innovative design aesthetics. Our state-of-the-art converting process and manufacturing facilities help us materialize our thoughts into reality. They are advanced, automated, and human-touch-free.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="text-2xl font-bold text-[#117ABA] mb-6">Shapes we offer</h3>
-                    <p className="text-lg leading-relaxed text-gray-800 mb-8">
+                    <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Shapes we offer</h3>
+                    <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black mb-2">
                       Asepto offers a complete range of on-the-go packs and in-home consumption packs in all shapes and dimensions that our customers and consumers asks. Our aseptic liquid cartons address two important aspects – what is suitable to the customers and consumers, and how innovatively the branding can be done.
                     </p>
 
@@ -379,7 +379,7 @@ export default function ProductCategorySection(props: any) {
               {activeTab === "innovations" && (
                 <div className="bg-white  space-y-12">
                   <div>
-                    <h2 className="text-3xl font-bold text-[#117ABA] mb-6">Our Innovations</h2>
+                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Our Innovations</h2>
                     <p className="text-lg leading-relaxed text-gray-800 mb-8">
                       Innovation is the essence of evolution. For a brand, the packaging is the most visible depiction of its evolution story. Packaging is your key salesperson and we at Asepto believe that "All that Glitters is Sold". Our Holography and Foil Stamping Technology are the innovation milestones in the aseptic liquid packaging industry. They add differentiating edge to your brand and make it attractive on the retail shelf.
                     </p>
@@ -387,10 +387,10 @@ export default function ProductCategorySection(props: any) {
 
                   {/* ASEPTO PREMIUM */}
                   <div className="space-y-1">
-                    <h3 className="text-2xl font-bold text-[#117ABA]">ASEPTO PREMIUM</h3>
-                    <p className="text-2xl font-bold text-[#117ABA]">Create the premium positioning for your brand.</p>
+                    <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">ASEPTO PREMIUM</h3>
+                    <p className="lato-700 text-[14px] sm:text-[18px] text-[#117ABA]">Create the premium positioning for your brand.</p>
 
-                    <p className="text-lg leading-relaxed text-gray-800">
+                    <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                       Asepto Premium is a design innovation that decorates the packaging with a luxurious shiny finish to elevate the product’s aesthetic presence. This innovative technology augments the packaging with distinct adornments that demarcate the product, making it visibly impacting. Asepto Premium influences a customer’s perceived notion about the brand and encourages premium positioning. It comes with a wide range of customizable colour combinations. We encourage our clients to contact our Sales Team and ask for customizations that best suit their requirements. We are always eager to add value to our client’s journeys and experiences.
                     </p>
 
@@ -398,7 +398,7 @@ export default function ProductCategorySection(props: any) {
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 py-6">
                       {foilStamps.map((foils: any, index: number) => (
                         <div key={index} className="text-center">
-                          <p className="text-start mt-3 font-medium text-[#117ABA]">{foils.name}</p>
+                          <p className="text-start mt-3 lato-400 text-[#117ABA]">{foils.name}</p>
 
                           <div className="relative aspect-square overflow-hidden  bg-gray-50">
                             <Image
@@ -416,10 +416,10 @@ export default function ProductCategorySection(props: any) {
 
                   {/* ASEPTO SPARK */}
                   <div className="space-y-1">
-                    <h3 className="text-2xl font-bold text-[#117ABA]">ASEPTO SPARK</h3>
-                    <p className="text-2xl font-bold text-[#117ABA]">Add the spark to propel the product growth engine.</p>
+                    <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">ASEPTO SPARK</h3>
+                    <p className="lato-700 text-[14px] sm:text-[18px] text-[#117ABA]">Add the spark to propel the product growth engine.</p>
 
-                    <p className="text-lg leading-relaxed text-gray-800">
+                    <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                       Asepto Spark is an outcome of a rigorous research and development process involving innovative techniques to apply holography on an aseptic liquid packaging carton. This ostentatious packaging is achieved with sparkling holographic and metallic looks, giving brands endless possibilities to give an evolutionary edge to their line of products. A product inside Asepto Spark packaging will beat the shelf competition to reach out to customers’ and consumers’ shopping lists. Asepto Spark makes the packaging ultra-attractive and exceptionally outstanding. Similar to Asepto Premium, it also comes with a wide range of customizable colour combinations and innovative design patterns. We encourage our clients to contact our Sales Team and ask for customizations that best suit their requirements. We are always eager to add value to our client’s journeys and experiences.
                     </p>
 
@@ -427,7 +427,7 @@ export default function ProductCategorySection(props: any) {
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 py-4">
                       {Stamps.map((foil: any, index: number) => (
                         <div key={index} className="text-center">
-                          <p className="text-start mt-3 font-medium text-[#117ABA]">{foil.name}</p>
+                          <p className="text-start mt-3 lato-400 text-[#117ABA]">{foil.name}</p>
 
                           <div className="relative aspect-square  overflow-hidden  ">
                             <Image
@@ -463,8 +463,8 @@ export default function ProductCategorySection(props: any) {
                     />
                   </div>
                   <div>
-                    <h2 className="text-3xl font-bold text-[#117ABA] mb-6">Packaging that keeps it all safe</h2>
-                    <p className="text-lg leading-relaxed text-gray-800 mb-8">
+                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Packaging that keeps it all safe</h2>
+                    <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black mb-2">
                       Our aseptic liquid packaging cartons comprise six layers of protection that keep the beverage unexposed to the outer world, i.e., sunlight, air, moisture, etc.
                     </p>
                   </div>
@@ -480,7 +480,7 @@ export default function ProductCategorySection(props: any) {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-[18px] lato-700 text-[#117ABA] md:text-[24px] "
+                            className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] "
                           >
                             Packaging that keeps it all safe
                           </motion.span>
@@ -540,7 +540,7 @@ export default function ProductCategorySection(props: any) {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-[18px] lato-700 text-[#117ABA] md:text-[24px] "
+                            className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] "
                           >
                             12 Billion Packs per annum
                           </motion.span>
@@ -606,8 +606,8 @@ export default function ProductCategorySection(props: any) {
               </div>
               {/* Overview */}
               <div>
-                <h2 className="text-3xl font-bold text-[#117ABA] mb-6">Overview</h2>
-                <p className="text-lg leading-relaxed text-gray-800 whitespace-pre-line">
+                <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Overview</h2>
+                <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black whitespace-pre-line">
                   {overview}
                 </p>
               </div>
@@ -615,7 +615,7 @@ export default function ProductCategorySection(props: any) {
               {/* WHY A SIP ? */}
 
 
-              <div className="grid py-4 lg:grid-cols-2 lg:py-1 gap-10">
+              <div className="grid py-4 lg:grid-cols-2 lg:py-1 gap-1">
 
                 {/* TEXT */}
                 <div className="text-center sm:text-left max-w-lg ">
@@ -625,7 +625,7 @@ export default function ProductCategorySection(props: any) {
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-[18px] lato-700 text-[#117ABA] md:text-[24px] "
+                        className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] "
                       >
                         WHY A SIP ?
 
@@ -678,8 +678,8 @@ export default function ProductCategorySection(props: any) {
 
               {/* Key Features */}
               <div>
-                <h3 className="text-2xl font-bold text-[#117ABA] mb-4">Key Features :</h3>
-                <ul className="list-disc pl-8 space-y-3 text-lg text-gray-800">
+                <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-4">Key Features :</h3>
+                <ul className="list-disc pl-8 space-y-3 text-lg text-black">
                   {keyFeatures.map((feature: string, idx: number) => (
                     <li key={idx}>{feature}</li>
                   ))}
@@ -688,8 +688,8 @@ export default function ProductCategorySection(props: any) {
 
               {/* Our Technology */}
               <div>
-                <h3 className="text-2xl font-bold text-[#117ABA] mb-4">Our Technology</h3>
-                <p className="text-lg leading-relaxed text-gray-800 whitespace-pre-line">
+                <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-4">Our Technology</h3>
+                <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black whitespace-pre-line">
                   {technology}
                 </p>
               </div>
@@ -713,21 +713,21 @@ export default function ProductCategorySection(props: any) {
                 </div>
                 {/* Machine 1: SPEED PLUS 25SK */}
                 <div>
-                  <h2 className="text-3xl font-bold text-[#117ABA] mb-6">Overview</h2>
-                  <p className="text-lg leading-relaxed text-gray-800 whitespace-pre-line">
+                  <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Overview</h2>
+                  <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black whitespace-pre-line">
                     {overview}
                   </p>
                 </div>
                 <div className="bg-white  relative overflow-hidden">
 
 
-                  <h3 className="text-center text-3xl font-bold text-[#117ABA]">SPEED PLUS 25SK</h3>
+                  <h3 className="text-center lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">SPEED PLUS 25SK</h3>
                   <div className="flex flex-col lg:flex-row gap-8 items-start lg:items-center">
                     {/* Left: Text */}
                     <div className="lg:w-1/2 space-y-1">
 
-                      <h4 className="text-2xl font-bold mt-6 text-[#117ABA]">Key Features :</h4>
-                      <ul className="list-disc pl-6 space-y-3 text-lg text-gray-800">
+                      <h4 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">Key Features :</h4>
+                      <ul className="list-disc pl-6 space-y-3 text-lg text-black">
                         <li>High Speed Machine – 25,000 Packs per hour</li>
                         <li>Advanced Integration with HMI & PLC</li>
                         <li>Operator-Friendly HMI</li>
@@ -751,11 +751,11 @@ export default function ProductCategorySection(props: any) {
 
                 {/* Machine 2: Flexpress 10,000 */}
                 <div className="bg-white ">
-                  <h3 className="text-center text-3xl font-bold text-[#117ABA]">Flexpress 10,000</h3>
+                  <h3 className="text-center lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">Flexpress 10,000</h3>
                   <div className="flex flex-col lg:flex-row gap-8 items-start lg:items-center">
                     <div className="lg:w-1/2 space-y-6">
-                      <h4 className="text-2xl font-bold mt-6 text-[#117ABA]">Key Features :</h4>
-                      <ul className="list-disc pl-6 space-y-3 text-lg text-gray-800">
+                      <h4 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">Key Features :</h4>
+                      <ul className="list-disc pl-6 space-y-3 text-lg text-black">
                         <li>More packs per hour</li>
                         <li>More varieties from the same filling machines</li>
                         <li>Easy to operate and low maintenance cost</li>
@@ -778,11 +778,11 @@ export default function ProductCategorySection(props: any) {
 
                 {/* Machine 3: Smart 78 */}
                 <div className="bg-white ">
-                  <h3 className="text-center text-3xl font-bold text-[#117ABA]">Smart 78</h3>
+                  <h3 className="text-center lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">Smart 78</h3>
                   <div className="flex flex-col lg:flex-row gap-8 items-start lg:items-center">
                     <div className="lg:w-1/2 space-y-6">
-                      <h4 className="text-2xl font-bold mt-6 text-[#117ABA]">Key Features :</h4>
-                      <ul className="list-disc pl-6 space-y-3 text-lg text-gray-800">
+                      <h4 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">Key Features :</h4>
+                      <ul className="list-disc pl-6 space-y-3 text-lg text-black">
                         <li>High Speed Machine – 7,800 Packs per hour</li>
                         <li>Advanced Integration with HMI & PLC</li>
                         <li>Operator-Friendly HMI</li>
@@ -820,15 +820,15 @@ export default function ProductCategorySection(props: any) {
                   <Image src={heroImageUrl} alt="Aseptic Cartons" fill className="object-contain" priority />
                 </div>
                 <div>
-                  <h2 className="text-3xl font-bold text-[#117ABA] mb-6">Overview</h2>
-                  <p className="text-lg leading-relaxed text-gray-800 whitespace-pre-line">
+                  <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Overview</h2>
+                  <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black whitespace-pre-line">
                     {overview}
                   </p>
                 </div>
 
                 <div className="bg-white">
-                  <h2 className="text-3xl font-bold text-[#117ABA] mb-6">WHY CHOOSE ASEPTO PRO?</h2>
-                  <p className="text-lg leading-relaxed text-gray-800">
+                  <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">WHY CHOOSE ASEPTO PRO?</h2>
+                  <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                     For any machinery-dependent manufacturing unit, maintenance is one of the biggest challenges. Machinery requires regular check-ups; it may stop functioning at any point in time if not attended to regularly. More than non-functionality, any malfunction in the machinery might cause irreversible damage to the overall set-up, the human resource, or the business at large. Asepto Pro offers Technical Assistance, Skill Enhancement services, Quality assurance, Performance Management & Remote assistance. Asepto Pro is available in more than 12 countries and is fast-growing as the preferred after-sale maintenance partner assisting beverage manufacturers to run their business with continuity.
                   </p>
 
@@ -856,13 +856,13 @@ export default function ProductCategorySection(props: any) {
 
                 {/* Solutions We Offer - Dropdowns */}
                 <div className="bg-white">
-                  <h2 className="text-3xl font-bold text-[#117ABA] mb-8">Solutions We Offer</h2>
+                  <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Solutions We Offer</h2>
 
                   {/* CarePro Dropdown */}
                   <details
                     onToggle={() => toggleSection('carePro')}
                     className="bg-[#F9F9F9]  px-2 py-2 mb-4  pb-4 border-white border-[1px] text-left hover:bg-gray-50 transition-colors">
-                    <summary className="flex items-center justify-between cursor-pointer text-xl font-bold text-[#117ABA]">
+                    <summary className="flex items-center justify-between cursor-pointer lato-700 text-[15px] sm:text-[16px] md:text-[18px] text-[#117ABA]">
                       <span>CarePro</span>
                       <motion.button
                         animate={{ rotate: openSections.carePro ? 180 : 0 }}
@@ -891,7 +891,7 @@ export default function ProductCategorySection(props: any) {
                     onToggle={() => toggleSection('maxPro')}
                     className="bg-[#F9F9F9]  px-2 py-2 mb-4  pb-4 border-white border-[1px]   text-left hover:bg-gray-50 transition-colors">
 
-                    <summary className="flex items-center justify-between cursor-pointer text-xl font-bold text-[#117ABA]">
+                    <summary className="flex items-center justify-between cursor-pointer lato-700 text-[15px] sm:text-[16px] md:text-[18px] text-[#117ABA]">
                       <span>MaxPro</span>
                       <motion.button
                         animate={{ rotate: openSections.maxPro ? 180 : 0 }}
@@ -921,7 +921,7 @@ export default function ProductCategorySection(props: any) {
                     onToggle={() => toggleSection('ultraPro')}
                     className="bg-[#F9F9F9]  px-2 py-2 mb-4  pb-4 border-white border-[1px]   text-left hover:bg-gray-50 transition-colors">
 
-                    <summary className="flex items-center justify-between cursor-pointer text-xl font-bold text-[#117ABA]">
+                    <summary className="flex items-center justify-between cursor-pointer lato-700 text-[15px] sm:text-[16px] md:text-[18px] text-[#117ABA]">
                       <span>UltraPro</span>
                       <motion.button
                         animate={{ rotate: openSections.ultraPro ? 180 : 0 }}
@@ -965,27 +965,27 @@ export default function ProductCategorySection(props: any) {
 
                   {/* We Think as Strategists We Do as Designers */}
                   <div className="bg-white ">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#117ABA] mb-8 text-start">
+                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2 text-start">
                       We Think as Strategists We Do as Designers
                     </h2>
-                    <p className="text-lg md:text-xl leading-relaxed text-gray-800 max-w-4xl mx-auto">
+                    <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black max-w-4xl mx-auto">
                       Asepto Designs is the creative powerhouse within Asepto, dedicated to shaping the visual identity of your products. With a keen understanding of market dynamics and consumer preferences, Asepto Designs formulates strategic design concepts that cater to the unique requirements of each product. Our team of talented designers harnesses their creativity and expertise to craft contemporary packaging designs that are not only visually appealing but also highly effective in capturing the attention of consumers. Our ultimate goal is to transform every product we touch into a hot seller, ensuring that it stands out on the shelves and resonates with the target audience. Asepto Designs is committed to making products not just visually appealing, but also synonymous with quality and innovation in the eyes of consumers.
                     </p>
                   </div>
 
                   {/* Design that Speaks */}
                   <div className="bg-white ">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#117ABA] mb-8 text-start">
+                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2 text-start">
                       Design that Speaks
                     </h2>
-                    <p className="text-lg md:text-xl leading-relaxed text-gray-800 max-w-4xl mx-auto">
+                    <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black max-w-4xl mx-auto">
                       At Asepto Design, our process is as innovative as our packaging. We immerse ourselves in your brand, crafting designs that blend aesthetics and functionality. Every line, curve, and color is meticulously chosen to reflect your identity. Quality is our obsession; our designs undergo rigorous testing. We create masterpieces that tell your story, captivate your audience, and leave lasting impressions. Welcome to the future of packaging design, where creativity knows no bounds, and excellence is our tradition.
                     </p>
                   </div>
 
                   {/* Some of Our Work - Gallery */}
                   <div className="bg-white ">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#117ABA] mb-10 text-center">
+                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2 text-center">
                       Some of Our Work
                     </h2>
 
@@ -1061,7 +1061,7 @@ export default function ProductCategorySection(props: any) {
 
                   {/* How we Design - Expandable Steps */}
                   <div className="">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#117ABA] mb-10 text-start">
+                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]  mb-2 text-start">
                       How we Design
                     </h2>
 
@@ -1072,7 +1072,7 @@ export default function ProductCategorySection(props: any) {
                                             className="bg-[#F9F9F9]  px-2 py-2 mb-4  pb-4 border-white border-[1px]   text-left hover:bg-gray-50 transition-colors">
 
                       
-                        <summary className="flex items-center justify-between cursor-pointer text-2xl font-bold text-[#117ABA]">
+                        <summary className="flex items-center justify-between cursor-pointer lato-700 text-[15px] sm:text-[16px] md:text-[18px] text-[#117ABA]">
                           <span>Briefing</span>
                           <motion.div
                             animate={{ rotate: openSection.briefing ? 180 : 0 }}
@@ -1083,7 +1083,7 @@ export default function ProductCategorySection(props: any) {
                             <ChevronDown className="inline-block w-8 h-8 text-white" />
                           </motion.div>
                         </summary>
-                        <div className="mt-6 pl-6 text-lg leading-relaxed text-gray-800">
+                        <div className="mt-6 pl-6 lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                           At the heart of the design process lies the art of briefing—a pivotal moment where the creative journey begins. It sets the stage, offering essential guidelines that ignite the sparks of strategy and concept design. Like a compass in uncharted waters, it guides our vision, ensuring that every stroke, pixel, or detail aligns with the essence of the project. The briefing is our North Star, illuminating the path to design brilliance, and it's where the magic begins.
                         </div>
                       </details>
@@ -1095,7 +1095,7 @@ export default function ProductCategorySection(props: any) {
                                             className="bg-[#F9F9F9]  px-2 py-2 mb-4  pb-4 border-white border-[1px]   text-left hover:bg-gray-50 transition-colors">
 
                       
-                        <summary className="flex items-center justify-between cursor-pointer text-2xl font-bold text-[#117ABA]">
+                        <summary className="flex items-center justify-between cursor-pointer lato-700 text-[15px] sm:text-[16px] md:text-[18px] text-[#117ABA]">
                           <span>Ideation</span>
                           <motion.div
                             animate={{ rotate: openSection.ideation ? 180 : 0 }}
@@ -1106,7 +1106,7 @@ export default function ProductCategorySection(props: any) {
                             <ChevronDown className="inline-block w-8 h-8 text-white" />
                           </motion.div>
                         </summary>
-                        <div className="mt-6 pl-6 text-lg leading-relaxed text-gray-800">
+                        <div className="mt-6 pl-6 lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                           In the ideation phase, we embark on a captivating journey driven by the client's brief. Our compass is market research that helps us decode category trends and geographic nuances. Armed with this treasure trove of insights, we assemble the pieces of the puzzle, crafting conceptual ideas on our drawing board that breathe life into each project. It's here, amidst the creative swirl, that innovation takes its bold step, transforming ideas into unforgettable designs.
                         </div>
                       </details>
@@ -1117,7 +1117,7 @@ export default function ProductCategorySection(props: any) {
                         onToggle={() => toggleSections('design')}
                                             className="bg-[#F9F9F9]  px-2 py-2 mb-4  pb-4 border-white border-[1px]   text-left hover:bg-gray-50 transition-colors">
 
-                        <summary className="flex items-center justify-between cursor-pointer text-2xl font-bold text-[#117ABA]">
+                        <summary className="flex items-center justify-between cursor-pointer lato-700 text-[15px] sm:text-[16px] md:text-[18px] text-[#117ABA]">
                           <span>Design & Mockups</span>
                           <motion.div
                             animate={{ rotate: openSection.design ? 180 : 0 }}
@@ -1128,7 +1128,7 @@ export default function ProductCategorySection(props: any) {
                             <ChevronDown className="inline-block w-8 h-8 text-white" />
                           </motion.div>
                         </summary>
-                        <div className="mt-6 pl-6 text-lg leading-relaxed text-gray-800">
+                        <div className="mt-6 pl-6 lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                           In the final frontier of our creative voyage, we embark on the exhilarating journey of crafting designs and lifelike mock-ups, tailored to resonate with the brand's soul and connect deeply with its intended audience. Our designs are not mere visual wonders; they are the architects of a brand's persona, each line and colour chosen with precision to tell a compelling story. With every stroke and pixel, we breathe life into an identity that doesn't just speak but roars. We don't just design; we orchestrate the rise of a product into the ranks of Supermarket Superstars.
                         </div>
                       </details>

@@ -171,10 +171,10 @@ export default function ProductsPage() {
               <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                 {/* Left sidebar */}
                 <aside className="lg:col-span-1">
-                  <motion.div
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.6 }}
+                  <div
+                    // initial={{ opacity: 0, x: -20 }}
+                    // animate={{ opacity: 1, x: 0 }}
+                    // transition={{ duration: 0.6 }}
                     className="bg-white overflow-hidden hidden lg:block sticky top-6"
                   >
                     <div className="rounded-xl border border-gray-200">
@@ -186,7 +186,7 @@ export default function ProductsPage() {
                           <motion.button
                             key={cat.name}
                             onClick={cat.onClick}
-                            className="w-full flex items-center justify-between px-6 py-4 text-left text-black hover:bg-blue-50 border-l-4 border-transparent"
+                            className="w-full flex items-center justify-between px-6 py-4 text-left text-black hover:bg-gray-50 border-l-4 border-transparent"
                           >
                             <span className="lato-400 text-[16px] sm:text-[18px]">{cat.name}</span>
                             <ChevronRight size={18} />
@@ -196,7 +196,7 @@ export default function ProductsPage() {
                     </div>
 
                    
-                  </motion.div>
+                  </div>
                 </aside>
 
                 {/* Default Overview - exact first screenshot */}
@@ -206,16 +206,16 @@ export default function ProductsPage() {
                   </div>
 
                   <div className="bg-white ">
-                    <h2 className="text-3xl font-bold text-[#117ABA] mb-6">Overview</h2>
-                    <p className="text-lg leading-relaxed text-gray-800 mb-8">
+                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Overview</h2>
+                    <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black mb-2">
                      Asepto innovatively incorporates the 3P’s of Packaging – PRESERVE, PROTECT and PROMOTE. Our aseptic liquid packaging cartons encompass six layers of protection that keeps the freshness preserved in varieties of beverages, be it dairy and dairy-based beverages, nectar-based beverages, or beverages from the distillery industry. We augment your product positioning through innovative design aesthetics. Our state-of-the-art converting process and manufacturing facilities help us materialize our thoughts into reality. They are advanced, automated, and human-touch-free.  </p>
 
-                    <h3 className="text-2xl font-bold text-[#117ABA] mb-4">Our Innovation</h3>
-                    <p className="text-lg leading-relaxed text-gray-800 mb-8">
+                    <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Our Innovation</h3>
+                    <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black mb-2">
                      Packaging is your key salesperson and we at Asepto believe that “All that Glitters is Sold“. Our Holography and Foil Stamping Technology is definitely going to add edge to your brand and make it attractive on the retail shelf.      </p>
 
-                    <h3 className="text-2xl font-bold text-[#117ABA] mb-4">What We do for International Market</h3>
-                    <p className="text-lg leading-relaxed text-gray-800 mb-8">
+                    <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">What We do for International Market</h3>
+                    <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black mb-2">
                      En route to its global vision and to meet its growing demand, Asepto has two state-of-the-art manufacturing plants. Its Sanand, Gujarat plant is attuned to the Government of India’s ‘Make in India’ mission. It is spread over 21 acres of the total 72 acres of land parcel and has an annual production capacity of 12 billion packs.
 
 The second plant in Sokhna, Egypt, is about to be commissioned. Once operational, it will be the world’s most advanced aseptic liquid carton manufacturing unit with unmatched facilities. Asepto will produce an additional 18 billion packs from the Egypt manufacturing plant.
@@ -227,9 +227,9 @@ The second plant in Sokhna, Egypt, is about to be commissioned. Once operational
                       
                     </div>
 
-                    <div className="flex gap-6 justify-end">
+                    <div className="flex gap-6 justify-start">
                       <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Learn More</button>
-                      <button className="border-2 border-[#117ABA] text-[#117ABA] px-8 py-4 rounded-lg font-medium">Request Sample</button>
+                      <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button>
                     </div>
                   </div>
                 </main>
