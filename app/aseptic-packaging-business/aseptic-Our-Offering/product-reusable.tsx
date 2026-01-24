@@ -42,6 +42,44 @@ export default function ProductCategorySection(props: any) {
     "MID": "/images/aseptic/mid.png",
   };
 
+  const foilStamps: any = [
+    {
+      name: "Gold Foil Stamp",
+      image: "/images/aseptic/gold.png",
+    },
+    {
+      name: "Green Foil Stamp",
+      image: "/images/aseptic/green.png",
+    },
+    {
+      name: "Red Foil Stamp",
+      image: "/images/aseptic/red.png",
+    },
+    {
+      name: "Silver Foil Stamp",
+      image: "/images/aseptic/gray.png",
+    },
+  ];
+
+  const Stamps: any = [
+    {
+      name: "Cracked Ice Holography",
+      image: "/images/aseptic/cracked.png",
+    },
+    {
+      name: "Multi Lens Holography",
+      image: "/images/aseptic/multi.png",
+    },
+    {
+      name: "Pillar of Light Holography",
+      image: "/images/aseptic/pillar.png",
+    },
+    {
+      name: "Sparkle Holography",
+      image: "/images/aseptic/sparkle.png",
+    },
+  ];
+
   const topRow = ["BASE", "SLIM", "ULTRA LEAN", "SQUARE", "CURVE"];
   const bottomRow = ["WEDGE", "TRIO", "PILLOW", "SPECTRA", "MID"];
   return (
@@ -314,7 +352,7 @@ export default function ProductCategorySection(props: any) {
 
               {/* Tab 2: OUR INNOVATIONS */}
               {activeTab === "innovations" && (
-                <div className="bg-white p-8 rounded-xl border space-y-12">
+                <div className="bg-white  space-y-12">
                   <div>
                     <h2 className="text-3xl font-bold text-[#117ABA] mb-6">Our Innovations</h2>
                     <p className="text-lg leading-relaxed text-gray-800 mb-8">
@@ -323,16 +361,28 @@ export default function ProductCategorySection(props: any) {
                   </div>
 
                   {/* ASEPTO PREMIUM */}
-                  <div className="space-y-6">
-                    <h3 className="text-2xl font-bold">ASEPTO PREMIUM</h3>
+                  <div className="space-y-1">
+                    <h3 className="text-2xl font-bold text-[#117ABA]">ASEPTO PREMIUM</h3>
+                    <p className="text-2xl font-bold text-[#117ABA]">Create the premium positioning for your brand.</p>
+
                     <p className="text-lg leading-relaxed text-gray-800">
-                      Create the premium positioning for your brand. Asepto Premium is a design innovation that decorates the packaging with a luxurious shiny finish to elevate the product’s aesthetic presence. This innovative technology augments the packaging with distinct adornments that demarcate the product, making it visibly impacting. Asepto Premium influences a customer’s perceived notion about the brand and encourages premium positioning. It comes with a wide range of customizable colour combinations. We encourage our clients to contact our Sales Team and ask for customizations that best suit their requirements. We are always eager to add value to our client’s journeys and experiences.
+                      Asepto Premium is a design innovation that decorates the packaging with a luxurious shiny finish to elevate the product’s aesthetic presence. This innovative technology augments the packaging with distinct adornments that demarcate the product, making it visibly impacting. Asepto Premium influences a customer’s perceived notion about the brand and encourages premium positioning. It comes with a wide range of customizable colour combinations. We encourage our clients to contact our Sales Team and ask for customizations that best suit their requirements. We are always eager to add value to our client’s journeys and experiences.
                     </p>
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-                      {["Gold Foil Stamp", "Green Foil Stamp", "Red Foil Stamp", "Silver Foil Stamp"].map((foil) => (
-                        <div key={foil} className="text-center">
-                          <div className="h-32 rounded bg-gradient-to-br from-amber-200 to-amber-400 flex items-center justify-center shadow-sm">
-                            <span className="font-medium">{foil}</span>
+
+                    {/* Foil stamps grid - FIXED */}
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 py-6">
+                      {foilStamps.map((foils: any, index: number) => (
+                        <div key={index} className="text-center">
+                          <p className="text-start mt-3 font-medium text-[#117ABA]">{foils.name}</p>
+
+                          <div className="relative aspect-square overflow-hidden  bg-gray-50">
+                            <Image
+                              src={foils.image}                     // ← FIXED: use foil.image (the string path)
+                              alt={foils.name}
+                              fill
+                              className="object-cover"
+                              sizes="(max-width: 640px) 50vw, 25vw" // helps responsiveness & performance
+                            />
                           </div>
                         </div>
                       ))}
@@ -340,16 +390,28 @@ export default function ProductCategorySection(props: any) {
                   </div>
 
                   {/* ASEPTO SPARK */}
-                  <div className="space-y-6">
-                    <h3 className="text-2xl font-bold">ASEPTO SPARK</h3>
+                  <div className="space-y-1">
+                    <h3 className="text-2xl font-bold text-[#117ABA]">ASEPTO SPARK</h3>
+                    <p className="text-2xl font-bold text-[#117ABA]">Add the spark to propel the product growth engine.</p>
+
                     <p className="text-lg leading-relaxed text-gray-800">
-                      Add the spark to propel the product growth engine. Asepto Spark is an outcome of a rigorous research and development process involving innovative techniques to apply holography on an aseptic liquid packaging carton. This ostentatious packaging is achieved with sparkling holographic and metallic looks, giving brands endless possibilities to give an evolutionary edge to their line of products. A product inside Asepto Spark packaging will beat the shelf competition to reach out to customers’ and consumers’ shopping lists. Asepto Spark makes the packaging ultra-attractive and exceptionally outstanding. Similar to Asepto Premium, it also comes with a wide range of customizable colour combinations and innovative design patterns. We encourage our clients to contact our Sales Team and ask for customizations that best suit their requirements. We are always eager to add value to our client’s journeys and experiences.
+                      Asepto Spark is an outcome of a rigorous research and development process involving innovative techniques to apply holography on an aseptic liquid packaging carton. This ostentatious packaging is achieved with sparkling holographic and metallic looks, giving brands endless possibilities to give an evolutionary edge to their line of products. A product inside Asepto Spark packaging will beat the shelf competition to reach out to customers’ and consumers’ shopping lists. Asepto Spark makes the packaging ultra-attractive and exceptionally outstanding. Similar to Asepto Premium, it also comes with a wide range of customizable colour combinations and innovative design patterns. We encourage our clients to contact our Sales Team and ask for customizations that best suit their requirements. We are always eager to add value to our client’s journeys and experiences.
                     </p>
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-                      {["Cracked Ice Holography", "Multi Lens Holography", "Pillar of Light Holography", "Sparkle Holography"].map((holo) => (
-                        <div key={holo} className="text-center">
-                          <div className="h-32 rounded bg-gradient-to-br from-purple-300 via-blue-300 to-pink-300 flex items-center justify-center shadow-sm">
-                            <span className="font-medium">{holo}</span>
+
+                    {/* Spark holography grid - with real images */}
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 py-4">
+                      {Stamps.map((foil: any, index: number) => (
+                        <div key={index} className="text-center">
+                          <p className="text-start mt-3 font-medium text-[#117ABA]">{foil.name}</p>
+
+                          <div className="relative aspect-square  overflow-hidden  ">
+                            <Image
+                              src={foil.image}                     // ← FIXED: use foil.image (the string path)
+                              alt={foil.name}
+                              fill
+                              className="object-cover"
+                              sizes="(max-width: 640px) 50vw, 25vw" // helps responsiveness & performance
+                            />
                           </div>
                         </div>
                       ))}
