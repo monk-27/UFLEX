@@ -257,13 +257,14 @@ export default function ProductCategorySection(props: any) {
         {/* Main content */}
         <motion.main key={title} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="lg:col-span-3 space-y-10 pb-8">
 
-          <div className="relative h-[388px] overflow-hidden bg-[#8BB2C1]">
-            <Image src={heroImageUrl} alt="Aseptic Cartons" fill className="object-cover" priority />
-          </div>
+
 
           {/* Aseptic Cartons 3-tab layout */}
           {isAsepticCartons ? (
             <div className="space-y-12">
+              <div className="relative h-[388px] overflow-hidden bg-[#8BB2C1]">
+                <Image src={heroImageUrl} alt="Aseptic Cartons" fill className="object-cover" priority />
+              </div>
               {/* Tabs */}
               <div className="flex flex-wrap gap-4">
                 <button
@@ -420,8 +421,8 @@ export default function ProductCategorySection(props: any) {
 
                   <div className="flex gap-6 justify-start">
                     <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Learn More</button>
-                                          <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button>
-   </div>
+                    <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button>
+                  </div>
                 </div>
               )}
 
@@ -440,11 +441,11 @@ export default function ProductCategorySection(props: any) {
                   <div>
                     <h2 className="text-3xl font-bold text-[#117ABA] mb-6">Packaging that keeps it all safe</h2>
                     <p className="text-lg leading-relaxed text-gray-800 mb-8">
-                      Our aseptic liquid packaging cartons comprise six layers of protection that keep the beverage unexposed to the outer world, i.e., sunlight, air, moisture, etc. 
-                       </p>
+                      Our aseptic liquid packaging cartons comprise six layers of protection that keep the beverage unexposed to the outer world, i.e., sunlight, air, moisture, etc.
+                    </p>
                   </div>
 
-                
+
                   <div className="grid py-4 lg:grid-cols-2 lg:py-1 gap-10">
 
                     {/* TEXT */}
@@ -462,8 +463,8 @@ export default function ProductCategorySection(props: any) {
 
                           <p className=" text-wrap max-w-xl lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black">
                             The six-layered shield helps us ensure that your product travels miles without any damage and deliver the original freshness to your consumers to add to their delight.
-                      These layers help the cartons preserve the natural texture and essence of the product till the last drop. As these layers contain FSC-grade paperboard that provides the pack with the desired shape and required durability, it becomes tough enough to resist shock, thrust and any other forceful impact that could damage the carton.
-                            </p>
+                            These layers help the cartons preserve the natural texture and essence of the product till the last drop. As these layers contain FSC-grade paperboard that provides the pack with the desired shape and required durability, it becomes tough enough to resist shock, thrust and any other forceful impact that could damage the carton.
+                          </p>
 
 
 
@@ -522,7 +523,7 @@ export default function ProductCategorySection(props: any) {
 
                           <p className=" text-wrap max-w-xl lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black">
                             Asepto’s converting process is equipped with some of the most advanced machinery that is fast-paced automation with precision and innovative adaptations. Asepto is now manufacturing 12 billion packs per annum.
-                            With a product portfolio suitable to a complete range of beverages available in the market, we have gradually gained the trust of some of the leading beverage companies in India and abroad to become their end-to-end packaging partner. In addition to aesthetic augmentation, we also provide sterility and counterfeiting assurance to our clients. 
+                            With a product portfolio suitable to a complete range of beverages available in the market, we have gradually gained the trust of some of the leading beverage companies in India and abroad to become their end-to-end packaging partner. In addition to aesthetic augmentation, we also provide sterility and counterfeiting assurance to our clients.
                             {/* The fact that we are now successfully packing some of the trickiest items like Ghee (purified butter) comfortably describes our ability and approach as a packaging innovator. */}
                           </p>
 
@@ -568,14 +569,17 @@ export default function ProductCategorySection(props: any) {
 
                   <div className="flex gap-6 justify-start">
                     <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Learn More</button>
-                                                               <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button>
- </div>
+                    <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button>
+                  </div>
                 </div>
               )}
             </div>
           ) : isASip ? (
             // A SIP exact layout from your latest screenshot
-            <div className="bg-white p-8 rounded-xl border space-y-12">
+            <div className="bg-white  space-y-12">
+              <div className="relative h-[388px] overflow-hidden bg-[#8BB2C1]">
+                <Image src={heroImageUrl} alt="Aseptic Cartons" fill className="object-cover" priority />
+              </div>
               {/* Overview */}
               <div>
                 <h2 className="text-3xl font-bold text-[#117ABA] mb-6">Overview</h2>
@@ -585,68 +589,68 @@ export default function ProductCategorySection(props: any) {
               </div>
 
               {/* WHY A SIP ? */}
-              
 
-                <div className="grid py-4 lg:grid-cols-2 lg:py-1 gap-10">
 
-                    {/* TEXT */}
-                    <div className="text-center sm:text-left max-w-lg ">
-                      <AnimatePresence mode="wait">
-                        <div>
-                          <motion.h3
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            className="text-[18px] lato-700 text-[#117ABA] md:text-[24px] "
-                          >
-                           WHY A SIP ?
-                  
-                          </motion.h3>
-                          <p className="text-wrap max-w-xl lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black">
-                    {whyAsip}
-                  </p>
+              <div className="grid py-4 lg:grid-cols-2 lg:py-1 gap-10">
 
-                         
+                {/* TEXT */}
+                <div className="text-center sm:text-left max-w-lg ">
+                  <AnimatePresence mode="wait">
+                    <div>
+                      <motion.h3
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-[18px] lato-700 text-[#117ABA] md:text-[24px] "
+                      >
+                        WHY A SIP ?
+
+                      </motion.h3>
+                      <p className="text-wrap max-w-xl lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black">
+                        {whyAsip}
+                      </p>
 
 
 
 
-                        </div>
-                      </AnimatePresence>
-                    </div>
-
-
-                    <div className="flex flex-col items-center">
-
-                      {/* IMAGE */}
-                      <div className="mt-0 sm:mt-4 relative w-full aspect-square h-[292px] overflow-hidden group cursor-pointer">
-                        {/* Image */}
-                        <AnimatePresence mode="wait">
-                          <motion.div
-                            initial={{ opacity: 0, x: 20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: -20 }}
-                            transition={{ duration: 0.5, ease: "easeOut" }}
-                            className="absolute inset-0"
-                          >
-                            <Image
-                              src="/images/aseptic/dsip.png"
-                              alt="Hall of Fame"
-                              height={292}
-                              width={292}
-                              className="object-cover h-full w-full"
-                              priority
-                            />
-                          </motion.div>
-                        </AnimatePresence>
-
-
-
-                      </div>
 
 
                     </div>
+                  </AnimatePresence>
+                </div>
+
+
+                <div className="flex flex-col items-center">
+
+                  {/* IMAGE */}
+                  <div className="mt-0 sm:mt-4 relative w-full aspect-square h-[292px] overflow-hidden group cursor-pointer">
+                    {/* Image */}
+                    <AnimatePresence mode="wait">
+                      <motion.div
+                        initial={{ opacity: 0, x: 20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: -20 }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                        className="absolute inset-0"
+                      >
+                        <Image
+                          src="/images/aseptic/dsip.png"
+                          alt="Hall of Fame"
+                          height={292}
+                          width={292}
+                          className="object-cover h-full w-full"
+                          priority
+                        />
+                      </motion.div>
+                    </AnimatePresence>
+
+
+
                   </div>
+
+
+                </div>
+              </div>
 
               {/* Key Features */}
               <div>
@@ -671,7 +675,7 @@ export default function ProductCategorySection(props: any) {
                 <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium hover:bg-blue-800 transition">
                   Learn More
                 </button>
-                                      <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button>
+                <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button>
 
               </div>
             </div>
@@ -680,21 +684,25 @@ export default function ProductCategorySection(props: any) {
             <div >
 
               <div className="space-y-16">
+                <div className="relative h-[388px] overflow-hidden ">
+                  <Image src={heroImageUrl} alt="Aseptic Cartons" fill className="object-contain" priority />
+                </div>
                 {/* Machine 1: SPEED PLUS 25SK */}
-                <div className="bg-white border border-gray-200 rounded-xl p-8 relative overflow-hidden">
-                  {/* NEWLY LAUNCHED tag */}
-                  <div className="absolute -top-4 right-8 bg-green-500 text-white px-6 py-2 rounded-full text-sm font-bold uppercase shadow-md">
-                    NEWLY LAUNCHED
-                  </div>
+                <div>
+                  <h2 className="text-3xl font-bold text-[#117ABA] mb-6">Overview</h2>
+                  <p className="text-lg leading-relaxed text-gray-800 whitespace-pre-line">
+                    {overview}
+                  </p>
+                </div>
+                <div className="bg-white  relative overflow-hidden">
 
+
+                  <h3 className="text-center text-3xl font-bold text-[#117ABA]">SPEED PLUS 25SK</h3>
                   <div className="flex flex-col lg:flex-row gap-8 items-start lg:items-center">
                     {/* Left: Text */}
-                    <div className="lg:w-1/2 space-y-6">
-                      <h3 className="text-3xl font-bold text-[#117ABA]">SPEED PLUS 25SK</h3>
-                      <div className="inline-block bg-[#117ABA] text-white px-6 py-3 rounded-lg text-xl font-bold">
-                        25,000 PACKS PER HOUR
-                      </div>
-                      <h4 className="text-2xl font-bold mt-6">Key Features :</h4>
+                    <div className="lg:w-1/2 space-y-1">
+
+                      <h4 className="text-2xl font-bold mt-6 text-[#117ABA]">Key Features :</h4>
                       <ul className="list-disc pl-6 space-y-3 text-lg text-gray-800">
                         <li>High Speed Machine – 25,000 Packs per hour</li>
                         <li>Advanced Integration with HMI & PLC</li>
@@ -705,24 +713,24 @@ export default function ProductCategorySection(props: any) {
                     </div>
 
                     {/* Right: Image */}
-                    <div className="lg:w-1/2">
+                    <div className="lg:w-1/2 height-[183px]">
                       <Image
-                        src="/images/speed-plus-25sk.jpg" // replace with your actual image
+                        src="/images/aseptic/speed.png" // replace with your actual image
                         alt="SPEED PLUS 25SK"
-                        width={600}
-                        height={500}
-                        className="rounded-lg shadow-lg object-contain"
+                        width={550}
+                        height={183}
+                        className=" object-cover height-[183px]"
                       />
                     </div>
                   </div>
                 </div>
 
                 {/* Machine 2: Flexpress 10,000 */}
-                <div className="bg-white border border-gray-200 rounded-xl p-8">
+                <div className="bg-white ">
+                      <h3 className="text-center text-3xl font-bold text-[#117ABA]">Flexpress 10,000</h3>
                   <div className="flex flex-col lg:flex-row gap-8 items-start lg:items-center">
                     <div className="lg:w-1/2 space-y-6">
-                      <h3 className="text-3xl font-bold text-[#117ABA]">Flexpress 10,000</h3>
-                      <h4 className="text-2xl font-bold mt-6">Key Features :</h4>
+                      <h4 className="text-2xl font-bold mt-6 text-[#117ABA]">Key Features :</h4>
                       <ul className="list-disc pl-6 space-y-3 text-lg text-gray-800">
                         <li>More packs per hour</li>
                         <li>More varieties from the same filling machines</li>
@@ -732,24 +740,24 @@ export default function ProductCategorySection(props: any) {
                       </ul>
                     </div>
 
-                    <div className="lg:w-1/2">
+                     <div className="lg:w-1/2 height-[283px]">
                       <Image
-                        src="/images/flexpress-10000.jpg" // replace with your actual image
-                        alt="Flexpress 10,000"
-                        width={600}
-                        height={500}
-                        className="rounded-lg shadow-lg object-contain"
+                        src="/images/aseptic/flexpress.png" // replace with your actual image
+                        alt="SPEED PLUS 25SK"
+                        width={550}
+                        height={283}
+                        className="object-contain height-[283px]"
                       />
                     </div>
                   </div>
                 </div>
 
                 {/* Machine 3: Smart 78 */}
-                <div className="bg-white border border-gray-200 rounded-xl p-8">
+                <div className="bg-white ">
+                      <h3 className="text-center text-3xl font-bold text-[#117ABA]">Smart 78</h3>
                   <div className="flex flex-col lg:flex-row gap-8 items-start lg:items-center">
                     <div className="lg:w-1/2 space-y-6">
-                      <h3 className="text-3xl font-bold text-[#117ABA]">Smart 78</h3>
-                      <h4 className="text-2xl font-bold mt-6">Key Features :</h4>
+                      <h4 className="text-2xl font-bold mt-6 text-[#117ABA]">Key Features :</h4>
                       <ul className="list-disc pl-6 space-y-3 text-lg text-gray-800">
                         <li>High Speed Machine – 7,800 Packs per hour</li>
                         <li>Advanced Integration with HMI & PLC</li>
@@ -759,13 +767,13 @@ export default function ProductCategorySection(props: any) {
                       </ul>
                     </div>
 
-                    <div className="lg:w-1/2">
+                     <div className="lg:w-1/2 height-[183px]">
                       <Image
-                        src="/images/smart-78.jpg" // replace with your actual image
-                        alt="Smart 78"
-                        width={600}
-                        height={500}
-                        className="rounded-lg shadow-lg object-contain"
+                        src="/images/aseptic/smart.png" // replace with your actual image
+                        alt="SPEED PLUS 25SK"
+                        width={550}
+                        height={183}
+                        className=" object-cover height-[183px]"
                       />
                     </div>
                   </div>

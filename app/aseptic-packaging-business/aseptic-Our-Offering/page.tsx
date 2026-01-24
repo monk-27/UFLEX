@@ -32,7 +32,7 @@ export default function ProductsPage() {
       title: "A SIP",
       heroImageUrl: "/images/aseptic/asepproduct.png", // your screenshot hero
       brandTag: "A SIP",
-      overview: `Asip is an upshot of UFlex Asepto’s core philosophy – Nature First. Asip, the u-shaped portion-pack paper straw from the house of UFlex, is the first ‘Made-in-India’ U-shaped paper straw. Asip u-shaped paper straw is the natural and the most viable alternative to plastic straws. It consists high-quality edible-grade paper that meets global standards. The adhesive used to keep the paper intact is ultra-premium and lab-tested – it helps the paper to maintain its shape. Asip u-shaped paper straw is environmentally friendly and in line with UFlex’s commitments towards nature.`,
+      overview: `A sip is an upshot of UFlex Asepto’s core philosophy – Nature First. Asip, the u-shaped portion-pack paper straw from the house of UFlex, is the first ‘Made-in-India’ U-shaped paper straw. Asip u-shaped paper straw is the natural and the most viable alternative to plastic straws. It consists high-quality edible-grade paper that meets global standards. The adhesive used to keep the paper intact is ultra-premium and lab-tested – it helps the paper to maintain its shape. Asip u-shaped paper straw is environmentally friendly and in line with UFlex’s commitments towards nature.`,
 
       whyAsip: `Packaging is your key salesperson and we at Asepto believe that "All that Glitters is Sold". Our Holography and Foil Stamping Technology is definitely going to add edge to your brand and make it attractive on the retail shelf.`,
 
@@ -56,9 +56,9 @@ export default function ProductsPage() {
     "filling-machines": {
       key: "filling-machines",
       title: "Filling Machines",
-      heroImageUrl: "/images/filling-machines-hero.jpg", // your hero image
+      heroImageUrl: "/images//aseptic/mainspeed.png", // your hero image
       brandTag: "ASEPTO",
-      overview: "Filling machines are the core of the aseptic beverage production and packaging line...",
+      overview: "Filling machines are the core of the aseptic beverage production and packaging line. Therefore, the more dynamic and flexible they are, the easier it is to complete packaging. Asepto’s SpeedPlus25K is one such filling machine with a plethora of features that make it an easy-to-operate, low-cost, and plug-and-play filling machine. It can process a variety of portion packs with just a push of a button.",
       quickLinks: [
         { label: "Aseptic Packaging Website", href: "https://www.asepto.com", external: true },
         { label: "Request Quote", href: "#" },
