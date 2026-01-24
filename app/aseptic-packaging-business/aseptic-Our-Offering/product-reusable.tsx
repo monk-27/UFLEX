@@ -420,14 +420,22 @@ export default function ProductCategorySection(props: any) {
 
                   <div className="flex gap-6 justify-start">
                     <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Learn More</button>
-                    <button className="border-2 border-[#117ABA] text-[#117ABA] px-8 py-4 rounded-lg font-medium">Request Sample</button>
-                  </div>
+                                          <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button>
+   </div>
                 </div>
               )}
 
               {/* Tab 3: CONVERTING PROCESS */}
               {activeTab === "process" && (
-                <div className="bg-white p-8 rounded-xl border space-y-12">
+                <div className="bg-white  space-y-12">
+                  <div className="relative h-[388px] overflow-hidden bg-gray-50">
+                    <Image
+                      src="/images/aseptic/3c.png"
+                      alt="Six layers of protection"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                   <div>
                     <h2 className="text-3xl font-bold text-[#117ABA] mb-6">Packaging that keeps it all safe</h2>
                     <p className="text-lg leading-relaxed text-gray-800 mb-8">
@@ -436,46 +444,133 @@ export default function ProductCategorySection(props: any) {
                   </div>
 
                   {/* Layered structure */}
-                  <div className="relative h-[400px] rounded-xl border overflow-hidden bg-gray-50">
-                    <Image
-                      src="/images/asepto-6-layers-diagram.jpg"
-                      alt="Six layers of protection"
-                      fill
-                      className="object-contain p-6"
-                    />
-                  </div>
+
 
                   {/* Converting process flow */}
-                  <div className="relative h-[300px] rounded-xl border overflow-hidden bg-gray-50">
-                    <Image
-                      src="/images/converting-process-flow.jpg"
-                      alt="Printing → Slitting → Lamination → Packaging"
-                      fill
-                      className="object-contain p-6"
-                    />
+                  <div className="grid py-4 lg:grid-cols-2 lg:py-1 gap-10">
+
+                    {/* TEXT */}
+                    <div className="text-center sm:text-left max-w-lg ">
+                      <AnimatePresence mode="wait">
+                        <div>
+                          <motion.span
+                            initial={{ opacity: 0, y: 10 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            className="text-[18px] lato-700 text-[#117ABA] md:text-[24px] "
+                          >
+                            Packaging that keeps it all safe
+                          </motion.span>
+
+                          <p className=" text-wrap max-w-xl lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black">
+                            Our aseptic liquid packaging cartons comprise six layers of protection that keep the beverage unexposed to the outer world, i.e., sunlight, air, moisture, etc. These layers help the cartons preserve the natural texture and essence of the product till the last drop. As these layers contain FSC-grade paperboard that provides the pack with the desired shape and required durability, it becomes tough enough to resist shock, thrust and any other forceful impact that could damage the carton.
+                            The six-layered shield helps us ensure that your product travels miles without any damage and deliver the original freshness to your consumers to add to their delight.</p>
+
+
+
+
+                        </div>
+                      </AnimatePresence>
+                    </div>
+
+
+                    <div className="flex flex-col items-center">
+
+                      {/* IMAGE */}
+                      <div className="mt-0 sm:mt-4 relative w-full aspect-square overflow-hidden group cursor-pointer">
+                        {/* Image */}
+                        <AnimatePresence mode="wait">
+                          <motion.div
+                            initial={{ opacity: 0, x: 20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: -20 }}
+                            transition={{ duration: 0.5, ease: "easeOut" }}
+                            className="absolute inset-0"
+                          >
+                            <Image
+                              src="/images/aseptic/packaging.png"
+                              alt="Hall of Fame"
+                              height={460}
+                              width={460}
+                              className="object-contain h-full w-full"
+                              priority
+                            />
+                          </motion.div>
+                        </AnimatePresence>
+
+
+
+                      </div>
+
+
+                    </div>
                   </div>
 
-                  <div>
-                    <h3 className="text-2xl font-bold text-[#117ABA] mb-4">12 Billion Packs per annum</h3>
-                    <p className="text-lg leading-relaxed text-gray-800 mb-6">
-                      Asepto’s converting process is equipped with some of the most advanced machinery that is fast-paced with precision and innovative adaptations. Asepto is now manufacturing 12 billion packs per annum. With a product portfolio suitable to a complete range of beverages available in the market, we have gradually gained the trust of some of the leading beverage companies in India and abroad to become their end-to-end packaging partner. In addition to aesthetic augmentation, we also provide sterility and counterfeiting assurance to our clients. The fact that we are now successfully packing some of the trickiest items like Ghee (purified butter) comfortably describes our ability and approach as a packaging innovator.
-                    </p>
+                  <div className="grid py-4 lg:grid-cols-2 lg:py-1 gap-10">
 
-                    {/* Blue solution graphic */}
-                    <div className="relative h-[200px] rounded-xl overflow-hidden">
-                      <Image
-                        src="/images/we-believe-in-solution-ship.jpg"
-                        alt="We Believe in SolutionShip"
-                        fill
-                        className="object-cover"
-                      />
+                    {/* TEXT */}
+                    <div className="text-center sm:text-left max-w-lg ">
+                      <AnimatePresence mode="wait">
+                        <div>
+                          <motion.span
+                            initial={{ opacity: 0, y: 10 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            className="text-[18px] lato-700 text-[#117ABA] md:text-[24px] "
+                          >
+                            12 Billion Packs per annum
+                          </motion.span>
+
+                          <p className=" text-wrap max-w-xl lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black">
+                            Asepto’s converting process is equipped with some of the most advanced machinery that is fast-paced automation with precision and innovative adaptations. Asepto is now manufacturing 12 billion packs per annum.
+                            With a product portfolio suitable to a complete range of beverages available in the market, we have gradually gained the trust of some of the leading beverage companies in India and abroad to become their end-to-end packaging partner. In addition to aesthetic augmentation, we also provide sterility and counterfeiting assurance to our clients. 
+                            {/* The fact that we are now successfully packing some of the trickiest items like Ghee (purified butter) comfortably describes our ability and approach as a packaging innovator. */}
+                          </p>
+
+
+
+
+                        </div>
+                      </AnimatePresence>
+                    </div>
+
+
+                    <div className="flex flex-col items-center">
+
+                      {/* IMAGE */}
+                      <div className="mt-0 sm:mt-4 relative w-full aspect-square overflow-hidden group cursor-pointer">
+                        {/* Image */}
+                        <AnimatePresence mode="wait">
+                          <motion.div
+                            initial={{ opacity: 0, x: 20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: -20 }}
+                            transition={{ duration: 0.5, ease: "easeOut" }}
+                            className="absolute inset-0"
+                          >
+                            <Image
+                              src="/images/aseptic/sol.png"
+                              alt="Hall of Fame"
+                              height={320}
+                              width={320}
+                              className="object-cover h-full w-full"
+                              priority
+                            />
+                          </motion.div>
+                        </AnimatePresence>
+
+
+
+                      </div>
+
+
                     </div>
                   </div>
 
                   <div className="flex gap-6 justify-start">
                     <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Learn More</button>
-                    <button className="border-2 border-[#117ABA] text-[#117ABA] px-8 py-4 rounded-lg font-medium">Request Sample</button>
-                  </div>
+                                                               <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button>
+ </div>
                 </div>
               )}
             </div>
@@ -525,13 +620,12 @@ export default function ProductCategorySection(props: any) {
               </div>
 
               {/* Buttons */}
-              <div className="flex flex-wrap gap-6 justify-end">
+              <div className="flex flex-wrap gap-6 justify-start">
                 <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium hover:bg-blue-800 transition">
                   Learn More
                 </button>
-                <button className="border-2 border-[#117ABA] text-[#117ABA] px-8 py-4 rounded-lg font-medium hover:bg-blue-50 transition">
-                  Request Sample
-                </button>
+                                      <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button>
+
               </div>
             </div>
           ) : isFillingMachines ? (
@@ -631,11 +725,11 @@ export default function ProductCategorySection(props: any) {
                 </div>
               </div>
 
-              <div className="flex flex-wrap gap-6 justify-end mt-10">
+              <div className="flex flex-wrap gap-6 justify-start mt-10">
                 <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium hover:bg-blue-800 transition">
                   Learn More
                 </button>
-                <button className="border-2 border-[#117ABA] text-[#117ABA] px-8 py-4 rounded-lg font-medium hover:bg-blue-50 transition">
+                <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">
                   Request Sample
                 </button>
               </div>
@@ -794,11 +888,11 @@ export default function ProductCategorySection(props: any) {
                 </div>
 
                 {/* Bottom Buttons */}
-                <div className="flex flex-wrap gap-6 justify-end">
-                  <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium hover:bg-blue-800 transition">
+                <div className="flex flex-wrap gap-6 justify-start">
+                  <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium ">
                     Learn More
                   </button>
-                  <button className="border-2 border-[#117ABA] text-[#117ABA] px-8 py-4 rounded-lg font-medium hover:bg-blue-50 transition">
+                  <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium ">
                     Request Sample
                   </button>
                 </div>
@@ -930,11 +1024,11 @@ export default function ProductCategorySection(props: any) {
                   </div>
 
                   {/* Bottom Buttons */}
-                  <div className="flex flex-wrap gap-6 justify-end">
-                    <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium hover:bg-blue-800 transition">
+                  <div className="flex flex-wrap gap-6 justify-start">
+                    <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium ">
                       Learn More
                     </button>
-                    <button className="border-2 border-[#117ABA] text-[#117ABA] px-8 py-4 rounded-lg font-medium hover:bg-blue-50 transition">
+                    <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium ">
                       Request Sample
                     </button>
                   </div>

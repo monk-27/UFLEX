@@ -49,7 +49,7 @@ export default function SustainabilityCarousel() {
                 </motion.h1>
 
                 <p className=" text-wrap max-w-xl lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black">
-                  Our journey of growth and leadership in flexible packaging has been consistently recognized by prestigious industry forums worldwide. From accolades in sustainability and product innovation to honors as a top employer, our awards reflect more than achievements- they embody our commitment to shaping a responsible, forward-looking future. 
+                  Our journey of growth and leadership in flexible packaging has been consistently recognized by prestigious industry forums worldwide. From accolades in sustainability and product innovation to honors as a top employer, our awards reflect more than achievements- they embody our commitment to shaping a responsible, forward-looking future.
                   {/* Each recognition is a testament to the passion, ingenuity, and dedication of our people, and to our vision of delivering packaging solutions that combine performance, innovation, and sustainability. */}
                 </p>
 
@@ -60,7 +60,7 @@ export default function SustainabilityCarousel() {
             </AnimatePresence>
           </div>
 
-          
+
           <div className="flex flex-col items-center">
 
             {/* IMAGE */}
@@ -104,14 +104,9 @@ export default function SustainabilityCarousel() {
                 
               </div> */}
               </div>
- {/* <motion.div
-          className="absolute inset-0 bg-black bg-opacity-100"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.5 }}
-          transition={{ duration: 1 }}
-        ></motion.div> */}
+              
             </div>
-          {/* </div> */}
+            {/* </div> */}
 
             {/* DOTS */}
             {/* <div className="mt-4 flex gap-2">
