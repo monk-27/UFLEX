@@ -45,7 +45,7 @@ export default function ProductsPage() {
         "Suitable for PPH – Straw Hole",
       ],
 
-      technology: `UFlex Asepto has implemented fully automated Dutch technology at its flagship plant in Sanand, Gujarat. This technology processes high-quality food-grade paper with ultra-premium lab-tested food-grade adhesive to roll out u-shaped paper straws. This technology scientifically twists the straws to create the origami spiral effect giving the straws their natural U shape. Production capacity: approximately 2.4 billion annually.`,
+      technology: `UFlex Asepto has implemented fully automated Dutch technology at its flagship plant in Sanand, Gujarat. This technology processes high-quality food-grade paper with ultra-premium lab-tested food-grade adhesive to roll out u-shaped paper straws. This technology scientifically twists the straws to create the origami spiral effect giving the straws their natural U shape. Production capacity approximately 2.4 billion annually.`,
 
       quickLinks: [
         { label: "Aseptic Packaging Website", href: "https://www.asepto.com", external: true },

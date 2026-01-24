@@ -440,14 +440,11 @@ export default function ProductCategorySection(props: any) {
                   <div>
                     <h2 className="text-3xl font-bold text-[#117ABA] mb-6">Packaging that keeps it all safe</h2>
                     <p className="text-lg leading-relaxed text-gray-800 mb-8">
-                      Our aseptic liquid packaging cartons comprise six layers of protection that keep the beverage unexposed to the outer world, i.e., sunlight, air, moisture, etc. These layers help the cartons preserve the natural texture and essence of the product till the last drop. As these layers contain FSC-grade paperboard that provides the pack with the desired shape and required durability, it becomes tough enough to resist shock, thrust and any other forceful impact that could damage the carton. The six-layered shield helps ensure that your product travels miles without any damage and deliver the original freshness to your consumers to add to their delight.
-                    </p>
+                      Our aseptic liquid packaging cartons comprise six layers of protection that keep the beverage unexposed to the outer world, i.e., sunlight, air, moisture, etc. 
+                       </p>
                   </div>
 
-                  {/* Layered structure */}
-
-
-                  {/* Converting process flow */}
+                
                   <div className="grid py-4 lg:grid-cols-2 lg:py-1 gap-10">
 
                     {/* TEXT */}
@@ -464,8 +461,9 @@ export default function ProductCategorySection(props: any) {
                           </motion.span>
 
                           <p className=" text-wrap max-w-xl lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black">
-                            Our aseptic liquid packaging cartons comprise six layers of protection that keep the beverage unexposed to the outer world, i.e., sunlight, air, moisture, etc. These layers help the cartons preserve the natural texture and essence of the product till the last drop. As these layers contain FSC-grade paperboard that provides the pack with the desired shape and required durability, it becomes tough enough to resist shock, thrust and any other forceful impact that could damage the carton.
-                            The six-layered shield helps us ensure that your product travels miles without any damage and deliver the original freshness to your consumers to add to their delight.</p>
+                            The six-layered shield helps us ensure that your product travels miles without any damage and deliver the original freshness to your consumers to add to their delight.
+                      These layers help the cartons preserve the natural texture and essence of the product till the last drop. As these layers contain FSC-grade paperboard that provides the pack with the desired shape and required durability, it becomes tough enough to resist shock, thrust and any other forceful impact that could damage the carton.
+                            </p>
 
 
 
@@ -587,20 +585,68 @@ export default function ProductCategorySection(props: any) {
               </div>
 
               {/* WHY A SIP ? */}
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-32 h-32 bg-blue-100 rounded-full flex items-center justify-center">
-                    {/* Blue silhouette icon - replace with actual SVG or image */}
-                    <Image src="/images/asip-silhouette.png" alt="Silhouette" width={80} height={80} />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-[#117ABA] mb-4">WHY A SIP ?</h3>
-                  <p className="text-lg leading-relaxed text-gray-800">
+              
+
+                <div className="grid py-4 lg:grid-cols-2 lg:py-1 gap-10">
+
+                    {/* TEXT */}
+                    <div className="text-center sm:text-left max-w-lg ">
+                      <AnimatePresence mode="wait">
+                        <div>
+                          <motion.h3
+                            initial={{ opacity: 0, y: 10 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            className="text-[18px] lato-700 text-[#117ABA] md:text-[24px] "
+                          >
+                           WHY A SIP ?
+                  
+                          </motion.h3>
+                          <p className="text-wrap max-w-xl lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black">
                     {whyAsip}
                   </p>
-                </div>
-              </div>
+
+                         
+
+
+
+
+                        </div>
+                      </AnimatePresence>
+                    </div>
+
+
+                    <div className="flex flex-col items-center">
+
+                      {/* IMAGE */}
+                      <div className="mt-0 sm:mt-4 relative w-full aspect-square h-[292px] overflow-hidden group cursor-pointer">
+                        {/* Image */}
+                        <AnimatePresence mode="wait">
+                          <motion.div
+                            initial={{ opacity: 0, x: 20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: -20 }}
+                            transition={{ duration: 0.5, ease: "easeOut" }}
+                            className="absolute inset-0"
+                          >
+                            <Image
+                              src="/images/aseptic/dsip.png"
+                              alt="Hall of Fame"
+                              height={292}
+                              width={292}
+                              className="object-cover h-full w-full"
+                              priority
+                            />
+                          </motion.div>
+                        </AnimatePresence>
+
+
+
+                      </div>
+
+
+                    </div>
+                  </div>
 
               {/* Key Features */}
               <div>
