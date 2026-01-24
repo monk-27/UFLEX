@@ -8,6 +8,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
+import Breadcrumb from "@/components/breadcrumb";
 
 export default function ProductsPage() {
   const [selectedKey, setSelectedKey] = useState<string | null>(null);
@@ -53,41 +54,41 @@ export default function ProductsPage() {
       ],
     },
     "filling-machines": {
-  key: "filling-machines",
-  title: "Filling Machines",
-  heroImageUrl: "/images/filling-machines-hero.jpg", // your hero image
-  brandTag: "ASEPTO",
-  overview: "Filling machines are the core of the aseptic beverage production and packaging line...",
-  quickLinks: [
-    { label: "Aseptic Packaging Website", href: "https://www.asepto.com", external: true },
-    { label: "Request Quote", href: "#" },
-    { label: "Download Catalog", href: "#" },
-  ],
-},
-"asepto-pro": {
-  key: "asepto-pro",
-  title: "Asepto Pro",
-  heroImageUrl: "/images/asepto-pro-hero-map.jpg", // your map background image
-  brandTag: "Asepto Pro",
-  overview: "A minute of downtime can cause hours of losses to you...",
-  quickLinks: [
-    { label: "Aseptic Packaging Website", href: "https://www.asepto.com", external: true },
-    { label: "Request Quote", href: "#" },
-    { label: "Download Catalog", href: "#" },
-  ],
-},
-"asepto-design": {
-  key: "asepto-design",
-  title: "Asepto Design",
-  heroImageUrl: "/images/asepto-design-hero-fruits.jpg", // your hero with fruits & carton
-  brandTag: "Asepto Design",
-  overview: "Asepto Designs is the creative powerhouse within Asepto...",
-  quickLinks: [
-    { label: "Aseptic Packaging Website", href: "https://www.asepto.com", external: true },
-    { label: "Request Quote", href: "#" },
-    { label: "Download Catalog", href: "#" },
-  ],
-},
+      key: "filling-machines",
+      title: "Filling Machines",
+      heroImageUrl: "/images/filling-machines-hero.jpg", // your hero image
+      brandTag: "ASEPTO",
+      overview: "Filling machines are the core of the aseptic beverage production and packaging line...",
+      quickLinks: [
+        { label: "Aseptic Packaging Website", href: "https://www.asepto.com", external: true },
+        { label: "Request Quote", href: "#" },
+        { label: "Download Catalog", href: "#" },
+      ],
+    },
+    "asepto-pro": {
+      key: "asepto-pro",
+      title: "Asepto Pro",
+      heroImageUrl: "/images/asepto-pro-hero-map.jpg", // your map background image
+      brandTag: "Asepto Pro",
+      overview: "A minute of downtime can cause hours of losses to you...",
+      quickLinks: [
+        { label: "Aseptic Packaging Website", href: "https://www.asepto.com", external: true },
+        { label: "Request Quote", href: "#" },
+        { label: "Download Catalog", href: "#" },
+      ],
+    },
+    "asepto-design": {
+      key: "asepto-design",
+      title: "Asepto Design",
+      heroImageUrl: "/images/asepto-design-hero-fruits.jpg", // your hero with fruits & carton
+      brandTag: "Asepto Design",
+      overview: "Asepto Designs is the creative powerhouse within Asepto...",
+      quickLinks: [
+        { label: "Aseptic Packaging Website", href: "https://www.asepto.com", external: true },
+        { label: "Request Quote", href: "#" },
+        { label: "Download Catalog", href: "#" },
+      ],
+    },
     // Add other categories later...
   };
 
@@ -110,87 +111,143 @@ export default function ProductsPage() {
     return (
       <>
         <SiteHeader />
-        <section className="bg-white pt-4 sm:pt-12">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-              {/* Left sidebar */}
-              <aside className="lg:col-span-1">
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6 }}
-                  className="bg-white overflow-hidden hidden lg:block sticky top-6"
-                >
-                  <div className="rounded-xl border border-gray-200">
-                    <div className="bg-[#117ABA] text-white px-6 py-5">
-                      <h2 className="text-lg lato-700 tracking-wide">PRODUCT CATEGORIES</h2>
-                    </div>
-                    <nav className="divide-y divide-gray-100">
-                      {enhancedCategories.map((cat) => (
-                        <motion.button
-                          key={cat.name}
-                          onClick={cat.onClick}
-                          className="w-full flex items-center justify-between px-6 py-4 text-left text-black hover:bg-blue-50 border-l-4 border-transparent"
-                        >
-                          <span className="lato-400 text-[16px] sm:text-[18px]">{cat.name}</span>
-                          <ChevronRight size={18} />
-                        </motion.button>
-                      ))}
-                    </nav>
-                  </div>
+        <div>
+          <section className="relative w-full h-[580px] sm:h-[451px] overflow-hidden">
 
-                  <div className="p-6 rounded-xl border border-gray-200 mt-4">
-                    <h3 className="text-sm lato-700 text-gray-800 mb-3 uppercase tracking-wider">Quick Links</h3>
-                    <ul className="space-y-2">
-                      <li><a href="https://www.asepto.com" className="hover:text-[#117ABA]">Aseptic Packaging Website</a></li>
-                      <li><a href="#" className="hover:text-[#117ABA]">Request Quote</a></li>
-                      <li><a href="#" className="hover:text-[#117ABA]">Download Catalog</a></li>
-                    </ul>
-                  </div>
-                </motion.div>
-              </aside>
+            <Image
+              src="/images/flexi.png"
+              alt="Investors Relations"
+              fill
+              className="object-cover w-full h-full"
+              priority
+            />
 
-              {/* Default Overview - exact first screenshot */}
-              <main className="lg:col-span-3 space-y-10">
-                <div className="relative h-[500px] rounded-xl overflow-hidden shadow-xl">
-                  <Image src="/images/aseptic-hero-packs-on-podiums.jpg" alt="Aseptic Cartons" fill className="object-cover" priority />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+            <div className="absolute inset-0 bg-black/40"></div>
+
+
+            <motion.div
+              className="absolute inset-0 flex flex-col justify-end  text-white"
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: { opacity: 0, y: 30 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { delayChildren: 0.3, staggerChildren: 0.3 },
+                },
+              }}
+            >
+
+
+              <motion.div
+                className="bg-[#117ABA] lato-400 text-left w-[450px] h-[350px] sm:w-[706px] sm:h-[411px] text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[20px] pl-4 pt-2 pb-4 pr-4 md:pl-24 lg:pl-28 sm:pt-8 sm:pb-4 sm:pr-12 mb-12 sm:mb-8"
+                variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+              >
+                <div className="w-[300px] sm:w-[537px]">
+
+
+                  <h1 className="text-white text-[24px] lato-700  md:text-[42px]">
+                    Flexible Packaging
+
+                  </h1>
+                  UFlex’s Flexible Packaging Business’s products range from Flexible Laminates, Pre-Formed Pouches, Flexo Printed Rolls & Bags, Laminated Woven Polypropylene (WPP) Bags, Electron Beam & Cast N Cure, Pharmaceutical Packaging, FlexiTubes, Hygiene Films, Flexfresh™ Modified Atmosphere Packaging, Big Bags and N-95 Mask.
+                  {/* As an end-to-end flexible packaging solutions company, UFlex also holds the expertise to develop flexible tube Tube Packaging for a large number of FMCG brands in India and overseas */}
                 </div>
+              </motion.div>
 
-                <div className="bg-white p-8 rounded-xl border">
-                  <h2 className="text-3xl font-bold text-[#117ABA] mb-6">Overview</h2>
-                  <p className="text-lg leading-relaxed text-gray-800 mb-8">
-                    Asepto innovatively incorporates the 3P's of Packaging - PRESERVE, PROTECT and PROMOTE. Our aseptic liquid packaging cartons encompass six layers of protection that keeps the freshness preserved in varieties of beverages, be it dairy and dairy-based beverages, nectar-based beverages, or beverages from the distillery industry. We augment your product positioning through innovative design aesthetics. Our state-of-the-art converting process and manufacturing facilities help us materialize our thoughts into reality. They are advanced, automated, and human-touch-free.
-                  </p>
 
-                  <h3 className="text-2xl font-bold text-[#117ABA] mb-4">Our Innovation</h3>
-                  <p className="text-lg leading-relaxed text-gray-800 mb-8">
-                    Packaging is your key salesperson and we at Asepto believe that "All that Glitters is Sold". Our Holography and Foil Stamping Technology is definitely going to add edge to your brand and make it attractive on the retail shelf.
-                  </p>
+            </motion.div>
+          </section>
+          <Breadcrumb
+            items={[
+              { label: "Flexible Packaging", href: "/flexible-packaging-business" },
+              { label: "Flexible Packaging Products" },
+            ]}
+          />
 
-                  <h3 className="text-2xl font-bold text-[#117ABA] mb-4">What We do for International Market</h3>
-                  <p className="text-lg leading-relaxed text-gray-800 mb-8">
-                    Packaging is your key salesperson and we at Asepto believe that "All that Glitters is Sold". Our Holography and Foil Stamping Technology is definitely going to add edge to your brand and make it attractive on the retail shelf.
-                  </p>
-
-                  <div className="mb-10">
-                    <div className="relative h-[400px] rounded-xl border overflow-hidden bg-gray-50">
-                      <Image src="/images/world-map-presence.jpg" alt="Our Presence" fill className="object-contain p-6" />
+          <section className="bg-white pt-4 sm:pt-12">
+            <div className="max-w-7xl mx-auto px-4">
+              <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                {/* Left sidebar */}
+                <aside className="lg:col-span-1">
+                  <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6 }}
+                    className="bg-white overflow-hidden hidden lg:block sticky top-6"
+                  >
+                    <div className="rounded-xl border border-gray-200">
+                      <div className="bg-[#117ABA] text-white px-6 py-5">
+                        <h2 className="text-lg lato-700 tracking-wide">PRODUCT CATEGORIES</h2>
+                      </div>
+                      <nav className="divide-y divide-gray-100">
+                        {enhancedCategories.map((cat) => (
+                          <motion.button
+                            key={cat.name}
+                            onClick={cat.onClick}
+                            className="w-full flex items-center justify-between px-6 py-4 text-left text-black hover:bg-blue-50 border-l-4 border-transparent"
+                          >
+                            <span className="lato-400 text-[16px] sm:text-[18px]">{cat.name}</span>
+                            <ChevronRight size={18} />
+                          </motion.button>
+                        ))}
+                      </nav>
                     </div>
-                    <p className="text-center mt-4 text-lg font-medium text-gray-800">
-                      Our Presence: Asia • Africa • Middle East • South America
+
+                    <div className="p-6 rounded-xl border border-gray-200 mt-4">
+                      <h3 className="text-sm lato-700 text-gray-800 mb-3 uppercase tracking-wider">Quick Links</h3>
+                      <ul className="space-y-2">
+                        <li><a href="https://www.asepto.com" className="hover:text-[#117ABA]">Aseptic Packaging Website</a></li>
+                        <li><a href="#" className="hover:text-[#117ABA]">Request Quote</a></li>
+                        <li><a href="#" className="hover:text-[#117ABA]">Download Catalog</a></li>
+                      </ul>
+                    </div>
+                  </motion.div>
+                </aside>
+
+                {/* Default Overview - exact first screenshot */}
+                <main className="lg:col-span-3 space-y-10">
+                  <div className="relative h-[500px] rounded-xl overflow-hidden shadow-xl">
+                    <Image src="/images/aseptic-hero-packs-on-podiums.jpg" alt="Aseptic Cartons" fill className="object-cover" priority />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                  </div>
+
+                  <div className="bg-white p-8 rounded-xl border">
+                    <h2 className="text-3xl font-bold text-[#117ABA] mb-6">Overview</h2>
+                    <p className="text-lg leading-relaxed text-gray-800 mb-8">
+                      Asepto innovatively incorporates the 3P's of Packaging - PRESERVE, PROTECT and PROMOTE. Our aseptic liquid packaging cartons encompass six layers of protection that keeps the freshness preserved in varieties of beverages, be it dairy and dairy-based beverages, nectar-based beverages, or beverages from the distillery industry. We augment your product positioning through innovative design aesthetics. Our state-of-the-art converting process and manufacturing facilities help us materialize our thoughts into reality. They are advanced, automated, and human-touch-free.
                     </p>
-                  </div>
 
-                  <div className="flex gap-6 justify-end">
-                    <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Learn More</button>
-                    <button className="border-2 border-[#117ABA] text-[#117ABA] px-8 py-4 rounded-lg font-medium">Request Sample</button>
+                    <h3 className="text-2xl font-bold text-[#117ABA] mb-4">Our Innovation</h3>
+                    <p className="text-lg leading-relaxed text-gray-800 mb-8">
+                      Packaging is your key salesperson and we at Asepto believe that "All that Glitters is Sold". Our Holography and Foil Stamping Technology is definitely going to add edge to your brand and make it attractive on the retail shelf.
+                    </p>
+
+                    <h3 className="text-2xl font-bold text-[#117ABA] mb-4">What We do for International Market</h3>
+                    <p className="text-lg leading-relaxed text-gray-800 mb-8">
+                      Packaging is your key salesperson and we at Asepto believe that "All that Glitters is Sold". Our Holography and Foil Stamping Technology is definitely going to add edge to your brand and make it attractive on the retail shelf.
+                    </p>
+
+                    <div className="mb-10">
+                      <div className="relative h-[400px] rounded-xl border overflow-hidden bg-gray-50">
+                        <Image src="/images/world-map-presence.jpg" alt="Our Presence" fill className="object-contain p-6" />
+                      </div>
+                      <p className="text-center mt-4 text-lg font-medium text-gray-800">
+                        Our Presence: Asia • Africa • Middle East • South America
+                      </p>
+                    </div>
+
+                    <div className="flex gap-6 justify-end">
+                      <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Learn More</button>
+                      <button className="border-2 border-[#117ABA] text-[#117ABA] px-8 py-4 rounded-lg font-medium">Request Sample</button>
+                    </div>
                   </div>
-                </div>
-              </main>
+                </main>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
         <SiteFooter />
       </>
     );
@@ -203,7 +260,60 @@ export default function ProductsPage() {
   return (
     <>
       <SiteHeader />
-      <section className="bg-white pt-4 sm:pt-12">
+      <section className="bg-white ">
+        <section className="relative w-full h-[580px] sm:h-[451px] overflow-hidden">
+
+          <Image
+            src="/images/flexi.png"
+            alt="Investors Relations"
+            fill
+            className="object-cover w-full h-full"
+            priority
+          />
+
+          <div className="absolute inset-0 bg-black/40"></div>
+
+
+          <motion.div
+            className="absolute inset-0 flex flex-col justify-end  text-white"
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: { opacity: 0, y: 30 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { delayChildren: 0.3, staggerChildren: 0.3 },
+              },
+            }}
+          >
+
+
+            <motion.div
+              className="bg-[#117ABA] lato-400 text-left w-[450px] h-[350px] sm:w-[706px] sm:h-[411px] text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[20px] pl-4 pt-2 pb-4 pr-4 md:pl-24 lg:pl-28 sm:pt-8 sm:pb-4 sm:pr-12 mb-12 sm:mb-8"
+              variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+            >
+              <div className="w-[300px] sm:w-[537px]">
+
+
+                <h1 className="text-white text-[24px] lato-700  md:text-[42px]">
+                  Flexible Packaging
+
+                </h1>
+                UFlex’s Flexible Packaging Business’s products range from Flexible Laminates, Pre-Formed Pouches, Flexo Printed Rolls & Bags, Laminated Woven Polypropylene (WPP) Bags, Electron Beam & Cast N Cure, Pharmaceutical Packaging, FlexiTubes, Hygiene Films, Flexfresh™ Modified Atmosphere Packaging, Big Bags and N-95 Mask.
+                {/* As an end-to-end flexible packaging solutions company, UFlex also holds the expertise to develop flexible tube Tube Packaging for a large number of FMCG brands in India and overseas */}
+              </div>
+            </motion.div>
+
+
+          </motion.div>
+        </section>
+        <Breadcrumb
+          items={[
+            { label: "Flexible Packaging", href: "/flexible-packaging-business" },
+            { label: "Flexible Packaging Products" },
+          ]}
+        />
         <div className="max-w-7xl mx-auto px-4">
           <ProductCategorySection
             key={itemKey}

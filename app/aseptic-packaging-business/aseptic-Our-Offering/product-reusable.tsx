@@ -2,9 +2,9 @@
 "use client";
 
 import Image from "next/image";
-import { ChevronRight } from "lucide-react";
+import { ChevronDown, ChevronRight } from "lucide-react";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function ProductCategorySection(props: any) {
   const {
@@ -20,6 +20,7 @@ export default function ProductCategorySection(props: any) {
   } = props;
 
   const [activeTab, setActiveTab] = useState<"cartons" | "innovations" | "process">("cartons");
+    const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   const isAsepticCartons = title === "Aseptic Cartons";
   const isASip = title === "A SIP";
@@ -31,45 +32,172 @@ export default function ProductCategorySection(props: any) {
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         {/* Left sidebar */}
         <aside className="lg:col-span-1">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="bg-white overflow-hidden hidden lg:block sticky top-6"
-          >
-            <div className="rounded-xl border border-gray-200">
-              <div className="bg-[#117ABA] text-white px-6 py-5">
-                <h2 className="text-lg lato-700 tracking-wide">PRODUCT CATEGORIES</h2>
-              </div>
-              <nav className="divide-y divide-gray-100">
-                {categories.map((cat: any) => (
-                  <motion.button
-                    key={cat.name}
-                    onClick={cat.onClick}
-                    className={`w-full flex items-center justify-between px-6 py-4 transition-colors text-left border-l-4 ${cat.isActive ? "bg-blue-100 border-l-[#117ABA] text-[#117ABA]" : "text-gray-800 hover:bg-blue-50"
-                      }`}
-                  >
-                    <span className="lato-400 text-[16px] sm:text-[18px]">{cat.name}</span>
-                    <ChevronRight size={18} className={`transition-transform ${cat.isActive ? "rotate-90" : ""}`} />
-                  </motion.button>
-                ))}
-              </nav>
-            </div>
+                    {/* Desktop Sidebar */}
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6 }}
+                        className="bg-white  overflow-hidden hidden lg:block sticky top-6"
+                    >
+                        <div className="">
 
-            <div className="p-6 rounded-xl border border-gray-200 mt-4">
-              <h3 className="text-sm lato-700 text-gray-800 mb-3 uppercase tracking-wider">Quick Links</h3>
-              <ul className="space-y-2">
-                {quickLinks.map((link: any) => (
-                  <li key={link.label}>
-                    <a href={link.href} className="text-black hover:text-[#117ABA] text-sm" {...(link.external && { target: "_blank" })}>
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </motion.div>
-        </aside>
+                            <div className="bg-[#117ABA] text-white px-6 py-5">
+                                <h2 className="text-lg lato-700 tracking-wide">PRODUCT CATEGORIES</h2>
+                            </div>
+
+                            <nav className="divide-y divide-gray-100">
+
+                                {categories.map((category: any) => (
+                                    <motion.button
+                                        key={category.name}
+                                        onClick={category.onClick}
+                                        whileTap={{ scale: 0.98 }}
+                                        className={`
+      w-full flex items-center justify-between px-6 py-4
+      text-left transition-colors duration-200
+      bg-white
+      hover:bg-[#F9F9F9]
+     
+      ${category.isActive
+                                                ? " text-[#117ABA]"
+                                                : " text-black"
+                                            }
+    `}
+                                    >
+                                        <span
+                                            className={`
+        lato-400 text-[16px] sm:text-[18px] leading-relaxed
+        ${category.isActive ? "text-[#117ABA] " : "text-black"}
+      `}
+                                        >
+                                            {category.name}
+                                        </span>
+
+                                        <ChevronRight
+                                            size={18}
+                                            className={`
+        transition-transform duration-300
+        ${category.isActive ? "rotate-90 text-[#117ABA]" : "text-gray-500"}
+      `}
+                                        />
+                                    </motion.button>
+                                ))}
+                            </nav>
+
+
+                        </div>
+
+                        {/* {quickLinks.length > 0 && (
+                            <div className="hidden lg:block p-6 bg-[#F9F9F9] mt-4">
+                                <h3 className="text-sm lato-700 text-gray-800 mb-3 uppercase tracking-wider">
+                                    Quick Links
+                                </h3>
+                                <ul className="space-y-2">
+                                    {quickLinks.map((link) => (
+                                        <li key={link.label}>
+                                            <a
+                                                href={link.href}
+                                                className="text-black hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
+                                                {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
+                                            >
+                                                {link.label}
+                                                
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )} */}
+                    </motion.div>
+
+                    {/* Mobile Accordion */}
+                    <div className="lg:hidden bg-white   overflow-hidden">
+                        <button
+                            onClick={() => setIsMobileOpen(!isMobileOpen)}
+                            className="w-full flex items-center justify-between bg-[#117ABA] text-white px-6 py-5 lato-400 text-[16px] sm:text-[18px] leading-relaxed "
+                        >
+                            <span>PRODUCT CATEGORIES</span>
+                            {isMobileOpen ? <ChevronDown size={24} /> : <ChevronRight size={24} />}
+                        </button>
+
+                        <AnimatePresence>
+                            {isMobileOpen && (
+                                <motion.nav
+                                    initial={{ height: 0, opacity: 0 }}
+                                    animate={{ height: "auto", opacity: 1 }}
+                                    exit={{ height: 0, opacity: 0 }}
+                                    transition={{ duration: 0.4 }}
+                                    className="overflow-hidden"
+                                >
+                                    <div className="divide-y divide-gray-100">
+                                        {categories.map((category:any) => (
+                                            <motion.button
+                                                key={category.name}
+                                                onClick={category.onClick}
+                                                whileTap={{ scale: 0.98 }}
+                                                className={`
+      w-full flex items-center justify-between px-6 py-4
+      text-left transition-colors duration-200
+      bg-white
+      hover:bg-gray-100
+     
+      ${category.isActive
+                                                        ? "bg-blue-100  text-[#117ABA]"
+                                                        : "border-l-transparent text-black"
+                                                    }
+    `}
+                                            >
+                                                <span
+                                                    className={`
+        lato-400 text-[16px] sm:text-[18px] leading-relaxed
+        ${category.isActive ? "text-[#117ABA]" : "text-black"}
+      `}
+                                                >
+                                                    {category.name}
+                                                </span>
+
+                                                <ChevronRight
+                                                    size={18}
+                                                    className={`
+        transition-transform duration-300
+        ${category.isActive ? "rotate-90 text-[#117ABA]" : "text-gray-500"}
+      `}
+                                                />
+                                            </motion.button>
+                                        ))}
+                                    </div>
+                                </motion.nav>
+                            )}
+                        </AnimatePresence>
+
+
+                    </div>
+                    {/* {quickLinks.length > 0 && (
+                        <div className="block lg:hidden p-6 mt-4 bg-[#F9F9F9]">
+                            <h3 className="text-sm lato-700 text-gray-800 mb-3 uppercase tracking-wider">
+                                Quick Links
+                            </h3>
+                            <ul className="space-y-2">
+                                {quickLinks.map((link) => (
+                                    <ul className="space-y-2">
+                                        {quickLinks.map((link) => (
+                                            <li key={link.label}>
+                                                <a
+                                                    href={link.href}
+                                                    className="text-black hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
+                                                    {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
+                                                >
+                                                    {link.label}
+                                                   
+                                                </a>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                ))}
+                            </ul>
+                        </div>
+                    )} */}
+                </aside>
 
         {/* Main content */}
         <motion.main key={title} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="lg:col-span-3 space-y-10">
