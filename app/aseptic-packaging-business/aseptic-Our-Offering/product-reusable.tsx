@@ -80,6 +80,30 @@ export default function ProductCategorySection(props: any) {
     },
   ];
 
+  const [openSections, setOpenSections] = useState<any>({
+    carePro: false,
+    maxPro: false,
+    ultraPro: false,
+  });
+
+  const toggleSection: any = (section: any) => {
+    setOpenSections((prev: any) => ({
+      ...prev,
+      [section]: !prev[section],
+    }));
+  };
+  const [openSection, setOpenSection] = useState({
+    briefing: false,
+    ideation: false,
+    design: false,
+  });
+
+  const toggleSections = (key: any) => {
+    setOpenSection((prev: any) => ({
+      ...prev,
+      [key]: !prev[key],
+    }));
+  };
   const topRow = ["BASE", "SLIM", "ULTRA LEAN", "SQUARE", "CURVE"];
   const bottomRow = ["WEDGE", "TRIO", "PILLOW", "SPECTRA", "MID"];
   return (
@@ -727,7 +751,7 @@ export default function ProductCategorySection(props: any) {
 
                 {/* Machine 2: Flexpress 10,000 */}
                 <div className="bg-white ">
-                      <h3 className="text-center text-3xl font-bold text-[#117ABA]">Flexpress 10,000</h3>
+                  <h3 className="text-center text-3xl font-bold text-[#117ABA]">Flexpress 10,000</h3>
                   <div className="flex flex-col lg:flex-row gap-8 items-start lg:items-center">
                     <div className="lg:w-1/2 space-y-6">
                       <h4 className="text-2xl font-bold mt-6 text-[#117ABA]">Key Features :</h4>
@@ -740,7 +764,7 @@ export default function ProductCategorySection(props: any) {
                       </ul>
                     </div>
 
-                     <div className="lg:w-1/2 height-[283px]">
+                    <div className="lg:w-1/2 height-[283px]">
                       <Image
                         src="/images/aseptic/flexpress.png" // replace with your actual image
                         alt="SPEED PLUS 25SK"
@@ -754,7 +778,7 @@ export default function ProductCategorySection(props: any) {
 
                 {/* Machine 3: Smart 78 */}
                 <div className="bg-white ">
-                      <h3 className="text-center text-3xl font-bold text-[#117ABA]">Smart 78</h3>
+                  <h3 className="text-center text-3xl font-bold text-[#117ABA]">Smart 78</h3>
                   <div className="flex flex-col lg:flex-row gap-8 items-start lg:items-center">
                     <div className="lg:w-1/2 space-y-6">
                       <h4 className="text-2xl font-bold mt-6 text-[#117ABA]">Key Features :</h4>
@@ -767,7 +791,7 @@ export default function ProductCategorySection(props: any) {
                       </ul>
                     </div>
 
-                     <div className="lg:w-1/2 height-[183px]">
+                    <div className="lg:w-1/2 height-[183px]">
                       <Image
                         src="/images/aseptic/smart.png" // replace with your actual image
                         alt="SPEED PLUS 25SK"
@@ -792,64 +816,17 @@ export default function ProductCategorySection(props: any) {
           ) :
             isAseptoPro ? (
               <div className="space-y-12">
-                {/* Hero with hexagons */}
-                <div className="relative h-[500px] md:h-[600px] rounded-xl overflow-hidden bg-gradient-to-b from-blue-50 to-white">
-                  <Image
-                    src="/images/asepto-pro-hero-map.jpg" // replace with your actual map background
-                    alt="Asepto Pro Global Support"
-                    fill
-                    className="object-cover opacity-40"
-                  />
-
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center px-4">
-                      <h2 className="text-4xl md:text-5xl font-bold text-[#117ABA] mb-8">Asepto Pro</h2>
-
-                      {/* Hexagonal icons with connecting lines */}
-                      <div className="relative flex flex-wrap justify-center gap-6 md:gap-12">
-                        {/* Connecting lines (curved paths - use SVG or CSS) */}
-                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                          <svg className="w-full h-full" viewBox="0 0 800 400">
-                            <path d="M200 100 Q 400 200 600 100" fill="none" stroke="#117ABA" strokeWidth="2" strokeDasharray="5,5" />
-                            <path d="M200 100 Q 400 0 600 100" fill="none" stroke="#117ABA" strokeWidth="2" strokeDasharray="5,5" />
-                          </svg>
-                        </div>
-
-                        {/* Individual hexagons */}
-                        {[
-                          { icon: "🤝", label: "Technical Assistance" },
-                          { icon: "👥", label: "Skill Enhancement Services" },
-                          { icon: "🛡️", label: "Quality Assurance" },
-                          { icon: "⚙️", label: "Performance Management" },
-                          { icon: "💻", label: "Remote Assistance" },
-                        ].map((item, index) => (
-                          <div key={index} className="relative w-40 h-44 md:w-48 md:h-52 transform rotate-30">
-                            <div className="absolute inset-0 bg-[#117ABA]/10 rounded-[20%] flex items-center justify-center border-2 border-[#117ABA]">
-                              <div className="text-center -rotate-30">
-                                <span className="text-4xl">{item.icon}</span>
-                                <p className="text-sm font-medium mt-2">{item.label}</p>
-                              </div>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
+                <div className="relative h-[388px] overflow-hidden ">
+                  <Image src={heroImageUrl} alt="Aseptic Cartons" fill className="object-contain" priority />
                 </div>
-
-                {/* Overview */}
-                <div className="bg-white p-8 rounded-xl border">
+                <div>
                   <h2 className="text-3xl font-bold text-[#117ABA] mb-6">Overview</h2>
-                  <p className="text-lg leading-relaxed text-gray-800 mb-8">
-                    A minute of downtime can cause hours of losses to you. We will not let that happen. Our team of engineers spread across geographies look after your filling machines, their technical overhauling, spare parts assistance, and the technical training to the on-ground team for enhanced operations.
-                  </p>
-                  <p className="text-lg leading-relaxed text-gray-800">
-                    Asepto Pro provides services to a complete range of filling machines across brands.
+                  <p className="text-lg leading-relaxed text-gray-800 whitespace-pre-line">
+                    {overview}
                   </p>
                 </div>
 
-                {/* WHY CHOOSE ASEPTO PRO? */}
-                <div className="bg-white p-8 rounded-xl border">
+                <div className="bg-white">
                   <h2 className="text-3xl font-bold text-[#117ABA] mb-6">WHY CHOOSE ASEPTO PRO?</h2>
                   <p className="text-lg leading-relaxed text-gray-800">
                     For any machinery-dependent manufacturing unit, maintenance is one of the biggest challenges. Machinery requires regular check-ups; it may stop functioning at any point in time if not attended to regularly. More than non-functionality, any malfunction in the machinery might cause irreversible damage to the overall set-up, the human resource, or the business at large. Asepto Pro offers Technical Assistance, Skill Enhancement services, Quality assurance, Performance Management & Remote assistance. Asepto Pro is available in more than 12 countries and is fast-growing as the preferred after-sale maintenance partner assisting beverage manufacturers to run their business with continuity.
@@ -858,34 +835,42 @@ export default function ProductCategorySection(props: any) {
                   {/* 8 icons grid */}
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
                     {[
-                      { icon: "/icons/machine-integration.png", label: "Machine Material Integration (MMI)" },
-                      { icon: "/icons/quality-assurance.png", label: "Quality Assurance" },
-                      { icon: "/icons/system-engineers.png", label: "System-Specific Engineers" },
-                      { icon: "/icons/technical-assistance.png", label: "Technical Assistance" },
-                      { icon: "/icons/remote-assistance.png", label: "Remote Assistance" },
-                      { icon: "/icons/authentic-spare-parts.png", label: "Authentic Spare Parts Delivered" },
-                      { icon: "/icons/performance-management.png", label: "Performance Management" },
-                      { icon: "/icons/skill-enhancement.png", label: "Skill Enhancement Services" },
+                      { icon: "/images/aseptic/1.png", label: "Machine Material Integration (MMI)" },
+                      { icon: "/images/aseptic/2.png", label: "Quality Assurance" },
+                      { icon: "/images/aseptic/3.png", label: "System-Specific Engineers" },
+                      { icon: "/images/aseptic/4.png", label: "Technical Assistance" },
+                      { icon: "/images/aseptic/5.png", label: "Remote Assistance" },
+                      { icon: "/images/aseptic/6.png", label: "Authentic Spare Parts Delivered" },
+                      { icon: "/images/aseptic/7.png", label: "Performance Management" },
+                      { icon: "/images/aseptic/8.png", label: "Skill Enhancement Services" },
                     ].map((item, index) => (
                       <div key={index} className="text-center">
-                        <div className="w-20 h-20 mx-auto mb-4 bg-blue-50 rounded-full flex items-center justify-center">
+                        <div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center">
                           <Image src={item.icon} alt={item.label} width={48} height={48} />
                         </div>
-                        <p className="text-sm font-medium">{item.label}</p>
+                        <p className="text-sm font-medium text-black">{item.label}</p>
                       </div>
                     ))}
                   </div>
                 </div>
 
                 {/* Solutions We Offer - Dropdowns */}
-                <div className="bg-white p-8 rounded-xl border">
+                <div className="bg-white">
                   <h2 className="text-3xl font-bold text-[#117ABA] mb-8">Solutions We Offer</h2>
 
                   {/* CarePro Dropdown */}
-                  <details className="mb-4 border-b pb-4">
+                  <details
+                    onToggle={() => toggleSection('carePro')}
+                    className="bg-[#F9F9F9]  px-2 py-2 mb-4  pb-4 border-white border-[1px] text-left hover:bg-gray-50 transition-colors">
                     <summary className="flex items-center justify-between cursor-pointer text-xl font-bold text-[#117ABA]">
                       <span>CarePro</span>
-                      <span className="text-2xl">↓</span>
+                      <motion.button
+                        animate={{ rotate: openSections.carePro ? 180 : 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm"
+                      >
+                        <ChevronDown className="w-3 h-3 text-white" />
+                      </motion.button>
                     </summary>
                     <div className="mt-4 pl-6">
                       <p className="text-lg text-gray-800 mb-4">
@@ -902,10 +887,19 @@ export default function ProductCategorySection(props: any) {
                   </details>
 
                   {/* MaxPro Dropdown */}
-                  <details className="mb-4 border-b pb-4">
+                  <details
+                    onToggle={() => toggleSection('maxPro')}
+                    className="bg-[#F9F9F9]  px-2 py-2 mb-4  pb-4 border-white border-[1px]   text-left hover:bg-gray-50 transition-colors">
+
                     <summary className="flex items-center justify-between cursor-pointer text-xl font-bold text-[#117ABA]">
                       <span>MaxPro</span>
-                      <span className="text-2xl">↓</span>
+                      <motion.button
+                        animate={{ rotate: openSections.maxPro ? 180 : 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm"
+                      >
+                        <ChevronDown className="w-3 h-3 text-white" />
+                      </motion.button>
                     </summary>
                     <div className="mt-4 pl-6">
                       <p className="text-lg text-gray-800 mb-4">
@@ -923,10 +917,19 @@ export default function ProductCategorySection(props: any) {
                   </details>
 
                   {/* UltraPro Dropdown */}
-                  <details className="mb-4">
+                  <details
+                    onToggle={() => toggleSection('ultraPro')}
+                    className="bg-[#F9F9F9]  px-2 py-2 mb-4  pb-4 border-white border-[1px]   text-left hover:bg-gray-50 transition-colors">
+
                     <summary className="flex items-center justify-between cursor-pointer text-xl font-bold text-[#117ABA]">
                       <span>UltraPro</span>
-                      <span className="text-2xl">↓</span>
+                      <motion.button
+                        animate={{ rotate: openSections.ultraPro ? 180 : 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm"
+                      >
+                        <ChevronDown className="w-3 h-3 text-white" />
+                      </motion.button>
                     </summary>
                     <div className="mt-4 pl-6">
                       <p className="text-lg text-gray-800 mb-4">
@@ -956,44 +959,13 @@ export default function ProductCategorySection(props: any) {
               isAseptoDesign ? (
                 <div className="space-y-16">
                   {/* Hero Section */}
-                  <div className="relative h-[500px] md:h-[600px] rounded-xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-50 via-white to-blue-50">
-                    <Image
-                      src="/images/asepto-design-hero-fruits.jpg" // replace with your actual hero image
-                      alt="Asepto Design Hero"
-                      fill
-                      className="object-cover"
-                    />
-
-                    <div className="absolute inset-0 flex items-center justify-center px-6 md:px-12">
-                      <div className="text-center max-w-4xl">
-                        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 mb-8">
-                          {/* A Design Shop Logo */}
-                          <div className="text-6xl md:text-8xl font-black text-[#117ABA] tracking-wider">
-                            A<span className="text-5xl md:text-7xl">DESIGN</span>SHOP
-                          </div>
-                          {/* Floating elements - fruits & carton */}
-                          <div className="relative w-48 h-48 md:w-64 h-64">
-                            <Image
-                              src="/images/blue-carton-floating.png"
-                              alt="Blue Carton"
-                              width={200}
-                              height={300}
-                              className="absolute top-0 left-1/2 -translate-x-1/2 rotate-12 shadow-2xl"
-                            />
-                            {/* Add more floating fruits if needed */}
-                          </div>
-                        </div>
-
-                        <h1 className="text-4xl md:text-6xl font-bold text-[#117ABA] mb-4">
-                          NOT ONLY WE DESIGN! WE CREATE BRANDS
-                        </h1>
-                      </div>
-                    </div>
-                  </div>
+                 <div className="relative h-[388px] overflow-hidden ">
+                  <Image src={heroImageUrl} alt="Aseptic Cartons" fill className="object-contain" priority />
+                </div>
 
                   {/* We Think as Strategists We Do as Designers */}
-                  <div className="bg-white p-8 md:p-12 rounded-xl border shadow-lg">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#117ABA] mb-8 text-center">
+                  <div className="bg-white ">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#117ABA] mb-8 text-start">
                       We Think as Strategists We Do as Designers
                     </h2>
                     <p className="text-lg md:text-xl leading-relaxed text-gray-800 max-w-4xl mx-auto">
@@ -1002,8 +974,8 @@ export default function ProductCategorySection(props: any) {
                   </div>
 
                   {/* Design that Speaks */}
-                  <div className="bg-white p-8 md:p-12 rounded-xl border shadow-lg">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#117ABA] mb-8 text-center">
+                  <div className="bg-white ">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#117ABA] mb-8 text-start">
                       Design that Speaks
                     </h2>
                     <p className="text-lg md:text-xl leading-relaxed text-gray-800 max-w-4xl mx-auto">
@@ -1012,42 +984,104 @@ export default function ProductCategorySection(props: any) {
                   </div>
 
                   {/* Some of Our Work - Gallery */}
-                  <div className="bg-white p-8 md:p-12 rounded-xl border shadow-lg">
+                  <div className="bg-white ">
                     <h2 className="text-3xl md:text-4xl font-bold text-[#117ABA] mb-10 text-center">
                       Some of Our Work
                     </h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                      {/* Row 1 */}
-                      <div className="space-y-4">
-                        <Image src="/images/lemon-juice-pack.jpg" alt="Lemon Juice" width={400} height={600} className="rounded-xl shadow-lg" />
-                        <Image src="/images/aam-ras-pack-1.jpg" alt="Aam Ras" width={400} height={600} className="rounded-xl shadow-lg" />
+                    {/* Main Grid */}
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
+
+                      {/* LEFT SIDE (9,10,11) */}
+                      <div className="flex flex-col gap-2">
+
+                        {/* 9 */}
+                        <div className="w-full">
+                          <Image
+                            src="/images/aseptic/9.png"
+                            alt="Design 9"
+                            width={280}
+                            height={280}
+                            className="w-full h-full object-cover "
+                          />
+                        </div>
+
+                        {/* 10 */}
+                        <div className="w-full">
+                          <Image
+                            src="/images/aseptic/10.png"
+                            alt="Design 10"
+                            width={280}
+                            height={280}
+                            className="w-full h-full object-cover "
+                          />
+                        </div>
+
+                        {/* 11 (full width like collage style) */}
+                        <div className="sm:col-span-2 w-full">
+                          <Image
+                            src="/images/aseptic/11.png"
+                            alt="Design 11"
+                            width={280}
+                            height={280}
+                            className="w-full h-full object-cover "
+                          />
+                        </div>
                       </div>
 
-                      <div className="space-y-4">
-                        <Image src="/images/strawberry-milk-pack.jpg" alt="Strawberry Milk" width={400} height={600} className="rounded-xl shadow-lg" />
-                        <Image src="/images/aam-ras-pack-2.jpg" alt="Aam Ras" width={400} height={600} className="rounded-xl shadow-lg" />
-                      </div>
+                      {/* RIGHT SIDE (12,13) */}
+                      <div className="flex flex-col gap-2">
 
-                      <div className="space-y-4">
-                        <Image src="/images/orange-juice-pack.jpg" alt="Orange Juice" width={400} height={600} className="rounded-xl shadow-lg" />
-                        <Image src="/images/mango-juice-pack.jpg" alt="Mango Juice" width={400} height={600} className="rounded-xl shadow-lg" />
+                        {/* 12 - Tall image */}
+                        <div className="flex-1">
+                          <Image
+                            src="/images/aseptic/12.png"
+                            alt="Design 12"
+                            width={800}
+                            height={1200}
+                            className="w-full h-full object-cover "
+                          />
+                        </div>
+
+                        {/* 13 */}
+                        <div className="flex-1">
+                          <Image
+                            src="/images/aseptic/13.png"
+                            alt="Design 13"
+                            width={800}
+                            height={800}
+                            className="w-full h-full object-cover "
+                          />
+                        </div>
+
                       </div>
                     </div>
                   </div>
 
+
                   {/* How we Design - Expandable Steps */}
-                  <div className="bg-white p-8 md:p-12 rounded-xl border shadow-lg">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#117ABA] mb-10 text-center">
+                  <div className="">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#117ABA] mb-10 text-start">
                       How we Design
                     </h2>
 
                     <div className="space-y-6">
-                      {/* Step 1: Briefing */}
-                      <details className="group border-b pb-6">
+                      <details
+                        open={openSection.briefing}
+                        onToggle={() => toggleSections('briefing')}
+                                            className="bg-[#F9F9F9]  px-2 py-2 mb-4  pb-4 border-white border-[1px]   text-left hover:bg-gray-50 transition-colors">
+
+                      
                         <summary className="flex items-center justify-between cursor-pointer text-2xl font-bold text-[#117ABA]">
                           <span>Briefing</span>
-                          <span className="transition-transform group-open:rotate-180">↓</span>
+                          <motion.div
+                            animate={{ rotate: openSection.briefing ? 180 : 0 }}
+                            transition={{ duration: 0.3, ease: 'easeInOut' }}
+                            className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm"
+
+                          >
+                            <ChevronDown className="inline-block w-8 h-8 text-white" />
+                          </motion.div>
                         </summary>
                         <div className="mt-6 pl-6 text-lg leading-relaxed text-gray-800">
                           At the heart of the design process lies the art of briefing—a pivotal moment where the creative journey begins. It sets the stage, offering essential guidelines that ignite the sparks of strategy and concept design. Like a compass in uncharted waters, it guides our vision, ensuring that every stroke, pixel, or detail aligns with the essence of the project. The briefing is our North Star, illuminating the path to design brilliance, and it's where the magic begins.
@@ -1055,10 +1089,22 @@ export default function ProductCategorySection(props: any) {
                       </details>
 
                       {/* Step 2: Ideation */}
-                      <details className="group border-b pb-6">
+                      <details
+                        open={openSections.ideation}
+                        onToggle={() => toggleSections('ideation')}
+                                            className="bg-[#F9F9F9]  px-2 py-2 mb-4  pb-4 border-white border-[1px]   text-left hover:bg-gray-50 transition-colors">
+
+                      
                         <summary className="flex items-center justify-between cursor-pointer text-2xl font-bold text-[#117ABA]">
                           <span>Ideation</span>
-                          <span className="transition-transform group-open:rotate-180">↓</span>
+                          <motion.div
+                            animate={{ rotate: openSection.ideation ? 180 : 0 }}
+                            transition={{ duration: 0.3, ease: 'easeInOut' }}
+                            className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm"
+
+                          >
+                            <ChevronDown className="inline-block w-8 h-8 text-white" />
+                          </motion.div>
                         </summary>
                         <div className="mt-6 pl-6 text-lg leading-relaxed text-gray-800">
                           In the ideation phase, we embark on a captivating journey driven by the client's brief. Our compass is market research that helps us decode category trends and geographic nuances. Armed with this treasure trove of insights, we assemble the pieces of the puzzle, crafting conceptual ideas on our drawing board that breathe life into each project. It's here, amidst the creative swirl, that innovation takes its bold step, transforming ideas into unforgettable designs.
@@ -1066,10 +1112,21 @@ export default function ProductCategorySection(props: any) {
                       </details>
 
                       {/* Step 3: Design & Mockups */}
-                      <details className="group">
+                      <details
+                        open={openSection.design}
+                        onToggle={() => toggleSections('design')}
+                                            className="bg-[#F9F9F9]  px-2 py-2 mb-4  pb-4 border-white border-[1px]   text-left hover:bg-gray-50 transition-colors">
+
                         <summary className="flex items-center justify-between cursor-pointer text-2xl font-bold text-[#117ABA]">
                           <span>Design & Mockups</span>
-                          <span className="transition-transform group-open:rotate-180">↓</span>
+                          <motion.div
+                            animate={{ rotate: openSection.design ? 180 : 0 }}
+                            transition={{ duration: 0.3, ease: 'easeInOut' }}
+                            className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm"
+
+                          >
+                            <ChevronDown className="inline-block w-8 h-8 text-white" />
+                          </motion.div>
                         </summary>
                         <div className="mt-6 pl-6 text-lg leading-relaxed text-gray-800">
                           In the final frontier of our creative voyage, we embark on the exhilarating journey of crafting designs and lifelike mock-ups, tailored to resonate with the brand's soul and connect deeply with its intended audience. Our designs are not mere visual wonders; they are the architects of a brand's persona, each line and colour chosen with precision to tell a compelling story. With every stroke and pixel, we breathe life into an identity that doesn't just speak but roars. We don't just design; we orchestrate the rise of a product into the ranks of Supermarket Superstars.

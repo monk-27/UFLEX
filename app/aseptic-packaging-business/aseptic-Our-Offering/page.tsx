@@ -68,9 +68,9 @@ export default function ProductsPage() {
     "asepto-pro": {
       key: "asepto-pro",
       title: "Asepto Pro",
-      heroImageUrl: "/images/asepto-pro-hero-map.jpg", // your map background image
+      heroImageUrl: "/images/aseptic/aseptopro.png", // your map background image
       brandTag: "Asepto Pro",
-      overview: "A minute of downtime can cause hours of losses to you...",
+      overview: "A minute of downtime can cause hours of losses to you. We will not let that happen. Our team of engineers spread across geographies look after your filling machines, their technical overhauling, spare parts assistance, and the technical training to the on-ground team for enhanced operations.Asepto Pro provides services to a complete range of filling machines across brands.",
       quickLinks: [
         { label: "Aseptic Packaging Website", href: "https://www.asepto.com", external: true },
         { label: "Request Quote", href: "#" },
@@ -80,7 +80,7 @@ export default function ProductsPage() {
     "asepto-design": {
       key: "asepto-design",
       title: "Asepto Design",
-      heroImageUrl: "/images/asepto-design-hero-fruits.jpg", // your hero with fruits & carton
+      heroImageUrl: "/images/aseptic/asepticdesign.png", // your hero with fruits & carton
       brandTag: "Asepto Design",
       overview: "Asepto Designs is the creative powerhouse within Asepto...",
       quickLinks: [
