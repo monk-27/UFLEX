@@ -428,12 +428,13 @@ export default function ProductCategorySection(props: any) {
               {/* Tab 3: CONVERTING PROCESS */}
               {activeTab === "process" && (
                 <div className="bg-white  space-y-12">
-                  <div className="relative h-[388px] overflow-hidden bg-gray-50">
+                  <div className="relative h-[388px] overflow-hidden">
                     <Image
                       src="/images/aseptic/3c.png"
                       alt="Six layers of protection"
-                      fill
-                      className="object-cover"
+                      height={388}
+                      width={100}
+                      className="object-contain h-[388px] w-full"
                     />
                   </div>
                   <div>
