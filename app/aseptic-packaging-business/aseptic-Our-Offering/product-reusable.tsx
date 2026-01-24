@@ -20,74 +20,91 @@ export default function ProductCategorySection(props: any) {
   } = props;
 
   const [activeTab, setActiveTab] = useState<"cartons" | "innovations" | "process">("cartons");
-    const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   const isAsepticCartons = title === "Aseptic Cartons";
   const isASip = title === "A SIP";
   const isFillingMachines = title === "Filling Machines";
   const isAseptoPro = title === "Asepto Pro";
   const isAseptoDesign = title === "Asepto Design";
+
+
+  const shapeImageMap: Record<string, string> = {
+    "BASE": "/images/aseptic/base.png",
+    "SLIM": "/images/aseptic/slim.png",
+    "ULTRA LEAN": "/images/aseptic/ulytralean.png",
+    "SQUARE": "/images/aseptic/square.png",
+    "CURVE": "/images/aseptic/curve.png",
+    "WEDGE": "/images/aseptic/wedge.png",
+    "TRIO": "/images/aseptic/trio.png",
+    "PILLOW": "/images/aseptic/pillow.png",
+    "SPECTRA": "/images/aseptic/spectra.png",
+    "MID": "/images/aseptic/mid.png",
+  };
+
+  const topRow = ["BASE", "SLIM", "ULTRA LEAN", "SQUARE", "CURVE"];
+  const bottomRow = ["WEDGE", "TRIO", "PILLOW", "SPECTRA", "MID"];
   return (
     <section className="py-10 min-h-screen">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         {/* Left sidebar */}
         <aside className="lg:col-span-1">
-                    {/* Desktop Sidebar */}
-                    <motion.div
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.6 }}
-                        className="bg-white  overflow-hidden hidden lg:block sticky top-6"
-                    >
-                        <div className="">
+          {/* Desktop Sidebar */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="bg-white  overflow-hidden hidden lg:block sticky top-6"
+          >
+            <div className="">
 
-                            <div className="bg-[#117ABA] text-white px-6 py-5">
-                                <h2 className="text-lg lato-700 tracking-wide">PRODUCT CATEGORIES</h2>
-                            </div>
+              <div className="bg-[#117ABA] text-white px-6 py-5">
+                <h2 className="text-lg lato-700 tracking-wide">PRODUCT CATEGORIES</h2>
+              </div>
 
-                            <nav className="divide-y divide-gray-100">
+              <nav className="divide-y divide-gray-100">
 
-                                {categories.map((category: any) => (
-                                    <motion.button
-                                        key={category.name}
-                                        onClick={category.onClick}
-                                        whileTap={{ scale: 0.98 }}
-                                        className={`
+                {categories.map((category: any) => (
+                  <motion.button
+                    key={category.name}
+                    onClick={category.onClick}
+                    whileTap={{ scale: 0.98 }}
+                    className={`
       w-full flex items-center justify-between px-6 py-4
       text-left transition-colors duration-200
       bg-white
       hover:bg-[#F9F9F9]
      
       ${category.isActive
-                                                ? " text-[#117ABA]"
-                                                : " text-black"
-                                            }
+                        ? " text-[#117ABA]"
+                        : " text-black"
+                      }
     `}
-                                    >
-                                        <span
-                                            className={`
+                  >
+                    <span
+                      className={`
         lato-400 text-[16px] sm:text-[18px] leading-relaxed
         ${category.isActive ? "text-[#117ABA] " : "text-black"}
       `}
-                                        >
-                                            {category.name}
-                                        </span>
+                    >
+                      {category.name}
+                    </span>
 
-                                        <ChevronRight
-                                            size={18}
-                                            className={`
+                    <ChevronRight
+                      size={18}
+                      className={`
         transition-transform duration-300
         ${category.isActive ? "rotate-90 text-[#117ABA]" : "text-gray-500"}
       `}
-                                        />
-                                    </motion.button>
-                                ))}
-                            </nav>
+                    />
+                  </motion.button>
+                ))}
+              </nav>
 
 
-                        </div>
+            </div>
 
-                        {/* {quickLinks.length > 0 && (
+            {/* {quickLinks.length > 0 && (
                             <div className="hidden lg:block p-6 bg-[#F9F9F9] mt-4">
                                 <h3 className="text-sm lato-700 text-gray-800 mb-3 uppercase tracking-wider">
                                     Quick Links
@@ -108,71 +125,71 @@ export default function ProductCategorySection(props: any) {
                                 </ul>
                             </div>
                         )} */}
-                    </motion.div>
+          </motion.div>
 
-                    {/* Mobile Accordion */}
-                    <div className="lg:hidden bg-white   overflow-hidden">
-                        <button
-                            onClick={() => setIsMobileOpen(!isMobileOpen)}
-                            className="w-full flex items-center justify-between bg-[#117ABA] text-white px-6 py-5 lato-400 text-[16px] sm:text-[18px] leading-relaxed "
-                        >
-                            <span>PRODUCT CATEGORIES</span>
-                            {isMobileOpen ? <ChevronDown size={24} /> : <ChevronRight size={24} />}
-                        </button>
+          {/* Mobile Accordion */}
+          <div className="lg:hidden bg-white   overflow-hidden">
+            <button
+              onClick={() => setIsMobileOpen(!isMobileOpen)}
+              className="w-full flex items-center justify-between bg-[#117ABA] text-white px-6 py-5 lato-400 text-[16px] sm:text-[18px] leading-relaxed "
+            >
+              <span>PRODUCT CATEGORIES</span>
+              {isMobileOpen ? <ChevronDown size={24} /> : <ChevronRight size={24} />}
+            </button>
 
-                        <AnimatePresence>
-                            {isMobileOpen && (
-                                <motion.nav
-                                    initial={{ height: 0, opacity: 0 }}
-                                    animate={{ height: "auto", opacity: 1 }}
-                                    exit={{ height: 0, opacity: 0 }}
-                                    transition={{ duration: 0.4 }}
-                                    className="overflow-hidden"
-                                >
-                                    <div className="divide-y divide-gray-100">
-                                        {categories.map((category:any) => (
-                                            <motion.button
-                                                key={category.name}
-                                                onClick={category.onClick}
-                                                whileTap={{ scale: 0.98 }}
-                                                className={`
+            <AnimatePresence>
+              {isMobileOpen && (
+                <motion.nav
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.4 }}
+                  className="overflow-hidden"
+                >
+                  <div className="divide-y divide-gray-100">
+                    {categories.map((category: any) => (
+                      <motion.button
+                        key={category.name}
+                        onClick={category.onClick}
+                        whileTap={{ scale: 0.98 }}
+                        className={`
       w-full flex items-center justify-between px-6 py-4
       text-left transition-colors duration-200
       bg-white
       hover:bg-gray-100
      
       ${category.isActive
-                                                        ? "bg-blue-100  text-[#117ABA]"
-                                                        : "border-l-transparent text-black"
-                                                    }
+                            ? "bg-blue-100  text-[#117ABA]"
+                            : "border-l-transparent text-black"
+                          }
     `}
-                                            >
-                                                <span
-                                                    className={`
+                      >
+                        <span
+                          className={`
         lato-400 text-[16px] sm:text-[18px] leading-relaxed
         ${category.isActive ? "text-[#117ABA]" : "text-black"}
       `}
-                                                >
-                                                    {category.name}
-                                                </span>
+                        >
+                          {category.name}
+                        </span>
 
-                                                <ChevronRight
-                                                    size={18}
-                                                    className={`
+                        <ChevronRight
+                          size={18}
+                          className={`
         transition-transform duration-300
         ${category.isActive ? "rotate-90 text-[#117ABA]" : "text-gray-500"}
       `}
-                                                />
-                                            </motion.button>
-                                        ))}
-                                    </div>
-                                </motion.nav>
-                            )}
-                        </AnimatePresence>
+                        />
+                      </motion.button>
+                    ))}
+                  </div>
+                </motion.nav>
+              )}
+            </AnimatePresence>
 
 
-                    </div>
-                    {/* {quickLinks.length > 0 && (
+          </div>
+          {/* {quickLinks.length > 0 && (
                         <div className="block lg:hidden p-6 mt-4 bg-[#F9F9F9]">
                             <h3 className="text-sm lato-700 text-gray-800 mb-3 uppercase tracking-wider">
                                 Quick Links
@@ -197,18 +214,13 @@ export default function ProductCategorySection(props: any) {
                             </ul>
                         </div>
                     )} */}
-                </aside>
+        </aside>
 
         {/* Main content */}
-        <motion.main key={title} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="lg:col-span-3 space-y-10">
-          {/* Hero */}
-          <div className="relative h-[500px] rounded-xl overflow-hidden shadow-xl">
-            <Image src={heroImageUrl} alt={title} fill className="object-cover" priority />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-            <div className="absolute bottom-10 left-10 text-white">
-              <div className="inline-block bg-[#117ABA]/90 px-6 py-2 rounded-full text-sm mb-3">{brandTag}</div>
-              <h1 className="text-6xl font-bold">{title}</h1>
-            </div>
+        <motion.main key={title} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="lg:col-span-3 space-y-10 pb-8">
+
+          <div className="relative h-[388px] overflow-hidden bg-[#8BB2C1]">
+            <Image src={heroImageUrl} alt="Aseptic Cartons" fill className="object-cover" priority />
           </div>
 
           {/* Aseptic Cartons 3-tab layout */}
@@ -241,7 +253,7 @@ export default function ProductCategorySection(props: any) {
 
               {/* Tab 1: ASEPTIC CARTONS */}
               {activeTab === "cartons" && (
-                <div className="bg-white p-8 rounded-xl border space-y-12">
+                <div className="bg-white space-y-12">
                   <div>
                     <h2 className="text-3xl font-bold text-[#117ABA] mb-6">Explore our Packaging Solutions</h2>
                     <p className="text-lg leading-relaxed text-gray-800 mb-8">
@@ -256,35 +268,46 @@ export default function ProductCategorySection(props: any) {
                     </p>
 
                     {/* Shapes with connecting lines */}
-                    <div className="relative">
-                      {/* Top row */}
-                      <div className="grid grid-cols-5 gap-8 mb-12">
-                        {["BASE", "SLIM", "ULTRA LEAN", "SQUARE", "CURVE"].map((shape) => (
-                          <div key={shape} className="text-center">
-                            <Image src={`/images/shapes/${shape.toLowerCase()}.png`} alt={shape} width={180} height={240} className="mx-auto" />
-                            <p className="mt-3 font-medium">{shape}</p>
-                          </div>
-                        ))}
-                      </div>
+                    <div className="relative py-12">
+                      {/* Horizontal line between rows */}
+                      <div className="absolute left-0 right-0 top-1/2 h-0.5 bg-[#117ABA] transform -translate-y-1/2 hidden md:block" />
 
-                      {/* Connecting line */}
-                      <div className="absolute left-0 right-0 top-1/2 h-0.5 bg-gray-400 transform -translate-y-1/2" />
+                      {/* Combined grid for both rows */}
+                      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-6 md:gap-8 auto-rows-fr">
+                        {[...topRow, ...bottomRow].map((shape, index) => (
+                          <div
+                            key={shape}
+                            className="relative text-center border-r border-[#117ABA] last:border-r-0 md:border-r md:last:border-r-0"
+                          >
+                            {/* Vertical line - only on desktop, between columns */}
+                            {index % 5 !== 4 && (
+                              <div className="absolute right-0 top-0 bottom-0 w-px  hidden md:block" />
+                            )}
 
-                      {/* Bottom row */}
-                      <div className="grid grid-cols-5 gap-8">
-                        {["WEDGE", "TRIO", "PILLOW", "SPECTRA", "MID"].map((shape) => (
-                          <div key={shape} className="text-center">
-                            <Image src={`/images/shapes/${shape.toLowerCase()}.png`} alt={shape} width={180} height={240} className="mx-auto" />
-                            <p className="mt-3 font-medium">{shape}</p>
+                            <div className="aspect-[3/4] relative mb-3 rounded-lg overflow-hidden  bg-white p-2">
+                              <Image
+                                src={shapeImageMap[shape]}
+                                alt={shape}
+                                fill
+                                className="object-contain"
+                              />
+                            </div>
+
+                            <p className="font-medium text-gray-800 text-sm md:text-base">{shape}</p>
+
+                            {/* Horizontal line only between top and bottom row on mobile */}
+                            {index === 4 && (
+                              <div className="h-0.5 bg-[#117ABA] my-8 md:hidden" />
+                            )}
                           </div>
                         ))}
                       </div>
                     </div>
                   </div>
 
-                  <div className="flex gap-6 justify-end">
+                  <div className="flex gap-6 justify-start">
                     <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Learn More</button>
-                    <button className="border-2 border-[#117ABA] text-[#117ABA] px-8 py-4 rounded-lg font-medium">Request Sample</button>
+                    <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button>
                   </div>
                 </div>
               )}
@@ -333,7 +356,7 @@ export default function ProductCategorySection(props: any) {
                     </div>
                   </div>
 
-                  <div className="flex gap-6 justify-end">
+                  <div className="flex gap-6 justify-start">
                     <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Learn More</button>
                     <button className="border-2 border-[#117ABA] text-[#117ABA] px-8 py-4 rounded-lg font-medium">Request Sample</button>
                   </div>
@@ -387,7 +410,7 @@ export default function ProductCategorySection(props: any) {
                     </div>
                   </div>
 
-                  <div className="flex gap-6 justify-end">
+                  <div className="flex gap-6 justify-start">
                     <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Learn More</button>
                     <button className="border-2 border-[#117ABA] text-[#117ABA] px-8 py-4 rounded-lg font-medium">Request Sample</button>
                   </div>
@@ -719,150 +742,150 @@ export default function ProductCategorySection(props: any) {
                 </div>
               </div>
             ) :
-            isAseptoDesign ? (
-  <div className="space-y-16">
-    {/* Hero Section */}
-    <div className="relative h-[500px] md:h-[600px] rounded-xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-50 via-white to-blue-50">
-      <Image
-        src="/images/asepto-design-hero-fruits.jpg" // replace with your actual hero image
-        alt="Asepto Design Hero"
-        fill
-        className="object-cover"
-      />
+              isAseptoDesign ? (
+                <div className="space-y-16">
+                  {/* Hero Section */}
+                  <div className="relative h-[500px] md:h-[600px] rounded-xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-50 via-white to-blue-50">
+                    <Image
+                      src="/images/asepto-design-hero-fruits.jpg" // replace with your actual hero image
+                      alt="Asepto Design Hero"
+                      fill
+                      className="object-cover"
+                    />
 
-      <div className="absolute inset-0 flex items-center justify-center px-6 md:px-12">
-        <div className="text-center max-w-4xl">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 mb-8">
-            {/* A Design Shop Logo */}
-            <div className="text-6xl md:text-8xl font-black text-[#117ABA] tracking-wider">
-              A<span className="text-5xl md:text-7xl">DESIGN</span>SHOP
-            </div>
-            {/* Floating elements - fruits & carton */}
-            <div className="relative w-48 h-48 md:w-64 h-64">
-              <Image
-                src="/images/blue-carton-floating.png"
-                alt="Blue Carton"
-                width={200}
-                height={300}
-                className="absolute top-0 left-1/2 -translate-x-1/2 rotate-12 shadow-2xl"
-              />
-              {/* Add more floating fruits if needed */}
-            </div>
-          </div>
+                    <div className="absolute inset-0 flex items-center justify-center px-6 md:px-12">
+                      <div className="text-center max-w-4xl">
+                        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 mb-8">
+                          {/* A Design Shop Logo */}
+                          <div className="text-6xl md:text-8xl font-black text-[#117ABA] tracking-wider">
+                            A<span className="text-5xl md:text-7xl">DESIGN</span>SHOP
+                          </div>
+                          {/* Floating elements - fruits & carton */}
+                          <div className="relative w-48 h-48 md:w-64 h-64">
+                            <Image
+                              src="/images/blue-carton-floating.png"
+                              alt="Blue Carton"
+                              width={200}
+                              height={300}
+                              className="absolute top-0 left-1/2 -translate-x-1/2 rotate-12 shadow-2xl"
+                            />
+                            {/* Add more floating fruits if needed */}
+                          </div>
+                        </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold text-[#117ABA] mb-4">
-            NOT ONLY WE DESIGN! WE CREATE BRANDS
-          </h1>
-        </div>
-      </div>
-    </div>
+                        <h1 className="text-4xl md:text-6xl font-bold text-[#117ABA] mb-4">
+                          NOT ONLY WE DESIGN! WE CREATE BRANDS
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
 
-    {/* We Think as Strategists We Do as Designers */}
-    <div className="bg-white p-8 md:p-12 rounded-xl border shadow-lg">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#117ABA] mb-8 text-center">
-        We Think as Strategists We Do as Designers
-      </h2>
-      <p className="text-lg md:text-xl leading-relaxed text-gray-800 max-w-4xl mx-auto">
-        Asepto Designs is the creative powerhouse within Asepto, dedicated to shaping the visual identity of your products. With a keen understanding of market dynamics and consumer preferences, Asepto Designs formulates strategic design concepts that cater to the unique requirements of each product. Our team of talented designers harnesses their creativity and expertise to craft contemporary packaging designs that are not only visually appealing but also highly effective in capturing the attention of consumers. Our ultimate goal is to transform every product we touch into a hot seller, ensuring that it stands out on the shelves and resonates with the target audience. Asepto Designs is committed to making products not just visually appealing, but also synonymous with quality and innovation in the eyes of consumers.
-      </p>
-    </div>
+                  {/* We Think as Strategists We Do as Designers */}
+                  <div className="bg-white p-8 md:p-12 rounded-xl border shadow-lg">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#117ABA] mb-8 text-center">
+                      We Think as Strategists We Do as Designers
+                    </h2>
+                    <p className="text-lg md:text-xl leading-relaxed text-gray-800 max-w-4xl mx-auto">
+                      Asepto Designs is the creative powerhouse within Asepto, dedicated to shaping the visual identity of your products. With a keen understanding of market dynamics and consumer preferences, Asepto Designs formulates strategic design concepts that cater to the unique requirements of each product. Our team of talented designers harnesses their creativity and expertise to craft contemporary packaging designs that are not only visually appealing but also highly effective in capturing the attention of consumers. Our ultimate goal is to transform every product we touch into a hot seller, ensuring that it stands out on the shelves and resonates with the target audience. Asepto Designs is committed to making products not just visually appealing, but also synonymous with quality and innovation in the eyes of consumers.
+                    </p>
+                  </div>
 
-    {/* Design that Speaks */}
-    <div className="bg-white p-8 md:p-12 rounded-xl border shadow-lg">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#117ABA] mb-8 text-center">
-        Design that Speaks
-      </h2>
-      <p className="text-lg md:text-xl leading-relaxed text-gray-800 max-w-4xl mx-auto">
-        At Asepto Design, our process is as innovative as our packaging. We immerse ourselves in your brand, crafting designs that blend aesthetics and functionality. Every line, curve, and color is meticulously chosen to reflect your identity. Quality is our obsession; our designs undergo rigorous testing. We create masterpieces that tell your story, captivate your audience, and leave lasting impressions. Welcome to the future of packaging design, where creativity knows no bounds, and excellence is our tradition.
-      </p>
-    </div>
+                  {/* Design that Speaks */}
+                  <div className="bg-white p-8 md:p-12 rounded-xl border shadow-lg">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#117ABA] mb-8 text-center">
+                      Design that Speaks
+                    </h2>
+                    <p className="text-lg md:text-xl leading-relaxed text-gray-800 max-w-4xl mx-auto">
+                      At Asepto Design, our process is as innovative as our packaging. We immerse ourselves in your brand, crafting designs that blend aesthetics and functionality. Every line, curve, and color is meticulously chosen to reflect your identity. Quality is our obsession; our designs undergo rigorous testing. We create masterpieces that tell your story, captivate your audience, and leave lasting impressions. Welcome to the future of packaging design, where creativity knows no bounds, and excellence is our tradition.
+                    </p>
+                  </div>
 
-    {/* Some of Our Work - Gallery */}
-    <div className="bg-white p-8 md:p-12 rounded-xl border shadow-lg">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#117ABA] mb-10 text-center">
-        Some of Our Work
-      </h2>
+                  {/* Some of Our Work - Gallery */}
+                  <div className="bg-white p-8 md:p-12 rounded-xl border shadow-lg">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#117ABA] mb-10 text-center">
+                      Some of Our Work
+                    </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {/* Row 1 */}
-        <div className="space-y-4">
-          <Image src="/images/lemon-juice-pack.jpg" alt="Lemon Juice" width={400} height={600} className="rounded-xl shadow-lg" />
-          <Image src="/images/aam-ras-pack-1.jpg" alt="Aam Ras" width={400} height={600} className="rounded-xl shadow-lg" />
-        </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                      {/* Row 1 */}
+                      <div className="space-y-4">
+                        <Image src="/images/lemon-juice-pack.jpg" alt="Lemon Juice" width={400} height={600} className="rounded-xl shadow-lg" />
+                        <Image src="/images/aam-ras-pack-1.jpg" alt="Aam Ras" width={400} height={600} className="rounded-xl shadow-lg" />
+                      </div>
 
-        <div className="space-y-4">
-          <Image src="/images/strawberry-milk-pack.jpg" alt="Strawberry Milk" width={400} height={600} className="rounded-xl shadow-lg" />
-          <Image src="/images/aam-ras-pack-2.jpg" alt="Aam Ras" width={400} height={600} className="rounded-xl shadow-lg" />
-        </div>
+                      <div className="space-y-4">
+                        <Image src="/images/strawberry-milk-pack.jpg" alt="Strawberry Milk" width={400} height={600} className="rounded-xl shadow-lg" />
+                        <Image src="/images/aam-ras-pack-2.jpg" alt="Aam Ras" width={400} height={600} className="rounded-xl shadow-lg" />
+                      </div>
 
-        <div className="space-y-4">
-          <Image src="/images/orange-juice-pack.jpg" alt="Orange Juice" width={400} height={600} className="rounded-xl shadow-lg" />
-          <Image src="/images/mango-juice-pack.jpg" alt="Mango Juice" width={400} height={600} className="rounded-xl shadow-lg" />
-        </div>
-      </div>
-    </div>
+                      <div className="space-y-4">
+                        <Image src="/images/orange-juice-pack.jpg" alt="Orange Juice" width={400} height={600} className="rounded-xl shadow-lg" />
+                        <Image src="/images/mango-juice-pack.jpg" alt="Mango Juice" width={400} height={600} className="rounded-xl shadow-lg" />
+                      </div>
+                    </div>
+                  </div>
 
-    {/* How we Design - Expandable Steps */}
-    <div className="bg-white p-8 md:p-12 rounded-xl border shadow-lg">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#117ABA] mb-10 text-center">
-        How we Design
-      </h2>
+                  {/* How we Design - Expandable Steps */}
+                  <div className="bg-white p-8 md:p-12 rounded-xl border shadow-lg">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#117ABA] mb-10 text-center">
+                      How we Design
+                    </h2>
 
-      <div className="space-y-6">
-        {/* Step 1: Briefing */}
-        <details className="group border-b pb-6">
-          <summary className="flex items-center justify-between cursor-pointer text-2xl font-bold text-[#117ABA]">
-            <span>Briefing</span>
-            <span className="transition-transform group-open:rotate-180">↓</span>
-          </summary>
-          <div className="mt-6 pl-6 text-lg leading-relaxed text-gray-800">
-            At the heart of the design process lies the art of briefing—a pivotal moment where the creative journey begins. It sets the stage, offering essential guidelines that ignite the sparks of strategy and concept design. Like a compass in uncharted waters, it guides our vision, ensuring that every stroke, pixel, or detail aligns with the essence of the project. The briefing is our North Star, illuminating the path to design brilliance, and it's where the magic begins.
-          </div>
-        </details>
+                    <div className="space-y-6">
+                      {/* Step 1: Briefing */}
+                      <details className="group border-b pb-6">
+                        <summary className="flex items-center justify-between cursor-pointer text-2xl font-bold text-[#117ABA]">
+                          <span>Briefing</span>
+                          <span className="transition-transform group-open:rotate-180">↓</span>
+                        </summary>
+                        <div className="mt-6 pl-6 text-lg leading-relaxed text-gray-800">
+                          At the heart of the design process lies the art of briefing—a pivotal moment where the creative journey begins. It sets the stage, offering essential guidelines that ignite the sparks of strategy and concept design. Like a compass in uncharted waters, it guides our vision, ensuring that every stroke, pixel, or detail aligns with the essence of the project. The briefing is our North Star, illuminating the path to design brilliance, and it's where the magic begins.
+                        </div>
+                      </details>
 
-        {/* Step 2: Ideation */}
-        <details className="group border-b pb-6">
-          <summary className="flex items-center justify-between cursor-pointer text-2xl font-bold text-[#117ABA]">
-            <span>Ideation</span>
-            <span className="transition-transform group-open:rotate-180">↓</span>
-          </summary>
-          <div className="mt-6 pl-6 text-lg leading-relaxed text-gray-800">
-            In the ideation phase, we embark on a captivating journey driven by the client's brief. Our compass is market research that helps us decode category trends and geographic nuances. Armed with this treasure trove of insights, we assemble the pieces of the puzzle, crafting conceptual ideas on our drawing board that breathe life into each project. It's here, amidst the creative swirl, that innovation takes its bold step, transforming ideas into unforgettable designs.
-          </div>
-        </details>
+                      {/* Step 2: Ideation */}
+                      <details className="group border-b pb-6">
+                        <summary className="flex items-center justify-between cursor-pointer text-2xl font-bold text-[#117ABA]">
+                          <span>Ideation</span>
+                          <span className="transition-transform group-open:rotate-180">↓</span>
+                        </summary>
+                        <div className="mt-6 pl-6 text-lg leading-relaxed text-gray-800">
+                          In the ideation phase, we embark on a captivating journey driven by the client's brief. Our compass is market research that helps us decode category trends and geographic nuances. Armed with this treasure trove of insights, we assemble the pieces of the puzzle, crafting conceptual ideas on our drawing board that breathe life into each project. It's here, amidst the creative swirl, that innovation takes its bold step, transforming ideas into unforgettable designs.
+                        </div>
+                      </details>
 
-        {/* Step 3: Design & Mockups */}
-        <details className="group">
-          <summary className="flex items-center justify-between cursor-pointer text-2xl font-bold text-[#117ABA]">
-            <span>Design & Mockups</span>
-            <span className="transition-transform group-open:rotate-180">↓</span>
-          </summary>
-          <div className="mt-6 pl-6 text-lg leading-relaxed text-gray-800">
-            In the final frontier of our creative voyage, we embark on the exhilarating journey of crafting designs and lifelike mock-ups, tailored to resonate with the brand's soul and connect deeply with its intended audience. Our designs are not mere visual wonders; they are the architects of a brand's persona, each line and colour chosen with precision to tell a compelling story. With every stroke and pixel, we breathe life into an identity that doesn't just speak but roars. We don't just design; we orchestrate the rise of a product into the ranks of Supermarket Superstars.
-          </div>
-        </details>
-      </div>
-    </div>
+                      {/* Step 3: Design & Mockups */}
+                      <details className="group">
+                        <summary className="flex items-center justify-between cursor-pointer text-2xl font-bold text-[#117ABA]">
+                          <span>Design & Mockups</span>
+                          <span className="transition-transform group-open:rotate-180">↓</span>
+                        </summary>
+                        <div className="mt-6 pl-6 text-lg leading-relaxed text-gray-800">
+                          In the final frontier of our creative voyage, we embark on the exhilarating journey of crafting designs and lifelike mock-ups, tailored to resonate with the brand's soul and connect deeply with its intended audience. Our designs are not mere visual wonders; they are the architects of a brand's persona, each line and colour chosen with precision to tell a compelling story. With every stroke and pixel, we breathe life into an identity that doesn't just speak but roars. We don't just design; we orchestrate the rise of a product into the ranks of Supermarket Superstars.
+                        </div>
+                      </details>
+                    </div>
+                  </div>
 
-    {/* Bottom Buttons */}
-    <div className="flex flex-wrap gap-6 justify-end">
-      <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium hover:bg-blue-800 transition">
-        Learn More
-      </button>
-      <button className="border-2 border-[#117ABA] text-[#117ABA] px-8 py-4 rounded-lg font-medium hover:bg-blue-50 transition">
-        Request Sample
-      </button>
-    </div>
-  </div>
-) :
-
-              (
-                // Fallback for other categories
-                <div className="bg-white p-8 rounded-xl border">
-                  <h2 className="text-3xl font-bold text-[#117ABA] mb-6">{title}</h2>
-                  <p className="text-lg leading-relaxed text-gray-800">Content coming soon...</p>
+                  {/* Bottom Buttons */}
+                  <div className="flex flex-wrap gap-6 justify-end">
+                    <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium hover:bg-blue-800 transition">
+                      Learn More
+                    </button>
+                    <button className="border-2 border-[#117ABA] text-[#117ABA] px-8 py-4 rounded-lg font-medium hover:bg-blue-50 transition">
+                      Request Sample
+                    </button>
+                  </div>
                 </div>
-              )}
+              ) :
+
+                (
+                  // Fallback for other categories
+                  <div className="bg-white p-8 rounded-xl border">
+                    <h2 className="text-3xl font-bold text-[#117ABA] mb-6">{title}</h2>
+                    <p className="text-lg leading-relaxed text-gray-800">Content coming soon...</p>
+                  </div>
+                )}
         </motion.main>
       </div>
     </section>

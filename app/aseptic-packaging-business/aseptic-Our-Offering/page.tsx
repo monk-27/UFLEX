@@ -17,7 +17,7 @@ export default function ProductsPage() {
     "aseptic-cartons": {
       key: "aseptic-cartons",
       title: "Aseptic Cartons",
-      heroImageUrl: "/images/aseptic-hero-packs-on-podiums.jpg",
+      heroImageUrl: "/images/aseptic/asepproduct.png",
       brandTag: "ASEPTO",
       overview: `Asepto innovatively incorporates the 3P's of Packaging - PRESERVE, PROTECT and PROMOTE. Our aseptic liquid packaging cartons encompass six layers of protection that keeps the freshness preserved in varieties of beverages, be it dairy and dairy-based beverages, nectar-based beverages, or beverages from the distillery industry. We augment your product positioning through innovative design aesthetics. Our state-of-the-art converting process and manufacturing facilities help us materialize our thoughts into reality. They are advanced, automated, and human-touch-free.`,
 
@@ -30,7 +30,7 @@ export default function ProductsPage() {
     "a-sip": {
       key: "a-sip",
       title: "A SIP",
-      heroImageUrl: "/images/asip-girl-drinking.jpg", // your screenshot hero
+      heroImageUrl: "/images/aseptic/asepproduct.png", // your screenshot hero
       brandTag: "A SIP",
       overview: `Asip is an upshot of UFlex Asepto’s core philosophy – Nature First. Asip, the u-shaped portion-pack paper straw from the house of UFlex, is the first ‘Made-in-India’ U-shaped paper straw. Asip u-shaped paper straw is the natural and the most viable alternative to plastic straws. It consists high-quality edible-grade paper that meets global standards. The adhesive used to keep the paper intact is ultra-premium and lab-tested – it helps the paper to maintain its shape. Asip u-shaped paper straw is environmentally friendly and in line with UFlex’s commitments towards nature.`,
 
@@ -166,7 +166,7 @@ export default function ProductsPage() {
             ]}
           />
 
-          <section className="bg-white pt-4 sm:pt-12">
+          <section className="bg-white pt-4 sm:pt-12 pb-8">
             <div className="max-w-7xl mx-auto px-4">
               <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                 {/* Left sidebar */}
@@ -195,47 +195,36 @@ export default function ProductsPage() {
                       </nav>
                     </div>
 
-                    <div className="p-6 rounded-xl border border-gray-200 mt-4">
-                      <h3 className="text-sm lato-700 text-gray-800 mb-3 uppercase tracking-wider">Quick Links</h3>
-                      <ul className="space-y-2">
-                        <li><a href="https://www.asepto.com" className="hover:text-[#117ABA]">Aseptic Packaging Website</a></li>
-                        <li><a href="#" className="hover:text-[#117ABA]">Request Quote</a></li>
-                        <li><a href="#" className="hover:text-[#117ABA]">Download Catalog</a></li>
-                      </ul>
-                    </div>
+                   
                   </motion.div>
                 </aside>
 
                 {/* Default Overview - exact first screenshot */}
                 <main className="lg:col-span-3 space-y-10">
-                  <div className="relative h-[500px] rounded-xl overflow-hidden shadow-xl">
-                    <Image src="/images/aseptic-hero-packs-on-podiums.jpg" alt="Aseptic Cartons" fill className="object-cover" priority />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                  <div className="relative h-[388px] overflow-hidden bg-[#8BB2C1]">
+                    <Image src="/images/aseptic/asepproduct.png" alt="Aseptic Cartons" fill className="object-cover" priority />
                   </div>
 
-                  <div className="bg-white p-8 rounded-xl border">
+                  <div className="bg-white ">
                     <h2 className="text-3xl font-bold text-[#117ABA] mb-6">Overview</h2>
                     <p className="text-lg leading-relaxed text-gray-800 mb-8">
-                      Asepto innovatively incorporates the 3P's of Packaging - PRESERVE, PROTECT and PROMOTE. Our aseptic liquid packaging cartons encompass six layers of protection that keeps the freshness preserved in varieties of beverages, be it dairy and dairy-based beverages, nectar-based beverages, or beverages from the distillery industry. We augment your product positioning through innovative design aesthetics. Our state-of-the-art converting process and manufacturing facilities help us materialize our thoughts into reality. They are advanced, automated, and human-touch-free.
-                    </p>
+                     Asepto innovatively incorporates the 3P’s of Packaging – PRESERVE, PROTECT and PROMOTE. Our aseptic liquid packaging cartons encompass six layers of protection that keeps the freshness preserved in varieties of beverages, be it dairy and dairy-based beverages, nectar-based beverages, or beverages from the distillery industry. We augment your product positioning through innovative design aesthetics. Our state-of-the-art converting process and manufacturing facilities help us materialize our thoughts into reality. They are advanced, automated, and human-touch-free.  </p>
 
                     <h3 className="text-2xl font-bold text-[#117ABA] mb-4">Our Innovation</h3>
                     <p className="text-lg leading-relaxed text-gray-800 mb-8">
-                      Packaging is your key salesperson and we at Asepto believe that "All that Glitters is Sold". Our Holography and Foil Stamping Technology is definitely going to add edge to your brand and make it attractive on the retail shelf.
-                    </p>
+                     Packaging is your key salesperson and we at Asepto believe that “All that Glitters is Sold“. Our Holography and Foil Stamping Technology is definitely going to add edge to your brand and make it attractive on the retail shelf.      </p>
 
                     <h3 className="text-2xl font-bold text-[#117ABA] mb-4">What We do for International Market</h3>
                     <p className="text-lg leading-relaxed text-gray-800 mb-8">
-                      Packaging is your key salesperson and we at Asepto believe that "All that Glitters is Sold". Our Holography and Foil Stamping Technology is definitely going to add edge to your brand and make it attractive on the retail shelf.
-                    </p>
+                     En route to its global vision and to meet its growing demand, Asepto has two state-of-the-art manufacturing plants. Its Sanand, Gujarat plant is attuned to the Government of India’s ‘Make in India’ mission. It is spread over 21 acres of the total 72 acres of land parcel and has an annual production capacity of 12 billion packs.
 
+The second plant in Sokhna, Egypt, is about to be commissioned. Once operational, it will be the world’s most advanced aseptic liquid carton manufacturing unit with unmatched facilities. Asepto will produce an additional 18 billion packs from the Egypt manufacturing plant.
+ </p>
                     <div className="mb-10">
-                      <div className="relative h-[400px] rounded-xl border overflow-hidden bg-gray-50">
-                        <Image src="/images/world-map-presence.jpg" alt="Our Presence" fill className="object-contain p-6" />
+                      <div className="relative h-[452px]  overflow-hidden bg-gray-50">
+                        <Image src="/images/aseptic/world.png" alt="Our Presence" fill className="object-cover" />
                       </div>
-                      <p className="text-center mt-4 text-lg font-medium text-gray-800">
-                        Our Presence: Asia • Africa • Middle East • South America
-                      </p>
+                      
                     </div>
 
                     <div className="flex gap-6 justify-end">
