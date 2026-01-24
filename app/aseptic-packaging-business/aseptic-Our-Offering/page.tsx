@@ -115,7 +115,7 @@ export default function ProductsPage() {
           <section className="relative w-full h-[580px] sm:h-[451px] overflow-hidden">
 
             <Image
-              src="/images/flexi.png"
+              src="/images/3.png"
               alt="Investors Relations"
               fill
               className="object-cover w-full h-full"
@@ -141,18 +141,18 @@ export default function ProductsPage() {
 
 
               <motion.div
-                className="bg-[#117ABA] lato-400 text-left w-[450px] h-[350px] sm:w-[706px] sm:h-[411px] text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[20px] pl-4 pt-2 pb-4 pr-4 md:pl-24 lg:pl-28 sm:pt-8 sm:pb-4 sm:pr-12 mb-12 sm:mb-8"
+                className="bg-[#117ABA] lato-400 text-left w-[450px] h-[350px] sm:w-[706px] sm:h-[391px] text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[20px] pl-4 pt-2 pb-4 pr-4 md:pl-24 lg:pl-24 sm:pt-2 sm:pb-4 sm:pr-6 mb-12 sm:mb-8"
                 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
               >
-                <div className="w-[300px] sm:w-[537px]">
+                <div className="w-[300px] sm:w-[537px] pl-4">
 
 
                   <h1 className="text-white text-[24px] lato-700  md:text-[42px]">
-                    Flexible Packaging
+                    Aseptic Packaging
+
 
                   </h1>
-                  UFlex’s Flexible Packaging Business’s products range from Flexible Laminates, Pre-Formed Pouches, Flexo Printed Rolls & Bags, Laminated Woven Polypropylene (WPP) Bags, Electron Beam & Cast N Cure, Pharmaceutical Packaging, FlexiTubes, Hygiene Films, Flexfresh™ Modified Atmosphere Packaging, Big Bags and N-95 Mask.
-                  {/* As an end-to-end flexible packaging solutions company, UFlex also holds the expertise to develop flexible tube Tube Packaging for a large number of FMCG brands in India and overseas */}
+                  As a leading provider of end-to-end aseptic liquid packaging solutions, we offer innovative designs, six-layered cartons, highly advanced filling machines, and exceptional service from highly trained engineers. In alignment with the Government’s Make in India initiative, our state- of-the-art manufacturing facility in Sanand, Gujarat, spans 21 acres within a 72-acre land parcel and boasts a production capacity of 12 billion packs annually.    {/* As an end-to-end flexible packaging solutions company, UFlex also holds the expertise to develop flexible tube Tube Packaging for a large number of FMCG brands in India and overseas */}
                 </div>
               </motion.div>
 
@@ -161,8 +161,8 @@ export default function ProductsPage() {
           </section>
           <Breadcrumb
             items={[
-              { label: "Flexible Packaging", href: "/flexible-packaging-business" },
-              { label: "Flexible Packaging Products" },
+              { label: "Aseptic Packaging", href: "/aseptic-packaging-business" },
+              { label: "Aseptic Packaging Products" },
             ]}
           />
 
@@ -264,7 +264,7 @@ export default function ProductsPage() {
         <section className="relative w-full h-[580px] sm:h-[451px] overflow-hidden">
 
           <Image
-            src="/images/flexi.png"
+            src="/images/3.png"
             alt="Investors Relations"
             fill
             className="object-cover w-full h-full"
@@ -290,30 +290,30 @@ export default function ProductsPage() {
 
 
             <motion.div
-              className="bg-[#117ABA] lato-400 text-left w-[450px] h-[350px] sm:w-[706px] sm:h-[411px] text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[20px] pl-4 pt-2 pb-4 pr-4 md:pl-24 lg:pl-28 sm:pt-8 sm:pb-4 sm:pr-12 mb-12 sm:mb-8"
-              variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
-            >
-              <div className="w-[300px] sm:w-[537px]">
+                className="bg-[#117ABA] lato-400 text-left w-[450px] h-[350px] sm:w-[706px] sm:h-[391px] text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[20px] pl-4 pt-2 pb-4 pr-4 md:pl-24 lg:pl-24 sm:pt-2 sm:pb-4 sm:pr-6 mb-12 sm:mb-8"
+                variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+              >
+                <div className="w-[300px] sm:w-[537px] pl-4">
 
 
-                <h1 className="text-white text-[24px] lato-700  md:text-[42px]">
-                  Flexible Packaging
+                  <h1 className="text-white text-[24px] lato-700  md:text-[42px]">
+                    Aseptic Packaging
 
-                </h1>
-                UFlex’s Flexible Packaging Business’s products range from Flexible Laminates, Pre-Formed Pouches, Flexo Printed Rolls & Bags, Laminated Woven Polypropylene (WPP) Bags, Electron Beam & Cast N Cure, Pharmaceutical Packaging, FlexiTubes, Hygiene Films, Flexfresh™ Modified Atmosphere Packaging, Big Bags and N-95 Mask.
-                {/* As an end-to-end flexible packaging solutions company, UFlex also holds the expertise to develop flexible tube Tube Packaging for a large number of FMCG brands in India and overseas */}
-              </div>
-            </motion.div>
+
+                  </h1>
+                  As a leading provider of end-to-end aseptic liquid packaging solutions, we offer innovative designs, six-layered cartons, highly advanced filling machines, and exceptional service from highly trained engineers. In alignment with the Government’s Make in India initiative, our state- of-the-art manufacturing facility in Sanand, Gujarat, spans 21 acres within a 72-acre land parcel and boasts a production capacity of 12 billion packs annually.    {/* As an end-to-end flexible packaging solutions company, UFlex also holds the expertise to develop flexible tube Tube Packaging for a large number of FMCG brands in India and overseas */}
+                </div>
+              </motion.div>
 
 
           </motion.div>
         </section>
         <Breadcrumb
-          items={[
-            { label: "Flexible Packaging", href: "/flexible-packaging-business" },
-            { label: "Flexible Packaging Products" },
-          ]}
-        />
+            items={[
+              { label: "Aseptic Packaging", href: "/aseptic-packaging-business" },
+              { label: "Aseptic Packaging Products" },
+            ]}
+          />
         <div className="max-w-7xl mx-auto px-4">
           <ProductCategorySection
             key={itemKey}
