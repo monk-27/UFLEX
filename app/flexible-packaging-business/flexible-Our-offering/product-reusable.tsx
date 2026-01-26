@@ -560,7 +560,7 @@ export default function ProductCategorySection({
                                 </p>
 
                                 {/* Quote block 1 */}
-                                <div className="italic lato-400 text-[16px] sm:text-[18px] text-black">
+                                <div className="lato-400 text-[16px] sm:text-[18px] text-black">
                                     Our avant-garde Moulding plant Noida is equipped with world-class machines
                                     including Injection Moulding Machines from manufacturers like Arburg,
                                     Toshiba and Milacron; and has an able technical workforce that caters to
@@ -577,7 +577,7 @@ export default function ProductCategorySection({
                                 </p>
 
                                 {/* Quote block 2 */}
-                                <div className="italic lato-400 text-[16px] sm:text-[18px] text-black">
+                                <div className=" lato-400 text-[16px] sm:text-[18px] text-black">
                                     We, at UFlex, provide customized range of Precision Plastic Components for
                                     various segments like Packaging, Industrial, Electrical, Automobile,
                                     Medical and Home Appliances using the latest technology and well-equipped
@@ -594,7 +594,7 @@ export default function ProductCategorySection({
                                     1) Various types of Caps and Spouts used for Different types of Pouches
                                 </h4>
 
-                                <div className="border-2 border-[#117ABA] p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="relative h-[240px] ">
                                         <Image src="https://www.uflexltd.com/assets/images/packaging/IMP/UFLEX_Moulded_Products_Pouches_1.jpg" alt={title} fill className="object-contain" />
                                     </div>
@@ -608,7 +608,7 @@ export default function ProductCategorySection({
                                     2) Various sizes and types of Caps/ Shoulders used for Tubes
                                 </h4>
 
-                                <div className="border-2 border-[#117ABA] p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div className=" p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="relative h-[240px] bg-[#f2eded]">
                                         <Image src="https://www.uflexltd.com/assets/images/packaging/IMP/UFLEX_Moulded_Products_Tubes_1.jpg" alt={title} fill className="object-contain" />
                                     </div>
@@ -630,7 +630,7 @@ export default function ProductCategorySection({
                                     3) Various range of Zippers and sliders
                                 </h4>
 
-                                <div className="border-2 border-[#117ABA] p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div className=" p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="relative h-[240px] bg-black">
                                         <Image src="https://www.uflexltd.com/assets/images/packaging/IMP/UFLEX_Moulded_Products_Zippers_1.jpg" alt={title} fill className="object-contain" />
                                     </div>
@@ -650,7 +650,7 @@ export default function ProductCategorySection({
                                     4) Core plug used for film rolls
                                 </h4>
 
-                                <div className="border-2 border-[#117ABA] p-4">
+                                <div className=" p-4">
                                     <div className="relative h-[260px] bg-[#f2eded]">
                                         <Image src="https://www.uflexltd.com/assets/images/packaging/IMP/UFLEX_Moulded_Products_FilmRolls_1.jpg" alt={title} fill className="object-contain" />
                                     </div>

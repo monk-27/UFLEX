@@ -217,7 +217,7 @@ export default function ProductCategorySection({
                       {block.images.map((img: string, i: number) => (
                         <div
                           key={i}
-                          className="relative h-[220px] border-2 border-[#117ABA] bg-white"
+                          className="relative h-[220px]  bg-white"
                         >
                           <Image
                             src={img}
@@ -240,7 +240,7 @@ export default function ProductCategorySection({
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                       {block.subBlocks.map((sb: any, i: number) => (
                         <div key={i}>
-                          <div className="relative h-[200px] border-2 border-[#117ABA] bg-white">
+                          <div className="relative h-[200px]  bg-white">
                             <Image
                               src={sb.image}
                               alt=""
@@ -278,7 +278,7 @@ export default function ProductCategorySection({
                   {sectionData.images.map((img: string, i: number) => (
                     <div
                       key={i}
-                      className="relative h-[220px] border-2 border-[#117ABA] bg-white"
+                      className="relative h-[220px] bg-white"
                     >
                       <Image src={img} alt="" fill className="object-contain" />
                     </div>
@@ -287,7 +287,7 @@ export default function ProductCategorySection({
               )}
 
               {sectionData.image && (
-                <div className="relative h-[240px] border-2 border-[#117ABA] bg-white">
+                <div className="relative h-[240px]  bg-white">
                   <Image
                     src={sectionData.image}
                     alt=""

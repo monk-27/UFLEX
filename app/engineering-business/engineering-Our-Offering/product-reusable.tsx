@@ -311,7 +311,7 @@ export default function ProductCategorySection({
   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
     {section.items.map((item, i) => (
       <div key={i} className="text-center">
-        <div className="relative w-full h-[220px] border-2 border-[#117ABA]">
+        <div className="relative w-full h-[220px] ">
           <Image
             src={item.image}
             alt={item.label}
@@ -340,7 +340,7 @@ export default function ProductCategorySection({
                                                         {/* RED MARKER + SUB TITLE */}
                                                         <div className="flex gap-3 items-start mb-4">
                                                             <span className="w-[4px] bg-[#117ABA]" />
-                                                            <h4 className="italic text-lg text-gray-800">
+                                                            <h4 className="text-lg text-gray-800">
                                                                 {sub.title}
                                                             </h4>
                                                         </div>
@@ -385,9 +385,9 @@ export default function ProductCategorySection({
                                                 {section.groups.map((group, gIdx) => (
                                                     <div key={gIdx}>
                                                         {/* RED MARKER + GROUP TITLE */}
-                                                        <div className="flex gap-3 items-start mb-4">
+                                                        <div className="flex  items-start mb-4">
                                                             <span className="w-[4px] bg-[#117ABA]" />
-                                                            <h4 className="italic text-lg text-gray-800">
+                                                            <h4 className="text-lg lato-700 text-black">
                                                                 {group.groupTitle}
                                                             </h4>
                                                         </div>
