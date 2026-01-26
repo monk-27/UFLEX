@@ -340,7 +340,7 @@ export default function ProductCategorySection({
               </div>
 
               {/* Red Heading Bar */}
-              <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-xl">
+              <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
                 UFLEX offers best in quality holographic wide web films.
               </div>
 
@@ -348,9 +348,9 @@ export default function ProductCategorySection({
               <div className="space-y-6">
                 {/* 1. SOFT EMBOSSING FILM */}
                 <details className="group border-b border-gray-200 pb-4">
-                  <summary className="flex justify-between items-center cursor-pointer text-xl lato-700 text-[#117ABA]">
+                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
                     <span>1. SOFT EMBOSSING FILM:</span>
-                    <ChevronDown className="transition-transform group-open:rotate-180" size={24} />
+                    <ChevronDown className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm  text-white transition-transform group-open:rotate-180" size={24} />
                   </summary>
                   <div className="mt-4 pl-4 space-y-4">
                     <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
@@ -373,9 +373,9 @@ export default function ProductCategorySection({
 
                 {/* 2. HARD EMBOSSING FILM */}
                 <details className="group border-b border-gray-200 pb-4">
-                  <summary className="flex justify-between items-center cursor-pointer text-xl lato-700 text-[#117ABA]">
+                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
                     <span>2. HARD EMBOSSING FILM</span>
-                    <ChevronDown className="transition-transform group-open:rotate-180" size={24} />
+                    <ChevronDown className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
                   </summary>
                   <div className="mt-4 pl-4 space-y-4">
                     <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
@@ -397,9 +397,9 @@ export default function ProductCategorySection({
 
                 {/* 3. UV EMBOSSING FILM */}
                 <details className="group border-b border-gray-200 pb-4">
-                  <summary className="flex justify-between items-center cursor-pointer text-xl lato-700 text-[#117ABA]">
+                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
                     <span>3. UV EMBOSSING FILM</span>
-                    <ChevronDown className="transition-transform group-open:rotate-180" size={24} />
+                    <ChevronDown className="text-white w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm transition-transform group-open:rotate-180" size={24} />
                   </summary>
                   <div className="mt-4 pl-4 space-y-4">
                     <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
@@ -421,9 +421,9 @@ export default function ProductCategorySection({
 
                 {/* 4. HRI HOLOGRAPHIC FILM */}
                 <details className="group border-b border-gray-200 pb-4">
-                  <summary className="flex justify-between items-center cursor-pointer text-xl lato-700 text-[#117ABA]">
+                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
                     <span>4. HRI HOLOGRAPHIC FILM</span>
-                    <ChevronDown className="transition-transform group-open:rotate-180" size={24} />
+                    <ChevronDown className="text-white w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm transition-transform group-open:rotate-180" size={24} />
                   </summary>
                   <div className="mt-4 pl-4 space-y-4">
                     <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
@@ -445,9 +445,9 @@ export default function ProductCategorySection({
 
                 {/* 5. LENS FILM (F1 & F2) – 3 images */}
                 <details className="group border-b border-gray-200 pb-4">
-                  <summary className="flex justify-between items-center cursor-pointer text-xl lato-700 text-[#117ABA]">
+                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
                     <span>5. LENS FILM (F1 & F2)</span>
-                    <ChevronDown className="transition-transform group-open:rotate-180" size={24} />
+                    <ChevronDown className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
                   </summary>
                   <div className="mt-4 pl-4 space-y-4">
                     <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
@@ -487,9 +487,9 @@ export default function ProductCategorySection({
 
                 {/* 6. HOLOGRAPHIC PVC FILM */}
                 <details className="group">
-                  <summary className="flex justify-between items-center cursor-pointer text-xl lato-700 text-[#117ABA]">
+                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
                     <span>6. HOLOGRAPHIC PVC FILM</span>
-                    <ChevronDown className="transition-transform group-open:rotate-180" size={24} />
+                    <ChevronDown className="text-white w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-smtransition-transform group-open:rotate-180" size={24} />
                   </summary>
                   <div className="mt-4 pl-4 space-y-4">
                     <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
@@ -532,7 +532,7 @@ export default function ProductCategorySection({
               </div>
 
               {/* Red Heading Bar */}
-              <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-xl">
+              <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
                 UFLEX offers following types of sequin films:
               </div>
 
@@ -564,13 +564,13 @@ export default function ProductCategorySection({
 
               {/* New Developments – Soft Sequins */}
               <div className="space-y-8">
-                <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-xl">
+                <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
                   NEW DEVELOPMENTS: SOFT SEQUINS
                 </div>
 
                 {/* Sequins for Sublimation Printing */}
                 <div className="space-y-4">
-                  <h4 className="lato-700 text-xl text-[#117ABA]">SEQUINS FOR SUBLIMATION PRINTING</h4>
+                  <h4 className="lato-700 text-[16px] sm:text-[18px] text-[#117ABA]">SEQUINS FOR SUBLIMATION PRINTING</h4>
                   <ul className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black list-disc pl-8 space-y-2">
                     <li>Special coating for good printing Result</li>
                     <li>High heat resistant</li>
@@ -592,7 +592,7 @@ export default function ProductCategorySection({
 
                 {/* Soft Sequins for Kids Wear */}
                 <div className="space-y-4">
-                  <h4 className="lato-700 text-xl text-[#117ABA]">SOFT SEQUINS FOR KIDS WEAR</h4>
+                  <h4 className="lato-700 text-[16px] sm:text-[18px] text-[#117ABA]">SOFT SEQUINS FOR KIDS WEAR</h4>
                   <ul className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black list-disc pl-8 space-y-2">
                     <li>Specially developed for new born & kids wear</li>
                     <li>Sequins Film softer than standard Regular raw material</li>
@@ -623,7 +623,7 @@ export default function ProductCategorySection({
 
                 {/* Soft Touch Sequins */}
                 <div className="space-y-4">
-                  <h4 className="lato-700 text-xl text-[#117ABA]">SOFT TOUCH SEQUINS</h4>
+                  <h4 className="lato-700 text-[16px] sm:text-[18px] text-[#117ABA]">SOFT TOUCH SEQUINS</h4>
                   <ul className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black list-disc pl-8 space-y-2">
                     <li>Soft-touch Sequins to replace Velvet Fabric Laminated Sequins</li>
                     <li>Single Layer Sequins</li>
@@ -646,7 +646,7 @@ export default function ProductCategorySection({
 
                 {/* Ombre Print Sequins */}
                 <div className="space-y-4">
-                  <h4 className="lato-700 text-xl text-[#117ABA]">OMBRE PRINT SEQUINS</h4>
+                  <h4 className="lato-700 text-[16px] sm:text-[18px] text-[#117ABA]">OMBRE PRINT SEQUINS</h4>
                   <ul className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black list-disc pl-8 space-y-2">
                     <li>Multi-colour Embroidery possible with single sequins</li>
                     <li>Economical / Productivity</li>
@@ -667,7 +667,7 @@ export default function ProductCategorySection({
 
                 {/* FDS Double Colour Sequins */}
                 <div className="space-y-4">
-                  <h4 className="lato-700 text-xl text-[#117ABA]">FDS DOUBLE COLOUR SEQUINS</h4>
+                  <h4 className="lato-700 text-[16px] sm:text-[18px] text-[#117ABA]">FDS DOUBLE COLOUR SEQUINS</h4>
                   <ul className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black list-disc pl-8 space-y-2">
                     <li>Double colour Top Hole Sequins in Trend</li>
                     <li>Available More than 120 combination</li>
@@ -688,7 +688,7 @@ export default function ProductCategorySection({
 
                 {/* 3D Lens Sequins */}
                 <div className="space-y-4">
-                  <h4 className="lato-700 text-xl text-[#117ABA]">3D LENS SEQUINS</h4>
+                  <h4 className="lato-700 text-[16px] sm:text-[18px] text-[#117ABA]">3D LENS SEQUINS</h4>
                   <ul className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black list-disc pl-8 space-y-2">
                     <li>New 3D / Lens Sequins for Unique Fancy look</li>
                     <li>Possible in Multi-colour</li>
@@ -801,7 +801,7 @@ export default function ProductCategorySection({
               </div>
 
               {/* Red Heading Bar */}
-              <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-xl">
+              <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
                 UFLEX hot stamping foils can be used on a wide assortment of products in:
               </div>
 
@@ -902,7 +902,7 @@ export default function ProductCategorySection({
               </div>
 
               {/* Product Range Red Bar */}
-              <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-xl">
+              <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
                 Product Range:
               </div>
 
@@ -932,7 +932,7 @@ export default function ProductCategorySection({
               </div>
 
               {/* Benefits Red Bar */}
-              <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-xl">
+              <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
                 BENEFITS OF TRANSFER PAPER/BOARD
               </div>
 
@@ -965,7 +965,7 @@ export default function ProductCategorySection({
               {/* Product Categories, Applications & Industries Table */}
               <div className="space-y-6">
                 {/* Red Heading Bar – exact match */}
-                <div className="bg-[#117ABA] text-white px-6 py-4 rounded-t-lg lato-700 text-xl">
+                <div className="bg-[#117ABA] text-white px-6 py-4 rounded-t-lg lato-700 text-[16px] sm:text-[18px]">
                   Product Categories, Applications & Industries:
                 </div>
 
@@ -1096,7 +1096,7 @@ export default function ProductCategorySection({
               </div>
 
               {/* Red Heading Bar – Various Labeling Solutions */}
-              <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-xl">
+              <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
                 VARIOUS LABELING SOLUTIONS THAT WE OFFER ARE:
               </div>
 
