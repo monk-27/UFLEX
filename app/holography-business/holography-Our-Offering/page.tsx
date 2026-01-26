@@ -1,4 +1,4 @@
-// app/products/page.tsx
+
 "use client";
 
 import { useState } from "react";
@@ -6,434 +6,159 @@ import ProductCategorySection from "./product-reusable";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { motion } from "framer-motion";
-import { ReadMoreDialog } from "@/components/expandabletext";
-import Image from 'next/image';
+import Image from "next/image";
+import { ChevronRight, ChevronDown } from "lucide-react";
+import { AnimatePresence } from "framer-motion";
 import Breadcrumb from "@/components/breadcrumb";
 
 export default function ProductsPage() {
-    const productsData: any = {
-        flexible: {
-            key: "flexible",
-            title: "FLEXIBLE LAMINATES",
-            heroImageUrl:
-                "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-08511505115.jpg",
-            brandTag: "FLEXIBLE LAMINATES",
-            highlightText:
-                "We offer flexible laminates made of various Plastic, Aluminum and Paper combinations such as :",
-            bulletList: [
-                "PET/PE, PET/MET PET/PE, PET/Foil/PE, PET/CPP, PET/BOPP (Nat, White & Metalized), PET/Extr/Foil/Extr/PE",
-                "PET/Foil/BON/CPP, AlOx Pet/BON/CPP (Retort)",
-                "BOPP/BOPP, BOPP/CPP, BOPP/PE (Nat, White & Metalized), BOPP/Extr/Met Pet/PE",
-                "BON/PE, PE/Tie/PA/Tie/PE",
-                "CPP/PP Thermoformable Laminates",
-                "Paper/Al. Foil/HS Coating, Paper/Extr/Foil/Extr/PE",
-                "Al. Foil/Paper (Embossed)",
-                "PET/HS, Foil/HS (Lids)",
-                "BOPP/Extr/WPP, BOPP/Extr/Met Pet/WPP",
-                "Zip Pouch and Zip Foil (Consumer Business)",
+    const [selectedKey, setSelectedKey] = useState<string>("hologram");
+
+    const productsData: Record<string, any> = {
+        hologram: {
+            key: "hologram",
+            title: "HOLOGRAM",
+            heroImageUrl: "/images/holography/h7.png", // replace with actual hero
+            brandTag: "HOLOGRAM",
+            overview: `UFLEX offers best-in-class holograms that are available with 2D/3D, Dot Matrix & High-resolution Kinemax technology. Our range is reckoned for its vibrant color combination, print clarity and uncompromised quality. Further, these are offered in standard and customized shapes to the clients at most competitive price coordinates.`,
+
+            technologiesHeading: "UFLEX offers hologram using the following technologies:",
+
+            technologies: [
+                {
+                    title: "1. ANALOG 2D/3D CONVENTIONAL:",
+                    description:
+                        "Primitive technology (conventional system) requires manual efforts in shooting masters. This technology produces holograms with two or three layers that includes background, middle ground and foreground.",
+                },
+                {
+                    title: "2. DOT MATRIX (up to 24,000 dpi):",
+                    description:
+                        "Dot Matrix is considered to be one of the most secured holograms world-over. It easily helps to create, edit and expose digital holograms. A broad range of holographic effects such as kinetic and colour animation, 2D/3D modulation of the background, stereographic background, true colour images, single and animated hidden images, micro text, special texture images etc. can be obtained using this technology. All effects are easily accessible through the holographic softwares.",
+                },
+                {
+                    title: "3. NON-DIFFRACTIVE LITHO (up to 1,20,000 DPI):",
+                    description:
+                        "In this technique, the system combines flexible diffraction gratings with generalized Fresnel lens calculation technique and optical lithography recording, allowing extreme freedom of designing diffractive structures, including Fresnel-type elements.",
+                },
+                {
+                    title: "4. E-BEAM:",
+                    description:
+                        "The holograms produced using E-Beam technology are considered to be the most secured holograms internationally. These holograms are made using very expensive and highly sophisticated technology called Electron Beams. This kind of technology allows the creation of originals of holograms with a resolution of up to 4 microns.",
+                },
+            ],
+
+            securityNote:
+                "UFLEX offers a number of innovative security features (Mastering & Non-Mastering) that makes its holograms near to counter proof. Due to proprietary reasons, we haven't presented the details of security features on the website. Please contact us for your requirements related to security holograms. Our contact details are provided in the Contact us section, please visit the Contact us section.",
+
+            samples: [
+                "/images/hologram/sample-1.jpg",
+                "/images/hologram/sample-a.jpg",
+                "/images/hologram/sample-b.jpg",
             ],
 
             categories: [
-                { name: "FLEXIBLE LAMINATES", productKey: "flexible" },
-                { name: "PRE-FORMED POUCHES", productKey: "pre-formed" },
-                { name: "FLEXO PRINTED ROLLS & BAGS", productKey: "flexo" },
-                { name: "LAMINATED WOVEN POLY PROPYLENE (WPP) BAGS", productKey: "wpp" },
-                { name: "ELECTRON BEAM & CAST N CURE", productKey: "eb-cnc" },
-                { name: "PHARMACEUTICAL PACKAGING", productKey: "pharma" },
-                { name: "FlexiTubes", productKey: "FlexiTubes" },
-                { name: "HYGIENE FILMS", productKey: "HYGIENE" },
-                { name: "FLEXFRESH™ MODIFIED ATMOSPHERE PACKAGING", productKey: "flexfresh" },
-                { name: "Premium Shower Proof Bag", productKey: "premium" },
-                { name: "Six Layered Cotton N95 Mask", productKey: "n95" },
-                { name: "Injection Moulding Products", productKey: "injection" },
-
-
+                { name: "HOLOGRAM", productKey: "hologram" },
+                { name: "HOLOGRAPHIC FILM (Wide Web Films)", productKey: "holographic-film" },
+                { name: "TEXTILE VALUE ADDITION PRODUCT", productKey: "textile" },
+                { name: "Hot Stamping Foil", productKey: "hot-stamping" },
+                { name: "HOLOGRAPHIC METALIZED PAPER & BOARD TRANSFER", productKey: "metalized-paper" },
+                { name: "Labeling Solution", productKey: "labeling" },
             ],
-
-
 
             quickLinks: [
-                { label: "Flex Films Website ↗", href: "https://www.flexfilm.com/", external: true },
-                { label: "Request Quote", href: "https://www.flexfilm.com/" },
-                { label: "Download Catalog", href: "https://www.flexfilm.com/" },
+                { label: "Aseptic Packaging Website", href: "https://www.asepto.com", external: true },
+                { label: "Request Quote", href: "#" },
+                { label: "Download Catalog", href: "#" },
             ],
         },
-        preFormedPouches: {
-            key: "pre-formed",
-            title: "PRE-FORMED POUCHES",
-            heroImageUrl: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-08533105331.jpg",
-            brandTag: "PRE-FORMED POUCHES",
-
-            highlightText:
-                "We offer Flexible Pouches made of various formats such as :",
-
-            bulletList: [
-                "Slider Zipper Pouches (for powder and granules)",
-                "Innolok™ Pouches",
-                "Pouring Spout Pouches (for liquids)",
-                "3D Pouches (Quad-Seal Bags)",
-                "4D Pouches",
-                "Carry bags",
-                "Flexi Bottles",
-                "Stand-up",
-                "Centre sealed",
-                "Three side sealed",
-                "Gusseted pouches",
-                "Reclosable-Press to Close",
-                "Flexi Tubes",
-            ],
-
+        "holographic-film": {
+            key: "holographic-film",
+            title: "HOLOGRAPHIC FILM (Wide Web Films)",
+            heroImageUrl: "/images/holography/h4.png", // your hero
+            brandTag: "HOLOGRAPHIC FILM",
             categories: [
-                { name: "FLEXIBLE LAMINATES", productKey: "flexible" },
-                { name: "PRE-FORMED POUCHES", productKey: "pre-formed" },
-                { name: "FLEXO PRINTED ROLLS & BAGS", productKey: "flexo" },
-                { name: "LAMINATED WOVEN POLY PROPYLENE (WPP) BAGS", productKey: "wpp" },
-                { name: "ELECTRON BEAM & CAST N CURE", productKey: "eb-cnc" },
-                { name: "PHARMACEUTICAL PACKAGING", productKey: "pharma" },
-                { name: "FlexiTubes", productKey: "FlexiTubes" },
-                { name: "HYGIENE FILMS", productKey: "HYGIENE" },
-                { name: "FLEXFRESH™ MODIFIED ATMOSPHERE PACKAGING", productKey: "flexfresh" },
-                { name: "Premium Shower Proof Bag", productKey: "premium" },
-                { name: "Six Layered Cotton N95 Mask", productKey: "n95" },
-                { name: "Injection Moulding Products", productKey: "injection" },
-
-
-            ],
-
-
-
-        },
-        flexoPrinted: {
-            key: "flexo",
-            title: "FLEXO PRINTED ROLLS & BAGS",
-            heroImageUrl: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-09042700427.jpg",
-            brandTag: "FLEXO PRINTED",
-
-            highlightText:
-                "We offer Flexo Surface Printed bags for Baby and Feminine Hygiene products made of various formats such as:",
-
-            bulletList: [
-                "Surface Printed Poly Rolls",
-                "Bottom Gusset Bags",
-                "Wicketed Bottom Gusset Bags",
-                "Handle Gusseted Bags",
-            ],
-
-            categories: [
-                { name: "FLEXIBLE LAMINATES", productKey: "flexible" },
-                { name: "PRE-FORMED POUCHES", productKey: "pre-formed" },
-                { name: "FLEXO PRINTED ROLLS & BAGS", productKey: "flexo" },
-                { name: "LAMINATED WOVEN POLY PROPYLENE (WPP) BAGS", productKey: "wpp" },
-                { name: "ELECTRON BEAM & CAST N CURE", productKey: "eb-cnc" },
-                { name: "PHARMACEUTICAL PACKAGING", productKey: "pharma" },
-                { name: "FlexiTubes", productKey: "FlexiTubes" },
-                { name: "HYGIENE FILMS", productKey: "HYGIENE" },
-                { name: "FLEXFRESH™ MODIFIED ATMOSPHERE PACKAGING", productKey: "flexfresh" },
-                { name: "Premium Shower Proof Bag", productKey: "premium" },
-                { name: "Six Layered Cotton N95 Mask", productKey: "n95" },
-                { name: "Injection Moulding Products", productKey: "injection" },
-
-
+                { name: "HOLOGRAM", productKey: "hologram" },
+                { name: "HOLOGRAPHIC FILM (Wide Web Films)", productKey: "holographic-film" },
+                { name: "TEXTILE VALUE ADDITION PRODUCT", productKey: "textile" },
+                { name: "Hot Stamping Foil", productKey: "hot-stamping" },
+                { name: "HOLOGRAPHIC METALIZED PAPER & BOARD TRANSFER", productKey: "metalized-paper" },
+                { name: "Labeling Solution", productKey: "labeling" },
             ],
         },
-        wppBags: {
-            key: "wpp",
-            title: "LAMINATED WOVEN POLY PROPYLENE (WPP) BAGS",
-            heroImageUrl: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-09042710427.jpg",
-            brandTag: "WPP BAGS",
-
-            highlightText:
-                "We offer WPP Bags made of various formats such as:",
-
-            bulletList: [
-                "Block Bottom Bags for Cement, Building Materials, Chemicals, Fertilizers, Seeds etc.",
-                "Pinch Bottom Bags for Pet Foods, Rice etc.",
-                "Handle Bags for Rice, Commodities etc.",
-                "Business Promotion Bags",
-                "Reusable Shopping Bags",
-                "Bulk Bags for Collation",
-            ],
-
+        "textile": {
+            key: "textile",
+            title: "TEXTILE VALUE ADDITION PRODUCT",
+            heroImageUrl: "/images/holography/h3.png", // add your hero
+            brandTag: "TEXTILE VALUE ADDITION",
             categories: [
-                { name: "FLEXIBLE LAMINATES", productKey: "flexible" },
-                { name: "PRE-FORMED POUCHES", productKey: "pre-formed" },
-                { name: "FLEXO PRINTED ROLLS & BAGS", productKey: "flexo" },
-                { name: "LAMINATED WOVEN POLY PROPYLENE (WPP) BAGS", productKey: "wpp" },
-                { name: "ELECTRON BEAM & CAST N CURE", productKey: "eb-cnc" },
-                { name: "PHARMACEUTICAL PACKAGING", productKey: "pharma" },
-                { name: "FlexiTubes", productKey: "FlexiTubes" },
-                { name: "HYGIENE FILMS", productKey: "HYGIENE" },
-                { name: "FLEXFRESH™ MODIFIED ATMOSPHERE PACKAGING", productKey: "flexfresh" },
-                { name: "Premium Shower Proof Bag", productKey: "premium" },
-                { name: "Six Layered Cotton N95 Mask", productKey: "n95" },
-                { name: "Injection Moulding Products", productKey: "injection" },
-
-
+                { name: "HOLOGRAM", productKey: "hologram" },
+                { name: "HOLOGRAPHIC FILM (Wide Web Films)", productKey: "holographic-film" },
+                { name: "TEXTILE VALUE ADDITION PRODUCT", productKey: "textile" },
+                { name: "Hot Stamping Foil", productKey: "hot-stamping" },
+                { name: "HOLOGRAPHIC METALIZED PAPER & BOARD TRANSFER", productKey: "metalized-paper" },
+                { name: "Labeling Solution", productKey: "labeling" },
             ],
         },
-        electronBeam: {
-            key: "eb-cnc",
-            title: "ELECTRON BEAM & CAST N CURE",
-            heroImageUrl: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-09042720427.jpg",
-            brandTag: "E BEAM & CNC",
-
-            highlightText:
-                "We offer various print finishes in Electron Beam and Cast n Cure technologies in Flexible Packaging:",
-
-            bulletList: [
-                "Super Gloss Finish",
-                "Matte Finish",
-                "Registered Cast n Cure",
-                "Holography Cast n Cure",
-                "Registered E Beam",
-            ],
-
+        "hot-stamping": {
+            key: "hot-stamping",
+            title: "Hot Stamping Foil",
+            heroImageUrl: "/images/holography/h6.png", // add your hero image
+            brandTag: "HOT STAMPING FOIL",
             categories: [
-                { name: "FLEXIBLE LAMINATES", productKey: "flexible" },
-                { name: "PRE-FORMED POUCHES", productKey: "pre-formed" },
-                { name: "FLEXO PRINTED ROLLS & BAGS", productKey: "flexo" },
-                { name: "LAMINATED WOVEN POLY PROPYLENE (WPP) BAGS", productKey: "wpp" },
-                { name: "ELECTRON BEAM & CAST N CURE", productKey: "eb-cnc" },
-                { name: "PHARMACEUTICAL PACKAGING", productKey: "pharma" },
-                { name: "FlexiTubes", productKey: "FlexiTubes" },
-                { name: "HYGIENE FILMS", productKey: "HYGIENE" },
-                { name: "FLEXFRESH™ MODIFIED ATMOSPHERE PACKAGING", productKey: "flexfresh" },
-                { name: "Premium Shower Proof Bag", productKey: "premium" },
-                { name: "Six Layered Cotton N95 Mask", productKey: "n95" },
-                { name: "Injection Moulding Products", productKey: "injection" },
-
-
+                { name: "HOLOGRAM", productKey: "hologram" },
+                { name: "HOLOGRAPHIC FILM (Wide Web Films)", productKey: "holographic-film" },
+                { name: "TEXTILE VALUE ADDITION PRODUCT", productKey: "textile" },
+                { name: "Hot Stamping Foil", productKey: "hot-stamping" },
+                { name: "HOLOGRAPHIC METALIZED PAPER & BOARD TRANSFER", productKey: "metalized-paper" },
+                { name: "Labeling Solution", productKey: "labeling" },
             ],
         },
-
-        pharmaceutical: {
-            key: "pharma",
-            title: "PHARMACEUTICAL PACKAGING",
-            heroImageUrl: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item4-09042730427.jpg",
-            brandTag: "PHARMA PACKAGING",
-
-            highlightText:
-                "We offer various products for the Pharmaceutical Industry such as:",
-
-            bulletList: [
-                "Cold Form",
-                "Alu Laminates",
-                "Strip Foil",
-                "Blister Foil",
-                "Child Resistant Foil",
-                "Suppository Film",
-            ],
-
+        "metalized-paper": {
+            key: "metalized-paper",
+            title: "HOLOGRAPHIC METALIZED PAPER & BOARD TRANSFER",
+            heroImageUrl: "/images/holography/h5.png", // add your hero image
+            brandTag: "METALIZED PAPER & BOARD TRANSFER",
             categories: [
-                { name: "FLEXIBLE LAMINATES", productKey: "flexible" },
-                { name: "PRE-FORMED POUCHES", productKey: "pre-formed" },
-                { name: "FLEXO PRINTED ROLLS & BAGS", productKey: "flexo" },
-                { name: "LAMINATED WOVEN POLY PROPYLENE (WPP) BAGS", productKey: "wpp" },
-                { name: "ELECTRON BEAM & CAST N CURE", productKey: "eb-cnc" },
-                { name: "PHARMACEUTICAL PACKAGING", productKey: "pharma" },
-                { name: "FlexiTubes", productKey: "FlexiTubes" },
-                { name: "HYGIENE FILMS", productKey: "HYGIENE" },
-                { name: "FLEXFRESH™ MODIFIED ATMOSPHERE PACKAGING", productKey: "flexfresh" },
-                { name: "Premium Shower Proof Bag", productKey: "premium" },
-                { name: "Six Layered Cotton N95 Mask", productKey: "n95" },
-                { name: "Injection Moulding Products", productKey: "injection" },
-
-
+                { name: "HOLOGRAM", productKey: "hologram" },
+                { name: "HOLOGRAPHIC FILM (Wide Web Films)", productKey: "holographic-film" },
+                { name: "TEXTILE VALUE ADDITION PRODUCT", productKey: "textile" },
+                { name: "Hot Stamping Foil", productKey: "hot-stamping" },
+                { name: "HOLOGRAPHIC METALIZED PAPER & BOARD TRANSFER", productKey: "metalized-paper" },
+                { name: "Labeling Solution", productKey: "labeling" },
             ],
         },
-        hygieneFilms: {
-            key: "hygiene",
-            title: "HYGIENE FILMS",
-            heroImageUrl: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item5-09042740427.jpg",
-            brandTag: "HYGIENE FILMS",
-
-            highlightText:
-                "We offer several options in Hygiene Films for use in :",
-
-            bulletList: [
-                "Diaper Breathable Films",
-                "Sanitary Napkin Back Sheet Films",
-            ],
-
+        "labeling": {
+            key: "labeling",
+            title: "Labeling Solution",
+            heroImageUrl: "/images/holography/h1.png", // add your hero image
+            brandTag: "LABELING SOLUTION",
             categories: [
-                { name: "FLEXIBLE LAMINATES", productKey: "flexible" },
-                { name: "PRE-FORMED POUCHES", productKey: "pre-formed" },
-                { name: "FLEXO PRINTED ROLLS & BAGS", productKey: "flexo" },
-                { name: "LAMINATED WOVEN POLY PROPYLENE (WPP) BAGS", productKey: "wpp" },
-                { name: "ELECTRON BEAM & CAST N CURE", productKey: "eb-cnc" },
-                { name: "PHARMACEUTICAL PACKAGING", productKey: "pharma" },
-                { name: "FlexiTubes", productKey: "FlexiTubes" },
-                { name: "HYGIENE FILMS", productKey: "HYGIENE" },
-                { name: "FLEXFRESH™ MODIFIED ATMOSPHERE PACKAGING", productKey: "flexfresh" },
-                { name: "Premium Shower Proof Bag", productKey: "premium" },
-                { name: "Six Layered Cotton N95 Mask", productKey: "n95" },
-                { name: "Injection Moulding Products", productKey: "injection" },
-
-
+                { name: "HOLOGRAM", productKey: "hologram" },
+                { name: "HOLOGRAPHIC FILM (Wide Web Films)", productKey: "holographic-film" },
+                { name: "TEXTILE VALUE ADDITION PRODUCT", productKey: "textile" },
+                { name: "Hot Stamping Foil", productKey: "hot-stamping" },
+                { name: "HOLOGRAPHIC METALIZED PAPER & BOARD TRANSFER", productKey: "metalized-paper" },
+                { name: "Labeling Solution", productKey: "labeling" },
             ],
         },
-        flexfresh: {
-            key: "flexfresh",
-            title: "FLEXFRESH™ MODIFIED ATMOSPHERE PACKAGING",
-            heroImageUrl: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-08533115331.jpg",
-            brandTag: "FLEXFRESH™",
-
-            highlightText:
-                "We offer Flexfresh Liner Bags and Films offering shelf Life Extension solution for use in :",
-
-            bulletList: [
-                "Fresh Vegetables",
-                "Fresh Fruits",
-                "Fresh Flowers",
-            ],
-
-            categories: [
-                { name: "FLEXIBLE LAMINATES", productKey: "flexible" },
-                { name: "PRE-FORMED POUCHES", productKey: "pre-formed" },
-                { name: "FLEXO PRINTED ROLLS & BAGS", productKey: "flexo" },
-                { name: "LAMINATED WOVEN POLY PROPYLENE (WPP) BAGS", productKey: "wpp" },
-                { name: "ELECTRON BEAM & CAST N CURE", productKey: "eb-cnc" },
-                { name: "PHARMACEUTICAL PACKAGING", productKey: "pharma" },
-                { name: "FlexiTubes", productKey: "FlexiTubes" },
-                { name: "HYGIENE FILMS", productKey: "HYGIENE" },
-                { name: "FLEXFRESH™ MODIFIED ATMOSPHERE PACKAGING", productKey: "flexfresh" },
-                { name: "Premium Shower Proof Bag", productKey: "premium" },
-                { name: "Six Layered Cotton N95 Mask", productKey: "n95" },
-                { name: "Injection Moulding Products", productKey: "injection" },
-
-
-            ],
-        },
-        flexitubes: {
-            key: "FlexiTubes",
-            title: "FlexiTubes",
-            heroImageUrl: "https://www.uflexltd.com/assets/images/packaging/flexi-tubes.jpg",
-            brandTag: "FlexiTubes",
-            highlightText: "",
-            bulletList: [],
-            learnlink: "https://www.uflexltd.com/pdf/FlexitubeBrochure.pdf",
-            categories: [
-                { name: "FLEXIBLE LAMINATES", productKey: "flexible" },
-                { name: "PRE-FORMED POUCHES", productKey: "pre-formed" },
-                { name: "FLEXO PRINTED ROLLS & BAGS", productKey: "flexo" },
-                { name: "LAMINATED WOVEN POLY PROPYLENE (WPP) BAGS", productKey: "wpp" },
-                { name: "ELECTRON BEAM & CAST N CURE", productKey: "eb-cnc" },
-                { name: "PHARMACEUTICAL PACKAGING", productKey: "pharma" },
-                { name: "FlexiTubes", productKey: "FlexiTubes" },
-                { name: "HYGIENE FILMS", productKey: "HYGIENE" },
-                { name: "FLEXFRESH™ MODIFIED ATMOSPHERE PACKAGING", productKey: "flexfresh" },
-                { name: "Premium Shower Proof Bag", productKey: "premium" },
-                { name: "Six Layered Cotton N95 Mask", productKey: "n95" },
-                { name: "Injection Moulding Products", productKey: "injection" },
-
-
-            ],
-
-        },
-        premium: {
-            key: "premium",
-            title: "Premium Shower Proof Bag",
-            heroImageUrl: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item6-09042750427.jpg",
-            brandTag: "Premium Shower Proof Bag",
-            highlightText: "",
-            bulletList: [],
-            categories: [
-                { name: "FLEXIBLE LAMINATES", productKey: "flexible" },
-                { name: "PRE-FORMED POUCHES", productKey: "pre-formed" },
-                { name: "FLEXO PRINTED ROLLS & BAGS", productKey: "flexo" },
-                { name: "LAMINATED WOVEN POLY PROPYLENE (WPP) BAGS", productKey: "wpp" },
-                { name: "ELECTRON BEAM & CAST N CURE", productKey: "eb-cnc" },
-                { name: "PHARMACEUTICAL PACKAGING", productKey: "pharma" },
-                { name: "FlexiTubes", productKey: "FlexiTubes" },
-                { name: "HYGIENE FILMS", productKey: "HYGIENE" },
-                { name: "FLEXFRESH™ MODIFIED ATMOSPHERE PACKAGING", productKey: "flexfresh" },
-                { name: "Premium Shower Proof Bag", productKey: "premium" },
-                { name: "Six Layered Cotton N95 Mask", productKey: "n95" },
-                { name: "Injection Moulding Products", productKey: "injection" },
-
-
-            ],
-
-        },
-
-
-        n95: {
-            key: "n95",
-            title: "Six Layered Cotton N95 Mask",
-            heroImageUrl: "https://www.uflexltd.com/assets/images/packaging/UFlex_N95_Masks.jpg",
-            brandTag: "Six Layered Cotton N95 Mask",
-            highlightText: "",
-            learnlink: "https://www.uflexltd.com/pdf/UFlex_N95_Masks_Brochure.pdf",
-            bulletList: [],
-            categories: [
-                { name: "FLEXIBLE LAMINATES", productKey: "flexible" },
-                { name: "PRE-FORMED POUCHES", productKey: "pre-formed" },
-                { name: "FLEXO PRINTED ROLLS & BAGS", productKey: "flexo" },
-                { name: "LAMINATED WOVEN POLY PROPYLENE (WPP) BAGS", productKey: "wpp" },
-                { name: "ELECTRON BEAM & CAST N CURE", productKey: "eb-cnc" },
-                { name: "PHARMACEUTICAL PACKAGING", productKey: "pharma" },
-                { name: "FlexiTubes", productKey: "FlexiTubes" },
-                { name: "HYGIENE FILMS", productKey: "HYGIENE" },
-                { name: "FLEXFRESH™ MODIFIED ATMOSPHERE PACKAGING", productKey: "flexfresh" },
-                { name: "Premium Shower Proof Bag", productKey: "premium" },
-                { name: "Six Layered Cotton N95 Mask", productKey: "n95" },
-                { name: "Injection Moulding Products", productKey: "injection" },
-
-
-            ],
-
-        },
-
-
-        injection: {
-            key: "injection",
-            title: "Injection Moulding Products",
-            heroImageUrl: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item8-09042770427.jpg",
-            brandTag: "Injection Moulding Products",
-            highlightText: "",
-            bulletList: [],
-            categories: [
-                { name: "FLEXIBLE LAMINATES", productKey: "flexible" },
-                { name: "PRE-FORMED POUCHES", productKey: "pre-formed" },
-                { name: "FLEXO PRINTED ROLLS & BAGS", productKey: "flexo" },
-                { name: "LAMINATED WOVEN POLY PROPYLENE (WPP) BAGS", productKey: "wpp" },
-                { name: "ELECTRON BEAM & CAST N CURE", productKey: "eb-cnc" },
-                { name: "PHARMACEUTICAL PACKAGING", productKey: "pharma" },
-                { name: "FlexiTubes", productKey: "FlexiTubes" },
-                { name: "HYGIENE FILMS", productKey: "HYGIENE" },
-                { name: "FLEXFRESH™ MODIFIED ATMOSPHERE PACKAGING", productKey: "flexfresh" },
-                { name: "Premium Shower Proof Bag", productKey: "premium" },
-                { name: "Six Layered Cotton N95 Mask", productKey: "n95" },
-                { name: "Injection Moulding Products", productKey: "injection" },
-
-
-            ],
-
-        }
-
-
+        // Add more products later with different layouts
+        // "holographic-film": { ... },
     };
 
-    const [selectedKey, setSelectedKey] = useState("flexible");
 
     const product =
         Object.values(productsData).find(
             (p: any) => p.key === selectedKey
-        ) ?? productsData.flexible;
+        ) ?? productsData.hologram;
 
     const { key: _ignored, ...productProps } = product;
-
-
-    const handleCategoryClick = (productKey: string) => {
-        setSelectedKey(productKey);
-    };
+    //   const product = productsData[selectedKey] || productsData.hologram;
 
     const enhancedCategories = product.categories.map((cat: any) => ({
         ...cat,
         isActive: cat.productKey === selectedKey,
-        onClick: () => handleCategoryClick(cat.productKey),
+        onClick: () => setSelectedKey(cat.productKey),
     }));
-
 
     return (
         <>
@@ -450,7 +175,7 @@ export default function ProductsPage() {
                         <section className="relative w-full h-[580px] sm:h-[451px] overflow-hidden">
 
                             <Image
-                                src="/images/flexi.png"
+                                src="/images/holography/hall.png"
                                 alt="Investors Relations"
                                 fill
                                 className="object-cover w-full h-full"
@@ -476,19 +201,17 @@ export default function ProductsPage() {
 
 
                                 <motion.div
-                                    className="bg-[#117ABA] lato-400 text-left w-[450px] h-[350px] sm:w-[706px] sm:h-[411px] text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[20px] pl-4 pt-2 pb-4 pr-4 md:pl-24 lg:pl-28 sm:pt-8 sm:pb-4 sm:pr-12 mb-12 sm:mb-8"
+                                    className="bg-[#117ABA] lato-400 text-left w-[450px] h-[350px] sm:w-[706px] sm:h-[361px] text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[20px] pl-4 pt-2 pb-4 pr-4 md:pl-24 lg:pl-28 sm:pt-2 sm:pb-4 sm:pr-12 mb-12 sm:mb-12"
                                     variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
                                 >
                                     <div className="w-[300px] sm:w-[537px]">
 
 
                                         <h1 className="text-white text-[24px] lato-700  md:text-[42px]">
-                                            Flexible Packaging
+                                            Holography
 
                                         </h1>
-                                        UFlex’s Flexible Packaging Business’s products range from Flexible Laminates, Pre-Formed Pouches, Flexo Printed Rolls & Bags, Laminated Woven Polypropylene (WPP) Bags, Electron Beam & Cast N Cure, Pharmaceutical Packaging, FlexiTubes, Hygiene Films, Flexfresh™ Modified Atmosphere Packaging, Big Bags and N-95 Mask.
-                                        {/* As an end-to-end flexible packaging solutions company, UFlex also holds the expertise to develop flexible tube Tube Packaging for a large number of FMCG brands in India and overseas */}
-                                    </div>
+                                        UFlex’ Holography business offers a wide range of holographic products & solutions that includes Holograms, Holographic Scratch, Holographic Wads, Self-adhesive labels, Printed Labels to Holographic Paper Labels, Holographic Strips, Holographic Pouches, Hologram Sticker Printing, Holographic Films, HSF Foil, Glitter Film, Sequins Films, Hot Melt Film, Fancy Yarn Films & Security Documents</div>
                                 </motion.div>
 
 
@@ -496,8 +219,8 @@ export default function ProductsPage() {
                         </section>
                         <Breadcrumb
                             items={[
-                                { label: "Flexible Packaging", href: "/flexible-packaging-business" },
-                                { label: "Flexible Packaging Products" },
+                                { label: "Holography", href: "/holography-business" },
+                                { label: "Holography Products" },
                             ]}
                         />
                         <ProductCategorySection
