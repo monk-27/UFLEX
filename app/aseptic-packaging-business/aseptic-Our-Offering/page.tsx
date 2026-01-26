@@ -175,7 +175,7 @@ export default function ProductsPage() {
                     // initial={{ opacity: 0, x: -20 }}
                     // animate={{ opacity: 1, x: 0 }}
                     // transition={{ duration: 0.6 }}
-                    className="bg-white overflow-hidden hidden lg:block sticky top-6"
+                    className="bg-white overflow-hidden  sticky top-6"
                   >
                     <div className="rounded-xl border border-gray-200">
                       <div className="bg-[#117ABA] text-white px-6 py-5">
