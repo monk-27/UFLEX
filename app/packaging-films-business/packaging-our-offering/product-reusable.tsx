@@ -305,7 +305,7 @@ export default function ProductCategorySection({
                                                 custom={i}
                                                 className="flex items-start gap-3 text-black"
                                             >
-                                                <span className="text-black lato-400 text-xl leading-none mt-1">•</span>
+                                                <span className="text-black lato-400 text-[16px] leading-none mt-1">•</span>
                                                 <span className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">{prop}</span>
                                             </motion.li>
                                         ))}
@@ -323,11 +323,11 @@ export default function ProductCategorySection({
 
                                     <div className="flex gap-2  py-6 pb-4">
                                         {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
-                                        <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">
+                                        <h3 className="flex-1 text-center lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">
                                             Applications
                                         </h3>
                                     </div>
-                                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-2">
+                                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-2">
                                         {applications.map((app, i) => (
                                             <motion.div
                                                 key={app}
@@ -336,8 +336,8 @@ export default function ProductCategorySection({
                                                 whileHover={{ scale: 1.03, y: -4 }}
                                                 className={`
         flex flex-col items-center justify-center text-center
-         h-[60px]  
-        px-4 py-4 sm:px-5 sm:py-0
+         h-[60px] sm:h-[60px] sm:w-[140px]
+        px-4 py-4 sm:px-1 sm:py-0
         bg-[#F9F9F9] hover:bg-blue-50
         text-black 
         text-[13px] sm:text-[12px] 
@@ -362,7 +362,7 @@ export default function ProductCategorySection({
                             <div className="">
                                 <div className="flex gap-2  py-6">
                                     {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
-                                    <h3 className="lato-400 text-[20px] md:text-[24px] text-[#117ABA]">
+                                    <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">
                                         Special Innovations
                                     </h3>
                                 </div>
@@ -426,7 +426,7 @@ export default function ProductCategorySection({
                         {/* CTA */}
                         <motion.div
                             variants={itemVariants}
-                            className="flex items-center justify-center gap-5 pt-6"
+                            className="flex items-center justify-center gap-5 pt-12"
                         >
                             <motion.button
                                 whileHover={{ scale: 1.05 }}

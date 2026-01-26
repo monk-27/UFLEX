@@ -400,7 +400,7 @@ export default function GetInTouch() {
         <section className="mt-4 max-w-7xl mx-auto w-full px-4 sm:px-0">
           <div className="grid gap-4 md:grid-cols-3">
             <a href="mailto:corpcomm@uflexltd.com" className="group flex items-center gap-3 rounded-sm bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-[2px] hover:shadow-md">
-              <div className="rounded-xl bg-[#117ABA] p-3 text-white"><Mail className="h-5 w-5" /></div>
+              <div className="rounded-sm bg-[#117ABA] p-3 text-white"><Mail className="h-5 w-5" /></div>
               <div>
                 <p className="lato-700 text-slate-800">Corporate Communications</p>
                 <p className="text-sm text-slate-600 group-hover:text-slate-700">corpcomm@uflexltd.com</p>
@@ -408,7 +408,7 @@ export default function GetInTouch() {
             </a>
 
             <a href="mailto:enquiry@uflexltd.com" className="group flex items-center gap-3 rounded-sm bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-[2px] hover:shadow-md">
-              <div className="rounded-xl bg-[#117ABA] p-3 text-white"><Mail className="h-5 w-5" /></div>
+              <div className="rounded-sm bg-[#117ABA] p-3 text-white"><Mail className="h-5 w-5" /></div>
               <div>
                 <p className="lato-700 text-slate-800">Feedback / Support</p>
                 <p className="text-sm text-slate-600 group-hover:text-slate-700">enquiry@uflexltd.com</p>
@@ -416,7 +416,7 @@ export default function GetInTouch() {
             </a>
 
             <div className="flex items-center gap-3 rounded-sm bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-[2px] hover:shadow-md">
-              <div className="rounded-xl bg-[#117ABA] p-3 text-white"><Phone className="h-5 w-5" /></div>
+              <div className="rounded-sm bg-[#117ABA] p-3 text-white"><Phone className="h-5 w-5" /></div>
               <div>
                 <p className="lato-700 text-slate-800">Board Line</p>
                 <p className="text-sm text-slate-600 group-hover:text-slate-700">+91 120 4002121</p>
@@ -483,7 +483,7 @@ export default function GetInTouch() {
           {/* Results */}
           <div className="mt-8">
             {filtered.length === 0 ? (
-              <p className="rounded-xl bg-white/70 p-6 text-center text-slate-600 ring-1 ring-black/5">
+              <p className="rounded-sm bg-white/70 p-6 text-center text-slate-600 ring-1 ring-black/5">
                 No office found for the selected filters.
               </p>
             ) : (
@@ -511,7 +511,8 @@ export default function GetInTouch() {
             <div className="text-start mb-4 py-6">
               <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] ">Other Queries</h2>
               <p className="mt-2  text-black lato-400 py-[2px] text-[14px] leading-relaxed md:text-[24px]">
-                For any other enquiries, fill the form below. Fields marked with (*) are mandatory.
+                For any other enquiries, fill the form below. Fields marked with (
+                  <span className="text-[#117ABA]">*</span>) are mandatory.
               </p>
             </div>
 
@@ -542,12 +543,12 @@ export default function GetInTouch() {
                       htmlFor="name"
                       className="text-sm lato-600 text-slate-700"
                     >
-                      Full Name*
+                      Full Name  <span className="text-[#117ABA]">*</span>
                     </label>
                     <input
                       id="name"
                       required
-                      className="text-gray-800 rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                      className="text-gray-800 rounded-sm border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
                       placeholder="Enter full name"
                     />
                   </div>
@@ -557,13 +558,13 @@ export default function GetInTouch() {
                       htmlFor="email"
                       className="text-sm lato-600 text-slate-700"
                     >
-                      Email Address*
+                      Email Address  <span className="text-[#117ABA]">*</span>
                     </label>
                     <input
                       id="email"
                       type="email"
                       required
-                      className="text-gray-800 rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                      className="text-gray-800 rounded-sm border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
                       placeholder="Enter email address"
                     />
                   </div>
@@ -573,13 +574,13 @@ export default function GetInTouch() {
                       htmlFor="phone"
                       className="text-sm lato-600 text-slate-700"
                     >
-                      Phone Number*
+                      Phone Number  <span className="text-[#117ABA]">*</span>
                     </label>
                     <input
                       id="phone"
                       required
                       inputMode="tel"
-                      className="text-gray-800 rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                      className="text-gray-800 rounded-sm border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
                       placeholder="Enter phone number"
                     />
                   </div>
@@ -589,12 +590,12 @@ export default function GetInTouch() {
                       htmlFor="enquiryType"
                       className="text-sm lato-600 text-slate-700"
                     >
-                      Enquiry Type*
+                      Enquiry Type  <span className="text-[#117ABA]">*</span>
                     </label>
                     <select
                       id="enquiryType"
                       required
-                      className="text-gray-800 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                      className="text-gray-800 rounded-sm border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
                       defaultValue=""
                     >
                       <option value="" disabled className="text-gray-800">
@@ -617,10 +618,10 @@ export default function GetInTouch() {
                     </label>
                     <select
                       id="product"
-                      className="text-gray-800 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                      className="text-gray-800 rounded-sm border border-slate-300 bg-white  py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2 px-3"
                       defaultValue=""
                     >
-                      <option value="" disabled>
+                      <option value="" disabled >
                         Select product
                       </option>
                       <option>Packaging films</option>
@@ -640,7 +641,7 @@ export default function GetInTouch() {
                     </label>
                     <select
                       id="location"
-                      className="text-gray-800 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                      className="text-gray-800 rounded-sm border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2 "
                       defaultValue=""
                     >
                       <option value="" disabled className="text-gray-800">
@@ -661,13 +662,13 @@ export default function GetInTouch() {
                     htmlFor="message"
                     className="text-sm lato-600 text-slate-700"
                   >
-                    Message*
+                    Message  <span className="text-[#117ABA]">*</span>
                   </label>
                   <textarea
                     id="message"
                     required
                     rows={5}
-                    className="text-gray-800 rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                    className="text-gray-800 rounded-sm border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
                     placeholder="Write message"
                   />
                 </div>

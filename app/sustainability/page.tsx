@@ -194,7 +194,7 @@ export default function Page() {
             className="flex items-center mt-10"
           >
             <button className="flex items-center gap-2 rounded-full border border-white bg-white px-6 py-3 text-sm lato-400 text-black transition-all hover:bg-transparent hover:text-white">
-              READ MORE
+              Read More
               <svg
                 width="16"
                 height="16"

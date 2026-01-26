@@ -974,8 +974,8 @@ export default function PressRoomPage() {
 
 
 
- <div className="py-4 flex justify-center ">
-        <span className="text-[#000000]">
+ <div className="pt-12 flex justify-center ">
+        <span className="text-[#000000] text-[20px] lato-400">
          For any media queries, please send an email to the Global Corporate Communications Team : {""}
          <span className="text-[#117ABA]">
            corpcomm@uflexltd.com

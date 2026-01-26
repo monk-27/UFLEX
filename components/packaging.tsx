@@ -109,7 +109,7 @@ const packagingData = [
 delivering innovative, sustainable, and high-performance packaging films for a wide range of
 industries. As India’s largest multinational flexible packaging and solutions company and the world’s
 second-largest supplier of thin polyester (BOPET) films, we offer a comprehensive portfolio that
-includes BOPP, BOPET, CPP, metallized, AlOx-coated, specialty, and 100% PCR-content PET films
+includes BOPP, BOPET, CPP, metallized, AlOx-coated, specialty, and 100% PCR-content  PET films
 (Asclepius™).`,
             `In addition, we manufacture PET chips to ensure consistent raw material quality and
 supply for diverse industry needs. With world-class manufacturing facilities across India, the UAE,
@@ -451,9 +451,9 @@ const PackageComp: React.FC<Props> = ({ business }) => {
 
                             <button
                                 onClick={() => setOpen(true)}
-                                className="mt-4 lato-700 text-[14px] text-[#117ABA]  hover:underline"
+                                className="mt-4 lato-400 text-[16px] sm:text-[20px] text-[#117ABA]  hover:underline"
                             >
-                                Read more
+                                Read More
                                 <span aria-hidden>↗</span>
 
                             </button>

@@ -57,7 +57,7 @@ export default function Page() {
 
 
               <motion.p
-                className="text-[14px] md:text-[18px] leading-relaxed lato-400 text-black"
+                className="text-[14px] md:text-[18px] leading-relaxed lato-400 text-black space-y-4"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
