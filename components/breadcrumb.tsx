@@ -33,23 +33,23 @@ export default function Breadcrumb({
   return (
     <div className="bg-[#EFEFEF]">
       <div className="max-w-7xl mx-auto h-12 flex items-center px-2">
-        <nav className="text-xs lato-600 text-black flex flex-wrap items-center gap-1">
+        <nav className="text-sm lato-600 text-black flex flex-wrap items-center gap-1">
           {fullCrumbs.map((item, idx) => {
             const isLast = idx === fullCrumbs.length - 1;
 
             return (
               <span key={idx} className="flex items-center gap-1">
                 {item.href && !isLast ? (
-                  <Link href={item.href} className="text-[#117ABA] ">
+                  <Link href={item.href} className="text-[#117ABA] text-sm">
                     {item.label}
                   </Link>
                 ) : (
-                  <span className={isLast ? "text-black" : "text-[#117ABA]"}>
+                  <span className={isLast ? "text-black text-sm" : "text-[#117ABA] text-sm"}>
                     {item.label}
                   </span>
                 )}
 
-                {!isLast && <span className="text-[#117ABA] mx-1">&gt;</span>}
+                {!isLast && <span className="text-sm text-[#117ABA] mx-1">&gt;</span>}
               </span>
             );
           })}

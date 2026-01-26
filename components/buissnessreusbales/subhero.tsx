@@ -25,7 +25,7 @@ export function SubBusinessHero({ business }: any) {
                 </p>
                 {/* <button className="group flex items-center gap-1 mt-4 text-[16px] lato-700 text-black hover:text-[#0e5d8a] transition">
                     <span className="underline underline-offset-2">
-                        Know more
+                        Know More
                         <span className="transform transition group-hover:translate-x-1">
                         ↗
                     </span>

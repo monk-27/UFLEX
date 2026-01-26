@@ -199,7 +199,7 @@ export const businesses: BusinessConfig[] = [
     description:
       "Acting today for a sustainable tomorrow. Through energy-efficient technologies, eco-friendly processes, and responsible waste management, we are proud to foster an eco-friendly environment at our plants.",
     image: "/images/sus.png",
-    linkLabel: "Know more",
+    linkLabel: "Know More",
     linkHref: "/printing-cylinder-business/sustainability",
   },
 
@@ -233,7 +233,7 @@ a Lean Six Sigma black belt champion.`,
     description:
       "Over the last several years, UFlex’s Printing Cylinder business has received various awards and certifications.",
     image: "/images/awards.png",
-    linkLabel: "Know more",
+    linkLabel: "Know More",
     linkHref: "/hall-of-fame",
   },
 
@@ -305,7 +305,7 @@ const CylComp : React.FC<Props> = ({ business }) => {
                                                         
                                                                         <button
                                                                           onClick={() => setOpen(true)}
-                                                                          className="mt-4 lato-400 text-[16px] sm:text-[20px]text-[#117ABA]  hover:underline"
+                                                                          className="mt-4 lato-400 text-[16px] sm:text-[20px]  text-[#117ABA]  hover:underline"
                                                                         >
                                                                           Read More 
                 <span aria-hidden>↗</span>

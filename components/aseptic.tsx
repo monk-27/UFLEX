@@ -188,7 +188,7 @@ export const businesses: BusinessConfig[] = [
       description:
         "At Asepto, sustainability isn't just a commitment; it's a driving force behind innovation. Asepto brings a sustainable solution to this pressing concern of aseptic cartons reaching landfills. With their proper extraction and assimilation, Asepto paves the way for a Circular Economy. ",
       image: "/images/sus.png",
-      linkLabel: "Know more",
+      linkLabel: "Know More",
       linkHref: "/aseptic-packaging-business/sustainability",
     },
     keypeople: {
@@ -210,7 +210,7 @@ export const businesses: BusinessConfig[] = [
       description:
         "Our circular initiatives and recycling programmes have been recognised by leading global industry bodies, reflecting Asepto’s commitment to responsible and sustainable packaging. These recognitions highlight our consistent efforts to reduce waste, improve material efficiency, and support recycling across our operations.",
       image: "/images/awards.png",
-      linkLabel: "Know more",
+      linkLabel: "Know More",
       linkHref: "/hall-of-fame",
     },
     accreditation: [
@@ -283,7 +283,7 @@ const AsepticComp: React.FC<Props> = ({ business }) => {
 
                 <button
                   onClick={() => setOpen(true)}
-                  className="mt-4 lato-400 text-[16px] sm:text-[20px]text-[#117ABA]  hover:underline"
+                  className="mt-4 lato-400 text-[16px] sm:text-[20px]  text-[#117ABA]  hover:underline"
                 >
                   Read More 
                 <span aria-hidden>↗</span>

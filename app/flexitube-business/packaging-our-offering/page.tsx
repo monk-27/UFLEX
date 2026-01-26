@@ -503,7 +503,7 @@ export default function ProductsPage() {
 
                                 {/* <button
                                 onClick={() => setOpen(true)}
-                                className="mt-4 lato-400 text-[16px] sm:text-[20px]text-[#117ABA]  hover:underline"
+                                className="mt-4 lato-400 text-[16px] sm:text-[20px]  text-[#117ABA]  hover:underline"
                             >
                                 Read More
                                 <span aria-hidden>↗</span>

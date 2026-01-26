@@ -297,7 +297,7 @@ energy from non-recyclable waste. These strategies reflect our dedication to bui
 economy and delivering advanced packaging solutions that are both high-performing and
 environmentally responsible.`,
             image: "/images/sus.png",
-            linkLabel: "Know more",
+            linkLabel: "Know More",
             linkHref: "/packaging-films-business/sustainability",
         },
         keypeopleIndia: {
@@ -401,7 +401,7 @@ environmentally responsible.`,
             description:
                 "UFlex's Packaging Films business, under the Flex Films brand, is a global leader offering innovative and sustainable packaging solutions, including BOPP, BOPET, CPP, specialty, and 100% PCR PET films, with manufacturing across 9 countries and presence in 150+ markets.",
             image: "/images/awards.png",
-            linkLabel: "Know more",
+            linkLabel: "Know More",
             linkHref: "/hall-of-fame",
         },
         accreditation: [

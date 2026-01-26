@@ -560,7 +560,7 @@ export default function ProductCategorySection({
                                 </p>
 
                                 {/* Quote block 1 */}
-                                <div className=" pl-4 italic lato-400 text-[16px] sm:text-[18px] text-black">
+                                <div className="italic lato-400 text-[16px] sm:text-[18px] text-black">
                                     Our avant-garde Moulding plant Noida is equipped with world-class machines
                                     including Injection Moulding Machines from manufacturers like Arburg,
                                     Toshiba and Milacron; and has an able technical workforce that caters to
@@ -577,7 +577,7 @@ export default function ProductCategorySection({
                                 </p>
 
                                 {/* Quote block 2 */}
-                                <div className=" pl-4 italic lato-400 text-[16px] sm:text-[18px] text-black">
+                                <div className=" italic lato-400 text-[16px] sm:text-[18px] text-black">
                                     We, at UFlex, provide customized range of Precision Plastic Components for
                                     various segments like Packaging, Industrial, Electrical, Automobile,
                                     Medical and Home Appliances using the latest technology and well-equipped

@@ -197,7 +197,7 @@ minimum process waste
 generation and optimally
 recycle the same.`,
             image: "/images/sus.png",
-            linkLabel: "Know more",
+            linkLabel: "Know More",
             linkHref: "/holography-business/sustainability"
         },
 
@@ -328,7 +328,7 @@ Kolkata.`,
             description:
                 "Over the last several years, UFlex’s Flexible Packaging business has received various awards and certifications for its innovative and sustainable packaging solutions.",
             image: "/images/awards.png",
-            linkLabel: "Know more",
+            linkLabel: "Know More",
             linkHref: "/hall-of-fame"
         },
 
@@ -492,7 +492,7 @@ const HoloGraphyComp: React.FC<Props> = ({ business }) => {
 
                                 <button
                                     onClick={() => setOpen(true)}
-                                    className="mt-4 lato-400 text-[16px] sm:text-[20px]text-[#117ABA]  hover:underline"
+                                    className="mt-4 lato-400 text-[16px] sm:text-[20px]  text-[#117ABA]  hover:underline"
                                 >
                                     Read More
                                     <span aria-hidden>↗</span>

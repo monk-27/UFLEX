@@ -255,7 +255,7 @@ export const businesses: BusinessConfig[] = [
       description:
         "Single-pellet solution: Pioneering innovation in recyclable packaging. Our breakthrough FSSAI-compliant single-pellet solution enables the incorporation of recycled PET (rPET) in food and beverage packaging, combining recycled and virgin PET into a single, high-purity pellet with excellent strength, stability and clarity.",
       image: "/images/sus.png",
-      linkLabel: "Know more",
+      linkLabel: "Know More",
       linkHref: "#",
     },
     keypeople: {
@@ -348,7 +348,7 @@ export const businesses: BusinessConfig[] = [
       description:
         "UFlex's Packaging Films business, under the Flex Films brand, is a global leader offering innovative and sustainable packaging solutions, including BOPP, BOPET, CPP, specialty, and 100% PCR PET films, with manufacturing across 9 countries and presence in 150+ markets.",
       image: "/images/awards.png",
-      linkLabel: "Know more",
+      linkLabel: "Know More",
       linkHref: "/hall-of-fame",
     },
     accreditation: [
@@ -445,7 +445,7 @@ export const businesses: BusinessConfig[] = [
       description:
         "Committed to reducing our carbon footprint Development of sustainable products such as water-based inks and adhesives, along with focused water and energy conservation efforts and a reduction in hazardous waste generation, are some of the key initiatives undertaken by our Chemicals business to reduce its carbon footprint. These efforts are supported by process optimisation, responsible sourcing, improved effluent management practices, and continuous monitoring to enhance environmental performance across operations",
       image: "/images/sus.png",
-      linkLabel: "Know more",
+      linkLabel: "Know More",
       linkHref: "#",
     },
     keypeople: {
@@ -509,7 +509,7 @@ export const businesses: BusinessConfig[] = [
       description:
         "Over the last several years, UFlex's Chemicals business has received various awards and certifications for its innovative and sustainable products and solutions, reflecting its strong commitment to responsible manufacturing, safety excellence, regulatory compliance, and continuous improvement in environmental and operational performance.",
       image: "/images/awards.png",
-      linkLabel: "Know more",
+      linkLabel: "Know More",
       linkHref: "/hall-of-fame",
     },
     accreditation: [
@@ -588,7 +588,7 @@ export const businesses: BusinessConfig[] = [
       description:
         "At Asepto, sustainability isn't just a commitment; it's a driving force behind innovation. Asepto brings a sustainable solution to this pressing concern of aseptic cartons reaching landfills. With their proper extraction and assimilation, Asepto paves the way for a Circular Economy. Enzymatic Delamination Technology (EDT) is Asepto’s sustainable solution to reprocess the aseptic cartons to bring them back into the circular economy. Through EDT, we can separate and recover valuable materials like aluminium, polymers, and paper pulp from these cartons. By doing so, we significantly reduce the environmental footprint associated with their disposal.",
       image: "/images/sus.png",
-      linkLabel: "Know more",
+      linkLabel: "Know More",
       linkHref: "#",
     },
     keypeople: {
@@ -610,7 +610,7 @@ export const businesses: BusinessConfig[] = [
       description:
         "Our circular initiatives and recycling programmes have been recognised by leading global industry bodies, reflecting Asepto’s commitment to responsible and sustainable packaging. These recognitions highlight our consistent efforts to reduce waste, improve material efficiency, and support recycling across our operations.",
       image: "/images/awards.png",
-      linkLabel: "Know more",
+      linkLabel: "Know More",
       linkHref: "/hall-of-fame",
     },
     accreditation: [
@@ -662,7 +662,7 @@ export const businesses: BusinessConfig[] = [
     description:
       "Driving Sustainable Growth Through Smarter Packaging Practices. UFlex is deeply committed to environmental sustainability and has undertaken several impactful initiatives across India to reduce its carbon footprint and enhance operational productivity. The company consistently invests in advanced technologies that consume less energy per ton of flexible packaging, promoting more efficient and responsible manufacturing practices. All in-house production waste is recycled and reintegrated into the manufacturing cycle, significantly reducing landfill pressure and helping curb pollution.",
     image: "/images/sus.png",
-    linkLabel: "Know more",
+    linkLabel: "Know More",
     linkHref: "#",
   },
 
@@ -694,7 +694,7 @@ export const businesses: BusinessConfig[] = [
     description:
       "Over the last several years, UFlex’s Flexible Packaging business has received various awards and certifications for its innovative and sustainable packaging solutions.",
     image: "/images/awards.png",
-    linkLabel: "Know more",
+    linkLabel: "Know More",
     linkHref: "/hall-of-fame",
   },
 
@@ -821,7 +821,7 @@ export const businesses: BusinessConfig[] = [
     description:
       "In the process of providing the best fraud-preventive infallible seals of full-proof product security, we ensure that all emissions are well below the permissible levels. We continuously strive for minimum process waste generation and optimally recycle the same. We have many solutions of sustainability segment- holographic transfer on paper and board, cold transfer foils, recycled RSC certified sequins film, cast and cure holographic films among many other",
     image: "/images/sus.png",
-    linkLabel: "Know more",
+    linkLabel: "Know More",
     linkHref: "#"
   },
 
@@ -860,7 +860,7 @@ export const businesses: BusinessConfig[] = [
     description:
       "Over the last several years, UFlex’s Flexible Packaging business has received various awards and certifications for its innovative and sustainable packaging solutions.",
     image: "/images/awards.png",
-    linkLabel: "Know more",
+    linkLabel: "Know More",
     linkHref: "/hall-of-fame"
   },
 
@@ -950,7 +950,7 @@ export const businesses: BusinessConfig[] = [
     description:
       "At UFlex, we prioritise environmental responsibility across our operations. UFlex engineering has undertaken several initiatives focussed on water conservation, waste management and enhancing biodiversity surrounding our facilities.",
     image: "/images/sus.png",
-    linkLabel: "Know more",
+    linkLabel: "Know More",
     linkHref: "#",
   },
   keypeople: {
@@ -986,7 +986,7 @@ export const businesses: BusinessConfig[] = [
     title: "Awards & Accolades",
     description: "Over the last several years, UFlex’s Flexible Packaging business has received various awards and certifications for its innovative and sustainable packaging solutions.",
     image: "/images/awards.png",
-    linkLabel: "Know more",
+    linkLabel: "Know More",
     linkHref: "/hall-of-fame",
   },
   accreditation: [
@@ -1087,7 +1087,7 @@ export const businesses: BusinessConfig[] = [
     description:
       "Acting today for a sustainable tomorrow. Through energy-efficient technologies, eco-friendly processes, and responsible waste management, we are proud to foster an eco-friendly environment at our plants.",
     image: "/images/sus.png",
-    linkLabel: "Know more",
+    linkLabel: "Know More",
     linkHref: "#",
   },
 
@@ -1120,7 +1120,7 @@ a Lean Six Sigma black belt champion.`,cta: { label: "Read More", href: "/leader
     description:
       "Over the last several years, UFlex’s Printing Cylinder business has received various awards and certifications.",
     image: "/images/awards.png",
-    linkLabel: "Know more",
+    linkLabel: "Know More",
     linkHref: "/hall-of-fame",
   },
 
@@ -1225,7 +1225,7 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
       description:
         "Driving Sustainable Growth Through Smarter Packaging Practices.\nOur commitment to Environmental & Social Responsibility (ESR) and sustainability is more than a value—it’s a strategy. We foster collaborative, long-term partnerships with brand owners to co-create packaging that is not only beautiful and secure but also future-ready and planet-positive.",
       image: "/images/sus.png",
-      linkLabel: "Know more",
+      linkLabel: "Know More",
       linkHref: "#",
     },
     keypeople: {
@@ -1251,7 +1251,7 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
       title: "Awards & Accolades",
       description: "Over the last several years, UFlex’s Printing Cylinder business has received various awards and certifications.",
       image: "/images/awards.png",
-      linkLabel: "Know more",
+      linkLabel: "Know More",
       linkHref: "/hall-of-fame",
     },
     accreditation: [

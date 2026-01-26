@@ -44,7 +44,7 @@ export function AwardsSection({ data }: any) {
             {data.linkHref && data.linkLabel && (
               <a
                 href={data.linkHref}
-                className="inline-flex items-center gap-1 lato-700 text-[14px] text-[#117ABA] "
+                className="inline-flex items-center gap-1 lato-700 text-[16px] sm:text-[20px] text-[#117ABA] "
               >
                                 <div className="underline underline-offset-2">
 

@@ -181,7 +181,7 @@ export const businesses: BusinessConfig[] = [
             description:
                 "At UFlex, we prioritise environmental responsibility across our operations. UFlex engineering has undertaken several initiatives focussed on water conservation, waste management and enhancing biodiversity surrounding our facilities.",
             image: "/images/sus.png",
-            linkLabel: "Know more",
+            linkLabel: "Know More",
             linkHref: "/engineering-business/sustainability",
         },
         keypeople: {
@@ -236,7 +236,7 @@ organization's workforce.`,
             title: "Awards & Accolades",
             description: "Over the last several years, UFlex’s Flexible Packaging business has received various awards and certifications for its innovative and sustainable packaging solutions.",
             image: "/images/awards.png",
-            linkLabel: "Know more",
+            linkLabel: "Know More",
             linkHref: "/hall-of-fame",
         },
         accreditation: [
@@ -309,7 +309,7 @@ const EngComp: React.FC<Props> = ({ business }) => {
                             
                                             <button
                                               onClick={() => setOpen(true)}
-                                              className="mt-4 lato-400 text-[16px] sm:text-[20px]text-[#117ABA]  hover:underline"
+                                              className="mt-4 lato-400 text-[16px] sm:text-[20px]  text-[#117ABA]  hover:underline"
                                             >
                                               Read More 
                 <span aria-hidden>↗</span>

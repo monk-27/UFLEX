@@ -161,7 +161,7 @@ export const businesses: BusinessConfig[] = [
             description:
                 "Committed to reducing our carbon footprint Development of sustainable products such as water-based inks and adhesives, along with focused water and energy conservation efforts and a reduction in hazardous waste generation, are some of the key initiatives undertaken by our Chemicals business to reduce its carbon footprint. These efforts are supported by process optimisation, responsible sourcing, improved effluent management practices, and continuous monitoring to enhance environmental performance across operations",
             image: "/images/sus.png",
-            linkLabel: "Know more",
+            linkLabel: "Know More",
             linkHref: "/chemicals-business/sustainability",
         },
         keypeople: {
@@ -225,7 +225,7 @@ export const businesses: BusinessConfig[] = [
             description:
                 "Over the last several years, UFlex's Chemicals business has received various awards and certifications for its innovative and sustainable products and solutions, reflecting its strong commitment to responsible manufacturing, safety excellence, regulatory compliance, and continuous improvement in environmental and operational performance.",
             image: "/images/awards.png",
-            linkLabel: "Know more",
+            linkLabel: "Know More",
             linkHref: "/hall-of-fame",
         },
         accreditation: [
@@ -295,7 +295,7 @@ const ChemicalsComp: React.FC<Props> = ({ business }) => {
 
                                 <button
                                     onClick={() => setOpen(true)}
-                                    className="mt-4 lato-400 text-[16px] sm:text-[20px]text-[#117ABA]  hover:underline"
+                                    className="mt-4 lato-400 text-[16px] sm:text-[20px]  text-[#117ABA]  hover:underline"
                                 >
                                     Read More
                                     <span aria-hidden>↗</span>

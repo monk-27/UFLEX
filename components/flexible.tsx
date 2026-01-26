@@ -248,7 +248,7 @@ packaging, promoting more efficient and responsible manufacturing practices. All
 production waste is recycled and reintegrated into the manufacturing cycle, significantly reducing
 landfill pressure and helping curb pollution.`,
             image: "/images/sus.png",
-            linkLabel: "Know more",
+            linkLabel: "Know More",
             linkHref: "/flexible-packaging-business/sustainability",
         },
 
@@ -280,7 +280,7 @@ landfill pressure and helping curb pollution.`,
             description:
                 "Over the last several years, UFlex’s Flexible Packaging business has received various awards and certifications for its innovative and sustainable packaging solutions.",
             image: "/images/awards.png",
-            linkLabel: "Know more",
+            linkLabel: "Know More",
             linkHref: "/hall-of-fame",
         },
 
@@ -351,7 +351,7 @@ const FlexibleComp: React.FC<Props> = ({ business }) => {
 
                                 <button
                                     onClick={() => setOpen(true)}
-                                    className="mt-4 lato-400 text-[16px] sm:text-[20px]text-[#117ABA]  hover:underline"
+                                    className="mt-4 lato-400 text-[16px] sm:text-[20px] text-[#117ABA]  hover:underline"
                                 >
                                     Read More
                                     <span aria-hidden>↗</span>

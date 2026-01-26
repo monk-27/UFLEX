@@ -275,7 +275,7 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
       description:
         "Driving Sustainable Growth Through Smarter Packaging Practices.\nOur commitment to Environmental & Social Responsibility (ESR) and sustainability is more than a value—it’s a strategy. We foster collaborative, long-term partnerships with brand owners to co-create packaging that is not only beautiful and secure but also future-ready and planet-positive.",
       image: "/images/sus.png",
-      linkLabel: "Know more",
+      linkLabel: "Know More",
       linkHref: "#",
     },
     keypeople: {
@@ -301,7 +301,7 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
       title: "Awards & Accolades",
       description: "Over the last several years, UFlex’s Printing Cylinder business has received various awards and certifications.",
       image: "/images/awards.png",
-      linkLabel: "Know more",
+      linkLabel: "Know More",
       linkHref: "/hall-of-fame",
     },
     accreditation: [
@@ -373,7 +373,7 @@ const FlexiComp: React.FC<Props> = ({ business }) => {
 
                 <button
                   onClick={() => setOpen(true)}
-                  className="mt-4 lato-400 text-[16px] sm:text-[20px]text-[#117ABA]  hover:underline"
+                  className="mt-4 lato-400 text-[16px] sm:text-[20px]  text-[#117ABA]  hover:underline"
                 >
                   Read More
                   <span aria-hidden>↗</span>
