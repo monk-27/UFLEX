@@ -13,7 +13,7 @@ const CompanyInfo = () => {
       <section className="max-w-7xl mx-auto w-full px-4 sm:px-0 py-16 bg-white md:py-24">
         <div className="">
           {/* Top Label */}
-          <p className="text-sm lato-400 uppercase tracking-wider text-gray-500">
+          <p className="text-sm lato-400 uppercase tracking-wider text-black">
             About Us
           </p>
 

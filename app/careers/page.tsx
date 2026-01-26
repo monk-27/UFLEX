@@ -64,11 +64,13 @@ export default function Page() {
               >
                 Join us, and be part of a movement that's changing the world, one package at a time.
                 <br />
-                <br />
+                {/* <br /> */}
                 UFlex offers job seekers more than a job. It offers them a lifetime of growth with a number of opportunities for continuous development and growth in assorted fields of business.
                 <br />
-                <br />
-                If you are looking for a rewarding career, you may write to us at: hr@uflexltd.com
+                {/* <br /> */}
+                If you are looking for a rewarding career, you may write to us at: 
+                <span className="text-[#117ABA]"> hr@uflexltd.com
+                  </span>
               </motion.p>
               <a
                 href="https://aa193.taleo.net/careersection/ex/jobsearch.ftl?lang=en"

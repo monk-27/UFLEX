@@ -85,7 +85,7 @@ const Careers = () => {
 
 
 
-                <section className="w-screen relative bg-[#117ABA] mt-6 pb-4">
+                <section className="w-screen relative bg-[#117ABA] mt-10 pb-4">
 
                     <motion.section
                         className="max-w-7xl mx-auto w-full px-4 sm:px-0 text-start "

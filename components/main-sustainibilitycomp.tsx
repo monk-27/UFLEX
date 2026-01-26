@@ -131,7 +131,7 @@ export default function MainSustainabilityCOMMComp({
 
             {/* Green caption strip */}
             <div className="absolute bottom-0 left-0 right-0 bg-[#4F7F3A] py-4 text-center">
-              <p className="text-white text-[14px] lato-600">
+              <p className="text-white text-[16px] lato-700">
                 Empower a Greener Tomorrow, Today
               </p>
             </div>
@@ -182,7 +182,7 @@ export default function MainSustainabilityCOMMComp({
 
                 {/* Text */}
                 <div>
-                  <h4 className="lato-400 text-[14px] md:text-[18px]  leading-relaxed text-[#117ABA] ">
+                  <h4 className="lato-700 text-[14px] md:text-[18px]  leading-relaxed text-[#117ABA] ">
                     {item.title}
                   </h4>
                   <p className="mt-1 lato-400 text-[14px] md:text-[18px] text-black  leading-relaxed">

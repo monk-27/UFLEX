@@ -76,7 +76,7 @@ export function AwardsSlider({ heading, items }: any) {
               exit="exit"
               transition={{ duration: 0.35, ease: "easeInOut" }}
             >
-              <div className="grid  lg:grid-cols-2 items-start">
+              <div className="grid  lg:grid-cols-2 items-start pt-6">
                 {/* Text */}
                 <div className=" w-full h-[200px] md:h-[240px] lg:h-[267px]">
                   <h3 className="lato-400 text-[18px] md:text-[24px] text-white mb-3 leading-relaxed">
@@ -104,7 +104,7 @@ export function AwardsSlider({ heading, items }: any) {
           </AnimatePresence>
 
           {/* Arrows centred below image */}
-          <div className="pt-12 flex justify-center gap-6">
+          <div className="pt-24 flex justify-center gap-6">
             <button
               onClick={() => go("prev")}
               className=" z-10 -translate-y-1/2 inline-flex items-center justify-center
