@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { ReadMoreDialog } from "./expandabletext";
 
 const SLIDES = [
   // {
@@ -19,8 +20,22 @@ const SLIDES = [
   },
 ];
 
+  const packagingData = [
+    {
+      title: 'Press Room',
+      image: '/images/press/man.png',
+      paragraphs: [
+        `Bringing updates on business, innovation, sustainability, manufacturing milestones, and industry perspectives. Explore official press releases, media coverage, leadership interactions, and stories that display progress across the global packaging value chain.
+        `,
+        ``,
+          ],
+    },
+
+  ];
+
 export default function PressMainCarousel() {
   const [active, setActive] = useState(0);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -31,80 +46,11 @@ export default function PressMainCarousel() {
   }, []);
 
   return (
-    //  <section
-    //        className="w-full bg-cover bg-center pt-12 md:pt-10  lg:min-h-[410px] pb-12 md:pb-16 lg:pb-28"
-    //        style={{ backgroundImage: "url('/images/press/press.png')" }}
-    //      >
 
-
-    //        <div className="max-w-7xl mx-auto px-4">
-    //          <div className="grid grid-cols-1 md:grid-cols-[1.1fr_1fr] items-start md:items-center gap-4 sm:gap-12">
-
-
-    //            {/* TEXT */}
-    //            <div className="min-h-[64px] text-center  sm:text-left max-w-lg ">
-    //              <AnimatePresence mode="wait">
-    //                <motion.h2
-    //                  key={SLIDES[active].title}
-    //                  initial={{ opacity: 0 }}
-    //                  animate={{ opacity: 1 }}
-    //                  exit={{ opacity: 0 }}
-    //                  transition={{ duration: 0.4 }}
-    //                  className="text-white text-md sm:text-[16px] lato-700 leading-snug"
-    //                >
-    //                  {SLIDES[active].title}
-    //                </motion.h2>
-    //              </AnimatePresence>
-    //            </div>
-
-    //            {/* IMAGE + DOTS */}
-    //            <div className="flex flex-col items-center">
-    //              <div className="relative h-[100px] sm:h-[360px] w-full overflow-hidden rounded-md">
-
-    //                <AnimatePresence mode="wait">
-    //                  <motion.div
-    //                    key={SLIDES[active].image}
-    //                    initial={{ opacity: 0, x: 20 }}
-    //                    animate={{ opacity: 1, x: 0 }}
-    //                    exit={{ opacity: 0, x: -20 }}
-    //                    transition={{ duration: 0.5, ease: "easeOut" }}
-    //                    className="absolute inset-0"
-    //                  >
-    //                    <Image
-    //                      src={SLIDES[active].image}
-    //                      alt={SLIDES[active].title}
-    //                      fill
-    //                      className="object-contain sm:object-fit  relative h-[80px] sm:h-[360px] w-full overflow-hidden rounded-sm"
-    //                      priority
-    //                    />
-    //                  </motion.div>
-    //                </AnimatePresence>
-    //              </div>
-
-    //              {/* DOTS */}
-    //              <div className="mt-4 flex gap-2">
-    //                {SLIDES.map((_, i) => (
-    //                  <button
-    //                    key={i}
-    //                    onClick={() => setActive(i)}
-    //                    className={`h-2 w-2 rounded-full transition-all ${i === active
-    //                        ? "bg-white scale-125"
-    //                        : "bg-white/40"
-    //                      }`}
-    //                    aria-label={`Go to slide ${i + 1}`}
-    //                  />
-    //                ))}
-    //              </div>
-    //            </div>
-
-    //          </div>
-    //        </div>
-    //      </section>
     <section className="w-full pt-4 sm:pt-12 ">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid py-4 lg:grid-cols-2 lg:py-1 gap-10">
+        {/* <div className="grid py-4 lg:grid-cols-2 lg:py-1 gap-10">
 
-          {/* TEXT */}
           <div className="text-center sm:text-left max-w-lg">
             <AnimatePresence mode="wait">
               <div>
@@ -137,43 +83,8 @@ export default function PressMainCarousel() {
 
           <div className="flex flex-col items-center">
 
-            {/* IMAGE */}
-            {/* <div className="relative w-full aspect-[16/9] rounded-md overflow-hidden">
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={SLIDES[active].image}
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -20 }}
-                    transition={{ duration: 0.5, ease: "easeOut" }}
-                    className="absolute inset-0"
-                  >
-                    <Image
-                      src={SLIDES[active].image}
-                      alt={SLIDES[active].title}
-                      fill
-                      className="object-contain"
-                      priority
-                    />
-                  </motion.div>
-                </AnimatePresence>
-              </div> */}
 
-            {/* TITLE */}
-            {/* <AnimatePresence mode="wait">
-                <motion.h2
-                  key={SLIDES[active].title}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.4 }}
-                  className="mt-4 text-black text-md sm:text-[16px] lato-700 leading-snug text-center"
-                >
-                  {SLIDES[active].title}
-                </motion.h2>
-              </AnimatePresence> */}
             <div className="mt-0 sm:mt-4 relative w-full aspect-[16/9] rounded-md overflow-hidden group cursor-pointer">
-              {/* Image */}
               <AnimatePresence mode="wait">
                 <motion.div
                   key={SLIDES[active].image}
@@ -193,50 +104,71 @@ export default function PressMainCarousel() {
                 </motion.div>
               </AnimatePresence>
 
-              {/* Hover Overlay + Title at Bottom */}
               <div className="absolute inset-0 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
-                {/* Dark gradient overlay from bottom */}
-                {/* <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/80 via-black/40 to-transparent" /> */}
 
-                {/* Title */}
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-transparent to-transparent" >
 
-                  {/* <motion.h2
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.1 }}
-                    className="relative text-white text-lg sm:text-xl md:text-2xl lato-700 text-center pb-6 px-4 z-10"
-                  >
-                    {SLIDES[active].title}
-                  </motion.h2> */}
-
-                </div>
               </div>
-              {/* <motion.div
-                className="absolute inset-0 bg-black bg-opacity-100"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 0.5 }}
-                transition={{ duration: 1 }}
-              ></motion.div> */}
+
             </div>
 
-            {/* DOTS */}
-            {/* <div className="mt-4 flex gap-2">
-                {SLIDES.map((_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => setActive(i)}
-                    className={`h-2 w-2 rounded-full transition-all ${i === active
-                      ? "bg-[#117ABA] scale-125"
-                      : "bg-black/40"
-                      }`}
-                    aria-label={`Go to slide ${i + 1}`}
-                  />
-                ))}
-              </div> */}
+
 
           </div>
-        </div>
+        </div> */}
+        <div className="grid py-4 lg:grid-cols-2 lg:py-1 gap-10">
+        
+                  <div>
+                    <motion.h1
+                      initial={{ opacity: 0, y: 10 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] "
+                    >
+                      Press Room
+                    </motion.h1>
+        
+                    <p className="text-wrap max-w-xl lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black">
+                      {packagingData[0].paragraphs[0]}
+                    </p>
+        
+                    {/* <button
+                      onClick={() => setOpen(true)}
+                      className="mt-4 lato-400 text-[16px] sm:text-[20px] text-[#117ABA]  hover:underline"
+                    >
+                      Read More
+                      <span aria-hidden>↗</span>
+        
+                    </button> */}
+        
+                    {/* ---- Modal ---- */}
+                    <ReadMoreDialog
+                      open={open}
+                      onClose={() => setOpen(false)}
+                      title={packagingData[0].title}
+                      imageSrc={packagingData[0].image}
+                      imageAlt={packagingData[0].title}
+                      paragraphs={packagingData[0].paragraphs}
+                    />
+        
+                  </div>
+        
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.98 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    className="relative aspect-[16/10] w-full overflow-hidden  "
+                  >
+                    <Image
+                      src="/images/press/man.png"
+                      alt="UFlex capabilities across the value chain"
+                      fill
+                      className="object-cover rounded-sm"
+                      priority
+                    />
+        
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
+                  </motion.div>
+                </div>
       </div>
     </section>
   );
