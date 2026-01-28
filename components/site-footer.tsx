@@ -172,7 +172,7 @@ export function SiteFooter() {
       </div>
 
       {/* Column 1 */}
-      <nav className="grid gap-4 text-base lato-400">
+      <nav className="grid gap-4 text-[15px] lato-700">
         <Link href="/">Home</Link>
         <Link href="/about-us">About Us</Link>
         {/* <Link href="/business">Our Business</Link> */}
@@ -181,7 +181,7 @@ export function SiteFooter() {
       </nav>
 
       {/* Column 2 */}
-      <nav className="grid gap-4 text-base lato-400">
+      <nav className="grid gap-4 text-[15px] lato-700">
         <Link href="/hall-of-fame">Hall of Fame</Link>
         <Link href="/careers">Work With Us</Link>
         <Link href="/press-room">The Press Room</Link>
@@ -194,7 +194,7 @@ export function SiteFooter() {
           <span className="h-9 w-9 flex items-center justify-center rounded-full bg-white/15">
             <Phone className="h-4 w-4" />
           </span>
-          <a href="tel:+911202556040" className="text-base lato-40">
+          <a href="tel:+911202556040" className="text-[15px] lato-700">
             +91 120 2556040
           </a>
         </div>
@@ -203,7 +203,7 @@ export function SiteFooter() {
           <span className="h-9 w-9 flex items-center justify-center rounded-full bg-white/15">
             <Mail className="h-4 w-4" />
           </span>
-          <a href="mailto:enquiry@uflexltd.com" className="text-base lato-40">
+          <a href="mailto:enquiry@uflexltd.com" className="text-[15px] lato-700">
             enquiry@uflexltd.com
           </a>
         </div>
@@ -220,10 +220,10 @@ export function SiteFooter() {
     <hr className="my-8 border-white/60" />
 
     <div className="flex flex-col-reverse md:flex-row items-start md:items-center justify-between gap-4">
-      <p className="text-sm">
-        ©2024–2025 UFlex Limited (www.uflexltd.com). All rights reserved.
+      <p className="text-[15px] lato-700">
+        ©2025–2026 UFlex Limited (www.uflexltd.com). All rights reserved.
       </p>
-      <Link href="/legal-disclaimer" className="text-sm font-semibold">
+      <Link href="/legal-disclaimer" className="text-[15px] lato-700">
         Legal disclaimer
       </Link>
     </div>

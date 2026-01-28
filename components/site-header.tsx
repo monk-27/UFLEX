@@ -91,7 +91,7 @@ export function SiteHeader() {
                   href={item.href}
                   aria-current={active ? "page" : undefined}
                   className={cn(
-                    "nav-link group relative inline-flex items-center px-1 text-[15px] font-medium tracking-tight outline-none",
+                    "nav-link group relative inline-flex items-center px-1 text-[15px] lato-700 tracking-tight outline-none",
                     "text-white/90 hover:text-white",
                     "after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w/full",
                     "after:bg-[linear-gradient(to_right,#192D4BFF,#7F8692FF,#0F2952FF)] after:rounded-full",
@@ -143,7 +143,7 @@ export function SiteHeader() {
                                 <Link
                                   href={child.href}
                                   className={cn(
-                                    "block rounded-lg px-3 py-2 text-[14px] manrope-400",
+                                    "block rounded-lg px-3 py-2 text-[15px] lato-700",
                                     "text-white/90 hover:bg-white/10 hover:text-white",
                                     childActive && "bg-white/10 text-white"
                                   )}
