@@ -112,7 +112,7 @@ const BoardOfDirectors = () => {
                       group relative min-w-0
                       flex-[0_0_85%] sm:flex-[0_0_46%] lg:flex-[0_0_30%] xl:flex-[0_0_23%]
                       border border-gray-200 bg-white overflow-hidden
-                      aspect-square
+                      aspect-[4/5]
                     "
                   >
                     {/* ---------- Base (B/W) image INSET with padding ---------- */}
@@ -128,7 +128,7 @@ const BoardOfDirectors = () => {
                         />
                         {/* Small name/role on B/W image */}
                         <div className="pointer-events-none absolute inset-x-0 bottom-0 p-3">
-                          <div className="rounded-none bg-black/55 px-2 py-1 w-max">
+                          <div className="rounded-none bg-black/55 px-2 py-1 ">
                             <p className="text-xs lato-700 leading-tight text-white">{d.name}</p>
                             <p className="text-[10px] text-white/90">{d.position}</p>
                           </div>
