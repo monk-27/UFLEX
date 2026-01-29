@@ -159,6 +159,7 @@ export const businesses: BusinessConfig[] = [
         },
         sustainability: {
             title: "Sustainability",
+            subtitle:"Committed to reducing our carbon footprint",
             description:
                 "Committed to reducing our carbon footprint Development of sustainable products such as water-based inks and adhesives, along with focused water and energy conservation efforts and a reduction in hazardous waste generation, are some of the key initiatives undertaken by our Chemicals business to reduce its carbon footprint. These efforts are supported by process optimisation, responsible sourcing, improved effluent management practices, and continuous monitoring to enhance environmental performance across operations",
             image: "/images/sus.png",

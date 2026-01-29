@@ -274,8 +274,9 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
     },
     sustainability: {
       title: "Sustainability",
+      subtitle:"Driving Sustainable Growth Through Smarter Packaging Practices.",
       description:
-        "Driving Sustainable Growth Through Smarter Packaging Practices.\nOur commitment to Environmental & Social Responsibility (ESR) and sustainability is more than a value—it’s a strategy. We foster collaborative, long-term partnerships with brand owners to co-create packaging that is not only beautiful and secure but also future-ready and planet-positive.",
+        "Our commitment to Environmental & Social Responsibility (ESR) and sustainability is more than a value—it’s a strategy. We foster collaborative, long-term partnerships with brand owners to co-create packaging that is not only beautiful and secure but also future-ready and planet-positive.",
       image: "/images/sus.png",
       linkLabel: "Know More",
       linkHref: "#",

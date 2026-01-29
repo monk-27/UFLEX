@@ -185,8 +185,9 @@ export const businesses: BusinessConfig[] = [
     },
     sustainability: {
       title: "Sustainability",
-      description:
-        "At Asepto, sustainability isn't just a commitment; it's a driving force behind innovation. Asepto brings a sustainable solution to this pressing concern of aseptic cartons reaching landfills. With their proper extraction and assimilation, Asepto paves the way for a Circular Economy. ",
+    
+  "description": "At Asepto, sustainability isn't just a commitment; it's a driving force behind innovation. Asepto brings a sustainable solution to this pressing concern of aseptic cartons reaching landfills. With their proper extraction and assimilation, Asepto paves the way for a Circular Economy.\n\nEnzymatic Delamination Technology (EDT) is Asepto’s sustainable solution to reprocess aseptic cartons and bring them back into the circular economy. Through EDT, we can separate and recover valuable materials like aluminium, polymers, and paper pulp from these cartons. By doing so, we significantly reduce the environmental footprint associated with their disposal.",
+
       image: "/images/sus.png",
       linkLabel: "Know More",
       linkHref: "/aseptic-packaging-business/sustainability",

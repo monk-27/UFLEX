@@ -35,6 +35,8 @@ export type AwardsSlide = {
 
 export type HighlightBlock = {
   title: string;
+  subtitle?: string;
+
   description: string;
   image: string;
   linkLabel?: string;
@@ -252,6 +254,7 @@ export const businesses: BusinessConfig[] = [
     },
     sustainability: {
       title: "Sustainability",
+      subtitle: "At UFlex Packaging films business, sustainability is deeply embedded in our innovation journey.",
       description:
         "Single-pellet solution: Pioneering innovation in recyclable packaging. Our breakthrough FSSAI-compliant single-pellet solution enables the incorporation of recycled PET (rPET) in food and beverage packaging, combining recycled and virgin PET into a single, high-purity pellet with excellent strength, stability and clarity.",
       image: "/images/sus.png",

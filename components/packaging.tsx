@@ -287,14 +287,11 @@ export const businesses: BusinessConfig[] = [
         },
         sustainability: {
             title: "Sustainability",
+            subtitle: "Single-pellet solution: Pioneering innovation in recyclable packaging",
             description:
-                `At UFlex Packaging films business, sustainability is deeply embedded in our innovation journey. We
-are committed to minimizing our environmental footprint through a range of focused initiatives that
-include lowering energy consumption, adopting renewable resources, increasing the use of post-
-consumer recyclates, reducing production waste, reusing recyclable materials, and recovering
-energy from non-recyclable waste. These strategies reflect our dedication to building a circular
-economy and delivering advanced packaging solutions that are both high-performing and
-environmentally responsible.`,
+                ` Reinforcing our commitment to sustainability, UFlex has introduced a breakthrough FSSAI-compliant single-pellet solution for incorporating recycled PET (rPET) in food and beverage packaging. This innovation combines recycled PET with virgin PET into a single, high-purity pellet, offering excellent mechanical strength, thermal stability, high clarity, and lower acetaldehyde content.
+
+`,
             image: "/images/sus.png",
             linkLabel: "Know More",
             linkHref: "/packaging-films-business/sustainability",

@@ -274,6 +274,7 @@ export const businesses: BusinessConfig[] = [
 
         sustainability: {
             title: "Sustainability",
+            subtitle:"Driving Sustainable Growth Through Smarter Packaging Practices",
             description: `UFlex is deeply committed to environmental sustainability and has undertaken several impactful
 initiatives across India to reduce its carbon footprint and enhance operational productivity. The
 company consistently invests in advanced technologies that consume less energy per ton of flexible

@@ -22,6 +22,9 @@ export function SustainabilitySection({ data }: any) {
             <h2 className="lato-700 text-[28px] md:text-[32px] text-[#117ABA] mb-3">
               {data.title}
             </h2>
+            {data.subtitle && <h3 className="lato-700 text-[16px] sm:text-[18px] leading-relaxed text-black mb-4">
+              {data.subtitle}
+            </h3>}
             {data.description && <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black mb-4">
               {data.description}
             </p>}
