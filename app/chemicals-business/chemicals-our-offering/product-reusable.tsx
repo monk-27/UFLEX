@@ -76,11 +76,11 @@ export default function ProductCategorySection({
 
 
     return (
-        <section className="py-10 min-h-screen">
+        <section className="max-w-7xl mx-auto py-10 min-h-screen">
 
             <div className=" grid grid-cols-1 lg:grid-cols-4 gap-8">
                 {/* Sidebar */}
-                <aside className="lg:col-span-1">
+               <aside className="lg:col-span-1">
                     {/* Desktop Sidebar */}
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
@@ -88,36 +88,46 @@ export default function ProductCategorySection({
                         transition={{ duration: 0.6 }}
                         className="bg-white  overflow-hidden hidden lg:block sticky top-6"
                     >
-                        <div className="rounded-xl border-[1px] border-gray-200">
+                        <div className="">
 
                             <div className="bg-[#117ABA] text-white px-6 py-5">
                                 <h2 className="text-lg lato-700 tracking-wide">PRODUCT CATEGORIES</h2>
                             </div>
 
                             <nav className="divide-y divide-gray-100">
-                                {categories.map((category) => (
+
+                                {categories.map((category: any) => (
                                     <motion.button
                                         key={category.name}
                                         onClick={category.onClick}
-                                        // whileHover={{ backgroundColor: "#eff6ff" }}
                                         whileTap={{ scale: 0.98 }}
-                                        className={`w-full flex items-center justify-between px-6 py-4
-  transition-colors text-left border-l-4
-  ${category.isActive
-                                                ? "bg-blue-100 border-l-[#117ABA] text-[#117ABA]"
-                                                : " border-[1px] border-gray-200  text-gray-800 hover:bg-blue-50"
-                                            }`}
-
+                                        className={`
+      w-full flex items-center justify-between px-6 py-4
+      text-left transition-colors duration-200
+      bg-white
+      hover:bg-[#F9F9F9]
+     
+      ${category.isActive
+                                                ? " text-[#117ABA]"
+                                                : " text-black"
+                                            }
+    `}
                                     >
                                         <span
-                                            className={`lato-400 text-[16px] sm:text-[18px] leading-relaxed ${category.isActive ? "text-[#117ABA]" : "text-black"
-                                                }`}
+                                            className={`
+        lato-400 text-[16px] sm:text-[18px] leading-relaxed
+        ${category.isActive ? "text-[#117ABA] " : "text-black"}
+      `}
                                         >
-                                            {category.name}</span>
+                                            {category.name}
+                                        </span>
+
                                         <ChevronRight
                                             size={18}
-                                            className={`transition-transform duration-300 ${category.isActive ? "rotate-90" : ""
-                                                }`}
+                                            className={`
+        transition-transform duration-300
+        ${category.isActive ? "rotate-90 text-[#117ABA]" : "text-gray-500"}
+      `}
                                         />
                                     </motion.button>
                                 ))}
@@ -127,7 +137,7 @@ export default function ProductCategorySection({
                         </div>
 
                         {/* {quickLinks.length > 0 && (
-                            <div className="hidden lg:block p-6 rounded-xl border-[1px] border-gray-200 mt-4">
+                            <div className="hidden lg:block p-6 bg-[#F9F9F9] mt-4">
                                 <h3 className="text-sm lato-700 text-gray-800 mb-3 uppercase tracking-wider">
                                     Quick Links
                                 </h3>
@@ -150,7 +160,7 @@ export default function ProductCategorySection({
                     </motion.div>
 
                     {/* Mobile Accordion */}
-                    <div className="lg:hidden bg-white rounded-xl border-[1px] border-gray-200  overflow-hidden">
+                    <div className="lg:hidden bg-white   overflow-hidden">
                         <button
                             onClick={() => setIsMobileOpen(!isMobileOpen)}
                             className="w-full flex items-center justify-between bg-[#117ABA] text-white px-6 py-5 lato-400 text-[16px] sm:text-[18px] leading-relaxed "
@@ -170,55 +180,72 @@ export default function ProductCategorySection({
                                 >
                                     <div className="divide-y divide-gray-100">
                                         {categories.map((category) => (
-                                            <button
+                                            <motion.button
                                                 key={category.name}
-                                                onClick={() => {
-                                                    category.onClick?.();
-                                                    setIsMobileOpen(false);
-                                                }}
-                                                className={`w-full flex items-center justify-between px-6 py-4
-  transition-colors text-left border-l-4
-  ${category.isActive
-                                                        ? "bg-blue-100 border-l-[#117ABA] text-[#117ABA]"
-                                                        : "border-transparent text-gray-800 hover:bg-blue-50"
-                                                    }`}
-
+                                                onClick={category.onClick}
+                                                whileTap={{ scale: 0.98 }}
+                                                className={`
+      w-full flex items-center justify-between px-6 py-4
+      text-left transition-colors duration-200
+      bg-white
+      hover:bg-gray-100
+     
+      ${category.isActive
+                                                        ? "bg-blue-100  text-[#117ABA]"
+                                                        : "border-l-transparent text-black"
+                                                    }
+    `}
                                             >
-                                                {category.name}
-                                            </button>
+                                                <span
+                                                    className={`
+        lato-400 text-[16px] sm:text-[18px] leading-relaxed
+        ${category.isActive ? "text-[#117ABA]" : "text-black"}
+      `}
+                                                >
+                                                    {category.name}
+                                                </span>
+
+                                                <ChevronRight
+                                                    size={18}
+                                                    className={`
+        transition-transform duration-300
+        ${category.isActive ? "rotate-90 text-[#117ABA]" : "text-gray-500"}
+      `}
+                                                />
+                                            </motion.button>
                                         ))}
                                     </div>
                                 </motion.nav>
                             )}
                         </AnimatePresence>
 
-                        
+
                     </div>
                     {/* {quickLinks.length > 0 && (
-                            <div className="block lg:hidden p-6 mt-4 rounded-xl border-[1px] border-gray-200">
-                                <h3 className="text-sm lato-700 text-gray-800 mb-3 uppercase tracking-wider">
-                                    Quick Links
-                                </h3>
-                                <ul className="space-y-2">
-                                    {quickLinks.map((link) => (
-                                        <ul className="space-y-2">
-                                    {quickLinks.map((link) => (
-                                        <li key={link.label}>
-                                            <a
-                                                href={link.href}
-                                                className="text-black hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
-                                                {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
-                                            >
-                                                {link.label}
-                                                
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                                    ))}
-                                </ul>
-                            </div>
-                        )} */}
+                        <div className="block lg:hidden p-6 mt-4 bg-[#F9F9F9]">
+                            <h3 className="text-sm lato-700 text-gray-800 mb-3 uppercase tracking-wider">
+                                Quick Links
+                            </h3>
+                            <ul className="space-y-2">
+                                {quickLinks.map((link) => (
+                                    <ul className="space-y-2">
+                                        {quickLinks.map((link) => (
+                                            <li key={link.label}>
+                                                <a
+                                                    href={link.href}
+                                                    className="text-black hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
+                                                    {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
+                                                >
+                                                    {link.label}
+                                                   
+                                                </a>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                ))}
+                            </ul>
+                        </div>
+                    )} */}
                 </aside>
 
                 {/* Main Content */}
@@ -230,39 +257,16 @@ export default function ProductCategorySection({
                     className="lg:col-span-3  "
                 >
                     {/* Hero */}
-                    <motion.div variants={itemVariants} className="relative h-80 md:h-[420px] rounded-t-xl overflow-hidden shadow-xl">
-                        {/* <Image
-                            src={heroImageUrl}
-                            alt={`${title} film rolls`}
-                            fill
-                            className="object-cover"
-                            priority
-                            sizes="(max-width: 768px) 100vw, 75vw"
-                        /> */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-                        <div className="absolute bottom-0 left-0 p-2 md:p-4 text-white">
-                            {brandTag && (
-                                <motion.div
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: 0.3 }}
-                                    className="inline-block bg-[#117ABA]/90 px-5 py-2 rounded-full text-sm lato-700 mb-4 tracking-wide"
-                                >
-                                    {brandTag}
-                                </motion.div>
-                            )}
-                            <h1 className="lato-400 text-[16px] sm:text-[20px] leading-relaxed text-white lato-700">{title}</h1>
-                        </div>
-                    </motion.div>
+                  
 
                     {/* Overview */}
-                    <div className="border-[1px] border-gray-200 rounded-b-xl p-2 md:p-4 space-y-6">
+                    <div className=" space-y-6">
                         <motion.div variants={itemVariants}>
                             <div className="flex gap-2">
-                                <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" />
-                                <h3 className="lato-400 text-[20px] md:text-[24px] text-[#117ABA]">
+                                {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
+                                {/* <h3 className="lato-400 text-[20px] md:text-[24px] text-[#117ABA]">
                                     Overview
-                                </h3>
+                                </h3> */}
                             </div>
                             <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                                 {overview
