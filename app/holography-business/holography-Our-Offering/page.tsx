@@ -13,7 +13,7 @@ import Breadcrumb from "@/components/breadcrumb";
 import { useSearchParams } from "next/navigation";
 
 export default function ProductsPage() {
-    // const [selectedKey, setSelectedKey] = useState<string>("hologram");
+    const [selectedKey, setSelectedKey] = useState<string>("hologram");
 
     const productsData: Record<string, any> = {
         hologram: {
@@ -172,38 +172,38 @@ const initialKey = catFromUrl && validKeys.includes(catFromUrl as any)
   ? catFromUrl
   : "hologram"; // default to hologram when no/invalid ?cat
 
-const [selectedKey, setSelectedKey] = useState<string>(initialKey);
+// const [selectedKey, setSelectedKey] = useState<string>(initialKey);
 
 // Sync state when URL changes (back/forward navigation, direct link)
-useEffect(() => {
-  const currentCat = searchParams.get('cat')?.toLowerCase();
-  if (currentCat && validKeys.includes(currentCat as any)) {
-    setSelectedKey(currentCat);
-  } else if (!currentCat) {
-    setSelectedKey("hologram"); // reset to default when param removed
-  }
-}, [searchParams]);
-    // // const enhancedCategories = product.categories.map((cat: any) => ({
-    // //     ...cat,
-    // //     isActive: cat.productKey === selectedKey,
-    // //     onClick: () => setSelectedKey(cat.productKey),
-    // }));
-    const handleCategoryClick = (productKey: string) => {
-  setSelectedKey(productKey);
+// useEffect(() => {
+//   const currentCat = searchParams.get('cat')?.toLowerCase();
+//   if (currentCat && validKeys.includes(currentCat as any)) {
+//     setSelectedKey(currentCat);
+//   } else if (!currentCat) {
+//     setSelectedKey("hologram"); // reset to default when param removed
+//   }
+// }, [searchParams]);
+    const enhancedCategories = product.categories.map((cat: any) => ({
+        ...cat,
+        isActive: cat.productKey === selectedKey,
+        onClick: () => setSelectedKey(cat.productKey),
+    }));
+//     const handleCategoryClick = (productKey: string) => {
+//   setSelectedKey(productKey);
 
-  // Update URL without reload (makes links shareable + back button works)
-  if (typeof window !== 'undefined') {
-    const url = new URL(window.location.href);
-    url.searchParams.set('cat', productKey);
-    window.history.replaceState({}, '', url.toString());
-  }
-};
+//   // Update URL without reload (makes links shareable + back button works)
+//   if (typeof window !== 'undefined') {
+//     const url = new URL(window.location.href);
+//     url.searchParams.set('cat', productKey);
+//     window.history.replaceState({}, '', url.toString());
+//   }
+// };
 
-const enhancedCategories = product.categories.map((cat: any) => ({
-  ...cat,
-  isActive: cat.productKey === selectedKey,
-  onClick: () => handleCategoryClick(cat.productKey),
-}));
+// const enhancedCategories = product.categories.map((cat: any) => ({
+//   ...cat,
+//   isActive: cat.productKey === selectedKey,
+//   onClick: () => handleCategoryClick(cat.productKey),
+// }));
 
     return (
         <>

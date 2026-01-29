@@ -24,43 +24,43 @@ const SliderItems: SliderItem[] =
 [
    {
         img: "/images/holography/h1.png",
-        // dynamiclink: "/holography-business/holography-Our-Offering",
+        dynamiclink: "/holography-business/holography-Our-Offering",
         title: "Security Paper Labels & Tax Stamps",
         desc: "",
     },
     {
         img: "/images/holography/h2.png",
-        // dynamiclink: "/holography-business/holography-Our-Offering",
+        dynamiclink: "/holography-business/holography-Our-Offering",
         title: "Security Documents",
         desc: "",
     },
     {
         img: "/images/holography/h3.png",
-        // dynamiclink: "/holography-business/holography-Our-Offering",
+        dynamiclink: "/holography-business/holography-Our-Offering",
         title: "Textile Application Films for: Sequins ,Hot Melt ,Glitter Powder",
         desc: "",
     },
     {
         img: "/images/holography/h4.png",
-        // dynamiclink: "/holography-business/holography-Our-Offering",
+        dynamiclink: "/holography-business/holography-Our-Offering",
         title: "Wide Web Holographic Films",
         desc: "",
     },
     {
         img: "/images/holography/h5.png",
-        // dynamiclink: "/holography-business/holography-Our-Offering",
+        dynamiclink: "/holography-business/holography-Our-Offering",
         title: "Transfer Holographic Metallized Paper & Paperboard",
         desc: "",
     },
     {
         img: "/images/holography/h6.png",
-        // dynamiclink: "/holography-business/holography-Our-Offering",
+        dynamiclink: "/holography-business/holography-Our-Offering",
         title: "Stamping Foils",
         desc: "",
     },
     {
         img: "/images/holography/h7.png",
-        // dynamiclink: "/holography-business/holography-Our-Offering",
+        dynamiclink: "/holography-business/holography-Our-Offering",
         title: "Advanced Security Holograms",
         desc: "",
     },
@@ -537,33 +537,33 @@ const HoloGraphyComp: React.FC<Props> = ({ business }) => {
                             </motion.div>
                         </div>
                         <SimpleCarousel heading="Our Offerings" 
-                        // items={SliderItems}
-                        items={SliderItems.map(item => {
-    const titleLower = item.title.toLowerCase();
+                        items={SliderItems}
+//                         items={SliderItems.map(item => {
+//     const titleLower = item.title.toLowerCase();
 
-    let catKey = "hologram"; // default
+//     let catKey = "hologram"; // default
 
-    if (titleLower.includes("security paper") || titleLower.includes("tax stamp")) {
-      catKey = "labeling"; // or create separate key if needed
-    } else if (titleLower.includes("security document")) {
-      catKey = "labeling"; // adjust if you add separate entry later
-    } else if (titleLower.includes("textile") || titleLower.includes("sequins") || titleLower.includes("glitter")) {
-      catKey = "textile";
-    } else if (titleLower.includes("wide web") || titleLower.includes("holographic film")) {
-      catKey = "holographic-film";
-    } else if (titleLower.includes("transfer") || titleLower.includes("metallized paper") || titleLower.includes("paperboard")) {
-      catKey = "metalized-paper";
-    } else if (titleLower.includes("stamping") || titleLower.includes("foil")) {
-      catKey = "hot-stamping";
-    } else if (titleLower.includes("advanced security") || titleLower.includes("hologram")) {
-      catKey = "hologram";
-    }
+//     if (titleLower.includes("security paper") || titleLower.includes("tax stamp")) {
+//       catKey = "labeling"; // or create separate key if needed
+//     } else if (titleLower.includes("security document")) {
+//       catKey = "labeling"; // adjust if you add separate entry later
+//     } else if (titleLower.includes("textile") || titleLower.includes("sequins") || titleLower.includes("glitter")) {
+//       catKey = "textile";
+//     } else if (titleLower.includes("wide web") || titleLower.includes("holographic film")) {
+//       catKey = "holographic-film";
+//     } else if (titleLower.includes("transfer") || titleLower.includes("metallized paper") || titleLower.includes("paperboard")) {
+//       catKey = "metalized-paper";
+//     } else if (titleLower.includes("stamping") || titleLower.includes("foil")) {
+//       catKey = "hot-stamping";
+//     } else if (titleLower.includes("advanced security") || titleLower.includes("hologram")) {
+//       catKey = "hologram";
+//     }
 
-    return {
-      ...item,
-      dynamiclink: `/holography-business/holography-Our-Offering?cat=${catKey}`,
-    };
-  })}
+//     return {
+//       ...item,
+//       dynamiclink: `/holography-business/holography-Our-Offering?cat=${catKey}`,
+//     };
+//   })}
                          imageHeight={280} />
 
 
