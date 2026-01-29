@@ -287,6 +287,10 @@ export default function ProductCategorySection({
                                 {/* <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">
                                     Overview
                                 </h3> */}
+                                 <p className="pb-4 lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
+                                                                We offer a comprehensive range of products, including flexible laminates, pre-formed pouches, Flexo-printed rolls and bags, laminated woven polypropylene (WPP) bags, electron beam and Cast n Cure technology, pharmaceutical packaging, FlexiTubes, hygiene films, Flexfresh™ modified atmosphere packaging, and big bags. At UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every solution we create.
+
+                            </p>
                             </div>
                             
                                 )
