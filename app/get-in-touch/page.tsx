@@ -33,7 +33,7 @@ const OFFICES: Office[] = [
   /* ---------- Corporate (India) ---------- */
   {
     id: "corp-noida",
-    name: "Corporate Office — UFlex Limited",
+    name: "Corporate Office ",
     business: "Corporate",
     country: "India",
     city: "Noida, Uttar Pradesh",
@@ -43,7 +43,7 @@ const OFFICES: Office[] = [
   },
   {
     id: "reg-delhi",
-    name: "Registered Office — UFlex Limited",
+    name: "Registered Office",
     business: "Corporate",
     country: "India",
     city: "New Delhi",
@@ -411,7 +411,7 @@ export default function GetInTouch() {
               <div className="rounded-sm bg-[#117ABA] p-3 text-white"><Mail className="h-5 w-5" /></div>
               <div>
                 <p className="lato-700 text-slate-800">Feedback / Support</p>
-                <p className="text-sm text-slate-600 group-hover:text-slate-700">enquiry@uflexltd.com</p>
+                <p className="text-sm text-slate-600 group-hover:text-slate-700">feedback@uflexltd.com</p>
               </div>
             </a>
 
