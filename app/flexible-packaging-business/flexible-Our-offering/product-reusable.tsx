@@ -283,16 +283,15 @@ export default function ProductCategorySection({
                             {title?.toLowerCase() != "flexitubes" &&
                                 (
                                     <div className="flex gap-2">
-                                {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
-                                {/* <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">
+                                        {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
+                                        {/* <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">
                                     Overview
                                 </h3> */}
-                                 <p className="pb-4 lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
-                                                                We offer a comprehensive range of products, including flexible laminates, pre-formed pouches, Flexo-printed rolls and bags, laminated woven polypropylene (WPP) bags, electron beam and Cast n Cure technology, pharmaceutical packaging, FlexiTubes, hygiene films, Flexfresh™ modified atmosphere packaging, and big bags. At UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every solution we create.
+                                        <p className="pb-4 lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
+{overview}
+                                        </p>
+                                    </div>
 
-                            </p>
-                            </div>
-                            
                                 )
                             }
 
@@ -437,7 +436,47 @@ export default function ProductCategorySection({
 
                             </div>
                         )}
+                        {title === "ZipouchR" && (
+                            <div className="space-y-6">
 
+                                {/* Red highlight bar */}
+                                <div className="bg-[#117ABA] text-white px-4 py-3 lato-700 text-[16px] sm:text-[18px]">
+                                    ZipouchR
+                                </div>
+
+                                {/* Blue heading */}
+
+
+                                {/* Description paragraph */}
+                                <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
+                                    Versatile reclosable and reusable pouches, crafted from premium laminated films to meet modern food storage needs.
+                                </p>
+
+                                {/* Image container (you can wire actual images later) */}
+                                <div className=" p-1 grid grid-cols-1 md:grid-cols-2 gap-2">
+
+                                    <div className="relative h-[380px] bg-gray-100 border-2 border-[#117ABA]">
+                                        <Image
+                                            src="https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item7-09042760427.jpg"
+                                            alt={title}
+                                            fill
+                                            className="object-cover"
+                                            priority
+                                        />
+                                    </div>
+
+
+
+                                </div>
+
+
+                             
+
+
+
+
+                            </div>
+                        )}
 
                         {title?.toLowerCase() === "six layered cotton n95 mask" && (
                             <div className="space-y-6">
