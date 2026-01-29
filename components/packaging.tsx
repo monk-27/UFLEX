@@ -29,12 +29,13 @@ const SliderItems: any = [
     {
         title: "Biaxially Oriented Polyethylene Terepthalate (BOPET) films",
         img: "/images/bopet.png",
-        desc: `Printing and lamination,
-metallizing, industrial
-coating, thermal
-lamination, hot stamping,
-cable wrapping, release
-film, siliconized coating.`,
+//         desc: `Printing and lamination,
+// metallizing, industrial
+// coating, thermal
+// lamination, hot stamping,
+// cable wrapping, release
+// film, siliconized coating.`,
+desc:`A type of polyester film made through biaxial orientation,leading to a thin, transparent, and uniform thermoplastic film.`,
         dynamiclink: "/packaging-films-business/packaging-our-offering"
     },
     {
@@ -42,58 +43,66 @@ film, siliconized coating.`,
         img: "/images/bopp.png",
         dynamiclink: "/packaging-films-business/packaging-our-offering",
 
-        desc: `Release films,
-encapsulation, photo
-albums, overwraps (CDs,
-cigarettes, cartons),
-packaging and conversion,
-synthetic papers, cable
-overwrap, biscuit/
-sandwich overwrap, inner
-wrap.`,
+//         desc: `Release films,
+// encapsulation, photo
+// albums, overwraps (CDs,
+// cigarettes, cartons),
+// packaging and conversion,
+// synthetic papers, cable
+// overwrap, biscuit/
+// sandwich overwrap, inner
+// wrap.`,
+desc:`An ideal option for packaging food, beverages, and electronics due to this films' transparency, high rigidity, heat stability, and low cost.
+`,
     },
     {
         title: "Cast Polypropylene (CPP) films",
         img: "/images/cpp.png",
         dynamiclink: "/packaging-films-business/packaging-our-offering",
 
-        desc: `Bakery products,
-packaging and conversion,
-food wraps, candy/
-confectionery wrap,
-stationery packaging,
-deep freeze application.`,
+//         desc: `Bakery products,
+// packaging and conversion,
+// food wraps, candy/
+// confectionery wrap,
+// stationery packaging,
+// deep freeze application.`,
+desc:`
+A film manufactured through a cast extrusion process in which polypropylene resins are melted and extruded into a flat film. `,
     },
     {
         title: "Metallized Film",
         img: "/images/metallized.png",
         dynamiclink: "/packaging-films-business/packaging-our-offering",
 
-        desc: `Converting and
-laminating, synthetic zari and metallic yarn,
-electronic goods
-packaging, insulation
-ducting, decorative
-applications, lidding
-applications, embossing
-and holograms, sandwich
-lamination, twist wrap
-and confectionery and
-many more.`,
+//         desc: `Converting and
+// laminating, synthetic zari and metallic yarn,
+// electronic goods
+// packaging, insulation
+// ducting, decorative
+// applications, lidding
+// applications, embossing
+// and holograms, sandwich
+// lamination, twist wrap
+// and confectionery and
+// many more.`,
+desc:`Decorative films and foils are developed with advanced metallization technology, depositing a thin metal layer onto the substrate.
+`,
+
     },
     {
         title: "AlOx-coated films",
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-06130321303.jpg",
         dynamiclink: "/packaging-films-business/packaging-our-offering",
 
-        desc: "",
+        desc: `Films with a transparent aluminium oxide layer that provide strong moisture and gas barriers while keeping the product visible.
+`,
     },
     {
         title: "Speciality films",
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item4-06130331303.jpg",
         dynamiclink: "/packaging-films-business/packaging-our-offering",
 
-        desc: "",
+        desc: "A range of films that provide value addition for converters by enhancing the quality, performance, and functionality of the final packaging.",
     },
 
 
@@ -105,23 +114,13 @@ const packagingData = [
         title: 'Packaging Films & PET Resin',
         image: '/images/resin.png',
         paragraphs: [
-            `UFlex’s Packaging Films business, operating globally under the flagship brand Flex Films, is a leader in
-delivering innovative, sustainable, and high-performance packaging films for a wide range of
-industries. As India’s largest multinational flexible packaging and solutions company and the world’s
-second-largest supplier of thin polyester (BOPET) films, we offer a comprehensive portfolio that
-includes BOPP, BOPET, CPP, metallized, AlOx-coated, specialty, and 100% PCR-content  PET films
-(Asclepius™).`,
-            `In addition, we manufacture PET chips to ensure consistent raw material quality and
-supply for diverse industry needs. With world-class manufacturing facilities across India, the UAE,
-Mexico, Egypt, Poland, the USA, CIS, Hungary, and Nigeria, we serve customers in over 150 countries
-with customized, high-quality packaging films that meet the evolving demands of global markets.`,
-            `All our manufacturing facilities are equipped with advance technologies and adhere to the highest
-global quality and safety standards. Our plants are ISO 9001 (Quality Management), ISO 14001
-(Environmental Management), ISO 45001 (Occupational Health and Safety), and HACCP (Hazard
-Analysis and Critical Control Points) certified, ensuring consistent quality, environmental
-responsibility, and food-grade safety across our operations. These certifications reflect our
-unwavering commitment to excellence, compliance, and sustainability—reinforcing the trust our
-customers place in us for their most critical packaging needs.`
+            `UFlex’s Packaging Films business, under the Flex Films brand, is a global leader offering innovative and sustainable packaging solutions, including BOPP, BOPET, CPP, specialty, and 100% PCR PET films, with manufacturing across 9 countries and presence in 150+ markets.`,
+            
+            `All our manufacturing facilities are equipped with advance technologies and adhere to the highest global quality and safety standards. Our plants are ISO 9001 (Quality Management), ISO 14001 (Environmental Management), ISO 45001 (Occupational Health and Safety), and HACCP (Hazard Analysis and Critical Control Points) certified, ensuring consistent quality, environmental responsibility, and food-grade safety across our operations. These certifications reflect our unwavering commitment to excellence, compliance, and sustainability—reinforcing the trust our customers place in us for their most critical packaging needs.`,
+            `UFlex manufactures high-quality Polyethylene Terephthalate (PET) resins, known for their high gloss, crack resistance, and excellent thermoplastic properties. These resins are widely used in the production of PET films, bottles, and a range of other applications across industries such as packaging and textiles, valued for their versatility, durability, and recyclability. UFlex commissioned its greenfield PET chips manufacturing facility at the Panipat plant on March 31, 2024, with an annual capacity of 168,000 MTPA. The unit produces poly condensed polyester chips, which serve as a crucial raw material for BOPET film and PET bottle production, supporting the needs of the packaging industry. This enhances quality control, ensures steady raw material availability, and promotes operational resilience, even in a volatile global environment.`,
+            `Further expanding its global manufacturing footprint, UFlex commissioned a virgin PET chips facility in Egypt in 2025, with an installed capacity of 216,000 MTPA, further strengthening the integrated supply chain. The company also operates a PCR (Post-Consumer Recyclate) PET chips plant in Egypt, reinforcing its commitment to sustainability and circular economy practices.
+
+`,
         ],
     },
 
@@ -551,7 +550,7 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                             <Keypeople
                                 title={business.keypeopleIndia.title}
                                 people={business.keypeopleIndia.details}
-                                
+
                             />
                         )}
                         {(business.keypeopleabroad) && (
