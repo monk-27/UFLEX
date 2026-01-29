@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProductCategorySection from "./product-reusable";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Breadcrumb from "@/components/breadcrumb";
+import { useSearchParams } from "next/navigation";
 
 export default function ProductsPage() {
     const engineeringProductsData: any = {
@@ -540,21 +541,64 @@ Our converting machines are tailored as per the clients’ needs and are enabled
 
 
     };
+const searchParams = useSearchParams();
+const catFromUrl = searchParams.get('cat')?.toLowerCase() || null;
+
+const validKeys = [
+//   "engineering",   // overview / all
+  "packaging",
+  "converting",
+  "speciality",
+] as const;
+
+const initialKey = catFromUrl && validKeys.includes(catFromUrl as any)
+  ? catFromUrl
+  : "packaging";   // default tab when no ?cat or invalid
+
+const [selectedKey, setSelectedKey] = useState<string>(initialKey);
+
+// Keep in sync when URL changes (back/forward, direct link)
 
 
-    const [selectedKey, setSelectedKey] = useState("packaging");
+    // const [selectedKey, setSelectedKey] = useState("packaging");
 
     const product =
         engineeringProductsData[selectedKey] ||
         engineeringProductsData.engineering;
 
-    const enhancedCategories =
-        product.categories?.map((cat: any) => ({
-            ...cat,
-            isActive: cat.productKey === selectedKey,
-            onClick: () => setSelectedKey(cat.productKey),
-        })) || [];
+    // const enhancedCategories =
+    //     product.categories?.map((cat: any) => ({
+    //         ...cat,
+    //         isActive: cat.productKey === selectedKey,
+    //         onClick: () => setSelectedKey(cat.productKey),
+    //     })) || [];
+useEffect(() => {
+  const currentCat = searchParams.get('cat')?.toLowerCase();
+  if (currentCat && validKeys.includes(currentCat as any)) {
+    setSelectedKey(currentCat);
+  } else if (!currentCat) {
+    setSelectedKey("packaging"); // reset to default when param cleared
+  }
+}, [searchParams]);
 
+
+const handleCategoryClick = (productKey: string) => {
+  setSelectedKey(productKey);
+
+  // Update URL without full reload → shareable + back button friendly
+  if (typeof window !== 'undefined') {
+    const url = new URL(window.location.href);
+    url.searchParams.set('cat', productKey);
+    window.history.replaceState({}, '', url.toString());
+  }
+};
+
+const enhancedCategories =
+  product.categories?.map((cat: any) => ({
+    ...cat,
+    isActive: cat.productKey === selectedKey,
+    onClick: () => handleCategoryClick(cat.productKey),
+  })) || [];
     return (
         <>
             <SiteHeader />

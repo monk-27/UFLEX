@@ -346,7 +346,27 @@ const EngComp: React.FC<Props> = ({ business }) => {
                                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
                             </motion.div>
                         </div>
-                        <SimpleCarousel heading="Our Offerings" items={SliderItems} imageHeight={280} />
+                        <SimpleCarousel heading="Our Offerings" 
+                        // items={SliderItems}
+                        items={SliderItems.map(item => {
+    const titleLower = item.title.toLowerCase();
+
+    let catKey = "packaging"; // default
+
+    if (titleLower.includes("packaging")) {
+      catKey = "packaging";
+    } else if (titleLower.includes("converting")) {
+      catKey = "converting";
+    } else if (titleLower.includes("speciality") || titleLower.includes("special")) {
+      catKey = "speciality";
+    }
+
+    return {
+      ...item,
+      dynamiclink: `/engineering-business/engineering-Our-Offering?cat=${catKey}`,
+    };
+  })}
+                         imageHeight={280} />
 
 
                         {business.innovations && (
