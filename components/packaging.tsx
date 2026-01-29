@@ -41,7 +41,7 @@ desc:`A type of polyester film made through biaxial orientation,leading to a thi
     {
         title: "Biaxially-Oriented Polypropylene (BOPP) films",
         img: "/images/bopp.png",
-        dynamiclink: "/packaging-films-business/packaging-our-offering",
+        // dynamiclink: "/packaging-films-business/packaging-our-offering",
 
 //         desc: `Release films,
 // encapsulation, photo
@@ -58,7 +58,7 @@ desc:`An ideal option for packaging food, beverages, and electronics due to this
     {
         title: "Cast Polypropylene (CPP) films",
         img: "/images/cpp.png",
-        dynamiclink: "/packaging-films-business/packaging-our-offering",
+        // dynamiclink: "/packaging-films-business/packaging-our-offering",
 
 //         desc: `Bakery products,
 // packaging and conversion,
@@ -72,7 +72,7 @@ A film manufactured through a cast extrusion process in which polypropylene resi
     {
         title: "Metallized Film",
         img: "/images/metallized.png",
-        dynamiclink: "/packaging-films-business/packaging-our-offering",
+        // dynamiclink: "/packaging-films-business/packaging-our-offering",
 
 //         desc: `Converting and
 // laminating, synthetic zari and metallic yarn,
@@ -92,7 +92,7 @@ desc:`Decorative films and foils are developed with advanced metallization techn
     {
         title: "AlOx-coated films",
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-06130321303.jpg",
-        dynamiclink: "/packaging-films-business/packaging-our-offering",
+        // dynamiclink: "/packaging-films-business/packaging-our-offering",
 
         desc: `Films with a transparent aluminium oxide layer that provide strong moisture and gas barriers while keeping the product visible.
 `,
@@ -100,7 +100,7 @@ desc:`Decorative films and foils are developed with advanced metallization techn
     {
         title: "Speciality films",
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item4-06130331303.jpg",
-        dynamiclink: "/packaging-films-business/packaging-our-offering",
+        // dynamiclink: "/packaging-films-business/packaging-our-offering",
 
         desc: "A range of films that provide value addition for converters by enhancing the quality, performance, and functionality of the final packaging.",
     },
@@ -108,7 +108,25 @@ desc:`Decorative films and foils are developed with advanced metallization techn
 
 ];
 
+const basePath = "/packaging-films-business/packaging-our-offering";
 
+const enhancedSliderItems = SliderItems.map((item:any) => {
+  let cat = "bopet"; // default fallback
+
+  const t = item.title.toLowerCase();
+
+  if (t.includes("bopet") || t.includes("terephthalate"))  cat = "bopet";
+  if (t.includes("bopp") || t.includes("polypropylene"))   cat = "bopp";
+  if (t.includes("cpp")  || t.includes("cast"))            cat = "cpp";
+  if (t.includes("metallized") || t.includes("metallised")) cat = "metallised";
+  if (t.includes("alox") || t.includes("oxide") || t.includes("aluminium oxide")) cat = "alox-coated";
+  if (t.includes("special") || t.includes("speciality"))   cat = "special";
+
+  return {
+    ...item,
+    dynamiclink: `${basePath}?cat=${cat}`,
+  };
+});
 const packagingData = [
     {
         title: 'Packaging Films & PET Resin',
@@ -511,7 +529,21 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                                 >
                                     <SimpleCarousel
                                         heading=""
-                                        items={packagingFilmsItems}
+                                        // items={packagingFilmsItems}
+                                        items={SliderItems.map((item:any) => {
+    const titleLower = item.title.toLowerCase();
+    let cat = "bopet";
+    if (titleLower.includes("bopp")) cat = "bopp";
+    if (titleLower.includes("cpp"))  cat = "cpp";
+    if (titleLower.includes("metall")) cat = "metallised";
+    if (titleLower.includes("alox")) cat = "alox-coated";
+    if (titleLower.includes("special")) cat = "special";
+
+    return {
+      ...item,
+      dynamiclink: `/packaging-films-business/packaging-our-offering?cat=${cat}`,
+    };
+  })}
                                         imageHeight={280}
                                     />
                                 </motion.div>

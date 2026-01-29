@@ -1,7 +1,7 @@
 // app/products/page.tsx
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProductCategorySection from "./product-reusable";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { ReadMoreDialog } from "@/components/expandabletext";
 import Image from 'next/image';
 import Breadcrumb from "@/components/breadcrumb";
+import { useSearchParams } from "next/navigation";
 
 export default function ProductsPage() {
     const productsData: any = {
@@ -462,7 +463,26 @@ export default function ProductsPage() {
         },
     };
 
-    const [selectedKey, setSelectedKey] = useState("bopet");
+
+    const searchParams = useSearchParams();
+const catFromUrl = searchParams.get('cat')?.toLowerCase() || null;
+
+// List of all valid keys (for safety)
+const validKeys = [
+  'bopet',
+  'bopp',
+  'cpp',
+  'metallised',
+  'special',
+  'alox-coated',
+] as const;
+
+const initialKey = catFromUrl && validKeys.includes(catFromUrl as any)
+  ? catFromUrl
+  : 'bopet';
+    // const [selectedKey, setSelectedKey] = useState("bopet");
+    const [selectedKey, setSelectedKey] = useState(initialKey);
+
 
     const product = productsData[selectedKey] || productsData.bopet;
 
@@ -477,7 +497,15 @@ export default function ProductsPage() {
         isActive: cat.productKey === selectedKey,
         onClick: () => handleCategoryClick(cat.productKey),
     }));
-
+useEffect(() => {
+  const currentCat = searchParams.get('cat')?.toLowerCase();
+  if (currentCat && validKeys.includes(currentCat as any)) {
+    setSelectedKey(currentCat);
+  } else if (!currentCat) {
+    // optional: clean URL if invalid/no param → default
+    // window.history.replaceState(null, '', window.location.pathname);
+  }
+}, [searchParams]);
 
     return (
         <>
