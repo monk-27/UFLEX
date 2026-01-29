@@ -20,55 +20,96 @@ import { ReadMoreDialog } from './expandabletext'
 
 
 
-const SliderItems: SliderItem[] = 
-[
-   {
-        img: "/images/holography/h1.png",
-        dynamiclink: "/holography-business/holography-Our-Offering",
-        title: "Security Paper Labels & Tax Stamps",
-        desc: "",
-    },
-    {
-        img: "/images/holography/h2.png",
-        dynamiclink: "/holography-business/holography-Our-Offering",
-        title: "Security Documents",
-        desc: "",
-    },
-    {
-        img: "/images/holography/h3.png",
-        dynamiclink: "/holography-business/holography-Our-Offering",
-        title: "Textile Application Films for: Sequins ,Hot Melt ,Glitter Powder",
-        desc: "",
-    },
-    {
-        img: "/images/holography/h4.png",
-        dynamiclink: "/holography-business/holography-Our-Offering",
-        title: "Wide Web Holographic Films",
-        desc: "",
-    },
-    {
-        img: "/images/holography/h5.png",
-        dynamiclink: "/holography-business/holography-Our-Offering",
-        title: "Transfer Holographic Metallized Paper & Paperboard",
-        desc: "",
-    },
-    {
-        img: "/images/holography/h6.png",
-        dynamiclink: "/holography-business/holography-Our-Offering",
-        title: "Stamping Foils",
-        desc: "",
-    },
-    {
-        img: "/images/holography/h7.png",
-        dynamiclink: "/holography-business/holography-Our-Offering",
-        title: "Advanced Security Holograms",
-        desc: "",
-    },
+const SliderItems: SliderItem[] =
+    [
+        //    {
+        //         img: "/images/holography/h1.png",
+        //         dynamiclink: "/holography-business/holography-Our-Offering",
+        //         title: "Security Paper Labels & Tax Stamps",
+        //         desc: "",
+        //     },
+        //     {
+        //         img: "/images/holography/h2.png",
+        //         dynamiclink: "/holography-business/holography-Our-Offering",
+        //         title: "Security Documents",
+        //         desc: "",
+        //     },
+        //     {
+        //         img: "/images/holography/h3.png",
+        //         dynamiclink: "/holography-business/holography-Our-Offering",
+        //         title: "Textile Application Films for: Sequins ,Hot Melt ,Glitter Powder",
+        //         desc: "",
+        //     },
+        //     {
+        //         img: "/images/holography/h4.png",
+        //         dynamiclink: "/holography-business/holography-Our-Offering",
+        //         title: "Wide Web Holographic Films",
+        //         desc: "",
+        //     },
+        //     {
+        //         img: "/images/holography/h5.png",
+        //         dynamiclink: "/holography-business/holography-Our-Offering",
+        //         title: "Transfer Holographic Metallized Paper & Paperboard",
+        //         desc: "",
+        //     },
+        //     {
+        //         img: "/images/holography/h6.png",
+        //         dynamiclink: "/holography-business/holography-Our-Offering",
+        //         title: "Stamping Foils",
+        //         desc: "",
+        //     },
+        //     {
+        //         img: "/images/holography/h7.png",
+        //         dynamiclink: "/holography-business/holography-Our-Offering",
+        //         title: "Advanced Security Holograms",
+        //         desc: "",
+        //     },
+
+
+
+        {
+            img: "/images/holography/h7.png",
+            // dynamiclink: "/holography-business/holography-Our-Offering",
+            title: "HOLOGRAM",
+            desc: "",
+
+        },
+
+        {
+            img: "/images/holography/h4.png",
+            // dynamiclink: "/holography-business/holography-Our-Offering",
+            title: "HOLOGRAPHIC FILM (Wide Web Films)",
+            desc: "",
+        },
+        {
+            img: "/images/holography/h3.png",
+            // dynamiclink: "/holography-business/holography-Our-Offering",
+            title: "TEXTILE VALUE ADDITION PRODUCT",
+            desc: "",
+        },
+        {
+            img: "/images/holography/h6.png",
+            // dynamiclink: "/holography-business/holography-Our-Offering",
+            title: "Hot Stamping Foil",
+            desc: "",
+        },
+        {
+            img: "/images/holography/h5.png",
+            // dynamiclink: "/holography-business/holography-Our-Offering",
+            title: "HOLOGRAPHIC METALIZED PAPER & BOARD TRANSFER",
+            desc: "",
+        },
+        {
+            img: "/images/holography/h1.png",
+            // dynamiclink: "/holography-business/holography-Our-Offering",
+            title: "Labeling Solution",
+            desc: "",
+        },
 
 
 
 
-];
+    ];
 
 
 
@@ -154,7 +195,7 @@ export const businesses: BusinessConfig[] = [
                     title: "Holographic Alu-Alu Blister",
                     description: "Holographic Alu-Alu Blister marks a major breakthrough in pharmaceutical packaging, reinforcing UFlex’s commitment to industry-leading brand protection. Integrated with covert security features, this innovative solution provides an enhanced layer of anti-counterfeiting protection, ensuring product authenticity and consumer safety."
 
-                    ,image: "/images/blister.png"
+                    , image: "/images/blister.png"
                 },
                 {
                     id: "decorative-products",
@@ -205,7 +246,7 @@ recycle the same. \n\n We have many solutions of sustainability segment- hologra
         keypeople: {
             title: "Key People",
             details: [
-              
+
                 {
                     photo: "/images/vinod.png",
                     name: "Mr. Vinod Hariharan",
@@ -241,7 +282,7 @@ Management Program at IIM
 Kolkata.`,
                     cta: { label: "Read More", href: "/leadership/vinod-hariharan" }
                 },
-                  {
+                {
                     photo: "/images/pathak.png",
                     name: "Mr. G.P. Pathak",
                     role: "Vice President – Operations and New Product Development, Holography Business",
@@ -377,7 +418,7 @@ const packagingData = [
         content: [
             {
                 type: "paragraph",
-                text:"The UFlex holography business is India’s largest and most trusted provider of brand protection and anti-counterfeiting solutions, as well as an emerging global player in the industry.",
+                text: "The UFlex holography business is India’s largest and most trusted provider of brand protection and anti-counterfeiting solutions, as well as an emerging global player in the industry.",
                 strong: ["Holography Business of UFlex"]
             },
             {
@@ -536,35 +577,35 @@ const HoloGraphyComp: React.FC<Props> = ({ business }) => {
                                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
                             </motion.div>
                         </div>
-                        <SimpleCarousel heading="Our Offerings" 
-                        items={SliderItems}
-//                         items={SliderItems.map(item => {
-//     const titleLower = item.title.toLowerCase();
+                        <SimpleCarousel heading="Our Offerings"
+                            // items={SliderItems}
+                            items={SliderItems.map(item => {
+                                const titleLower = item.title.toLowerCase();
 
-//     let catKey = "hologram"; // default
+                                let catKey = "hologram"; // default
 
-//     if (titleLower.includes("security paper") || titleLower.includes("tax stamp")) {
-//       catKey = "labeling"; // or create separate key if needed
-//     } else if (titleLower.includes("security document")) {
-//       catKey = "labeling"; // adjust if you add separate entry later
-//     } else if (titleLower.includes("textile") || titleLower.includes("sequins") || titleLower.includes("glitter")) {
-//       catKey = "textile";
-//     } else if (titleLower.includes("wide web") || titleLower.includes("holographic film")) {
-//       catKey = "holographic-film";
-//     } else if (titleLower.includes("transfer") || titleLower.includes("metallized paper") || titleLower.includes("paperboard")) {
-//       catKey = "metalized-paper";
-//     } else if (titleLower.includes("stamping") || titleLower.includes("foil")) {
-//       catKey = "hot-stamping";
-//     } else if (titleLower.includes("advanced security") || titleLower.includes("hologram")) {
-//       catKey = "hologram";
-//     }
+                                if (titleLower.includes("security paper") || titleLower.includes("tax stamp")) {
+                                    catKey = "labeling"; // or create separate key if needed
+                                } else if (titleLower.includes("security document")) {
+                                    catKey = "labeling"; // adjust if you add separate entry later
+                                } else if (titleLower.includes("textile") || titleLower.includes("sequins") || titleLower.includes("glitter")) {
+                                    catKey = "textile";
+                                } else if (titleLower.includes("wide web") || titleLower.includes("holographic film")) {
+                                    catKey = "holographic-film";
+                                } else if (titleLower.includes("transfer") || titleLower.includes("metallized paper") || titleLower.includes("paperboard")) {
+                                    catKey = "metalized-paper";
+                                } else if (titleLower.includes("stamping") || titleLower.includes("foil")) {
+                                    catKey = "hot-stamping";
+                                } else if (titleLower.includes("advanced security") || titleLower.includes("hologram")) {
+                                    catKey = "hologram";
+                                }
 
-//     return {
-//       ...item,
-//       dynamiclink: `/holography-business/holography-Our-Offering?cat=${catKey}`,
-//     };
-//   })}
-                         imageHeight={280} />
+                                return {
+                                    ...item,
+                                    dynamiclink: `/holography-business/holography-Our-Offering?cat=${catKey}`,
+                                };
+                            })}
+                            imageHeight={280} />
 
 
                         {business.innovations && (
