@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProductCategorySection from "./product-reusable";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Breadcrumb from "@/components/breadcrumb";
+import { useSearchParams } from "next/navigation";
 
 export default function ProductsPage() {
   const printingCylindersData = {
@@ -26,7 +27,7 @@ export default function ProductsPage() {
     sections: {
       gravure: {
         heroImageUrl:
-      "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-05492704927.jpg",
+          "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-05492704927.jpg",
         blocks: [
           {
             heading: "1. Printing Cylinders:",
@@ -36,7 +37,7 @@ export default function ProductsPage() {
               "https://www.uflexltd.com/assets/images/Cylinder-Gravure-Cylinders-1.jpg",
               "https://www.uflexltd.com/assets/images/Cylinder-Gravure-Cylinders-2.jpg",
               "https://www.uflexltd.com/assets/images/Cylinder-Gravure-Cylinders-3.jpg",
-            //   "https://www.uflexltd.com/assets/images/gravure-cylinder-4.jpg",
+              //   "https://www.uflexltd.com/assets/images/gravure-cylinder-4.jpg",
             ],
             subText:
               "Top of the line machines from Europe & USA have been installed for Film less Digital Engraving on the cylinders. After viewing the final layout including press marks through a Plotter printout, the digital file is transferred onto the engraver. The technically advanced engraving machines have the capability to generate different cell profiles and the provision of using customer defined Gamma Levels, thereby ensuring exact reproduction for specialized applications.\n\nThe diamond stylus of the Engraver produces up to 8500 cells per second during a high-speed process of engraving that meets various printing requirements. Accuracy of engraving in terms of cell geometry (cell width, cell wall and depth) for each cylinder is ensured that yields sharpness on the prints.\n\nHard Chrome Electroplating is finally carried out on the engraved Gravure Printing Cylinder that best meets printing requirements. For varied printing requirements, engravers are used both on hollow and shafted gravure printing cylinders of up to 2500 mm length and 1250 mm circumference.",
@@ -83,7 +84,7 @@ export default function ProductsPage() {
       ctp: {
         title: "CTP FLEXO PLATES",
         heroImageUrl:
-      "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-05492714927.jpg",
+          "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-05492714927.jpg",
         overview:
           "The advanced flexo plate manufacturing set-up with laser imaging can produce high definition images.",
         bullets: [
@@ -97,7 +98,7 @@ export default function ProductsPage() {
 
       sleeves: {
         title: "FLEXO PRINTING SLEEVES",
-        heroImageUrl :"https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-05492724927.jpg",
+        heroImageUrl: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-05492724927.jpg",
         overview:
           "Flexography printing has been gaining popularity due to its impeccable print quality, easy operability and lower costs as compared to gravure printing. Flexo printing sleeves technology has brought an acceleration in speed, simplification in processes and lower costs when replacing a printing form and within printing itself for that matter.",
         bullets: [
@@ -113,40 +114,77 @@ export default function ProductsPage() {
     },
   };
 
-  const [activeKey, setActiveKey] =
-    useState<"gravure" | "ctp" | "sleeves">("gravure");
+  // const [activeKey, setActiveKey] =
+  //   useState<"gravure" | "ctp" | "sleeves">("gravure");
 
-  const enhancedCategories = printingCylindersData.categories.map((c) => ({
-    name: c.name,
-    productKey: c.key,
-    isActive: c.key === activeKey,
-    onClick: () => setActiveKey(c.key as any),
-  }));
+  // const enhancedCategories = printingCylindersData.categories.map((c) => ({
+  //   name: c.name,
+  //   productKey: c.key,
+  //   isActive: c.key === activeKey,
+  //   onClick: () => setActiveKey(c.key as any),
+  // }));
+const searchParams = useSearchParams();
+const catFromUrl = searchParams.get('cat')?.toLowerCase() || null;
 
+const validKeys = ["gravure", "ctp", "sleeves"] as const;
+
+const initialKey:any = catFromUrl && validKeys.includes(catFromUrl as any)
+  ? catFromUrl
+  : "gravure"; // default to gravure
+
+const [activeKey, setActiveKey] = useState<typeof validKeys[number]>(initialKey);
+
+// Sync when URL changes (browser back/forward, direct link)
+useEffect(() => {
+  const currentCat = searchParams.get('cat')?.toLowerCase();
+  if (currentCat && validKeys.includes(currentCat as any)) {
+    setActiveKey(currentCat as any);
+  } else if (!currentCat) {
+    setActiveKey("gravure");
+  }
+}, [searchParams]);
+
+const handleCategoryClick = (key: string) => {
+  setActiveKey(key as any);
+
+  // Update URL without reload
+  if (typeof window !== 'undefined') {
+    const url = new URL(window.location.href);
+    url.searchParams.set('cat', key);
+    window.history.replaceState({}, '', url.toString());
+  }
+};
+
+const enhancedCategories = printingCylindersData.categories.map((c) => ({
+  name: c.name,
+  productKey: c.key,
+  isActive: c.key === activeKey,
+  onClick: () => handleCategoryClick(c.key),
+}));
   return (
     <>
       <SiteHeader />
 
       <section className="bg-white">
         <div className="">
-        
 
 
 
-               <section className="relative w-full h-[380px] sm:h-[451px] overflow-hidden">
 
-                            <Image
-                                src="/images/heroprinting.png"
-                                alt="Investors Relations"
-                                fill
-                                className="object-cover w-full h-full"
-                                priority
-                            />
+          <section className="relative w-full h-[380px] sm:h-[451px] overflow-hidden">
 
-                            <div className="absolute inset-0 bg-black/40"></div>
+            <Image
+              src="/images/heroprinting.png"
+              alt="Investors Relations"
+              fill
+              className="object-cover w-full h-full"
+              priority
+            />
+
+            <div className="absolute inset-0 bg-black/40"></div>
 
 
-                            {/* <motion.div
+            {/* <motion.div
                                 className="absolute inset-0 flex flex-col justify-end  text-white"
                                 initial="hidden"
                                 animate="visible"
@@ -180,13 +218,13 @@ UFlex’ Printing Cylinders business products range includes a variety of Gravur
 
 
                             </motion.div> */}
-                        </section>
-                        <Breadcrumb
-                            items={[
-                                { label: "Printing Cylinders", href: "/printing-cylinder-business" },
-                                { label: "Printing Cylinders Products" },
-                            ]}
-                        />
+          </section>
+          <Breadcrumb
+            items={[
+              { label: "Printing Cylinders", href: "/printing-cylinder-business" },
+              { label: "Printing Cylinders Products" },
+            ]}
+          />
 
           <ProductCategorySection
             title={printingCylindersData.title}
