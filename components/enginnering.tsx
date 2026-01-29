@@ -370,7 +370,7 @@ const EngComp: React.FC<Props> = ({ business }) => {
                                 items={business.caseStudies}
                             />
                         )}
-                        <AwardsSection data={business.awards} />
+                        {/* <AwardsSection data={business.awards} /> */}
 
                         <AccreditationsSlider items={business.accreditation ?? []} />
                     </div>
