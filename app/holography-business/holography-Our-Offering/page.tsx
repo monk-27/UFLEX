@@ -57,13 +57,13 @@ export default function ProductsPage() {
             ],
 
             categories: [
-                { name: "HOLOGRAM", productKey: "hologram" },
-                { name: "HOLOGRAPHIC FILM (Wide Web Films)", productKey: "holographic-film" },
-                { name: "TEXTILE VALUE ADDITION PRODUCT", productKey: "textile" },
-                { name: "Hot Stamping Foil", productKey: "hot-stamping" },
-                { name: "HOLOGRAPHIC METALIZED PAPER & BOARD TRANSFER", productKey: "metalized-paper" },
-                { name: "Labeling Solution", productKey: "labeling" },
-            ],
+  { name: "Hologram",                              productKey: "hologram" },
+  { name: "Holographic Film (Wide Web Films)",     productKey: "holographic-film" },
+  { name: "Textile Value Addition Product",        productKey: "textile" },
+  { name: "Hot Stamping Foil",                     productKey: "hot-stamping" },
+  { name: "Holographic Metalized Paper & Board Transfer", productKey: "metalized-paper" },
+  { name: "Labeling Solution",                     productKey: "labeling" },
+],
 
             quickLinks: [
                 { label: "Aseptic Packaging Website", href: "https://www.asepto.com", external: true },
@@ -77,13 +77,13 @@ export default function ProductsPage() {
             heroImageUrl: "/images/holography/h4.png", // your hero
             brandTag: "HOLOGRAPHIC FILM",
             categories: [
-                { name: "HOLOGRAM", productKey: "hologram" },
-                { name: "HOLOGRAPHIC FILM (Wide Web Films)", productKey: "holographic-film" },
-                { name: "TEXTILE VALUE ADDITION PRODUCT", productKey: "textile" },
-                { name: "Hot Stamping Foil", productKey: "hot-stamping" },
-                { name: "HOLOGRAPHIC METALIZED PAPER & BOARD TRANSFER", productKey: "metalized-paper" },
-                { name: "Labeling Solution", productKey: "labeling" },
-            ],
+  { name: "Hologram",                              productKey: "hologram" },
+  { name: "Holographic Film (Wide Web Films)",     productKey: "holographic-film" },
+  { name: "Textile Value Addition Product",        productKey: "textile" },
+  { name: "Hot Stamping Foil",                     productKey: "hot-stamping" },
+  { name: "Holographic Metalized Paper & Board Transfer", productKey: "metalized-paper" },
+  { name: "Labeling Solution",                     productKey: "labeling" },
+],
         },
         "textile": {
             key: "textile",
@@ -91,27 +91,27 @@ export default function ProductsPage() {
             heroImageUrl: "/images/holography/h3.png", // add your hero
             brandTag: "TEXTILE VALUE ADDITION",
             categories: [
-                { name: "HOLOGRAM", productKey: "hologram" },
-                { name: "HOLOGRAPHIC FILM (Wide Web Films)", productKey: "holographic-film" },
-                { name: "TEXTILE VALUE ADDITION PRODUCT", productKey: "textile" },
-                { name: "Hot Stamping Foil", productKey: "hot-stamping" },
-                { name: "HOLOGRAPHIC METALIZED PAPER & BOARD TRANSFER", productKey: "metalized-paper" },
-                { name: "Labeling Solution", productKey: "labeling" },
-            ],
+  { name: "Hologram",                              productKey: "hologram" },
+  { name: "Holographic Film (Wide Web Films)",     productKey: "holographic-film" },
+  { name: "Textile Value Addition Product",        productKey: "textile" },
+  { name: "Hot Stamping Foil",                     productKey: "hot-stamping" },
+  { name: "Holographic Metalized Paper & Board Transfer", productKey: "metalized-paper" },
+  { name: "Labeling Solution",                     productKey: "labeling" },
+],
         },
         "hot-stamping": {
             key: "hot-stamping",
             title: "Hot Stamping Foil",
             heroImageUrl: "/images/holography/h6.png", // add your hero image
             brandTag: "HOT STAMPING FOIL",
-            categories: [
-                { name: "HOLOGRAM", productKey: "hologram" },
-                { name: "HOLOGRAPHIC FILM (Wide Web Films)", productKey: "holographic-film" },
-                { name: "TEXTILE VALUE ADDITION PRODUCT", productKey: "textile" },
-                { name: "Hot Stamping Foil", productKey: "hot-stamping" },
-                { name: "HOLOGRAPHIC METALIZED PAPER & BOARD TRANSFER", productKey: "metalized-paper" },
-                { name: "Labeling Solution", productKey: "labeling" },
-            ],
+           categories: [
+  { name: "Hologram",                              productKey: "hologram" },
+  { name: "Holographic Film (Wide Web Films)",     productKey: "holographic-film" },
+  { name: "Textile Value Addition Product",        productKey: "textile" },
+  { name: "Hot Stamping Foil",                     productKey: "hot-stamping" },
+  { name: "Holographic Metalized Paper & Board Transfer", productKey: "metalized-paper" },
+  { name: "Labeling Solution",                     productKey: "labeling" },
+],
         },
         "metalized-paper": {
             key: "metalized-paper",
@@ -119,13 +119,13 @@ export default function ProductsPage() {
             heroImageUrl: "/images/holography/h5.png", // add your hero image
             brandTag: "METALIZED PAPER & BOARD TRANSFER",
             categories: [
-                { name: "HOLOGRAM", productKey: "hologram" },
-                { name: "HOLOGRAPHIC FILM (Wide Web Films)", productKey: "holographic-film" },
-                { name: "TEXTILE VALUE ADDITION PRODUCT", productKey: "textile" },
-                { name: "Hot Stamping Foil", productKey: "hot-stamping" },
-                { name: "HOLOGRAPHIC METALIZED PAPER & BOARD TRANSFER", productKey: "metalized-paper" },
-                { name: "Labeling Solution", productKey: "labeling" },
-            ],
+  { name: "Hologram",                              productKey: "hologram" },
+  { name: "Holographic Film (Wide Web Films)",     productKey: "holographic-film" },
+  { name: "Textile Value Addition Product",        productKey: "textile" },
+  { name: "Hot Stamping Foil",                     productKey: "hot-stamping" },
+  { name: "Holographic Metalized Paper & Board Transfer", productKey: "metalized-paper" },
+  { name: "Labeling Solution",                     productKey: "labeling" },
+],
         },
         "labeling": {
             key: "labeling",
@@ -133,13 +133,13 @@ export default function ProductsPage() {
             heroImageUrl: "/images/holography/h1.png", // add your hero image
             brandTag: "LABELING SOLUTION",
             categories: [
-                { name: "HOLOGRAM", productKey: "hologram" },
-                { name: "HOLOGRAPHIC FILM (Wide Web Films)", productKey: "holographic-film" },
-                { name: "TEXTILE VALUE ADDITION PRODUCT", productKey: "textile" },
-                { name: "Hot Stamping Foil", productKey: "hot-stamping" },
-                { name: "HOLOGRAPHIC METALIZED PAPER & BOARD TRANSFER", productKey: "metalized-paper" },
-                { name: "Labeling Solution", productKey: "labeling" },
-            ],
+  { name: "Hologram",                              productKey: "hologram" },
+  { name: "Holographic Film (Wide Web Films)",     productKey: "holographic-film" },
+  { name: "Textile Value Addition Product",        productKey: "textile" },
+  { name: "Hot Stamping Foil",                     productKey: "hot-stamping" },
+  { name: "Holographic Metalized Paper & Board Transfer", productKey: "metalized-paper" },
+  { name: "Labeling Solution",                     productKey: "labeling" },
+],
         },
         // Add more products later with different layouts
         // "holographic-film": { ... },
