@@ -36,7 +36,6 @@ export default function ProductCategorySection({
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         {/* Sidebar – unchanged */}
         <aside className="lg:col-span-1">
-                    {/* Desktop Sidebar */}
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -211,28 +210,23 @@ export default function ProductCategorySection({
           className="lg:col-span-3 space-y-10"
         >
           {/* Hero – same as before */}
-          <div className="relative h-80 md:h-[420px] overflow-hidden ">
-            <Image
+          {/* <div className="relative h-80 md:h-[420px] overflow-hidden "> */}
+            {/* <Image
               src={heroImageUrl}
               alt={title}
               fill
               className="object-cover"
               priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-            {/* <div className="absolute bottom-10 left-10 text-white">
-              <div className="inline-block bg-[#117ABA]/90 px-6 py-2 rounded-full text-sm mb-3">
-                {brandTag}
-              </div>
-              <h1 className="text-5xl md:text-6xl font-bold">{title}</h1>
-            </div> */}
-          </div>
+            /> */}
+            {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" /> */}
+            
+          {/* </div> */}
 
           {/* Conditional Layouts per Category */}
           {title === "HOLOGRAM" && (
             <div className="bg-white  space-y-10">
               <div>
-                <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-6">Overview:</h2>
+                {/* <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-6">Overview:</h2> */}
                 <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                   UFLEX offers best-in-class holograms that are available with 2D/3D, Dot Matrix & High-resolution Kinemax technology. Our range is reckoned for its vibrant color combination, print clarity and uncompromised quality. Further, these are offered in standard and customized shapes to the clients at most competitive price coordinates.
                 </p>
@@ -333,7 +327,7 @@ export default function ProductCategorySection({
             <div className="bg-white space-y-10">
               {/* Overview */}
               <div>
-                <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-6">Overview:</h2>
+                {/* <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-6">Overview:</h2> */}
                 <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                   We produce high quality holographic films for the purpose of security and aesthetic value, ranging from 12 to 50 microns. These films can be used for wrapping gifts. The film can also be laminated with paper board and printed polyester in order to make pouches or boxes. It increases the aesthetic value of the product and evokes buyers interest at the point of sale (POS).
                 </p>
@@ -525,7 +519,7 @@ export default function ProductCategorySection({
             <div className="bg-white space-y-12">
               {/* Overview */}
               <div>
-                <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-6">Overview:</h2>
+                {/* <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-6">Overview:</h2> */}
                 <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                   UFLEX understands the needs of embroidered and high fashion garment export houses. UFLEX is the only manufacturer in India that provides OEKO-TEX CERTIFIED Material to fashion houses. Due to our quality processes, our sequin films are widely accepted for computerized and hand embroidery processes. The thickness range varies from 91μ to 175μ. We provide about 800 plus colours and exclusive printed designs.
                 </p>
@@ -791,7 +785,7 @@ export default function ProductCategorySection({
             <div className="bg-white space-y-12">
               {/* Overview */}
               <div>
-                <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-6">Overview:</h2>
+                {/* <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-6">Overview:</h2> */}
                 <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                   UFLEX is a pioneer in producing holographic/non-holographic hot stamping foils for printing, packaging and textile industry. Hot stamping foils is primarily used to enhance visual appeal and brand protection. Our hot stamping foils are suitable for a wide range of substrates and good for fine details to solid patch jobs.
                 </p>
@@ -881,7 +875,7 @@ export default function ProductCategorySection({
             <div className="bg-white space-y-12">
               {/* Overview */}
               <div>
-                <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-6">Overview:</h2>
+                {/* <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-6">Overview:</h2> */}
                 <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                   Transfer metalizing process refers to adding a thin layer of Aluminium (with or without holographic Lacquer or the color) to a substrate namely paper, board or a film. The layer of aluminium adds a bright metallic and high gloss effect. These metalized substrates are used as base materials for packaging, labels, promotions & publications.
                 </p>
@@ -1073,7 +1067,7 @@ export default function ProductCategorySection({
             <div className="bg-white space-y-12">
               {/* Overview */}
               <div>
-                <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-6">Overview:</h2>
+                {/* <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-6">Overview:</h2> */}
                 <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                   UFLEX is one of the leading organizations providing the most popular labeling solutions to various industry verticals. UFLEX’s pressure-sensitive labels/self-adhesive labels are an excellent choice for various products in homecare, pharmaceuticals, personal care, wine/liquor, food & beverages, automobile and several other products in other industry verticals. Our label production facility customize labels and printing in a variety of stocks, inks and processes.
                 </p>

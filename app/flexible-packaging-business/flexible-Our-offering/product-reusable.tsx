@@ -264,7 +264,7 @@ export default function ProductCategorySection({
                     className="lg:col-span-3  "
                 >
                     {/* Hero */}
-                    <motion.div variants={itemVariants} className="relative h-80 md:h-[420px]  overflow-hidden shadow-xl">
+                    {/* <motion.div variants={itemVariants} className="relative h-80 md:h-[420px]  overflow-hidden shadow-xl">
                         <Image
                             src={heroImageUrl}
                             alt={`${title} film rolls`}
@@ -275,25 +275,25 @@ export default function ProductCategorySection({
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
                         
-                    </motion.div>
+                    </motion.div> */}
 
                     {/* Overview */}
-                    <div className=" py-6 space-y-6">
+                    <div className=" space-y-6">
                         <motion.div variants={itemVariants}>
                             {title?.toLowerCase() != "flexitubes" &&
                                 (
                                     <div className="flex gap-2">
                                 {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
-                                <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">
+                                {/* <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">
                                     Overview
-                                </h3>
+                                </h3> */}
                             </div>
                             
                                 )
                             }
 
                             {highlightText && (
-                                <div className="mt-4 bg-[#117ABA] text-white px-4 py-3 lato-700 text-[16px] sm:text-[17px]">
+                                <div className=" bg-[#117ABA] text-white px-4 py-3 lato-700 text-[16px] sm:text-[17px]">
                                     {highlightText}
                                 </div>
                             )}

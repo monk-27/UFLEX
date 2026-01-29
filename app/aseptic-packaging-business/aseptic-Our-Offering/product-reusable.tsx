@@ -286,9 +286,9 @@ export default function ProductCategorySection(props: any) {
           {/* Aseptic Cartons 3-tab layout */}
           {isAsepticCartons ? (
             <div className="space-y-12">
-              <div className="relative h-[388px] overflow-hidden bg-[#8BB2C1]">
+              {/* <div className="relative h-[388px] overflow-hidden bg-[#8BB2C1]">
                 <Image src={heroImageUrl} alt="Aseptic Cartons" fill className="object-cover" priority />
-              </div>
+              </div> */}
               {/* Tabs */}
               <div className="flex flex-wrap gap-4">
                 <button
@@ -601,9 +601,9 @@ export default function ProductCategorySection(props: any) {
           ) : isASip ? (
             // A SIP exact layout from your latest screenshot
             <div className="bg-white  space-y-12">
-              <div className="relative h-[388px] overflow-hidden bg-[#8BB2C1]">
+              {/* <div className="relative h-[388px] overflow-hidden bg-[#8BB2C1]">
                 <Image src={heroImageUrl} alt="Aseptic Cartons" fill className="object-cover" priority />
-              </div>
+              </div> */}
               {/* Overview */}
               <div>
                 <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Overview</h2>
@@ -708,9 +708,9 @@ export default function ProductCategorySection(props: any) {
             <div >
 
               <div className="space-y-8">
-                <div className="relative h-[388px] overflow-hidden ">
+                {/* <div className="relative h-[388px] overflow-hidden ">
                   <Image src={heroImageUrl} alt="Aseptic Cartons" fill className="object-contain" priority />
-                </div>
+                </div> */}
                 {/* Machine 1: SPEED PLUS 25SK */}
                 <div>
                   <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Overview</h2>
@@ -816,9 +816,9 @@ export default function ProductCategorySection(props: any) {
           ) :
             isAseptoPro ? (
               <div className="space-y-12">
-                <div className="relative h-[388px] overflow-hidden ">
+                {/* <div className="relative h-[388px] overflow-hidden ">
                   <Image src={heroImageUrl} alt="Aseptic Cartons" fill className="object-contain" priority />
-                </div>
+                </div> */}
                 <div>
                   <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Overview</h2>
                   <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black whitespace-pre-line">
@@ -961,9 +961,9 @@ export default function ProductCategorySection(props: any) {
               isAseptoDesign ? (
                 <div className="space-y-16">
                   {/* Hero Section */}
-                 <div className="relative h-[388px] overflow-hidden ">
+                 {/* <div className="relative h-[388px] overflow-hidden ">
                   <Image src={heroImageUrl} alt="Aseptic Cartons" fill className="object-contain" priority />
-                </div>
+                </div> */}
 
                   {/* We Think as Strategists We Do as Designers */}
                   <div className="bg-white ">

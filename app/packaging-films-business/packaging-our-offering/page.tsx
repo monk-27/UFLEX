@@ -500,7 +500,7 @@ export default function ProductsPage() {
                             <div className="absolute inset-0 bg-black/40"></div>
 
 
-                            <motion.div
+                            {/* <motion.div
                                 className="absolute inset-0 flex flex-col justify-end  text-white"
                                 initial="hidden"
                                 animate="visible"
@@ -530,7 +530,7 @@ export default function ProductsPage() {
                                 </motion.div>
 
 
-                            </motion.div>
+                            </motion.div> */}
                         </section>
                         <Breadcrumb
                             items={[

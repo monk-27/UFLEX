@@ -576,7 +576,7 @@ Our converting machines are tailored as per the clients’ needs and are enabled
                         <div className="absolute inset-0 bg-black/40"></div>
 
 
-                        <motion.div
+                        {/* <motion.div
                             className="absolute inset-0 flex flex-col justify-end  text-white"
                             initial="hidden"
                             animate="visible"
@@ -607,7 +607,7 @@ Our converting machines are tailored as per the clients’ needs and are enabled
                             </motion.div>
 
 
-                        </motion.div>
+                        </motion.div> */}
                     </section>
                     <Breadcrumb
                         items={[

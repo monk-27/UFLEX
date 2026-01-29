@@ -231,14 +231,14 @@ export default function ProductCategorySection({
                 >
                     {/* Hero */}
                     <motion.div variants={itemVariants} className="relative h-80 md:h-[420px] rounded-t-xl overflow-hidden shadow-xl">
-                        <Image
+                        {/* <Image
                             src={heroImageUrl}
                             alt={`${title} film rolls`}
                             fill
                             className="object-cover"
                             priority
                             sizes="(max-width: 768px) 100vw, 75vw"
-                        />
+                        /> */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
                         <div className="absolute bottom-0 left-0 p-2 md:p-4 text-white">
                             {brandTag && (

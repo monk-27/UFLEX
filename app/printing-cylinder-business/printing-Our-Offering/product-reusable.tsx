@@ -161,10 +161,10 @@ export default function ProductCategorySection({
                 </aside>
 
         {/* ================= MAIN ================= */}
-        <main className="lg:col-span-3 space-y-8">
+        <main className="lg:col-span-3 ">
 
           {/* HERO */}
-          <div className="relative h-[420px]  overflow-hidden">
+          {/* <div className="relative h-[420px]  overflow-hidden">
             <Image
   src={sectionData.heroImageUrl}
   alt={title}
@@ -174,14 +174,12 @@ export default function ProductCategorySection({
 
             <div className="absolute inset-0 bg-black/50" />
             
-          </div>
+          </div> */}
 
           {/* OVERVIEW */}
           <div className="flex gap-2">
                                 {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
-                                <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">
-                                    Overview
-                                </h3>
+                                
                             </div>
                             <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                                 {overview

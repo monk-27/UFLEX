@@ -125,7 +125,7 @@ export default function ProductsPage() {
             <div className="absolute inset-0 bg-black/40"></div>
 
 
-            <motion.div
+            {/* <motion.div
               className="absolute inset-0 flex flex-col justify-end  text-white"
               initial="hidden"
               animate="visible"
@@ -152,12 +152,12 @@ export default function ProductsPage() {
 
 
                   </h1>
-                  As a leading provider of end-to-end aseptic liquid packaging solutions, we offer innovative designs, six-layered cartons, highly advanced filling machines, and exceptional service from highly trained engineers. In alignment with the Government’s Make in India initiative, our state- of-the-art manufacturing facility in Sanand, Gujarat, spans 21 acres within a 72-acre land parcel and boasts a production capacity of 12 billion packs annually.    {/* As an end-to-end flexible packaging solutions company, UFlex also holds the expertise to develop flexible tube Tube Packaging for a large number of FMCG brands in India and overseas */}
+                  As a leading provider of end-to-end aseptic liquid packaging solutions, we offer innovative designs, six-layered cartons, highly advanced filling machines, and exceptional service from highly trained engineers. In alignment with the Government’s Make in India initiative, our state- of-the-art manufacturing facility in Sanand, Gujarat, spans 21 acres within a 72-acre land parcel and boasts a production capacity of 12 billion packs annually.    
                 </div>
               </motion.div>
 
 
-            </motion.div>
+            </motion.div> */}
           </section>
           <Breadcrumb
             items={[
@@ -201,12 +201,12 @@ export default function ProductsPage() {
 
                 {/* Default Overview - exact first screenshot */}
                 <main className="lg:col-span-3 space-y-10">
-                  <div className="relative h-[388px] overflow-hidden bg-[#8BB2C1]">
+                  {/* <div className="relative h-[388px] overflow-hidden bg-[#8BB2C1]">
                     <Image src="/images/aseptic/asepproduct.png" alt="Aseptic Cartons" fill className="object-cover" priority />
-                  </div>
+                  </div> */}
 
                   <div className="bg-white ">
-                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Overview</h2>
+                    {/* <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Overview</h2> */}
                     <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black mb-2">
                      Asepto innovatively incorporates the 3P’s of Packaging – PRESERVE, PROTECT and PROMOTE. Our aseptic liquid packaging cartons encompass six layers of protection that keeps the freshness preserved in varieties of beverages, be it dairy and dairy-based beverages, nectar-based beverages, or beverages from the distillery industry. We augment your product positioning through innovative design aesthetics. Our state-of-the-art converting process and manufacturing facilities help us materialize our thoughts into reality. They are advanced, automated, and human-touch-free.  </p>
 
@@ -263,7 +263,7 @@ The second plant in Sokhna, Egypt, is about to be commissioned. Once operational
           <div className="absolute inset-0 bg-black/40"></div>
 
 
-          <motion.div
+          {/* <motion.div
             className="absolute inset-0 flex flex-col justify-end  text-white"
             initial="hidden"
             animate="visible"
@@ -290,12 +290,12 @@ The second plant in Sokhna, Egypt, is about to be commissioned. Once operational
 
 
                   </h1>
-                  As a leading provider of end-to-end aseptic liquid packaging solutions, we offer innovative designs, six-layered cartons, highly advanced filling machines, and exceptional service from highly trained engineers. In alignment with the Government’s Make in India initiative, our state- of-the-art manufacturing facility in Sanand, Gujarat, spans 21 acres within a 72-acre land parcel and boasts a production capacity of 12 billion packs annually.    {/* As an end-to-end flexible packaging solutions company, UFlex also holds the expertise to develop flexible tube Tube Packaging for a large number of FMCG brands in India and overseas */}
+                  As a leading provider of end-to-end aseptic liquid packaging solutions, we offer innovative designs, six-layered cartons, highly advanced filling machines, and exceptional service from highly trained engineers. In alignment with the Government’s Make in India initiative, our state- of-the-art manufacturing facility in Sanand, Gujarat, spans 21 acres within a 72-acre land parcel and boasts a production capacity of 12 billion packs annually.    
                 </div>
               </motion.div>
 
 
-          </motion.div>
+          </motion.div> */}
         </section>
         <Breadcrumb
             items={[
