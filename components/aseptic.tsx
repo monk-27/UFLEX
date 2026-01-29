@@ -25,14 +25,14 @@ const SliderItems: SliderItem[] = [
   {
     img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-05023500235.jpg",
     title: "Aseptic Cartons",
-    dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offering",
+    // dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offering",
 
     desc: "Our aseptic liquid packaging cartons encompass six layers of protection that keeps the freshness preserved.",
   },
   {
     img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-05023510235.jpg",
     title: "A SIP",
-    dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offering",
+    // dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offering",
 
 
     desc: "India’s first food-grade and moisture-resistant U-shaped paper straw that is 100% recyclable.",
@@ -40,7 +40,7 @@ const SliderItems: SliderItem[] = [
   {
     img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-05023520235.jpg",
     title: "Filling Machines",
-    dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offering",
+    // dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offering",
 
 
     desc: "A range of machines that are at the core of the aseptic beverage production and packaging line.",
@@ -49,7 +49,7 @@ const SliderItems: SliderItem[] = [
   {
     img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item4-05023530235.jpg",
     title: "Asepto Pro",
-    dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offering",
+    // dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offering",
 
 
     desc: "Technical assistance, skill enhancement services, quality assurance, performance management, and remote assistance for machines.",
@@ -58,7 +58,7 @@ const SliderItems: SliderItem[] = [
   {
     img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item5-05023540235.jpg",
     title: "Asepto Design",
-    dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offering",
+    // dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offering",
 
     desc: "The creative powerhouse within Asepto, dedicated to shaping the visual identity of your products.",
   },
@@ -185,8 +185,8 @@ export const businesses: BusinessConfig[] = [
     },
     sustainability: {
       title: "Sustainability",
-    
-  "description": "At Asepto, sustainability isn't just a commitment; it's a driving force behind innovation. Asepto brings a sustainable solution to this pressing concern of aseptic cartons reaching landfills. With their proper extraction and assimilation, Asepto paves the way for a Circular Economy.\n\nEnzymatic Delamination Technology (EDT) is Asepto’s sustainable solution to reprocess aseptic cartons and bring them back into the circular economy. Through EDT, we can separate and recover valuable materials like aluminium, polymers, and paper pulp from these cartons. By doing so, we significantly reduce the environmental footprint associated with their disposal.",
+
+      "description": "At Asepto, sustainability isn't just a commitment; it's a driving force behind innovation. Asepto brings a sustainable solution to this pressing concern of aseptic cartons reaching landfills. With their proper extraction and assimilation, Asepto paves the way for a Circular Economy.\n\nEnzymatic Delamination Technology (EDT) is Asepto’s sustainable solution to reprocess aseptic cartons and bring them back into the circular economy. Through EDT, we can separate and recover valuable materials like aluminium, polymers, and paper pulp from these cartons. By doing so, we significantly reduce the environmental footprint associated with their disposal.",
 
       image: "/images/sus.png",
       linkLabel: "Know More",
@@ -286,8 +286,8 @@ const AsepticComp: React.FC<Props> = ({ business }) => {
                   onClick={() => setOpen(true)}
                   className="mt-4 lato-400 text-[16px] sm:text-[20px]  text-[#117ABA]  hover:underline"
                 >
-                  Read More 
-                <span aria-hidden>↗</span>
+                  Read More
+                  <span aria-hidden>↗</span>
 
                 </button>
 
@@ -320,7 +320,31 @@ const AsepticComp: React.FC<Props> = ({ business }) => {
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
               </motion.div>
             </div>
-            <SimpleCarousel heading="Our Offerings" items={SliderItems} imageHeight={280} />
+            <SimpleCarousel heading="Our Offerings"
+              // items={SliderItems} 
+              items={SliderItems.map(item => {
+                const titleLower = item.title.toLowerCase();
+
+                let cat = "aseptic-cartons"; // default
+
+                if (titleLower.includes("carton") || titleLower.includes("aseptic carton")) {
+                  cat = "aseptic-cartons";
+                } else if (titleLower.includes("sip") || titleLower.includes("a sip")) {
+                  cat = "a-sip";
+                } else if (titleLower.includes("filling") || titleLower.includes("machine")) {
+                  cat = "filling-machines";
+                } else if (titleLower.includes("pro") || titleLower.includes("asepto pro")) {
+                  cat = "asepto-pro";
+                } else if (titleLower.includes("design") || titleLower.includes("asepto design")) {
+                  cat = "asepto-design";
+                }
+
+                return {
+                  ...item,
+                  dynamiclink: `/aseptic-packaging-business/aseptic-Our-Offering?cat=${cat}`,
+                };
+              })}
+              imageHeight={280} />
 
 
             {/* {business.innovations && (

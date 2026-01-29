@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProductCategorySection from "./product-reusable";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -9,9 +9,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import Breadcrumb from "@/components/breadcrumb";
+import { useSearchParams } from "next/navigation";
 
 export default function ProductsPage() {
-  const [selectedKey, setSelectedKey] = useState<string | null>(null);
+  // const [selectedKey, setSelectedKey] = useState<string | null>(null);
 
   const productsData: Record<string, any> = {
     "aseptic-cartons": {
@@ -100,11 +101,52 @@ export default function ProductsPage() {
     { name: "Asepto Design", productKey: "asepto-design" },
   ];
 
-  const enhancedCategories = categories.map((cat) => ({
-    ...cat,
-    isActive: cat.productKey === selectedKey,
-    onClick: () => setSelectedKey(cat.productKey),
-  }));
+
+
+  const searchParams = useSearchParams();
+const catFromUrl = searchParams.get('cat')?.toLowerCase() || null;
+
+const validKeys = [
+  "aseptic-cartons",
+  "a-sip",
+  "filling-machines",
+  "asepto-pro",
+  "asepto-design",
+  // add more keys here when you expand productsData
+] as const;
+
+const initialKey = catFromUrl && validKeys.includes(catFromUrl as any)
+  ? catFromUrl
+  : null;  // keep null = show default overview
+
+const [selectedKey, setSelectedKey] = useState<string | null>(initialKey);
+
+// Keep URL in sync (back/forward, direct links)
+useEffect(() => {
+  const currentCat = searchParams.get('cat')?.toLowerCase();
+  if (currentCat && validKeys.includes(currentCat as any)) {
+    setSelectedKey(currentCat);
+  } else if (!currentCat) {
+    setSelectedKey(null); // show overview when ?cat= is removed
+  }
+}, [searchParams]);
+  const handleCategoryClick = (productKey: string) => {
+  setSelectedKey(productKey);
+
+  // Update URL without full page reload
+  if (typeof window !== 'undefined') {
+    const url = new URL(window.location.href);
+    url.searchParams.set('cat', productKey);
+    window.history.replaceState({}, '', url.toString());
+  }
+};
+
+const enhancedCategories = categories.map((cat) => ({
+  ...cat,
+  isActive: cat.productKey === selectedKey,
+  onClick: () => handleCategoryClick(cat.productKey),
+}));
+  
 
   // Default view: Overview (no nav selected) - exact first screenshot
   if (!selectedKey) {
