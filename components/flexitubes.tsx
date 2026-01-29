@@ -46,7 +46,9 @@ const SliderItems: SliderItem[] = [
     dynamiclink: "/flexitube-business/flexiTube-Our-Offerings",
 
     title: "KRAFTIKA tubes",
-    desc: "Our flexo printing sleeves offer superior print quality, operational ease, and cost-efficiency in flexography printing.",
+    desc:`Eco-friendly Kraft paper tubes with up to 45% paper content in the sleeve.
+`
+    // desc: "Our flexo printing sleeves offer superior print quality, operational ease, and cost-efficiency in flexography printing.",
   },
   {
     img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item5-12332143321.jpg",

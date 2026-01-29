@@ -65,6 +65,7 @@ const packagingData = [
         image: "/images/herochem.png",
         "imageAlt": "UFlex Aseptic Packaging Solutions",
         paragraphs: [
+            `Our various inks, adhesives, and coatings are meticulously crafted to enhance brand vibrancy, durability, and functionality while ensuring environmental protection.`,
             ` Discover the essence of unparalleled commitment at our innovative hub, where excellence seamlessly intertwines with sustainability. Our solutions are meticulously crafted to cater to the distinctive requirements of the brands and businesses looking for innovative and sustainable packaging solutions.`,
             `With support from NABL-accredited labs and manufacturing sites in Noida and Jammu, India, boasting certifications such as ISO 9001:2015, ISO 14001:2015, ISO45001:2018, ISO 50001:2018, and ISO 31000:2018, we consistently uphold global standards.`,
             `Our commitment transcends borders through a robust international distribution network, delivering bespoke solutions that redefine industry benchmarks.`

@@ -32,14 +32,15 @@ const SliderItems: SliderItem[] = [
         dynamiclink: "/engineering-business/engineering-Our-Offering",
 
         title: "Converting Machines",
-        desc: `UFlex brings the latest innovations in
-printing and packaging technology, offering
-state-of-the-art solutions such as high-
-performance CI Flexo presses, advanced
-ELS printing machines, and extrusion
-lamination machines. These machines are
-designed to enhance both the efficiency
-and quality of the final product.`,
+//         desc: `UFlex brings the latest innovations in
+// printing and packaging technology, offering
+// state-of-the-art solutions such as high-
+// performance CI Flexo presses, advanced
+// ELS printing machines, and extrusion
+// lamination machines. These machines are
+// designed to enhance both the efficiency
+// and quality of the final product.`,
+desc:`A wide range of machines for various printing, lamination, slitting/rewinding, doctoring, and pouch making as per a client's requirement.`,
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-07180621806.jpg",

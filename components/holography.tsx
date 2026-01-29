@@ -376,6 +376,11 @@ const packagingData = [
         content: [
             {
                 type: "paragraph",
+                text:"The UFlex holography business is India’s largest and most trusted provider of brand protection and anti-counterfeiting solutions, as well as an emerging global player in the industry.",
+                strong: ["Holography Business of UFlex"]
+            },
+            {
+                type: "paragraph",
                 text: "The Holography Business of UFlex offers a comprehensive range of holographic solutions, including advanced security holograms, security paper labels & tax stamps, wide web holographic films, stamping foils, transfer holographic metallized paper & paperboard, security documents, and textile application films for sequins, hot melt, and glitter powder.",
                 strong: ["Holography Business of UFlex"]
             },
