@@ -1,7 +1,7 @@
 // app/products/page.tsx
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProductCategorySection from "./product-reusable";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { ReadMoreDialog } from "@/components/expandabletext";
 import Image from 'next/image';
 import Breadcrumb from "@/components/breadcrumb";
+import { useSearchParams } from "next/navigation";
 
 export default function ProductsPage() {
     const productsData: any = {
@@ -454,8 +455,34 @@ export default function ProductsPage() {
 
 
     };
+const searchParams = useSearchParams();
+const catFromUrl = searchParams.get('cat')?.toLowerCase() || null;
 
-    const [selectedKey, setSelectedKey] = useState("flexible");
+const validKeys = [
+  'flexible',
+  'pre-formed',
+  'flexo',
+  'wpp',
+  'eb-cnc',
+  'pharma',
+  'hygiene',
+  'flexfresh',
+  'premium',
+  'n95',
+  'ZipouchR',
+  'injection',
+  // add 'FlexiTubes' if you want to support it later
+] as const;
+
+const initialKey = catFromUrl && validKeys.includes(catFromUrl as any)
+  ? catFromUrl
+  : 'flexible';
+
+const [selectedKey, setSelectedKey] = useState(initialKey);
+
+// Sync when URL changes (back/forward button, direct link)
+
+    // const [selectedKey, setSelectedKey] = useState("flexible");
 
     const product =
         Object.values(productsData).find(
@@ -465,9 +492,20 @@ export default function ProductsPage() {
     const { key: _ignored, ...productProps } = product;
 
 
+    // const handleCategoryClick = (productKey: string) => {
+    //     setSelectedKey(productKey);
+    // };
+
     const handleCategoryClick = (productKey: string) => {
-        setSelectedKey(productKey);
-    };
+  setSelectedKey(productKey);
+
+  // Update URL without reload (clean & shareable)
+  if (typeof window !== 'undefined') {
+    const url = new URL(window.location.href);
+    url.searchParams.set('cat', productKey);
+    window.history.replaceState({}, '', url.toString());
+  }
+};
 
     const enhancedCategories = product.categories.map((cat: any) => ({
         ...cat,
@@ -475,7 +513,12 @@ export default function ProductsPage() {
         onClick: () => handleCategoryClick(cat.productKey),
     }));
 
-
+useEffect(() => {
+  const currentCat = searchParams.get('cat')?.toLowerCase();
+  if (currentCat && validKeys.includes(currentCat as any)) {
+    setSelectedKey(currentCat);
+  }
+}, [searchParams]);
     return (
         <>
 

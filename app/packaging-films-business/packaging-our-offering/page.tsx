@@ -488,9 +488,19 @@ const initialKey = catFromUrl && validKeys.includes(catFromUrl as any)
 
     const { key: productKey, ...productProps } = product;
 
+    // const handleCategoryClick = (productKey: string) => {
+    //     setSelectedKey(productKey);
+    // };
     const handleCategoryClick = (productKey: string) => {
-        setSelectedKey(productKey);
-    };
+  setSelectedKey(productKey);
+
+  // Update URL without reload (clean & shareable)
+  if (typeof window !== 'undefined') {
+    const url = new URL(window.location.href);
+    url.searchParams.set('cat', productKey);
+    window.history.replaceState({}, '', url.toString());
+  }
+};
 
     const enhancedCategories = product.categories.map((cat: any) => ({
         ...cat,
