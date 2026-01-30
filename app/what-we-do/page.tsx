@@ -187,7 +187,7 @@ export default function WhatWeDoPage() {
       title: "Packaging Films and PET Resin",
       href: "/packaging-films-business",
       desc: "UFlex is India’s largest end to end flexible packaging solutions company serving as a one stop shop for all flexible packaging needs.",
-      img: "/images/flex.jpeg",
+      img: "/images/films.jpeg",
     },
     {
       title: "Flexible Packaging",
