@@ -48,7 +48,7 @@ export function AwardsSection({ data,businessKey }: any) {
             {data.linkHref && data.linkLabel && (
               <Link
               href={hallOfFameLink}
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#117ABA] text-white rounded-lg font-medium hover:bg-[#0e5a9c] transition-colors"
+              className="inline-flex items-center gap-2  lato-400 text-[16px] sm:text-[20px] text-[#117ABA] transition-colors"
             >
               {data.linkLabel || "View All Awards"}
               <span aria-hidden>↗</span>

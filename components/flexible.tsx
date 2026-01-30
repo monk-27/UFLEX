@@ -281,7 +281,7 @@ company consistently invests in advanced technologies that consume less energy p
 packaging, promoting more efficient and responsible manufacturing practices. All in-house
 production waste is recycled and reintegrated into the manufacturing cycle, significantly reducing
 landfill pressure and helping curb pollution.`,
-            image: "/images/sus.png",
+            image: "/images/sus/flexible.jpeg",
             linkLabel: "Know More",
             linkHref: "/flexible-packaging-business/sustainability",
         },
