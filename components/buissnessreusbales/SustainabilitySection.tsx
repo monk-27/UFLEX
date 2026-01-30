@@ -49,7 +49,7 @@ export function SustainabilitySection({ data }: any) {
               src={data.image}
               alt={data.title}
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
         </div>
