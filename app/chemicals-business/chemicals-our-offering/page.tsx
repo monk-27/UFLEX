@@ -920,10 +920,10 @@ export default function ProductsPage() {
       overview: "Water-based inks are environmentally friendly alternatives to solvent-based inks, offering excellent print quality with reduced VOC emissions. Suitable for gravure, flexo, and narrow-web printing on various substrates.",
       sections: [
         { name: "FLEX AQUAPAP INKS", image: "/images/chemicals/1.png",description: "They are designed for paper surface printing application. Inks are suitable for printing on coated and uncoated paper/ paper cups with Gravure & Flexo printing process." },
-        { name: "FLEX MARINELAM INKS", image: "/images/chemicals/1.png",description: "These Inks are designed for reverse printing/ lamination application. These inks are suitable for Gravure & Flexo printing on PET & OPP films." },
-        { name: "FLEX AQUASEPTIC INKS", image: "/images/chemicals/1.png",description: "Inks are formulated for surface printing on paper board especially for liquid food packaging. Inks are suitable for printing on paper and board for PE extrusion lamination." },
-        { name: "FLEX AQUACORE INKS",image: "/images/chemicals/1.png", description: "They are suitable for surface printing on kraft & uncoated paper. These inks have high strength and low viscosity and has excellent rub resistance." },
-        { name: "FLEX AQUALABEL INKS",image: "/images/chemicals/1.png", description: "These Inks are designed for surface printing application on metallised paper, primed foil & 2PE paper cups. Inks are suitable for NW flexo printing and have excellent adhesion on primed foil & metallized paper." },
+        { name: "FLEX MARINELAM INKS", image: "/images/chemicals/2.png",description: "These Inks are designed for reverse printing/ lamination application. These inks are suitable for Gravure & Flexo printing on PET & OPP films." },
+        { name: "FLEX AQUASEPTIC INKS", image: "/images/chemicals/3.png",description: "Inks are formulated for surface printing on paper board especially for liquid food packaging. Inks are suitable for printing on paper and board for PE extrusion lamination." },
+        { name: "FLEX AQUACORE INKS",image: "/images/chemicals/4.png", description: "They are suitable for surface printing on kraft & uncoated paper. These inks have high strength and low viscosity and has excellent rub resistance." },
+        { name: "FLEX AQUALABEL INKS",image: "/images/chemicals/5.png", description: "These Inks are designed for surface printing application on metallised paper, primed foil & 2PE paper cups. Inks are suitable for NW flexo printing and have excellent adhesion on primed foil & metallized paper." },
         { name: "FLEX AQUAGLOSS INKS", image: "/images/chemicals/1.png", description: "Inks are formulated for flexo surface printing application on PE, CPP & BOPP films. Inks are suitable for general purpose surface printing jobs like, hygiene & LDPE carry bags." }
       ]
     },
