@@ -310,7 +310,7 @@ export const businesses: BusinessConfig[] = [
                 ` Reinforcing our commitment to sustainability, UFlex has introduced a breakthrough FSSAI-compliant single-pellet solution for incorporating recycled PET (rPET) in food and beverage packaging. This innovation combines recycled PET with virgin PET into a single, high-purity pellet, offering excellent mechanical strength, thermal stability, high clarity, and lower acetaldehyde content.
 
 `,
-            image: "/images/sus.png",
+            image: "/images/sus/pf.jpeg",
             linkLabel: "Know More",
             linkHref: "/packaging-films-business/sustainability",
         },

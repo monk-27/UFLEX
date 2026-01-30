@@ -275,7 +275,7 @@ We continuously strive for
 minimum process waste
 generation and optimally
 recycle the same. \n\n We have many solutions of sustainability segment- holographic transfer on paper and board, cold transfer foils, recycled RSC certified sequins film, cast and cure holographic films among many other.`,
-            image: "/images/sus.png",
+            image: "/images/sus/holography.jpeg",
             linkLabel: "Know More",
             linkHref: "/holography-business/sustainability"
         },

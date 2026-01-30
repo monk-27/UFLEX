@@ -78,7 +78,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
         // desc: "UFlex offers advanced print finishing solutions using electron beam (e-beam) and Cast n Cure technologies, enhancing the visual and functional appeal of flexible packaging. Our portfolio includes a variety of premium finishes such as super gloss for high-impact shelf presence, matte finish for a premium tactile feel, and registered cast n cure for precise, design-specific effects.",
     },
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item4-09042730427.jpg",
+        img: "/images/sus/fp.jpeg",
 
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Pharmaceutical Packaging",
