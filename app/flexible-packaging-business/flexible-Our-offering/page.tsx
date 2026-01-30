@@ -140,7 +140,7 @@ export default function ProductsPage() {
                 { name: "Injection Moulding Products", productKey: "injection" },
             ],
         },
-        wppBags: {
+        wpp: {
             key: "wpp",
             title: "LAMINATED WOVEN POLY PROPYLENE (WPP) BAGS",
             overview:
@@ -477,7 +477,7 @@ const validKeys = [
 const initialKey = catFromUrl && validKeys.includes(catFromUrl as any)
   ? catFromUrl
   : 'flexible';
-
+console.log("intial ket",initialKey ,catFromUrl)
 const [selectedKey, setSelectedKey] = useState(initialKey);
 const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -516,7 +516,8 @@ const sectionRef = useRef<HTMLDivElement>(null);
 
     const enhancedCategories = product.categories.map((cat: any) => ({
         ...cat,
-        isActive: cat.productKey === selectedKey,
+        // isActive: cat.productKey === selectedKey,
+        isActive: cat.productKey.toLowerCase().trim() === selectedKey.toLowerCase().trim(),
         onClick: () => handleCategoryClick(cat.productKey),
     }));
 

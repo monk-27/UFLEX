@@ -428,7 +428,7 @@ const FlexibleComp: React.FC<Props> = ({ business }) => {
 
     let catKey = 'flexible'; // default
 
-    if (titleLower.includes('laminate') || titleLower.includes('flexible laminate')) {
+    if (titleLower.includes('flexible') || titleLower.includes('flexible')) {
       catKey = 'flexible';
     } else if (titleLower.includes('pre-formed') || titleLower.includes('pouch')) {
       catKey = 'pre-formed';
@@ -436,8 +436,14 @@ const FlexibleComp: React.FC<Props> = ({ business }) => {
       catKey = 'flexfresh';
     } else if (titleLower.includes('flexo') || titleLower.includes('printed')) {
       catKey = 'flexo';
-    } else if (titleLower.includes('woven') || titleLower.includes('wpp')) {
-      catKey = 'wpp';
+    }  else if (
+  titleLower.includes("woven") ||
+  titleLower.includes("wpp") ||
+  titleLower.includes("poly propylene") ||
+  titleLower.includes("polypropylene bags")
+) {
+  catKey = "wpp";
+
     } else if (titleLower.includes('electron') || titleLower.includes('cast n cure')) {
       catKey = 'eb-cnc';
     } else if (titleLower.includes('pharma') || titleLower.includes('pharmaceutical')) {
