@@ -438,7 +438,7 @@ const enhancedCategories = flatCategories.map((cat) => ({
           {/* Hero Banner */}
           <section className="relative w-full h-[580px] sm:h-[451px] overflow-hidden">
             <Image
-              src="/images/chemicals-hero-placeholder.jpg" // ← common hero for the page
+              src="/images/herochem.png" // ← common hero for the page
               alt="Inks, Adhesives & Coatings"
               fill
               className="object-cover w-full h-full"
