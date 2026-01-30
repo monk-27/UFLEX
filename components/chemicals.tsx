@@ -24,7 +24,7 @@ import { ReadMoreDialog } from './expandabletext'
 
 const SliderItems: SliderItem[] = [
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-05512105121.jpg",
+        img: "/images/sus/chem.jpeg",
         title: "Inks",
         dynamiclink: "/chemicals-business/chemicals-our-offering",
         // dynamiclink:"/packaging-films-business/packaging-our-offerings"
