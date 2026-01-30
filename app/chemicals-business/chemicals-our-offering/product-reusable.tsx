@@ -190,7 +190,7 @@ export default function ProductCategorySection({
             <div className="space-y-10">
               <div className="flex items-center gap-3">
                 {/* <div className="h-8 w-1.5 bg-[#117ABA] rounded-full" /> */}
-                <h2 className="text-[18px] md:text-[24px] lato-700 text-gray-900">Products</h2>
+                {/* <h2 className="text-[18px] md:text-[24px] lato-700 text-gray-900">Products</h2> */}
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

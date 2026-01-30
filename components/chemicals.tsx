@@ -20,13 +20,19 @@ import SimpleCarousel from './slidercomp'
 import { ReadMoreDialog } from './expandabletext'
 
 
-
+// Default sub-category when clicking a group from slider
+const groupDefaultMap: Record<string, string> = {
+  "Inks": "water-based-inks",
+  "Adhesives": "water-based-adhesives",
+  "Coatings": "water-based-coatings",
+  "Specialty Chemicals": "pu-ink-binders",
+};
 
 const SliderItems: SliderItem[] = [
     {
         img: "/images/sus/chem.jpeg",
         title: "Inks",
-        dynamiclink: "/chemicals-business/chemicals-our-offering",
+        dynamiclink: "/chemicals-business/chemicals-our-offering?cat=Inks",
         // dynamiclink:"/packaging-films-business/packaging-our-offerings"
 
         desc: "High-performance inks for superior print quality, compliant with global food safety and sustainability standards.",
@@ -34,14 +40,14 @@ const SliderItems: SliderItem[] = [
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-05512115121.jpg",
         title: "Adhesives",
-        dynamiclink: "/chemicals-business/chemicals-our-offering",
+        dynamiclink: "/chemicals-business/chemicals-our-offering?cat=Adhesives",
 
         desc: "A range of adhesives that ensure strong bonding, efficient processing, and compliance with global food safety and sustainability standards.",
     },
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-05512125121.jpg",
         title: "Coatings",
-        dynamiclink: "/chemicals-business/chemicals-our-offering",
+        dynamiclink: "/chemicals-business/chemicals-our-offering?cat=Coatings",
 
         desc: "A diverse range of coatings that provide visual appeal and meet diverse industry needs while supporting compliance and sustainability.",
     },
@@ -49,7 +55,7 @@ const SliderItems: SliderItem[] = [
     {
         img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item4-05512135121.jpg",
         title: "Specialty Chemicals ",
-        dynamiclink: "/chemicals-business/chemicals-our-offering",
+        dynamiclink: "/chemicals-business/chemicals-our-offering?cat=Specialty Chemicals",
 
         desc: "From functional additives to performance enhancers and process aids, our solutions are designed to meet the evolving demands of modern packaging.",
     },

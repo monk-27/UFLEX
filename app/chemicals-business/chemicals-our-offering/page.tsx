@@ -2,7 +2,7 @@
 
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ProductCategorySection from "./product-reusable"; // adjust path if needed
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -10,7 +10,12 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Breadcrumb from "@/components/breadcrumb";
 import { useSearchParams } from "next/navigation";
-
+const groupDefaultMap: Record<string, string> = {
+  "Inks": "water-based-inks",
+  "Adhesives": "water-based-adhesives",
+  "Coatings": "water-based-coatings",
+  "Specialty Chemicals": "pu-ink-binders",
+};
 export default function ProductsPage() {
   const searchParams = useSearchParams();
   const catFromUrl = searchParams.get("cat")?.toLowerCase() || null;
@@ -34,52 +39,64 @@ export default function ProductsPage() {
       : "water-based-inks";
 
   const [selectedKey, setSelectedKey] = useState<string>(initialKey);
-
+const sectionRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    const currentCat = searchParams.get("cat")?.toLowerCase();
-    if (currentCat && validKeys.includes(currentCat as any)) {
-      setSelectedKey(currentCat);
-    } else if (!currentCat) {
+    const currentCat = searchParams.get("cat")?.trim() || null;
+
+    if (!currentCat) {
       setSelectedKey("water-based-inks");
+      scrollToActiveItem();
+      return;
+    }
+
+    // Case 1: Direct sub-category (e.g. ?cat=water-based-inks)
+    if (validKeys.includes(currentCat as any)) {
+      setSelectedKey(currentCat);
+      scrollToActiveItem();
+      return;
+    }
+
+    // Case 2: Group name from slider (e.g. ?cat=Inks)
+    const defaultSub = groupDefaultMap[currentCat];
+    if (defaultSub && validKeys.includes(defaultSub as any)) {
+      setSelectedKey(defaultSub);
+
+      // Clean URL to show sub-category (better UX & shareability)
+      if (typeof window !== "undefined") {
+        const url = new URL(window.location.href);
+        url.searchParams.set("cat", defaultSub);
+        window.history.replaceState({}, "", url.toString());
+      }
+
+      scrollToActiveItem();
     }
   }, [searchParams]);
 
+  // Scroll the active sidebar item into view
+  const scrollToActiveItem = () => {
+    setTimeout(() => {
+      const activeEl = document.querySelector('[data-active="true"]');
+      if (activeEl) {
+        activeEl.scrollIntoView({ behavior: "smooth", block: "center" });
+      } else {
+        sectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 400); // slight delay to allow DOM update
+  };
+
   const handleCategoryClick = (productKey: string) => {
-    setSelectedKey(productKey);
+    const lowerKey = productKey.toLowerCase().trim();
+    setSelectedKey(lowerKey);
 
     if (typeof window !== "undefined") {
       const url = new URL(window.location.href);
-      url.searchParams.set("cat", productKey);
+      url.searchParams.set("cat", lowerKey);
       window.history.replaceState({}, "", url.toString());
     }
+
+    scrollToActiveItem();
   };
 
-  // const categories = [
-  //   { name: "Water Based Inks", productKey: "water-based-inks" },
-  //   { name: "Water Based Adhesives", productKey: "water-based-adhesives" },
-  //   { name: "Water Based Coatings", productKey: "water-based-coatings" },
-  //   { name: "Solvent Free Adhesives", productKey: "solvent-free-adhesives" },
-  //   { name: "Solvent Based Adhesives", productKey: "solvent-based-adhesives" },
-  //   { name: "Solvent Based Coatings", productKey: "solvent-based-coatings" },
-  //   { name: "Solvent Based Inks", productKey: "solvent-based-inks" },
-  //   { name: "Radiation Curable Inks", productKey: "radiation-curable-inks" },
-  //   { name: "PU Ink Binders", productKey: "pu-ink-binders" },
-  //   { name: "Radiation Curable Coatings", productKey: "radiation-curable-coatings" },
-  // ];
-  // Add this right after imports (minimal new data)
- 
-
-  // const enhancedCategories = categories.map((cat) => ({
-  //   ...cat,
-  //   isActive: cat.productKey === selectedKey,
-  //   onClick: () => handleCategoryClick(cat.productKey),
-  // }));
-// const flatCategories = groupedCategories.flatMap(group => group.items);  // wait — no, remove groupedCategories reference
-
-// Instead use this (hardcode flat list once — no duplication needed):
-// const flatCategories = groupedCategories.flatMap(group => group.items);  // wait — no, remove groupedCategories reference
-
-// Instead use this (hardcode flat list once — no duplication needed):
 const flatCategories = [
   { name: "Water Based Inks", productKey: "water-based-inks" },
   { name: "Solvent Based Inks", productKey: "solvent-based-inks" },
@@ -437,13 +454,14 @@ const enhancedCategories = flatCategories.map((cat) => ({
             ]}
           />
 
-          <ProductCategorySection
-            title={product.title}
-            // heroImageUrl={product.heroImageUrl}
-            overview={product.overview}
-            categories={enhancedCategories}
-            sections={product.sections}   // ← this makes sub-products show
-          />
+         <div ref={sectionRef} className="pt-12">
+            <ProductCategorySection
+              title={product.title}
+              overview={product.overview}
+              categories={enhancedCategories}
+              sections={product.sections}
+            />
+          </div>
         </div>
       </section>
 
