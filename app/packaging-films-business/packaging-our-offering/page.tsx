@@ -1,7 +1,7 @@
 // app/products/page.tsx
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ProductCategorySection from "./product-reusable";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -465,57 +465,66 @@ export default function ProductsPage() {
 
 
     const searchParams = useSearchParams();
-const catFromUrl = searchParams.get('cat')?.toLowerCase() || null;
+    const catFromUrl = searchParams.get('cat')?.toLowerCase() || null;
 
-// List of all valid keys (for safety)
-const validKeys = [
-  'bopet',
-  'bopp',
-  'cpp',
-  'metallised',
-  'special',
-  'alox-coated',
-] as const;
+    // List of all valid keys (for safety)
+    const validKeys = [
+        'bopet',
+        'bopp',
+        'cpp',
+        'metallised',
+        'special',
+        'alox-coated',
+    ] as const;
 
-const initialKey = catFromUrl && validKeys.includes(catFromUrl as any)
-  ? catFromUrl
-  : 'bopet';
-    // const [selectedKey, setSelectedKey] = useState("bopet");
+    const initialKey = catFromUrl && validKeys.includes(catFromUrl as any)
+        ? catFromUrl
+        : 'bopet';
     const [selectedKey, setSelectedKey] = useState(initialKey);
 
 
     const product = productsData[selectedKey] || productsData.bopet;
 
     const { key: productKey, ...productProps } = product;
+const sectionRef = useRef<HTMLDivElement>(null);
 
-    // const handleCategoryClick = (productKey: string) => {
-    //     setSelectedKey(productKey);
-    // };
     const handleCategoryClick = (productKey: string) => {
-  setSelectedKey(productKey);
+        setSelectedKey(productKey);
 
-  // Update URL without reload (clean & shareable)
-  if (typeof window !== 'undefined') {
-    const url = new URL(window.location.href);
-    url.searchParams.set('cat', productKey);
-    window.history.replaceState({}, '', url.toString());
-  }
-};
+        if (typeof window !== 'undefined') {
+            const url = new URL(window.location.href);
+            url.searchParams.set('cat', productKey);
+            window.history.replaceState({}, '', url.toString());
+            if (sectionRef.current) {
+        sectionRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+        }
+    };
 
     const enhancedCategories = product.categories.map((cat: any) => ({
         ...cat,
         isActive: cat.productKey === selectedKey,
         onClick: () => handleCategoryClick(cat.productKey),
     }));
-useEffect(() => {
-  const currentCat = searchParams.get('cat')?.toLowerCase();
-  if (currentCat && validKeys.includes(currentCat as any)) {
-    setSelectedKey(currentCat);
-  } else if (!currentCat) {
-    // optional: clean URL if invalid/no param → default
-    // window.history.replaceState(null, '', window.location.pathname);
-  }
-}, [searchParams]);
+    useEffect(() => {
+        const currentCat = searchParams.get('cat')?.toLowerCase();
+        if (currentCat && validKeys.includes(currentCat as any)) {
+            setSelectedKey(currentCat);
+            if (sectionRef.current) {
+        setTimeout(() => {
+          sectionRef.current?.scrollIntoView({
+            behavior: "smooth",
+            block: "start", // scroll to top of the section
+          });
+        }, 300); // small delay to let layout settle
+      }
+        } else if (!currentCat) {
+      
+        }
+    }, [searchParams]);
 
     return (
         <>
@@ -576,10 +585,12 @@ useEffect(() => {
                                 { label: "Packaging Films Products" },
                             ]}
                         />
-                        <ProductCategorySection
-                            {...productProps}
-                            categories={enhancedCategories}
-                        />
+                        <div ref={sectionRef} className="scroll-mt-20">
+                            <ProductCategorySection
+                                {...productProps}
+                                categories={enhancedCategories}
+                            />
+                        </div>
                     </div>
                 </div>
             </section>

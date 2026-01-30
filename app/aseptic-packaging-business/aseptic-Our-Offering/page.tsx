@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ProductCategorySection from "./product-reusable";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -120,12 +120,19 @@ const initialKey = catFromUrl && validKeys.includes(catFromUrl as any)
   : null;  // keep null = show default overview
 
 const [selectedKey, setSelectedKey] = useState<string | null>(initialKey);
+const sectionRef = useRef<HTMLDivElement>(null);
 
 // Keep URL in sync (back/forward, direct links)
 useEffect(() => {
   const currentCat = searchParams.get('cat')?.toLowerCase();
   if (currentCat && validKeys.includes(currentCat as any)) {
     setSelectedKey(currentCat);
+    if (sectionRef.current) {
+        sectionRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
   } else if (!currentCat) {
     setSelectedKey(null); // show overview when ?cat= is removed
   }
@@ -138,6 +145,12 @@ useEffect(() => {
     const url = new URL(window.location.href);
     url.searchParams.set('cat', productKey);
     window.history.replaceState({}, '', url.toString());
+    if (sectionRef.current) {
+        sectionRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
   }
 };
 
@@ -346,11 +359,14 @@ The second plant in Sokhna, Egypt, is about to be commissioned. Once operational
             ]}
           />
         <div className="max-w-7xl mx-auto px-4">
+          <div ref={sectionRef} className="scroll-mt-20">
+
           <ProductCategorySection
             key={itemKey}
             {...restProps}
             categories={enhancedCategories}
-          />
+            />
+            </div>
         </div>
       </section>
       <SiteFooter />

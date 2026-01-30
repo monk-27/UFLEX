@@ -1,7 +1,7 @@
 // app/products/page.tsx
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ProductCategorySection from "./product-reusable";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -479,6 +479,7 @@ const initialKey = catFromUrl && validKeys.includes(catFromUrl as any)
   : 'flexible';
 
 const [selectedKey, setSelectedKey] = useState(initialKey);
+const sectionRef = useRef<HTMLDivElement>(null);
 
 // Sync when URL changes (back/forward button, direct link)
 
@@ -504,6 +505,12 @@ const [selectedKey, setSelectedKey] = useState(initialKey);
     const url = new URL(window.location.href);
     url.searchParams.set('cat', productKey);
     window.history.replaceState({}, '', url.toString());
+    if (sectionRef.current) {
+        sectionRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
   }
 };
 
@@ -517,6 +524,12 @@ useEffect(() => {
   const currentCat = searchParams.get('cat')?.toLowerCase();
   if (currentCat && validKeys.includes(currentCat as any)) {
     setSelectedKey(currentCat);
+    if (sectionRef.current) {
+        sectionRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
   }
 }, [searchParams]);
     return (
@@ -583,10 +596,13 @@ useEffect(() => {
                                 { label: "Flexible Packaging Products" },
                             ]}
                         />
+                        <div ref={sectionRef} className="scroll-mt-20">
+
                         <ProductCategorySection
                             {...productProps}
                             categories={enhancedCategories}
-                        />
+                            />
+                            </div>
                     </div>
                 </div>
             </section>

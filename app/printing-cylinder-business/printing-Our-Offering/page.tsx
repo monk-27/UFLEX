@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ProductCategorySection from "./product-reusable";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -133,12 +133,19 @@ const initialKey:any = catFromUrl && validKeys.includes(catFromUrl as any)
   : "gravure"; // default to gravure
 
 const [activeKey, setActiveKey] = useState<typeof validKeys[number]>(initialKey);
+const sectionRef = useRef<HTMLDivElement>(null);
 
 // Sync when URL changes (browser back/forward, direct link)
 useEffect(() => {
   const currentCat = searchParams.get('cat')?.toLowerCase();
   if (currentCat && validKeys.includes(currentCat as any)) {
     setActiveKey(currentCat as any);
+    if (sectionRef.current) {
+        sectionRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
   } else if (!currentCat) {
     setActiveKey("gravure");
   }
@@ -152,6 +159,12 @@ const handleCategoryClick = (key: string) => {
     const url = new URL(window.location.href);
     url.searchParams.set('cat', key);
     window.history.replaceState({}, '', url.toString());
+    if (sectionRef.current) {
+        sectionRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
   }
 };
 
@@ -225,6 +238,7 @@ UFlex’ Printing Cylinders business products range includes a variety of Gravur
               { label: "Printing Cylinders Products" },
             ]}
           />
+<div ref={sectionRef} className="scroll-mt-20">
 
           <ProductCategorySection
             title={printingCylindersData.title}
@@ -233,7 +247,8 @@ UFlex’ Printing Cylinders business products range includes a variety of Gravur
             categories={enhancedCategories}
             activeKey={activeKey}
             sectionData={printingCylindersData.sections[activeKey]}
-          />
+            />
+            </div>
         </div>
       </section>
 

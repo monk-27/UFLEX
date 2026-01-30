@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ProductCategorySection from "./product-reusable";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -16,6 +16,7 @@ export default function ProductsPage() {
     // const [selectedKey, setSelectedKey] = useState<string>("hologram");
     const searchParams = useSearchParams();
     const catFromUrl = searchParams.get('cat')?.toLowerCase() || null;
+const sectionRef = useRef<HTMLDivElement>(null);
 
     const validKeys = [
         "hologram",
@@ -37,6 +38,12 @@ export default function ProductsPage() {
         const currentCat = searchParams.get('cat')?.toLowerCase();
         if (currentCat && validKeys.includes(currentCat as any)) {
             setSelectedKey(currentCat);
+            if (sectionRef.current) {
+        sectionRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
         } else if (!currentCat) {
             setSelectedKey("hologram");
         }
@@ -182,6 +189,12 @@ export default function ProductsPage() {
       const url = new URL(window.location.href);
       url.searchParams.set("cat", productKey);
       window.history.replaceState({}, "", url.toString());
+      if (sectionRef.current) {
+        sectionRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
     }
   };
 
@@ -275,10 +288,13 @@ export default function ProductsPage() {
                                 { label: "Holography Products" },
                             ]}
                         />
+                        <div ref={sectionRef} className="scroll-mt-20">
+
                         <ProductCategorySection
                             {...productProps}
                             categories={enhancedCategories}
-                        />
+                            />
+                            </div>
                     </div>
                 </div>
             </section>

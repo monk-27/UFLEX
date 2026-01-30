@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ProductCategorySection from "./product-reusable";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -556,6 +556,7 @@ const initialKey = catFromUrl && validKeys.includes(catFromUrl as any)
   : "packaging";   // default tab when no ?cat or invalid
 
 const [selectedKey, setSelectedKey] = useState<string>(initialKey);
+const sectionRef = useRef<HTMLDivElement>(null);
 
 // Keep in sync when URL changes (back/forward, direct link)
 
@@ -576,6 +577,12 @@ useEffect(() => {
   const currentCat = searchParams.get('cat')?.toLowerCase();
   if (currentCat && validKeys.includes(currentCat as any)) {
     setSelectedKey(currentCat);
+    if (sectionRef.current) {
+        sectionRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
   } else if (!currentCat) {
     setSelectedKey("packaging"); // reset to default when param cleared
   }
@@ -590,6 +597,12 @@ const handleCategoryClick = (productKey: string) => {
     const url = new URL(window.location.href);
     url.searchParams.set('cat', productKey);
     window.history.replaceState({}, '', url.toString());
+    if (sectionRef.current) {
+        sectionRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
   }
 };
 
@@ -659,11 +672,13 @@ const enhancedCategories =
                             { label: "Engineering Business Products" },
                         ]}
                     />
+<div ref={sectionRef} className="scroll-mt-20">
 
                     <ProductCategorySection
                         {...product}
                         categories={enhancedCategories}
-                    />
+                        />
+                        </div>
                 </div>
             </section>
 
