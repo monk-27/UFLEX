@@ -67,44 +67,81 @@ const SliderItems: SliderItem[] =
 
 
 
-        {
-            img: "/images/holography/h7.png",
-            // dynamiclink: "/holography-business/holography-Our-Offering",
-            title: "HOLOGRAM",
-            desc: "",
+        // {
+        //     img: "/images/holography/h7.png",
+        //     // dynamiclink: "/holography-business/holography-Our-Offering",
+        //     title: "HOLOGRAM",
+        //     desc: "",
 
-        },
+        // },
+
+        // {
+        //     img: "/images/holography/h4.png",
+        //     // dynamiclink: "/holography-business/holography-Our-Offering",
+        //     title: "HOLOGRAPHIC FILM (Wide Web Films)",
+        //     desc: "",
+        // },
+        // {
+        //     img: "/images/holography/h3.png",
+        //     // dynamiclink: "/holography-business/holography-Our-Offering",
+        //     title: "TEXTILE VALUE ADDITION PRODUCT",
+        //     desc: "",
+        // },
+        // {
+        //     img: "/images/holography/h6.png",
+        //     // dynamiclink: "/holography-business/holography-Our-Offering",
+        //     title: "Hot Stamping Foil",
+        //     desc: "",
+        // },
+        // {
+        //     img: "/images/holography/h5.png",
+        //     // dynamiclink: "/holography-business/holography-Our-Offering",
+        //     title: "HOLOGRAPHIC METALIZED PAPER & BOARD TRANSFER",
+        //     desc: "",
+        // },
+        // {
+        //     img: "/images/holography/h1.png",
+        //     // dynamiclink: "/holography-business/holography-Our-Offering",
+        //     title: "Labeling Solution",
+        //     desc: "",
+        // },
 
         {
-            img: "/images/holography/h4.png",
-            // dynamiclink: "/holography-business/holography-Our-Offering",
-            title: "HOLOGRAPHIC FILM (Wide Web Films)",
-            desc: "",
-        },
-        {
-            img: "/images/holography/h3.png",
-            // dynamiclink: "/holography-business/holography-Our-Offering",
-            title: "TEXTILE VALUE ADDITION PRODUCT",
-            desc: "",
-        },
-        {
-            img: "/images/holography/h6.png",
-            // dynamiclink: "/holography-business/holography-Our-Offering",
-            title: "Hot Stamping Foil",
-            desc: "",
-        },
-        {
-            img: "/images/holography/h5.png",
-            // dynamiclink: "/holography-business/holography-Our-Offering",
-            title: "HOLOGRAPHIC METALIZED PAPER & BOARD TRANSFER",
-            desc: "",
-        },
-        {
-            img: "/images/holography/h1.png",
-            // dynamiclink: "/holography-business/holography-Our-Offering",
-            title: "Labeling Solution",
-            desc: "",
-        },
+    img: "/images/holography/h7.png",
+    // dynamiclink: "/holography-business/holography-Our-Offering",
+    title: "Hologram",
+    desc: "Best-in-class holograms using 2D/3D, Dot Matrix, and Kinemax technologies, offering vibrant colours, high print clarity, superior quality, and standard or customised formats.",
+  },
+  {
+    img: "/images/holography/h4.png",
+    // dynamiclink: "/holography-business/holography-Our-Offering",
+    title: "Holographic Film (Wide Web Films)",
+    desc: "High-quality holographic films (12–50 microns) for security and aesthetic applications, suitable for gift wrapping, lamination, and packaging, enhancing visual appeal and buyer interest at the point of sale.",
+  },
+  {
+    img: "/images/holography/h3.png",
+    // dynamiclink: "/holography-business/holography-Our-Offering",
+    title: "Textile Value Addition Product",
+    desc: "OEKO-TEX certified sequin films for embroidered and high-fashion garments, available in 800+ colours and designs, suitable for computerized and hand embroidery, with thickness ranging from 91 to 175 microns.",
+  },
+  {
+    img: "/images/holography/h6.png",
+    // dynamiclink: "/holography-business/holography-Our-Offering",
+    title: "Hot Stamping Foil",
+    desc: "Holographic and non-holographic hot stamping foils for printing, packaging, and textiles, designed to enhance visual appeal and brand protection, suitable for fine detailing and compatible with diverse substrates.",
+  },
+  {
+    img: "/images/holography/h5.png",
+    // dynamiclink: "/holography-business/holography-Our-Offering",
+    title: "Holographic Metallized Paper & Board Transfer",
+    desc: "Transfer metallized paper and board using aluminium coating to deliver high-gloss, mirror-like finishes for packaging, labels, and decorative applications, offering superior aesthetic appeal and versatile surface compatibility.",
+  },
+  {
+    img: "/images/holography/h1.png",
+    // dynamiclink: "/holography-business/holography-Our-Offering",
+    title: "Labeling Solution",
+    desc: "Pressure-sensitive labelling solutions across multiple substrates including paper, foil, synthetics, and films, offering high-quality, customised labels for diverse industries to enhance product visibility and brand appeal.",
+  },
 
 
 
