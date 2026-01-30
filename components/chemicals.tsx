@@ -358,7 +358,7 @@ const ChemicalsComp: React.FC<Props> = ({ business }) => {
                                 items={business.caseStudies}
                             />
                         )}
-                        <AwardsSection data={business.awards} />
+                        <AwardsSection data={business.awards} businessKey="chemicals" />
 
                         <AccreditationsSlider items={business.accreditation ?? []} />
                     </div>

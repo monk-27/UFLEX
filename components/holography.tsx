@@ -630,7 +630,7 @@ const HoloGraphyComp: React.FC<Props> = ({ business }) => {
                                 items={business.caseStudies}
                             />
                         )}
-                        <AwardsSection data={business.awards} />
+                        <AwardsSection data={business.awards} businessKey="holography" />
 
                         <AccreditationsSlider items={business.accreditation ?? []} />
                     </div>

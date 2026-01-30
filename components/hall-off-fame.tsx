@@ -14,6 +14,7 @@ import LeadershipAwards from "./spotlight";
 import Link from "next/link";
 import SustainabilityCarousel from "./hall-main";
 import { AwardsSlider } from "./buissnessreusbales/awards-slider";
+import { useSearchParams } from "next/navigation";
 
 /* --------------------- Dynamic import (client-only) --------------------- */
 const AwardsTabs = dynamic(() => import("@/components/leaders"), {
@@ -149,13 +150,19 @@ export const business = {
     ],
   },
 };
-
+type BusinessAwardsProps = {
+  initialBusiness?: string;
+};
 /* --------------------------- Page --------------------------- */
-const HallPage = () => {
+const HallPage = ({ initialBusiness = "corporate-awards" }: BusinessAwardsProps) => {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
   const rowRef = useRef<HTMLDivElement>(null);
   const [hasMounted, setHasMounted] = useState(false);
+const searchParams = useSearchParams();
+  const businessFromUrl = searchParams.get("business")?.toLowerCase() || initialBusiness;
 
+  // Ref to the Awards section container
+  const awardsSectionRef = useRef<HTMLDivElement>(null);
   /* ----- Scroll handling ----- */
   const scrollRow = (dir: "left" | "right") => {
     const el = rowRef.current;
@@ -177,6 +184,21 @@ const HallPage = () => {
   useEffect(() => {
     setHasMounted(true);
   }, []);
+
+
+  useEffect(() => {
+    if (awardsSectionRef.current && businessFromUrl !== "corporate-awards") {
+      // Small delay to let tab selection animation finish
+      const timer = setTimeout(() => {
+        awardsSectionRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",     // scroll to top of the section
+        });
+      }, 600); // 600ms delay works well with most animations
+
+      return () => clearTimeout(timer);
+    }
+  }, [businessFromUrl]);
 
   return (
     <main className="min-h-screen bg-white">
@@ -230,9 +252,12 @@ const HallPage = () => {
         </div>
 
 
-        <section className="pt-6 pb-16  w-full ">
-          <AwardsTabs />
-        </section>
+        <section 
+        ref={awardsSectionRef}   // ← THIS IS THE KEY
+        className="pt-6 pb-16 w-full scroll-mt-20" // scroll-margin-top to leave space under header
+      >
+        <AwardsTabs initialBusiness={businessFromUrl} />
+      </section>
       </section>
 
 

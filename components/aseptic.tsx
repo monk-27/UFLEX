@@ -369,7 +369,7 @@ const AsepticComp: React.FC<Props> = ({ business }) => {
                 items={business.caseStudies}
               />
             )}
-            <AwardsSection data={business.awards} />
+            <AwardsSection data={business.awards} businessKey="aseptic-packaging" />
 
             <AccreditationsSlider items={business.accreditation ?? []} />
           </div>

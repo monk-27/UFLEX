@@ -384,7 +384,7 @@ const CylComp: React.FC<Props> = ({ business }) => {
                 items={business.caseStudies}
               />
             )}
-            <AwardsSection data={business.awards} />
+            <AwardsSection data={business.awards} businessKey="printing-cylinders" />
 
             <AccreditationsSlider items={business.accreditation ?? []} />
           </div>

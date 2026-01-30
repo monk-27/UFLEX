@@ -598,7 +598,7 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                             items={business.caseStudies}
                         />
                     )}
-                    <AwardsSection data={business.awards} />
+                    <AwardsSection data={business.awards} businessKey="packaging-films" />
 
                     <AccreditationsSlider items={business.accreditation ?? []} />
 

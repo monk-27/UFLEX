@@ -2,13 +2,17 @@
 "use client"
 import { HighlightBlock } from "@/app/business/data";
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
   data: HighlightBlock;
+  businessKey: string;
 };
 
-export function AwardsSection({ data }: any) {
+export function AwardsSection({ data,businessKey }: any) {
   if (!data || !data.image) return null;
+
+  const hallOfFameLink = `/hall-of-fame?business=${businessKey}`;
   return (
     <section className="relative w-screen left-1/2 right-1/2 -mx-[50vw]">
       <div className="relative h-[350px] md:h-[360px] lg:h-[500px] overflow-hidden">
@@ -42,18 +46,13 @@ export function AwardsSection({ data }: any) {
             </p>
 
             {data.linkHref && data.linkLabel && (
-              <a
-                href={data.linkHref}
-                className="inline-flex items-center gap-1 lato-700 text-[16px] sm:text-[20px] text-[#117ABA] "
-              >
-                                <div className="underline underline-offset-2">
-
-                {data.linkLabel}
-                
-                <span aria-hidden>↗</span>
-          </div>
-
-              </a>
+              <Link
+              href={hallOfFameLink}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#117ABA] text-white rounded-lg font-medium hover:bg-[#0e5a9c] transition-colors"
+            >
+              {data.linkLabel || "View All Awards"}
+              <span aria-hidden>↗</span>
+            </Link>
             )}
           </div>
         </div>

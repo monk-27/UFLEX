@@ -1,273 +1,8 @@
 
-
-// "use client";
-
-// import Image from "next/image";
-// import { useId, useState } from "react";
-// import { motion, AnimatePresence } from "framer-motion";
-// import { ChevronRight } from "lucide-react";
-
-// /* =========================
-//    Palette
-// ========================= */
-// const cardColors = [
-//   {
-//     border: "border-[#117ABA]",
-//     bg: "bg-gray-100",
-//     title: "text-[#117ABA]",
-//     ring: "ring-[#117ABA]",
-//     tint: "bg-[#117ABA]",
-//     textOnTint: "text-white",
-//   },
-// ] as const;
-
-// /* =========================
-//    Types & Data
-// ========================= */
-// type AwardCard = {
-//   title: string;
-//   byline: string;
-//   description: string;
-//   image: string;
-// };
-
-// type TabKey =
-//   | "packaging-films"
-//   | "flexible-packaging"
-//   | "chemicals"
-//   | "aseptic-packaging"
-//   | "holography"
-//   | "engineering";
-
-// const TABS: { key: TabKey; label: string }[] = [
-//   { key: "packaging-films", label: "Packaging Films and PET Resin" },
-//   { key: "chemicals", label: "Chemicals" },
-//   { key: "aseptic-packaging", label: "Aseptic Packaging" },
-//   { key: "flexible-packaging", label: "Flexible Packaging" },
-//   { key: "holography", label: "Holography" },
-//   { key: "engineering", label: "Engineering" },
-// ];
-
-// // Populate available tabs now; others can be filled later
-// const AWARDS: Record<TabKey, AwardCard[]> = {
-//   "packaging-films": [
-//     {
-//       title: "35th Packaging Innovation Awards 2024",
-//       byline: "By Dow",
-//       description:
-//         "UFlex’s PET Film for cold blister formation was selected as one of the finalists at the 35th Packaging Innovation Awards 2024 by Dow.",
-//       image:
-//         "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/35th-Packaging-Innovation-Awards-202404.jpg",
-//     },
-//     {
-//       title: "Sustainability of the Year & Product of the Year",
-//       byline: "By AIMCAL Awards 2021",
-//       description:
-//         "UFlex’s F-ISB Cold Forming Metalized BOPET film for Blister Packaging received the Sustainability of the Year award and our Non-woven block bottom re-closable bags for rice packaging, received the Product of the Year award at the AIMCAL Awards 2021.",
-//       image:
-//         "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Sustainability-of-the-Year-&-Product-of-the-Year08.jpg",
-//     },
-//   ],
-//   "flexible-packaging": [
-//     {
-//       title: "INDIASTAR 2024 awards",
-//       byline: "By Indian Institute of Packaging",
-//       description:
-//         "UFlex was recognised for its excellence in packaging at the recent INDIASTAR 2024 Awards , where it bagged four awards.",
-//       image:
-//         "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/INDIASTAR-2024-awards03.jpeg",
-//     },
-//     {
-//       title: "Winner – Sustainable Packaging Challenge",
-//       byline: "At PACK.Nxt 2024",
-//       description:
-//         "At the 2nd edition of PACK.Nxt 2024, a premier event for smart, active, and sustainable packaging innovations, UFlex was named a winner of the Sustainable Packaging Challenge.",
-//       image:
-//         "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Winner-%E2%80%93-Sustainable-Packaging-Challenge37.jpeg",
-//     },
-//     {
-//       title: "Silver Award – Technical Innovation",
-//       byline: "By FPA",
-//       description:
-//         "Flex Films USA won the Silver Award - Technical Innovation at the Flexible Packaging Achievement Awards 2023, organized by the FPA, for its F-UHB-M Ultra High Barrier & High Metal Bond Metallized Polyester Film for aluminum foil replacement.",
-//       image:
-//         "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Silver-Award-%E2%80%93-Technical-Innovation56.jpg",
-//     },
-//   ],
-//   chemicals: [
-//     {
-//       title: "Water Champion Award",
-//       byline: "Presented by CII Northern Region",
-//       description:
-//         'UFlex’s Chemicals business has been honoured with the "Water Champion Award" at the 4th CII NR Green Practices Awards held recently.',
-//       image:
-//         "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Water-Champion-Award41.jpg",
-//     },
-//     {
-//       title: "President’s Award for Sustainability",
-//       byline: "SIES SOP Star Awards 2025",
-//       description:
-//         "UFlex’s chemicals business won the prestigious President’s Award for Sustainability and two awards in the packaging Materials & Components category at the SIES SOP Star Awards 2025.",
-//       image:
-//         "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/President%E2%80%99s-Award-for-Sustainability02.jpeg",
-//     },
-//     {
-//       title: "Energy Champion Award",
-//       byline: "Presented by CII Northern Region",
-//       description:
-//         "UFlex’s Chemicals business received the Energy Champion Award at the 3rd edition of the CII Northern Region’s Green Practices Award for Industries for its commitment to sustainability and energy efficiency.",
-//       image:
-//         "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Energy-Champion-Award31.jpeg",
-//     },
-//   ],
-//   "aseptic-packaging": [],
-//   holography: [],
-//   engineering: [],
-// };
-
-// export default function AwardsTabs() {
-//   const [active, setActive] = useState<TabKey>("packaging-films");
-//   const tablistId = useId();
-//   const layoutScope = useId(); // unique per instance for framer layoutId
-
-//   const onKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
-//     const current = TABS.findIndex((t) => t.key === active);
-//     if (e.key === "ArrowRight") {
-//       const next = (current + 1) % TABS.length;
-//       setActive(TABS[next].key);
-//     } else if (e.key === "ArrowLeft") {
-//       const prev = (current - 1 + TABS.length) % TABS.length;
-//       setActive(TABS[prev].key);
-//     }
-//   };
-
-//   return (
-//     <section className="py-16 sm:py-20">
-//       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-//         <h2 className="mb-8 text-center text-[24px] lato-700 text-[#117ABA] md:text-[28px] ">
-//           Business Awards
-//         </h2>
-
-//         {/* Tabs */}
-//         <div
-//           role="tablist"
-//           aria-label="Business Award Categories"
-//           className="relative mx-auto mb-8 flex w-full max-w-5xl items-end justify-between gap-3 overflow-x-auto border-b border-slate-200 pb-2"
-//           id={tablistId}
-//         >
-//           {TABS.map((t) => {
-//             const isActive = t.key === active;
-//             return (
-//               <button
-//                 key={t.key}
-//                 role="tab"
-//                 aria-selected={isActive}
-//                 aria-controls={`panel-${t.key}`}
-//                 id={`tab-${t.key}`}
-//                 onClick={() => setActive(t.key)}
-//                 onKeyDown={onKeyDown}
-//                 tabIndex={isActive ? 0 : -1}
-//                 className={`relative whitespace-nowrap px-2 pb-2 text-[15px] font-semibold transition ${
-//                   isActive ? "text-[#117ABA]" : "text-slate-700 hover:text-slate-900"
-//                 }`}
-//               >
-//                 {t.label}
-//                 {isActive && (
-//                   <motion.span
-//                     layoutId={`tab-underline-${layoutScope}`}
-//                     className="absolute -bottom-[1px] left-0 right-0 h-[3px] rounded-full bg-[#117ABA]"
-//                   />
-//                 )}
-//               </button>
-//             );
-//           })}
-//         </div>
-
-//         {/* Panels */}
-//         <AnimatePresence mode="wait" initial={false}>
-//           <motion.div
-//             key={active}
-//             role="tabpanel"
-//             id={`panel-${active}`}
-//             aria-labelledby={`tab-${active}`}
-//             initial={{ opacity: 0, y: 10 }}
-//             animate={{ opacity: 1, y: 0 }}
-//             exit={{ opacity: 0, y: -6 }}
-//             transition={{ duration: 0.25 }}
-//           >
-//             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-//               {AWARDS[active].length > 0 ? (
-//                 AWARDS[active].map((card, idx) => {
-//                   const c = cardColors[idx % cardColors.length];
-//                   return (
-//                     <article
-//                       key={card.title + idx}
-//                       className={`group overflow-hidden rounded-sm  shadow transition`}
-//                     >
-//                       {/* Image wrapper must be relative for `fill` */}
-//                       <div className="relative h-60 w-full overflow-hidden">
-//                         <Image
-//                           src={card.image}
-//                           alt={card.title}
-//                           fill
-//                           className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
-//                           priority={idx === 0}
-//                         />
-//                       </div>
-
-//                       <div className="space-y-3 p-5">
-//                         <h3 className="text-lg manrope-700 text-[#117ABA]">{card.title}</h3>
-//                         <p className="text-[13.5px] manrope-600 text-slate-900">
-//                           {card.byline}
-//                         </p>
-//                         <p className="line-clamp-6 text-[14px] leading-6 text-slate-700">
-//                           {card.description}
-//                         </p>
-//                       </div>
-//                     </article>
-//                   );
-//                 })
-//               ) : (
-//                 <div className="col-span-full rounded-xl border border-dashed border-slate-300 p-10 text-center text-slate-600">
-//                   Data coming soon for{" "}
-//                   <span className="font-semibold">
-//                     {TABS.find((t) => t.key === active)?.label}
-//                   </span>
-//                   .
-//                 </div>
-//               )}
-//             </div>
-
-//             {/* {AWARDS[active].length > 0 && (
-//               <div className="mt-8 flex justify-center">
-//                 <button className="inline-flex items-center gap-1 rounded-full bg-[#117ABA] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#243B6B]">
-//                   View More <ChevronRight size={16} />
-//                 </button>
-//               </div>
-//             )} */}
-//           </motion.div>
-//         </AnimatePresence>
-//       </div>
-
-//       {/* tiny util: line clamp for descriptions */}
-//       <style jsx>{`
-//         .line-clamp-6 {
-//           display: -webkit-box;
-//           -webkit-line-clamp: 6;
-//           -webkit-box-orient: vertical;
-//           overflow: hidden;
-//         }
-//       `}</style>
-//     </section>
-//   );
-// }
-
-
-
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 type Year = 2025 | 2024 | 2023 | 2022 | 2021 | 2020 | 2019 | 2018;
 type YearMap<T> = Partial<Record<Year, T>>;
 
@@ -289,14 +24,14 @@ type AwardsData = {
 
 const AWARDS_DATA: Record<
   "corporate-awards"
-  |"packaging-films" 
-  | "flexible-packaging" 
-  | "aseptic-packaging" 
-  |"chemicals" 
-  | "holography" 
+  | "packaging-films"
+  | "flexible-packaging"
+  | "aseptic-packaging"
+  | "chemicals"
+  | "holography"
   | "engineering"
-  |"printing-cylinders" 
-  |"flexible-tubes",
+  | "printing-cylinders"
+  | "flexible-tubes",
   AwardsData
 > = {
   /* ================= PACKAGING FILMS ================= */
@@ -304,123 +39,124 @@ const AWARDS_DATA: Record<
     label: "Corporate",
     years: [2025],
     data: {
-      2025:[
+      2025: [
         {
-    image: "/images/awards/b1.png",
-    title: "ET Sustainable Organization 2025",
-    by: " ET Now",
-    description:
-      "UFlex was recognised as an ET Sustainable Organization for its commitment to circularity, responsible manufacturing, and long-term ESG goals. The award honours businesses that demonstrate measurable progress in environmental stewardship and sustainability-led transformation.",
-  },
-  {
-    image: "/images/awards/b2.png",
-    title: "ET Now Best Organisations to Work 2025",
-    by: "ET Now",
-    description:
-      "UFlex received this recognition for fostering a high-performance workplace built on innovation, employee engagement, and strong leadership. The award honours companies that excel in culture-building, talent development, and employee well-being.",
-  },
-  {
-    image: "/images/awards/b3.png",
-    title: "Business Leader of the Decade 2024 – Mr. Ashok Chaturvedi",
-    by: "Indo-American Chamber of Commerce (IACC)",
-    description:
-      "UFlex Founder & Chairman Mr. Ashok Chaturvedi was honoured for his visionary leadership and contribution to the packaging industry. The award recognises leaders who have significantly influenced India–US business relations and driven industrial, technological, and economic growth over the decade.",
-  },
+          image: "/images/awards/b1.png",
+          title: "ET Sustainable Organization 2025",
+          by: " ET Now",
+          description:
+            "UFlex was recognised as an ET Sustainable Organization for its commitment to circularity, responsible manufacturing, and long-term ESG goals. The award honours businesses that demonstrate measurable progress in environmental stewardship and sustainability-led transformation.",
+        },
+        {
+          image: "/images/awards/b2.png",
+          title: "ET Now Best Organisations to Work 2025",
+          by: "ET Now",
+          description:
+            "UFlex received this recognition for fostering a high-performance workplace built on innovation, employee engagement, and strong leadership. The award honours companies that excel in culture-building, talent development, and employee well-being.",
+        },
+        {
+          image: "/images/awards/b3.png",
+          title: "Business Leader of the Decade 2024 – Mr. Ashok Chaturvedi",
+          by: "Indo-American Chamber of Commerce (IACC)",
+          description:
+            "UFlex Founder & Chairman Mr. Ashok Chaturvedi was honoured for his visionary leadership and contribution to the packaging industry. The award recognises leaders who have significantly influenced India–US business relations and driven industrial, technological, and economic growth over the decade.",
+        },
 
-  {
-    image: "/images/awards/b4.png",
-    title: "IFCA Star Awards 2025",
-    by: "Indian Flexible Packaging and Folding Carton Association (IFCA)",
-    description:
-      "UFlex won 16 awards—the highest among all entrants—recognising its excellence in packaging design, sustainability, and innovation. The IFCA Star Awards celebrate the most advanced and impactful solutions in flexible packaging, highlighting UFlex's leadership in delivering functional, visually appealing, and environmentally responsible packaging.",
-  },
-  {
-    image: "/images/awards/b5.png",
-    title: "Top Employer India 2025",
-    by: "Top Employers Institute (TEI)",
-    description:
-      "UFlex earned the Top Employer certification for its outstanding HR practices, employee development initiatives, and inclusive workplace culture. The TEI recognition is awarded to organisations that meet rigorous global standards in people strategy, leadership, and talent experience.",
-  },
-  {
-    image: "/images/awards/b6.png",
-    title: "ET Edge Top 100 CSOs – Mr. Jeevaraj Pillai",
-    by: "ET Edge Global Sustainability Alliance",
-    description:
-      "UFlex’s Mr. Jeevaraj Pillai was named among the Top 100 CSOs for his leadership in driving sustainability strategy, innovation, and ESG alignment. The recognition honours global leaders who are shaping sustainable business models and accelerating responsible transformation across industries.",
-  },
+        {
+          image: "/images/awards/b4.png",
+          title: "IFCA Star Awards 2025",
+          by: "Indian Flexible Packaging and Folding Carton Association (IFCA)",
+          description:
+            "UFlex won 16 awards—the highest among all entrants—recognising its excellence in packaging design, sustainability, and innovation. The IFCA Star Awards celebrate the most advanced and impactful solutions in flexible packaging, highlighting UFlex's leadership in delivering functional, visually appealing, and environmentally responsible packaging.",
+        },
+        {
+          image: "/images/awards/b5.png",
+          title: "Top Employer India 2025",
+          by: "Top Employers Institute (TEI)",
+          description:
+            "UFlex earned the Top Employer certification for its outstanding HR practices, employee development initiatives, and inclusive workplace culture. The TEI recognition is awarded to organisations that meet rigorous global standards in people strategy, leadership, and talent experience.",
+        },
+        {
+          image: "/images/awards/b6.png",
+          title: "ET Edge Top 100 CSOs – Mr. Jeevaraj Pillai",
+          by: "ET Edge Global Sustainability Alliance",
+          description:
+            "UFlex’s Mr. Jeevaraj Pillai was named among the Top 100 CSOs for his leadership in driving sustainability strategy, innovation, and ESG alignment. The recognition honours global leaders who are shaping sustainable business models and accelerating responsible transformation across industries.",
+        },
 
-  {
-    image: "/images/awards/b7.png",
-    title: "SIES SOP Star Awards 2025",
-    by: "SIES School of Packaging",
-    description:
-      "UFlex was honoured for outstanding packaging innovations that advance sustainability, functionality, and consumer convenience. Winning eight awards, including the prestigious President’s Sustainability Award, reflects UFlex’s commitment to environmentally responsible and high-performance packaging.",
-  },
-  {
-    image: "/images/awards/b8.png",
-    title: "Most Preferred Workplaces 2024–25",
-    by: "Team Marksmen & India Today Group",
-    description:
-      "UFlex received this recognition for fostering a resilient, future-ready workplace driven by innovation, employee well-being, and strong cultural values. The award honours brands that excel in leadership, employee experience, and organisational development.",
-  },
-  {
-    image: "/images/awards/b9.png",
-    title: "Dream Employer of the Year – Multiple Categories",
-    by: "World HRD Congress 2025",
-    description:
-      "UFlex was honoured across categories for exemplary HR processes, including training excellence, employee engagement, and HR technology adoption. These awards recognise organisations that prioritise learning culture, workforce transformation, and people-centric innovation.",
-  },
+        {
+          image: "/images/awards/b7.png",
+          title: "SIES SOP Star Awards 2025",
+          by: "SIES School of Packaging",
+          description:
+            "UFlex was honoured for outstanding packaging innovations that advance sustainability, functionality, and consumer convenience. Winning eight awards, including the prestigious President’s Sustainability Award, reflects UFlex’s commitment to environmentally responsible and high-performance packaging.",
+        },
+        {
+          image: "/images/awards/b8.png",
+          title: "Most Preferred Workplaces 2024–25",
+          by: "Team Marksmen & India Today Group",
+          description:
+            "UFlex received this recognition for fostering a resilient, future-ready workplace driven by innovation, employee well-being, and strong cultural values. The award honours brands that excel in leadership, employee experience, and organisational development.",
+        },
+        {
+          image: "/images/awards/b9.png",
+          title: "Dream Employer of the Year – Multiple Categories",
+          by: "World HRD Congress 2025",
+          description:
+            "UFlex was honoured across categories for exemplary HR processes, including training excellence, employee engagement, and HR technology adoption. These awards recognise organisations that prioritise learning culture, workforce transformation, and people-centric innovation.",
+        },
 
-  {
-    image: "/images/awards/b10.png",
-    title: "North India Best Employer Brand Award 2024",
-    by: "Employer Branding Institute / World HRD Congress",
-    description:
-      "UFlex received this award for building a strong employer brand through innovative HR practices, leadership development, and employee engagement. It recognises organisations that align culture, communication, and talent strategy to create sustained workplace excellence.",
-  },
-  {
-    image: "/images/awards/b11.png",
-    title: "Sustainable Packaging Challenge Winner – PACK.NXT 2024",
-    by: "PACK.NXT",
-    description:
-      "UFlex won this award for its next-generation sustainable packaging technologies designed to promote recyclability and reduce environmental impact. The recognition highlights leading innovations that support circularity and deliver practical, scalable sustainability solutions.",
-  },
-  {
-    image: "/images/awards/b12.png",
-    title: "ET Sustainable Organization 2023",
-    by: "ET Edge",
-    description:
-      "UFlex Limited was recognised as an Economic Times Sustainable Organization 2023 for its contributions to sustainable development. This honour reflects the company’s ESG-driven growth, responsible manufacturing, and commitment to creating long-term value for all stakeholders.",
-  },
+        {
+          image: "/images/awards/b10.png",
+          title: "North India Best Employer Brand Award 2024",
+          by: "Employer Branding Institute / World HRD Congress",
+          description:
+            "UFlex received this award for building a strong employer brand through innovative HR practices, leadership development, and employee engagement. It recognises organisations that align culture, communication, and talent strategy to create sustained workplace excellence.",
+        },
+        {
+          image: "/images/awards/b11.png",
+          title: "Sustainable Packaging Challenge Winner – PACK.NXT 2024",
+          by: "PACK.NXT",
+          description:
+            "UFlex won this award for its next-generation sustainable packaging technologies designed to promote recyclability and reduce environmental impact. The recognition highlights leading innovations that support circularity and deliver practical, scalable sustainability solutions.",
+        },
+        {
+          image: "/images/awards/b12.png",
+          title: "ET Sustainable Organization 2023",
+          by: "ET Edge",
+          description:
+            "UFlex Limited was recognised as an Economic Times Sustainable Organization 2023 for its contributions to sustainable development. This honour reflects the company’s ESG-driven growth, responsible manufacturing, and commitment to creating long-term value for all stakeholders.",
+        },
 
-  {
-    image: "/images/awards/b13.png",
-    title: "CII Industrial Innovation Award 2024 – Top 75 Innovators",
-    by: "Confederation of Indian Industry (CII)",
-    description:
-      "UFlex was recognised as one of India’s Top 75 Most Innovative Companies for its technological advancements in packaging, recycling, and material science. The award evaluates innovation capability, product breakthroughs, and R&D impact across industries.",
-  },
-  {
-    image: "/images/awards/b14.png",
-    title: "Times Now Sustainable Organization 2024",
-    by: "Times Now",
-    description:
-      "UFlex was honoured for integrating sustainability into core operations, advancing recyclable packaging, and promoting responsible resource use. The award celebrates companies demonstrating meaningful progress toward environmental protection and sustainable business growth.",
-  },
-  {
-    image: "/images/awards/b15.png",
-    title: "Innovation in Awareness – POSH Excellence Awards 2025",
-    by: "National POSH Conclave & Excellence Awards",
-    description:
-      "UFlex received the award for its proactive efforts in creating awareness and strengthening workplace safety under POSH guidelines. It recognises organisations that promote respectful, secure, and gender-sensitive work environments through effective training and sensitisation initiatives.",
-  },
+        {
+          image: "/images/awards/b13.png",
+          title: "CII Industrial Innovation Award 2024 – Top 75 Innovators",
+          by: "Confederation of Indian Industry (CII)",
+          description:
+            "UFlex was recognised as one of India’s Top 75 Most Innovative Companies for its technological advancements in packaging, recycling, and material science. The award evaluates innovation capability, product breakthroughs, and R&D impact across industries.",
+        },
+        {
+          image: "/images/awards/b14.png",
+          title: "Times Now Sustainable Organization 2024",
+          by: "Times Now",
+          description:
+            "UFlex was honoured for integrating sustainability into core operations, advancing recyclable packaging, and promoting responsible resource use. The award celebrates companies demonstrating meaningful progress toward environmental protection and sustainable business growth.",
+        },
+        {
+          image: "/images/awards/b15.png",
+          title: "Innovation in Awareness – POSH Excellence Awards 2025",
+          by: "National POSH Conclave & Excellence Awards",
+          description:
+            "UFlex received the award for its proactive efforts in creating awareness and strengthening workplace safety under POSH guidelines. It recognises organisations that promote respectful, secure, and gender-sensitive work environments through effective training and sensitisation initiatives.",
+        },
       ],
-      2024:[],
-      2023:[],
-      2022:[],
+      2024: [],
+      2023: [],
+      2022: [],
       2021: [],
 
-    },},
+    },
+  },
   "packaging-films": {
     label: "Packaging Films",
     years: [2025, 2024, 2023, 2021, 2019],
@@ -518,7 +254,7 @@ const AWARDS_DATA: Record<
       ],
     },
   },
-"flexible-packaging": {
+  "flexible-packaging": {
     label: "Flexible Packaging",
     years: [2025, 2022, 2021, 2020, 2019, 2018],
     data: {
@@ -627,22 +363,24 @@ const AWARDS_DATA: Record<
 
     },
   },
-   "aseptic-packaging": {
+  "aseptic-packaging": {
     label: "Aseptic Packaging",
     years: [],
     data: {
-      
-      
-    },},
+
+
+    },
+  },
   /* ================= PRINTING CYLINDERS ================= */
- 
- "chemicals": {
+
+  "chemicals": {
     label: "Chemicals",
     years: [],
     data: {
-     
-      
-    },},
+
+
+    },
+  },
   /* ================= HOLOGRAPHY ================= */
   "holography": {
     label: "Holography",
@@ -670,18 +408,19 @@ const AWARDS_DATA: Record<
   },
 
 
-  
- 
 
-   
-    "engineering": {
+
+
+
+  "engineering": {
     label: "Engineering",
     years: [],
     data: {
-      
-      
-    },},
- "printing-cylinders": {
+
+
+    },
+  },
+  "printing-cylinders": {
     label: "Printing Cylinders",
     years: [2025],
     data: {
@@ -699,21 +438,30 @@ const AWARDS_DATA: Record<
       2019: []
     },
   },
-    "flexible-tubes": {
+  "flexible-tubes": {
     label: "Flexible Tubes",
     years: [],
     data: {
-      
-      
-    },}
+
+
+    },
+  }
 
 };
 
 type BusinessKey = keyof typeof AWARDS_DATA;
-
-export default function BusinessAwards() {
-  const [activeBusiness, setActiveBusiness] =
-    useState<BusinessKey>("corporate-awards");
+type BusinessAwardsProps = {
+  initialBusiness?: string;
+};
+export default function BusinessAwards({ initialBusiness = "corporate-awards" }: BusinessAwardsProps) {
+  // const [activeBusiness, setActiveBusiness] =
+  //   useState<BusinessKey>("corporate-awards");
+  const [activeBusiness, setActiveBusiness] = useState<BusinessKey>(
+    // Use URL value if valid, else fallback to corporate
+    Object.keys(AWARDS_DATA).includes(initialBusiness)
+      ? initialBusiness as BusinessKey
+      : "corporate-awards"
+  );
 
   const business = AWARDS_DATA[activeBusiness];
   const [activeYear, setActiveYear] = useState<Year>(business.years[0]);
@@ -722,15 +470,20 @@ export default function BusinessAwards() {
 
   console.log("")
   const isSingleCard = cards.length === 1;
-
+  useEffect(() => {
+    // Update URL without full navigation
+    const url = new URL(window.location.href);
+    url.searchParams.set("business", activeBusiness);
+    window.history.replaceState({}, "", url.toString());
+  }, [activeBusiness]);
   return (
     <section className="max-w-7xl mx-auto">
       <div className="">
         <h2 className="text-center  text-[24px] lato-700  md:text-[42px]   text-[#117ABA] mb-6">
-           Awards
+          Awards
         </h2>
 
-        
+
         <div
           className="
     mb-8
@@ -766,7 +519,7 @@ export default function BusinessAwards() {
         {
           activeBusiness !== "corporate-awards" && (
             <div
-          className="
+              className="
     mb-10
     flex
     gap-3
@@ -775,23 +528,23 @@ export default function BusinessAwards() {
     px-1
     md:justify-center
   "
-        >
-          {business.years.map((y) => (
-            <button
-              key={y}
-              onClick={() => setActiveYear(y)}
-              className={`text-[14px] md:text-[18px] leading-relaxed lato-700 shrink-0 px-6 py-2 text-xs ${activeYear === y
-                ? "bg-[#F5F5F5]  text-[#555]  border-b-[0.7px] border-b-[#117ABA]"
-                : "bg-[#F5F5F5]  text-[#555]"
-                }`}
             >
-              {y}
-            </button>
-          ))}
-        </div>
-          ) 
+              {business.years.map((y) => (
+                <button
+                  key={y}
+                  onClick={() => setActiveYear(y)}
+                  className={`text-[14px] md:text-[18px] leading-relaxed lato-700 shrink-0 px-6 py-2 text-xs ${activeYear === y
+                    ? "bg-[#F5F5F5]  text-[#555]  border-b-[0.7px] border-b-[#117ABA]"
+                    : "bg-[#F5F5F5]  text-[#555]"
+                    }`}
+                >
+                  {y}
+                </button>
+              ))}
+            </div>
+          )
         }
-       
+
 
 
         {/* Cards */}
@@ -854,63 +607,63 @@ export default function BusinessAwards() {
 
 
         {/* Cards */}
-<div className="flex justify-center">
-  <div
-    className={[
-      "grid gap-8",
-      cards.length === 1
-        ? "grid-cols-1 max-w-[560px]"
-        : cards.length === 2
-        ? "grid-cols-1 sm:grid-cols-2 max-w-[1260px]"
-        : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-[1400px]",
-      "w-full",
-    ].join(" ")}
-  >
-    {cards?.length ? (
-  cards.map((card, idx) => (
-    <article
-      key={idx}
-      className="group flex h-full flex-col overflow-hidden rounded-sm bg-white"
-    >
-      {/* Image */}
-      <div className="relative h-[370px] w-full overflow-hidden bg-[#BDBCB7]">
-        <Image
-          src={card.image}
-          alt={card.title}
-          fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-      </div>
+        <div className="flex justify-center">
+          <div
+            className={[
+              "grid gap-8",
+              cards.length === 1
+                ? "grid-cols-1 max-w-[560px]"
+                : cards.length === 2
+                  ? "grid-cols-1 sm:grid-cols-2 max-w-[1260px]"
+                  : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-[1400px]",
+              "w-full",
+            ].join(" ")}
+          >
+            {cards?.length ? (
+              cards.map((card, idx) => (
+                <article
+                  key={idx}
+                  className="group flex h-full flex-col overflow-hidden rounded-sm bg-white"
+                >
+                  {/* Image */}
+                  <div className="relative h-[370px] w-full overflow-hidden bg-[#BDBCB7]">
+                    <Image
+                      src={card.image}
+                      alt={card.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
 
-      {/* Content */}
-      <div className="flex flex-1 flex-col py-4">
-        <h3 className="h-[58px] line-clamp-3 lato-700 text-[18px] md:text-[20px] leading-tight text-[#117ABA] pb-12">
-          {card.title}
-        </h3>
+                  {/* Content */}
+                  <div className="flex flex-1 flex-col py-4">
+                    <h3 className="h-[58px] line-clamp-3 lato-700 text-[18px] md:text-[20px] leading-tight text-[#117ABA] pb-12">
+                      {card.title}
+                    </h3>
 
-        <p className="h-[48px] line-clamp-2 text-[16px] lato-400 leading-snug text-black">
-          By: {card.by}
-        </p>
+                    <p className="h-[48px] line-clamp-2 text-[16px] lato-400 leading-snug text-black">
+                      By: {card.by}
+                    </p>
 
-        <p className="lato-400 text-[14px] md:text-[18px] text-black  leading-relaxed">
-          {card.description}
-        </p>
-      </div>
-    </article>
-  ))
-) : (
-  <article className="flex h-full flex-col items-center justify-center rounded-sm bg-white border border-dashed border-gray-300 p-8 text-center">
-    {/* Placeholder visual */}
-    <div className="mb-6 flex h-[120px] w-[120px] items-center justify-center rounded-full bg-[#117ABA]/10">
-      <span className="text-[14px] lato-500 text-[#117ABA]">Coming Soon</span>
-    </div>
+                    <p className="lato-400 text-[14px] md:text-[18px] text-black  leading-relaxed">
+                      {card.description}
+                    </p>
+                  </div>
+                </article>
+              ))
+            ) : (
+              <article className="flex h-full flex-col items-center justify-center rounded-sm bg-white border border-dashed border-gray-300 p-8 text-center">
+                {/* Placeholder visual */}
+                <div className="mb-6 flex h-[120px] w-[120px] items-center justify-center rounded-full bg-[#117ABA]/10">
+                  <span className="text-[14px] lato-500 text-[#117ABA]">Coming Soon</span>
+                </div>
 
-   
-  </article>
-)}
 
-  </div>
-</div>
+              </article>
+            )}
+
+          </div>
+        </div>
 
 
       </div>
