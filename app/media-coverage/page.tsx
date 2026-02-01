@@ -192,20 +192,20 @@ const PRESS_ROOM_DATA = {
 
       "Electronic Media": {
         2025: [
-          { image:"/images/press/1.jpg",title: "Electronic Coverage 1", link: "https://www.youtube.com/watch?v=856og5Bmfy4&t=2s", type: "youtube" },
-          { image:"/images/press/1.jpg",title: "Electronic Coverage 2", link: "https://www.youtube.com/watch?v=VfkdLfkBvB0&t=17s", type: "youtube" },
-          { image:"/images/press/1.jpg",title: "Electronic Coverage 3", link: "https://www.youtube.com/watch?v=k756fn-hoRw", type: "youtube" },
-          { image:"/images/press/1.jpg",title: "Electronic Coverage 4", link: "https://www.youtube.com/watch?v=8QmNwiYaxfk", type: "youtube" },
-          { image:"/images/press/1.jpg",title: "Electronic Coverage 5", link: "https://www.youtube.com/watch?v=Ts_BTegijeQ", type: "youtube" },
-          { image:"/images/press/1.jpg",title: "Electronic Coverage 6", link: "https://www.youtube.com/watch?v=IgjahqBZpYg", type: "youtube" },
-          { image:"/images/press/1.jpg",title: "Electronic Coverage 7", link: "https://www.youtube.com/watch?v=i2WA8rWIQEk", type: "youtube" },
-          { image:"/images/press/1.jpg",title: "Electronic Coverage 8", link: "https://www.youtube.com/watch?v=yZq87_KO7iw", type: "youtube" },
-          { image:"/images/press/1.jpg",title: "Electronic Coverage 9", link: "https://www.youtube.com/watch?v=m6IqXAURC3c", type: "youtube" },
-          { image:"/images/press/1.jpg",title: "Electronic Coverage 10", link: "https://www.youtube.com/watch?v=6eOTj5_bTL0", type: "youtube" },
-          { image:"/images/press/1.jpg",title: "Electronic Coverage 11", link: "https://www.youtube.com/watch?v=xFJkpSlmdvc", type: "youtube" },
-          { image:"/images/press/1.jpg",title: "Electronic Coverage 12", link: "https://www.youtube.com/watch?v=zybZmfkJ6eU", type: "youtube" },
-          { image:"/images/press/1.jpg",title: "Electronic Coverage 13", link: "https://www.youtube.com/watch?v=sMMyX-K1E2w", type: "youtube" },
-          { image:"/images/press/1.jpg",title: "Electronic Coverage 14", link: "https://www.youtube.com/watch?v=i6sODEzr5Rs", type: "youtube" },
+          { image:"/images/press/EC_Nov_1.jpg",title: "2025", link: "https://www.youtube.com/watch?v=856og5Bmfy4&t=2s", type: "youtube" },
+          { image:"/images/press/EC_Nov_2.jpg",title: "2025", link: "https://www.youtube.com/watch?v=VfkdLfkBvB0&t=17s", type: "youtube" },
+          { image:"/images/press/EC_Nov_3.jpg",title: "2025", link: "https://www.youtube.com/watch?v=k756fn-hoRw", type: "youtube" },
+          { image:"/images/press/EC_Nov_5.jpg",title: "2025", link: "https://www.youtube.com/watch?v=8QmNwiYaxfk", type: "youtube" },
+          { image:"/images/press/EC_Nov_4.jpg",title: "2025", link: "https://www.youtube.com/watch?v=Ts_BTegijeQ", type: "youtube" },
+          { image:"/images/press/EC_Sep_1.jpg",title: "2025 ", link: "https://www.youtube.com/watch?v=IgjahqBZpYg", type: "youtube" },
+          { image:"/images/press/EC_Sep_2.jpg",title: " 2025", link: "https://www.youtube.com/watch?v=i2WA8rWIQEk", type: "youtube" },
+          { image:"/images/press/EC_Jun_1.jpg",title: "2025 ", link: "https://www.youtube.com/watch?v=yZq87_KO7iw", type: "youtube" },
+          { image:"/images/press/EC_Jun_2.jpg",title: "2025 ", link: "https://www.youtube.com/watch?v=m6IqXAURC3c", type: "youtube" },
+          { image:"/images/press/EC_May_1.jpg",title: "2025 ", link: "https://www.youtube.com/watch?v=6eOTj5_bTL0", type: "youtube" },
+          { image:"/images/press/EC_Feb_1.jpg",title: " 2025", link: "https://www.youtube.com/watch?v=xFJkpSlmdvc", type: "youtube" },
+          { image:"/images/press/EC_Feb_2.jpg",title: "2025 ", link: "https://www.youtube.com/watch?v=zybZmfkJ6eU", type: "youtube" },
+          { image:"/images/press/EC_Aug_3.jpg",title: " 2025", link: "https://www.youtube.com/watch?v=sMMyX-K1E2w", type: "youtube" },
+          { image:"/images/press/EC_Aug_2.jpg",title: " 2025", link: "https://www.youtube.com/watch?v=i6sODEzr5Rs", type: "youtube" },
         ],
         2024: [],
       } satisfies { [year in Year]: MediaItem[] },
@@ -328,13 +328,13 @@ const PressRoomPage = () => {
                       >
                         {item.title}
                       </h3>
-                      <p className="text-xs sm:text-sm text-gray-500 mt-auto">
+                      {/* <p className="text-xs sm:text-sm text-gray-500 mt-auto">
                         {item.type === "pdf"
                           ? "Print Article"
                           : item.type === "youtube"
                           ? "Video Coverage"
                           : "Online Article"}
-                      </p>
+                      </p> */}
                     </div>
                   </a>
                 ))}
