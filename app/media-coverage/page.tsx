@@ -310,9 +310,9 @@ const PressRoomPage = () => {
                     href={item.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all duration-200 flex flex-col h-full"
+                    className="group bg-white border border-gray-200 rounded-sm overflow-hidden hover:shadow-lg transition-all duration-200 flex flex-col h-full"
                   >
-                   <div className="relative aspect-[16/9] overflow-hidden">
+                   <div className="relative aspect-[5/6] overflow-hidden">
                                        <Image
                                          src={item.image}
                                          alt={item.title}
@@ -323,7 +323,7 @@ const PressRoomPage = () => {
 
                     <div className="p-4 sm:p-5 flex flex-col flex-grow">
                       <h3
-                        className="text-sm sm:text-base font-medium text-gray-900 line-clamp-3 group-hover:text-[#117ABA] transition-colors mb-2"
+                        className="text-sm sm:text-base lato-700 text-gray-900 line-clamp-3 group-hover:text-[#117ABA] transition-colors mb-2"
                         title={item.title}
                       >
                         {item.title}
