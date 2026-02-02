@@ -16,8 +16,9 @@ export default function ProductsPage() {
         flexible: {
             key: "flexible",
             title: "FLEXIBLE LAMINATES",
-            overview:
-                "UFlex offers a comprehensive range of flexible laminates made from various combinations of plastic, aluminum, and paper to suit diverse packaging needs. These include structures like PET/PE, PET/Foil/PE, PET/BOPP, BOPP/CPP, and advanced multilayer laminates such as PET/Extr/Foil/Extr/PE and AlOx PET/BON/CPP for retort applications. ",
+            // overview:
+            //     "UFlex offers a comprehensive range of flexible laminates made from various combinations of plastic, aluminum, and paper to suit diverse packaging needs. These include structures like PET/PE, PET/Foil/PE, PET/BOPP, BOPP/CPP, and advanced multilayer laminates such as PET/Extr/Foil/Extr/PE and AlOx PET/BON/CPP for retort applications. ",
+            overview:"Our flexible laminate solutions are available in a wide range of plastic, aluminium, and paper combinations, including:",
             heroImageUrl:
                 "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-08511505115.jpg",
             brandTag: "FLEXIBLE LAMINATES",
@@ -63,8 +64,9 @@ export default function ProductsPage() {
         preFormedPouches: {
             key: "pre-formed",
             title: "PRE-FORMED POUCHES",
-            overview:
-                "UFlex offers a wide array of flexible pouches designed to cater to diverse product categories and packaging needs across industries. Our portfolio includes advanced formats such as slider zipper pouches, ideal for powders and granules, and pouring spout pouches, perfectly suited for liquid applications.",
+            // overview:
+            //     "UFlex offers a wide array of flexible pouches designed to cater to diverse product categories and packaging needs across industries. Our portfolio includes advanced formats such as slider zipper pouches, ideal for powders and granules, and pouring spout pouches, perfectly suited for liquid applications.",
+            overview:"Our product portfolio includes flexible pouches in various formats, including:",
             heroImageUrl: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-08533105331.jpg",
             brandTag: "PRE-FORMED POUCHES",
 
@@ -109,8 +111,9 @@ export default function ProductsPage() {
         flexoPrinted: {
             key: "flexo",
             title: "FLEXO PRINTED ROLLS & BAGS",
-            overview:
-                "Our Flexo printed rolls and bags are a key offering within our Flexible Packaging business, designed to meet the specific needs of the baby and feminine hygiene product segments. We provide high-quality flexo surface printed bags in a variety of formats, including surface printed poly rolls, bottom gusset bags, wicketed bottom gusset bags, and handle gusseted bags.",
+            overview:"We offer Flexo Surface Printed bags for Baby and Feminine Hygiene products made of various formats such as:",
+            // overview:
+            //     "Our Flexo printed rolls and bags are a key offering within our Flexible Packaging business, designed to meet the specific needs of the baby and feminine hygiene product segments. We provide high-quality flexo surface printed bags in a variety of formats, including surface printed poly rolls, bottom gusset bags, wicketed bottom gusset bags, and handle gusseted bags.",
             heroImageUrl: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-09042700427.jpg",
             brandTag: "FLEXO PRINTED",
 
