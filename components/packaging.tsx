@@ -20,6 +20,7 @@ import SliderCarousel from './slidercomp'
 import SimpleCarousel from './slidercomp'
 import { ReadMoreModal } from './read-more-modal'
 import { ReadMoreDialog } from './expandabletext'
+import { SubBusinessHero } from './buissnessreusbales/subhero'
 
 type OfferingTab = "films" | "resin";
 
@@ -103,6 +104,32 @@ desc:`Decorative films and foils are developed with advanced metallization techn
         // dynamiclink: "/packaging-films-business/packaging-our-offering",
 
         desc: "A range of films that provide value addition for converters by enhancing the quality, performance, and functionality of the final packaging.",
+    },
+
+
+];
+
+const SliderItemsResin: any = [
+    {
+        title: "Bottle Grade PET",
+        img: "/images/bottlegrade.png",
+
+desc:``,
+        // dynamiclink: "/packaging-films-business/packaging-our-offering"
+    },
+    {
+        title: "Film Grade Polyester",
+        img: "/images/film.png",
+      
+desc:`
+`,
+    },
+    {
+        title: "Recycled PET",
+        img: "/images/rpet.png",
+        
+desc:`
+`,
     },
 
 
@@ -440,6 +467,7 @@ const PackageComp: React.FC<Props> = ({ business }) => {
     const [open, setOpen] = useState(false);
 
     const packagingFilmsItems = SliderItems;
+    const petResinItems = SliderItemsResin;
 
     const petResinSubitems = business.subofferings?.subitems ?? [];
 
@@ -557,10 +585,18 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                                     exit={{ opacity: 0, y: -10 }}
                                     transition={{ duration: 0.25 }}
                                 >
-                                    <OfferingadvSection
+                                    {/* <OfferingadvSection
                                         subheading=""
                                         subitems={petResinSubitems}
                                         business={business}
+                                    /> */}
+                                                <SubBusinessHero business={business} />
+                                    
+                                    <SimpleCarousel
+                                        heading=""
+                                        items={petResinItems}
+                                        
+                                        imageHeight={280}
                                     />
                                 </motion.div>
                             )}
