@@ -101,12 +101,13 @@ const flatCategories = [
   { name: "Water Based Inks", productKey: "water-based-inks" },
   { name: "Solvent Based Inks", productKey: "solvent-based-inks" },
   { name: "Radiation Curable Inks", productKey: "radiation-curable-inks" },
-  { name: "Water Based Coatings", productKey: "water-based-coatings" },
-  { name: "Solvent Based Coatings", productKey: "solvent-based-coatings" },
-  { name: "Radiation Curable Coatings", productKey: "radiation-curable-coatings" },
+  
   { name: "Water Based Adhesives", productKey: "water-based-adhesives" },
   { name: "Solvent Free Adhesives", productKey: "solvent-free-adhesives" },
   { name: "Solvent Based Adhesives", productKey: "solvent-based-adhesives" },
+  { name: "Water Based Coatings", productKey: "water-based-coatings" },
+  { name: "Solvent Based Coatings", productKey: "solvent-based-coatings" },
+  { name: "Radiation Curable Coatings", productKey: "radiation-curable-coatings" },
   { name: "PU Ink Binders", productKey: "pu-ink-binders" },
 ];
 

@@ -112,7 +112,7 @@ export default function ProductCategorySection({
                         <div className="">
 
                             <div className="bg-[#117ABA] text-white px-6 py-5">
-                                <h2 className="text-lg lato-700 tracking-wide">PRODUCT CATEGORIES</h2>
+                                <h2 className="text-lg lato-700 tracking-wide">Product Categories</h2>
                             </div>
 
                             <nav className="divide-y divide-gray-100">
