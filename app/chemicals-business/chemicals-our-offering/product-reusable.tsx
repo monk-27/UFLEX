@@ -92,7 +92,7 @@ export default function ProductCategorySection({
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-white overflow-hidden hidden lg:block sticky top-6 border border-gray-200 rounded-lg shadow-sm"
+            className="bg-white overflow-hidden hidden lg:block sticky top-6 rounded-sm"
           >
             <div className="bg-[#117ABA] text-white px-6 py-5 rounded-t-lg">
               <h2 className="text-lg lato-700 tracking-wide">Product Categories</h2>
