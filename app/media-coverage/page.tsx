@@ -31,36 +31,36 @@ const PRESS_ROOM_DATA = {
     data: {
       "Print Media": {
         2025: [
-          { image:"/images/press/1.jpg", title: "BS - Delhi (05 Dec 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_BS_Delhi_05Dec2025_PG4.pdf", type: "pdf" },
-          { image:"/images/press/PC_Nov_5.jpg",title: "Sep-Oct 2025", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_TPM_SEP_OCT2025.pdf", type: "pdf" },
-          { image:"/images/press/PC_Nov_4.jpg", title: "PSA - (Oct 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_PSA_EM_Oct25.pdf", type: "pdf" },
-          { image:"/images/press/PC_Oct_1.jpg", title: "Sep-Oct 2025", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_TPM_SEP_OCT2025.pdf", type: "pdf" },
-          { image:"/images/press/PC_Sep_1.jpg", title: "IE & FE (15 Sep 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_IE_FE_15092025.pdf", type: "pdf" },
-          { image:"/images/press/PC_Sep_6.jpg", title: "IE & FE (06 Sep 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_IE_FE_06092025.pdf", type: "pdf" },
-          { image:"/images/press/PC_Sep_5.jpg", title: "Times of India (Sep 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_TOI_SEP25.pdf", type: "pdf" },
-          { image:"/images/press/PC_Sep_6.jpg",title: "Business World (Aug 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_BW_AUG2025.pdf", type: "pdf" },
-          { image:"/images/press/1A.jpg",title: "PSA (July 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_PSA_July25.pdf", type: "pdf" },
-          { image:"/images/press/3A.jpg",title: "Jul-Aug 2025", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_TPM_JUL-AUG2025.pdf", type: "pdf" },
-          { image:"/images/press/PC_Jun_4A.jpg",title: "IFB (May-June 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_IFB_MAY-JUNE25.pdf", type: "pdf" },
-          { image:"/images/press/PC_Jun_3A.jpg",title: "Business Today (Jun 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_BT_JUN25.pdf", type: "pdf" },
-          { image:"/images/press/PC_Jun_5.jpg",title: " FE & IE Delhi (05 Jun 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_WED_Cove_FE_IE_Delhi_05JUN2025.pdf", type: "pdf" },
-          { image:"/images/press/PC_Jun_1.jpg",title: "Dainik Tribune (Jun 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_COVE_DTE_JUN2025.pdf", type: "pdf" },
-          { image:"/images/press/PC_Jun_5.jpg",title: "IE & FE (18 Jun 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_IE_FE_18062025.pdf", type: "pdf" },
-          { image:"/images/press/PC_Jun_4A.jpg",title: "Outlook (Jun 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_Outlook_JUN25.pdf", type: "pdf" },
-          { image:"/images/press/PC_Mar_1.jpg",title: "PSA (March 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex%20Coverage_PSA_March25.pdf", type: "pdf" },
+          { image: "/images/press/1.jpg", title: "BS - Delhi (05 Dec 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_BS_Delhi_05Dec2025_PG4.pdf", type: "pdf" },
+          { image: "/images/press/PC_Nov_5.jpg", title: "Sep-Oct 2025", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_TPM_SEP_OCT2025.pdf", type: "pdf" },
+          { image: "/images/press/PC_Nov_4.jpg", title: "PSA - (Oct 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_PSA_EM_Oct25.pdf", type: "pdf" },
+          { image: "/images/press/PC_Oct_1.jpg", title: "Sep-Oct 2025", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_TPM_SEP_OCT2025.pdf", type: "pdf" },
+          { image: "/images/press/PC_Sep_1.jpg", title: "IE & FE (15 Sep 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_IE_FE_15092025.pdf", type: "pdf" },
+          { image: "/images/press/PC_Sep_6.jpg", title: "IE & FE (06 Sep 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_IE_FE_06092025.pdf", type: "pdf" },
+          { image: "/images/press/PC_Sep_5.jpg", title: "Times of India (Sep 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_TOI_SEP25.pdf", type: "pdf" },
+          { image: "/images/press/PC_Sep_6.jpg", title: "Business World (Aug 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_BW_AUG2025.pdf", type: "pdf" },
+          { image: "/images/press/1A.jpg", title: "PSA (July 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_PSA_July25.pdf", type: "pdf" },
+          { image: "/images/press/3A.jpg", title: "Jul-Aug 2025", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_TPM_JUL-AUG2025.pdf", type: "pdf" },
+          { image: "/images/press/PC_Jun_4A.jpg", title: "IFB (May-June 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_IFB_MAY-JUNE25.pdf", type: "pdf" },
+          { image: "/images/press/PC_Jun_3A.jpg", title: "Business Today (Jun 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_BT_JUN25.pdf", type: "pdf" },
+          { image: "/images/press/PC_Jun_5.jpg", title: " FE & IE Delhi (05 Jun 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_WED_Cove_FE_IE_Delhi_05JUN2025.pdf", type: "pdf" },
+          { image: "/images/press/PC_Jun_1.jpg", title: "Dainik Tribune (Jun 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_COVE_DTE_JUN2025.pdf", type: "pdf" },
+          { image: "/images/press/PC_Jun_5.jpg", title: "IE & FE (18 Jun 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_IE_FE_18062025.pdf", type: "pdf" },
+          { image: "/images/press/PC_Jun_4A.jpg", title: "Outlook (Jun 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_Outlook_JUN25.pdf", type: "pdf" },
+          { image: "/images/press/PC_Mar_1.jpg", title: "PSA (March 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex%20Coverage_PSA_March25.pdf", type: "pdf" },
         ],
         2024: [],
       } satisfies { [year in Year]: MediaItem[] },
 
       "Online Media": {
         2025: [
-          { image:"/images/press/OC_Dec_1.jpg",title: " Stress industry leaders", link: "https://manufacturing.economictimes.indiatimes.com/news/industry/india-must-turn-cost-advantage-into-reliable-process-led-manufacturing-stress-industry-leaders/125748711", type: "article" },
-          { image:"/images/press/OC_Dec_4.jpg",title: "UFlex Flexitubes", link: "https://spnews.com/uflex-flexitubes/", type: "article" },
-          { image:"/images/press/OC_Dec_2.jpg",title: " CPHI & PMEC 2025", link: "https://thepackman.in/uflex-displays-innovative-flexitubes-for-pharma-at-cphi-pmec-2025/", type: "article" },
-          { image:"/images/press/OC_Dec_3.jpg",title: " CPHI & PMEC", link: "https://thepackman.in/uflex-holography-division-highlights-new-age-anti-counterfeiting-solutions-at-cphi-pmec/", type: "article" },
-          { image:"/images/press/OC_Dec_5.jpg",title: " Cosmoprof India", link: "https://packagingsouthasia.com/events/uflexs-flexitubes-cosmoprof-india/", type: "article" },
-          { image:"/images/press/OC_Dec_5.jpg",title: " Cosmoprof", link: "https://www.whatpackaging.co.in/news/uflex-to-showcase-its-flexitubes-range-at-cosmoprof--59279", type: "article" },
-          { image:"/images/press/OC_Nov_7.jpg",title: "UFlex’s Q2FY26 earnings show promise", link: "https://www.printweek.in/news/uflexs-q2fy26-earnings-show-promise--61315", type: "article" },
+          { image: "/images/press/OC_Dec_1.jpg", title: " Stress industry leaders", link: "https://manufacturing.economictimes.indiatimes.com/news/industry/india-must-turn-cost-advantage-into-reliable-process-led-manufacturing-stress-industry-leaders/125748711", type: "article" },
+          { image: "/images/press/OC_Dec_4.jpg", title: "UFlex Flexitubes", link: "https://spnews.com/uflex-flexitubes/", type: "article" },
+          { image: "/images/press/OC_Dec_2.jpg", title: " CPHI & PMEC 2025", link: "https://thepackman.in/uflex-displays-innovative-flexitubes-for-pharma-at-cphi-pmec-2025/", type: "article" },
+          { image: "/images/press/OC_Dec_3.jpg", title: " CPHI & PMEC", link: "https://thepackman.in/uflex-holography-division-highlights-new-age-anti-counterfeiting-solutions-at-cphi-pmec/", type: "article" },
+          { image: "/images/press/OC_Dec_5.jpg", title: " Cosmoprof India", link: "https://packagingsouthasia.com/events/uflexs-flexitubes-cosmoprof-india/", type: "article" },
+          { image: "/images/press/OC_Dec_5.jpg", title: " Cosmoprof", link: "https://www.whatpackaging.co.in/news/uflex-to-showcase-its-flexitubes-range-at-cosmoprof--59279", type: "article" },
+          { image: "/images/press/OC_Nov_7.jpg", title: "UFlex’s Q2FY26 earnings show promise", link: "https://www.printweek.in/news/uflexs-q2fy26-earnings-show-promise--61315", type: "article" },
           // { image:"/images/press/1.jpg",title: "UFlex’s advanced tube packaging solutions for beauty brands at Cosmoprof India 2025", link: "https://thepackman.in/uflexs-advanced-tube-packaging-solutions-for-beauty-brands-at-cosmoprof-india-2025/", type: "article" },
           // { image:"/images/press/1.jpg",title: "UFlex to invest over Rs 700 crore to expand packaging film capacity at Karnataka plant", link: "https://economictimes.indiatimes.com/industry/indl-goods/svs/packaging/uflex-to-invest-over-rs-700-crore-to-expand-packaging-film-capacity-at-karnataka-plant/articleshow/125516154.cms", type: "article" },
           // { image:"/images/press/1.jpg",title: "UFlex to invest over Rs 700 cr to expand packaging film capacity at Karnataka plant", link: "https://www.ptinews.com/story/business/uflex-to-invest-over-rs-700-cr-to-expand-packaging-film-capacity-at-karnataka-plant/3123197", type: "article" },
@@ -192,26 +192,86 @@ const PRESS_ROOM_DATA = {
 
       "Electronic Media": {
         2025: [
-          { image:"/images/press/EC_Nov_1.jpg",title: "2025", link: "https://www.youtube.com/watch?v=856og5Bmfy4&t=2s", type: "youtube" },
-          { image:"/images/press/EC_Nov_2.jpg",title: "2025", link: "https://www.youtube.com/watch?v=VfkdLfkBvB0&t=17s", type: "youtube" },
-          { image:"/images/press/EC_Nov_3.jpg",title: "2025", link: "https://www.youtube.com/watch?v=k756fn-hoRw", type: "youtube" },
-          { image:"/images/press/EC_Nov_5.jpg",title: "2025", link: "https://www.youtube.com/watch?v=8QmNwiYaxfk", type: "youtube" },
-          { image:"/images/press/EC_Nov_4.jpg",title: "2025", link: "https://www.youtube.com/watch?v=Ts_BTegijeQ", type: "youtube" },
-          { image:"/images/press/EC_Sep_1.jpg",title: "2025 ", link: "https://www.youtube.com/watch?v=IgjahqBZpYg", type: "youtube" },
-          { image:"/images/press/EC_Sep_2.jpg",title: " 2025", link: "https://www.youtube.com/watch?v=i2WA8rWIQEk", type: "youtube" },
-          { image:"/images/press/EC_Jun_1.jpg",title: "2025 ", link: "https://www.youtube.com/watch?v=yZq87_KO7iw", type: "youtube" },
-          { image:"/images/press/EC_Jun_2.jpg",title: "2025 ", link: "https://www.youtube.com/watch?v=m6IqXAURC3c", type: "youtube" },
-          { image:"/images/press/EC_May_1.jpg",title: "2025 ", link: "https://www.youtube.com/watch?v=6eOTj5_bTL0", type: "youtube" },
-          { image:"/images/press/EC_Feb_1.jpg",title: " 2025", link: "https://www.youtube.com/watch?v=xFJkpSlmdvc", type: "youtube" },
-          { image:"/images/press/EC_Feb_2.jpg",title: "2025 ", link: "https://www.youtube.com/watch?v=zybZmfkJ6eU", type: "youtube" },
-          { image:"/images/press/EC_Aug_3.jpg",title: " 2025", link: "https://www.youtube.com/watch?v=sMMyX-K1E2w", type: "youtube" },
-          { image:"/images/press/EC_Aug_2.jpg",title: " 2025", link: "https://www.youtube.com/watch?v=i6sODEzr5Rs", type: "youtube" },
+          { image: "/images/press/EC_Nov_1.jpg", title: "2025", link: "https://www.youtube.com/watch?v=856og5Bmfy4&t=2s", type: "youtube" },
+          { image: "/images/press/EC_Nov_2.jpg", title: "2025", link: "https://www.youtube.com/watch?v=VfkdLfkBvB0&t=17s", type: "youtube" },
+          { image: "/images/press/EC_Nov_3.jpg", title: "2025", link: "https://www.youtube.com/watch?v=k756fn-hoRw", type: "youtube" },
+          { image: "/images/press/EC_Nov_5.jpg", title: "2025", link: "https://www.youtube.com/watch?v=8QmNwiYaxfk", type: "youtube" },
+          { image: "/images/press/EC_Nov_4.jpg", title: "2025", link: "https://www.youtube.com/watch?v=Ts_BTegijeQ", type: "youtube" },
+          { image: "/images/press/EC_Sep_1.jpg", title: "2025 ", link: "https://www.youtube.com/watch?v=IgjahqBZpYg", type: "youtube" },
+          { image: "/images/press/EC_Sep_2.jpg", title: " 2025", link: "https://www.youtube.com/watch?v=i2WA8rWIQEk", type: "youtube" },
+          { image: "/images/press/EC_Jun_1.jpg", title: "2025 ", link: "https://www.youtube.com/watch?v=yZq87_KO7iw", type: "youtube" },
+          { image: "/images/press/EC_Jun_2.jpg", title: "2025 ", link: "https://www.youtube.com/watch?v=m6IqXAURC3c", type: "youtube" },
+          { image: "/images/press/EC_May_1.jpg", title: "2025 ", link: "https://www.youtube.com/watch?v=6eOTj5_bTL0", type: "youtube" },
+          { image: "/images/press/EC_Feb_1.jpg", title: " 2025", link: "https://www.youtube.com/watch?v=xFJkpSlmdvc", type: "youtube" },
+          { image: "/images/press/EC_Feb_2.jpg", title: "2025 ", link: "https://www.youtube.com/watch?v=zybZmfkJ6eU", type: "youtube" },
+          { image: "/images/press/EC_Aug_3.jpg", title: " 2025", link: "https://www.youtube.com/watch?v=sMMyX-K1E2w", type: "youtube" },
+          { image: "/images/press/EC_Aug_2.jpg", title: " 2025", link: "https://www.youtube.com/watch?v=i6sODEzr5Rs", type: "youtube" },
         ],
         2024: [],
       } satisfies { [year in Year]: MediaItem[] },
     },
   },
 };
+
+
+function getYouTubeEmbedUrl(url: string) {
+  try {
+    const parsed = new URL(url);
+
+    // Standard YouTube URL
+    if (parsed.hostname.includes("youtube.com")) {
+      const videoId = parsed.searchParams.get("v");
+      if (!videoId) return null;
+      return `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+    }
+
+    // Short youtu.be URL (future-proofing)
+    if (parsed.hostname === "youtu.be") {
+      const videoId = parsed.pathname.replace("/", "");
+      return `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+    }
+
+    return null;
+  } catch {
+    return null;
+  }
+}
+
+function VideoModal({
+  videoUrl,
+  onClose,
+}: {
+  videoUrl: string | null;
+  onClose: () => void;
+}) {
+  if (!videoUrl) return null;
+
+  const embedUrl = getYouTubeEmbedUrl(videoUrl);
+  if (!embedUrl) return null;
+
+  return (
+    <div className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center px-4">
+      <div className="relative w-full max-w-4xl bg-black rounded-lg overflow-hidden">
+        <button
+          onClick={onClose}
+          className="absolute top-3 right-3 z-10 bg-white text-black rounded-full w-8 h-8 flex items-center justify-center font-bold"
+        >
+          ✕
+        </button>
+
+        <div className="aspect-video">
+          <iframe
+            src={embedUrl}
+            className="w-full h-full"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 
 function YearTabs({
   years,
@@ -246,6 +306,7 @@ const PressRoomPage = () => {
   const [activeTab, setActiveTab] = useState<CoverageTab>("Print Media");
   const [activeYear, setActiveYear] = useState<Year>(2025);
   const [currentPage, setCurrentPage] = useState(1);
+  const [activeVideo, setActiveVideo] = useState<string | null>(null);
 
   const currentItems = PRESS_ROOM_DATA.mediaCoverage.data[activeTab][activeYear];
 
@@ -304,138 +365,170 @@ const PressRoomPage = () => {
             <>
               {/* Grid of cards */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 lg:gap-8">
-                {paginatedItems.map((item, idx) => (
-                  <a
-                    key={idx}
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group bg-white border border-gray-200 rounded-sm overflow-hidden hover:shadow-lg transition-all duration-200 flex flex-col h-full"
-                  >
-                   <div className="relative aspect-[5/6] overflow-hidden">
-                                       <Image
-                                         src={item.image}
-                                         alt={item.title}
-                                         fill
-                                         className="object-contain transition-transform duration-500 group-hover:scale-105"
-                                       />
-                                     </div>
+             {paginatedItems.map((item, idx) => {
+  // ELECTRONIC MEDIA CARD
+  if (activeTab === "Electronic Media") {
+    return (
+      <button
+        key={idx}
+        onClick={() => setActiveVideo(item.link)}
+        className="group relative bg-black rounded-md overflow-hidden hover:shadow-xl transition"
+      >
+        {/* Thumbnail */}
+        <div className="relative aspect-video">
+          <Image
+            src={item.image}
+            alt="Video thumbnail"
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
+          />
 
-                    <div className="p-4 sm:px-1 sm:py-1 sm:pt-2 flex flex-col flex-grow bg-[#117ABA]">
-                      <h3
-                        className="text-center text-sm sm:text-base lato-700 text-white  transition-colors mb-2"
-                        title={item.title}
-                      >
-                        {item.title}
-                      </h3>
-                      {/* <p className="text-xs sm:text-sm text-gray-500 mt-auto">
-                        {item.type === "pdf"
-                          ? "Print Article"
-                          : item.type === "youtube"
-                          ? "Video Coverage"
-                          : "Online Article"}
-                      </p> */}
-                    </div>
-                  </a>
-                ))}
+          {/* Play Icon */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg">
+              <svg
+                viewBox="0 0 24 24"
+                fill="white"
+                className="w-8 h-8 ml-1"
+              >
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </button>
+    );
+  }
+
+  // PRINT & ONLINE (existing behavior)
+  return (
+    <a
+      key={idx}
+      href={item.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group bg-white border border-gray-200 rounded-sm overflow-hidden hover:shadow-lg transition-all duration-200 flex flex-col h-full"
+    >
+      <div className="relative aspect-[5/6] overflow-hidden">
+        <Image
+          src={item.image}
+          alt={item.title}
+          fill
+          className="object-contain transition-transform duration-500 group-hover:scale-105"
+        />
+      </div>
+
+      <div className="p-4 sm:px-1 sm:py-1 sm:pt-2 flex flex-col flex-grow bg-[#117ABA]">
+        <h3 className="text-center text-sm sm:text-base lato-700 text-white mb-2">
+          {item.title}
+        </h3>
+      </div>
+    </a>
+  );
+})}
+
               </div>
 
               {/* Pagination */}
               {totalPages > 1 && (
-  <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 sm:mt-14">
-    {/* Previous button */}
-    <button
-      onClick={() => goToPage(currentPage - 1)}
-      disabled={currentPage === 1}
-      className={`
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 sm:mt-14">
+                  {/* Previous button */}
+                  <button
+                    onClick={() => goToPage(currentPage - 1)}
+                    disabled={currentPage === 1}
+                    className={`
         px-5 py-2.5 rounded-md text-sm font-medium transition min-w-[90px]
         ${currentPage === 1
-          ? "bg-gray-200 text-gray-400 cursor-not-allowed"
-          : "bg-[#117ABA] text-white hover:bg-[#0e6199]"}
+                        ? "bg-gray-200 text-gray-400 cursor-not-allowed"
+                        : "bg-[#117ABA] text-white hover:bg-[#0e6199]"}
       `}
-    >
-      Previous
-    </button>
+                  >
+                    Previous
+                  </button>
 
-    {/* Page numbers with ellipsis */}
-    <div className="flex items-center gap-1 sm:gap-2 flex-wrap justify-center">
-      {(() => {
-        const pages: (number | string)[] = [];
+                  {/* Page numbers with ellipsis */}
+                  <div className="flex items-center gap-1 sm:gap-2 flex-wrap justify-center">
+                    {(() => {
+                      const pages: (number | string)[] = [];
 
-        // Always show first page
-        pages.push(1);
+                      // Always show first page
+                      pages.push(1);
 
-        // Show ellipsis if there's a gap after page 1
-        if (currentPage > 4) {
-          pages.push("...");
-        }
+                      // Show ellipsis if there's a gap after page 1
+                      if (currentPage > 4) {
+                        pages.push("...");
+                      }
 
-        // Show pages around current page
-        const start = Math.max(2, currentPage - 2);
-        const end = Math.min(totalPages - 1, currentPage + 2);
+                      // Show pages around current page
+                      const start = Math.max(2, currentPage - 2);
+                      const end = Math.min(totalPages - 1, currentPage + 2);
 
-        for (let i = start; i <= end; i++) {
-          pages.push(i);
-        }
+                      for (let i = start; i <= end; i++) {
+                        pages.push(i);
+                      }
 
-        // Show ellipsis if there's a gap before last page
-        if (currentPage < totalPages - 3) {
-          pages.push("...");
-        }
+                      // Show ellipsis if there's a gap before last page
+                      if (currentPage < totalPages - 3) {
+                        pages.push("...");
+                      }
 
-        // Always show last page (if not already included)
-        if (totalPages > 1) {
-          pages.push(totalPages);
-        }
+                      // Always show last page (if not already included)
+                      if (totalPages > 1) {
+                        pages.push(totalPages);
+                      }
 
-        return pages.map((page, index) => {
-          if (page === "...") {
-            return (
-              <span
-                key={`ellipsis-${index}`}
-                className="px-3 py-2 text-gray-500"
-              >
-                ...
-              </span>
-            );
-          }
+                      return pages.map((page, index) => {
+                        if (page === "...") {
+                          return (
+                            <span
+                              key={`ellipsis-${index}`}
+                              className="px-3 py-2 text-gray-500"
+                            >
+                              ...
+                            </span>
+                          );
+                        }
 
-          return (
-            <button
-              key={page}
-              onClick={() => goToPage(page as number)}
-              className={`
+                        return (
+                          <button
+                            key={page}
+                            onClick={() => goToPage(page as number)}
+                            className={`
                 w-9 h-9 sm:w-10 sm:h-10 rounded-md text-sm font-medium transition
                 ${page === currentPage
-                  ? "bg-[#117ABA] text-white shadow-md"
-                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"}
+                                ? "bg-[#117ABA] text-white shadow-md"
+                                : "bg-gray-100 text-gray-700 hover:bg-gray-200"}
               `}
-            >
-              {page}
-            </button>
-          );
-        });
-      })()}
-    </div>
+                          >
+                            {page}
+                          </button>
+                        );
+                      });
+                    })()}
+                  </div>
 
-    {/* Next button */}
-    <button
-      onClick={() => goToPage(currentPage + 1)}
-      disabled={currentPage === totalPages}
-      className={`
+                  {/* Next button */}
+                  <button
+                    onClick={() => goToPage(currentPage + 1)}
+                    disabled={currentPage === totalPages}
+                    className={`
         px-5 py-2.5 rounded-md text-sm font-medium transition min-w-[90px]
         ${currentPage === totalPages
-          ? "bg-gray-200 text-gray-400 cursor-not-allowed"
-          : "bg-[#117ABA] text-white hover:bg-[#0e6199]"}
+                        ? "bg-gray-200 text-gray-400 cursor-not-allowed"
+                        : "bg-[#117ABA] text-white hover:bg-[#0e6199]"}
       `}
-    >
-      Next
-    </button>
-  </div>
-)}
+                  >
+                    Next
+                  </button>
+                </div>
+              )}
             </>
           )}
         </div>
+        <VideoModal
+          videoUrl={activeVideo}
+          onClose={() => setActiveVideo(null)}
+        />
       </section>
 
       <SiteFooter />
@@ -444,4 +537,4 @@ const PressRoomPage = () => {
 };
 
 export default PressRoomPage;
- 
+
