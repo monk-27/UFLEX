@@ -5,7 +5,7 @@ import { LeadershipAwardItem } from "./hall-off-fame";
 export const LEADERSHIP_AWARDS: LeadershipAwardItem[] = 
 [
   {
-    image: "/images/awards/b1.png",
+    image: "/images/awards/1.png",
     title: "ET Sustainable Organization 2025",
     by: "By: ET Now",
     description:

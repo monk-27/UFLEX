@@ -57,7 +57,7 @@ export const MARQUEE_ITEMS = [
     id: 1,
     title: "ET Sustainable Organization 2025",
     by: "ET Now",
-    image: "/images/awards/s1.png",
+    image: "/images/awards/1.png",
   },
   {
     id: 2,
@@ -133,7 +133,7 @@ export const business = {
           "UFlex Founder & Chairman Mr. Ashok Chaturvedi was honoured for his visionary leadership and contribution to the packaging industry. The award recognises leaders who have significantly influenced India–US business relations and driven industrial, technological, and economic growth over the decade.",
       },
       {
-        image: "/images/awards/b1.png",
+        image: "/images/awards/1.png",
         title: "ET Sustainable Organization 2025",
         by: " ET Now",
         description:

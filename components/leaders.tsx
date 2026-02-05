@@ -41,7 +41,7 @@ const AWARDS_DATA: Record<
     data: {
       2025: [
         {
-          image: "/images/awards/b1.png",
+          image: "/images/awards/1.png",
           title: "ET Sustainable Organization 2025",
           by: " ET Now",
           description:
