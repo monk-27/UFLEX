@@ -31,7 +31,7 @@ const PRESS_ROOM_DATA = {
     data: {
       "Print Media": {
         2025: [
-          { image:"/images/press/1.jpg", title: "Business Standard - Delhi (05 Dec 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_BS_Delhi_05Dec2025_PG4.pdf", type: "pdf" },
+          { image:"/images/press/1.jpg", title: "BS - Delhi (05 Dec 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_BS_Delhi_05Dec2025_PG4.pdf", type: "pdf" },
           { image:"/images/press/PC_Nov_5.jpg",title: "Sep-Oct 2025", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_TPM_SEP_OCT2025.pdf", type: "pdf" },
           { image:"/images/press/PC_Nov_4.jpg", title: "PSA - (Oct 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_PSA_EM_Oct25.pdf", type: "pdf" },
           { image:"/images/press/PC_Oct_1.jpg", title: "Sep-Oct 2025", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_TPM_SEP_OCT2025.pdf", type: "pdf" },
@@ -43,7 +43,7 @@ const PRESS_ROOM_DATA = {
           { image:"/images/press/3A.jpg",title: "Jul-Aug 2025", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_TPM_JUL-AUG2025.pdf", type: "pdf" },
           { image:"/images/press/PC_Jun_4A.jpg",title: "IFB (May-June 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_IFB_MAY-JUNE25.pdf", type: "pdf" },
           { image:"/images/press/PC_Jun_3A.jpg",title: "Business Today (Jun 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_BT_JUN25.pdf", type: "pdf" },
-          { image:"/images/press/PC_Jun_5.jpg",title: "WED Coverage - FE & IE Delhi (05 Jun 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_WED_Cove_FE_IE_Delhi_05JUN2025.pdf", type: "pdf" },
+          { image:"/images/press/PC_Jun_5.jpg",title: " FE & IE Delhi (05 Jun 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_WED_Cove_FE_IE_Delhi_05JUN2025.pdf", type: "pdf" },
           { image:"/images/press/PC_Jun_1.jpg",title: "Dainik Tribune (Jun 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_COVE_DTE_JUN2025.pdf", type: "pdf" },
           { image:"/images/press/PC_Jun_5.jpg",title: "IE & FE (18 Jun 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_IE_FE_18062025.pdf", type: "pdf" },
           { image:"/images/press/PC_Jun_4A.jpg",title: "Outlook (Jun 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_Outlook_JUN25.pdf", type: "pdf" },
@@ -54,12 +54,12 @@ const PRESS_ROOM_DATA = {
 
       "Online Media": {
         2025: [
-          { image:"/images/press/OC_Dec_1.jpg",title: "India must turn cost advantage into reliable process-led manufacturing: Stress industry leaders", link: "https://manufacturing.economictimes.indiatimes.com/news/industry/india-must-turn-cost-advantage-into-reliable-process-led-manufacturing-stress-industry-leaders/125748711", type: "article" },
+          { image:"/images/press/OC_Dec_1.jpg",title: " Stress industry leaders", link: "https://manufacturing.economictimes.indiatimes.com/news/industry/india-must-turn-cost-advantage-into-reliable-process-led-manufacturing-stress-industry-leaders/125748711", type: "article" },
           { image:"/images/press/OC_Dec_4.jpg",title: "UFlex Flexitubes", link: "https://spnews.com/uflex-flexitubes/", type: "article" },
-          { image:"/images/press/OC_Dec_2.jpg",title: "UFlex displays innovative Flexitubes for pharma at CPHI & PMEC 2025", link: "https://thepackman.in/uflex-displays-innovative-flexitubes-for-pharma-at-cphi-pmec-2025/", type: "article" },
-          { image:"/images/press/OC_Dec_3.jpg",title: "UFlex Holography Division highlights new-age anti-counterfeiting solutions at CPHI & PMEC", link: "https://thepackman.in/uflex-holography-division-highlights-new-age-anti-counterfeiting-solutions-at-cphi-pmec/", type: "article" },
-          { image:"/images/press/OC_Dec_5.jpg",title: "UFlex’s Flexitubes @ Cosmoprof India", link: "https://packagingsouthasia.com/events/uflexs-flexitubes-cosmoprof-india/", type: "article" },
-          { image:"/images/press/OC_Dec_5.jpg",title: "UFlex to showcase its Flexitubes range at Cosmoprof", link: "https://www.whatpackaging.co.in/news/uflex-to-showcase-its-flexitubes-range-at-cosmoprof--59279", type: "article" },
+          { image:"/images/press/OC_Dec_2.jpg",title: " CPHI & PMEC 2025", link: "https://thepackman.in/uflex-displays-innovative-flexitubes-for-pharma-at-cphi-pmec-2025/", type: "article" },
+          { image:"/images/press/OC_Dec_3.jpg",title: " CPHI & PMEC", link: "https://thepackman.in/uflex-holography-division-highlights-new-age-anti-counterfeiting-solutions-at-cphi-pmec/", type: "article" },
+          { image:"/images/press/OC_Dec_5.jpg",title: " Cosmoprof India", link: "https://packagingsouthasia.com/events/uflexs-flexitubes-cosmoprof-india/", type: "article" },
+          { image:"/images/press/OC_Dec_5.jpg",title: " Cosmoprof", link: "https://www.whatpackaging.co.in/news/uflex-to-showcase-its-flexitubes-range-at-cosmoprof--59279", type: "article" },
           { image:"/images/press/OC_Nov_7.jpg",title: "UFlex’s Q2FY26 earnings show promise", link: "https://www.printweek.in/news/uflexs-q2fy26-earnings-show-promise--61315", type: "article" },
           // { image:"/images/press/1.jpg",title: "UFlex’s advanced tube packaging solutions for beauty brands at Cosmoprof India 2025", link: "https://thepackman.in/uflexs-advanced-tube-packaging-solutions-for-beauty-brands-at-cosmoprof-india-2025/", type: "article" },
           // { image:"/images/press/1.jpg",title: "UFlex to invest over Rs 700 crore to expand packaging film capacity at Karnataka plant", link: "https://economictimes.indiatimes.com/industry/indl-goods/svs/packaging/uflex-to-invest-over-rs-700-crore-to-expand-packaging-film-capacity-at-karnataka-plant/articleshow/125516154.cms", type: "article" },
@@ -240,7 +240,7 @@ function YearTabs({
   );
 }
 
-const ITEMS_PER_PAGE = 6;
+const ITEMS_PER_PAGE = 8;
 
 const PressRoomPage = () => {
   const [activeTab, setActiveTab] = useState<CoverageTab>("Print Media");
@@ -303,7 +303,7 @@ const PressRoomPage = () => {
           ) : (
             <>
               {/* Grid of cards */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 lg:gap-8">
                 {paginatedItems.map((item, idx) => (
                   <a
                     key={idx}
@@ -317,13 +317,13 @@ const PressRoomPage = () => {
                                          src={item.image}
                                          alt={item.title}
                                          fill
-                                         className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                         className="object-contain transition-transform duration-500 group-hover:scale-105"
                                        />
                                      </div>
 
-                    <div className="p-4 sm:p-5 flex flex-col flex-grow">
+                    <div className="p-4 sm:px-1 sm:py-1 sm:pt-2 flex flex-col flex-grow bg-[#117ABA]">
                       <h3
-                        className="text-sm sm:text-base lato-700 text-gray-900 line-clamp-3 group-hover:text-[#117ABA] transition-colors mb-2"
+                        className="text-center text-sm sm:text-base lato-700 text-white  transition-colors mb-2"
                         title={item.title}
                       >
                         {item.title}
