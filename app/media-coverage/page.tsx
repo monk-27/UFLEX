@@ -4,6 +4,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import Image from "next/image";
 import React, { useState, useRef } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 type Year = 2025 | 2024;
 type CoverageTab = "Print Media" | "Online Media" | "Electronic Media";
@@ -365,67 +366,67 @@ const PressRoomPage = () => {
             <>
               {/* Grid of cards */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 lg:gap-8">
-             {paginatedItems.map((item, idx) => {
-  // ELECTRONIC MEDIA CARD
-  if (activeTab === "Electronic Media") {
-    return (
-      <button
-        key={idx}
-        onClick={() => setActiveVideo(item.link)}
-        className="group relative bg-black rounded-md overflow-hidden hover:shadow-xl transition"
-      >
-        {/* Thumbnail */}
-        <div className="relative aspect-video">
-          <Image
-            src={item.image}
-            alt="Video thumbnail"
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-500"
-          />
+                {paginatedItems.map((item, idx) => {
+                  // ELECTRONIC MEDIA CARD
+                  if (activeTab === "Electronic Media") {
+                    return (
+                      <button
+                        key={idx}
+                        onClick={() => setActiveVideo(item.link)}
+                        className="group relative bg-black rounded-md overflow-hidden hover:shadow-xl transition"
+                      >
+                        {/* Thumbnail */}
+                        <div className="relative aspect-video">
+                          <Image
+                            src={item.image}
+                            alt="Video thumbnail"
+                            fill
+                            className="object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
 
-          {/* Play Icon */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg">
-              <svg
-                viewBox="0 0 24 24"
-                fill="white"
-                className="w-8 h-8 ml-1"
-              >
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </button>
-    );
-  }
+                          {/* Play Icon */}
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg">
+                              <svg
+                                viewBox="0 0 24 24"
+                                fill="white"
+                                className="w-8 h-8 ml-1"
+                              >
+                                <path d="M8 5v14l11-7z" />
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                    );
+                  }
 
-  // PRINT & ONLINE (existing behavior)
-  return (
-    <a
-      key={idx}
-      href={item.link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group bg-white border border-gray-200 rounded-sm overflow-hidden hover:shadow-lg transition-all duration-200 flex flex-col h-full"
-    >
-      <div className="relative aspect-[5/6] overflow-hidden">
-        <Image
-          src={item.image}
-          alt={item.title}
-          fill
-          className="object-contain transition-transform duration-500 group-hover:scale-105"
-        />
-      </div>
+                  // PRINT & ONLINE (existing behavior)
+                  return (
+                    <a
+                      key={idx}
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group bg-white border border-gray-200 rounded-sm overflow-hidden hover:shadow-lg transition-all duration-200 flex flex-col h-full"
+                    >
+                      <div className="relative aspect-[5/6] overflow-hidden">
+                        <Image
+                          src={item.image}
+                          alt={item.title}
+                          fill
+                          className="object-contain transition-transform duration-500 group-hover:scale-105"
+                        />
+                      </div>
 
-      <div className="p-4 sm:px-1 sm:py-1 sm:pt-2 flex flex-col flex-grow bg-[#117ABA]">
-        <h3 className="text-center text-sm sm:text-base lato-700 text-white mb-2">
-          {item.title}
-        </h3>
-      </div>
-    </a>
-  );
-})}
+                      <div className="p-4 sm:px-1 sm:py-1 sm:pt-1 flex flex-col flex-grow bg-[#117ABA]">
+                        <h3 className="text-center text-sm sm:text-base lato-700 text-white ">
+                          {item.title}
+                        </h3>
+                      </div>
+                    </a>
+                  );
+                })}
 
               </div>
 
@@ -437,13 +438,13 @@ const PressRoomPage = () => {
                     onClick={() => goToPage(currentPage - 1)}
                     disabled={currentPage === 1}
                     className={`
-        px-5 py-2.5 rounded-md text-sm font-medium transition min-w-[90px]
+        p-3 rounded-full border bg-white shadow hover:bg-gray-50
         ${currentPage === 1
                         ? "bg-gray-200 text-gray-400 cursor-not-allowed"
                         : "bg-[#117ABA] text-white hover:bg-[#0e6199]"}
-      `}
-                  >
-                    Previous
+      `}>
+
+                    <ChevronLeft className="h-5 w-5 text-black" />
                   </button>
 
                   {/* Page numbers with ellipsis */}
@@ -512,13 +513,14 @@ const PressRoomPage = () => {
                     onClick={() => goToPage(currentPage + 1)}
                     disabled={currentPage === totalPages}
                     className={`
-        px-5 py-2.5 rounded-md text-sm font-medium transition min-w-[90px]
+        p-3 rounded-full border bg-white shadow hover:bg-gray-50
         ${currentPage === totalPages
                         ? "bg-gray-200 text-gray-400 cursor-not-allowed"
                         : "bg-[#117ABA] text-white hover:bg-[#0e6199]"}
       `}
                   >
-                    Next
+                    <ChevronRight className="h-5 w-5 text-black" />
+
                   </button>
                 </div>
               )}
