@@ -283,16 +283,27 @@ export default function ProductCategorySection({
                     variants={itemVariants}
                     className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col"
                   >
-                    <div className="relative h-48 w-full bg-gray-100">
+                    {/* <div className="relative h-48 w-full bg-gray-100">
                       <Image
                         src={section.image}
                         alt={section.name}
                         fill
                         className="object-cover"
                       />
-                    </div>
+                    </div> */}
+                    {section.image && (
+                  <div className="relative aspect-[4/3] bg-gray-100">
+                    <Image
+                      src={section.image}
+                      alt={section.name}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </div>
+                )}
                     <div className="p-6 flex flex-col flex-grow">
-                      <h3 className="text-xl lato-700 text-gray-900 mb-3 line-clamp-2">
+                      <h3 className="text-[16px] lato-700 text-gray-900 mb-3 line-clamp-6">
                         {section.name}
                       </h3>
                       <p className="lato-400 text-[15px] leading-relaxed text-gray-700 flex-grow">
