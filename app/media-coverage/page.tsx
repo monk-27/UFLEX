@@ -60,7 +60,7 @@ const PRESS_ROOM_DATA = {
           { image: "/images/press/OC_Dec_2.jpg", title: " CPHI & PMEC 2025", link: "https://thepackman.in/uflex-displays-innovative-flexitubes-for-pharma-at-cphi-pmec-2025/", type: "article" },
           { image: "/images/press/OC_Dec_3.jpg", title: " CPHI & PMEC", link: "https://thepackman.in/uflex-holography-division-highlights-new-age-anti-counterfeiting-solutions-at-cphi-pmec/", type: "article" },
           { image: "/images/press/OC_Dec_5.jpg", title: " Cosmoprof India", link: "https://packagingsouthasia.com/events/uflexs-flexitubes-cosmoprof-india/", type: "article" },
-          { image: "/images/press/OC_Dec_5.jpg", title: " Cosmoprof", link: "https://www.whatpackaging.co.in/news/uflex-to-showcase-its-flexitubes-range-at-cosmoprof--59279", type: "article" },
+          // { image: "/images/press/OC_Dec_5.jpg", title: " Cosmoprof", link: "https://www.whatpackaging.co.in/news/uflex-to-showcase-its-flexitubes-range-at-cosmoprof--59279", type: "article" },
           { image: "/images/press/OC_Nov_7.jpg", title: "UFlex’s Q2FY26 earnings ", link: "https://www.printweek.in/news/uflexs-q2fy26-earnings-show-promise--61315", type: "article" },
           { image:"/images/press/OC_Dec_4.jpg",title: " Cosmoprof India 2025", link: "https://thepackman.in/uflexs-advanced-tube-packaging-solutions-for-beauty-brands-at-cosmoprof-india-2025/", type: "article" },
           { image:"/images/press/OC_Nov_5.jpg",title: "UFlex at Karnataka plant", link: "https://economictimes.indiatimes.com/industry/indl-goods/svs/packaging/uflex-to-invest-over-rs-700-crore-to-expand-packaging-film-capacity-at-karnataka-plant/articleshow/125516154.cms", type: "article" },
