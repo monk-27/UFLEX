@@ -11,32 +11,32 @@ import useEmblaCarousel from "embla-carousel-react";
 
 const items = [
   {
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Trust-respect23.jpg",
+    img: "/images/careers/trust.png",
     title: "Trust & respect ",
     desc: "Proactively build inclusive and egalitarian partnerships with all stakeholders, through the virtues of honesty of purpose, mutual trust and respect.",
   },
   {
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Customer-value-creation22.jpg",
+    img: "/images/new/c.jpg",
     title: "Customer value creation ",
     desc: "Enabling customers to become high-performance businesses through our total packaging solutions and creating long-term relationships by being responsive, relevant and consistently delivering value.",
   },
   {
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Innovation11.jpg",
+    img: "/images/new/fp.png",
     title: "Innovation",
     desc: "Strive to be the front runner in technology and business, actively contributing to the evolution of best practices in developing new and efficient packaging solutions to address customers’ dynamic needs.",
   },
   {
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Global-perspective04.jpg",
+    img: "/images/new/gp.jpg",
     title: "Global perspective ",
     desc: "Thinking globally and acting locally we leverage the power of global insight, relationships, collaborations and learnings to deliver exceptional packaging solutions for the clients.",
   },
   {
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Speed-in-all-directions-47.jpg",
+    img: "/images/new/speed.jpg",
     title: "Speed in all directions  ",
     desc: "Speed and efficiency in every activity and process responding to internal and external customers with a sense of urgency and dynamism is an integral part of our value system. ",
   },
    {
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/Socio-environmental-sustainability-26.jpg",
+    img: "/images/new/sustainability.jpg",
     title: "Socio-environmental sustainability ",
     desc: "Upholding that society and environment are cornerstones for sustainability, we support and promote inclusive social development and strive towards the conservation of the environment and protection of our planet.",
   },

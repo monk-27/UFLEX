@@ -63,7 +63,7 @@ export default function CarresStatus() {
             viewport={{ once: true }}
           >
             <Image
-              src="https://uflex.wpdevstudio.site/HTML/uploaded-files/page-banners/life_at_image56.jpg"
+              src="/images/new/life_at.jpg"
               alt="UFlex Learning Academy"
               fill
               className="object-cover rounded-sm pt-8"
