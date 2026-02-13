@@ -697,7 +697,7 @@ const PRESS_ROOM_DATA = {
     {
       type: "image" as const,
       title: "Photos",
-      img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/media-resources/images/gallery07.jpg",
+      img: "/images/new/gallery07.jpg",
       href: "#",
     },
     {

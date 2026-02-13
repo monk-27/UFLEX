@@ -11,19 +11,19 @@ const mediaItems = [
   {
     title: "CNBC Bajar",
     desc: "Earnings release for the quarter ended June 30, 2025 | Stable growth amidst tariff challenges",
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/media-coverage/images/CNBC-Bajar18.jpg",
+    img: "/images/new/cnbc.jpg",
     link: "https://www.youtube.com/watch?v=i6sODEzr5Rs", // example real link - replace with actual
   },
   {
     title: "NDTV Profit",
     desc: "UFlex Limited recognised as a Top Employer 2025 in India",
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/media-coverage/images/NDTV-Profit34.jpg",
+    img: "/images/new/ndtv.jpg",
     link: "https://www.youtube.com/watch?v=856og5Bmfy4&t=2s", // replace with actual link
   },
   {
     title: "NDTV Profit",
     desc: "UFlex secures Indian patent for sustainable waterborne heat seal coating for food and consumer goods packaging",
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/media-coverage/images/NDTV-Profit53.jpg",
+    img: "/images/new/ndtv-53.jpg",
     link: "https://www.youtube.com/watch?v=xFJkpSlmdvc",
   },
   // Add more real items here with correct links

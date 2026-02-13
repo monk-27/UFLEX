@@ -11,7 +11,7 @@ const items = [
   {
     title: "August 2025",
     desc: "Earnings release for the quarter ended June 30, 2025 | Stable growth amidst tariff challenges",
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/media-releases/images/Earnings-release-for-the-quarter-ended-June-30,-2025-|-Stable-growth-amidst-tariff-challenges35.jpg",
+    img: "/images/new/m1.jpg",
   },
   {
     title: "August 2025",
@@ -21,7 +21,7 @@ const items = [
   {
     title: "July 2025",
     desc: "UFlex secures Indian patent for sustainable waterborne heat seal coating for food and consumer goods packaging",
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/media-releases/images/UFlex-secures-Indian-patent-for-sustainable-waterborne-heat-seal-coating-for-food-and-consumer-goods-packaging37.jpg",
+    img: "/images/new/m2.jpg",
   },
   // Add more items as needed
 ];
