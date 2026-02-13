@@ -22,7 +22,7 @@ import { ReadMoreDialog } from './expandabletext'
 
 const SliderItems: SliderItem[] = [
   {
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-05492704927.jpg",
+    img: "/images/new/p1.png",
     // dynamiclink:"/printing-cylinder-business/printing-Our-Offering",
     title: "Gravure Cylinders",
     desc: `UFlex manufactures high-precision
@@ -31,7 +31,7 @@ purpose cylinders for diverse
 applications.`,
   },
   {
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-05492714927.jpg",
+    img: "/images/new/p2.png",
     // dynamiclink:"/printing-cylinder-business/printing-Our-Offering",
 
     title: "CTP Flexo Plates",
@@ -41,7 +41,7 @@ DPI, sets a new standard for high-
 definition flexographic plates.`,
   },
   {
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-05492724927.jpg",
+    img: "/images/new/p3.png",
     // dynamiclink:"/printing-cylinder-business/printing-Our-Offering",
 
     title: "Flexo Printing Sleeves",

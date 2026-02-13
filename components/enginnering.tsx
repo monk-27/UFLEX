@@ -22,13 +22,13 @@ import { ReadMoreDialog } from './expandabletext'
 
 const SliderItems: SliderItem[] = [
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-07180601806.jpg",
+        img: "/images/new/e1.png",
         dynamiclink: "/engineering-business/engineering-Our-Offering",
         title: "Packaging Machines",
         desc: "A range of packaging machines and special purpose machines for wrapping of products of any shape and size and with specialised requirements.",
     },
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-07180611806.jpg",
+        img: "/images/new/e2.png",
         dynamiclink: "/engineering-business/engineering-Our-Offering",
 
         title: "Converting Machines",
@@ -43,7 +43,7 @@ const SliderItems: SliderItem[] = [
 desc:`A wide range of machines for various printing, lamination, slitting/rewinding, doctoring, and pouch making as per a client's requirement.`,
     },
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-07180621806.jpg",
+        img: "/images/new/e3.jpg",
         dynamiclink: "/engineering-business/engineering-Our-Offering",
 
         title: "Speciality Products ",
