@@ -193,7 +193,7 @@ export const businesses: BusinessConfig[] = [
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
                 },
                 {
-                    photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(CH)-3.-Mr.-Sanjiv-Satishchandra-Desai-17.jpg",
+                    photo: "/images/new/sanjiv.jpg",
                     name: "Mr. Sanjiv Satishchandra Desai",
                     role: "Vice President, Manufacturing - Chemicals Business",
                     summary:

@@ -44,7 +44,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
         // desc: "UFlex offers a wide array of flexible pouches designed to cater to diverse product categories and packaging needs across industries. Our portfolio includes advanced formats such as slider zipper pouches, ideal for powders and granules, and pouring spout pouches, perfectly suited for liquid applications.",
     },
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-08533115331.jpg",
+        img: "/images/new/f4.jpg",
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
 
         title: "FlexFreshTM – Active & Modified Atmosphere Packaging (AMAP)",
@@ -52,7 +52,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
         // desc: "MAP solution is a breakthrough innovation designed to extend the shelf life of perishable goods such as fresh vegetables, fruits, and flowers. By regulating the internal atmosphere without the use of chemicals, FlexFreshTM helps slow spoilage and preserve freshness for up to 30 days. ",
     },
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-09042700427.jpg",
+        img: "/images/new/f5.jpg",
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
 
         title: "Flexo printed rolls and bags",
@@ -61,7 +61,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
         // desc: "Our Flexo printed rolls and bags are a key offering within our Flexible Packaging business, designed to meet the specific needs of the baby and feminine hygiene product segments. We provide high-quality flexo surface printed bags in a variety of formats, including surface printed poly rolls, bottom gusset bags, wicketed bottom gusset bags, and handle gusseted bags.",
     },
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-09042710427.jpg",
+        img: "/images/new/f6.jpg",
 
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Laminated Woven Poly Propylene (WPP) bags",

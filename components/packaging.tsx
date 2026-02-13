@@ -346,7 +346,7 @@ export const businesses: BusinessConfig[] = [
             details: [
 
                 {
-                    photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-1.-Mr.-Jagmohan-Mongia-29.jpg",
+                    photo: "/images/new/jagmohan.jpg",
                     name: "Mr. Jagmohan Mongia ",
                     role: "President, Packaging Films business",
                     summary:
@@ -374,7 +374,7 @@ export const businesses: BusinessConfig[] = [
 
 
                 {
-                    photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-3.-Mr.-Sanjay-Tiku47.jpg",
+                    photo: "/images/new/sanjay.jpg",
                     name: "Mr. Sanjay Tiku",
                     role: "Business Head - Flex Films, Egypt",
                     summary:
@@ -382,7 +382,7 @@ export const businesses: BusinessConfig[] = [
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
                 },
                 {
-                    photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-4.-Mr.-Sundeep-Saksena-01.jpg",
+                    photo: "/images/new/sundeep.jpg",
                     name: "Mr. Sundeep Saksena ",
                     role: "Business Head - Flex Films, Poland and Hungary",
                     summary:
@@ -390,7 +390,7 @@ export const businesses: BusinessConfig[] = [
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
                 },
                 {
-                    photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-5.-Mr.-Junaid-Iqbal-Khan-37.jpg",
+                    photo: "/images/new/junaid.jpg",
                     name: "Mr. Junaid Khan  ",
                     role: "General Director - Flex Films, Russia",
                     summary:
@@ -399,7 +399,7 @@ export const businesses: BusinessConfig[] = [
                 },
                 {
                     photo:
-                        "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-6.-Mr.-Avinash-Kumar-51.jpg",
+                        "/images/new/avinash.png",
                     name: "Mr. Avinash Kumar ",
                     role:
                         "Business Head - Flex Films, UAE",
@@ -409,7 +409,7 @@ export const businesses: BusinessConfig[] = [
                 },
                 {
                     photo:
-                        "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-7.-Mr.-Vijay-Yadav13.jpg",
+                        "/images/new/vijay.png",
                     name: "Mr. Vijay Yadav",
                     role: "Business Head - Flex Films, USA",
                     summary:
@@ -418,7 +418,7 @@ export const businesses: BusinessConfig[] = [
                 },
                 {
                     photo:
-                        "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-8.-Mr.-Suhas-More33.jpg",
+                        "/images/new/suhas.png",
                     name: "Mr. Suhas More",
                     role: "Business Head - Flex Films, Nigeria",
                     summary:
@@ -426,7 +426,7 @@ export const businesses: BusinessConfig[] = [
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
                 },
                 {
-                    photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(PF)-9.-Mr.-Ajay-Gupta08.jpg",
+                    photo: "/images/new/ajay.png",
                     name: " Mr. Ajay Gupta",
                     role: "Sr. Vice President - Flex Films, Hungary",
                     summary:
