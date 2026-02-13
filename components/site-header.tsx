@@ -65,7 +65,7 @@ export function SiteHeader() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3" aria-label="UFlex Home">
           <Image
-            src="https://uflex.wpdevstudio.site/HTML/assets/images/Uflex-logo.webp"
+            src="/images/new/logo.png"
             alt="UFlex Logo"
             width={180}
             height={48}

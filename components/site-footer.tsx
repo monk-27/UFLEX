@@ -143,7 +143,8 @@ export function SiteFooter() {
       {/* Logo + socials under logo */}
       <div className="space-y-6">
         <Image
-          src="https://uflex.wpdevstudio.site/HTML/assets/images/Uflex-logo.webp"
+                     src="/images/new/logo.png"
+
           alt="UFlex"
           width={180}
           height={56}
