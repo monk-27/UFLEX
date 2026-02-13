@@ -38,14 +38,14 @@ const SliderItems: SliderItem[] = [
         desc: "High-performance inks for superior print quality, compliant with global food safety and sustainability standards.",
     },
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-05512115121.jpg",
+        img: "/images/chemicals/7.jpg",
         title: "Adhesives",
         dynamiclink: "/chemicals-business/chemicals-our-offering?cat=Adhesives",
 
         desc: "A range of adhesives that ensure strong bonding, efficient processing, and compliance with global food safety and sustainability standards.",
     },
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-05512125121.jpg",
+        img: "/images/new/cc.png",
         title: "Coatings",
         dynamiclink: "/chemicals-business/chemicals-our-offering?cat=Coatings",
 
@@ -53,7 +53,7 @@ const SliderItems: SliderItem[] = [
     },
 
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item4-05512135121.jpg",
+        img: "/images/new/h1.png",
         title: "Specialty Chemicals ",
         dynamiclink: "/chemicals-business/chemicals-our-offering?cat=Specialty Chemicals",
 

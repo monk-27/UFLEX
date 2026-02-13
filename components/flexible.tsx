@@ -21,7 +21,7 @@ import { BusinessConfig } from '@/app/business/data'
 
 const SliderItems: SliderItem[] = [
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-08511505115.jpg",
+        img: "/images/new/f1.png",
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Flexible Laminates",
         desc:`Our range of flexible laminates are made from various combinations of plastic, aluminum, and paper to suit diverse packaging needs.
@@ -29,7 +29,7 @@ const SliderItems: SliderItem[] = [
         // desc: "UFlex offers a comprehensive range of flexible laminates made from various combinations of plastic, aluminum, and paper to suit diverse packaging needs. These include structures like PET/PE, PET/Foil/PE, PET/BOPP, BOPP/CPP, and advanced multilayer laminates such as PET/Extr/Foil/Extr/PE and AlOx PET/BON/CPP for retort applications. ",
     },
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-08533105331.jpg",
+        img: "/images/new/f2.png",
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
 
         title: "Pre-formed pouches",
@@ -69,7 +69,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
         // desc: "Our range of laminated Woven Polypropylene (WPP) bags offers high strength, durability, and superior printability—making them ideal for a wide variety of industrial and consumer applications.",
     },
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-09042720427.jpg",
+        img: "/images/new/f3.png",
 
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Electron beam and Cast n Cure",

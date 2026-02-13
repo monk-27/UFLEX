@@ -23,14 +23,15 @@ import { ReadMoreDialog } from './expandabletext'
 
 const SliderItems: SliderItem[] = [
   {
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-05023500235.jpg",
+    img: "/images/new/a.png",
     title: "Aseptic Cartons",
     // dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offering",
 
     desc: "Our aseptic liquid packaging cartons encompass six layers of protection that keeps the freshness preserved.",
   },
   {
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-05023510235.jpg",
+        img: "/images/new/a1.png",
+
     title: "A SIP",
     // dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offering",
 
@@ -38,7 +39,8 @@ const SliderItems: SliderItem[] = [
     desc: "India’s first food-grade and moisture-resistant U-shaped paper straw that is 100% recyclable.",
   },
   {
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-05023520235.jpg",
+        img: "/images/new/a2.png",
+
     title: "Filling Machines",
     // dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offering",
 
@@ -47,7 +49,8 @@ const SliderItems: SliderItem[] = [
   },
 
   {
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item4-05023530235.jpg",
+        img: "/images/new/a3.png",
+
     title: "Asepto Pro",
     // dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offering",
 
@@ -56,7 +59,7 @@ const SliderItems: SliderItem[] = [
   },
 
   {
-    img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item5-05023540235.jpg",
+    img: "/images/aseptic/9.png",
     title: "Asepto Design",
     // dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offering",
 
