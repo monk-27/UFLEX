@@ -7,6 +7,7 @@ export interface QuoteFormData {
     enquiryFor: string
     email: string
     message: string
+    captcha?: string
 }
 
 export interface QuoteDocument extends QuoteFormData {

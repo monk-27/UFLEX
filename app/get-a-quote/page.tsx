@@ -38,6 +38,10 @@ export default function EnquiryForm() {
     message: string;
   }>({ type: null, message: "" });
 
+  // CAPTCHA State
+  const [captcha, setCaptcha] = useState({ q: "", a: 0 });
+  const [userCaptcha, setUserCaptcha] = useState("");
+
   // Form state
   const [formData, setFormData] = useState<QuoteFormData>({
     name: "",
@@ -47,6 +51,17 @@ export default function EnquiryForm() {
     email: "",
     message: "",
   });
+
+  // Generate simple math CAPTCHA
+  const generateCaptcha = () => {
+    const num1 = Math.floor(Math.random() * 10) + 1;
+    const num2 = Math.floor(Math.random() * 10) + 1;
+    setCaptcha({ q: `${num1} + ${num2}`, a: num1 + num2 });
+  };
+
+  useEffect(() => {
+    generateCaptcha();
+  }, []);
 
   // Auto-select business based on URL parameter
   useEffect(() => {
@@ -63,11 +78,31 @@ export default function EnquiryForm() {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     const { name, value } = e.target;
+    // Phone validation: only allow numbers, spaces, and +
+    if (name === "phone") {
+      const phoneRegex = /^[0-9+\s]*$/;
+      if (!phoneRegex.test(value)) return;
+    }
+    // Message limit
+    if (name === "message" && value.length > 1500) return;
+
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    // CAPTCHA verification
+    if (parseInt(userCaptcha) !== captcha.a) {
+      setSubmitStatus({
+        type: "error",
+        message: "Incorrect CAPTCHA answer. Please try again.",
+      });
+      generateCaptcha();
+      setUserCaptcha("");
+      return;
+    }
+
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: "" });
 
@@ -77,7 +112,7 @@ export default function EnquiryForm() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, captcha: userCaptcha }),
       });
 
       // Check content type to avoid crashing on non-JSON responses (like Vercel 500 pages)
@@ -106,6 +141,8 @@ export default function EnquiryForm() {
           email: "",
           message: "",
         });
+        generateCaptcha();
+        setUserCaptcha("");
       } else {
         setSubmitStatus({
           type: "error",
@@ -298,8 +335,28 @@ export default function EnquiryForm() {
                     onChange={handleInputChange}
                     required
                     rows={5}
+                    maxLength={1500}
                     placeholder="Tell us about your requirements..."
                     className="w-full rounded-lg border-2 border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 lato-400 transition-all focus:border-[#117ABA] focus:ring-2 focus:ring-[#117ABA]/20 focus:outline-none hover:border-gray-300 resize-none"
+                  />
+                  <div className="mt-1 text-right text-xs text-gray-400">
+                    {formData.message.length} / 1500 characters
+                  </div>
+                </div>
+
+                {/* CAPTCHA */}
+                <div className="md:col-span-2 group">
+                  <label className="lato-500 mb-2 block text-sm text-gray-700 flex items-center gap-2">
+                    <User className="h-4 w-4 text-[#117ABA]" />
+                    Are you a robot? Solve: <span className="font-bold text-[#117ABA]">{captcha.q} = ?</span> <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="number"
+                    value={userCaptcha}
+                    onChange={(e) => setUserCaptcha(e.target.value)}
+                    required
+                    className="w-full rounded-lg border-2 border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 lato-400 transition-all focus:border-[#117ABA] focus:ring-2 focus:ring-[#117ABA]/20 focus:outline-none hover:border-gray-300"
+                    placeholder="Enter the result"
                   />
                 </div>
 

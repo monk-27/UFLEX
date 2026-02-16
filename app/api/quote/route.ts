@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
         const body: QuoteFormData = await request.json()
 
         // Validate required fields
-        const { name, phone, companyName, enquiryFor, email, message } = body
+        const { name, phone, companyName, enquiryFor, email, message, captcha } = body
 
         if (!name || !phone || !companyName || !enquiryFor || !email || !message) {
             return NextResponse.json<ApiResponse>(
@@ -17,6 +17,18 @@ export async function POST(request: NextRequest) {
                     success: false,
                     message: 'All fields are required',
                     error: 'Missing required fields',
+                },
+                { status: 400 }
+            )
+        }
+
+        // CAPTCHA check
+        if (!captcha) {
+            return NextResponse.json<ApiResponse>(
+                {
+                    success: false,
+                    message: 'CAPTCHA verification is required',
+                    error: 'Missing CAPTCHA',
                 },
                 { status: 400 }
             )
@@ -35,7 +47,20 @@ export async function POST(request: NextRequest) {
             )
         }
 
-        // Create document for MongoDB
+        // Validate phone format (only digits, spaces, and +)
+        const phoneRegex = /^[0-9+\s]{10,15}$/
+        if (!phoneRegex.test(phone.trim())) {
+            return NextResponse.json<ApiResponse>(
+                {
+                    success: false,
+                    message: 'Invalid phone number format. Please enter a valid 10-15 digit number.',
+                    error: 'Invalid phone',
+                },
+                { status: 400 }
+            )
+        }
+
+        // Create document for MongoDB (exclude captcha)
         const quoteDocument: QuoteDocument = {
             name,
             phone,
