@@ -3,9 +3,9 @@ import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
-import { useState, useEffect, FormEvent } from "react";
+import { useState, useEffect, FormEvent, useRef, useCallback } from "react";
 import { QuoteFormData } from "@/types/quote";
-import { Mail, Phone, Building2, MessageSquare, User, Send } from "lucide-react";
+import { Mail, Phone, Building2, MessageSquare, User, Send, RefreshCw } from "lucide-react";
 
 const BUSINESS_OPTIONS = [
   "Packaging Films and PET Resin",
@@ -39,8 +39,9 @@ export default function EnquiryForm() {
   }>({ type: null, message: "" });
 
   // CAPTCHA State
-  const [captcha, setCaptcha] = useState({ q: "", a: 0 });
+  const [captchaCode, setCaptchaCode] = useState("");
   const [userCaptcha, setUserCaptcha] = useState("");
+  const canvasRef = useRef<HTMLCanvasElement>(null);
 
   // Form state
   const [formData, setFormData] = useState<QuoteFormData>({
@@ -52,16 +53,73 @@ export default function EnquiryForm() {
     message: "",
   });
 
-  // Generate simple math CAPTCHA
-  const generateCaptcha = () => {
-    const num1 = Math.floor(Math.random() * 10) + 1;
-    const num2 = Math.floor(Math.random() * 10) + 1;
-    setCaptcha({ q: `${num1} + ${num2}`, a: num1 + num2 });
+  // Generate alphanumeric CAPTCHA
+  const generateCaptcha = useCallback(() => {
+    const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"; // Removed ambiguous chars like 0, O, 1, I, l
+    let code = "";
+    for (let i = 0; i < 6; i++) {
+      code += chars[Math.floor(Math.random() * chars.length)];
+    }
+    setCaptchaCode(code);
+
+    // Small delay to ensure canvas is ready
+    setTimeout(() => drawCaptcha(code), 50);
+  }, []);
+
+  const drawCaptcha = (code: string) => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    // Clear canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Background
+    ctx.fillStyle = "#ffffff";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Add noise (dots)
+    for (let i = 0; i < 100; i++) {
+      ctx.fillStyle = `rgba(100, 100, 100, ${Math.random() * 0.5})`;
+      ctx.beginPath();
+      ctx.arc(Math.random() * canvas.width, Math.random() * canvas.height, 0.5, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    // Add noise (lines)
+    for (let i = 0; i < 6; i++) {
+      ctx.strokeStyle = `rgba(50, 50, 50, ${Math.random() * 0.3})`;
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(Math.random() * canvas.width, Math.random() * canvas.height);
+      ctx.lineTo(Math.random() * canvas.width, Math.random() * canvas.height);
+      ctx.stroke();
+    }
+
+    // Draw characters with distortion
+    ctx.font = "italic bold 32px serif";
+    ctx.textBaseline = "middle";
+
+    for (let i = 0; i < code.length; i++) {
+      const char = code[i];
+      ctx.fillStyle = "#555555";
+
+      ctx.save();
+      const x = 30 + i * 35;
+      const y = canvas.height / 2 + (Math.random() - 0.5) * 10;
+      const angle = (Math.random() - 0.5) * 0.4;
+
+      ctx.translate(x, y);
+      ctx.rotate(angle);
+      ctx.fillText(char, 0, 0);
+      ctx.restore();
+    }
   };
 
   useEffect(() => {
     generateCaptcha();
-  }, []);
+  }, [generateCaptcha]);
 
   // Auto-select business based on URL parameter
   useEffect(() => {
@@ -93,10 +151,10 @@ export default function EnquiryForm() {
     e.preventDefault();
 
     // CAPTCHA verification
-    if (parseInt(userCaptcha) !== captcha.a) {
+    if (userCaptcha.toUpperCase() !== captchaCode.toUpperCase()) {
       setSubmitStatus({
         type: "error",
-        message: "Incorrect CAPTCHA answer. Please try again.",
+        message: "Incorrect CAPTCHA. Please try again.",
       });
       generateCaptcha();
       setUserCaptcha("");
@@ -345,19 +403,48 @@ export default function EnquiryForm() {
                 </div>
 
                 {/* CAPTCHA */}
-                <div className="md:col-span-2 group">
-                  <label className="lato-500 mb-2 block text-sm text-gray-700 flex items-center gap-2">
-                    <User className="h-4 w-4 text-[#117ABA]" />
-                    Are you a robot? Solve: <span className="font-bold text-[#117ABA]">{captcha.q} = ?</span> <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="number"
-                    value={userCaptcha}
-                    onChange={(e) => setUserCaptcha(e.target.value)}
-                    required
-                    className="w-full rounded-lg border-2 border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 lato-400 transition-all focus:border-[#117ABA] focus:ring-2 focus:ring-[#117ABA]/20 focus:outline-none hover:border-gray-300"
-                    placeholder="Enter the result"
-                  />
+                <div className="md:col-span-2 space-y-4">
+                  <div className="rounded-lg border border-gray-200 overflow-hidden shadow-sm">
+                    {/* Captcha Header */}
+                    <div className="bg-[#5CB85C] px-4 py-2 flex items-center justify-between">
+                      <span className="text-white lato-700 text-xs uppercase tracking-wider">Captcha</span>
+                      <button
+                        type="button"
+                        onClick={generateCaptcha}
+                        className="text-white/80 hover:text-white transition-colors"
+                        title="Refresh Captcha"
+                      >
+                        <RefreshCw className="h-4 w-4" />
+                      </button>
+                    </div>
+
+                    {/* Captcha Image Area */}
+                    <div className="p-4 flex items-center justify-center bg-white border-b border-gray-100 min-h-[80px]">
+                      <canvas
+                        ref={canvasRef}
+                        width={250}
+                        height={60}
+                        className="cursor-pointer hover:opacity-90 transition-opacity"
+                        onClick={generateCaptcha}
+                        title="Click to refresh"
+                      />
+                    </div>
+
+                    {/* Captcha Input Area */}
+                    <div className="p-4 bg-gray-50">
+                      <label className="lato-500 mb-2 block text-sm text-gray-700">
+                        Type the characters shown above <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        value={userCaptcha}
+                        onChange={(e) => setUserCaptcha(e.target.value)}
+                        required
+                        className="w-full rounded-lg border-2 border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-400 lato-400 transition-all focus:border-[#117ABA] focus:ring-2 focus:ring-[#117ABA]/20 focus:outline-none hover:border-gray-300"
+                        placeholder="Enter Captcha"
+                      />
+                    </div>
+                  </div>
                 </div>
 
                 {/* Submit Button */}
