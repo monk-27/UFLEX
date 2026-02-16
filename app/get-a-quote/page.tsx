@@ -337,14 +337,14 @@ export default function EnquiryForm() {
           </div>
 
           {/* Additional Info */}
-          <div className="mt-10 text-center">
+          {/* <div className="mt-10 text-center">
             <p className="text-gray-600 lato-400 text-sm">
               By submitting this form, you agree to our{" "}
               <a href="/privacy-policy" className="text-[#117ABA] hover:underline">
                 Privacy Policy
               </a>
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
       <SiteFooter />
