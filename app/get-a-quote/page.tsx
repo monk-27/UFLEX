@@ -80,7 +80,17 @@ export default function EnquiryForm() {
         body: JSON.stringify(formData),
       });
 
-      const data = await response.json();
+      // Check content type to avoid crashing on non-JSON responses (like Vercel 500 pages)
+      const contentType = response.headers.get("content-type");
+      let data;
+
+      if (contentType && contentType.indexOf("application/json") !== -1) {
+        data = await response.json();
+      } else {
+        // Handle non-JSON response (likely a server error page)
+        console.error("Received non-JSON response:", await response.text());
+        throw new Error("Server configuration error. Please check environment variables.");
+      }
 
       if (data.success) {
         setSubmitStatus({
