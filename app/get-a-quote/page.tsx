@@ -151,7 +151,7 @@ export default function EnquiryForm() {
     e.preventDefault();
 
     // CAPTCHA verification
-    if (userCaptcha.toUpperCase() !== captchaCode.toUpperCase()) {
+    if (userCaptcha !== captchaCode) {
       setSubmitStatus({
         type: "error",
         message: "Incorrect CAPTCHA. Please try again.",

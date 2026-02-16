@@ -1,28 +1,28 @@
 import nodemailer from 'nodemailer'
 
 export interface QuoteEmailData {
-    name: string
-    phone: string
-    companyName: string
-    enquiryFor: string
-    email: string
-    message: string
-    submittedAt: string
+  name: string
+  phone: string
+  companyName: string
+  enquiryFor: string
+  email: string
+  message: string
+  submittedAt: string
 }
 
 // Create reusable transporter
 const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: parseInt(process.env.SMTP_PORT || '587'),
-    secure: process.env.SMTP_PORT === '465', // true for 465, false for other ports
-    auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASSWORD,
-    },
+  host: process.env.SMTP_HOST,
+  port: parseInt(process.env.SMTP_PORT || '587'),
+  secure: process.env.SMTP_PORT === '465', // true for 465, false for other ports
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASSWORD,
+  },
 })
 
 export async function sendQuoteEmail(data: QuoteEmailData): Promise<void> {
-    const htmlContent = `
+  const htmlContent = `
     <!DOCTYPE html>
     <html>
     <head>
@@ -115,12 +115,13 @@ export async function sendQuoteEmail(data: QuoteEmailData): Promise<void> {
     </html>
   `
 
-    const mailOptions = {
-        from: process.env.SMTP_FROM,
-        to: process.env.SMTP_TO,
-        subject: `New Quote Request - ${data.enquiryFor}`,
-        html: htmlContent,
-        text: `
+  const mailOptions = {
+    from: `"${data.name}" <${data.email}>`,
+    replyTo: data.email,
+    to: process.env.SMTP_TO,
+    subject: `New Quote Request - ${data.enquiryFor}`,
+    html: htmlContent,
+    text: `
 New Quote Request
 
 Name: ${data.name}
@@ -131,7 +132,7 @@ Email: ${data.email}
 Message: ${data.message}
 Submitted At: ${data.submittedAt}
     `,
-    }
+  }
 
-    await transporter.sendMail(mailOptions)
+  await transporter.sendMail(mailOptions)
 }
