@@ -7,11 +7,11 @@ import ChemicalsComp, { businesses } from "@/components/chemicals"
 
 export default function Page() {
   const business = businesses.find(b => b.key === "chemicals")!;
-  
+
   return (
     <>
       <SiteHeader />
-     <ChemicalsComp business={business}/>
+      <ChemicalsComp business={business} />
       <SiteFooter />
     </>
   )

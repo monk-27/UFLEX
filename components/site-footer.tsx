@@ -119,7 +119,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Phone, Mail, Twitter, Facebook, Instagram, Linkedin,Youtube } from "lucide-react"
+import { Phone, Mail, Twitter, Facebook, Instagram, Linkedin, Youtube } from "lucide-react"
 
 export function SiteFooter() {
   const year = new Date().getFullYear()
@@ -134,102 +134,103 @@ export function SiteFooter() {
 
   return (
     <footer className="text-white bg-[#117ABA]">
-  {/* Match header container exactly */}
-  <div className="site-header w-full max-w-7xl mx-auto px-4 sm:px-0 py-10 md:py-14">
+      {/* Match header container exactly */}
+      <div className="site-header w-full max-w-7xl mx-auto px-4 sm:px-0 py-10 md:py-14">
 
-    {/* Top grid */}
-    <div className="grid gap-10 md:grid-cols-3 lg:grid-cols-4 items-start">
-      
-      {/* Logo + socials under logo */}
-      <div className="space-y-6">
-        <Image
-                     src="/images/new/logo.png"
+        {/* Top grid */}
+        <div className="grid gap-10 md:grid-cols-3 lg:grid-cols-4 items-start">
 
-          alt="UFlex"
-          width={180}
-          height={56}
-          className="h-[56px] w-auto"
-        />
+          {/* Logo + socials under logo */}
+          <div className="space-y-6">
+            <Image
+              src="/images/new/logo.png"
 
-        <div className="flex gap-3 flex-wrap">
-          {[
-            { Icon: Twitter, href: " https://twitter.com/uflexltd" },
-            { Icon: Facebook, href: "https://www.facebook.com/uflexltd" },
-            { Icon: Instagram, href: "https://www.instagram.com/uflexltd" },
-            { Icon: Linkedin, href: "https://www.linkedin.com/company/uflexltd" },
-            { Icon: Youtube, href: "https://www.youtube.com/@uflexltdpackaging" },
+              alt="UFlex"
+              width={180}
+              height={56}
+              className="h-[56px] w-auto"
+            />
 
-          ].map(({ Icon, href }, i) => (
+            <div className="flex gap-3 flex-wrap">
+              {[
+                { Icon: Twitter, href: " https://twitter.com/uflexltd" },
+                { Icon: Facebook, href: "https://www.facebook.com/uflexltd" },
+                { Icon: Instagram, href: "https://www.instagram.com/uflexltd" },
+                { Icon: Linkedin, href: "https://www.linkedin.com/company/uflexltd" },
+                { Icon: Youtube, href: "https://www.youtube.com/@uflexltdpackaging" },
+
+              ].map(({ Icon, href }, i) => (
+                <Link
+                  key={i}
+                  href={href}
+                  target="_blank"
+                  className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#4E74A6] ring-1 ring-white/40"
+                >
+                  <Icon className="h-5 w-5" />
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Column 1 */}
+          <nav className="grid gap-4 text-[15px] lato-700">
+            <Link href="/">Home</Link>
+            <Link href="/about-us">About Us</Link>
+            {/* <Link href="/business">Our Business</Link> */}
+            <Link href="/sustainability">Sustainability</Link>
+            <Link href="/investors">Investors</Link>
+          </nav>
+
+          {/* Column 2 */}
+          <nav className="grid gap-4 text-[15px] lato-700">
+            <Link href="/hall-of-fame">Hall of Fame</Link>
+            <Link href="/careers">Work With Us</Link>
+            <Link href="/press-room">The Press Room</Link>
+            <Link href="/get-in-touch">Get in Touch</Link>
+            <Link href="/get-a-quote">Get a Quote</Link>
+          </nav>
+
+          {/* Contact column */}
+          <div className="space-y-5 lg:justify-self-end">
+            <div className="flex items-center gap-3">
+              <span className="h-9 w-9 flex items-center justify-center rounded-full bg-white/15">
+                <Phone className="h-4 w-4" />
+              </span>
+              <a href="tel:+911202556040" className="text-[15px] lato-700">
+                +91 120 2556040
+              </a>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <span className="h-9 w-9 flex items-center justify-center rounded-full bg-white/15">
+                <Mail className="h-4 w-4" />
+              </span>
+              <a href="mailto:enquiry@uflexltd.com" className="text-[15px] lato-700">
+                enquiry@uflexltd.com
+              </a>
+            </div>
+
             <Link
-              key={i}
-              href={href}
-              target="_blank"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#4E74A6] ring-1 ring-white/40"
+              href="/pay-online"
+              className="inline-block bg-[#D63C3C] px-4 py-2 rounded-md text-sm font-semibold"
             >
-              <Icon className="h-5 w-5" />
+              Pay Online
             </Link>
-          ))}
+          </div>
+        </div>
+
+        <hr className="my-8 border-white/60" />
+
+        <div className="flex flex-col-reverse md:flex-row items-start md:items-center justify-between gap-4">
+          <p className="text-[15px] lato-700">
+            ©2025–2026 UFlex Limited (www.uflexltd.com). All rights reserved.
+          </p>
+          <Link href="/legal-disclaimer" className="text-[15px] lato-700">
+            Legal disclaimer
+          </Link>
         </div>
       </div>
-
-      {/* Column 1 */}
-      <nav className="grid gap-4 text-[15px] lato-700">
-        <Link href="/">Home</Link>
-        <Link href="/about-us">About Us</Link>
-        {/* <Link href="/business">Our Business</Link> */}
-        <Link href="/sustainability">Sustainability</Link>
-        <Link href="/investors">Investors</Link>
-      </nav>
-
-      {/* Column 2 */}
-      <nav className="grid gap-4 text-[15px] lato-700">
-        <Link href="/hall-of-fame">Hall of Fame</Link>
-        <Link href="/careers">Work With Us</Link>
-        <Link href="/press-room">The Press Room</Link>
-        <Link href="/get-in-touch">Get in Touch</Link>
-      </nav>
-
-      {/* Contact column */}
-      <div className="space-y-5 lg:justify-self-end">
-        <div className="flex items-center gap-3">
-          <span className="h-9 w-9 flex items-center justify-center rounded-full bg-white/15">
-            <Phone className="h-4 w-4" />
-          </span>
-          <a href="tel:+911202556040" className="text-[15px] lato-700">
-            +91 120 2556040
-          </a>
-        </div>
-
-        <div className="flex items-center gap-3">
-          <span className="h-9 w-9 flex items-center justify-center rounded-full bg-white/15">
-            <Mail className="h-4 w-4" />
-          </span>
-          <a href="mailto:enquiry@uflexltd.com" className="text-[15px] lato-700">
-            enquiry@uflexltd.com
-          </a>
-        </div>
-
-        <Link
-          href="/pay-online"
-          className="inline-block bg-[#D63C3C] px-4 py-2 rounded-md text-sm font-semibold"
-        >
-          Pay Online
-        </Link>
-      </div>
-    </div>
-
-    <hr className="my-8 border-white/60" />
-
-    <div className="flex flex-col-reverse md:flex-row items-start md:items-center justify-between gap-4">
-      <p className="text-[15px] lato-700">
-        ©2025–2026 UFlex Limited (www.uflexltd.com). All rights reserved.
-      </p>
-      <Link href="/legal-disclaimer" className="text-[15px] lato-700">
-        Legal disclaimer
-      </Link>
-    </div>
-  </div>
-</footer>
+    </footer>
 
   )
 }

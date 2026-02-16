@@ -10,14 +10,12 @@ import PackageComp, { businesses } from "@/components/packaging"
 
 const business = businesses.find(b => b.key === "packaging-films")!;
 export default function Page() {
-  
+
   return (
     <>
       <SiteHeader />
 
       <PackageComp business={business} />
-
-
 
       <SiteFooter />
 

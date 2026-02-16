@@ -2,7 +2,7 @@
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { BusinessPage } from "@/components/business-page"
-import FlexiComp , { businesses }from "@/components/flexitubes"
+import FlexiComp, { businesses } from "@/components/flexitubes"
 
 
 export default function Page() {
@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <>
       <SiteHeader />
-      <FlexiComp business={business}/>
+      <FlexiComp business={business} />
       <SiteFooter />
     </>
   )

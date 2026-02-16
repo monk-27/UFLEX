@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import { PageTransition } from "@/components/page-transition"
 import "./globals.css"
-import FloatingButton from "@/components/FloatingButton"
+import { GetQuoteButton } from "@/components/get-quote-button"
 
 export const metadata: Metadata = {
   title: "UFlex Themed Site",
@@ -29,10 +29,10 @@ export default function RootLayout({
         </a>
         <Suspense fallback={null}>
           {/* <PageTransition> */}
-            <main id="content" className="">{children}</main>
+          <main id="content" className="">{children}</main>
           {/* </PageTransition> */}
         </Suspense>
-         <FloatingButton />
+        <GetQuoteButton />
         <Analytics />
       </body>
     </html>
