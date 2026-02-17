@@ -16,8 +16,9 @@ export default function FloatingButton() {
         w-14 hover:w-40
         overflow-hidden
         rounded-full
-        bg-[#117ABA]
-        text-white
+        border border-[#117ABA]
+        text-[#117ABA]
+        bg-white
         shadow-[0_10px_25px_rgba(17,122,186,0.35)]
         transition-[width,box-shadow,transform]
         duration-300 ease-out

@@ -30,7 +30,7 @@ export function GetQuoteButton() {
     return (
         <Link
             href={href}
-            className="fixed bottom-8 right-8 z-50 flex items-center gap-2 rounded-full bg-[#117ABA] px-6 py-3 text-white shadow-lg transition-all hover:bg-[#0F6AA0] hover:shadow-xl hover:scale-105"
+            className="fixed bottom-8 right-8 z-50 flex items-center gap-2 rounded-full border-2 border-[#117ABA] bg-white px-6 py-3 text-[#117ABA] shadow-lg transition-all hover:bg-[#F0F7FF] hover:shadow-xl hover:scale-105"
         >
             <MessageSquare className="h-5 w-5" />
             <span className="lato-700 text-sm">Get a Quote</span>
