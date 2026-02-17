@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getDatabase } from '@/lib/mongodb'
-import { sendQuoteEmail } from '@/lib/email'
+import { sendQuoteEmail, sendConfirmationEmail } from '@/lib/email'
 import { QuoteFormData, QuoteDocument, ApiResponse } from '@/types/quote'
 
 export async function POST(request: NextRequest) {
@@ -82,7 +82,7 @@ export async function POST(request: NextRequest) {
             // Continue even if DB fails - we'll still try to send email
         }
 
-        // Send email notification
+        // Send email notification to admin
         try {
             await sendQuoteEmail({
                 name,
@@ -97,7 +97,23 @@ export async function POST(request: NextRequest) {
                     timeStyle: 'long',
                 }),
             })
-            console.log('Email sent successfully')
+            console.log('Admin notification email sent')
+
+            // Send confirmation email to user
+            await sendConfirmationEmail({
+                name,
+                phone,
+                companyName,
+                enquiryFor,
+                email,
+                message,
+                submittedAt: new Date().toLocaleString('en-IN', {
+                    timeZone: 'Asia/Kolkata',
+                    dateStyle: 'full',
+                    timeStyle: 'long',
+                }),
+            })
+            console.log('User confirmation email sent')
         } catch (emailError) {
             console.error('Email Error:', emailError)
             // Return success even if email fails, as long as DB save worked
