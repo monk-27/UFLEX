@@ -6,7 +6,7 @@ import Image from "next/image";
 import React, { useState, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-type Year = 2025 | 2024;
+type Year = 2026 | 2025 | 2024;
 type CoverageTab = "Print Media" | "Online Media" | "Electronic Media";
 
 interface MediaItem {
@@ -27,10 +27,43 @@ const PRESS_ROOM_DATA = {
 
   mediaCoverage: {
     tabs: ["Print Media", "Online Media", "Electronic Media"] as const,
-    years: [2025, 2024] as const,
+    years: [2026, 2025, 2024] as const,
 
     data: {
       "Print Media": {
+        2026: [
+          { image: "https://media.fortuneindia.com/fortune-india/2026-02-09/q5625jm2/uflex.jpg?w=640&auto=format,compress&q=80", title: "India-EU, U.S. trade deals to boost packaging sector", link: "https://www.fortuneindia.com/business-news/india-eu-us-trade-deals-to-boost-packaging-sector-uflexs-jeevaraj-gopal-pillai/130223", type: "pdf" },
+          {
+            image: "/images/new/m3.png",
+            title: "Uflex at PlastIndia 2026",
+            link: "https://packagingsouthasia.com/events/uflex-ceruflex-500/",
+            type: "pdf"
+          },
+          {
+            image: "/images/new/m4.png",
+            title: "Uflex at PlastIndia 2026",
+            link: "https://packagingsouthasia.com/consumables/uflex-chemicals-plastindia/",
+            type: "pdf"
+          },
+          {
+            image: "https://i0.wp.com/thepackman.in/wp-content/uploads/2026/02/Uflex-Plastindia-Packman-09-02-2026.jpg?w=1000&ssl=1",
+            title: "UFlex launches sustainable water-based soft touch coating",
+            link: "https://thepackman.in/uflex-launches-sustainable-water-based-soft-touch-coating-at-plastindia-2026/",
+            type: "pdf"
+          },
+          {
+            image: "/images/new/m5.png",
+            title: "PlastIndia 2026",
+            link: "https://www.packaginginsights.com/news/uflex-ceruflex-500-gravure-printing-machine-plastindia.html",
+            type: "pdf"
+          },
+          {
+            image: "https://etedge-insights.com/wp-content/uploads/2026/01/ET-Edge_imresizer.jpg",
+            title: "HR as a strategic growth engine in manufacturing",
+            link: "https://etedge-insights.com/resources/brands-speak/hr-as-a-strategic-growth-engine-in-manufacturing-inside-uflexs-people-first-playbook/",
+            type: "pdf"
+          }
+        ],
         2025: [
           { image: "/images/press/1.jpg", title: "BS - Delhi (05 Dec 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_BS_Delhi_05Dec2025_PG4.pdf", type: "pdf" },
           { image: "/images/press/PC_Nov_5.jpg", title: "Sep-Oct 2025", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_TPM_SEP_OCT2025.pdf", type: "pdf" },
@@ -54,6 +87,7 @@ const PRESS_ROOM_DATA = {
       } satisfies { [year in Year]: MediaItem[] },
 
       "Online Media": {
+        2026: [],
         2025: [
           { image: "/images/press/OC_Dec_1.jpg", title: " Stress industry leaders", link: "https://manufacturing.economictimes.indiatimes.com/news/industry/india-must-turn-cost-advantage-into-reliable-process-led-manufacturing-stress-industry-leaders/125748711", type: "article" },
           { image: "/images/press/OC_Dec_4.jpg", title: "UFlex Flexitubes", link: "https://spnews.com/uflex-flexitubes/", type: "article" },
@@ -62,38 +96,38 @@ const PRESS_ROOM_DATA = {
           { image: "/images/press/OC_Dec_5.jpg", title: " Cosmoprof India", link: "https://packagingsouthasia.com/events/uflexs-flexitubes-cosmoprof-india/", type: "article" },
           // { image: "/images/press/OC_Dec_5.jpg", title: " Cosmoprof", link: "https://www.whatpackaging.co.in/news/uflex-to-showcase-its-flexitubes-range-at-cosmoprof--59279", type: "article" },
           { image: "/images/press/OC_Nov_7.jpg", title: "UFlex’s Q2FY26 earnings ", link: "https://www.printweek.in/news/uflexs-q2fy26-earnings-show-promise--61315", type: "article" },
-          { image:"/images/press/OC_Dec_4.jpg",title: " Cosmoprof India 2025", link: "https://thepackman.in/uflexs-advanced-tube-packaging-solutions-for-beauty-brands-at-cosmoprof-india-2025/", type: "article" },
-          { image:"/images/press/OC_Nov_5.jpg",title: "UFlex at Karnataka plant", link: "https://economictimes.indiatimes.com/industry/indl-goods/svs/packaging/uflex-to-invest-over-rs-700-crore-to-expand-packaging-film-capacity-at-karnataka-plant/articleshow/125516154.cms", type: "article" },
-          { image:"/images/press/OC_Nov_2.jpg",title: "UFlex at Karnataka plant", link: "https://www.ptinews.com/story/business/uflex-to-invest-over-rs-700-cr-to-expand-packaging-film-capacity-at-karnataka-plant/3123197", type: "article" },
-          { image:"/images/press/OC_Nov_3.jpg",title: "UFlex in Karnataka with over Rs 700 crore investment", link: "https://www.livemint.com/companies/news/uflex-plans-major-expansion-in-karnataka-with-over-rs-700-crore-investment-11763878961562.html", type: "article" },
-          { image:"/images/press/OC_Nov_1.jpg",title: "UFlex in Karnataka", link: "https://www.business-standard.com/companies/news/uflex-to-invest-over-700-cr-to-expand-packaging-film-capacity-in-karnataka-125112300142_1.html", type: "article" },
-          { image:"/images/press/4.webp",title: "UFlex at Karnataka plant", link: "https://www.thehindubusinessline.com/companies/uflex-to-invest-over-700-cr-to-expand-packaging-film-capacity-at-karnataka-plant/article70313712.ece", type: "article" },
-          { image:"/images/press/OC_Nov_6.jpg",title: "India’s UFlex to expand packaging film capacity", link: "https://finance.yahoo.com/news/india-uflex-expand-packaging-film-090733470.html", type: "article" },
-          { image:"/images/press/OC_Nov_8.jpg",title: "UFlex expands packaging film capacity", link: "https://www.packaging-gateway.com/news/uflex-expands-packaging-film-capacity/", type: "article" },
-          { image:"/images/press/OC_Nov_9.jpg",title: "UFlex packaging film capacity", link: "https://www.bwcfoworld.com/article/uflex-to-invest-over-rs-700-cr-to-expand-packaging-film-capacity-580985", type: "article" },
-          { image:"/images/press/OC_Nov_10.jpg",title: "UFlex for food-grade applications", link: "https://www.whatpackaging.co.in/news/uflex-introduces-recycled-packaging-solutions-for-food-grade-applications-59258", type: "article" },
-          { image:"/images/press/OC_Nov_11.jpg",title: "UFlex global packaging film capacity increase: 700 crore investment", link: "https://www.abplive.com/business/uflex-global-packaging-film-capacity-increase-700-crore-investment-know-the-details-3047930", type: "article" },
-          { image:"/images/press/OC_Nov_16.jpg",title: "UFlex posts Rs 27 cr profit in Q2", link: "https://www.ptinews.com/story/business/uflex-posts-rs-27-cr-profit-in-q2/3095341", type: "article" },
-          { image:"/images/press/OC_Nov_16.jpg",title: "UFlex Q2 profit Rs 27 cr", link: "https://money.rediff.com/news/market/uflex-q2-profit-rs-27-cr/36923320251113", type: "article" },
-          { image:"/images/press/OC_Nov_12.jpg",title: "UFlex with Tech Mahindra Global Chess League 2025", link: "https://www.outlookindia.com/announcements/news-media-wire/uflex-partners-with-triveni-continental-kings-for-season-3-of-the-tech-mahindra-global-chess-league-2025", type: "article" },
-          { image:"/images/press/OC_Nov_13.jpg",title: "UFlex at IndiaCorr Expo 2025", link: "https://thepackman.in/uflex-chemicals-highlights-sustainability-and-innovation-at-indiacorr-expo-2025/", type: "article" },
-          { image:"/images/press/OC_Nov_14.jpg",title: "UFlex to showcase", link: "https://spnews.com/uflex-to-showcase/", type: "article" },
-          { image:"/images/press/OC_Nov_17.jpg",title: "UFlex at Pet Fair", link: "https://packagingsouthasia.com/type-of-packaging/flexible-packaging/uflex-at-pet-fair/", type: "article" },
-          { image:"/images/press/OC_Nov_18.jpg",title: "UFlex at Pet Fair South East Asia 2025", link: "https://thepackman.in/uflex-to-showcase-a-pet-food-packaging-solutions-at-pet-fair-south-east-asia-2025/", type: "article" },
-          { image:"/images/press/OC_Nov_17.jpg",title: "UFlex in Pet Fair Southeast Asia", link: "https://www.whatpackaging.co.in/news/uflex-to-participate-in-pet-fair-southeast-asia-59175", type: "article" },
-          { image:"/images/press/OC_Nov_19.jpg",title: "UFlex at Beautyworld Middle East", link: "https://www.indianchemicalnews.com/general/uflex-to-showcase-innovation-in-tube-packaging-at-beautyworld-middle-east-27937", type: "article" },
-          { image:"/images/press/OC_Nov_20.jpg",title: "UFlex’s at Beautyworld Middle East", link: "https://www.printweek.in/news/uflexs-flexitubes-to-showcase-at-beautyworld-middle-east-61237", type: "article" },
-          { image:"/images/press/OC_Nov_21.jpg",title: "UFlex’s at Beautyworld Middle East 2025", link: "https://thepackman.in/uflexs-flexitubes-to-showcase-tube-packaging-solutions-at-beautyworld-middle-east-2025/", type: "article" },
-          { image:"/images/press/OC_Oct_1.jpg",title: "Live updates from Fachpack 2025", link: "https://packagingeurope.com/news/live-updates-from-fachpack-2025/13285.article", type: "article" },
-          { image:"/images/press/OC_Oct_2.jpg",title: "Morris Packaging, UFlex partner ", link: "https://www.petfoodindustry.com/packaging/pet-food-packaging/news/15768017/morris-packaging-llc-morris-packaging-uflex-partner-on-woven-bag-solutions", type: "article" },
-          { image:"/images/press/OC_Oct_5.jpg",title: "Flexible to deliver woven bag solutions", link: "https://www.petfoodprocessing.net/articles/19720-flexible-packaging-companies-team-up-to-deliver-woven-bag-solutions", type: "article" },
-          { image:"/images/press/OC_Oct_3.jpg",title: "Morris Packaging and UFlex", link: "https://www.packagingmea.com/morris-packaging-and-uflex-partner-on-sustainable-woven-bag-solutions/", type: "article" },
-          { image:"/images/press/OC_Oct_2.jpg",title: "Morris Packaging and UFlex partner for woven bag development", link: "https://www.packagingstrategies.com/articles/106020-morris-packaging-and-uflex-partner-for-woven-bag-development", type: "article" },
-          { image:"/images/press/OC_Oct_2.jpg",title: "Morris + UFlex partner", link: "https://packagingsouthasia.com/application/industrial-products/morris-uflex-partner/", type: "article" },
-          { image:"/images/press/OC_Oct_9.jpg",title: "Morris Packaging and UFlex forge strategic partnership to deliver sustainable woven bag series", link: "https://thepackman.in/morris-packaging-and-uflex-forge-strategic-partnership-to-deliver-sustainable-woven-bag-series/", type: "article" },
-          { image:"/images/press/OC_Oct_8.jpg",title: "Morris Packaging-UFlex forge strategic woven bag partnership", link: "https://www.whatpackaging.co.in/news/morris-packaging-uflex-forge-strategic-woven-bag-partnership-59121", type: "article" },
-          { image:"/images/press/OC_Oct_4.jpg",title: "UFlex water-based solutions", link: "https://packagingsouthasia.com/application/uflex-water-based-solutions/", type: "article" },
-          { image:"/images/press/OC_Sep_1.jpg",title: "UFlex Limited – A global leader in flexible packaging", link: "https://www.outlookindia.com/announcements/news-media-wire/uflex-limited-a-global-leader-in-flexible-packaging", type: "article" },
+          { image: "/images/press/OC_Dec_4.jpg", title: " Cosmoprof India 2025", link: "https://thepackman.in/uflexs-advanced-tube-packaging-solutions-for-beauty-brands-at-cosmoprof-india-2025/", type: "article" },
+          { image: "/images/press/OC_Nov_5.jpg", title: "UFlex at Karnataka plant", link: "https://economictimes.indiatimes.com/industry/indl-goods/svs/packaging/uflex-to-invest-over-rs-700-crore-to-expand-packaging-film-capacity-at-karnataka-plant/articleshow/125516154.cms", type: "article" },
+          { image: "/images/press/OC_Nov_2.jpg", title: "UFlex at Karnataka plant", link: "https://www.ptinews.com/story/business/uflex-to-invest-over-rs-700-cr-to-expand-packaging-film-capacity-at-karnataka-plant/3123197", type: "article" },
+          { image: "/images/press/OC_Nov_3.jpg", title: "UFlex in Karnataka with over Rs 700 crore investment", link: "https://www.livemint.com/companies/news/uflex-plans-major-expansion-in-karnataka-with-over-rs-700-crore-investment-11763878961562.html", type: "article" },
+          { image: "/images/press/OC_Nov_1.jpg", title: "UFlex in Karnataka", link: "https://www.business-standard.com/companies/news/uflex-to-invest-over-700-cr-to-expand-packaging-film-capacity-in-karnataka-125112300142_1.html", type: "article" },
+          { image: "/images/press/4.webp", title: "UFlex at Karnataka plant", link: "https://www.thehindubusinessline.com/companies/uflex-to-invest-over-700-cr-to-expand-packaging-film-capacity-at-karnataka-plant/article70313712.ece", type: "article" },
+          { image: "/images/press/OC_Nov_6.jpg", title: "India’s UFlex to expand packaging film capacity", link: "https://finance.yahoo.com/news/india-uflex-expand-packaging-film-090733470.html", type: "article" },
+          { image: "/images/press/OC_Nov_8.jpg", title: "UFlex expands packaging film capacity", link: "https://www.packaging-gateway.com/news/uflex-expands-packaging-film-capacity/", type: "article" },
+          { image: "/images/press/OC_Nov_9.jpg", title: "UFlex packaging film capacity", link: "https://www.bwcfoworld.com/article/uflex-to-invest-over-rs-700-cr-to-expand-packaging-film-capacity-580985", type: "article" },
+          { image: "/images/press/OC_Nov_10.jpg", title: "UFlex for food-grade applications", link: "https://www.whatpackaging.co.in/news/uflex-introduces-recycled-packaging-solutions-for-food-grade-applications-59258", type: "article" },
+          { image: "/images/press/OC_Nov_11.jpg", title: "UFlex global packaging film capacity increase: 700 crore investment", link: "https://www.abplive.com/business/uflex-global-packaging-film-capacity-increase-700-crore-investment-know-the-details-3047930", type: "article" },
+          { image: "/images/press/OC_Nov_16.jpg", title: "UFlex posts Rs 27 cr profit in Q2", link: "https://www.ptinews.com/story/business/uflex-posts-rs-27-cr-profit-in-q2/3095341", type: "article" },
+          { image: "/images/press/OC_Nov_16.jpg", title: "UFlex Q2 profit Rs 27 cr", link: "https://money.rediff.com/news/market/uflex-q2-profit-rs-27-cr/36923320251113", type: "article" },
+          { image: "/images/press/OC_Nov_12.jpg", title: "UFlex with Tech Mahindra Global Chess League 2025", link: "https://www.outlookindia.com/announcements/news-media-wire/uflex-partners-with-triveni-continental-kings-for-season-3-of-the-tech-mahindra-global-chess-league-2025", type: "article" },
+          { image: "/images/press/OC_Nov_13.jpg", title: "UFlex at IndiaCorr Expo 2025", link: "https://thepackman.in/uflex-chemicals-highlights-sustainability-and-innovation-at-indiacorr-expo-2025/", type: "article" },
+          { image: "/images/press/OC_Nov_14.jpg", title: "UFlex to showcase", link: "https://spnews.com/uflex-to-showcase/", type: "article" },
+          { image: "/images/press/OC_Nov_17.jpg", title: "UFlex at Pet Fair", link: "https://packagingsouthasia.com/type-of-packaging/flexible-packaging/uflex-at-pet-fair/", type: "article" },
+          { image: "/images/press/OC_Nov_18.jpg", title: "UFlex at Pet Fair South East Asia 2025", link: "https://thepackman.in/uflex-to-showcase-a-pet-food-packaging-solutions-at-pet-fair-south-east-asia-2025/", type: "article" },
+          { image: "/images/press/OC_Nov_17.jpg", title: "UFlex in Pet Fair Southeast Asia", link: "https://www.whatpackaging.co.in/news/uflex-to-participate-in-pet-fair-southeast-asia-59175", type: "article" },
+          { image: "/images/press/OC_Nov_19.jpg", title: "UFlex at Beautyworld Middle East", link: "https://www.indianchemicalnews.com/general/uflex-to-showcase-innovation-in-tube-packaging-at-beautyworld-middle-east-27937", type: "article" },
+          { image: "/images/press/OC_Nov_20.jpg", title: "UFlex’s at Beautyworld Middle East", link: "https://www.printweek.in/news/uflexs-flexitubes-to-showcase-at-beautyworld-middle-east-61237", type: "article" },
+          { image: "/images/press/OC_Nov_21.jpg", title: "UFlex’s at Beautyworld Middle East 2025", link: "https://thepackman.in/uflexs-flexitubes-to-showcase-tube-packaging-solutions-at-beautyworld-middle-east-2025/", type: "article" },
+          { image: "/images/press/OC_Oct_1.jpg", title: "Live updates from Fachpack 2025", link: "https://packagingeurope.com/news/live-updates-from-fachpack-2025/13285.article", type: "article" },
+          { image: "/images/press/OC_Oct_2.jpg", title: "Morris Packaging, UFlex partner ", link: "https://www.petfoodindustry.com/packaging/pet-food-packaging/news/15768017/morris-packaging-llc-morris-packaging-uflex-partner-on-woven-bag-solutions", type: "article" },
+          { image: "/images/press/OC_Oct_5.jpg", title: "Flexible to deliver woven bag solutions", link: "https://www.petfoodprocessing.net/articles/19720-flexible-packaging-companies-team-up-to-deliver-woven-bag-solutions", type: "article" },
+          { image: "/images/press/OC_Oct_3.jpg", title: "Morris Packaging and UFlex", link: "https://www.packagingmea.com/morris-packaging-and-uflex-partner-on-sustainable-woven-bag-solutions/", type: "article" },
+          { image: "/images/press/OC_Oct_2.jpg", title: "Morris Packaging and UFlex partner for woven bag development", link: "https://www.packagingstrategies.com/articles/106020-morris-packaging-and-uflex-partner-for-woven-bag-development", type: "article" },
+          { image: "/images/press/OC_Oct_2.jpg", title: "Morris + UFlex partner", link: "https://packagingsouthasia.com/application/industrial-products/morris-uflex-partner/", type: "article" },
+          { image: "/images/press/OC_Oct_9.jpg", title: "Morris Packaging and UFlex forge strategic partnership to deliver sustainable woven bag series", link: "https://thepackman.in/morris-packaging-and-uflex-forge-strategic-partnership-to-deliver-sustainable-woven-bag-series/", type: "article" },
+          { image: "/images/press/OC_Oct_8.jpg", title: "Morris Packaging-UFlex forge strategic woven bag partnership", link: "https://www.whatpackaging.co.in/news/morris-packaging-uflex-forge-strategic-woven-bag-partnership-59121", type: "article" },
+          { image: "/images/press/OC_Oct_4.jpg", title: "UFlex water-based solutions", link: "https://packagingsouthasia.com/application/uflex-water-based-solutions/", type: "article" },
+          { image: "/images/press/OC_Sep_1.jpg", title: "UFlex Limited – A global leader in flexible packaging", link: "https://www.outlookindia.com/announcements/news-media-wire/uflex-limited-a-global-leader-in-flexible-packaging", type: "article" },
           // { image:"/images/press/1.jpg",title: "UFlex’s laser engraving", link: "https://packagingsouthasia.com/application/uflexs-laser-engraving/", type: "article" },
           // { image:"/images/press/1.jpg",title: "UFlex Chemicals showcases innovative sustainable solutions at IndiaCorr Expo 2025", link: "https://thepackman.in/uflex-chemicals-showcases-innovative-sustainable-solutions-at-indiacorr-expo-2025/", type: "article" },
           // { image:"/images/press/1.jpg",title: "UFlex unveils high-speed, space-efficient packaging innovation", link: "https://www.whatpackaging.co.in/news/uflex-unveils-high-speed-space-efficient-packaging-innovation-59068", type: "article" },
@@ -192,6 +226,7 @@ const PRESS_ROOM_DATA = {
       } satisfies { [year in Year]: MediaItem[] },
 
       "Electronic Media": {
+        2026: [],
         2025: [
           { image: "/images/press/EC_Nov_1.jpg", title: "2025", link: "https://www.youtube.com/watch?v=856og5Bmfy4&t=2s", type: "youtube" },
           { image: "/images/press/EC_Nov_2.jpg", title: "2025", link: "https://www.youtube.com/watch?v=VfkdLfkBvB0&t=17s", type: "youtube" },
@@ -309,12 +344,20 @@ const PressRoomPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
 
-  const currentItems = PRESS_ROOM_DATA.mediaCoverage.data[activeTab][activeYear];
+  // Filter years that actually have data for the active tab
+  const availableYears = PRESS_ROOM_DATA.mediaCoverage.years.filter(
+    (year) => PRESS_ROOM_DATA.mediaCoverage.data[activeTab][year]?.length > 0
+  );
 
-  // Reset page when tab or year changes
+  // Switch activeYear if the currently selected one is not available for this tab
   React.useEffect(() => {
+    if (availableYears.length > 0 && !availableYears.includes(activeYear)) {
+      setActiveYear(availableYears[0]);
+    }
     setCurrentPage(1);
-  }, [activeTab, activeYear]);
+  }, [activeTab, availableYears, activeYear]);
+
+  const currentItems = PRESS_ROOM_DATA.mediaCoverage.data[activeTab][activeYear] || [];
 
   const totalPages = Math.ceil(currentItems.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -354,7 +397,7 @@ const PressRoomPage = () => {
         </div>
 
         {/* Year Tabs */}
-        <YearTabs years={PRESS_ROOM_DATA.mediaCoverage.years} activeYear={activeYear} onChange={setActiveYear} />
+        <YearTabs years={availableYears} activeYear={activeYear} onChange={setActiveYear} />
 
         {/* Content */}
         <div className="mt-8 md:mt-12">
