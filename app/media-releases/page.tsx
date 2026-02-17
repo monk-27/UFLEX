@@ -6,7 +6,7 @@ import Image from "next/image";
 import { SiteHeader } from '@/components/site-header';
 
 
-type Year = 2025 | 2024;
+type Year = 2026 | 2025 | 2024;
 type CoverageTab = "Print Media" | "Online Media";
 // "Electronic Media" 
 
@@ -30,7 +30,30 @@ const PRESS_ROOM_DATA = {
 
   mediaReleases: {
     pressRelease: {
+      2026: [
+        {
+          title: "UFlex FY26 Financial Results Announcement",
+          link: "https://www.uflexltd.com/pdf/Press-Release/2026/PR_12Feb26_UFlex_Q3FY26_Earnings.pdf"
+        },
+        {
+          title: "UFlex Showcases WB Soft Touch Coating at PlastIndia 2026",
+          link: "https://www.uflexltd.com/pdf/Press-Release/2026/PN_06Feb26_UFlex_PlastIndia_WB_Soft_Touch_Coating.pdf"
+        },
+
+
+      ],
+
+
       2025: [
+
+        {
+          title: "UFlex Participation at Cosmoprof Mumbai October 2025",
+          link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_28Oct25_UFlex_PetFair_SEA2025.pdf"
+        },
+        {
+          title: "UFlex Showcases Innovations at Beautyworld Middle East 2025",
+          link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_23Oct25_UFlex_Beautyworld_ME2025.pdf"
+        },
         {
           title:
             "13 Nov 2025: Earnings Release for the Quarter ended September 30, 2025 | GST reforms, evolving trade dynamics set to catalyze growth ahead",
@@ -73,7 +96,22 @@ const PRESS_ROOM_DATA = {
     } satisfies Record<Year, PdfItem[]>,
 
     pressNotes: {
+      2026: [
+        {
+          title: "UFlex Launches Ceruflex 500 at PlastIndia 2026",
+          link: "https://www.uflexltd.com/pdf/Press-Release/2026/PN_05Feb26_UFlex_PlastIndia_Ceruflex500.pdf"
+        },
+        {
+          title: "UFlex Participation Highlights at PlastIndia 2026",
+          link: "https://www.uflexltd.com/pdf/Press-Release/2026/PN_03Feb26_UFlex_PLASTINDIA2026.pdf"
+        },
+
+      ],
       2025: [
+        {
+          title: "UFlex Participation at Cosmoprof Mumbai 2025",
+          link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_28Nov25_UFlex_Cosmoprof_Mumbai2025.pdf"
+        },
         {
           title:
             "28 Nov 2025: UFlex’s FlexiTubes to Showcase Advanced Tube Packaging Solutions for the Beauty Industry at Cosmoprof India 2025",
@@ -219,12 +257,13 @@ const PRESS_ROOM_DATA = {
       ],
     } satisfies Record<Year, PdfItem[]>,
   },
-   mediaCoverage: {
-    tabs: ["Print Media",  "Online Media"] as const,
-    years: [2025, 2024] as const,
+  mediaCoverage: {
+    tabs: ["Print Media", "Online Media"] as const,
+    years: [2026, 2025, 2024] as any,
 
     data: {
       "Print Media": {
+        2026: ["", "",],
         2025: ["/images/press/pm1.png", "/images/press/pm2.png", "/images/press/pm3.png", "/images/press/pm4.png", "/images/press/pm5.png"],
         2024: ["/images/press/pm1.png", "/images/press/pm2.png"],
       },
@@ -233,6 +272,7 @@ const PRESS_ROOM_DATA = {
       //   2024: ["/images/press/pm1.png"],
       // },
       "Online Media": {
+        2026: ["", "",],
         2025: ["/images/press/pm1.png", "/images/press/pm2.png", "/images/press/pm3.png", "/images/press/pm4.png"],
         2024: ["/images/press/pm1.png", "/images/press/pm2.png"],
       },
@@ -290,18 +330,18 @@ function PdfList({ items }: { items: PdfItem[] }) {
   );
 }
 const pages = () => {
-  const [releaseYear, setReleaseYear] = useState<Year>(2025);
-  const [notesYear, setNotesYear] = useState<Year>(2025);
+  const [releaseYear, setReleaseYear] = useState<Year>(2026);
+  const [notesYear, setNotesYear] = useState<Year>(2026);
 
   const [activeCoverageTab, setActiveCoverageTab] =
     useState<CoverageTab>("Print Media");
   const [activeCoverageYear, setActiveCoverageYear] =
     useState<Year>(2025);
 
-  const { hero, mediaReleases ,mediaCoverage } =
+  const { hero, mediaReleases, mediaCoverage } =
     PRESS_ROOM_DATA;
-    const coverageItems =
-      mediaCoverage.data[activeCoverageTab][activeCoverageYear];
+  const coverageItems =
+    mediaCoverage.data[activeCoverageTab][activeCoverageYear];
   return (
     <div className="bg-white">
       <SiteHeader />
@@ -318,7 +358,7 @@ const pages = () => {
               Press Release
             </h3>
             <YearTabs
-              years={[2025, 2024]}
+              years={[2026, 2025, 2024]}
               activeYear={releaseYear}
               onChange={setReleaseYear}
             />
@@ -332,14 +372,14 @@ const pages = () => {
             Press Notes
           </h3>
           <YearTabs
-            years={[2025, 2024]}
+            years={[2026, 2025, 2024]}
             activeYear={notesYear}
             onChange={setNotesYear}
           />
         </div>
         <PdfList items={mediaReleases.pressNotes[notesYear]} />
       </section>
-    
+
       <SiteFooter />
     </div>
   )
