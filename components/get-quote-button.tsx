@@ -30,10 +30,29 @@ export function GetQuoteButton() {
     return (
         <Link
             href={href}
-            className="fixed bottom-8 right-8 z-50 flex items-center gap-2 rounded-full border-2 border-[#117ABA] bg-white px-6 py-3 text-[#117ABA] shadow-lg transition-all hover:bg-[#F0F7FF] hover:shadow-xl hover:scale-105"
+            className="
+                fixed bottom-8 right-8 z-50
+                group
+                flex items-center
+                h-14
+                w-14 hover:w-44
+                overflow-hidden
+                rounded-full
+                border border-[#117ABA]
+                bg-white
+                text-[#117ABA]
+                shadow-[0_10px_25px_rgba(17,122,186,0.2)]
+                transition-all duration-300 ease-out
+                hover:shadow-[0_15px_35px_rgba(17,122,186,0.3)]
+                hover:scale-105
+            "
         >
-            <MessageSquare className="h-5 w-5" />
-            <span className="lato-700 text-sm">Get a Quote</span>
+            <div className="flex h-14 w-14 items-center justify-center shrink-0">
+                <MessageSquare className="h-6 w-6" />
+            </div>
+            <span className="lato-700 text-sm whitespace-nowrap pr-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Get a Quote
+            </span>
         </Link>
     );
 }
