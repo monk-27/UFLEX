@@ -83,8 +83,8 @@ const TAB_DATA = [
             {
                 image: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item7-09042760427.jpg",
 
-                title: "ZipouchR",
-                description: "ZipouchR is a versatile range of reclosable and reusable pouches made from high-quality laminated films, designed to meet the everyday food storage needs of modern consumers. Ideal for storing and refrigerating vegetables, fruits, meats, breads, and even reheating food, ZipouchR offers convenience from shelf to refrigerator to microwave. Its unique material composition and secure slider-lock or zipper-lock systems help retain freshness and preserve nutritional value for longer periods. Available in specialized formats such as Fresh-n-loc (slider pouches) and Press-n-loc (zipper pouches), Zipouch bags provide superior oxygen barrier properties and high tensile strength, making them a reliable and sustainable solution for households and foodservice applications alike.",
+                title: "Zipouch",
+                description: "Zipouch is a versatile range of reclosable and reusable pouches made from high-quality laminated films, designed to meet the everyday food storage needs of modern consumers. Ideal for storing and refrigerating vegetables, fruits, meats, breads, and even reheating food, Zipouch offers convenience from shelf to refrigerator to microwave. Its unique material composition and secure slider-lock or zipper-lock systems help retain freshness and preserve nutritional value for longer periods. Available in specialized formats such as Fresh-n-loc (slider pouches) and Press-n-loc (zipper pouches), Zipouch bags provide superior oxygen barrier properties and high tensile strength, making them a reliable and sustainable solution for households and foodservice applications alike.",
             },
 
             {

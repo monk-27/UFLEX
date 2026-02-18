@@ -436,12 +436,12 @@ export default function ProductCategorySection({
 
                             </div>
                         )}
-                        {title === "ZipouchR" && (
+                        {title === "Zipouch" && (
                             <div className="space-y-6">
 
                                 {/* Red highlight bar */}
                                 <div className="bg-[#117ABA] text-white px-4 py-3 lato-700 text-[16px] sm:text-[18px]">
-                                    ZipouchR
+                                    Zipouch
                                 </div>
 
                                 {/* Blue heading */}

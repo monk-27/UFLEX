@@ -61,7 +61,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
         // desc: "Our Flexo printed rolls and bags are a key offering within our Flexible Packaging business, designed to meet the specific needs of the baby and feminine hygiene product segments. We provide high-quality flexo surface printed bags in a variety of formats, including surface printed poly rolls, bottom gusset bags, wicketed bottom gusset bags, and handle gusseted bags.",
     },
     {
-        img: "/images/new/f6.jpg",
+        img: "/images/new/wpp.jpeg",
 
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Laminated Woven Poly Propylene (WPP) bags",
@@ -87,7 +87,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
     },
 
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item5-09042740427.jpg",
+        img: "/images/new/hygiene.jpeg",
 
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Hygiene Films",
@@ -96,7 +96,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
     },
 
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item6-09042750427.jpg",
+        img: "/images/new/ps.jpeg",
 
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Premium shower-proof bag",
@@ -105,17 +105,17 @@ Our wide array of flexible pouches designed to cater to diverse product categori
     },
 
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item7-09042760427.jpg",
+        img: "/images/new/zip.jpeg",
 
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
-        title: "ZipouchR",
+        title: "Zipouch",
         desc:`Versatile reclosable and reusable pouches, crafted from premium laminated films to meet modern food storage needs.`,
 
-        // desc: "ZipouchR is a versatile range of reclosable and reusable pouches made from high-quality laminated films, designed to meet the everyday food storage needs of modern consumers. Ideal for storing and refrigerating vegetables, fruits, meats, breads, and even reheating food, ZipouchR offers convenience from shelf to refrigerator to microwave.",
+        // desc: "Zipouch is a versatile range of reclosable and reusable pouches made from high-quality laminated films, designed to meet the everyday food storage needs of modern consumers. Ideal for storing and refrigerating vegetables, fruits, meats, breads, and even reheating food, Zipouch offers convenience from shelf to refrigerator to microwave.",
     },
 
     {
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item8-09042770427.jpg",
+        img: "/images/new/inj.jpeg",
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
 
         title: "Injection Moulding Products",
@@ -453,7 +453,7 @@ const FlexibleComp: React.FC<Props> = ({ business }) => {
     } else if (titleLower.includes('shower') || titleLower.includes('premium')) {
       catKey = 'premium';
     } else if (titleLower.includes('zipouch')) {
-      catKey = 'ZipouchR';
+      catKey = 'Zipouch';
     } else if (titleLower.includes('injection') || titleLower.includes('moulding')) {
       catKey = 'injection';
     }
