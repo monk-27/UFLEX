@@ -96,7 +96,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
     },
 
     {
-        img: "/images/new/ps.jpeg",
+        img: "/images/uflex-01.jpeg",
 
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Premium shower-proof bag",
