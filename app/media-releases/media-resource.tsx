@@ -9,13 +9,15 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const items = [
   {
     title: "February 2026",
-    desc: "RESILENT Q3 WITH 9M GROWTH, EBITDA ON TRACK MACRO TAILWINDS TO DRIVE GROWTH",
-    img: "/images/new/m1.png",
+    desc: "Resilient Q3 with 9M Growth, EBITDA on Track; Macro Tailwinds to Drive Growth",
+    img: "/images/new/fy26.jpeg",
+    link:"https://www.uflexltd.com/pdf/Press-Release/2026/PR_12Feb26_UFlex_Q3FY26_Earnings.pdf"
   },
   {
     title: "February 2026",
     desc: "UFlex Launches Sustainable Water-Based Soft Touch Coating at PLASTINDIA 2026",
-    img: "/images/new/m2.png",
+    img: "/images/new/fy261.jpeg",
+    link:"https://www.uflexltd.com/pdf/Press-Release/2026/PN_05Feb26_UFlex_PlastIndia_Ceruflex500.pdf"
   },
   {
     title: "August 2025",
@@ -48,22 +50,7 @@ export default function MediaCardsCarousel() {
     <div className="w-screen relative bg-[#117ABA]">
       <section className="pt-10 pb-8 max-w-7xl mx-auto px-4 relative">
 
-        {/* Desktop Arrows */}
-        {/* <button
-          onClick={scrollPrev}
-          className="hidden lg:flex absolute left-[-60px] top-1/2 -translate-y-1/2 z-10 rounded-full bg-white p-3 shadow-lg hover:bg-gray-100"
-          aria-label="Previous"
-        >
-          <ChevronLeft className="h-6 w-6 text-black" />
-        </button>
-
-        <button
-          onClick={scrollNext}
-          className="hidden lg:flex absolute right-[-60px] top-1/2 -translate-y-1/2 z-10 rounded-full bg-white p-3 shadow-lg hover:bg-gray-100"
-          aria-label="Next"
-        >
-          <ChevronRight className="h-6 w-6 text-black" />
-        </button> */}
+       
 
         {/* Embla Viewport */}
         <div ref={emblaRef} className="overflow-hidden">
@@ -78,9 +65,9 @@ export default function MediaCardsCarousel() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 className="
-                  flex-[0_0_100%]
+                  flex-[0_0_90%]
                   sm:flex-[0_0_50%]
-                  lg:flex-[0_0_33.333%]
+                  lg:flex-[0_0_32.12%]
                 "
               >
                 <div className="h-full">
@@ -92,7 +79,7 @@ export default function MediaCardsCarousel() {
                         src={card.img}
                         alt={card.title}
                         fill
-                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                        className="object-fill transition-transform duration-700 group-hover:scale-110"
                         priority={index < 3}
                       />
 
