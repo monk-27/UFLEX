@@ -229,7 +229,7 @@ export default function MediaCoverageCardsCarousel() {
                       src={card.img}
                       alt={card.title}
                       fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="object-fill transition-transform duration-700 group-hover:scale-110"
                     />
                   </div>
 
