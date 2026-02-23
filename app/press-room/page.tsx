@@ -11,6 +11,7 @@ import Link from "next/link";
 import MediaCoverageCardsCarousel from "../media-releases/media-coverage";
 import AutoScroll from "embla-carousel-auto-scroll";
 import useEmblaCarousel from "embla-carousel-react";
+import GalleryPage from "./gallery";
 
 /* ==========================
    TYPES
@@ -244,18 +245,18 @@ const PRESS_ROOM_DATA = {
   //   },
   // ],
   mediaResources: [
-    {
-      type: "image" as const,
-      title: "Photos",
-      img: "/images/new/gallery07.jpg",
-      href: "#",
-    },
+    // {
+    //   type: "image" as const,
+    //   title: "Photos",
+    //   img: "/images/new/gallery07.jpg",
+    //   href: "#",
+    // },
     {
       type: "video" as const,
       title: "Videos",
       youtubeId: "Sy-1WZO192A",
     },
-  {
+    {
       type: "video" as const,
       title: "Videos",
       youtubeId: "enTNeazEXXI",
@@ -362,55 +363,43 @@ export default function PressRoomPage() {
 
 
   const [emblaRef, emblaApi] = useEmblaCarousel(
-  {
-    loop: true,
-    dragFree: true,
-    skipSnaps: true,
-    align: "start",
-    containScroll: false,
-    axis: "x",
-    // Optional: reduce drag resistance for smoother feel in marquee
-    dragThreshold: 8,
-  },
-  [
-    AutoScroll({
-      speed: 0.5,               // lower = slower & more noticeable seam if not duplicated
-      direction: "forward",
-      startDelay: 0,
-      stopOnMouseEnter: true,
-      stopOnInteraction: false, // keep scrolling after drag ends
-      stopOnFocusIn: true,
-    }),
-  ]
-);
+    {
+      loop: true,
+      dragFree: true,
+      skipSnaps: true,
+      align: "start",
+      containScroll: false,
+      axis: "x",
+      // Optional: reduce drag resistance for smoother feel in marquee
+      dragThreshold: 8,
+    },
+    [
+      AutoScroll({
+        speed: 0.5,               // lower = slower & more noticeable seam if not duplicated
+        direction: "forward",
+        startDelay: 0,
+        stopOnMouseEnter: true,
+        stopOnInteraction: false, // keep scrolling after drag ends
+        stopOnFocusIn: true,
+      }),
+    ]
+  );
 
-useEffect(() => {
-  if (emblaApi) {
-    emblaApi.plugins()?.autoScroll?.play();
-  }
-}, [emblaApi]);
+  useEffect(() => {
+    if (emblaApi) {
+      emblaApi.plugins()?.autoScroll?.play();
+    }
+  }, [emblaApi]);
   const duplicatedMediaResources = [
-  ...mediaResources,
-  ...mediaResources,]
+    ...mediaResources,
+    ...mediaResources,]
   return (
     <div className="bg-white">
       <SiteHeader />
 
       {/* ================= HERO ================= */}
       <section className="relative w-full  overflow-hidden">
-        {/* <Image
-          src={hero.image}
-          alt={hero.title}
-          fill
-          priority
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="absolute inset-0 flex items-center max-w-7xl mx-auto px-6 sm:px-12 md:px-20">
-          <h1 className="text-white text-2xl sm:text-3xl md:text-[38px] lato-700">
-            {hero.title}
-          </h1>
-        </div> */}
+
         <PressMainCarousel />
       </section>
 
@@ -423,7 +412,7 @@ useEffect(() => {
             Media Releases
           </h2>
 
-          
+
           <MediaCardsCarousel />
           <div className="text-center flex justify-center py-4">
             <Link href="/media-releases"
@@ -464,54 +453,19 @@ useEffect(() => {
           </div>
 
         </section>
-          {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {mediaResources.map((res) =>
-              res.type === "video" ? (
-                <div
-                  key={res.youtubeId}
-                  className="relative overflow-hidden rounded-sm"
-                >
-                  <div className="relative aspect-[16/9] bg-black">
-                    <iframe
-                      className="h-full w-full"
-                      src={`https://www.youtube.com/embed/${res.youtubeId}`}
-                      title={res.title}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowFullScreen
-                    />
-                  </div>
-                  
-                </div>
-              ) : (
-                <div
-                  key={res.href}
-                  className="relative overflow-hidden rounded-sm"
-                >
-                  <div className="relative aspect-[16/9] bg-[#f2f2f2]">
-                    <Image
-                      src={res.img}
-                      alt={res.title}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  
-                </div>
-              )
-            )}
-          </div> */}
-       <section className="max-w-7xl mx-auto px-4 pb-12">
-  <h2 className="py-4 text-[24px] lato-700 text-[#117ABA] md:text-[42px] text-center">
-    Media Resources
-  </h2>
 
-  <div className="overflow-hidden" ref={emblaRef}>
-    {/* Container with negative margin → consistent gaps everywhere (including loop seam) */}
-    <div className="flex -mx-3 md:-mx-4 lg:-mx-6">
-      {duplicatedMediaResources.map((res, index) => (
-        <div
-          key={index} // safe because duplicated
-          className="
+        <section className="max-w-7xl mx-auto px-4">
+          <h2 className="py-4 text-[24px] lato-700 text-[#117ABA] md:text-[42px] text-center">
+            Media Resources
+          </h2>
+
+          <div className="overflow-hidden" ref={emblaRef}>
+            {/* Container with negative margin → consistent gaps everywhere (including loop seam) */}
+            <div className="flex -mx-3 md:-mx-4 lg:-mx-6">
+              {duplicatedMediaResources.map((res, index) => (
+                <div
+                  key={index} // safe because duplicated
+                  className="
             flex-shrink-0
             px-3 md:px-4 lg:px-6           /* half-gap — total gap 24–48px */
             w-[85vw]                        /* mobile ≈ full width */
@@ -521,42 +475,43 @@ useEffect(() => {
             xl:w-[calc(45%-8px)]           /* optional: 4 visible on xl */
             
           "
-        >
-          <div className="relative overflow-hidden rounded-sm shadow-md bg-black">
-            <div className="relative aspect-[16/9]">
-              {res.type === "video" ? (
-                <iframe
-                  className="absolute inset-0 h-full w-full"
-                  src={`https://www.youtube.com/embed/${res.youtubeId}`}
-                  title={res.title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  loading="lazy" // better perf
-                />
-              ) : (
-                <Image
-                  src={res.img || "/placeholder.jpg"}
-                  alt={res.title}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 85vw, (max-width: 1024px) 45vw, 33vw"
-                  loading="lazy"
-                />
-              )}
+                >
+                  <div className="relative overflow-hidden rounded-sm shadow-md bg-black">
+                    <div className="relative aspect-[16/9]">
+                      {/* {res.type === "video" ? ( */}
+                        <iframe
+                          className="absolute inset-0 h-full w-full"
+                          src={`https://www.youtube.com/embed/${res.youtubeId}`}
+                          title={res.title}
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowFullScreen
+                          loading="lazy" // better perf
+                        />
+                      {/* ) : (
+                        <Image
+                          src={res.img || "/placeholder.jpg"}
+                          alt={res.title}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 85vw, (max-width: 1024px) 45vw, 33vw"
+                          loading="lazy"
+                        />
+                      )} */}
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-        </div>
-      ))}
-    </div>
-  </div>
 
-  <div className="pt-12 flex justify-center">
-    <span className="text-[#000000] text-[20px] lato-400">
-      For any media queries, please send an email to the Global Corporate Communications Team :{" "}
-      <span className="text-[#117ABA]">corpcomm@uflexltd.com</span>
-    </span>
-  </div>
-</section>
+          <div className="pt-12 flex justify-center">
+            <span className="text-[#000000] text-[20px] lato-400">
+              For any media queries, please send an email to the Global Corporate Communications Team :{" "}
+              <span className="text-[#117ABA]">corpcomm@uflexltd.com</span>
+            </span>
+          </div>
+        </section>
+        <GalleryPage/>
 
 
         {/* -------- MEDIA COVERAGE -------- */}
