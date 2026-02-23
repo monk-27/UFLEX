@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -9,6 +9,8 @@ import PressMainCarousel from "@/components/press-main";
 import MediaCardsCarousel from "../media-releases/media-resource";
 import Link from "next/link";
 import MediaCoverageCardsCarousel from "../media-releases/media-coverage";
+import AutoScroll from "embla-carousel-auto-scroll";
+import useEmblaCarousel from "embla-carousel-react";
 
 /* ==========================
    TYPES
@@ -252,7 +254,18 @@ const PRESS_ROOM_DATA = {
       type: "video" as const,
       title: "Videos",
       youtubeId: "Sy-1WZO192A",
-    },],
+    },
+  {
+      type: "video" as const,
+      title: "Videos",
+      youtubeId: "enTNeazEXXI",
+    },
+    {
+      type: "video" as const,
+      title: "Videos",
+      youtubeId: "XxrcNVOkTH8",
+    },
+  ],
 
   mediaCoverage: {
     tabs: ["Print Media", "Online Media"] as const,
@@ -346,6 +359,39 @@ export default function PressRoomPage() {
     PRESS_ROOM_DATA;
   const coverageItems =
     mediaCoverage.data[activeCoverageTab][activeCoverageYear];
+
+
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+  {
+    loop: true,
+    dragFree: true,
+    skipSnaps: true,
+    align: "start",
+    containScroll: false,
+    axis: "x",
+    // Optional: reduce drag resistance for smoother feel in marquee
+    dragThreshold: 8,
+  },
+  [
+    AutoScroll({
+      speed: 0.5,               // lower = slower & more noticeable seam if not duplicated
+      direction: "forward",
+      startDelay: 0,
+      stopOnMouseEnter: true,
+      stopOnInteraction: false, // keep scrolling after drag ends
+      stopOnFocusIn: true,
+    }),
+  ]
+);
+
+useEffect(() => {
+  if (emblaApi) {
+    emblaApi.plugins()?.autoScroll?.play();
+  }
+}, [emblaApi]);
+  const duplicatedMediaResources = [
+  ...mediaResources,
+  ...mediaResources,]
   return (
     <div className="bg-white">
       <SiteHeader />
@@ -377,33 +423,7 @@ export default function PressRoomPage() {
             Media Releases
           </h2>
 
-          {/* <div className="mb-10 ">
-            <div className="max-w-7xl ">
-
-              <h3 className="text-[#117ABA] text-[14px] lato-400">
-                Press Release
-              </h3>
-              <YearTabs
-                years={[2025, 2024]}
-                activeYear={releaseYear}
-                onChange={setReleaseYear}
-              />
-            </div>
-            <PdfList items={mediaReleases.pressRelease[releaseYear]} />
-          </div>
-
-          <div className="max-w-7xl ">
-
-            <h3 className="text-[#117ABA] text-[14px]  lato-400 ">
-              Press Notes
-            </h3>
-            <YearTabs
-              years={[2025, 2024]}
-              activeYear={notesYear}
-              onChange={setNotesYear}
-            />
-          </div> */}
-          {/* <PdfList items={mediaReleases.pressNotes[notesYear]} /> */}
+          
           <MediaCardsCarousel />
           <div className="text-center flex justify-center py-4">
             <Link href="/media-releases"
@@ -444,42 +464,7 @@ export default function PressRoomPage() {
           </div>
 
         </section>
-        <section className="max-w-7xl mx-auto px-4 pb-12">
-          <h2 className="py-4 text-[24px] lato-700 text-[#117ABA] md:text-[42px]  text-center">
-            Media Resources
-          </h2>
-
-          {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-6"> */}
-          {/* {mediaResources.map((item) => (
-              <div
-                key={item.label}
-                className="
-          relative
-          w-full
-          aspect-[16/10]
-          overflow-hidden
-          rounded-md
-          bg-black
-        "
-              >
-                <Image
-                  src={item.image}
-                  alt={item.label}
-                  fill
-                  className="object-cover"
-                />
-
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                  <span className="text-white lato-700 text-base sm:text-lg text-center px-4">
-                    {item.label}
-                  </span>
-                </div>
-              </div>
-            ))} */}
-          {/* </div> */}
-
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {mediaResources.map((res) =>
               res.type === "video" ? (
                 <div
@@ -495,9 +480,7 @@ export default function PressRoomPage() {
                       allowFullScreen
                     />
                   </div>
-                  <span className="absolute left-4 top-3 text-[18px] lato-600 text-white">
-                    Videos
-                  </span>
+                  
                 </div>
               ) : (
                 <div
@@ -512,27 +495,67 @@ export default function PressRoomPage() {
                       className="object-cover"
                     />
                   </div>
-                  <span className="absolute left-4 top-3 text-[18px] lato-600 text-white">
-                    Photos
-                  </span>
+                  
                 </div>
               )
             )}
+          </div> */}
+       <section className="max-w-7xl mx-auto px-4 pb-12">
+  <h2 className="py-4 text-[24px] lato-700 text-[#117ABA] md:text-[42px] text-center">
+    Media Resources
+  </h2>
+
+  <div className="overflow-hidden" ref={emblaRef}>
+    {/* Container with negative margin → consistent gaps everywhere (including loop seam) */}
+    <div className="flex -mx-3 md:-mx-4 lg:-mx-6">
+      {duplicatedMediaResources.map((res, index) => (
+        <div
+          key={index} // safe because duplicated
+          className="
+            flex-shrink-0
+            px-3 md:px-4 lg:px-6           /* half-gap — total gap 24–48px */
+            w-[85vw]                        /* mobile ≈ full width */
+            sm:w-[45vw]                     /* ~2 visible on small */
+            md:w-[38vw]                     /* adjust if needed */
+            lg:w-[calc(33.333%-48px)]       /* ~3 visible on lg, subtract full gap */
+            xl:w-[calc(45%-48px)]           /* optional: 4 visible on xl */
+          "
+        >
+          <div className="relative overflow-hidden rounded-sm shadow-md bg-black">
+            <div className="relative aspect-[16/9]">
+              {res.type === "video" ? (
+                <iframe
+                  className="absolute inset-0 h-full w-full"
+                  src={`https://www.youtube.com/embed/${res.youtubeId}`}
+                  title={res.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  loading="lazy" // better perf
+                />
+              ) : (
+                <Image
+                  src={res.img || "/placeholder.jpg"}
+                  alt={res.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 85vw, (max-width: 1024px) 45vw, 33vw"
+                  loading="lazy"
+                />
+              )}
+            </div>
           </div>
+        </div>
+      ))}
+    </div>
+  </div>
 
-
-
-          <div className="pt-12 flex justify-center ">
-            <span className="text-[#000000] text-[20px] lato-400">
-              For any media queries, please send an email to the Global Corporate Communications Team : {""}
-              <span className="text-[#117ABA]">
-                corpcomm@uflexltd.com
-              </span>
-            </span>
-          </div>
-
-
-        </section>
+  <div className="pt-12 flex justify-center">
+    <span className="text-[#000000] text-[20px] lato-400">
+      For any media queries, please send an email to the Global Corporate Communications Team :{" "}
+      <span className="text-[#117ABA]">corpcomm@uflexltd.com</span>
+    </span>
+  </div>
+</section>
 
 
         {/* -------- MEDIA COVERAGE -------- */}
