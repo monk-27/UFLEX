@@ -210,10 +210,12 @@ export default function MediaCoverageCardsCarousel() {
               key={index}
               className="
                 flex-shrink-0
-                px-4                          /* half of total gap → 32px total spacing */
-                w-full
-                sm:w-[calc(50%-32px)]         /* full gap subtracted for two columns */
-                lg:w-[calc(33.333%-32px)]     /* full gap subtracted for three columns */
+            px-3 md:px-4 lg:px-6           /* half-gap — total gap 24–48px */
+            w-[85vw]                        /* mobile ≈ full width */
+            sm:w-[45vw]                     /* ~2 visible on small */
+            md:w-[38vw]                     /* adjust if needed */
+            lg:w-[calc(33.333%-48px)]       /* ~3 visible on lg, subtract full gap */
+            xl:w-[calc(32%-8px)]           /* optional: 4 visible on xl */
               "
             >
               <a
