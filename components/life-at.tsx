@@ -114,13 +114,15 @@ export default function LifeatModules() {
   const modules = [
     {
       title: "Your growth, our success",
-      image: "/images/growth.png",
+      image: "/images/1.jpeg",
       description:
         "At UFlex, experience a vibrant work culture that empowers people to transform their knowledge and capabilities into meaningful achievements.",
     },
     {
       title: "Learn with UFlex",
-      image: "/images/learnat.png",
+      // image: "/images/learnat.png",
+      image: "/images/learn.jpg",
+
       description:
         "The UFlex Learning Academy fosters learning and development through a range of off-the-shelf digital, blended and classroom courses on a wide range of subjects.",
     },
@@ -179,7 +181,7 @@ export default function LifeatModules() {
             <Link href="/careers">
            
             {/* Image */}
-            <div className="relative h-64 sm:h-72 md:h-80">
+            <div className="relative h-64 sm:h-72 md:h-96">
               <Image
                 src={module.image}
                 alt={module.title}

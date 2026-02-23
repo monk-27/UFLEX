@@ -24,7 +24,7 @@ const SliderItems: SliderItem[] = [
         img: "/images/new/f1.png",
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Flexible Laminates",
-        desc:`Our range of flexible laminates are made from various combinations of plastic, aluminum, and paper to suit diverse packaging needs.
+        desc: `Our range of flexible laminates are made from various combinations of plastic, aluminum, and paper to suit diverse packaging needs.
 `
         // desc: "UFlex offers a comprehensive range of flexible laminates made from various combinations of plastic, aluminum, and paper to suit diverse packaging needs. These include structures like PET/PE, PET/Foil/PE, PET/BOPP, BOPP/CPP, and advanced multilayer laminates such as PET/Extr/Foil/Extr/PE and AlOx PET/BON/CPP for retort applications. ",
     },
@@ -33,7 +33,7 @@ const SliderItems: SliderItem[] = [
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
 
         title: "Pre-formed pouches",
-        desc:`
+        desc: `
          
 
 Our wide array of flexible pouches designed to cater to diverse product categories and packaging needs across industries.
@@ -48,7 +48,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
 
         title: "FlexFreshTM – Active & Modified Atmosphere Packaging (AMAP)",
-        desc:`A breakthrough innovation designed to extend the shelf life of perishable goods such as fresh vegetables, fruits, and flowers.`
+        desc: `A breakthrough innovation designed to extend the shelf life of perishable goods such as fresh vegetables, fruits, and flowers.`
         // desc: "MAP solution is a breakthrough innovation designed to extend the shelf life of perishable goods such as fresh vegetables, fruits, and flowers. By regulating the internal atmosphere without the use of chemicals, FlexFreshTM helps slow spoilage and preserve freshness for up to 30 days. ",
     },
     {
@@ -56,7 +56,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
 
         title: "Flexo printed rolls and bags",
-        desc:`High-quality printed bags, in multiple formats, that protect products while delivering superior print clarity and shelf appeal.`
+        desc: `High-quality printed bags, in multiple formats, that protect products while delivering superior print clarity and shelf appeal.`
 
         // desc: "Our Flexo printed rolls and bags are a key offering within our Flexible Packaging business, designed to meet the specific needs of the baby and feminine hygiene product segments. We provide high-quality flexo surface printed bags in a variety of formats, including surface printed poly rolls, bottom gusset bags, wicketed bottom gusset bags, and handle gusseted bags.",
     },
@@ -65,7 +65,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
 
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Laminated Woven Poly Propylene (WPP) bags",
-        desc:`Bags with high strength, durability, and superior printability, ideal for a variety of industrial and consumer applications.`
+        desc: `Bags with high strength, durability, and superior printability, ideal for a variety of industrial and consumer applications.`
         // desc: "Our range of laminated Woven Polypropylene (WPP) bags offers high strength, durability, and superior printability—making them ideal for a wide variety of industrial and consumer applications.",
     },
     {
@@ -73,7 +73,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
 
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Electron beam and Cast n Cure",
-        desc:`Advanced e-beam and Cast n Cure print finishing solutions that boost packaging appeal, performance, and brand value.`
+        desc: `Advanced e-beam and Cast n Cure print finishing solutions that boost packaging appeal, performance, and brand value.`
 
         // desc: "UFlex offers advanced print finishing solutions using electron beam (e-beam) and Cast n Cure technologies, enhancing the visual and functional appeal of flexible packaging. Our portfolio includes a variety of premium finishes such as super gloss for high-impact shelf presence, matte finish for a premium tactile feel, and registered cast n cure for precise, design-specific effects.",
     },
@@ -82,16 +82,16 @@ Our wide array of flexible pouches designed to cater to diverse product categori
 
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Pharmaceutical Packaging",
-        desc:`High-performance pharmaceutical packaging materials tailored to diverse dosage forms and global regulations.`
+        desc: `High-performance pharmaceutical packaging materials tailored to diverse dosage forms and global regulations.`
         // desc: "UFlex offers a comprehensive range of high-performance packaging materials designed specifically for the pharmaceutical industry. Our offerings include cold form alu laminates, strip foil, blister foil, child-resistant foil, and suppository films—each engineered to ensure superior protection against moisture, oxygen, and light.",
     },
 
     {
-        img: "/images/new/hygiene.jpeg",
+        img: "/images/hy.jpeg",
 
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Hygiene Films",
-        desc:`High-performance films, made with advanced processes, ensure hygiene, safety, and quality to meet the personal care industry's critical needs.`
+        desc: `High-performance films, made with advanced processes, ensure hygiene, safety, and quality to meet the personal care industry's critical needs.`
         // desc: "UFlex offers high-performance hygiene films designed to meet the critical requirements of the personal care industry. Our range includes breathable films for diapers and back sheet films for sanitary napkins, engineered for comfort, protection, and reliability. ",
     },
 
@@ -100,7 +100,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
 
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Premium shower-proof bag",
-        desc:`An advanced packaging solution tailored for the building materials industry, combining durability, safety, and high-performance design.`
+        desc: `An advanced packaging solution tailored for the building materials industry, combining durability, safety, and high-performance design.`
         // desc: "UFlex’s premium shower-proof bag is an advanced packaging solution tailored for the building materials industry, combining durability, safety, and high-performance design. Made from polypropylene-based multi-component block bottom structures, the bag features nano technology that prevents water ingress—validated through a stringent “Shower Test”—thereby extending shelf life and eliminating lumping in humid conditions.",
     },
 
@@ -109,7 +109,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
 
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Zipouch",
-        desc:`Versatile reclosable and reusable pouches, crafted from premium laminated films to meet modern food storage needs.`,
+        desc: `Versatile reclosable and reusable pouches, crafted from premium laminated films to meet modern food storage needs.`,
 
         // desc: "Zipouch is a versatile range of reclosable and reusable pouches made from high-quality laminated films, designed to meet the everyday food storage needs of modern consumers. Ideal for storing and refrigerating vegetables, fruits, meats, breads, and even reheating food, Zipouch offers convenience from shelf to refrigerator to microwave.",
     },
@@ -119,7 +119,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
 
         title: "Injection Moulding Products",
-        desc:`Precision-engineered injection moulded plastic packaging components, designed to meet the diverse requirements of the packaging industry.`,
+        desc: `Precision-engineered injection moulded plastic packaging components, designed to meet the diverse requirements of the packaging industry.`,
 
         // desc: "UFlex offers a wide range of precision-engineered injection moulded plastic packaging components such as caps, spouts, tube caps, shoulders, zippers, sliders, and core plugs. Manufactured using machines with capacities of 150, 180, and 250 tons, these products are designed to meet the diverse requirements of the packaging industry.",
     },
@@ -139,42 +139,42 @@ const packagingData = [
         title: "Flexible Packaging",
         image: "/images/flexi.png",
         "imageAlt": "UFlex Flexible Packaging Solutions",
-//         paragraphs: [
-//             `UFlex Limited is India’s largest flexible packaging company, headquartered in Noida, Delhi NCR. With
-// a legacy of innovation and excellence, we operate three advanced manufacturing facilities across
-// India, including Noida and Jammu, and serve a diverse clientele both domestically and globally. Our
-// robust international footprint spans North America, Europe, Africa, Southeast Asia, and the Middle
-// East, positioning us as a leading manufacturer and exporter in the flexible packaging space.`,
-//             `With a manufacturing capacity of over 100,000 MTPA, UFlex offers a comprehensive range of
-// flexible packaging solutions and laminated roll stocks. Our versatile portfolio includes a wide variety
-// of pouch formats such as 3D and 4D pouches with re-closable options, wicketed bags for hygiene
-// products, pet food pinch bottom bags, cement block bottom bags, FlexiTubes, and innovative
-// offerings like innolock pouches, zip pouches, embossed foils, pocket PTC zippers, and Cast n Cure
-// technologies. Whether it’s packaging for household use or industrial applications, our products are
-// designed to combine functionality with visual appeal.`,
-//             `What sets UFlex apart is our full backward integration across every key vertical—films (BOPET, BOPP,
-// CPP, metalized films), chemicals (inks, coatings, adhesives), engineering (converting and packing
-// machines), holography, and cylinders. This integration enables us to offer customized, end-to-end
-// packaging solutions tailored to the evolving needs of our customers.`,
-//             `Our four in-house R&amp;D labs, approved by the Ministry of Industries, Government of India, are
-// equipped with state-of-the-art instruments like FTIR, UTM, gas chromatograph, and differential
-// scanning calorimeter. This empowers us to stay at the forefront of packaging innovation, driving
-// quality, sustainability, and performance.`,
-//             `At UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every
-// solution we create.`
+        //         paragraphs: [
+        //             `UFlex Limited is India’s largest flexible packaging company, headquartered in Noida, Delhi NCR. With
+        // a legacy of innovation and excellence, we operate three advanced manufacturing facilities across
+        // India, including Noida and Jammu, and serve a diverse clientele both domestically and globally. Our
+        // robust international footprint spans North America, Europe, Africa, Southeast Asia, and the Middle
+        // East, positioning us as a leading manufacturer and exporter in the flexible packaging space.`,
+        //             `With a manufacturing capacity of over 100,000 MTPA, UFlex offers a comprehensive range of
+        // flexible packaging solutions and laminated roll stocks. Our versatile portfolio includes a wide variety
+        // of pouch formats such as 3D and 4D pouches with re-closable options, wicketed bags for hygiene
+        // products, pet food pinch bottom bags, cement block bottom bags, FlexiTubes, and innovative
+        // offerings like innolock pouches, zip pouches, embossed foils, pocket PTC zippers, and Cast n Cure
+        // technologies. Whether it’s packaging for household use or industrial applications, our products are
+        // designed to combine functionality with visual appeal.`,
+        //             `What sets UFlex apart is our full backward integration across every key vertical—films (BOPET, BOPP,
+        // CPP, metalized films), chemicals (inks, coatings, adhesives), engineering (converting and packing
+        // machines), holography, and cylinders. This integration enables us to offer customized, end-to-end
+        // packaging solutions tailored to the evolving needs of our customers.`,
+        //             `Our four in-house R&amp;D labs, approved by the Ministry of Industries, Government of India, are
+        // equipped with state-of-the-art instruments like FTIR, UTM, gas chromatograph, and differential
+        // scanning calorimeter. This empowers us to stay at the forefront of packaging innovation, driving
+        // quality, sustainability, and performance.`,
+        //             `At UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every
+        // solution we create.`
 
 
 
-//         ]
+        //         ]
         paragraphs: [
             `We offer a comprehensive range of products, including flexible laminates, pre-formed pouches, Flexo-printed rolls and bags, laminated woven polypropylene (WPP) bags, electron beam and Cast n Cure technology, pharmaceutical packaging, FlexiTubes, hygiene films, Flexfresh™ modified atmosphere packaging, and big bags. At UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every solution we create.
 
 `,
-`UFlex Limited is India’s largest flexible packaging company, headquartered in Noida, Delhi NCR. With a legacy of innovation and excellence, we operate three advanced manufacturing facilities across India, including Noida and Jammu, and serve a diverse clientele both domestically and globally. Our robust international footprint spans North America, Europe, Africa, Southeast Asia, and the Middle East, positioning us as a leading manufacturer and exporter in the flexible packaging space.`,
-`With a manufacturing capacity of over 100,000 MTPA, UFlex offers a comprehensive range of flexible packaging solutions and laminated roll stocks. Our versatile portfolio includes a wide variety of pouch formats such as 3D and 4D pouches with re-closable options, wicketed bags for hygiene products, pet food pinch bottom bags, cement block bottom bags, FlexiTubes, and innovative offerings like innolock pouches, zip pouches, embossed foils, pocket PTC zippers, and Cast n Cure technologies. Whether it’s packaging for household use or industrial applications, our products are designed to combine functionality with visual appeal.`,
-`What sets UFlex apart is our full backward integration across every key vertical—films (BOPET, BOPP, CPP, metalized films), chemicals (inks, coatings, adhesives), engineering (converting and packing machines), holography, and cylinders. This integration enables us to offer customized, end-to-end packaging solutions tailored to the evolving needs of our customers.`,
-`Our four in-house R&D labs, approved by the Ministry of Industries, Government of India, are equipped with state-of-the-art instruments like FTIR, UTM, gas chromatograph, and differential scanning calorimeter. This empowers us to stay at the forefront of packaging innovation, driving quality, sustainability, and performance.`,
-`At UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every solution we create.`,
+            `UFlex Limited is India’s largest flexible packaging company, headquartered in Noida, Delhi NCR. With a legacy of innovation and excellence, we operate three advanced manufacturing facilities across India, including Noida and Jammu, and serve a diverse clientele both domestically and globally. Our robust international footprint spans North America, Europe, Africa, Southeast Asia, and the Middle East, positioning us as a leading manufacturer and exporter in the flexible packaging space.`,
+            `With a manufacturing capacity of over 100,000 MTPA, UFlex offers a comprehensive range of flexible packaging solutions and laminated roll stocks. Our versatile portfolio includes a wide variety of pouch formats such as 3D and 4D pouches with re-closable options, wicketed bags for hygiene products, pet food pinch bottom bags, cement block bottom bags, FlexiTubes, and innovative offerings like innolock pouches, zip pouches, embossed foils, pocket PTC zippers, and Cast n Cure technologies. Whether it’s packaging for household use or industrial applications, our products are designed to combine functionality with visual appeal.`,
+            `What sets UFlex apart is our full backward integration across every key vertical—films (BOPET, BOPP, CPP, metalized films), chemicals (inks, coatings, adhesives), engineering (converting and packing machines), holography, and cylinders. This integration enables us to offer customized, end-to-end packaging solutions tailored to the evolving needs of our customers.`,
+            `Our four in-house R&D labs, approved by the Ministry of Industries, Government of India, are equipped with state-of-the-art instruments like FTIR, UTM, gas chromatograph, and differential scanning calorimeter. This empowers us to stay at the forefront of packaging innovation, driving quality, sustainability, and performance.`,
+            `At UFlex, we don’t just deliver packaging—we deliver excellence, innovation, and value with every solution we create.`,
         ]
     }
 
@@ -274,7 +274,7 @@ export const businesses: BusinessConfig[] = [
 
         sustainability: {
             title: "Sustainability",
-            subtitle:"Driving Sustainable Growth Through Smarter Packaging Practices",
+            subtitle: "Driving Sustainable Growth Through Smarter Packaging Practices",
             description: `UFlex is deeply committed to environmental sustainability and has undertaken several impactful
 initiatives across India to reduce its carbon footprint and enhance operational productivity. The
 company consistently invests in advanced technologies that consume less energy per ton of flexible
@@ -338,7 +338,7 @@ const FlexibleComp: React.FC<Props> = ({ business }) => {
     const [open, setOpen] = useState(false);
 
     return (
-    <div>
+        <div>
 
 
             {/* HERO */}
@@ -421,49 +421,49 @@ const FlexibleComp: React.FC<Props> = ({ business }) => {
                                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
                             </motion.div>
                         </div>
-                        <SimpleCarousel heading="Our Offerings" 
-                        // items={SliderItems}
-                        items={SliderItems.map(item => {
-    const titleLower = item.title.toLowerCase();
+                        <SimpleCarousel heading="Our Offerings"
+                            // items={SliderItems}
+                            items={SliderItems.map(item => {
+                                const titleLower = item.title.toLowerCase();
 
-    let catKey = 'flexible'; // default
+                                let catKey = 'flexible'; // default
 
-    if (titleLower.includes('flexible') || titleLower.includes('flexible')) {
-      catKey = 'flexible';
-    } else if (titleLower.includes('pre-formed') || titleLower.includes('pouch')) {
-      catKey = 'pre-formed';
-    } else if (titleLower.includes('flexfresh') || titleLower.includes('atmosphere')) {
-      catKey = 'flexfresh';
-    } else if (titleLower.includes('flexo') || titleLower.includes('printed')) {
-      catKey = 'flexo';
-    }  else if (
-  titleLower.includes("woven") ||
-  titleLower.includes("wpp") ||
-  titleLower.includes("poly propylene") ||
-  titleLower.includes("polypropylene bags")
-) {
-  catKey = "wpp";
+                                if (titleLower.includes('flexible') || titleLower.includes('flexible')) {
+                                    catKey = 'flexible';
+                                } else if (titleLower.includes('pre-formed') || titleLower.includes('pouch')) {
+                                    catKey = 'pre-formed';
+                                } else if (titleLower.includes('flexfresh') || titleLower.includes('atmosphere')) {
+                                    catKey = 'flexfresh';
+                                } else if (titleLower.includes('flexo') || titleLower.includes('printed')) {
+                                    catKey = 'flexo';
+                                } else if (
+                                    titleLower.includes("woven") ||
+                                    titleLower.includes("wpp") ||
+                                    titleLower.includes("poly propylene") ||
+                                    titleLower.includes("polypropylene bags")
+                                ) {
+                                    catKey = "wpp";
 
-    } else if (titleLower.includes('electron') || titleLower.includes('cast n cure')) {
-      catKey = 'eb-cnc';
-    } else if (titleLower.includes('pharma') || titleLower.includes('pharmaceutical')) {
-      catKey = 'pharma';
-    } else if (titleLower.includes('hygiene')) {
-      catKey = 'hygiene';
-    } else if (titleLower.includes('shower') || titleLower.includes('premium')) {
-      catKey = 'premium';
-    } else if (titleLower.includes('zipouch')) {
-      catKey = 'Zipouch';
-    } else if (titleLower.includes('injection') || titleLower.includes('moulding')) {
-      catKey = 'injection';
-    }
+                                } else if (titleLower.includes('electron') || titleLower.includes('cast n cure')) {
+                                    catKey = 'eb-cnc';
+                                } else if (titleLower.includes('pharma') || titleLower.includes('pharmaceutical')) {
+                                    catKey = 'pharma';
+                                } else if (titleLower.includes('hygiene')) {
+                                    catKey = 'hygiene';
+                                } else if (titleLower.includes('shower') || titleLower.includes('premium')) {
+                                    catKey = 'premium';
+                                } else if (titleLower.includes('zipouch')) {
+                                    catKey = 'Zipouch';
+                                } else if (titleLower.includes('injection') || titleLower.includes('moulding')) {
+                                    catKey = 'injection';
+                                }
 
-    return {
-      ...item,
-      dynamiclink: `/flexible-packaging-business/flexible-Our-offering?cat=${catKey}`,
-    };
-  })}
-                         imageHeight={360} />
+                                return {
+                                    ...item,
+                                    dynamiclink: `/flexible-packaging-business/flexible-Our-offering?cat=${catKey}`,
+                                };
+                            })}
+                            imageHeight={360} />
 
 
                         {business.innovations && (
