@@ -160,11 +160,11 @@ const mediaItems = [
     img: "/images/new/nn.png",
     link: "https://www.youtube.com/watch?v=S8-J23J8O4c",
   },
-  {
-    title: "CNBC Bajar",
-    img: "/images/new/cnbc.jpg",
-    link: "https://www.youtube.com/watch?v=i6sODEzr5Rs",
-  },
+  // {
+  //   title: "CNBC Bajar",
+  //   img: "/images/new/cnbc.jpg",
+  //   link: "https://www.youtube.com/watch?v=i6sODEzr5Rs",
+  // },
   {
     title: "NDTV Profit",
     img: "/images/new/ndtv.jpg",
@@ -215,7 +215,7 @@ export default function MediaCoverageCardsCarousel() {
             sm:w-[45vw]                     /* ~2 visible on small */
             md:w-[38vw]                     /* adjust if needed */
             lg:w-[calc(33.333%-48px)]       /* ~3 visible on lg, subtract full gap */
-            xl:w-[calc(32%-8px)]           /* optional: 4 visible on xl */
+            xl:w-[calc(35%-8px)]           /* optional: 4 visible on xl */
               "
             >
               <a
