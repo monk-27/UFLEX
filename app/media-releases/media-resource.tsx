@@ -23,16 +23,19 @@ const items = [
     title: "August 2025",
     desc: "Earnings release for the quarter ended June 30, 2025 | Stable growth amidst tariff challenges",
     img: "/images/new/m1.jpg",
+    link:"https://www.uflexltd.com/pdf/Press-Release/2025/PR_13Aug25_UFlex_Q1FY26_Earnings.pdf"
   },
   {
     title: "August 2025",
     desc: "UFlex Limited recognised as a Top Employer 2025 in India",
     img: "/images/awards/b5.png",
+    link:"https://www.uflexltd.com/pdf/Press-Release/2025/PN_07Aug25_UFlex_TE2025.pdf"
   },
   {
     title: "July 2025",
     desc: "UFlex secures Indian patent for sustainable waterborne heat seal coating for food and consumer goods packaging",
     img: "/images/new/m2.jpg",
+    link:"https://www.uflexltd.com/pdf/Press-Release/2025/PN_22Jul25_UFlex_IP_HSCoating.pdf"
   },
 ];
 
@@ -70,6 +73,7 @@ export default function MediaCardsCarousel() {
                   lg:flex-[0_0_32.12%]
                 "
               >
+              <a href={card.link} target="_blank" rel="noopener noreferrer">
                 <div className="h-full">
                   <div className="group relative overflow-hidden rounded-lg bg-[#D72817] h-full flex flex-col">
 
@@ -102,8 +106,10 @@ export default function MediaCardsCarousel() {
 
                   </div>
                 </div>
+              </a>
               </motion.div>
             ))}
+
 
           </div>
         </div>
