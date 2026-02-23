@@ -518,7 +518,8 @@ useEffect(() => {
             sm:w-[45vw]                     /* ~2 visible on small */
             md:w-[38vw]                     /* adjust if needed */
             lg:w-[calc(33.333%-48px)]       /* ~3 visible on lg, subtract full gap */
-            xl:w-[calc(45%-48px)]           /* optional: 4 visible on xl */
+            xl:w-[calc(45%-8px)]           /* optional: 4 visible on xl */
+            
           "
         >
           <div className="relative overflow-hidden rounded-sm shadow-md bg-black">
