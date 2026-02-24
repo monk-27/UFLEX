@@ -89,7 +89,7 @@ const PRESS_ROOM_DATA = {
       "Online Media": {
         2026: [],
         2025: [
-          { image: "/images/press/OC_Dec_1.jpg", title: " Stress industry leaders", link: "https://manufacturing.economictimes.indiatimes.com/news/industry/india-must-turn-cost-advantage-into-reliable-process-led-manufacturing-stress-industry-leaders/125748711", type: "article" },
+          { image: "/images/press/image.jpg", title: "ET Manufacturing", link: "https://manufacturing.economictimes.indiatimes.com/news/industry/india-must-turn-cost-advantage-into-reliable-process-led-manufacturing-stress-industry-leaders/125748711", type: "article" },
           { image: "/images/press/OC_Dec_4.jpg", title: "UFlex Flexitubes", link: "https://spnews.com/uflex-flexitubes/", type: "article" },
           { image: "/images/press/OC_Dec_2.jpg", title: " CPHI & PMEC 2025", link: "https://thepackman.in/uflex-displays-innovative-flexitubes-for-pharma-at-cphi-pmec-2025/", type: "article" },
           { image: "/images/press/OC_Dec_3.jpg", title: " CPHI & PMEC", link: "https://thepackman.in/uflex-holography-division-highlights-new-age-anti-counterfeiting-solutions-at-cphi-pmec/", type: "article" },
@@ -226,7 +226,10 @@ const PRESS_ROOM_DATA = {
       } satisfies { [year in Year]: MediaItem[] },
 
       "Electronic Media": {
-        2026: [],
+        2026: [
+          { image: "/images/press/EC_Nov_1.jpg", title: "2025", link: "https://www.youtube.com/watch?v=856og5Bmfy4&t=2s", type: "youtube" },
+
+        ],
         2025: [
           { image: "/images/press/EC_Nov_1.jpg", title: "2025", link: "https://www.youtube.com/watch?v=856og5Bmfy4&t=2s", type: "youtube" },
           { image: "/images/press/EC_Nov_2.jpg", title: "2025", link: "https://www.youtube.com/watch?v=VfkdLfkBvB0&t=17s", type: "youtube" },

@@ -37,6 +37,12 @@ const items = [
     img: "/images/new/this.jpg",
     link: "https://www.uflexltd.com/pdf/Press-Release/2026/PN_06Feb26_UFlex_PlastIndia_F-HSS.pdf"
   },
+  {
+    title: "February 2026",
+    desc: "UFlex Introduces F-HSS Mono-Material PET Film for Sustainable Packaging at PLASTINDIA 2026",
+    img: "/images/new/this.jpg",
+    link: "https://www.uflexltd.com/pdf/Press-Release/2026/PN_06Feb26_UFlex_PlastIndia_F-HSS.pdf"
+  },
   // {
   //   title: "August 2025",
   //   desc: "Earnings release for the quarter ended June 30, 2025 | Stable growth amidst tariff challenges",
