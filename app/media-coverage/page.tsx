@@ -227,7 +227,17 @@ const PRESS_ROOM_DATA = {
 
       "Electronic Media": {
         2026: [
-          { image: "/images/press/EC_Nov_1.jpg", title: "2025", link: "https://www.youtube.com/watch?v=856og5Bmfy4&t=2s", type: "youtube" },
+          { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=gsejDR1UDEw", type: "youtube" },
+          { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=CmapnryMvIk", type: "youtube" },
+          { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=0mwOm5M_xxE", type: "youtube" },
+          { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=S8-J23J8O4c", type: "youtube" },
+          { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=6GkF8T96Kfw", type: "youtube" },
+          { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=ihO5W0zqv0o", type: "youtube" },
+          { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=enTNeazEXXI", type: "youtube" },
+          { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=XxrcNVOkTH8", type: "youtube" },
+          { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=xAcYOc4R0Oo", type: "youtube" },
+          { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=mL-quTnAEDQ", type: "youtube" },
+          { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=1eicpv-9QS4", type: "youtube" },
 
         ],
         2025: [
@@ -343,22 +353,27 @@ const ITEMS_PER_PAGE = 8;
 
 const PressRoomPage = () => {
   const [activeTab, setActiveTab] = useState<CoverageTab>("Print Media");
-  const [activeYear, setActiveYear] = useState<Year>(2025);
+  const [activeYear, setActiveYear] = useState<Year>(2026);
   const [currentPage, setCurrentPage] = useState(1);
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
 
   // Filter years that actually have data for the active tab
-  const availableYears = PRESS_ROOM_DATA.mediaCoverage.years.filter(
+  const availableYears = React.useMemo(() => {
+  return PRESS_ROOM_DATA.mediaCoverage.years.filter(
     (year) => PRESS_ROOM_DATA.mediaCoverage.data[activeTab][year]?.length > 0
   );
+}, [activeTab]);
 
   // Switch activeYear if the currently selected one is not available for this tab
-  React.useEffect(() => {
-    if (availableYears.length > 0 && !availableYears.includes(activeYear)) {
-      setActiveYear(availableYears[0]);
-    }
-    setCurrentPage(1);
-  }, [activeTab, availableYears, activeYear]);
+React.useEffect(() => {
+  if (availableYears.length > 0 && !availableYears.includes(activeYear)) {
+    setActiveYear(availableYears[0]);
+  }
+}, [activeTab, availableYears, activeYear]);
+
+React.useEffect(() => {
+  setCurrentPage(1);
+}, [activeTab, activeYear]);
 
   const currentItems = PRESS_ROOM_DATA.mediaCoverage.data[activeTab][activeYear] || [];
 
@@ -371,9 +386,33 @@ const PressRoomPage = () => {
       setCurrentPage(page);
     }
   };
+  function getYouTubeThumbnail(url: string, quality: "default" | "hq" | "max" = "hq"): string | null {
+    try {
+      const parsed = new URL(url);
+      let videoId: string | null = null;
 
+      if (parsed.hostname.includes("youtube.com")) {
+        videoId = parsed.searchParams.get("v");
+      } else if (parsed.hostname === "youtu.be") {
+        videoId = parsed.pathname.replace("/", "");
+      }
+
+      if (!videoId) return null;
+
+      if (quality === "max") return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+      if (quality === "hq") return `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+      return `https://img.youtube.com/vi/${videoId}/default.jpg`;
+    } catch {
+      return null;
+    }
+  }
+ console.log({
+  currentPage,
+  startIndex,
+  totalPages,
+});
   return (
-    <div className="bg-white min-h-screen">
+   <div className="bg-white min-h-screen">
       <SiteHeader />
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
@@ -381,7 +420,7 @@ const PressRoomPage = () => {
           Media Coverage
         </h1>
 
-        {/* Tabs */}
+        {/* Tabs – exactly your original */}
         <div className="flex flex-wrap justify-center gap-3 sm:gap-6 md:gap-8 mb-8 md:mb-10">
           {PRESS_ROOM_DATA.mediaCoverage.tabs.map((tab) => (
             <button
@@ -399,7 +438,7 @@ const PressRoomPage = () => {
           ))}
         </div>
 
-        {/* Year Tabs */}
+        {/* Year Tabs – exactly your original */}
         <YearTabs years={availableYears} activeYear={activeYear} onChange={setActiveYear} />
 
         {/* Content */}
@@ -410,27 +449,31 @@ const PressRoomPage = () => {
             </p>
           ) : (
             <>
-              {/* Grid of cards */}
+              {/* Grid – original layout preserved */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 lg:gap-8">
                 {paginatedItems.map((item, idx) => {
-                  // ELECTRONIC MEDIA CARD
+                  const uniqueKey = `${activeTab}-${activeYear}-${item.link || item.title || idx}`;
+
                   if (activeTab === "Electronic Media") {
+                          const thumb = getYouTubeThumbnail(item.link, "hq");
+
                     return (
                       <button
-                        key={idx}
+                        key={uniqueKey}
                         onClick={() => setActiveVideo(item.link)}
                         className="group relative bg-black rounded-md overflow-hidden hover:shadow-xl transition"
                       >
-                        {/* Thumbnail */}
                         <div className="relative aspect-video">
-                          <Image
-                            src={item.image}
-                            alt="Video thumbnail"
-                            fill
-                            className="object-cover group-hover:scale-105 transition-transform duration-500"
-                          />
 
-                          {/* Play Icon */}
+<Image
+  src={thumb ?? "/images/fallback-video.jpg"}
+  alt={item.title}
+  fill
+  className="object-cover group-hover:scale-105 transition-transform duration-500"
+  unoptimized
+/>
+
+                          {/* Your original play icon – unchanged */}
                           <div className="absolute inset-0 flex items-center justify-center">
                             <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg">
                               <svg
@@ -443,14 +486,19 @@ const PressRoomPage = () => {
                             </div>
                           </div>
                         </div>
+
+                        {/* Added only this small visible title – so you SEE the page change */}
+                        <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white text-xs p-2 text-center">
+                          {item.title}
+                        </div>
                       </button>
                     );
                   }
 
-                  // PRINT & ONLINE (existing behavior)
+                  // Print & Online cards – 100% unchanged
                   return (
                     <a
-                      key={idx}
+                      key={uniqueKey}
                       href={item.link}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -473,56 +521,34 @@ const PressRoomPage = () => {
                     </a>
                   );
                 })}
-
               </div>
 
-              {/* Pagination */}
+              {/* Pagination – your exact original styling preserved */}
               {totalPages > 1 && (
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 sm:mt-14">
-                  {/* Previous button */}
                   <button
                     onClick={() => goToPage(currentPage - 1)}
                     disabled={currentPage === 1}
                     className={`
-        p-3 rounded-full border bg-white shadow hover:bg-gray-50
-        ${currentPage === 1
+                      p-3 rounded-full border bg-white shadow hover:bg-gray-50
+                      ${currentPage === 1
                         ? "bg-gray-200 text-gray-400 cursor-not-allowed"
                         : "bg-[#117ABA] text-white hover:bg-[#0e6199]"}
-      `}>
-
+                    `}
+                  >
                     <ChevronLeft className="h-5 w-5 text-black" />
                   </button>
 
-                  {/* Page numbers with ellipsis */}
                   <div className="flex items-center gap-1 sm:gap-2 flex-wrap justify-center">
                     {(() => {
                       const pages: (number | string)[] = [];
-
-                      // Always show first page
                       pages.push(1);
-
-                      // Show ellipsis if there's a gap after page 1
-                      if (currentPage > 4) {
-                        pages.push("...");
-                      }
-
-                      // Show pages around current page
+                      if (currentPage > 4) pages.push("...");
                       const start = Math.max(2, currentPage - 2);
                       const end = Math.min(totalPages - 1, currentPage + 2);
-
-                      for (let i = start; i <= end; i++) {
-                        pages.push(i);
-                      }
-
-                      // Show ellipsis if there's a gap before last page
-                      if (currentPage < totalPages - 3) {
-                        pages.push("...");
-                      }
-
-                      // Always show last page (if not already included)
-                      if (totalPages > 1) {
-                        pages.push(totalPages);
-                      }
+                      for (let i = start; i <= end; i++) pages.push(i);
+                      if (currentPage < totalPages - 3) pages.push("...");
+                      if (totalPages > 1) pages.push(totalPages);
 
                       return pages.map((page, index) => {
                         if (page === "...") {
@@ -541,11 +567,11 @@ const PressRoomPage = () => {
                             key={page}
                             onClick={() => goToPage(page as number)}
                             className={`
-                w-9 h-9 sm:w-10 sm:h-10 rounded-md text-sm font-medium transition
-                ${page === currentPage
+                              w-9 h-9 sm:w-10 sm:h-10 rounded-md text-sm font-medium transition
+                              ${page === currentPage
                                 ? "bg-[#117ABA] text-white shadow-md"
                                 : "bg-gray-100 text-gray-700 hover:bg-gray-200"}
-              `}
+                            `}
                           >
                             {page}
                           </button>
@@ -554,25 +580,24 @@ const PressRoomPage = () => {
                     })()}
                   </div>
 
-                  {/* Next button */}
                   <button
                     onClick={() => goToPage(currentPage + 1)}
                     disabled={currentPage === totalPages}
                     className={`
-        p-3 rounded-full border bg-white shadow hover:bg-gray-50
-        ${currentPage === totalPages
+                      p-3 rounded-full border bg-white shadow hover:bg-gray-50
+                      ${currentPage === totalPages
                         ? "bg-gray-200 text-gray-400 cursor-not-allowed"
                         : "bg-[#117ABA] text-white hover:bg-[#0e6199]"}
-      `}
+                    `}
                   >
                     <ChevronRight className="h-5 w-5 text-black" />
-
                   </button>
                 </div>
               )}
             </>
           )}
         </div>
+
         <VideoModal
           videoUrl={activeVideo}
           onClose={() => setActiveVideo(null)}
