@@ -87,7 +87,42 @@ const PRESS_ROOM_DATA = {
       } satisfies { [year in Year]: MediaItem[] },
 
       "Online Media": {
-        2026: [],
+        2026: [
+          {image:"https://i0.wp.com/thepackman.in/wp-content/uploads/2026/02/Uflex-Izhar-Packman-23-02-2026.jpg?w=1000&ssl=1",
+            title:"The Packman",
+            link:"https://thepackman.in/uflexs-cylinder-business-pivots-to-sustainability-and-automation-at-plastindia-2026/",
+            type:"article"
+          },
+          {image:"/images/new/m2.png",
+            title:"The Packman",
+            link:"https://thepackman.in/uflex-brings-circular-thinking-to-inks-and-coatings/",
+            type:"article"
+          },
+          {image:"https://media.fortuneindia.com/fortune-india/2026-02-09/q5625jm2/uflex.jpg?w=640&auto=format,compress&q=80",
+            title:"Fortune India",
+            link:"https://www.fortuneindia.com/business-news/india-eu-us-trade-deals-to-boost-packaging-sector-uflexs-jeevaraj-gopal-pillai/130223",
+            type:"article"
+          },
+          {image:"/images/new/fy261.jpeg",
+            title:"The Packman",
+            link:"https://thepackman.in/uflex-unveils-ceruflex-500-high-speed-gravure-press-at-plastindia-2026/",
+            type:"article"
+          },
+          {image:"https://i0.wp.com/thepackman.in/wp-content/uploads/2026/02/Uflex-Plastindia-Packman-09-02-2026.jpg?w=1000&ssl=1",
+            title:"The Packman",
+            link:"https://thepackman.in/uflex-launches-sustainable-water-based-soft-touch-coating-at-plastindia-2026/",
+            type:"article"
+          },
+          {image:"https://i0.wp.com/thepackman.in/wp-content/uploads/2026/02/Uflex-Plastindia-Packman-09-02-2026.jpg?w=1000&ssl=1",
+            title:"The Packman",
+            link:"https://thepackman.in/uflex-launches-sustainable-water-based-soft-touch-coating-at-plastindia-2026/",
+            type:"article"
+          },{image:"/images/new/new.jpg",
+            title:"Fnb News",
+            link:"https://www.fnbnews.com/Top-News/uflex-unveils-fhss-monomaterial-pet-film-to-advance-sustainable-packaging-at-plastindia-2026-86020",
+            type:"article"
+          },
+        ],
         2025: [
           { image: "/images/press/image.jpg", title: "ET Manufacturing", link: "https://manufacturing.economictimes.indiatimes.com/news/industry/india-must-turn-cost-advantage-into-reliable-process-led-manufacturing-stress-industry-leaders/125748711", type: "article" },
           { image: "/images/press/OC_Dec_4.jpg", title: "UFlex Flexitubes", link: "https://spnews.com/uflex-flexitubes/", type: "article" },
