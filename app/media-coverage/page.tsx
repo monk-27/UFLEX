@@ -66,7 +66,7 @@ const PRESS_ROOM_DATA = {
         ],
         2025: [
           { image: "/images/press/1.jpg", title: "BS - Delhi (05 Dec 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_BS_Delhi_05Dec2025_PG4.pdf", type: "pdf" },
-          { image: "/images/press/PC_Nov_5.jpg", title: "Sep-Oct 2025", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_TPM_SEP_OCT2025.pdf", type: "pdf" },
+          { image: "/images/press/PC_Nov_5.jpg", title: "UFlex drives packaging innovation", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_TPM_SEP_OCT2025.pdf", type: "pdf" },
           { image: "/images/press/PC_Nov_4.jpg", title: "PSA - (Oct 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_PSA_EM_Oct25.pdf", type: "pdf" },
           { image: "/images/press/PC_Oct_1.jpg", title: "Sep-Oct 2025", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_TPM_SEP_OCT2025.pdf", type: "pdf" },
           { image: "/images/press/PC_Sep_1.jpg", title: "IE & FE (15 Sep 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_IE_FE_15092025.pdf", type: "pdf" },
@@ -363,17 +363,14 @@ const PressRoomPage = () => {
     (year) => PRESS_ROOM_DATA.mediaCoverage.data[activeTab][year]?.length > 0
   );
 }, [activeTab]);
-
+console.log(PRESS_ROOM_DATA.mediaCoverage.data["Electronic Media"][2026][0])
   // Switch activeYear if the currently selected one is not available for this tab
-React.useEffect(() => {
-  if (availableYears.length > 0 && !availableYears.includes(activeYear)) {
-    setActiveYear(availableYears[0]);
-  }
-}, [activeTab, availableYears, activeYear]);
-
-React.useEffect(() => {
-  setCurrentPage(1);
-}, [activeTab, activeYear]);
+  React.useEffect(() => {
+    if (availableYears.length > 0 && !availableYears.includes(activeYear)) {
+      setActiveYear(availableYears[0]);
+    }
+    setCurrentPage(1);
+  }, [activeTab, availableYears, activeYear]);
 
   const currentItems = PRESS_ROOM_DATA.mediaCoverage.data[activeTab][activeYear] || [];
 
@@ -406,10 +403,14 @@ React.useEffect(() => {
       return null;
     }
   }
- console.log({
+  console.log("Current data:", {
+  tab: activeTab,
+  year: activeYear,
+  totalItems: currentItems.length,
   currentPage,
   startIndex,
-  totalPages,
+  showing: paginatedItems.length,
+  totalPages
 });
   return (
    <div className="bg-white min-h-screen">
@@ -455,23 +456,20 @@ React.useEffect(() => {
                   const uniqueKey = `${activeTab}-${activeYear}-${item.link || item.title || idx}`;
 
                   if (activeTab === "Electronic Media") {
-                          const thumb = getYouTubeThumbnail(item.link, "hq");
-
                     return (
                       <button
                         key={uniqueKey}
                         onClick={() => setActiveVideo(item.link)}
-                        className="group relative bg-black rounded-md overflow-hidden hover:shadow-xl transition"
+                        className="group relative rounded-md overflow-hidden hover:shadow-xl transition"
                       >
                         <div className="relative aspect-video">
-
-<Image
-  src={thumb ?? "/images/fallback-video.jpg"}
-  alt={item.title}
-  fill
-  className="object-cover group-hover:scale-105 transition-transform duration-500"
-  unoptimized
-/>
+                          <Image
+                            src={getYouTubeThumbnail(item.link, "hq") || "/images/press/default_video_thumbnail.jpg"}
+                            alt={item.title}
+                            fill
+                            className="object-cover group-hover:scale-105 transition-transform duration-500"
+                            unoptimized
+                          />
 
                           {/* Your original play icon – unchanged */}
                           <div className="absolute inset-0 flex items-center justify-center">
