@@ -165,11 +165,11 @@ const mediaItems = [
   //   img: "/images/new/cnbc.jpg",
   //   link: "https://www.youtube.com/watch?v=i6sODEzr5Rs",
   // },
-  {
-    title: "NDTV Profit",
-    img: "/images/new/ndtv.jpg",
-    link: "https://www.youtube.com/watch?v=856og5Bmfy4&t=2s",
-  },
+  // {
+  //   title: "NDTV Profit",
+  //   img: "/images/new/ndtv.jpg",
+  //   link: "https://www.youtube.com/watch?v=856og5Bmfy4&t=2s",
+  // },
 ];
 
 export default function MediaCoverageCardsCarousel() {
@@ -192,6 +192,10 @@ export default function MediaCoverageCardsCarousel() {
       }),
     ]
   );
+  const loopItems =
+  mediaItems.length < 6
+    ? [...mediaItems, ...mediaItems, ...mediaItems]
+    : mediaItems;
 
   // Ensure auto-scroll starts (sometimes needed in some setups)
   useEffect(() => {
@@ -205,19 +209,13 @@ export default function MediaCoverageCardsCarousel() {
       <div ref={emblaRef} className="overflow-hidden">
         {/* Track with negative margin to allow consistent gaps in loop */}
         <div className="flex -mx-4">
-          {mediaItems.map((card, index) => (
-            <motion.div
-              key={index}
-              className="
-                flex-shrink-0
-            px-3 md:px-4 lg:px-6           /* half-gap — total gap 24–48px */
-            w-[85vw]                        /* mobile ≈ full width */
-            sm:w-[45vw]                     /* ~2 visible on small */
-            md:w-[38vw]                     /* adjust if needed */
-            lg:w-[calc(33.333%-48px)]       /* ~3 visible on lg, subtract full gap */
-            xl:w-[calc(35%-8px)]           /* optional: 4 visible on xl */
-              "
-            >
+          {loopItems.map((card, index) => (
+  <motion.div
+    key={`${card.title}-${index}`}
+    className="flex-shrink-0 px-3 md:px-4 lg:px-6
+      w-[85vw] sm:w-[45vw] md:w-[38vw]
+      lg:w-[calc(33.333%-48px)] xl:w-[calc(35%-8px)]"
+  >
               <a
                 href={card.link}
                 target="_blank"

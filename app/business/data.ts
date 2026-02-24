@@ -274,7 +274,7 @@ export const businesses: BusinessConfig[] = [
         cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
     },
     {
-        photo: "/images/careers/ashish.png",
+        photo: "/images/new/ashish.png",
         name: "Mr. Ashish Saxena",
         role: "Joint President of the Packaging Films and polyester chips business",
         summary:

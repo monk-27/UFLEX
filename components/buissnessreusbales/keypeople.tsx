@@ -14,9 +14,10 @@ import type { KeyPerson } from "@/app/business/data";
 type Props = {
   title: string;
   people: KeyPerson[];
+  india: boolean; // optional prop to adjust styling if it's the India section (can be used for different title or layout tweaks)
 };
 
-const Keypeople = ({ title, people }: Props) => {
+const Keypeople = ({ title, people, india }: Props) => {
   const [selected, setSelected] = useState<KeyPerson | null>(null);
   const [canPrev, setCanPrev] = useState(false);
   const [canNext, setCanNext] = useState(true);
@@ -63,18 +64,23 @@ const Keypeople = ({ title, people }: Props) => {
     <>
       <section className=" pb-12 mt-[30px] py-12  text-center sm:py-12 relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#f7f7f7]">
         <div className="">
-          
+
           {/* Embla slider – used on mobile & desktop */}
           <div className="">
             <div ref={emblaRef} className="overflow-hidden max-w-7xl mx-auto ">
+              
+
               <h2 className=" text-start lato-700 text-[28px] md:text-[32px] text-[#117ABA] mb-3">
-            {title}
-          </h2>
+                {title}
+              </h2>
+              {india===true && (<h2 className=" text-center lato-700 text-[28px] md:text-[32px] text-[#117ABA] mb-3">
+                India
+              </h2>
+                )}
 
               <div
-                className={`flex gap-6 ${
-                  people.length <= 3 ? "justify-center" : ""
-                }`}
+                className={`flex gap-6 ${people.length <= 3 ? "justify-center" : ""
+                  }`}
               >
                 {people.map((p, i) => (
                   <motion.article
@@ -91,14 +97,14 @@ const Keypeople = ({ title, people }: Props) => {
                     "
                   >
                     {/* ---------- Base (B/W) image with small label ---------- */}
-                    <div className="absolute inset-0 p-4">
+                    <div className="absolute inset-0 p-4 ">
                       <div className="relative h-full w-full overflow-hidden">
                         <Image
                           src={p.photo}
                           alt={p.name}
                           fill
                           sizes="(max-width:640px) 85vw, (max-width:1024px) 46vw, (max-width:1280px) 30vw, 23vw"
-                          className="object-cover grayscale transition duration-300 ease-out"
+                          className="object-cover grayscale transition duration-300 ease-out bg-[#C9EEF4]"
                         />
                         <div className="pointer-events-none absolute inset-x-0 bottom-0 p-3">
                           <div className="rounded-none bg-black/55 px-2 py-1 w-full">
@@ -155,9 +161,8 @@ const Keypeople = ({ title, people }: Props) => {
             <div className="flex flex-col items-center justify-center mt-6 pt-4 gap-3">
               {/* arrows */}
               <div
-                className={`flex items-center justify-center gap-6 ${
-                  hasDesktopOverflow ? "md:flex" : "md:hidden"
-                }`}
+                className={`flex items-center justify-center gap-6 ${hasDesktopOverflow ? "md:flex" : "md:hidden"
+                  }`}
               >
                 <button
                   onClick={() => emblaApi?.scrollPrev()}

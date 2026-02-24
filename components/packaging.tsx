@@ -342,7 +342,7 @@ export const businesses: BusinessConfig[] = [
             linkHref: "/packaging-films-business/sustainability",
         },
         keypeopleIndia: {
-            title: "Key People India",
+            title: "Key People",
             details: [
 
                 {
@@ -354,7 +354,7 @@ export const businesses: BusinessConfig[] = [
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
                 },
                 {
-                    photo: "/images/careers/ashish.png",
+                    photo: "/images/new/aa.jpg",
                     name: "Mr. Ashish Saxena",
                     role: "Joint President – Packaging Films Business",
                     summary:
@@ -611,10 +611,12 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                     )}
                     <SustainabilitySection data={business.sustainability} />
                     <div className='pt-8 '>
+                        
                         {(business.keypeopleIndia) && (
                             <Keypeople
                                 title={business.keypeopleIndia.title}
                                 people={business.keypeopleIndia.details}
+                                india={true}
 
                             />
                         )}
