@@ -22,9 +22,9 @@ export default function ProductsPage() {
             overview: `Our Packaging Films Business produces 3,50,000 TPA of BOPET films on its ten State-of-the-art BOPET film producing lines worldwide. The BOPET films come in a thickness range of 6.5 – 75 microns and are available in plain, surface treated, chemically coated, matte, heat sealable, metallisable, green, clear and extra clear varieties.`,
 
             categories: [
-                { name: "BOPET Films", productKey: "bopet" },
-                { name: "BOPP Films", productKey: "bopp" },
-                { name: "CPP Films", productKey: "cpp" },
+                { name: "Bopet Films", productKey: "bopet" },
+                { name: "Bopp Films", productKey: "bopp" },
+                { name: "Cpp Films", productKey: "cpp" },
                 { name: "Metallised Films", productKey: "metallised" },
                 { name: "Special Effects Films", productKey: "special" },
                 { name: "AlOx Coated Films", productKey: "alox-coated" },
@@ -151,9 +151,9 @@ export default function ProductsPage() {
             overview: `Flexible Packaging Films Business at UFLEX produces over 1,49,000 TPA of BOPP films on its three State-of-the-art lines. These films come in the thickness range of 8 – 75 microns and are available in plain, heat-sealable, metallisable, matte, pearlised, cavitated, overwrap, white opaque and speciality film grades variety.`,
 
             categories: [
-                { name: "BOPET Films", productKey: "bopet" },
-                { name: "BOPP Films", productKey: "bopp" },
-                { name: "CPP Films", productKey: "cpp" },
+                { name: "Bopet Films", productKey: "bopet" },
+                { name: "Bopp Films", productKey: "bopp" },
+                { name: "Cpp Films", productKey: "cpp" },
                 { name: "Metallised Films", productKey: "metallised" },
                 { name: "Special Effects Films", productKey: "special" },
                 { name: "AlOx Coated Films", productKey: "alox-coated" },
@@ -251,9 +251,9 @@ export default function ProductsPage() {
             overview: `Film Business of UFLEX produces over 11,000 TPA of CPP films which can be supplied in widths up to 3000mm. These films come in thickness range of 18 – 200 microns and can be offered with corona treatment on one or both sides. These films are available in plain, heat-sealable, metallisable, polished, mirror finish, embossed surface, glossy/ matte finish, high stiffness, flexible, clear and opaque varieties.`,
 
             categories: [
-                { name: "BOPET Films", productKey: "bopet" },
-                { name: "BOPP Films", productKey: "bopp" },
-                { name: "CPP Films", productKey: "cpp" },
+                { name: "Bopet Films", productKey: "bopet" },
+                { name: "Bopp Films", productKey: "bopp" },
+                { name: "Cpp Films", productKey: "cpp" },
                 { name: "Metallised Films", productKey: "metallised" },
                 { name: "Special Effects Films", productKey: "special" },
                 { name: "AlOx Coated Films", productKey: "alox-coated" },
@@ -322,9 +322,9 @@ export default function ProductsPage() {
             overview: `With its fourteen State-of-the-art metallizers with plasma treatment facilities for better metal to film adhesion and superior metal coverage, Film Business of UFLEX produces over 45,000 TPA (100 million lbs) of High Barrier Metalized films per annum with optical density ranging from 0.4 to 3.5 in widths up to 2,850 mm. These films come in the thickness range 6.5 – 75 microns for BOPET; 8 – 75 microns for BOPP and 18-200 microns for CPP.`,
 
             categories: [
-                { name: "BOPET Films", productKey: "bopet" },
-                { name: "BOPP Films", productKey: "bopp" },
-                { name: "CPP Films", productKey: "cpp" },
+                { name: "Bopet Films", productKey: "bopet" },
+                { name: "Bopp Films", productKey: "bopp" },
+                { name: "Cpp Films", productKey: "cpp" },
                 { name: "Metallised Films", productKey: "metallised" },
                 { name: "Special Effects Films", productKey: "special" },
                 { name: "AlOx Coated Films", productKey: "alox-coated" },
@@ -388,9 +388,9 @@ export default function ProductsPage() {
             overview: `Special Effects Films are a range of films that have been embellished with special optical effects. The films are especially processed to get special optical effects, customized patterns and proprietary designs on their surface. These can also be metalized and/or printed to further enhance appearance.`,
 
             categories: [
-                { name: "BOPET Films", productKey: "bopet" },
-                { name: "BOPP Films", productKey: "bopp" },
-                { name: "CPP Films", productKey: "cpp" },
+                { name: "Bopet Films", productKey: "bopet" },
+                { name: "Bopp Films", productKey: "bopp" },
+                { name: "Cpp Films", productKey: "cpp" },
                 { name: "Metallised Films", productKey: "metallised" },
                 { name: "Special Effects Films", productKey: "special" },
                 { name: "AlOx Coated Films", productKey: "alox-coated" },
@@ -434,9 +434,9 @@ export default function ProductsPage() {
             overview: `AlOx coating is the application of a thin and highly transparent aluminium oxide on packaging films that imparts high moisture and gas barrier properties giving a tough fight to aluminium foils and metalized films. It is the only true high-barrier flexible packaging material available, that is transparent and allows packaged product to be clearly visible. AlOx coating is a cutting edge technology that only a very select/ handful of film manufacturers are equipped with.`,
 
             categories: [
-                { name: "BOPET Films", productKey: "bopet" },
-                { name: "BOPP Films", productKey: "bopp" },
-                { name: "CPP Films", productKey: "cpp" },
+                { name: "Bopet Films", productKey: "bopet" },
+                { name: "Bopp Films", productKey: "bopp" },
+                { name: "Cpp Films", productKey: "cpp" },
                 { name: "Metallised Films", productKey: "metallised" },
                 { name: "Special Effects Films", productKey: "special-effects" },
                 { name: "AlOx Coated Films", productKey: "alox-coated" },

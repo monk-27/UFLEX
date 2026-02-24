@@ -296,21 +296,21 @@ export default function ProductCategorySection(props: any) {
                   className={`px-10 py-5 rounded-lg font-medium text-lg transition-all ${activeTab === "cartons" ? "bg-[#117ABA] text-white" : "bg-gray-200 text-gray-800 hover:bg-gray-300"
                     }`}
                 >
-                  ASEPTIC CARTONS
+                  Aseptic Cartons
                 </button>
                 <button
                   onClick={() => setActiveTab("innovations")}
                   className={`px-10 py-5 rounded-lg font-medium text-lg transition-all ${activeTab === "innovations" ? "bg-[#117ABA] text-white" : "bg-gray-200 text-gray-800 hover:bg-gray-300"
                     }`}
                 >
-                  OUR INNOVATIONS
+                  Our Innovations
                 </button>
                 <button
                   onClick={() => setActiveTab("process")}
                   className={`px-10 py-5 rounded-lg font-medium text-lg transition-all ${activeTab === "process" ? "bg-[#117ABA] text-white" : "bg-gray-200 text-gray-800 hover:bg-gray-300"
                     }`}
                 >
-                  CONVERTING PROCESS
+                  Converting Process
                 </button>
               </div>
 
@@ -627,7 +627,7 @@ export default function ProductCategorySection(props: any) {
                         viewport={{ once: true }}
                         className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] "
                       >
-                        WHY A SIP ?
+                        Why A Sip ?
 
                       </motion.h3>
                       <p className="pr-4 stext-wrap max-w-xl lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black">
@@ -721,7 +721,7 @@ export default function ProductCategorySection(props: any) {
                 <div className="bg-white  relative overflow-hidden">
 
 
-                  <h3 className="text-center lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">SPEED PLUS 25SK</h3>
+                  <h3 className="text-center lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">Speed Plus 25SK</h3>
                   <div className="flex flex-col lg:flex-row gap-8 items-start lg:items-center">
                     {/* Left: Text */}
                     <div className="lg:w-1/2 space-y-1">
@@ -829,7 +829,7 @@ export default function ProductCategorySection(props: any) {
                 <div className="bg-white">
                   <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Why Choose
                     <span>
-                      </span> ASEPTO PRO?</h2>
+                      </span> Asepto Pro?</h2>
                   <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                     For any machinery-dependent manufacturing unit, maintenance is one of the biggest challenges. Machinery requires regular check-ups; it may stop functioning at any point in time if not attended to regularly. More than non-functionality, any malfunction in the machinery might cause irreversible damage to the overall set-up, the human resource, or the business at large. Asepto Pro offers Technical Assistance, Skill Enhancement services, Quality assurance, Performance Management & Remote assistance. Asepto Pro is available in more than 12 countries and is fast-growing as the preferred after-sale maintenance partner assisting beverage manufacturers to run their business with continuity.
                   </p>
@@ -858,7 +858,7 @@ export default function ProductCategorySection(props: any) {
 
                 {/* Solutions We Offer - Dropdowns */}
                 <div className="bg-white">
-                  <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-4 pb-8">Solutions We Offer</h2>
+                  <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-4 pb-8">Solutions We offer</h2>
 
                   {/* CarePro Dropdown */}
                   <details
@@ -968,7 +968,7 @@ export default function ProductCategorySection(props: any) {
                   {/* We Think as Strategists We Do as Designers */}
                   <div className="bg-white ">
                     <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2 text-start">
-                      We Think as Strategists We Do as Designers
+                      We think as strategists we do as designers
                     </h2>
                     <p className="text-start lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black  ">
                       Asepto Designs is the creative powerhouse within Asepto, dedicated to shaping the visual identity of your products. With a keen understanding of market dynamics and consumer preferences, Asepto Designs formulates strategic design concepts that cater to the unique requirements of each product. Our team of talented designers harnesses their creativity and expertise to craft contemporary packaging designs that are not only visually appealing but also highly effective in capturing the attention of consumers. Our ultimate goal is to transform every product we touch into a hot seller, ensuring that it stands out on the shelves and resonates with the target audience. Asepto Designs is committed to making products not just visually appealing, but also synonymous with quality and innovation in the eyes of consumers.
@@ -978,7 +978,7 @@ export default function ProductCategorySection(props: any) {
                   {/* Design that Speaks */}
                   <div className="bg-white ">
                     <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2 text-start">
-                      Design that Speaks
+                      Design that speaks
                     </h2>
                     <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black ">
                       At Asepto Design, our process is as innovative as our packaging. We immerse ourselves in your brand, crafting designs that blend aesthetics and functionality. Every line, curve, and color is meticulously chosen to reflect your identity. Quality is our obsession; our designs undergo rigorous testing. We create masterpieces that tell your story, captivate your audience, and leave lasting impressions. Welcome to the future of packaging design, where creativity knows no bounds, and excellence is our tradition.
@@ -988,7 +988,7 @@ export default function ProductCategorySection(props: any) {
                   {/* Some of Our Work - Gallery */}
                   <div className="bg-white ">
                     <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2 text-center">
-                      Some of Our Work
+                      Some of our work
                     </h2>
 
                     {/* Main Grid */}

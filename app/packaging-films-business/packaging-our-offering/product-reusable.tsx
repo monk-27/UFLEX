@@ -428,13 +428,15 @@ export default function ProductCategorySection({
                             variants={itemVariants}
                             className="flex items-center justify-center gap-5 pt-12"
                         >
-                            <motion.button
+                            <motion.a
+                            href="https://www.flexfilm.com/"
+                            target="_blank"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.98 }}
                                 className="bg-[#117ABA] text-white px-4 py-2 rounded-sm lato-700 hover:bg-[#117ABA] transition-all shadow-md"
                             >
                                 Learn More
-                            </motion.button>
+                            </motion.a>
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.98 }}
@@ -442,14 +444,14 @@ export default function ProductCategorySection({
                             >
                                 Request Sample
                             </motion.button>
-                            <motion.button
+                            {/* <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.98 }}
                                 className="bg-[#117ABA] text-white px-4 py-2 rounded-sm lato-700 hover:bg-[#117ABA] transition-all shadow-md"
 
                             >
                                 Download Catalogue
-                            </motion.button>
+                            </motion.button> */}
                          
                         </motion.div>
                     </div>

@@ -457,7 +457,7 @@ export default function ProductCategorySection({
 
                                     <div className="relative h-[380px] bg-gray-100 border-2 border-[#117ABA]">
                                         <Image
-                                            src="https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item7-09042760427.jpg"
+                                            src="/images/new/zip.jpeg"
                                             alt={title}
                                             fill
                                             className="object-cover"
@@ -754,14 +754,14 @@ export default function ProductCategorySection({
                             >
                                 Request Sample
                             </motion.button>
-                            <motion.button
+                            {/* <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.98 }}
                                 className="bg-[#117ABA] text-white px-4 py-2 rounded-sm lato-700 hover:bg-[#117ABA] transition-all shadow-md"
 
                             >
                                 Download Catalogue
-                            </motion.button>
+                            </motion.button> */}
                         </motion.div>
                     </div>
                 </motion.main>

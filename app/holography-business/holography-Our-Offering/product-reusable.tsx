@@ -238,43 +238,43 @@ export default function ProductCategorySection({
                 </h3>
               </div>
 
-              <div className="space-y-8">
-                <div className="space-y-3">
-                  <h4 className="lato-700 text-[20px]  text-[#117ABA]">
-                    1. ANALOG 2D/3D CONVENTIONAL:
-                  </h4>
-                  <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
-                    Primitive technology (conventional system) requires manual efforts in shooting masters. This technology produces holograms with two or three layers that includes background, middle ground and foreground.
-                  </p>
-                </div>
+            <div className="space-y-8">
+  <div className="space-y-3">
+    <h4 className="lato-700 text-[20px] text-[#117ABA]">
+      1. Analog 2D/3D Conventional
+    </h4>
+    <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
+      Primitive technology (conventional system) requires manual efforts in shooting masters. This technology produces holograms with two or three layers that includes background, middle ground and foreground.
+    </p>
+  </div>
 
-                <div className="space-y-3">
-                  <h4 className="lato-700 text-[20px]  text-[#117ABA]">
-                    2. DOT MATRIX (up to 24,000 dpi):
-                  </h4>
-                  <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
-                    Dot Matrix is considered to be one of the most secured holograms world-over. It easily helps to create, edit and expose digital holograms. A broad range of holographic effects such as kinetic and colour animation, 2D/3D modulation of the background, stereographic background, true colour images, single and animated hidden images, micro text, special texture images etc. can be obtained using this technology. All effects are easily accessible through the holographic softwares.
-                  </p>
-                </div>
+  <div className="space-y-3">
+    <h4 className="lato-700 text-[20px] text-[#117ABA]">
+      2. Dot Matrix (Up to 24,000 dpi)
+    </h4>
+    <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
+      Dot Matrix is considered to be one of the most secured holograms world-over. It easily helps to create, edit and expose digital holograms. A broad range of holographic effects such as kinetic and colour animation, 2D/3D modulation of the background, stereographic background, true colour images, single and animated hidden images, micro text, special texture images etc. can be obtained using this technology. All effects are easily accessible through the holographic softwares.
+    </p>
+  </div>
 
-                <div className="space-y-3">
-                  <h4 className="lato-700 text-[20px]  text-[#117ABA]">
-                    3. NON-DIFFRACTIVE LITHO (up to 1,20,000 DPI):
-                  </h4>
-                  <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
-                    In this technique, the system combines flexible diffraction gratings with generalized Fresnel lens calculation technique and optical lithography recording, allowing extreme freedom of designing diffractive structures, including Fresnel-type elements.
-                  </p>
-                </div>
+  <div className="space-y-3">
+    <h4 className="lato-700 text-[20px] text-[#117ABA]">
+      3. Non-Diffractive Litho (Up to 1,20,000 DPI)
+    </h4>
+    <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
+      In this technique, the system combines flexible diffraction gratings with generalized Fresnel lens calculation technique and optical lithography recording, allowing extreme freedom of designing diffractive structures, including Fresnel-type elements.
+    </p>
+  </div>
 
-                <div className="space-y-3">
-                  <h4 className="lato-700 text-[20px] text-[#117ABA]">
-                    4. E-BEAM:
-                  </h4>
-                  <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
-                    The holograms produced using E-Beam technology are considered to be the most secured holograms internationally. These holograms are made using very expensive and highly sophisticated technology called Electron Beams. This kind of technology allows the creation of originals of holograms with a resolution of up to 4 microns.
-                  </p>
-                </div>
-              </div>
+  <div className="space-y-3">
+    <h4 className="lato-700 text-[20px] text-[#117ABA]">
+      4. E-Beam
+    </h4>
+    <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
+      The holograms produced using E-Beam technology are considered to be the most secured holograms internationally. These holograms are made using very expensive and highly sophisticated technology called Electron Beams. This kind of technology allows the creation of originals of holograms with a resolution of up to 4 microns.
+    </p>
+  </div>
+</div>
 
               <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black ">
                 UFLEX offers a number of innovative security features (Mastering & Non-Mastering) that makes its holograms near to counter proof. Due to proprietary reasons, we haven't presented the details of security features on the website. Please contact us for your requirements related to security holograms. Our contact details are provided in the Contact us section, please visit the Contact us section.
@@ -313,9 +313,9 @@ export default function ProductCategorySection({
 
               {/* Buttons */}
               <div className="flex flex-wrap gap-6 justify-start pt-6">
-                <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                 {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Learn More
-                </button>
+                </button> */}
                 <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Request Sample
                 </button>
@@ -339,176 +339,176 @@ export default function ProductCategorySection({
               </div>
 
               {/* Technologies – accordion style */}
-              <div className="space-y-6">
-                {/* 1. SOFT EMBOSSING FILM */}
-                <details className="group border-b border-gray-200 pb-4">
-                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
-                    <span>1. SOFT EMBOSSING FILM:</span>
-                    <ChevronDown className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm  text-white transition-transform group-open:rotate-180" size={24} />
-                  </summary>
-                  <div className="mt-4 pl-4 space-y-4">
-                    <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
-                      Soft embossing film is manufactured in metalized, transparent and semi-transparent variants. This is used for promotional activities and secure packaging needs. This film is widely used in various industries viz. automobiles, food, FMCG, Pharmaceuticals & cosmetics, etc.
-                    </p>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      <div className=" overflow-hidden ">
-                        <Image
-                          src="https://www.uflexltd.com/assets/images/holo/SOFT-EMBOSSING-FILM.jpg"
-                          alt="Soft Embossing Sample 1"
-                          width={400}
-                          height={300}
-                          className="w-full h-auto object-cover"
-                        />
-                      </div>
-                      {/* Add 2 more if you have */}
-                    </div>
-                  </div>
-                </details>
+             <div className="space-y-6">
+  {/* 1. SOFT EMBOSSING FILM */}
+  <details className="group border-b border-gray-200 pb-4">
+    <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
+      <span>1. Soft Embossing Film</span>
+      <ChevronDown className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
+    </summary>
+    <div className="mt-4 pl-4 space-y-4">
+      <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
+        Soft embossing film is manufactured in metalized, transparent and semi-transparent variants. This is used for promotional activities and secure packaging needs. This film is widely used in various industries viz. automobiles, food, FMCG, Pharmaceuticals & cosmetics, etc.
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="overflow-hidden">
+          <Image
+            src="https://www.uflexltd.com/assets/images/holo/SOFT-EMBOSSING-FILM.jpg"
+            alt="Soft Embossing Sample 1"
+            width={400}
+            height={300}
+            className="w-full h-auto object-cover"
+          />
+        </div>
+        {/* Add 2 more if you have */}
+      </div>
+    </div>
+  </details>
 
-                {/* 2. HARD EMBOSSING FILM */}
-                <details className="group border-b border-gray-200 pb-4">
-                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
-                    <span>2. HARD EMBOSSING FILM</span>
-                    <ChevronDown className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
-                  </summary>
-                  <div className="mt-4 pl-4 space-y-4">
-                    <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
-                      Hard embossing film is manufactured in metalized and semi-transparent variants having shim joint less laser pillar of light. This film is used for promotional activities and secure packaging needs. This film is widely used in various industries viz. automobiles, food, FMCG, Pharmaceuticals & cosmetics. Hard Embossing film has better chemical & heat resistivity than soft embossing film.
-                    </p>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      <div className="overflow-hidden">
-                        <Image
-                          src="https://www.uflexltd.com/assets/images/holo/HARD-EMBOSSING-FILM.jpg"
-                          alt="Hard Embossing Sample"
-                          width={400}
-                          height={300}
-                          className="w-full h-auto object-cover"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </details>
+  {/* 2. HARD EMBOSSING FILM */}
+  <details className="group border-b border-gray-200 pb-4">
+    <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
+      <span>2. Hard Embossing Film</span>
+      <ChevronDown className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
+    </summary>
+    <div className="mt-4 pl-4 space-y-4">
+      <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
+        Hard embossing film is manufactured in metalized and semi-transparent variants having shim joint less laser pillar of light. This film is used for promotional activities and secure packaging needs. This film is widely used in various industries viz. automobiles, food, FMCG, Pharmaceuticals & cosmetics. Hard Embossing film has better chemical & heat resistivity than soft embossing film.
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="overflow-hidden">
+          <Image
+            src="https://www.uflexltd.com/assets/images/holo/HARD-EMBOSSING-FILM.jpg"
+            alt="Hard Embossing Sample"
+            width={400}
+            height={300}
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </details>
 
-                {/* 3. UV EMBOSSING FILM */}
-                <details className="group border-b border-gray-200 pb-4">
-                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
-                    <span>3. UV EMBOSSING FILM</span>
-                    <ChevronDown className="text-white w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm transition-transform group-open:rotate-180" size={24} />
-                  </summary>
-                  <div className="mt-4 pl-4 space-y-4">
-                    <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
-                      UV embossing film is manufactured in metalized, transparent and semi-transparent variants. This is used for promotional activities and secure packaging needs. This film is widely used in various industries viz. automobiles, food, FMCG, Pharmaceuticals & cosmetics. The brightness/gloss effect & chemical resistivity is far better than soft embossing film.
-                    </p>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      <div className=" overflow-hidden ">
-                        <Image
-                          src="https://www.uflexltd.com/assets/images/holo/UV-EMBOSSING-FILM.jpg"
-                          alt="UV Embossing Sample"
-                          width={400}
-                          height={300}
-                          className="w-full h-auto object-cover"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </details>
+  {/* 3. UV EMBOSSING FILM */}
+  <details className="group border-b border-gray-200 pb-4">
+    <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
+      <span>3. UV Embossing Film</span>
+      <ChevronDown className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
+    </summary>
+    <div className="mt-4 pl-4 space-y-4">
+      <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
+        UV embossing film is manufactured in metalized, transparent and semi-transparent variants. This is used for promotional activities and secure packaging needs. This film is widely used in various industries viz. automobiles, food, FMCG, Pharmaceuticals & cosmetics. The brightness/gloss effect & chemical resistivity is far better than soft embossing film.
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="overflow-hidden">
+          <Image
+            src="https://www.uflexltd.com/assets/images/holo/UV-EMBOSSING-FILM.jpg"
+            alt="UV Embossing Sample"
+            width={400}
+            height={300}
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </details>
 
-                {/* 4. HRI HOLOGRAPHIC FILM */}
-                <details className="group border-b border-gray-200 pb-4">
-                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
-                    <span>4. HRI HOLOGRAPHIC FILM</span>
-                    <ChevronDown className="text-white w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm transition-transform group-open:rotate-180" size={24} />
-                  </summary>
-                  <div className="mt-4 pl-4 space-y-4">
-                    <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
-                      High Reflective Index film is also called as Zinc metalized film is available in transparent form. This film is used specially for overlay/lamination on the printed substrate. After lamination, both print matter and holographic effects are clearly visible. This film is used for promotional activities and secure packaging needs. This film is widely used in various industries viz. automobiles, food, FMCG, Pharmaceuticals & cosmetics.
-                    </p>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      <div className="overflow-hidden">
-                        <Image
-                          src="https://www.uflexltd.com/assets/images/holo/HRI-Holographic-FILM.jpg"
-                          alt="HRI Sample"
-                          width={400}
-                          height={300}
-                          className="w-full h-auto object-cover"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </details>
+  {/* 4. HRI HOLOGRAPHIC FILM */}
+  <details className="group border-b border-gray-200 pb-4">
+    <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
+      <span>4. HRI Holographic Film</span>
+      <ChevronDown className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
+    </summary>
+    <div className="mt-4 pl-4 space-y-4">
+      <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
+        High Reflective Index film is also called as Zinc metalized film is available in transparent form. This film is used specially for overlay/lamination on the printed substrate. After lamination, both print matter and holographic effects are clearly visible. This film is used for promotional activities and secure packaging needs. This film is widely used in various industries viz. automobiles, food, FMCG, Pharmaceuticals & cosmetics.
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="overflow-hidden">
+          <Image
+            src="https://www.uflexltd.com/assets/images/holo/HRI-Holographic-FILM.jpg"
+            alt="HRI Sample"
+            width={400}
+            height={300}
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </details>
 
-                {/* 5. LENS FILM (F1 & F2) – 3 images */}
-                <details className="group border-b border-gray-200 pb-4">
-                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
-                    <span>5. LENS FILM (F1 & F2)</span>
-                    <ChevronDown className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
-                  </summary>
-                  <div className="mt-4 pl-4 space-y-4">
-                    <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
-                      Lens effect is one of the advanced secured packaging features solutions. Various industries viz. automobiles, food, FMCG, Pharmaceuticals, cosmetics, etc are using this effect for their secured packaging needs. UFLEX offers different various sizes & shapes of lens to the customers.
-                    </p>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      <div className=" overflow-hidden ">
-                        <Image
-                          src="https://www.uflexltd.com/assets/images/holo/HOLOGRAPHIC-LENS-FILM-1.jpg"
-                          alt="Lens Film F1"
-                          width={400}
-                          height={300}
-                          className="w-full h-auto object-cover"
-                        />
-                      </div>
-                      <div className=" overflow-hidden ">
-                        <Image
-                          src="https://www.uflexltd.com/assets/images/holo/HOLOGRAPHIC-LENS-FILM-2.jpg"
-                          alt="Lens Film F2"
-                          width={400}
-                          height={300}
-                          className="w-full h-auto object-cover"
-                        />
-                      </div>
-                      <div className=" overflow-hidden ">
-                        <Image
-                          src="https://www.uflexltd.com/assets/images/holo/HOLOGRAPHIC-LENS-FILM-3.jpg"
-                          alt="Lens Film Sample 3"
-                          width={400}
-                          height={300}
-                          className="w-full h-auto object-cover"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </details>
+  {/* 5. LENS FILM (F1 & F2) */}
+  <details className="group border-b border-gray-200 pb-4">
+    <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
+      <span>5. Lens Film (F1 & F2)</span>
+      <ChevronDown className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
+    </summary>
+    <div className="mt-4 pl-4 space-y-4">
+      <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
+        Lens effect is one of the advanced secured packaging features solutions. Various industries viz. automobiles, food, FMCG, Pharmaceuticals, cosmetics, etc are using this effect for their secured packaging needs. UFLEX offers different various sizes & shapes of lens to the customers.
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="overflow-hidden">
+          <Image
+            src="https://www.uflexltd.com/assets/images/holo/HOLOGRAPHIC-LENS-FILM-1.jpg"
+            alt="Lens Film F1"
+            width={400}
+            height={300}
+            className="w-full h-auto object-cover"
+          />
+        </div>
+        <div className="overflow-hidden">
+          <Image
+            src="https://www.uflexltd.com/assets/images/holo/HOLOGRAPHIC-LENS-FILM-2.jpg"
+            alt="Lens Film F2"
+            width={400}
+            height={300}
+            className="w-full h-auto object-cover"
+          />
+        </div>
+        <div className="overflow-hidden">
+          <Image
+            src="https://www.uflexltd.com/assets/images/holo/HOLOGRAPHIC-LENS-FILM-3.jpg"
+            alt="Lens Film Sample 3"
+            width={400}
+            height={300}
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </details>
 
-                {/* 6. HOLOGRAPHIC PVC FILM */}
-                <details className="group">
-                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
-                    <span>6. HOLOGRAPHIC PVC FILM</span>
-                    <ChevronDown className="text-white w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-smtransition-transform group-open:rotate-180" size={24} />
-                  </summary>
-                  <div className="mt-4 pl-4 space-y-4">
-                    <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
-                      Holographic PVC Film is developed targeting packaging requirement of various pharma companies which are using this product to make blister packs for medicines, capsules etc. Different Holographic features can be incorporated to provide protection against counterfeiting.
-                    </p>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      <div className=" overflow-hidden ">
-                        <Image
-                          src="https://www.uflexltd.com/assets/images/holo/Holographic-PVC-FILM.jpg"
-                          alt="Holographic PVC Blister Sample"
-                          width={400}
-                          height={300}
-                          className="w-full h-auto object-cover"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </details>
-              </div>
+  {/* 6. HOLOGRAPHIC PVC FILM */}
+  <details className="group">
+    <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
+      <span>6. Holographic PVC Film</span>
+      <ChevronDown className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
+    </summary>
+    <div className="mt-4 pl-4 space-y-4">
+      <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
+        Holographic PVC Film is developed targeting packaging requirement of various pharma companies which are using this product to make blister packs for medicines, capsules etc. Different Holographic features can be incorporated to provide protection against counterfeiting.
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="overflow-hidden">
+          <Image
+            src="https://www.uflexltd.com/assets/images/holo/Holographic-PVC-FILM.jpg"
+            alt="Holographic PVC Blister Sample"
+            width={400}
+            height={300}
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </details>
+</div>
 
               {/* Bottom Buttons */}
               <div className="flex flex-wrap gap-6 justify-start pt-8">
-                <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                 {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Learn More
-                </button>
+                </button> */}
                 <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Request Sample
                 </button>
@@ -770,9 +770,9 @@ export default function ProductCategorySection({
 
               {/* Bottom Buttons */}
               <div className="flex flex-wrap gap-6 justify-end pt-10">
-                <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                 {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Learn More
-                </button>
+                </button> */}
                 <button className="border-2 border-[#117ABA] text-[#117ABA] px-8 py-4  font-medium hover:bg-blue-50 transition">
                   Request Sample
                 </button>
@@ -862,9 +862,9 @@ export default function ProductCategorySection({
 
               {/* Bottom Buttons */}
               <div className="flex flex-wrap gap-6 justify-start pt-10">
-                <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                 {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Learn More
-                </button>
+                </button> */}
                 <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Request Sample
                 </button>
@@ -1053,9 +1053,9 @@ export default function ProductCategorySection({
 
               {/* Bottom Buttons */}
               <div className="flex flex-wrap gap-6 justify-start pt-10">
-                <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                 {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Learn More
-                </button>
+                </button> */}
                 <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Request Sample
                 </button>
@@ -1182,9 +1182,9 @@ export default function ProductCategorySection({
 
               {/* Bottom Buttons */}
               <div className="flex flex-wrap gap-6 justify-start pt-10">
-                <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                {/*  {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Learn More
-                </button>
+                </button> */} 
                 <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Request Sample
                 </button>
