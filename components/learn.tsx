@@ -44,26 +44,31 @@ export default function LearnStatus() {
 
 
 
-            <motion.p
-              className="text-[14px] md:text-[18px] leading-relaxed lato-400 text-black"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-             <span className="lato-700">
-              The UFlex Learning Academy fosters learning and development through
-              a range of off-the-shelf digital, blended and classroom courses on
-              a wide range of subjects. 
-              </span> 
-              <br>
-              </br>
-              The Academy brings together a range of off-the-shelf digital, blended, and classroom courses on a wide range of business-driven subjects, delivered through our secure and accessible online platform. Our customized programs cater to the needs of every individual, giving them an opportunity to excel in their career.
-              <br />
-               {/* <br/> */}
-              
-              {/* <br /> */}
-              Through our learning modules and subject matter experts, we strive to create a culture of learning and upskilling our employees across the organization.
-            </motion.p>
+           <motion.div
+  initial={{ opacity: 0, x: -20 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  className="text-[14px] md:text-[18px] leading-relaxed lato-400 text-black space-y-5 md:space-y-7 text-justify hyphens-auto"
+>
+  <p>
+    <span className="lato-700">
+      The UFlex Learning Academy fosters learning and development through a range of
+      off-the-shelf digital, blended and classroom courses on a wide range of subjects.
+    </span>
+  </p>
+
+  <p>
+    The Academy brings together a range of off-the-shelf digital, blended, and classroom
+    courses on a wide range of business-driven subjects, delivered through our secure
+    and accessible online platform. Our customized programs cater to the needs of every
+    individual, giving them an opportunity to excel in their career.
+  </p>
+
+  <p>
+    Through our learning modules and subject matter experts, we strive to create a
+    culture of learning and upskilling our employees across the organization.
+  </p>
+</motion.div>
              <p className="text-[14px] md:text-[18px] leading-relaxed lato-700 text-[#117ABA] text-base mb-3 ">
             {/* Ready to elevate your career? Connect with us: */}
             To know more about the Academy, write to us at:

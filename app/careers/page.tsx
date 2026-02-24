@@ -71,44 +71,34 @@ export default function Page() {
                     </div> */}
 
 
-              <motion.p
-                className="text-[14px] md:text-[18px] leading-relaxed lato-400 text-black space-y-4"
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-              >
-                <span className="lato-700">
-                  Join us, and be part of a movement that's changing the world, one package at a time.
-                </span>
-                <br />
-                <br />
+             <motion.div
+  initial={{ opacity: 0, x: -20 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  className="text-[14px] md:text-[18px] leading-7 md:leading-9 lato-400 text-black space-y-6 md:space-y-8 max-w-2xl mx-auto px-4 md:px-0 text-left"
+>
+  <p className="font-bold">
+    Join us, and be part of a movement that's changing the world, one package at a time.
+  </p>
 
-                {/* <br /> */}
-                UFlex offers job seekers more than a job. It offers them a lifetime of growth with a number of opportunities for continuous development and growth in assorted fields of business.
-                <br />
-                <br />
+  <p>
+    UFlex offers job seekers more than a job. It offers them a lifetime of growth with a number of
+    opportunities for continuous development and growth in assorted fields of business.
+  </p>
 
-                {/* <br /> */}
-                If you are looking for a rewarding career, you may write to us at:
-                <span className="text-[#117ABA]"> hr@uflexltd.com
-                </span>
-                <br />
+  <p>
+    If you are looking for a rewarding career, you may write to us at:{" "}
+    <span className="text-[#117ABA] font-medium">hr@uflexltd.com</span>
+  </p>
 
-                <span className="">
-                  All current openings can be viewed at the link below.
+  <p>
+    All current openings can be viewed at the link below.
+  </p>
 
-
-                </span>
-                <br />
-                <br />
-
-                {/* <br /> */}
-                Click the button to submit your application
-
-
-                <br />
-               
-              </motion.p>
+  <p className="mt-6 md:mt-8 font-medium">
+    Click the button to submit your application
+  </p>
+</motion.div>
               <a
                 href="https://aa193.taleo.net/careersection/ex/jobsearch.ftl?lang=en"
                 target="_blank"
