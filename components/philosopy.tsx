@@ -11,7 +11,7 @@ import useEmblaCarousel from "embla-carousel-react";
 
 const items = [
   {
-    img: "/images/careers/trust.png",
+    img: "/images/careers/trust.jpg",
     title: "Trust & respect ",
     desc: "Proactively build inclusive and egalitarian partnerships with all stakeholders, through the virtues of honesty of purpose, mutual trust and respect.",
   },
