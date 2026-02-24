@@ -14,7 +14,7 @@ import type { KeyPerson } from "@/app/business/data";
 type Props = {
   title: string;
   people: KeyPerson[];
-  india: boolean; // optional prop to adjust styling if it's the India section (can be used for different title or layout tweaks)
+  india?: boolean; // optional prop to adjust styling if it's the India section (can be used for different title or layout tweaks)
 };
 
 const Keypeople = ({ title, people, india }: Props) => {

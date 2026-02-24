@@ -32,15 +32,15 @@ const SliderItems: SliderItem[] = [
         dynamiclink: "/engineering-business/engineering-Our-Offering",
 
         title: "Converting Machines",
-//         desc: `UFlex brings the latest innovations in
-// printing and packaging technology, offering
-// state-of-the-art solutions such as high-
-// performance CI Flexo presses, advanced
-// ELS printing machines, and extrusion
-// lamination machines. These machines are
-// designed to enhance both the efficiency
-// and quality of the final product.`,
-desc:`A wide range of machines for various printing, lamination, slitting/rewinding, doctoring, and pouch making as per a client's requirement.`,
+        //         desc: `UFlex brings the latest innovations in
+        // printing and packaging technology, offering
+        // state-of-the-art solutions such as high-
+        // performance CI Flexo presses, advanced
+        // ELS printing machines, and extrusion
+        // lamination machines. These machines are
+        // designed to enhance both the efficiency
+        // and quality of the final product.`,
+        desc: `A wide range of machines for various printing, lamination, slitting/rewinding, doctoring, and pouch making as per a client's requirement.`,
     },
     {
         img: "/images/new/e3.jpg",
@@ -83,7 +83,7 @@ dedication, coupled with our state-of-the-
 art facilities, positions UFlex as a leading
 provider capable of fulfilling our clients
 diverse needs with precision and efficiency.`,
-`At UFlex Engineering, we prioritize client
+            `At UFlex Engineering, we prioritize client
 satisfaction by maintaining rigorous quality
 standards throughout our production
 process. Our dedication to innovation,
@@ -147,8 +147,8 @@ export const businesses: BusinessConfig[] = [
                 {
                     id: "rotary-horizontal-high-speed-form-fill-and-seal",
                     title: "Rotary Horizontal High-Speed Form Fill and Seal Machine with Gripper",
-                    description:"UFlex Engineering new design for a rotary horizontal high-speed form fill and seal machine features grippers that hold pouches without conveyor belts, enhancing Picture of Highlight and Innovation pouch quality and preventing leaks."
-                           ,image: "/images/rotary.png",
+                    description: "UFlex Engineering new design for a rotary horizontal high-speed form fill and seal machine features grippers that hold pouches without conveyor belts, enhancing Picture of Highlight and Innovation pouch quality and preventing leaks."
+                    , image: "/images/rotary.png",
                 },
                 {
                     id: "accu-slit-3300",
@@ -214,14 +214,14 @@ innovative initiatives have bolstered sales.
 His experience, dedication, and
 motivational skills inspire the
 organization's workforce.`,
-                         cta: { label: "Read More", href: "/leadership/ravi-sharma" },
+                    cta: { label: "Read More", href: "/leadership/ravi-sharma" },
                 },
                 {
                     photo: "/images/akash.png",
                     name: "Mr. Akash Khandelwal",
                     role: "Executive Vice President – Operations, Engineering Business",
-                    summary:``,
-                      cta: { label: "Read More", href: "/leadership/akash-khandelwal" },
+                    summary: ``,
+                    cta: { label: "Read More", href: "/leadership/akash-khandelwal" },
                 },
                 {
                     photo: "/images/summet.png",
@@ -257,8 +257,8 @@ type Props = {
     business: BusinessConfig;
 };
 const EngComp: React.FC<Props> = ({ business }) => {
-        const [open, setOpen] = useState(false);
-    
+    const [open, setOpen] = useState(false);
+
     return (
 
 
@@ -269,9 +269,9 @@ const EngComp: React.FC<Props> = ({ business }) => {
 
             {/* HERO */}
             <section className='bg-white pt-4 sm:pt-12'>
-            <div className="max-w-7xl mx-auto px-4">
-                <div className="space-y-4">
-                    <div className="grid py-4 lg:grid-cols-2 lg:py-1  gap-10">
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="space-y-4">
+                        <div className="grid py-4 lg:grid-cols-2 lg:py-1  gap-10">
                             {/* <div>
                                 <motion.h1
                                     initial={{ opacity: 0, y: 10 }}
@@ -294,40 +294,40 @@ const EngComp: React.FC<Props> = ({ business }) => {
                                     />
                                 ))}
                             </div> */}
-                             <div>
-                                            <motion.h1
-                                              initial={{ opacity: 0, y: 10 }}
-                                              whileInView={{ opacity: 1, y: 0 }}
-                                              viewport={{ once: true }}
-                                              className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] "
-                                            >
-                                              Engineering
-                                            </motion.h1>
-                            
-                                            <p className="text-wrap max-w-xl lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black">
-                                              {packagingData[0].paragraphs[0]}
-                                            </p>
-                            
-                                            <button
-                                              onClick={() => setOpen(true)}
-                                              className="mt-4 lato-400 text-[16px] sm:text-[20px]  text-[#117ABA]  hover:underline"
-                                            >
-                                              Read More 
-                <span aria-hidden>↗</span>
+                            <div>
+                                <motion.h1
+                                    initial={{ opacity: 0, y: 10 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] "
+                                >
+                                    Engineering
+                                </motion.h1>
 
-                                            </button>
-                            
-                                            {/* ---- Modal ---- */}
-                                            <ReadMoreDialog
-                                              open={open}
-                                              onClose={() => setOpen(false)}
-                                              title={packagingData[0].title}
-                                              imageSrc={packagingData[0].image}
-                                              imageAlt={packagingData[0].title}
-                                              paragraphs={packagingData[0].paragraphs}
-                                            />
-                            
-                                          </div>
+                                <p className="text-wrap max-w-xl lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black">
+                                    {packagingData[0].paragraphs[0]}
+                                </p>
+
+                                <button
+                                    onClick={() => setOpen(true)}
+                                    className="mt-4 lato-400 text-[16px] sm:text-[20px]  text-[#117ABA]  hover:underline"
+                                >
+                                    Read More
+                                    <span aria-hidden>↗</span>
+
+                                </button>
+
+                                {/* ---- Modal ---- */}
+                                <ReadMoreDialog
+                                    open={open}
+                                    onClose={() => setOpen(false)}
+                                    title={packagingData[0].title}
+                                    imageSrc={packagingData[0].image}
+                                    imageAlt={packagingData[0].title}
+                                    paragraphs={packagingData[0].paragraphs}
+                                />
+
+                            </div>
 
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.98 }}
@@ -346,27 +346,27 @@ const EngComp: React.FC<Props> = ({ business }) => {
                                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
                             </motion.div>
                         </div>
-                        <SimpleCarousel heading="Our Offerings" 
-                        // items={SliderItems}
-                        items={SliderItems.map(item => {
-    const titleLower = item.title.toLowerCase();
+                        <SimpleCarousel heading="Our Offerings"
+                            // items={SliderItems}
+                            items={SliderItems.map(item => {
+                                const titleLower = item.title.toLowerCase();
 
-    let catKey = "packaging"; // default
+                                let catKey = "packaging"; // default
 
-    if (titleLower.includes("packaging")) {
-      catKey = "packaging";
-    } else if (titleLower.includes("converting")) {
-      catKey = "converting";
-    } else if (titleLower.includes("speciality") || titleLower.includes("special")) {
-      catKey = "speciality";
-    }
+                                if (titleLower.includes("packaging")) {
+                                    catKey = "packaging";
+                                } else if (titleLower.includes("converting")) {
+                                    catKey = "converting";
+                                } else if (titleLower.includes("speciality") || titleLower.includes("special")) {
+                                    catKey = "speciality";
+                                }
 
-    return {
-      ...item,
-      dynamiclink: `/engineering-business/engineering-Our-Offering?cat=${catKey}`,
-    };
-  })}
-                         imageHeight={280} />
+                                return {
+                                    ...item,
+                                    dynamiclink: `/engineering-business/engineering-Our-Offering?cat=${catKey}`,
+                                };
+                            })}
+                            imageHeight={280} />
 
 
                         {business.innovations && (
