@@ -73,7 +73,7 @@ export const printingCylindersData = {
     },
 
     ctp: {
-      title: "CTP FLEXO PLATES",
+      title: "CTP Flexo Plates",
       overview:
         "The advanced flexo plate manufacturing set-up with laser imaging can produce high definition images of 5080 DPI.",
       bullets: [

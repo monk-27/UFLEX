@@ -82,7 +82,7 @@ export default function ProductsPage() {
       },
 
       ctp: {
-        title: "CTP FLEXO PLATES",
+        title: "CTP FLexo Plates",
         heroImageUrl:
           "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-05492714927.jpg",
         overview:
@@ -97,7 +97,7 @@ export default function ProductsPage() {
       },
 
       sleeves: {
-        title: "FLEXO PRINTING SLEEVES",
+        title: "Flexo Printing Sleeves",
         heroImageUrl: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-05492724927.jpg",
         overview:
           "Flexography printing has been gaining popularity due to its impeccable print quality, easy operability and lower costs as compared to gravure printing. Flexo printing sleeves technology has brought an acceleration in speed, simplification in processes and lower costs when replacing a printing form and within printing itself for that matter.",
