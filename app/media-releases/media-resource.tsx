@@ -15,28 +15,46 @@ const items = [
   },
   {
     title: "February 2026",
-    desc: "UFlex Launches Sustainable Water-Based Soft Touch Coating at PLASTINDIA 2026",
+    desc: "UFlex Unveils CERUFLEX 500 High-Speed Gravure Printing Machineat PLASTINDIA 2026",
     img: "/images/new/fy261.jpeg",
     link: "https://www.uflexltd.com/pdf/Press-Release/2026/PN_05Feb26_UFlex_PlastIndia_Ceruflex500.pdf"
   },
   {
-    title: "August 2025",
-    desc: "Earnings release for the quarter ended June 30, 2025 | Stable growth amidst tariff challenges",
-    img: "/images/new/m1.jpg",
-    link: "https://www.uflexltd.com/pdf/Press-Release/2025/PR_13Aug25_UFlex_Q1FY26_Earnings.pdf"
+    title: "February 2026",
+    desc: "UFlex Launches Sustainable Water-Based Soft Touch Coating at PLASTINDIA 2026",
+    img: "/images/new/m2.png",
+    link: "https://www.uflexltd.com/pdf/Press-Release/2026/PN_06Feb26_UFlex_PlastIndia_WB_Soft_Touch_Coating.pdf"
   },
   {
-    title: "August 2025",
-    desc: "UFlex Limited recognised as a Top Employer 2025 in India",
-    img: "/images/awards/b5.png",
-    link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_07Aug25_UFlex_TE2025.pdf"
+    title: "February 2026",
+    desc: "UFlex to Unveil Innovations Across the Packaging Value Chain at PLASTINDIA 2026",
+    img: "/images/new/new.jpg",
+    link: "https://www.uflexltd.com/pdf/Press-Release/2026/PN_03Feb26_UFlex_PLASTINDIA2026.pdf"
   },
   {
-    title: "July 2025",
-    desc: "UFlex secures Indian patent for sustainable waterborne heat seal coating for food and consumer goods packaging",
-    img: "/images/new/m2.jpg",
-    link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_22Jul25_UFlex_IP_HSCoating.pdf"
+    title: "February 2026",
+    desc: "UFlex Introduces F-HSS Mono-Material PET Film for Sustainable Packaging at PLASTINDIA 2026",
+    img: "/images/new/this.jpg",
+    link: "https://www.uflexltd.com/pdf/Press-Release/2026/PN_06Feb26_UFlex_PlastIndia_F-HSS.pdf"
   },
+  // {
+  //   title: "August 2025",
+  //   desc: "Earnings release for the quarter ended June 30, 2025 | Stable growth amidst tariff challenges",
+  //   img: "/images/new/m1.jpg",
+  //   link: "https://www.uflexltd.com/pdf/Press-Release/2025/PR_13Aug25_UFlex_Q1FY26_Earnings.pdf"
+  // },
+  // {
+  //   title: "August 2025",
+  //   desc: "UFlex Limited recognised as a Top Employer 2025 in India",
+  //   img: "/images/awards/b5.png",
+  //   link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_07Aug25_UFlex_TE2025.pdf"
+  // },
+  // {
+  //   title: "July 2025",
+  //   desc: "UFlex secures Indian patent for sustainable waterborne heat seal coating for food and consumer goods packaging",
+  //   img: "/images/new/m2.jpg",
+  //   link: "https://www.uflexltd.com/pdf/Press-Release/2025/PN_22Jul25_UFlex_IP_HSCoating.pdf"
+  // },
 ];
 
 export default function MediaCardsCarousel() {

@@ -39,6 +39,10 @@ const PRESS_ROOM_DATA = {
           title: "UFlex Showcases WB Soft Touch Coating at PlastIndia 2026",
           link: "https://www.uflexltd.com/pdf/Press-Release/2026/PN_06Feb26_UFlex_PlastIndia_WB_Soft_Touch_Coating.pdf"
         },
+        {
+          title: "UFlex Introduces F-HSS Mono-Material PET Film",
+          link: "https://www.uflexltd.com/pdf/Press-Release/2026/PN_06Feb26_UFlex_PlastIndia_F-HSS.pdf"
+        },
 
 
       ],
