@@ -43,7 +43,7 @@ const directors: Director[] = [
 
    {
     name: "Mr. Dinesh Jain", position: "President – Legal & Corporate Affairs",
-    img: "/images/new/dinesh.jpg",
+    img: "/images/new/din.jpg",
     bio: "With over four decades of industry experience, Mr. Dinesh Jain has been with the UFlex Group for more than 29 years. He is responsible for overseeing legal and corporate affairs, as well as leading the Group&rsquo;s corporate social responsibility initiatives. In addition to his professional responsibilities, Mr. Jain serves on the managing committees of several social organizations and educational institutions, including IMS Ghaziabad and IMS Noida. He holds an MBA and an LLM from Agra University."
   },
 

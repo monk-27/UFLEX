@@ -186,7 +186,7 @@ const items = [
     desc: "UFlex proudly represents India on the global aseptic packaging map, delivering innovative and sustainable solutions that meet the evolving needs of the beverage industry worldwide.",
   },
   {
-    img: "/images/what2.jpeg",
+    img: "/images/new/com.jpeg",
     title: "Comprehensive and sustainable packaging ecosystems",
     desc: "From producing films, converting, engineering, printing cylinders, chemicals, holography, and aseptic packaging to recycling solutions, we deliver eco-friendly packaging solutions for a sustainable future.",
   },

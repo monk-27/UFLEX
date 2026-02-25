@@ -448,6 +448,20 @@ export const advertisementFYData: AdvertisementFY[] = [
     label: "FY2025–2026",
     cards: [
       {
+        id: "2025-12",
+        quarterLabel: "Quarter ended - 31st December, 2025",
+        docs: [
+          {
+            label: "Hindi",
+            href: "https://www.uflexltd.com/pdf/financials/advertisements/2025-26/ADV-FR-31122025-JS.pdf",
+          },
+          {
+            label: "English",
+            href: "https://www.uflexltd.com/pdf/financials/advertisements/2025-26/ADV-FR-31122025-FE.pdf",
+          },
+        ],
+      },
+      {
         id: "2025-09",
         quarterLabel: "QUARTER ENDED - 30th September, 2025",
         docs: [
