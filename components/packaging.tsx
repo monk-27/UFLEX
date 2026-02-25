@@ -399,7 +399,8 @@ export const businesses: BusinessConfig[] = [
                 },
                 {
                     photo:
-                        "/images/new/avinash.png",
+                        "/images/new/images.png",
+                        // "/images/new/av.jpg",
                     name: "Mr. Avinash Kumar ",
                     role:
                         "Business Head - Flex Films, UAE",
@@ -409,7 +410,7 @@ export const businesses: BusinessConfig[] = [
                 },
                 {
                     photo:
-                        "/images/new/vijay.png",
+                        "/images/new/vijayy.png",
                     name: "Mr. Vijay Yadav",
                     role: "Business Head - Flex Films, USA",
                     summary:
@@ -418,7 +419,7 @@ export const businesses: BusinessConfig[] = [
                 },
                 {
                     photo:
-                        "/images/new/suhas.png",
+                        "/images/new/more.png",
                     name: "Mr. Suhas More",
                     role: "Business Head - Flex Films, Nigeria",
                     summary:
@@ -426,7 +427,7 @@ export const businesses: BusinessConfig[] = [
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
                 },
                 {
-                    photo: "/images/new/ajay.png",
+                    photo: "/images/new/gupta.png",
                     name: " Mr. Ajay Gupta",
                     role: "Sr. Vice President - Flex Films, Hungary",
                     summary:
