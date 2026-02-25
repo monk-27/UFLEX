@@ -741,6 +741,14 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
 
 const investorPresentations: DocItem[] = [
     {
+        text: "Investor Presentation - February 17, 2026",
+        link: "https://www.uflexltd.com/pdf/IR/Investor_Presentation_17Feb_2026.pdf",
+    },
+    {
+        text: "Investor Presentation - December 08, 2025",
+        link: "https://www.uflexltd.com/pdf/IR/Investor_Presentation_08Dec_2025.pdf",
+    },
+    {
         text: "Investor Presentation – September 23, 2025",
         link: "https://www.uflexltd.com/pdf/IR/Investor_Presentation_23Sep_2025.pdf",
     },
@@ -1083,15 +1091,15 @@ const Page = () => {
                                                                             cell?.cons || cell?.stand ? (
                                                                                 <div className="inline-flex gap-4">
                                                                                     {cell.cons && (
-                                                                                        <div className="bg-[#EDEDED] px-3 py-1 text-center">
-                                                                                            <div className="text-[11px] mb-1">
+                                                                                        <div className="bg-[#EDEDED] text-black px-3 py-1 text-center">
+                                                                                            <div className="text-[11px] mb-1 text-black">
                                                                                                 Cons.
                                                                                             </div>
                                                                                             {renderFileIcon(cell.cons)}
                                                                                         </div>
                                                                                     )}
                                                                                     {cell.stand && (
-                                                                                        <div className="bg-[#EDEDED] px-3 py-1 text-center">
+                                                                                        <div className="bg-[#EDEDED] px-3 py-1 text-center text-black">
                                                                                             <div className="text-[11px] mb-1">
                                                                                                 Stand.
                                                                                             </div>
