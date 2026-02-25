@@ -92,7 +92,7 @@ desc:`Decorative films and foils are developed with advanced metallization techn
     },
     {
         title: "AlOx-coated films",
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item3-06130321303.jpg",
+        img: "https://www.flexfilm.com/img/Products/AloxCoated/AC_Clear_Barrier%20Polyester_Film.jpg",
         // dynamiclink: "/packaging-films-business/packaging-our-offering",
 
         desc: `Films with a transparent aluminium oxide layer that provide strong moisture and gas barriers while keeping the product visible.
@@ -100,7 +100,7 @@ desc:`Decorative films and foils are developed with advanced metallization techn
     },
     {
         title: "Speciality films",
-        img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item4-06130331303.jpg",
+        img: "https://www.flexfilm.com/img/Products/SpecialityFilms/SF_Easy_Tearing_Films.jpg",
         // dynamiclink: "/packaging-films-business/packaging-our-offering",
 
         desc: "A range of films that provide value addition for converters by enhancing the quality, performance, and functionality of the final packaging.",

@@ -447,9 +447,9 @@ const PackagingKeypeople = ({ title, people }: Props) => {
             >
               <button
                 onClick={() => setSelected(null)}
-                className="absolute right-3 top-3 z-10 p-2 bg-white rounded-full shadow hover:bg-gray-100"
+                className="absolute right-3 top-3 z-10 p-2 bg-white rounded-full shadow hover:bg-gray-400"
               >
-                <X className="h-5 w-5" />
+                <X className="h-5 w-5 text-black" />
               </button>
 
               <div className="relative aspect-square">
