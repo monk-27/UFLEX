@@ -178,6 +178,128 @@ const tabs: Tab[] = [
 const tabItems: any = {
     "announcements": [
         {
+    "date": "21/02/2026",
+    "items": [
+      {
+        "text": "Transcript of the earnings conference call conducted on February 16, 2026",
+        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_AM_TRNS_21FEB26.pdf"
+      }
+    ]
+  },
+  {
+    "date": "19/02/2026",
+    "items": [
+      {
+        "text": "Disclosure under Regulation 30 read with Schedule III, Part A, Para A of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_REG30_19FEB26.pdf"
+      }
+    ]
+  },
+  {
+    "date": "17/02/2026",
+    "items": [
+      {
+        "text": "Updates on Company’s participation in “Dolat Capital Corporate Conference 2026” and Schedule of Analyst/Institutional Investor Meet",
+        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_IP_17FEB26.pdf"
+      }
+    ]
+  },
+  {
+    "date": "16/02/2026",
+    "items": [
+      {
+        "text": "Recording of earnings conference call conducted on February 16, 2026",
+        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_AM_AUD_REC_16FEB26.pdf"
+      },
+      {
+        "text": "Updates on Earnings Conference Call under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_AMIP_16FEB26.pdf"
+      }
+    ]
+  },
+  {
+    "date": "14/02/2026",
+    items: [
+      {
+        "text": "Intimation of participation in “Dolat Capital Corporate Conference 2026” and Schedule of Analyst/Institutional Investor Meet under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_AM_14FEB26.pdf"
+      }
+    ]
+  },
+  {
+    "date": "13/02/2026",
+    "items": [
+      {
+        "text": "Publication of Financial Results",
+        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_ADVT_13FEB26.pdf"
+      }
+    ]
+  },
+  {
+    "date": "12/02/2026",
+    "items": [
+      {
+        "text": "Earnings Release for the quarter ended 31st December, 2025",
+        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_ER_12022026.pdf"
+      },
+      {
+        "text": "Outcome of Board Meeting held on 12th February, 2026",
+        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_QTRLYRES_31DEC25.pdf"
+      }
+    ]
+  },
+  {
+    "date": "11/02/2026",
+    "items": [
+      {
+        "text": "Intimation of Earnings Conference Call under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_AM16FEB26.pdf"
+      }
+    ]
+  },
+  {
+    "date": "04/02/2026",
+    "items": [
+      {
+        "text": "Disclosure under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 – Cessation of Chief Financial Officer and Key Managerial Personnel of the Company on account of Superannuation",
+        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_Superannuation_CFO.pdf"
+      }
+    ]
+  },
+  {
+    "date": "03/02/2026",
+    "items": [
+      {
+        "text": "Board Meeting to consider the Unaudited Financial Results of the Company for the quarter and nine months ended 31st December 2025",
+        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_BM_12FEB2026.pdf"
+      }
+    ]
+  },
+  
+
+        
+        {
+            data:"23/12/2025",
+            items:[
+                {
+                    text:" Intimation of EcoVadis Sustainability Rating for 2025",
+                    link:"https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSEE_SG_23DEC25.pdf"
+                }
+
+            ]
+        },
+        {
+            data:"23/12/2025",
+            items:[
+                {
+                    text:"Closure of Trading Window",
+                    link:"https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_TWC_31DEC25.pdf"
+                }
+
+            ]
+        },
+        
+        {
             date: "08/12/2025",
             items: [
                 {
