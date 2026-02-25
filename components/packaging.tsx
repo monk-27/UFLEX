@@ -399,8 +399,7 @@ export const businesses: BusinessConfig[] = [
                 },
                 {
                     photo:
-                        "/images/new/images.png",
-                        // "/images/new/av.jpg",
+                        "/images/new/avinashji.png",
                     name: "Mr. Avinash Kumar ",
                     role:
                         "Business Head - Flex Films, UAE",
