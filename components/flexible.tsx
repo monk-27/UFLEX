@@ -29,7 +29,9 @@ const SliderItems: SliderItem[] = [
         // desc: "UFlex offers a comprehensive range of flexible laminates made from various combinations of plastic, aluminum, and paper to suit diverse packaging needs. These include structures like PET/PE, PET/Foil/PE, PET/BOPP, BOPP/CPP, and advanced multilayer laminates such as PET/Extr/Foil/Extr/PE and AlOx PET/BON/CPP for retort applications. ",
     },
     {
-        img: "/images/new/f2.png",
+        // img: "/images/new/f2.png",
+        img: "/images/new/flex.jpeg",
+
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
 
         title: "Pre-formed pouches",
@@ -44,7 +46,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
         // desc: "UFlex offers a wide array of flexible pouches designed to cater to diverse product categories and packaging needs across industries. Our portfolio includes advanced formats such as slider zipper pouches, ideal for powders and granules, and pouring spout pouches, perfectly suited for liquid applications.",
     },
     {
-        img: "/images/new/flex.jpeg",
+        img: "/images/new/f4.jpg",
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
 
         title: "FlexFreshTM – Active & Modified Atmosphere Packaging (AMAP)",
