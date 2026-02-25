@@ -265,18 +265,19 @@ export default function WhatSetsUsApartCarousel() {
         <div className="mt-10 flex justify-center gap-5">
           <button
             onClick={scrollPrev}
-            className="rounded-full border-2 border-[#117ABA]/30 p-4 hover:bg-[#117ABA]/5 hover:border-[#117ABA]/50 transition-all duration-200"
+                        className="rounded-full border-1 border-gray-300 p-4 hover:bg-gray-100 hover:border-gray-200 transition-all duration-200"
+
             aria-label="Previous slide"
           >
-            <ChevronLeft className="h-6 w-6 text-[#117ABA]" />
+            <ChevronLeft className="h-6 w-6 text-gray-300" />
           </button>
 
           <button
             onClick={scrollNext}
-            className="rounded-full border-2 border-[#117ABA]/30 p-4 hover:bg-[#117ABA]/5 hover:border-[#117ABA]/50 transition-all duration-200"
+            className="rounded-full border-1 border-gray-300 p-4 hover:bg-gray-100 hover:border-gray-200 transition-all duration-200"
             aria-label="Next slide"
           >
-            <ChevronRight className="h-6 w-6 text-[#117ABA]" />
+            <ChevronRight className="h-6 w-6 text-gray-300" />
           </button>
         </div>
       </div>

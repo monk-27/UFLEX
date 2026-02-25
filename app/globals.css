@@ -3,6 +3,29 @@
 /* =========================
    LATO – self hosted
 ========================= */
+html {
+  overflow-x: hidden;   
+  overflow-x: clip;       
+  width: 100%;                  
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;           /* Double safety */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: var(--foreground);
+  background: var(--background);  /* <- previously was var(--foreground) */
+  font-family: "manrope", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+}
+
+
+
+
 
 @font-face {
   font-family: "Lato";
@@ -1580,14 +1603,6 @@ swiper-pagination {
 /* Map Tailwind font-sans -> manrope (already set in your @theme inline) */
 
 /* IMPORTANT: Make body white again */
-body {
-  color: var(--foreground);
-  background: var(--background);  /* <- previously was var(--foreground) */
-  font-family: "manrope", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  letter-spacing: 0.02em;
-  line-height: 1.6;
-}
-
 
 /* =========================================================
    Existing UI styles (kept) — all font-family refs normalized to manrope
