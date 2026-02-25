@@ -21,12 +21,17 @@ const directors: Director[] = [
   { name: "Mr. Ashok Chaturvedi", position: "Chairman and Managing Director", img: "/images/new/1.png", bio: "Mr. Ashok Chaturvedi is a first-generation entrepreneur and the founder of the UFlex Group. His dynamic leadership, long-term vision, and value-driven business strategy have established UFlex Limited as the largest flexible packaging and solutions company in India and a recognized global player in polymer sciences. He is considered the ‘Father of the flexible packaging industry in India’." },
   { name: "Mr. Anantshree Chaturvedi", position: "Vice Chairman and CEO", img: "/images/new/7.png", bio: "Mr. Anantshree Chaturvedi plays a pivotal role in driving UFlex’s global success, with extensive hands-on experience in flexible packaging across India, Mexico, Poland, Egypt, the UAE, and the USA. He was instrumental in expanding UFlex's footprint in the US and currently oversees global product stability, R&D, and HR protocols. In addition to his leadership position, he serves as the company’s Chief Cultural Officer, shaping the organization’s values and workplace culture. Mr. Chaturvedi is a graduate of Babson College, where he majored in finance, global strategic management, and economics. His strong educational foundation complements his extensive practical expertise, enabling him to lead UFlex’s operations effectively across diverse regions." },
   { name: "Mr. Apoorvshree Chaturvedi", position: "Director – Global Operations", img: "/images/a.png", bio: "Mr. Apoorvshree Chaturvedi oversees corporate sustainability initiatives focusing on ESG (Environmental, Social, and Governance) and growth ventures at UFlex Group. He leads the development and execution of strategic initiatives across all business verticals, driving the creation of a value-driven organization with a strong focus on socio-economic impact. An alumnus of New York University, Mr. Chaturvedi joined UFlex in 2012 as a Management Trainee in the Middle East. He later took on leadership roles, directing marketing and sales efforts for the European and Middle Eastern regions." },
-  { name: "Mr. Rajesh Bhatia", position: "Group President (F&A) and CFO", img: "/images/new/rajesh.png", bio: "Mr. Rajesh Bhatia brings nearly three decades of extensive experience in finance, accounting, taxation, administration, and commercial and business development. He holds a degree in commerce and is an associate member of the Institute of Chartered Accountants of India (ICAI). At UFlex, his primary responsibilities include formulating financial plans and strategies, assisting in the finalization of corporate plans and strategies, and overseeing financial management, taxation, and corporate governance. His role also encompasses investor relations, information technology, and other areas." },
+  // { name: "Mr. Rajesh Bhatia", position: "Group President (F&A) and CFO", img: "/images/new/rajesh.png", bio: "Mr. Rajesh Bhatia brings nearly three decades of extensive experience in finance, accounting, taxation, administration, and commercial and business development. He holds a degree in commerce and is an associate member of the Institute of Chartered Accountants of India (ICAI). At UFlex, his primary responsibilities include formulating financial plans and strategies, assisting in the finalization of corporate plans and strategies, and overseeing financial management, taxation, and corporate governance. His role also encompasses investor relations, information technology, and other areas." },
   {
     name: "Mr. Jeevaraj Gopal Pillai",
     position: "Whole Time Director, President - Flexible Packaging and New Product Development and Director– Sustainability",
     img: "/images/jeevaraj.png",
     bio: "Mr. Jeevaraj Pillai brings over 35 years of experience in packaging and packaging technology, with expertise in printing cylinders, packaging films, and advanced flexible packaging material conversion. As Director - Sustainability, he leads the development and implementation of the company’s ESG strategy, along with the development of sustainable products and solutions. His extensive background in the industry is complemented by his qualifications in mechanical engineering and an MBA.",
+  },
+  {
+    name: "Mr. Dinesh Jain", position: "President – Legal & Corporate Affairs",
+    img: "/images/new/dinesh.jpg",
+    bio: "With over four decades of industry experience, Mr. Dinesh Jain has been with the UFlex Group for more than 29 years. He is responsible for overseeing legal and corporate affairs, as well as leading the Group&rsquo;s corporate social responsibility initiatives. In addition to his professional responsibilities, Mr. Jain serves on the managing committees of several social organizations and educational institutions, including IMS Ghaziabad and IMS Noida. He holds an MBA and an LLM from Agra University."
   },
   {
     name: "Dr. Chandan Chattaraj", position: "President – Human Resources (India & Global)",
@@ -39,11 +44,7 @@ const directors: Director[] = [
     bio: "Mr. Sirsamkar has been with the UFlex Group for over 26 years. He has previously worked with leading organizations such as Garware and Polyplex. With nearly four decades of experience in the packaging films industry, he has been instrumental in expanding the film plant globally and has played a key role in driving the operations and development of value-added packaging films. Mr. Sirsamkar holds a degree in instrumentation and electronics engineering."
   },
 
-  {
-    name: "Mr. Dinesh Jain", position: "President – Legal & Corporate Affairs",
-    img: "/images/new/dinesh.png",
-    bio: "With over four decades of industry experience, Mr. Dinesh Jain has been with the UFlex Group for more than 29 years. He is responsible for overseeing legal and corporate affairs, as well as leading the Group&rsquo;s corporate social responsibility initiatives. In addition to his professional responsibilities, Mr. Jain serves on the managing committees of several social organizations and educational institutions, including IMS Ghaziabad and IMS Noida. He holds an MBA and an LLM from Agra University."
-  },
+  
 
   {
     name: "Mr. Anand Kanodia", position: "Joint President – Finance",
@@ -53,7 +54,7 @@ const directors: Director[] = [
 
   {
     name: "Mr. Sumeet Kumar", position: "Executive Vice President – Finance",
-    img: "/images/new/sumeet.png",
+    img: "/images/new/sumeet.jpg",
     bio: "Mr. Sumeet Kumar is a seasoned finance professional with over three decades of leadership experience across prominent corporate groups such as LANCO Group, Global Group, and Hi-Tech Gears Group. He has held key roles including President, CFO, and Group CFO, and brings deep expertise in project and corporate finance, fundraising, M&A, financial planning and control, treasury, and investor relations."
   },
 ];
@@ -145,7 +146,7 @@ const KeyManagement = () => {
                         src={d.img}
                         alt={d.name}
                         fill
-                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-100"
                         sizes="100vw"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
