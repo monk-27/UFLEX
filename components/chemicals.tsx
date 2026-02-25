@@ -176,7 +176,7 @@ export const businesses: BusinessConfig[] = [
             title: "Key People",
             details: [
                 {
-                    photo: "/images/desh.png",
+                    photo: "/images/new/desh.jpg",
                     name: "Desh Deepak Misra",
                     role: "Joint President, Chemicals Business",
                     summary:

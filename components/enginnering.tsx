@@ -224,7 +224,9 @@ organization's workforce.`,
                     cta: { label: "Read More", href: "/leadership/akash-khandelwal" },
                 },
                 {
-                    photo: "/images/summet.png",
+                    // photo: "/images/new/summet.png",
+                    photo: "/images/new/image.jpg",
+
                     name: "Mr. Sumeet Arora",
                     role: "Senior Vice President - Sales and Marketing, Engineering Business",
                     summary:
