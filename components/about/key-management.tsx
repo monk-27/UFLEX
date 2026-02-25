@@ -28,23 +28,24 @@ const directors: Director[] = [
     img: "/images/jeevaraj.png",
     bio: "Mr. Jeevaraj Pillai brings over 35 years of experience in packaging and packaging technology, with expertise in printing cylinders, packaging films, and advanced flexible packaging material conversion. As Director - Sustainability, he leads the development and implementation of the company’s ESG strategy, along with the development of sustainable products and solutions. His extensive background in the industry is complemented by his qualifications in mechanical engineering and an MBA.",
   },
-  {
-    name: "Mr. Dinesh Jain", position: "President – Legal & Corporate Affairs",
-    img: "/images/new/dinesh.jpg",
-    bio: "With over four decades of industry experience, Mr. Dinesh Jain has been with the UFlex Group for more than 29 years. He is responsible for overseeing legal and corporate affairs, as well as leading the Group&rsquo;s corporate social responsibility initiatives. In addition to his professional responsibilities, Mr. Jain serves on the managing committees of several social organizations and educational institutions, including IMS Ghaziabad and IMS Noida. He holds an MBA and an LLM from Agra University."
-  },
+ 
   {
     name: "Dr. Chandan Chattaraj", position: "President – Human Resources (India & Global)",
     img: "/images/new/chandan.png",
     bio: "Dr. Chandan Chattaraj brings three decades of extensive experience across organizations such as Aircel, the Oberoi Group, Xerox India, and Jubilant Organosys, where he held various leadership roles. In addition to his professional achievements, he serves as a member of the Board of Governors for the International School of Business & Media, Pune, and is on the Corporate Advisory Board of Poornima University, Jaipur. He is an alumnus of the Xavier Institute of Social Service (XISS), Ranchi."
   },
+  
   {
     name: "Mr. P. L. Sirsamkar", position: "Technical & New Product Development (Films Business)",
     img: "/images/new/pl.png",
     bio: "Mr. Sirsamkar has been with the UFlex Group for over 26 years. He has previously worked with leading organizations such as Garware and Polyplex. With nearly four decades of experience in the packaging films industry, he has been instrumental in expanding the film plant globally and has played a key role in driving the operations and development of value-added packaging films. Mr. Sirsamkar holds a degree in instrumentation and electronics engineering."
   },
 
-  
+   {
+    name: "Mr. Dinesh Jain", position: "President – Legal & Corporate Affairs",
+    img: "/images/new/dinesh.jpg",
+    bio: "With over four decades of industry experience, Mr. Dinesh Jain has been with the UFlex Group for more than 29 years. He is responsible for overseeing legal and corporate affairs, as well as leading the Group&rsquo;s corporate social responsibility initiatives. In addition to his professional responsibilities, Mr. Jain serves on the managing committees of several social organizations and educational institutions, including IMS Ghaziabad and IMS Noida. He holds an MBA and an LLM from Agra University."
+  },
 
   {
     name: "Mr. Anand Kanodia", position: "Joint President – Finance",
