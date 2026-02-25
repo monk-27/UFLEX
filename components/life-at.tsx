@@ -130,7 +130,7 @@ export default function LifeatModules() {
   ]
 
   return (
-    <section className="px-4 py-0 text-center  sm:bg-gray-100 sm:py-10 md:px-12">
+    <section className="px-1 py-10 text-center  sm:bg-gray-100 sm:py-10 md:px-12">
       {/* Title */}
       <motion.div
         className="mx-auto max-w-4xl"

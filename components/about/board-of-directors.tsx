@@ -108,13 +108,14 @@ const BoardOfDirectors = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.06 }}
-                    className="
-                      group relative min-w-0
-                      flex-[0_0_85%] sm:flex-[0_0_46%] lg:flex-[0_0_30%] xl:flex-[0_0_23%]
-                      border border-gray-200 bg-white overflow-hidden
-                      aspect-[4/5]
-                    "
-                  >
+                   className="
+                    group relative min-w-0
+                    flex-[0_0_100%]
+                    sm:flex-[0_0_50%]
+                    md:flex-[0_0_23%]
+                    border border-gray-200 bg-white overflow-hidden
+                    aspect-[4/5]
+                  ">
                     {/* ---------- Base (B/W) image INSET with padding ---------- */}
                     <div className="absolute inset-0 p-4">
                       <div className="relative h-full w-full overflow-hidden">
@@ -235,7 +236,7 @@ const BoardOfDirectors = () => {
               <button
                 onClick={() => setSelected(null)}
                 aria-label="Close"
-                className="absolute right-3 top-3 border-black border bg-white p-2"
+                 className="absolute right-3 top-3 z-10 p-2 bg-white rounded-full shadow hover:bg-gray-400"
               >
                 <X className="h-5 w-5 text-black" />
               </button>

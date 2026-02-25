@@ -130,19 +130,18 @@ const GlobalFootprint = () => {
         "6th October City, Egypt",
         "Altamira, Tamaulipas, Mexico",
         "Elizabethtown, Kentucky, USA",
-        "Września, Sikorskiego 48, Poland",
-        "Stupino, Moscow Region, CIS Country",
+        "Września, Sikorskiego 48, Poland","Moscow Region, CIS Country",
         "Rétság, Ipari Park-7, Hungary",
         "Ikenne, Ogun State, Nigeria",
       ],
       "PET Chip Resin": [
-        "AIN-Sokhna, Suez Governorate, Egypt",
+        "AIN Sokhna Suez Governorate, Egypt",
       ],
       "Aseptic Packaging (Upcoming)": [
-        "AIN-Sokhna, Suez Governorate, Egypt",
+        "AIN Sokhna Suez Governorate, Egypt"
       ],
-      "Flexible Packaging – WPP Bags (Upcoming)": [
-        "Altamira, Tamaulipas, Mexico",
+      "Flexible Packaging -  (Upcoming)": [
+        "Altamira Tamaulipas, Mexico",
       ],
       Recycling: [
        
@@ -197,13 +196,13 @@ const GlobalFootprint = () => {
         </p>
 
         <div className="mt-12 flex items-center justify-center">
-          <Image src="/images/maps.png" width={100} height={100} priority alt="" className="object-cover sm:object-cover w-[1800px] sm:w-[1800px] h-[100px] sm:h-[617px]"/>
+          <Image src="/images/maps.png" width={100} height={100} priority alt="" className="object-fit sm:object-cover w-[1800px] sm:w-[1800px] h-[200px] sm:h-[617px]"/>
         </div>
 
         {/* CATEGORY WISE CARDS */}
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 mt-12 grid md:grid-cols-2 gap-12">
           {/* INDIA */}
-          <div className=" bg-gray-100 p-8 rounded-lg">
+          <div className=" bg-gray-100 p-4 sm:p-8 rounded-lg">
             <h3 className="text-2xl lato-700 mb-6 text-[#117ABA]">
               India – Manufacturing Facilities
             </h3>
@@ -223,18 +222,18 @@ const GlobalFootprint = () => {
           </div>
 
           {/* INTERNATIONAL */}
-          <div className="bg-gray-100  rounded-lg p-8 ">
+          <div className="bg-gray-100  rounded-lg p-4 sm:p-8">
             <h3 className="text-2xl lato-700 mb-6 text-[#117ABA]">
               International Facilities
             </h3>
 
             {Object.entries(categories.International).map(([category, items], idx) => (
               <div key={idx} className="mb-6">
-                <h4 className="flex justify-start text-xl lato-400 text-[#117ABA] mb-2">{category}</h4>
+                <h4 className=" flex justify-start text-xl lato-400 text-[#117ABA] mb-2">{category}</h4>
                 <ul className="space-y-2">
                   {items.map((location, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="text-black text-lg">{location}</span>
+                      <span className="lato-400 text-black text-lg">{location}</span>
                     </li>
                   ))}
                 </ul>
