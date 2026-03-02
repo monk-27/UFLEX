@@ -199,7 +199,7 @@ export const businesses: BusinessConfig[] = [
       title: "Key People",
       details: [
         {
-          photo: "/images/new/ashwani.jpg",
+          photo: "/images/new/ashwani.jpeg",
           name: "Mr. Ashwani K. Sharma",
           role: "President and CEO, Aseptic packaging business",
           summary:

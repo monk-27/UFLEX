@@ -184,7 +184,7 @@ export default function SimpleCarousel({
             className="rounded-md shadow-md bg-white overflow-hidden flex flex-col"
           >
             <div style={{ height: imageHeight }} className="relative w-full bg-gray-100">
-              <Image src={card.img} alt={card.title} fill className="object-fit" />
+              <Image src={card.img} alt={card.title} fill className="object-fill" />
             </div>
 
             <div className="p-5 flex flex-col flex-1 justify-between">

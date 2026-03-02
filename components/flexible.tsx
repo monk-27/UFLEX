@@ -56,7 +56,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
         // desc: "MAP solution is a breakthrough innovation designed to extend the shelf life of perishable goods such as fresh vegetables, fruits, and flowers. By regulating the internal atmosphere without the use of chemicals, FlexFreshTM helps slow spoilage and preserve freshness for up to 30 days. ",
     },
     {
-        img: "/images/new/f5.jpg",
+        img: "/images/new/flexo.jpeg",
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
 
         title: "Flexo printed rolls and bags",
@@ -200,7 +200,7 @@ export const businesses: BusinessConfig[] = [
                 {
                     id: "itc-rte-pouch-ulp-pet",
                     title: "ITC RTE Pouch – ULP PET pouches",
-                    image: "/images/flexiblelaminates.png",
+                    image: "/images/new/itcr.jpeg",
                     description: "These pouches are designed for convenient microwave heating and are ideal for hot-fill applications such as gravies, ketchups, sauces, jams, and marinades. They are also well-suited for packaging meat, cheese, frozen foods, and dry fruits.",
                 },
                 {
