@@ -210,21 +210,21 @@ export const businesses: BusinessConfig[] = [
                     description: "Silver and Gold Metallica 280 Micron: This laminate consists of multiple layers, including 70-micron natural PE, 34-micron extruded PE, 12-micron special-grade metallized PET, another 34-micron extruded PE, and 130-micron natural EVOH PE. Silver Holographic Laminate: The silver holographic laminate features a multilayer structure comprising 70-micron natural PE, 13-micron metallized holographic film, 30-micron extruded PE, 12-micron aluminum foil, another 30-micron extruded PE, and 130-micron natural PE.",
                 },
                 {
-                    id: "jay-baba-bakreswar-farm-house-rice-bag",
+                    id: "jay-baba-bakreswfar-farm-house-rice-bag",
                     title: "Jay Baba Bakreswar – Farm House rice bag",
-                    image: "/images/preformpouches.png",
+                    image: "/images/new/baba.png",
                     description: "UFlex has developed packaging for Jay Baba Bakreswar Rice Mill Pvt. Ltd. under the Farm House brand. This marks a significant milestone, as it is the first 50 kg SKU rice bag developed by UFlex, highlighting the company’s advancement in bulk packaging solutions.",
                 },
                 {
                     id: "itc-eco-friendly-packaging-savlon",
                     title: "ITC’s eco-friendly packaging",
-                    image: "/images/preformpouches.png",
+                    image: "/images/new/savlon.png",
                     description: "UFlex has developed a sustainable packaging solution for Savlon brand of ITC Limited, featuring an 8.2g SKU designed for the domestic market. A key highlight is the use of a PCR-based laminate, reinforcing ITC’s commitment to eco-friendly packaging solutions.",
                 },
                 {
                     id: "double-spout-pouch-clean-drinking-water",
                     title: "10 Litre Double Spout Pouch for clean drinking water",
-                    image: "/images/preformpouches.png",
+                    image: "/images/new/pouch.png",
                     description: "UFlex has developed an innovative pouch for a start-up focused on tackling the critical issue of clean drinking water availability for underprivileged communities. The 10-litre double spout pouch is a portable water filtration solution equipped with a durable plastic handle for easy carrying. It features a laminate structure comprising 12μ PET, 15μ BON, and 165μ natural PE, offering both strength and sustainability. A 40 mm spout enables convenient water dispensing, while the brand’s patented natural filter ensures safe drinking water reaches those who need it most.",
                 },
                 {
@@ -236,7 +236,7 @@ export const businesses: BusinessConfig[] = [
                 {
                     id: "matte-effect-hair-dye-sachets",
                     title: "New Packaging Solution for Frozen Food",
-                    image: "/images/elctron.png",
+                    image: "/images/new/frozen.png",
                     description: "UFlex supported Hygienic Research Institute Pvt. Ltd. to develop innovative gel-based hair dye sachets in 24ml and 45ml sizes. This premium packaging solution features a unique matte effect, a first in the hair dye segment. The design is further enhanced with elegant touches such as detailed hair graphics and a gold-colored logo, adding to the pouch’s overall visual appeal and shelf presence.",
                 },
                 {
