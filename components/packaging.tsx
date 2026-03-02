@@ -162,10 +162,9 @@ const packagingData = [
             `UFlex’s Packaging Films business, under the Flex Films brand, is a global leader offering innovative and sustainable packaging solutions, including BOPP, BOPET, CPP, specialty, and 100% PCR PET films, with manufacturing across 9 countries and presence in 150+ markets.`,
             
             `All our manufacturing facilities are equipped with advance technologies and adhere to the highest global quality and safety standards. Our plants are ISO 9001 (Quality Management), ISO 14001 (Environmental Management), ISO 45001 (Occupational Health and Safety), and HACCP (Hazard Analysis and Critical Control Points) certified, ensuring consistent quality, environmental responsibility, and food-grade safety across our operations. These certifications reflect our unwavering commitment to excellence, compliance, and sustainability—reinforcing the trust our customers place in us for their most critical packaging needs.`,
-            `UFlex manufactures high-quality Polyethylene Terephthalate (PET) resins, known for their high gloss, crack resistance, and excellent thermoplastic properties. These resins are widely used in the production of PET films, bottles, and a range of other applications across industries such as packaging and textiles, valued for their versatility, durability, and recyclability. UFlex commissioned its greenfield PET chips manufacturing facility at the Panipat plant on March 31, 2024, with an annual capacity of 168,000 MTPA. The unit produces poly condensed polyester chips, which serve as a crucial raw material for BOPET film and PET bottle production, supporting the needs of the packaging industry. This enhances quality control, ensures steady raw material availability, and promotes operational resilience, even in a volatile global environment.`,
-            `Further expanding its global manufacturing footprint, UFlex commissioned a virgin PET chips facility in Egypt in 2025, with an installed capacity of 216,000 MTPA, further strengthening the integrated supply chain. The company also operates a PCR (Post-Consumer Recyclate) PET chips plant in Egypt, reinforcing its commitment to sustainability and circular economy practices.
-
+              `UFlex manufactures high-quality Polyethylene Terephthalate (PET) resin in both India and Egypt. 
 `,
+`These facilities produce polycondensed polyester chips used as a key raw material for BOPET films and PET bottles. This facilities enhances quality control, ensures steady raw material availability, and promotes operational resilience, even in a volatile global environment.`
         ],
     },
 
@@ -276,7 +275,7 @@ export const businesses: BusinessConfig[] = [
                 {
                     id: "f-mex-m-2",
                     title: "F-ETS: One side MST coated transparent BOPET film",
-                    description: "F-ETS is an advanced one-side MST-coated transparent BOPET film, specially engineered for secondary packaging of pharmaceutical tablets and pills. Developed using proprietary technology, it serves as a superior alternative to traditional cellophane-coated films for strip-to-paper sealing applications. The film offers excellent tearing properties in both machine and transverse directions, along with a water-based coating, calibrated heat-seal strength with paper, and high gloss with good transparency. Ideal for tablet strip packaging, the MST-coated side ensures easy fiber tearing when sealed with pharmaceutical-grade wrapper paper. It is also suitable for single-web lamination with aluminum foil, with the untreated side laminated to foil and the MST-coated side used for sealing.",
+                    description: "F-ETS is an advanced one-side MST-coated transparent BOPET film designed for secondary packaging of pharmaceutical tablets and pills. Developed using proprietary technology, it is a superior alternative to traditional cellophane-coated films for strip-to-paper sealing applications. The film offers excellent tearing properties in both machine and transverse directions, along with water-based coating, calibrated heat-seal strength with paper, and high gloss with good transparency. Ideal for tablet strip packaging, the MST-coated side ensures easy fiber tearing when sealed with pharmaceutical-grade wrapper paper and is also suitable for single-web lamination with aluminium foil.",
                     image: "/images/new/fets.png",
                 },
                 {
@@ -309,17 +308,11 @@ export const businesses: BusinessConfig[] = [
                     description: "This high-performance packaging film is engineered for modern flexible packaging needs, offering excellent heat sealability, hot-tack, and compatibility with lap and fin seals and PVDC-coated films. Ideal for monolayer pouches, it ensures tamper-proof, transparent packaging with strong aroma and flavor barriers. With high clarity, gloss, and excellent ink and lamination adhesion, it is perfect for formats like stand-up and pillow pouches. Common applications include baby food, snacks, biscuits, tobacco, personal care items, confectionery, tea, and other fragrance-rich products.",
                     image: "/images/new/bdsc.png",
                 },
-                {
+                 {
                     id: "b-dsc-al",
                     title: "B-DSC-AL – Low SIT and acrylic coated BOPP film",
-                    description: "This is an advanced BOPP film coated with acrylic and a low-temperature seal layer that activates at just 65°C. Engineered for high-performance packaging, this film offers exceptional low-temperature sealability and hot-tack strength on the coated side, ensuring strong seals even under minimal heat. It features an excellent barrier to flavor and aroma, a wide sealing range, and is suitable for monolayer pouch applications. Designed for see-through packaging, it is ideal for use in stand-up pouches and pillow pouches, offering high clarity, gloss, and excellent ink and lamination adhesion. Its end-use applications include overwraps for confectionery, dairy products, ice cream, chocolates, biscuits, cookies, crackers, and other bakery items, making it a versatile solution for modern packaging needs.",
+                    description: "This is an advanced BOPP film coated with acrylic and a low-temperature seal layer that activates at just 65°C. Designed for high-performance packaging, it offers excellent low-temperature sealability and strong hot-tack on the coated side, ensuring reliable seals with minimal heat. The film provides good barrier to flavor and aroma, a wide sealing range, and is suitable for monolayer pouch applications. Ideal for stand-up and pillow pouches, it delivers high clarity, gloss, and strong ink and lamination adhesion for products like confectionery, dairy, ice cream, chocolates, biscuits, cookies, and other bakery items.",
                     image: "/images/new/al.png",
-                },
-                {
-                    id: "b-dsc-ds",
-                    title: "B-DSC-DA – High barrier PVDC-acrylic coated BOPP film",
-                    description: "B-DSC-DA is a high-performance BOPP film with one side PVDC and the other side acrylic coating, designed to meet the evolving needs of flexible packaging. This film delivers outstanding barrier performance, with an oxygen transmission rate of less than 15 cc/m²/day and water vapor transmission rate under 5 gm/m²/day, while maintaining excellent clarity. It ensures superior heat sealability across combinations like acrylic-to-acrylic, PVDC-to-PVDC, and acrylic-to-PVDC, making it suitable for both fin and lap seal applications. Ideal for monolayer pouch structures, it maintains its barrier integrity even under high humidity. Designed for see-through packaging formats such as stand-up pouches and pillow pouches, it also offers excellent aroma, oxygen, and moisture barrier properties, along with hot tack strength, seal integrity, machinability, and printability. With high gloss and transparency, B-DSC-DA is perfectly suited for food packaging, especially for oxygen-sensitive and high-fat content products, and is compatible with HFFS and VFFS machinery. End-use applications include dairy products, biscuits, cookies, crackers, bakery items, and various overwrapping needs.",
-                    image: "/images/new/da.png",
                 },
                 {
                     id: "b-dsc-dl",
@@ -327,6 +320,14 @@ export const businesses: BusinessConfig[] = [
                     description: "A specialized BOPP film featuring one side PVDC coating and the other side low temperature seal coating, which activates at just 65°C. Engineered for monolayer pouch applications, this film delivers outstanding oxygen barrier properties of less than 15 cc/m²/day while maintaining excellent clarity. It offers superior low-temperature sealability and hot tack performance on the low temperature seal side. The film retains its barrier property in high humidity, making it ideal for see-through packaging formats such as stand-up pouches and pillow pouches. With excellent gas, flavor, and aroma barrier properties, B-DSC-DL also boasts excellent optical clarity, strong compatibility with normal ink systems and water-based coatings, and brings substantial improvement in fat migration. This film is highly suitable for plain and printed lamination as well as overwrapping applications, with end uses including biscuits, cookies, crackers, crisps, snacks, dry foods, beverage powders, confectionery items, and pet food.",
                     image: "/images/new/bdscc.png",
                 },
+               
+                {
+                    id: "b-dsc-ds",
+                    title: "B-DSC-DA – High barrier PVDC-acrylic coated BOPP film",
+                    description: "B-DSC-DA is a high-performance BOPP film with one side PVDC and the other side acrylic coating, designed for advanced flexible packaging. It offers excellent barrier performance with oxygen transmission below 15 cc/m²/day and water vapor transmission under 5 gm/m²/day, while maintaining high clarity. The film provides strong heat sealability across acrylic-to-acrylic, PVDC-to-PVDC, and acrylic-to-PVDC combinations, suitable for fin and lap seals. Ideal for stand-up and pillow pouches, it delivers excellent aroma, oxygen, and moisture barrier, along with good machinability, printability, gloss, and transparency for food packaging applications.",
+                    image: "/images/new/da.png",
+                },
+                
             ],
 
         },
