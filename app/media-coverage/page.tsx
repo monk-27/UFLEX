@@ -488,7 +488,9 @@ console.log(PRESS_ROOM_DATA.mediaCoverage.data["Electronic Media"][2026][0])
               {/* Grid – original layout preserved */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 lg:gap-8">
                 {paginatedItems.map((item, idx) => {
-                  const uniqueKey = `${activeTab}-${activeYear}-${item.link || item.title || idx}`;
+                  // const uniqueKey = `${activeTab}-${activeYear}-${item.link || item.title || idx}`;
+                  const uniqueKey = `${activeTab}-${activeYear}-${idx}-${item.link}`;
+//                                 index helps when links are actually identical
 
                   if (activeTab === "Electronic Media") {
                     return (
