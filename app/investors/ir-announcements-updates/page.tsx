@@ -1,62 +1,4 @@
 
-// "use client"
-
-// import React from 'react'
-// import Image from "next/image";
-// import { SiteHeader } from '@/components/site-header';
-// import { SiteFooter } from '@/components/site-footer';
-// import { InvestorAccordion } from '../shareholders-information/accordian';
-// import { investorAccordionItems, pressReleaseAccordionItems } from '../invdata';
-
-// const page = () => {
-//     return (
-//         <div>
-//             <SiteHeader />
-
-//             <main className="bg-white">
-
-//                 <section className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[450px] overflow-hidden">
-
-//                     <Image
-//                         src="/images/investors/na.png"
-//                         alt="Investors Relations"
-//                         fill
-//                         className="object-cover w-full h-full"
-//                         priority
-//                     />
-
-//                     <div className="absolute inset-0 bg-black/40"></div>
-
-//                     <div className="absolute inset-0 flex flex-col justify-center px-6 sm:px-12 md:px-20 lg:px-28">
-//                         <h1 className="text-white text-2xl sm:text-3xl md:text-[38px] lato-700 mb-4">
-//                             Notices and Announcements
-//                         </h1>
-
-
-//                     </div>
-//                 </section>
-
-//                 <div className="bg-[#EFEFEF]">
-//                     <div className="max-w-7xl mx-auto pl-2 h-12 flex items-center">
-//                         <span className="text-black text-xs lato-700 lato-600">
-//                             Investors Relations &gt;  Notices and Announcements
-//                         </span>
-//                     </div>
-//                 </div>
-
-//                 <section className="max-w-6xl mx-auto px-6 sm:px-12 md:px-20 lg:px-28 py-10">
-//                     <InvestorAccordion items={pressReleaseAccordionItems} />
-//                 </section>
-
-
-//             </main>
-//             <SiteFooter />
-
-//         </div>
-//     )
-// }
-
-// export default page
 "use client";
 
 import React, { useState } from "react";
@@ -83,7 +25,8 @@ type TabId =
     | "annual-return"
     | "business-responsibility"
     | "secretarial-compliance"
-    | "memorandum-articles";
+    | "memorandum-articles"
+    |"reconciliation";
 
 type Tab = {
     id: TabId;
@@ -171,6 +114,11 @@ const tabs: Tab[] = [
         label: "Memorandum & Articles of Association",
         header: "Memorandum & Articles of Association",
     },
+    {
+        id: "reconciliation",
+        label: "Reconciliation of Share Capital Audit Report",
+        header: "Reconciliation of Share Capital Audit Report",
+    }
 ];
 
 
@@ -1111,6 +1059,60 @@ const tabItems: any = {
             link: "https://www.uflexltd.com/pdf/IR/UFLEX_MOA_AOA.pdf"
         }
     ],
+    "reconciliation": [
+  {
+    "text": "Report for the Quarter Ended 31.12.2025",
+    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31DEC2025.pdf"
+  },
+  {
+    "text": "Report for the Quarter Ended 30.09.2025",
+    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30SEP2025.pdf"
+  },
+  {
+    "text": "Report for the Quarter Ended 30.06.2025",
+    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30JUN2025.pdf"
+  },
+  {
+    "text": "Report for the Quarter Ended 31.03.2025",
+    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31MAR2025.pdf"
+  },
+  {
+    "text": "Report for the Quarter Ended 31.12.2024",
+    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31DEC2024.pdf"
+  },
+  {
+    "text": "Report for the Quarter Ended 30.09.2024",
+    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30SEP2024.pdf"
+  },
+  {
+    "text": "Report for the Quarter Ended 30.06.2024",
+    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30JUN2024.pdf"
+  },
+  {
+    "text": "Report for the Quarter Ended 31.03.2024",
+    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31MAR2024.pdf"
+  },
+  {
+    "text": "Report for the Quarter Ended 31.12.2023",
+    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31DEC2023.PDF"
+  },
+  {
+    "text": "Report for the Quarter Ended 30.09.2023",
+    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30SEP2023.pdf"
+  },
+  {
+    "text": "Report for the Quarter Ended 30.06.2023",
+    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30JUN2023.pdf"
+  },
+  {
+    "text": "Report for the Quarter Ended 31.03.2023",
+    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31MAR2023.pdf"
+  },
+  {
+    "text": "Report for the Quarter Ended 31.12.2022",
+    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31DEC2022.pdf"
+  }
+]
 };
 
 /* --------------------------------- Page -------------------------------- */
@@ -1284,7 +1286,7 @@ export default function Page() {
                                     </a>
                                 </p>
                             </div>
-                        ) : isAnnouncements ? (
+                        ) : isAnnouncements  ? (
                             /* ---------- GROUPED LAYOUT FOR ANNOUNCEMENTS ---------- */
                             groups.length === 0 ? (
                                 <div className="w-full bg-[#F7F7F7] py-6 px-6 text-center text-[13px] text-gray-500">
