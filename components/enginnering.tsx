@@ -62,7 +62,7 @@ const packagingData = [
     {
         "id": "Engineering",
         title: "Engineering",
-        image: "/images/heroengg.png",
+        image: "/images/new/ceruflex.jpeg",
         "imageAlt": "UFlex Engineering",
         paragraphs: [
             `A leading manufacturer specializing in top-tier
@@ -142,7 +142,7 @@ export const businesses: BusinessConfig[] = [
                     description:
                         `UFlex launched the LPFS-4U (4 UP Linear, Pick, Fill, and Seal) machine in Q3, 2022. This machine, driven entirely by servos, ensures speed, performance, safety, hygiene, and environmental sustainability for brands. 
                         \nWith an operator-friendly interface and efficient filling system, it accommodates various applications, running up to 20 PPM per track with four channels. `,
-                    image: "/images/pfs4u.png",
+                    image: "/images/new/lpfs.png",
                 },
                 {
                     id: "rotary-horizontal-high-speed-form-fill-and-seal",
@@ -224,8 +224,7 @@ organization's workforce.`,
                     cta: { label: "Read More", href: "/leadership/akash-khandelwal" },
                 },
                 {
-                    // photo: "/images/new/summet.png",
-                    photo: "/images/new/image.jpg",
+                    photo: "/images/new/sum.jpg",
 
                     name: "Mr. Sumeet Arora",
                     role: "Senior Vice President - Sales and Marketing, Engineering Business",
@@ -338,7 +337,7 @@ const EngComp: React.FC<Props> = ({ business }) => {
                                 className="relative aspect-[16/10] w-full overflow-hidden "
                             >
                                 <Image
-                                    src="/images/heroengg.png"
+                                    src="/images/new/ceruflex.jpeg"
                                     alt="UFlex capabilities across the value chain"
                                     fill
                                     className="object-cover rounded-sm"

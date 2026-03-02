@@ -1200,7 +1200,7 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
           title: "Metallized and holographic films",
           description:
             "Our metallized and holographic films, developed in-house, offer premium aesthetics like a luxurious finish and light-reflective effects, as well as provide enhanced product like oxygen/moisture barriers.",
-          image: "/images/matika.png",
+          image: "/images/new/f3.jpeg",
         },
         {
           id: "anti-counterfeiting-brand-protection",

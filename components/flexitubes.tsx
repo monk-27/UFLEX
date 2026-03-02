@@ -28,7 +28,7 @@ const SliderItems: SliderItem[] = [
     desc: "Tubes with high-shine metallization and holographic features for that premium appeal. We also offer matte and de-metallized options.",
   },
   {
-    img: "/images/new/fm2.jpg",
+    img: "/images/new/remika.jpeg",
     // dynamiclink: "/flexitube-business/flexiTube-Our-Offerings",
 
     title: "REMIKA tubes",
@@ -249,7 +249,7 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
           title: "Metallized and holographic films",
           description:
             "Our metallized and holographic films, developed in-house, offer premium aesthetics like a luxurious finish and light-reflective effects, as well as provide enhanced product like oxygen/moisture barriers.",
-          image: "/images/matika.png",
+          image: "/images/new/f3.jpeg",
         },
         {
           id: "anti-counterfeiting-brand-protection",

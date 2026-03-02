@@ -159,10 +159,10 @@ export default function PressMainCarousel() {
                     className="relative aspect-[16/10] w-full overflow-hidden  "
                   >
                     <Image
-                      src="/images/press/man.png"
+                      src="/images/new/press.jpeg"
                       alt="UFlex capabilities across the value chain"
                       fill
-                      className="object-cover rounded-sm"
+                      className="object-fill rounded-sm"
                       priority
                     />
         
