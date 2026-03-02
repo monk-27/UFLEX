@@ -30,7 +30,7 @@ const groupDefaultMap: Record<string, string> = {
 
 const SliderItems: SliderItem[] = [
     {
-        img: "/images/sus/chem.jpeg",
+        img: "/images/new/ink.jpeg",
         title: "Inks",
         dynamiclink: "/chemicals-business/chemicals-our-offering?cat=Inks",
         // dynamiclink:"/packaging-films-business/packaging-our-offerings"

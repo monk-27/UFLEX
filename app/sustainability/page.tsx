@@ -189,7 +189,7 @@ export default function Page() {
             Sustainability is embedded at the heart of UFlex’s operations, driving the company to innovate responsibly and create packaging solutions that serve both the business and the environment.
           </motion.p>
 
-          <motion.div
+          {/* <motion.div
             variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
             className="flex items-center mt-10"
           >
@@ -209,7 +209,7 @@ export default function Page() {
                 />
               </svg>
             </button>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
 

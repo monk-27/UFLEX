@@ -61,6 +61,10 @@ export type AdvertisementFY = {
 /* Quarterly Results – Consolidated */
 const quarterlyConsolidated: DocItem[] = [
   {
+    text: "Financial results for the Quarter ended 31.12.2025",
+    link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_31DEC2025.pdf",
+  },
+  {
     text: "Financial results for the Quarter ended 30.09.2025",
     link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_30SEP2025.pdf",
   },
@@ -180,6 +184,7 @@ const quarterlyConsolidated: DocItem[] = [
 
 /* Quarterly Results – Standalone */
 const quarterlyStandalone: DocItem[] = [
+  
   {
     text: "Financial results for the Quarter ended 30.09.2025",
     link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_30092025.pdf",
