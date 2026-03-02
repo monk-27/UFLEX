@@ -112,7 +112,7 @@ export default function EnquiryForm() {
     phone: "",
     companyName: "",
     enquiryFor: "",
-    product: "",
+    product: [],
     email: "",
     message: "",
   });
@@ -215,11 +215,32 @@ export default function EnquiryForm() {
 
     // When business changes, reset product selection
     if (name === "enquiryFor") {
-      setFormData((prev) => ({ ...prev, enquiryFor: value, product: "" }));
+      setFormData((prev) => ({ ...prev, enquiryFor: value, product: [] }));
       return;
     }
 
     setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  // Toggle a product in the multi-select array
+  const handleProductToggle = (product: string) => {
+    setFormData((prev) => {
+      const current = prev.product as string[];
+      const updated = current.includes(product)
+        ? current.filter((p) => p !== product)
+        : [...current, product];
+      return { ...prev, product: updated };
+    });
+  };
+
+  // Toggle all products for current business
+  const handleSelectAll = () => {
+    const current = formData.product as string[];
+    if (current.length === availableProducts.length) {
+      setFormData((prev) => ({ ...prev, product: [] }));
+    } else {
+      setFormData((prev) => ({ ...prev, product: [...availableProducts] }));
+    }
   };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -271,7 +292,7 @@ export default function EnquiryForm() {
           phone: "",
           companyName: "",
           enquiryFor: "",
-          product: "",
+          product: [],
           email: "",
           message: "",
         });
@@ -440,41 +461,66 @@ export default function EnquiryForm() {
                   </select>
                 </div>
 
-                {/* Product – only shown when the selected business has products */}
+                {/* Products – checkbox list, only shown when business has products */}
                 {availableProducts.length > 0 && (
-                  <div className="group">
+                  <div className="md:col-span-2">
                     <label className="lato-500 mb-2 block text-sm text-gray-700 flex items-center gap-2">
                       <MessageSquare className="h-4 w-4 text-[#117ABA]" />
-                      Product
+                      Product(s) <span className="text-red-500">*</span>
+                      <span className="ml-auto text-xs text-gray-400 lato-400">
+                        {(formData.product as string[]).length > 0
+                          ? `${(formData.product as string[]).length} selected`
+                          : "Select at least one"}
+                      </span>
                     </label>
-                    <select
-                      name="product"
-                      value={formData.product}
-                      onChange={handleInputChange}
-                      className={`
-                        w-full
-                        rounded-lg
-                        border-2 border-gray-200
-                        bg-white
-                        px-4 py-3
-                        text-sm
-                        lato-400
-                        transition-all
-                        ${formData.product ? "text-gray-900" : "text-gray-500"}
-                        focus:border-[#117ABA]
-                        focus:ring-2
-                        focus:ring-[#117ABA]/20
-                        focus:outline-none
-                        hover:border-gray-300
-                      `}
-                    >
-                      <option value="">Select product (optional)</option>
-                      {availableProducts.map((p) => (
-                        <option key={p} value={p} className="text-gray-900">
-                          {p}
-                        </option>
-                      ))}
-                    </select>
+
+                    {/* Select-all toggle */}
+                    <div className="mb-2 flex items-center gap-2">
+                      <button
+                        type="button"
+                        onClick={handleSelectAll}
+                        className="text-xs text-[#117ABA] lato-500 hover:underline"
+                      >
+                        {(formData.product as string[]).length === availableProducts.length
+                          ? "Deselect All"
+                          : "Select All"}
+                      </button>
+                    </div>
+
+                    {/* Checkbox grid */}
+                    <div className="rounded-lg border-2 border-gray-200 bg-white p-3 grid grid-cols-1 sm:grid-cols-2 gap-2">
+                      {availableProducts.map((p) => {
+                        const checked = (formData.product as string[]).includes(p);
+                        return (
+                          <label
+                            key={p}
+                            className={`flex items-center gap-2.5 cursor-pointer rounded-md px-3 py-2 text-sm lato-400 transition-colors ${checked
+                                ? "bg-[#117ABA]/10 text-[#117ABA] lato-500"
+                                : "text-gray-700 hover:bg-gray-50"
+                              }`}
+                          >
+                            <input
+                              type="checkbox"
+                              checked={checked}
+                              onChange={() => handleProductToggle(p)}
+                              className="h-4 w-4 rounded border-gray-300 text-[#117ABA] accent-[#117ABA] shrink-0"
+                            />
+                            {p}
+                          </label>
+                        );
+                      })}
+                    </div>
+
+                    {/* Hidden required input — browser validates this when no product is checked */}
+                    <input
+                      type="text"
+                      required
+                      readOnly
+                      tabIndex={-1}
+                      value={(formData.product as string[]).join(",")}
+                      className="sr-only"
+                      aria-hidden="true"
+                    />
                   </div>
                 )}
 

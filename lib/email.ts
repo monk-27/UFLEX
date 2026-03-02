@@ -5,7 +5,7 @@ export interface QuoteEmailData {
   phone: string
   companyName: string
   enquiryFor: string
-  product?: string
+  product?: string | string[]
   email: string
   message: string
   submittedAt: string
@@ -93,11 +93,17 @@ export async function sendQuoteEmail(data: QuoteEmailData): Promise<void> {
             <span class="label">Enquiry For:</span>
             <span class="value">${data.enquiryFor}</span>
           </div>
-          ${data.product ? `
+          ${(() => {
+      const p = data.product;
+      if (!p || (Array.isArray(p) && p.length === 0)) return '';
+      const list = Array.isArray(p) ? p : [p];
+      const items = list.map(item => `<li style="margin:2px 0;">${item}</li>`).join('');
+      return `
           <div class="field">
-            <span class="label">Product:</span>
-            <span class="value">${data.product}</span>
-          </div>` : ''}
+            <span class="label">Product(s):</span>
+            <ul style="margin:4px 0 0 0;padding-left:18px;color:#333;">${items}</ul>
+          </div>`;
+    })()}
           <div class="field">
             <span class="label">Email:</span>
             <span class="value">${data.email}</span>
@@ -134,7 +140,7 @@ Name: ${data.name}
 Phone: ${data.phone}
 Company Name: ${data.companyName}
 Enquiry For: ${data.enquiryFor}
-${data.product ? `Product: ${data.product}\n` : ''}Email: ${data.email}
+${(() => { const p = data.product; if (!p || (Array.isArray(p) && p.length === 0)) return ''; const list = Array.isArray(p) ? p : [p]; return `Product(s): ${list.join(', ')}\n`; })()}Email: ${data.email}
 Message: ${data.message}
 Submitted At: ${data.submittedAt}
     `,
@@ -184,11 +190,16 @@ export async function sendConfirmationEmail(data: QuoteEmailData): Promise<void>
               <span class="detail-label">Division:</span>
               <span class="detail-value">${data.enquiryFor}</span>
             </div>
-            ${data.product ? `
+            ${(() => {
+      const p = data.product;
+      if (!p || (Array.isArray(p) && p.length === 0)) return '';
+      const list = Array.isArray(p) ? p : [p];
+      return `
             <div class="detail-row">
-              <span class="detail-label">Product:</span>
-              <span class="detail-value">${data.product}</span>
-            </div>` : ''}
+              <span class="detail-label">Product(s):</span>
+              <span class="detail-value">${list.join(', ')}</span>
+            </div>`;
+    })()}
             <div class="detail-row">
               <span class="detail-label">Company:</span>
               <span class="detail-value">${data.companyName}</span>
