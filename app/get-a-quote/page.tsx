@@ -18,6 +18,69 @@ const BUSINESS_OPTIONS = [
   "Flexible Tubes",
 ];
 
+// Products mapped to each business (Flexible Tubes has none)
+const BUSINESS_PRODUCTS: Record<string, string[]> = {
+  "Packaging Films and PET Resin": [
+    "BOPET Films",
+    "BOPP Films",
+    "CPP Films",
+    "Metallised Films",
+    "Special Effects Films",
+    "AlOx Coated Films",
+  ],
+  "Flexible Packaging": [
+    "Flexible Laminates",
+    "Pre-formed Pouches",
+    "Flexo Printed Rolls & Bags",
+    "Laminated Woven Polypropylene (WPP) Bags",
+    "Electron Beam & Cast N Cure",
+    "Pharmaceutical Packaging",
+    "Zipouch",
+    "Hygiene Films",
+    "Flexfresh™ Modified Atmosphere Packaging",
+    "Premium Shower Proof Bag",
+    "Six Layered Cotton N95 Mask",
+    "Injection Moulding Products",
+  ],
+  "Aseptic Packaging": [
+    "Aseptic Cartons",
+    "A SIP",
+    "Filling Machines",
+    "Asepto Pro",
+    "Asepto Design",
+  ],
+  "Chemicals": [
+    "Water Based Inks",
+    "Solvent Based Inks",
+    "Radiation Curable Inks",
+    "Water Based Adhesives",
+    "Solvent Free Adhesives",
+    "Solvent Based Adhesives",
+    "Water Based Coatings",
+    "Solvent Based Coatings",
+    "Radiation Curable Coatings",
+    "PU Ink Binders",
+  ],
+  "Holography": [
+    "Hologram",
+    "Holographic Film (Wide Web Films)",
+    "Textile Value Addition Product",
+    "Hot Stamping Foil",
+    "Holographic Metalized Paper & Board Transfer",
+    "Labeling Solution",
+  ],
+  "Engineering": [
+    "Packaging Machines",
+    "Converting Machines",
+    "Speciality Products",
+  ],
+  "Printing Cylinders": [
+    "Gravure Cylinders",
+    "CTP Flexo Plates",
+    "Flexo Printing Sleeves",
+  ],
+};
+
 // Map URL slugs to business display names
 const BUSINESS_SLUG_MAP: Record<string, string> = {
   "packaging-films-business": "Packaging Films and PET Resin",
@@ -49,9 +112,15 @@ export default function EnquiryForm() {
     phone: "",
     companyName: "",
     enquiryFor: "",
+    product: "",
     email: "",
     message: "",
   });
+
+  // Derived: products available for the selected business
+  const availableProducts = formData.enquiryFor
+    ? BUSINESS_PRODUCTS[formData.enquiryFor] ?? []
+    : [];
 
   // Generate alphanumeric CAPTCHA
   const generateCaptcha = useCallback(() => {
@@ -144,6 +213,12 @@ export default function EnquiryForm() {
     // Message limit
     if (name === "message" && value.length > 1500) return;
 
+    // When business changes, reset product selection
+    if (name === "enquiryFor") {
+      setFormData((prev) => ({ ...prev, enquiryFor: value, product: "" }));
+      return;
+    }
+
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
@@ -196,6 +271,7 @@ export default function EnquiryForm() {
           phone: "",
           companyName: "",
           enquiryFor: "",
+          product: "",
           email: "",
           message: "",
         });
@@ -363,6 +439,44 @@ export default function EnquiryForm() {
                     ))}
                   </select>
                 </div>
+
+                {/* Product – only shown when the selected business has products */}
+                {availableProducts.length > 0 && (
+                  <div className="group">
+                    <label className="lato-500 mb-2 block text-sm text-gray-700 flex items-center gap-2">
+                      <MessageSquare className="h-4 w-4 text-[#117ABA]" />
+                      Product
+                    </label>
+                    <select
+                      name="product"
+                      value={formData.product}
+                      onChange={handleInputChange}
+                      className={`
+                        w-full
+                        rounded-lg
+                        border-2 border-gray-200
+                        bg-white
+                        px-4 py-3
+                        text-sm
+                        lato-400
+                        transition-all
+                        ${formData.product ? "text-gray-900" : "text-gray-500"}
+                        focus:border-[#117ABA]
+                        focus:ring-2
+                        focus:ring-[#117ABA]/20
+                        focus:outline-none
+                        hover:border-gray-300
+                      `}
+                    >
+                      <option value="">Select product (optional)</option>
+                      {availableProducts.map((p) => (
+                        <option key={p} value={p} className="text-gray-900">
+                          {p}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                )}
 
                 {/* Email */}
                 <div className="md:col-span-2 group">

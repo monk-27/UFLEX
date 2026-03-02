@@ -5,6 +5,7 @@ export interface QuoteEmailData {
   phone: string
   companyName: string
   enquiryFor: string
+  product?: string
   email: string
   message: string
   submittedAt: string
@@ -92,6 +93,11 @@ export async function sendQuoteEmail(data: QuoteEmailData): Promise<void> {
             <span class="label">Enquiry For:</span>
             <span class="value">${data.enquiryFor}</span>
           </div>
+          ${data.product ? `
+          <div class="field">
+            <span class="label">Product:</span>
+            <span class="value">${data.product}</span>
+          </div>` : ''}
           <div class="field">
             <span class="label">Email:</span>
             <span class="value">${data.email}</span>
@@ -128,7 +134,7 @@ Name: ${data.name}
 Phone: ${data.phone}
 Company Name: ${data.companyName}
 Enquiry For: ${data.enquiryFor}
-Email: ${data.email}
+${data.product ? `Product: ${data.product}\n` : ''}Email: ${data.email}
 Message: ${data.message}
 Submitted At: ${data.submittedAt}
     `,
@@ -178,6 +184,11 @@ export async function sendConfirmationEmail(data: QuoteEmailData): Promise<void>
               <span class="detail-label">Division:</span>
               <span class="detail-value">${data.enquiryFor}</span>
             </div>
+            ${data.product ? `
+            <div class="detail-row">
+              <span class="detail-label">Product:</span>
+              <span class="detail-value">${data.product}</span>
+            </div>` : ''}
             <div class="detail-row">
               <span class="detail-label">Company:</span>
               <span class="detail-value">${data.companyName}</span>

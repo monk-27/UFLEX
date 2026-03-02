@@ -7,7 +7,8 @@ import { usePathname } from "next/navigation";
 export function GetQuoteButton() {
     const pathname = usePathname();
 
-    // Map of business page paths to their slugs
+    // Map of business path prefixes to their slugs
+    // Using prefixes so sub-pages (offering, product detail, etc.) also match
     const businessPageMap: Record<string, string> = {
         "/packaging-films-business": "packaging-films-business",
         "/flexible-packaging-business": "flexible-packaging-business",
@@ -19,8 +20,10 @@ export function GetQuoteButton() {
         "/flexitube-business": "flexitube-business",
     };
 
-    // Check if current page is a business page
-    const businessSlug = businessPageMap[pathname];
+    // Match the first prefix that the current pathname starts with
+    const businessSlug = Object.entries(businessPageMap).find(
+        ([prefix]) => pathname === prefix || pathname.startsWith(prefix + "/")
+    )?.[1];
 
     // Build the href - add business param only if on a business page
     const href = businessSlug

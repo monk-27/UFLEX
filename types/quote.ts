@@ -5,6 +5,7 @@ export interface QuoteFormData {
     phone: string
     companyName: string
     enquiryFor: string
+    product?: string
     email: string
     message: string
     captcha?: string

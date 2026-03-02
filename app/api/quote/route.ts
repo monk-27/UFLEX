@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
         const body: QuoteFormData = await request.json()
 
         // Validate required fields
-        const { name, phone, companyName, enquiryFor, email, message, captcha } = body
+        const { name, phone, companyName, enquiryFor, product, email, message, captcha } = body
 
         if (!name || !phone || !companyName || !enquiryFor || !email || !message) {
             return NextResponse.json<ApiResponse>(
@@ -66,6 +66,7 @@ export async function POST(request: NextRequest) {
             phone,
             companyName,
             enquiryFor,
+            ...(product ? { product } : {}),
             email,
             message,
             submittedAt: new Date(),
@@ -89,6 +90,7 @@ export async function POST(request: NextRequest) {
                 phone,
                 companyName,
                 enquiryFor,
+                ...(product ? { product } : {}),
                 email,
                 message,
                 submittedAt: new Date().toLocaleString('en-IN', {
@@ -105,6 +107,7 @@ export async function POST(request: NextRequest) {
                 phone,
                 companyName,
                 enquiryFor,
+                ...(product ? { product } : {}),
                 email,
                 message,
                 submittedAt: new Date().toLocaleString('en-IN', {
