@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { useState, useEffect, FormEvent, useRef, useCallback } from "react";
 import { QuoteFormData } from "@/types/quote";
-import { Mail, Phone, Building2, MessageSquare, User, Send, RefreshCw } from "lucide-react";
+import { Mail, Phone, Building2, MessageSquare, User, Send, RefreshCw, Paperclip, X, FileVideo, Image as ImageIcon, Upload } from "lucide-react";
 
 const BUSINESS_OPTIONS = [
   "Packaging Films and PET Resin",
@@ -93,9 +93,16 @@ const BUSINESS_SLUG_MAP: Record<string, string> = {
   "flexitube-business": "Flexible Tubes",
 };
 
+// File preview type
+interface FilePreview {
+  file: File;
+  previewUrl: string | null; // null for videos
+}
+
 export default function EnquiryForm() {
   const searchParams = useSearchParams();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isUploading, setIsUploading] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{
     type: "success" | "error" | null;
     message: string;
@@ -105,6 +112,11 @@ export default function EnquiryForm() {
   const [captchaCode, setCaptchaCode] = useState("");
   const [userCaptcha, setUserCaptcha] = useState("");
   const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  // File upload state
+  const [selectedFiles, setSelectedFiles] = useState<FilePreview[]>([]);
+  const [fileError, setFileError] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Form state
   const [formData, setFormData] = useState<QuoteFormData>({
@@ -243,6 +255,50 @@ export default function EnquiryForm() {
     }
   };
 
+  // Handle file selection with validation
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFileError(null);
+    const newFiles = Array.from(e.target.files ?? []);
+    if (newFiles.length === 0) return;
+
+    const combined = [...selectedFiles, ...newFiles.map(f => ({ file: f, previewUrl: null }))];
+    if (combined.length > 5) {
+      setFileError("You can upload a maximum of 5 files.");
+      if (fileInputRef.current) fileInputRef.current.value = "";
+      return;
+    }
+
+    const previews: FilePreview[] = [];
+    for (const file of newFiles) {
+      const isImage = file.type.startsWith("image/");
+      const isVideo = file.type.startsWith("video/");
+      if (!isImage && !isVideo) {
+        setFileError(`"${file.name}" is not allowed. Only images and videos are accepted.`);
+        if (fileInputRef.current) fileInputRef.current.value = "";
+        return;
+      }
+      if (file.size > 10 * 1024 * 1024) {
+        setFileError(`"${file.name}" exceeds the 10 MB size limit.`);
+        if (fileInputRef.current) fileInputRef.current.value = "";
+        return;
+      }
+      const previewUrl = isImage ? URL.createObjectURL(file) : null;
+      previews.push({ file, previewUrl });
+    }
+
+    setSelectedFiles(prev => [...prev, ...previews]);
+    if (fileInputRef.current) fileInputRef.current.value = "";
+  };
+
+  const removeFile = (index: number) => {
+    setSelectedFiles(prev => {
+      const updated = [...prev];
+      if (updated[index].previewUrl) URL.revokeObjectURL(updated[index].previewUrl!);
+      updated.splice(index, 1);
+      return updated;
+    });
+  };
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -260,13 +316,42 @@ export default function EnquiryForm() {
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: "" });
 
+    // Upload files first if any selected
+    let attachmentUrls: string[] = [];
+    if (selectedFiles.length > 0) {
+      setIsUploading(true);
+      try {
+        const formDataFiles = new FormData();
+        selectedFiles.forEach(fp => formDataFiles.append("files", fp.file));
+        const uploadRes = await fetch("/api/upload", {
+          method: "POST",
+          body: formDataFiles,
+        });
+        const uploadData = await uploadRes.json();
+        if (!uploadData.success) {
+          setSubmitStatus({ type: "error", message: uploadData.message || "File upload failed. Please try again." });
+          setIsSubmitting(false);
+          setIsUploading(false);
+          return;
+        }
+        attachmentUrls = uploadData.urls ?? [];
+      } catch {
+        setSubmitStatus({ type: "error", message: "File upload failed. Please try again." });
+        setIsSubmitting(false);
+        setIsUploading(false);
+        return;
+      } finally {
+        setIsUploading(false);
+      }
+    }
+
     try {
       const response = await fetch("/api/quote", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ ...formData, captcha: userCaptcha }),
+        body: JSON.stringify({ ...formData, captcha: userCaptcha, attachments: attachmentUrls }),
       });
 
       // Check content type to avoid crashing on non-JSON responses (like Vercel 500 pages)
@@ -296,6 +381,9 @@ export default function EnquiryForm() {
           email: "",
           message: "",
         });
+        // Reset files
+        selectedFiles.forEach(fp => { if (fp.previewUrl) URL.revokeObjectURL(fp.previewUrl); });
+        setSelectedFiles([]);
         generateCaptcha();
         setUserCaptcha("");
       } else {
@@ -495,8 +583,8 @@ export default function EnquiryForm() {
                           <label
                             key={p}
                             className={`flex items-center gap-2.5 cursor-pointer rounded-md px-3 py-2 text-sm lato-400 transition-colors ${checked
-                                ? "bg-[#117ABA]/10 text-[#117ABA] lato-500"
-                                : "text-gray-700 hover:bg-gray-50"
+                              ? "bg-[#117ABA]/10 text-[#117ABA] lato-500"
+                              : "text-gray-700 hover:bg-gray-50"
                               }`}
                           >
                             <input
@@ -560,6 +648,89 @@ export default function EnquiryForm() {
                   <div className="mt-1 text-right text-xs text-gray-400">
                     {formData.message.length} / 1500 characters
                   </div>
+                </div>
+
+                {/* File Upload */}
+                <div className="md:col-span-2">
+                  <label className="lato-500 mb-2 block text-sm text-gray-700 flex items-center gap-2">
+                    <Paperclip className="h-4 w-4 text-[#117ABA]" />
+                    Attachments <span className="text-xs text-gray-400 lato-400 ml-1">(Optional · Images &amp; Videos only · Max 5 files · 10 MB each)</span>
+                  </label>
+
+                  {/* Drop / click zone */}
+                  <div
+                    onClick={() => fileInputRef.current?.click()}
+                    className="cursor-pointer rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 px-4 py-6 text-center transition-all hover:border-[#117ABA] hover:bg-[#117ABA]/5 group"
+                  >
+                    <Upload className="mx-auto h-8 w-8 text-gray-300 group-hover:text-[#117ABA] mb-2 transition-colors" />
+                    <p className="text-sm text-gray-500 lato-400">
+                      Click to browse or drop files here
+                    </p>
+                    <p className="text-xs text-gray-400 lato-400 mt-1">Supports: JPG, PNG, GIF, MP4, MOV, AVI, etc.</p>
+                    <input
+                      ref={fileInputRef}
+                      type="file"
+                      accept="image/*,video/*"
+                      multiple
+                      className="hidden"
+                      onChange={handleFileChange}
+                    />
+                  </div>
+
+                  {/* Error */}
+                  {fileError && (
+                    <p className="mt-2 text-sm text-red-600 lato-400 flex items-center gap-1">
+                      <X className="h-4 w-4 shrink-0" /> {fileError}
+                    </p>
+                  )}
+
+                  {/* Previews */}
+                  {selectedFiles.length > 0 && (
+                    <div className="mt-3 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+                      {selectedFiles.map((fp, idx) => (
+                        <div key={idx} className="relative group rounded-lg overflow-hidden border border-gray-200 bg-gray-50">
+                          {fp.previewUrl ? (
+                            // Image preview
+                            <img
+                              src={fp.previewUrl}
+                              alt={fp.file.name}
+                              className="w-full h-20 object-cover"
+                            />
+                          ) : (
+                            // Video placeholder
+                            <div className="w-full h-20 flex flex-col items-center justify-center gap-1 bg-gray-100">
+                              <FileVideo className="h-7 w-7 text-[#117ABA]" />
+                              <span className="text-[10px] text-gray-500 lato-400 px-1 text-center truncate w-full">{fp.file.name}</span>
+                            </div>
+                          )}
+                          {/* File name tooltip on hover */}
+                          <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white text-[9px] lato-400 px-1 py-0.5 truncate opacity-0 group-hover:opacity-100 transition-opacity">
+                            {fp.file.name}
+                          </div>
+                          {/* Remove button */}
+                          <button
+                            type="button"
+                            onClick={() => removeFile(idx)}
+                            className="absolute top-1 right-1 rounded-full bg-red-500 text-white p-0.5 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-red-600"
+                            title="Remove file"
+                          >
+                            <X className="h-3 w-3" />
+                          </button>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Upload progress indicator */}
+                  {isUploading && (
+                    <div className="mt-3 flex items-center gap-2 text-sm text-[#117ABA] lato-500">
+                      <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                      </svg>
+                      Uploading files... please wait
+                    </div>
+                  )}
                 </div>
 
                 {/* CAPTCHA */}
@@ -630,7 +801,15 @@ export default function EnquiryForm() {
                       flex items-center justify-center gap-2
                     "
                   >
-                    {isSubmitting ? (
+                    {isUploading ? (
+                      <>
+                        <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                        </svg>
+                        Uploading files...
+                      </>
+                    ) : isSubmitting ? (
                       <>
                         <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
                           <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />

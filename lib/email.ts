@@ -9,6 +9,7 @@ export interface QuoteEmailData {
   email: string
   message: string
   submittedAt: string
+  attachments?: string[]
 }
 
 // Create reusable transporter
@@ -118,6 +119,13 @@ export async function sendQuoteEmail(data: QuoteEmailData): Promise<void> {
             <span class="label">Submitted At:</span>
             <span class="value">${data.submittedAt}</span>
           </div>
+          ${data.attachments && data.attachments.length > 0 ? `
+          <div class="field">
+            <span class="label">Attachments:</span>
+            <ul style="margin:4px 0 0 0;padding-left:18px;color:#333;">
+              ${data.attachments.map((url, i) => `<li style="margin:4px 0;"><a href="${url}" style="color:#117ABA;" target="_blank">Attachment ${i + 1}</a></li>`).join('')}
+            </ul>
+          </div>` : ''}
         </div>
         <div class="footer">
           <p>This is an automated email from UFlex Quote Form</p>

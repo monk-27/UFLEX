@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
         const body: QuoteFormData = await request.json()
 
         // Validate required fields
-        const { name, phone, companyName, enquiryFor, product, email, message, captcha } = body
+        const { name, phone, companyName, enquiryFor, product, email, message, captcha, attachments } = body
 
         if (!name || !phone || !companyName || !enquiryFor || !email || !message) {
             return NextResponse.json<ApiResponse>(
@@ -70,6 +70,7 @@ export async function POST(request: NextRequest) {
             email,
             message,
             submittedAt: new Date(),
+            ...(attachments && attachments.length > 0 ? { attachments } : {}),
         }
 
         // Save to MongoDB
@@ -98,6 +99,7 @@ export async function POST(request: NextRequest) {
                     dateStyle: 'full',
                     timeStyle: 'long',
                 }),
+                ...(attachments && attachments.length > 0 ? { attachments } : {}),
             })
             console.log('Admin notification email sent')
 
@@ -115,6 +117,7 @@ export async function POST(request: NextRequest) {
                     dateStyle: 'full',
                     timeStyle: 'long',
                 }),
+                ...(attachments && attachments.length > 0 ? { attachments } : {}),
             })
             console.log('User confirmation email sent')
         } catch (emailError) {

@@ -9,11 +9,13 @@ export interface QuoteFormData {
     email: string
     message: string
     captcha?: string
+    attachments?: string[]
 }
 
 export interface QuoteDocument extends QuoteFormData {
     submittedAt: Date
     _id?: ObjectId
+    attachments?: string[]
 }
 
 export interface ApiResponse {
