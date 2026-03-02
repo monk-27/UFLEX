@@ -153,14 +153,14 @@ export const businesses: BusinessConfig[] = [
                         "It is a newly developed thermoplastic polyurethane resin with high molecular weight, formulated using aliphatic urethane technology. Designed to support sustainable packaging solutions, this advanced binder system demonstrates excellent solubility in a range of alcohols, esters, and co-solvents, making it ideally suited for flexographic ink systems.",
                     image: "/images/thermo.png",
                 },
-                {
-                    id: "inks-latest-updates",
-                    title: "Inks: latest updates",
-                    description: `• Water based ink application areas have been extended by developing new inks for corrugation, Paper Cups, Paper bags, Tissue paper & Notebook printing. Brand owners like Subway, KFC, Adidas have approved of our inks
-• 4S Non-Toluene Polyurethane ink has been rolled out successfully in the Domestic market
-• In CI Flexo the new inks series developed for corona treated PET, breathable & non breathable PE printing`,
-                    image: "/images/latestink.png",
-                },
+//                 {
+//                     id: "inks-latest-updates",
+//                     title: "Inks: latest updates",
+//                     description: `• Water based ink application areas have been extended by developing new inks for corrugation, Paper Cups, Paper bags, Tissue paper & Notebook printing. Brand owners like Subway, KFC, Adidas have approved of our inks
+// • 4S Non-Toluene Polyurethane ink has been rolled out successfully in the Domestic market
+// • In CI Flexo the new inks series developed for corona treated PET, breathable & non breathable PE printing`,
+//                     image: "/images/latestink.png",
+//                 },
             ],
         },
         sustainability: {
