@@ -21,7 +21,7 @@ import { BusinessConfig } from '@/app/business/data'
 
 const SliderItems: SliderItem[] = [
     {
-        img: "/images/new/f1.png",
+        img: "/images/new/lam.jpeg",
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Flexible Laminates",
         desc: `Our range of flexible laminates are made from various combinations of plastic, aluminum, and paper to suit diverse packaging needs.
@@ -239,12 +239,12 @@ export const businesses: BusinessConfig[] = [
                     image: "/images/new/frozen.png",
                     description: "UFlex supported Hygienic Research Institute Pvt. Ltd. to develop innovative gel-based hair dye sachets in 24ml and 45ml sizes. This premium packaging solution features a unique matte effect, a first in the hair dye segment. The design is further enhanced with elegant touches such as detailed hair graphics and a gold-colored logo, adding to the pouch’s overall visual appeal and shelf presence.",
                 },
-                {
-                    id: "vacuum-sealed-marinated-chicken-packaging",
-                    title: "New Packaging Solution for Frozen Food",
-                    image: "/images/elctron.png",
-                    description: "UFlex has partnered with Jubilant FoodWorks to enhance the packaging of their marinated chicken, which is distributed in 500 gm packs from their Bangalore facility. The innovative laminate used in this packaging is thermoformed and vacuum-sealed, featuring a barrier film that protects the food from contamination by preventing exposure to air.",
-                },
+                // {
+                //     id: "vacuum-sealed-marinated-chicken-packaging",
+                //     title: "New Packaging Solution for Frozen Food",
+                //     image: "/images/elctron.png",
+                //     description: "UFlex has partnered with Jubilant FoodWorks to enhance the packaging of their marinated chicken, which is distributed in 500 gm packs from their Bangalore facility. The innovative laminate used in this packaging is thermoformed and vacuum-sealed, featuring a barrier film that protects the food from contamination by preventing exposure to air.",
+                // },
             ]
 
 
