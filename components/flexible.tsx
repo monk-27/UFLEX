@@ -206,7 +206,7 @@ export const businesses: BusinessConfig[] = [
                 {
                     id: "flexitube-laminate-metallica-holographic",
                     title: "FlexiTube Laminate",
-                    image: "/images/preformpouches.png",
+                    image: "/images/new/lami.jpeg",
                     description: "Silver and Gold Metallica 280 Micron: This laminate consists of multiple layers, including 70-micron natural PE, 34-micron extruded PE, 12-micron special-grade metallized PET, another 34-micron extruded PE, and 130-micron natural EVOH PE. Silver Holographic Laminate: The silver holographic laminate features a multilayer structure comprising 70-micron natural PE, 13-micron metallized holographic film, 30-micron extruded PE, 12-micron aluminum foil, another 30-micron extruded PE, and 130-micron natural PE.",
                 },
                 {
