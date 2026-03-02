@@ -116,6 +116,76 @@ const policies: PolicyItem[] = [
     text: "Archival Policy",
     link: "https://www.uflexltd.com/pdf/Policies/Uflex-Archival-Policy.pdf",
   },
+  
+  {
+    text: "Anti Bribery & Anti-Corruption Policy",
+    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_ABAC_Policy.pdf",
+  },
+  {
+    text: "Anti-Trust Fair Competition Policy",
+    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_ATFC_Policy.pdf",  // inferred filename pattern; confirm if needed
+  },
+  {
+    text: "Business Continuity and Disaster Management Policy",
+    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_BCDM_Policy.pdf",  // common pattern
+  },
+  {
+    text: "Customer Care Policy",
+    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_CC_Policy.pdf",
+  },
+  {
+    text: "Energy Management Policy",
+    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_EM_Policy.pdf",  // Energy Management
+  },
+  {
+    text: "Environmental Management Policy",
+    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_EM_Policy.pdf",
+  },
+  {
+    text: "ESG Policy",
+    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_ESG_Policy.pdf",
+  },
+  {
+    text: "Human Rights Policy",
+    link: "https://www.uflexltd.com/pdf/Policies/BRSP/2023/UFlex_Human_Rights_Policy.pdf",  // older path, still active
+  },
+  {
+    text: "Information Technology (IT), Cyber Security, and Privacy Policy",
+    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_IT_Cyber_Privacy_Policy.pdf",  // inferred
+  },
+  {
+    text: "OHS Policy",
+    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_OHS_Policy.pdf",
+  },
+  {
+    text: "Product Stewardship Policy",
+    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_PS_Policy.pdf",
+  },
+  {
+    text: "Stakeholder Engagement Policy",
+    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_SE_Policy.pdf",
+  },
+  {
+    text: "Supplier Code of Conduct Policy",
+    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_SCC_Policy.pdf",
+  },
+  {
+    text: "Sustainable Procurement Policy",
+    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_SP_Policy.pdf",
+  },
+  {
+    text: "Water Stewardship Policy",
+    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_WS_Policy.pdf",
+  },
+  {
+    text: "Equal Opportunity Policy",
+    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_EO_Policy.pdf",
+  },
+  {
+    text: "Waste Management Policy",
+    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_WM_Policy.pdf",
+  },
+
 ];
 
 const familiarizationPrograms: PolicyItem[] = [
