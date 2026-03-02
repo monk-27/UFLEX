@@ -416,7 +416,7 @@ export const businesses: BusinessConfig[] = [
             "High Flexibility UV Coating for Flexible Packaging – FLEXCURE HF GR GLOSS COATING",
           description:
             "It is an advanced UV coating solution developed specifically for flexible packaging. Ideal for use on flexible laminates, pouches, and specialty packaging, this coating offers exceptional flexibility and fold-crack resistance, making it suitable for dynamic packaging formats.",
-          image: "/images/glosscoating.png",
+          image: "/images/new/high.jpeg",
         },
         {
           id: "water-based-adhesives",
