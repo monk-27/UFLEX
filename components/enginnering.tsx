@@ -181,7 +181,7 @@ export const businesses: BusinessConfig[] = [
             title: "Sustainability",
             description:
                 "At UFlex, we prioritise environmental responsibility across our operations. UFlex engineering has undertaken several initiatives focussed on water conservation, waste management and enhancing biodiversity surrounding our facilities.",
-            image: "/images/sus.png",
+            image: "/images/new/sus1.jpeg",
             linkLabel: "Know More",
             linkHref: "/engineering-business/sustainability",
         },
