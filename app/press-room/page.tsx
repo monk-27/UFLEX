@@ -456,7 +456,7 @@ export default function PressRoomPage() {
 
         <section className="max-w-7xl mx-auto px-4">
           <h2 className="py-4 text-[24px] lato-700 text-[#117ABA] md:text-[42px] text-center">
-            Media Resources
+            Gallery
           </h2>
 
           <div className="overflow-hidden" ref={emblaRef}>
@@ -504,14 +504,14 @@ export default function PressRoomPage() {
             </div>
           </div>
 
-          <div className="pt-12 flex justify-center">
+          <div className="pt-12 flex justify-center pb-12 ">
             <span className="text-[#000000] text-[20px] lato-400">
               For any media queries, please send an email to the Global Corporate Communications Team :{" "}
               <span className="text-[#117ABA]">corpcomm@uflexltd.com</span>
             </span>
           </div>
         </section>
-        <GalleryPage/>
+        {/* <GalleryPage/> */}
 
 
         {/* -------- MEDIA COVERAGE -------- */}
