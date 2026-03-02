@@ -128,7 +128,7 @@ export const businesses: BusinessConfig[] = [
                     title: "UV Digi Gloss Coating – Flexcure high slip digi coating",
                     description:
                         "It is an advanced solution engineered specifically for LED digitally printed PVC sheets, widely used in decor and signage applications. This advanced coating offers excellent adhesion on digitally printed surfaces, ensuring a long-lasting finish. Its high-gloss finish adds a premium visual appeal, while its superior scratch and abrasion resistance protects the print surface from everyday wear and tear. Additionally, the coating cures rapidly under UV lamps, significantly enhancing the durability and lifespan of printed materials.",
-                    image: "/images/uvgloss.png",
+                    image: "/images/new/pat.png",
                 },
                 {
                     id: "flexcure-hf-gr-gloss-coating",
@@ -144,14 +144,14 @@ export const businesses: BusinessConfig[] = [
                         "Water Based Dry Lamination Adhesives – FLEXBOND FB DL–502 and FLEXBOND FB DL– 504",
                     description:
                         "These are water-based synthetic copolymer emulsion adhesives developed for high-speed dry lamination applications in offset packaging. These ready-to-use, 100% aqueous adhesives are ideal for laminating a wide range of films—including clear BOPP, matt BOPP, METPET, clear PET, and PVC—to printed or unprinted paper and duplex board substrates.",
-                    image: "/images/waterbased.png",
+                    image: "/images/new/water.png",
                 },
                 {
                     id: "thermoplastic-polyurethane-resin",
                     title: "Thermoplastic Polyurethane Resin - FLEXPAK 5300",
                     description:
                         "It is a newly developed thermoplastic polyurethane resin with high molecular weight, formulated using aliphatic urethane technology. Designed to support sustainable packaging solutions, this advanced binder system demonstrates excellent solubility in a range of alcohols, esters, and co-solvents, making it ideally suited for flexographic ink systems.",
-                    image: "/images/thermo.png",
+                    image: "/images/new/flex.png",
                 },
 //                 {
 //                     id: "inks-latest-updates",
