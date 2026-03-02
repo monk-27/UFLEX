@@ -35,14 +35,7 @@ const PRESS_ROOM_DATA = {
           title: "UFlex FY26 Financial Results Announcement",
           link: "https://www.uflexltd.com/pdf/Press-Release/2026/PR_12Feb26_UFlex_Q3FY26_Earnings.pdf"
         },
-        {
-          title: "UFlex Showcases WB Soft Touch Coating at PlastIndia 2026",
-          link: "https://www.uflexltd.com/pdf/Press-Release/2026/PN_06Feb26_UFlex_PlastIndia_WB_Soft_Touch_Coating.pdf"
-        },
-        {
-          title: "UFlex Introduces F-HSS Mono-Material PET Film",
-          link: "https://www.uflexltd.com/pdf/Press-Release/2026/PN_06Feb26_UFlex_PlastIndia_F-HSS.pdf"
-        },
+        
 
 
       ],
@@ -108,6 +101,14 @@ const PRESS_ROOM_DATA = {
         {
           title: "UFlex Participation Highlights at PlastIndia 2026",
           link: "https://www.uflexltd.com/pdf/Press-Release/2026/PN_03Feb26_UFlex_PLASTINDIA2026.pdf"
+        },
+        {
+          title: "UFlex Showcases WB Soft Touch Coating at PlastIndia 2026",
+          link: "https://www.uflexltd.com/pdf/Press-Release/2026/PN_06Feb26_UFlex_PlastIndia_WB_Soft_Touch_Coating.pdf"
+        },
+        {
+          title: "UFlex Introduces F-HSS Mono-Material PET Film",
+          link: "https://www.uflexltd.com/pdf/Press-Release/2026/PN_06Feb26_UFlex_PlastIndia_F-HSS.pdf"
         },
 
       ],
