@@ -63,6 +63,8 @@ import { SiteFooter } from "@/components/site-footer";
 import Breadcrumb from "../breadcrumb";
 
 const communicationList = [
+    { text: "31 Dec 2025: Share Holding Pattern", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30DEC2025.pdf" },
+
     { text: "30 Sep 2025: Transcript of the 36th Annual General Meeting", link: "https://www.uflexltd.com/pdf/SC/2025/UFLEX_TRANSCRIPT_36AGM.pdf" },
     { text: "25 Jul 2025: Newspaper Publication", link: "https://www.uflexltd.com/pdf/SC/2025/SIGNED_UFLEX_NSEBSE_ADVT_25JUL25.pdf" },
     { text: "17 Jul 2025: Newspaper Publication", link: "https://www.uflexltd.com/pdf/SC/2025/SIGNED_UFLEX_NSEBSE_ADVT_17JUl25.pdf" },
