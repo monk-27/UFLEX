@@ -178,6 +178,15 @@ const tabs: Tab[] = [
 const tabItems: any = {
     "announcements": [
         {
+    "date": "27/02/2026",
+    "items": [
+      {
+        "text": "UFLEX-NSE & BSE",
+        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_REG3027FEB26.pdf"
+      }
+    ]
+  },
+        {
     "date": "21/02/2026",
     "items": [
       {
@@ -821,6 +830,8 @@ const tabItems: any = {
     ],
 
     "shareholding-pattern": [
+    { text: "SHAREHOLDING PATTERN AS ON 31.12.2025", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30DEC2025.pdf" },
+
         { text: "SHAREHOLDING PATTERN AS ON 30.09.2025", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30SEP2025.pdf" },
         { text: "SHAREHOLDING PATTERN AS ON 30.06.2025", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30JUN2025.pdf" },
         { text: "SHAREHOLDING PATTERN AS ON 31.03.2025", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_31MAR2025.pdf" },
