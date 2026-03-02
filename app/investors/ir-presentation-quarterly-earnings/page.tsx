@@ -146,7 +146,7 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                 cells: {
                     Q1: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q1FY26_Transcript.pdf", type: "pdf" } },
                     Q2: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q2FY26_Transcript.pdf", type: "pdf" } },
-                    Q3: { file: { href: "#", type: "pdf" } }, // fill when available
+                    Q3: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q3FY26_Transcript.pdf", type: "pdf" } }, // fill when available
                     // Q4: { file: { href: "#", type: "pdf" } },
                 },
             },
@@ -156,7 +156,7 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                 cells: {
                     Q1: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q1FY26_Earnings_Call.mp3", type: "video" } },
                     Q2: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q2FY26_Earnings_Call.mp3", type: "video" } },
-                    Q3: { file: { href: "#", type: "video" } },
+                    Q3: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q3FY26_Earnings_Call.mp3", type: "video" } },
                     // Q4: { file: { href: "#", type: "video" } },
                 },
             },
@@ -166,7 +166,7 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                 cells: {
                     Q1: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q1FY26_Presentation.pdf", type: "pdf" } },
                     Q2: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q2FY26_Presentation.pdf", type: "pdf" } },
-                    Q3: { file: { href: "#", type: "pdf" } },
+                    Q3: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q3FY26_Presentation.pdf", type: "pdf" } },
                     // Q4: { file: { href: "#", type: "pdf" } },
                 },
             },
@@ -176,7 +176,7 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                 cells: {
                     Q1: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q1FY26_Earnings_Release.pdf", type: "pdf" } },
                     Q2: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q2FY26_Earnings_Release.pdf", type: "pdf" } },
-                    Q3: { file: { href: "#", type: "pdf" } },
+                    Q3: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q3FY26_Earnings_Release.pdf", type: "pdf" } },
                     // Q4: { file: { href: "#", type: "pdf" } },
                 },
             },
@@ -193,8 +193,8 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                         stand: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_STA_30092025.pdf", type: "pdf" },
                     },
                     Q3: {
-                        cons: { href: "#", type: "pdf" },
-                        stand: { href: "#", type: "pdf" },
+                        cons: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_CONS_31DEC2025.pdf", type: "pdf" },
+                        stand: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_STA_31122025.pdf", type: "pdf" },
                     },
                     // Q4: {
                     //     cons: { href: "#", type: "pdf" },
@@ -208,7 +208,7 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                 cells: {
                     Q1: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q1FY26_Invite.pdf", type: "pdf" } },
                     Q2: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q2FY26_Invite.pdf", type: "pdf" } },
-                    Q3: { file: { href: "#", type: "pdf" } },
+                    Q3: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q3FY26_Invite.pdf", type: "pdf" } },
                     // Q4: { file: { href: "#", type: "pdf" } },
                 },
             },
@@ -218,7 +218,7 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                 cells: {
                     Q1: { text: "August 13, 2025" },
                     Q2: { text: "November 13, 2025" },
-                    Q3: { text: "" },
+                    Q3: { text: "February 16, 2026	" },
                     // Q4: { text: "" },
                 },
             },
