@@ -266,10 +266,7 @@ const PRESS_ROOM_DATA = {
           { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=CmapnryMvIk", type: "youtube" },
           { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=0mwOm5M_xxE", type: "youtube" },
           { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=S8-J23J8O4c", type: "youtube" },
-          { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=6GkF8T96Kfw", type: "youtube" },
-          { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=ihO5W0zqv0o", type: "youtube" },
-          { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=enTNeazEXXI", type: "youtube" },
-          { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=XxrcNVOkTH8", type: "youtube" },
+          
           { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=xAcYOc4R0Oo", type: "youtube" },
           { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=mL-quTnAEDQ", type: "youtube" },
           { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=1eicpv-9QS4", type: "youtube" },
