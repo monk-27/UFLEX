@@ -317,8 +317,8 @@ export const businesses: BusinessConfig[] = [
                 {
                     id: "b-dsc-dl",
                     title: "B-DSC-DL: High barrier PVDC coated BOPP film",
-                    description: "A specialized BOPP film featuring one side PVDC coating and the other side low temperature seal coating, which activates at just 65°C. Engineered for monolayer pouch applications, this film delivers outstanding oxygen barrier properties of less than 15 cc/m²/day while maintaining excellent clarity. It offers superior low-temperature sealability and hot tack performance on the low temperature seal side. The film retains its barrier property in high humidity, making it ideal for see-through packaging formats such as stand-up pouches and pillow pouches. With excellent gas, flavor, and aroma barrier properties, B-DSC-DL also boasts excellent optical clarity, strong compatibility with normal ink systems and water-based coatings, and brings substantial improvement in fat migration. This film is highly suitable for plain and printed lamination as well as overwrapping applications, with end uses including biscuits, cookies, crackers, crisps, snacks, dry foods, beverage powders, confectionery items, and pet food.",
-                    image: "/images/new/bdscc.png",
+                    description:"A specialized BOPP film with one side PVDC coating and the other side low-temperature seal coating that activates at 65°C. Designed for monolayer pouch applications, it offers excellent oxygen barrier performance (below 15 cc/m²/day) while maintaining high clarity. The film provides strong low-temperature sealability and hot tack, and retains its barrier properties even in high humidity. Ideal for stand-up and pillow pouches, it delivers excellent gas, flavor, and aroma barrier, good ink compatibility, and improved fat migration resistance for applications such as biscuits, snacks, dry foods, confectionery, beverage powders, and pet food.",
+                      image: "/images/new/bdscc.png",
                 },
                
                 {
