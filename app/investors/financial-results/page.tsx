@@ -300,6 +300,20 @@ const quarterlyStandalone: DocItem[] = [
   { text: "Financial results for the quarter ended 30.06.2007", link: "https://www.uflexltd.com/pdf/financials/Standalone/Sta_300607.pdf" },
   
 ];
+export type SubsidiaryFYId =
+  | "FY2024-2025"
+  | "FY2023-2024"
+  | "FY2022-2023"
+  | "FY2021-2022"
+  | "FY2020-2021"
+  | "FY2019-2020"
+  | "FY2018-2019"
+
+export type SubsidiaryFY = {
+  id: SubsidiaryFYId;
+  label: string;
+  companies: SubsidiaryItem[];
+};
 
 /* Subsidiaries */
 export const subsidiariesData: SubsidiaryItem[] = [
@@ -445,6 +459,331 @@ export const subsidiariesData: SubsidiaryItem[] = [
 
 ];
 
+
+export const subsidiariesFYData: SubsidiaryFY[] = [
+  {
+    id: "FY2024-2025",
+    label: "FY2024–2025",
+    companies: [
+      {
+    title: "UFlex Packaging Inc., USA",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Films (USA) Inc., Kentucky, USA",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "UFlex Europe Limited, UK",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Middle East FZE, UAE",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex P. Films (Egypt) S.A.E., Egypt",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Films Europa Sp.zo.o., Poland",
+    link: "https://www.uflexltd.com/",
+  },
+
+  {
+    title: "UPET Holdings Ltd., Mauritius",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "UPET (Singapore) Pte. Ltd., Singapore",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Americas S.A. de C.V., Mexico",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Films Africa Private Limited, Nigeria",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "LLC Flex Chemicals Private Limited, Russia",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Films Rus, LLC, Russia",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Films Europa Korlatolt Feleossegu Tarsasag, Hungary",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Specialty Chemicals (Egypt) S.A.E., Egypt",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Foils Bangladesh Private Limited, Bangladesh",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex PET (Egypt) S.A.E., Egypt",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Plasticfix Europa Spolka Z Organizowana Odpowiedzialnoscia, Poland",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Americas Brasil Ltda, Brazil",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "UFlex Woven Bags, S.A. DE C.V., Mexico",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Asepto (Egypt) S.A.E.",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "USC Holograms Pvt. Ltd., India",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "UFlex Charitable Foundation, India",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex FME Pte. Limited, Singapore",
+    link: "https://www.uflexltd.com/",
+  },
+  {
+    title: "Flex Films AZB AFEZCO., Azerbaijan",
+    link: "https://www.uflexltd.com/",
+  },
+
+  { title: "FLEX MIDDLE EAST FZE, DUBAI", link: "https://www.uflexltd.com/" },
+  { title: "UFLEX EUROPE LIMITED, UK", link: "https://www.uflexltd.com/" },
+  { title: "UFLEX PACKAGING INC., USA", link: "https://www.uflexltd.com/" },
+  { title: "UPET HOLDINGS LIMITED, MAURITIUS", link: "https://www.uflexltd.com/" },
+  { title: "FLEX AMERICAS S.A. de C.V., MEXICO", link: "https://www.uflexltd.com/" },
+  { title: "FLEX P. FILMS (EGYPT) S.A.E, EGYPT", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FILMS (USA) INC., USA", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FILMS EUROPA SP. ZO.O.,POLAND", link: "https://www.uflexltd.com/" },
+  { title: "UPET (SINGAPORE) PTE. LIMITED, SINGAPORE", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FILMS AFRICA PRIVATE LIMITED, NIGERIA", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FILMS RUS, LLC, RUSSIA", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FILMS EUROPA KFT, HUNGARY", link: "https://www.uflexltd.com/" },
+  { title: "FLEX SPECIALTY CHEMICALS EGYPT", link: "https://www.uflexltd.com/" },
+  { title: "FLEX PET (EGYPT) S.A.E, EGYPT", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FOILS BD PVT. LTD, BANGLA DESH", link: "https://www.uflexltd.com/" },
+  { title: "LLC FLEX CHEMICALS PRIVATE LIMITED, RUSSIA", link: "https://www.uflexltd.com/" },
+  { title: "PLASTICFIX EUROPA SPOLKA Z ORGANICZONA ODPOWIEDZIALNOSCIA, POLAND", link: "https://www.uflexltd.com/" },
+  { title: "FLEX AMERICAS BRASIL LTDA, BRAZIL", link: "https://www.uflexltd.com/" },
+  { title: "UFLEX WOVEN BAGS, S.A. DE C.V., MEXICO", link: "https://www.uflexltd.com/" },
+  { title: "FLEX ASEPTO EGYPT, EGYPT", link: "https://www.uflexltd.com/" },
+  { title: "USC HOLOGRAMS PRIVATE LIMITED, INDIA", link: "https://www.uflexltd.com/" },
+
+  // repeated block (kept intentionally)
+  { title: "FLEX MIDDLE EAST FZE, DUBAI", link: "https://www.uflexltd.com/" },
+  { title: "UFLEX EUROPE LIMITED, UK", link: "https://www.uflexltd.com/" },
+  { title: "UFLEX PACKAGING INC., USA", link: "https://www.uflexltd.com/" },
+  { title: "UPET HOLDINGS LIMITED, MAURITIUS", link: "https://www.uflexltd.com/" },
+  { title: "FLEX AMERICAS S.A. de C.V., MEXICO", link: "https://www.uflexltd.com/" },
+  { title: "FLEX P. FILMS (EGYPT) S.A.E, EGYPT", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FILMS (USA) INC., USA", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FILMS EUROPA SP. ZO.O.,POLAND", link: "https://www.uflexltd.com/" },
+  { title: "UPET (SINGAPORE) PTE. LIMITED, SINGAPORE", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FILMS AFRICA PRIVATE LIMITED, NIGERIA", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FILMS RUS, LLC, RUSSIA", link: "https://www.uflexltd.com/" },
+  { title: "FLEX FILMS EUROPA KFT, HUNGARY", link: "https://www.uflexltd.com/" },
+  { title: "LLC FLEX CHEMICALS PRIVATE LIMITED, RUSSIA", link: "https://www.uflexltd.com/" },
+  { title: "USC HOLOGRAMS PRIVATE LIMITED, INDIA", link: "https://www.uflexltd.com/" },
+
+  // final extended entries shown
+  { title: "UTECH DEVELOPERS LIMITED, INDIA", link: "https://www.uflexltd.com/" },
+  { title: "SD BUILDWELL (P) LIMITED, INDIA", link: "https://www.uflexltd.com/" },
+    ],
+  },
+
+  {
+  id: "FY2023-2024",
+  label: "FY2023–2024",
+  companies: [
+    { title: "FLEX MIDDLE EAST FZE, DUBAI", link: "https://www.uflexltd.com/" },
+    { title: "UFLEX EUROPE LIMITED, UK", link: "https://www.uflexltd.com/" },
+    { title: "UFLEX PACKAGING INC., USA", link: "https://www.uflexltd.com/" },
+    { title: "UPET HOLDINGS LIMITED, MAURITIUS", link: "https://www.uflexltd.com/" },
+    { title: "FLEX AMERICAS S.A. de C.V., MEXICO", link: "https://www.uflexltd.com/" },
+    { title: "FLEX P. FILMS (EGYPT) S.A.E, EGYPT", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS (USA) INC., USA", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS EUROPA SP. ZO.O., POLAND", link: "https://www.uflexltd.com/" },
+    { title: "UPET (SINGAPORE) PTE. LIMITED, SINGAPORE", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS AFRICA PRIVATE LIMITED, NIGERIA", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS RUS, LLC, RUSSIA", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS EUROPA KFT, HUNGARY", link: "https://www.uflexltd.com/" },
+    { title: "FLEX SPECIALTY CHEMICALS EGYPT", link: "https://www.uflexltd.com/" },
+    { title: "FLEX PET (EGYPT) S.A.E, EGYPT", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FOILS BD PVT. LTD, BANGLA DESH", link: "https://www.uflexltd.com/" },
+    { title: "LLC FLEX CHEMICALS PRIVATE LIMITED, RUSSIA", link: "https://www.uflexltd.com/" },
+    { title: "PLASTICFIX EUROPA SPOLKA Z ORGANICZONA ODPOWIEDZIALNOSCIA, POLAND", link: "https://www.uflexltd.com/" },
+    { title: "FLEX AMERICAS BRASIL LTDA, BRAZIL", link: "https://www.uflexltd.com/" },
+    { title: "UFLEX WOVEN BAGS, S.A. DE C.V., MEXICO", link: "https://www.uflexltd.com/" },
+    { title: "FLEX ASEPTO EGYPT, EGYPT", link: "https://www.uflexltd.com/" },
+    { title: "USC HOLOGRAMS PRIVATE LIMITED, INDIA", link: "https://www.uflexltd.com/" }
+  ]
+},
+
+  {
+  id: "FY2022-2023",
+  label: "FY2022–2023",
+  companies: [
+    { title: "FLEX MIDDLE EAST FZE, DUBAI", link: "https://www.uflexltd.com/" },
+    { title: "UFLEX EUROPE LIMITED, UK", link: "https://www.uflexltd.com/" },
+    { title: "UFLEX PACKAGING INC., USA", link: "https://www.uflexltd.com/" },
+    { title: "UPET HOLDINGS LIMITED, MAURITIUS", link: "https://www.uflexltd.com/" },
+    { title: "FLEX AMERICAS S.A. de C.V., MEXICO", link: "https://www.uflexltd.com/" },
+    { title: "FLEX P. FILMS (EGYPT) S.A.E, EGYPT", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS (USA) INC., USA", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS EUROPA SP. ZO.O., POLAND", link: "https://www.uflexltd.com/" },
+    { title: "UPET (SINGAPORE) PTE. LIMITED, SINGAPORE", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS AFRICA PRIVATE LIMITED, NIGERIA", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS RUS, LLC, RUSSIA", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS EUROPA KFT, HUNGARY", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FOILS BD PVT. LTD, BANGLA DESH", link: "https://www.uflexltd.com/" },
+    { title: "LLC FLEX CHEMICALS PRIVATE LIMITED, RUSSIA", link: "https://www.uflexltd.com/" },
+    { title: "USC HOLOGRAMS PRIVATE LIMITED, INDIA", link: "https://www.uflexltd.com/" }
+  ]
+},
+{
+  id: "FY2021-2022",
+  label: "FY2021–2022",
+  companies: [
+    { title: "FLEX MIDDLE EAST FZE, DUBAI", link: "https://www.uflexltd.com/" },
+    { title: "UFLEX EUROPE LIMITED, UK", link: "https://www.uflexltd.com/" },
+    { title: "UFLEX PACKAGING INC., USA", link: "https://www.uflexltd.com/" },
+    { title: "UPET HOLDINGS LIMITED, MAURITIUS", link: "https://www.uflexltd.com/" },
+    { title: "FLEX AMERICAS S.A. de C.V., MEXICO", link: "https://www.uflexltd.com/" },
+    { title: "FLEX P. FILMS (EGYPT) S.A.E, EGYPT", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS (USA) INC., USA", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS EUROPA SP. ZO.O., POLAND", link: "https://www.uflexltd.com/" },
+    { title: "UPET (SINGAPORE) PTE. LIMITED, SINGAPORE", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS AFRICA PRIVATE LIMITED, NIGERIA", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS RUS, LLC, RUSSIA", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FOILS BD PVT. LTD, BANGLA DESH", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS EUROPA KFT, HUNGARY", link: "https://www.uflexltd.com/" },
+    { title: "LLC FLEX CHEMICALS PRIVATE LIMITED, RUSSIA", link: "https://www.uflexltd.com/" },
+    { title: "USC HOLOGRAMS PRIVATE LIMITED, INDIA", link: "https://www.uflexltd.com/" }
+  ]
+},
+{
+  id: "FY2020-2021",
+  label: "FY2020–2021",
+  companies: [
+    { title: "FLEX MIDDLE EAST FZE, DUBAI", link: "https://www.uflexltd.com/" },
+    { title: "UFLEX EUROPE LIMITED, UK", link: "https://www.uflexltd.com/" },
+    { title: "UFLEX PACKAGING INC., USA", link: "https://www.uflexltd.com/" },
+    { title: "UPET HOLDINGS LIMITED, MAURITIUS", link: "https://www.uflexltd.com/" },
+    { title: "FLEX AMERICAS S.A. de C.V., MEXICO", link: "https://www.uflexltd.com/" },
+    { title: "FLEX P. FILMS (EGYPT) S.A.E, EGYPT", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS (USA) INC., USA", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS EUROPA SP. ZO.O., POLAND", link: "https://www.uflexltd.com/" },
+    { title: "UPET (SINGAPORE) PTE. LIMITED, SINGAPORE", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS AFRICA PRIVATE LIMITED, NIGERIA", link: "https://www.uflexltd.com/" },
+    { title: "LLC FLEX CHEMICALS PRIVATE LIMITED, RUSSIA", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS RUS, LLC, RUSSIA", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS EUROPA KFT, HUNGARY", link: "https://www.uflexltd.com/" },
+    { title: "USC HOLOGRAMS PRIVATE LIMITED, INDIA", link: "https://www.uflexltd.com/" }
+  ]
+},
+{
+  id: "FY2019-2020",
+  label: "FY2019–2020",
+  companies: [
+    { title: "FLEX MIDDLE EAST FZE, DUBAI", link: "https://www.uflexltd.com/" },
+    { title: "UFLEX EUROPE LIMITED, UK", link: "https://www.uflexltd.com/" },
+    { title: "UFLEX PACKAGING INC., USA", link: "https://www.uflexltd.com/" },
+    { title: "UPET HOLDINGS LIMITED, MAURITIUS", link: "https://www.uflexltd.com/" },
+    { title: "FLEX AMERICAS S.A. de C.V., MEXICO", link: "https://www.uflexltd.com/" },
+    { title: "FLEX P. FILMS (EGYPT) S.A.E, EGYPT", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS (USA) INC., USA", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS EUROPA SP. ZO.O., POLAND", link: "https://www.uflexltd.com/" },
+    { title: "UPET (SINGAPORE) PTE. LIMITED, SINGAPORE", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS AFRICA PRIVATE LIMITED, NIGERIA", link: "https://www.uflexltd.com/" },
+    { title: "LLC FLEX CHEMICALS PRIVATE LIMITED, RUSSIA", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS RUS, LLC, RUSSIA", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS EUROPA KFT, HUNGARY", link: "https://www.uflexltd.com/" },
+    { title: "USC HOLOGRAMS PRIVATE LIMITED, INDIA", link: "https://www.uflexltd.com/" }
+  ]
+},
+{
+  id: "FY2018-2019",
+  label: "FY2018–2019",
+  companies: [
+    { title: "FLEX MIDDLE EAST FZE, DUBAI", link: "https://www.uflexltd.com/" },
+    { title: "UFLEX EUROPE LIMITED, UK", link: "https://www.uflexltd.com/" },
+    { title: "UFLEX PACKAGING INC., USA", link: "https://www.uflexltd.com/" },
+    { title: "UPET HOLDINGS LIMITED, MAURITIUS", link: "https://www.uflexltd.com/" },
+    { title: "FLEX AMERICAS S.A. de C.V., MEXICO", link: "https://www.uflexltd.com/" },
+    { title: "FLEX P. FILMS (EGYPT) S.A.E, EGYPT", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS (USA) INC., USA", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS EUROPA SP. ZO.O., POLAND", link: "https://www.uflexltd.com/" },
+    { title: "UPET (SINGAPORE) PTE. LIMITED, SINGAPORE", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS AFRICA PRIVATE LIMITED, NIGERIA", link: "https://www.uflexltd.com/" },
+    { title: "FLEX CHEMICALS PRIVATE LIMITED LLC, RUSSIA", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS RUS, LLC, RUSSIA", link: "https://www.uflexltd.com/" },
+    { title: "FLEX FILMS EUROPA KFT, HUNGARY", link: "https://www.uflexltd.com/" },
+    { title: "UTECH DEVELOPERS LIMITED, INDIA", link: "https://www.uflexltd.com/" },
+    { title: "USC HOLOGRAMS PRIVATE LIMITED, INDIA", link: "https://www.uflexltd.com/" },
+    { title: "SD BUILDWELL (P) LIMITED, INDIA", link: "https://www.uflexltd.com/" }
+  ]
+}
+];
+const SubsidiariesSection: React.FC = () => {
+  const [activeFY, setActiveFY] = useState<SubsidiaryFYId>("FY2024-2025");
+
+  const fy = subsidiariesFYData.find((f) => f.id === activeFY)!;
+
+  return (
+    <div className="mt-4">
+      {/* FY Pills */}
+      <div className="flex flex-wrap gap-3 mb-5">
+        {subsidiariesFYData.map((year) => {
+          const active = year.id === activeFY;
+          return (
+            <button
+              key={year.id}
+              type="button"
+              onClick={() => setActiveFY(year.id)}
+              className={[
+                "px-4 py-2 rounded-full border text-xs sm:text-sm md:text-base lato-600 transition-all",
+                active
+                  ? "bg-[#117ABA] text-white border-[#117ABA]"
+                  : "bg-white text-[#000000] border-[#117ABA]",
+              ].join(" ")}
+            >
+              {year.label}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Company List */}
+      <div className="bg-white">
+        {fy.companies.length === 0 ? (
+          <div className="border border-[#E3E3E3] bg-white px-4 py-8 text-center text-[13px] text-gray-500">
+            Subsidiary details for this financial year will be updated shortly.
+          </div>
+        ) : (
+          fy.companies.map((item, idx) =>
+            renderSubsidiaryRow(item, idx)
+          )
+        )}
+      </div>
+    </div>
+  );
+};
 
 /* Advertisements – FY-wise cards */
 export const advertisementFYData: AdvertisementFY[] = [
@@ -934,9 +1273,10 @@ const Page = () => {
               </div>
 
               <div className="bg-white">
-                {subsidiariesData.map((item, idx) =>
+                {/* {subsidiariesData.map((item, idx) =>
                   renderSubsidiaryRow(item, idx)
-                )}
+                )} */}
+                <SubsidiariesSection />
               </div>
             </>
           )}
