@@ -148,7 +148,7 @@ export const businesses: BusinessConfig[] = [
                     id: "rotary-horizontal-high-speed-form-fill-and-seal",
                     title: "Rotary Horizontal High-Speed Form Fill and Seal Machine with Gripper",
                     description: "UFlex Engineering new design for a rotary horizontal high-speed form fill and seal machine features grippers that hold pouches without conveyor belts, enhancing Picture of Highlight and Innovation pouch quality and preventing leaks."
-                    , image: "/images/rotary.png",
+                    , image: "/images/new/rotary.png",
                 },
                 {
                     id: "accu-slit-3300",
@@ -164,7 +164,7 @@ export const businesses: BusinessConfig[] = [
                         `UFlex, under the flagship of Asepto, introduced the next-gen, superpower Asepto Speed 25000 machine, an innovative engineering marvel that can process 25,000 aseptic liquid cartons per hour. 
                         \nIt is the next-generation aseptic liquid filling machine with state-of-the-art technology that works at lightning speed with the convenience of an all-in-one portion-pack filling facility. One needs to fit in the paper roll and the machine works automatically to process it into the final folder. The machine has inbuilt chambers for splicing, stripping, sterilizing, filling, sealing, and dispensing processes that work with a click of a button. It is easy to operate, and the complete process can be controlled through a human-machine interface. It is designed to boost the production capacity by more than double the speed of your current production.
 `,
-                    image: "/images/asepto.png",
+                    image: "/images/new/asepto.png",
                 },
                 {
                     id: "uflex-flexi-liquid-double-head",

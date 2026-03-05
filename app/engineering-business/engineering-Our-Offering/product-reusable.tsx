@@ -16,6 +16,7 @@ interface Category {
 interface SectionItem {
     label: string;
     text: string;
+    image: string;
     moreLink: string;
 }
 
@@ -27,6 +28,7 @@ interface SectionGroup {
 interface SubSection {
     title: string;
     intro?: string;
+    image?: string;
     items: SectionItem[];
 }
 interface StandardSection {
@@ -51,6 +53,7 @@ interface MultiSubSection {
     title: string;
     intro?: string;
     subTitle?: string;
+    image?: string;
     subSections: SubSection[];
 }
 
@@ -71,22 +74,22 @@ interface ProductCategorySectionProps {
     sections?: Section[];
 }
 interface ImageSectionItem {
-  label: string;
-  description: string;
-  image: string;
+    label: string;
+    description: string;
+    image: string;
 }
 
 interface ImageGridSection {
-  type: "image-grid";
-  title?: string;
-  intro?: string;
-  items: ImageSectionItem[];
+    type: "image-grid";
+    title?: string;
+    intro?: string;
+    items: ImageSectionItem[];
 }
 type Section =
-  | StandardSection
-  | GroupedSection
-  | MultiSubSection
-  | ImageGridSection;
+    | StandardSection
+    | GroupedSection
+    | MultiSubSection
+    | ImageGridSection;
 export default function ProductCategorySection({
     title,
     heroImageUrl,
@@ -221,7 +224,7 @@ export default function ProductCategorySection({
 
 
                     </div>
-                    
+
                 </aside>
 
                 {/* MAIN CONTENT */}
@@ -237,13 +240,13 @@ export default function ProductCategorySection({
                     {/* OVERVIEW */}
                     <div className="">
                         <div className="flex gap-2">
-                                {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
-                                
-                            </div>
-                            <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
-                                {overview
-                                }
-                            </p>
+                            {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
+
+                        </div>
+                        <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
+                            {overview
+                            }
+                        </p>
                     </div>
 
                     {/* SECTIONS A–D */}
@@ -264,18 +267,25 @@ export default function ProductCategorySection({
                                     </p>
                                 )}
 
+
                                 {/* BLUE SUBTITLE */}
                                 {section.type !== "image-grid" && section.subTitle && (
-  <p className="text-[#117ABA] lato-700">
-    {section.subTitle}
-  </p>
-)}
+                                    <p className="text-[#117ABA] lato-700">
+                                        {section.subTitle}
+                                    </p>
+                                )}
+                                {/* {section.type !== "image-grid" && section.subTitle && (
+                                                                    <Image src={section.image} alt={""} height={300} width={300} />
+                                    
+                                )} */}
+
+
 
 
                                 <div className="space-y-6">
                                     <div className="space-y-6">
 
-                                        {section.type !== "grouped" && section.type !== "multi-sub"&& section.type !== "image-grid" && section.items && (
+                                        {section.type !== "grouped" && section.type !== "multi-sub" && section.type !== "image-grid" && section.items && (
                                             <div className="space-y-6">
                                                 {section.items.map((item, i) => (
                                                     <div key={i}>
@@ -285,10 +295,15 @@ export default function ProductCategorySection({
                                                             </span>{" "}
                                                             {item.text}
                                                         </p>
+                                                        {item.image &&
+
+                                                            <Image src={item.image} alt={""} height={300} width={300} />
+                                                        }
 
                                                         <div className="mt-3">
                                                             <a
                                                                 href={item.moreLink}
+                                                                target="_blank"
                                                                 className="inline-block bg-[#117ABA] text-white px-5 py-2 rounded-full text-sm"
                                                             >
                                                                 MORE ABOUT THE MACHINE
@@ -306,29 +321,29 @@ export default function ProductCategorySection({
                                             </ul>
                                         )}
                                         {section.type === "image-grid" && (
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-    {section.items.map((item, i) => (
-      <div key={i} className="text-center">
-        <div className="relative w-full h-[220px] ">
-          <Image
-            src={item.image}
-            alt={item.label}
-            fill
-            className="object-contain bg-white"
-          />
-        </div>
+                                            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                                {section.items.map((item, i) => (
+                                                    <div key={i} className="text-center">
+                                                        <div className="relative w-full h-[220px] ">
+                                                            <Image
+                                                                src={item.image}
+                                                                alt={item.label}
+                                                                fill
+                                                                className="object-contain bg-white"
+                                                            />
+                                                        </div>
 
-        <h4 className="mt-4 text-lg lato-700 text-gray-800">
-          {item.label}
-        </h4>
+                                                        <h4 className="mt-4 text-lg lato-700 text-gray-800">
+                                                            {item.label}
+                                                        </h4>
 
-        <p className="mt-2 text-black leading-relaxed">
-          {item.description}
-        </p>
-      </div>
-    ))}
-  </div>
-)}
+                                                        <p className="mt-2 text-black leading-relaxed">
+                                                            {item.description}
+                                                        </p>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        )}
 
                                         {section.type === "multi-sub" && (
                                             <div className="space-y-10">
@@ -342,6 +357,10 @@ export default function ProductCategorySection({
                                                                 {sub.title}
                                                             </h4>
                                                         </div>
+                                                        {sub.image &&
+
+                                                            <Image src={sub.image} alt={""} height={300} width={300} />
+                                                        }
 
                                                         {/* SUB INTRO */}
                                                         {sub.intro && (
@@ -360,6 +379,10 @@ export default function ProductCategorySection({
                                                                         </span>{" "}
                                                                         {item.text}
                                                                     </p>
+                                                                    {item.image &&
+
+                                                                        <Image src={item.image} alt={""} height={300} width={300} />
+                                                                    }
 
                                                                     <div className="mt-3">
                                                                         <a
@@ -400,6 +423,10 @@ export default function ProductCategorySection({
                                                                         </span>{" "}
                                                                         {item.text}
                                                                     </p>
+                                                                    {item.image &&
+
+                                                                        <Image src={item.image} alt={""} height={300} width={300} />
+                                                                    }
 
                                                                     <div className="mt-3">
                                                                         <a

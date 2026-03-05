@@ -234,7 +234,8 @@ Our converting machines are tailored as per the clients’ needs and are enabled
                                 {
                                     "label": "Standard Spl. (ELS):",
                                     "text": "ROTOFLEX Standard Spl. is a modular construction machine. The Unique feature of this machine is the special trolley system which contains the printing cylinder, Ink-tray along with ink-circulation system, self-shaft chucking, sleeve type impression. Turret un-wind and re-wind using air expandable shafts with auto splicing arrangement which makes the job change-over a matter of few minutes. The speed can be attained up to 400 meters/min.",
-                                    "moreLink": "https://www.uflexltd.com/standard-spl-els-rotogravure-printing-machines.php"
+                                    "moreLink": "https://www.uflexltd.com/standard-spl-els-rotogravure-printing-machines.php",
+                                    "image":"/images/new/els.png"
                                 },
                                 {
                                     "label": "Standard (ELS):",
@@ -282,6 +283,7 @@ Our converting machines are tailored as per the clients’ needs and are enabled
                     subSections: [
                         {
                             title: "Solvent-less Lamination Machines:",
+                            image:"/images/new/solventless.png",
                             intro: "UFlex Solvent-Less Lamination Machines are equipped with digital AC Vector drive and AC vector grade motor for the purpose of laminating two different substrates. For the purpose of lamination the machine uses two-component adhesive which is solvent free. The machine uses five roller technology for coating adhesive on the film which ensures less amount of adhesive coating. Hence the solvent retention levels are less in laminate produced with solvent-less lamination machine in comparison to solvent-base lamination.",
 
                             items: [
@@ -386,30 +388,37 @@ Our converting machines are tailored as per the clients’ needs and are enabled
                         {
                             label: "USLIT:",
                             text: `A high speed duplex slitter floating unwind stand; Pneumatically operated self-shaft clamping cones; Line guide unit; Unwind Tension Control with the help of dancer roller; Independent Pull Roller; Differential shaft; Duplex Re-winder & AC Vector Grade Motor and Drive system with Operator Interface touch panel.`,
-                            moreLink: "https://www.uflexltd.com/uslit-slitting-rewinding-machines.php"
+                            moreLink: "https://www.uflexltd.com/uslit-slitting-rewinding-machines.php",
+                            image:"/images/new/sliter.png"
                         },
                         {
                             label: "ECOSLIT:",
+                            image:"",
+
                             text: `The ECOSLIT comes with the features of; a high-speed Duplex Slitter and re-winder with simplex unwind stand, a Duplex rewinder, an AC motor digital drive system and a trim collection arrangement. Ecoslit can attain speed up to 350 to 450 meters/ minute.`,
                             moreLink: "https://www.uflexltd.com/ecoslit-slitting-rewinding-machines.php"
                         },
                         {
                             label: "SCRDSL:",
+                            image:"",
                             text: `SCRDSL is ideally suited for slitting & rewinding printed or unprinted flexible laminates, such as PET/PE, PET/MET.PET/PE, PET/AL. Foil/PE, BOPP/PE, etc. The machine is designed on pure centre rewinding principle, both rewind shafts are powered through powdered clutches; rewind tension selection can be done by the turn of knob on the control desk. SCRDSL can run at speed up to 200 meters/ minute.`,
                             moreLink: "https://www.uflexltd.com/scrdsl-slitting-rewinding-machines.php"
                         },
                         {
                             label: "TORO SLIT:",
+                            image:"",
                             text: `Toro Slit is equipped with AC Asynchronous motor and Digital AC Drives with turret type Rewinder and Pneumatic disc brake for unwinder with the purpose of Slitting and Rewinding Printed or Unprinted Flexible Laminates. This machine is frontrunner where the output per unit space is an important criteria during selection of equipments. High productivity and lower wastage are the key features of this machine. It can attain speed of upto 700 Meter/Minute.`,
                             moreLink: "https://www.uflexltd.com/toroslit-slitting-rewinding-machines.php"
                         },
                         {
                             label: "ACCUSLIT:",
+                            image:"",
                             text: `This is secondary slitters for packaging film manufacturing Industry with a working width of models from 2500 mm to 3300 mm. This slitter can slit BOPET, BOPP, CPP and Plain film and can run at a maximum speed of 800 mpm.`,
                             moreLink: "https://www.uflexltd.com/accuslit-slitting-rewinding-machines.php"
                         },
                         {
                             label: "Auto Slicer 1700:",
+                            image:"",
                             text: `This machine is designed for long lasting heavy duty process, especially for slicing and cutting self-adhesive tapes with core in different sizes with circular cutter and movement of carriage is especially through servo motor.`,
                             moreLink: "https://www.uflexltd.com/auto-slicer1700-slitting-rewinding-machines.php"
                         }
@@ -485,6 +494,8 @@ Our converting machines are tailored as per the clients’ needs and are enabled
                     items: [
                         {
                             label: "ReLAM 250:",
+                    image:"/images/new/relam.png",
+
                             text: `This is a high end multi-layer recycling machine (PET + Ext + PET MET + PE, PE, PE + PET, BOPP, PP, HDPE, LD, LDPE, RAFIA, MET BOPP, MET CPP, MET PET, Non-Woven Bags etc.) used to recycle industrial plastic waste (soft material) into granulated products, which in turn can be used for manufacturing various molding products. Machine is made with European standards, making it operator and environment friendly. UFlex Re Lam-250 comes with a Metal detector, Feeder for additive (specially designed feature), Double screw extruder design (100/33 & 120/10), Water-cooled Die Face Cutting (Specially Designed), Centrifugal dewatering, De-gasing System with amazing features. Relam-250 can recycle at a maximum speed of 250 kg/hr.`,
                             moreLink: "https://www.uflexltd.com/relam250-mlp-recycling-machines.php"
                         }
