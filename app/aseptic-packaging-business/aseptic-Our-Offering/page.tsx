@@ -282,10 +282,10 @@ The second plant in Sokhna, Egypt, is about to be commissioned. Once operational
                       
                     </div>
 
-                    <div className="flex gap-6 justify-start">
+                    {/* <div className="flex gap-6 justify-start">
                       <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Learn More</button>
                       <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button>
-                    </div>
+                    </div> */}
                   </div>
                 </main>
               </div>

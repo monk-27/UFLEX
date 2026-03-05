@@ -437,13 +437,13 @@ export default function ProductCategorySection({
                             >
                                 Learn More
                             </motion.a>
-                            <motion.button
+                            {/* <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.98 }}
                                 className="bg-[#117ABA] text-white px-4 py-2 rounded-sm lato-700 hover:bg-[#117ABA] transition-all shadow-md"
                             >
                                 Request Sample
-                            </motion.button>
+                            </motion.button> */}
                             {/* <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.98 }}

@@ -369,8 +369,8 @@ export default function ProductCategorySection(props: any) {
                   </div>
 
                   <div className="flex gap-6 justify-start">
-                    <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Learn More</button>
-                    <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button>
+                    {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Learn More</button> */}
+                    {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button> */}
                   </div>
                 </div>
               )}
@@ -444,8 +444,8 @@ export default function ProductCategorySection(props: any) {
                   </div>
 
                   <div className="flex gap-6 justify-start">
-                    <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Learn More</button>
-                    <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button>
+                    {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Learn More</button> */}
+                    {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button> */}
                   </div>
                 </div>
               )}
@@ -592,8 +592,8 @@ export default function ProductCategorySection(props: any) {
                   </div>
 
                   <div className="flex gap-6 justify-start">
-                    <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Learn More</button>
-                    <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button>
+                    {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Learn More</button> */}
+                    {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button> */}
                   </div>
                 </div>
               )}
@@ -696,10 +696,10 @@ export default function ProductCategorySection(props: any) {
 
               {/* Buttons */}
               <div className="flex flex-wrap gap-6 justify-start">
-                <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium  transition">
+                {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium  transition">
                   Learn More
-                </button>
-                <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button>
+                </button> */}
+                {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button> */}
 
               </div>
             </div>
@@ -805,12 +805,12 @@ export default function ProductCategorySection(props: any) {
               </div>
 
               <div className="flex flex-wrap gap-6 justify-start mt-10">
-                <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium  transition">
+                {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium  transition">
                   Learn More
-                </button>
-                <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">
+                </button> */}
+                {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">
                   Request Sample
-                </button>
+                </button> */}
               </div>
             </div>
           ) :
@@ -952,9 +952,9 @@ export default function ProductCategorySection(props: any) {
                   <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium ">
                     Learn More
                   </button>
-                  <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium ">
+                  {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium ">
                     Request Sample
-                  </button>
+                  </button> */}
                 </div>
               </div>
             ) :
@@ -1139,12 +1139,12 @@ export default function ProductCategorySection(props: any) {
 
                   {/* Bottom Buttons */}
                   <div className="flex flex-wrap gap-6 justify-start">
-                    <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium ">
+                    {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium ">
                       Learn More
-                    </button>
-                    <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium ">
+                    </button> */}
+                    {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium ">
                       Request Sample
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               ) :

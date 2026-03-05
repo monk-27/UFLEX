@@ -316,9 +316,9 @@ export default function ProductCategorySection({
                  {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Learn More
                 </button> */}
-                <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Request Sample
-                </button>
+                </button> */}
               </div>
             </div>
           )}
@@ -509,9 +509,9 @@ export default function ProductCategorySection({
                  {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Learn More
                 </button> */}
-                <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Request Sample
-                </button>
+                </button> */}
               </div>
             </div>
           )}
@@ -773,9 +773,9 @@ export default function ProductCategorySection({
                  {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Learn More
                 </button> */}
-                <button className="border-2 border-[#117ABA] text-[#117ABA] px-8 py-4  font-medium hover:bg-blue-50 transition">
+                {/* <button className="border-2 border-[#117ABA] text-[#117ABA] px-8 py-4  font-medium hover:bg-blue-50 transition">
                   Request Sample
-                </button>
+                </button> */}
               </div>
             </div>
           )}
@@ -865,9 +865,9 @@ export default function ProductCategorySection({
                  {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Learn More
                 </button> */}
-                <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Request Sample
-                </button>
+                </button> */}
               </div>
             </div>
           )}
@@ -1056,9 +1056,9 @@ export default function ProductCategorySection({
                  {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Learn More
                 </button> */}
-                <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Request Sample
-                </button>
+                </button> */}
               </div>
             </div>
           )}
@@ -1185,9 +1185,9 @@ export default function ProductCategorySection({
                 {/*  {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Learn More
                 </button> */} 
-                <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Request Sample
-                </button>
+                </button> */}
               </div>
             </div>
           )}
