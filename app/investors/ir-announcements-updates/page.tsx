@@ -823,6 +823,82 @@ const tabItems: any = {
         { text: "SHAREHOLDING PATTERN AS ON 30.09.2022", link: "https://www.uflexltd.com/pdf/SHP/UFLEX-SHP-30SEP2022.pdf" },
         { text: "SHAREHOLDING PATTERN AS ON 30.06.2022", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30JUN2022.pdf" },
         { text: "SHAREHOLDING PATTERN AS ON 31.03.2022", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_31MAR2022.pdf" },
+
+
+
+        { "text": "SHAREHOLDING PATTERN AS ON 31.12.2021", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_REG31_31122021.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.09.2021", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_REG31_30092021.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.06.2021", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-SHP-REG31-30-06-2021.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 31.03.2021", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-SHP-31-03-2021.pdf" },
+
+        { "text": "SHAREHOLDING PATTERN AS ON 31.12.2020", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-SHP-31-12-2020.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.09.2020", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-SHP-30-09-2020.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.06.2020", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-SHP-30-06-2020.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 31.03.2020", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-SHP-31-03-2020.pdf" },
+
+        { "text": "SHAREHOLDING PATTERN AS ON 31.12.2019", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-SHP-31-12-2019.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.09.2019", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-Shareholding-Pattern-30-09-2019.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.06.2019", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-Shareholding-Pattern-30-06-2019.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 31.03.2019", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-Shareholding-Pattern-31-03-2019.pdf" },
+
+        { "text": "SHAREHOLDING PATTERN AS ON 31.12.2018", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-Shareholding-Pattern-31-12-2018.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.09.2018", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-Shareholding-Pattern-30-09-2018.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.06.2018", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-Shareholding-Pattern-30-06-2018.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 31.03.2018", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-Shareholding-Pattern-31-03-2018.pdf" },
+
+        { "text": "SHAREHOLDING PATTERN AS ON 31.12.2017", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-Shareholding-Pattern-31-12-2017.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.09.2017", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-Shareholding-Pattern-30-09-2017.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.06.2017", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-Shareholding-Pattern-30-06-2017.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 31.03.2017", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-Shareholding-Pattern-31-03-2017.pdf" },
+
+        { "text": "SHAREHOLDING PATTERN AS ON 31.12.2016", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-Shareholding-Pattern-31-12-2016.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.09.2016", "link": "https://www.uflexltd.com/pdf/SHP/shareholding-pattern-30-09-2016.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.06.2016", "link": "https://www.uflexltd.com/pdf/SHP/shareholding-pattern-30-06-2016.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 31.03.2016", "link": "https://www.uflexltd.com/pdf/SHP/shareholding-pattern-31-03-2016.pdf" },
+
+        { "text": "SHAREHOLDING PATTERN AS ON 31.12.2015", "link": "https://www.uflexltd.com/pdf/SHP/shareholding-pattern-31-12-2015.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.09.2015", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30092015.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.06.2015", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30062015.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 31.03.2015", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30032015.pdf" },
+
+        { "text": "SHAREHOLDING PATTERN AS ON 31.12.2014", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_31122014.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.09.2014", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30092014.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.06.2014", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30062014.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 31.03.2014", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_31032014.pdf" },
+
+        { "text": "SHAREHOLDING PATTERN AS ON 31.12.2013", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_31122013.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.09.2013", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30092013.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.06.2013", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30062013.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 31.03.2013", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_31032013.pdf" },
+
+        { "text": "SHAREHOLDING PATTERN AS ON 31.12.2012", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_31122012.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.09.2012", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30092012.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.06.2012", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30062012.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 31.03.2012", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-31-03-2012-BSE.pdf" },
+
+        { "text": "SHAREHOLDING PATTERN AS ON 31.12.2011", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-31.12.2011-BSE.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.09.2011", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-30.09.2011-BSE.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.06.2011", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-30.06.2011-BSE.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 31.03.2011", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-31.03.2011-BSE.pdf" },
+
+        { "text": "SHAREHOLDING PATTERN AS ON 31.12.2010", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-31.12.2010-BSE.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.09.2010", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-30.09.2010-BSE.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.06.2010", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-30.06.2010-BSE.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 31.03.2010", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-31.03.2010-BSE.pdf" },
+
+        { "text": "SHAREHOLDING PATTERN AS ON 31.12.2009", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-31.12.2009-BSE.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.09.2009", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-30.09.2009-BSE.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.06.2009", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-30.06.2009-BSE.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 31.03.2009", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-31.03.2009-BSE.pdf" },
+
+        { "text": "SHAREHOLDING PATTERN AS ON 31.12.2008", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-31.12.2008-BSE.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.09.2008", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-30.09.2008-BSE.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.06.2008", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-30.06.2008-BSE.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 31.03.2008", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-31.03.2008-BSE.pdf" },
+
+        { "text": "SHAREHOLDING PATTERN AS ON 31.12.2007", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-31.12.2007-BSE.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.09.2007", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-30.09.2007-BSE.pdf" },
+        { "text": "SHAREHOLDING PATTERN AS ON 30.06.2007", "link": "https://www.uflexltd.com/pdf/SHP/UFLEX-30.06.2007-BSE.pdf" }
     ],
     "unpaid-dividend": [
         {
