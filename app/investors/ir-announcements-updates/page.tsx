@@ -42,7 +42,26 @@ type AnnouncementGroup = {
     date: string;
     items: DocItem[];
 };
+type AnnouncementYear =
+    | "2026"
+    | "2025"
+    | "2024"
+    | "2023"
+    | "2022"
+    | "2021"
+    | "2020"
+    | "2019"
+    | "2018"
+    | "2017"
+    | "2016"
+    | "2015"
+    | "2014";
 
+type AnnouncementYearGroup = {
+    year: AnnouncementYear;
+    label: string;
+    groups: AnnouncementGroup[];
+};
 export type GrievanceItem = {
     title?: string;
     address?: string;
@@ -1173,7 +1192,31 @@ const tabItems: any = {
 };
 
 /* --------------------------------- Page -------------------------------- */
+const getYearFromDate = (date: string) => {
+    return date.split("/")[2];
+};
+const announcementsData = Object.entries(
+    (tabItems["announcements"] as AnnouncementGroup[]).reduce(
+        (acc: Record<string, AnnouncementGroup[]>, item) => {
+            const year = getYearFromDate(item.date);
 
+            if (!acc[year]) {
+                acc[year] = [];
+            }
+
+            acc[year].push(item);
+
+            return acc;
+        },
+        {}
+    )
+)
+    .sort(([a], [b]) => Number(b) - Number(a)) // latest year first
+    .map(([year, groups]) => ({
+        year,
+        label: `Corporate Announcements ${year}`,
+        groups,
+    }));
 export default function Page() {
     const [activeTabId, setActiveTabId] = useState<TabId>("announcements");
 
@@ -1189,7 +1232,12 @@ export default function Page() {
     const flatItems =
         !isAnnouncements && !isGrievance ? (rawData as DocItem[]) : [];
 
-
+    const [activeYear, setActiveYear] = useState(
+        announcementsData[0]?.year || ""
+    );
+    const selectedYearData = announcementsData.find(
+        (y) => y.year === activeYear
+    );
 
     return (
         <div>
@@ -1297,6 +1345,22 @@ export default function Page() {
 
                     {/* List */}
                     <div className="mt-1">
+                        {isAnnouncements && (
+                            <div className="flex flex-wrap gap-3 mb-5 mt-4">
+                                {announcementsData.map((year) => (
+                                    <button
+                                        key={year.year}
+                                        onClick={() => setActiveYear(year.year)}
+                                        className={`px-4 py-2 border text-sm rounded-full ${activeYear === year.year
+                                            ? "bg-[#117ABA] text-white border-[#117ABA]"
+                                            : "bg-white text-black border-[#117ABA]"
+                                            }`}
+                                    >
+                                        {year.year}
+                                    </button>
+                                ))}
+                            </div>
+                        )}
                         {isGrievance ? (
                             /* ---------- GRIEVANCE SPECIAL UI ---------- */
                             <div className="bg-white px-6 py-6 leading-relaxed text-[15px] lato-400">
@@ -1343,77 +1407,83 @@ export default function Page() {
                                     </a>
                                 </p>
                             </div>
-                        ) : isAnnouncements ? (
-                            /* ---------- GROUPED LAYOUT FOR ANNOUNCEMENTS ---------- */
-                            groups.length === 0 ? (
-                                <div className="w-full bg-[#F7F7F7] py-6 px-6 text-center text-[13px] text-gray-500">
-                                    Documents will be listed here.
-                                </div>
-                            ) : (
-                                groups.map((group,index) => (
-                                    <div 
-                                    // key={group.date} 
-                                    key={`${group.date}-${index}`}
-                                    className="bg-gray-200 mb-1">
-                                        <div className="flex items-center gap-2 text-[#CF3438] lato-700 text-[15px] pt-4 px-4">
-                                            <Calendar />
-                                            <span>{group.date}</span>
-                                        </div>
+                        ) :
+                            isAnnouncements ? (
 
-                                        <div className="mt-1 h-[3px] bg-[#117ABA] mx-4" />
-
-                                        <div className="px-4 pb-4">
-                                            {group.items.map((doc, idx) => (
-                                                <Link key={idx} href={doc.link} target="_blank">
-                                                    <div className=" bg-[#F7F7F7] py-3 px-4 flex items-center justify-between border-b-[2px] border-white hover:bg-[#ececec] transition">
-                                                        <div className="flex items-start gap-2 pr-4">
-                                                            {/* <span className="mt-[0px] text-[#555]">&raquo;</span> */}
-                                                            <span className="text-[14px] text-black leading-snug">
-                                                                {doc.text}
-                                                            </span>
-                                                        </div>
-                                                        <Image
-                                                            src="/images/pdf.png"
-                                                            alt="PDF"
-                                                            width={22}
-                                                            height={22}
-                                                            className="shrink-0"
-                                                        />
-                                                    </div>
-                                                </Link>
-                                            ))}
-                                        </div>
+                                /* ---------- GROUPED LAYOUT FOR ANNOUNCEMENTS ---------- */
+                                groups.length === 0 ? (
+                                    <div className="w-full bg-[#F7F7F7] py-6 px-6 text-center text-[13px] text-gray-500">
+                                        Documents will be listed here.
                                     </div>
-                                ))
-                            )
-                        ) : (
-                            /* --------- FLAT LAYOUT FOR OTHER TABS ---------- */
-                            flatItems.length === 0 ? (
-                                <div className="w-full bg-[#F7F7F7] py-6 px-6 text-center text-[13px] text-gray-500">
-                                    Documents will be listed here.
-                                </div>
-                            ) : (
-                                flatItems.map((doc, idx) => (
-                                    <Link key={idx} href={doc.link} target="_blank">
-                                        <div className="bg-[#F7F7F7] py-3 px-4 flex items-center justify-between border-b-[2px] border-white hover:bg-[#ececec] transition">
-                                            <div className="flex items-start gap-2 pr-4">
-                                                {/* <span className="mt-[0px] text-[#555]">&raquo;</span> */}
-                                                <span className="text-[14px] text-[#000000] leading-snug">
-                                                    {doc.text}
-                                                </span>
+                                ) : (
+
+                                    selectedYearData?.groups.map((group, index) => (
+                                        <div
+
+
+                                            // key={group.date} 
+                                            key={`${group.date}-${index}`}
+                                            className="bg-gray-200 mb-1">
+
+                                            <div className="flex items-center gap-2 text-[#CF3438] lato-700 text-[15px] pt-4 px-4">
+                                                <Calendar />
+                                                <span>{group.date}</span>
                                             </div>
-                                            <Image
-                                                src="/images/pdf.png"
-                                                alt="PDF"
-                                                width={22}
-                                                height={22}
-                                                className="shrink-0"
-                                            />
+
+                                            <div className="mt-1 h-[3px] bg-[#117ABA] mx-4" />
+
+                                            <div className="px-4 pb-4">
+                                                {group.items.map((doc, idx) => (
+                                                    <Link key={idx} href={doc.link} target="_blank">
+                                                        <div className=" bg-[#F7F7F7] py-3 px-4 flex items-center justify-between border-b-[2px] border-white hover:bg-[#ececec] transition">
+                                                            <div className="flex items-start gap-2 pr-4">
+                                                                {/* <span className="mt-[0px] text-[#555]">&raquo;</span> */}
+                                                                <span className="text-[14px] text-black leading-snug">
+                                                                    {doc.text}
+                                                                </span>
+                                                            </div>
+                                                            <Image
+                                                                src="/images/pdf.png"
+                                                                alt="PDF"
+                                                                width={22}
+                                                                height={22}
+                                                                className="shrink-0"
+                                                            />
+                                                        </div>
+                                                    </Link>
+                                                ))}
+                                            </div>
                                         </div>
-                                    </Link>
-                                ))
-                            )
-                        )}
+                                    ))
+                                )
+                            ) : (
+                                /* --------- FLAT LAYOUT FOR OTHER TABS ---------- */
+                                flatItems.length === 0 ? (
+                                    <div className="w-full bg-[#F7F7F7] py-6 px-6 text-center text-[13px] text-gray-500">
+                                        Documents will be listed here.
+                                    </div>
+                                ) : (
+                                    flatItems.map((doc, idx) => (
+                                        <Link key={idx} href={doc.link} target="_blank">
+                                            <div className="bg-[#F7F7F7] py-3 px-4 flex items-center justify-between border-b-[2px] border-white hover:bg-[#ececec] transition">
+                                                <div className="flex items-start gap-2 pr-4">
+                                                    {/* <span className="mt-[0px] text-[#555]">&raquo;</span> */}
+                                                    <span className="text-[14px] text-[#000000] leading-snug">
+                                                        {doc.text}
+                                                    </span>
+                                                </div>
+                                                <Image
+                                                    src="/images/pdf.png"
+                                                    alt="PDF"
+                                                    width={22}
+                                                    height={22}
+                                                    className="shrink-0"
+                                                />
+                                            </div>
+                                        </Link>
+                                    ))
+                                )
+                            )}
                     </div>
 
                 </section>
