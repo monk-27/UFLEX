@@ -1484,66 +1484,66 @@ export default function Page() {
                                     </a>
                                 </p>
                             </div>
-                        ) :isRegistrar ? (
-  <div className="bg-white px-6 py-6 leading-relaxed text-[15px] lato-400">
+                        ) : isRegistrar ? (
+                            <div className="bg-white px-6 py-6 leading-relaxed text-[15px] lato-400">
 
-    <h2 className="text-[#117ABA] text-lg lato-700 mb-2">
-      M/s Beetal Financial & Computer Services (P) Limited
-    </h2>
+                                <h2 className="text-[#117ABA] text-lg lato-700 mb-2">
+                                    M/s Beetal Financial & Computer Services (P) Limited
+                                </h2>
 
-    <p className="text-gray-500">
-      <strong className="text-black">Address:</strong> Beetal House, 3rd Floor,
-    </p>
-    <p className="text-gray-500">
-      99 Madangir, Behind Local Shopping Centre,
-    </p>
-    <p className="text-gray-500">
-      Near Dada Harsukhdas Mandir,
-    </p>
-    <p className="text-gray-500 mb-2">
-      New Delhi - 110062
-    </p>
+                                <p className="text-gray-500">
+                                    <strong className="text-black">Address:</strong> Beetal House, 3rd Floor,
+                                </p>
+                                <p className="text-gray-500">
+                                    99 Madangir, Behind Local Shopping Centre,
+                                </p>
+                                <p className="text-gray-500">
+                                    Near Dada Harsukhdas Mandir,
+                                </p>
+                                <p className="text-gray-500 mb-2">
+                                    New Delhi - 110062
+                                </p>
 
-    <p className="text-gray-500">
-      <strong className="text-black">Phone Nos.:</strong> +91 - 11 - 2996 1281 - 83
-    </p>
+                                <p className="text-gray-500">
+                                    <strong className="text-black">Phone Nos.:</strong> +91 - 11 - 2996 1281 - 83
+                                </p>
 
-    <p className="text-gray-500">
-      <strong className="text-black">Fax No.:</strong> +91 - 11 - 2996 1284
-    </p>
+                                <p className="text-gray-500">
+                                    <strong className="text-black">Fax No.:</strong> +91 - 11 - 2996 1284
+                                </p>
 
-    <p className="text-gray-500">
-      <strong className="text-black">Email:</strong>{" "}
-      <a
-        href="mailto:beetal@beetalfinancial.com"
-        className="text-[#117ABA]"
-      >
-        beetal@beetalfinancial.com
-      </a>
-    </p>
+                                <p className="text-gray-500">
+                                    <strong className="text-black">Email:</strong>{" "}
+                                    <a
+                                        href="mailto:beetal@beetalfinancial.com"
+                                        className="text-[#117ABA]"
+                                    >
+                                        beetal@beetalfinancial.com
+                                    </a>
+                                </p>
 
-    {/* PDF Link from your existing data */}
-    <div className="mt-6">
-      {tabItems["registrar"].map((doc: any, idx: number) => (
-        <Link key={idx} href={doc.link} target="_blank">
-          <div className="bg-[#F7F7F7] py-3 px-4 flex items-center justify-between border-b-[2px] border-white hover:bg-[#ececec] transition">
-            <span className="text-[14px] text-black">
-              {doc.text}
-            </span>
+                                {/* PDF Link from your existing data */}
+                                <div className="mt-6">
+                                    {tabItems["registrar"].map((doc: any, idx: number) => (
+                                        <Link key={idx} href={doc.link} target="_blank">
+                                            <div className="bg-[#F7F7F7] py-3 px-4 flex items-center justify-between border-b-[2px] border-white hover:bg-[#ececec] transition">
+                                                <span className="text-[14px] text-black">
+                                                    {doc.text}
+                                                </span>
 
-            <Image
-              src="/images/pdf.png"
-              alt="PDF"
-              width={22}
-              height={22}
-            />
-          </div>
-        </Link>
-      ))}
-    </div>
+                                                <Image
+                                                    src="/images/pdf.png"
+                                                    alt="PDF"
+                                                    width={22}
+                                                    height={22}
+                                                />
+                                            </div>
+                                        </Link>
+                                    ))}
+                                </div>
 
-  </div>
-) :
+                            </div>
+                        ) :
                             isAnnouncements ? (
 
                                 /* ---------- GROUPED LAYOUT FOR ANNOUNCEMENTS ---------- */
@@ -1620,7 +1620,7 @@ export default function Page() {
                                     ))
                                 )
                             )}
-                            
+
                     </div>
 
                 </section>

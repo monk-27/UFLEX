@@ -286,12 +286,48 @@ const PRESS_ROOM_DATA = {
       title: "Videos",
       youtubeId: "XxrcNVOkTH8",
     },
+    {
+      type: "video" as const,
+      title: "2026",
+      youtubeId: "xAcYOc4R0Oo",
+    },
+    {
+      type: "video" as const,
+      title: "2026",
+      youtubeId: "mL-quTnAEDQ",
+    },
+    {
+      type: "video" as const,
+      title: "2026",
+      youtubeId: "1eicpv-9QS4",
+    },
+    // {
+    //   type: "video" as const,
+    //   title: "2025",
+    //   youtubeId: "m6IqXAURC3c",
+    // },
+    // {
+    //   type: "video" as const,
+    //   title: "2025",
+    //   youtubeId: "IgjahqBZpYg",
+    // },
+    // {
+    //   type: "video" as const,
+    //   title: "2025",
+    //   youtubeId: "i2WA8rWIQEk",
+    // }
+    // { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=xAcYOc4R0Oo", type: "youtube" },
+    //       { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=mL-quTnAEDQ", type: "youtube" },
+    //       { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=1eicpv-9QS4", type: "youtube" },
+    //       { image: "/images/press/EC_Jun_2.jpg", title: "2025 ", link: "https://www.youtube.com/watch?v=m6IqXAURC3c", type: "youtube" },
+    //       { image: "/images/press/EC_Sep_1.jpg", title: "2025 ", link: "https://www.youtube.com/watch?v=IgjahqBZpYg", type: "youtube" },
+    //       { image: "/images/press/EC_Sep_2.jpg", title: " 2025", link: "https://www.youtube.com/watch?v=i2WA8rWIQEk", type: "youtube" },
 
 
 
 
 
-    
+
   ],
 
   mediaCoverage: {
@@ -505,14 +541,14 @@ export default function PressRoomPage() {
                   <div className="relative overflow-hidden rounded-sm shadow-md bg-black">
                     <div className="relative aspect-[16/9]">
                       {/* {res.type === "video" ? ( */}
-                        <iframe
-                          className="absolute inset-0 h-full w-full"
-                          src={`https://www.youtube.com/embed/${res.youtubeId}`}
-                          title={res.title}
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          allowFullScreen
-                          loading="lazy" // better perf
-                        />
+                      <iframe
+                        className="absolute inset-0 h-full w-full"
+                        src={`https://www.youtube.com/embed/${res.youtubeId}`}
+                        title={res.title}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                        loading="lazy" // better perf
+                      />
                       {/* ) : (
                         <Image
                           src={res.img || "/placeholder.jpg"}
