@@ -126,6 +126,15 @@ const tabs: Tab[] = [
 const tabItems: any = {
     "announcements": [
         {
+            "date": "03/03/2026",
+            "items": [
+                {
+                    "text": "Disclosures under Regulation 30 (Part-A Para A) of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 – Appointment of Senior Management Personnel",
+                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_REG30_03MAR26.pdf"
+                }
+            ]
+        },
+        {
             "date": "27/02/2026",
             "items": [
                 {
@@ -236,7 +245,7 @@ const tabItems: any = {
 
 
         {
-            data: "23/12/2025",
+            date: "23/12/2025",
             items: [
                 {
                     text: " Intimation of EcoVadis Sustainability Rating for 2025",
@@ -246,7 +255,7 @@ const tabItems: any = {
             ]
         },
         {
-            data: "23/12/2025",
+            date: "23/12/2025",
             items: [
                 {
                     text: "Closure of Trading Window",
@@ -1341,8 +1350,11 @@ export default function Page() {
                                     Documents will be listed here.
                                 </div>
                             ) : (
-                                groups.map((group) => (
-                                    <div key={group.date} className="bg-gray-200 mb-1">
+                                groups.map((group,index) => (
+                                    <div 
+                                    // key={group.date} 
+                                    key={`${group.date}-${index}`}
+                                    className="bg-gray-200 mb-1">
                                         <div className="flex items-center gap-2 text-[#CF3438] lato-700 text-[15px] pt-4 px-4">
                                             <Calendar />
                                             <span>{group.date}</span>
