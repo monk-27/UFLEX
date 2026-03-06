@@ -26,7 +26,7 @@ type TabId =
     | "business-responsibility"
     | "secretarial-compliance"
     | "memorandum-articles"
-    |"reconciliation";
+    | "reconciliation";
 
 type Tab = {
     id: TabId;
@@ -126,136 +126,136 @@ const tabs: Tab[] = [
 const tabItems: any = {
     "announcements": [
         {
-    "date": "27/02/2026",
-    "items": [
-      {
-        "text": "UFLEX-NSE & BSE",
-        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_REG3027FEB26.pdf"
-      }
-    ]
-  },
-        {
-    "date": "21/02/2026",
-    "items": [
-      {
-        "text": "Transcript of the earnings conference call conducted on February 16, 2026",
-        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_AM_TRNS_21FEB26.pdf"
-      }
-    ]
-  },
-  {
-    "date": "19/02/2026",
-    "items": [
-      {
-        "text": "Disclosure under Regulation 30 read with Schedule III, Part A, Para A of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_REG30_19FEB26.pdf"
-      }
-    ]
-  },
-  {
-    "date": "17/02/2026",
-    "items": [
-      {
-        "text": "Updates on Company’s participation in “Dolat Capital Corporate Conference 2026” and Schedule of Analyst/Institutional Investor Meet",
-        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_IP_17FEB26.pdf"
-      }
-    ]
-  },
-  {
-    "date": "16/02/2026",
-    "items": [
-      {
-        "text": "Recording of earnings conference call conducted on February 16, 2026",
-        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_AM_AUD_REC_16FEB26.pdf"
-      },
-      {
-        "text": "Updates on Earnings Conference Call under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_AMIP_16FEB26.pdf"
-      }
-    ]
-  },
-  {
-    "date": "14/02/2026",
-    items: [
-      {
-        "text": "Intimation of participation in “Dolat Capital Corporate Conference 2026” and Schedule of Analyst/Institutional Investor Meet under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_AM_14FEB26.pdf"
-      }
-    ]
-  },
-  {
-    "date": "13/02/2026",
-    "items": [
-      {
-        "text": "Publication of Financial Results",
-        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_ADVT_13FEB26.pdf"
-      }
-    ]
-  },
-  {
-    "date": "12/02/2026",
-    "items": [
-      {
-        "text": "Earnings Release for the quarter ended 31st December, 2025",
-        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_ER_12022026.pdf"
-      },
-      {
-        "text": "Outcome of Board Meeting held on 12th February, 2026",
-        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_QTRLYRES_31DEC25.pdf"
-      }
-    ]
-  },
-  {
-    "date": "11/02/2026",
-    "items": [
-      {
-        "text": "Intimation of Earnings Conference Call under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_AM16FEB26.pdf"
-      }
-    ]
-  },
-  {
-    "date": "04/02/2026",
-    "items": [
-      {
-        "text": "Disclosure under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 – Cessation of Chief Financial Officer and Key Managerial Personnel of the Company on account of Superannuation",
-        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_Superannuation_CFO.pdf"
-      }
-    ]
-  },
-  {
-    "date": "03/02/2026",
-    "items": [
-      {
-        "text": "Board Meeting to consider the Unaudited Financial Results of the Company for the quarter and nine months ended 31st December 2025",
-        "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_BM_12FEB2026.pdf"
-      }
-    ]
-  },
-  
-
-        
-        {
-            data:"23/12/2025",
-            items:[
+            "date": "27/02/2026",
+            "items": [
                 {
-                    text:" Intimation of EcoVadis Sustainability Rating for 2025",
-                    link:"https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSEE_SG_23DEC25.pdf"
+                    "text": "UFLEX-NSE & BSE",
+                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_REG3027FEB26.pdf"
+                }
+            ]
+        },
+        {
+            "date": "21/02/2026",
+            "items": [
+                {
+                    "text": "Transcript of the earnings conference call conducted on February 16, 2026",
+                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_AM_TRNS_21FEB26.pdf"
+                }
+            ]
+        },
+        {
+            "date": "19/02/2026",
+            "items": [
+                {
+                    "text": "Disclosure under Regulation 30 read with Schedule III, Part A, Para A of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_REG30_19FEB26.pdf"
+                }
+            ]
+        },
+        {
+            "date": "17/02/2026",
+            "items": [
+                {
+                    "text": "Updates on Company’s participation in “Dolat Capital Corporate Conference 2026” and Schedule of Analyst/Institutional Investor Meet",
+                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_IP_17FEB26.pdf"
+                }
+            ]
+        },
+        {
+            "date": "16/02/2026",
+            "items": [
+                {
+                    "text": "Recording of earnings conference call conducted on February 16, 2026",
+                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_AM_AUD_REC_16FEB26.pdf"
+                },
+                {
+                    "text": "Updates on Earnings Conference Call under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_AMIP_16FEB26.pdf"
+                }
+            ]
+        },
+        {
+            "date": "14/02/2026",
+            items: [
+                {
+                    "text": "Intimation of participation in “Dolat Capital Corporate Conference 2026” and Schedule of Analyst/Institutional Investor Meet under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_AM_14FEB26.pdf"
+                }
+            ]
+        },
+        {
+            "date": "13/02/2026",
+            "items": [
+                {
+                    "text": "Publication of Financial Results",
+                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_ADVT_13FEB26.pdf"
+                }
+            ]
+        },
+        {
+            "date": "12/02/2026",
+            "items": [
+                {
+                    "text": "Earnings Release for the quarter ended 31st December, 2025",
+                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_ER_12022026.pdf"
+                },
+                {
+                    "text": "Outcome of Board Meeting held on 12th February, 2026",
+                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_QTRLYRES_31DEC25.pdf"
+                }
+            ]
+        },
+        {
+            "date": "11/02/2026",
+            "items": [
+                {
+                    "text": "Intimation of Earnings Conference Call under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_AM16FEB26.pdf"
+                }
+            ]
+        },
+        {
+            "date": "04/02/2026",
+            "items": [
+                {
+                    "text": "Disclosure under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 – Cessation of Chief Financial Officer and Key Managerial Personnel of the Company on account of Superannuation",
+                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_Superannuation_CFO.pdf"
+                }
+            ]
+        },
+        {
+            "date": "03/02/2026",
+            "items": [
+                {
+                    "text": "Board Meeting to consider the Unaudited Financial Results of the Company for the quarter and nine months ended 31st December 2025",
+                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_BM_12FEB2026.pdf"
+                }
+            ]
+        },
+
+
+
+        {
+            data: "23/12/2025",
+            items: [
+                {
+                    text: " Intimation of EcoVadis Sustainability Rating for 2025",
+                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSEE_SG_23DEC25.pdf"
                 }
 
             ]
         },
         {
-            data:"23/12/2025",
-            items:[
+            data: "23/12/2025",
+            items: [
                 {
-                    text:"Closure of Trading Window",
-                    link:"https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_TWC_31DEC25.pdf"
+                    text: "Closure of Trading Window",
+                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_TWC_31DEC25.pdf"
                 }
 
             ]
         },
-        
+
         {
             date: "08/12/2025",
             items: [
@@ -778,7 +778,7 @@ const tabItems: any = {
     ],
 
     "shareholding-pattern": [
-    { text: "SHAREHOLDING PATTERN AS ON 31.12.2025", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30DEC2025.pdf" },
+        { text: "SHAREHOLDING PATTERN AS ON 31.12.2025", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30DEC2025.pdf" },
 
         { text: "SHAREHOLDING PATTERN AS ON 30.09.2025", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30SEP2025.pdf" },
         { text: "SHAREHOLDING PATTERN AS ON 30.06.2025", link: "https://www.uflexltd.com/pdf/SHP/UFLEX_SHP_30JUN2025.pdf" },
@@ -953,7 +953,55 @@ const tabItems: any = {
         {
             text: "INDIA RATINGS & RESEARCH (IND-RA) RATINGS – AFFIRMED",
             link: "https://www.uflexltd.com/pdf/CreditRatings/2023/SIGNED_UFLEX_CRNSEBSE_31JAN23.pdf"
-        }
+        },
+        {
+            "text": "CRISIL RATINGS – UPGRADED",
+            "link": "https://www.uflexltd.com/pdf/CreditRatings/2022/UFLEX_CRISIL_RATING_NSEBSE_07APR2022.pdf"
+        },
+        {
+            "text": "BRICKWORK RATINGS – ASSIGNED",
+            "link": "https://www.uflexltd.com/pdf/CreditRatings/2022/UFLEX_BRICKWORK_CREDITRATING_NSEBSE_06APR2022.pdf"
+        },
+        {
+            "text": "INDIA RATINGS & RESEARCH (IND-RA) RATINGS – UPGRADED",
+            "link": "https://www.uflexltd.com/pdf/CreditRatings/2021/UFLEX_NSEBSE_CREDITRATING_02NOV2021.pdf"
+        },
+        {
+            "text": "CRISIL RATINGS - REAFFIRMED",
+            "link": "https://www.uflexltd.com/pdf/CreditRatings/2021/UFLEX_NSEBSE_CRISILRATING_30OCT2021.pdf"
+        },
+        {
+            "text": "BRICKWORK RATINGS (BWR) - REAFFIRMED",
+            "link": "https://www.uflexltd.com/pdf/CreditRatings/2021/UFLEX_CR_NSEBSE_Brickwork.pdf"
+        },
+        {
+            "text": "India Ratings Revises Uflex’s Outlook to Positive; Affirms 'IND A'",
+            "link": "https://www.uflexltd.com/pdf/CreditRatings/2020/UFLEX_NSEBSE_CR17DEC2020.pdf"
+        },
+        {
+            "text": "CRISIL Ratings - REAFFIRMED",
+            "link": "https://www.uflexltd.com/pdf/CreditRatings/2020/UFLEX_NSEBSE_CR_03NOV2020.pdf"
+        },
+        {
+            "text": "BRICKWORK RATINGS (BWR) - REAFFIRMED",
+            "link": "https://www.uflexltd.com/pdf/CreditRatings/2020/UFLEX_NSE_CREDITRATING.pdf"
+        },
+        {
+            "text": "INDIA RATINGS & RESEARCH (IND-RA) RATINGS - UPGRADED",
+            "link": "https://www.uflexltd.com/pdf/CreditRatings/2019/UFLEX_NSEBSE_CREDITRATING.pdf"
+        },
+        {
+            "text": "CRISIL Ratings",
+            "link": "https://www.uflexltd.com/pdf/CreditRatings/2019/Uflex-CRISIL-CreditRating.pdf"
+        },
+        {
+            "text": "India Ratings & Research (Ind-Ra) Ratings",
+            "link": "https://www.uflexltd.com/pdf/CreditRatings/2019/Uflex-Ind-Ra-Rating.pdf"
+        },
+        {
+            "text": "Brickwork Ratings",
+            "link": "https://www.uflexltd.com/pdf/CreditRatings/2019/Uflex-Brickwork-Rating.pdf"
+        },
     ],
 
     "annual-return": [
@@ -1060,59 +1108,59 @@ const tabItems: any = {
         }
     ],
     "reconciliation": [
-  {
-    "text": "Report for the Quarter Ended 31.12.2025",
-    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31DEC2025.pdf"
-  },
-  {
-    "text": "Report for the Quarter Ended 30.09.2025",
-    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30SEP2025.pdf"
-  },
-  {
-    "text": "Report for the Quarter Ended 30.06.2025",
-    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30JUN2025.pdf"
-  },
-  {
-    "text": "Report for the Quarter Ended 31.03.2025",
-    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31MAR2025.pdf"
-  },
-  {
-    "text": "Report for the Quarter Ended 31.12.2024",
-    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31DEC2024.pdf"
-  },
-  {
-    "text": "Report for the Quarter Ended 30.09.2024",
-    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30SEP2024.pdf"
-  },
-  {
-    "text": "Report for the Quarter Ended 30.06.2024",
-    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30JUN2024.pdf"
-  },
-  {
-    "text": "Report for the Quarter Ended 31.03.2024",
-    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31MAR2024.pdf"
-  },
-  {
-    "text": "Report for the Quarter Ended 31.12.2023",
-    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31DEC2023.PDF"
-  },
-  {
-    "text": "Report for the Quarter Ended 30.09.2023",
-    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30SEP2023.pdf"
-  },
-  {
-    "text": "Report for the Quarter Ended 30.06.2023",
-    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30JUN2023.pdf"
-  },
-  {
-    "text": "Report for the Quarter Ended 31.03.2023",
-    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31MAR2023.pdf"
-  },
-  {
-    "text": "Report for the Quarter Ended 31.12.2022",
-    "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31DEC2022.pdf"
-  }
-]
+        {
+            "text": "Report for the Quarter Ended 31.12.2025",
+            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31DEC2025.pdf"
+        },
+        {
+            "text": "Report for the Quarter Ended 30.09.2025",
+            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30SEP2025.pdf"
+        },
+        {
+            "text": "Report for the Quarter Ended 30.06.2025",
+            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30JUN2025.pdf"
+        },
+        {
+            "text": "Report for the Quarter Ended 31.03.2025",
+            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31MAR2025.pdf"
+        },
+        {
+            "text": "Report for the Quarter Ended 31.12.2024",
+            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31DEC2024.pdf"
+        },
+        {
+            "text": "Report for the Quarter Ended 30.09.2024",
+            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30SEP2024.pdf"
+        },
+        {
+            "text": "Report for the Quarter Ended 30.06.2024",
+            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30JUN2024.pdf"
+        },
+        {
+            "text": "Report for the Quarter Ended 31.03.2024",
+            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31MAR2024.pdf"
+        },
+        {
+            "text": "Report for the Quarter Ended 31.12.2023",
+            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31DEC2023.PDF"
+        },
+        {
+            "text": "Report for the Quarter Ended 30.09.2023",
+            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30SEP2023.pdf"
+        },
+        {
+            "text": "Report for the Quarter Ended 30.06.2023",
+            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30JUN2023.pdf"
+        },
+        {
+            "text": "Report for the Quarter Ended 31.03.2023",
+            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31MAR2023.pdf"
+        },
+        {
+            "text": "Report for the Quarter Ended 31.12.2022",
+            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31DEC2022.pdf"
+        }
+    ]
 };
 
 /* --------------------------------- Page -------------------------------- */
@@ -1154,7 +1202,7 @@ export default function Page() {
                             IR Announcements & Updates
                         </h1>
                     </div>
-                    
+
                 </section>
 
                 {/* BREADCRUMB */}
@@ -1166,11 +1214,11 @@ export default function Page() {
                     </div>
                 </div> */}
                 <Breadcrumb
-          items={[
-            { label: "Investors Relations", href: "/investors" },
-            { label: "IR Announcements & Updates" },
-          ]}
-        />
+                    items={[
+                        { label: "Investors Relations", href: "/investors" },
+                        { label: "IR Announcements & Updates" },
+                    ]}
+                />
 
                 {/* TAB BAR */}
 
@@ -1286,7 +1334,7 @@ export default function Page() {
                                     </a>
                                 </p>
                             </div>
-                        ) : isAnnouncements  ? (
+                        ) : isAnnouncements ? (
                             /* ---------- GROUPED LAYOUT FOR ANNOUNCEMENTS ---------- */
                             groups.length === 0 ? (
                                 <div className="w-full bg-[#F7F7F7] py-6 px-6 text-center text-[13px] text-gray-500">
