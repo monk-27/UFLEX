@@ -184,6 +184,10 @@ const quarterlyConsolidated: DocItem[] = [
 
 /* Quarterly Results – Standalone */
 const quarterlyStandalone: DocItem[] = [
+  {
+    text: "Financial results for the Quarter ended 31.12.2025",
+    link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_31122025.pdf",
+  },
   
   {
     text: "Financial results for the Quarter ended 30.09.2025",

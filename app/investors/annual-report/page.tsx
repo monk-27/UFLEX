@@ -111,6 +111,55 @@ const annualReportsUFLEX: DocItem[] = [
     text: "Annual Report for the Year 2018-2019",
     link: "https://www.uflexltd.com/pdf/financials/annual-reports/UFLEX-AR-2018-19.pdf",
   },
+    {
+    text: "Annual Report for the Year 2017-2018",
+    link: "https://www.uflexltd.com/pdf/financials/annual-reports/UFLEX-AR-2017-18.pdf",
+  },
+  {
+    text: "Annual Report for the Year 2016-2017",
+    link: "https://www.uflexltd.com/pdf/financials/annual-reports/UFLEX-AR-2016-17.pdf",
+  },
+  {
+    text: "Annual Report for the Year 2015-2016",
+    link: "https://www.uflexltd.com/pdf/financials/annual-reports/UFLEX-AnnualReport-2016.pdf",
+  },
+  {
+    text: "Annual Report for the Year 2014-2015",
+    link: "https://www.uflexltd.com/pdf/financials/annual-reports/UFLEX-AnnualReport-2015.pdf",
+  },
+  {
+    text: "Annual Report for the Year 2013-2014",
+    link: "https://www.uflexltd.com/pdf/financials/annual-reports/UFLEXAnnualReport2014.pdf",
+  },
+  {
+    text: "Annual Report for the Year 2012-2013",
+    link: "https://www.uflexltd.com/pdf/financials/annual-reports/Annual-Report-uflex2013.pdf",
+  },
+  {
+    text: "Annual Report for the Year 2011-2012",
+    link: "https://www.uflexltd.com/pdf/financials/annual-reports/Annual-Report-uflex2012.pdf",
+  },
+  {
+    text: "Annual Report for the Year 2010-2011",
+    link: "https://www.uflexltd.com/pdf/financials/annual-reports/Annual-Report-uflex2011.pdf",
+  },
+  {
+    text: "Annual Report for the Year 2009-2010",
+    link: "https://www.uflexltd.com/pdf/financials/annual-reports/Annual-Report-uflex2010.pdf",
+  },
+  {
+    text: "Annual Report for the Year 2008-2009",
+    link: "https://www.uflexltd.com/pdf/financials/annual-reports/Annual-Report-Uflex2009Deluxe.pdf",
+  },
+  {
+    text: "Annual Report for the Year 2007-2008",
+    link: "https://www.uflexltd.com/pdf/financials/annual-reports/Annual-Report-Uflex-2008.pdf",
+  },
+  {
+    text: "Annual Report for the Year 2006-2007",
+    link: "https://www.uflexltd.com/pdf/financials/annual-reports/Anuual-Report-uflex-2007.pdf",
+  }
+
 ];
 
 /* ---------- UFLEX: Quarterly Results – Consolidated ---------- */
