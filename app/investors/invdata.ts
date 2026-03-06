@@ -13,7 +13,7 @@ export const investorCards = [
   },
   {
     id: "notices",
-    title: "IR Announcements & Updates",
+    title: "Announcements & Updates",
     image: "/images/investors/3.png",
     href: "/investors/ir-announcements-updates",
   },
@@ -25,7 +25,7 @@ export const investorCards = [
   },
   {
     id: "ir-calendar",
-    title: "IR Presentations & Quarterly Earnings Reports",
+    title: "Presentations & Quarterly Earnings Reports",
     image: "/images/investors/5.png",
     href: "/investors/ir-presentation-quarterly-earnings",
   },

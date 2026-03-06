@@ -1304,6 +1304,8 @@ export default function Page() {
     const isAnnouncements = activeTabId === "announcements";
     const isGrievance = activeTabId === "grievance-redressal";
     const isRegistrar = activeTabId === "registrar";
+    const km = activeTabId === "kmp-contacts";
+
 
     const groups = isAnnouncements ? (rawData as AnnouncementGroup[]) : [];
     const flatItems =
@@ -1333,7 +1335,7 @@ export default function Page() {
                     <div className="absolute inset-0 bg-black/40" />
                     <div className="max-w-7xl mx-auto absolute inset-0 flex flex-col justify-center px-6 sm:px-12 md:px-20 lg:px-28">
                         <h1 className="text-white text-2xl sm:text-3xl md:text-[38px] lato-700 mb-1">
-                            IR Announcements & Updates
+                            Announcements & Updates
                         </h1>
                     </div>
 
@@ -1350,7 +1352,7 @@ export default function Page() {
                 <Breadcrumb
                     items={[
                         { label: "Investors Relations", href: "/investors" },
-                        { label: "IR Announcements & Updates" },
+                        { label: "Announcements & Updates" },
                     ]}
                 />
 
@@ -1438,9 +1440,34 @@ export default function Page() {
                                 ))}
                             </div>
                         )}
+                        {km && (
+                            <div className="bg-white px-6 py-6 leading-relaxed text-[15px] lato-400">
+                                <p className="text-gray-700 text-[16px] leading-relaxed mb-6">
+  <span className="float-left text-[42px] leading-[32px] pr-2 font-semibold text-black">
+    P
+  </span>
+  ursuant to Regulation 30(5) of the Securities and Exchange Board of India
+  (Listing Obligations and Disclosure Requirements) Regulations, 2015,
+  the Board of Directors of the Company has authorised certain officials
+  for the purpose of determining materiality of an event or information
+  and for the purpose of making disclosures to stock exchange under this Regulation.
+</p>
+                            </div>
+                        )}
                         {isGrievance ? (
                             /* ---------- GRIEVANCE SPECIAL UI ---------- */
                             <div className="bg-white px-6 py-6 leading-relaxed text-[15px] lato-400">
+                                <p className="text-gray-700 text-[16px] leading-relaxed mb-6">
+  <span className="float-left text-[42px] leading-[32px] pr-2 font-semibold text-black">
+    P
+  </span>
+  ursuant to Regulation 46(2)(j) and 46(2)(k) of the Securities and Exchange
+  Board of India (Listing Obligations and Disclosure Requirements)
+  Regulations, 2015, the email address for grievance redressal and other
+  relevant details and Contact Information of the Designated Officials of
+  the Listed Entity who are responsible for assisting and handling Investor
+  Grievances are given below:
+</p>
                                 {/* First Block */}
                                 <h2 className="text-[#117ABA] text-lg lato-700 mb-2">
                                     {tabItems["grievance-redressal"][0].title}

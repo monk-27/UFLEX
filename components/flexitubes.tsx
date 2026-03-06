@@ -24,28 +24,28 @@ const SliderItems: SliderItem[] = [
   {
     img: "/images/new/fm1.png",
     // dynamiclink: "/flexitube-business/flexiTube-Our-Offerings",
-    title: "METALIKA tubes",
+    title: "Metallika",
     desc: "Tubes with high-shine metallization and holographic features for that premium appeal. We also offer matte and de-metallized options.",
   },
   {
     img: "/images/new/remika.jpeg",
     // dynamiclink: "/flexitube-business/flexiTube-Our-Offerings",
 
-    title: "REMIKA tubes",
+    title: "Remika",
     desc: "Sustainable web, mono-material, lightweight, low-carbon footprint solutions",
   },
   {
     img: "/images/new/fm3.png",
     // dynamiclink: "/flexitube-business/flexiTube-Our-Offerings",
 
-    title: "GREENIKA tubes",
+    title: "Greenika",
     desc: "PCR tubes with up to 30% PCR in the sleeves. These tubes use PCR developed in-house by us.",
   },
   {
     img: "/images/new/fm4.jpg",
     // dynamiclink: "/flexitube-business/flexiTube-Our-Offerings",
 
-    title: "KRAFTIKA tubes",
+    title: "Kraftika",
     desc:`Eco-friendly Kraft paper tubes with up to 45% paper content in the sleeve.
 `
     // desc: "Our flexo printing sleeves offer superior print quality, operational ease, and cost-efficiency in flexography printing.",
@@ -54,7 +54,7 @@ const SliderItems: SliderItem[] = [
     img: "/images/new/fm56.jpg",
     // dynamiclink: "/flexitube-business/flexiTube-Our-Offerings",
 
-    title: "EARTHIKA tubes",
+    title: "Earthika",
     desc: "Tubes made with biodegradable polymer.",
   },
 
