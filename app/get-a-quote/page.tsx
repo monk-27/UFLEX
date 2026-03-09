@@ -689,7 +689,8 @@ export default function EnquiryForm() {
                     <input
                       ref={fileInputRef}
                       type="file"
-                      accept="image/*,video/*"
+                      // accept="image/*,video/*"
+                      accept="image/*,video/*,.pdf,.doc,.docx,.xls,.xlsx"
                       multiple
                       className="hidden"
                       onChange={handleFileChange}
