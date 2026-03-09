@@ -270,10 +270,29 @@ export default function EnquiryForm() {
 
     const previews: FilePreview[] = [];
     for (const file of newFiles) {
+      // const isImage = file.type.startsWith("image/");
+      // const isVideo = file.type.startsWith("video/");
+      // if (!isImage && !isVideo) {
+      //   setFileError(`"${file.name}" is not allowed. Only images and videos are accepted.`);
+      //   if (fileInputRef.current) fileInputRef.current.value = "";
+      //   return;
+      // }
       const isImage = file.type.startsWith("image/");
       const isVideo = file.type.startsWith("video/");
-      if (!isImage && !isVideo) {
-        setFileError(`"${file.name}" is not allowed. Only images and videos are accepted.`);
+      const isPdf = file.type === "application/pdf";
+      const isDoc =
+        file.type === "application/msword" ||
+        file.type ===
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+      const isExcel =
+        file.type === "application/vnd.ms-excel" ||
+        file.type ===
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+
+      if (!isImage && !isVideo && !isPdf && !isDoc && !isExcel) {
+        setFileError(
+          `"${file.name}" is not allowed. Only images, videos, PDF, DOC, and Excel files are accepted.`
+        );
         if (fileInputRef.current) fileInputRef.current.value = "";
         return;
       }
