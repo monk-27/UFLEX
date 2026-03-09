@@ -284,7 +284,13 @@ Our converting machines are tailored as per the clients’ needs and are enabled
                         {
                             title: "Solvent-less Lamination Machines:",
                             image:"/images/new/solventless.png",
-                            intro: "UFlex Solvent-Less Lamination Machines are equipped with digital AC Vector drive and AC vector grade motor for the purpose of laminating two different substrates. For the purpose of lamination the machine uses two-component adhesive which is solvent free. The machine uses five roller technology for coating adhesive on the film which ensures less amount of adhesive coating. Hence the solvent retention levels are less in laminate produced with solvent-less lamination machine in comparison to solvent-base lamination.",
+                            intro: `Solventless Super-550 is a high-speed, eco-friendly laminating machine with a
+maximum web width of 1320 mm, designed for flexible packaging applications. It
+features independent motors at both unwind and rewind sections for precise web
+tension control, smooth material handling, and stable operation across diverse
+substrates. Equipped with sleeve-type transport rollers, it ensures uniform web
+support and high running accuracy. An integrated sleeve cleaning system removes
+adhesive residue, maintaining consistent lamination quality and reducing downtime.`,
 
                             items: [
                                 {
@@ -387,7 +393,13 @@ Our converting machines are tailored as per the clients’ needs and are enabled
                     items: [
                         {
                             label: "USLIT:",
-                            text: `A high speed duplex slitter floating unwind stand; Pneumatically operated self-shaft clamping cones; Line guide unit; Unwind Tension Control with the help of dancer roller; Independent Pull Roller; Differential shaft; Duplex Re-winder & AC Vector Grade Motor and Drive system with Operator Interface touch panel.`,
+                            text: `TRU SLIT-600 is a high-performance slitting machine designed for productivity,
+safety, and efficient workflow in flexible packaging operations. It features automatic
+roll unloading and stacking to reduce manual handling. A separated unwind stand
+with floor pick-up and motorized roll clamping ensures safe jumbo roll loading. With
+speeds up to 600 MPM and a maximum rewind diameter of 600 mm, it enables
+precision slitting through multiple cutting options. An advanced trim conveying
+system ensures clean, stable, high-speed performance.`,
                             moreLink: "https://www.uflexltd.com/uslit-slitting-rewinding-machines.php",
                             image:"/images/new/sliter.png"
                         },
@@ -496,8 +508,15 @@ Our converting machines are tailored as per the clients’ needs and are enabled
                             label: "ReLAM 250:",
                     image:"/images/new/relam.png",
 
-                            text: `This is a high end multi-layer recycling machine (PET + Ext + PET MET + PE, PE, PE + PET, BOPP, PP, HDPE, LD, LDPE, RAFIA, MET BOPP, MET CPP, MET PET, Non-Woven Bags etc.) used to recycle industrial plastic waste (soft material) into granulated products, which in turn can be used for manufacturing various molding products. Machine is made with European standards, making it operator and environment friendly. UFlex Re Lam-250 comes with a Metal detector, Feeder for additive (specially designed feature), Double screw extruder design (100/33 & 120/10), Water-cooled Die Face Cutting (Specially Designed), Centrifugal dewatering, De-gasing System with amazing features. Relam-250 can recycle at a maximum speed of 250 kg/hr.`,
-                            moreLink: "https://www.uflexltd.com/relam250-mlp-recycling-machines.php"
+                    text:`ReLAM 50 is a decentralized recycling system designed to process up to 50 kg of
+mixed flexible waste per hour, offering an efficient solution for hard-to-recycle
+materials. Ideal for start-ups, rural enterprises, local recycling units, waste
+management companies, NGOs, and municipalities, the system converts mixed
+flexible waste into recycled granules or panels. These outputs can be reused to
+manufacture household plastic products, plastic lumber, tiles, and other non-critical
+applications. Compact and versatile, ReLAM 50 enables grassroots participation in
+the circular economy while advancing sustainable waste management practices`,
+                               moreLink: "https://www.uflexltd.com/relam250-mlp-recycling-machines.php"
                         }
                     ]
                 }

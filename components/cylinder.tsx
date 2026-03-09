@@ -154,42 +154,110 @@ export const businesses: BusinessConfig[] = [
     innovations: {
       heading: "Business Highlights and Innovations",
       items: [
-        {
-          id: "holographic-effect-leatherettes",
-          title: "Holographic effect on leatherettes through steel embossed cylinders",
-          description: "The holographic effect on leatherettes like PU and PVC-based materials through steel embossed cylinders have multiple applications that enhance the aesthetics of products.",
-          image: "/images/leather.png",
-        },
-        {
-          id: "twining-effect-leatherettes-steel",
-          title: "Twining effect on leatherettes and steel through laser embossed cylinders",
-          description: "The twining effect on leatherettes and steel provides an array of applications and enhances the product finish and aesthetics of wide range of products.",
-          image: "/images/pfs4u.png",
-        },
-        {
-          id: "carving-effect-pvc",
-          title: "Carving effect through laser embossing on PVC",
-          description: "Carving effect through laser embossing on PVC has many attractive applications for home decoration.",
-          image: "/images/pvc.png",
-        },
-        {
-          id: "laser-embossing-shoe-soles",
-          title: "Laser embossing on the shoe soles",
-          description: "Laser embossing on the soles of shoes, making them skid-free.",
-          image: "/images/shoes.png",
-        },
-        {
-          id: "aesthetic-effect-shoe-foxing",
-          title: "Aesthetic effect on shoe foxing through laser embossing",
-          description: "Solutions that make footwear more attractive and appealing to customers.",
-          image: "/images/laser.png",
-        },
-        {
-          id: "anti-skidding-foot-mat",
-          title: "Anti-skidding pattern on foot mat through laser embossing",
-          description: "3D anti-skidding effect on PVC sheets through laser embossing.",
-          image: "/images/antiskiding.png",
-        },
+        
+  {
+    "id": "aluminium-composite-panels-laser-engraved-rollers",
+    "title": "Aluminium composite panels through laser-engraved rollers",
+    "description": "Aluminium Composite Panels (ACPs) featuring high-definition surface designs created using advanced laser-engraved rollers. This technology enables intricate wood, marble, cloud, and floral finishes with superior precision. Each panel consists of two aluminium sheets bonded to a PE or fire-retardant core and coated with durable PVDF or polyester paint for UV resistance and long-lasting colour. Lightweight yet rigid, these panels are widely used in architecture, interiors, signage, metro stations, and lift décor for their durability, insulation properties, and aesthetic versatility.",
+    "image": "/images/new/alu.png"
+  },
+  {
+    "id": "ginkgo-leaves-pattern-laser-engraved-leather",
+    "title": "Ginkgo Leaves pattern on original leather through specialized laser engraving",
+    "description": "The Ginkgo Leaves pattern is created using a specialized laser-engraving process that forms intricate fan-shaped motifs with fine radiating lines on a neutral base highlighted with subtle pale gold tones. The result is a glossy, shimmering finish that reflects contemporary luxury. Ideal for wallpaper, upholstery, decorative panels, and premium stationery, the design offers refined aesthetics with consistent quality, customization flexibility, and scalable production.",
+    "image": "/images/new/ginko.png"
+  },
+  {
+    "id": "pebble-stone-pattern-artificial-leather",
+    "title": "Pebble stone pattern on artificial leather through laser-embossed cylinders",
+    "description": "The Pebble Stone pattern on artificial leather is created using advanced laser-embossed cylinders that produce a tactile grid of rounded pebble-like blocks with a distinctive woven effect. This design adds depth and dimension while providing a non-slip surface. It is widely used in footwear, automotive interiors, handbags, flooring, consumer electronics, packaging, and furniture due to its durability, improved grip, scratch resistance, and premium finish.",
+    "image": "/images/new/pebble.png"
+  },
+  {
+    "id": "golden-python-glaze-pattern-leather",
+    "title": "Golden python glaze pattern on original leather through specialized laser-engraving cylinders",
+    "description": "Golden Python Glaze is a premium leather finish developed using specialized laser-engraving cylinders that replicate the luxurious texture of python skin. The pattern features interlocking raised scales in light golden tones, creating a three-dimensional high-gloss wet-look effect. It is ideal for high-fashion garments, premium footwear, luxury bags, accessories, upscale home décor, and automotive interiors, delivering a sophisticated and exclusive finish.",
+    "image": "/images/new/python.png"
+  },
+  {
+    "id": "woven-starburst-pattern-original-leather",
+    "title": "Woven starburst pattern on original leather through specialized laser-engraving cylinders",
+    "description": "Woven Starburst is a refined leather design created through specialized laser engraving on original leather. The pattern features concentric undulating circles forming intricate interwoven spirals enhanced by a monochromatic palette that creates depth and a dynamic three-dimensional texture. Its premium durability and modern aesthetic make it suitable for luxury fashion garments, handbags, footwear, and high-end interior or automotive upholstery.",
+    "image": "/images/new/woven.png"
+  },
+  {
+    "id": "crocodile-skin-pattern-artificial-leather",
+    "title": "Crocodile skin patterns on artificial leather through laser embossed cylinders",
+    "description": "The Crocodile pattern replicates the luxurious scaly texture inspired by natural crocodile or alligator skin using laser-embossed cylinders. This richly textured surface conveys sophistication and exotic appeal while maintaining durability and practicality. It is widely used in high-end fashion garments, footwear, handbags, belts, wallets, luxury home décor, and premium automotive interiors to deliver an exclusive and refined aesthetic.",
+    "image": "/images/new/crocodile.png"
+  },
+  {
+    "id": "geometric-chevron-embossed-tile-design",
+    "title": "Geometric chevron embossed tile design on artificial leather through laser embossed cylinders",
+    "description": "This sleek geometric chevron pattern features interlocking Y-shaped blocks embossed onto a metallic-like surface, creating a striking three-dimensional illusion of depth. Fine hatching within each form enhances texture and visual sophistication. The design is ideal for feature walls, kitchen backsplashes, bathroom accents, ceiling panels, furniture surfaces, and commercial spaces such as office lobbies, hotels, and restaurants, offering a contemporary and dynamic interior finish.",
+    "image": "/images/new/geo.png"
+  },
+  {
+    "id": "grid-weave-pattern-artificial-leather",
+    "title": "Grid weave pattern on artificial leather through laser embossed cylinders",
+    "description": "The Grid Weave pattern combines strong visual appeal with a rich tactile texture through an interlaced overlapping design that adds depth and sophistication. It is widely used in fashion products such as handbags, belts, wallets, and footwear. Beyond fashion, it enhances rugs, wall coverings, table linens, home accessories, automotive interiors, and industrial products, delivering durability and a distinctive contemporary finish.",
+    "image": "/images/new/grid.png"
+  },
+  {
+    "id": "intricate-vines-floral-design-artificial-leather",
+    "title": "Intricate vines and floral design on artificial leather through laser embossed cylinders",
+    "description": "This intricate vines and floral design is produced using advanced laser-embossed cylinders that create deep textures and finely detailed patterns on artificial leather. Featuring flowing organic shapes in vibrant tones, the design offers a harmonious and visually appealing aesthetic. It is suitable for handbags, belts, shoes, home décor items, stationery, gift products, and industrial uses such as automotive interiors and packaging.",
+    "image": "/images/new/r1.png"
+  },
+  {
+    "id": "reptile-retreat-pattern-artificial-leather",
+    "title": "Reptile retreat pattern on artificial leather through laser embossed cylinders",
+    "description": "Reptile Retreat is developed using precision laser-embossed cylinders that replicate the luxurious texture of genuine reptile skin. This innovation provides an exotic appearance while remaining cost-effective and ethical compared to natural leather. The durable and low-maintenance surface offers improved grip and visual appeal, making it suitable for automotive interiors, consumer electronics, fashion goods, and decorative applications.",
+    "image": "/images/new/reptile.png"
+  },
+  {
+    "id": "tangled-threads-design-artificial-leather",
+    "title": "Tangled threads design on artificial leather through laser embossed cylinders",
+    "description": "The Tangled Threads design is created using advanced laser-embossed cylinders that produce an intricate network of interwoven patterns with pronounced visual depth. The raised texture enhances tactile appeal while improving grip and subtle insulation properties. It is widely used in automotive interiors such as dashboards and steering wheels, consumer electronics, fashion accessories, apparel, wall coverings, upholstery, curtains, and floor coverings.",
+    "image": "/images/new/tangled.png"
+  }
+
+        // {
+        //   id: "holographic-effect-leatherettes",
+        //   title: "Holographic effect on leatherettes through steel embossed cylinders",
+        //   description: "The holographic effect on leatherettes like PU and PVC-based materials through steel embossed cylinders have multiple applications that enhance the aesthetics of products.",
+        //   image: "/images/leather.png",
+        // },
+        // {
+        //   id: "twining-effect-leatherettes-steel",
+        //   title: "Twining effect on leatherettes and steel through laser embossed cylinders",
+        //   description: "The twining effect on leatherettes and steel provides an array of applications and enhances the product finish and aesthetics of wide range of products.",
+        //   image: "/images/pfs4u.png",
+        // },
+        // {
+        //   id: "carving-effect-pvc",
+        //   title: "Carving effect through laser embossing on PVC",
+        //   description: "Carving effect through laser embossing on PVC has many attractive applications for home decoration.",
+        //   image: "/images/pvc.png",
+        // },
+        // {
+        //   id: "laser-embossing-shoe-soles",
+        //   title: "Laser embossing on the shoe soles",
+        //   description: "Laser embossing on the soles of shoes, making them skid-free.",
+        //   image: "/images/shoes.png",
+        // },
+        // {
+        //   id: "aesthetic-effect-shoe-foxing",
+        //   title: "Aesthetic effect on shoe foxing through laser embossing",
+        //   description: "Solutions that make footwear more attractive and appealing to customers.",
+        //   image: "/images/laser.png",
+        // },
+        // {
+        //   id: "anti-skidding-foot-mat",
+        //   title: "Anti-skidding pattern on foot mat through laser embossing",
+        //   description: "3D anti-skidding effect on PVC sheets through laser embossing.",
+        //   image: "/images/antiskiding.png",
+        // },
       ],
 
     },

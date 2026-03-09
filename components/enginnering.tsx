@@ -16,6 +16,7 @@ import { CaseStudySection } from './buissnessreusbales/case-studies'
 import { AwardsSection } from './buissnessreusbales/AwardsSection'
 import { BusinessConfig } from '@/app/business/data'
 import { ReadMoreDialog } from './expandabletext'
+import { title } from 'process'
 
 
 
@@ -128,6 +129,36 @@ export const businesses: BusinessConfig[] = [
             heading: "Business Highlights and Innovations",
             items: [
                 {
+                    id: "ceruflex",
+                    title: "Ceruflex 500",
+                    description: `UFlex has introduced the CERUFLEX 500, its next-generation high-speed gravure
+printing machine developed in collaboration with Italy’s Gravtech.
+\n The machine delivers printing speeds of up to 500 m/min and features advanced technologies
+such as a shaftless cylinder system, intelligent inking, and trolley-based job
+changeovers for superior efficiency and quality. 
+\n Designed with sustainability in mind,
+CERUFLEX 500 reduces energy, ink, and solvent usage while enhancing
+productivity and print precision for flexible packaging converters.`,
+                    image: "/images/new/fy261.jpeg"
+
+                },
+                {
+                    id: "asepto-speed-25000",
+                    title: "Asepto Speed 25000 machine",
+                    description:
+                        `UFlex, under the flagship of Asepto, introduced the next-gen, superpower Asepto Speed 25000 machine, an innovative engineering marvel that can process 25,000 aseptic liquid cartons per hour. 
+                        \nIt is the next-generation aseptic liquid filling machine with state-of-the-art technology that works at lightning speed with the convenience of an all-in-one portion-pack filling facility. One needs to fit in the paper roll and the machine works automatically to process it into the final folder. The machine has inbuilt chambers for splicing, stripping, sterilizing, filling, sealing, and dispensing processes that work with a click of a button. It is easy to operate, and the complete process can be controlled through a human-machine interface. It is designed to boost the production capacity by more than double the speed of your current production.
+`,
+                    image: "/images/new/asepto.png",
+                },
+                {
+                    id: "accu-slit-3300",
+                    title: "Accu Slit-3300",
+                    description:
+                        "UFlex developed Accu Slit-3300, the new slitter of width 3300, for slitting Metalized BOPP and other substrates.",
+                    image: "/images/accu.png",
+                },
+                {
                     id: "double-head-coating-1650",
                     title: "Double Head Coating-1650",
                     description:
@@ -150,22 +181,8 @@ export const businesses: BusinessConfig[] = [
                     description: "UFlex Engineering new design for a rotary horizontal high-speed form fill and seal machine features grippers that hold pouches without conveyor belts, enhancing Picture of Highlight and Innovation pouch quality and preventing leaks."
                     , image: "/images/new/rotary.png",
                 },
-                {
-                    id: "accu-slit-3300",
-                    title: "Accu Slit-3300",
-                    description:
-                        "UFlex developed Accu Slit-3300, the new slitter of width 3300, for slitting Metalized BOPP and other substrates.",
-                    image: "/images/accu.png",
-                },
-                {
-                    id: "asepto-speed-25000",
-                    title: "Asepto Speed 25000 machine",
-                    description:
-                        `UFlex, under the flagship of Asepto, introduced the next-gen, superpower Asepto Speed 25000 machine, an innovative engineering marvel that can process 25,000 aseptic liquid cartons per hour. 
-                        \nIt is the next-generation aseptic liquid filling machine with state-of-the-art technology that works at lightning speed with the convenience of an all-in-one portion-pack filling facility. One needs to fit in the paper roll and the machine works automatically to process it into the final folder. The machine has inbuilt chambers for splicing, stripping, sterilizing, filling, sealing, and dispensing processes that work with a click of a button. It is easy to operate, and the complete process can be controlled through a human-machine interface. It is designed to boost the production capacity by more than double the speed of your current production.
-`,
-                    image: "/images/new/asepto.png",
-                },
+                
+                
                 {
                     id: "uflex-flexi-liquid-double-head",
                     title: "UFlex-flexi-liquid (double head)",
