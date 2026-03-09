@@ -32,37 +32,37 @@ const PRESS_ROOM_DATA = {
     data: {
       "Print Media": {
         2026: [
-          { image: "https://media.fortuneindia.com/fortune-india/2026-02-09/q5625jm2/uflex.jpg?w=640&auto=format,compress&q=80", title: "India-EU, U.S. trade deals to boost packaging sector", link: "https://www.fortuneindia.com/business-news/india-eu-us-trade-deals-to-boost-packaging-sector-uflexs-jeevaraj-gopal-pillai/130223", type: "pdf" },
-          {
-            image: "/images/new/m3.png",
-            title: "Uflex at PlastIndia 2026",
-            link: "https://packagingsouthasia.com/events/uflex-ceruflex-500/",
-            type: "pdf"
-          },
-          {
-            image: "/images/new/m4.png",
-            title: "Uflex at PlastIndia 2026",
-            link: "https://packagingsouthasia.com/consumables/uflex-chemicals-plastindia/",
-            type: "pdf"
-          },
-          {
-            image: "https://i0.wp.com/thepackman.in/wp-content/uploads/2026/02/Uflex-Plastindia-Packman-09-02-2026.jpg?w=1000&ssl=1",
-            title: "UFlex launches sustainable water-based soft touch coating",
-            link: "https://thepackman.in/uflex-launches-sustainable-water-based-soft-touch-coating-at-plastindia-2026/",
-            type: "pdf"
-          },
-          {
-            image: "/images/new/m5.png",
-            title: "PlastIndia 2026",
-            link: "https://www.packaginginsights.com/news/uflex-ceruflex-500-gravure-printing-machine-plastindia.html",
-            type: "pdf"
-          },
-          {
-            image: "https://etedge-insights.com/wp-content/uploads/2026/01/ET-Edge_imresizer.jpg",
-            title: "HR as a strategic growth engine in manufacturing",
-            link: "https://etedge-insights.com/resources/brands-speak/hr-as-a-strategic-growth-engine-in-manufacturing-inside-uflexs-people-first-playbook/",
-            type: "pdf"
-          }
+          // { image: "https://media.fortuneindia.com/fortune-india/2026-02-09/q5625jm2/uflex.jpg?w=640&auto=format,compress&q=80", title: "India-EU, U.S. trade deals to boost packaging sector", link: "https://www.fortuneindia.com/business-news/india-eu-us-trade-deals-to-boost-packaging-sector-uflexs-jeevaraj-gopal-pillai/130223", type: "pdf" },
+          // {
+          //   image: "/images/new/m3.png",
+          //   title: "Uflex at PlastIndia 2026",
+          //   link: "https://packagingsouthasia.com/events/uflex-ceruflex-500/",
+          //   type: "pdf"
+          // },
+          // {
+          //   image: "/images/new/m4.png",
+          //   title: "Uflex at PlastIndia 2026",
+          //   link: "https://packagingsouthasia.com/consumables/uflex-chemicals-plastindia/",
+          //   type: "pdf"
+          // },
+          // {
+          //   image: "https://i0.wp.com/thepackman.in/wp-content/uploads/2026/02/Uflex-Plastindia-Packman-09-02-2026.jpg?w=1000&ssl=1",
+          //   title: "UFlex launches sustainable water-based soft touch coating",
+          //   link: "https://thepackman.in/uflex-launches-sustainable-water-based-soft-touch-coating-at-plastindia-2026/",
+          //   type: "pdf"
+          // },
+          // {
+          //   image: "/images/new/m5.png",
+          //   title: "PlastIndia 2026",
+          //   link: "https://www.packaginginsights.com/news/uflex-ceruflex-500-gravure-printing-machine-plastindia.html",
+          //   type: "pdf"
+          // },
+          // {
+          //   image: "https://etedge-insights.com/wp-content/uploads/2026/01/ET-Edge_imresizer.jpg",
+          //   title: "HR as a strategic growth engine in manufacturing",
+          //   link: "https://etedge-insights.com/resources/brands-speak/hr-as-a-strategic-growth-engine-in-manufacturing-inside-uflexs-people-first-playbook/",
+          //   type: "pdf"
+          // }
         ],
         2025: [
           { image: "/images/press/1.jpg", title: "BS - Delhi (05 Dec 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Coverage_BS_Delhi_05Dec2025_PG4.pdf", type: "pdf" },
@@ -73,6 +73,8 @@ const PRESS_ROOM_DATA = {
           { image: "/images/press/PC_Sep_6.jpg", title: "IE & FE (06 Sep 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_IE_FE_06092025.pdf", type: "pdf" },
           { image: "/images/press/PC_Sep_5.jpg", title: "Times of India (Sep 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_TOI_SEP25.pdf", type: "pdf" },
           { image: "/images/press/PC_Sep_6.jpg", title: "Business World (Aug 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_BW_AUG2025.pdf", type: "pdf" },
+          { image: "/images/new/news.png", title: "The Indian Express", link: "/images/new/uflex.pdf", type: "pdf" },
+
           { image: "/images/press/1A.jpg", title: "PSA (July 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_PSA_July25.pdf", type: "pdf" },
           { image: "/images/press/3A.jpg", title: "Jul-Aug 2025", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_TPM_JUL-AUG2025.pdf", type: "pdf" },
           { image: "/images/press/PC_Jun_4A.jpg", title: "IFB (May-June 2025)", link: "https://www.uflexltd.com/pdf/MI/2025/UFlex_Cove_IFB_MAY-JUNE25.pdf", type: "pdf" },
@@ -85,111 +87,111 @@ const PRESS_ROOM_DATA = {
         ],
         2024: [],
       } satisfies { [year in Year]: MediaItem[] },
-"Online Media": {
-  2026: [
-    {
-      image: "https://media.fortuneindia.com/fortune-india/2026-02-09/q5625jm2/uflex.jpg?w=640&auto=format,compress&q=80",
-      title: "Fortune India",
-      link: "https://www.fortuneindia.com/business-news/india-eu-us-trade-deals-to-boost-packaging-sector-uflexs-jeevaraj-gopal-pillai/130223",
-      type: "article"
-    },
-    {
-      image: "/images/new/fy261.jpeg",
-      title: "Packaging South Asia",
-      link: "https://packagingsouthasia.com/events/uflex-ceruflex-500/",
-      type: "article"
-    },
-    {
-      image: "/images/new/m4.png",
-      title: "Packaging South Asia",
-      link: "https://packagingsouthasia.com/consumables/uflex-chemicals-plastindia/",
-      type: "article"
-    },
-    {
-      image: "https://i0.wp.com/thepackman.in/wp-content/uploads/2026/02/Uflex-Plastindia-Packman-09-02-2026.jpg?w=1000&ssl=1",
-      title: "The Packman",
-      link: "https://thepackman.in/uflex-launches-sustainable-water-based-soft-touch-coating-at-plastindia-2026/",
-      type: "article"
-    },
-    {
-      image: "/images/new/fy261.jpeg",
-      title: "Packaging Insights",
-      link: "https://www.packaginginsights.com/news/uflex-ceruflex-500-gravure-printing-machine-plastindia.html",
-      type: "article"
-    },
-    {
-      image: "https://etedge-insights.com/wp-content/uploads/2026/01/ET-Edge_imresizer.jpg",
-      title: "ET Edge Insights",
-      link: "https://etedge-insights.com/resources/brands-speak/hr-as-a-strategic-growth-engine-in-manufacturing-inside-uflexs-people-first-playbook/",
-      type: "article"
-    },
-    {
-      image: "https://i0.wp.com/thepackman.in/wp-content/uploads/2026/02/Uflex-Izhar-Packman-23-02-2026.jpg?w=1000&ssl=1",
-      title: "The Packman",
-      link: "https://thepackman.in/uflexs-cylinder-business-pivots-to-sustainability-and-automation-at-plastindia-2026/",
-      type: "article"
-    },
-    {
-      image: "https://i0.wp.com/thepackman.in/wp-content/uploads/2026/02/Uflex-Plastindia-Packman-19-02-2026.jpg?w=1000&ssl=1",
-      title: "The Packman",
-      link: "https://thepackman.in/uflex-brings-circular-thinking-to-inks-and-coatings/",
-      type: "article"
-    },
-    {
-      image: "/images/new/fy261.jpeg",
-      title: "The Packman",
-      link: "https://thepackman.in/uflex-unveils-ceruflex-500-high-speed-gravure-press-at-plastindia-2026/",
-      type: "article"
-    },
-    {
-      image: "/images/new/fy261.jpeg",
-      title: "FNB News",
-      link: "https://www.fnbnews.com/Top-News/uflex-unveils-fhss-monomaterial-pet-film-to-advance-sustainable-packaging-at-plastindia-2026-86020",
-      type: "article"
-    }
-  ],
+      "Online Media": {
+        2026: [
+          {
+            image: "https://media.fortuneindia.com/fortune-india/2026-02-09/q5625jm2/uflex.jpg?w=640&auto=format,compress&q=80",
+            title: "Fortune India",
+            link: "https://www.fortuneindia.com/business-news/india-eu-us-trade-deals-to-boost-packaging-sector-uflexs-jeevaraj-gopal-pillai/130223",
+            type: "article"
+          },
+          {
+            image: "/images/new/fy261.jpeg",
+            title: "Packaging South Asia",
+            link: "https://packagingsouthasia.com/events/uflex-ceruflex-500/",
+            type: "article"
+          },
+          {
+            image: "/images/new/m4.png",
+            title: "Packaging South Asia",
+            link: "https://packagingsouthasia.com/consumables/uflex-chemicals-plastindia/",
+            type: "article"
+          },
+          {
+            image: "https://i0.wp.com/thepackman.in/wp-content/uploads/2026/02/Uflex-Plastindia-Packman-09-02-2026.jpg?w=1000&ssl=1",
+            title: "The Packman",
+            link: "https://thepackman.in/uflex-launches-sustainable-water-based-soft-touch-coating-at-plastindia-2026/",
+            type: "article"
+          },
+          {
+            image: "/images/new/fy261.jpeg",
+            title: "Packaging Insights",
+            link: "https://www.packaginginsights.com/news/uflex-ceruflex-500-gravure-printing-machine-plastindia.html",
+            type: "article"
+          },
+          {
+            image: "https://etedge-insights.com/wp-content/uploads/2026/01/ET-Edge_imresizer.jpg",
+            title: "ET Edge Insights",
+            link: "https://etedge-insights.com/resources/brands-speak/hr-as-a-strategic-growth-engine-in-manufacturing-inside-uflexs-people-first-playbook/",
+            type: "article"
+          },
+          {
+            image: "https://i0.wp.com/thepackman.in/wp-content/uploads/2026/02/Uflex-Izhar-Packman-23-02-2026.jpg?w=1000&ssl=1",
+            title: "The Packman",
+            link: "https://thepackman.in/uflexs-cylinder-business-pivots-to-sustainability-and-automation-at-plastindia-2026/",
+            type: "article"
+          },
+          {
+            image: "https://i0.wp.com/thepackman.in/wp-content/uploads/2026/02/Uflex-Plastindia-Packman-19-02-2026.jpg?w=1000&ssl=1",
+            title: "The Packman",
+            link: "https://thepackman.in/uflex-brings-circular-thinking-to-inks-and-coatings/",
+            type: "article"
+          },
+          {
+            image: "/images/new/fy261.jpeg",
+            title: "The Packman",
+            link: "https://thepackman.in/uflex-unveils-ceruflex-500-high-speed-gravure-press-at-plastindia-2026/",
+            type: "article"
+          },
+          {
+            image: "/images/new/fy261.jpeg",
+            title: "FNB News",
+            link: "https://www.fnbnews.com/Top-News/uflex-unveils-fhss-monomaterial-pet-film-to-advance-sustainable-packaging-at-plastindia-2026-86020",
+            type: "article"
+          }
+        ],
 
-  2025: [
-    {
-      image: "https://cdni.haymarketmedia.in/utils/ImageResizer.ashx?n=https://img.haymarketmedia.in/printweek/3f8d87c0-4ad2-4fab-83a3-2d8e3915d46b_product%20of%20the%20month.png&w=800&h=500&q=70&c=1",
-      title: "PrintWeek",
-      link: "https://www.printweek.in/features/product-of-the-month-the-uv-portfolio-from-uflex-chemicals-61443",
-      type: "article"
-    },
-    {
-      image: "https://i0.wp.com/thepackman.in/wp-content/uploads/2025/12/Uflex-Cosmopack-22-12-2025.jpg?w=1000&ssl=1",
-      title: "The Packman",
-      link: "https://thepackman.in/uflex-backs-beauty-brands-with-customized-low-moq-tubes-and-recyclable-formats/",
-      type: "article"
-    },
-    {
-      image: "https://i0.wp.com/thepackman.in/wp-content/uploads/2025/12/Uflex-CPHI-Packman-15-12-2025-1.jpg?w=1000&ssl=1",
-      title: "The Packman",
-      link: "https://thepackman.in/uflex-displays-innovative-flexitubes-for-pharma-at-cphi-pmec-2025/",
-      type: "article"
-    },
-    {
-      image: "https://i0.wp.com/thepackman.in/wp-content/uploads/2025/12/Uflex-Holography-Packman-10-12-2025.jpg?w=1000&ssl=1",
-      title: "The Packman",
-      link: "https://thepackman.in/uflex-holography-division-highlights-new-age-anti-counterfeiting-solutions-at-cphi-pmec/",
-      type: "article"
-    },
-    {
-      image: "/images/new/new.png",
-      title: "ET Manufacturing",
-      link: "https://manufacturing.economictimes.indiatimes.com/news/industry/india-must-turn-cost-advantage-into-reliable-process-led-manufacturing-stress-industry-leaders/125748711",
-      type: "article"
-    },
-    {
-      image: "https://spnews.com/downloads/10405/download/image001.jpg?cb=4d0c1cd2db608d4060205c7bef560e9a&w=1386&h=",
-      title: "SP News",
-      link: "https://spnews.com/uflex-flexitubes/",
-      type: "article"
-    }
-  ],
+        2025: [
+          {
+            image: "https://cdni.haymarketmedia.in/utils/ImageResizer.ashx?n=https://img.haymarketmedia.in/printweek/3f8d87c0-4ad2-4fab-83a3-2d8e3915d46b_product%20of%20the%20month.png&w=800&h=500&q=70&c=1",
+            title: "PrintWeek",
+            link: "https://www.printweek.in/features/product-of-the-month-the-uv-portfolio-from-uflex-chemicals-61443",
+            type: "article"
+          },
+          {
+            image: "https://i0.wp.com/thepackman.in/wp-content/uploads/2025/12/Uflex-Cosmopack-22-12-2025.jpg?w=1000&ssl=1",
+            title: "The Packman",
+            link: "https://thepackman.in/uflex-backs-beauty-brands-with-customized-low-moq-tubes-and-recyclable-formats/",
+            type: "article"
+          },
+          {
+            image: "https://i0.wp.com/thepackman.in/wp-content/uploads/2025/12/Uflex-CPHI-Packman-15-12-2025-1.jpg?w=1000&ssl=1",
+            title: "The Packman",
+            link: "https://thepackman.in/uflex-displays-innovative-flexitubes-for-pharma-at-cphi-pmec-2025/",
+            type: "article"
+          },
+          {
+            image: "https://i0.wp.com/thepackman.in/wp-content/uploads/2025/12/Uflex-Holography-Packman-10-12-2025.jpg?w=1000&ssl=1",
+            title: "The Packman",
+            link: "https://thepackman.in/uflex-holography-division-highlights-new-age-anti-counterfeiting-solutions-at-cphi-pmec/",
+            type: "article"
+          },
+          {
+            image: "/images/new/new.png",
+            title: "ET Manufacturing",
+            link: "https://manufacturing.economictimes.indiatimes.com/news/industry/india-must-turn-cost-advantage-into-reliable-process-led-manufacturing-stress-industry-leaders/125748711",
+            type: "article"
+          },
+          {
+            image: "https://spnews.com/downloads/10405/download/image001.jpg?cb=4d0c1cd2db608d4060205c7bef560e9a&w=1386&h=",
+            title: "SP News",
+            link: "https://spnews.com/uflex-flexitubes/",
+            type: "article"
+          }
+        ],
 
-  2024: []
-} satisfies { [year in Year]: MediaItem[] },
+        2024: []
+      } satisfies { [year in Year]: MediaItem[] },
       // "Online Media": {
       //   2026: [
       //     {image:"https://i0.wp.com/thepackman.in/wp-content/uploads/2026/02/Uflex-Izhar-Packman-23-02-2026.jpg?w=1000&ssl=1",
@@ -370,7 +372,7 @@ const PRESS_ROOM_DATA = {
           { image: "/images/press/EC_Nov_1.jpg", title: "ET NOW", link: "https://www.youtube.com/watch?v=CmapnryMvIk", type: "youtube" },
           { image: "/images/press/EC_Nov_1.jpg", title: "ET NOW", link: "https://www.youtube.com/watch?v=0mwOm5M_xxE", type: "youtube" },
           { image: "/images/press/EC_Nov_1.jpg", title: "NDTV PROFIT", link: "https://www.youtube.com/watch?v=S8-J23J8O4c", type: "youtube" },
-          
+
           // { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=xAcYOc4R0Oo", type: "youtube" },
           // { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=mL-quTnAEDQ", type: "youtube" },
           // { image: "/images/press/EC_Nov_1.jpg", title: "2026", link: "https://www.youtube.com/watch?v=1eicpv-9QS4", type: "youtube" },
@@ -389,7 +391,7 @@ const PRESS_ROOM_DATA = {
           { image: "/images/press/EC_Feb_2.jpg", title: "CNBC ", link: "https://www.youtube.com/watch?v=zybZmfkJ6eU", type: "youtube" },
           { image: "/images/press/EC_Aug_3.jpg", title: " NDTV PROFIT ", link: "https://www.youtube.com/watch?v=sMMyX-K1E2w", type: "youtube" },
           { image: "/images/press/EC_Aug_2.jpg", title: " CNBC", link: "https://www.youtube.com/watch?v=i6sODEzr5Rs", type: "youtube" },
-                    { image: "/images/press/EC_Jun_2.jpg", title: "IANS ", link: "https://www.youtube.com/watch?v=m6IqXAURC3c", type: "youtube" },
+          { image: "/images/press/EC_Jun_2.jpg", title: "IANS ", link: "https://www.youtube.com/watch?v=m6IqXAURC3c", type: "youtube" },
           { image: "/images/press/EC_Sep_1.jpg", title: "ET NOW", link: "https://www.youtube.com/watch?v=IgjahqBZpYg", type: "youtube" },
           { image: "/images/press/EC_Sep_2.jpg", title: " SUSTAINABILITY KARMA", link: "https://www.youtube.com/watch?v=i2WA8rWIQEk", type: "youtube" },
         ],
@@ -496,11 +498,11 @@ const PressRoomPage = () => {
 
   // Filter years that actually have data for the active tab
   const availableYears = React.useMemo(() => {
-  return PRESS_ROOM_DATA.mediaCoverage.years.filter(
-    (year) => PRESS_ROOM_DATA.mediaCoverage.data[activeTab][year]?.length > 0
-  );
-}, [activeTab]);
-console.log(PRESS_ROOM_DATA.mediaCoverage.data["Electronic Media"][2026][0])
+    return PRESS_ROOM_DATA.mediaCoverage.years.filter(
+      (year) => PRESS_ROOM_DATA.mediaCoverage.data[activeTab][year]?.length > 0
+    );
+  }, [activeTab]);
+  console.log(PRESS_ROOM_DATA.mediaCoverage.data["Electronic Media"][2026][0])
   // Switch activeYear if the currently selected one is not available for this tab
   React.useEffect(() => {
     if (availableYears.length > 0 && !availableYears.includes(activeYear)) {
@@ -541,16 +543,16 @@ console.log(PRESS_ROOM_DATA.mediaCoverage.data["Electronic Media"][2026][0])
     }
   }
   console.log("Current data:", {
-  tab: activeTab,
-  year: activeYear,
-  totalItems: currentItems.length,
-  currentPage,
-  startIndex,
-  showing: paginatedItems.length,
-  totalPages
-});
+    tab: activeTab,
+    year: activeYear,
+    totalItems: currentItems.length,
+    currentPage,
+    startIndex,
+    showing: paginatedItems.length,
+    totalPages
+  });
   return (
-   <div className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen">
       <SiteHeader />
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
@@ -592,7 +594,7 @@ console.log(PRESS_ROOM_DATA.mediaCoverage.data["Electronic Media"][2026][0])
                 {paginatedItems.map((item, idx) => {
                   // const uniqueKey = `${activeTab}-${activeYear}-${item.link || item.title || idx}`;
                   const uniqueKey = `${activeTab}-${activeYear}-${idx}-${item.link}`;
-//                                 index helps when links are actually identical
+                  //                                 index helps when links are actually identical
 
                   if (activeTab === "Electronic Media") {
                     return (
