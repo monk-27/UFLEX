@@ -505,7 +505,7 @@ system ensures clean, stable, high-speed performance.`,
                     subTitle: "Recycling Machine can be categorized as under:",
                     items: [
                         {
-                            label: "ReLAM 250:",
+                            label: "ReLAM 50:",
                     image:"/images/new/relam.png",
 
                     text:`ReLAM 50 is a decentralized recycling system designed to process up to 50 kg of

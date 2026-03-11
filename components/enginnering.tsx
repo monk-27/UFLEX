@@ -133,12 +133,8 @@ export const businesses: BusinessConfig[] = [
                     title: "Ceruflex 500",
                     description: `UFlex has introduced the CERUFLEX 500, its next-generation high-speed gravure
 printing machine developed in collaboration with Italy’s Gravtech.
-\n The machine delivers printing speeds of up to 500 m/min and features advanced technologies
-such as a shaftless cylinder system, intelligent inking, and trolley-based job
-changeovers for superior efficiency and quality. 
-\n Designed with sustainability in mind,
-CERUFLEX 500 reduces energy, ink, and solvent usage while enhancing
-productivity and print precision for flexible packaging converters.`,
+\n The machine delivers printing speeds of up to 500 m/min and features advanced technologies such as a shaftless cylinder system, intelligent inking, and trolley-based job change overs for superior efficiency and quality. 
+\n Designed with sustainability in mind,CERUFLEX 500 reduces energy, ink, and solvent usage while enhancing productivity and print precision for flexible packaging converters.`,
                     image: "/images/new/fy261.jpeg"
 
                 },
@@ -146,8 +142,8 @@ productivity and print precision for flexible packaging converters.`,
                     id: "asepto-speed-25000",
                     title: "Asepto Speed 25000 machine",
                     description:
-                        `UFlex, under the flagship of Asepto, introduced the next-gen, superpower Asepto Speed 25000 machine, an innovative engineering marvel that can process 25,000 aseptic liquid cartons per hour. 
-                        \nIt is the next-generation aseptic liquid filling machine with state-of-the-art technology that works at lightning speed with the convenience of an all-in-one portion-pack filling facility. One needs to fit in the paper roll and the machine works automatically to process it into the final folder. The machine has inbuilt chambers for splicing, stripping, sterilizing, filling, sealing, and dispensing processes that work with a click of a button. It is easy to operate, and the complete process can be controlled through a human-machine interface. It is designed to boost the production capacity by more than double the speed of your current production.
+                        `UFlex, under its flagship brand Asepto, introduced the next-generation Asepto Speed 25000, an advanced aseptic liquid filling machine capable of processing 25,000 cartons per hour.
+                        \nDesigned as an all-in-one portion-pack solution, it converts paper rolls into finished cartons automatically. The machine features integrated chambers for splicing, sterilizing, filling, sealing, and dispensing, all controlled via a user-friendly human-machine interface. Engineered for efficiency, it significantly enhances productivity, delivering more than double the output of conventional production systems.
 `,
                     image: "/images/new/asepto.png",
                 },
@@ -155,26 +151,52 @@ productivity and print precision for flexible packaging converters.`,
                     id: "accu-slit-3300",
                     title: "Accu Slit-3300",
                     description:
-                        "UFlex developed Accu Slit-3300, the new slitter of width 3300, for slitting Metalized BOPP and other substrates.",
+                        "UFlex developed Accu Slit-3300, the new slitter of width 3300, for slitting Metalized BOPP and other substrates. This is secondary slitters for packaging film manufacturing Industry with a working width of models from 2500 mm to 3300 mm. This slitter can slit BOPET, BOPP, CPP and Plain film and can run at a maximum speed of 800 mpm.",
                     image: "/images/accu.png",
                 },
                 {
-                    id: "double-head-coating-1650",
-                    title: "Double Head Coating-1650",
+                    id: "rotoflex",
+                    title: "Rotoflex ELS Standard Special -1300 Printing Machine",
                     description:
-                        `UFlex's Engineering Business meets market demand with coating machines covering up to 2500mm web widths. Recent offerings include a 1650mm double-headed model applying various coatings with methods like gravure and kiss coating. 
-                        \n Ceramic IR heaters ensure smooth coating, while safety measures like the LEL system are integrated. Additional features like floor lifting unwind, sleeve-type impression rollers, and chamber doctor blades enhance versatility. With corona treaters, these machines offer coatings from 0.2 to 6 GSM, adding value to substrates.
- `,
-                    image: "/images/double.png",
+                        "Rotoflex ELS Standard Special-1300 is engineered for reliable, high-quality printing on flexible packaging materials, with a maximum web width of 1320 mm. It features a robust main drive system for smooth and stable performance, along with precision side lay assembly for accurate web alignment. Equipped with a shafted printing cylinder, doctor blade assembly, and individual ink trolley system, it ensures consistent print quality. Advanced motorized controls enable precise registration, uniform ink transfer, and faster job changeovers.",
+                    image: "/images/new/els.png",
+                },
+                { id:"solvent-less-lamination-machines",
+                    title: "Solvent-less Lamination Machines:",
+                            image:"/images/new/solventless.png",
+                            description: "Solventless Super-550 is a high-speed, eco-friendly laminating machine with a maximum web width of 1320 mm, designed for flexible packaging applications. It features independent motors at both unwind and rewind sections for precise web tension control, smooth material handling, and stable operation across diverse substrates. Equipped with sleeve-type transport rollers, it ensures uniform web support and high running accuracy. An integrated sleeve cleaning system removes adhesive residue, maintaining consistent lamination quality and reducing downtime.",
+
                 },
                 {
-                    id: "pfs-4u",
-                    title: "LPFS-4U",
-                    description:
-                        `UFlex launched the LPFS-4U (4 UP Linear, Pick, Fill, and Seal) machine in Q3, 2022. This machine, driven entirely by servos, ensures speed, performance, safety, hygiene, and environmental sustainability for brands. 
-                        \nWith an operator-friendly interface and efficient filling system, it accommodates various applications, running up to 20 PPM per track with four channels. `,
-                    image: "/images/new/lpfs.png",
+                    id:"slit",
+                    title:"High Speed Duplex Slitter Model: TRU SLIT-600",
+                    description: `TRU SLIT-600 is a high-performance slitting machine designed for productivity,safety, and efficient workflow in flexible packaging operations. It features automatic roll unloading and stacking to reduce manual handling. A separated unwind stand with floor pick-up and motorized roll clamping ensures safe jumbo roll loading. With speeds up to 600 MPM and a maximum rewind diameter of 600 mm, it enables precision slitting through multiple cutting options. An advanced trim conveying system ensures clean, stable, high-speed performance.`,
+                            image:"/images/new/sliter.png"
                 },
+//                 {
+//                     id: "double-head-coating-1650",
+//                     title: "Double Head Coating-1650",
+//                     description:
+//                         `UFlex's Engineering Business meets market demand with coating machines covering up to 2500mm web widths. Recent offerings include a 1650mm double-headed model applying various coatings with methods like gravure and kiss coating. 
+//                         \n Ceramic IR heaters ensure smooth coating, while safety measures like the LEL system are integrated. Additional features like floor lifting unwind, sleeve-type impression rollers, and chamber doctor blades enhance versatility. With corona treaters, these machines offer coatings from 0.2 to 6 GSM, adding value to substrates.
+//  `,
+//                     image: "/images/double.png",
+//                 },
+                // {
+                //     id: "pfs-4u",
+                //     title: "LPFS-4U",
+                //     description:
+                //         `UFlex launched the LPFS-4U (4 UP Linear, Pick, Fill, and Seal) machine in Q3, 2022. This machine, driven entirely by servos, ensures speed, performance, safety, hygiene, and environmental sustainability for brands. 
+                //         \nWith an operator-friendly interface and efficient filling system, it accommodates various applications, running up to 20 PPM per track with four channels. `,
+                //     image: "/images/new/lpfs.png",
+                // },
+                 {
+                    id:"relam-50",
+                            title: "ReLAM 50:",
+                    image:"/images/new/relam.png",
+
+                    description:`ReLAM 50 is a decentralized recycling system designed to process up to 50 kg of mixed flexible waste per hour, offering an efficient solution for hard-to-recycle materials. Ideal for start-ups, rural enterprises, local recycling units, waste management companies, NGOs, and municipalities, the system converts mixed flexible waste into recycled granules or panels. These outputs can be reused to manufacture household plastic products, plastic lumber, tiles, and other non-critical applications. Compact and versatile, ReLAM 50 enables grassroots participation in the circular economy while advancing sustainable waste management practices`,
+                        },
                 {
                     id: "rotary-horizontal-high-speed-form-fill-and-seal",
                     title: "Rotary Horizontal High-Speed Form Fill and Seal Machine with Gripper",
@@ -183,15 +205,15 @@ productivity and print precision for flexible packaging converters.`,
                 },
                 
                 
-                {
-                    id: "uflex-flexi-liquid-double-head",
-                    title: "UFlex-flexi-liquid (double head)",
-                    description:
-                        `The newly introduced machinery boasts an array of features designed to optimize operation efficiency. Its user-friendly interface ensures easy operation, while its low maintenance requirements minimize downtime. 
-                        \nDespite its compact design and small footprint, it integrates seven servos, enabling high-speed performance. A specialized forming tool ensures uniform and superior forming, while the engineered filling system with positive cut-off guarantees precision. Additionally, a servo-controlled continuous sealing mechanism maximizes sealing time, enhancing sealing quality and strength. The servo-pulling method ensures accurate and uniform eye-mark-to-eye-mark pulling. Notably, the machine facilitates seamless roll changes without halting operations. Optional features include an auto splicing system, online coding system, and outfeed conveyor, further enhancing productivity. Customer color preferences are accommodated, and pouch-making capacity varies depending on film material and thickness. The equipment improvements may lead to changes in appearance and optional features are sold separately from standard equipment.
-`,
-                    image: "/images/flexiuflex.png",
-                },
+//                 {
+//                     id: "uflex-flexi-liquid-double-head",
+//                     title: "UFlex-flexi-liquid (double head)",
+//                     description:
+//                         `The newly introduced machinery boasts an array of features designed to optimize operation efficiency. Its user-friendly interface ensures easy operation, while its low maintenance requirements minimize downtime. 
+//                         \nDespite its compact design and small footprint, it integrates seven servos, enabling high-speed performance. A specialized forming tool ensures uniform and superior forming, while the engineered filling system with positive cut-off guarantees precision. Additionally, a servo-controlled continuous sealing mechanism maximizes sealing time, enhancing sealing quality and strength. The servo-pulling method ensures accurate and uniform eye-mark-to-eye-mark pulling. Notably, the machine facilitates seamless roll changes without halting operations. Optional features include an auto splicing system, online coding system, and outfeed conveyor, further enhancing productivity. Customer color preferences are accommodated, and pouch-making capacity varies depending on film material and thickness. The equipment improvements may lead to changes in appearance and optional features are sold separately from standard equipment.
+// `,
+//                     image: "/images/flexiuflex.png",
+//                 },
             ],
         },
         sustainability: {
