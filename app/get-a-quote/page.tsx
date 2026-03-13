@@ -673,7 +673,7 @@ export default function EnquiryForm() {
                 <div className="md:col-span-2">
                   <label className="lato-500 mb-2 block text-sm text-gray-700 flex items-center gap-2">
                     <Paperclip className="h-4 w-4 text-[#117ABA]" />
-                    Attachments <span className="text-xs text-gray-400 lato-400 ml-1">(Optional · Images &amp; Videos only · Max 5 files · 10 MB each)</span>
+                    Attachments <span className="text-xs text-gray-400 lato-400 ml-1">(Optional · Images &amp; Videos , Pdfs, .xl, .doc only · Max 5 files · 10 MB each)</span>
                   </label>
 
                   {/* Drop / click zone */}
@@ -685,7 +685,7 @@ export default function EnquiryForm() {
                     <p className="text-sm text-gray-500 lato-400">
                       Click to browse or drop files here
                     </p>
-                    <p className="text-xs text-gray-400 lato-400 mt-1">Supports: JPG, PNG, GIF, MP4, MOV, AVI, etc.</p>
+                    <p className="text-xs text-gray-400 lato-400 mt-1">Supports: JPG, PNG, Pdfs, .xl, .doc, MP4, MOV, AVI, etc.</p>
                     <input
                       ref={fileInputRef}
                       type="file"
