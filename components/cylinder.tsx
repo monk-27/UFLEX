@@ -276,7 +276,7 @@ export const businesses: BusinessConfig[] = [
       title: "Key People",
       details: [
         {
-          photo: "/images/parvez.png",
+          photo: "/images/new/pe.jpg",
           name: "Mr. Parwez Izhar",
           role: "Executive Vice President - Printing Cylinders Business",
           summary: `With nearly three decades of experience
