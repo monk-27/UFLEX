@@ -169,12 +169,12 @@ const packagingData = [
   {
     "id": "Flexible Tube",
     title: "Flexible Tube",
-    image: "images/heroflexi.png",
+    image: "/images/heroflexi.png",
     "imageAlt": "UFlex Flexible Packaging Solutions",
     paragraphs: [
-      "Our innovative multilayer flexible tube packaging solutions have been designed especially for the beauty, personal care and pharma industries.",
-      "At UFlex, we challenge conventions through design thinking—reimagining material choices, printing, lamination, and production to deliver packaging that’s as innovative as it is impactful. Our strengths include:",
-      "\n•Superior Print Quality: Seamless 360° printing on laminate tubes with no side seam gaps, ensuring sharp image reproduction, intricate patterns, vibrant colors, and even fine vignette fonts.\n• **Advanced Substrate Layering**: Expertise in combining materials such as metallics, PE, BOPP, and PET to enhance aesthetics, barrier protection, and overall performance.\n• **Anti-Counterfeit Solutions**: Integrated holography for brand protection, authentication, and consumer trust.\n• **Vertical Integration**: End-to-end in-house capabilities that drive faster turnaround times and unmatched production agility.\n• **Sustainability Leadership**: Mono-material and PCR-compatible solutions that go beyond traditional multi-layer laminates.",
+      "Our innovative multilayer flexible tube packaging solutions have been designed especially for the beauty, personal care and pharma industries. At UFlex, we challenge conventions through design thinking—reimagining material choices, printing, lamination, and production to deliver packaging that’s as innovative as it is impactful.",
+      " Our strengths include:",
+      "\n Superior Print Quality: Seamless 360° printing on laminate tubes with no side seam gaps, ensuring sharp image reproduction, intricate patterns, vibrant colors, and even fine vignette fonts.\n Advanced Substrate Layering: Expertise in combining materials such as metallics, PE, BOPP, and PET to enhance aesthetics, barrier protection, and overall performance.\n Anti-Counterfeit Solutions: Integrated holography for brand protection, authentication, and consumer trust.\n Vertical Integration: End-to-end in-house capabilities that drive faster turnaround times and unmatched production agility.\n Sustainability Leadership: Mono-material and PCR-compatible solutions that go beyond traditional multi-layer laminates.",
       "The outcome: Packaging that’s truly brand-centric—distinctive on the shelf, enriching for the consumer, and built for a sustainable future."
     ]
   }
@@ -402,7 +402,7 @@ const FlexiComp: React.FC<Props> = ({ business }) => {
                 className="relative aspect-[16/10] w-full overflow-hidden "
               >
                 <Image
-                  src="images/heroflexi.png"
+                  src="/images/new/flexi.png"
                   alt="UFlex capabilities across the value chain"
                   fill
                   className="object-fill rounded-sm"

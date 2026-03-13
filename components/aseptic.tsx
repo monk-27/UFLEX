@@ -85,14 +85,14 @@ of UFlex, is the world’s fastest-
 growing aseptic packaging company,
 proudly serving over 200 esteemed
 clients across more than 40
-countries.`,
-      `As a leading provider of end-to-end
+countries.
+As a leading provider of end-to-end
 aseptic liquid packaging solutions, we
 offer innovative designs, six-layered
 cartons, highly advanced filling
 machines, and exceptional service
-from highly trained engineers. In
-alignment with the Government’s
+from highly trained engineers.`,
+      ` In alignment with the Government’s
 Make in India initiative, our state-
 of-the-art manufacturing facility in
 Sanand, Gujarat, spans 21 acres

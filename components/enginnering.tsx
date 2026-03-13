@@ -68,14 +68,14 @@ const packagingData = [
         paragraphs: [
             `A leading manufacturer specializing in top-tier
 packaging, printing, and allied machines,
-catering to diverse needs across industries.`,
-            `Established in 1985, UFlex Engineering is
+catering to diverse needs across industries. Established in 1985, UFlex Engineering is
 committed to delivering high-performance
 machines and tailored solutions, which has
 propelled us to the forefront of the
 industry. We offer a comprehensive range
 of products and cater to diverse needs
 across various sectors.`,
+            
             `With high-end CAD software, streamlined
 processes, and collaborative efforts across
 departments, we deliver tailored products
