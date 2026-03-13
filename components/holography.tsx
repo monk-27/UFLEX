@@ -455,7 +455,7 @@ const packagingData = [
         content: [
             {
                 type: "paragraph",
-                text: "The UFlex holography business is India’s largest and most trusted provider of brand protection and anti-counterfeiting solutions, as well as an emerging global player in the industry. The Holography Business of UFlex offers a comprehensive range of holographic solutions, including advanced security holograms, security paper labels & tax stamps, wide web holographic films, stamping foils, transfer holographic metallized paper & paperboard, security documents, and textile application films for sequins, hot melt, and glitter powder.",
+                text: "UFlex holography business is India’s largest and most trusted provider of brand protection and anti-counterfeiting solutions, as well as an emerging global player in the industry. Its advanced manufacturing facilities in Noida and Jammu are equipped with robust in-house capabilities, enabling high-volume production while maintaining the highest quality and security standards.",
                 strong: ["Holography Business of UFlex"]
             },
             // {
@@ -465,34 +465,34 @@ const packagingData = [
             // },
             {
                 type: "paragraph",
-                text: "UFlex Limited’s advanced manufacturing facilities in Noida and Jammu are equipped with advanced in-house capabilities, enabling high-volume production while maintaining the highest quality standards. Specializing in holography-based anti-counterfeiting packaging and brand protection solutions, our facilities empower brands to combat counterfeiting threats and safeguard their business interests.",
+                text: "The business offers a comprehensive portfolio of holographic solutions, including advanced security holograms, security paper labels and tax stamps, wide web holographic films, stamping foils, transfer holographic metallized paper and paperboard, security documents, and textile application films for sequins, hot melt and glitter powder. ",
                 strong: ["UFlex Limited’s advanced manufacturing facilities"]
             },
-            {
-                type: "heading",
-                text: "Global Certifications & Industry Recognition"
-            },
+            // {
+            //     type: "heading",
+            //     text: "Global Certifications & Industry Recognition"
+            // },
             {
                 type: "paragraph",
-                text: "Our commitment to quality, security, and sustainability is reinforced by globally recognized certifications, including:",
+                text: "Specializing in holography-based anti-counterfeiting packaging and brand protection solutions, these facilities empower brands to combat counterfeiting threats and safeguard their business interests. The business adheres to globally recognized certifications, including ISO 9001:2015, ISO 14001:2015, ISO/IEC 27001:2022, ISO 14298:2021, HSSMS certification, and IBA Certified Security Printer status, reinforcing its commitment to quality, security and sustainability. As an industry leader, UFlex is also a proud member of ITSA, IOTA (IHMA), and ASPA, contributing actively to the advancement of security printing and brand protection worldwide.",
                 strong: ["quality, security, and sustainability"]
             },
-            {
-                type: "list",
-                items: [
-                    { label: "ISO 9001:2015", value: "Quality Management System (QMS)" },
-                    { label: "ISO 14001:2015", value: "Environmental Management System" },
-                    { label: "ISO/IEC 27001:2022", value: "Information Security Management System" },
-                    { label: "ISO 14298:2021", value: "Graphic Technology & Security Printing Management" },
-                    { label: "HSSMS Certification", value: "Health & Safety Management System" },
-                    { label: "IBA Certified Security Printer" }
-                ]
-            },
-            {
-                type: "paragraph",
-                text: "As an industry leader, UFlex is a proud member of ITSA, IOTA (IHMA), and ASPA, actively contributing to the advancement of security printing and brand protection.",
-                strong: ["industry leader", "ITSA", "IOTA (IHMA)", "ASPA"]
-            }
+            // {
+            //     type: "list",
+            //     items: [
+            //         { label: "ISO 9001:2015", value: "Quality Management System (QMS)" },
+            //         { label: "ISO 14001:2015", value: "Environmental Management System" },
+            //         { label: "ISO/IEC 27001:2022", value: "Information Security Management System" },
+            //         { label: "ISO 14298:2021", value: "Graphic Technology & Security Printing Management" },
+            //         { label: "HSSMS Certification", value: "Health & Safety Management System" },
+            //         { label: "IBA Certified Security Printer" }
+            //     ]
+            // },
+            // {
+            //     type: "paragraph",
+            //     text: "As an industry leader, UFlex is a proud member of ITSA, IOTA (IHMA), and ASPA, actively contributing to the advancement of security printing and brand protection.",
+            //     strong: ["industry leader", "ITSA", "IOTA (IHMA)", "ASPA"]
+            // }
         ]
     }
 ];
