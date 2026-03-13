@@ -80,6 +80,25 @@ const BoardOfDirectors = () => {
     setCanPrev(emblaApi.canScrollPrev());
     setCanNext(emblaApi.canScrollNext());
   }, [emblaApi]);
+  const getSlidesToScroll = () => {
+  if (typeof window === "undefined") return 1;
+
+  if (window.innerWidth >= 768) return 4;   // md
+  if (window.innerWidth >= 640) return 2;   // sm
+  return 1;                                 // mobile
+};
+
+const scrollPrev = useCallback(() => {
+  if (!emblaApi) return;
+  const slides = getSlidesToScroll();
+  emblaApi.scrollTo(emblaApi.selectedScrollSnap() - slides);
+}, [emblaApi]);
+
+const scrollNext = useCallback(() => {
+  if (!emblaApi) return;
+  const slides = getSlidesToScroll();
+  emblaApi.scrollTo(emblaApi.selectedScrollSnap() + slides);
+}, [emblaApi]);
 
   useEffect(() => {
     if (!emblaApi) return;
@@ -193,7 +212,8 @@ const BoardOfDirectors = () => {
             <div className="flex items-center justify-center mt-10 pt-6 gap-6 ">
 
             <button
-              onClick={() => emblaApi?.scrollPrev()}
+              // onClick={() => emblaApi?.scrollPrev()}
+              onClick={scrollPrev}
               disabled={!canPrev}
               aria-label="Previous"
               className=" z-10 -translate-y-1/2 inline-flex items-center justify-center
@@ -203,7 +223,8 @@ const BoardOfDirectors = () => {
               <ChevronLeft className="h-5 w-5 text-gray-400" />
             </button>
             <button
-              onClick={() => emblaApi?.scrollNext()}
+              // onClick={() => emblaApi?.scrollNext()}
+              onClick={scrollNext}
               disabled={!canNext}
               aria-label="Next"
               className=" z-10 -translate-y-1/2 inline-flex items-center justify-center

@@ -68,8 +68,25 @@ export default function BusinessCardsCarousel() {
     dragFree: false,
   });
 
-  const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
-  const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
+  // const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
+  // const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
+  const scrollPrev = useCallback(() => {
+  if (!emblaApi) return;
+
+  const slidesToScroll =
+    window.innerWidth >= 1024 ? 3 : window.innerWidth >= 640 ? 2 : 1;
+
+  emblaApi.scrollTo(emblaApi.selectedScrollSnap() - slidesToScroll);
+}, [emblaApi]);
+
+const scrollNext = useCallback(() => {
+  if (!emblaApi) return;
+
+  const slidesToScroll =
+    window.innerWidth >= 1024 ? 3 : window.innerWidth >= 640 ? 2 : 1;
+
+  emblaApi.scrollTo(emblaApi.selectedScrollSnap() + slidesToScroll);
+}, [emblaApi]);
 
   return (
     <section className="pt-12">
