@@ -131,8 +131,7 @@ export const businesses: BusinessConfig[] = [
                 {
                     id: "ceruflex",
                     title: "Ceruflex 500",
-                    description: `UFlex has introduced the CERUFLEX 500, its next-generation high-speed gravure
-printing machine developed in collaboration with Italy’s Gravtech.
+                    description: `UFlex has introduced the CERUFLEX 500, its next-generation high-speed gravure printing machine developed in collaboration with Italy’s Gravtech.
 \n The machine delivers printing speeds of up to 500 m/min and features advanced technologies such as a shaftless cylinder system, intelligent inking, and trolley-based job change overs for superior efficiency and quality. 
 \n Designed with sustainability in mind,CERUFLEX 500 reduces energy, ink, and solvent usage while enhancing productivity and print precision for flexible packaging converters.`,
                     image: "/images/new/fy261.jpeg"
