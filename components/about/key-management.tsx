@@ -54,8 +54,8 @@ const directors: Director[] = [
   },
 
   {
-    name: "Mr. Sumeet Kumar", position: "Executive Vice President – Finance",
-    img: "/images/new/sumeet.jpg",
+    name: "Mr. Sumit Kumar", position: "Executive Vice President – Finance",
+    img: "/images/new/sumit.jpg",
     bio: "Mr. Sumeet Kumar is a seasoned finance professional with over three decades of leadership experience across prominent corporate groups such as LANCO Group, Global Group, and Hi-Tech Gears Group. He has held key roles including President, CFO, and Group CFO, and brings deep expertise in project and corporate finance, fundraising, M&A, financial planning and control, treasury, and investor relations."
   },
 ];
