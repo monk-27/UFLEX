@@ -113,17 +113,94 @@ $fromEmail = 'exquisiteshashi@gmail.com';
 $productList = empty($product) ? 'None selected' : implode(', ', $product);
 $attachmentsList = empty($uploadedFiles) ? 'No attachments' : implode("\n", $uploadedFiles);
 
-// Admin Email Body
-$adminBody = "New Quote Request Details:\n\n";
-$adminBody .= "Name: {$name}\n";
-$adminBody .= "Phone: {$phone}\n";
-$adminBody .= "Email: {$email}\n";
-$adminBody .= "Company: {$companyName}\n";
-$adminBody .= "Enquiry For: {$enquiryFor}\n";
-$adminBody .= "Products: {$productList}\n\n";
-$adminBody .= "Message:\n{$message_body}\n\n";
-$adminBody .= "Attachments:\n{$attachmentsList}\n\n";
-$adminBody .= "Submitted via cPanel PHP form handler.";
+$submittedAt = date('Y-m-d H:i:s P');
+
+// Format Products and Attachments for HTML
+$productListHtml = '';
+if (!empty($product)) {
+    foreach ($product as $item) {
+        $productListHtml .= '<li style="margin:2px 0;">' . htmlspecialchars($item) . '</li>';
+    }
+}
+
+$attachmentsListHtml = '';
+if (!empty($uploadedFiles)) {
+    foreach ($uploadedFiles as $index => $url) {
+        $num = $index + 1;
+        $attachmentsListHtml .= '<li style="margin:4px 0;"><a href="' . htmlspecialchars($url) . '" style="color:#117ABA;" target="_blank">Attachment ' . $num . '</a></li>';
+    }
+}
+
+$messageLinesHtml = nl2br(htmlspecialchars($message_body));
+
+// Admin Email Body (HTML)
+$adminBody = <<<HTML
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+    .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+    .header { background-color: #117ABA; color: white; padding: 20px; text-align: center; border-radius: 5px 5px 0 0; }
+    .content { background-color: #f9f9f9; padding: 30px; border: 1px solid #ddd; border-top: none; }
+    .field { margin-bottom: 15px; }
+    .label { font-weight: bold; color: #117ABA; display: inline-block; width: 150px; }
+    .value { color: #333; }
+    .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+        <h1>New Quote Request</h1>
+    </div>
+    <div class="content">
+      <div class="field"><span class="label">Name:</span><span class="value">{$name}</span></div>
+      <div class="field"><span class="label">Phone:</span><span class="value">{$phone}</span></div>
+      <div class="field"><span class="label">Company Name:</span><span class="value">{$companyName}</span></div>
+      <div class="field"><span class="label">Enquiry For:</span><span class="value">{$enquiryFor}</span></div>
+HTML;
+
+if (!empty($productListHtml)) {
+    $adminBody .= <<<HTML
+      <div class="field">
+        <span class="label">Product(s):</span>
+        <ul style="margin:4px 0 0 0;padding-left:18px;color:#333;">{$productListHtml}</ul>
+      </div>
+HTML;
+}
+
+$adminBody .= <<<HTML
+      <div class="field"><span class="label">Email:</span><span class="value">{$email}</span></div>
+      <div class="field">
+        <span class="label">Message:</span>
+        <div class="value" style="margin-top: 10px; padding: 15px; background: white; border-radius: 5px;">
+          {$messageLinesHtml}
+        </div>
+      </div>
+      <div class="field"><span class="label">Submitted At:</span><span class="value">{$submittedAt}</span></div>
+HTML;
+
+if (!empty($attachmentsListHtml)) {
+    $adminBody .= <<<HTML
+      <div class="field">
+        <span class="label">Attachments:</span>
+        <ul style="margin:4px 0 0 0;padding-left:18px;color:#333;">
+          {$attachmentsListHtml}
+        </ul>
+      </div>
+HTML;
+}
+
+$adminBody .= <<<HTML
+    </div>
+    <div class="footer">
+      <p>This is an automated email from UFlex Quote Form</p>
+    </div>
+  </div>
+</body>
+</html>
+HTML;
 
 $mail = new PHPMailer(true);
 $mailSent = false;
@@ -145,19 +222,100 @@ try {
     $mail->addReplyTo($email, $name);
 
     // Content
-    $mail->isHTML(false);
+    $mail->isHTML(true);
     $mail->Subject = "New Quote Enquiry from {$name} ({$companyName})";
     $mail->Body    = $adminBody;
+    $mail->AltBody = "New Quote from {$name}:\n\n{$message_body}";
 
     $mail->send();
     $mailSent = true;
     
-    // Attempt confirmation to user
+    // Attempt HTML confirmation to user
+    $userBody = <<<HTML
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+    .container { max-width: 600px; margin: 20px auto; border: 1px solid #e0e0e0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    .header { background: linear-gradient(135deg, #117ABA 0%, #0F6AA0 100%); color: white; padding: 40px 20px; text-align: center; }
+    .header h1 { margin: 0; font-size: 24px; font-weight: 600; letter-spacing: 0.5px; }
+    .content { padding: 40px; background-color: #ffffff; }
+    .greeting { font-size: 18px; font-weight: 600; color: #117ABA; margin-bottom: 20px; }
+    .message { color: #555; margin-bottom: 30px; font-size: 15px; }
+    .details-box { background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 25px; margin-bottom: 30px; }
+    .details-title { font-weight: 700; font-size: 14px; color: #64748b; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; }
+    .detail-row { display: flex; margin-bottom: 10px; font-size: 14px; }
+    .detail-label { font-weight: 600; color: #117ABA; width: 120px; flex-shrink: 0; }
+    .detail-value { color: #334155; }
+    .footer { background-color: #f1f5f9; padding: 25px; text-align: center; color: #64748b; font-size: 13px; border-top: 1px solid #e2e8f0; }
+    .cta-button { display: inline-block; padding: 12px 25px; background-color: #117ABA; color: white !important; text-decoration: none; border-radius: 6px; font-weight: 600; margin-top: 10px; transition: background 0.3s; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Enquiry Received!</h1>
+    </div>
+    <div class="content">
+      <div class="greeting">Hi {$name},</div>
+      <div class="message">
+        Thank you for reaching out to <strong>UFlex Limited</strong>. We have successfully received your quote request for <strong>{$enquiryFor}</strong>. 
+        <br><br>
+        Our team is currently reviewing your requirements and will get back to you with a detailed proposal within 24-48 business hours.
+      </div>
+      
+      <div class="details-box">
+        <div class="details-title">Summary of your Enquiry</div>
+        <div class="detail-row">
+          <span class="detail-label">Division:</span>
+          <span class="detail-value">{$enquiryFor}</span>
+        </div>
+HTML;
+
+if (!empty($productList)) {
+    $userBody .= <<<HTML
+        <div class="detail-row">
+          <span class="detail-label">Product(s):</span>
+          <span class="detail-value">{$productList}</span>
+        </div>
+HTML;
+}
+
+$userBody .= <<<HTML
+        <div class="detail-row">
+          <span class="detail-label">Company:</span>
+          <span class="detail-value">{$companyName}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Submitted:</span>
+          <span class="detail-value">{$submittedAt}</span>
+        </div>
+      </div>
+
+      <div class="message">
+        In the meantime, feel free to visit our website to explore more about our products and solutions.
+      </div>
+      
+      <div style="text-align: center;">
+        <a href="https://www.uflexltd.com" class="cta-button text-white">Visit Our Website</a>
+      </div>
+    </div>
+    <div class="footer">
+      <strong>UFlex Limited</strong><br>
+      A-107-110, Sector-IV, Noida-201301 (U.P.) India<br>
+      <p style="margin-top: 10px; font-style: italic;">This is an automated confirmation. Please do not reply directly to this email.</p>
+    </div>
+  </div>
+</body>
+</html>
+HTML;
+
     $mail->clearAddresses();
     $mail->clearReplyTos();
     $mail->addAddress($email, $name);
-    $mail->Subject = "Thank you for your enquiry - UFLEX";
-    $mail->Body    = "Dear {$name},\n\nThank you for reaching out to us. We have received your enquiry regarding {$enquiryFor} and will get back to you shortly.\n\nBest Regards,\nUFLEX Team";
+    $mail->Subject = "Confirmation: Your Quote Request for {$enquiryFor}";
+    $mail->Body    = $userBody;
     $mail->send();
 
 } catch (Exception $e) {
