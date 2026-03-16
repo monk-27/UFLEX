@@ -145,6 +145,32 @@ const tabs: Tab[] = [
 const tabItems: any = {
     "announcements": [
         {
+            "date": "11/03/2026",
+            "items": [
+                {
+                    "text": " Updates on Company’s participation in Arihant Capital Bharat Connect Conference: Rising Stars–2026",
+                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_REG30_INVPR_11MAR26.pdf"
+                }
+            ]
+        },{
+            "date": "07/03/2026",
+            "items": [
+                {
+                    "text": " Intimation under Regulation 30 read with Schedule III of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_REG30_07MAR26.pdf"
+                }
+            ]
+        },
+        {
+            "date": "06/03/2026",
+            "items": [
+                {
+                    "text": "  Intimation of participation in Arihant Capital Bharat Connect Conference: Rising Stars–2026",
+                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_REG30_06MAR26.pdf"
+                }
+            ]
+        },
+        {
             "date": "03/03/2026",
             "items": [
                 {

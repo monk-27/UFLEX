@@ -291,7 +291,7 @@ export default function ProductCategorySection({
                         className="object-cover"
                       />
                     </div> */}
-                    {section.image && (
+                    {/* {section.image && (
                   <div className="relative aspect-[4/3] bg-gray-100">
                     <Image
                       src={section.image}
@@ -301,7 +301,7 @@ export default function ProductCategorySection({
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
-                )}
+                )} */}
                     <div className="p-6 flex flex-col flex-grow">
                       <h3 className="text-[16px] lato-700 text-gray-900 mb-3 line-clamp-6">
                         {section.name}
