@@ -25,10 +25,10 @@ export default function CookieConsent() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 w-full bg-black text-white z-50 shadow-lg">
+    <div className="fixed bottom-0 left-0 w-full bg-[#117ABA] text-white z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
 
-        <p className="text-sm md:text-base">
+        <p className="text-sm md:text-sm">
           We use cookies to improve your experience, analyze traffic, and personalize content.
           By clicking <span className="font-semibold">Accept</span>, you agree to our use of cookies.
         </p>
@@ -43,7 +43,7 @@ export default function CookieConsent() {
 
           <button
             onClick={acceptCookies}
-            className="px-5 py-2 bg-[#117ABA] rounded hover:bg-[#117ABA] transition"
+            className="px-5 py-2 border-1 border-white  rounded hover:bg-[#117ABA] transition"
           >
             Accept Cookies
           </button>
