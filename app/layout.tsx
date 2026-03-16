@@ -5,6 +5,7 @@ import { Suspense } from "react"
 import { PageTransition } from "@/components/page-transition"
 import "./globals.css"
 import { GetQuoteButton } from "@/components/get-quote-button"
+import CookieConsent from "./what-we-do/cookies"
 
 export const metadata: Metadata = {
   title: "UFlex - India's largest Flexible Packaging solutions provider.",
@@ -30,6 +31,7 @@ export default function RootLayout({
           {/* <PageTransition> */}
           <main id="content" className="">{children}</main>
           {/* </PageTransition> */}
+          <CookieConsent />
         </Suspense>
         <GetQuoteButton />
         <Analytics />
