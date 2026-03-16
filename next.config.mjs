@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
+const isVercel = process.env.VERCEL === '1';
+
 const nextConfig = {
-  // output: "standalone", // Self-contained Node.js server — supports API routes on cPanel
-  output: "export",
+  ...(isVercel ? {} : { output: "export" }),
   trailingSlash: true,
   eslint: {
     ignoreDuringBuilds: true,

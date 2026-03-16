@@ -417,7 +417,7 @@ export default function EnquiryForm() {
       try {
         const formDataFiles = new FormData();
         selectedFiles.forEach(fp => formDataFiles.append("files", fp.file));
-        const uploadRes = await fetch("/api/upload", {
+        const uploadRes = await fetch("/api/upload/", {
           method: "POST",
           body: formDataFiles,
         });
@@ -440,7 +440,7 @@ export default function EnquiryForm() {
     }
 
     try {
-      const response = await fetch("/api/quote", {
+      const response = await fetch("/api/quote/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
