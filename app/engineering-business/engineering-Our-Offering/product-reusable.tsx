@@ -300,7 +300,7 @@ export default function ProductCategorySection({
                                                             <Image src={item.image} alt={""} height={300} width={300} />
                                                         }
 
-                                                        <div className="mt-3">
+                                                        {/* <div className="mt-3">
                                                             <a
                                                                 href={item.moreLink}
                                                                 target="_blank"
@@ -308,7 +308,7 @@ export default function ProductCategorySection({
                                                             >
                                                                 MORE ABOUT THE MACHINE
                                                             </a>
-                                                        </div>
+                                                        </div> */}
                                                     </div>
                                                 ))}
                                             </div>
@@ -384,14 +384,14 @@ export default function ProductCategorySection({
                                                                         <Image src={item.image} alt={""} height={300} width={300} />
                                                                     }
 
-                                                                    <div className="mt-3">
+                                                                    {/* <div className="mt-3">
                                                                         <a
                                                                             href={item.moreLink}
                                                                             className="inline-block bg-[#117ABA] text-white px-5 py-2 rounded-full text-sm"
                                                                         >
                                                                             MORE ABOUT THE MACHINE
                                                                         </a>
-                                                                    </div>
+                                                                    </div> */}
                                                                 </div>
                                                             ))}
                                                         </div>
@@ -428,14 +428,14 @@ export default function ProductCategorySection({
                                                                         <Image src={item.image} alt={""} height={300} width={300} />
                                                                     }
 
-                                                                    <div className="mt-3">
+                                                                    {/* <div className="mt-3">
                                                                         <a
                                                                             href={item.moreLink}
                                                                             className="inline-block bg-[#117ABA] text-white px-5 py-2 rounded-full text-sm"
                                                                         >
                                                                             MORE ABOUT THE MACHINE
                                                                         </a>
-                                                                    </div>
+                                                                    </div> */}
                                                                 </div>
                                                             ))}
                                                         </div>
