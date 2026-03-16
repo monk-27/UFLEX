@@ -334,7 +334,82 @@ export default function EnquiryForm() {
 
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: "" });
+    
+    // Check which backend to use
+    const usePhpBackend = process.env.NEXT_PUBLIC_USE_PHP_BACKEND === 'true';
 
+    if (usePhpBackend) {
+      // --- PHP BACKEND FLOW (cPanel) ---
+      try {
+        const formDataPayload = new FormData();
+        
+        // Append all text fields
+        Object.entries(formData).forEach(([key, value]) => {
+            if (key === 'product' && Array.isArray(value)) {
+                formDataPayload.append(key, value.join(','));
+            } else {
+                formDataPayload.append(key, String(value));
+            }
+        });
+        
+        formDataPayload.append('captcha', userCaptcha);
+
+        // Append files
+        if (selectedFiles.length > 0) {
+            setIsUploading(true);
+            selectedFiles.forEach(fp => {
+                formDataPayload.append('files[]', fp.file);
+            });
+        }
+
+        // Send a single request to PHP script
+        const response = await fetch('/submit-quote.php', {
+            method: 'POST',
+            body: formDataPayload,
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            setSubmitStatus({
+                type: "success",
+                message: "Thank you! Your quote request has been submitted successfully.",
+            });
+            // Reset form
+            setFormData({
+                name: "",
+                phone: "",
+                companyName: "",
+                enquiryFor: "",
+                product: [],
+                email: "",
+                message: "",
+            });
+            selectedFiles.forEach(fp => { if (fp.previewUrl) URL.revokeObjectURL(fp.previewUrl); });
+            setSelectedFiles([]);
+            generateCaptcha();
+            setUserCaptcha("");
+        } else {
+            setSubmitStatus({
+                type: "error",
+                message: data.message || "Failed to submit quote via PHP handler.",
+            });
+        }
+      } catch (error) {
+        console.error("PHP Error:", error);
+        setSubmitStatus({
+            type: "error",
+            message: "An error occurred connecting to the server.",
+        });
+      } finally {
+        setIsSubmitting(false);
+        setIsUploading(false);
+      }
+      
+      return; // Exit early since PHP flow handled it
+    }
+
+    // --- NODE.JS API FLOW (Vercel) ---
     // Upload files first if any selected
     let attachmentUrls: string[] = [];
     if (selectedFiles.length > 0) {
