@@ -92,37 +92,77 @@ if (!empty($_FILES['files']['name'][0]) && empty($uploadedFiles) && !empty($uplo
     exit;
 }
 
-// 3. Send Email Notification
+// 3. Send Email Notification using PHPMailer
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require __DIR__ . '/PHPMailer/src/Exception.php';
+require __DIR__ . '/PHPMailer/src/PHPMailer.php';
+require __DIR__ . '/PHPMailer/src/SMTP.php';
+
 // Target email (change this to the client's actual receiving email)
-$to = 'sales@uflexltd.com'; // REPLACE THIS LATER WITH ENV OR CLIENT EMAIL
-$subject = "New Quote Enquiry from {$name} ({$companyName})";
+$smtpHost  = 'smtp.gmail.com'; 
+$smtpUser  = 'exquisiteshashi@gmail.com'; 
+$smtpPass  = 'nitj wvvl zezz oyvt'; 
+$smtpPort  = 587; 
+$smtpSecure = PHPMailer::ENCRYPTION_STARTTLS;
+
+$toAdmin   = 'shashibjha271299@gmail.com'; 
+$fromEmail = 'exquisiteshashi@gmail.com'; 
 
 $productList = empty($product) ? 'None selected' : implode(', ', $product);
 $attachmentsList = empty($uploadedFiles) ? 'No attachments' : implode("\n", $uploadedFiles);
 
-// Plain text email body
-$emailBody = "New Quote Request Details:\n\n";
-$emailBody .= "Name: {$name}\n";
-$emailBody .= "Phone: {$phone}\n";
-$emailBody .= "Email: {$email}\n";
-$emailBody .= "Company: {$companyName}\n";
-$emailBody .= "Enquiry For: {$enquiryFor}\n";
-$emailBody .= "Products: {$productList}\n\n";
-$emailBody .= "Message:\n{$message_body}\n\n";
-$emailBody .= "Attachments:\n{$attachmentsList}\n\n";
-$emailBody .= "Submitted via cPanel PHP form handler.";
+// Admin Email Body
+$adminBody = "New Quote Request Details:\n\n";
+$adminBody .= "Name: {$name}\n";
+$adminBody .= "Phone: {$phone}\n";
+$adminBody .= "Email: {$email}\n";
+$adminBody .= "Company: {$companyName}\n";
+$adminBody .= "Enquiry For: {$enquiryFor}\n";
+$adminBody .= "Products: {$productList}\n\n";
+$adminBody .= "Message:\n{$message_body}\n\n";
+$adminBody .= "Attachments:\n{$attachmentsList}\n\n";
+$adminBody .= "Submitted via cPanel PHP form handler.";
 
-$headers = "From: noreply@{$_SERVER['HTTP_HOST']}\r\n";
-$headers .= "Reply-To: {$email}\r\n";
-$headers .= "X-Mailer: PHP/" . phpversion();
+$mail = new PHPMailer(true);
+$mailSent = false;
+$mailError = '';
 
-$mailSent = mail($to, $subject, $emailBody, $headers);
+try {
+    // Server settings
+    $mail->isSMTP();
+    $mail->Host       = $smtpHost;
+    $mail->SMTPAuth   = true;
+    $mail->Username   = $smtpUser;
+    $mail->Password   = $smtpPass;
+    $mail->SMTPSecure = $smtpSecure;
+    $mail->Port       = $smtpPort;
 
-// Attempt confirmation to user as well
-if ($mailSent) {
-    $userSubject = "Thank you for your enquiry - UFLEX";
-    $userBody = "Dear {$name},\n\nThank you for reaching out to us. We have received your enquiry regarding {$enquiryFor} and will get back to you shortly.\n\nBest Regards,\nUFLEX Team";
-    mail($email, $userSubject, $userBody, $headers);
+    // Recipients
+    $mail->setFrom($fromEmail, 'UFlex Website');
+    $mail->addAddress($toAdmin);
+    $mail->addReplyTo($email, $name);
+
+    // Content
+    $mail->isHTML(false);
+    $mail->Subject = "New Quote Enquiry from {$name} ({$companyName})";
+    $mail->Body    = $adminBody;
+
+    $mail->send();
+    $mailSent = true;
+    
+    // Attempt confirmation to user
+    $mail->clearAddresses();
+    $mail->clearReplyTos();
+    $mail->addAddress($email, $name);
+    $mail->Subject = "Thank you for your enquiry - UFLEX";
+    $mail->Body    = "Dear {$name},\n\nThank you for reaching out to us. We have received your enquiry regarding {$enquiryFor} and will get back to you shortly.\n\nBest Regards,\nUFLEX Team";
+    $mail->send();
+
+} catch (Exception $e) {
+    $mailSent = false;
+    $mailError = $mail->ErrorInfo;
 }
 
 // 4. Return response
@@ -130,9 +170,13 @@ if ($mailSent) {
     echo json_encode([
         'success' => true, 
         'message' => 'Quote submitted successfully',
-        'warnings' => $uploadErrors // Include any partial upload errors
+        'warnings' => $uploadErrors
     ]);
 } else {
     http_response_code(500);
-    echo json_encode(['success' => false, 'message' => 'Failed to send email notification via PHP mail(). Please check server configuration.']);
+    echo json_encode([
+        'success' => false, 
+        'message' => 'Failed to send email notification via PHPMailer. Please check SMTP configuration.',
+        'error' => $mailError
+    ]);
 }
