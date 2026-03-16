@@ -7,7 +7,7 @@ import "./globals.css"
 import { GetQuoteButton } from "@/components/get-quote-button"
 
 export const metadata: Metadata = {
-  title: "UFlex",
+  title: "UFlex - India's largest Flexible Packaging solutions provider.",
   description: "India's largest Flexible Packaging solutions provider.",
   themeColor: "#117ABA",
 }
