@@ -1,9 +1,9 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata } from "next";
+import "./globals.css";
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import { PageTransition } from "@/components/page-transition"
-import "./globals.css"
 import { GetQuoteButton } from "@/components/get-quote-button"
 import CookieConsent from "./what-we-do/cookies"
 

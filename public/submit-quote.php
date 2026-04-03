@@ -92,6 +92,28 @@ if (!empty($_FILES['files']['name'][0]) && empty($uploadedFiles) && !empty($uplo
     exit;
 }
 
+// 2.5 Save to MySQL Database
+try {
+    $dbHost = 'localhost'; // Usually localhost on cPanel
+    $dbUser = 'uflex_quoteuser';
+    $dbPass = base64_decode('V2pvaTskbUlNWzBM');
+    $dbName = 'uflex-quote';
+
+    $pdo = new PDO("mysql:host=$dbHost;dbname=$dbName;charset=utf8mb4", $dbUser, $dbPass);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $productJson = !empty($product) ? json_encode($product) : null;
+    $attachmentsJson = !empty($uploadedFiles) ? json_encode($uploadedFiles) : null;
+
+    $stmt = $pdo->prepare("INSERT INTO quotes (name, phone, companyName, enquiryFor, product, email, message, attachments) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt->execute([
+        $name, $phone, $companyName, $enquiryFor, $productJson, $email, $message_body, $attachmentsJson
+    ]);
+} catch (PDOException $e) {
+    // Log error but continue with email sending
+    error_log("Database Error in PHP: " . $e->getMessage());
+}
+
 // 3. Send Email Notification using PHPMailer
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;

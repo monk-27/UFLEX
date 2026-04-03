@@ -211,7 +211,7 @@ export function SiteFooter() {
             </div>
 
             <Link
-              href="/pay-online"
+              href="https://www.uflexltd.com/payment/index.php"
               className="inline-block bg-[#D63C3C] px-4 py-2 rounded-md text-sm font-semibold"
             >
               Pay Online

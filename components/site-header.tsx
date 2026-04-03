@@ -56,8 +56,9 @@ export function SiteHeader() {
   const closeHoverMenus = () => setHoverMenu(null)
 
   return (
-    <header
-      className="site-header bg-[#117ABA] sticky top-0 z-50 text-white shadow-sm py-4"
+    // <header
+    //   className="site-header bg-[#117ABA] sticky top-0 z-50 text-white shadow-sm py-4"
+    <header className="site-header bg-[#117ABA] fixed top-0 left-0 w-full z-50 text-white shadow-sm py-4"
       onMouseLeave={closeHoverMenus}
     >
       {/* Top bar */}

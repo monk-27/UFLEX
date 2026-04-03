@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { getDatabase } from '@/lib/mongodb'
+import { pool } from '@/lib/db'
 import { sendQuoteEmail, sendConfirmationEmail } from '@/lib/email'
 import { QuoteFormData, QuoteDocument, ApiResponse } from '@/types/quote'
 
@@ -60,27 +60,22 @@ export async function POST(request: NextRequest) {
             )
         }
 
-        // Create document for MongoDB (exclude captcha)
-        const quoteDocument: QuoteDocument = {
-            name,
-            phone,
-            companyName,
-            enquiryFor,
-            ...(product ? { product } : {}),
-            email,
-            message,
-            submittedAt: new Date(),
-            ...(attachments && attachments.length > 0 ? { attachments } : {}),
-        }
-
-        // Save to MongoDB
+        // Save to MySQL
         try {
-            const db = await getDatabase()
-            const collection = db.collection('quotes')
-            const result = await collection.insertOne(quoteDocument)
-            console.log('Quote saved to MongoDB:', result.insertedId)
+            // For product and attachments, store as JSON strings if they exist, else null
+            const productJson = product ? JSON.stringify(product) : null;
+            const attachmentsJson = attachments && attachments.length > 0 ? JSON.stringify(attachments) : null;
+
+            const query = `
+                INSERT INTO quotes (name, phone, companyName, enquiryFor, product, email, message, attachments)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            `;
+            const values = [name, phone, companyName, enquiryFor, productJson, email, message, attachmentsJson];
+
+            const [result] = await pool.execute(query, values);
+            console.log('Quote saved to MySQL:', result);
         } catch (dbError) {
-            console.error('MongoDB Error:', dbError)
+            console.error('MySQL Error:', dbError);
             // Continue even if DB fails - we'll still try to send email
         }
 

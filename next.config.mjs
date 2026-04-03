@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const isVercel = process.env.VERCEL === '1';
+const isVercel = process.env.VERCEL === "1";
 
 const nextConfig = {
   ...(isVercel ? {} : { output: "export" }),
@@ -18,11 +18,16 @@ const nextConfig = {
       {
         // Block access to PHP files on the Node.js/Vercel server
         // so source code (and credentials) aren't leaked as plain text.
-        source: '/:path*.php',
-        destination: '/404',
+        source: "/:path*.php",
+        destination: "/404",
         permanent: false,
       },
     ];
+  },
+  experimental: {
+    serverActions: {
+      bodySizeLimit: "5mb",
+    },
   },
 };
 
