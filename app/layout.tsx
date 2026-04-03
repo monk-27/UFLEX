@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import { PageTransition } from "@/components/page-transition"
 import { GetQuoteButton } from "@/components/get-quote-button"
+import { ScrollToTopButton } from "@/components/scroll-to-top-button"
 import CookieConsent from "./what-we-do/cookies"
 
 export const metadata: Metadata = {
@@ -33,6 +34,7 @@ export default function RootLayout({
           {/* </PageTransition> */}
           <CookieConsent />
         </Suspense>
+        <ScrollToTopButton />
         <GetQuoteButton />
         <Analytics />
       </body>
