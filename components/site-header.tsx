@@ -56,11 +56,14 @@ export function SiteHeader() {
   const closeHoverMenus = () => setHoverMenu(null)
 
   return (
-    // <header
-    //   className="site-header bg-[#117ABA] sticky top-0 z-50 text-white shadow-sm py-4"
-    <header className="site-header bg-[#117ABA] fixed top-0 left-0 w-full z-50 text-white shadow-sm py-4"
-      onMouseLeave={closeHoverMenus}
-    >
+    <>
+      {/* Reserve space in normal flow because the fixed header is removed from layout. */}
+      <div aria-hidden="true" className="h-20" />
+
+      <header
+        className="site-header fixed top-0 left-0 z-50 w-full bg-[#117ABA] py-4 text-white shadow-sm"
+        onMouseLeave={closeHoverMenus}
+      >
       {/* Top bar */}
       <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 flex items-center justify-between ">
         {/* Logo */}
@@ -304,6 +307,7 @@ export function SiteHeader() {
           </ul>
         </div>
       </motion.div>
-    </header>
+      </header>
+    </>
   )
 }
