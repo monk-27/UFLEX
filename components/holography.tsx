@@ -15,7 +15,6 @@ import { SustainabilitySection } from './buissnessreusbales/SustainabilitySectio
 import Keypeople from './buissnessreusbales/keypeople'
 import { CaseStudySection } from './buissnessreusbales/case-studies'
 import { AwardsSection } from './buissnessreusbales/AwardsSection'
-import { BusinessConfig } from '@/app/business/data'
 import { ReadMoreDialog } from './expandabletext'
 
 
@@ -153,7 +152,7 @@ const SliderItems: SliderItem[] =
 
 
 
-export const businesses: BusinessConfig[] = [
+export const businesses: any[] = [
     {
         key: "holography",
         label: "Holography",
@@ -501,7 +500,7 @@ const packagingData = [
 
 
 type Props = {
-    business: BusinessConfig;
+    business: any;
 };
 const HoloGraphyComp: React.FC<Props> = ({ business }) => {
     const [open, setOpen] = useState(false);

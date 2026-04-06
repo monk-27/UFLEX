@@ -14,7 +14,6 @@ import { SustainabilitySection } from './buissnessreusbales/SustainabilitySectio
 import Keypeople from './buissnessreusbales/keypeople'
 import { CaseStudySection } from './buissnessreusbales/case-studies'
 import { AwardsSection } from './buissnessreusbales/AwardsSection'
-import { BusinessConfig } from '@/app/business/data'
 
 
 
@@ -184,7 +183,7 @@ const packagingData = [
 
 ];
 
-export const businesses: BusinessConfig[] = [
+export const businesses: any[] = [
     {
         key: "flexible-packaging",
         label: "Flexible Packaging",
@@ -336,7 +335,7 @@ landfill pressure and helping curb pollution.`,
 
 ];
 type Props = {
-    business: BusinessConfig;
+    business: any;
 };
 const FlexibleComp: React.FC<Props> = ({ business }) => {
     const [open, setOpen] = useState(false);

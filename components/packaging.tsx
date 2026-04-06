@@ -9,7 +9,6 @@ import Accreditions, { AccreditationItem } from './accredition'
 import AccreditationsSlider from './accredition'
 // import ExpandableText from './expandabletext'
 import { OfferingadvSection } from './buissnessreusbales/OfferingsSection'
-import { BusinessConfig } from '@/app/business/data'
 import { InnovationSlider } from './buissnessreusbales/InnovationSlider'
 import { SustainabilitySection } from './buissnessreusbales/SustainabilitySection'
 import Keypeople from './buissnessreusbales/keypeople'
@@ -219,7 +218,7 @@ const OfferingTabs: React.FC<{
 };
 
 
-export const businesses: BusinessConfig[] = [
+export const businesses: any[] = [
     {
         key: "packaging-films",
         label: "Packaging Films & PET Resin",
@@ -460,7 +459,7 @@ export const businesses: BusinessConfig[] = [
 
 ];
 type Props = {
-    business: BusinessConfig;
+    business: any;
 };
 const PackageComp: React.FC<Props> = ({ business }) => {
     const [activeTab, setActiveTab] = useState<any>("films");

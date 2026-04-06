@@ -8,7 +8,6 @@ import { AwardItem, AwardsAccolades } from './awards'
 import Accreditions, { AccreditationItem } from './accredition'
 import AccreditationsSlider from './accredition'
 
-import { BusinessConfig } from '@/app/business/data'
 import SliderCarousel, { SliderItem } from './slidercomp'
 import { InnovationSlider } from './buissnessreusbales/InnovationSlider'
 import { SustainabilitySection } from './buissnessreusbales/SustainabilitySection'
@@ -81,7 +80,7 @@ const packagingData = [
 
 ];
 
-export const businesses: BusinessConfig[] = [
+export const businesses: any[] = [
     {
         key: "chemicals",
         label: "Chemicals",
@@ -250,7 +249,7 @@ export const businesses: BusinessConfig[] = [
 
 ];
 type Props = {
-    business: BusinessConfig;
+    business: any;
 };
 
 

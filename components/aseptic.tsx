@@ -13,7 +13,6 @@ import { CaseStudySection } from './buissnessreusbales/case-studies'
 import { InnovationSlider } from './buissnessreusbales/InnovationSlider'
 import Keypeople from './buissnessreusbales/keypeople'
 import { SustainabilitySection } from './buissnessreusbales/SustainabilitySection'
-import { BusinessConfig } from '@/app/business/data'
 import SliderCarousel, { SliderItem } from './slidercomp'
 import SimpleCarousel from './slidercomp'
 import { ReadMoreDialog } from './expandabletext'
@@ -122,7 +121,7 @@ in India.`
 ];
 
 
-export const businesses: BusinessConfig[] = [
+export const businesses: any[] = [
   {
     key: "aseptic",
     label: "Aseptic Packaging",
@@ -231,7 +230,7 @@ export const businesses: BusinessConfig[] = [
 
 ];
 type Props = {
-  business: BusinessConfig;
+  business: any;
 };
 const AsepticComp: React.FC<Props> = ({ business }) => {
   const [open, setOpen] = useState(false);

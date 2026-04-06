@@ -14,7 +14,6 @@ import { SustainabilitySection } from './buissnessreusbales/SustainabilitySectio
 import Keypeople from './buissnessreusbales/keypeople'
 import { CaseStudySection } from './buissnessreusbales/case-studies'
 import { AwardsSection } from './buissnessreusbales/AwardsSection'
-import { BusinessConfig } from '@/app/business/data'
 import { ReadMoreDialog } from './expandabletext'
 import { title } from 'process'
 
@@ -98,7 +97,7 @@ global market.`
 ];
 
 
-export const businesses: BusinessConfig[] = [
+export const businesses: any[] = [
     {
         key: "engineering",
         label: "Engineering",
@@ -293,7 +292,7 @@ organization's workforce.`,
 
 
 type Props = {
-    business: BusinessConfig;
+    business: any;
 };
 const EngComp: React.FC<Props> = ({ business }) => {
     const [open, setOpen] = useState(false);

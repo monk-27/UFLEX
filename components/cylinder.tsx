@@ -15,7 +15,6 @@ import { SustainabilitySection } from './buissnessreusbales/SustainabilitySectio
 import Keypeople from './buissnessreusbales/keypeople'
 import { CaseStudySection } from './buissnessreusbales/case-studies'
 import { AwardsSection } from './buissnessreusbales/AwardsSection'
-import { BusinessConfig } from '@/app/business/data'
 import { ReadMoreDialog } from './expandabletext'
 
 
@@ -113,7 +112,7 @@ blueprints.`
 
 ];
 
-export const businesses: BusinessConfig[] = [
+export const businesses: any[] = [
   {
     key: "printing-cylinders",
     label: "Printing Cylinders",
@@ -319,7 +318,7 @@ a Lean Six Sigma black belt champion.`,
 
 ];
 type Props = {
-  business: BusinessConfig;
+  business: any;
 };
 const CylComp: React.FC<Props> = ({ business }) => {
   const [open, setOpen] = useState(false);
