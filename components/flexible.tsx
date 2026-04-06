@@ -69,7 +69,6 @@ Our wide array of flexible pouches designed to cater to diverse product categori
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Laminated Woven Poly Propylene (WPP) bags",
         desc: `Bags with high strength, durability, and superior printability, ideal for a variety of industrial and consumer applications.`
-        // desc: "Our range of laminated Woven Polypropylene (WPP) bags offers high strength, durability, and superior printability—making them ideal for a wide variety of industrial and consumer applications.",
     },
     {
         img: "/images/new/f3.png",
@@ -190,8 +189,8 @@ export const businesses: any[] = [
         hero: {
             heading: "Our Businesses",
             image: "/images/flexi.png",
-            body:
-                "We offer a comprehensive range of products, including flexible laminates, pre-formed pouches, Flexo-printed rolls and bags, laminated woven polypropylene (WPP) bags, electron beam and Cast n Cure technology, pharmaceutical packaging, Flexible Tubes, hygiene films, Flexfresh™ modified atmosphere packaging, and big bags. At UFlex, we don’t just deliver packaging—we deliver excellence, innovation.",
+            // body:
+            //     "We offer a comprehensive range of products, including flexible laminates, pre-formed pouches, Flexo-printed rolls and bags, laminated woven polypropylene (WPP) bags, electron beam and Cast n Cure technology, pharmaceutical packaging, Flexible Tubes, hygiene films, Flexfresh™ modified atmosphere packaging, and big bags. At UFlex, we don’t just deliver packaging—we deliver excellence, innovation.",
         },
         innovations: {
             heading: "Business Highlights and Innovations",
