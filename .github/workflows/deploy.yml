@@ -43,6 +43,9 @@ jobs:
           server-dir: public_html/
           
           # This ensures that hidden files like .htaccess are also uploaded
+          # We also exclude the uploads folder here so it never gets deleted.
           exclude: |
             **/.git*
             **/.git*/**
+            uploads/**
+            uploads/
