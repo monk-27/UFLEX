@@ -1,0 +1,48 @@
+name: Deploy to cPanel via FTP
+
+on:
+  push:
+    branches:
+      - main
+  # Allows you to manually trigger the deployment from the Actions tab
+  workflow_dispatch: 
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' 
+          cache: 'npm'
+
+      - name: 📦 Install Dependencies
+        run: npm install
+
+      - name: 🔨 Build Project
+        run: npm run build
+
+      - name: 🚀 Sync Files via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          # These are secure secrets you will set inside your GitHub repository settings
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          
+          # The local Next.js export folder that gets generated
+          local-dir: ./out/
+          
+          # The destination folder on your cPanel. (Make sure this ends with a slash!)
+          # If your primary domain points to public_html, leave this as public_html/
+          server-dir: public_html/
+          
+          # This ensures that hidden files like .htaccess are also uploaded
+          exclude: |
+            **/.git*
+            **/.git*/**
