@@ -26,6 +26,27 @@ jobs:
 
       - name: 🔨 Build Project
         run: npm run build
+        env:
+          NEXT_PUBLIC_USE_PHP_BACKEND: ${{ secrets.NEXT_PUBLIC_USE_PHP_BACKEND }}
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+          MONGODB_DB: ${{ secrets.MONGODB_DB }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_FROM: ${{ secrets.SMTP_FROM }}
+          SMTP_TO: ${{ secrets.SMTP_TO }}
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD_B64: ${{ secrets.FTP_PASSWORD_B64 }}
+          FTP_PORT: ${{ secrets.FTP_PORT }}
+          FTP_SECURE: ${{ secrets.FTP_SECURE }}
+          FTP_UPLOAD_DIR: ${{ secrets.FTP_UPLOAD_DIR }}
+          UPLOAD_PUBLIC_URL: ${{ secrets.UPLOAD_PUBLIC_URL }}
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_USER: ${{ secrets.DB_USER }}
+          DB_PASSWORD_B64: ${{ secrets.DB_PASSWORD_B64 }}
+          DB_NAME: ${{ secrets.DB_NAME }}
 
       - name: 🚀 Sync Files via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
