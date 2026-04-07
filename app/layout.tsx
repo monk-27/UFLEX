@@ -8,11 +8,19 @@ import { GetQuoteButton } from "@/components/get-quote-button"
 import { ScrollToTopButton } from "@/components/scroll-to-top-button"
 import CookieConsent from "./what-we-do/cookies"
 
+import type { Viewport } from "next";
+
 export const metadata: Metadata = {
-  title: "UFlex - India's largest Flexible Packaging solutions provider.",
+  title: {
+    default: "UFlex - India's largest Flexible Packaging solutions provider.",
+    template: "%s | UFlex"
+  },
   description: "India's largest Flexible Packaging solutions provider.",
+};
+
+export const viewport: Viewport = {
   themeColor: "#117ABA",
-}
+};
 
 export default function RootLayout({
   children,
