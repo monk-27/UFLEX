@@ -64,249 +64,265 @@ export function SiteHeader() {
         className="site-header fixed top-0 left-0 z-50 w-full bg-[#117ABA] py-4 text-white shadow-sm"
         onMouseLeave={closeHoverMenus}
       >
-      {/* Top bar */}
-      <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 flex items-center justify-between ">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-3" aria-label="UFlex Home">
-          <Image
-            src="/images/new/logo.png"
-            alt="UFlex Logo"
-            width={180}
-            height={48}
-            className="h-12 w-auto"
-          // priority
-          />
-        </Link>
+        {/* Top bar */}
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 flex items-center justify-between ">
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-3" aria-label="UFlex Home">
+            <Image
+              src="/images/new/logo.png"
+              alt="UFlex Logo"
+              width={180}
+              height={48}
+              className="h-12 w-auto"
+            // priority
+            />
+          </Link>
 
-        {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-7 ml-auto relative">
-          {nav.map((item) => {
-            const active = isActive(item.href)
-            const hasChildren = !!item.children?.length
-            const isOpen = hoverMenu === item.href
-
-            return (
-              <div
-                key={item.href}
-                className="relative"
-                onMouseEnter={() => hasChildren && setHoverMenu(item.href)}
-              >
-                <Link
-                  href={item.href}
-                  aria-current={active ? "page" : undefined}
-                  className={cn(
-                    "nav-link group relative inline-flex items-center px-1 text-[15px] lato-700 tracking-tight outline-none",
-                    "text-white/90 hover:text-white",
-                    "after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w/full",
-                    "after:bg-[linear-gradient(to_right,#192D4BFF,#7F8692FF,#0F2952FF)] after:rounded-full",
-                    "after:transition-transform after:duration-300 after:origin-left",
-                    active ? "after:scale-x-100" : "after:scale-x-0 group-hover:after:scale-x-100"
-                  )}
-                >
-                  {item.label}
-
-                  {hasChildren && (
-
-                    <svg
-                      className={cn(
-                        "h-3.5 w-3.5 ml-2 transition-transform duration-200",
-                        isOpen ? "rotate-180" : "rotate-0"
-                      )}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2.5}
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  )}
-                </Link>
-
-                {/* Desktop dropdown */}
-                {hasChildren && (
-                  <AnimatePresence>
-                    {isOpen && (
-                      <div
-                        // initial={{ opacity: 0, y: -6 }}
-                        // animate={{ opacity: 1, y: 0 }}
-                        // exit={{ opacity: 0, y: -6 }}
-                        // transition={{ duration: 0.18, ease: "easeOut" }}
-                        className="absolute left-0 top-[calc(100%+12px)] min-w-[280px] rounded-xl border border-white/15 bg-black/30 backdrop-blur-md p-2 shadow-lg"
-                        onMouseLeave={() => setHoverMenu(null)}
-                      >
-                        <ul className="grid grid-cols-1 gap-1">
-                          {item.children!.map((child) => {
-                            const childActive = isActive(child.href)
-                            return (
-                              <li key={child.href}>
-                                <Link
-                                  href={child.href}
-                                  className={cn(
-                                    "block rounded-lg px-3 py-2 text-[15px] lato-700",
-                                    "text-white/90 hover:bg-white/10 hover:text-white",
-                                    childActive && "bg-white/10 text-white"
-                                  )}
-                                >
-                                  {child.label}
-                                </Link>
-                              </li>
-                            )
-                          })}
-                        </ul>
-                      </div>
-                    )}
-                  </AnimatePresence>
-                )}
-              </div>
-            )
-          })}
-        </nav>
-
-        {/* Mobile toggle */}
-        <button
-          className="md:hidden ml-auto rounded-md border border-white/25 px-4 py-2 text-sm font-medium backdrop-blur-sm transition hover:bg-white/10 focus-visible:ring-2 focus-visible:ring-white/50"
-          onClick={() => {
-            setOpen((v) => !v)
-            setMobileOpenMenu(null)
-          }}
-          aria-expanded={open}
-          aria-controls="mobile-nav"
-          aria-label="Toggle navigation"
-        >
-          {open ? "Close" : "Menu"}
-        </button>
-      </div>
-
-      {/* Mobile Drawer */}
-      <motion.div
-        id="mobile-nav"
-        initial={false}
-        animate={open ? { height: "auto", opacity: 1, y: 0 } : { height: 0, opacity: 0, y: -8 }}
-        transition={{ duration: 0.28, ease: "easeOut" }}
-        className={cn(
-          "md:hidden overflow-hidden border-t border-white/10",
-          "bg-black/10 backdrop-blur-md",
-          open ? "pointer-events-auto" : "pointer-events-none"
-        )}
-      >
-        <div className="px-6 py-3">
-          <ul className="space-y-1">
+          {/* Desktop nav */}
+          <nav className="hidden md:flex items-center gap-7 ml-auto relative">
             {nav.map((item) => {
               const active = isActive(item.href)
               const hasChildren = !!item.children?.length
-              const isSubOpen = mobileOpenMenu === item.href
+              const isOpen = hoverMenu === item.href
 
-              if (hasChildren) {
-                // MOBILE: parent label is a real Link; chevron toggles submenu
-                return (
-                  <li key={item.href} className="rounded-md">
-                    <div
-                      className={cn(
-                        "flex items-stretch justify-between gap-2 rounded-md",
-                        active && "bg-white/10"
-                      )}
-                    >
-                      {/* Parent link (left) */}
-                      <Link
-                        href={item.href}
-                        onClick={() => {
-                          // navigating closes the drawer & submenus
-                          setOpen(false)
-                          setMobileOpenMenu(null)
-                        }}
-                        className={cn(
-                          "flex-1 rounded-md px-3 py-2 text-base font-medium transition",
-                          "text-white/90 hover:bg-white/10 hover:text-white"
-                        )}
-                        aria-current={active ? "page" : undefined}
-                      >
-                        {item.label}
-                      </Link>
-
-                      {/* Chevron toggle (right) */}
-                      <button
-                        type="button"
-                        aria-label={isSubOpen ? `Collapse ${item.label}` : `Expand ${item.label}`}
-                        aria-expanded={isSubOpen}
-                        aria-controls={`submenu-${item.href}`}
-                        onClick={() =>
-                          setMobileOpenMenu((prev) => (prev === item.href ? null : item.href))
-                        }
-                        className={cn(
-                          "shrink-0 rounded-md px-3 py-2 text-base font-medium transition",
-                          "text-white/90 hover:bg-white/10 hover:text-white"
-                        )}
-                      >
-                        <span className={cn("inline-block transition-transform", isSubOpen && "rotate-180")}>
-                          ▾
-                        </span>
-                      </button>
-                    </div>
-
-                    <AnimatePresence initial={false}>
-                      {isSubOpen && (
-                        <motion.ul
-                          id={`submenu-${item.href}`}
-                          initial={{ height: 0, opacity: 0 }}
-                          animate={{ height: "auto", opacity: 1 }}
-                          exit={{ height: 0, opacity: 0 }}
-                          transition={{ duration: 0.2, ease: "easeOut" }}
-                          className="ml-2 mt-1 overflow-hidden rounded-md border-l border-white/10"
-                        >
-                          {item.children!.map((child) => {
-                            const childActive = isActive(child.href)
-                            return (
-                              <li key={child.href}>
-                                <Link
-                                  href={child.href}
-                                  onClick={() => {
-                                    setOpen(false)
-                                    setMobileOpenMenu(null)
-                                  }}
-                                  className={cn(
-                                    "block rounded-md px-3 py-2 text-[15px] font-medium",
-                                    "text-white/90 hover:bg-white/10 hover:text-white",
-                                    childActive && "bg-white/10 text-white"
-                                  )}
-                                >
-                                  {child.label}
-                                </Link>
-                              </li>
-                            )
-                          })}
-                        </motion.ul>
-                      )}
-                    </AnimatePresence>
-                  </li>
-                )
-              }
-
-              // Regular mobile link
               return (
-                <li key={item.href}>
+                <div
+                  key={item.href}
+                  className="relative"
+                  onMouseEnter={() => hasChildren && setHoverMenu(item.href)}
+                >
                   <Link
                     href={item.href}
-                    onClick={() => setOpen(false)}
-                    className={cn(
-                      "block rounded-md px-3 py-2 text-base font-medium transition",
-                      "text-white/90 hover:bg-white/10 hover:text-white",
-                      active && "bg-white/10 text-white"
-                    )}
                     aria-current={active ? "page" : undefined}
+                    className={cn(
+                      "nav-link group relative inline-flex items-center px-1 text-[15px] lato-700 tracking-tight outline-none",
+                      "text-white/90 hover:text-white",
+                      "after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w/full",
+                      "after:bg-[linear-gradient(to_right,#192D4BFF,#7F8692FF,#0F2952FF)] after:rounded-full",
+                      "after:transition-transform after:duration-300 after:origin-left",
+                      active ? "after:scale-x-100" : "after:scale-x-0 group-hover:after:scale-x-100"
+                    )}
                   >
                     {item.label}
+
+                    {hasChildren && (
+
+                      <svg
+                        className={cn(
+                          "h-3.5 w-3.5 ml-2 transition-transform duration-200",
+                          isOpen ? "rotate-180" : "rotate-0"
+                        )}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2.5}
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    )}
                   </Link>
-                </li>
+
+                  {/* Desktop dropdown */}
+                  {hasChildren && (
+                    <AnimatePresence>
+                      {isOpen && (
+                        <div
+                          // initial={{ opacity: 0, y: -6 }}
+                          // animate={{ opacity: 1, y: 0 }}
+                          // exit={{ opacity: 0, y: -6 }}
+                          // transition={{ duration: 0.18, ease: "easeOut" }}
+                          className="absolute left-0 top-[calc(100%+12px)] min-w-[280px] rounded-xl border border-white/15 bg-black/30 backdrop-blur-md p-2 shadow-lg"
+                          onMouseLeave={() => setHoverMenu(null)}
+                        >
+                          <ul className="grid grid-cols-1 gap-1">
+                            {item.children!.map((child) => {
+                              const childActive = isActive(child.href)
+                              return (
+                                <li key={child.href}>
+                                  <Link
+                                    href={child.href}
+                                    className={cn(
+                                      "block rounded-lg px-3 py-2 text-[15px] lato-700",
+                                      "text-white/90 hover:bg-white/10 hover:text-white",
+                                      childActive && "bg-white/10 text-white"
+                                    )}
+                                  >
+                                    {child.label}
+                                  </Link>
+                                </li>
+                              )
+                            })}
+                          </ul>
+                        </div>
+                      )}
+                    </AnimatePresence>
+                  )}
+                </div>
               )
             })}
-          </ul>
+          </nav>
+
+          {/* Mobile toggle */}
+          <button
+            className="md:hidden ml-auto rounded-md border border-white/25 px-4 py-2 text-sm font-medium backdrop-blur-sm transition hover:bg-white/10 focus-visible:ring-2 focus-visible:ring-white/50"
+            onClick={() => {
+              setOpen((v) => !v)
+              setMobileOpenMenu(null)
+            }}
+            aria-expanded={open}
+            aria-controls="mobile-nav"
+            aria-label="Toggle navigation"
+          >
+            {open ? "Close" : "Menu"}
+          </button>
         </div>
-      </motion.div>
+
+        {/* Mobile Drawer */}
+        <motion.div
+          id="mobile-nav"
+          initial={false}
+          animate={open ? { height: "auto", opacity: 1, y: 0 } : { height: 0, opacity: 0, y: -8 }}
+          transition={{ duration: 0.28, ease: "easeOut" }}
+          className={cn(
+            "md:hidden overflow-hidden border-t border-white/10",
+            "bg-black/10 backdrop-blur-md",
+            open ? "pointer-events-auto" : "pointer-events-none"
+          )}
+        >
+          <div className="px-6 py-3">
+            <ul className="space-y-1">
+              {nav.map((item) => {
+                const active = isActive(item.href)
+                const hasChildren = !!item.children?.length
+                const isSubOpen = mobileOpenMenu === item.href
+
+                if (hasChildren) {
+                  // MOBILE: parent label is a real Link; chevron toggles submenu
+                  return (
+                    <li key={item.href} className="rounded-md">
+                      <div
+                        className={cn(
+                          "flex items-stretch justify-between rounded-md group",
+                          active && "bg-white/10"
+                        )}
+                      >
+                        {/* Parent link (left) - Clicking the text itself navigates */}
+                        <Link
+                          href={item.href}
+                          onClick={() => {
+                            setOpen(false)
+                            setMobileOpenMenu(null)
+                          }}
+                          className={cn(
+                            "shrink-0 rounded-l-md px-3 py-3 text-base lato-700 transition relative z-10",
+                            "text-white/90 hover:text-white"
+                          )}
+                          aria-current={active ? "page" : undefined}
+                        >
+                          {item.label}
+                        </Link>
+
+                        {/* Toggle Area (rest of the line) - Clicking anywhere to the right toggles submenu */}
+                        <button
+                          type="button"
+                          aria-label={isSubOpen ? `Collapse ${item.label}` : `Expand ${item.label}`}
+                          aria-expanded={isSubOpen}
+                          aria-controls={`submenu-${item.href}`}
+                          onClick={() =>
+                            setMobileOpenMenu((prev) => (prev === item.href ? null : item.href))
+                          }
+                          className={cn(
+                            "flex-1 flex items-center justify-end rounded-r-md px-4 py-3 transition",
+                            "text-white/70 hover:bg-white/5 hover:text-white"
+                          )}
+                        >
+                          {/* <span className={cn("h-5 w-5 inline-block transition-transform duration-200 text-lg", isSubOpen && "rotate-180")}>
+                            ▾
+                          </span> */}
+                          <svg
+                            className={cn(
+                              "h-3.5 w-3.5 ml-2 transition-transform duration-200",
+                              isSubOpen ? "rotate-180" : "rotate-0"
+                            )}
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2.5}
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+
+                      <AnimatePresence initial={false}>
+                        {isSubOpen && (
+                          <motion.ul
+                            id={`submenu-${item.href}`}
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: "auto", opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            transition={{ duration: 0.2, ease: "easeOut" }}
+                            className="ml-2 mt-1 overflow-hidden rounded-md border-l border-white/10"
+                          >
+                            {item.children!.map((child) => {
+                              const childActive = isActive(child.href)
+                              return (
+                                <li key={child.href}>
+                                  <Link
+                                    href={child.href}
+                                    onClick={() => {
+                                      setOpen(false)
+                                      setMobileOpenMenu(null)
+                                    }}
+                                    className={cn(
+                                      "block rounded-md px-3 py-2 text-[15px] font-medium",
+                                      "text-white/90 hover:bg-white/10 hover:text-white",
+                                      childActive && "bg-white/10 text-white"
+                                    )}
+                                  >
+                                    {child.label}
+                                  </Link>
+                                </li>
+                              )
+                            })}
+                          </motion.ul>
+                        )}
+                      </AnimatePresence>
+                    </li>
+                  )
+                }
+
+                // Regular mobile link
+                return (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      onClick={() => setOpen(false)}
+                      className={cn(
+                        "block rounded-md px-3 py-2 text-base font-medium transition",
+                        "text-white/90 hover:bg-white/10 hover:text-white",
+                        active && "bg-white/10 text-white"
+                      )}
+                      aria-current={active ? "page" : undefined}
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
+        </motion.div>
       </header>
     </>
   )

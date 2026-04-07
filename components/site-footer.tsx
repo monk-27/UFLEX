@@ -105,11 +105,12 @@ export function SiteFooter() {
 
         <hr className="my-8 border-white/60" />
 
-        <div className="flex flex-col-1 md:flex-row items-start md:items-center justify-center gap-4">
-          <p className="text-[8px] sm:text-[15px] lato-700">
-            ©2025–2026 UFlex Limited (www.uflexltd.com). All rights reserved.
+        <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6 text-center pb-20 md:pb-0">
+          <p className="text-[12px] sm:text-[15px] lato-700 opacity-90">
+            © 2025–2026 UFlex Limited (www.uflexltd.com). All rights reserved.
           </p>
-          <Link href="/legal-disclaimer" className="text-[8px] sm:text-[15px] lato-700">
+          <div className="hidden md:block w-1 h-1 rounded-full bg-white/60"></div>
+          <Link href="/legal-disclaimer" className="text-[12px] sm:text-[15px] lato-700 opacity-90 transition-opacity hover:opacity-100 hover:underline underline-offset-4">
             Legal disclaimer
           </Link>
         </div>
