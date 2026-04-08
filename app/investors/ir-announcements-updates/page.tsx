@@ -145,6 +145,28 @@ const tabs: Tab[] = [
 const tabItems: any = {
     "announcements": [
         {
+
+            "date": "24/03/2026",
+            "items": [
+                {
+                    "text": "Closure of Trading Window",
+                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_TW_24MAR26.pdf"
+                }
+            ]
+        },
+        {
+
+            "date": "20/03/2026",
+            "items": [
+                {
+                    "text": "  Newspaper Advertisement regarding Special Window for Transfer and Dematerialisation of Physical Securities",
+                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_ADVT_20MAR26.pdf"
+                }
+            ]
+        },
+
+
+        {
             "date": "11/03/2026",
             "items": [
                 {
@@ -152,7 +174,7 @@ const tabItems: any = {
                     "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_REG30_INVPR_11MAR26.pdf"
                 }
             ]
-        },{
+        }, {
             "date": "07/03/2026",
             "items": [
                 {
@@ -1452,77 +1474,77 @@ export default function Page() {
                     {/* List */}
                     <div className="mt-1">
                         {isUnpaidDividend ? (
-                    <div className="mt-1">
+                            <div className="mt-1">
 
-  <div className="bg-white px-6 py-6">
+                                <div className="bg-white px-6 py-6">
 
-   
 
-    <p className="text-gray-700 text-[16px] leading-relaxed mb-4">
-      <span className="float-left text-[42px] leading-[32px] pr-2 font-semibold text-black">
-        T
-      </span>
-      he shareholders who have not claimed their dividends for any Financial Years
-      from 2017-18 to 2024-25 or have not updated their KYC or any issues related
-      to unclaimed dividends and shares may write to the Company’s
-      <span className="text-[#117ABA]"> Registrar and Transfer Agent (RTA)</span>
-      i.e. M/s Beetal Financial & Computer Services (P) Limited.
-    </p>
 
-    <div className=" italic text-gray-600 mb-6">
-      To check the details of unclaimed / unpaid dividend lying with UFlex Limited,
-      shareholders are requested to input the following details pertaining to their
-      shareholding:
-    </div>
+                                    <p className="text-gray-700 text-[16px] leading-relaxed mb-4">
+                                        <span className="float-left text-[42px] leading-[32px] pr-2 font-semibold text-black">
+                                            T
+                                        </span>
+                                        he shareholders who have not claimed their dividends for any Financial Years
+                                        from 2017-18 to 2024-25 or have not updated their KYC or any issues related
+                                        to unclaimed dividends and shares may write to the Company’s
+                                        <span className="text-[#117ABA]"> Registrar and Transfer Agent (RTA)</span>
+                                        i.e. M/s Beetal Financial & Computer Services (P) Limited.
+                                    </p>
 
-    <p className="text-sm text-gray-500 mb-4">
-      Mandatory Fields are Marked with an Asterisk (*)
-    </p>
+                                    <div className=" italic text-gray-600 mb-6">
+                                        To check the details of unclaimed / unpaid dividend lying with UFlex Limited,
+                                        shareholders are requested to input the following details pertaining to their
+                                        shareholding:
+                                    </div>
 
-    <label className="block text-[#117ABA] mb-2 text-[15px]">
-      Folio (7 Digit) / DP-ID & Client-ID (16 Digit)
-    </label>
+                                    <p className="text-sm text-gray-500 mb-4">
+                                        Mandatory Fields are Marked with an Asterisk (*)
+                                    </p>
 
-    <input
-      type="text"
-      placeholder="Your Folio No.*"
-      className="text-black w-full border border-gray-300 rounded px-4 py-2 mb-4"
-    />
+                                    <label className="block text-[#117ABA] mb-2 text-[15px]">
+                                        Folio (7 Digit) / DP-ID & Client-ID (16 Digit)
+                                    </label>
 
-    <button className="bg-[#117ABA] text-white px-6 py-2 rounded tracking-widest text-sm">
-      SUBMIT NOW
-    </button>
+                                    <input
+                                        type="text"
+                                        placeholder="Your Folio No.*"
+                                        className="text-black w-full border border-gray-300 rounded px-4 py-2 mb-4"
+                                    />
 
-    <p className="mt-6 text-gray-600">
-      <strong>Note:</strong> Please{" "}
-      <a href="https://www.uflexltd.com/pdf/SC/2025/KYC_FORMS.pdf" target="_blank" className="text-[#117ABA] underline cursor-pointer">
-        download
-      </a>{" "}
-      the attached KYC Form and submit the same with the RTA where the KYC
-      status is displayed as "Not Updated"
-    </p>
+                                    <button className="bg-[#117ABA] text-white px-6 py-2 rounded tracking-widest text-sm">
+                                        SUBMIT NOW
+                                    </button>
 
-    {/* Divider */}
-    <div className="border-t my-8"></div>
+                                    <p className="mt-6 text-gray-600">
+                                        <strong>Note:</strong> Please{" "}
+                                        <a href="https://www.uflexltd.com/pdf/SC/2025/KYC_FORMS.pdf" target="_blank" className="text-[#117ABA] underline cursor-pointer">
+                                            download
+                                        </a>{" "}
+                                        the attached KYC Form and submit the same with the RTA where the KYC
+                                        status is displayed as "Not Updated"
+                                    </p>
 
-   
+                                    {/* Divider */}
+                                    <div className="border-t my-8"></div>
 
-    <p className="text-gray-700 mt-4 leading-relaxed">
-      <span className="float-left text-[42px] leading-[32px] pr-2 font-semibold text-black">
-        U
-      </span>
-      nclaimed Dividend Details in Form IEPF-2, as required by the Investor
-      Education and Protection Fund Rules, 2012, are provided herein below
-      for the all unclaimed dividend accounts outstanding for the Financial
-      Year ending March 31, 2025.
-    </p>
 
-    {/* PDF LIST */}
-   
-  </div>
-  </div>
 
-) : isAnnouncements && (
+                                    <p className="text-gray-700 mt-4 leading-relaxed">
+                                        <span className="float-left text-[42px] leading-[32px] pr-2 font-semibold text-black">
+                                            U
+                                        </span>
+                                        nclaimed Dividend Details in Form IEPF-2, as required by the Investor
+                                        Education and Protection Fund Rules, 2012, are provided herein below
+                                        for the all unclaimed dividend accounts outstanding for the Financial
+                                        Year ending March 31, 2025.
+                                    </p>
+
+                                    {/* PDF LIST */}
+
+                                </div>
+                            </div>
+
+                        ) : isAnnouncements && (
                             <div className="flex flex-wrap gap-3 mb-5 mt-4">
                                 {announcementsData.map((year) => (
                                     <button
@@ -1541,31 +1563,31 @@ export default function Page() {
                         {km && (
                             <div className="bg-white px-6 py-6 leading-relaxed text-[15px] lato-400">
                                 <p className="text-gray-700 text-[16px] leading-relaxed mb-6">
-  <span className="float-left text-[42px] leading-[32px] pr-2 font-semibold text-black">
-    P
-  </span>
-  ursuant to Regulation 30(5) of the Securities and Exchange Board of India
-  (Listing Obligations and Disclosure Requirements) Regulations, 2015,
-  the Board of Directors of the Company has authorised certain officials
-  for the purpose of determining materiality of an event or information
-  and for the purpose of making disclosures to stock exchange under this Regulation.
-</p>
+                                    <span className="float-left text-[42px] leading-[32px] pr-2 font-semibold text-black">
+                                        P
+                                    </span>
+                                    ursuant to Regulation 30(5) of the Securities and Exchange Board of India
+                                    (Listing Obligations and Disclosure Requirements) Regulations, 2015,
+                                    the Board of Directors of the Company has authorised certain officials
+                                    for the purpose of determining materiality of an event or information
+                                    and for the purpose of making disclosures to stock exchange under this Regulation.
+                                </p>
                             </div>
                         )}
                         {isGrievance ? (
                             /* ---------- GRIEVANCE SPECIAL UI ---------- */
                             <div className="bg-white px-6 py-6 leading-relaxed text-[15px] lato-400">
                                 <p className="text-gray-700 text-[16px] leading-relaxed mb-6">
-  <span className="float-left text-[42px] leading-[32px] pr-2 font-semibold text-black">
-    P
-  </span>
-  ursuant to Regulation 46(2)(j) and 46(2)(k) of the Securities and Exchange
-  Board of India (Listing Obligations and Disclosure Requirements)
-  Regulations, 2015, the email address for grievance redressal and other
-  relevant details and Contact Information of the Designated Officials of
-  the Listed Entity who are responsible for assisting and handling Investor
-  Grievances are given below:
-</p>
+                                    <span className="float-left text-[42px] leading-[32px] pr-2 font-semibold text-black">
+                                        P
+                                    </span>
+                                    ursuant to Regulation 46(2)(j) and 46(2)(k) of the Securities and Exchange
+                                    Board of India (Listing Obligations and Disclosure Requirements)
+                                    Regulations, 2015, the email address for grievance redressal and other
+                                    relevant details and Contact Information of the Designated Officials of
+                                    the Listed Entity who are responsible for assisting and handling Investor
+                                    Grievances are given below:
+                                </p>
                                 {/* First Block */}
                                 <h2 className="text-[#117ABA] text-lg lato-700 mb-2">
                                     {tabItems["grievance-redressal"][0].title}
