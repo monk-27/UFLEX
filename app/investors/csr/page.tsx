@@ -69,27 +69,27 @@ type CsrPlanItem = {
 const csrAnnualActionPlans: CsrPlanItem[] = [
   {
     title: "CSR Annual Action Plan FY2025–26",
-    href: "https://www.uflexltd.com/pdf/Policies/UFlex_CSR_AA_Plan_FY2025-26.pdf",
+    href: "https://beta.uflexltd.com/media/pdf/Policies/UFlex_CSR_AA_Plan_FY2025-26.pdf",
   },
   {
     title: "CSR Annual Action Plan FY2024–25",
-    href: "https://www.uflexltd.com/pdf/Policies/UFlex_CSR_AA_Plan_FY2024-25.pdf",
+    href: "https://beta.uflexltd.com/media/pdf/Policies/UFlex_CSR_AA_Plan_FY2024-25.pdf",
   },
   {
     title: "CSR Annual Action Plan FY2023–24",
-    href: "https://www.uflexltd.com/pdf/Policies/UFlex_CSR_AA_Plan_FY2023-24.pdf",
+    href: "https://beta.uflexltd.com/media/pdf/Policies/UFlex_CSR_AA_Plan_FY2023-24.pdf",
   },
   {
     title: "CSR Annual Action Plan FY2022–23",
-    href: "https://www.uflexltd.com/pdf/Policies/UFlex_CSR_AA_Plan_FY2022-23.pdf",
+    href: "https://beta.uflexltd.com/media/pdf/Policies/UFlex_CSR_AA_Plan_FY2022-23.pdf",
   },
   {
     title: "CSR Annual Action Plan FY2021–22",
-    href: "https://www.uflexltd.com/pdf/Policies/UFlex_CSR_AA_Plan_FY2021-22.pdf",
+    href: "https://beta.uflexltd.com/media/pdf/Policies/UFlex_CSR_AA_Plan_FY2021-22.pdf",
   },
   {
     title: "CSR Annual Action Plan FY2020–21",
-    href: "https://www.uflexltd.com/pdf/Policies/UFlex_CSR_AA_Plan_FY2020-21.pdf",
+    href: "https://beta.uflexltd.com/media/pdf/Policies/UFlex_CSR_AA_Plan_FY2020-21.pdf",
   },
 ];
 
@@ -127,11 +127,11 @@ const CsrPage = () => {
           </div>
         </div> */}
         <Breadcrumb
-  items={[
-    { label: "Investors Relations", href: "/investors" },
-    { label: "CSR Annual Action Plan" },
-  ]}
-/>
+          items={[
+            { label: "Investors Relations", href: "/investors" },
+            { label: "CSR Annual Action Plan" },
+          ]}
+        />
 
         {/* CSR Annual Action Plan table */}
         <section className="max-w-6xl mx-auto px-4 sm:px-12 md:px-20 lg:px-28 py-8">

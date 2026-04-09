@@ -75,132 +75,132 @@ type PolicyItem = {
 };
 
 const policies: PolicyItem[] = [
-  { text: "Nomination and Remuneration Policy", link: "https://www.uflexltd.com/pdf/Policies/Uflex-Nomination-Remuneration-Policy.pdf" },
-  { text: "Dividend Distribution Policy", link: "https://www.uflexltd.com/pdf/Policies/UFLEX_Dividend_Distribution_Policy.pdf" },
-  { text: "Whistle Blower Policy", link: "https://www.uflexltd.com/pdf/Policies/Uflex-Whistle-Blower-Policy.pdf" },
-  { text: "Risk Management Policy", link: "https://www.uflexltd.com/pdf/Policies/Uflex-Risk-Management-Policy.pdf" },
-  { text: "Corporate Social Responsibility Policy", link: "https://www.uflexltd.com/pdf/Policies/Uflex-CSR-Policy.pdf" },
-  { text: "Board Diversity Policy", link: "https://www.uflexltd.com/pdf/Policies/Uflex-Board-Diversity-Policy.pdf" },
-  { text: "Code of Conduct", link: "https://www.uflexltd.com/pdf/Policies/Uflex-CODE-OF-CONDUCT.pdf" },
-  { text: "Related Party Transactions Policy", link: "https://www.uflexltd.com/pdf/Policies/Uflex-RELATED-PARTY-TRANSACTIONS-POLICY.pdf" },
+  { text: "Nomination and Remuneration Policy", link: "https://beta.uflexltd.com/media/pdf/Policies/Uflex-Nomination-Remuneration-Policy.pdf" },
+  { text: "Dividend Distribution Policy", link: "https://beta.uflexltd.com/media/pdf/Policies/UFLEX_Dividend_Distribution_Policy.pdf" },
+  { text: "Whistle Blower Policy", link: "https://beta.uflexltd.com/media/pdf/Policies/Uflex-Whistle-Blower-Policy.pdf" },
+  { text: "Risk Management Policy", link: "https://beta.uflexltd.com/media/pdf/Policies/Uflex-Risk-Management-Policy.pdf" },
+  { text: "Corporate Social Responsibility Policy", link: "https://beta.uflexltd.com/media/pdf/Policies/Uflex-CSR-Policy.pdf" },
+  { text: "Board Diversity Policy", link: "https://beta.uflexltd.com/media/pdf/Policies/Uflex-Board-Diversity-Policy.pdf" },
+  { text: "Code of Conduct", link: "https://beta.uflexltd.com/media/pdf/Policies/Uflex-CODE-OF-CONDUCT.pdf" },
+  { text: "Related Party Transactions Policy", link: "https://beta.uflexltd.com/media/pdf/Policies/Uflex-RELATED-PARTY-TRANSACTIONS-POLICY.pdf" },
   {
     text: "Environment, Health and Safety (EHS) Policy",
-    link: "https://www.uflexltd.com/pdf/Policies/Uflex-ehspolicy.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/Uflex-ehspolicy.pdf",
   },
   {
     text: "Code of Conduct – Insider Trading 2015",
-    link: "https://www.uflexltd.com/pdf/Policies/Uflex-code-of-insider-trading-regulation-2015.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/Uflex-code-of-insider-trading-regulation-2015.pdf",
   },
   {
     text: "Terms and Conditions of Appointment of Independent Directors",
-    link: "https://www.uflexltd.com/pdf/Policies/UFlex-terms-conditions-of-appointment-of-independent-directors.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/UFlex-terms-conditions-of-appointment-of-independent-directors.pdf",
   },
   {
     text: "Criteria For Making Payment To Non-Executive Directors",
-    link: "https://www.uflexltd.com/pdf/Policies/Uflex-criteria-for-making-payment-to-non-executive-directors.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/Uflex-criteria-for-making-payment-to-non-executive-directors.pdf",
   },
   {
     text: "Policy to Determine Material Events or Information",
-    link: "https://www.uflexltd.com/pdf/Policies/Uflex-policy-to-determine-material-events-or-information.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/Uflex-policy-to-determine-material-events-or-information.pdf",
   },
   {
     text: "Policy on Preservation of Documents",
-    link: "https://www.uflexltd.com/pdf/Policies/Uflex-policy-on-preservation-of-documents.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/Uflex-policy-on-preservation-of-documents.pdf",
   },
   {
     text:
       "Code of Practices and Procedures for Fair Disclosure of Unpublished Price Sensitive Information",
-    link: "https://www.uflexltd.com/pdf/Policies/Uflex-Fair-Disclosure-Code.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/Uflex-Fair-Disclosure-Code.pdf",
   },
   {
     text: "Archival Policy",
-    link: "https://www.uflexltd.com/pdf/Policies/Uflex-Archival-Policy.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/Uflex-Archival-Policy.pdf",
   },
-  
+
   {
     text: "Anti Bribery & Anti-Corruption Policy",
-    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_ABAC_Policy.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_ABAC_Policy.pdf",
   },
   {
     text: "Anti-Trust Fair Competition Policy",
-    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_ATFC_Policy.pdf",  // inferred filename pattern; confirm if needed
+    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_ATFC_Policy.pdf",  // inferred filename pattern; confirm if needed
   },
   {
     text: "Business Continuity and Disaster Management Policy",
-    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_BCDM_Policy.pdf",  // common pattern
+    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_BCDM_Policy.pdf",  // common pattern
   },
   {
     text: "Customer Care Policy",
-    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_CC_Policy.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_CC_Policy.pdf",
   },
   {
     text: "Energy Management Policy",
-    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_EM_Policy.pdf",  // Energy Management
+    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_EM_Policy.pdf",  // Energy Management
   },
   {
     text: "Environmental Management Policy",
-    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_EM_Policy.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_EM_Policy.pdf",
   },
   {
     text: "ESG Policy",
-    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_ESG_Policy.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_ESG_Policy.pdf",
   },
   {
     text: "Human Rights Policy",
-    link: "https://www.uflexltd.com/pdf/Policies/BRSP/2023/UFlex_Human_Rights_Policy.pdf",  // older path, still active
+    link: "https://beta.uflexltd.com/media/pdf/Policies/BRSP/2023/UFlex_Human_Rights_Policy.pdf",  // older path, still active
   },
   {
     text: "Information Technology (IT), Cyber Security, and Privacy Policy",
-    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_IT_Cyber_Privacy_Policy.pdf",  // inferred
+    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_IT_Cyber_Privacy_Policy.pdf",  // inferred
   },
   {
     text: "OHS Policy",
-    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_OHS_Policy.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_OHS_Policy.pdf",
   },
   {
     text: "Product Stewardship Policy",
-    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_PS_Policy.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_PS_Policy.pdf",
   },
   {
     text: "Stakeholder Engagement Policy",
-    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_SE_Policy.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_SE_Policy.pdf",
   },
   {
     text: "Supplier Code of Conduct Policy",
-    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_SCC_Policy.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_SCC_Policy.pdf",
   },
   {
     text: "Sustainable Procurement Policy",
-    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_SP_Policy.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_SP_Policy.pdf",
   },
   {
     text: "Water Stewardship Policy",
-    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_WS_Policy.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_WS_Policy.pdf",
   },
   {
     text: "Equal Opportunity Policy",
-    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_EO_Policy.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_EO_Policy.pdf",
   },
   {
     text: "Waste Management Policy",
-    link: "https://www.uflexltd.com/pdf/Policies/2025/UFlex_WM_Policy.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_WM_Policy.pdf",
   },
 
 ];
 
 const familiarizationPrograms: PolicyItem[] = [
-  { text: "Familiarization Programme - 2024-2025", link: "https://www.uflexltd.com/pdf/Policies/UFlex_FP-Independent-Directors_24-25.pdf" },
-  { text: "Familiarization Programme - 2023-2024", link: "https://www.uflexltd.com/pdf/Policies/UFlex_FP-Independent-Directors_23-24.pdf" },
-  { text: "Familiarization Programme - 2022-2023", link: "https://www.uflexltd.com/pdf/Policies/UFlex_FP-Independent-Directors_22-23.pdf" },
-  { text: "Familiarization Programme - 2021-2022", link: "https://www.uflexltd.com/pdf/Policies/UFlex_FP-Independent-Directors_21-22.pdf" },
-  { text: "Familiarization Programme - 2020-2021", link: "https://www.uflexltd.com/pdf/Policies/UFlex_FP-Independent-Directors_20-21.pdf" },
-  { text: "Familiarization Programme - 2019-2020", link: "https://www.uflexltd.com/pdf/Policies/Uflex-FP-Independent-Directors-19-20.pdf" },
-  { text: "Familiarization Programme - 2018-2019", link: "https://www.uflexltd.com/pdf/Policies/Uflex-FP-Independent-Directors-18-19.pdf" },
-  { text: "Familiarization Programme - 2017-2018", link: "https://www.uflexltd.com/pdf/Policies/Uflex-FP-Independent-Directors-17-18.pdf" },
-  { text: "Familiarization Programme - 2016-2017", link: "https://www.uflexltd.com/pdf/Policies/Uflex-FP-Independent-Directors-16-17.pdf" },
+  { text: "Familiarization Programme - 2024-2025", link: "https://beta.uflexltd.com/media/pdf/Policies/UFlex_FP-Independent-Directors_24-25.pdf" },
+  { text: "Familiarization Programme - 2023-2024", link: "https://beta.uflexltd.com/media/pdf/Policies/UFlex_FP-Independent-Directors_23-24.pdf" },
+  { text: "Familiarization Programme - 2022-2023", link: "https://beta.uflexltd.com/media/pdf/Policies/UFlex_FP-Independent-Directors_22-23.pdf" },
+  { text: "Familiarization Programme - 2021-2022", link: "https://beta.uflexltd.com/media/pdf/Policies/UFlex_FP-Independent-Directors_21-22.pdf" },
+  { text: "Familiarization Programme - 2020-2021", link: "https://beta.uflexltd.com/media/pdf/Policies/UFlex_FP-Independent-Directors_20-21.pdf" },
+  { text: "Familiarization Programme - 2019-2020", link: "https://beta.uflexltd.com/media/pdf/Policies/Uflex-FP-Independent-Directors-19-20.pdf" },
+  { text: "Familiarization Programme - 2018-2019", link: "https://beta.uflexltd.com/media/pdf/Policies/Uflex-FP-Independent-Directors-18-19.pdf" },
+  { text: "Familiarization Programme - 2017-2018", link: "https://beta.uflexltd.com/media/pdf/Policies/Uflex-FP-Independent-Directors-17-18.pdf" },
+  { text: "Familiarization Programme - 2016-2017", link: "https://beta.uflexltd.com/media/pdf/Policies/Uflex-FP-Independent-Directors-16-17.pdf" },
   {
     text: "Familiarization Programme for Independent Directors",
-    link: "https://www.uflexltd.com/pdf/Policies/Uflex-familiarization-program-for-ids.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/Policies/Uflex-familiarization-program-for-ids.pdf",
   },
 ];
 
@@ -240,11 +240,11 @@ const Page = () => {
           </div>
         </div> */}
         <Breadcrumb
-                          items={[
-                            { label: "Investors Relations", href: "/investors" },
-                            { label: "Corporate Policies" },
-                          ]}
-                        />
+          items={[
+            { label: "Investors Relations", href: "/investors" },
+            { label: "Corporate Policies" },
+          ]}
+        />
 
         {/* CONTENT */}
         <section className="max-w-6xl mx-auto px-4 sm:px-12 md:px-20 lg:px-28 py-8">
