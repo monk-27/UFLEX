@@ -18,7 +18,7 @@ export default function ProductsPage() {
             title: "FLEXIBLE LAMINATES",
             // overview:
             //     "UFlex offers a comprehensive range of flexible laminates made from various combinations of plastic, aluminum, and paper to suit diverse packaging needs. These include structures like PET/PE, PET/Foil/PE, PET/BOPP, BOPP/CPP, and advanced multilayer laminates such as PET/Extr/Foil/Extr/PE and AlOx PET/BON/CPP for retort applications. ",
-            overview:"Our flexible laminate solutions are available in a wide range of plastic, aluminium, and paper combinations, including:",
+            overview: "Our flexible laminate solutions are available in a wide range of plastic, aluminium, and paper combinations, including:",
             heroImageUrl:
                 "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-08511505115.jpg",
             brandTag: "FLEXIBLE LAMINATES",
@@ -44,7 +44,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                 { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "Zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -66,7 +66,7 @@ export default function ProductsPage() {
             title: "PRE-FORMED POUCHES",
             // overview:
             //     "UFlex offers a wide array of flexible pouches designed to cater to diverse product categories and packaging needs across industries. Our portfolio includes advanced formats such as slider zipper pouches, ideal for powders and granules, and pouring spout pouches, perfectly suited for liquid applications.",
-            overview:"Our product portfolio includes flexible pouches in various formats, including:",
+            overview: "Our product portfolio includes flexible pouches in various formats, including:",
             heroImageUrl: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-08533105331.jpg",
             brandTag: "PRE-FORMED POUCHES",
 
@@ -96,7 +96,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                 { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "Zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -111,7 +111,7 @@ export default function ProductsPage() {
         flexoPrinted: {
             key: "flexo",
             title: "FLEXO PRINTED ROLLS & BAGS",
-            overview:"We offer Flexo Surface Printed bags for Baby and Feminine Hygiene products made of various formats such as:",
+            overview: "We offer Flexo Surface Printed bags for Baby and Feminine Hygiene products made of various formats such as:",
             // overview:
             //     "Our Flexo printed rolls and bags are a key offering within our Flexible Packaging business, designed to meet the specific needs of the baby and feminine hygiene product segments. We provide high-quality flexo surface printed bags in a variety of formats, including surface printed poly rolls, bottom gusset bags, wicketed bottom gusset bags, and handle gusseted bags.",
             heroImageUrl: "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-09042700427.jpg",
@@ -134,7 +134,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                 { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "Zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -170,7 +170,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                 { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "Zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -205,7 +205,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                 { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "Zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -242,7 +242,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                 { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "Zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -274,7 +274,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                 { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "Zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -307,7 +307,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                 { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "Zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -321,7 +321,7 @@ export default function ProductsPage() {
             title: "FlexiTubes",
             overview:
                 "",
-            heroImageUrl: "https://www.uflexltd.com/assets/images/packaging/flexi-tubes.jpg",
+            heroImageUrl: "https://beta.uflexltd.com/media/images/flexi-tubes.jpg",
             brandTag: "FlexiTubes",
             highlightText: "",
             bulletList: [],
@@ -333,7 +333,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                 { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "Zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -359,7 +359,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                 { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "Zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -376,7 +376,7 @@ export default function ProductsPage() {
             title: "Six Layered Cotton N95 Mask",
             overview:
                 "Six Layered Cotton N95 Mask",
-            heroImageUrl: "https://www.uflexltd.com/assets/images/packaging/UFlex_N95_Masks.jpg",
+            heroImageUrl: "https://beta.uflexltd.com/media/images/UFlex_N95_Masks.jpg",
             brandTag: "Six Layered Cotton N95 Mask",
             highlightText: "",
             learnlink: "https://www.uflexltd.com/pdf/UFlex_N95_Masks_Brochure.pdf",
@@ -388,7 +388,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                 { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "Zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -403,7 +403,7 @@ export default function ProductsPage() {
             title: "Zipouch",
             overview:
                 "Zipouch is a versatile range of reclosable and reusable pouches made from high-quality laminated films, designed to meet the everyday food storage needs of modern consumers. Ideal for storing and refrigerating vegetables, fruits, meats, breads, and even reheating food, Zipouch offers convenience from shelf to refrigerator to microwave.",
-            heroImageUrl: "https://www.uflexltd.com/assets/images/packaging/UFlex_N95_Masks.jpg",
+            heroImageUrl: "https://beta.uflexltd.com/media/images/UFlex_N95_Masks.jpg",
             brandTag: "Zipouch",
             highlightText: "",
             learnlink: "",
@@ -422,7 +422,7 @@ export default function ProductsPage() {
                 { name: "Premium Shower Proof Bag", productKey: "premium" },
                 { name: "Six Layered Cotton N95 Mask", productKey: "n95" },
                 { name: "Injection Moulding Products", productKey: "injection" },
-            
+
 
             ],
 
@@ -445,7 +445,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                 { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "Zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -458,33 +458,33 @@ export default function ProductsPage() {
 
 
     };
-const searchParams = useSearchParams();
-const catFromUrl = searchParams.get('cat')?.toLowerCase() || null;
+    const searchParams = useSearchParams();
+    const catFromUrl = searchParams.get('cat')?.toLowerCase() || null;
 
-const validKeys = [
-  'flexible',
-  'pre-formed',
-  'flexo',
-  'wpp',
-  'eb-cnc',
-  'pharma',
-  'hygiene',
-  'flexfresh',
-  'premium',
-  'n95',
-  'Zipouch',
-  'injection',
-  // add 'FlexiTubes' if you want to support it later
-] as const;
+    const validKeys = [
+        'flexible',
+        'pre-formed',
+        'flexo',
+        'wpp',
+        'eb-cnc',
+        'pharma',
+        'hygiene',
+        'flexfresh',
+        'premium',
+        'n95',
+        'Zipouch',
+        'injection',
+        // add 'FlexiTubes' if you want to support it later
+    ] as const;
 
-const initialKey = catFromUrl && validKeys.includes(catFromUrl as any)
-  ? catFromUrl
-  : 'flexible';
-console.log("intial ket",initialKey ,catFromUrl)
-const [selectedKey, setSelectedKey] = useState(initialKey);
-const sectionRef = useRef<HTMLDivElement>(null);
+    const initialKey = catFromUrl && validKeys.includes(catFromUrl as any)
+        ? catFromUrl
+        : 'flexible';
+    console.log("intial ket", initialKey, catFromUrl)
+    const [selectedKey, setSelectedKey] = useState(initialKey);
+    const sectionRef = useRef<HTMLDivElement>(null);
 
-// Sync when URL changes (back/forward button, direct link)
+    // Sync when URL changes (back/forward button, direct link)
 
     // const [selectedKey, setSelectedKey] = useState("flexible");
 
@@ -501,21 +501,21 @@ const sectionRef = useRef<HTMLDivElement>(null);
     // };
 
     const handleCategoryClick = (productKey: string) => {
-  setSelectedKey(productKey);
+        setSelectedKey(productKey);
 
-  // Update URL without reload (clean & shareable)
-  if (typeof window !== 'undefined') {
-    const url = new URL(window.location.href);
-    url.searchParams.set('cat', productKey);
-    window.history.replaceState({}, '', url.toString());
-    if (sectionRef.current) {
-        sectionRef.current.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
-  }
-};
+        // Update URL without reload (clean & shareable)
+        if (typeof window !== 'undefined') {
+            const url = new URL(window.location.href);
+            url.searchParams.set('cat', productKey);
+            window.history.replaceState({}, '', url.toString());
+            if (sectionRef.current) {
+                sectionRef.current.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            }
+        }
+    };
 
     const enhancedCategories = product.categories.map((cat: any) => ({
         ...cat,
@@ -524,18 +524,18 @@ const sectionRef = useRef<HTMLDivElement>(null);
         onClick: () => handleCategoryClick(cat.productKey),
     }));
 
-useEffect(() => {
-  const currentCat = searchParams.get('cat')?.toLowerCase();
-  if (currentCat && validKeys.includes(currentCat as any)) {
-    setSelectedKey(currentCat);
-    if (sectionRef.current) {
-        sectionRef.current.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
-  }
-}, [searchParams]);
+    useEffect(() => {
+        const currentCat = searchParams.get('cat')?.toLowerCase();
+        if (currentCat && validKeys.includes(currentCat as any)) {
+            setSelectedKey(currentCat);
+            if (sectionRef.current) {
+                sectionRef.current.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            }
+        }
+    }, [searchParams]);
     return (
         <>
 
@@ -602,11 +602,11 @@ useEffect(() => {
                         />
                         <div ref={sectionRef} className="scroll-mt-20">
 
-                        <ProductCategorySection
-                            {...productProps}
-                            categories={enhancedCategories}
+                            <ProductCategorySection
+                                {...productProps}
+                                categories={enhancedCategories}
                             />
-                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

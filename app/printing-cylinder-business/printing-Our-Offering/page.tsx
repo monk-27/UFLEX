@@ -34,10 +34,10 @@ export default function ProductsPage() {
             text:
               "With a vast infrastructure, talented manpower and advanced technology, the Cylinders business of UFlex has carved an irreproachable reputation for itself. UFlex has been recognized as the most trusted manufacturer of rotogravure cylinders or Gravure Printing Cylinders for packaging & other industries. Whether you are printing for the first time or printing through a re-engraved cylinder, our technologies make sure that the brand identity of the product remains intact maintaining absolute consistency in sharpness, contrast and gamma levels.",
             images: [
-              "https://www.uflexltd.com/assets/images/Cylinder-Gravure-Cylinders-1.jpg",
-              "https://www.uflexltd.com/assets/images/Cylinder-Gravure-Cylinders-2.jpg",
-              "https://www.uflexltd.com/assets/images/Cylinder-Gravure-Cylinders-3.jpg",
-              //   "https://www.uflexltd.com/assets/images/gravure-cylinder-4.jpg",
+              "https://beta.uflexltd.com/media/images/Cylinder-Gravure-Cylinders-1.jpg",
+              "https://beta.uflexltd.com/media/images/Cylinder-Gravure-Cylinders-2.jpg",
+              "https://beta.uflexltd.com/media/images/Cylinder-Gravure-Cylinders-3.jpg",
+              //   "https://beta.uflexltd.com/media/images/gravure-cylinder-4.jpg",
             ],
             subText:
               "Top of the line machines from Europe & USA have been installed for Film less Digital Engraving on the cylinders. After viewing the final layout including press marks through a Plotter printout, the digital file is transferred onto the engraver. The technically advanced engraving machines have the capability to generate different cell profiles and the provision of using customer defined Gamma Levels, thereby ensuring exact reproduction for specialized applications.\n\nThe diamond stylus of the Engraver produces up to 8500 cells per second during a high-speed process of engraving that meets various printing requirements. Accuracy of engraving in terms of cell geometry (cell width, cell wall and depth) for each cylinder is ensured that yields sharpness on the prints.\n\nHard Chrome Electroplating is finally carried out on the engraved Gravure Printing Cylinder that best meets printing requirements. For varied printing requirements, engravers are used both on hollow and shafted gravure printing cylinders of up to 2500 mm length and 1250 mm circumference.",
@@ -53,8 +53,8 @@ export default function ProductsPage() {
               "Low GSM Coating Cylinder",
             ],
             images: [
-              "https://www.uflexltd.com/assets/images/Cylinder-Coating-Cylinders-1.jpg",
-              "https://www.uflexltd.com/assets/images/Cylinder-Coating-Cylinders.jpg",
+              "https://beta.uflexltd.com/media/images/Cylinder-Coating-Cylinders-1.jpg",
+              "https://beta.uflexltd.com/media/images/Cylinder-Coating-Cylinders.jpg",
             ],
           },
           {
@@ -63,18 +63,18 @@ export default function ProductsPage() {
               {
                 title: "Embossing Cylinders by Laser Engraving",
                 image:
-                  "https://www.uflexltd.com/assets/images/Cylinder-Embossing-Cylinders.jpg",
+                  "https://beta.uflexltd.com/media/images/Cylinder-Embossing-Cylinders.jpg",
               },
               {
                 title: "Cylinders for Wooden Laminates",
                 image:
-                  "https://www.uflexltd.com/assets/images/Cylinders-Wooden-Laminates.jpg",
+                  "https://beta.uflexltd.com/media/images/Cylinders-Wooden-Laminates.jpg",
               },
               {
                 title:
                   "Wall paper Design, Gift wrapper & Greeting Cards etc",
                 image:
-                  "https://www.uflexltd.com/assets/images/Cylinder-Wallpaper-Design.jpg",
+                  "https://beta.uflexltd.com/media/images/Cylinder-Wallpaper-Design.jpg",
               },
             ],
           },
@@ -107,8 +107,8 @@ export default function ProductsPage() {
           "High resistance to solvents (ethyl acetate, ethanol, Methyl Ethyl Ketone MEK)",
         ],
         images: [
-          "https://www.uflexltd.com/assets/images/Cylinder-Flexo-Printing-Sleeves.jpg",
-          "https://www.uflexltd.com/assets/images/Cylinder-Flexo-Printing-Sleeves-1.jpg",
+          "https://beta.uflexltd.com/media/images/Cylinder-Flexo-Printing-Sleeves.jpg",
+          "https://beta.uflexltd.com/media/images/Cylinder-Flexo-Printing-Sleeves-1.jpg",
         ],
       },
     },

@@ -235,7 +235,7 @@ Our converting machines are tailored as per the clients’ needs and are enabled
                                     "label": "Standard Spl. (ELS):",
                                     "text": "ROTOFLEX Standard Spl. is a modular construction machine. The Unique feature of this machine is the special trolley system which contains the printing cylinder, Ink-tray along with ink-circulation system, self-shaft chucking, sleeve type impression. Turret un-wind and re-wind using air expandable shafts with auto splicing arrangement which makes the job change-over a matter of few minutes. The speed can be attained up to 400 meters/min.",
                                     "moreLink": "https://www.uflexltd.com/standard-spl-els-rotogravure-printing-machines.php",
-                                    "image":"/images/new/els.png"
+                                    "image": "/images/new/els.png"
                                 },
                                 {
                                     "label": "Standard (ELS):",
@@ -283,7 +283,7 @@ Our converting machines are tailored as per the clients’ needs and are enabled
                     subSections: [
                         {
                             title: "Solvent-less Lamination Machines:",
-                            image:"/images/new/solventless.png",
+                            image: "/images/new/solventless.png",
                             intro: `Solventless Super-550 is a high-speed, eco-friendly laminating machine with a
 maximum web width of 1320 mm, designed for flexible packaging applications. It
 features independent motors at both unwind and rewind sections for precise web
@@ -401,36 +401,36 @@ speeds up to 600 MPM and a maximum rewind diameter of 600 mm, it enables
 precision slitting through multiple cutting options. An advanced trim conveying
 system ensures clean, stable, high-speed performance.`,
                             moreLink: "https://www.uflexltd.com/uslit-slitting-rewinding-machines.php",
-                            image:"/images/new/sliter.png"
+                            image: "/images/new/sliter.png"
                         },
                         {
                             label: "ECOSLIT:",
-                            image:"",
+                            image: "",
 
                             text: `The ECOSLIT comes with the features of; a high-speed Duplex Slitter and re-winder with simplex unwind stand, a Duplex rewinder, an AC motor digital drive system and a trim collection arrangement. Ecoslit can attain speed up to 350 to 450 meters/ minute.`,
                             moreLink: "https://www.uflexltd.com/ecoslit-slitting-rewinding-machines.php"
                         },
                         {
                             label: "SCRDSL:",
-                            image:"",
+                            image: "",
                             text: `SCRDSL is ideally suited for slitting & rewinding printed or unprinted flexible laminates, such as PET/PE, PET/MET.PET/PE, PET/AL. Foil/PE, BOPP/PE, etc. The machine is designed on pure centre rewinding principle, both rewind shafts are powered through powdered clutches; rewind tension selection can be done by the turn of knob on the control desk. SCRDSL can run at speed up to 200 meters/ minute.`,
                             moreLink: "https://www.uflexltd.com/scrdsl-slitting-rewinding-machines.php"
                         },
                         {
                             label: "TORO SLIT:",
-                            image:"",
+                            image: "",
                             text: `Toro Slit is equipped with AC Asynchronous motor and Digital AC Drives with turret type Rewinder and Pneumatic disc brake for unwinder with the purpose of Slitting and Rewinding Printed or Unprinted Flexible Laminates. This machine is frontrunner where the output per unit space is an important criteria during selection of equipments. High productivity and lower wastage are the key features of this machine. It can attain speed of upto 700 Meter/Minute.`,
                             moreLink: "https://www.uflexltd.com/toroslit-slitting-rewinding-machines.php"
                         },
                         {
                             label: "ACCUSLIT:",
-                            image:"",
+                            image: "",
                             text: `This is secondary slitters for packaging film manufacturing Industry with a working width of models from 2500 mm to 3300 mm. This slitter can slit BOPET, BOPP, CPP and Plain film and can run at a maximum speed of 800 mpm.`,
                             moreLink: "https://www.uflexltd.com/accuslit-slitting-rewinding-machines.php"
                         },
                         {
                             label: "Auto Slicer 1700:",
-                            image:"",
+                            image: "",
                             text: `This machine is designed for long lasting heavy duty process, especially for slicing and cutting self-adhesive tapes with core in different sizes with circular cutter and movement of carriage is especially through servo motor.`,
                             moreLink: "https://www.uflexltd.com/auto-slicer1700-slitting-rewinding-machines.php"
                         }
@@ -506,9 +506,9 @@ system ensures clean, stable, high-speed performance.`,
                     items: [
                         {
                             label: "ReLAM 50:",
-                    image:"/images/new/relam.png",
+                            image: "/images/new/relam.png",
 
-                    text:`ReLAM 50 is a decentralized recycling system designed to process up to 50 kg of
+                            text: `ReLAM 50 is a decentralized recycling system designed to process up to 50 kg of
 mixed flexible waste per hour, offering an efficient solution for hard-to-recycle
 materials. Ideal for start-ups, rural enterprises, local recycling units, waste
 management companies, NGOs, and municipalities, the system converts mixed
@@ -516,7 +516,7 @@ flexible waste into recycled granules or panels. These outputs can be reused to
 manufacture household plastic products, plastic lumber, tiles, and other non-critical
 applications. Compact and versatile, ReLAM 50 enables grassroots participation in
 the circular economy while advancing sustainable waste management practices`,
-                               moreLink: "https://www.uflexltd.com/relam250-mlp-recycling-machines.php"
+                            moreLink: "https://www.uflexltd.com/relam250-mlp-recycling-machines.php"
                         }
                     ]
                 }
@@ -547,19 +547,19 @@ the circular economy while advancing sustainable waste management practices`,
                             label: "Auger Filler",
                             description:
                                 "Auger filler (Screw based filling system) is applicable for stick powder.",
-                            image: "https://www.uflexltd.com/assets/images/SP-Auger-Filler.jpg"
+                            image: "https://beta.uflexltd.com/media/images/SP-Auger-Filler.jpg"
                         },
                         {
                             label: "Volumetric Cup Filler",
                             description:
                                 "Volumetric cup filler is applicable for powders and granules.",
-                            image: "https://www.uflexltd.com/assets/images/SP-Volumetric-Cup-Filler.jpg"
+                            image: "https://beta.uflexltd.com/media/images/SP-Volumetric-Cup-Filler.jpg"
                         },
                         {
                             label: "Weigh Filler",
                             description:
                                 "Multi head weigh filler is applicable for packaging of free flow granular products.",
-                            image: "https://www.uflexltd.com/assets/images/SP-Weigh-Filler.jpg"
+                            image: "https://beta.uflexltd.com/media/images/SP-Weigh-Filler.jpg"
                         }
                     ]
                 }
@@ -571,24 +571,24 @@ the circular economy while advancing sustainable waste management practices`,
 
 
     };
-const searchParams = useSearchParams();
-const catFromUrl = searchParams.get('cat')?.toLowerCase() || null;
+    const searchParams = useSearchParams();
+    const catFromUrl = searchParams.get('cat')?.toLowerCase() || null;
 
-const validKeys = [
-//   "engineering",   // overview / all
-  "packaging",
-  "converting",
-  "speciality",
-] as const;
+    const validKeys = [
+        //   "engineering",   // overview / all
+        "packaging",
+        "converting",
+        "speciality",
+    ] as const;
 
-const initialKey = catFromUrl && validKeys.includes(catFromUrl as any)
-  ? catFromUrl
-  : "packaging";   // default tab when no ?cat or invalid
+    const initialKey = catFromUrl && validKeys.includes(catFromUrl as any)
+        ? catFromUrl
+        : "packaging";   // default tab when no ?cat or invalid
 
-const [selectedKey, setSelectedKey] = useState<string>(initialKey);
-const sectionRef = useRef<HTMLDivElement>(null);
+    const [selectedKey, setSelectedKey] = useState<string>(initialKey);
+    const sectionRef = useRef<HTMLDivElement>(null);
 
-// Keep in sync when URL changes (back/forward, direct link)
+    // Keep in sync when URL changes (back/forward, direct link)
 
 
     // const [selectedKey, setSelectedKey] = useState("packaging");
@@ -603,52 +603,52 @@ const sectionRef = useRef<HTMLDivElement>(null);
     //         isActive: cat.productKey === selectedKey,
     //         onClick: () => setSelectedKey(cat.productKey),
     //     })) || [];
-useEffect(() => {
-  const currentCat = searchParams.get('cat')?.toLowerCase();
-  if (currentCat && validKeys.includes(currentCat as any)) {
-    setSelectedKey(currentCat);
-    if (sectionRef.current) {
-        sectionRef.current.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
-  } else if (!currentCat) {
-    setSelectedKey("packaging"); // reset to default when param cleared
-  }
-}, [searchParams]);
+    useEffect(() => {
+        const currentCat = searchParams.get('cat')?.toLowerCase();
+        if (currentCat && validKeys.includes(currentCat as any)) {
+            setSelectedKey(currentCat);
+            if (sectionRef.current) {
+                sectionRef.current.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            }
+        } else if (!currentCat) {
+            setSelectedKey("packaging"); // reset to default when param cleared
+        }
+    }, [searchParams]);
 
 
-const handleCategoryClick = (productKey: string) => {
-  setSelectedKey(productKey);
+    const handleCategoryClick = (productKey: string) => {
+        setSelectedKey(productKey);
 
-  // Update URL without full reload → shareable + back button friendly
-  if (typeof window !== 'undefined') {
-    const url = new URL(window.location.href);
-    url.searchParams.set('cat', productKey);
-    window.history.replaceState({}, '', url.toString());
-    if (sectionRef.current) {
-        sectionRef.current.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
-  }
-};
+        // Update URL without full reload → shareable + back button friendly
+        if (typeof window !== 'undefined') {
+            const url = new URL(window.location.href);
+            url.searchParams.set('cat', productKey);
+            window.history.replaceState({}, '', url.toString());
+            if (sectionRef.current) {
+                sectionRef.current.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            }
+        }
+    };
 
-const enhancedCategories =
-  product.categories?.map((cat: any) => ({
-    ...cat,
-    isActive: cat.productKey === selectedKey,
-    onClick: () => handleCategoryClick(cat.productKey),
-  })) || [];
+    const enhancedCategories =
+        product.categories?.map((cat: any) => ({
+            ...cat,
+            isActive: cat.productKey === selectedKey,
+            onClick: () => handleCategoryClick(cat.productKey),
+        })) || [];
     return (
         <>
             <SiteHeader />
 
             <section className="bg-white ">
                 <div className="">
-                   
+
 
                     <section className="relative w-full h-[580px] sm:h-[451px] overflow-hidden">
 
@@ -702,13 +702,13 @@ const enhancedCategories =
                             { label: "Engineering Business Products" },
                         ]}
                     />
-<div ref={sectionRef} className="scroll-mt-20">
+                    <div ref={sectionRef} className="scroll-mt-20">
 
-                    <ProductCategorySection
-                        {...product}
-                        categories={enhancedCategories}
+                        <ProductCategorySection
+                            {...product}
+                            categories={enhancedCategories}
                         />
-                        </div>
+                    </div>
                 </div>
             </section>
 

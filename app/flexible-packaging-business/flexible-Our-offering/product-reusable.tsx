@@ -288,7 +288,7 @@ export default function ProductCategorySection({
                                     Overview
                                 </h3> */}
                                         <p className="pb-4 lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
-{overview}
+                                            {overview}
                                         </p>
                                     </div>
 
@@ -323,7 +323,7 @@ export default function ProductCategorySection({
                                 {/* IMAGE BLOCK */}
                                 {/* <div className="border border-[#117ABA] rounded-sm p-3">
                                     <Image
-                                        src="https://www.uflexltd.com/assets/images/packaging/flexi-tubes.jpg" // replace with actual image path
+                                        src="https://beta.uflexltd.com/media/images/flexi-tubes.jpg" // replace with actual image path
                                         alt="FlexiTubes Overview"
                                         width={900}
                                         height={420}
@@ -470,7 +470,7 @@ export default function ProductCategorySection({
                                 </div>
 
 
-                             
+
 
 
 
@@ -509,7 +509,7 @@ export default function ProductCategorySection({
 
                                     <div className="relative h-[380px] bg-gray-100 border-2 border-[#117ABA]">
                                         <Image
-                                            src="https://www.uflexltd.com/assets/images/packaging/UFlex_N95_Masks_3.jpg"
+                                            src="https://beta.uflexltd.com/media/images/UFlex_N95_Masks_3.jpg"
                                             alt={title}
                                             fill
                                             className="object-cover"
@@ -519,7 +519,7 @@ export default function ProductCategorySection({
 
                                     <div className="relative h-[380px] bg-gray-100 border-2 border-[#117ABA]">
                                         <Image
-                                            src="https://www.uflexltd.com/assets/images/packaging/UFlex_N95_Masks_4.jpg"
+                                            src="https://beta.uflexltd.com/media/images/UFlex_N95_Masks_4.jpg"
                                             alt={title}
                                             fill
                                             className="object-cover"
@@ -529,7 +529,7 @@ export default function ProductCategorySection({
 
                                     <div className="relative h-[380px] bg-gray-100 border-2 border-[#117ABA]">
                                         <Image
-                                            src="https://www.uflexltd.com/assets/images/packaging/UFlex_N95_Masks_1.jpg"
+                                            src="https://beta.uflexltd.com/media/images/UFlex_N95_Masks_1.jpg"
                                             alt={title}
                                             fill
                                             className="object-cover"
@@ -539,7 +539,7 @@ export default function ProductCategorySection({
 
                                     <div className="relative h-[380px] bg-gray-100 border-2 border-[#117ABA]">
                                         <Image
-                                            src="https://www.uflexltd.com/assets/images/packaging/UFlex_N95_Masks_2.jpg"
+                                            src="https://beta.uflexltd.com/media/images/UFlex_N95_Masks_2.jpg"
                                             alt={title}
                                             fill
                                             className="object-cover"
@@ -639,10 +639,10 @@ export default function ProductCategorySection({
 
                                 <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="relative h-[240px] ">
-                                        <Image src="https://www.uflexltd.com/assets/images/packaging/IMP/UFLEX_Moulded_Products_Pouches_1.jpg" alt={title} fill className="object-contain" />
+                                        <Image src="https://beta.uflexltd.com/media/images/UFLEX_Moulded_Products_Pouches_1.jpg" alt={title} fill className="object-contain" />
                                     </div>
                                     <div className="relative h-[240px] ">
-                                        <Image src="https://www.uflexltd.com/assets/images/packaging/IMP/UFLEX_Moulded_Products_Pouches_2.jpg" alt={title} fill className="object-contain" />
+                                        <Image src="https://beta.uflexltd.com/media/images/UFLEX_Moulded_Products_Pouches_2.jpg" alt={title} fill className="object-contain" />
                                     </div>
                                 </div>
 
@@ -653,18 +653,18 @@ export default function ProductCategorySection({
 
                                 <div className=" p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="relative h-[240px] bg-[#f2eded]">
-                                        <Image src="https://www.uflexltd.com/assets/images/packaging/IMP/UFLEX_Moulded_Products_Tubes_1.jpg" alt={title} fill className="object-contain" />
+                                        <Image src="https://beta.uflexltd.com/media/images/UFLEX_Moulded_Products_Tubes_1.jpg" alt={title} fill className="object-contain" />
                                     </div>
                                     <div className="relative h-[240px] bg-[#f2eded]">
-                                        <Image src="https://www.uflexltd.com/assets/images/packaging/IMP/UFLEX_Moulded_Products_Tubes_2.jpg" alt={title} fill className="object-contain" />
+                                        <Image src="https://beta.uflexltd.com/media/images/packaging/IMP/UFLEX_Moulded_Products_Tubes_2.jpg" alt={title} fill className="object-contain" />
                                     </div>
 
 
                                     <div className="relative h-[240px] bg-[#f2eded]">
-                                        <Image src="https://www.uflexltd.com/assets/images/packaging/IMP/UFLEX_Moulded_Products_Tubes_3.jpg" alt={title} fill className="object-contain" />
+                                        <Image src="https://beta.uflexltd.com/media/images/UFLEX_Moulded_Products_Tubes_3.jpg" alt={title} fill className="object-contain" />
                                     </div>
                                     <div className="relative h-[240px] bg-[#f2eded]">
-                                        <Image src="https://www.uflexltd.com/assets/images/packaging/IMP/UFLEX_Moulded_Products_Tubes_4.jpg" alt={title} fill className="object-contain" />
+                                        <Image src="https://beta.uflexltd.com/media/images/UFLEX_Moulded_Products_Tubes_4.jpg" alt={title} fill className="object-contain" />
                                     </div>
                                 </div>
 
@@ -675,16 +675,16 @@ export default function ProductCategorySection({
 
                                 <div className=" p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="relative h-[240px] bg-black">
-                                        <Image src="https://www.uflexltd.com/assets/images/packaging/IMP/UFLEX_Moulded_Products_Zippers_1.jpg" alt={title} fill className="object-contain" />
+                                        <Image src="https://beta.uflexltd.com/media/images/UFLEX_Moulded_Products_Zippers_1.jpg" alt={title} fill className="object-contain" />
                                     </div>
                                     <div className="relative h-[240px] bg-black">
-                                        <Image src="https://www.uflexltd.com/assets/images/packaging/IMP/UFLEX_Moulded_Products_Zippers_2.jpg" alt={title} fill className="object-contain" />
+                                        <Image src="https://beta.uflexltd.com/media/images/UFLEX_Moulded_Products_Zippers_2.jpg" alt={title} fill className="object-contain" />
                                     </div>
                                     <div className="relative h-[240px] bg-black">
-                                        <Image src="https://www.uflexltd.com/assets/images/packaging/IMP/UFLEX_Moulded_Products_Zippers_3.jpg" alt={title} fill className="object-contain" />
+                                        <Image src="https://beta.uflexltd.com/media/images/UFLEX_Moulded_Products_Zippers_3.jpg" alt={title} fill className="object-contain" />
                                     </div>
                                     <div className="relative h-[240px] bg-black">
-                                        <Image src="https://www.uflexltd.com/assets/images/packaging/IMP/UFLEX_Moulded_Products_Zippers_4.jpg" alt={title} fill className="object-contain" />
+                                        <Image src="https://beta.uflexltd.com/media/images/UFLEX_Moulded_Products_Zippers_4.jpg" alt={title} fill className="object-contain" />
                                     </div>
                                 </div>
 
@@ -695,7 +695,7 @@ export default function ProductCategorySection({
 
                                 <div className=" p-4">
                                     <div className="relative h-[260px] bg-[#f2eded]">
-                                        <Image src="https://www.uflexltd.com/assets/images/packaging/IMP/UFLEX_Moulded_Products_FilmRolls_1.jpg" alt={title} fill className="object-contain" />
+                                        <Image src="https://beta.uflexltd.com/media/images/UFLEX_Moulded_Products_FilmRolls_1.jpg" alt={title} fill className="object-contain" />
                                     </div>
                                 </div>
 

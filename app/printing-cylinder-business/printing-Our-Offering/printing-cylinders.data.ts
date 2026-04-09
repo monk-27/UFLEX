@@ -25,8 +25,8 @@ export const printingCylindersData = {
             "With a vast infrastructure, talented manpower and advanced technology, the Cylinders business of UFlex has carved an irreproachable reputation for itself. UFlex has been recognized as the most trusted manufacturer of rotogravure cylinders or Gravure Printing Cylinders for packaging & other industries. Whether you are printing for the first time or printing through a re-engraved cylinder, our technologies make sure that the brand identity of the product remains intact maintaining absolute consistency in sharpness, contrast and gamma levels.",
 
           images: [
-            "https://www.uflexltd.com/assets/images/gravure-cylinder-1.jpg",
-            "https://www.uflexltd.com/assets/images/gravure-cylinder-2.jpg",
+            "https://beta.uflexltd.com/media/images/gravure-cylinder-1.jpg",
+            "https://beta.uflexltd.com/media/images/gravure-cylinder-2.jpg",
           ],
 
           subText:
@@ -44,8 +44,8 @@ export const printingCylindersData = {
             "Low GSM Coating Cylinder",
           ],
           images: [
-            "https://www.uflexltd.com/assets/images/coating-cylinder-1.jpg",
-            "https://www.uflexltd.com/assets/images/coating-cylinder-2.jpg",
+            "https://beta.uflexltd.com/media/images/coating-cylinder-1.jpg",
+            "https://beta.uflexltd.com/media/images/coating-cylinder-2.jpg",
           ],
         },
 
@@ -55,17 +55,17 @@ export const printingCylindersData = {
             {
               title: "Embossing Cylinders by Laser Engraving",
               image:
-                "https://www.uflexltd.com/assets/images/embossing-cylinder.jpg",
+                "https://beta.uflexltd.com/media/images/embossing-cylinder.jpg",
             },
             {
               title: "Cylinders for Wooden Laminates",
               image:
-                "https://www.uflexltd.com/assets/images/wooden-laminate-cylinder.jpg",
+                "https://beta.uflexltd.com/media/images/wooden-laminate-cylinder.jpg",
             },
             {
               title: "Wall paper Design, Gift wrapper & Greeting Cards etc",
               image:
-                "https://www.uflexltd.com/assets/images/wallpaper-cylinder.jpg",
+                "https://beta.uflexltd.com/media/images/wallpaper-cylinder.jpg",
             },
           ],
         },
@@ -82,7 +82,7 @@ export const printingCylindersData = {
         "Productivity- Marked improvement in pressroom, flexo plate preparation, thereby reducing overall cycle time.",
       ],
       image:
-        "https://www.uflexltd.com/assets/images/ctp-flexo-plate.jpg",
+        "https://beta.uflexltd.com/media/images/ctp-flexo-plate.jpg",
     },
 
     sleeves: {
@@ -97,8 +97,8 @@ export const printingCylindersData = {
       ],
 
       images: [
-        "https://www.uflexltd.com/assets/images/flexo-sleeve-1.jpg",
-        "https://www.uflexltd.com/assets/images/flexo-sleeve-2.jpg",
+        "https://beta.uflexltd.com/media/images/flexo-sleeve-1.jpg",
+        "https://beta.uflexltd.com/media/images/flexo-sleeve-2.jpg",
       ],
     },
   },
