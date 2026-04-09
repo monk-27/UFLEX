@@ -1,5 +1,136 @@
 RewriteEngine On
 
+# ==========================================
+# 301 PERMANENT REDIRECTS FOR OLD PHP LINKS
+# ==========================================
+# About Us
+Redirect 301 /about-us.php /about-us/
+Redirect 301 /company-profile.php /about-us/
+Redirect 301 /vision-mission.php /about-us/
+Redirect 301 /values.php /about-us/
+Redirect 301 /cmd-Profile.php /about-us/
+Redirect 301 /board-of-directors.php /about-us/
+Redirect 301 /board-committees.php /about-us/
+Redirect 301 /key-management.php /about-us/
+Redirect 301 /subsidiaries-associates.php /about-us/
+Redirect 301 /pdf/UFlex_Company_Presentation.pdf /about-us/
+
+# Packaging Films
+Redirect 301 /packaging-films.php /packaging-films-business/
+Redirect 301 /packaging-films-key-people.php /packaging-films-business/
+Redirect 301 /packaging-films-products.php /packaging-films-business/
+Redirect 301 /packaging-films-marketing-support.php /packaging-films-business/
+Redirect 301 /packaging-films-awards-and-recognition.php /packaging-films-business/
+Redirect 301 /packaging-films-environmental-sustainability.php /packaging-films-business/
+Redirect 301 /packaging-films-contactus.php /packaging-films-business/
+Redirect 301 /packaging-films-enquiryform.php /packaging-films-business/
+
+# Chemicals
+Redirect 301 /chemicals.php /chemicals-business/
+Redirect 301 /chemicals-key-people.php /chemicals-business/
+Redirect 301 /chemicals-products.php /chemicals-business/
+Redirect 301 /chemicals-marketing-support.php /chemicals-business/
+Redirect 301 /chemicals-awards-and-recognition.php /chemicals-business/
+Redirect 301 /chemicals-environmental-sustainability.php /chemicals-business/
+Redirect 301 /chemicals-contactus.php /chemicals-business/
+Redirect 301 /chemicals-enquiryform.php /chemicals-business/
+
+# Aseptic Packaging
+Redirect 301 /asepto.php /aseptic-packaging-business/
+Redirect 301 /asepto-responsible-sourcing.php /aseptic-packaging-business/
+Redirect 301 /asepto-products-services.php /aseptic-packaging-business/
+Redirect 301 /asepto-our-commitment.php /aseptic-packaging-business/
+Redirect 301 /asepto-awards-and-recognition.php /aseptic-packaging-business/
+Redirect 301 /asepto-contactus.php /aseptic-packaging-business/
+Redirect 301 /asepto-enquiry-form.php /aseptic-packaging-business/
+
+# Holography
+Redirect 301 /holography.php /holography-business/
+Redirect 301 /holography-key-people.php /holography-business/
+Redirect 301 /holography-products.php /holography-business/
+Redirect 301 /holography-marketing-support.php /holography-business/
+Redirect 301 /holography-awards-and-recognition.php /holography-business/
+Redirect 301 /holography-environmental-sustainability.php /holography-business/
+Redirect 301 /holography-contactus.php /holography-business/
+Redirect 301 /holography-enquiry_form.php /holography-business/
+
+# Flexible Packaging
+Redirect 301 /packaging.php /flexible-packaging-business/
+Redirect 301 /packaging-key-people.php /flexible-packaging-business/
+Redirect 301 /packaging-products.php /flexible-packaging-business/
+Redirect 301 /packaging-marketing-support.php /flexible-packaging-business/
+Redirect 301 /packaging-awards-and-recognition.php /flexible-packaging-business/
+Redirect 301 /packaging-environmental-sustainability.php /flexible-packaging-business/
+Redirect 301 /packaging-contact-us.php /flexible-packaging-business/
+Redirect 301 /packaging-enquiry-form.php /flexible-packaging-business/
+
+# Printing & Cylinders
+Redirect 301 /cylinders.php /printing-cylinder-business/
+Redirect 301 /cylinders-key-people.php /printing-cylinder-business/
+Redirect 301 /cylinders-products.php /printing-cylinder-business/
+Redirect 301 /cylinders-marketing-support.php /printing-cylinder-business/
+Redirect 301 /cylinders-awards-and-recognition.php /printing-cylinder-business/
+Redirect 301 /cylinders-environmental-sustainability.php /printing-cylinder-business/
+Redirect 301 /cylinders-contactus.php /printing-cylinder-business/
+Redirect 301 /cylinders-enquiryform.php /printing-cylinder-business/
+
+# Engineering
+Redirect 301 /engineering.php /engineering-business/
+Redirect 301 /engineering-key-people.php /engineering-business/
+Redirect 301 /engineering-products.php /engineering-business/
+Redirect 301 /engineering-marketing-support.php /engineering-business/
+Redirect 301 /engineering-awards-and-recognition.php /engineering-business/
+Redirect 301 /engineering-environmental-sustainability.php /engineering-business/
+Redirect 301 /engineering-contactus.php /engineering-business/
+Redirect 301 /engineering-enquiryform.php /engineering-business/
+
+# Investor Relations
+Redirect 301 /investor-presentations.php /investors/ir-presentation-quarterly-earnings/
+Redirect 301 /governance-structure.php /investors/ir-announcements-updates/
+Redirect 301 /quarterly-earnings-reports.php /investors/ir-presentation-quarterly-earnings/
+Redirect 301 /grievance-redressal.php /investors/ir-announcements-updates/
+Redirect 301 /contact-details-of-kmps.php /investors/ir-announcements-updates/
+Redirect 301 /credit-ratings.php /investors/ir-announcements-updates/
+Redirect 301 /shareholders-communication.php /investors/shareholders-information/
+Redirect 301 /financials.php /investors/financial-results/
+Redirect 301 /stock-price-data.php /investors/investors-archives/
+Redirect 301 /company-release.php /investors/investors-archives/
+Redirect 301 /extract-of-annual-return.php /investors/ir-announcements-updates/
+Redirect 301 /business-responsibility-report.php /investors/ir-announcements-updates/
+Redirect 301 /secretarial-compliance-report.php /investors/ir-announcements-updates/
+Redirect 301 /policies.php /investors/corporate-policies/
+Redirect 301 /announcements.php /investors/ir-announcements-updates/
+Redirect 301 /shareholding-pattern.php /investors/ir-announcements-updates/
+Redirect 301 /unpaid-unclaimed-dividend-details.php /investors/ir-announcements-updates/
+Redirect 301 /transfer-of-shares-to-iepf.php /investors/ir-announcements-updates/
+Redirect 301 /registrar.php /investors/ir-announcements-updates/
+Redirect 301 /compliance-reports.php /investors/investors-archives/
+Redirect 301 /reconciliation-of-share-capital-audit-report.php /investors/ir-announcements-updates/
+
+# Sustainability
+Redirect 301 /sustainability.php /sustainability/
+Redirect 301 /sustainability-practices.php /sustainability/
+Redirect 301 /social-sustainability.php /sustainability/
+Redirect 301 /environmental-sustainability.php /sustainability/
+
+# Hall of Fame
+Redirect 301 /awards.php /hall-of-fame/?business=corporate-awards
+Redirect 301 /recognition-accreditation.php /hall-of-fame/?business=corporate-awards
+
+# Careers
+Redirect 301 /why-uflex.php /careers/
+Redirect 301 /learning-curve.php /careers/
+Redirect 301 /choose-your-path.php /careers/
+Redirect 301 /vox-populi.php /careers/
+Redirect 301 /because-you-matter.php /careers/
+Redirect 301 /uflex-program.php /careers/
+Redirect 301 /current-openings.php /careers/
+
+# Contact Us
+Redirect 301 /global-presence.php /get-in-touch/
+Redirect 301 /contact-form.php /get-in-touch/
+# ==========================================
+
 # Serve existing files directly
 RewriteCond %{REQUEST_FILENAME} -f
 RewriteRule ^ - [L]
