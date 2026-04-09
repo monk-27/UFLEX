@@ -5,46 +5,48 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST");
 header("Content-Type: application/json; charset=UTF-8");
 
-function parse_env_file($path) {
-    if(!file_exists($path)) {
-        return [];
+function parse_env_file($path)
+{
+  if (!file_exists($path)) {
+    return [];
+  }
+  $variables = [];
+  $lines = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+  foreach ($lines as $line) {
+    if (strpos(trim($line), '#') === 0)
+      continue;
+    if (strpos($line, '=') !== false) {
+      list($name, $value) = explode('=', $line, 2);
+      $name = trim($name);
+      $value = trim($value);
+      if (!empty($name)) {
+        $variables[$name] = $value;
+      }
     }
-    $variables = [];
-    $lines = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-    foreach($lines as $line) {
-        if(strpos(trim($line), '#') === 0) continue;
-        if(strpos($line, '=') !== false) {
-            list($name, $value) = explode('=', $line, 2);
-            $name = trim($name);
-            $value = trim($value);
-            if(!empty($name)) {
-                $variables[$name] = $value;
-            }
-        }
-    }
-    return $variables;
+  }
+  return $variables;
 }
 
 // Load configurations securely
 $env = [];
 $searchPaths = [
-    __DIR__ . '/.env.local',           // Same directory
-    __DIR__ . '/../.env.local',        // Parent directory (standard Next.js)
-    $_SERVER['DOCUMENT_ROOT'] . '/.env.local' // Web root
+  __DIR__ . '/.env.local',           // Same directory
+  __DIR__ . '/../.env.local',        // Parent directory (standard Next.js)
+  $_SERVER['DOCUMENT_ROOT'] . '/.env.local' // Web root
 ];
 
 foreach ($searchPaths as $path) {
-    if (file_exists($path)) {
-        $env = parse_env_file($path);
-        break; // Stop at first found file
-    }
+  if (file_exists($path)) {
+    $env = parse_env_file($path);
+    break; // Stop at first found file
+  }
 }
 
 // Basic validation
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    http_response_code(405);
-    echo json_encode(['success' => false, 'message' => 'Method not allowed.']);
-    exit;
+  http_response_code(405);
+  echo json_encode(['success' => false, 'message' => 'Method not allowed.']);
+  exit;
 }
 
 // 1. Process Text Fields
@@ -59,15 +61,15 @@ $captcha = $_POST['captcha'] ?? '';
 
 // Simple validation
 if (empty($name) || empty($phone) || empty($email) || empty($message_body) || empty($enquiryFor)) {
-    http_response_code(400);    
-    echo json_encode(['success' => false, 'message' => 'All required fields must be filled.']);
-    exit;
+  http_response_code(400);
+  echo json_encode(['success' => false, 'message' => 'All required fields must be filled.']);
+  exit;
 }
 
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    http_response_code(400);    
-    echo json_encode(['success' => false, 'message' => 'Invalid email format.']);
-    exit;
+  http_response_code(400);
+  echo json_encode(['success' => false, 'message' => 'Invalid email format.']);
+  exit;
 }
 
 // 2. Process File Uploads (if any)
@@ -77,84 +79,94 @@ $uploadErrors = [];
 
 // Create directory if it doesn't exist
 if (!is_dir($uploadDir)) {
-    mkdir($uploadDir, 0755, true);
+  mkdir($uploadDir, 0755, true);
 }
 
 if (!empty($_FILES['files']['name'][0])) {
-    $fileCount = count($_FILES['files']['name']);
-    
-    // Limits
-    if ($fileCount > 5) {
-        http_response_code(400);
-        echo json_encode(['success' => false, 'message' => 'Maximum 5 files allowed.']);
-        exit;
-    }
-    
-    for ($i = 0; $i < $fileCount; $i++) {
-        $fileName = $_FILES['files']['name'][$i];
-        $fileSize = $_FILES['files']['size'][$i];
-        $fileTmp = $_FILES['files']['tmp_name'][$i];
-        $fileError = $_FILES['files']['error'][$i];
-        
-        // Check extension
-        $ext = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
-        $allowedExtensions = ['pdf', 'doc', 'docx', 'jpg', 'jpeg', 'png'];
-        if (!in_array($ext, $allowedExtensions)) {
-            $uploadErrors[] = "File {$fileName} has an invalid extension. Only PDF, Word, and Images (JPG, PNG) are accepted.";
-            continue;
-        }
+  $fileCount = count($_FILES['files']['name']);
 
-        // Check size (10MB max)
-        if ($fileSize > 10 * 1024 * 1024) {
-            $uploadErrors[] = "File {$fileName} exceeds 10MB limit.";
-            continue;
-        }
-        
-        // Generate unique name
-        $ext = pathinfo($fileName, PATHINFO_EXTENSION);
-        $base = preg_replace('/[^a-zA-Z0-9]/', '_', pathinfo($fileName, PATHINFO_FILENAME));
-        $uniqueName = substr($base, 0, 20) . '_' . time() . '_' . bin2hex(random_bytes(3)) . '.' . $ext;
-        $destPath = $uploadDir . $uniqueName;
-        
-        if (move_uploaded_file($fileTmp, $destPath)) {
-            // Save relative URL for email reference
-            $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http";
-            $domain = $_SERVER['HTTP_HOST'];
-            $fileUrl = "{$protocol}://{$domain}/uploads/quotes/{$uniqueName}";
-            $uploadedFiles[] = $fileUrl;
-        } else {
-            $uploadErrors[] = "Failed to upload {$fileName}. Error code: {$fileError}";
-        }
+  // Limits
+  if ($fileCount > 5) {
+    http_response_code(400);
+    echo json_encode(['success' => false, 'message' => 'Maximum 5 files allowed.']);
+    exit;
+  }
+
+  for ($i = 0; $i < $fileCount; $i++) {
+    $fileName = $_FILES['files']['name'][$i];
+    $fileSize = $_FILES['files']['size'][$i];
+    $fileTmp = $_FILES['files']['tmp_name'][$i];
+    $fileError = $_FILES['files']['error'][$i];
+
+    // Check extension
+    $ext = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
+    $allowedExtensions = ['pdf', 'doc', 'docx', 'jpg', 'jpeg', 'png'];
+    if (!in_array($ext, $allowedExtensions)) {
+      $uploadErrors[] = "File {$fileName} has an invalid extension. Only PDF, Word, and Images (JPG, PNG) are accepted.";
+      continue;
     }
+
+    // Check size (10MB max)
+    if ($fileSize > 10 * 1024 * 1024) {
+      $uploadErrors[] = "File {$fileName} exceeds 10MB limit.";
+      continue;
+    }
+
+    // Generate unique name
+    $ext = pathinfo($fileName, PATHINFO_EXTENSION);
+    $base = preg_replace('/[^a-zA-Z0-9]/', '_', pathinfo($fileName, PATHINFO_FILENAME));
+    $uniqueName = substr($base, 0, 20) . '_' . time() . '_' . bin2hex(random_bytes(3)) . '.' . $ext;
+    $destPath = $uploadDir . $uniqueName;
+
+    if (move_uploaded_file($fileTmp, $destPath)) {
+      // Save relative URL for email reference
+      $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http";
+      $domain = $_SERVER['HTTP_HOST'];
+      $fileUrl = "{$protocol}://{$domain}/uploads/quotes/{$uniqueName}";
+      $uploadedFiles[] = $fileUrl;
+    } else {
+      $uploadErrors[] = "Failed to upload {$fileName}. Error code: {$fileError}";
+    }
+  }
 }
 
 // If all files failed (and files were provided)
 if (!empty($_FILES['files']['name'][0]) && empty($uploadedFiles) && !empty($uploadErrors)) {
-    http_response_code(500);
-    echo json_encode(['success' => false, 'message' => 'File upload failed.', 'errors' => $uploadErrors]);
-    exit;
+  http_response_code(500);
+  echo json_encode(['success' => false, 'message' => 'File upload failed.', 'errors' => $uploadErrors]);
+  exit;
 }
 
 // 2.5 Save to MySQL Database
 try {
-    $dbHost = $env['DB_HOST']; 
-    $dbUser = $env['DB_USER'];
-    $dbPass = isset($env['DB_PASSWORD_B64']) ? base64_decode($env['DB_PASSWORD_B64']) : '';
-    $dbName = $env['DB_NAME'];
+  $dbHost = $env['DB_HOST'];
+  $dbUser = $env['DB_USER'];
+  $dbPass = isset($env['DB_PASSWORD_B64']) ? base64_decode($env['DB_PASSWORD_B64']) : '';
+  $dbName = $env['DB_NAME'];
 
-    $pdo = new PDO("mysql:host=$dbHost;dbname=$dbName;charset=utf8mb4", $dbUser, $dbPass);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  // Added a 5-second connection timeout for PDO
+  $pdo = new PDO("mysql:host=$dbHost;dbname=$dbName;charset=utf8mb4", $dbUser, $dbPass, [
+    PDO::ATTR_TIMEOUT => 5,
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+  ]);
 
-    $productJson = !empty($product) ? json_encode($product) : null;
-    $attachmentsJson = !empty($uploadedFiles) ? json_encode($uploadedFiles) : null;
+  $productJson = !empty($product) ? json_encode($product) : null;
+  $attachmentsJson = !empty($uploadedFiles) ? json_encode($uploadedFiles) : null;
 
-    $stmt = $pdo->prepare("INSERT INTO quotes (name, phone, companyName, enquiryFor, product, email, message, attachments) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-    $stmt->execute([
-        $name, $phone, $companyName, $enquiryFor, $productJson, $email, $message_body, $attachmentsJson
-    ]);
+  $stmt = $pdo->prepare("INSERT INTO quotes (name, phone, companyName, enquiryFor, product, email, message, attachments) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+  $stmt->execute([
+    $name,
+    $phone,
+    $companyName,
+    $enquiryFor,
+    $productJson,
+    $email,
+    $message_body,
+    $attachmentsJson
+  ]);
 } catch (PDOException $e) {
-    // Log error but continue with email sending
-    error_log("Database Error in PHP: " . $e->getMessage());
+  // Log error but continue with email sending
+  error_log("Database Error in PHP: " . $e->getMessage());
 }
 
 // 3. Send Email Notification using PHPMailer
@@ -166,10 +178,10 @@ require __DIR__ . '/PHPMailer/src/PHPMailer.php';
 require __DIR__ . '/PHPMailer/src/SMTP.php';
 
 // Target email
-$smtpHost  = $env['SMTP_HOST'] ?? 'mail.uflexltd.com'; 
-$smtpUser  = $env['SMTP_USER'] ?? 'enquiry@uflexltd.com'; 
-$smtpPass  = $env['SMTP_PASSWORD'] ?? 'Grp@$24En!2%9'; 
-$smtpPort  = isset($env['SMTP_PORT']) ? (int)$env['SMTP_PORT'] : 587; 
+$smtpHost = $env['SMTP_HOST'] ?? 'mail.uflexltd.com';
+$smtpUser = $env['SMTP_USER'] ?? 'enquiry@uflexltd.com';
+$smtpPass = $env['SMTP_PASSWORD'] ?? 'Grp@$24En!2%9';
+$smtpPort = isset($env['SMTP_PORT']) ? (int) $env['SMTP_PORT'] : 587;
 $smtpSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
 $envToAdmins = isset($env['SMTP_TO']) && !empty($env['SMTP_TO']) ? explode(',', $env['SMTP_TO']) : [];
@@ -185,17 +197,17 @@ $submittedAt = date('Y-m-d H:i:s P');
 // Format Products and Attachments for HTML
 $productListHtml = '';
 if (!empty($product)) {
-    foreach ($product as $item) {
-        $productListHtml .= '<li style="margin:2px 0;">' . htmlspecialchars($item) . '</li>';
-    }
+  foreach ($product as $item) {
+    $productListHtml .= '<li style="margin:2px 0;">' . htmlspecialchars($item) . '</li>';
+  }
 }
 
 $attachmentsListHtml = '';
 if (!empty($uploadedFiles)) {
-    foreach ($uploadedFiles as $index => $url) {
-        $num = $index + 1;
-        $attachmentsListHtml .= '<li style="margin:4px 0;"><a href="' . htmlspecialchars($url) . '" style="color:#117ABA;" target="_blank">Attachment ' . $num . '</a></li>';
-    }
+  foreach ($uploadedFiles as $index => $url) {
+    $num = $index + 1;
+    $attachmentsListHtml .= '<li style="margin:4px 0;"><a href="' . htmlspecialchars($url) . '" style="color:#117ABA;" target="_blank">Attachment ' . $num . '</a></li>';
+  }
 }
 
 $messageLinesHtml = nl2br(htmlspecialchars($message_body));
@@ -229,7 +241,7 @@ $adminBody = <<<HTML
 HTML;
 
 if (!empty($productListHtml)) {
-    $adminBody .= <<<HTML
+  $adminBody .= <<<HTML
       <div class="field">
         <span class="label">Product(s):</span>
         <ul style="margin:4px 0 0 0;padding-left:18px;color:#333;">{$productListHtml}</ul>
@@ -249,7 +261,7 @@ $adminBody .= <<<HTML
 HTML;
 
 if (!empty($attachmentsListHtml)) {
-    $adminBody .= <<<HTML
+  $adminBody .= <<<HTML
       <div class="field">
         <span class="label">Attachments:</span>
         <ul style="margin:4px 0 0 0;padding-left:18px;color:#333;">
@@ -274,33 +286,34 @@ $mailSent = false;
 $mailError = '';
 
 try {
-    // Server settings
-    $mail->isSMTP();
-    $mail->Host       = $smtpHost;
-    $mail->SMTPAuth   = true;
-    $mail->Username   = $smtpUser;
-    $mail->Password   = $smtpPass;
-    $mail->SMTPSecure = $smtpSecure;
-    $mail->Port       = $smtpPort;
+  // Server settings
+  $mail->isSMTP();
+  $mail->Host = $smtpHost;
+  $mail->SMTPAuth = true;
+  $mail->Username = $smtpUser;
+  $mail->Password = $smtpPass;
+  $mail->SMTPSecure = $smtpSecure;
+  $mail->Port = $smtpPort;
+  $mail->Timeout = 10; // 10 second timeout for SMTP connection
 
-    // Recipients
-    $mail->setFrom($fromEmail, 'UFlex Website');
-    foreach ($toAdmins as $adminEmail) {
-        $mail->addAddress(trim($adminEmail));
-    }
-    $mail->addReplyTo($email, $name);
+  // Recipients
+  $mail->setFrom($fromEmail, 'UFlex Website');
+  foreach ($toAdmins as $adminEmail) {
+    $mail->addAddress(trim($adminEmail));
+  }
+  $mail->addReplyTo($email, $name);
 
-    // Content
-    $mail->isHTML(true);
-    $mail->Subject = "New Quote Enquiry from {$name} ({$companyName})";
-    $mail->Body    = $adminBody;
-    $mail->AltBody = "New Quote from {$name}:\n\n{$message_body}";
+  // Content
+  $mail->isHTML(true);
+  $mail->Subject = "New Quote Enquiry from {$name} ({$companyName})";
+  $mail->Body = $adminBody;
+  $mail->AltBody = "New Quote from {$name}:\n\n{$message_body}";
 
-    $mail->send();
-    $mailSent = true;
-    
-    // Attempt HTML confirmation to user
-    $userBody = <<<HTML
+  $mail->send();
+  $mailSent = true;
+
+  // Attempt HTML confirmation to user
+  $userBody = <<<HTML
 <!DOCTYPE html>
 <html>
 <head>
@@ -342,16 +355,16 @@ try {
         </div>
 HTML;
 
-if (!empty($productList)) {
+  if (!empty($productList)) {
     $userBody .= <<<HTML
         <div class="detail-row">
           <span class="detail-label">Product(s):</span>
           <span class="detail-value">{$productList}</span>
         </div>
 HTML;
-}
+  }
 
-$userBody .= <<<HTML
+  $userBody .= <<<HTML
         <div class="detail-row">
           <span class="detail-label">Company:</span>
           <span class="detail-value">{$companyName}</span>
@@ -380,30 +393,30 @@ $userBody .= <<<HTML
 </html>
 HTML;
 
-    $mail->clearAddresses();
-    $mail->clearReplyTos();
-    $mail->addAddress($email, $name);
-    $mail->Subject = "Confirmation: Your Quote Request for {$enquiryFor}";
-    $mail->Body    = $userBody;
-    $mail->send();
+  $mail->clearAddresses();
+  $mail->clearReplyTos();
+  $mail->addAddress($email, $name);
+  $mail->Subject = "Confirmation: Your Quote Request for {$enquiryFor}";
+  $mail->Body = $userBody;
+  $mail->send();
 
 } catch (Exception $e) {
-    $mailSent = false;
-    $mailError = $mail->ErrorInfo;
+  $mailSent = false;
+  $mailError = $mail->ErrorInfo;
 }
 
 // 4. Return response
 if ($mailSent) {
-    echo json_encode([
-        'success' => true, 
-        'message' => 'Quote submitted successfully',
-        'warnings' => $uploadErrors
-    ]);
+  echo json_encode([
+    'success' => true,
+    'message' => 'Quote submitted successfully',
+    'warnings' => $uploadErrors
+  ]);
 } else {
-    http_response_code(500);
-    echo json_encode([
-        'success' => false, 
-        'message' => 'Failed to send email notification via PHPMailer. Please check SMTP configuration.',
-        'error' => $mailError
-    ]);
+  http_response_code(500);
+  echo json_encode([
+    'success' => false,
+    'message' => 'Failed to send email notification via PHPMailer. Please check SMTP configuration.',
+    'error' => $mailError
+  ]);
 }
