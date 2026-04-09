@@ -139,10 +139,10 @@ if (!empty($_FILES['files']['name'][0]) && empty($uploadedFiles) && !empty($uplo
 
 // 2.5 Save to MySQL Database
 try {
-  $dbHost = $env['DB_HOST'];
-  $dbUser = $env['DB_USER'];
-  $dbPass = isset($env['DB_PASSWORD_B64']) ? base64_decode($env['DB_PASSWORD_B64']) : '';
-  $dbName = $env['DB_NAME'];
+  $dbHost = $env['DB_HOST'] ?? 'localhost';
+  $dbUser = $env['DB_USER'] ?? 'uflex_quoteuser';
+  $dbPass = isset($env['DB_PASSWORD_B64']) ? base64_decode($env['DB_PASSWORD_B64']) : base64_decode('V2pvaTskbUlNWzBM');
+  $dbName = $env['DB_NAME'] ?? 'uflex-quote';
 
   // Added a 5-second connection timeout for PDO
   $pdo = new PDO("mysql:host=$dbHost;dbname=$dbName;charset=utf8mb4", $dbUser, $dbPass, [
@@ -178,13 +178,17 @@ require __DIR__ . '/PHPMailer/src/PHPMailer.php';
 require __DIR__ . '/PHPMailer/src/SMTP.php';
 
 // Target email
-$smtpHost = $env['SMTP_HOST'] ?? 'mail.uflexltd.com';
-$smtpUser = $env['SMTP_USER'] ?? 'enquiry@uflexltd.com';
-$smtpPass = $env['SMTP_PASSWORD'] ?? 'Grp@$24En!2%9';
-$smtpPort = isset($env['SMTP_PORT']) ? (int) $env['SMTP_PORT'] : 587;
+$smtpHost  = $env['SMTP_HOST'] ?? 'mail.uflexltd.com'; 
+$smtpUser  = $env['SMTP_USER'] ?? 'enquiry@uflexltd.com'; 
+$smtpPass  = $env['SMTP_PASSWORD'] ?? 'Grp@$24En!2%9'; 
+$smtpPort  = isset($env['SMTP_PORT']) ? (int) $env['SMTP_PORT'] : 587; 
 $smtpSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
-$envToAdmins = isset($env['SMTP_TO']) && !empty($env['SMTP_TO']) ? explode(',', $env['SMTP_TO']) : [];
+$envToAdmins = isset($env['SMTP_TO']) && !empty($env['SMTP_TO']) ? explode(',', $env['SMTP_TO']) : [
+    'manjeet.kumar@uflexltd.com',
+    'shashibjha271299@gmail.com',
+    'pratyush.srivastava1@uflexltd.com'
+];
 $toAdmins = array_map('trim', $envToAdmins);
 
 $fromEmail = $env['SMTP_FROM'] ?? 'enquiry@uflexltd.com';
@@ -294,12 +298,23 @@ try {
   $mail->Password = $smtpPass;
   $mail->SMTPSecure = $smtpSecure;
   $mail->Port = $smtpPort;
-  $mail->Timeout = 10; // 10 second timeout for SMTP connection
+  $mail->Timeout = 20;
+
+  // cPanel Fix: Bypass SSL certificate validation if mail.domain.com doesn't match the cert
+  $mail->SMTPOptions = array(
+      'ssl' => array(
+          'verify_peer' => false,
+          'verify_peer_name' => false,
+          'allow_self_signed' => true
+      )
+  );
 
   // Recipients
   $mail->setFrom($fromEmail, 'UFlex Website');
   foreach ($toAdmins as $adminEmail) {
-    $mail->addAddress(trim($adminEmail));
+    if (!empty($adminEmail)) {
+        $mail->addAddress(trim($adminEmail));
+    }
   }
   $mail->addReplyTo($email, $name);
 
