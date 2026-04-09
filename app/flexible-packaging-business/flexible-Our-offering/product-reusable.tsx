@@ -287,9 +287,9 @@ export default function ProductCategorySection({
                                         {/* <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">
                                     Overview
                                 </h3> */}
-                                        <p className="pb-4 lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
+                                        {/* <p className="pb-4 lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                                             {overview}
-                                        </p>
+                                        </p> */}
                                     </div>
 
                                 )

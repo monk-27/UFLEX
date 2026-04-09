@@ -74,7 +74,7 @@ propelled us to the forefront of the
 industry. We offer a comprehensive range
 of products and cater to diverse needs
 across various sectors.`,
-            
+
             `With high-end CAD software, streamlined
 processes, and collaborative efforts across
 departments, we deliver tailored products
@@ -159,27 +159,28 @@ export const businesses: any[] = [
                         "Rotoflex ELS Standard Special-1300 is engineered for reliable, high-quality printing on flexible packaging materials, with a maximum web width of 1320 mm. It features a robust main drive system for smooth and stable performance, along with precision side lay assembly for accurate web alignment. Equipped with a shafted printing cylinder, doctor blade assembly, and individual ink trolley system, it ensures consistent print quality. Advanced motorized controls enable precise registration, uniform ink transfer, and faster job changeovers.",
                     image: "/images/new/els.png",
                 },
-                { id:"solvent-less-lamination-machines",
+                {
+                    id: "solvent-less-lamination-machines",
                     title: "Solvent-less Lamination Machines:",
-                            image:"/images/new/solventless.png",
-                            description: "Solventless Super-550 is a high-speed, eco-friendly laminating machine with a maximum web width of 1320 mm, designed for flexible packaging applications. It features independent motors at both unwind and rewind sections for precise web tension control, smooth material handling, and stable operation across diverse substrates. Equipped with sleeve-type transport rollers, it ensures uniform web support and high running accuracy. An integrated sleeve cleaning system removes adhesive residue, maintaining consistent lamination quality and reducing downtime.",
+                    image: "/images/new/solventless.png",
+                    description: "Solventless Super-550 is a high-speed, eco-friendly laminating machine with a maximum web width of 1320 mm, designed for flexible packaging applications. It features independent motors at both unwind and rewind sections for precise web tension control, smooth material handling, and stable operation across diverse substrates. Equipped with sleeve-type transport rollers, it ensures uniform web support and high running accuracy. An integrated sleeve cleaning system removes adhesive residue, maintaining consistent lamination quality and reducing downtime.",
 
                 },
                 {
-                    id:"slit",
-                    title:"High Speed Duplex Slitter Model: TRU SLIT-600",
+                    id: "slit",
+                    title: "High Speed Duplex Slitter Model: TRU SLIT-600",
                     description: `TRU SLIT-600 is a high-performance slitting machine designed for productivity,safety, and efficient workflow in flexible packaging operations. It features automatic roll unloading and stacking to reduce manual handling. A separated unwind stand with floor pick-up and motorized roll clamping ensures safe jumbo roll loading. With speeds up to 600 MPM and a maximum rewind diameter of 600 mm, it enables precision slitting through multiple cutting options. An advanced trim conveying system ensures clean, stable, high-speed performance.`,
-                            image:"/images/new/sliter.png"
+                    image: "/images/new/sliter.png"
                 },
-//                 {
-//                     id: "double-head-coating-1650",
-//                     title: "Double Head Coating-1650",
-//                     description:
-//                         `UFlex's Engineering Business meets market demand with coating machines covering up to 2500mm web widths. Recent offerings include a 1650mm double-headed model applying various coatings with methods like gravure and kiss coating. 
-//                         \n Ceramic IR heaters ensure smooth coating, while safety measures like the LEL system are integrated. Additional features like floor lifting unwind, sleeve-type impression rollers, and chamber doctor blades enhance versatility. With corona treaters, these machines offer coatings from 0.2 to 6 GSM, adding value to substrates.
-//  `,
-//                     image: "/images/double.png",
-//                 },
+                //                 {
+                //                     id: "double-head-coating-1650",
+                //                     title: "Double Head Coating-1650",
+                //                     description:
+                //                         `UFlex's Engineering Business meets market demand with coating machines covering up to 2500mm web widths. Recent offerings include a 1650mm double-headed model applying various coatings with methods like gravure and kiss coating. 
+                //                         \n Ceramic IR heaters ensure smooth coating, while safety measures like the LEL system are integrated. Additional features like floor lifting unwind, sleeve-type impression rollers, and chamber doctor blades enhance versatility. With corona treaters, these machines offer coatings from 0.2 to 6 GSM, adding value to substrates.
+                //  `,
+                //                     image: "/images/double.png",
+                //                 },
                 // {
                 //     id: "pfs-4u",
                 //     title: "LPFS-4U",
@@ -188,30 +189,30 @@ export const businesses: any[] = [
                 //         \nWith an operator-friendly interface and efficient filling system, it accommodates various applications, running up to 20 PPM per track with four channels. `,
                 //     image: "/images/new/lpfs.png",
                 // },
-                 {
-                    id:"relam-50",
-                            title: "ReLAM 50:",
-                    image:"/images/new/relam.png",
+                {
+                    id: "relam-50",
+                    title: "ReLAM 50:",
+                    image: "/images/new/relam.png",
 
-                    description:`ReLAM 50 is a decentralized recycling system designed to process up to 50 kg of mixed flexible waste per hour, offering an efficient solution for hard-to-recycle materials. Ideal for start-ups, rural enterprises, local recycling units, waste management companies, NGOs, and municipalities, the system converts mixed flexible waste into recycled granules or panels. These outputs can be reused to manufacture household plastic products, plastic lumber, tiles, and other non-critical applications. Compact and versatile, ReLAM 50 enables grassroots participation in the circular economy while advancing sustainable waste management practices`,
-                        },
+                    description: `ReLAM 50 is a decentralized recycling system designed to process up to 50 kg of mixed flexible waste per hour, offering an efficient solution for hard-to-recycle materials. Ideal for start-ups, rural enterprises, local recycling units, waste management companies, NGOs, and municipalities, the system converts mixed flexible waste into recycled granules or panels. These outputs can be reused to manufacture household plastic products, plastic lumber, tiles, and other non-critical applications. Compact and versatile, ReLAM 50 enables grassroots participation in the circular economy while advancing sustainable waste management practices`,
+                },
                 {
                     id: "rotary-horizontal-high-speed-form-fill-and-seal",
                     title: "Rotary Horizontal High-Speed Form Fill and Seal Machine with Gripper",
                     description: "UFlex Engineering new design for a rotary horizontal high-speed form fill and seal machine features grippers that hold pouches without conveyor belts, enhancing Picture of Highlight and Innovation pouch quality and preventing leaks."
                     , image: "/images/new/rotary.png",
                 },
-                
-                
-//                 {
-//                     id: "uflex-flexi-liquid-double-head",
-//                     title: "UFlex-flexi-liquid (double head)",
-//                     description:
-//                         `The newly introduced machinery boasts an array of features designed to optimize operation efficiency. Its user-friendly interface ensures easy operation, while its low maintenance requirements minimize downtime. 
-//                         \nDespite its compact design and small footprint, it integrates seven servos, enabling high-speed performance. A specialized forming tool ensures uniform and superior forming, while the engineered filling system with positive cut-off guarantees precision. Additionally, a servo-controlled continuous sealing mechanism maximizes sealing time, enhancing sealing quality and strength. The servo-pulling method ensures accurate and uniform eye-mark-to-eye-mark pulling. Notably, the machine facilitates seamless roll changes without halting operations. Optional features include an auto splicing system, online coding system, and outfeed conveyor, further enhancing productivity. Customer color preferences are accommodated, and pouch-making capacity varies depending on film material and thickness. The equipment improvements may lead to changes in appearance and optional features are sold separately from standard equipment.
-// `,
-//                     image: "/images/flexiuflex.png",
-//                 },
+
+
+                //                 {
+                //                     id: "uflex-flexi-liquid-double-head",
+                //                     title: "UFlex-flexi-liquid (double head)",
+                //                     description:
+                //                         `The newly introduced machinery boasts an array of features designed to optimize operation efficiency. Its user-friendly interface ensures easy operation, while its low maintenance requirements minimize downtime. 
+                //                         \nDespite its compact design and small footprint, it integrates seven servos, enabling high-speed performance. A specialized forming tool ensures uniform and superior forming, while the engineered filling system with positive cut-off guarantees precision. Additionally, a servo-controlled continuous sealing mechanism maximizes sealing time, enhancing sealing quality and strength. The servo-pulling method ensures accurate and uniform eye-mark-to-eye-mark pulling. Notably, the machine facilitates seamless roll changes without halting operations. Optional features include an auto splicing system, online coding system, and outfeed conveyor, further enhancing productivity. Customer color preferences are accommodated, and pouch-making capacity varies depending on film material and thickness. The equipment improvements may lead to changes in appearance and optional features are sold separately from standard equipment.
+                // `,
+                //                     image: "/images/flexiuflex.png",
+                //                 },
             ],
         },
         sustainability: {
@@ -237,11 +238,11 @@ India Limited, and a subsidiary of Philips
 
 Carbon Black Limited (RPG Group). Holding
 a mechanical engineering degree from
-Thapar Institute of Engineering &amp;
+Thapar Institute of Engineering &;
 Technology, Patiala, Ravi has attended
 numerous management and leadership
 seminars globally. His expertise spans
-plant management, R&amp;D, innovation,
+plant management, R&D, innovation,
 supply chain, and customer relations.
 Ravi's leadership has significantly
 enhanced the company's production of

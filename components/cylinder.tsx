@@ -75,7 +75,7 @@ finishing to digital engraving, chrome
 plating, and final proof printing.`,
 
       `Our production facilities, located in
-Noida, Uttar Pradesh, and Jammu, J&amp;K,
+Noida, Uttar Pradesh, and Jammu, J&K,
 India, are equipped with the latest
 innovations, including the Flexo ‘Xlarge’
 laser for high-definition imaging up to
@@ -153,73 +153,73 @@ export const businesses: any[] = [
     innovations: {
       heading: "Business Highlights and Innovations",
       items: [
-        
-  {
-    "id": "aluminium-composite-panels-laser-engraved-rollers",
-    "title": "Aluminium composite panels through laser-engraved rollers",
-    "description": "UFlex offers Aluminium Composite Panels (ACPs) featuring high-definition surface designs created using advanced laser-engraved rollers. This technology enables intricate wood, marble, cloud, and floral finishes with superior precision. Each panel comprises two aluminium sheets bonded to a PE or fire-retardant core and coated with durable PVDF or polyester paint for UV resistance and long-lasting colour. Lightweight yet rigid, ACPs are widely used in architecture, interiors, signage, metro stations, and lift décor for their durability, insulation properties, and aesthetic versatility.",
-    "image": "/images/new/alu1.png"
-  },
-  {
-    "id": "ginkgo-leaves-pattern-laser-engraved-leather",
-    "title": "Ginkgo Leaves pattern on original leather through specialized laser engraving",
-    "description": "Crafted using a specialized laser-engraving process, the Ginkgo Leaves pattern features intricate, fan-shaped motifs with fine radiating lines on a light neutral base, highlighted by subtle pale gold tones. The result is a glossy, shimmering finish that exudes contemporary luxury. Ideal for wallpaper, upholstery, decorative panels, and premium stationery, the design offers refined aesthetic appeal. Precision-engraved cylinders ensure consistent quality, customization flexibility, and scalable production, positioning UFlex distinctively in the luxury materials market while supporting steady revenue growth.",
-    "image": "/images/new/ginko1.png"
-  },
-  {
-    "id": "pebble-stone-pattern-artificial-leather",
-    "title": "Pebble stone pattern on artificial leather through laser-embossed cylinders",
-    "description": "The Pebble Stone pattern on artificial leather is created using advanced laser-embossed cylinders, forming a tactile grid of rounded, pebble-like blocks with a distinctive woven effect. This design adds depth, dimension, and a non-slip surface that enhances both aesthetics and functionality. Ideal for footwear, automotive interiors, handbags, flooring, consumer electronics, packaging, and furniture, the pattern offers improved grip, durability, and scratch resistance while delivering a refined, premium finish across diverse applications.",
-    "image": "/images/new/pebble1.png"
-  },
-  {
-    "id": "golden-python-glaze-pattern-leather",
-    "title": "Golden python glaze pattern on original leather through specialized laser-engraving cylinders",
-    "description": "Golden Python Glaze is a premium leather finish developed using specialized laser-engraving cylinders to replicate the luxurious texture and sheen of python skin. The pattern features interlocking, raised scales in light golden tones, creating a three-dimensional, high-gloss, wet-look effect. Designed to exude sophistication and exclusivity, it is ideal for high-fashion garments, premium footwear, luxury bags and accessories, as well as upscale home décor and automotive interiors, delivering refined elegance and superior craftsmanship.",
-    "image": "/images/new/python1.png"
-  },
-  {
-    "id": "woven-starburst-pattern-original-leather",
-    "title": "Woven starburst pattern on original leather through specialized laser-engraving cylinders",
-    "description": "Woven Starburst is a refined leather design created through specialized laser engraving on original leather. The pattern showcases concentric, undulating circles forming intricate interwoven spirals, enhanced by a monochromatic palette that adds depth and a dynamic three-dimensional texture. Its premium finish and durability make it ideal for luxury applications. The design elevates high-end fashion garments, accessories such as handbags and footwear, and premium interior or automotive upholstery, offering a distinctive, modern, and sophisticated aesthetic.",
-    "image": "/images/new/woven1.png"
-  },
-  {
-    "id": "crocodile-skin-pattern-artificial-leather",
-    "title": "Crocodile skin patterns on artificial leather (PU/PVC) through laser embossed cylinders",
-    "description": "The Crocodile pattern embodies luxury, sophistication, and an exotic appeal, featuring a richly textured, scaly surface inspired by natural crocodile or alligator skin. Crafted to reflect premium quality and fine craftsmanship, it is widely favoured in high-end fashion and décor. The design enhances garments such as blazers and skirts, elevates footwear, and adds prestige to handbags, belts, and wallets. It is also used in luxury home décor and premium automotive interiors, delivering an exclusive and refined finish.",
-    "image": "/images/new/crocodile1.png"
-  },
-  {
-    "id": "geometric-chevron-embossed-tile-design",
-    "title": "EP - Geometric chevron embossed tile design on artificial leather through laser embossed cylinders",
-    "description": "This sleek geometric chevron pattern features interlocking Y-shaped blocks embossed on a metallic-like surface, creating a striking three-dimensional illusion of depth. Fine hatching within each form adds texture and sophistication, delivering a modern, tactile finish. Ideal for statement feature walls, kitchen backsplashes, and bathroom accents, it enhances interiors with a contemporary edge. The design is also suitable for ceiling panels, furniture surfaces, and commercial spaces such as office lobbies, hotels, and restaurants, offering a refined and dynamic aesthetic appeal.",
-    "image": "/images/new/geo1.png"
-  },
-  {
-    "id": "grid-weave-pattern-artificial-leather",
-    "title": "Grid weave pattern on artificial leather through laser embossed cylinders",
-    "description": "The Grid Weave pattern combines striking visual appeal with a rich tactile experience, making it a preferred choice across global markets. Its interlaced, overlapping design adds depth, texture, and a refined aesthetic to products across industries. Widely used in fashion for handbags, footwear, belts, and wallets, it also enhances rugs, wall coverings, table linens, and home accessories. Beyond décor, the pattern finds applications in automotive interiors and industrial products, delivering durability, sophistication, and a distinctive contemporary finish.",
-    "image": "/images/new/grid1.png"
-  },
-  {
-    "id": "intricate-vines-floral-design-artificial-leather",
-    "title": "Intricate vines and floral design on artificial leather through laser embossed cylinders",
-    "description": "The intricate vines and floral design on artificial leather is created using advanced laser-embossed cylinders, delivering deep texture and finely detailed patterns. Featuring flowing organic shapes in a vibrant green tone, the design offers a harmonious and visually striking aesthetic that feels both fresh and inviting. Ideal for fashion accessories such as handbags, belts, and shoes, it also enhances home décor, stationery, gift items, and industrial applications including automotive interiors and packaging, combining elegance, durability, and refined craftsmanship.",
-    "image": "/images/new/r12.png"
-  },
-  {
-    "id": "reptile-retreat-pattern-artificial-leather",
-    "title": "Reptile retreat pattern on artificial leather through laser embossed cylinders",
-    "description": "Reptile Retreat on artificial leather is created using precision laser-embossed cylinders that replicate the rich texture and appearance of genuine reptile skin. This advanced process delivers a luxurious, exotic finish while offering a cost-effective and ethical alternative to natural leather. The result is a durable, low-maintenance surface with enhanced grip and visual appeal. Ideal for automotive interiors, consumer electronics, fashion goods, and decorative items, the innovation has also contributed to revenue growth, adding approximately 0.4% to the overall business.",
-    "image": "/images/new/reptile1.png"
-  },
-  {
-    "id": "tangled-threads-design-artificial-leather",
-    "title": "Tangled threads design on artificial leather through laser embossed cylinders",
-    "description": "The Tangled Threads design on artificial leather is crafted using advanced laser-embossed cylinders, creating an intricate network of interwoven patterns with striking visual depth. The raised texture adds artistic complexity while enhancing tactile appeal and functionality, including improved grip and subtle insulation properties. Ideal for automotive interiors such as dashboards and steering wheels, it also elevates consumer electronics, fashion accessories, and apparel. In home décor, the design enhances wall coverings, upholstery, curtains, and floor coverings, delivering a sophisticated and contemporary finish.",
-    "image": "/images/new/tangled1.png"
-  }
+
+        {
+          "id": "aluminium-composite-panels-laser-engraved-rollers",
+          "title": "Aluminium composite panels through laser-engraved rollers",
+          "description": "UFlex offers Aluminium Composite Panels (ACPs) featuring high-definition surface designs created using advanced laser-engraved rollers. This technology enables intricate wood, marble, cloud, and floral finishes with superior precision. Each panel comprises two aluminium sheets bonded to a PE or fire-retardant core and coated with durable PVDF or polyester paint for UV resistance and long-lasting colour. Lightweight yet rigid, ACPs are widely used in architecture, interiors, signage, metro stations, and lift décor for their durability, insulation properties, and aesthetic versatility.",
+          "image": "/images/new/alu1.png"
+        },
+        {
+          "id": "ginkgo-leaves-pattern-laser-engraved-leather",
+          "title": "Ginkgo Leaves pattern on original leather through specialized laser engraving",
+          "description": "Crafted using a specialized laser-engraving process, the Ginkgo Leaves pattern features intricate, fan-shaped motifs with fine radiating lines on a light neutral base, highlighted by subtle pale gold tones. The result is a glossy, shimmering finish that exudes contemporary luxury. Ideal for wallpaper, upholstery, decorative panels, and premium stationery, the design offers refined aesthetic appeal. Precision-engraved cylinders ensure consistent quality, customization flexibility, and scalable production, positioning UFlex distinctively in the luxury materials market while supporting steady revenue growth.",
+          "image": "/images/new/ginko1.png"
+        },
+        {
+          "id": "pebble-stone-pattern-artificial-leather",
+          "title": "Pebble stone pattern on artificial leather through laser-embossed cylinders",
+          "description": "The Pebble Stone pattern on artificial leather is created using advanced laser-embossed cylinders, forming a tactile grid of rounded, pebble-like blocks with a distinctive woven effect. This design adds depth, dimension, and a non-slip surface that enhances both aesthetics and functionality. Ideal for footwear, automotive interiors, handbags, flooring, consumer electronics, packaging, and furniture, the pattern offers improved grip, durability, and scratch resistance while delivering a refined, premium finish across diverse applications.",
+          "image": "/images/new/pebble1.png"
+        },
+        {
+          "id": "golden-python-glaze-pattern-leather",
+          "title": "Golden python glaze pattern on original leather through specialized laser-engraving cylinders",
+          "description": "Golden Python Glaze is a premium leather finish developed using specialized laser-engraving cylinders to replicate the luxurious texture and sheen of python skin. The pattern features interlocking, raised scales in light golden tones, creating a three-dimensional, high-gloss, wet-look effect. Designed to exude sophistication and exclusivity, it is ideal for high-fashion garments, premium footwear, luxury bags and accessories, as well as upscale home décor and automotive interiors, delivering refined elegance and superior craftsmanship.",
+          "image": "/images/new/python1.png"
+        },
+        {
+          "id": "woven-starburst-pattern-original-leather",
+          "title": "Woven starburst pattern on original leather through specialized laser-engraving cylinders",
+          "description": "Woven Starburst is a refined leather design created through specialized laser engraving on original leather. The pattern showcases concentric, undulating circles forming intricate interwoven spirals, enhanced by a monochromatic palette that adds depth and a dynamic three-dimensional texture. Its premium finish and durability make it ideal for luxury applications. The design elevates high-end fashion garments, accessories such as handbags and footwear, and premium interior or automotive upholstery, offering a distinctive, modern, and sophisticated aesthetic.",
+          "image": "/images/new/woven1.png"
+        },
+        {
+          "id": "crocodile-skin-pattern-artificial-leather",
+          "title": "Crocodile skin patterns on artificial leather (PU/PVC) through laser embossed cylinders",
+          "description": "The Crocodile pattern embodies luxury, sophistication, and an exotic appeal, featuring a richly textured, scaly surface inspired by natural crocodile or alligator skin. Crafted to reflect premium quality and fine craftsmanship, it is widely favoured in high-end fashion and décor. The design enhances garments such as blazers and skirts, elevates footwear, and adds prestige to handbags, belts, and wallets. It is also used in luxury home décor and premium automotive interiors, delivering an exclusive and refined finish.",
+          "image": "/images/new/crocodile1.png"
+        },
+        {
+          "id": "geometric-chevron-embossed-tile-design",
+          "title": "EP - Geometric chevron embossed tile design on artificial leather through laser embossed cylinders",
+          "description": "This sleek geometric chevron pattern features interlocking Y-shaped blocks embossed on a metallic-like surface, creating a striking three-dimensional illusion of depth. Fine hatching within each form adds texture and sophistication, delivering a modern, tactile finish. Ideal for statement feature walls, kitchen backsplashes, and bathroom accents, it enhances interiors with a contemporary edge. The design is also suitable for ceiling panels, furniture surfaces, and commercial spaces such as office lobbies, hotels, and restaurants, offering a refined and dynamic aesthetic appeal.",
+          "image": "/images/new/geo1.png"
+        },
+        {
+          "id": "grid-weave-pattern-artificial-leather",
+          "title": "Grid weave pattern on artificial leather through laser embossed cylinders",
+          "description": "The Grid Weave pattern combines striking visual appeal with a rich tactile experience, making it a preferred choice across global markets. Its interlaced, overlapping design adds depth, texture, and a refined aesthetic to products across industries. Widely used in fashion for handbags, footwear, belts, and wallets, it also enhances rugs, wall coverings, table linens, and home accessories. Beyond décor, the pattern finds applications in automotive interiors and industrial products, delivering durability, sophistication, and a distinctive contemporary finish.",
+          "image": "/images/new/grid1.png"
+        },
+        {
+          "id": "intricate-vines-floral-design-artificial-leather",
+          "title": "Intricate vines and floral design on artificial leather through laser embossed cylinders",
+          "description": "The intricate vines and floral design on artificial leather is created using advanced laser-embossed cylinders, delivering deep texture and finely detailed patterns. Featuring flowing organic shapes in a vibrant green tone, the design offers a harmonious and visually striking aesthetic that feels both fresh and inviting. Ideal for fashion accessories such as handbags, belts, and shoes, it also enhances home décor, stationery, gift items, and industrial applications including automotive interiors and packaging, combining elegance, durability, and refined craftsmanship.",
+          "image": "/images/new/r12.png"
+        },
+        {
+          "id": "reptile-retreat-pattern-artificial-leather",
+          "title": "Reptile retreat pattern on artificial leather through laser embossed cylinders",
+          "description": "Reptile Retreat on artificial leather is created using precision laser-embossed cylinders that replicate the rich texture and appearance of genuine reptile skin. This advanced process delivers a luxurious, exotic finish while offering a cost-effective and ethical alternative to natural leather. The result is a durable, low-maintenance surface with enhanced grip and visual appeal. Ideal for automotive interiors, consumer electronics, fashion goods, and decorative items, the innovation has also contributed to revenue growth, adding approximately 0.4% to the overall business.",
+          "image": "/images/new/reptile1.png"
+        },
+        {
+          "id": "tangled-threads-design-artificial-leather",
+          "title": "Tangled threads design on artificial leather through laser embossed cylinders",
+          "description": "The Tangled Threads design on artificial leather is crafted using advanced laser-embossed cylinders, creating an intricate network of interwoven patterns with striking visual depth. The raised texture adds artistic complexity while enhancing tactile appeal and functionality, including improved grip and subtle insulation properties. Ideal for automotive interiors such as dashboards and steering wheels, it also elevates consumer electronics, fashion accessories, and apparel. In home décor, the design enhances wall coverings, upholstery, curtains, and floor coverings, delivering a sophisticated and contemporary finish.",
+          "image": "/images/new/tangled1.png"
+        }
 
         // {
         //   id: "holographic-effect-leatherettes",
