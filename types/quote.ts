@@ -1,4 +1,3 @@
-import { ObjectId } from 'mongodb'
 
 export interface QuoteFormData {
     name: string
@@ -14,7 +13,6 @@ export interface QuoteFormData {
 
 export interface QuoteDocument extends QuoteFormData {
     submittedAt: Date
-    _id?: ObjectId
     attachments?: string[]
 }
 

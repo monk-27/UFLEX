@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { pool } from '@/lib/db'
 import { sendQuoteEmail, sendConfirmationEmail } from '@/lib/email'
-import { QuoteFormData, QuoteDocument, ApiResponse } from '@/types/quote'
+import { QuoteFormData, ApiResponse } from '@/types/quote'
 
 export async function POST(request: NextRequest) {
     try {
