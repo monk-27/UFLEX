@@ -111,7 +111,7 @@ const annualReportsUFLEX: DocItem[] = [
     text: "Annual Report for the Year 2018-2019",
     link: "https://www.uflexltd.com/pdf/financials/annual-reports/UFLEX-AR-2018-19.pdf",
   },
-    {
+  {
     text: "Annual Report for the Year 2017-2018",
     link: "https://www.uflexltd.com/pdf/financials/annual-reports/UFLEX-AR-2017-18.pdf",
   },
@@ -166,34 +166,34 @@ const annualReportsUFLEX: DocItem[] = [
 const quarterlyConsolidated: DocItem[] = [
   {
     text: "Financial results for the Quarter ended 30.09.2025",
-    link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_30SEP2025.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_30SEP2025.pdf",
   },
   {
     text: "Financial results for the Quarter ended 30.06.2025",
-    link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_30JUN2025.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_30JUN2025.pdf",
   },
   {
     text:
       "Financial results for the Quarter and Year ended 31.03.2025 (Audited)",
-    link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_31MAR2025.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_31MAR2025.pdf",
   },
   {
     text: "Financial results for the Quarter ended 31.12.2024",
-    link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_31DEC2024.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_31DEC2024.pdf",
   },
   {
     text: "Financial results for the Quarter ended 30.09.2024",
-    link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_30SEP2024.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_30SEP2024.pdf",
 
   },
   {
     text: "Financial results for the Quarter ended 30.06.2024",
-    link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_30JUN2023.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_30JUN2023.pdf",
   },
   {
     text:
       "Financial results for the Quarter and Year ended 31.03.2024 (Audited)",
-    link: "https://www.uflexltd.com/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_AUDITED_RESULTS_31MAR2023.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_AUDITED_RESULTS_31MAR2023.pdf",
   },
 ];
 
