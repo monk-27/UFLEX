@@ -787,7 +787,7 @@ const investorPresentations: DocItem[] = [
     },
     {
         text: "Investor Presentation – April 2022",
-        link: "https://www.uflexltd.com/pdf/Investor_Presentation_April_2022.pdf",
+        link: "https://beta.uflexltd.com/media/pdf/Investor_Presentation_April_2022.pdf",
     },
 ];
 
