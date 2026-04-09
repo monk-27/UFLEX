@@ -27,6 +27,9 @@ const nextConfig = {
       { source: '/subsidiaries-associates.php', destination: '/about-us/', permanent: true },
       { source: '/pdf/UFlex_Company_Presentation.pdf', destination: '/about-us/', permanent: true },
 
+      // Our Businesses -> /what-we-do/
+      { source: '/our-businesses.php', destination: '/what-we-do/', permanent: true },
+
       // Packaging Films -> /packaging-films-business/
       { source: '/packaging-films.php', destination: '/packaging-films-business/', permanent: true },
       { source: '/packaging-films-key-people.php', destination: '/packaging-films-business/', permanent: true },
@@ -97,27 +100,31 @@ const nextConfig = {
       { source: '/engineering-enquiryform.php', destination: '/engineering-business/', permanent: true },
 
       // Investor Relations
+      { source: '/investors.php', destination: '/investors/', permanent: true },
       { source: '/investor-presentations.php', destination: '/investors/ir-presentation-quarterly-earnings/', permanent: true },
-      { source: '/governance-structure.php', destination: '/investors/ir-announcements-updates/', permanent: true },
       { source: '/quarterly-earnings-reports.php', destination: '/investors/ir-presentation-quarterly-earnings/', permanent: true },
+      { source: '/eamings-conference-call.php', destination: '/investors/ir-presentation-quarterly-earnings/', permanent: true },
+      { source: '/earnings-conference-call.php', destination: '/investors/ir-presentation-quarterly-earnings/', permanent: true },
+      { source: '/governance-structure.php', destination: '/investors/ir-announcements-updates/', permanent: true },
       { source: '/grievance-redressal.php', destination: '/investors/ir-announcements-updates/', permanent: true },
       { source: '/contact-details-of-kmps.php', destination: '/investors/ir-announcements-updates/', permanent: true },
       { source: '/credit-ratings.php', destination: '/investors/ir-announcements-updates/', permanent: true },
-      { source: '/shareholders-communication.php', destination: '/investors/shareholders-information/', permanent: true },
-      { source: '/financials.php', destination: '/investors/financial-results/', permanent: true },
-      { source: '/stock-price-data.php', destination: '/investors/investors-archives/', permanent: true },
-      { source: '/company-release.php', destination: '/investors/investors-archives/', permanent: true },
       { source: '/extract-of-annual-return.php', destination: '/investors/ir-announcements-updates/', permanent: true },
       { source: '/business-responsibility-report.php', destination: '/investors/ir-announcements-updates/', permanent: true },
       { source: '/secretarial-compliance-report.php', destination: '/investors/ir-announcements-updates/', permanent: true },
-      { source: '/policies.php', destination: '/investors/corporate-policies/', permanent: true },
       { source: '/announcements.php', destination: '/investors/ir-announcements-updates/', permanent: true },
       { source: '/shareholding-pattern.php', destination: '/investors/ir-announcements-updates/', permanent: true },
       { source: '/unpaid-unclaimed-dividend-details.php', destination: '/investors/ir-announcements-updates/', permanent: true },
       { source: '/transfer-of-shares-to-iepf.php', destination: '/investors/ir-announcements-updates/', permanent: true },
-      { source: '/registrar.php', destination: '/investors/ir-announcements-updates/', permanent: true },
-      { source: '/compliance-reports.php', destination: '/investors/investors-archives/', permanent: true },
       { source: '/reconciliation-of-share-capital-audit-report.php', destination: '/investors/ir-announcements-updates/', permanent: true },
+      { source: '/registrar.php', destination: '/investors/ir-announcements-updates/', permanent: true },
+      { source: '/shareholders-communication.php', destination: '/investors/shareholders-information/', permanent: true },
+      { source: '/financials.php', destination: '/investors/financial-results/', permanent: true },
+      { source: '/financials.asp', destination: '/investors/financial-results/', permanent: true },
+      { source: '/stock-price-data.php', destination: '/investors/investors-archives/', permanent: true },
+      { source: '/company-release.php', destination: '/investors/investors-archives/', permanent: true },
+      { source: '/compliance-reports.php', destination: '/investors/investors-archives/', permanent: true },
+      { source: '/policies.php', destination: '/investors/corporate-policies/', permanent: true },
 
       // Sustainability
       { source: '/sustainability.php', destination: '/sustainability/', permanent: true },
@@ -127,6 +134,8 @@ const nextConfig = {
 
       // Hall of Fame
       { source: '/awards.php', destination: '/hall-of-fame/?business=corporate-awards', permanent: true },
+      { source: '/awards2013-2019.php', destination: '/hall-of-fame/?business=corporate-awards', permanent: true },
+      { source: '/historic-awards.php', destination: '/hall-of-fame/?business=corporate-awards', permanent: true },
       { source: '/recognition-accreditation.php', destination: '/hall-of-fame/?business=corporate-awards', permanent: true },
 
       // Careers
@@ -139,8 +148,45 @@ const nextConfig = {
       { source: '/current-openings.php', destination: '/careers/', permanent: true },
 
       // Contact Us
+      { source: '/contact-us.php', destination: '/get-in-touch/', permanent: true },
       { source: '/global-presence.php', destination: '/get-in-touch/', permanent: true },
       { source: '/contact-form.php', destination: '/get-in-touch/', permanent: true },
+
+      // Media Centre
+      { source: '/press-release.php', destination: '/media-releases/', permanent: true },
+      { source: '/uflex-news.php', destination: '/media-coverage/', permanent: true },
+      { source: '/uflex-television-broadcast-news.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-print-media-coverage-2026.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-print-media-coverage-2025.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-print-media-coverage-2024.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-print-media-coverage-2023.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-print-media-coverage-2022.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-print-media-coverage-2021.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-print-media-coverage-2020.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-print-media-coverage-2019.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-print-media-coverage-2018.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-print-media-coverage-2017.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-print-media-coverage-2016.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-print-media-coverage-2015.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-print-media-coverage-2014.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-print-media-coverage-2013.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-print-media-coverage-2012.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-print-media-coverage-2011.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-online-media-coverage-2026.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-online-media-coverage-2025.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-online-media-coverage-2024.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-online-media-coverage-2023.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-online-media-coverage-2022.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-online-media-coverage-2021.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-online-media-coverage-2020.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-online-media-coverage-2019.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-online-media-coverage-2018.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-online-media-coverage-2017.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-online-media-coverage-2016.php', destination: '/media-coverage/', permanent: true },
+      { source: '/news-online-media-coverage-2015.php', destination: '/media-coverage/', permanent: true },
+      { source: '/video-gallery.php', destination: '/press-room/', permanent: true },
+      { source: '/photo-gallery.php', destination: '/press-room/', permanent: true },
+      { source: '/press-contact.php', destination: '/press-room/', permanent: true },
 
       // General Rule: Block access to any remaining PHP files EXCEPT our authorized ones
       {

@@ -15,6 +15,9 @@ RewriteRule ^key-management\.php$ /about-us/ [NC,R=301,L]
 RewriteRule ^subsidiaries-associates\.php$ /about-us/ [NC,R=301,L]
 RewriteRule ^pdf/UFlex_Company_Presentation\.pdf$ /about-us/ [NC,R=301,L]
 
+# Our Businesses
+RewriteRule ^our-businesses\.php$ /what-we-do/ [NC,R=301,L]
+
 # Packaging Films
 RewriteRule ^packaging-films\.php$ /packaging-films-business/ [NC,R=301,L]
 RewriteRule ^packaging-films-key-people\.php$ /packaging-films-business/ [NC,R=301,L]
@@ -85,27 +88,31 @@ RewriteRule ^engineering-contactus\.php$ /engineering-business/ [NC,R=301,L]
 RewriteRule ^engineering-enquiryform\.php$ /engineering-business/ [NC,R=301,L]
 
 # Investor Relations
+RewriteRule ^investors\.php$ /investors/ [NC,R=301,L]
 RewriteRule ^investor-presentations\.php$ /investors/ir-presentation-quarterly-earnings/ [NC,R=301,L]
-RewriteRule ^governance-structure\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
 RewriteRule ^quarterly-earnings-reports\.php$ /investors/ir-presentation-quarterly-earnings/ [NC,R=301,L]
+RewriteRule ^eamings-conference-call\.php$ /investors/ir-presentation-quarterly-earnings/ [NC,R=301,L]
+RewriteRule ^earnings-conference-call\.php$ /investors/ir-presentation-quarterly-earnings/ [NC,R=301,L]
+RewriteRule ^governance-structure\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
 RewriteRule ^grievance-redressal\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
 RewriteRule ^contact-details-of-kmps\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
 RewriteRule ^credit-ratings\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
-RewriteRule ^shareholders-communication\.php$ /investors/shareholders-information/ [NC,R=301,L]
-RewriteRule ^financials\.php$ /investors/financial-results/ [NC,R=301,L]
-RewriteRule ^stock-price-data\.php$ /investors/investors-archives/ [NC,R=301,L]
-RewriteRule ^company-release\.php$ /investors/investors-archives/ [NC,R=301,L]
 RewriteRule ^extract-of-annual-return\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
 RewriteRule ^business-responsibility-report\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
 RewriteRule ^secretarial-compliance-report\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
-RewriteRule ^policies\.php$ /investors/corporate-policies/ [NC,R=301,L]
 RewriteRule ^announcements\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
 RewriteRule ^shareholding-pattern\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
 RewriteRule ^unpaid-unclaimed-dividend-details\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
 RewriteRule ^transfer-of-shares-to-iepf\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
-RewriteRule ^registrar\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
-RewriteRule ^compliance-reports\.php$ /investors/investors-archives/ [NC,R=301,L]
 RewriteRule ^reconciliation-of-share-capital-audit-report\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
+RewriteRule ^registrar\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
+RewriteRule ^shareholders-communication\.php$ /investors/shareholders-information/ [NC,R=301,L]
+RewriteRule ^financials\.php$ /investors/financial-results/ [NC,R=301,L]
+RewriteRule ^financials\.asp$ /investors/financial-results/ [NC,R=301,L]
+RewriteRule ^stock-price-data\.php$ /investors/investors-archives/ [NC,R=301,L]
+RewriteRule ^company-release\.php$ /investors/investors-archives/ [NC,R=301,L]
+RewriteRule ^compliance-reports\.php$ /investors/investors-archives/ [NC,R=301,L]
+RewriteRule ^policies\.php$ /investors/corporate-policies/ [NC,R=301,L]
 
 # Sustainability
 RewriteRule ^sustainability\.php$ /sustainability/ [NC,R=301,L]
@@ -115,6 +122,8 @@ RewriteRule ^environmental-sustainability\.php$ /sustainability/ [NC,R=301,L]
 
 # Hall of Fame
 RewriteRule ^awards\.php$ /hall-of-fame/?business=corporate-awards [NC,R=301,L]
+RewriteRule ^awards2013-2019\.php$ /hall-of-fame/?business=corporate-awards [NC,R=301,L]
+RewriteRule ^historic-awards\.php$ /hall-of-fame/?business=corporate-awards [NC,R=301,L]
 RewriteRule ^recognition-accreditation\.php$ /hall-of-fame/?business=corporate-awards [NC,R=301,L]
 
 # Careers
@@ -127,8 +136,19 @@ RewriteRule ^uflex-program\.php$ /careers/ [NC,R=301,L]
 RewriteRule ^current-openings\.php$ /careers/ [NC,R=301,L]
 
 # Contact Us
+RewriteRule ^contact-us\.php$ /get-in-touch/ [NC,R=301,L]
 RewriteRule ^global-presence\.php$ /get-in-touch/ [NC,R=301,L]
 RewriteRule ^contact-form\.php$ /get-in-touch/ [NC,R=301,L]
+
+# Media Centre
+RewriteRule ^press-release\.php$ /media-releases/ [NC,R=301,L]
+RewriteRule ^uflex-news\.php$ /media-coverage/ [NC,R=301,L]
+RewriteRule ^uflex-television-broadcast-news\.php$ /media-coverage/ [NC,R=301,L]
+RewriteRule ^news-print-media-coverage-20[0-9]{2}\.php$ /media-coverage/ [NC,R=301,L]
+RewriteRule ^news-online-media-coverage-20[0-9]{2}\.php$ /media-coverage/ [NC,R=301,L]
+RewriteRule ^video-gallery\.php$ /press-room/ [NC,R=301,L]
+RewriteRule ^photo-gallery\.php$ /press-room/ [NC,R=301,L]
+RewriteRule ^press-contact\.php$ /press-room/ [NC,R=301,L]
 # ==========================================
 
 # Serve existing files directly
