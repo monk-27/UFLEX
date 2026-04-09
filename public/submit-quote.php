@@ -61,6 +61,14 @@ if (!empty($_FILES['files']['name'][0])) {
         $fileTmp = $_FILES['files']['tmp_name'][$i];
         $fileError = $_FILES['files']['error'][$i];
         
+        // Check extension
+        $ext = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
+        $allowedExtensions = ['pdf', 'doc', 'docx', 'jpg', 'jpeg', 'png'];
+        if (!in_array($ext, $allowedExtensions)) {
+            $uploadErrors[] = "File {$fileName} has an invalid extension. Only PDF, Word, and Images (JPG, PNG) are accepted.";
+            continue;
+        }
+
         // Check size (10MB max)
         if ($fileSize > 10 * 1024 * 1024) {
             $uploadErrors[] = "File {$fileName} exceeds 10MB limit.";

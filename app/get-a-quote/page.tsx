@@ -6,6 +6,7 @@ import { useSearchParams } from "next/navigation";
 import { useState, useEffect, FormEvent, useRef, useCallback } from "react";
 import { QuoteFormData } from "@/types/quote";
 import { Mail, Phone, Building2, MessageSquare, User, Send, RefreshCw, Paperclip, X, FileVideo, Image as ImageIcon, Upload } from "lucide-react";
+import Swal from "sweetalert2";
 
 const BUSINESS_OPTIONS = [
   "Packaging Films and PET Resin",
@@ -277,21 +278,15 @@ export default function EnquiryForm() {
       //   if (fileInputRef.current) fileInputRef.current.value = "";
       //   return;
       // }
-      const isImage = file.type.startsWith("image/");
-      const isVideo = file.type.startsWith("video/");
       const isPdf = file.type === "application/pdf";
-      const isDoc =
+      const isWord =
         file.type === "application/msword" ||
-        file.type ===
-        "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
-      const isExcel =
-        file.type === "application/vnd.ms-excel" ||
-        file.type ===
-        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+        file.type === "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+      const isImage = file.type === "image/jpeg" || file.type === "image/png";
 
-      if (!isImage && !isVideo && !isPdf && !isDoc && !isExcel) {
+      if (!isImage && !isPdf && !isWord) {
         setFileError(
-          `"${file.name}" is not allowed. Only images, videos, PDF, DOC, and Excel files are accepted.`
+          `"${file.name}" is not allowed. Only PDF, Word (.doc, .docx), and Images (JPG, PNG) are accepted.`
         );
         if (fileInputRef.current) fileInputRef.current.value = "";
         return;
@@ -323,9 +318,11 @@ export default function EnquiryForm() {
 
     // CAPTCHA verification
     if (userCaptcha !== captchaCode) {
-      setSubmitStatus({
-        type: "error",
-        message: "Incorrect CAPTCHA. Please try again.",
+      Swal.fire({
+        icon: 'error',
+        title: 'Invalid CAPTCHA',
+        text: 'Please try again.',
+        confirmButtonColor: '#117ABA'
       });
       generateCaptcha();
       setUserCaptcha("");
@@ -371,10 +368,12 @@ export default function EnquiryForm() {
         const data = await response.json();
 
         if (data.success) {
-            setSubmitStatus({
-                type: "success",
-                message: "Thank you! Your quote request has been submitted successfully.",
-            });
+          Swal.fire({
+            icon: 'success',
+            title: 'Success!',
+            text: 'Thank you! Your quote request has been submitted successfully.',
+            confirmButtonColor: '#117ABA'
+          });
             // Reset form
             setFormData({
                 name: "",
@@ -390,16 +389,20 @@ export default function EnquiryForm() {
             generateCaptcha();
             setUserCaptcha("");
         } else {
-            setSubmitStatus({
-                type: "error",
-                message: data.message || "Failed to submit quote via PHP handler.",
-            });
+          Swal.fire({
+            icon: 'error',
+            title: 'Submission Failed',
+            text: data.message || "Failed to submit quote via PHP handler.",
+            confirmButtonColor: '#117ABA'
+          });
         }
       } catch (error) {
         console.error("PHP Error:", error);
-        setSubmitStatus({
-            type: "error",
-            message: "An error occurred connecting to the server.",
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: 'An error occurred connecting to the server.',
+          confirmButtonColor: '#117ABA'
         });
       } finally {
         setIsSubmitting(false);
@@ -423,14 +426,24 @@ export default function EnquiryForm() {
         });
         const uploadData = await uploadRes.json();
         if (!uploadData.success) {
-          setSubmitStatus({ type: "error", message: uploadData.message || "File upload failed. Please try again." });
+          Swal.fire({
+            icon: 'error',
+            title: 'Upload Failed',
+            text: uploadData.message || "File upload failed. Please try again.",
+            confirmButtonColor: '#117ABA'
+          });
           setIsSubmitting(false);
           setIsUploading(false);
           return;
         }
         attachmentUrls = uploadData.urls ?? [];
       } catch {
-        setSubmitStatus({ type: "error", message: "File upload failed. Please try again." });
+        Swal.fire({
+          icon: 'error',
+          title: 'Upload Error',
+          text: 'File upload failed. Please try again.',
+          confirmButtonColor: '#117ABA'
+        });
         setIsSubmitting(false);
         setIsUploading(false);
         return;
@@ -461,9 +474,11 @@ export default function EnquiryForm() {
       }
 
       if (data.success) {
-        setSubmitStatus({
-          type: "success",
-          message: "Thank you! Your quote request has been submitted successfully. We'll get back to you soon.",
+        Swal.fire({
+          icon: 'success',
+          title: 'Success!',
+          text: 'Thank you! Your quote request has been submitted successfully. We\'ll get back to you soon.',
+          confirmButtonColor: '#117ABA'
         });
         // Reset form
         setFormData({
@@ -481,15 +496,19 @@ export default function EnquiryForm() {
         generateCaptcha();
         setUserCaptcha("");
       } else {
-        setSubmitStatus({
-          type: "error",
-          message: data.message || "Failed to submit quote. Please try again.",
+        Swal.fire({
+          icon: 'error',
+          title: 'Submission Failed',
+          text: data.message || "Failed to submit quote. Please try again.",
+          confirmButtonColor: '#117ABA'
         });
       }
     } catch (error) {
-      setSubmitStatus({
-        type: "error",
-        message: "An error occurred. Please try again later.",
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'An error occurred. Please try again later.',
+        confirmButtonColor: '#117ABA'
       });
     } finally {
       setIsSubmitting(false);
@@ -532,17 +551,6 @@ export default function EnquiryForm() {
             </p>
           </div>
 
-          {/* Status Messages */}
-          {submitStatus.type && (
-            <div
-              className={`mb-8 p-5 rounded-lg border-l-4 shadow-sm ${submitStatus.type === "success"
-                ? "bg-green-50 border-green-500 text-green-800"
-                : "bg-red-50 border-red-500 text-red-800"
-                }`}
-            >
-              <p className="lato-500">{submitStatus.message}</p>
-            </div>
-          )}
 
           {/* Form Container */}
           <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
@@ -748,7 +756,7 @@ export default function EnquiryForm() {
                 <div className="md:col-span-2">
                   <label className="lato-500 mb-2 block text-sm text-gray-700 flex items-center gap-2">
                     <Paperclip className="h-4 w-4 text-[#117ABA]" />
-                    Attachments <span className="text-xs text-gray-400 lato-400 ml-1">(Optional · Images &amp; Videos , Pdfs, .xl, .doc only · Max 5 files · 10 MB each)</span>
+                    Attachments <span className="text-xs text-gray-400 lato-400 ml-1">(Optional · PDF, Word, JPG, PNG only · Max 5 files · 10 MB each)</span>
                   </label>
 
                   {/* Drop / click zone */}
@@ -760,12 +768,12 @@ export default function EnquiryForm() {
                     <p className="text-sm text-gray-500 lato-400">
                       Click to browse or drop files here
                     </p>
-                    <p className="text-xs text-gray-400 lato-400 mt-1">Supports: JPG, PNG, Pdfs, .xl, .doc, MP4, MOV, AVI, etc.</p>
+                    <p className="text-xs text-gray-400 lato-400 mt-1">Supports: JPG, PNG, PDF, DOC, DOCX</p>
                     <input
                       ref={fileInputRef}
                       type="file"
                       // accept="image/*,video/*"
-                      accept="image/*,video/*,.pdf,.doc,.docx,.xls,.xlsx"
+                      accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
                       multiple
                       className="hidden"
                       onChange={handleFileChange}

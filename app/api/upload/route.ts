@@ -2,7 +2,13 @@ import { NextRequest, NextResponse } from 'next/server'
 import * as ftp from 'basic-ftp'
 import { Readable } from 'stream'
 
-const ALLOWED_MIME_PREFIXES = ['image/', 'video/']
+const ALLOWED_MIME_TYPES = [
+    'application/pdf',
+    'application/msword',
+    'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+    'image/jpeg',
+    'image/png'
+]
 const MAX_FILE_SIZE_BYTES = 10 * 1024 * 1024 // 10 MB
 const MAX_FILES = 5
 
@@ -38,10 +44,9 @@ export async function POST(request: NextRequest) {
 
         // Validate each file
         for (const file of files) {
-            const isAllowed = ALLOWED_MIME_PREFIXES.some((prefix) => file.type.startsWith(prefix))
-            if (!isAllowed) {
+            if (!ALLOWED_MIME_TYPES.includes(file.type)) {
                 return NextResponse.json(
-                    { success: false, message: `"${file.name}" is not allowed. Only images and videos are accepted.` },
+                    { success: false, message: `"${file.name}" is not allowed. Only PDF, Word, and Images (JPG, PNG) are accepted.` },
                     { status: 400 }
                 )
             }
