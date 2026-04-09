@@ -805,11 +805,11 @@ export const advertisementFYData: AdvertisementFY[] = [
         docs: [
           {
             label: "Hindi",
-            href: "https://www.uflexltd.com/pdf/financials/advertisements/2025-26/ADV-FR-31122025-JS.pdf",
+            href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2025-26/ADV-FR-31122025-JS.pdf",
           },
           {
             label: "English",
-            href: "https://www.uflexltd.com/pdf/financials/advertisements/2025-26/ADV-FR-31122025-FE.pdf",
+            href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2025-26/ADV-FR-31122025-FE.pdf",
           },
         ],
       },
@@ -819,11 +819,11 @@ export const advertisementFYData: AdvertisementFY[] = [
         docs: [
           {
             label: "Hindi",
-            href: "https://www.uflexltd.com/pdf/financials/advertisements/2025-26/ADV-FR-30092025-JS.pdf",
+            href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2025-26/ADV-FR-30092025-JS.pdf",
           },
           {
             label: "English",
-            href: "https://www.uflexltd.com/pdf/financials/advertisements/2025-26/ADV-FR-30092025-FE.pdf",
+            href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2025-26/ADV-FR-30092025-FE.pdf",
           },
         ],
       },
@@ -833,11 +833,11 @@ export const advertisementFYData: AdvertisementFY[] = [
         docs: [
           {
             label: "Hindi",
-            href: "https://www.uflexltd.com/pdf/financials/advertisements/2025-26/ADV-FR-30062025-JS.pdf",
+            href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2025-26/ADV-FR-30062025-JS.pdf",
           },
           {
             label: "English",
-            href: "https://www.uflexltd.com/pdf/financials/advertisements/2025-26/ADV-FR-30062025-FE.pdf",
+            href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2025-26/ADV-FR-30062025-FE.pdf",
           },
         ],
       },
@@ -853,11 +853,11 @@ export const advertisementFYData: AdvertisementFY[] = [
         docs: [
           {
             label: "Hindi",
-            href: "https://www.uflexltd.com/pdf/financials/advertisements/2024-25/ADV-FR-31032025-JS.pdf",
+            href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2024-25/ADV-FR-31032025-JS.pdf",
           },
           {
             label: "English",
-            href: "https://www.uflexltd.com/pdf/financials/advertisements/2024-25/ADV-FR-31032025-FE.pdf",
+            href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2024-25/ADV-FR-31032025-FE.pdf",
           },
         ],
       },
@@ -867,11 +867,11 @@ export const advertisementFYData: AdvertisementFY[] = [
         docs: [
           {
             label: "Hindi",
-            href: "https://www.uflexltd.com/pdf/financials/advertisements/2024-25/ADV-FR-31122024-JS.pdf",
+            href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2024-25/ADV-FR-31122024-JS.pdf",
           },
           {
             label: "English",
-            href: "https://www.uflexltd.com/pdf/financials/advertisements/2024-25/ADV-FR-31122024-FE.pdf",
+            href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2024-25/ADV-FR-31122024-FE.pdf",
           },
         ],
       },
@@ -881,11 +881,11 @@ export const advertisementFYData: AdvertisementFY[] = [
         docs: [
           {
             label: "Hindi",
-            href: "https://www.uflexltd.com/pdf/financials/advertisements/2024-25/ADV-FR-30092024-JS.pdf",
+            href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2024-25/ADV-FR-30092024-JS.pdf",
           },
           {
             label: "English",
-            href: "https://www.uflexltd.com/pdf/financials/advertisements/2024-25/ADV-FR-30092024-FE.pdf",
+            href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2024-25/ADV-FR-30092024-FE.pdf",
           },
         ],
       },
@@ -895,11 +895,11 @@ export const advertisementFYData: AdvertisementFY[] = [
         docs: [
           {
             label: "Hindi",
-            href: "https://www.uflexltd.com/pdf/financials/advertisements/2024-25/ADV-FR-30062024-JS.pdf",
+            href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2024-25/ADV-FR-30062024-JS.pdf",
           },
           {
             label: "English",
-            href: "https://www.uflexltd.com/pdf/financials/advertisements/2024-25/ADV-FR-30062024-FE.pdf",
+            href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2024-25/ADV-FR-30062024-FE.pdf",
           },
         ],
       },
@@ -916,32 +916,32 @@ export const advertisementFYData: AdvertisementFY[] = [
         id: "2024-03",
         quarterLabel: "QUARTER ENDED - 31st March, 2024",
         docs: [
-          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2023-24/ADV-FR-31032024-JS.pdf" },
-          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2023-24/ADV-FR-31032024-FE.pdf" },
+          { label: "Hindi", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2023-24/ADV-FR-31032024-JS.pdf" },
+          { label: "English", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2023-24/ADV-FR-31032024-FE.pdf" },
         ],
       },
       {
         id: "2023-12",
         quarterLabel: "QUARTER ENDED - 31st December, 2023",
         docs: [
-          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2023-24/ADV-FR-31122023-JS.pdf" },
-          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2023-24/ADV-FR-31122023-FE.pdf" },
+          { label: "Hindi", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2023-24/ADV-FR-31122023-JS.pdf" },
+          { label: "English", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2023-24/ADV-FR-31122023-FE.pdf" },
         ],
       },
       {
         id: "2023-09",
         quarterLabel: "QUARTER ENDED - 30th September, 2023",
         docs: [
-          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2023-24/ADV-FR-30092023-JS.pdf" },
-          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2023-24/ADV-FR-30092023-FE.pdf" },
+          { label: "Hindi", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2023-24/ADV-FR-30092023-JS.pdf" },
+          { label: "English", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2023-24/ADV-FR-30092023-FE.pdf" },
         ],
       },
       {
         id: "2023-06",
         quarterLabel: "QUARTER ENDED - 30th June, 2023",
         docs: [
-          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2023-24/ADV-FR-30062023-JS.pdf" },
-          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2023-24/ADV-FR-30062023-FE.pdf" },
+          { label: "Hindi", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2023-24/ADV-FR-30062023-JS.pdf" },
+          { label: "English", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2023-24/ADV-FR-30062023-FE.pdf" },
         ],
       },
     ],
@@ -955,32 +955,32 @@ export const advertisementFYData: AdvertisementFY[] = [
         id: "2023-03",
         quarterLabel: "QUARTER ENDED - 31st March, 2023",
         docs: [
-          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2022-23/ADV-FR-310323-JS.pdf" },
-          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2022-23/ADV-FR-310323-FE.pdf" },
+          { label: "Hindi", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2022-23/ADV-FR-310323-JS.pdf" },
+          { label: "English", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2022-23/ADV-FR-310323-FE.pdf" },
         ],
       },
       {
         id: "2022-12",
         quarterLabel: "QUARTER ENDED - 31st December, 2022",
         docs: [
-          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2022-23/ADV-FR-3112022-JS.pdf" },
-          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2022-23/ADV-FR-3112022-FE.pdf" },
+          { label: "Hindi", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2022-23/ADV-FR-3112022-JS.pdf" },
+          { label: "English", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2022-23/ADV-FR-3112022-FE.pdf" },
         ],
       },
       {
         id: "2022-09",
         quarterLabel: "QUARTER ENDED - 30th September, 2022",
         docs: [
-          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2022-23/ADV-FR-30092022-JS.pdf" },
-          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2022-23/ADV-FR-30092022-FE.pdf" },
+          { label: "Hindi", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2022-23/ADV-FR-30092022-JS.pdf" },
+          { label: "English", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2022-23/ADV-FR-30092022-FE.pdf" },
         ],
       },
       {
         id: "2022-06",
         quarterLabel: "QUARTER ENDED - 30th June, 2022",
         docs: [
-          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2022-23/ADV-FR-30062022-JS.pdf" },
-          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2022-23/ADV-FR-30062022-FE.pdf" },
+          { label: "Hindi", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2022-23/ADV-FR-30062022-JS.pdf" },
+          { label: "English", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2022-23/ADV-FR-30062022-FE.pdf" },
         ],
       },
     ],
@@ -994,32 +994,32 @@ export const advertisementFYData: AdvertisementFY[] = [
         id: "2022-03",
         quarterLabel: "QUARTER ENDED - 31st March, 2022",
         docs: [
-          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2021-22/ADV-FR-31032022-JS.pdf" },
-          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2021-22/ADV-FR-31032022-FE.pdf" },
+          { label: "Hindi", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2021-22/ADV-FR-31032022-JS.pdf" },
+          { label: "English", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2021-22/ADV-FR-31032022-FE.pdf" },
         ],
       },
       {
         id: "2021-12",
         quarterLabel: "QUARTER ENDED - 31st December, 2021",
         docs: [
-          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2021-22/ADV-FR-31122021-JS.pdf" },
-          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2021-22/ADV-FR-31122021-FE.pdf" },
+          { label: "Hindi", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2021-22/ADV-FR-31122021-JS.pdf" },
+          { label: "English", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2021-22/ADV-FR-31122021-FE.pdf" },
         ],
       },
       {
         id: "2021-09",
         quarterLabel: "QUARTER ENDED - 30th SEPTEMBER, 2021",
         docs: [
-          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2021-22/ADV-FR-30092021-JS.pdf" },
-          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2021-22/ADV-FR-30092021-FE.pdf" },
+          { label: "Hindi", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2021-22/ADV-FR-30092021-JS.pdf" },
+          { label: "English", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2021-22/ADV-FR-30092021-FE.pdf" },
         ],
       },
       {
         id: "2021-06",
         quarterLabel: "QUARTER ENDED - 30th June, 2021",
         docs: [
-          { label: "Hindi", href: "https://www.uflexltd.com/pdf/financials/advertisements/2021-22/ADV-FR-30062021-JS.pdf" },
-          { label: "English", href: "https://www.uflexltd.com/pdf/financials/advertisements/2021-22/ADV-FR-30062021-FE.pdf" },
+          { label: "Hindi", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2021-22/ADV-FR-30062021-JS.pdf" },
+          { label: "English", href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2021-22/ADV-FR-30062021-FE.pdf" },
         ],
       },
     ],
