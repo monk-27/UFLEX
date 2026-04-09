@@ -201,33 +201,33 @@ const quarterlyConsolidated: DocItem[] = [
 const quarterlyStandalone: DocItem[] = [
   {
     text: "Financial results for the Quarter ended 30.09.2025",
-    link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_30092025.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_30092025.pdf",
   },
   {
     text: "Financial results for the Quarter ended 30.06.2025",
-    link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_30062025.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_30062025.pdf",
   },
   {
     text:
       "Financial results for the Quarter and Year ended 31.03.2025 (Audited)",
-    link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_31032025.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_31032025.pdf",
   },
   {
     text: "Financial results for the Quarter ended 31.12.2024",
-    link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_31122024.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_31122024.pdf",
   },
   {
     text: "Financial results for the Quarter ended 30.09.2024",
-    link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_30092024.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_30092024.pdf",
   },
   {
     text: "Financial results for the Quarter ended 30.06.2024",
-    link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_30062024.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_30062024.pdf",
   },
   {
     text:
       "Financial results for the Quarter and Year ended 31.03.2024 (Audited)",
-    link: "https://www.uflexltd.com/pdf/financials/Standalone/UFLEX_NSEBSE_STA_AUDITED_RESULTS_31MAR2024.pdf",
+    link: "https://beta.uflexltd.com/media/pdf/financials/Standalone/UFLEX_NSEBSE_STA_AUDITED_RESULTS_31MAR2024.pdf",
   },
 ];
 
