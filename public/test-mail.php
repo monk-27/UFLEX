@@ -12,54 +12,47 @@ require __DIR__ . '/PHPMailer/src/Exception.php';
 require __DIR__ . '/PHPMailer/src/PHPMailer.php';
 require __DIR__ . '/PHPMailer/src/SMTP.php';
 
-echo "<h2>Starting SMTP Test...</h2>";
+echo "<h2>Starting Advanced SMTP Diagnostic...</h2>";
 
-$mail = new PHPMailer(true);
+$configs = [
+    ['host' => 'mail.uflexltd.com', 'port' => 587, 'secure' => PHPMailer::ENCRYPTION_STARTTLS, 'label' => 'Standard Port 587 (TLS)'],
+    ['host' => 'mail.uflexltd.com', 'port' => 465, 'secure' => PHPMailer::ENCRYPTION_SMTPS, 'label' => 'Secure Port 465 (SSL)'],
+    ['host' => 'localhost', 'port' => 587, 'secure' => PHPMailer::ENCRYPTION_STARTTLS, 'label' => 'Localhost Port 587'],
+    ['host' => 'localhost', 'port' => 25, 'secure' => '', 'label' => 'Localhost Port 25 (No Auth/SSL)']
+];
 
-try {
-    // Enable verbose debug output
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER; 
-    $mail->Debugoutput = 'html'; // Display the conversation nicely in the browser
+foreach ($configs as $cfg) {
+    echo "<h3>Testing Connection: {$cfg['label']} ({$cfg['host']}:{$cfg['port']})</h3>";
+    $mail = new PHPMailer(true);
+    try {
+        $mail->SMTPDebug = SMTP::DEBUG_SERVER; 
+        $mail->Debugoutput = 'html'; 
+        $mail->isSMTP();
+        $mail->Host       = $cfg['host'];
+        $mail->SMTPAuth   = ($cfg['port'] != 25); // Try without auth on port 25
+        $mail->Username   = 'enquiry@uflexltd.com';
+        $mail->Password   = 'Grp@$24En!2%9';
+        $mail->SMTPSecure = $cfg['secure'];
+        $mail->Port       = $cfg['port'];
+        $mail->Timeout    = 10;
 
-    // Server settings
-    $mail->isSMTP();
-    $mail->Host       = 'mail.uflexltd.com';
-    $mail->SMTPAuth   = true;
-    $mail->Username   = 'enquiry@uflexltd.com';
-    $mail->Password   = 'Grp@$24En!2%9';
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port       = 587;
-    $mail->Timeout    = 20;
+        $mail->SMTPOptions = array(
+            'ssl' => array('verify_peer' => false, 'verify_peer_name' => false, 'allow_self_signed' => true)
+        );
 
-    // Bypass SSL certificate validation (for cPanel hosts)
-    $mail->SMTPOptions = array(
-        'ssl' => array(
-            'verify_peer' => false,
-            'verify_peer_name' => false,
-            'allow_self_signed' => true
-        )
-    );
+        $mail->setFrom('enquiry@uflexltd.com', 'Diagnostic');
+        $mail->addAddress('shashibjha271299@gmail.com'); 
+        $mail->Subject = 'Diagnostic Test';
+        $mail->Body    = 'Success on ' . $cfg['label'];
 
-    // Recipients
-    $mail->setFrom('enquiry@uflexltd.com', 'Test Sender');
-    $mail->addAddress('shashibjha271299@gmail.com'); 
-
-    // Content
-    $mail->isHTML(false);
-    $mail->Subject = 'SMTP Diagnostic Test';
-    $mail->Body    = 'If you read this, authentication is working.';
-
-    echo "<h3>Attempting to connect to mail.uflexltd.com on Port 587...</h3>";
-    echo "<pre style='background: #f4f4f4; padding: 10px; border: 1px solid #ccc;'>";
-    
-    $mail->send();
-    
-    echo "</pre>";
-    echo "<h2 style='color:green;'>SUCCESS: Email has been sent!</h2>";
-
-} catch (Exception $e) {
-    echo "</pre>";
-    echo "<h2 style='color:red;'>FAILED: Message could not be sent.</h2>";
-    echo "<p><strong>PHPMailer Error:</strong> {$mail->ErrorInfo}</p>";
+        echo "<pre style='background: #eee; padding: 10px; font-size: 11px;'>";
+        $mail->send();
+        echo "</pre>";
+        echo "<h4 style='color:green;'>RESULT: Success!</h4><hr>";
+        break; // Stop if we find one that works!
+    } catch (Exception $e) {
+        echo "</pre>";
+        echo "<h4 style='color:red;'>RESULT: Failed ({$mail->ErrorInfo})</h4><hr>";
+    }
 }
 ?>
