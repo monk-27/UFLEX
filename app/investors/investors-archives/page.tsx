@@ -94,13 +94,13 @@ export type ArchiveSection = {
 export const complianceReports: ComplianceReportsData = {
     heading: "Quarterly Corporate Governance Compliance Report",
     reports: [
-        { title: "Report for the Quarter Ended 30.09.2015", link: "https://www.uflexltd.com/pdf/CR/UFLEX_BSE_C49_30092015.pdf" },
-        { title: "Report for the Quarter Ended 30.06.2015", link: "https://www.uflexltd.com/pdf/CR/UFLEX_BSE_C49_30062015.pdf" },
-        { title: "Report for the Quarter Ended 31.03.2015", link: "https://www.uflexltd.com/pdf/CR/UFLEX_BSE_C49_31032015.pdf" },
-        { title: "Report for the Quarter Ended 31.12.2014", link: "https://www.uflexltd.com/pdf/CR/UFLEX_BSE_C49_31122014.pdf" },
-        { title: "Report for the Quarter Ended 30.09.2014", link: "https://www.uflexltd.com/pdf/CR/UFLEX_BSE_C49_30092014.pdf" },
-        { title: "Report for the Quarter Ended 30.06.2014", link: "https://www.uflexltd.com/pdf/CR/UFLEX_BSE_C49_30062014.pdf" },
-        { title: "Report for the Quarter Ended 31.03.2014", link: "https://www.uflexltd.com/pdf/CR/UFLEX_BSE_C49_31032014.pdf" },
+        { title: "Report for the Quarter Ended 30.09.2015", link: "https://beta.uflexltd.com/media/pdf/CR/UFLEX_BSE_C49_30092015.pdf" },
+        { title: "Report for the Quarter Ended 30.06.2015", link: "https://beta.uflexltd.com/media/pdf/CR/UFLEX_BSE_C49_30062015.pdf" },
+        { title: "Report for the Quarter Ended 31.03.2015", link: "https://beta.uflexltd.com/media/pdf/CR/UFLEX_BSE_C49_31032015.pdf" },
+        { title: "Report for the Quarter Ended 31.12.2014", link: "https://beta.uflexltd.com/media/pdf/CR/UFLEX_BSE_C49_31122014.pdf" },
+        { title: "Report for the Quarter Ended 30.09.2014", link: "https://beta.uflexltd.com/media/pdf/CR/UFLEX_BSE_C49_30092014.pdf" },
+        { title: "Report for the Quarter Ended 30.06.2014", link: "https://beta.uflexltd.com/media/pdf/CR/UFLEX_BSE_C49_30062014.pdf" },
+        { title: "Report for the Quarter Ended 31.03.2014", link: "https://beta.uflexltd.com/media/pdf/CR/UFLEX_BSE_C49_31032014.pdf" },
         { title: "Report for the Quarter Ended 31.12.2013", link: "#" },
         { title: "Report for the Quarter Ended 30.09.2013", link: "#" },
         { title: "Report for the Quarter Ended 30.06.2013", link: "#" },
@@ -122,12 +122,12 @@ export const complianceReports: ComplianceReportsData = {
 export const companyRelease: ArchiveSection = {
     heading: "Company release",
     reports: [
-        { title: "Communiqué August 2022", link: "https://www.uflexltd.com/pdf/Company-Release/Communique-August-2022.pdf" },
-        { title: "Communiqué May 2022", link: "https://www.uflexltd.com/pdf/Company-Release/Communique-May-2022.pdf" },
-        { title: "Communiqué February 2022", link: "https://www.uflexltd.com/pdf/Company-Release/Communique-February-2022.pdf" },
-        { title: "Communiqué November 2021", link: "https://www.uflexltd.com/pdf/Company-Release/Communique-November-2021.pdf" },
-        { title: "Communiqué August 2021", link: "https://www.uflexltd.com/pdf/Company-Release/Communique-August-2021.pdf" },
-        { title: "Communiqué June 2021", link: "https://www.uflexltd.com/pdf/Company-Release/Communique-June-2021.pdf" },
+        { title: "Communiqué August 2022", link: "https://beta.uflexltd.com/media/pdf/Company-Release/Communique-August-2022.pdf" },
+        { title: "Communiqué May 2022", link: "https://beta.uflexltd.com/media/pdf/Company-Release/Communique-May-2022.pdf" },
+        { title: "Communiqué February 2022", link: "https://beta.uflexltd.com/media/pdf/Company-Release/Communique-February-2022.pdf" },
+        { title: "Communiqué November 2021", link: "https://beta.uflexltd.com/media/pdf/Company-Release/Communique-November-2021.pdf" },
+        { title: "Communiqué August 2021", link: "https://beta.uflexltd.com/media/pdf/Company-Release/Communique-August-2021.pdf" },
+        { title: "Communiqué June 2021", link: "https://beta.uflexltd.com/media/pdf/Company-Release/Communique-June-2021.pdf" },
         { title: "Communiqué February 2021", link: "#" },
         { title: "Communiqué November 2020", link: "#" },
         { title: "Communiqué August 2020", link: "#" },
@@ -217,11 +217,11 @@ const ArchivePage = () => {
                     </div>
                 </div> */}
                 <Breadcrumb
-                          items={[
-                            { label: "Investors Relations", href: "/investors" },
-                            { label: "Archive" },
-                          ]}
-                        />
+                    items={[
+                        { label: "Investors Relations", href: "/investors" },
+                        { label: "Archive" },
+                    ]}
+                />
 
                 {/* CONTENT */}
                 <section className="max-w-6xl mx-auto px-4 sm:px-12 md:px-20 lg:px-28 pt-6 pb-10">
@@ -286,7 +286,7 @@ const ArchivePage = () => {
                             </>
                         )}
 
-                       
+
 
                         {isStock && (
                             <div
@@ -394,7 +394,7 @@ const ArchivePage = () => {
 
 
                                             </div>
-                                            
+
 
                                             {/* NSE card */}
                                             <div className="bg-[#CF3438] px-6 py-3">
