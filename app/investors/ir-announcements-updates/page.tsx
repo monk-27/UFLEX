@@ -1361,7 +1361,9 @@ export default function Page() {
         setDividendData(null);
 
         try {
-            const response = await fetch(`/get-unclaimed-dividend.php?folio_id=${encodeURIComponent(folioNo)}`);
+            // During local development, route the request to the beta server where PHP is executed
+            const baseUrl = process.env.NODE_ENV === 'development' ? 'https://beta.uflexltd.com' : 'https://beta.uflexltd.com';
+            const response = await fetch(`${baseUrl}/get-unclaimed-dividend.php?folio_id=${encodeURIComponent(folioNo)}`);
             const result = await response.json();
 
             if (result.success && result.data) {
@@ -1549,7 +1551,7 @@ export default function Page() {
                                         className="text-black w-full border border-gray-300 rounded px-4 py-2 mb-4 focus:outline-none focus:ring-1 focus:ring-[#117ABA]"
                                     />
 
-                                    <button 
+                                    <button
                                         onClick={handleFolioSearch}
                                         disabled={isSearching}
                                         className="bg-[#117ABA] text-white px-6 py-2 rounded tracking-widest text-sm disabled:opacity-50"

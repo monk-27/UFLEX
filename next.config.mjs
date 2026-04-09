@@ -190,7 +190,7 @@ const nextConfig = {
 
       // General Rule: Block access to any remaining PHP files EXCEPT our authorized ones
       {
-        source: "/((?!test-mail|submit-quote|index).*)?.php",
+        source: "/((?!test-mail|submit-quote|get-unclaimed-dividend|index).*)?.php",
         destination: "/404",
         permanent: false,
       },
