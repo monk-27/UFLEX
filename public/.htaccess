@@ -4,131 +4,131 @@ RewriteEngine On
 # 301 PERMANENT REDIRECTS FOR OLD PHP LINKS
 # ==========================================
 # About Us
-Redirect 301 /about-us.php /about-us/
-Redirect 301 /company-profile.php /about-us/
-Redirect 301 /vision-mission.php /about-us/
-Redirect 301 /values.php /about-us/
-Redirect 301 /cmd-Profile.php /about-us/
-Redirect 301 /board-of-directors.php /about-us/
-Redirect 301 /board-committees.php /about-us/
-Redirect 301 /key-management.php /about-us/
-Redirect 301 /subsidiaries-associates.php /about-us/
-Redirect 301 /pdf/UFlex_Company_Presentation.pdf /about-us/
+RewriteRule ^about-us\.php$ /about-us/ [NC,R=301,L]
+RewriteRule ^company-profile\.php$ /about-us/ [NC,R=301,L]
+RewriteRule ^vision-mission\.php$ /about-us/ [NC,R=301,L]
+RewriteRule ^values\.php$ /about-us/ [NC,R=301,L]
+RewriteRule ^cmd-Profile\.php$ /about-us/ [NC,R=301,L]
+RewriteRule ^board-of-directors\.php$ /about-us/ [NC,R=301,L]
+RewriteRule ^board-committees\.php$ /about-us/ [NC,R=301,L]
+RewriteRule ^key-management\.php$ /about-us/ [NC,R=301,L]
+RewriteRule ^subsidiaries-associates\.php$ /about-us/ [NC,R=301,L]
+RewriteRule ^pdf/UFlex_Company_Presentation\.pdf$ /about-us/ [NC,R=301,L]
 
 # Packaging Films
-Redirect 301 /packaging-films.php /packaging-films-business/
-Redirect 301 /packaging-films-key-people.php /packaging-films-business/
-Redirect 301 /packaging-films-products.php /packaging-films-business/
-Redirect 301 /packaging-films-marketing-support.php /packaging-films-business/
-Redirect 301 /packaging-films-awards-and-recognition.php /packaging-films-business/
-Redirect 301 /packaging-films-environmental-sustainability.php /packaging-films-business/
-Redirect 301 /packaging-films-contactus.php /packaging-films-business/
-Redirect 301 /packaging-films-enquiryform.php /packaging-films-business/
+RewriteRule ^packaging-films\.php$ /packaging-films-business/ [NC,R=301,L]
+RewriteRule ^packaging-films-key-people\.php$ /packaging-films-business/ [NC,R=301,L]
+RewriteRule ^packaging-films-products\.php$ /packaging-films-business/ [NC,R=301,L]
+RewriteRule ^packaging-films-marketing-support\.php$ /packaging-films-business/ [NC,R=301,L]
+RewriteRule ^packaging-films-awards-and-recognition\.php$ /packaging-films-business/ [NC,R=301,L]
+RewriteRule ^packaging-films-environmental-sustainability\.php$ /packaging-films-business/ [NC,R=301,L]
+RewriteRule ^packaging-films-contactus\.php$ /packaging-films-business/ [NC,R=301,L]
+RewriteRule ^packaging-films-enquiryform\.php$ /packaging-films-business/ [NC,R=301,L]
 
 # Chemicals
-Redirect 301 /chemicals.php /chemicals-business/
-Redirect 301 /chemicals-key-people.php /chemicals-business/
-Redirect 301 /chemicals-products.php /chemicals-business/
-Redirect 301 /chemicals-marketing-support.php /chemicals-business/
-Redirect 301 /chemicals-awards-and-recognition.php /chemicals-business/
-Redirect 301 /chemicals-environmental-sustainability.php /chemicals-business/
-Redirect 301 /chemicals-contactus.php /chemicals-business/
-Redirect 301 /chemicals-enquiryform.php /chemicals-business/
+RewriteRule ^chemicals\.php$ /chemicals-business/ [NC,R=301,L]
+RewriteRule ^chemicals-key-people\.php$ /chemicals-business/ [NC,R=301,L]
+RewriteRule ^chemicals-products\.php$ /chemicals-business/ [NC,R=301,L]
+RewriteRule ^chemicals-marketing-support\.php$ /chemicals-business/ [NC,R=301,L]
+RewriteRule ^chemicals-awards-and-recognition\.php$ /chemicals-business/ [NC,R=301,L]
+RewriteRule ^chemicals-environmental-sustainability\.php$ /chemicals-business/ [NC,R=301,L]
+RewriteRule ^chemicals-contactus\.php$ /chemicals-business/ [NC,R=301,L]
+RewriteRule ^chemicals-enquiryform\.php$ /chemicals-business/ [NC,R=301,L]
 
 # Aseptic Packaging
-Redirect 301 /asepto.php /aseptic-packaging-business/
-Redirect 301 /asepto-responsible-sourcing.php /aseptic-packaging-business/
-Redirect 301 /asepto-products-services.php /aseptic-packaging-business/
-Redirect 301 /asepto-our-commitment.php /aseptic-packaging-business/
-Redirect 301 /asepto-awards-and-recognition.php /aseptic-packaging-business/
-Redirect 301 /asepto-contactus.php /aseptic-packaging-business/
-Redirect 301 /asepto-enquiry-form.php /aseptic-packaging-business/
+RewriteRule ^asepto\.php$ /aseptic-packaging-business/ [NC,R=301,L]
+RewriteRule ^asepto-responsible-sourcing\.php$ /aseptic-packaging-business/ [NC,R=301,L]
+RewriteRule ^asepto-products-services\.php$ /aseptic-packaging-business/ [NC,R=301,L]
+RewriteRule ^asepto-our-commitment\.php$ /aseptic-packaging-business/ [NC,R=301,L]
+RewriteRule ^asepto-awards-and-recognition\.php$ /aseptic-packaging-business/ [NC,R=301,L]
+RewriteRule ^asepto-contactus\.php$ /aseptic-packaging-business/ [NC,R=301,L]
+RewriteRule ^asepto-enquiry-form\.php$ /aseptic-packaging-business/ [NC,R=301,L]
 
 # Holography
-Redirect 301 /holography.php /holography-business/
-Redirect 301 /holography-key-people.php /holography-business/
-Redirect 301 /holography-products.php /holography-business/
-Redirect 301 /holography-marketing-support.php /holography-business/
-Redirect 301 /holography-awards-and-recognition.php /holography-business/
-Redirect 301 /holography-environmental-sustainability.php /holography-business/
-Redirect 301 /holography-contactus.php /holography-business/
-Redirect 301 /holography-enquiry_form.php /holography-business/
+RewriteRule ^holography\.php$ /holography-business/ [NC,R=301,L]
+RewriteRule ^holography-key-people\.php$ /holography-business/ [NC,R=301,L]
+RewriteRule ^holography-products\.php$ /holography-business/ [NC,R=301,L]
+RewriteRule ^holography-marketing-support\.php$ /holography-business/ [NC,R=301,L]
+RewriteRule ^holography-awards-and-recognition\.php$ /holography-business/ [NC,R=301,L]
+RewriteRule ^holography-environmental-sustainability\.php$ /holography-business/ [NC,R=301,L]
+RewriteRule ^holography-contactus\.php$ /holography-business/ [NC,R=301,L]
+RewriteRule ^holography-enquiry_form\.php$ /holography-business/ [NC,R=301,L]
 
 # Flexible Packaging
-Redirect 301 /packaging.php /flexible-packaging-business/
-Redirect 301 /packaging-key-people.php /flexible-packaging-business/
-Redirect 301 /packaging-products.php /flexible-packaging-business/
-Redirect 301 /packaging-marketing-support.php /flexible-packaging-business/
-Redirect 301 /packaging-awards-and-recognition.php /flexible-packaging-business/
-Redirect 301 /packaging-environmental-sustainability.php /flexible-packaging-business/
-Redirect 301 /packaging-contact-us.php /flexible-packaging-business/
-Redirect 301 /packaging-enquiry-form.php /flexible-packaging-business/
+RewriteRule ^packaging\.php$ /flexible-packaging-business/ [NC,R=301,L]
+RewriteRule ^packaging-key-people\.php$ /flexible-packaging-business/ [NC,R=301,L]
+RewriteRule ^packaging-products\.php$ /flexible-packaging-business/ [NC,R=301,L]
+RewriteRule ^packaging-marketing-support\.php$ /flexible-packaging-business/ [NC,R=301,L]
+RewriteRule ^packaging-awards-and-recognition\.php$ /flexible-packaging-business/ [NC,R=301,L]
+RewriteRule ^packaging-environmental-sustainability\.php$ /flexible-packaging-business/ [NC,R=301,L]
+RewriteRule ^packaging-contact-us\.php$ /flexible-packaging-business/ [NC,R=301,L]
+RewriteRule ^packaging-enquiry-form\.php$ /flexible-packaging-business/ [NC,R=301,L]
 
 # Printing & Cylinders
-Redirect 301 /cylinders.php /printing-cylinder-business/
-Redirect 301 /cylinders-key-people.php /printing-cylinder-business/
-Redirect 301 /cylinders-products.php /printing-cylinder-business/
-Redirect 301 /cylinders-marketing-support.php /printing-cylinder-business/
-Redirect 301 /cylinders-awards-and-recognition.php /printing-cylinder-business/
-Redirect 301 /cylinders-environmental-sustainability.php /printing-cylinder-business/
-Redirect 301 /cylinders-contactus.php /printing-cylinder-business/
-Redirect 301 /cylinders-enquiryform.php /printing-cylinder-business/
+RewriteRule ^cylinders\.php$ /printing-cylinder-business/ [NC,R=301,L]
+RewriteRule ^cylinders-key-people\.php$ /printing-cylinder-business/ [NC,R=301,L]
+RewriteRule ^cylinders-products\.php$ /printing-cylinder-business/ [NC,R=301,L]
+RewriteRule ^cylinders-marketing-support\.php$ /printing-cylinder-business/ [NC,R=301,L]
+RewriteRule ^cylinders-awards-and-recognition\.php$ /printing-cylinder-business/ [NC,R=301,L]
+RewriteRule ^cylinders-environmental-sustainability\.php$ /printing-cylinder-business/ [NC,R=301,L]
+RewriteRule ^cylinders-contactus\.php$ /printing-cylinder-business/ [NC,R=301,L]
+RewriteRule ^cylinders-enquiryform\.php$ /printing-cylinder-business/ [NC,R=301,L]
 
 # Engineering
-Redirect 301 /engineering.php /engineering-business/
-Redirect 301 /engineering-key-people.php /engineering-business/
-Redirect 301 /engineering-products.php /engineering-business/
-Redirect 301 /engineering-marketing-support.php /engineering-business/
-Redirect 301 /engineering-awards-and-recognition.php /engineering-business/
-Redirect 301 /engineering-environmental-sustainability.php /engineering-business/
-Redirect 301 /engineering-contactus.php /engineering-business/
-Redirect 301 /engineering-enquiryform.php /engineering-business/
+RewriteRule ^engineering\.php$ /engineering-business/ [NC,R=301,L]
+RewriteRule ^engineering-key-people\.php$ /engineering-business/ [NC,R=301,L]
+RewriteRule ^engineering-products\.php$ /engineering-business/ [NC,R=301,L]
+RewriteRule ^engineering-marketing-support\.php$ /engineering-business/ [NC,R=301,L]
+RewriteRule ^engineering-awards-and-recognition\.php$ /engineering-business/ [NC,R=301,L]
+RewriteRule ^engineering-environmental-sustainability\.php$ /engineering-business/ [NC,R=301,L]
+RewriteRule ^engineering-contactus\.php$ /engineering-business/ [NC,R=301,L]
+RewriteRule ^engineering-enquiryform\.php$ /engineering-business/ [NC,R=301,L]
 
 # Investor Relations
-Redirect 301 /investor-presentations.php /investors/ir-presentation-quarterly-earnings/
-Redirect 301 /governance-structure.php /investors/ir-announcements-updates/
-Redirect 301 /quarterly-earnings-reports.php /investors/ir-presentation-quarterly-earnings/
-Redirect 301 /grievance-redressal.php /investors/ir-announcements-updates/
-Redirect 301 /contact-details-of-kmps.php /investors/ir-announcements-updates/
-Redirect 301 /credit-ratings.php /investors/ir-announcements-updates/
-Redirect 301 /shareholders-communication.php /investors/shareholders-information/
-Redirect 301 /financials.php /investors/financial-results/
-Redirect 301 /stock-price-data.php /investors/investors-archives/
-Redirect 301 /company-release.php /investors/investors-archives/
-Redirect 301 /extract-of-annual-return.php /investors/ir-announcements-updates/
-Redirect 301 /business-responsibility-report.php /investors/ir-announcements-updates/
-Redirect 301 /secretarial-compliance-report.php /investors/ir-announcements-updates/
-Redirect 301 /policies.php /investors/corporate-policies/
-Redirect 301 /announcements.php /investors/ir-announcements-updates/
-Redirect 301 /shareholding-pattern.php /investors/ir-announcements-updates/
-Redirect 301 /unpaid-unclaimed-dividend-details.php /investors/ir-announcements-updates/
-Redirect 301 /transfer-of-shares-to-iepf.php /investors/ir-announcements-updates/
-Redirect 301 /registrar.php /investors/ir-announcements-updates/
-Redirect 301 /compliance-reports.php /investors/investors-archives/
-Redirect 301 /reconciliation-of-share-capital-audit-report.php /investors/ir-announcements-updates/
+RewriteRule ^investor-presentations\.php$ /investors/ir-presentation-quarterly-earnings/ [NC,R=301,L]
+RewriteRule ^governance-structure\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
+RewriteRule ^quarterly-earnings-reports\.php$ /investors/ir-presentation-quarterly-earnings/ [NC,R=301,L]
+RewriteRule ^grievance-redressal\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
+RewriteRule ^contact-details-of-kmps\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
+RewriteRule ^credit-ratings\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
+RewriteRule ^shareholders-communication\.php$ /investors/shareholders-information/ [NC,R=301,L]
+RewriteRule ^financials\.php$ /investors/financial-results/ [NC,R=301,L]
+RewriteRule ^stock-price-data\.php$ /investors/investors-archives/ [NC,R=301,L]
+RewriteRule ^company-release\.php$ /investors/investors-archives/ [NC,R=301,L]
+RewriteRule ^extract-of-annual-return\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
+RewriteRule ^business-responsibility-report\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
+RewriteRule ^secretarial-compliance-report\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
+RewriteRule ^policies\.php$ /investors/corporate-policies/ [NC,R=301,L]
+RewriteRule ^announcements\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
+RewriteRule ^shareholding-pattern\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
+RewriteRule ^unpaid-unclaimed-dividend-details\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
+RewriteRule ^transfer-of-shares-to-iepf\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
+RewriteRule ^registrar\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
+RewriteRule ^compliance-reports\.php$ /investors/investors-archives/ [NC,R=301,L]
+RewriteRule ^reconciliation-of-share-capital-audit-report\.php$ /investors/ir-announcements-updates/ [NC,R=301,L]
 
 # Sustainability
-Redirect 301 /sustainability.php /sustainability/
-Redirect 301 /sustainability-practices.php /sustainability/
-Redirect 301 /social-sustainability.php /sustainability/
-Redirect 301 /environmental-sustainability.php /sustainability/
+RewriteRule ^sustainability\.php$ /sustainability/ [NC,R=301,L]
+RewriteRule ^sustainability-practices\.php$ /sustainability/ [NC,R=301,L]
+RewriteRule ^social-sustainability\.php$ /sustainability/ [NC,R=301,L]
+RewriteRule ^environmental-sustainability\.php$ /sustainability/ [NC,R=301,L]
 
 # Hall of Fame
-Redirect 301 /awards.php /hall-of-fame/?business=corporate-awards
-Redirect 301 /recognition-accreditation.php /hall-of-fame/?business=corporate-awards
+RewriteRule ^awards\.php$ /hall-of-fame/?business=corporate-awards [NC,R=301,L]
+RewriteRule ^recognition-accreditation\.php$ /hall-of-fame/?business=corporate-awards [NC,R=301,L]
 
 # Careers
-Redirect 301 /why-uflex.php /careers/
-Redirect 301 /learning-curve.php /careers/
-Redirect 301 /choose-your-path.php /careers/
-Redirect 301 /vox-populi.php /careers/
-Redirect 301 /because-you-matter.php /careers/
-Redirect 301 /uflex-program.php /careers/
-Redirect 301 /current-openings.php /careers/
+RewriteRule ^why-uflex\.php$ /careers/ [NC,R=301,L]
+RewriteRule ^learning-curve\.php$ /careers/ [NC,R=301,L]
+RewriteRule ^choose-your-path\.php$ /careers/ [NC,R=301,L]
+RewriteRule ^vox-populi\.php$ /careers/ [NC,R=301,L]
+RewriteRule ^because-you-matter\.php$ /careers/ [NC,R=301,L]
+RewriteRule ^uflex-program\.php$ /careers/ [NC,R=301,L]
+RewriteRule ^current-openings\.php$ /careers/ [NC,R=301,L]
 
 # Contact Us
-Redirect 301 /global-presence.php /get-in-touch/
-Redirect 301 /contact-form.php /get-in-touch/
+RewriteRule ^global-presence\.php$ /get-in-touch/ [NC,R=301,L]
+RewriteRule ^contact-form\.php$ /get-in-touch/ [NC,R=301,L]
 # ==========================================
 
 # Serve existing files directly
