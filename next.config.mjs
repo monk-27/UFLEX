@@ -142,9 +142,9 @@ const nextConfig = {
       { source: '/global-presence.php', destination: '/get-in-touch/', permanent: true },
       { source: '/contact-form.php', destination: '/get-in-touch/', permanent: true },
 
-      // General Rule: Block access to any remaining PHP files on the Vercel/Node environment
+      // General Rule: Block access to any remaining PHP files EXCEPT our authorized ones
       {
-        source: "/:path*.php",
+        source: "/((?!test-mail|submit-quote|index).*)?.php",
         destination: "/404",
         permanent: false,
       },

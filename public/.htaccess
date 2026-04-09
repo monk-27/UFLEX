@@ -12,10 +12,10 @@ RewriteRule ^(.*)$ $1/index.html [L]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [L]
 
-# -------------------------------------------------------------------
 # If none of the above matched (meaning the file/path does not exist), 
 # redirect to the home page with a 301 Permanent Redirect
-# -------------------------------------------------------------------
+# EXCEPTION: Do not redirect our authorized PHP backend files
+RewriteCond %{REQUEST_URI} !/(test-mail|submit-quote)\.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ / [R=301,L]
