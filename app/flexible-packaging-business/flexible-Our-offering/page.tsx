@@ -44,7 +44,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -96,7 +96,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -134,7 +134,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -170,7 +170,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -205,7 +205,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -242,7 +242,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -251,8 +251,8 @@ export default function ProductsPage() {
                 { name: "Injection Moulding Products", productKey: "injection" },
             ],
         },
-        HYGIENE: {
-            key: "HYGIENE",
+        hygiene: {
+            key: "hygiene",
             title: "HYGIENE FILMS",
             overview:
                 "UFlex offers high-performance hygiene films designed to meet the critical requirements of the personal care industry. Our range includes breathable films for diapers and back sheet films for sanitary napkins, engineered for comfort, protection, and reliability. ",
@@ -274,7 +274,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -307,7 +307,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -333,7 +333,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -359,7 +359,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -388,7 +388,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -398,8 +398,8 @@ export default function ProductsPage() {
             ],
 
         },
-        Zipouch: {
-            key: "Zipouch",
+        zipouch: {
+            key: "zipouch",
             title: "Zipouch",
             overview:
                 "Zipouch is a versatile range of reclosable and reusable pouches made from high-quality laminated films, designed to meet the everyday food storage needs of modern consumers. Ideal for storing and refrigerating vegetables, fruits, meats, breads, and even reheating food, Zipouch offers convenience from shelf to refrigerator to microwave.",
@@ -415,7 +415,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -445,7 +445,7 @@ export default function ProductsPage() {
                 { name: "Laminated Woven Polypropylene (WPP) Bags", productKey: "wpp" },
                 { name: "Electron Beam & Cast N Cure", productKey: "eb-cnc" },
                 { name: "Pharmaceutical Packaging", productKey: "pharma" },
-                { name: "Zipouch", productKey: "Zipouch" },
+                { name: "Zipouch", productKey: "zipouch" },
 
                 { name: "Hygiene Films", productKey: "hygiene" },
                 { name: "Flexfresh™ Modified Atmosphere Packaging", productKey: "flexfresh" },
@@ -472,7 +472,7 @@ export default function ProductsPage() {
         'flexfresh',
         'premium',
         'n95',
-        'Zipouch',
+        'zipouch',
         'injection',
         // add 'FlexiTubes' if you want to support it later
     ] as const;
