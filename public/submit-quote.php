@@ -26,8 +26,19 @@ function parse_env_file($path) {
 }
 
 // Load configurations securely
-$envFilePath = __DIR__ . '/../.env.local';
-$env = parse_env_file($envFilePath);
+$env = [];
+$searchPaths = [
+    __DIR__ . '/.env.local',           // Same directory
+    __DIR__ . '/../.env.local',        // Parent directory (standard Next.js)
+    $_SERVER['DOCUMENT_ROOT'] . '/.env.local' // Web root
+];
+
+foreach ($searchPaths as $path) {
+    if (file_exists($path)) {
+        $env = parse_env_file($path);
+        break; // Stop at first found file
+    }
+}
 
 // Basic validation
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -164,7 +175,7 @@ $smtpSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $envToAdmins = isset($env['SMTP_TO']) && !empty($env['SMTP_TO']) ? explode(',', $env['SMTP_TO']) : [];
 $toAdmins = array_map('trim', $envToAdmins);
 
-$fromEmail = $env['SMTP_FROM'];
+$fromEmail = $env['SMTP_FROM'] ?? 'enquiry@uflexltd.com';
 
 $productList = empty($product) ? 'None selected' : implode(', ', $product);
 $attachmentsList = empty($uploadedFiles) ? 'No attachments' : implode("\n", $uploadedFiles);

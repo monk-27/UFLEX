@@ -70,3 +70,4 @@ jobs:
             **/.git*/**
             uploads/**
             uploads/
+            .env.local
