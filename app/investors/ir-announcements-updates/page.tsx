@@ -1344,6 +1344,39 @@ const announcementsData = Object.entries(
 export default function Page() {
     const [activeTabId, setActiveTabId] = useState<TabId>("announcements");
 
+    // New states for Dividend Folio Search
+    const [folioNo, setFolioNo] = useState("");
+    const [dividendData, setDividendData] = useState<any[] | null>(null);
+    const [isSearching, setIsSearching] = useState(false);
+    const [searchError, setSearchError] = useState("");
+
+    const handleFolioSearch = async () => {
+        if (!folioNo.trim()) {
+            setSearchError("Please enter a Folio No. / DP-ID.");
+            return;
+        }
+
+        setIsSearching(true);
+        setSearchError("");
+        setDividendData(null);
+
+        try {
+            const response = await fetch(`/get-unclaimed-dividend.php?folio_id=${encodeURIComponent(folioNo)}`);
+            const result = await response.json();
+
+            if (result.success && result.data) {
+                setDividendData(result.data);
+            } else {
+                setSearchError(result.message || "No records found.");
+            }
+        } catch (error) {
+            console.error("Error fetching dividend data:", error);
+            setSearchError("An error occurred while fetching data. Please try again later.");
+        } finally {
+            setIsSearching(false);
+        }
+    };
+
     const activeTab = tabs.find((t) => t.id === activeTabId)!;
     // const items = tabItems[activeTabId] || [];
     // const groups = tabItems[activeTabId] || [];
@@ -1508,12 +1541,83 @@ export default function Page() {
                                     <input
                                         type="text"
                                         placeholder="Your Folio No.*"
-                                        className="text-black w-full border border-gray-300 rounded px-4 py-2 mb-4"
+                                        value={folioNo}
+                                        onChange={(e) => setFolioNo(e.target.value)}
+                                        onKeyDown={(e) => {
+                                            if (e.key === 'Enter') handleFolioSearch();
+                                        }}
+                                        className="text-black w-full border border-gray-300 rounded px-4 py-2 mb-4 focus:outline-none focus:ring-1 focus:ring-[#117ABA]"
                                     />
 
-                                    <button className="bg-[#117ABA] text-white px-6 py-2 rounded tracking-widest text-sm">
-                                        SUBMIT NOW
+                                    <button 
+                                        onClick={handleFolioSearch}
+                                        disabled={isSearching}
+                                        className="bg-[#117ABA] text-white px-6 py-2 rounded tracking-widest text-sm disabled:opacity-50"
+                                    >
+                                        {isSearching ? "SEARCHING..." : "SUBMIT NOW"}
                                     </button>
+
+                                    {searchError && (
+                                        <p className="text-red-500 mt-4 text-sm font-medium">{searchError}</p>
+                                    )}
+
+                                    {dividendData && dividendData.length > 0 && (
+                                        <div className="mt-8">
+                                            <h3 className="text-[#117ABA] text-lg font-semibold mb-3">Shareholder Unclaimed Dividend Details / KYC Status</h3>
+                                            <div className="border border-gray-200 rounded overflow-hidden mb-8">
+                                                <table className="w-full text-left text-[15px] lato-400 text-gray-700">
+                                                    <tbody>
+                                                        <tr className="border-b border-gray-200">
+                                                            <td className="bg-[#f9f9f9] px-4 py-3 font-semibold text-black w-1/3">Folio No. / Demat ID:</td>
+                                                            <td className="px-4 py-3 text-black whitespace-pre-wrap">{dividendData[0].folio_id}</td>
+                                                        </tr>
+                                                        <tr className="border-b border-gray-200">
+                                                            <td className="bg-[#f9f9f9] px-4 py-3 font-semibold text-black">Name of Shareholder:</td>
+                                                            <td className="px-4 py-3 text-black whitespace-pre-wrap">{dividendData[0].name_of_shareholder}</td>
+                                                        </tr>
+                                                        <tr className="border-b border-gray-200">
+                                                            <td className="bg-[#f9f9f9] px-4 py-3 font-semibold text-black">Address of Shareholder:</td>
+                                                            <td className="px-4 py-3 text-black whitespace-pre-wrap">
+                                                                {[dividendData[0].address1, dividendData[0].address2, dividendData[0].address3, dividendData[0].address4, dividendData[0].address5]
+                                                                    .filter(Boolean)
+                                                                    .join(", ")}
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td className="bg-[#f9f9f9] px-4 py-3 font-semibold text-black">KYC Status:</td>
+                                                            <td className="px-4 py-3 text-black whitespace-pre-wrap">{dividendData[0].kyc_status || "Not updated"}</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <h3 className="text-[#117ABA] text-lg font-semibold mb-3">Dividend Details of Shareholder</h3>
+                                            <div className="border border-gray-200 rounded overflow-x-auto">
+                                                <table className="w-full text-center text-[15px] lato-400 text-gray-700 min-w-[700px]">
+                                                    <thead className="bg-[#f9f9f9] border-b border-gray-200 text-black">
+                                                        <tr>
+                                                            <th className="px-4 py-3 font-semibold">Dividend Amount (₹)</th>
+                                                            <th className="px-4 py-3 font-semibold border-l border-gray-200">Dividend Status</th>
+                                                            <th className="px-4 py-3 font-semibold border-l border-gray-200">Dividend Warrant No.</th>
+                                                            <th className="px-4 py-3 font-semibold border-l border-gray-200">Dividend Year</th>
+                                                            <th className="px-4 py-3 font-semibold border-l border-gray-200">Due Date of Transfer to IEPF</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        {dividendData.map((row, idx) => (
+                                                            <tr key={idx} className="border-b border-gray-200 last:border-0 hover:bg-gray-50">
+                                                                <td className="px-4 py-3 text-black">{row.dividend_amount}</td>
+                                                                <td className="px-4 py-3 border-l border-gray-200 text-black">{row.status}</td>
+                                                                <td className="px-4 py-3 border-l border-gray-200 text-black">{row.warrant_no}</td>
+                                                                <td className="px-4 py-3 border-l border-gray-200 text-black">{row.dividend_year}</td>
+                                                                <td className="px-4 py-3 border-l border-gray-200 text-black">{row.date_of_transfer}</td>
+                                                            </tr>
+                                                        ))}
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    )}
 
                                     <p className="mt-6 text-gray-600">
                                         <strong>Note:</strong> Please{" "}
