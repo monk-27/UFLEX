@@ -177,21 +177,19 @@ require __DIR__ . '/PHPMailer/src/Exception.php';
 require __DIR__ . '/PHPMailer/src/PHPMailer.php';
 require __DIR__ . '/PHPMailer/src/SMTP.php';
 
-// Target email
-$smtpHost  = $env['SMTP_HOST'] ?? 'mail.uflexltd.com'; 
-$smtpUser  = $env['SMTP_USER'] ?? 'enquiry@uflexltd.com'; 
-$smtpPass  = $env['SMTP_PASSWORD'] ?? 'Grp@$24En!2%9'; 
-$smtpPort  = isset($env['SMTP_PORT']) ? (int) $env['SMTP_PORT'] : 587; 
-$smtpSecure = PHPMailer::ENCRYPTION_STARTTLS;
+// Target email (Strictly loaded from .env.local)
+$smtpHost   = $env['SMTP_HOST']; 
+$smtpUser   = $env['SMTP_USER']; 
+$smtpPass   = $env['SMTP_PASSWORD']; 
+$smtpPort   = (int) $env['SMTP_PORT']; 
+$smtpAuth   = filter_var($env['SMTP_AUTH'], FILTER_VALIDATE_BOOLEAN);
+$smtpSecure = $env['SMTP_SECURE'] === 'SMTPS' ? PHPMailer::ENCRYPTION_SMTPS : 
+             ($env['SMTP_SECURE'] === 'STARTTLS' ? PHPMailer::ENCRYPTION_STARTTLS : '');
 
-$envToAdmins = isset($env['SMTP_TO']) && !empty($env['SMTP_TO']) ? explode(',', $env['SMTP_TO']) : [
-    'manjeet.kumar@uflexltd.com',
-    'shashibjha271299@gmail.com',
-    'pratyush.srivastava1@uflexltd.com'
-];
-$toAdmins = array_map('trim', $envToAdmins);
+$toAdmins = explode(',', $env['SMTP_TO']);
+$toAdmins = array_map('trim', $toAdmins);
 
-$fromEmail = $env['SMTP_FROM'] ?? 'enquiry@uflexltd.com';
+$fromEmail = $env['SMTP_FROM'];
 
 $productList = empty($product) ? 'None selected' : implode(', ', $product);
 $attachmentsList = empty($uploadedFiles) ? 'No attachments' : implode("\n", $uploadedFiles);
@@ -290,12 +288,24 @@ $mailSent = false;
 $mailError = '';
 
 try {
-  // Server settings
+  // Server settings (Driven entirely by .env.local)
   $mail->isSMTP();
-  $mail->Host       = 'localhost'; // Use local relay
-  $mail->SMTPAuth   = false;       // No auth needed for local relay
-  $mail->Port       = 25;          // Local relay port
+  $mail->Host       = $smtpHost;
+  $mail->Port       = $smtpPort;
+  $mail->SMTPAuth   = $smtpAuth;
+  $mail->Username   = $smtpUser;
+  $mail->Password   = $smtpPass;
+  $mail->SMTPSecure = $smtpSecure;
   $mail->Timeout    = 20;
+
+  // cPanel Fix: Bypass SSL certificate validation if mail.domain.com doesn't match the cert
+  $mail->SMTPOptions = array(
+      'ssl' => array(
+          'verify_peer' => false,
+          'verify_peer_name' => false,
+          'allow_self_signed' => true
+      )
+  );
 
   // Recipients
   $mail->setFrom($fromEmail, 'UFlex Website');
