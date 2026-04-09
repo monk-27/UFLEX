@@ -292,22 +292,10 @@ $mailError = '';
 try {
   // Server settings
   $mail->isSMTP();
-  $mail->Host = $smtpHost;
-  $mail->SMTPAuth = true;
-  $mail->Username = $smtpUser;
-  $mail->Password = $smtpPass;
-  $mail->SMTPSecure = $smtpSecure;
-  $mail->Port = $smtpPort;
-  $mail->Timeout = 20;
-
-  // cPanel Fix: Bypass SSL certificate validation if mail.domain.com doesn't match the cert
-  $mail->SMTPOptions = array(
-      'ssl' => array(
-          'verify_peer' => false,
-          'verify_peer_name' => false,
-          'allow_self_signed' => true
-      )
-  );
+  $mail->Host       = 'localhost'; // Use local relay
+  $mail->SMTPAuth   = false;       // No auth needed for local relay
+  $mail->Port       = 25;          // Local relay port
+  $mail->Timeout    = 20;
 
   // Recipients
   $mail->setFrom($fromEmail, 'UFlex Website');
