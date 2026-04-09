@@ -93,7 +93,7 @@ export default function ProductsPage() {
           "Productivity- Marked improvement in pressroom, flexo plate preparation, thereby reducing overall cycle time.",
         ],
         image:
-          "https://www.uflexltd.com/assets/images/Cylinder-CTP-Flexo-Plates.jpg",
+          "https://beta.uflexltd.com/media/images/Cylinder-CTP-Flexo-Plates.jpg",
       },
 
       sleeves: {
@@ -123,57 +123,57 @@ export default function ProductsPage() {
   //   isActive: c.key === activeKey,
   //   onClick: () => setActiveKey(c.key as any),
   // }));
-const searchParams = useSearchParams();
-const catFromUrl = searchParams.get('cat')?.toLowerCase() || null;
+  const searchParams = useSearchParams();
+  const catFromUrl = searchParams.get('cat')?.toLowerCase() || null;
 
-const validKeys = ["gravure", "ctp", "sleeves"] as const;
+  const validKeys = ["gravure", "ctp", "sleeves"] as const;
 
-const initialKey:any = catFromUrl && validKeys.includes(catFromUrl as any)
-  ? catFromUrl
-  : "gravure"; // default to gravure
+  const initialKey: any = catFromUrl && validKeys.includes(catFromUrl as any)
+    ? catFromUrl
+    : "gravure"; // default to gravure
 
-const [activeKey, setActiveKey] = useState<typeof validKeys[number]>(initialKey);
-const sectionRef = useRef<HTMLDivElement>(null);
+  const [activeKey, setActiveKey] = useState<typeof validKeys[number]>(initialKey);
+  const sectionRef = useRef<HTMLDivElement>(null);
 
-// Sync when URL changes (browser back/forward, direct link)
-useEffect(() => {
-  const currentCat = searchParams.get('cat')?.toLowerCase();
-  if (currentCat && validKeys.includes(currentCat as any)) {
-    setActiveKey(currentCat as any);
-    if (sectionRef.current) {
+  // Sync when URL changes (browser back/forward, direct link)
+  useEffect(() => {
+    const currentCat = searchParams.get('cat')?.toLowerCase();
+    if (currentCat && validKeys.includes(currentCat as any)) {
+      setActiveKey(currentCat as any);
+      if (sectionRef.current) {
         sectionRef.current.scrollIntoView({
           behavior: "smooth",
           block: "start",
         });
       }
-  } else if (!currentCat) {
-    setActiveKey("gravure");
-  }
-}, [searchParams]);
+    } else if (!currentCat) {
+      setActiveKey("gravure");
+    }
+  }, [searchParams]);
 
-const handleCategoryClick = (key: string) => {
-  setActiveKey(key as any);
+  const handleCategoryClick = (key: string) => {
+    setActiveKey(key as any);
 
-  // Update URL without reload
-  if (typeof window !== 'undefined') {
-    const url = new URL(window.location.href);
-    url.searchParams.set('cat', key);
-    window.history.replaceState({}, '', url.toString());
-    if (sectionRef.current) {
+    // Update URL without reload
+    if (typeof window !== 'undefined') {
+      const url = new URL(window.location.href);
+      url.searchParams.set('cat', key);
+      window.history.replaceState({}, '', url.toString());
+      if (sectionRef.current) {
         sectionRef.current.scrollIntoView({
           behavior: "smooth",
           block: "start",
         });
       }
-  }
-};
+    }
+  };
 
-const enhancedCategories = printingCylindersData.categories.map((c) => ({
-  name: c.name,
-  productKey: c.key,
-  isActive: c.key === activeKey,
-  onClick: () => handleCategoryClick(c.key),
-}));
+  const enhancedCategories = printingCylindersData.categories.map((c) => ({
+    name: c.name,
+    productKey: c.key,
+    isActive: c.key === activeKey,
+    onClick: () => handleCategoryClick(c.key),
+  }));
   return (
     <>
       <SiteHeader />
@@ -238,17 +238,17 @@ UFlex’ Printing Cylinders business products range includes a variety of Gravur
               { label: "Printing Cylinders Products" },
             ]}
           />
-<div ref={sectionRef} className="scroll-mt-20">
+          <div ref={sectionRef} className="scroll-mt-20">
 
-          <ProductCategorySection
-            title={printingCylindersData.title}
-            heroImageUrl={printingCylindersData.heroImageUrl}
-            overview={printingCylindersData.overview}
-            categories={enhancedCategories}
-            activeKey={activeKey}
-            sectionData={printingCylindersData.sections[activeKey]}
+            <ProductCategorySection
+              title={printingCylindersData.title}
+              heroImageUrl={printingCylindersData.heroImageUrl}
+              overview={printingCylindersData.overview}
+              categories={enhancedCategories}
+              activeKey={activeKey}
+              sectionData={printingCylindersData.sections[activeKey]}
             />
-            </div>
+          </div>
         </div>
       </section>
 
