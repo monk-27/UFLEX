@@ -144,9 +144,9 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                 id: "transcript",
                 label: "Earnings Conference Call - Transcript",
                 cells: {
-                    Q1: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q1FY26_Transcript.pdf", type: "pdf" } },
-                    Q2: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q2FY26_Transcript.pdf", type: "pdf" } },
-                    Q3: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q3FY26_Transcript.pdf", type: "pdf" } }, // fill when available
+                    Q1: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_Q1FY26_Transcript.pdf", type: "pdf" } },
+                    Q2: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_Q2FY26_Transcript.pdf", type: "pdf" } },
+                    Q3: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_Q3FY26_Transcript.pdf", type: "pdf" } }, // fill when available
                     Q4: {},
                 },
             },
@@ -154,9 +154,9 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                 id: "webcast",
                 label: "Earnings Conference Call - Webcast",
                 cells: {
-                    Q1: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q1FY26_Earnings_Call.mp3", type: "video" } },
-                    Q2: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q2FY26_Earnings_Call.mp3", type: "video" } },
-                    Q3: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q3FY26_Earnings_Call.mp3", type: "video" } },
+                    Q1: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_Q1FY26_Earnings_Call.mp3", type: "video" } },
+                    Q2: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_Q2FY26_Earnings_Call.mp3", type: "video" } },
+                    Q3: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_Q3FY26_Earnings_Call.mp3", type: "video" } },
                     // Q4: { file: { href: "#", type: "video" } },
                     Q4: {},
 
@@ -166,9 +166,9 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                 id: "presentation",
                 label: "Earnings Presentation",
                 cells: {
-                    Q1: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q1FY26_Presentation.pdf", type: "pdf" } },
-                    Q2: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q2FY26_Presentation.pdf", type: "pdf" } },
-                    Q3: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q3FY26_Presentation.pdf", type: "pdf" } },
+                    Q1: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_Q1FY26_Presentation.pdf", type: "pdf" } },
+                    Q2: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_Q2FY26_Presentation.pdf", type: "pdf" } },
+                    Q3: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_Q3FY26_Presentation.pdf", type: "pdf" } },
                     // Q4: { file: { href: "#", type: "pdf" } },
                     Q4: {},
 
@@ -178,9 +178,9 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                 id: "release",
                 label: "Earnings Release",
                 cells: {
-                    Q1: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q1FY26_Earnings_Release.pdf", type: "pdf" } },
-                    Q2: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q2FY26_Earnings_Release.pdf", type: "pdf" } },
-                    Q3: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q3FY26_Earnings_Release.pdf", type: "pdf" } },
+                    Q1: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_Q1FY26_Earnings_Release.pdf", type: "pdf" } },
+                    Q2: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_Q2FY26_Earnings_Release.pdf", type: "pdf" } },
+                    Q3: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_Q3FY26_Earnings_Release.pdf", type: "pdf" } },
                     // Q4: { file: { href: "#", type: "pdf" } },
                     Q4: {},
 
@@ -191,16 +191,16 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                 label: "Financial Results",
                 cells: {
                     Q1: {
-                        cons: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Cons_30JUN2025.pdf", type: "pdf" },
-                        stand: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_STA_30062025.pdf", type: "pdf" },
+                        cons: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_Cons_30JUN2025.pdf", type: "pdf" },
+                        stand: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_STA_30062025.pdf", type: "pdf" },
                     },
                     Q2: {
-                        cons: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_CONS_30SEP2025.pdf", type: "pdf" },
-                        stand: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_STA_30092025.pdf", type: "pdf" },
+                        cons: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_CONS_30SEP2025.pdf", type: "pdf" },
+                        stand: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_STA_30092025.pdf", type: "pdf" },
                     },
                     Q3: {
-                        cons: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_CONS_31DEC2025.pdf", type: "pdf" },
-                        stand: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_STA_31122025.pdf", type: "pdf" },
+                        cons: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_CONS_31DEC2025.pdf", type: "pdf" },
+                        stand: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_STA_31122025.pdf", type: "pdf" },
                     },
                     // Q4: {
                     //     cons: { href: "#", type: "pdf" },
@@ -214,9 +214,9 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                 id: "invite",
                 label: "Earnings Conference Call - Invite",
                 cells: {
-                    Q1: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q1FY26_Invite.pdf", type: "pdf" } },
-                    Q2: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q2FY26_Invite.pdf", type: "pdf" } },
-                    Q3: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q3FY26_Invite.pdf", type: "pdf" } },
+                    Q1: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_Q1FY26_Invite.pdf", type: "pdf" } },
+                    Q2: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_Q2FY26_Invite.pdf", type: "pdf" } },
+                    Q3: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2025-26/UFlex_Q3FY26_Invite.pdf", type: "pdf" } },
                     // Q4: { file: { href: "#", type: "pdf" } },
                     Q4: {},
 
@@ -246,40 +246,40 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                 id: "transcript",
                 label: "Earnings Conference Call - Transcript",
                 cells: {
-                    Q1: { file: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Q1FY25_Transcript.pdf", type: "pdf" } },
-                    Q2: { file: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Q2FY25_Transcript.pdf", type: "pdf" } },
-                    Q3: { file: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Q3FY25_Transcript.pdf", type: "pdf" } },
-                    Q4: { file: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Q4FY25_Transcript.pdf", type: "pdf" } },
+                    Q1: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Q1FY25_Transcript.pdf", type: "pdf" } },
+                    Q2: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Q2FY25_Transcript.pdf", type: "pdf" } },
+                    Q3: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Q3FY25_Transcript.pdf", type: "pdf" } },
+                    Q4: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Q4FY25_Transcript.pdf", type: "pdf" } },
                 },
             },
             {
                 id: "webcast",
                 label: "Earnings Conference Call - Webcast",
                 cells: {
-                    Q1: { file: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Q1FY25_Earnings_Call.mp3", type: "video" } },
-                    Q2: { file: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Q2FY25_Earnings_Call.mp3", type: "video" } },
-                    Q3: { file: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Q3FY25_Earnings_Call.mp3", type: "video" } },
-                    Q4: { file: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Q4FY25_Earnings_Call.mp3", type: "video" } },
+                    Q1: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Q1FY25_Earnings_Call.mp3", type: "video" } },
+                    Q2: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Q2FY25_Earnings_Call.mp3", type: "video" } },
+                    Q3: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Q3FY25_Earnings_Call.mp3", type: "video" } },
+                    Q4: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Q4FY25_Earnings_Call.mp3", type: "video" } },
                 },
             },
             {
                 id: "presentation",
                 label: "Earnings Presentation",
                 cells: {
-                    Q1: { file: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Q1FY25_Presentation.pdf", type: "pdf" } },
-                    Q2: { file: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Q2FY25_Presentation.pdf", type: "pdf" } },
-                    Q3: { file: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Q3FY25_Presentation.pdf", type: "pdf" } },
-                    Q4: { file: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Q4FY25_Presentation.pdf", type: "pdf" } },
+                    Q1: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Q1FY25_Presentation.pdf", type: "pdf" } },
+                    Q2: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Q2FY25_Presentation.pdf", type: "pdf" } },
+                    Q3: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Q3FY25_Presentation.pdf", type: "pdf" } },
+                    Q4: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Q4FY25_Presentation.pdf", type: "pdf" } },
                 },
             },
             {
                 id: "release",
                 label: "Earnings Release",
                 cells: {
-                    Q1: { file: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Q1FY25_Earnings_Release.pdf", type: "pdf" } },
-                    Q2: { file: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Q2FY25_Earnings_Release.pdf", type: "pdf" } },
-                    Q3: { file: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Q3FY25_Earnings_Release.pdf", type: "pdf" } },
-                    Q4: { file: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Q4FY25_Earnings_Release.pdf", type: "pdf" } },
+                    Q1: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Q1FY25_Earnings_Release.pdf", type: "pdf" } },
+                    Q2: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Q2FY25_Earnings_Release.pdf", type: "pdf" } },
+                    Q3: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Q3FY25_Earnings_Release.pdf", type: "pdf" } },
+                    Q4: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Q4FY25_Earnings_Release.pdf", type: "pdf" } },
                 },
             },
             {
@@ -287,20 +287,20 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                 label: "Financial Results",
                 cells: {
                     Q1: {
-                        cons: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Cons_30JUN2024.pdf", type: "pdf" },
-                        stand: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_STA_30062024.pdf", type: "pdf" },
+                        cons: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Cons_30JUN2024.pdf", type: "pdf" },
+                        stand: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_STA_30062024.pdf", type: "pdf" },
                     },
                     Q2: {
-                        cons: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_CONS_30SEP2024.pdf", type: "pdf" },
-                        stand: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_STA_30092024.pdf", type: "pdf" },
+                        cons: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_CONS_30SEP2024.pdf", type: "pdf" },
+                        stand: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_STA_30092024.pdf", type: "pdf" },
                     },
                     Q3: {
-                        cons: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_CONS_31DEC2024.pdf", type: "pdf" },
-                        stand: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_STA_31122024.pdf", type: "pdf" },
+                        cons: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_CONS_31DEC2024.pdf", type: "pdf" },
+                        stand: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_STA_31122024.pdf", type: "pdf" },
                     },
                     Q4: {
-                        cons: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_CONS_31MAR2025.pdf", type: "pdf" },
-                        stand: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_STA_31MAR2025.pdf", type: "pdf" },
+                        cons: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_CONS_31MAR2025.pdf", type: "pdf" },
+                        stand: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_STA_31MAR2025.pdf", type: "pdf" },
                     },
                 },
             },
@@ -308,10 +308,10 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                 id: "invite",
                 label: "Earnings Conference Call - Invite",
                 cells: {
-                    Q1: { file: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Q1FY25_Invite.pdf", type: "pdf" } },
-                    Q2: { file: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Q2FY25_Invite.pdf", type: "pdf" } },
-                    Q3: { file: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Q3FY25_Invite.pdf", type: "pdf" } },
-                    Q4: { file: { href: "https://www.uflexltd.com/pdf/QER/2024-25/UFlex_Q4FY25_Invite.pdf", type: "pdf" } },
+                    Q1: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Q1FY25_Invite.pdf", type: "pdf" } },
+                    Q2: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Q2FY25_Invite.pdf", type: "pdf" } },
+                    Q3: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Q3FY25_Invite.pdf", type: "pdf" } },
+                    Q4: { file: { href: "https://beta.uflexltd.com/media/pdf/QER/2024-25/UFlex_Q4FY25_Invite.pdf", type: "pdf" } },
                 },
             },
             {
