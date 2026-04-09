@@ -5,6 +5,30 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST");
 header("Content-Type: application/json; charset=UTF-8");
 
+function parse_env_file($path) {
+    if(!file_exists($path)) {
+        return [];
+    }
+    $variables = [];
+    $lines = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    foreach($lines as $line) {
+        if(strpos(trim($line), '#') === 0) continue;
+        if(strpos($line, '=') !== false) {
+            list($name, $value) = explode('=', $line, 2);
+            $name = trim($name);
+            $value = trim($value);
+            if(!empty($name)) {
+                $variables[$name] = $value;
+            }
+        }
+    }
+    return $variables;
+}
+
+// Load configurations securely
+$envFilePath = __DIR__ . '/../.env.local';
+$env = parse_env_file($envFilePath);
+
 // Basic validation
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
@@ -102,10 +126,10 @@ if (!empty($_FILES['files']['name'][0]) && empty($uploadedFiles) && !empty($uplo
 
 // 2.5 Save to MySQL Database
 try {
-    $dbHost = 'localhost'; // Usually localhost on cPanel
-    $dbUser = 'uflex_quoteuser';
-    $dbPass = base64_decode('V2pvaTskbUlNWzBM');
-    $dbName = 'uflex-quote';
+    $dbHost = $env['DB_HOST']; 
+    $dbUser = $env['DB_USER'];
+    $dbPass = isset($env['DB_PASSWORD_B64']) ? base64_decode($env['DB_PASSWORD_B64']) : '';
+    $dbName = $env['DB_NAME'];
 
     $pdo = new PDO("mysql:host=$dbHost;dbname=$dbName;charset=utf8mb4", $dbUser, $dbPass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -130,15 +154,17 @@ require __DIR__ . '/PHPMailer/src/Exception.php';
 require __DIR__ . '/PHPMailer/src/PHPMailer.php';
 require __DIR__ . '/PHPMailer/src/SMTP.php';
 
-// Target email (change this to the client's actual receiving email)
-$smtpHost  = 'smtp.gmail.com'; 
-$smtpUser  = 'exquisiteshashi@gmail.com'; 
-$smtpPass  = 'nitj wvvl zezz oyvt'; 
-$smtpPort  = 587; 
+// Target email
+$smtpHost  = $env['SMTP_HOST'] ?? 'mail.uflexltd.com'; 
+$smtpUser  = $env['SMTP_USER'] ?? 'enquiry@uflexltd.com'; 
+$smtpPass  = $env['SMTP_PASSWORD'] ?? 'Grp@$24En!2%9'; 
+$smtpPort  = isset($env['SMTP_PORT']) ? (int)$env['SMTP_PORT'] : 587; 
 $smtpSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
-$toAdmin   = 'shashibjha271299@gmail.com'; 
-$fromEmail = 'exquisiteshashi@gmail.com'; 
+$envToAdmins = isset($env['SMTP_TO']) && !empty($env['SMTP_TO']) ? explode(',', $env['SMTP_TO']) : [];
+$toAdmins = array_map('trim', $envToAdmins);
+
+$fromEmail = $env['SMTP_FROM'];
 
 $productList = empty($product) ? 'None selected' : implode(', ', $product);
 $attachmentsList = empty($uploadedFiles) ? 'No attachments' : implode("\n", $uploadedFiles);
@@ -248,7 +274,9 @@ try {
 
     // Recipients
     $mail->setFrom($fromEmail, 'UFlex Website');
-    $mail->addAddress($toAdmin);
+    foreach ($toAdmins as $adminEmail) {
+        $mail->addAddress(trim($adminEmail));
+    }
     $mail->addReplyTo($email, $name);
 
     // Content

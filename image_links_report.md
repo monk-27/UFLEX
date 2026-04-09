@@ -1,5 +1,3 @@
-Ran command: `grep -rnE "https://www.uflexltd.com/[^\"']+\.(jpg|jpeg|png|webp)" app components styles --exclude-dir={node_modules,.next,.git} | grep -vE "^\s*(\/\/|{\/\*)" | sed -E "s/.*(https:\/\/www.uflexltd.com\/[^\"']+\.(jpg|jpeg|png|webp)).*/\1/" | sort -u`
-
 https://www.uflexltd.com/assets/images/Cylinder-CTP-Flexo-Plates.jpg
 https://www.uflexltd.com/assets/images/Cylinder-Coating-Cylinders-1.jpg
 https://www.uflexltd.com/assets/images/Cylinder-Coating-Cylinders.jpg
