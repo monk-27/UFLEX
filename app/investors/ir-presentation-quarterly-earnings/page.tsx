@@ -71,7 +71,7 @@ type TabId = "presentations-updates" | "quarterly-earnings";
 
 // quarterlyData.ts
 
-export type QuarterId = "Q1" | "Q2" | "Q3" |"Q4";
+export type QuarterId = "Q1" | "Q2" | "Q3" | "Q4";
 // | "Q4";
 
 export type QuarterlyFileType = "pdf" | "video";
@@ -147,7 +147,7 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                     Q1: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q1FY26_Transcript.pdf", type: "pdf" } },
                     Q2: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q2FY26_Transcript.pdf", type: "pdf" } },
                     Q3: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q3FY26_Transcript.pdf", type: "pdf" } }, // fill when available
-                    Q4: {  },
+                    Q4: {},
                 },
             },
             {
@@ -158,7 +158,7 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                     Q2: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q2FY26_Earnings_Call.mp3", type: "video" } },
                     Q3: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q3FY26_Earnings_Call.mp3", type: "video" } },
                     // Q4: { file: { href: "#", type: "video" } },
-                    Q4: {  },
+                    Q4: {},
 
                 },
             },
@@ -170,7 +170,7 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                     Q2: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q2FY26_Presentation.pdf", type: "pdf" } },
                     Q3: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q3FY26_Presentation.pdf", type: "pdf" } },
                     // Q4: { file: { href: "#", type: "pdf" } },
-                    Q4: {  },
+                    Q4: {},
 
                 },
             },
@@ -182,7 +182,7 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                     Q2: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q2FY26_Earnings_Release.pdf", type: "pdf" } },
                     Q3: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q3FY26_Earnings_Release.pdf", type: "pdf" } },
                     // Q4: { file: { href: "#", type: "pdf" } },
-                    Q4: {  },
+                    Q4: {},
 
                 },
             },
@@ -206,7 +206,7 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                     //     cons: { href: "#", type: "pdf" },
                     //     stand: { href: "#", type: "pdf" },
                     // },
-                    Q4: {  },
+                    Q4: {},
 
                 },
             },
@@ -218,7 +218,7 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                     Q2: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q2FY26_Invite.pdf", type: "pdf" } },
                     Q3: { file: { href: "https://www.uflexltd.com/pdf/QER/2025-26/UFlex_Q3FY26_Invite.pdf", type: "pdf" } },
                     // Q4: { file: { href: "#", type: "pdf" } },
-                    Q4: {  },
+                    Q4: {},
 
                 },
             },
@@ -230,7 +230,7 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
                     Q2: { text: "November 13, 2025" },
                     Q3: { text: "February 16, 2026	" },
                     // Q4: { text: "" },
-                    Q4: {  },
+                    Q4: {},
 
                 },
             },
@@ -755,35 +755,35 @@ export const quarterlyEarningsData: FinancialYearQuarterly[] = [
 const investorPresentations: DocItem[] = [
     {
         text: "Investor Presentation - February 17, 2026",
-        link: "https://www.uflexltd.com/pdf/IR/Investor_Presentation_17Feb_2026.pdf",
+        link: "https://beta.uflexltd.com/media/pdf/IR/Investor_Presentation_17Feb_2026.pdf",
     },
     {
         text: "Investor Presentation - December 08, 2025",
-        link: "https://www.uflexltd.com/pdf/IR/Investor_Presentation_08Dec_2025.pdf",
+        link: "https://beta.uflexltd.com/media/pdf/IR/Investor_Presentation_08Dec_2025.pdf",
     },
     {
         text: "Investor Presentation – September 23, 2025",
-        link: "https://www.uflexltd.com/pdf/IR/Investor_Presentation_23Sep_2025.pdf",
+        link: "https://beta.uflexltd.com/media/pdf/IR/Investor_Presentation_23Sep_2025.pdf",
     },
     {
         text: "Investor Presentation – June 17, 2025",
-        link: "https://www.uflexltd.com/pdf/IR/Investor_Presentation_23Jun_2025.pdf",
+        link: "https://beta.uflexltd.com/media/pdf/IR/Investor_Presentation_23Jun_2025.pdf",
     },
     {
         text: "Investor Presentation – March 24, 2025",
-        link: "https://www.uflexltd.com/pdf/IR/Investor_Presentation_24Mar_2025.pdf",
+        link: "https://beta.uflexltd.com/media/pdf/IR/Investor_Presentation_24Mar_2025.pdf",
     },
     {
         text: "Investor Presentation – March 03, 2025",
-        link: "https://www.uflexltd.com/pdf/IR/Investor_Presentation_03Mar_2025.pdf",
+        link: "https://beta.uflexltd.com/media/pdf/IR/Investor_Presentation_03Mar_2025.pdf",
     },
     {
         text: "Investor Presentation – December 2024",
-        link: "https://www.uflexltd.com/pdf/IR/Investor_Presentation_Dec_2024.pdf",
+        link: "https://beta.uflexltd.com/media/pdf/IR/Investor_Presentation_Dec_2024.pdf",
     },
     {
         text: "Investor Presentation – September 2024",
-        link: "https://www.uflexltd.com/pdf/IR/Investor_Presentation_Sep_2024.pdf",
+        link: "https://beta.uflexltd.com/media/pdf/IR/Investor_Presentation_Sep_2024.pdf",
     },
     {
         text: "Investor Presentation – April 2022",
@@ -795,51 +795,51 @@ const investorUpdates: DocItem[] = [
     {
         text:
             "Setting Up of a New Packaging Films Manufacturing Line at Dharwad, Karnataka",
-        link: "https://www.uflexltd.com/pdf/IR/IU/UFlex_SU_NPFML_Dharwad_Karnataka_NOV2025.pdf",
+        link: "https://beta.uflexltd.com/media/pdf/IR/IU/UFlex_SU_NPFML_Dharwad_Karnataka_NOV2025.pdf",
     },
     {
         text:
             "Intimation of Schedule of Analysts/Institutional Investor Meet under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-        link: "https://www.uflexltd.com/pdf/IR/IU/SIGNED_UFLEX_NSEBSE_AMD_REG30_22SEP25.pdf",
+        link: "https://beta.uflexltd.com/media/pdf/IR/IU/SIGNED_UFLEX_NSEBSE_AMD_REG30_22SEP25.pdf",
     },
     {
         text:
             "Intimation of participation in Arihant Bharat Connect Conference: Rising Stars – September 2025",
-        link: "https://www.uflexltd.com/pdf/IR/IU/SIGNED_UFLEX_NSEBSE_REG30_AM_18SEP25.pdf",
+        link: "https://beta.uflexltd.com/media/pdf/IR/IU/SIGNED_UFLEX_NSEBSE_REG30_AM_18SEP25.pdf",
     },
     {
         text:
             'Intimation of participation in "Centrum - Orion IV Virtual Investor Conference"',
-        link: "https://www.uflexltd.com/pdf/IR/IU/SIGNED_UFLEX_NSEBSE_AM_21AUG25.pdf",
+        link: "https://beta.uflexltd.com/media/pdf/IR/IU/SIGNED_UFLEX_NSEBSE_AM_21AUG25.pdf",
     },
     {
         text:
             "Intimation of Schedule of Analysts/Institutional Investor Meet under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-        link: "https://www.uflexltd.com/pdf/IR/IU/SIGNED_UFLEX_NSEBSE_IM_13JUN25.pdf",
+        link: "https://beta.uflexltd.com/media/pdf/IR/IU/SIGNED_UFLEX_NSEBSE_IM_13JUN25.pdf",
     },
     {
         text:
             "Flex Americas, S.A. de C.V. Commences Commercial Operations of New 18,000 MTPA CPP Films Line in Mexico",
-        link: "https://www.uflexltd.com/pdf/IR/IU/SIGNED_UFLEX_NSEBSE_CCOM_27MAR25.pdf",
+        link: "https://beta.uflexltd.com/media/pdf/IR/IU/SIGNED_UFLEX_NSEBSE_CCOM_27MAR25.pdf",
     },
     {
         text: "Intimation of Participation in Group Virtual Meeting",
-        link: "https://www.uflexltd.com/pdf/IR/IU/SIGNED_UFLEX_NSEBSE_GVM_25MAR25.pdf",
+        link: "https://beta.uflexltd.com/media/pdf/IR/IU/SIGNED_UFLEX_NSEBSE_GVM_25MAR25.pdf",
     },
     {
         text:
             "Intimation of Participation in Arihant Bharat Connect Conference: Rising Stars – March 2025",
-        link: "https://www.uflexltd.com/pdf/IR/IU/SIGNED_UFLEX_NSEBSE_CONF_20MAR25.pdf",
+        link: "https://beta.uflexltd.com/media/pdf/IR/IU/SIGNED_UFLEX_NSEBSE_CONF_20MAR25.pdf",
     },
     {
         text:
             "Intimation of Participation in Dolat Capital Conference 2024 On September 18, 2024",
-        link: "https://www.uflexltd.com/pdf/announcements/2024/SIGNED_UFLEX_NSEBSE_CONF_18SEP24.pdf",
+        link: "https://beta.uflexltd.com/media/pdf/announcements//2024/SIGNED_UFLEX_NSEBSE_CONF_18SEP24.pdf",
     },
     {
         text:
             "Intimation of Schedule of Analysts/Institutional Investor Meet under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-        link: "https://www.uflexltd.com/pdf/announcements/2024/SIGNED_UFLEX_NSEBSE_AM_12SEP24.pdf",
+        link: "https://beta.uflexltd.com/media/pdf/announcements//2024/SIGNED_UFLEX_NSEBSE_AM_12SEP24.pdf",
     },
 ];
 
@@ -857,22 +857,22 @@ const Page = () => {
 
     const fy = quarterlyEarningsData.find((f) => f.id === activeFY)!;
     const ALL_QUARTERS: { id: QuarterId; label: string }[] = [
-  { id: "Q1", label: "Quarter 1" },
-  { id: "Q2", label: "Quarter 2" },
-  { id: "Q3", label: "Quarter 3" },
-  { id: "Q4", label: "Quarter 4" },
-];
+        { id: "Q1", label: "Quarter 1" },
+        { id: "Q2", label: "Quarter 2" },
+        { id: "Q3", label: "Quarter 3" },
+        { id: "Q4", label: "Quarter 4" },
+    ];
     const QUARTERS = ALL_QUARTERS.filter((q) =>
-  fy.rows.some((row) => {
-    const cell = row.cells[q.id];
-    return (
-      cell?.file ||
-      cell?.cons ||
-      cell?.stand ||
-      cell?.text
+        fy.rows.some((row) => {
+            const cell = row.cells[q.id];
+            return (
+                cell?.file ||
+                cell?.cons ||
+                cell?.stand ||
+                cell?.text
+            );
+        })
     );
-  })
-);
 
     // const QUARTERS: { id: QuarterId; label: string }[] = [
     //     { id: "Q1", label: "Quarter 1" },
@@ -881,30 +881,30 @@ const Page = () => {
     //     { id: "Q4", label: "Quarter 4" },
     // ];
 
-   const renderFileIcon = (file?: QuarterlyFile) => {
-  if (!file || !file.href) return null;
+    const renderFileIcon = (file?: QuarterlyFile) => {
+        if (!file || !file.href) return null;
 
-  const icon =
-    file.type === "pdf" ? (
-      <Image
-        src="/images/pdf.png"
-        alt="PDF"
-        width={22}
-        height={22}
-        className="mx-auto"
-      />
-    ) : (
-      <span className="inline-flex h-6 w-6 items-center justify-center rounded bg-black text-white text-[10px]">
-        ▶
-      </span>
-    );
+        const icon =
+            file.type === "pdf" ? (
+                <Image
+                    src="/images/pdf.png"
+                    alt="PDF"
+                    width={22}
+                    height={22}
+                    className="mx-auto"
+                />
+            ) : (
+                <span className="inline-flex h-6 w-6 items-center justify-center rounded bg-black text-white text-[10px]">
+                    ▶
+                </span>
+            );
 
-  return (
-    <Link href={file.href} target="_blank">
-      {icon}
-    </Link>
-  );
-};
+        return (
+            <Link href={file.href} target="_blank">
+                {icon}
+            </Link>
+        );
+    };
 
 
 
@@ -942,11 +942,11 @@ const Page = () => {
                     </div>
                 </div> */}
                 <Breadcrumb
-                          items={[
-                            { label: "Investors Relations", href: "/investors" },
-                            { label: "Presentation & Quarterly Earnings" },
-                          ]}
-                        />
+                    items={[
+                        { label: "Investors Relations", href: "/investors" },
+                        { label: "Presentation & Quarterly Earnings" },
+                    ]}
+                />
 
                 {/* TABS + CONTENT */}
                 <section className="max-w-6xl mx-auto px-4 sm:px-12 md:px-20 lg:px-28 pt-6 pb-10">

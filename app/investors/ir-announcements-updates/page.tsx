@@ -150,7 +150,7 @@ const tabItems: any = {
             "items": [
                 {
                     "text": "Closure of Trading Window",
-                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_TW_24MAR26.pdf"
+                    "link": "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_TW_24MAR26.pdf"
                 }
             ]
         },
@@ -160,7 +160,7 @@ const tabItems: any = {
             "items": [
                 {
                     "text": "  Newspaper Advertisement regarding Special Window for Transfer and Dematerialisation of Physical Securities",
-                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_ADVT_20MAR26.pdf"
+                    "link": "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_ADVT_20MAR26.pdf"
                 }
             ]
         },
@@ -171,7 +171,7 @@ const tabItems: any = {
             "items": [
                 {
                     "text": " Updates on Company’s participation in Arihant Capital Bharat Connect Conference: Rising Stars–2026",
-                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_REG30_INVPR_11MAR26.pdf"
+                    "link": "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_REG30_INVPR_11MAR26.pdf"
                 }
             ]
         }, {
@@ -179,7 +179,7 @@ const tabItems: any = {
             "items": [
                 {
                     "text": " Intimation under Regulation 30 read with Schedule III of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_REG30_07MAR26.pdf"
+                    "link": "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_REG30_07MAR26.pdf"
                 }
             ]
         },
@@ -188,7 +188,7 @@ const tabItems: any = {
             "items": [
                 {
                     "text": "  Intimation of participation in Arihant Capital Bharat Connect Conference: Rising Stars–2026",
-                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_REG30_06MAR26.pdf"
+                    "link": "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_REG30_06MAR26.pdf"
                 }
             ]
         },
@@ -197,7 +197,7 @@ const tabItems: any = {
             "items": [
                 {
                     "text": "Disclosures under Regulation 30 (Part-A Para A) of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 – Appointment of Senior Management Personnel",
-                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_REG30_03MAR26.pdf"
+                    "link": "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_REG30_03MAR26.pdf"
                 }
             ]
         },
@@ -206,7 +206,7 @@ const tabItems: any = {
             "items": [
                 {
                     "text": "UFLEX-NSE & BSE",
-                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_REG3027FEB26.pdf"
+                    "link": "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_REG3027FEB26.pdf"
                 }
             ]
         },
@@ -215,7 +215,7 @@ const tabItems: any = {
             "items": [
                 {
                     "text": "Transcript of the earnings conference call conducted on February 16, 2026",
-                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_AM_TRNS_21FEB26.pdf"
+                    "link": "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_AM_TRNS_21FEB26.pdf"
                 }
             ]
         },
@@ -224,7 +224,7 @@ const tabItems: any = {
             "items": [
                 {
                     "text": "Disclosure under Regulation 30 read with Schedule III, Part A, Para A of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_REG30_19FEB26.pdf"
+                    "link": "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_REG30_19FEB26.pdf"
                 }
             ]
         },
@@ -233,7 +233,7 @@ const tabItems: any = {
             "items": [
                 {
                     "text": "Updates on Company’s participation in “Dolat Capital Corporate Conference 2026” and Schedule of Analyst/Institutional Investor Meet",
-                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_IP_17FEB26.pdf"
+                    "link": "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_IP_17FEB26.pdf"
                 }
             ]
         },
@@ -242,11 +242,11 @@ const tabItems: any = {
             "items": [
                 {
                     "text": "Recording of earnings conference call conducted on February 16, 2026",
-                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_AM_AUD_REC_16FEB26.pdf"
+                    "link": "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_AM_AUD_REC_16FEB26.pdf"
                 },
                 {
                     "text": "Updates on Earnings Conference Call under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_AMIP_16FEB26.pdf"
+                    "link": "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_AMIP_16FEB26.pdf"
                 }
             ]
         },
@@ -255,7 +255,7 @@ const tabItems: any = {
             items: [
                 {
                     "text": "Intimation of participation in “Dolat Capital Corporate Conference 2026” and Schedule of Analyst/Institutional Investor Meet under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_AM_14FEB26.pdf"
+                    "link": "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_AM_14FEB26.pdf"
                 }
             ]
         },
@@ -264,7 +264,7 @@ const tabItems: any = {
             "items": [
                 {
                     "text": "Publication of Financial Results",
-                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_ADVT_13FEB26.pdf"
+                    "link": "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_ADVT_13FEB26.pdf"
                 }
             ]
         },
@@ -273,11 +273,11 @@ const tabItems: any = {
             "items": [
                 {
                     "text": "Earnings Release for the quarter ended 31st December, 2025",
-                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_ER_12022026.pdf"
+                    "link": "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_ER_12022026.pdf"
                 },
                 {
                     "text": "Outcome of Board Meeting held on 12th February, 2026",
-                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_QTRLYRES_31DEC25.pdf"
+                    "link": "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_QTRLYRES_31DEC25.pdf"
                 }
             ]
         },
@@ -286,7 +286,7 @@ const tabItems: any = {
             "items": [
                 {
                     "text": "Intimation of Earnings Conference Call under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_AM16FEB26.pdf"
+                    "link": "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_AM16FEB26.pdf"
                 }
             ]
         },
@@ -295,7 +295,7 @@ const tabItems: any = {
             "items": [
                 {
                     "text": "Disclosure under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 – Cessation of Chief Financial Officer and Key Managerial Personnel of the Company on account of Superannuation",
-                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_Superannuation_CFO.pdf"
+                    "link": "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_Superannuation_CFO.pdf"
                 }
             ]
         },
@@ -304,7 +304,7 @@ const tabItems: any = {
             "items": [
                 {
                     "text": "Board Meeting to consider the Unaudited Financial Results of the Company for the quarter and nine months ended 31st December 2025",
-                    "link": "https://www.uflexltd.com/pdf/announcements/2026/SIGNED_UFLEX_NSEBSE_BM_12FEB2026.pdf"
+                    "link": "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_BM_12FEB2026.pdf"
                 }
             ]
         },
@@ -316,7 +316,7 @@ const tabItems: any = {
             items: [
                 {
                     text: " Intimation of EcoVadis Sustainability Rating for 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSEE_SG_23DEC25.pdf"
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSEE_SG_23DEC25.pdf"
                 }
 
             ]
@@ -326,7 +326,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Closure of Trading Window",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_TWC_31DEC25.pdf"
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_TWC_31DEC25.pdf"
                 }
 
             ]
@@ -337,7 +337,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Updates on Schedule of Analyst/Institutional Investor meet under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 – Investor Presentation",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_INVP_08DEC25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_INVP_08DEC25.pdf",
                 },
             ],
         },
@@ -355,7 +355,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Intimation in respect of re-affirmation of Credit Ratings under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_CRISILCR_28NOV25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_CRISILCR_28NOV25.pdf",
                 },
             ],
         },
@@ -364,7 +364,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Intimation under Regulation 30 read with Schedule III of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_ESG_21NOV25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_ESG_21NOV25.pdf",
                 },
             ],
         },
@@ -373,7 +373,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Transcript of the earnings conference call conducted on November 14, 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_AMTRANSCRIPT_14NOV25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_AMTRANSCRIPT_14NOV25.pdf",
                 },
             ],
         },
@@ -382,7 +382,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Revised Earnings Presentation",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/UFLEX_SIGNED_NSEBSE_IP_16NOV25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/UFLEX_SIGNED_NSEBSE_IP_16NOV25.pdf",
                 },
             ],
         },
@@ -391,7 +391,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Publication of Financial Results",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_PUBLICATION_30SEP25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_PUBLICATION_30SEP25.pdf",
                 },
             ],
         },
@@ -400,11 +400,11 @@ const tabItems: any = {
             items: [
                 {
                     text: "Recording of earnings conference call conducted on November 14, 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_AUDREC_14NOV25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_AUDREC_14NOV25.pdf",
                 },
                 {
                     text: "Updates on Earnings Conference Call under the SEBI (Listing Obligations & Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_IP_14NOV25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_IP_14NOV25.pdf",
                 },
             ],
         },
@@ -413,11 +413,11 @@ const tabItems: any = {
             items: [
                 {
                     text: "Earnings Release for the Quarter Ended September 30, 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_ER_Q2FY26.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_ER_Q2FY26.pdf",
                 },
                 {
                     text: "Outcome of Board Meeting held on 13th November, 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_QTRLYRES_30SEP25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_QTRLYRES_30SEP25.pdf",
                 },
             ],
         },
@@ -426,7 +426,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Intimation of Earnings Conference Call under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_AM_14NOV25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_AM_14NOV25.pdf",
                 },
             ],
         },
@@ -435,7 +435,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Board Meeting to consider the Unaudited Financial Results of the Company for the quarter and six months ended 30th September 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_BM_04NOV25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_BM_04NOV25.pdf",
                 },
             ],
         },
@@ -444,7 +444,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Disclosure under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 - Resignation of Senior Management Personnel",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_REG30_18OCT25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_REG30_18OCT25.pdf",
                 },
             ],
         },
@@ -453,7 +453,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Disclosures under Regulation 30 of the SEBI (Listing Obligations & Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_REG30_03OCT25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_REG30_03OCT25.pdf",
                 },
             ],
         },
@@ -462,7 +462,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Closure of Trading Window",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_TW_25SEP25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_TW_25SEP25.pdf",
                 },
             ],
         },
@@ -471,7 +471,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Updates on In-person Non-Deal Roadshow (NDR) of Investor Meetings",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_INVPRE_23SEP25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_INVPRE_23SEP25.pdf",
                 },
             ],
         },
@@ -480,7 +480,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Intimation of Schedule of Analyst/Institutional Investor Meet under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_AMD_REG30_22SEP25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_AMD_REG30_22SEP25.pdf",
                 },
             ],
         },
@@ -489,7 +489,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Intimation of participation in Arihant Bharat Connect Conference: Rising Stars – September 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_REG30_AM_18SEP25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_REG30_AM_18SEP25.pdf",
                 },
             ],
         },
@@ -498,7 +498,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Disclosures under Regulation 30 (Part-A Para A) of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 – Appointment of Senior Management Personnel",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_REG30_SRMGMT_01SEP25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_REG30_SRMGMT_01SEP25.pdf",
                 },
             ],
         },
@@ -507,19 +507,19 @@ const tabItems: any = {
             items: [
                 {
                     text: "36th Annual General Meeting Updates: Disclosure Under Regulation 30 of the SEBI (Listing Obligations & Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_REG30_36AGM.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_REG30_36AGM.pdf",
                 },
                 {
                     text: "36th Annual General Meeting Updates: Voting Results",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_REG44_36AGM.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_REG44_36AGM.pdf",
                 },
                 {
                     text: "36th Annual General Meeting Updates: Submission of Scrutinizer’s Report",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_SCR_36AGM.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_SCR_36AGM.pdf",
                 },
                 {
                     text: "36th Annual General Meeting Updates: Proceedings of the 36th Annual General Meeting held on 28th August, 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_AGM_PROCEEDINGS.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_AGM_PROCEEDINGS.pdf",
                 },
             ],
         },
@@ -528,7 +528,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Transcript of the earnings conference call conducted on August 18, 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_EC_TRANSCRIPT_18AUG25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_EC_TRANSCRIPT_18AUG25.pdf",
                 },
             ],
         },
@@ -537,15 +537,15 @@ const tabItems: any = {
             items: [
                 {
                     text: "Intimation of participation in “Centrum - Orion IV Virtual Investor Conference”",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_AM_21AUG25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_AM_21AUG25.pdf",
                 },
                 {
                     text: "Recording of earnings conference call conducted on August 18, 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_AM_AR_18AUG25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_AM_AR_18AUG25.pdf",
                 },
                 {
                     text: "Updates on Earnings Conference Call under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_INVPRES_18AUG25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_INVPRES_18AUG25.pdf",
                 },
             ],
         },
@@ -554,7 +554,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Publication of Financial Results",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_NEWP_14AUG25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_NEWP_14AUG25.pdf",
                 },
             ],
         },
@@ -563,11 +563,11 @@ const tabItems: any = {
             items: [
                 {
                     text: "Earnings Release for the Quarter Year Ended 30th June, 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_PR_13AUG25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_PR_13AUG25.pdf",
                 },
                 {
                     text: "Outcome of Board Meeting held on 13th August, 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_QTRLYRES_30JUN25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_QTRLYRES_30JUN25.pdf",
                 },
             ],
         },
@@ -576,7 +576,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Intimation of Earnings Conference Call under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_AM_18AUG25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_AM_18AUG25.pdf",
                 },
             ],
         },
@@ -585,7 +585,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Board Meeting to consider the Unaudited Financial Results of the Company for the quarter ended 30th June 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_BM_13AUG25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_BM_13AUG25.pdf",
                 },
             ],
         },
@@ -594,7 +594,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Disclosure under Regulation 30 read with Schedule III, Part A, Para A of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_INC_02AUG25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_INC_02AUG25.pdf",
                 },
             ],
         },
@@ -603,7 +603,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Closure of Trading Window",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_TW_24JUN25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_TW_24JUN25.pdf",
                 },
             ],
         },
@@ -612,7 +612,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Updates on non-deal roadshow of Investor Meetings",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_AMINVP_17JUN25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_AMINVP_17JUN25.pdf",
                 },
             ],
         },
@@ -621,7 +621,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Intimation of Schedule of Analyst/Institutional Investor Meet under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_AM_13JUN25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_AM_13JUN25.pdf",
                 },
             ],
         },
@@ -630,7 +630,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Transcript of the earnings conference call conducted on 20th May, 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_AMTRNS_26MAY25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_AMTRNS_26MAY25.pdf",
                 },
             ],
         },
@@ -639,11 +639,11 @@ const tabItems: any = {
             items: [
                 {
                     text: "Recording of earnings conference call conducted on May 20, 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_AM_AR_20MAY25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_AM_AR_20MAY25.pdf",
                 },
                 {
                     text: "Updates on Earnings Conference Call under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_REG30IV_20MAY25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_REG30IV_20MAY25.pdf",
                 },
             ],
         },
@@ -652,7 +652,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Earnings Release for the Quarter Year Ended 31st March, 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_ER_4QFY25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_ER_4QFY25.pdf",
                 },
             ],
         },
@@ -661,7 +661,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Outcome of Board Meeting held on 17th May, 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_QTRLYRES_31MAR2025.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_QTRLYRES_31MAR2025.pdf",
                 },
             ],
         },
@@ -670,11 +670,11 @@ const tabItems: any = {
             items: [
                 {
                     text: "Disclosure under Regulation 30 read with Schedule III, Part A, Para A of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_REG30_15MAY25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_REG30_15MAY25.pdf",
                 },
                 {
                     text: "Intimation of Earnings Conference Call under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_AM_20MAY25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_AM_20MAY25.pdf",
                 },
             ],
         },
@@ -683,11 +683,11 @@ const tabItems: any = {
             items: [
                 {
                     text: "Intimation in respect of re-affirmation of Credit Ratings under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_CREDITRATING_08MAY25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_CREDITRATING_08MAY25.pdf",
                 },
                 {
                     text: "Board Meeting Intimation - Notice of Board Meeting scheduled on May 17, 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEXS_NSEBSE_EBMINT_08MAY2025.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEXS_NSEBSE_EBMINT_08MAY2025.pdf",
                 },
             ],
         },
@@ -696,7 +696,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Disclosure under Regulation 30 read with Schedule III, Part A, Para A of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_REG30_24APR25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_REG30_24APR25.pdf",
                 },
             ],
         },
@@ -705,7 +705,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Disclosures under Regulation 30 of the SEBI (Listing Obligations & Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_REG30_27MAR25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_REG30_27MAR25.pdf",
                 },
             ],
         },
@@ -714,7 +714,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Intimation of Schedule of Analyst/Institutional Investor Meet under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_AMU_25MAR25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_AMU_25MAR25.pdf",
                 },
             ],
         },
@@ -723,7 +723,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Updates on Participation in Arihant Bharat Connect Conference: Rising Stars – March 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_AMU_24MAR25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_AMU_24MAR25.pdf",
                 },
             ],
         },
@@ -732,7 +732,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Closure of Trading Window",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_TW_21MAR25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_TW_21MAR25.pdf",
                 },
             ],
         },
@@ -741,7 +741,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Intimation of Participation in Arihant Bharat Connect Conference: Rising Stars – March 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_CONF_20MAR25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_CONF_20MAR25.pdf",
                 },
             ],
         },
@@ -750,11 +750,11 @@ const tabItems: any = {
             items: [
                 {
                     text: "Disclosure under Regulation 30 read with Schedule III, Part A, Para A of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 – Incorporation of Step down Wholly owned subsidiary FLEX FILMS AZB AFEZCO., in Azerbaijan",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_REG30_IOC.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_REG30_IOC.pdf",
                 },
                 {
                     text: "Disclosure under Regulation 30 read with Schedule III, Part A, Para A of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_REG30_18MAR25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_REG30_18MAR25.pdf",
                 },
             ],
         },
@@ -763,11 +763,11 @@ const tabItems: any = {
             items: [
                 {
                     text: "Updates on non-deal roadshow of Investor Meetings",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_IP_03MAR24.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_IP_03MAR24.pdf",
                 },
                 {
                     text: "Disclosures under Regulation 30 (Part-A Para A) of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 – Appointment of Senior Management Personnel",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_REG30_03MAR25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_REG30_03MAR25.pdf",
                 },
             ],
         },
@@ -776,7 +776,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Intimation of Schedule of Analyst/Institutional Investor Meet under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_INVESTORMEET_040325.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_INVESTORMEET_040325.pdf",
                 },
             ],
         },
@@ -785,7 +785,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Transcript of the earnings conference call conducted on February 17, 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_TRANSCRIPT_21FEB25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_TRANSCRIPT_21FEB25.pdf",
                 },
             ],
         },
@@ -794,15 +794,15 @@ const tabItems: any = {
             items: [
                 {
                     text: "Recording of earnings conference call conducted on February 17, 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBS_AREC_17FEB25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBS_AREC_17FEB25.pdf",
                 },
                 {
                     text: "Updates on Earnings Conference Call under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_PRESENTATION_17FEB25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_PRESENTATION_17FEB25.pdf",
                 },
                 {
                     text: "Publication of Financial Results",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_ADVT_15FEB25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_ADVT_15FEB25.pdf",
                 },
             ],
         },
@@ -811,11 +811,11 @@ const tabItems: any = {
             items: [
                 {
                     text: "Earnings Release for the Quarter Year Ended 31st December, 2024",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_ER_3QFY25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_ER_3QFY25.pdf",
                 },
                 {
                     text: "Outcome of Board Meeting held on 14th February, 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_QTRLYRES_31DEC2024.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_QTRLYRES_31DEC2024.pdf",
                 },
             ],
         },
@@ -824,7 +824,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Intimation of Earnings Conference Call under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_AM_17FEB25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_AM_17FEB25.pdf",
                 },
             ],
         },
@@ -833,11 +833,11 @@ const tabItems: any = {
             items: [
                 {
                     text: "Board Meeting Intimation - Notice of Board Meeting scheduled on February 14, 2025",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_BMINT_14FEB25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_BMINT_14FEB25.pdf",
                 },
                 {
                     text: "Disclosures under Regulation 30 (Part-A Para A) of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 – Appointment of Senior Management Personnel",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_04FEB25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_04FEB25.pdf",
                 },
             ],
         },
@@ -846,7 +846,7 @@ const tabItems: any = {
             items: [
                 {
                     text: "Disclosures under Regulation 30 (Part-A Para A) of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 – Incorporation of Wholly-owned subsidiary Company under Section-8 of the Companies Act, 2013 — UFlex Charitable Foundation.PDF",
-                    link: "https://www.uflexltd.com/pdf/announcements/2025/SIGNED_UFLEX_NSEBSE_REG30_15JAN25.pdf",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2025/SIGNED_UFLEX_NSEBSE_REG30_15JAN25.pdf",
                 },
 
             ],
@@ -951,98 +951,98 @@ const tabItems: any = {
     "unpaid-dividend": [
         {
             text: "Unpaid/unclaimed Status as on 30.09.2025 for Year 2024-2025",
-            link: "https://www.uflexltd.com/pdf/Unclaimed-Dividend/UF-UD-30SEP2025.pdf",
+            link: "https://beta.uflexltd.com/media/pdf/Unclaimed-Dividend/UF-UD-30SEP2025.pdf",
         },
         {
             text: "Unclaimed Dividend Details 2025",
-            link: "https://www.uflexltd.com/pdf/Unclaimed-Dividend/UF-Unclaimed-Dividend-FY-2025.pdf",
+            link: "https://beta.uflexltd.com/media/pdf/Unclaimed-Dividend/UF-Unclaimed-Dividend-FY-2025.pdf",
         },
         {
             text: "Unclaimed Dividend Details 2024",
-            link: "https://www.uflexltd.com/pdf/Unclaimed-Dividend/UF-Unclaimed-Dividend-FY-2024.pdf",
+            link: "https://beta.uflexltd.com/media/pdf/Unclaimed-Dividend/UF-Unclaimed-Dividend-FY-2024.pdf",
         },
         {
             text: "Unpaid/unclaimed Status as on 22.11.2024 for Year 2023-2024",
-            link: "https://www.uflexltd.com/pdf/Unclaimed-Dividend/UF-Unclaimed-Dividend.pdf",
+            link: "https://beta.uflexltd.com/media/pdf/Unclaimed-Dividend/UF-Unclaimed-Dividend.pdf",
         },
     ],
     "transfer-to-iepF": [
         {
             text: "PARTICULARS OF UNCLAIMED SHARES TRANSFERRED TO IEPF 2025",
-            link: "https://www.uflexltd.com/pdf/IEPF/UF-PARTICULARS-OF-UNCLAIMED-SHARES-TRANSFERRED-TO-IEPF-2025.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/IEPF/UF-PARTICULARS-OF-UNCLAIMED-SHARES-TRANSFERRED-TO-IEPF-2025.pdf"
         },
         {
             text: "PARTICULARS OF UNCLAIMED SHARES TRANSFERRED TO IEPF 2024",
-            link: "https://www.uflexltd.com/pdf/IEPF/UF-PARTICULARS-OF-UNCLAIMED-SHARES-TRANSFERRED-TO-IEPF-2024.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/IEPF/UF-PARTICULARS-OF-UNCLAIMED-SHARES-TRANSFERRED-TO-IEPF-2024.pdf"
         },
         {
             text: "PARTICULARS OF UNCLAIMED SHARES TRANSFERRED TO IEPF 2023",
-            link: "https://www.uflexltd.com/pdf/IEPF/UF-PARTICULARS-OF-UNCLAIMED-SHARES-TRANSFERRED-TO-IEPF-2023.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/IEPF/UF-PARTICULARS-OF-UNCLAIMED-SHARES-TRANSFERRED-TO-IEPF-2023.pdf"
         },
         {
             text: "PARTICULARS OF UNCLAIMED SHARES TRANSFERRED TO IEPF 2022",
-            link: "https://www.uflexltd.com/pdf/IEPF/UF-PARTICULARS-OF-UNCLAIMED-SHARES-TRANSFERRED-TO-IEPF-2022.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/IEPF/UF-PARTICULARS-OF-UNCLAIMED-SHARES-TRANSFERRED-TO-IEPF-2022.pdf"
         },
         {
             text: "PARTICULARS OF UNCLAIMED SHARES TRANSFERRED TO IEPF 2021",
-            link: "https://www.uflexltd.com/pdf/IEPF/UF-PARTICULARS-OF-UNCLAIMED-SHARES-TRANSFERRED-TO-IEPF-2021.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/IEPF/UF-PARTICULARS-OF-UNCLAIMED-SHARES-TRANSFERRED-TO-IEPF-2021.pdf"
         },
         {
             text: "PUBLICATION OF NOTICE TRANSFER OF EQUITY SHARES TO IEPF 2022",
-            link: "https://www.uflexltd.com/pdf/IEPF/UFlex_Advt_FE_JS_17May2022.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/IEPF/UFlex_Advt_FE_JS_17May2022.pdf"
         },
         {
             text: "PUBLICATION OF NOTICE TRANSFER OF EQUITY SHARES TO IEPF 2022",
-            link: "https://www.uflexltd.com/pdf/IEPF/UFlex_Advt_FE_JS_17May2022.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/IEPF/UFlex_Advt_FE_JS_17May2022.pdf"
         },
         {
             text: "PUBLICATION OF NOTICE TRANSFER OF EQUITY SHARES TO IEPF 2021",
-            link: "https://www.uflexltd.com/pdf/IEPF/Uflex-Iepf-Advertisement-2021.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/IEPF/Uflex-Iepf-Advertisement-2021.pdf"
         },
         {
             text: "PARTICULARS OF UNCLAIMED SHARES TRANSFERRED TO IEPF 2020",
-            link: "https://www.uflexltd.com/pdf/IEPF/UF-PARTICULARS-OF-UNCLAIMED-SHARES-TRANSFERRED-TO-IEPF-2020.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/IEPF/UF-PARTICULARS-OF-UNCLAIMED-SHARES-TRANSFERRED-TO-IEPF-2020.pdf"
         },
         {
             text: "PUBLICATION OF NOTICE TRANSFER OF EQUITY SHARES TO IEPF 2019",
-            link: "https://www.uflexltd.com/pdf/IEPF/Uflex-Iepf-Advertisement-2019.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/IEPF/Uflex-Iepf-Advertisement-2019.pdf"
         },
         {
             text: "PARTICULARS OF UNCLAIMED SHARES TRANSFERRED TO IEPF 2019",
-            link: "https://www.uflexltd.com/pdf/IEPF/Unclaimed-Shares-Transferred-to-IEPF-2019.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/IEPF/Unclaimed-Shares-Transferred-to-IEPF-2019.pdf"
         },
         {
             text: "PARTICULARS OF UNCLAIMED SHARES TRANSFERRED TO IEPF 2018",
-            link: "https://www.uflexltd.com/pdf/IEPF/Unclaimed-Shares-Transferred-to-IEPF-2018.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/IEPF/Unclaimed-Shares-Transferred-to-IEPF-2018.pdf"
         },
         {
             text: "PARTICULARS OF UNCLAIMED SHARES TRANSFERRED TO IEPF 2017",
-            link: "https://www.uflexltd.com/pdf/IEPF/Unclaimed-Shares-Transferred-to-IEPF-2017.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/IEPF/Unclaimed-Shares-Transferred-to-IEPF-2017.pdf"
         },
         {
             text: "APPOINTMENT OF NODAL OFFICER",
-            link: "https://www.uflexltd.com/pdf/IEPF/UFLEX-Nodal-Officer-2023.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/IEPF/UFLEX-Nodal-Officer-2023.pdf"
         },
         {
             text: "Investor Education and Protection Fund Authority (Accounting Audit, Transfer, Transfer and Refund) Rules, 2016",
-            link: "https://www.uflexltd.com/pdf/IEPF/Investor-Education-and-Protection-Fund-Authority.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/IEPF/Investor-Education-and-Protection-Fund-Authority.pdf"
         },
         {
             text: "Details of Equity Share liable for transfer to the IEPF Authority",
-            link: "https://www.uflexltd.com/pdf/IEPF/Details-of-Equity-Share-liable-for-transfer-to-the-IEPF-Authority.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/IEPF/Details-of-Equity-Share-liable-for-transfer-to-the-IEPF-Authority.pdf"
         }
     ],
 
     "registrar": [
         {
             text: "Frequently asked questions (FAQ) - Process for Dematerialization",
-            link: "https://www.uflexltd.com/pdf/Uflex-FAQ-Dematerialisation-of-Shares.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/Uflex-FAQ-Dematerialisation-of-Shares.pdf"
         }
     ],
     "governance-structure": [
         {
             text: "GOVERNANCE STRUCTURE",
-            link: "https://www.uflexltd.com/pdf/Governance_Structure_May2023.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/Governance_Structure_May2023.pdf"
         }
     ],
     "grievance-redressal": [
@@ -1066,251 +1066,251 @@ const tabItems: any = {
     "kmp-contacts": [
         {
             text: "KEY MANAGERIAL PERSONNEL(S) FOR MAKING DISCLOSURES OF EVENTS OR INFORMATION TO STOCK EXCHANGES",
-            link: "https://www.uflexltd.com/pdf/contact-details-of-kmps.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/contact-details-of-kmps.pdf"
         }
     ],
     "credit-ratings": [
         {
             text: "CRISIL RATINGS – REAFFIRMED",
-            link: "https://www.uflexltd.com/pdf/CreditRatings/2025/SIGNED_UFLEX_NSEBSE_CRISILCR_28NOV25.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/CreditRatings/2025/SIGNED_UFLEX_NSEBSE_CRISILCR_28NOV25.pdf"
         },
         {
             text: "CRISIL RATINGS – REAFFIRMED",
-            link: "https://www.uflexltd.com/pdf/CreditRatings/2025/SIGNED_UFLEX_NSEBSE_CRISILRATING_08MAY25.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/CreditRatings/2025/SIGNED_UFLEX_NSEBSE_CRISILRATING_08MAY25.pdf"
         },
         {
             text: "CRISIL RATINGS – REAFFIRMED",
-            link: "https://www.uflexltd.com/pdf/CreditRatings/2025/SIGNED_UFLEX_NSEBSE_CRISILRATING_02APR25.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/CreditRatings/2025/SIGNED_UFLEX_NSEBSE_CRISILRATING_02APR25.pdf"
         },
         {
             text: "INDIA RATINGS & RESEARCH (IND-RA) RATINGS – AFFIRMED",
-            link: "https://www.uflexltd.com/pdf/CreditRatings/2024/SIGNED_UFLENSEBSE_CREDITRAGINGS_19JUN24.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/CreditRatings/2024/SIGNED_UFLENSEBSE_CREDITRAGINGS_19JUN24.pdf"
         },
         {
             text: "CRISIL RATINGS – REAFFIRMED",
-            link: "https://www.uflexltd.com/pdf/CreditRatings/2024/SIGNED_UFLEX_NSEBE_CREDITRATING_JAN24.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/CreditRatings/2024/SIGNED_UFLEX_NSEBE_CREDITRATING_JAN24.pdf"
         },
         {
             text: "CRISIL RATINGS – REAFFIRMED",
-            link: "https://www.uflexltd.com/pdf/CreditRatings/2023/SIGNED_UFLEX_CRISIL_RATING_24AUG23.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/CreditRatings/2023/SIGNED_UFLEX_CRISIL_RATING_24AUG23.pdf"
         },
         {
             text: "CRISIL RATINGS – REAFFIRMED",
-            link: "https://www.uflexltd.com/pdf/CreditRatings/2023/SIGNED_UFLEX_CREDITRATING_04JUL23.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/CreditRatings/2023/SIGNED_UFLEX_CREDITRATING_04JUL23.pdf"
         },
         {
             text: "INDIA RATINGS & RESEARCH (IND-RA) RATINGS – AFFIRMED",
-            link: "https://www.uflexltd.com/pdf/CreditRatings/2023/SIGNED_UFLEX_NSENSE_24MAR2023.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/CreditRatings/2023/SIGNED_UFLEX_NSENSE_24MAR2023.pdf"
         },
         {
             text: "INDIA RATINGS & RESEARCH (IND-RA) RATINGS – AFFIRMED",
-            link: "https://www.uflexltd.com/pdf/CreditRatings/2023/SIGNED_UFLEX_CRNSEBSE_31JAN23.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/CreditRatings/2023/SIGNED_UFLEX_CRNSEBSE_31JAN23.pdf"
         },
         {
             "text": "CRISIL RATINGS – UPGRADED",
-            "link": "https://www.uflexltd.com/pdf/CreditRatings/2022/UFLEX_CRISIL_RATING_NSEBSE_07APR2022.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/CreditRatings/2022/UFLEX_CRISIL_RATING_NSEBSE_07APR2022.pdf"
         },
         {
             "text": "BRICKWORK RATINGS – ASSIGNED",
-            "link": "https://www.uflexltd.com/pdf/CreditRatings/2022/UFLEX_BRICKWORK_CREDITRATING_NSEBSE_06APR2022.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/CreditRatings/2022/UFLEX_BRICKWORK_CREDITRATING_NSEBSE_06APR2022.pdf"
         },
         {
             "text": "INDIA RATINGS & RESEARCH (IND-RA) RATINGS – UPGRADED",
-            "link": "https://www.uflexltd.com/pdf/CreditRatings/2021/UFLEX_NSEBSE_CREDITRATING_02NOV2021.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/CreditRatings/2021/UFLEX_NSEBSE_CREDITRATING_02NOV2021.pdf"
         },
         {
             "text": "CRISIL RATINGS - REAFFIRMED",
-            "link": "https://www.uflexltd.com/pdf/CreditRatings/2021/UFLEX_NSEBSE_CRISILRATING_30OCT2021.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/CreditRatings/2021/UFLEX_NSEBSE_CRISILRATING_30OCT2021.pdf"
         },
         {
             "text": "BRICKWORK RATINGS (BWR) - REAFFIRMED",
-            "link": "https://www.uflexltd.com/pdf/CreditRatings/2021/UFLEX_CR_NSEBSE_Brickwork.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/CreditRatings/2021/UFLEX_CR_NSEBSE_Brickwork.pdf"
         },
         {
             "text": "India Ratings Revises Uflex’s Outlook to Positive; Affirms 'IND A'",
-            "link": "https://www.uflexltd.com/pdf/CreditRatings/2020/UFLEX_NSEBSE_CR17DEC2020.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/CreditRatings/2020/UFLEX_NSEBSE_CR17DEC2020.pdf"
         },
         {
             "text": "CRISIL Ratings - REAFFIRMED",
-            "link": "https://www.uflexltd.com/pdf/CreditRatings/2020/UFLEX_NSEBSE_CR_03NOV2020.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/CreditRatings/2020/UFLEX_NSEBSE_CR_03NOV2020.pdf"
         },
         {
             "text": "BRICKWORK RATINGS (BWR) - REAFFIRMED",
-            "link": "https://www.uflexltd.com/pdf/CreditRatings/2020/UFLEX_NSE_CREDITRATING.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/CreditRatings/2020/UFLEX_NSE_CREDITRATING.pdf"
         },
         {
             "text": "INDIA RATINGS & RESEARCH (IND-RA) RATINGS - UPGRADED",
-            "link": "https://www.uflexltd.com/pdf/CreditRatings/2019/UFLEX_NSEBSE_CREDITRATING.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/CreditRatings/2019/UFLEX_NSEBSE_CREDITRATING.pdf"
         },
         {
             "text": "CRISIL Ratings",
-            "link": "https://www.uflexltd.com/pdf/CreditRatings/2019/Uflex-CRISIL-CreditRating.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/CreditRatings/2019/Uflex-CRISIL-CreditRating.pdf"
         },
         {
             "text": "India Ratings & Research (Ind-Ra) Ratings",
-            "link": "https://www.uflexltd.com/pdf/CreditRatings/2019/Uflex-Ind-Ra-Rating.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/CreditRatings/2019/Uflex-Ind-Ra-Rating.pdf"
         },
         {
             "text": "Brickwork Ratings",
-            "link": "https://www.uflexltd.com/pdf/CreditRatings/2019/Uflex-Brickwork-Rating.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/CreditRatings/2019/Uflex-Brickwork-Rating.pdf"
         },
     ],
 
     "annual-return": [
         {
             text: "FINANCIAL YEAR ENDED 31ST MARCH, 2025",
-            link: "https://www.uflexltd.com/pdf/Extract-Annual-Return/UFLEX-Annual-Return-2024-2025.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/Extract-Annual-Return/UFLEX-Annual-Return-2024-2025.pdf"
         },
         {
             text: "FINANCIAL YEAR ENDED 31ST MARCH, 2024",
-            link: "https://www.uflexltd.com/pdf/Extract-Annual-Return/UFLEX-Annual-Return-2023-2024.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/Extract-Annual-Return/UFLEX-Annual-Return-2023-2024.pdf"
         },
         {
             text: "FINANCIAL YEAR ENDED 31ST MARCH, 2023",
-            link: "https://www.uflexltd.com/pdf/Extract-Annual-Return/UFLEX-Annual-Return-2022-2023.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/Extract-Annual-Return/UFLEX-Annual-Return-2022-2023.pdf"
         },
         {
             text: "FINANCIAL YEAR ENDED 31ST MARCH, 2022",
-            link: "https://www.uflexltd.com/pdf/Extract-Annual-Return/UFLEX-Annual-Return-2021-2022.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/Extract-Annual-Return/UFLEX-Annual-Return-2021-2022.pdf"
         },
         {
             text: "FINANCIAL YEAR ENDED 31ST MARCH, 2021",
-            link: "https://www.uflexltd.com/pdf/Extract-Annual-Return/UFLEX-Annual-Return-2020-2021.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/Extract-Annual-Return/UFLEX-Annual-Return-2020-2021.pdf"
         },
         {
             text: "FINANCIAL YEAR ENDED 31ST MARCH, 2020",
-            link: "https://www.uflexltd.com/pdf/Extract-Annual-Return/UFLEX-Extract-of-Annual-Return-2019-2020.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/Extract-Annual-Return/UFLEX-Extract-of-Annual-Return-2019-2020.pdf"
         },
         {
             text: "FINANCIAL YEAR ENDED 31ST MARCH, 2019",
-            link: "https://www.uflexltd.com/pdf/Extract-Annual-Return/UFLEX-Extract-of-Annual-Return-2018-2019.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/Extract-Annual-Return/UFLEX-Extract-of-Annual-Return-2018-2019.pdf"
         },
         {
             text: "FINANCIAL YEAR ENDED 31ST MARCH, 2018",
-            link: "https://www.uflexltd.com/pdf/Extract-Annual-Return/UFLEX-Extract-of-Annual-Return-2017-2018.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/Extract-Annual-Return/UFLEX-Extract-of-Annual-Return-2017-2018.pdf"
         }
     ],
 
     "business-responsibility": [
         {
             text: "Business Responsibility & Sustainability Report (BRSR) for the Year 2024-25",
-            link: "https://www.uflexltd.com/pdf/BRR/UFLEX-BRSR-2024-2025.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/BRR/UFLEX-BRSR-2024-2025.pdf"
         },
         {
             text: "Limited Assurance Statement on Business Responsibility & Sustainability Report (BRSR) FY 2023-24",
-            link: "https://www.uflexltd.com/pdf/BRR/UFLEX_BRSR_AS_FY2023-24.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/BRR/UFLEX_BRSR_AS_FY2023-24.pdf"
         },
         {
             text: "Business Responsibility & Sustainability Report (BRSR) for the Year 2023-24",
-            link: "https://www.uflexltd.com/pdf/BRR/UFLEX-BRSR-2023-2024.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/BRR/UFLEX-BRSR-2023-2024.pdf"
         },
         {
             text: "Business Responsibility & Sustainability Report (BRSR) for the Year 2022-23",
-            link: "https://www.uflexltd.com/pdf/BRR/UFLEX-BRSR-2022-2023.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/BRR/UFLEX-BRSR-2022-2023.pdf"
         },
         {
             text: "Business Responsibility Report for the Year 2021-22",
-            link: "https://www.uflexltd.com/pdf/BRR/UFLEX-BRR-2021-2022.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/BRR/UFLEX-BRR-2021-2022.pdf"
         },
         {
             text: "Business Responsibility Report for the Year 2020-21",
-            link: "https://www.uflexltd.com/pdf/BRR/UFLEX-BRR-2020-2021.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/BRR/UFLEX-BRR-2020-2021.pdf"
         },
         {
             text: "Business Responsibility Report for the Year 2019-20",
-            link: "https://www.uflexltd.com/pdf/BRR/UFLEX-BRR-2019-2020.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/BRR/UFLEX-BRR-2019-2020.pdf"
         }
     ],
 
     "secretarial-compliance": [
         {
             text: "FINANCIAL YEAR ENDED 31ST MARCH, 2025",
-            link: "https://www.uflexltd.com/pdf/ASCR/UFLEX_SCR_2025.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/ASCR/UFLEX_SCR_2025.pdf"
         },
         {
             text: "FINANCIAL YEAR ENDED 31ST MARCH, 2024",
-            link: "https://www.uflexltd.com/pdf/ASCR/UFLEX_SCR_2024.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/ASCR/UFLEX_SCR_2024.pdf"
         },
         {
             text: "FINANCIAL YEAR ENDED 31ST MARCH, 2023",
-            link: "https://www.uflexltd.com/pdf/ASCR/UFLEX_SCR_2023.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/ASCR/UFLEX_SCR_2023.pdf"
         },
         {
             text: "FINANCIAL YEAR ENDED 31ST MARCH, 2022",
-            link: "https://www.uflexltd.com/pdf/ASCR/UFLEX_SCR_2022.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/ASCR/UFLEX_SCR_2022.pdf"
         },
         {
             text: "FINANCIAL YEAR ENDED 31ST MARCH, 2021",
-            link: "https://www.uflexltd.com/pdf/ASCR/UFLEX_SCR_2021.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/ASCR/UFLEX_SCR_2021.pdf"
         },
         {
             text: "FINANCIAL YEAR ENDED 31ST MARCH, 2020",
-            link: "https://www.uflexltd.com/pdf/ASCR/UFLEX_SCR_2020.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/ASCR/UFLEX_SCR_2020.pdf"
         },
         {
             text: "FINANCIAL YEAR ENDED 31ST MARCH, 2019",
-            link: "https://www.uflexltd.com/pdf/ASCR/UFLEX_SCR_2019.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/ASCR/UFLEX_SCR_2019.pdf"
         }
     ],
 
     "memorandum-articles": [
         {
             text: "Memorandum & Articles of Association",
-            link: "https://www.uflexltd.com/pdf/IR/UFLEX_MOA_AOA.pdf"
+            link: "https://beta.uflexltd.com/media/pdf/IR/UFLEX_MOA_AOA.pdf"
         }
     ],
     "reconciliation": [
         {
             "text": "Report for the Quarter Ended 31.12.2025",
-            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31DEC2025.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/RSCAR/UFLEX-SCR-31DEC2025.pdf"
         },
         {
             "text": "Report for the Quarter Ended 30.09.2025",
-            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30SEP2025.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/RSCAR/UFLEX-SCR-30SEP2025.pdf"
         },
         {
             "text": "Report for the Quarter Ended 30.06.2025",
-            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30JUN2025.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/RSCAR/UFLEX-SCR-30JUN2025.pdf"
         },
         {
             "text": "Report for the Quarter Ended 31.03.2025",
-            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31MAR2025.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/RSCAR/UFLEX-SCR-31MAR2025.pdf"
         },
         {
             "text": "Report for the Quarter Ended 31.12.2024",
-            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31DEC2024.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/RSCAR/UFLEX-SCR-31DEC2024.pdf"
         },
         {
             "text": "Report for the Quarter Ended 30.09.2024",
-            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30SEP2024.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/RSCAR/UFLEX-SCR-30SEP2024.pdf"
         },
         {
             "text": "Report for the Quarter Ended 30.06.2024",
-            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30JUN2024.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/RSCAR/UFLEX-SCR-30JUN2024.pdf"
         },
         {
             "text": "Report for the Quarter Ended 31.03.2024",
-            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31MAR2024.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/RSCAR/UFLEX-SCR-31MAR2024.pdf"
         },
         {
             "text": "Report for the Quarter Ended 31.12.2023",
-            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31DEC2023.PDF"
+            "link": "https://beta.uflexltd.com/media/pdf/RSCAR/UFLEX-SCR-31DEC2023.PDF"
         },
         {
             "text": "Report for the Quarter Ended 30.09.2023",
-            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30SEP2023.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/RSCAR/UFLEX-SCR-30SEP2023.pdf"
         },
         {
             "text": "Report for the Quarter Ended 30.06.2023",
-            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-30JUN2023.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/RSCAR/UFLEX-SCR-30JUN2023.pdf"
         },
         {
             "text": "Report for the Quarter Ended 31.03.2023",
-            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31MAR2023.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/RSCAR/UFLEX-SCR-31MAR2023.pdf"
         },
         {
             "text": "Report for the Quarter Ended 31.12.2022",
-            "link": "https://www.uflexltd.com/pdf/RSCAR/UFLEX-SCR-31DEC2022.pdf"
+            "link": "https://beta.uflexltd.com/media/pdf/RSCAR/UFLEX-SCR-31DEC2022.pdf"
         }
     ]
 };
