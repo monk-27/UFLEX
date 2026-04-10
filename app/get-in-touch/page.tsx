@@ -1,11 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { useMemo, useState } from "react";
+import { useMemo, useState, useCallback, useEffect, useRef, FormEvent } from "react";
 import { motion, type MotionProps } from "framer-motion";
-import { Mail, Phone, MapPin, Building2, Globe2, Send, Filter, Search } from "lucide-react";
+import { Mail, Phone, MapPin, Building2, Globe2, Send, Filter, Search, RefreshCw, X } from "lucide-react";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import Swal from "sweetalert2";
+
 
 /* ----------------------------- Anim helper ----------------------------- */
 const fadeUp = (d = 0): Partial<MotionProps> => ({
@@ -271,6 +273,28 @@ const OFFICES: Office[] = [
   },
 ];
 
+const BUSINESS_PRODUCTS: Record<string, string[]> = {
+  "Packaging Films": ["BOPET Films", "BOPP Films", "CPP Films", "Metallised Films", "Special Effects Films", "AlOx Coated Films", "PET Chip Resin"],
+  "Flexible Packaging": ["Flexible Laminates", "Pre-formed Pouches", "Flexo Printed Rolls & Bags", "Laminated Woven Polypropylene (WPP) Bags", "Pharmaceutical Packaging", "Zipouch", "Hygiene Films", "Flexfresh™ MAP"],
+  "Aseptic Packaging": ["Aseptic Cartons", "A SIP", "Filling Machines", "Asepto Pro", "Asepto Design"],
+  "Chemicals": ["Water Based Inks", "Solvent Based Inks", "Radiation Curable Inks", "Water Based Adhesives", "Solvent Free Adhesives", "Water Based Coatings", "PU Ink Binders"],
+  "Holography": ["Hologram", "Holographic Film", "Textile Value Addition Product", "Hot Stamping Foil", "Labeling Solution"],
+  "Engineering": ["Packaging Machines", "Converting Machines", "Speciality Products"],
+  "Printing Cylinders": ["Gravure Cylinders", "CTP Flexo Plates", "Flexo Printing Sleeves"],
+  "Corporate": ["Media / PR", "Investor Relations", "Career Enquiry", "General Feedback"]
+};
+
+const ENQUIRY_TYPES = [
+  "Sales / Business Enquiry",
+  "Product Technical Support",
+  "Media / PR Query",
+  "Investor Relations",
+  "Careers / HR Enquiry",
+  "Global Locations / Logistics",
+  "General Support / Others"
+];
+
+
 /* ------------------------------ Office Card ------------------------------ */
 function OfficeCard({ o }: { o: Office }) {
   return (
@@ -342,6 +366,155 @@ export default function GetInTouch() {
 
   const [loc, setLoc] = useState<string>("all");
   const [q, setQ] = useState<string>("");
+
+  /* --- Contact Form State --- */
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    enquiryType: "",
+    businessDivision: "",
+    product: "",
+    location: "India",
+    message: ""
+  });
+
+  const [emailError, setEmailError] = useState<string | null>(null);
+  const [phoneError, setPhoneError] = useState<string | null>(null);
+  const [wordCount, setWordCount] = useState(0);
+
+  // CAPTCHA State
+  const [captchaCode, setCaptchaCode] = useState("");
+  const [userCaptcha, setUserCaptcha] = useState("");
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  // Generate alphanumeric CAPTCHA
+  const generateCaptcha = useCallback(() => {
+    const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+    let code = "";
+    for (let i = 0; i < 6; i++) {
+      code += chars[Math.floor(Math.random() * chars.length)];
+    }
+    setCaptchaCode(code);
+    setTimeout(() => drawCaptcha(code), 50);
+  }, []);
+
+  const drawCaptcha = (code: string) => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "#f3f4f6";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.font = "italic bold 32px serif";
+    ctx.textBaseline = "middle";
+    for (let i = 0; i < code.length; i++) {
+      ctx.fillStyle = "#117ABA";
+      ctx.save();
+      const x = 30 + i * 35;
+      const y = canvas.height / 2 + (Math.random() - 0.5) * 10;
+      const angle = (Math.random() - 0.5) * 0.4;
+      ctx.translate(x, y);
+      ctx.rotate(angle);
+      ctx.fillText(code[i], 0, 0);
+      ctx.restore();
+    }
+  };
+
+  useEffect(() => {
+    generateCaptcha();
+  }, [generateCaptcha]);
+
+  /* --- Validation Logic --- */
+  const validateEmail = (email: string) => {
+    const parts = email.split("@");
+    if (parts.length !== 2) return { valid: false, message: "Email must contain exactly one '@' symbol." };
+    const [local, domain] = parts;
+    const allowed = /^[a-zA-Z0-9._-]+$/;
+    if (!local || !allowed.test(local)) return { valid: false, message: "Username part contains invalid characters." };
+    if (!domain || !domain.includes(".") || !allowed.test(domain)) return { valid: false, message: "Invalid domain." };
+    return { valid: true };
+  };
+
+  const validatePhone = (phone: string) => {
+    if (!/^[0-9]+$/.test(phone)) return { valid: false, message: "Phone number must contain only digits." };
+    if (phone.length < 10) return { valid: false, message: "Phone number must be at least 10 digits." };
+    return { valid: true };
+  };
+
+  const getWordCount = (str: string) => str.trim().split(/\s+/).filter(w => w.length > 0).length;
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    
+    if (name === "phone" && !/^[0-9]*$/.test(value)) return;
+
+    if (name === "message") {
+      const count = getWordCount(value);
+      if (count > 500) return;
+      setWordCount(count);
+    }
+
+    if (name === "email") setEmailError(null);
+    if (name === "phone") setPhoneError(null);
+
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleBlur = (field: "email" | "phone") => {
+    if (field === "email" && formData.email) {
+      const v = validateEmail(formData.email);
+      setEmailError(v.valid ? null : v.message);
+    }
+    if (field === "phone" && formData.phone) {
+      const v = validatePhone(formData.phone);
+      setPhoneError(v.valid ? null : v.message);
+    }
+  };
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (userCaptcha !== captchaCode) {
+      Swal.fire({ icon: 'error', title: 'Invalid CAPTCHA', text: 'Please try again.' });
+      generateCaptcha();
+      setUserCaptcha("");
+      return;
+    }
+
+    const ev = validateEmail(formData.email);
+    if (!ev.valid) { setEmailError(ev.message); return; }
+
+    const pv = validatePhone(formData.phone);
+    if (!pv.valid) { setPhoneError(pv.message); return; }
+
+    setIsSubmitting(true);
+    try {
+      const payload = new FormData();
+      Object.entries(formData).forEach(([k, v]) => payload.append(k, v));
+      payload.append("captcha", userCaptcha);
+
+      const res = await fetch("/submit-contact.php", { method: "POST", body: payload });
+      const data = await res.json();
+
+      if (data.success) {
+        Swal.fire({ icon: 'success', title: 'Success!', text: 'Your enquiry has been submitted successfully.' });
+        setFormData({ name: "", email: "", phone: "", enquiryType: "", businessDivision: "", product: "", location: "India", message: "" });
+        setUserCaptcha("");
+        setWordCount(0);
+        generateCaptcha();
+      } else {
+        Swal.fire({ icon: 'error', title: 'Error', text: data.message || "Failed to submit." });
+      }
+    } catch {
+      Swal.fire({ icon: 'error', title: 'Error', text: "Connection error." });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
 
   /* Build select options dynamically (independent) */
   const businessOptions = useMemo(
@@ -534,7 +707,7 @@ export default function GetInTouch() {
               {/* RIGHT: form, aligned to image height */}
               <form
                 className="flex flex-col"
-                onSubmit={(e) => e.preventDefault()}
+                onSubmit={handleSubmit}
               >
                 {/* Top grid fields */}
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -547,6 +720,9 @@ export default function GetInTouch() {
                     </label>
                     <input
                       id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
                       required
                       className="text-gray-800 rounded-sm border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
                       placeholder="Enter full name"
@@ -562,11 +738,22 @@ export default function GetInTouch() {
                     </label>
                     <input
                       id="email"
+                      name="email"
                       type="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      onBlur={() => handleBlur("email")}
                       required
-                      className="text-gray-800 rounded-sm border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                      className={`text-gray-800 rounded-sm border bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2 ${
+                        emailError ? "border-red-500" : "border-slate-300"
+                      }`}
                       placeholder="Enter email address"
                     />
+                    {emailError && (
+                      <p className="text-[10px] text-red-500 mt-0.5 lato-500 flex items-center gap-1">
+                        <X className="h-3 w-3" /> {emailError}
+                      </p>
+                    )}
                   </div>
 
                   <div className="grid gap-1">
@@ -578,11 +765,22 @@ export default function GetInTouch() {
                     </label>
                     <input
                       id="phone"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      onBlur={() => handleBlur("phone")}
                       required
                       inputMode="tel"
-                      className="text-gray-800 rounded-sm border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                      className={`text-gray-800 rounded-sm border bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2 ${
+                        phoneError ? "border-red-500" : "border-slate-300"
+                      }`}
                       placeholder="Enter phone number"
                     />
+                    {phoneError && (
+                      <p className="text-[10px] text-red-500 mt-0.5 lato-500 flex items-center gap-1">
+                        <X className="h-3 w-3" /> {phoneError}
+                      </p>
+                    )}
                   </div>
 
                   <div className="grid gap-1">
@@ -590,22 +788,46 @@ export default function GetInTouch() {
                       htmlFor="enquiryType"
                       className="text-sm lato-600 text-slate-700"
                     >
-                      Enquiry Type  <span className="text-[#117ABA]">*</span>
+                      Enquiry For  <span className="text-[#117ABA]">*</span>
                     </label>
                     <select
                       id="enquiryType"
+                      name="enquiryType"
                       required
+                      value={formData.enquiryType}
+                      onChange={handleInputChange}
                       className="text-gray-800 rounded-sm border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
-                      defaultValue=""
                     >
-                      <option value="" disabled className="text-gray-800">
-                        Select type
-                      </option>
-                      <option >Media / PR</option>
-                      <option>Investor Relations</option>
-                      <option>Sales / Business</option>
-                      <option>Careers / HR</option>
-                      <option>Support / Others</option>
+                      <option value="" disabled>Select enquiry type</option>
+                      {ENQUIRY_TYPES.map(type => (
+                        <option key={type} value={type}>{type}</option>
+                      ))}
+                    </select>
+                  </div>
+
+                  <div className="grid gap-1">
+                    <label
+                      htmlFor="businessDivision"
+                      className="text-sm lato-600 text-slate-700"
+                    >
+                      Business Division <span className="text-[#117ABA]">*</span>
+                    </label>
+                    <select
+                      id="businessDivision"
+                      name="businessDivision"
+                      required
+                      value={formData.businessDivision}
+                      onChange={(e) => {
+                        handleInputChange(e);
+                        // Reset product when business changes
+                        setFormData(prev => ({ ...prev, product: "" }));
+                      }}
+                      className="text-gray-800 rounded-sm border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                    >
+                      <option value="" disabled>Select business</option>
+                      {Object.keys(BUSINESS_PRODUCTS).map(div => (
+                        <option key={div} value={div}>{div}</option>
+                      ))}
                     </select>
                   </div>
 
@@ -618,17 +840,15 @@ export default function GetInTouch() {
                     </label>
                     <select
                       id="product"
-                      className="text-gray-800 rounded-sm border border-slate-300 bg-white  py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2 px-3"
-                      defaultValue=""
+                      name="product"
+                      value={formData.product}
+                      onChange={handleInputChange}
+                      className="text-gray-800 rounded-sm border border-slate-300 bg-white py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2 px-3"
                     >
-                      <option value="" disabled >
-                        Select product
-                      </option>
-                      <option>Packaging films</option>
-                      <option>Chemicals</option>
-                      <option>Holography</option>
-                      <option>Engineering</option>
-                      <option>Others</option>
+                      <option value="">Select product (if applicable)</option>
+                      {formData.businessDivision && BUSINESS_PRODUCTS[formData.businessDivision]?.map(prod => (
+                        <option key={prod} value={prod}>{prod}</option>
+                      ))}
                     </select>
                   </div>
 
@@ -637,26 +857,65 @@ export default function GetInTouch() {
                       htmlFor="location"
                       className="text-sm lato-600 text-slate-700"
                     >
-                      Location
+                      Location <span className="text-[#117ABA]">*</span>
                     </label>
                     <select
                       id="location"
-                      className="text-gray-800 rounded-sm border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2 "
-                      defaultValue=""
+                      name="location"
+                      required
+                      value={formData.location}
+                      onChange={handleInputChange}
+                      className="text-gray-800 rounded-sm border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2"
                     >
-                      <option value="" disabled className="text-gray-800">
-                        Select location
-                      </option>
-                      <option className="text-gray-800">India</option>
-                      <option className="text-gray-800">USA</option>
-                      <option className="text-gray-800">Poland</option>
-                      <option className="text-gray-800">UAE</option>
-                      <option className="text-gray-800">Others</option>
+                      <option value="India">India</option>
+                      <option value="USA">USA</option>
+                      <option value="Poland">Poland</option>
+                      <option value="UAE">UAE</option>
+                      <option value="Mexico">Mexico</option>
+                      <option value="Egypt">Egypt</option>
+                      <option value="Russia">Russia</option>
+                      <option value="Hungary">Hungary</option>
+                      <option value="Nigeria">Nigeria</option>
+                      <option value="Others">Others</option>
                     </select>
+                  </div>
+
+                  {/* CAPTCHA Row */}
+                  <div className="grid gap-1 md:col-span-2 sm:grid-cols-2 items-end">
+                    <div className="grid gap-1">
+                      <label className="text-sm lato-600 text-slate-700">Verify Captcha <span className="text-[#117ABA]">*</span></label>
+                      <div className="flex items-center gap-2">
+                        <canvas
+                          ref={canvasRef}
+                          width={240}
+                          height={50}
+                          className="rounded-sm border border-slate-200"
+                        />
+                        <button
+                          type="button"
+                          onClick={generateCaptcha}
+                          className="p-2 text-[#117ABA] hover:bg-slate-100 rounded-full transition-colors"
+                          title="Refresh CAPTCHA"
+                        >
+                          <RefreshCw className="h-4 w-4" />
+                        </button>
+                      </div>
+                    </div>
+                    <div className="grid gap-1">
+                      <input
+                        type="text"
+                        placeholder="Enter the code"
+                        value={userCaptcha}
+                        onChange={(e) => setUserCaptcha(e.target.value.toUpperCase())}
+                        required
+                        className="text-gray-800 rounded-sm border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
+                        maxLength={6}
+                      />
+                    </div>
                   </div>
                 </div>
 
-                {/* Message + button (full width, aligned with fields) */}
+                {/* Message */}
                 <div className="mt-4 grid gap-1">
                   <label
                     htmlFor="message"
@@ -666,21 +925,35 @@ export default function GetInTouch() {
                   </label>
                   <textarea
                     id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
                     required
                     rows={5}
                     className="text-gray-800 rounded-sm border border-slate-300 bg-white px-3 py-2 outline-none ring-[#0B3C7D]/20 focus:ring-2"
                     placeholder="Write message"
                   />
+                  <div className="text-[10px] text-slate-500 text-right">
+                    {wordCount} / 500 words
+                  </div>
                 </div>
 
                 <button
                   type="submit"
-                  className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-sm bg-[#117ABA] px-6 py-2.5 lato-500 text-white shadow-sm transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[#0B3C7D] focus:ring-offset-2"
+                  disabled={isSubmitting}
+                  className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-sm bg-[#117ABA] px-6 py-3 lato-600 text-white shadow-sm transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[#0B3C7D] disabled:opacity-70 disabled:cursor-not-allowed"
                 >
-                  <Send className="h-4 w-4" />
-                  Submit
+                  {isSubmitting ? (
+                    <>Processing...</>
+                  ) : (
+                    <>
+                      <Send className="h-4 w-4" />
+                      Submit Enquiry
+                    </>
+                  )}
                 </button>
               </form>
+
             </div>
           </div>
         </section>
