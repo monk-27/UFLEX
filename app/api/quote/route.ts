@@ -34,13 +34,27 @@ export async function POST(request: NextRequest) {
             )
         }
 
-        // Validate email format
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-        if (!emailRegex.test(email)) {
+        // Validate email format and characters
+        const emailParts = email.split('@');
+        const allowedCharsRegex = /^[a-zA-Z0-9._-]+$/;
+        
+        if (emailParts.length !== 2) {
             return NextResponse.json<ApiResponse>(
                 {
                     success: false,
-                    message: 'Invalid email format',
+                    message: "Email must contain exactly one '@' symbol.",
+                    error: 'Invalid email',
+                },
+                { status: 400 }
+            )
+        }
+
+        const [localPart, domainPart] = emailParts;
+        if (!allowedCharsRegex.test(localPart) || !allowedCharsRegex.test(domainPart) || !domainPart.includes('.')) {
+            return NextResponse.json<ApiResponse>(
+                {
+                    success: false,
+                    message: 'Invalid email format. Only letters, numbers, dots (.), underscores (_), and hyphens (-) are allowed.',
                     error: 'Invalid email',
                 },
                 { status: 400 }

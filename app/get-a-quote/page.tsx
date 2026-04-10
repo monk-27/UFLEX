@@ -117,6 +117,7 @@ export default function EnquiryForm() {
   // File upload state
   const [selectedFiles, setSelectedFiles] = useState<FilePreview[]>([]);
   const [fileError, setFileError] = useState<string | null>(null);
+  const [emailError, setEmailError] = useState<any>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Form state
@@ -226,6 +227,11 @@ export default function EnquiryForm() {
     // Message limit
     if (name === "message" && value.length > 1500) return;
 
+    // Clear email error when user starts typing
+    if (name === "email") {
+      setEmailError(null);
+    }
+
     // When business changes, reset product selection
     if (name === "enquiryFor") {
       setFormData((prev) => ({ ...prev, enquiryFor: value, product: [] }));
@@ -234,6 +240,18 @@ export default function EnquiryForm() {
 
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
+
+  const handleEmailBlur = () => {
+    if (formData.email) {
+      const validation = validateEmail(formData.email);
+      if (!validation.valid) {
+        setEmailError(validation.message);
+      } else {
+        setEmailError(null);
+      }
+    }
+  };
+
 
   // Toggle a product in the multi-select array
   const handleProductToggle = (product: string) => {
@@ -304,6 +322,39 @@ export default function EnquiryForm() {
     if (fileInputRef.current) fileInputRef.current.value = "";
   };
 
+  const validateEmail = (email: string) => {
+    // Basic format check: needs exactly one @
+    const parts = email.split("@");
+    if (parts.length !== 2) return { valid: false, message: "Email must contain exactly one '@' symbol." };
+
+    const [local, domain] = parts;
+
+    // Allowed characters: alphanumeric, dots, underscores, hyphens
+    // Forbidden by user: ) ( + = * & ^ % $ # ! ~ : " < > ? / { } [ ] \ | and multiple @
+    const allowedCharsRegex = /^[a-zA-Z0-9._-]+$/;
+
+    if (!local || !allowedCharsRegex.test(local)) {
+      return {
+        valid: false,
+        message: "The part before '@' contains invalid characters. Only letters, numbers, dots (.), underscores (_), and hyphens (-) are allowed."
+      };
+    }
+
+    // Domain part check: must have at least one dot
+    if (!domain || !domain.includes(".")) {
+      return { valid: false, message: "Invalid domain name." };
+    }
+
+    if (!allowedCharsRegex.test(domain)) {
+      return {
+        valid: false,
+        message: "The domain part contains invalid characters. Only letters, numbers, dots (.), underscores (_), and hyphens (-) are allowed."
+      };
+    }
+
+    return { valid: true };
+  };
+
   const removeFile = (index: number) => {
     setSelectedFiles(prev => {
       const updated = [...prev];
@@ -315,6 +366,19 @@ export default function EnquiryForm() {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    // Email validation
+    const emailValidation = validateEmail(formData.email);
+    if (!emailValidation.valid) {
+      setEmailError(emailValidation.message);
+      Swal.fire({
+        icon: 'error',
+        title: 'Invalid Email',
+        text: emailValidation.message,
+        confirmButtonColor: '#117ABA'
+      });
+      return;
+    }
 
     // CAPTCHA verification
     if (userCaptcha !== captchaCode) {
@@ -331,7 +395,7 @@ export default function EnquiryForm() {
 
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: "" });
-    
+
     // Check which backend to use
     const usePhpBackend = process.env.NEXT_PUBLIC_USE_PHP_BACKEND === 'true';
 
@@ -339,30 +403,30 @@ export default function EnquiryForm() {
       // --- PHP BACKEND FLOW (cPanel) ---
       try {
         const formDataPayload = new FormData();
-        
+
         // Append all text fields
         Object.entries(formData).forEach(([key, value]) => {
-            if (key === 'product' && Array.isArray(value)) {
-                formDataPayload.append(key, value.join(','));
-            } else {
-                formDataPayload.append(key, String(value));
-            }
+          if (key === 'product' && Array.isArray(value)) {
+            formDataPayload.append(key, value.join(','));
+          } else {
+            formDataPayload.append(key, String(value));
+          }
         });
-        
+
         formDataPayload.append('captcha', userCaptcha);
 
         // Append files
         if (selectedFiles.length > 0) {
-            setIsUploading(true);
-            selectedFiles.forEach(fp => {
-                formDataPayload.append('files[]', fp.file);
-            });
+          setIsUploading(true);
+          selectedFiles.forEach(fp => {
+            formDataPayload.append('files[]', fp.file);
+          });
         }
 
         // Send a single request to PHP script
         const response = await fetch('/submit-quote.php', {
-            method: 'POST',
-            body: formDataPayload,
+          method: 'POST',
+          body: formDataPayload,
         });
 
         const data = await response.json();
@@ -374,20 +438,20 @@ export default function EnquiryForm() {
             text: 'Thank you! Your quote request has been submitted successfully.',
             confirmButtonColor: '#117ABA'
           });
-            // Reset form
-            setFormData({
-                name: "",
-                phone: "",
-                companyName: "",
-                enquiryFor: "",
-                product: [],
-                email: "",
-                message: "",
-            });
-            selectedFiles.forEach(fp => { if (fp.previewUrl) URL.revokeObjectURL(fp.previewUrl); });
-            setSelectedFiles([]);
-            generateCaptcha();
-            setUserCaptcha("");
+          // Reset form
+          setFormData({
+            name: "",
+            phone: "",
+            companyName: "",
+            enquiryFor: "",
+            product: [],
+            email: "",
+            message: "",
+          });
+          selectedFiles.forEach(fp => { if (fp.previewUrl) URL.revokeObjectURL(fp.previewUrl); });
+          setSelectedFiles([]);
+          generateCaptcha();
+          setUserCaptcha("");
         } else {
           Swal.fire({
             icon: 'error',
@@ -408,7 +472,7 @@ export default function EnquiryForm() {
         setIsSubmitting(false);
         setIsUploading(false);
       }
-      
+
       return; // Exit early since PHP flow handled it
     }
 
@@ -725,11 +789,19 @@ export default function EnquiryForm() {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
+                    onBlur={handleEmailBlur}
                     required
-                    className="w-full lato-400 rounded-lg border-2 border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 transition-all focus:border-[#117ABA] focus:ring-2 focus:ring-[#117ABA]/20 focus:outline-none hover:border-gray-300"
+                    className={`w-full lato-400 rounded-lg border-2 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 transition-all focus:ring-2 focus:ring-[#117ABA]/20 focus:outline-none hover:border-gray-300 ${emailError ? "border-red-500 focus:border-red-500" : "border-gray-200 focus:border-[#117ABA]"
+                      }`}
                     placeholder="your.email@company.com"
                   />
+                  {emailError && (
+                    <p className="mt-1 text-xs text-red-500 lato-500 flex items-center gap-1">
+                      <X className="h-3 w-3" /> {emailError}
+                    </p>
+                  )}
                 </div>
+
 
                 {/* Message */}
                 <div className="md:col-span-2 group">

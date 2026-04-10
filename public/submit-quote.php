@@ -66,9 +66,19 @@ if (empty($name) || empty($phone) || empty($email) || empty($message_body) || em
   exit;
 }
 
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+$emailParts = explode('@', $email);
+$allowedCharsPattern = '/^[a-zA-Z0-9._-]+$/';
+
+if (count($emailParts) !== 2) {
   http_response_code(400);
-  echo json_encode(['success' => false, 'message' => 'Invalid email format.']);
+  echo json_encode(['success' => false, 'message' => "Email must contain exactly one '@' symbol."]);
+  exit;
+}
+
+list($localPart, $domainPart) = $emailParts;
+if (!preg_match($allowedCharsPattern, $localPart) || !preg_match($allowedCharsPattern, $domainPart) || strpos($domainPart, '.') === false) {
+  http_response_code(400);
+  echo json_encode(['success' => false, 'message' => 'Invalid email format. Only letters, numbers, dots (.), underscores (_), and hyphens (-) are allowed.']);
   exit;
 }
 
