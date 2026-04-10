@@ -76,9 +76,28 @@ if (count($emailParts) !== 2) {
 }
 
 list($localPart, $domainPart) = $emailParts;
-if (!preg_match($allowedCharsPattern, $localPart) || !preg_match($allowedCharsPattern, $domainPart) || strpos($domainPart, '.') === false) {
+
+// Check for duplicate domain extensions
+$domainSegments = explode('.', $domainPart);
+$hasDuplicateExtension = false;
+for ($i = 0; $i < count($domainSegments) - 1; $i++) {
+  if ($domainSegments[$i] === $domainSegments[$i + 1]) {
+    $hasDuplicateExtension = true;
+    break;
+  }
+}
+
+if (!preg_match($allowedCharsPattern, $localPart) || !preg_match($allowedCharsPattern, $domainPart) || strpos($domainPart, '.') === false || $hasDuplicateExtension) {
   http_response_code(400);
-  echo json_encode(['success' => false, 'message' => 'Invalid email format. Only letters, numbers, dots (.), underscores (_), and hyphens (-) are allowed.']);
+  $err_msg = $hasDuplicateExtension ? 'Duplicate domain extensions detected (e.g. .com.com).' : 'Invalid email format. Only letters, numbers, dots (.), underscores (_), and hyphens (-) are allowed.';
+  echo json_encode(['success' => false, 'message' => $err_msg]);
+  exit;
+}
+
+// Phone validation (digits only, min 10)
+if (!preg_match('/^[0-9]{10,}$/', $phone)) {
+  http_response_code(400);
+  echo json_encode(['success' => false, 'message' => 'Invalid phone number. Please enter at least 10 digits with no special characters.']);
   exit;
 }
 

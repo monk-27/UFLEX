@@ -219,9 +219,9 @@ export default function EnquiryForm() {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     const { name, value } = e.target;
-    // Phone validation: only allow numbers, spaces, and +
+    // Phone validation: only allow digits
     if (name === "phone") {
-      const phoneRegex = /^[0-9+\s]*$/;
+      const phoneRegex = /^[0-9]*$/;
       if (!phoneRegex.test(value)) return;
     }
     // Message limit
@@ -343,6 +343,13 @@ export default function EnquiryForm() {
     // Domain part check: must have at least one dot
     if (!domain || !domain.includes(".")) {
       return { valid: false, message: "Invalid domain name." };
+    }
+
+    const domainParts = domain.split(".");
+    for (let i = 0; i < domainParts.length - 1; i++) {
+        if (domainParts[i] === domainParts[i + 1]) {
+            return { valid: false, message: "Duplicate domain extensions detected (e.g. .com.com)." };
+        }
     }
 
     if (!allowedCharsRegex.test(domain)) {

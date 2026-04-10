@@ -435,6 +435,15 @@ export default function GetInTouch() {
     const allowed = /^[a-zA-Z0-9._-]+$/;
     if (!local || !allowed.test(local)) return { valid: false, message: "Username part contains invalid characters." };
     if (!domain || !domain.includes(".") || !allowed.test(domain)) return { valid: false, message: "Invalid domain." };
+    
+    // Check for duplicate extensions
+    const domainParts = domain.split(".");
+    for (let i = 0; i < domainParts.length - 1; i++) {
+        if (domainParts[i] === domainParts[i + 1]) {
+            return { valid: false, message: "Duplicate domain extensions detected (e.g. .com.com)." };
+        }
+    }
+    
     return { valid: true };
   };
 

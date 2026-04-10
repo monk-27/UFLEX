@@ -50,19 +50,32 @@ export async function POST(request: NextRequest) {
         }
 
         const [localPart, domainPart] = emailParts;
-        if (!allowedCharsRegex.test(localPart) || !allowedCharsRegex.test(domainPart) || !domainPart.includes('.')) {
+        
+        // Handle consecutive dots or duplicate extensions
+        const domainSegments = domainPart.split('.');
+        let hasDuplicateExtension = false;
+        for (let i = 0; i < domainSegments.length - 1; i++) {
+            if (domainSegments[i] === domainSegments[i + 1]) {
+                hasDuplicateExtension = true;
+                break;
+            }
+        }
+
+        if (!allowedCharsRegex.test(localPart) || !allowedCharsRegex.test(domainPart) || !domainPart.includes('.') || hasDuplicateExtension) {
             return NextResponse.json<ApiResponse>(
                 {
                     success: false,
-                    message: 'Invalid email format. Only letters, numbers, dots (.), underscores (_), and hyphens (-) are allowed.',
+                    message: hasDuplicateExtension 
+                        ? 'Duplicate domain extensions detected (e.g. .com.com).' 
+                        : 'Invalid email format. Only letters, numbers, dots (.), underscores (_), and hyphens (-) are allowed.',
                     error: 'Invalid email',
                 },
                 { status: 400 }
             )
         }
 
-        // Validate phone format (only digits, spaces, and +)
-        const phoneRegex = /^[0-9+\s]{10,15}$/
+        // Validate phone format (digits only, min 10)
+        const phoneRegex = /^[0-9]{10,}$/
         if (!phoneRegex.test(phone.trim())) {
             return NextResponse.json<ApiResponse>(
                 {
