@@ -360,36 +360,7 @@ Kolkata.`,
                     photo: "/images/rakesh.png",
                     name: "Mr. Rakesh Khazanchi",
                     role: "Vice President – Sales and Marketing, Holography Business",
-                    summary: `Mr. Rakesh
-                    Khazanchi brings deep
-                    expertise in strategy, brand
-                    building, and sales
-                    management processes.
-                    Before joining UFlex’s
-                    Holography business in 2012
-                    as AVP-Marketing, he held key
-                    roles at several prestigious
-                    organizations, including
-                    Escorts Limited and Xerox
-                    INDIA LTD., where he honed
-                    his leadership and strategic
-                    acumen. In his current role,
-                    Mr. Khazanchi heads the Sales
-                    &amp; Marketing team of the
-                    Holography Business, driving
-                    transformational growth
-                    through a sharp focus on
-                    customer-centric solutions.
-                    Under his dynamic leadership,
-                    the business has witnessed
-                    remarkable three-digit growth
-                    and is well on its path to
-                    becoming a global leader in
-                    Holographic Solutions. Mr.
-                    Khazanchi holds a
-                    postgraduate degree, which
-                    complements his extensive
-                    professional experience.`,
+                    summary: `With over 35 years of rich experience in Sales and Marketing, Mr. Rakesh Khazanchi brings deep expertise in strategy, brand building, and sales management processes. Before joining UFlex’s Holography business in 2012 as AVP-Marketing, he held key roles at several prestigious organizations, including Escorts Limited and Xerox INDIA LTD., where he honed his leadership and strategic acumen. In his current role, Mr. Khazanchi heads the Sales & Marketing team of the Holography Business, driving transformational growth through a sharp focus on customer-centric solutions. Under his dynamic leadership, the business has witnessed remarkable three-digit growth and is well on its path to becoming a global leader in Holographic Solutions. Mr. Khazanchi holds a postgraduate degree, which complements his extensive professional experience.`,
                     cta: { label: "Read More", href: "/leadership/rakesh-khazanchi" }
                 },
             ]

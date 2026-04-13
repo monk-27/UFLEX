@@ -140,7 +140,7 @@ const keyPeopleMany: Leader[] = [
     name: "Mr. Subrata Bose",
     role: "Senior Vice President - Flexible Tubes Business",
     summary:
-      "Mr. Subrata Bose is a seasoned professional with nearly three decades of experience across the packaging, healthcare, and engineering industries. He has a strong track record of driving growth, leadin...",
+      "Mr. Subrata Bose is a seasoned professional with nearly three decades of experience across the packaging, healthcare, and engineering industries. He brings a strong track record of driving growth, leading high-performing teams, and fostering lasting customer relationships. His expertise spans strategic planning, sales and marketing, business development, account management, and P&L oversight. Prior to UFlex, he held key leadership positions at Albéa Group and Betts Group, where he successfully led sales and distribution strategies, and market expansion efforts.",
     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
   },
   // {
@@ -288,7 +288,7 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
           name: "Mr. Subrata Bose",
           role:
             "Senior Vice President - Tubes, Flexible Packaging Business",
-          summary: "",
+          summary: "Mr. Subrata Bose is a seasoned professional with nearly three decades of experience across the packaging, healthcare, and engineering industries. He brings a strong track record of driving growth, leading high-performing teams, and fostering lasting customer relationships. His expertise spans strategic planning, sales and marketing, business development, account management, and P&L oversight. Prior to UFlex, he held key leadership positions at Albéa Group and Betts Group, where he successfully led sales and distribution strategies, and market expansion efforts.",
         },
         // {
         //   photo: "/images/venkatesh.png",

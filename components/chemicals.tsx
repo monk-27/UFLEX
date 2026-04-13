@@ -179,7 +179,7 @@ export const businesses: any[] = [
                     name: "Desh Deepak Misra",
                     role: "Joint President, Chemicals Business",
                     summary:
-                        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum has been the indus...",
+                        "A B.Tech graduate from IIT Bombay, Mr. Desh Deepak Misra brings over three decades of experience across leading Indian and global companies, including Reliance, Unilever, AkzoNobel, Raymond, PCBL, Shalina Healthcare, and Epsilon Carbon. He has extensive expertise in manufacturing operations and supply chain management, with over 15 years in senior leadership roles and a decade of experience leading businesses. Throughout his career, he has been known for building strong teams, improving operational efficiency, and leading large-scale organizational transformations. His work spans diverse sectors, including Chemicals, FMCG, Textiles, and Healthcare, where he has consistently driven sustainable and scalable growth.",
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
                 },
                 {
@@ -188,7 +188,7 @@ export const businesses: any[] = [
                     role:
                         "Executive Vice President, Sales and Marketing - Chemicals Business",
                     summary:
-                        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum has been the indus...",
+                        "With nearly three decades of experience, Rajesh Srivastava drives the vision and global Sales & Marketing strategy for the Chemicals Business at UFlex Limited. He plays a pivotal role in advancing sustainable, technology-led packaging solutions. Known for his strategic foresight and market acumen, he has consistently delivered impactful business outcomes. Prior to UFlex, he held leadership roles at Siegwerk, Flint Group, DIC India, and Asian Paints, contributing significantly to business expansion and market development.",
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
                 },
                 {
@@ -196,7 +196,7 @@ export const businesses: any[] = [
                     name: "Mr. Sanjiv Satishchandra Desai",
                     role: "Vice President, Manufacturing - Chemicals Business",
                     summary:
-                        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum has been the indus...",
+                        "An experienced professional with over three decades of expertise in managing manufacturing operations within the chemicals and packaging industry. As Vice President – Manufacturing at UFlex Limited, he oversees end-to-end plant operations, ensuring efficiency, quality, and continuous improvement. He has strong capabilities in production management, process optimization, and quality assurance, with a consistent track record of enhancing productivity and operational performance. Recognized for his hands-on leadership and technical depth, he contributes significantly to strengthening sustainable manufacturing practices and supporting overall business growth",
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
                 },
 

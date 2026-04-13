@@ -21,7 +21,7 @@ export default function ProductsPage() {
     categories: [
       { name: "Gravure Cylinders", key: "gravure" },
       { name: "CTP Flexo Plates", key: "ctp" },
-      { name: "Flexo Printing Sleeves", key: "sleeves" },
+      // { name: "Flexo Printing Sleeves", key: "sleeves" },
     ],
 
     sections: {

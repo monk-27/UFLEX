@@ -230,35 +230,14 @@ export const businesses: any[] = [
                     photo: "/images/ravi.png",
                     name: "Mr. Ravi Sharma",
                     role: "Joint President - Engineering and Solutions Delivery, Engineering Business",
-                    summary: `Mr. Ravi Sharma, joining in 1992, brings
-over 12 years of manufacturing experience,
-including tenure with notable
-multinationals like Allied Signals, Molins
-India Limited, and a subsidiary of Philips
-
-Carbon Black Limited (RPG Group). Holding
-a mechanical engineering degree from
-Thapar Institute of Engineering &;
-Technology, Patiala, Ravi has attended
-numerous management and leadership
-seminars globally. His expertise spans
-plant management, R&D, innovation,
-supply chain, and customer relations.
-Ravi's leadership has significantly
-enhanced the company's production of
-reliable, high-quality packaging machines.
-Guiding a team of skilled technocrats, his
-innovative initiatives have bolstered sales.
-His experience, dedication, and
-motivational skills inspire the
-organization's workforce.`,
+                    summary: `Mr. Ravi Sharma, joining in 1992, brings over 12 years of manufacturing experience, including tenure with notable multinationals like Allied Signals, Molins India Limited, and a subsidiary of Philips Carbon Black Limited (RPG Group). Holding a mechanical engineering degree from Thapar Institute of Engineering & Technology, Patiala, Ravi has attended numerous management and leadership seminars globally. His expertise spans plant management, R&D, innovation, supply chain, and customer relations. Ravi's leadership has significantly enhanced the company's production of reliable, high-quality packaging machines. Guiding a team of skilled technocrats, his innovative initiatives have bolstered sales. His experience, dedication, and motivational skills inspire the organization's workforce.`,
                     cta: { label: "Read More", href: "/leadership/ravi-sharma" },
                 },
                 {
                     photo: "/images/akash.png",
                     name: "Mr. Akash Khandelwal",
                     role: "Executive Vice President – Operations, Engineering Business",
-                    summary: ``,
+                    summary: `With nearly three decades of experience across manufacturing operations, strategy, project management, and quality. He drives operational excellence and business growth at engineering business. He brings strong expertise in manufacturing, product development, and business expansion, with a proven ability to enhance processes, improve efficiency, and boost productivity.`,
                     cta: { label: "Read More", href: "/leadership/akash-khandelwal" },
                 },
                 {
@@ -267,7 +246,7 @@ organization's workforce.`,
                     name: "Mr. Sumeet Arora",
                     role: "Senior Vice President - Sales and Marketing, Engineering Business",
                     summary:
-                        "Mr. Sumeet Arora heads Sales and Marketing for the Engineering Business as Senior Vice President.",
+                        "A seasoned business leader with over three decades of experience in SBU operations, P&L management, and driving market growth for capital equipment across domestic and international markets. Prior to joining UFlex, he served as Managing Director at Uhlmann India and held leadership positions with renowned organizations including Cenlub Industries, SS Packaging, ACG Worldwide, and Hassia Packaging. His extensive career reflects deep expertise in engineering and packaging, with a strong record of establishing new markets and strengthening existing ones. He holds a B.Tech in Mechanical Engineering from YMCA, Faridabad.",
                     cta: { label: "Read More", href: "/leadership/sumeet-arora" },
                 },
             ],

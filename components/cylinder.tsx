@@ -278,19 +278,7 @@ export const businesses: any[] = [
           photo: "/images/new/pe.jpg",
           name: "Mr. Parwez Izhar",
           role: "Executive Vice President - Printing Cylinders Business",
-          summary: `With nearly three decades of experience
-in strategic planning, project
-management, and business excellence,
-Mr. Izhar currently leads UFlex’s Printing
-cylinders business. His previous roles
-include COO at Fine Chemicals in Nigeria,
-as well as leadership positions at
-Primetech, Avon Crown Caps and
-Containers, Delphi Automotive Systems,
-and TATA Motors. Mr. Izhar holds a
-master’s degree in finance, operations,
-and strategy from XLRI Jamshedpur and is
-a Lean Six Sigma black belt champion.`,
+          summary: `Mr. Izhar is a seasoned professional with more than 3 decades of rich experience in strategic planning, project management, and business excellence. Mr. Izhar currently leads UFlex’s Printing cylinders business. He was at leadership positions at Fine Chemicals, Nigeria and PrimeTech, Dubai (A group company of Huhtamaki, Finland). His previous assignments were at Delphi Automotive Systems Ltd, and TATA Motors. Mr Izhar holds a B.Tech degree in Electronics & Communication (E&C) from BIT Sindri, followed by M.Tech (E&C), Master’s degree in Finance, Operations, and Strategy from XLRI Jamshedpur and is a Lean Six Sigma Black Belt Champion. Further, he is certified in “Impact of AI on Business Strategy” from Massachusetts Institute of Technology, USA  and an Independent Director from Indian Institute of Corporate Affairs, New Delhi.`,
           cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
         },
       ],

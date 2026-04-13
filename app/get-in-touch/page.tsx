@@ -380,8 +380,8 @@ export default function GetInTouch() {
     message: ""
   });
 
-  const [emailError, setEmailError] = useState<string | null>(null);
-  const [phoneError, setPhoneError] = useState<string | null>(null);
+  const [emailError, setEmailError] = useState<any>(null);
+  const [phoneError, setPhoneError] = useState<any>(null);
   const [wordCount, setWordCount] = useState(0);
 
   // CAPTCHA State
