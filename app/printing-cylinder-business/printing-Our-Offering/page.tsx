@@ -20,7 +20,7 @@ export default function ProductsPage() {
 
     categories: [
       { name: "Gravure Cylinders", key: "gravure" },
-      { name: "CTP Flexo Plates", key: "ctp" },
+      { name: "Flexo Plates", key: "ctp" },
       // { name: "Flexo Printing Sleeves", key: "sleeves" },
     ],
 
@@ -82,7 +82,7 @@ export default function ProductsPage() {
       },
 
       ctp: {
-        title: "CTP FLexo Plates",
+        title: "FLexo Plates",
         heroImageUrl:
           "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item2-05492714927.jpg",
         overview:

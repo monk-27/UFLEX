@@ -11,7 +11,7 @@ export const printingCylindersData = {
 
   categories: [
     { name: "Gravure Cylinders", key: "gravure" },
-    { name: "CTP Flexo Plates", key: "ctp" },
+    { name: "Flexo Plates", key: "ctp" },
     { name: "Flexo Printing Sleeves", key: "sleeves" },
   ],
 
@@ -73,7 +73,7 @@ export const printingCylindersData = {
     },
 
     ctp: {
-      title: "CTP Flexo Plates",
+      title: "Flexo Plates",
       overview:
         "The advanced flexo plate manufacturing set-up with laser imaging can produce high definition images of 5080 DPI.",
       bullets: [

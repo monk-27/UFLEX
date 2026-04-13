@@ -280,7 +280,7 @@ const BUSINESS_PRODUCTS: Record<string, string[]> = {
   "Chemicals": ["Water Based Inks", "Solvent Based Inks", "Radiation Curable Inks", "Water Based Adhesives", "Solvent Free Adhesives", "Water Based Coatings", "PU Ink Binders"],
   "Holography": ["Hologram", "Holographic Film", "Textile Value Addition Product", "Hot Stamping Foil", "Labeling Solution"],
   "Engineering": ["Packaging Machines", "Converting Machines", "Speciality Products"],
-  "Printing Cylinders": ["Gravure Cylinders", "CTP Flexo Plates", "Flexo Printing Sleeves"],
+  "Printing Cylinders": ["Gravure Cylinders", "Flexo Plates", "Flexo Printing Sleeves"],
   "Corporate": ["Media / PR", "Investor Relations", "Career Enquiry", "General Feedback"]
 };
 

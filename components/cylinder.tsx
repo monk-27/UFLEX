@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import React, { useState } from 'react'
 import { SiteFooter } from './site-footer'
 import Image from 'next/image'
-import SimpleCarousel, { SliderItem } from './slidercomp'
+// import SimpleCarousel, { SliderItem } from './slidercomp'
 import { OverlayModule, OverlayModules } from './overlay'
 import { Leader, LeaderSpotlight } from './leader'
 import { AwardItem, AwardsAccolades } from './awards'
@@ -16,6 +16,7 @@ import Keypeople from './buissnessreusbales/keypeople'
 import { CaseStudySection } from './buissnessreusbales/case-studies'
 import { AwardsSection } from './buissnessreusbales/AwardsSection'
 import { ReadMoreDialog } from './expandabletext'
+import SimpleCarousel, { SliderItem } from './clyslider'
 
 
 
@@ -33,22 +34,22 @@ applications.`,
     img: "/images/new/p2.png",
     // dynamiclink:"/printing-cylinder-business/printing-Our-Offering",
 
-    title: "CTP Flexo Plates",
+    title: "Flexo Plates",
     desc: `The advanced flexo plate manufacturing
 setup, featuring laser imaging with 5080
 DPI, sets a new standard for high-
 definition flexographic plates.`,
   },
-  {
-    img: "/images/new/p3.png",
-    // dynamiclink:"/printing-cylinder-business/printing-Our-Offering",
+  //   {
+  //     img: "/images/new/p3.png",
+  //     // dynamiclink:"/printing-cylinder-business/printing-Our-Offering",
 
-    title: "Flexo Printing Sleeves",
-    desc: `UFlex’s flexo printing sleeves provide
-superior print quality, operational ease
-and cost-efficiency in flexography
-printing.`,
-  },
+  //     title: "Flexo Printing Sleeves",
+  //     desc: `UFlex’s flexo printing sleeves provide
+  // superior print quality, operational ease
+  // and cost-efficiency in flexography
+  // printing.`,
+  //   },
 
 
 
@@ -135,7 +136,7 @@ export const businesses: any[] = [
         },
         {
           id: "ctp-flexo-plates",
-          title: "CTP Flexo Plates",
+          title: "Flexo Plates",
           image: "/images/ctp.png",
           description:
             "Computer-to-plate flexographic plates for consistent, high-quality impressions.",
@@ -394,7 +395,7 @@ const CylComp: React.FC<Props> = ({ business }) => {
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
               </motion.div>
             </div>
-            <SimpleCarousel heading="Our Offerings"
+            {/* <SimpleCarousel heading="Our Offerings"
               // items={SliderItems} 
               items={SliderItems.map(item => {
                 const titleLower = item.title.toLowerCase();
@@ -414,7 +415,31 @@ const CylComp: React.FC<Props> = ({ business }) => {
                   dynamiclink: `/printing-cylinder-business/printing-Our-Offering?cat=${catKey}`,
                 };
               })}
-              imageHeight={280} />
+              imageHeight={280} /> */}
+            <SimpleCarousel
+              heading="Our Offerings"
+              items={SliderItems.map(item => {
+                const titleLower = item.title.toLowerCase().trim();
+
+                let catKey = "gravure";   // ← Default should be "gravure" (not empty)
+
+                if (titleLower.includes("gravure")) {
+                  catKey = "gravure";
+                }
+                else if (titleLower.includes("ctp") || titleLower.includes("flexo plate")) {
+                  catKey = "ctp";
+                }
+                else if (titleLower.includes("sleeve") || titleLower.includes("flexo")) {
+                  catKey = "sleeves";
+                }
+
+                return {
+                  ...item,
+                  dynamiclink: `/printing-cylinder-business/printing-Our-Offering?cat=${catKey}`,
+                };
+              })}
+              imageHeight={280}
+            />
 
 
             {business.innovations && (

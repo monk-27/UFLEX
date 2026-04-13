@@ -77,7 +77,7 @@ const BUSINESS_PRODUCTS: Record<string, string[]> = {
   ],
   "Printing Cylinders": [
     "Gravure Cylinders",
-    "CTP Flexo Plates",
+    "Flexo Plates",
     // "Flexo Printing Sleeves",
   ],
 };
