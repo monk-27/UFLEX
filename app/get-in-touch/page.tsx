@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useMemo, useState, useCallback, useEffect, useRef, FormEvent } from "react";
 import { motion, type MotionProps } from "framer-motion";
-import { Mail, Phone, MapPin, Building2, Globe2, Send, Filter, Search, RefreshCw, X } from "lucide-react";
+import { Mail, Phone, MapPin, Building2, Globe2, Send, Filter, Search, RefreshCw, X, FileText } from "lucide-react";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import Swal from "sweetalert2";
@@ -26,6 +26,7 @@ type Office = {
   city?: string;
   address: string[];   // multiline
   phone?: string;
+  fax?: string;
   email?: string;
 };
 
@@ -39,8 +40,9 @@ const OFFICES: Office[] = [
     business: "Corporate",
     country: "India",
     city: "Noida, Uttar Pradesh",
-    address: ["A-1, Sector-60", "Noida – 201307, Uttar Pradesh, India"],
-    phone: "+91 120 4012345/6108444 (30 lines) ",
+    address: ["A – 107 - 108, Sector - IV,", "Noida - 201301 (U.P.), India."],
+    phone: "+91 120 4012345 (30 lines) ",
+    fax: "+91 120 2556040",
     email: "corpcomm@uflexltd.com",
   },
   {
@@ -315,9 +317,12 @@ function OfficeCard({ o }: { o: Office }) {
           <h3 className="lato-700 text-lg text-[#117ABA] underline underline-offset-4">
             {o.name}
           </h3>
-          <p className="text-sm text-slate-600 mt-1">
+          {
+            o.name !="Registered Office" && (<p className="text-sm text-slate-600 mt-1">
             {o.business} · {o.city ? `${o.city}, ` : ""}{o.country}
-          </p>
+          </p>)
+          }
+          
 
           <div className="mt-3 space-y-3 text-sm text-slate-800">
             {/* Address */}
@@ -332,11 +337,20 @@ function OfficeCard({ o }: { o: Office }) {
             {o.phone && (
               <div className="flex gap-3">
                 <Phone className="h-5 w-5 text-slate-500 flex-none" />
-                <span>Ph : {o.phone}</span>
+                <span> {o.phone}</span>
+              </div>
+            )}
+            
+            {o.fax && (
+              <div className="flex gap-3">
+                <FileText className="h-5 w-5 text-slate-500 flex-none" />
+                <span> {o.fax}</span>
               </div>
             )}
 
             {/* Email */}
+            {
+            o.name !="Registered Office" && (<>
             {o.email && (
               <div className="flex gap-3">
                 <Mail className="h-5 w-5 text-slate-500 flex-none" />
@@ -347,7 +361,8 @@ function OfficeCard({ o }: { o: Office }) {
                   {o.email}
                 </a>
               </div>
-            )}
+            )}</>)}
+            
           </div>
         </div>
       </div>
