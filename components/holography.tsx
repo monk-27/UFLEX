@@ -284,7 +284,7 @@ recycle the same. \n\n We have many solutions of sustainability segment- hologra
             details: [
 
                 {
-                    photo: "/images/vinod.png",
+                    photo: "/images/media/vinod.png",
                     name: "Mr. Vinod Hariharan",
                     role: "Executive Vice President – Holography Business",
                     summary: `With almost three decades of
@@ -319,7 +319,7 @@ Kolkata.`,
                     cta: { label: "Read More", href: "/leadership/vinod-hariharan" }
                 },
                 {
-                    photo: "/images/pathak.png",
+                    photo: "/images/media/pathak.png",
                     name: "Mr. G.P. Pathak",
                     role: "Vice President – Operations and New Product Development, Holography Business",
                     summary: `With over three decades of
@@ -357,7 +357,7 @@ Kolkata.`,
                     cta: { label: "Read More", href: "/leadership/gp-pathak" }
                 },
                 {
-                    photo: "/images/rakesh.png",
+                    photo: "/images/media/rakesh.png",
                     name: "Mr. Rakesh Khazanchi",
                     role: "Vice President – Sales and Marketing, Holography Business",
                     summary: `With over 35 years of rich experience in Sales and Marketing, Mr. Rakesh Khazanchi brings deep expertise in strategy, brand building, and sales management processes. Before joining UFlex’s Holography business in 2012 as AVP-Marketing, he held key roles at several prestigious organizations, including Escorts Limited and Xerox INDIA LTD., where he honed his leadership and strategic acumen. In his current role, Mr. Khazanchi heads the Sales & Marketing team of the Holography Business, driving transformational growth through a sharp focus on customer-centric solutions. Under his dynamic leadership, the business has witnessed remarkable three-digit growth and is well on its path to becoming a global leader in Holographic Solutions. Mr. Khazanchi holds a postgraduate degree, which complements his extensive professional experience.`,
