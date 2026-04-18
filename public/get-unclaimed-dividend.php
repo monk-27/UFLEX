@@ -1,9 +1,8 @@
 <?php
 
-// Allow cross-origin requests for testing
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Methods: POST, GET");
-header("Content-Type: application/json; charset=UTF-8");
+// Security: CORS whitelist + IP-based rate limiting
+require_once __DIR__ . '/_security-helper.php';
+uflex_rate_limit_check(30, 900); // max 30 lookups per IP per 15 minutes
 
 function parse_env_file($path)
 {
@@ -52,10 +51,13 @@ if (empty($folioNo)) {
 }
 
 try {
-  $dbHost = $env['DB_HOST'] ?? 'localhost';
-  $dbUser = $env['DB_USER'] ?? 'uflex_quoteuser';
-  $dbPass = isset($env['DB_PASSWORD_B64']) ? base64_decode($env['DB_PASSWORD_B64']) : base64_decode('V2pvaTskbUlNWzBM');
-  $dbName = $env['DB_NAME'] ?? 'uflex-quote';
+  if (empty($env['DB_HOST']) || empty($env['DB_USER']) || empty($env['DB_PASSWORD_B64']) || empty($env['DB_NAME'])) {
+    throw new RuntimeException('Database configuration is missing from environment.');
+  }
+  $dbHost = $env['DB_HOST'];
+  $dbUser = $env['DB_USER'];
+  $dbPass = base64_decode($env['DB_PASSWORD_B64']);
+  $dbName = $env['DB_NAME'];
 
   $pdo = new PDO("mysql:host=$dbHost;dbname=$dbName;charset=utf8mb4", $dbUser, $dbPass, [
     PDO::ATTR_TIMEOUT => 5,
@@ -81,11 +83,11 @@ try {
       ]);
   }
 
-} catch (PDOException $e) {
+} catch (Throwable $e) {
   error_log("Database Error in get-unclaimed-dividend.php: " . $e->getMessage());
   http_response_code(500);
   echo json_encode([
-      'success' => false, 
+      'success' => false,
       'message' => 'Failed to connect to the database or execute query.'
   ]);
 }

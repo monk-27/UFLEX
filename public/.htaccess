@@ -1,3 +1,70 @@
+# ==========================================
+# SECURITY HEADERS (VAPT Remediation)
+# Added: April 2026
+# ==========================================
+<IfModule mod_headers.c>
+  # Content Security Policy (APPSEC-002)
+  # Permissive policy that allows Next.js + Vercel Analytics + Google Analytics
+  # while still blocking obvious injection attacks
+  Header always set Content-Security-Policy "default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.vercel-scripts.com https://*.vercel-insights.com https://*.google-analytics.com https://*.googletagmanager.com https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https:; media-src 'self' blob: https:; connect-src 'self' https://*.vercel-insights.com https://*.vercel-scripts.com https://*.google-analytics.com https://*.googletagmanager.com; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
+
+  # Prevent MIME-type sniffing (APPSEC-006)
+  Header always set X-Content-Type-Options "nosniff"
+
+  # Referrer Policy (APPSEC-003)
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Permissions Policy (APPSEC-004)
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), fullscreen=(self)"
+
+  # Clickjacking protection
+  Header always set X-Frame-Options "SAMEORIGIN"
+
+  # Legacy XSS filter (defense in depth)
+  Header always set X-XSS-Protection "1; mode=block"
+
+  # Force HTTPS for 1 year (HSTS)
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+  # Hide server fingerprint
+  Header unset X-Powered-By
+  Header unset Server
+  Header always unset X-Powered-By
+
+  # Cache-Control for HTML (APPSEC-009)
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+
+  # Cache-Control for static assets (long cache with versioning)
+  <FilesMatch "\.(css|js|jpg|jpeg|png|gif|svg|woff|woff2|ttf|eot|ico|webp|mp4|webm)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # No caching for PHP API responses
+  <FilesMatch "\.php$">
+    Header set Cache-Control "no-store, no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# Hide Apache server signature (INFDIS-001)
+ServerSignature Off
+
+# Hide PHP version header
+<IfModule mod_php.c>
+  php_flag expose_php Off
+</IfModule>
+
+# Block direct access to sensitive files
+<FilesMatch "^(\.env|\.env\.local|\.env\..*|composer\.json|composer\.lock|package\.json|package-lock\.json|\.gitignore|\.htaccess)$">
+  Require all denied
+</FilesMatch>
+
+# Block access to the security helper (PHP include only)
+<Files "_security-helper.php">
+  Require all denied
+</Files>
+
 RewriteEngine On
 
 # ==========================================

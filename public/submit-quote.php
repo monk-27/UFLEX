@@ -1,9 +1,8 @@
 <?php
 
-// Allow cross-origin requests for testing (optional, usually not needed if on same domain)
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Methods: POST");
-header("Content-Type: application/json; charset=UTF-8");
+// Security: CORS whitelist + IP-based rate limiting
+require_once __DIR__ . '/_security-helper.php';
+uflex_rate_limit_check(8, 900); // max 8 quote submissions per IP per 15 minutes
 
 function parse_env_file($path)
 {
@@ -168,10 +167,13 @@ if (!empty($_FILES['files']['name'][0]) && empty($uploadedFiles) && !empty($uplo
 
 // 2.5 Save to MySQL Database
 try {
-  $dbHost = $env['DB_HOST'] ?? 'localhost';
-  $dbUser = $env['DB_USER'] ?? 'uflex_quoteuser';
-  $dbPass = isset($env['DB_PASSWORD_B64']) ? base64_decode($env['DB_PASSWORD_B64']) : base64_decode('V2pvaTskbUlNWzBM');
-  $dbName = $env['DB_NAME'] ?? 'uflex-quote';
+  if (empty($env['DB_HOST']) || empty($env['DB_USER']) || empty($env['DB_PASSWORD_B64']) || empty($env['DB_NAME'])) {
+    throw new RuntimeException('Database configuration is missing from environment.');
+  }
+  $dbHost = $env['DB_HOST'];
+  $dbUser = $env['DB_USER'];
+  $dbPass = base64_decode($env['DB_PASSWORD_B64']);
+  $dbName = $env['DB_NAME'];
 
   // Added a 5-second connection timeout for PDO
   $pdo = new PDO("mysql:host=$dbHost;dbname=$dbName;charset=utf8mb4", $dbUser, $dbPass, [
@@ -193,9 +195,9 @@ try {
     $message_body,
     $attachmentsJson
   ]);
-} catch (PDOException $e) {
-  // Log error but continue with email sending
-  error_log("Database Error in PHP: " . $e->getMessage());
+} catch (Throwable $e) {
+  // Log error but continue with email sending (graceful degradation)
+  error_log("Database Error in submit-quote.php: " . $e->getMessage());
 }
 
 // 3. Send Email Notification using PHPMailer
