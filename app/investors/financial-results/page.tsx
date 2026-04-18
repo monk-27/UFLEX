@@ -66,6 +66,7 @@ const quarterlyConsolidated: DocItem[] = [
   {
     text: "Financial results for the Quarter ended 31.12.2025",
     // hideLink: true,
+    // https://beta.uflexltd.com/media/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_31DEC2025.pdf
     link: "https://beta.uflexltd.com/media/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_31DEC2025.pdf",
   },
   {
