@@ -32,25 +32,25 @@ const sustainabilityReports = [
     year: "2024–25",
     // title: "Sustainability Report 2023–24",
     image: "/images/sus/25.png",
-    href: "https://www.uflexltd.com/pdf/Sustainability/UFlex_Sustainability_Report_2024-25.pdf",
+    href: "https://beta.uflexltd.com/media/pdf/Sustainability/UFlex_Sustainability_Report_2024-25.pdf",
   },
   {
     year: "2023–24",
     // title: "Sustainability Report 2023–24",
     image: "/images/sus/2024.png",
-    href: "https://www.uflexltd.com/pdf/Sustainability/UFlex_Sustainability_Report_2023-24.pdf",
+    href: "https://beta.uflexltd.com/media/pdf/Sustainability/UFlex_Sustainability_Report_2023-24.pdf",
   },
   {
      year: "2022–23",
     // title: "Sustainability Report 2022–23",
     image: "/images/sus/2023.png",
-    href: "https://www.uflexltd.com/pdf/Sustainability/UFlex_Sustainability_Report_2022-23.pdf",
+    href: "https://beta.uflexltd.com/media/pdf/Sustainability/UFlex_Sustainability_Report_2022-23.pdf",
   },
   {
     year: "2021–22",
     // title: "Sustainability Report 2021–22",
     image: "/images/sus/2022.png",
-    href: "https://www.uflexltd.com/pdf/Sustainability/UFlex_Sustainability_Report_2021-22.pdf",
+    href: "https://beta.uflexltd.com/media/pdf/Sustainability/UFlex_Sustainability_Report_2021-22.pdf",
   },
 ];
 
@@ -58,11 +58,11 @@ const sustainabilityReports = [
 const materialityReports = [
   {
     title: "Materiality Assessment Report – Hungary 2025",
-    href: "https://www.uflexltd.com/pdf/Sustainability/MAR/FF_Hungary_2025.pdf",
+    href: "https://beta.uflexltd.com/media/pdf/Sustainability/MAR/FF_Hungary_2025.pdf",
   },
   {
     title: "Materiality Assessment Report – Poland 2025",
-    href: "https://www.uflexltd.com/pdf/Sustainability/MAR/FF_Poland_2025.pdf",
+    href: "https://beta.uflexltd.com/media/pdf/Sustainability/MAR/FF_Poland_2025.pdf",
   },
 ];
 
@@ -70,15 +70,15 @@ const materialityReports = [
 const assuranceStatements = [
   {
     title: "Assurance Statement – BRSR 2024–25",
-    href: "https://www.uflexltd.com/pdf/Sustainability/AS/UF_BRSR_2024-25.pdf",
+    href: "https://beta.uflexltd.com/media/pdf/Sustainability/AS/UF_BRSR_2024-25.pdf",
   },
   {
     title: "Assurance Statement – CDP 2024–25",
-    href: "https://www.uflexltd.com/pdf/Sustainability/AS/UF_CDP_2024-25.pdf",
+    href: "https://beta.uflexltd.com/media/pdf/Sustainability/AS/UF_CDP_2024-25.pdf",
   },
   {
     title: "Assurance Statement – Sustainability Report 2024–25",
-    href: "https://www.uflexltd.com/pdf/Sustainability/AS/UF_SR_2024-25.pdf",
+    href: "https://beta.uflexltd.com/media/pdf/Sustainability/AS/UF_SR_2024-25.pdf",
   },
 ];
 
