@@ -373,7 +373,7 @@ function YearTabs({
           className={[
             "px-10 py-3 text-xs lato-400 transition",
             activeYear === y
-              ? "bg-[#F5F5F5]  text-[#555]  border-b-[0.7px] border-b-[#117ABA] "
+              ? "bg-[#F5F5F5]  text-[#555]  border-b-[0.7px] border-b-[#173366] "
               : "bg-[#F5F5F5]  text-[#555]",
           ].join(" ")}
         >
@@ -469,8 +469,8 @@ export default function PressRoomPage() {
       <main className=" py-1 space-y-1">
 
         {/* -------- MEDIA RELEASES -------- */}
-        <section className="w-screen relative bg-[#117ABA] mt-8 py-6">
-          <h2 className="text-white text-[24px] lato-700  md:text-[42px]  py-4 text-center ">
+        <section className="w-screen relative bg-[#97c3ef] mt-8 py-6">
+          <h2 className="text-[#173366] text-[24px] lato-700  md:text-[42px]  py-4 text-center ">
             Media Releases
           </h2>
 
@@ -479,7 +479,7 @@ export default function PressRoomPage() {
           <div className="text-center flex justify-center py-4">
             <Link href="/media-releases"
 
-              className="inline-flex items-center gap-1 lato-700 text-[18px] text-white "
+              className="inline-flex items-center gap-1 lato-700 text-[18px] text-[#173366] "
             >
               <div className="underline underline-offset-2">
 
@@ -492,7 +492,7 @@ export default function PressRoomPage() {
 
         </section>
         <section className="max-w-7xl mx-auto px-4">
-          <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px]  text-center  pt-4">
+          <h2 className="text-[24px] lato-700 text-[#173366] md:text-[42px]  text-center  pt-4">
             Media Coverage
           </h2>
 
@@ -503,7 +503,7 @@ export default function PressRoomPage() {
           <div className="text-center flex justify-center pt-4">
             <Link href="/media-coverage"
 
-              className="inline-flex items-center gap-1 lato-700 text-[18px] text-[#117ABA] "
+              className="inline-flex items-center gap-1 lato-700 text-[18px] text-[#173366] "
             >
               <div className="underline underline-offset-2">
 
@@ -517,7 +517,7 @@ export default function PressRoomPage() {
         </section>
 
         <section className="max-w-7xl mx-auto px-4">
-          <h2 className="py-4 text-[24px] lato-700 text-[#117ABA] md:text-[42px] text-center">
+          <h2 className="py-4 text-[24px] lato-700 text-[#173366] md:text-[42px] text-center">
             Gallery
           </h2>
 
@@ -569,7 +569,7 @@ export default function PressRoomPage() {
           <div className="pt-12 flex justify-center pb-12 ">
             <span className="text-[#000000] text-[20px] lato-400">
               For any media queries, please send an email to the Global Corporate Communications Team :{" "}
-              <span className="text-[#117ABA]">corpcomm@uflexltd.com</span>
+              <span className="text-[#173366]">corpcomm@uflexltd.com</span>
             </span>
           </div>
         </section>

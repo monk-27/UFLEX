@@ -24,7 +24,7 @@ const CompanyInfo = () => {
               <h3 className="text-2xl lato-700 text-black md:text-3xl">
                 Established in 1985.
               </h3>
-              <h1 className="text-3xl lato-500 text-[#117ABA] md:text-4xl">
+              <h1 className="text-3xl lato-500 text-[#173366] md:text-4xl">
                 India’s Largest Multinational <br />
                 Flexible Packaging Leader.
               </h1>
@@ -47,7 +47,7 @@ const CompanyInfo = () => {
               {/* Read More Trigger */}
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="inline-flex items-center gap-2 lato-400 text-[#117ABA] transition-colors"
+                className="inline-flex items-center gap-2 lato-400 text-[#173366] transition-colors"
               >
                 Read More
                 <ArrowRight className="h-4 w-4" />
@@ -115,7 +115,7 @@ const CompanyInfo = () => {
             <div className="mt-8 text-center">
               <button
                 onClick={() => setIsModalOpen(false)}
-                className="rounded-lg bg-[#117ABA] px-6 py-3 font-medium text-white transition"
+                className="rounded-lg bg-[#173366] px-6 py-3 font-medium text-white transition"
               >
                 Close
               </button>

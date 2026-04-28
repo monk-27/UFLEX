@@ -175,7 +175,7 @@ export default function SustainabilityShowcase() {
   return (
     <section className="bg-[#E6E7E7] py-12 lg:py-8 mb-4">
       <motion.h3
-          className="text-center text-[24px] lato-700 text-[#117ABA] md:text-[42px]  mb-6"
+          className="text-center text-[24px] lato-700 text-[#173366] md:text-[42px]  mb-6"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}

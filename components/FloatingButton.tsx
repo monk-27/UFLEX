@@ -16,8 +16,8 @@ export default function FloatingButton() {
         w-14 hover:w-40
         overflow-hidden
         rounded-full
-        border border-[#117ABA]
-        text-[#117ABA]
+        border border-[#173366]
+        text-[#173366]
         bg-white
         shadow-[0_10px_25px_rgba(17,122,186,0.35)]
         transition-[width,box-shadow,transform]
@@ -25,7 +25,7 @@ export default function FloatingButton() {
         hover:shadow-[0_15px_35px_rgba(17,122,186,0.45)]
         hover:scale-[1.03]
         focus:outline-none
-        focus:ring-4 focus:ring-[#117ABA]/40
+        focus:ring-4 focus:ring-[#173366]/40
       "
     >
       {/* Icon */}

@@ -4,7 +4,7 @@ This project recreates the provided UFlex theme in a modern Next.js App Router a
 
 ## What Stayed the Same (Parity with Source)
 - Text content: Mirrored from the provided pages (Home, About Us, What We Do, all Business pages, Sustainability, Hall of Fame, Careers, Press Room, Get in Touch).
-- Color direction: Primary (#5077AF) and accent (#97C3EF) maintained as core brand cues.
+- Color direction: Primary (#5077AF) and accent (#117ABA) maintained as core brand cues.
 - Information architecture: Main sections and navigation structure preserved.
 - Media placeholders: Video and images replaced with high-quality placeholders where originals were not available, ready to swap with real assets.
 

@@ -111,7 +111,7 @@ const scrollNext = useCallback(() => {
     <>
       <section className="mt-[30px] px-4 py-0 text-center sm:mt-8 sm:bg-gray-100 sm:pt-12 md:px-12">
         <div className="mx-auto max-w-7xl  md:px-8">
-          <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px]  text-start mb-12">
+          <h2 className="text-[24px] lato-700 text-[#173366] md:text-[42px]  text-start mb-12">
             Board of Directors
           </h2>
 
@@ -185,9 +185,9 @@ const scrollNext = useCallback(() => {
                       <button
                         onClick={() => setSelected(d)}
                         className="
-                          z-10 border border-[#117ABA] text-[#117ABA]
+                          z-10 border border-[#173366] text-[#173366]
                           text-xs px-2 py-[3px] leading-none
-                          hover:bg-[#117ABA] hover:text-white transition
+                          hover:bg-[#173366] hover:text-white transition
                           bg-white/90
                         "
                       >
@@ -271,14 +271,14 @@ const scrollNext = useCallback(() => {
 
               <div className="p-6 md:p-8">
                 <h3 className="text-xl md:text-2xl font-bold text-black">{selected.name}</h3>
-                <p className="mt-1 lato-700 text-[#117ABA]">{selected.position}</p>
+                <p className="mt-1 lato-700 text-[#173366]">{selected.position}</p>
                 <p className="mt-4 text-sm md:text-base leading-relaxed text-black">
                   {selected.bio}
                 </p>
                 {/* <div className="mt-6">
                   <button
                     onClick={() => setSelected(null)}
-                    className="bg-[#117ABA] text-white px-4 py-2 text-sm hover:bg-[#0f6aa4] transition"
+                    className="bg-[#173366] text-white px-4 py-2 text-sm hover:bg-[#0f6aa4] transition"
                   >
                     Close
                   </button>

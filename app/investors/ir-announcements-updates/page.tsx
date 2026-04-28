@@ -1461,7 +1461,7 @@ export default function Page() {
                                     >
                                         {tab.label}
                                         {isActive && (
-                                            <span className="absolute left-0 right-0 -bottom-[3px] h-[3px] bg-[#117ABA]" />
+                                            <span className="absolute left-0 right-0 -bottom-[3px] h-[3px] bg-[#173366]" />
                                         )}
                                     </button>
                                 );
@@ -1485,7 +1485,7 @@ export default function Page() {
                                     >
                                         {tab.label}
                                         {isActive && (
-                                            <span className="absolute left-0 right-0 -bottom-[3px] h-[3px] bg-[#117ABA]" />
+                                            <span className="absolute left-0 right-0 -bottom-[3px] h-[3px] bg-[#173366]" />
                                         )}
                                     </button>
                                 );
@@ -1500,7 +1500,7 @@ export default function Page() {
                 {/* CONTENT: BLUE HEADER + LIST */}
                 <section className="max-w-6xl mx-auto px-4 sm:px-12 md:px-20 lg:px-28 py-8">
                     {/* Blue Header */}
-                    <div className="w-full bg-[#117ABA] py-3 px-6">
+                    <div className="w-full bg-[#173366] py-3 px-6">
                         <h2 className="text-white text-sm sm:text-[16px] lato-400 text-center">
                             {activeTab.header}
                         </h2>
@@ -1522,7 +1522,7 @@ export default function Page() {
                                         he shareholders who have not claimed their dividends for any Financial Years
                                         from 2017-18 to 2024-25 or have not updated their KYC or any issues related
                                         to unclaimed dividends and shares may write to the Company’s
-                                        <span className="text-[#117ABA]"> Registrar and Transfer Agent (RTA)</span>
+                                        <span className="text-[#173366]"> Registrar and Transfer Agent (RTA)</span>
                                         i.e. M/s Beetal Financial & Computer Services (P) Limited.
                                     </p>
 
@@ -1536,7 +1536,7 @@ export default function Page() {
                                         Mandatory Fields are Marked with an Asterisk (*)
                                     </p>
 
-                                    <label className="block text-[#117ABA] mb-2 text-[15px]">
+                                    <label className="block text-[#173366] mb-2 text-[15px]">
                                         Folio (7 Digit) / DP-ID & Client-ID (16 Digit)
                                     </label>
 
@@ -1548,13 +1548,13 @@ export default function Page() {
                                         onKeyDown={(e) => {
                                             if (e.key === 'Enter') handleFolioSearch();
                                         }}
-                                        className="text-black w-full border border-gray-300 rounded px-4 py-2 mb-4 focus:outline-none focus:ring-1 focus:ring-[#117ABA]"
+                                        className="text-black w-full border border-gray-300 rounded px-4 py-2 mb-4 focus:outline-none focus:ring-1 focus:ring-[#173366]"
                                     />
 
                                     <button
                                         onClick={handleFolioSearch}
                                         disabled={isSearching}
-                                        className="bg-[#117ABA] text-white px-6 py-2 rounded tracking-widest text-sm disabled:opacity-50"
+                                        className="bg-[#173366] text-white px-6 py-2 rounded tracking-widest text-sm disabled:opacity-50"
                                     >
                                         {isSearching ? "SEARCHING..." : "SUBMIT NOW"}
                                     </button>
@@ -1565,7 +1565,7 @@ export default function Page() {
 
                                     {dividendData && dividendData.length > 0 && (
                                         <div className="mt-8">
-                                            <h3 className="text-[#117ABA] text-lg font-semibold mb-3">Shareholder Unclaimed Dividend Details / KYC Status</h3>
+                                            <h3 className="text-[#173366] text-lg font-semibold mb-3">Shareholder Unclaimed Dividend Details / KYC Status</h3>
                                             <div className="border border-gray-200 rounded overflow-hidden mb-8">
                                                 <table className="w-full text-left text-[15px] lato-400 text-gray-700">
                                                     <tbody>
@@ -1593,7 +1593,7 @@ export default function Page() {
                                                 </table>
                                             </div>
 
-                                            <h3 className="text-[#117ABA] text-lg font-semibold mb-3">Dividend Details of Shareholder</h3>
+                                            <h3 className="text-[#173366] text-lg font-semibold mb-3">Dividend Details of Shareholder</h3>
                                             <div className="border border-gray-200 rounded overflow-x-auto">
                                                 <table className="w-full text-center text-[15px] lato-400 text-gray-700 min-w-[700px]">
                                                     <thead className="bg-[#f9f9f9] border-b border-gray-200 text-black">
@@ -1623,7 +1623,7 @@ export default function Page() {
 
                                     <p className="mt-6 text-gray-600">
                                         <strong>Note:</strong> Please{" "}
-                                        <a href="https://beta.uflexltd.com/media/pdf/SC//2025/KYC_FORMS.pdf" target="_blank" className="text-[#117ABA] underline cursor-pointer">
+                                        <a href="https://beta.uflexltd.com/media/pdf/SC//2025/KYC_FORMS.pdf" target="_blank" className="text-[#173366] underline cursor-pointer">
                                             download
                                         </a>{" "}
                                         the attached KYC Form and submit the same with the RTA where the KYC
@@ -1657,8 +1657,8 @@ export default function Page() {
                                         key={year.year}
                                         onClick={() => setActiveYear(year.year)}
                                         className={`px-4 py-2 border text-sm rounded-full ${activeYear === year.year
-                                            ? "bg-[#117ABA] text-white border-[#117ABA]"
-                                            : "bg-white text-black border-[#117ABA]"
+                                            ? "bg-[#173366] text-white border-[#173366]"
+                                            : "bg-white text-black border-[#173366]"
                                             }`}
                                     >
                                         {year.year}
@@ -1695,7 +1695,7 @@ export default function Page() {
                                     Grievances are given below:
                                 </p>
                                 {/* First Block */}
-                                <h2 className="text-[#117ABA] text-lg lato-700 mb-2">
+                                <h2 className="text-[#173366] text-lg lato-700 mb-2">
                                     {tabItems["grievance-redressal"][0].title}
                                 </h2>
 
@@ -1707,7 +1707,7 @@ export default function Page() {
                                     <strong className="lato-500 text-[16px] text-[#000000]">Email:</strong>{" "}
                                     <a
                                         href={`mailto:${tabItems["grievance-redressal"][0].email}`}
-                                        className="text-[#117ABA]"
+                                        className="text-[#173366]"
                                     >
                                         {tabItems["grievance-redressal"][0].email}
                                     </a>
@@ -1731,7 +1731,7 @@ export default function Page() {
                                     <strong className="lato-500 text-[16px] text-[#000000]">Email:</strong>{" "}
                                     <a
                                         href={`mailto:${tabItems["grievance-redressal"][1].email}`}
-                                        className="text-[#117ABA]"
+                                        className="text-[#173366]"
                                     >
                                         {tabItems["grievance-redressal"][1].email}
                                     </a>
@@ -1740,7 +1740,7 @@ export default function Page() {
                         ) : isRegistrar ? (
                             <div className="bg-white px-6 py-6 leading-relaxed text-[15px] lato-400">
 
-                                <h2 className="text-[#117ABA] text-lg lato-700 mb-2">
+                                <h2 className="text-[#173366] text-lg lato-700 mb-2">
                                     M/s Beetal Financial & Computer Services (P) Limited
                                 </h2>
 
@@ -1769,7 +1769,7 @@ export default function Page() {
                                     <strong className="text-black">Email:</strong>{" "}
                                     <a
                                         href="mailto:beetal@beetalfinancial.com"
-                                        className="text-[#117ABA]"
+                                        className="text-[#173366]"
                                     >
                                         beetal@beetalfinancial.com
                                     </a>
@@ -1819,7 +1819,7 @@ export default function Page() {
                                                 <span>{group.date}</span>
                                             </div>
 
-                                            <div className="mt-1 h-[3px] bg-[#117ABA] mx-4" />
+                                            <div className="mt-1 h-[3px] bg-[#173366] mx-4" />
 
                                             <div className="px-4 pb-4">
                                                 {group.items.map((doc, idx) => (

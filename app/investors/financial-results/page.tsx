@@ -768,8 +768,8 @@ const SubsidiariesSection: React.FC = () => {
               className={[
                 "px-4 py-2 rounded-full border text-xs sm:text-sm md:text-base lato-600 transition-all",
                 active
-                  ? "bg-[#117ABA] text-white border-[#117ABA]"
-                  : "bg-white text-[#000000] border-[#117ABA]",
+                  ? "bg-[#173366] text-white border-[#173366]"
+                  : "bg-white text-[#000000] border-[#173366]",
               ].join(" ")}
             >
               {year.label}
@@ -1192,8 +1192,8 @@ const AdvertisementsSection: React.FC = () => {
               className={[
                 "px-4 py-2 rounded-full border text-xs sm:text-sm md:text-base lato-600 transition-all",
                 active
-                  ? "bg-[#117ABA] text-white border-[#117ABA]"
-                  : "bg-white text-[#000000] border-[#117ABA]",
+                  ? "bg-[#173366] text-white border-[#173366]"
+                  : "bg-white text-[#000000] border-[#173366]",
               ].join(" ")}
             >
               {year.label}
@@ -1286,7 +1286,7 @@ const Page = () => {
                 >
                   {tab.label}
                   {active && (
-                    <span className="absolute left-0 right-0 bottom-0 h-[3px] bg-[#117ABA]" />
+                    <span className="absolute left-0 right-0 bottom-0 h-[3px] bg-[#173366]" />
                   )}
                 </button>
               );
@@ -1296,7 +1296,7 @@ const Page = () => {
           {/* CONSOLIDATED TAB */}
           {isConsolidated && (
             <>
-              <div className="w-full bg-[#117ABA] py-3 px-4">
+              <div className="w-full bg-[#173366] py-3 px-4">
                 <h2 className="text-white text-sm sm:text-base lato-700 text-center">
                   Quarterly Results - Consolidated
                 </h2>
@@ -1311,7 +1311,7 @@ const Page = () => {
           {/* STANDALONE TAB */}
           {isStandalone && (
             <>
-              <div className="w-full bg-[#117ABA] py-3 px-4">
+              <div className="w-full bg-[#173366] py-3 px-4">
                 <h2 className="text-white text-sm sm:text-base lato-700 text-center">
                   Quarterly Results – Standalone
                 </h2>
@@ -1326,7 +1326,7 @@ const Page = () => {
           {/* SUBSIDIARY COMPANIES TAB */}
           {isSubsidiary && (
             <>
-              <div className="w-full bg-[#117ABA] py-3 px-4">
+              <div className="w-full bg-[#173366] py-3 px-4">
                 <h2 className="text-white text-sm sm:text-base lato-700 text-center sm:text-left">
                   Subsidiary Companies
                 </h2>
@@ -1344,7 +1344,7 @@ const Page = () => {
           {/* ADVERTISEMENTS TAB */}
           {isAdvertisement && (
             <>
-              <div className="w-full bg-[#117ABA] py-3 px-4">
+              <div className="w-full bg-[#173366] py-3 px-4">
                 <h2 className="text-white text-sm sm:text-base lato-700 text-center">
                   Advertisements – Financial Results
                 </h2>

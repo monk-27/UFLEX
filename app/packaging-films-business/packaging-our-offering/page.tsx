@@ -563,7 +563,7 @@ const sectionRef = useRef<HTMLDivElement>(null);
 
 
                                 <motion.div
-                                    className="bg-[#117ABA] lato-400 text-left w-[450px] h-[250px] sm:w-[706px] sm:h-[341px] text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[20px] pl-4 pt-2 pb-4 pr-4 md:pl-24 lg:pl-28 sm:pt-3 sm:pb-4 sm:pr-12 mb-12 sm:mb-12"
+                                    className="bg-[#173366] lato-400 text-left w-[450px] h-[250px] sm:w-[706px] sm:h-[341px] text-[14px] leading-relaxed opacity-90 sm:text-[16px] md:text-[20px] pl-4 pt-2 pb-4 pr-4 md:pl-24 lg:pl-28 sm:pt-3 sm:pb-4 sm:pr-12 mb-12 sm:mb-12"
                                     variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
                                 >
                                     <div className="w-[300px] sm:w-[537px]">

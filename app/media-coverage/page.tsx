@@ -478,7 +478,7 @@ function YearTabs({
           onClick={() => onChange(y)}
           className={`
             px-10 py-2.5 text-base font-medium transition rounded
-            ${activeYear === y ? "bg-[#117ABA] text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"}
+            ${activeYear === y ? "bg-[#173366] text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"}
           `}
         >
           {y}
@@ -556,7 +556,7 @@ const PressRoomPage = () => {
       <SiteHeader />
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#117ABA] text-center mb-8 md:mb-12">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#173366] text-center mb-8 md:mb-12">
           Media Coverage
         </h1>
 
@@ -569,7 +569,7 @@ const PressRoomPage = () => {
               className={`
                 px-5 sm:px-8 md:px-12 py-2.5 sm:py-3 text-sm sm:text-base font-medium transition-all border-b-4
                 ${activeTab === tab
-                  ? "border-[#117ABA] text-[#117ABA] bg-[#F8F9FA] shadow-sm"
+                  ? "border-[#173366] text-[#173366] bg-[#F8F9FA] shadow-sm"
                   : "border-transparent text-gray-600 hover:text-gray-800 hover:border-gray-300"}
               `}
             >
@@ -652,7 +652,7 @@ const PressRoomPage = () => {
                         />
                       </div>
 
-                      <div className="p-4 sm:px-1 sm:py-1 sm:pt-1 flex flex-col flex-grow bg-[#117ABA]">
+                      <div className="p-4 sm:px-1 sm:py-1 sm:pt-1 flex flex-col flex-grow bg-[#173366]">
                         <h3 className="text-center text-sm sm:text-base lato-700 text-white ">
                           {item.title}
                         </h3>
@@ -672,7 +672,7 @@ const PressRoomPage = () => {
                       p-3 rounded-full border bg-white shadow hover:bg-gray-50
                       ${currentPage === 1
                         ? "bg-gray-200 text-gray-400 cursor-not-allowed"
-                        : "bg-[#117ABA] text-white hover:bg-[#0e6199]"}
+                        : "bg-[#173366] text-white hover:bg-[#0e6199]"}
                     `}
                   >
                     <ChevronLeft className="h-5 w-5 text-black" />
@@ -708,7 +708,7 @@ const PressRoomPage = () => {
                             className={`
                               w-9 h-9 sm:w-10 sm:h-10 rounded-md text-sm font-medium transition
                               ${page === currentPage
-                                ? "bg-[#117ABA] text-white shadow-md"
+                                ? "bg-[#173366] text-white shadow-md"
                                 : "bg-gray-100 text-gray-700 hover:bg-gray-200"}
                             `}
                           >
@@ -726,7 +726,7 @@ const PressRoomPage = () => {
                       p-3 rounded-full border bg-white shadow hover:bg-gray-50
                       ${currentPage === totalPages
                         ? "bg-gray-200 text-gray-400 cursor-not-allowed"
-                        : "bg-[#117ABA] text-white hover:bg-[#0e6199]"}
+                        : "bg-[#173366] text-white hover:bg-[#0e6199]"}
                     `}
                   >
                     <ChevronRight className="h-5 w-5 text-black" />

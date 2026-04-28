@@ -19,7 +19,7 @@ export function SustainabilitySection({ data }: any) {
         <div className="overflow-hidden grid gap-0 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.2fr)]">
           {/* Text */}
           <div className="pr-12 flex flex-col justify-center">
-            <h2 className="lato-700 text-[28px] md:text-[32px] text-[#117ABA] mb-3">
+            <h2 className="lato-700 text-[28px] md:text-[32px] text-[#173366] mb-3">
               {data.title}
             </h2>
             {data.subtitle && <h3 className="lato-700 text-[16px] sm:text-[18px] leading-relaxed text-black mb-4">
@@ -32,7 +32,7 @@ export function SustainabilitySection({ data }: any) {
             {/* {data.linkHref && data.linkLabel && (
               <a
                 href={data.linkHref}
-                className="py-6 inline-flex items-center gap-1 lato-700 text-[14px] text-[#117ABA]  "
+                className="py-6 inline-flex items-center gap-1 lato-700 text-[14px] text-[#173366]  "
               >
                 <div className="underline underline-offset-2">
 
@@ -60,7 +60,7 @@ export function SustainabilitySection({ data }: any) {
         <div className="overflow-hidden grid gap-0 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.2fr)]">
           {/* Text */}
           <div className="pt-4 flex flex-col justify-center">
-            <h2 className="lato-400 text-[18px] md:text-[28px] text-[#117ABA] mb-3">
+            <h2 className="lato-400 text-[18px] md:text-[28px] text-[#173366] mb-3">
               {data.title}
             </h2>
             {

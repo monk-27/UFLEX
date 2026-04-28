@@ -625,7 +625,7 @@ export default function EnquiryForm() {
 
           {/* Form Container */}
           <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-            <div className="bg-gradient-to-r from-[#117ABA] to-[#0F6AA0] p-6 md:p-8">
+            <div className="bg-gradient-to-r from-[#173366] to-[#0F6AA0] p-6 md:p-8">
               <h3 className="text-2xl lato-700 text-white">Contact Information</h3>
               <p className="text-white/90 lato-400 mt-1">Please provide your details below</p>
             </div>
@@ -635,7 +635,7 @@ export default function EnquiryForm() {
                 {/* Name */}
                 <div className="group">
                   <label className="mb-2 lato-500 block text-sm text-gray-700 flex items-center gap-2">
-                    <User className="h-4 w-4 text-[#117ABA]" />
+                    <User className="h-4 w-4 text-[#173366]" />
                     Name <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -644,7 +644,7 @@ export default function EnquiryForm() {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full rounded-lg border-2 border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 lato-400 transition-all focus:border-[#117ABA] focus:ring-2 focus:ring-[#117ABA]/20 focus:outline-none hover:border-gray-300"
+                    className="w-full rounded-lg border-2 border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 lato-400 transition-all focus:border-[#173366] focus:ring-2 focus:ring-[#173366]/20 focus:outline-none hover:border-gray-300"
                     placeholder="Enter your full name"
                   />
                 </div>
@@ -652,7 +652,7 @@ export default function EnquiryForm() {
                 {/* Phone */}
                 <div className="group">
                   <label className="lato-500 mb-2 block text-sm text-gray-700 flex items-center gap-2">
-                    <Phone className="h-4 w-4 text-[#117ABA]" />
+                    <Phone className="h-4 w-4 text-[#173366]" />
                     Phone <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -661,7 +661,7 @@ export default function EnquiryForm() {
                     value={formData.phone}
                     onChange={handleInputChange}
                     required
-                    className="w-full rounded-lg border-2 border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 lato-400 transition-all focus:border-[#117ABA] focus:ring-2 focus:ring-[#117ABA]/20 focus:outline-none hover:border-gray-300"
+                    className="w-full rounded-lg border-2 border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 lato-400 transition-all focus:border-[#173366] focus:ring-2 focus:ring-[#173366]/20 focus:outline-none hover:border-gray-300"
                     placeholder="+91 98765 43210"
                   />
                 </div>
@@ -669,7 +669,7 @@ export default function EnquiryForm() {
                 {/* Company Name */}
                 <div className="group">
                   <label className="lato-500 mb-2 block text-sm text-gray-700 flex items-center gap-2">
-                    <Building2 className="h-4 w-4 text-[#117ABA]" />
+                    <Building2 className="h-4 w-4 text-[#173366]" />
                     Company Name <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -678,7 +678,7 @@ export default function EnquiryForm() {
                     value={formData.companyName}
                     onChange={handleInputChange}
                     required
-                    className="w-full rounded-lg border-2 border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 lato-400 transition-all focus:border-[#117ABA] focus:ring-2 focus:ring-[#117ABA]/20 focus:outline-none hover:border-gray-300"
+                    className="w-full rounded-lg border-2 border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 lato-400 transition-all focus:border-[#173366] focus:ring-2 focus:ring-[#173366]/20 focus:outline-none hover:border-gray-300"
                     placeholder="Your company name"
                   />
                 </div>
@@ -686,7 +686,7 @@ export default function EnquiryForm() {
                 {/* Enquiry for */}
                 <div className="group">
                   <label className="lato-500 mb-2 block text-sm text-gray-700 flex items-center gap-2">
-                    <MessageSquare className="h-4 w-4 text-[#117ABA]" />
+                    <MessageSquare className="h-4 w-4 text-[#173366]" />
                     Enquiry for <span className="text-red-500">*</span>
                   </label>
                   <select
@@ -704,9 +704,9 @@ export default function EnquiryForm() {
                       lato-400
                       transition-all
                       ${formData.enquiryFor ? "text-gray-900" : "text-gray-500"}
-                      focus:border-[#117ABA]
+                      focus:border-[#173366]
                       focus:ring-2
-                      focus:ring-[#117ABA]/20
+                      focus:ring-[#173366]/20
                       focus:outline-none
                       hover:border-gray-300
                     `}
@@ -726,7 +726,7 @@ export default function EnquiryForm() {
                 {availableProducts.length > 0 && (
                   <div className="md:col-span-2">
                     <label className="lato-500 mb-2 block text-sm text-gray-700 flex items-center gap-2">
-                      <MessageSquare className="h-4 w-4 text-[#117ABA]" />
+                      <MessageSquare className="h-4 w-4 text-[#173366]" />
                       Product(s) <span className="text-red-500">*</span>
                       <span className="ml-auto text-xs text-gray-400 lato-400">
                         {(formData.product as string[]).length > 0
@@ -740,7 +740,7 @@ export default function EnquiryForm() {
                       <button
                         type="button"
                         onClick={handleSelectAll}
-                        className="text-xs text-[#117ABA] lato-500 hover:underline"
+                        className="text-xs text-[#173366] lato-500 hover:underline"
                       >
                         {(formData.product as string[]).length === availableProducts.length
                           ? "Deselect All"
@@ -756,7 +756,7 @@ export default function EnquiryForm() {
                           <label
                             key={p}
                             className={`flex items-center gap-2.5 cursor-pointer rounded-md px-3 py-2 text-sm lato-400 transition-colors ${checked
-                              ? "bg-[#117ABA]/10 text-[#117ABA] lato-500"
+                              ? "bg-[#173366]/10 text-[#173366] lato-500"
                               : "text-gray-700 hover:bg-gray-50"
                               }`}
                           >
@@ -764,7 +764,7 @@ export default function EnquiryForm() {
                               type="checkbox"
                               checked={checked}
                               onChange={() => handleProductToggle(p)}
-                              className="h-4 w-4 rounded border-gray-300 text-[#117ABA] accent-[#117ABA] shrink-0"
+                              className="h-4 w-4 rounded border-gray-300 text-[#173366] accent-[#173366] shrink-0"
                             />
                             {p}
                           </label>
@@ -788,7 +788,7 @@ export default function EnquiryForm() {
                 {/* Email */}
                 <div className="md:col-span-2 group">
                   <label className="lato-500 mb-2 block text-sm text-gray-700 flex items-center gap-2">
-                    <Mail className="h-4 w-4 text-[#117ABA]" />
+                    <Mail className="h-4 w-4 text-[#173366]" />
                     Email <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -798,7 +798,7 @@ export default function EnquiryForm() {
                     onChange={handleInputChange}
                     onBlur={handleEmailBlur}
                     required
-                    className={`w-full lato-400 rounded-lg border-2 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 transition-all focus:ring-2 focus:ring-[#117ABA]/20 focus:outline-none hover:border-gray-300 ${emailError ? "border-red-500 focus:border-red-500" : "border-gray-200 focus:border-[#117ABA]"
+                    className={`w-full lato-400 rounded-lg border-2 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 transition-all focus:ring-2 focus:ring-[#173366]/20 focus:outline-none hover:border-gray-300 ${emailError ? "border-red-500 focus:border-red-500" : "border-gray-200 focus:border-[#173366]"
                       }`}
                     placeholder="your.email@company.com"
                   />
@@ -813,7 +813,7 @@ export default function EnquiryForm() {
                 {/* Message */}
                 <div className="md:col-span-2 group">
                   <label className="lato-500 mb-2 block text-sm text-gray-700 flex items-center gap-2">
-                    <MessageSquare className="h-4 w-4 text-[#117ABA]" />
+                    <MessageSquare className="h-4 w-4 text-[#173366]" />
                     Message <span className="text-red-500">*</span>
                   </label>
                   <textarea
@@ -824,7 +824,7 @@ export default function EnquiryForm() {
                     rows={5}
                     maxLength={1500}
                     placeholder="Tell us about your requirements..."
-                    className="w-full rounded-lg border-2 border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 lato-400 transition-all focus:border-[#117ABA] focus:ring-2 focus:ring-[#117ABA]/20 focus:outline-none hover:border-gray-300 resize-none"
+                    className="w-full rounded-lg border-2 border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 lato-400 transition-all focus:border-[#173366] focus:ring-2 focus:ring-[#173366]/20 focus:outline-none hover:border-gray-300 resize-none"
                   />
                   <div className="mt-1 text-right text-xs text-gray-400">
                     {formData.message.length} / 1500 characters
@@ -834,16 +834,16 @@ export default function EnquiryForm() {
                 {/* File Upload */}
                 <div className="md:col-span-2">
                   <label className="lato-500 mb-2 block text-sm text-gray-700 flex items-center gap-2">
-                    <Paperclip className="h-4 w-4 text-[#117ABA]" />
+                    <Paperclip className="h-4 w-4 text-[#173366]" />
                     Attachments <span className="text-xs text-gray-400 lato-400 ml-1">(Optional · PDF, Word, JPG, PNG only · Max 5 files · 10 MB each)</span>
                   </label>
 
                   {/* Drop / click zone */}
                   <div
                     onClick={() => fileInputRef.current?.click()}
-                    className="cursor-pointer rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 px-4 py-6 text-center transition-all hover:border-[#117ABA] hover:bg-[#117ABA]/5 group"
+                    className="cursor-pointer rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 px-4 py-6 text-center transition-all hover:border-[#173366] hover:bg-[#173366]/5 group"
                   >
-                    <Upload className="mx-auto h-8 w-8 text-gray-300 group-hover:text-[#117ABA] mb-2 transition-colors" />
+                    <Upload className="mx-auto h-8 w-8 text-gray-300 group-hover:text-[#173366] mb-2 transition-colors" />
                     <p className="text-sm text-gray-500 lato-400">
                       Click to browse or drop files here
                     </p>
@@ -881,7 +881,7 @@ export default function EnquiryForm() {
                           ) : (
                             // Video placeholder
                             <div className="w-full h-20 flex flex-col items-center justify-center gap-1 bg-gray-100">
-                              <FileVideo className="h-7 w-7 text-[#117ABA]" />
+                              <FileVideo className="h-7 w-7 text-[#173366]" />
                               <span className="text-[10px] text-gray-500 lato-400 px-1 text-center truncate w-full">{fp.file.name}</span>
                             </div>
                           )}
@@ -905,7 +905,7 @@ export default function EnquiryForm() {
 
                   {/* Upload progress indicator */}
                   {isUploading && (
-                    <div className="mt-3 flex items-center gap-2 text-sm text-[#117ABA] lato-500">
+                    <div className="mt-3 flex items-center gap-2 text-sm text-[#173366] lato-500">
                       <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24">
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
@@ -953,7 +953,7 @@ export default function EnquiryForm() {
                         value={userCaptcha}
                         onChange={(e) => setUserCaptcha(e.target.value)}
                         required
-                        className="w-full rounded-lg border-2 border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-400 lato-400 transition-all focus:border-[#117ABA] focus:ring-2 focus:ring-[#117ABA]/20 focus:outline-none hover:border-gray-300"
+                        className="w-full rounded-lg border-2 border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-400 lato-400 transition-all focus:border-[#173366] focus:ring-2 focus:ring-[#173366]/20 focus:outline-none hover:border-gray-300"
                         placeholder="Enter Captcha"
                       />
                     </div>
@@ -968,7 +968,7 @@ export default function EnquiryForm() {
                     className="
                       w-full
                       rounded-lg
-                      bg-gradient-to-r from-[#117ABA] to-[#0F6AA0]
+                      bg-gradient-to-r from-[#173366] to-[#0F6AA0]
                       py-4
                       text-base
                       lato-700
@@ -1015,7 +1015,7 @@ export default function EnquiryForm() {
           {/* <div className="mt-10 text-center">
             <p className="text-gray-600 lato-400 text-sm">
               By submitting this form, you agree to our{" "}
-              <a href="/privacy-policy" className="text-[#117ABA] hover:underline">
+              <a href="/privacy-policy" className="text-[#173366] hover:underline">
                 Privacy Policy
               </a>
             </p>

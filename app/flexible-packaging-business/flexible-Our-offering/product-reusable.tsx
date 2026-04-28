@@ -97,7 +97,7 @@ export default function ProductCategorySection({
                     >
                         <div className="">
 
-                            <div className="bg-[#117ABA] text-white px-6 py-5">
+                            <div className="bg-[#173366] text-white px-6 py-5">
                                 <h2 className="text-lg lato-700 tracking-wide">Product Categories</h2>
                             </div>
 
@@ -115,7 +115,7 @@ export default function ProductCategorySection({
       hover:bg-[#F9F9F9]
      
       ${category.isActive
-                                                ? " text-[#117ABA]"
+                                                ? " text-[#173366]"
                                                 : " text-black"
                                             }
     `}
@@ -123,7 +123,7 @@ export default function ProductCategorySection({
                                         <span
                                             className={`
         lato-400 text-[16px] sm:text-[18px] leading-relaxed
-        ${category.isActive ? "text-[#117ABA] " : "text-black"}
+        ${category.isActive ? "text-[#173366] " : "text-black"}
       `}
                                         >
                                             {category.name}
@@ -133,7 +133,7 @@ export default function ProductCategorySection({
                                             size={18}
                                             className={`
         transition-transform duration-300
-        ${category.isActive ? "rotate-90 text-[#117ABA]" : "text-gray-500"}
+        ${category.isActive ? "rotate-90 text-[#173366]" : "text-gray-500"}
       `}
                                         />
                                     </motion.button>
@@ -153,7 +153,7 @@ export default function ProductCategorySection({
                                         <li key={link.label}>
                                             <a
                                                 href={link.href}
-                                                className="text-black hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
+                                                className="text-black hover:text-[#173366] text-sm flex items-center gap-1.5 transition-colors"
                                                 {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
                                             >
                                                 {link.label}
@@ -170,7 +170,7 @@ export default function ProductCategorySection({
                     <div className="lg:hidden bg-white   overflow-hidden">
                         <button
                             onClick={() => setIsMobileOpen(!isMobileOpen)}
-                            className="w-full flex items-center justify-between bg-[#117ABA] text-white px-6 py-5 lato-400 text-[16px] sm:text-[18px] leading-relaxed "
+                            className="w-full flex items-center justify-between bg-[#173366] text-white px-6 py-5 lato-400 text-[16px] sm:text-[18px] leading-relaxed "
                         >
                             <span>PRODUCT CATEGORIES</span>
                             {isMobileOpen ? <ChevronDown size={24} /> : <ChevronRight size={24} />}
@@ -198,7 +198,7 @@ export default function ProductCategorySection({
       hover:bg-gray-100
      
       ${category.isActive
-                                                        ? "bg-blue-100  text-[#117ABA]"
+                                                        ? "bg-blue-100  text-[#173366]"
                                                         : "border-l-transparent text-black"
                                                     }
     `}
@@ -206,7 +206,7 @@ export default function ProductCategorySection({
                                                 <span
                                                     className={`
         lato-400 text-[16px] sm:text-[18px] leading-relaxed
-        ${category.isActive ? "text-[#117ABA]" : "text-black"}
+        ${category.isActive ? "text-[#173366]" : "text-black"}
       `}
                                                 >
                                                     {category.name}
@@ -216,7 +216,7 @@ export default function ProductCategorySection({
                                                     size={18}
                                                     className={`
         transition-transform duration-300
-        ${category.isActive ? "rotate-90 text-[#117ABA]" : "text-gray-500"}
+        ${category.isActive ? "rotate-90 text-[#173366]" : "text-gray-500"}
       `}
                                                 />
                                             </motion.button>
@@ -240,7 +240,7 @@ export default function ProductCategorySection({
                                             <li key={link.label}>
                                                 <a
                                                     href={link.href}
-                                                    className="text-black hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
+                                                    className="text-black hover:text-[#173366] text-sm flex items-center gap-1.5 transition-colors"
                                                     {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
                                                 >
                                                     {link.label}
@@ -283,8 +283,8 @@ export default function ProductCategorySection({
                             {title?.toLowerCase() != "flexitubes" &&
                                 (
                                     <div className="flex gap-2">
-                                        {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
-                                        {/* <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">
+                                        {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#173366]" /> */}
+                                        {/* <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#173366]">
                                     Overview
                                 </h3> */}
                                         {/* <p className="pb-4 lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
@@ -296,7 +296,7 @@ export default function ProductCategorySection({
                             }
 
                             {highlightText && (
-                                <div className=" bg-[#117ABA] text-white px-4 py-3 lato-700 text-[16px] sm:text-[17px]">
+                                <div className=" bg-[#173366] text-white px-4 py-3 lato-700 text-[16px] sm:text-[17px]">
                                     {highlightText}
                                 </div>
                             )}
@@ -321,7 +321,7 @@ export default function ProductCategorySection({
                             <div className="space-y-8">
 
                                 {/* IMAGE BLOCK */}
-                                {/* <div className="border border-[#117ABA] rounded-sm p-3">
+                                {/* <div className="border border-[#173366] rounded-sm p-3">
                                     <Image
                                         src="https://beta.uflexltd.com/media/images/flexi-tubes.jpg" // replace with actual image path
                                         alt="FlexiTubes Overview"
@@ -334,8 +334,8 @@ export default function ProductCategorySection({
                                 {/* PRIME FEATURES */}
                                 <div>
                                     <div className="flex gap-2">
-                                        {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
-                                        <h3 className="lato-400 text-[20px] md:text-[24px] text-[#117ABA]">
+                                        {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#173366]" /> */}
+                                        <h3 className="lato-400 text-[20px] md:text-[24px] text-[#173366]">
                                             Prime Features
                                         </h3>
                                     </div>
@@ -370,13 +370,13 @@ export default function ProductCategorySection({
                                 {/* A MUST FOR SEGMENTS */}
                                 <div>
                                     <div className="flex gap-2">
-                                        {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
-                                        <h3 className="lato-400 text-[20px] md:text-[24px] text-[#117ABA] pb-4">
+                                        {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#173366]" /> */}
+                                        <h3 className="lato-400 text-[20px] md:text-[24px] text-[#173366] pb-4">
                                             A must for Segments
                                         </h3>
                                     </div>
 
-                                    <div className="bg-[#117ABA] text-white px-4 py-3 mb-4 text-[15px] lato-700">
+                                    <div className="bg-[#173366] text-white px-4 py-3 mb-4 text-[15px] lato-700">
                                         We offer Flexi Tubes in different diameters and combinations for use in:
                                     </div>
 
@@ -409,7 +409,7 @@ export default function ProductCategorySection({
                                 </p>
 
                                 {/* Key Features bar */}
-                                <div className="bg-[#117ABA] text-white px-4 py-3 lato-700 text-[16px] sm:text-[18px]">
+                                <div className="bg-[#173366] text-white px-4 py-3 lato-700 text-[16px] sm:text-[18px]">
                                     Key features:
                                 </div>
 
@@ -440,7 +440,7 @@ export default function ProductCategorySection({
                             <div className="space-y-6">
 
                                 {/* Red highlight bar */}
-                                <div className="bg-[#117ABA] text-white px-4 py-3 lato-700 text-[16px] sm:text-[18px]">
+                                <div className="bg-[#173366] text-white px-4 py-3 lato-700 text-[16px] sm:text-[18px]">
                                     Zipouch
                                 </div>
 
@@ -455,7 +455,7 @@ export default function ProductCategorySection({
                                 {/* Image container (you can wire actual images later) */}
                                 <div className=" p-1 grid grid-cols-1 md:grid-cols-2 gap-2">
 
-                                    <div className="relative h-[380px] bg-gray-100 border-2 border-[#117ABA]">
+                                    <div className="relative h-[380px] bg-gray-100 border-2 border-[#173366]">
                                         <Image
                                             src="/images/new/zip.jpeg"
                                             alt={title}
@@ -482,12 +482,12 @@ export default function ProductCategorySection({
                             <div className="space-y-6">
 
                                 {/* Red highlight bar */}
-                                <div className="bg-[#117ABA] text-white px-4 py-3 lato-700 text-[16px] sm:text-[18px]">
+                                <div className="bg-[#173366] text-white px-4 py-3 lato-700 text-[16px] sm:text-[18px]">
                                     We offer Safety solutions Products for use in:
                                 </div>
 
                                 {/* Blue heading */}
-                                <h4 className="text-[#117ABA] lato-700 text-[16px] sm:text-[18px]">
+                                <h4 className="text-[#173366] lato-700 text-[16px] sm:text-[18px]">
                                     Developed Six-layered Cotton N95 Mask to Prevent COVID Spread
                                 </h4>
 
@@ -507,7 +507,7 @@ export default function ProductCategorySection({
                                 {/* Image container (you can wire actual images later) */}
                                 <div className=" p-1 grid grid-cols-1 md:grid-cols-2 gap-2">
 
-                                    <div className="relative h-[380px] bg-gray-100 border-2 border-[#117ABA]">
+                                    <div className="relative h-[380px] bg-gray-100 border-2 border-[#173366]">
                                         <Image
                                             src="https://beta.uflexltd.com/media/images/UFlex_N95_Masks_3.jpg"
                                             alt={title}
@@ -517,7 +517,7 @@ export default function ProductCategorySection({
                                         />
                                     </div>
 
-                                    <div className="relative h-[380px] bg-gray-100 border-2 border-[#117ABA]">
+                                    <div className="relative h-[380px] bg-gray-100 border-2 border-[#173366]">
                                         <Image
                                             src="https://beta.uflexltd.com/media/images/UFlex_N95_Masks_4.jpg"
                                             alt={title}
@@ -527,7 +527,7 @@ export default function ProductCategorySection({
                                         />
                                     </div>
 
-                                    <div className="relative h-[380px] bg-gray-100 border-2 border-[#117ABA]">
+                                    <div className="relative h-[380px] bg-gray-100 border-2 border-[#173366]">
                                         <Image
                                             src="https://beta.uflexltd.com/media/images/UFlex_N95_Masks_1.jpg"
                                             alt={title}
@@ -537,7 +537,7 @@ export default function ProductCategorySection({
                                         />
                                     </div>
 
-                                    <div className="relative h-[380px] bg-gray-100 border-2 border-[#117ABA]">
+                                    <div className="relative h-[380px] bg-gray-100 border-2 border-[#173366]">
                                         <Image
                                             src="https://beta.uflexltd.com/media/images/UFlex_N95_Masks_2.jpg"
                                             alt={title}
@@ -570,13 +570,13 @@ export default function ProductCategorySection({
                                 {/* CTA buttons */}
                                 <div className="flex flex-wrap gap-4 pt-4">
 
-                                    <button className="bg-[#117ABA] text-white px-5 py-2 rounded-full text-sm lato-700">
+                                    <button className="bg-[#173366] text-white px-5 py-2 rounded-full text-sm lato-700">
                                         <a href="https://www.uflexltd.com/pdf/UFlex_N95_Masks_Technical_Specifications.pdf" target="_blank">
 
                                             N95 Masks' Technical Specifications
                                         </a>
                                     </button>
-                                    <button className="bg-[#117ABA] text-white px-5 py-2 rounded-full text-sm lato-700">
+                                    <button className="bg-[#173366] text-white px-5 py-2 rounded-full text-sm lato-700">
                                         <a href="https://www.uflexltd.com/pdf/UFlex_N95_Masks_Layer_Wise_Properties.pdf" target="_blank">
 
                                             N95 Masks' Layer Wise Properties
@@ -628,12 +628,12 @@ export default function ProductCategorySection({
                                 </div>
 
                                 {/* Red bar */}
-                                <div className="bg-[#117ABA] text-white px-4 py-3 lato-700 text-[16px] sm:text-[18px]">
+                                <div className="bg-[#173366] text-white px-4 py-3 lato-700 text-[16px] sm:text-[18px]">
                                     We offer Range of Products for use in:
                                 </div>
 
                                 {/* Section 1 */}
-                                <h4 className="text-[#117ABA] lato-700 text-[16px] sm:text-[18px]">
+                                <h4 className="text-[#173366] lato-700 text-[16px] sm:text-[18px]">
                                     1) Various types of Caps and Spouts used for Different types of Pouches
                                 </h4>
 
@@ -647,7 +647,7 @@ export default function ProductCategorySection({
                                 </div>
 
                                 {/* Section 2 */}
-                                <h4 className="text-[#117ABA] lato-700 text-[16px] sm:text-[18px]">
+                                <h4 className="text-[#173366] lato-700 text-[16px] sm:text-[18px]">
                                     2) Various sizes and types of Caps/ Shoulders used for Tubes
                                 </h4>
 
@@ -669,7 +669,7 @@ export default function ProductCategorySection({
                                 </div>
 
                                 {/* Section 3 */}
-                                <h4 className="text-[#117ABA] lato-700 text-[16px] sm:text-[18px]">
+                                <h4 className="text-[#173366] lato-700 text-[16px] sm:text-[18px]">
                                     3) Various range of Zippers and sliders
                                 </h4>
 
@@ -689,7 +689,7 @@ export default function ProductCategorySection({
                                 </div>
 
                                 {/* Section 4 */}
-                                <h4 className="text-[#117ABA] lato-700 text-[16px] sm:text-[18px]">
+                                <h4 className="text-[#173366] lato-700 text-[16px] sm:text-[18px]">
                                     4) Core plug used for film rolls
                                 </h4>
 
@@ -705,7 +705,7 @@ export default function ProductCategorySection({
                                     <a
                                         href="https://www.uflexmoulding.com"
                                         target="_blank"
-                                        className="text-[#117ABA] ml-1 underline"
+                                        className="text-[#173366] ml-1 underline"
                                     >
                                         www.uflexmoulding.com
                                     </a>
@@ -729,7 +729,7 @@ export default function ProductCategorySection({
                                     <motion.div
                                         whileHover={{ scale: 1.05 }}
                                         whileTap={{ scale: 0.98 }}
-                                        className="bg-[#117ABA] text-white px-4 py-2 rounded-xl font-semibold hover:bg-[#117ABA] transition-all shadow-md"
+                                        className="bg-[#173366] text-white px-4 py-2 rounded-xl font-semibold hover:bg-[#173366] transition-all shadow-md"
                                     >
                                         <a
 
@@ -750,14 +750,14 @@ export default function ProductCategorySection({
                             {/* <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.98 }}
-                                className="border-2 border-[#117ABA] text-[#117ABA] px-4 py-2 rounded-xl font-semibold hover:bg-blue-50 transition-all"
+                                className="border-2 border-[#173366] text-[#173366] px-4 py-2 rounded-xl font-semibold hover:bg-blue-50 transition-all"
                             >
                                 Request Sample
                             </motion.button> */}
                             {/* <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.98 }}
-                                className="bg-[#117ABA] text-white px-4 py-2 rounded-sm lato-700 hover:bg-[#117ABA] transition-all shadow-md"
+                                className="bg-[#173366] text-white px-4 py-2 rounded-sm lato-700 hover:bg-[#173366] transition-all shadow-md"
 
                             >
                                 Download Catalogue

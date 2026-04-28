@@ -39,7 +39,7 @@ export default function OfferingsTabs({ tabs }: Props) {
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
                 className={`lato-400 shrink-0 px-6 py-2 text-[21px] ${isActive
-                  ? "bg-[#E6E6E6] text-black border-b-2 border-[#117ABA]"
+                  ? "bg-[#E6E6E6] text-black border-b-2 border-[#173366]"
                   : "bg-[#E6E6E6] text-black"
                   }`}
               >

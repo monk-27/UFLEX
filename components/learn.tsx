@@ -21,7 +21,7 @@ export default function LearnStatus() {
                 priority
               /> */}
               <motion.h1
-                className="text-[24px] lato-700 text-[#117ABA] md:text-[42px]  leading-tight"
+                className="text-[24px] lato-700 text-[#173366] md:text-[42px]  leading-tight"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -69,14 +69,14 @@ export default function LearnStatus() {
     culture of learning and upskilling our employees across the organization.
   </p>
 </motion.div>
-             <p className="text-[14px] md:text-[18px] leading-relaxed lato-700 text-[#117ABA] text-base mb-3 ">
+             <p className="text-[14px] md:text-[18px] leading-relaxed lato-700 text-[#173366] text-base mb-3 ">
             {/* Ready to elevate your career? Connect with us: */}
             To know more about the Academy, write to us at:
           </p>
 
           <a
             href="mailto:uflexlearningacademy@uflexltd.com"
-            className="text-[14px] md:text-[18px] text-black leading-relaxed lato-700 inline-flex items-center lato-600 underline underline-offset-4  transition-colors duration-200 hover:text-[#117ABA]"
+            className="text-[14px] md:text-[18px] text-black leading-relaxed lato-700 inline-flex items-center lato-600 underline underline-offset-4  transition-colors duration-200 hover:text-[#173366]"
           >
             uflexlearningacademy@uflexltd.com
           </a>

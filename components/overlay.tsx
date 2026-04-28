@@ -76,13 +76,13 @@
 //       {/* Title block */}
 //       <div className="mx-auto max-w-4xl">
 //         {heading && (
-//           <h2 className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">
+//           <h2 className="text-[24px] manrope-600 text-[#173366] md:text-[42px] md:text-5xl">
 //             {heading}
 //           </h2>
 //         )}
 //         {subheading && (
 //           <h3
-//             className="font-EB-extrabold mt-0 text-[16px] text-[#117ABA] sm:mt-2 md:text-3xl"
+//             className="font-EB-extrabold mt-0 text-[16px] text-[#173366] sm:mt-2 md:text-3xl"
 //             style={{ lineHeight: "124%" }}
 //           >
 //             {subheading}
@@ -113,7 +113,7 @@
 //               className="group w-full overflow-hidden rounded-lg text-left"
 //               variants={disableStagger ? undefined : item}
 //             >
-//               <h3 className="text-center manrope-800 mb-3 text-[18px] text-[#117ABA] md:text-2xl">
+//               <h3 className="text-center manrope-800 mb-3 text-[18px] text-[#173366] md:text-2xl">
 //                 {m.title}
 //               </h3>
 
@@ -163,7 +163,7 @@
 //                 <div className="absolute inset-0 flex lg:hidden flex-col justify-end rounded-lg p-4 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
 //                   <div className="absolute inset-0 rounded-lg bg-gradient-to-t from-black/35 via-black/5 to-transparent" />
 //                   <div className="relative">
-//                     <h4 className="text-[24px] manrope-600 text-[#117ABA] md:text-[36px] md:text-5xl">{m.title}</h4>
+//                     <h4 className="text-[24px] manrope-600 text-[#173366] md:text-[36px] md:text-5xl">{m.title}</h4>
 //                     {m.description && (
 //                       <p className="mt-1 text-white/95 text-sm">{m.description}</p>
 //                     )}
@@ -327,12 +327,12 @@ function _OverlayModules({
       >
         <div className="mx-auto max-w-4xl">
           {heading && (
-            <h2 className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">
+            <h2 className="text-[24px] manrope-600 text-[#173366] md:text-[42px] md:text-5xl">
               {heading}
             </h2>
           )}
           {subheading && (
-            <h3 className="font-EB-extrabold mt-0 text-[16px] text-[#117ABA] sm:mt-2 md:text-3xl" style={{ lineHeight: "124%" }}>
+            <h3 className="font-EB-extrabold mt-0 text-[16px] text-[#173366] sm:mt-2 md:text-3xl" style={{ lineHeight: "124%" }}>
               {subheading}
             </h3>
           )}
@@ -359,7 +359,7 @@ function _OverlayModules({
                 className="group w-full overflow-hidden rounded-lg text-left"
                 variants={disableStagger ? undefined : item}
               >
-                <h3 className="text-center manrope-800 mb-3 text-[18px] text-[#117ABA] md:text-2xl">
+                <h3 className="text-center manrope-800 mb-3 text-[18px] text-[#173366] md:text-2xl">
                   {m.title}
                 </h3>
 

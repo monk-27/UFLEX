@@ -44,7 +44,7 @@ export default function ProductCategorySection({
           >
             <div className="">
 
-              <div className="bg-[#117ABA] text-white px-6 py-5">
+              <div className="bg-[#173366] text-white px-6 py-5">
                 <h2 className="text-lg lato-700 tracking-wide">Product Categories</h2>
               </div>
 
@@ -62,7 +62,7 @@ export default function ProductCategorySection({
       hover:bg-[#F9F9F9]
      
       ${category.isActive
-                        ? " text-[#117ABA]"
+                        ? " text-[#173366]"
                         : " text-black"
                       }
     `}
@@ -70,7 +70,7 @@ export default function ProductCategorySection({
                     <span
                       className={`
         lato-400 text-[16px] sm:text-[18px] leading-relaxed
-        ${category.isActive ? "text-[#117ABA] " : "text-black"}
+        ${category.isActive ? "text-[#173366] " : "text-black"}
       `}
                     >
                       {category.name}
@@ -80,7 +80,7 @@ export default function ProductCategorySection({
                       size={18}
                       className={`
         transition-transform duration-300
-        ${category.isActive ? "rotate-90 text-[#117ABA]" : "text-gray-500"}
+        ${category.isActive ? "rotate-90 text-[#173366]" : "text-gray-500"}
       `}
                     />
                   </motion.button>
@@ -100,7 +100,7 @@ export default function ProductCategorySection({
                                         <li key={link.label}>
                                             <a
                                                 href={link.href}
-                                                className="text-black hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
+                                                className="text-black hover:text-[#173366] text-sm flex items-center gap-1.5 transition-colors"
                                                 {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
                                             >
                                                 {link.label}
@@ -117,7 +117,7 @@ export default function ProductCategorySection({
           <div className="lg:hidden bg-white   overflow-hidden">
             <button
               onClick={() => setIsMobileOpen(!isMobileOpen)}
-              className="w-full flex items-center justify-between bg-[#117ABA] text-white px-6 py-5 lato-400 text-[16px] sm:text-[18px] leading-relaxed "
+              className="w-full flex items-center justify-between bg-[#173366] text-white px-6 py-5 lato-400 text-[16px] sm:text-[18px] leading-relaxed "
             >
               <span>PRODUCT CATEGORIES</span>
               {isMobileOpen ? <ChevronDown size={24} /> : <ChevronRight size={24} />}
@@ -145,7 +145,7 @@ export default function ProductCategorySection({
       hover:bg-gray-100
      
       ${category.isActive
-                            ? "bg-blue-100  text-[#117ABA]"
+                            ? "bg-blue-100  text-[#173366]"
                             : "border-l-transparent text-black"
                           }
     `}
@@ -153,7 +153,7 @@ export default function ProductCategorySection({
                         <span
                           className={`
         lato-400 text-[16px] sm:text-[18px] leading-relaxed
-        ${category.isActive ? "text-[#117ABA]" : "text-black"}
+        ${category.isActive ? "text-[#173366]" : "text-black"}
       `}
                         >
                           {category.name}
@@ -163,7 +163,7 @@ export default function ProductCategorySection({
                           size={18}
                           className={`
         transition-transform duration-300
-        ${category.isActive ? "rotate-90 text-[#117ABA]" : "text-gray-500"}
+        ${category.isActive ? "rotate-90 text-[#173366]" : "text-gray-500"}
       `}
                         />
                       </motion.button>
@@ -187,7 +187,7 @@ export default function ProductCategorySection({
                                             <li key={link.label}>
                                                 <a
                                                     href={link.href}
-                                                    className="text-black hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
+                                                    className="text-black hover:text-[#173366] text-sm flex items-center gap-1.5 transition-colors"
                                                     {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
                                                 >
                                                     {link.label}
@@ -226,13 +226,13 @@ export default function ProductCategorySection({
           {title === "HOLOGRAM" && (
             <div className="bg-white  space-y-10">
               <div>
-                {/* <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-6">Overview:</h2> */}
+                {/* <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-6">Overview:</h2> */}
                 <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                   UFLEX offers best-in-class holograms that are available with 2D/3D, Dot Matrix & High-resolution Kinemax technology. Our range is reckoned for its vibrant color combination, print clarity and uncompromised quality. Further, these are offered in standard and customized shapes to the clients at most competitive price coordinates.
                 </p>
               </div>
 
-              <div className="bg-[#117ABA] text-white px-6 py-4 ">
+              <div className="bg-[#173366] text-white px-6 py-4 ">
                 <h3 className="lato-700 text-[16px] sm:text-[18px] leading-relaxed text-white">
                   UFLEX offers hologram using the following technologies:
                 </h3>
@@ -240,7 +240,7 @@ export default function ProductCategorySection({
 
               <div className="space-y-8">
                 <div className="space-y-3">
-                  <h4 className="lato-700 text-[20px] text-[#117ABA]">
+                  <h4 className="lato-700 text-[20px] text-[#173366]">
                     1. Analog 2D/3D Conventional
                   </h4>
                   <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
@@ -249,7 +249,7 @@ export default function ProductCategorySection({
                 </div>
 
                 <div className="space-y-3">
-                  <h4 className="lato-700 text-[20px] text-[#117ABA]">
+                  <h4 className="lato-700 text-[20px] text-[#173366]">
                     2. Dot Matrix (Up to 24,000 dpi)
                   </h4>
                   <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
@@ -258,7 +258,7 @@ export default function ProductCategorySection({
                 </div>
 
                 <div className="space-y-3">
-                  <h4 className="lato-700 text-[20px] text-[#117ABA]">
+                  <h4 className="lato-700 text-[20px] text-[#173366]">
                     3. Non-Diffractive Litho (Up to 1,20,000 DPI)
                   </h4>
                   <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
@@ -267,7 +267,7 @@ export default function ProductCategorySection({
                 </div>
 
                 <div className="space-y-3">
-                  <h4 className="lato-700 text-[20px] text-[#117ABA]">
+                  <h4 className="lato-700 text-[20px] text-[#173366]">
                     4. E-Beam
                   </h4>
                   <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
@@ -313,10 +313,10 @@ export default function ProductCategorySection({
 
               {/* Buttons */}
               <div className="flex flex-wrap gap-6 justify-start pt-6">
-                {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                {/* <button className="bg-[#173366] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Learn More
                 </button> */}
-                {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                {/* <button className="bg-[#173366] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Request Sample
                 </button> */}
               </div>
@@ -327,14 +327,14 @@ export default function ProductCategorySection({
             <div className="bg-white space-y-10">
               {/* Overview */}
               <div>
-                {/* <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-6">Overview:</h2> */}
+                {/* <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-6">Overview:</h2> */}
                 <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                   We produce high quality holographic films for the purpose of security and aesthetic value, ranging from 12 to 50 microns. These films can be used for wrapping gifts. The film can also be laminated with paper board and printed polyester in order to make pouches or boxes. It increases the aesthetic value of the product and evokes buyers interest at the point of sale (POS).
                 </p>
               </div>
 
               {/* Red Heading Bar */}
-              <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
+              <div className="bg-[#173366] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
                 UFLEX offers best in quality holographic wide web films.
               </div>
 
@@ -342,9 +342,9 @@ export default function ProductCategorySection({
               <div className="space-y-6">
                 {/* 1. SOFT EMBOSSING FILM */}
                 <details className="group border-b border-gray-200 pb-4">
-                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
+                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#173366]">
                     <span>1. Soft Embossing Film</span>
-                    <ChevronDown className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
+                    <ChevronDown className="w-6 h-6 rounded-full bg-[#173366] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
                   </summary>
                   <div className="mt-4 pl-4 space-y-4">
                     <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
@@ -367,9 +367,9 @@ export default function ProductCategorySection({
 
                 {/* 2. HARD EMBOSSING FILM */}
                 <details className="group border-b border-gray-200 pb-4">
-                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
+                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#173366]">
                     <span>2. Hard Embossing Film</span>
-                    <ChevronDown className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
+                    <ChevronDown className="w-6 h-6 rounded-full bg-[#173366] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
                   </summary>
                   <div className="mt-4 pl-4 space-y-4">
                     <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
@@ -391,9 +391,9 @@ export default function ProductCategorySection({
 
                 {/* 3. UV EMBOSSING FILM */}
                 <details className="group border-b border-gray-200 pb-4">
-                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
+                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#173366]">
                     <span>3. UV Embossing Film</span>
-                    <ChevronDown className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
+                    <ChevronDown className="w-6 h-6 rounded-full bg-[#173366] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
                   </summary>
                   <div className="mt-4 pl-4 space-y-4">
                     <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
@@ -415,9 +415,9 @@ export default function ProductCategorySection({
 
                 {/* 4. HRI HOLOGRAPHIC FILM */}
                 <details className="group border-b border-gray-200 pb-4">
-                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
+                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#173366]">
                     <span>4. HRI Holographic Film</span>
-                    <ChevronDown className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
+                    <ChevronDown className="w-6 h-6 rounded-full bg-[#173366] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
                   </summary>
                   <div className="mt-4 pl-4 space-y-4">
                     <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
@@ -439,9 +439,9 @@ export default function ProductCategorySection({
 
                 {/* 5. LENS FILM (F1 & F2) */}
                 <details className="group border-b border-gray-200 pb-4">
-                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
+                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#173366]">
                     <span>5. Lens Film (F1 & F2)</span>
-                    <ChevronDown className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
+                    <ChevronDown className="w-6 h-6 rounded-full bg-[#173366] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
                   </summary>
                   <div className="mt-4 pl-4 space-y-4">
                     <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
@@ -481,9 +481,9 @@ export default function ProductCategorySection({
 
                 {/* 6. HOLOGRAPHIC PVC FILM */}
                 <details className="group">
-                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#117ABA]">
+                  <summary className="flex justify-between items-center cursor-pointer text-[16px] sm:text-[18px] lato-700 text-[#173366]">
                     <span>6. Holographic PVC Film</span>
-                    <ChevronDown className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
+                    <ChevronDown className="w-6 h-6 rounded-full bg-[#173366] flex items-center justify-center shadow-sm text-white transition-transform group-open:rotate-180" size={24} />
                   </summary>
                   <div className="mt-4 pl-4 space-y-4">
                     <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
@@ -506,10 +506,10 @@ export default function ProductCategorySection({
 
               {/* Bottom Buttons */}
               <div className="flex flex-wrap gap-6 justify-start pt-8">
-                {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                {/* <button className="bg-[#173366] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Learn More
                 </button> */}
-                {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                {/* <button className="bg-[#173366] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Request Sample
                 </button> */}
               </div>
@@ -519,14 +519,14 @@ export default function ProductCategorySection({
             <div className="bg-white space-y-12">
               {/* Overview */}
               <div>
-                {/* <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-6">Overview:</h2> */}
+                {/* <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-6">Overview:</h2> */}
                 <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                   UFLEX understands the needs of embroidered and high fashion garment export houses. UFLEX is the only manufacturer in India that provides OEKO-TEX CERTIFIED Material to fashion houses. Due to our quality processes, our sequin films are widely accepted for computerized and hand embroidery processes. The thickness range varies from 91μ to 175μ. We provide about 800 plus colours and exclusive printed designs.
                 </p>
               </div>
 
               {/* Red Heading Bar */}
-              <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
+              <div className="bg-[#173366] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
                 UFLEX offers following types of sequin films:
               </div>
 
@@ -549,7 +549,7 @@ export default function ProductCategorySection({
 
               {/* Thickness Range */}
               <div>
-                <h3 className="lato-700 text-[16px] sm:text-[18px] text-[#117ABA] mb-4">Thickness range:</h3>
+                <h3 className="lato-700 text-[16px] sm:text-[18px] text-[#173366] mb-4">Thickness range:</h3>
                 <ul className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black list-disc pl-8 space-y-2">
                   <li>FOR COMPUTERIZED EMBROIDERY: 90-150 Microns</li>
                   <li>FOR HAND EMBROIDERY: 130-250 Microns</li>
@@ -558,13 +558,13 @@ export default function ProductCategorySection({
 
               {/* New Developments – Soft Sequins */}
               <div className="space-y-8">
-                <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
+                <div className="bg-[#173366] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
                   NEW DEVELOPMENTS: SOFT SEQUINS
                 </div>
 
                 {/* Sequins for Sublimation Printing */}
                 <div className="space-y-4">
-                  <h4 className="lato-700 text-[16px] sm:text-[18px] text-[#117ABA]">SEQUINS FOR SUBLIMATION PRINTING</h4>
+                  <h4 className="lato-700 text-[16px] sm:text-[18px] text-[#173366]">SEQUINS FOR SUBLIMATION PRINTING</h4>
                   <ul className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black list-disc pl-8 space-y-2">
                     <li>Special coating for good printing Result</li>
                     <li>High heat resistant</li>
@@ -586,7 +586,7 @@ export default function ProductCategorySection({
 
                 {/* Soft Sequins for Kids Wear */}
                 <div className="space-y-4">
-                  <h4 className="lato-700 text-[16px] sm:text-[18px] text-[#117ABA]">SOFT SEQUINS FOR KIDS WEAR</h4>
+                  <h4 className="lato-700 text-[16px] sm:text-[18px] text-[#173366]">SOFT SEQUINS FOR KIDS WEAR</h4>
                   <ul className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black list-disc pl-8 space-y-2">
                     <li>Specially developed for new born & kids wear</li>
                     <li>Sequins Film softer than standard Regular raw material</li>
@@ -617,7 +617,7 @@ export default function ProductCategorySection({
 
                 {/* Soft Touch Sequins */}
                 <div className="space-y-4">
-                  <h4 className="lato-700 text-[16px] sm:text-[18px] text-[#117ABA]">SOFT TOUCH SEQUINS</h4>
+                  <h4 className="lato-700 text-[16px] sm:text-[18px] text-[#173366]">SOFT TOUCH SEQUINS</h4>
                   <ul className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black list-disc pl-8 space-y-2">
                     <li>Soft-touch Sequins to replace Velvet Fabric Laminated Sequins</li>
                     <li>Single Layer Sequins</li>
@@ -640,7 +640,7 @@ export default function ProductCategorySection({
 
                 {/* Ombre Print Sequins */}
                 <div className="space-y-4">
-                  <h4 className="lato-700 text-[16px] sm:text-[18px] text-[#117ABA]">OMBRE PRINT SEQUINS</h4>
+                  <h4 className="lato-700 text-[16px] sm:text-[18px] text-[#173366]">OMBRE PRINT SEQUINS</h4>
                   <ul className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black list-disc pl-8 space-y-2">
                     <li>Multi-colour Embroidery possible with single sequins</li>
                     <li>Economical / Productivity</li>
@@ -661,7 +661,7 @@ export default function ProductCategorySection({
 
                 {/* FDS Double Colour Sequins */}
                 <div className="space-y-4">
-                  <h4 className="lato-700 text-[16px] sm:text-[18px] text-[#117ABA]">FDS DOUBLE COLOUR SEQUINS</h4>
+                  <h4 className="lato-700 text-[16px] sm:text-[18px] text-[#173366]">FDS DOUBLE COLOUR SEQUINS</h4>
                   <ul className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black list-disc pl-8 space-y-2">
                     <li>Double colour Top Hole Sequins in Trend</li>
                     <li>Available More than 120 combination</li>
@@ -682,7 +682,7 @@ export default function ProductCategorySection({
 
                 {/* 3D Lens Sequins */}
                 <div className="space-y-4">
-                  <h4 className="lato-700 text-[16px] sm:text-[18px] text-[#117ABA]">3D LENS SEQUINS</h4>
+                  <h4 className="lato-700 text-[16px] sm:text-[18px] text-[#173366]">3D LENS SEQUINS</h4>
                   <ul className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black list-disc pl-8 space-y-2">
                     <li>New 3D / Lens Sequins for Unique Fancy look</li>
                     <li>Possible in Multi-colour</li>
@@ -703,12 +703,12 @@ export default function ProductCategorySection({
 
               {/* Hot Melt Film */}
               <div className="space-y-6 pt-8">
-                <h3 className="lato-700 text-[16px] sm:text-[18px] text-[#117ABA]">2. HOT MELT FILM (50 MICRON.)</h3>
+                <h3 className="lato-700 text-[16px] sm:text-[18px] text-[#173366]">2. HOT MELT FILM (50 MICRON.)</h3>
                 <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                   Hot Melt Film is a thick film (holographic or non-holographic) on which heat activated glues (hot melt glue) are applied to use them on fabrics. Hot Melt Film are mostly used in decorative and textile products and are available in multiple colours
                 </p>
 
-                <div className="bg-[#117ABA] text-white px-6 py-4  lato-700 text-lg">
+                <div className="bg-[#173366] text-white px-6 py-4  lato-700 text-lg">
                   Production available:
                 </div>
 
@@ -751,7 +751,7 @@ export default function ProductCategorySection({
 
               {/* Holographic Glitter Film */}
               <div className="space-y-6 pt-8">
-                <h3 className="lato-700 text-[16px] sm:text-[18px] text-[#117ABA]">3. HOLOGRAPHIC GLITTER FILM (23 Micron)</h3>
+                <h3 className="lato-700 text-[16px] sm:text-[18px] text-[#173366]">3. HOLOGRAPHIC GLITTER FILM (23 Micron)</h3>
                 <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                   UFLEX is specialized in manufacturing holographic glitter films for metallic yarns in a variety of colors & designs.
                 </p>
@@ -770,10 +770,10 @@ export default function ProductCategorySection({
 
               {/* Bottom Buttons */}
               <div className="flex flex-wrap gap-6 justify-end pt-10">
-                {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                {/* <button className="bg-[#173366] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Learn More
                 </button> */}
-                {/* <button className="border-2 border-[#117ABA] text-[#117ABA] px-8 py-4  font-medium hover:bg-blue-50 transition">
+                {/* <button className="border-2 border-[#173366] text-[#173366] px-8 py-4  font-medium hover:bg-blue-50 transition">
                   Request Sample
                 </button> */}
               </div>
@@ -785,7 +785,7 @@ export default function ProductCategorySection({
             <div className="bg-white space-y-12">
               {/* Overview */}
               <div>
-                {/* <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-6">Overview:</h2> */}
+                {/* <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-6">Overview:</h2> */}
                 <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                   UFLEX is a pioneer in producing holographic/non-holographic hot stamping foils for printing, packaging and textile industry. Hot stamping foils is primarily used to enhance visual appeal and brand protection. Our hot stamping foils are suitable for a wide range of substrates and good for fine details to solid patch jobs.
                 </p>
@@ -795,13 +795,13 @@ export default function ProductCategorySection({
               </div>
 
               {/* Red Heading Bar */}
-              <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
+              <div className="bg-[#173366] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
                 UFLEX hot stamping foils can be used on a wide assortment of products in:
               </div>
 
               {/* Textile Grade */}
               <div className="space-y-6">
-                <h3 className="lato-700 text-[16px] sm:text-[18px] text-[#117ABA]">TEXTILE GRADE – Regular and Multi Wash:</h3>
+                <h3 className="lato-700 text-[16px] sm:text-[18px] text-[#173366]">TEXTILE GRADE – Regular and Multi Wash:</h3>
                 <ul className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black list-disc pl-8 space-y-3">
                   <li>Suitable for Cotton & Synthetic fabric with pre-coated adhesives for finest line design and solid area application</li>
                   <li>Application in Decorative textiles, T-shirts, Evening dresses, Dress Materials, Furnishing Fabrics & Swimwear etc.</li>
@@ -821,7 +821,7 @@ export default function ProductCategorySection({
 
               {/* Graphic Grade */}
               <div className="space-y-6">
-                <h3 className="lato-700 text-[16px] sm:text-[18px] text-[#117ABA]">GRAPHIC GRADE – Hot Stamping & Cold Foil:</h3>
+                <h3 className="lato-700 text-[16px] sm:text-[18px] text-[#173366]">GRAPHIC GRADE – Hot Stamping & Cold Foil:</h3>
                 <ul className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black list-disc pl-8 space-y-3">
                   <li>Easy release, excellent coverage and adhesion on glossy and Matt Opp laminated paper and board</li>
                   <li>Suitable for both fine line and medium to large area stamping designs.</li>
@@ -842,7 +842,7 @@ export default function ProductCategorySection({
 
               {/* Plastic Grade */}
               <div className="space-y-6">
-                <h3 className="lato-700 text-[16px] sm:text-[18px] text-[#117ABA]">PLASTIC GRADE:</h3>
+                <h3 className="lato-700 text-[16px] sm:text-[18px] text-[#173366]">PLASTIC GRADE:</h3>
                 <ul className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black list-disc pl-8 space-y-3">
                   <li>Suitable for PS, PP, HIPS, Moulded Plastic Parts</li>
                   <li>Wall clocks, Cosmetic Containers, Toys, Plastic File Covers / Folders and Diary cover, Plastic Photo Frame etc.</li>
@@ -862,10 +862,10 @@ export default function ProductCategorySection({
 
               {/* Bottom Buttons */}
               <div className="flex flex-wrap gap-6 justify-start pt-10">
-                {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                {/* <button className="bg-[#173366] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Learn More
                 </button> */}
-                {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                {/* <button className="bg-[#173366] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Request Sample
                 </button> */}
               </div>
@@ -875,7 +875,7 @@ export default function ProductCategorySection({
             <div className="bg-white space-y-12">
               {/* Overview */}
               <div>
-                {/* <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-6">Overview:</h2> */}
+                {/* <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-6">Overview:</h2> */}
                 <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                   Transfer metalizing process refers to adding a thin layer of Aluminium (with or without holographic Lacquer or the color) to a substrate namely paper, board or a film. The layer of aluminium adds a bright metallic and high gloss effect. These metalized substrates are used as base materials for packaging, labels, promotions & publications.
                 </p>
@@ -896,13 +896,13 @@ export default function ProductCategorySection({
               </div>
 
               {/* Product Range Red Bar */}
-              <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
+              <div className="bg-[#173366] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
                 Product Range:
               </div>
 
               {/* Transfer Metalized Materials */}
               <div className="space-y-6">
-                <h3 className="lato-700 text-[16px] sm:text-[18px] text-[#117ABA]">Transfer Metalized materials can be supplied in:</h3>
+                <h3 className="lato-700 text-[16px] sm:text-[18px] text-[#173366]">Transfer Metalized materials can be supplied in:</h3>
                 <ul className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black list-disc pl-8 space-y-3">
                   <li><strong>Silver:</strong> Hi gloss surface with the shiny silver surface</li>
                   <li><strong>Gold:</strong> A gold effect is created by adding pigment to the release coating prior to metalizing.</li>
@@ -926,7 +926,7 @@ export default function ProductCategorySection({
               </div>
 
               {/* Benefits Red Bar */}
-              <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
+              <div className="bg-[#173366] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
                 BENEFITS OF TRANSFER PAPER/BOARD
               </div>
 
@@ -959,7 +959,7 @@ export default function ProductCategorySection({
               {/* Product Categories, Applications & Industries Table */}
               <div className="space-y-6">
                 {/* Red Heading Bar – exact match */}
-                <div className="bg-[#117ABA] text-white px-6 py-4 rounded-t-lg lato-700 text-[16px] sm:text-[18px]">
+                <div className="bg-[#173366] text-white px-6 py-4 rounded-t-lg lato-700 text-[16px] sm:text-[18px]">
                   Product Categories, Applications & Industries:
                 </div>
 
@@ -968,9 +968,9 @@ export default function ProductCategorySection({
                   <table className="w-full border-collapse border border-gray-300 text-left">
                     <thead>
                       <tr className="bg-gray-100">
-                        <th className="border border-gray-300 px-6 py-4 lato-700 text-[#117ABA] text-center font-bold">Categories</th>
-                        <th className="border border-gray-300 px-6 py-4 lato-700 text-[#117ABA] text-center font-bold">Labelling</th>
-                        <th className="border border-gray-300 px-6 py-4 lato-700 text-[#117ABA] text-center font-bold">Publishing</th>
+                        <th className="border border-gray-300 px-6 py-4 lato-700 text-[#173366] text-center font-bold">Categories</th>
+                        <th className="border border-gray-300 px-6 py-4 lato-700 text-[#173366] text-center font-bold">Labelling</th>
+                        <th className="border border-gray-300 px-6 py-4 lato-700 text-[#173366] text-center font-bold">Publishing</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -993,9 +993,9 @@ export default function ProductCategorySection({
                   <table className="w-full border-collapse border border-gray-300 text-left">
                     <thead>
                       <tr className="bg-gray-100">
-                        <th className="border border-gray-300 px-6 py-4 lato-700 text-[#117ABA] text-center font-bold">Applications</th>
-                        <th className="border border-gray-300 px-6 py-4 lato-700 text-[#117ABA] text-center font-bold">Self-Adhesive Paper Stock</th>
-                        <th className="border border-gray-300 px-6 py-4 lato-700 text-[#117ABA] text-center font-bold">Cartons</th>
+                        <th className="border border-gray-300 px-6 py-4 lato-700 text-[#173366] text-center font-bold">Applications</th>
+                        <th className="border border-gray-300 px-6 py-4 lato-700 text-[#173366] text-center font-bold">Self-Adhesive Paper Stock</th>
+                        <th className="border border-gray-300 px-6 py-4 lato-700 text-[#173366] text-center font-bold">Cartons</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -1023,9 +1023,9 @@ export default function ProductCategorySection({
                   <table className="w-full border-collapse border border-gray-300 text-left">
                     <thead>
                       <tr className="bg-gray-100">
-                        <th className="border border-gray-300 px-6 py-4 lato-700 text-[#117ABA] text-center font-bold">Industries</th>
-                        <th className="border border-gray-300 px-6 py-4 lato-700 text-[#117ABA] text-center font-bold">Wire & cables</th>
-                        <th className="border border-gray-300 px-6 py-4 lato-700 text-[#117ABA] text-center font-bold">Publishing</th>
+                        <th className="border border-gray-300 px-6 py-4 lato-700 text-[#173366] text-center font-bold">Industries</th>
+                        <th className="border border-gray-300 px-6 py-4 lato-700 text-[#173366] text-center font-bold">Wire & cables</th>
+                        <th className="border border-gray-300 px-6 py-4 lato-700 text-[#173366] text-center font-bold">Publishing</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -1053,10 +1053,10 @@ export default function ProductCategorySection({
 
               {/* Bottom Buttons */}
               <div className="flex flex-wrap gap-6 justify-start pt-10">
-                {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                {/* <button className="bg-[#173366] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Learn More
                 </button> */}
-                {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                {/* <button className="bg-[#173366] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Request Sample
                 </button> */}
               </div>
@@ -1067,7 +1067,7 @@ export default function ProductCategorySection({
             <div className="bg-white space-y-12">
               {/* Overview */}
               <div>
-                {/* <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-6">Overview:</h2> */}
+                {/* <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-6">Overview:</h2> */}
                 <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                   UFLEX is one of the leading organizations providing the most popular labeling solutions to various industry verticals. UFLEX’s pressure-sensitive labels/self-adhesive labels are an excellent choice for various products in homecare, pharmaceuticals, personal care, wine/liquor, food & beverages, automobile and several other products in other industry verticals. Our label production facility customize labels and printing in a variety of stocks, inks and processes.
                 </p>
@@ -1090,7 +1090,7 @@ export default function ProductCategorySection({
               </div>
 
               {/* Red Heading Bar – Various Labeling Solutions */}
-              <div className="bg-[#117ABA] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
+              <div className="bg-[#173366] text-white px-6 py-4 lato-700 text-[16px] sm:text-[18px]">
                 VARIOUS LABELING SOLUTIONS THAT WE OFFER ARE:
               </div>
 
@@ -1141,7 +1141,7 @@ export default function ProductCategorySection({
 
               {/* Industries Served */}
               <div className="space-y-6">
-                <h3 className="lato-700 text-[16px] sm:text-[18px] text-[#117ABA]">We are serving labelling solutions to almost all industry verticals.</h3>
+                <h3 className="lato-700 text-[16px] sm:text-[18px] text-[#173366]">We are serving labelling solutions to almost all industry verticals.</h3>
                 <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                   Our expert and experienced professionals specialize in providing solutions to a varied range of customers.
                 </p>
@@ -1182,10 +1182,10 @@ export default function ProductCategorySection({
 
               {/* Bottom Buttons */}
               <div className="flex flex-wrap gap-6 justify-start pt-10">
-                {/*  {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                {/*  {/* <button className="bg-[#173366] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Learn More
                 </button> */}
-                {/* <button className="bg-[#117ABA] text-white px-8 py-4  font-medium  transition rounded-sm">
+                {/* <button className="bg-[#173366] text-white px-8 py-4  font-medium  transition rounded-sm">
                   Request Sample
                 </button> */}
               </div>

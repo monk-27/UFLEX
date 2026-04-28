@@ -27,7 +27,7 @@ function StatCard({ number, label }: { number: string; label: string }) {
       ref={ref}
       className="flex flex-col items-center rounded-lg bg-gray-50 p-6 text-center transition-shadow hover:shadow-md"
     >
-      <motion.div className="text-5xl lato-500 text-[#117ABA] md:text-6xl flex">
+      <motion.div className="text-5xl lato-500 text-[#173366] md:text-6xl flex">
         <motion.span>{rounded}</motion.span>
         <span>{suffix}</span>
       </motion.div>

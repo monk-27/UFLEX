@@ -33,7 +33,7 @@ const cardColors = [
     // { border: "border-orange-400", bg: "bg-orange-50/70", title: "text-orange-700", ring: "ring-orange-200", tint: "bg-orange-100/70" },
     // { border: "border-red-400", bg: "bg-red-50/70", title: "text-red-700", ring: "ring-red-200", tint: "bg-red-100/70" },
     // { border: "border-indigo-400", bg: "bg-indigo-50/70", title: "text-indigo-700", ring: "ring-indigo-200", tint: "bg-indigo-100/70" },
-    { border: "border-[#117ABA]", bg: "bg-gray-100", title: "text-[#117ABA] ", ring: "ring-[#117ABA]", tint: "", textOnTint: "text-green-900" },
+    { border: "border-[#173366]", bg: "bg-gray-100", title: "text-[#173366] ", ring: "ring-[#173366]", tint: "", textOnTint: "text-green-900" },
 
 ]
 const Careers = () => {
@@ -63,7 +63,7 @@ const Careers = () => {
 
 
                             If you are looking for a rewarding career, you may write to us at{" "}
-                            <span className="text-[#117ABA]">hr@uflexltd.com . </span>
+                            <span className="text-[#173366]">hr@uflexltd.com . </span>
                             <span className='lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black'>
                                 All current openings can be viewed at the link below. Click the button to submit your application.
                             </span>
@@ -74,7 +74,7 @@ const Careers = () => {
                             href="https://aa193.taleo.net/careersection/ex/jobsearch.ftl?lang=en"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-start rounded-sm texts-md lato-600 bg-[#117ABA] text-white w-auto mx-2 py-2 mt-4 px-12 inline-block"
+                            className="text-start rounded-sm texts-md lato-600 bg-[#173366] text-white w-auto mx-2 py-2 mt-4 px-12 inline-block"
                         >
                             Apply Now
                         </a>
@@ -85,7 +85,7 @@ const Careers = () => {
 
 
 
-                <section className="w-screen relative bg-[#117ABA] mt-10 pb-4">
+                <section className="w-screen relative bg-[#97c3ef] mt-10 pb-4">
 
                     <motion.section
                         className="max-w-7xl mx-auto w-full px-4 sm:px-0 text-start "
@@ -95,7 +95,7 @@ const Careers = () => {
                         viewport={{ once: true }}
                     >
                         <motion.h3
-                            className=" text-center flex justify-center text-white text-[24px] lato-700  md:text-[42px]   mb-2 pt-12"
+                            className=" text-center flex justify-center text-[#173366] text-[24px] lato-700  md:text-[42px]   mb-2 pt-12"
                             initial={{ opacity: 0, y: -20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7, delay: 0.2 }}
@@ -105,7 +105,7 @@ const Careers = () => {
 
                         <motion.h2
                             transition={{ duration: 0.7, delay: 0.4 }}
-                            className="text-center lato-400 text-[14px] leading-relaxed md:text-[24px] text-white mb-1 py-6"
+                            className="text-center lato-400 text-[14px] leading-relaxed md:text-[24px] text-black mb-1 py-6"
                         >
                             <span className='lato-700'>
                                 At UFlex, we're not just shaping the future of packaging, we're revolutionizing it.
@@ -141,7 +141,7 @@ const Careers = () => {
 
                                             {/* CONTENT */}
                                             {/* <div className="flex flex-1 flex-col items-center px-4 py-4 text-center">
-                                            <h3 className="mb-2 text-lg lato-400 text-[#117ABA]">
+                                            <h3 className="mb-2 text-lg lato-400 text-[#173366]">
                                                 {it.title}
                                             </h3>
 
@@ -155,7 +155,7 @@ const Careers = () => {
                         className="absolute left-4 top-6 h-6 w-[2px] bg-[#D84A3B]"
                       /> */}
 
-                                                <h3 className="lato-700 text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
+                                                <h3 className="lato-700 text-[18px] md:text-[20px] leading-tight text-[#173366]">
                                                     {it.title}
                                                 </h3>
 

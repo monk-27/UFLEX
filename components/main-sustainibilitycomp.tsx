@@ -14,7 +14,7 @@ export default function MainSustainabilityCOMMComp({
     <section className="max-w-7xl mx-auto w-full px-4 py-14">
       {/* Heading */}
       <div className="text-center mb-10">
-        <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] ">
+        <h2 className="text-[24px] lato-700 text-[#173366] md:text-[42px] ">
           UFlex’s Sustainability Vision
         </h2>
         <p className="mt-2 text-black lato-400 py-[2px] text-[14px] leading-relaxed md:text-[24px]">
@@ -91,7 +91,7 @@ export default function MainSustainabilityCOMMComp({
 
                 {/* Text */}
                 <div>
-                  <h4 className="lato-700 text-[14px] md:text-[18px]  leading-relaxed text-[#117ABA] ">
+                  <h4 className="lato-700 text-[14px] md:text-[18px]  leading-relaxed text-[#173366] ">
                     {item.title}
                   </h4>
                   <p className="mt-1 lato-400 text-[14px] md:text-[18px] text-black  leading-relaxed">

@@ -41,9 +41,9 @@ export function GetQuoteButton() {
                 w-14 hover:w-44
                 overflow-hidden
                 rounded-full
-                border border-[#117ABA]
+                border border-[#173366]
                 bg-white
-                text-[#117ABA]
+                text-[#173366]
                 shadow-[0_10px_25px_rgba(17,122,186,0.2)]
                 transition-all duration-300 ease-out
                 hover:shadow-[0_15px_35px_rgba(17,122,186,0.3)]

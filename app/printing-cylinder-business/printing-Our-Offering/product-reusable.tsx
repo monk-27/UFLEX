@@ -46,7 +46,7 @@ export default function ProductCategorySection({
                     >
                         <div className="">
 
-                            <div className="bg-[#117ABA] text-white px-6 py-5">
+                            <div className="bg-[#173366] text-white px-6 py-5">
                                 <h2 className="text-lg lato-700 tracking-wide">Product Categories</h2>
                             </div>
 
@@ -64,7 +64,7 @@ export default function ProductCategorySection({
       hover:bg-[#F9F9F9]
      
       ${category.isActive
-                                                ? " text-[#117ABA]"
+                                                ? " text-[#173366]"
                                                 : " text-black"
                                             }
     `}
@@ -72,7 +72,7 @@ export default function ProductCategorySection({
                                         <span
                                             className={`
         lato-400 text-[16px] sm:text-[18px] leading-relaxed
-        ${category.isActive ? "text-[#117ABA] " : "text-black"}
+        ${category.isActive ? "text-[#173366] " : "text-black"}
       `}
                                         >
                                             {category.name}
@@ -82,7 +82,7 @@ export default function ProductCategorySection({
                                             size={18}
                                             className={`
         transition-transform duration-300
-        ${category.isActive ? "rotate-90 text-[#117ABA]" : "text-gray-500"}
+        ${category.isActive ? "rotate-90 text-[#173366]" : "text-gray-500"}
       `}
                                         />
                                     </motion.button>
@@ -99,7 +99,7 @@ export default function ProductCategorySection({
                     <div className="lg:hidden bg-white   overflow-hidden">
                         <button
                             onClick={() => setIsMobileOpen(!isMobileOpen)}
-                            className="w-full flex items-center justify-between bg-[#117ABA] text-white px-6 py-5 lato-400 text-[16px] sm:text-[18px] leading-relaxed "
+                            className="w-full flex items-center justify-between bg-[#173366] text-white px-6 py-5 lato-400 text-[16px] sm:text-[18px] leading-relaxed "
                         >
                             <span>PRODUCT CATEGORIES</span>
                             {isMobileOpen ? <ChevronDown size={24} /> : <ChevronRight size={24} />}
@@ -127,7 +127,7 @@ export default function ProductCategorySection({
       hover:bg-gray-100
      
       ${category.isActive
-                                                        ? "bg-blue-100  text-[#117ABA]"
+                                                        ? "bg-blue-100  text-[#173366]"
                                                         : "border-l-transparent text-black"
                                                     }
     `}
@@ -135,7 +135,7 @@ export default function ProductCategorySection({
                                                 <span
                                                     className={`
         lato-400 text-[16px] sm:text-[18px] leading-relaxed
-        ${category.isActive ? "text-[#117ABA]" : "text-black"}
+        ${category.isActive ? "text-[#173366]" : "text-black"}
       `}
                                                 >
                                                     {category.name}
@@ -145,7 +145,7 @@ export default function ProductCategorySection({
                                                     size={18}
                                                     className={`
         transition-transform duration-300
-        ${category.isActive ? "rotate-90 text-[#117ABA]" : "text-gray-500"}
+        ${category.isActive ? "rotate-90 text-[#173366]" : "text-gray-500"}
       `}
                                                 />
                                             </motion.button>
@@ -178,7 +178,7 @@ export default function ProductCategorySection({
 
           {/* OVERVIEW */}
           <div className="flex gap-2">
-                                {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
+                                {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#173366]" /> */}
                                 
                             </div>
                             <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
@@ -191,7 +191,7 @@ export default function ProductCategorySection({
             sectionData.blocks.map((block: any, i: number) => (
               <div key={i} className="border border-gray-200">
 
-                <div className="bg-[#117ABA] text-white px-4 py-3 lato-700">
+                <div className="bg-[#173366] text-white px-4 py-3 lato-700">
                   {block.heading}
                 </div>
 

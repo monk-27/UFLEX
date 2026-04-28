@@ -37,7 +37,7 @@ export function AwardsSection({ data,businessKey }: any) {
             </h2>
 
             <h3 className="flex items-center gap-2 text-white lato-700 text-[18px] md:text-[24px] mb-3">
-              <span className="text-[#117ABA] text-xl leading-none">▶</span>
+              <span className="text-[#173366] text-xl leading-none">▶</span>
               <span>Recognized for our sustainability efforts</span>
             </h3>
 
@@ -48,7 +48,7 @@ export function AwardsSection({ data,businessKey }: any) {
             {data.linkHref && data.linkLabel && (
               <Link
               href={hallOfFameLink}
-              className="inline-flex items-center gap-2  lato-400 text-[16px] sm:text-[20px] text-[#117ABA] transition-colors"
+              className="inline-flex items-center gap-2  lato-400 text-[16px] sm:text-[20px] text-[#173366] transition-colors"
             >
               {data.linkLabel || "View All Awards"}
               <span aria-hidden>↗</span>

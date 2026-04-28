@@ -4,13 +4,12 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import type { AwardsSlide, InnovationSlide } from "@/app/business/data";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
 
 type Props = {
   heading: string;
-  items: AwardsSlide[];
+  // items: AwardsSlide[];
 };
 
 // slide variants for whole block (text + image)
@@ -48,18 +47,18 @@ export function AwardsSlider({ heading, items }: any) {
   };
 
   return (
-    <section className="bg-[#117ABA] relative w-screen left-1/2 right-1/2 -mx-[50vw] py-8  mt-4">
+    <section className="bg-[#97c3ef] relative w-screen left-1/2 right-1/2 -mx-[50vw] py-8  mt-4">
       <div className="max-w-7xl mx-auto ">
-        {/* <h2 className="pt-8 lato-400 text-[22px] md:text-[28px] text-[#117ABA] mb-8">
+        {/* <h2 className="pt-8 lato-400 text-[22px] md:text-[28px] text-[#173366] mb-8">
           {heading}
         </h2> */}
         <div className="flex flex-col items-center text-center mb-4">
 
-          <h2 className="text-white text-[24px] lato-700  md:text-[42px]   ">
+          <h2 className="text-[#173366] text-[24px] lato-700  md:text-[42px]   ">
             In The Spotlight
           </h2>
 
-          {/* <span className=" block text-[20px] lato-400 text-[#117ABA]">
+          {/* <span className=" block text-[20px] lato-400 text-[#173366]">
               Corporate, HR & Sustainability Awards
             </span> */}
         </div>
@@ -79,12 +78,12 @@ export function AwardsSlider({ heading, items }: any) {
               <div className="grid  lg:grid-cols-2 items-start pt-6">
                 {/* Text */}
                 <div className=" w-full h-[200px] md:h-[240px] lg:h-[267px]">
-                  <h3 className="lato-400 text-[18px] md:text-[24px] text-white mb-3 leading-relaxed">
+                  <h3 className="lato-400 text-[18px] md:text-[24px] text-[#173366] mb-3 leading-relaxed">
                     {current.title}
                   </h3>
 
                   {/* Add mt-4 to keep description where it was */}
-                  <p className="text-wrap max-w-xl whitespace-pre-line lato-400 text-[16px] sm:text-[18px] leading-relaxed text-white mt-8">
+                  <p className="text-wrap max-w-xl whitespace-pre-line lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black mt-8">
                     {current.description}
                   </p>
                 </div>

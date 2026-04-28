@@ -134,7 +134,7 @@
 //                   <div className="mt-4 inline-block rounded-xl px-2 py-2 text-green-900">
 // <a
 //                       href={item.buttonLink}
-//                       className={` border-[2px] border-[#117ABA]  bg-[#117ABA]  text-sm mt-4 inline-block rounded-xl px-2 py-2 text-white`}
+//                       className={` border-[2px] border-[#173366]  bg-[#173366]  text-sm mt-4 inline-block rounded-xl px-2 py-2 text-white`}
 //                     >
 //                       {item.buttonText}
 //                     </a>
@@ -186,7 +186,7 @@
 //           style={{ x: xLeft, opacity }}
 //           className="will-change-transform z-10 h-[75vh] w-[70%] overflow-hidden rounded bg-gray-100 text-[#2A2A2A] shadow"
 //         >
-//           <div className="text-[#117ABA] flex h-[79px] w-full items-center justify-center overflow-hidden rounded text-4xl">
+//           <div className="text-[#173366] flex h-[79px] w-full items-center justify-center overflow-hidden rounded text-4xl">
 //             <span className=" text-center text-[26px]">UFlex's Commitment to a Circular Economy</span>
 //           </div>
 
@@ -230,7 +230,7 @@
 //         />
 //       </div>
 
-//       <div className="text-[#117ABA] mt-4  w-full py-2">
+//       <div className="text-[#173366] mt-4  w-full py-2">
 //         <h2 className=" text-[14px]">
 //           <span>UFlex's Commitment to a Circular Economy</span>
 //         </h2>
@@ -353,7 +353,7 @@
 //   // { border: "border-orange-400", bg: "bg-orange-50/70", title: "text-orange-700", ring: "ring-orange-200", tint: "bg-orange-100/70" },
 //   // { border: "border-red-400", bg: "bg-red-50/70", title: "text-red-700", ring: "ring-red-200", tint: "bg-red-100/70" },
 //   // { border: "border-indigo-400", bg: "bg-indigo-50/70", title: "text-indigo-700", ring: "ring-indigo-200", tint: "bg-indigo-100/70" },
-//   { border: "border-gray-200", bg: "bg-gray-100", title: "text-[#117ABA] ", ring: "ring-[#117ABA]", tint: "bg-[#117ABA]", textOnTint: "text-green-900" },
+//   { border: "border-gray-200", bg: "bg-gray-100", title: "text-[#173366] ", ring: "ring-[#173366]", tint: "bg-[#173366]", textOnTint: "text-green-900" },
 
 // ]
 
@@ -379,7 +379,7 @@
 //               initial={{ opacity: 0, y: 10 }}
 //               whileInView={{ opacity: 1, y: 0 }}
 //               viewport={{ once: true }}
-//               className="text-[24px] lato-600 text-[#117ABA] md:text-[42px] md:text-5xl"
+//               className="text-[24px] lato-600 text-[#173366] md:text-[42px] md:text-5xl"
 //             >
 //               What We Do
 //             </motion.h1>
@@ -425,7 +425,7 @@
 //       {/* FEATURED STRIP (like your screenshot with arrows) */}
 //       <section aria-labelledby="featured" className="relative">
 //         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-//           <h2 id="featured" className="text-center text-[24px] lato-600 text-[#117ABA] md:text-[42px] md:text-5xl">
+//           <h2 id="featured" className="text-center text-[24px] lato-600 text-[#173366] md:text-[42px] md:text-5xl">
 //             Our Expansion
 //           </h2>
 
@@ -591,7 +591,7 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
 
   return (
     <section aria-labelledby={`${id}-heading`} className=" px-4 sm:px-6 lg:px-0 py-10">
-      <h2 id={`${id}-heading`} className="text-center text-[24px] lato-700 text-[#117ABA] md:text-[42px] mb-12">
+      <h2 id={`${id}-heading`} className="text-center text-[24px] lato-700 text-[#173366] md:text-[42px] mb-12">
         {heading}
       </h2>
 
@@ -613,7 +613,7 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
                   </div>
 
                   <div className="p-4 md:p-5">
-                    <h3 className="text-center text-[#117ABA] text-sm lato-600 text-[16px]">{card.title}</h3>
+                    <h3 className="text-center text-[#173366] text-sm lato-600 text-[16px]">{card.title}</h3>
 
                   </div>
                   <div className="text-gray-400 lato-400 text-right items-end">
@@ -706,7 +706,7 @@ function InvestorSliders({ items, heading, id }: { items: InvestorCard[]; headin
 
   return (
     <section aria-labelledby={`${id}-heading`} className=" px-4 sm:px-6 lg:px-0 py-10">
-      <h2 id={`${id}-heading`} className="text-center text-[24px] lato-400 text-[#117ABA] md:text-[28px] mb-12">
+      <h2 id={`${id}-heading`} className="text-center text-[24px] lato-400 text-[#173366] md:text-[28px] mb-12">
         {heading}
       </h2>
 
@@ -728,7 +728,7 @@ function InvestorSliders({ items, heading, id }: { items: InvestorCard[]; headin
                   </div>
 
                   <div className="p-4 md:p-5">
-                    <h3 className="text-center text-[#117ABA] text-sm lato-600 text-[16px]">{card.title}</h3>
+                    <h3 className="text-center text-[#173366] text-sm lato-600 text-[16px]">{card.title}</h3>
 
                   </div>
                   <div className="text-gray-400 lato-400 text-right items-end">

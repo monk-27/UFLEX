@@ -242,7 +242,7 @@ export default function Page() {
               >
                 {tab.label}
                 {active && (
-                  <span className="absolute left-0 right-0 bottom-0 h-[3px] bg-[#117ABA]" />
+                  <span className="absolute left-0 right-0 bottom-0 h-[3px] bg-[#173366]" />
                 )}
               </button>
             )
@@ -250,7 +250,7 @@ export default function Page() {
         </div>
 
         {/* Blue header */}
-        <div className="w-full bg-[#117ABA] py-3 px-4">
+        <div className="w-full bg-[#173366] py-3 px-4">
           <h2 className="text-white text-[14px] md:text-[18px] leading-relaxed lato-700 text-center">
             {currentHeading}
           </h2>
@@ -280,7 +280,7 @@ export default function Page() {
         />
       </div>
 
-      <span className="mt-3 lato-700 text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
+      <span className="mt-3 lato-700 text-[18px] md:text-[20px] leading-tight text-[#173366]">
         {item.year}
       </span>
     </Link>

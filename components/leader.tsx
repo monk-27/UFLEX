@@ -41,7 +41,7 @@ function _LeaderSpotlight({
   bgClassName = "bg-[#ECECEC]",
   nameColorClass = "text-[#0F2B4F]",
   roleColorClass = "text-black",
-  buttonBgClass = "bg-[#117ABA]",
+  buttonBgClass = "bg-[#173366]",
   buttonTextClass = "text-white",
   className = "",
   sliderSettings,
@@ -78,7 +78,7 @@ function _LeaderSpotlight({
     return (
       <div>
          <motion.h3
-                    className="text-center text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl md:mb-8 my-6"
+                    className="text-center text-[24px] manrope-600 text-[#173366] md:text-[42px] md:text-5xl md:mb-8 my-6"
                     initial={{ opacity: 0, y: -16 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.15 }}
@@ -121,7 +121,7 @@ function _LeaderSpotlight({
             transition={{ duration: 0.45, delay: 0.12 }}
           >
             <h3
-              className={`text-2xl poppin-600 md:text-[28px] text-[#117ABA]`}
+              className={`text-2xl poppin-600 md:text-[28px] text-[#173366]`}
             >
               {p.name}
             </h3>

@@ -155,7 +155,7 @@ export default function LeadershipAwards() {
                   className="
         mb-2
        text-[14px] md:text-[18px] leading-relaxed lato-700
-        text-[#117ABA]
+        text-[#173366]
         line-clamp-2
         min-h-[44px]
       "

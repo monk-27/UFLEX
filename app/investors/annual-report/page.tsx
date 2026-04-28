@@ -510,8 +510,8 @@ const Page = () => {
                 className={[
                   "px-4 py-2 rounded-full border text-xs sm:text-sm md:text-base lato-600 transition-all",
                   active
-                    ? "bg-[#117ABA] text-white border-[#117ABA]"
-                    : "bg-white text-[#000000] border-[#117ABA]",
+                    ? "bg-[#173366] text-white border-[#173366]"
+                    : "bg-white text-[#000000] border-[#173366]",
                 ].join(" ")}
               >
                 {year.label}
@@ -594,7 +594,7 @@ const Page = () => {
                 >
                   {tab.label}
                   {active && (
-                    <span className="absolute left-0 right-0 bottom-0 h-[3px] bg-[#117ABA]" />
+                    <span className="absolute left-0 right-0 bottom-0 h-[3px] bg-[#173366]" />
                   )}
                 </button>
               );
@@ -605,7 +605,7 @@ const Page = () => {
           {isUFLEX && (
             <>
               {/* Annual Reports Header */}
-              <div className="w-full bg-[#117ABA] py-3 px-4">
+              <div className="w-full bg-[#173366] py-3 px-4">
                 <h2 className="text-white text-sm sm:text-base lato-700 text-center sm:text-center">
                   Annual Reports
                 </h2>
@@ -649,7 +649,7 @@ const Page = () => {
           {isSubsidiary && (
             <div className="bg-white">
 
-              <div className="w-full bg-[#117ABA] py-3 px-4">
+              <div className="w-full bg-[#173366] py-3 px-4">
                 <h2 className="text-white text-sm sm:text-base lato-700">
                   Subsidiary Companies
                 </h2>

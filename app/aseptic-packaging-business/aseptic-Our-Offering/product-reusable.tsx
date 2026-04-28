@@ -120,7 +120,7 @@ export default function ProductCategorySection(props: any) {
           >
             <div className="">
 
-              <div className="bg-[#117ABA] text-white px-6 py-5">
+              <div className="bg-[#173366] text-white px-6 py-5">
                 <h2 className="text-lg lato-700 tracking-wide">Product Categories</h2>
               </div>
 
@@ -138,7 +138,7 @@ export default function ProductCategorySection(props: any) {
       hover:bg-[#F9F9F9]
      
       ${category.isActive
-                        ? " text-[#117ABA]"
+                        ? " text-[#173366]"
                         : " text-black"
                       }
     `}
@@ -146,7 +146,7 @@ export default function ProductCategorySection(props: any) {
                     <span
                       className={`
         lato-400 text-[16px] sm:text-[18px] leading-relaxed
-        ${category.isActive ? "text-[#117ABA] " : "text-black"}
+        ${category.isActive ? "text-[#173366] " : "text-black"}
       `}
                     >
                       {category.name}
@@ -156,7 +156,7 @@ export default function ProductCategorySection(props: any) {
                       size={18}
                       className={`
         transition-transform duration-300
-        ${category.isActive ? "rotate-90 text-[#117ABA]" : "text-gray-500"}
+        ${category.isActive ? "rotate-90 text-[#173366]" : "text-gray-500"}
       `}
                     />
                   </motion.button>
@@ -176,7 +176,7 @@ export default function ProductCategorySection(props: any) {
                                         <li key={link.label}>
                                             <a
                                                 href={link.href}
-                                                className="text-black hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
+                                                className="text-black hover:text-[#173366] text-sm flex items-center gap-1.5 transition-colors"
                                                 {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
                                             >
                                                 {link.label}
@@ -193,7 +193,7 @@ export default function ProductCategorySection(props: any) {
           <div className="lg:hidden bg-white   overflow-hidden">
             <button
               onClick={() => setIsMobileOpen(!isMobileOpen)}
-              className="w-full flex items-center justify-between bg-[#117ABA] text-white px-6 py-5 lato-400 text-[16px] sm:text-[18px] leading-relaxed "
+              className="w-full flex items-center justify-between bg-[#173366] text-white px-6 py-5 lato-400 text-[16px] sm:text-[18px] leading-relaxed "
             >
               <span>PRODUCT CATEGORIES</span>
               {isMobileOpen ? <ChevronDown size={24} /> : <ChevronRight size={24} />}
@@ -221,7 +221,7 @@ export default function ProductCategorySection(props: any) {
       hover:bg-gray-100
      
       ${category.isActive
-                            ? "bg-blue-100  text-[#117ABA]"
+                            ? "bg-blue-100  text-[#173366]"
                             : "border-l-transparent text-black"
                           }
     `}
@@ -229,7 +229,7 @@ export default function ProductCategorySection(props: any) {
                         <span
                           className={`
         lato-400 text-[16px] sm:text-[18px] leading-relaxed
-        ${category.isActive ? "text-[#117ABA]" : "text-black"}
+        ${category.isActive ? "text-[#173366]" : "text-black"}
       `}
                         >
                           {category.name}
@@ -239,7 +239,7 @@ export default function ProductCategorySection(props: any) {
                           size={18}
                           className={`
         transition-transform duration-300
-        ${category.isActive ? "rotate-90 text-[#117ABA]" : "text-gray-500"}
+        ${category.isActive ? "rotate-90 text-[#173366]" : "text-gray-500"}
       `}
                         />
                       </motion.button>
@@ -263,7 +263,7 @@ export default function ProductCategorySection(props: any) {
                                             <li key={link.label}>
                                                 <a
                                                     href={link.href}
-                                                    className="text-black hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
+                                                    className="text-black hover:text-[#173366] text-sm flex items-center gap-1.5 transition-colors"
                                                     {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
                                                 >
                                                     {link.label}
@@ -293,21 +293,21 @@ export default function ProductCategorySection(props: any) {
               <div className="flex flex-wrap gap-4">
                 <button
                   onClick={() => setActiveTab("cartons")}
-                  className={`px-10 py-5 rounded-lg font-medium text-lg transition-all ${activeTab === "cartons" ? "bg-[#117ABA] text-white" : "bg-gray-200 text-gray-800 hover:bg-gray-300"
+                  className={`px-10 py-5 rounded-lg font-medium text-lg transition-all ${activeTab === "cartons" ? "bg-[#173366] text-white" : "bg-gray-200 text-gray-800 hover:bg-gray-300"
                     }`}
                 >
                   Aseptic Cartons
                 </button>
                 <button
                   onClick={() => setActiveTab("innovations")}
-                  className={`px-10 py-5 rounded-lg font-medium text-lg transition-all ${activeTab === "innovations" ? "bg-[#117ABA] text-white" : "bg-gray-200 text-gray-800 hover:bg-gray-300"
+                  className={`px-10 py-5 rounded-lg font-medium text-lg transition-all ${activeTab === "innovations" ? "bg-[#173366] text-white" : "bg-gray-200 text-gray-800 hover:bg-gray-300"
                     }`}
                 >
                   Our Innovations
                 </button>
                 <button
                   onClick={() => setActiveTab("process")}
-                  className={`px-10 py-5 rounded-lg font-medium text-lg transition-all ${activeTab === "process" ? "bg-[#117ABA] text-white" : "bg-gray-200 text-gray-800 hover:bg-gray-300"
+                  className={`px-10 py-5 rounded-lg font-medium text-lg transition-all ${activeTab === "process" ? "bg-[#173366] text-white" : "bg-gray-200 text-gray-800 hover:bg-gray-300"
                     }`}
                 >
                   Converting Process
@@ -318,14 +318,14 @@ export default function ProductCategorySection(props: any) {
               {activeTab === "cartons" && (
                 <div className="bg-white space-y-12">
                   <div>
-                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Explore our Packaging Solutions</h2>
+                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-2">Explore our Packaging Solutions</h2>
                     <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black mb-2">
                       Asepto innovatively incorporates the 3P's of Packaging - PRESERVE, PROTECT and PROMOTE. Our aseptic liquid packaging cartons encompass six layers of protection that keeps the freshness preserved in varieties of beverages, be it dairy and dairy-based beverages, nectar-based beverages, or beverages from the distillery industry. We augment your product positioning through innovative design aesthetics. Our state-of-the-art converting process and manufacturing facilities help us materialize our thoughts into reality. They are advanced, automated, and human-touch-free.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Shapes we offer</h3>
+                    <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-2">Shapes we offer</h3>
                     <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black mb-2">
                       Asepto offers a complete range of on-the-go packs and in-home consumption packs in all shapes and dimensions that our customers and consumers asks. Our aseptic liquid cartons address two important aspects – what is suitable to the customers and consumers, and how innovatively the branding can be done.
                     </p>
@@ -333,14 +333,14 @@ export default function ProductCategorySection(props: any) {
                     {/* Shapes with connecting lines */}
                     <div className="relative py-12">
                       {/* Horizontal line between rows */}
-                      <div className="absolute left-0 right-0 top-1/2 h-0.5 bg-[#117ABA] transform -translate-y-1/2 hidden md:block" />
+                      <div className="absolute left-0 right-0 top-1/2 h-0.5 bg-[#173366] transform -translate-y-1/2 hidden md:block" />
 
                       {/* Combined grid for both rows */}
                       <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-6 md:gap-8 auto-rows-fr">
                         {[...topRow, ...bottomRow].map((shape, index) => (
                           <div
                             key={shape}
-                            className="relative text-center border-r border-[#117ABA] last:border-r-0 md:border-r md:last:border-r-0"
+                            className="relative text-center border-r border-[#173366] last:border-r-0 md:border-r md:last:border-r-0"
                           >
                             {/* Vertical line - only on desktop, between columns */}
                             {index % 5 !== 4 && (
@@ -360,7 +360,7 @@ export default function ProductCategorySection(props: any) {
 
                             {/* Horizontal line only between top and bottom row on mobile */}
                             {index === 4 && (
-                              <div className="h-0.5 bg-[#117ABA] my-8 md:hidden" />
+                              <div className="h-0.5 bg-[#173366] my-8 md:hidden" />
                             )}
                           </div>
                         ))}
@@ -369,8 +369,8 @@ export default function ProductCategorySection(props: any) {
                   </div>
 
                   <div className="flex gap-6 justify-start">
-                    {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Learn More</button> */}
-                    {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button> */}
+                    {/* <button className="bg-[#173366] text-white px-8 py-4 rounded-lg font-medium">Learn More</button> */}
+                    {/* <button className="bg-[#173366] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button> */}
                   </div>
                 </div>
               )}
@@ -379,7 +379,7 @@ export default function ProductCategorySection(props: any) {
               {activeTab === "innovations" && (
                 <div className="bg-white  space-y-12">
                   <div>
-                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Our Innovations</h2>
+                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-2">Our Innovations</h2>
                     <p className="text-lg leading-relaxed text-gray-800 mb-8">
                       Innovation is the essence of evolution. For a brand, the packaging is the most visible depiction of its evolution story. Packaging is your key salesperson and we at Asepto believe that "All that Glitters is Sold". Our Holography and Foil Stamping Technology are the innovation milestones in the aseptic liquid packaging industry. They add differentiating edge to your brand and make it attractive on the retail shelf.
                     </p>
@@ -387,8 +387,8 @@ export default function ProductCategorySection(props: any) {
 
                   {/* ASEPTO PREMIUM */}
                   <div className="space-y-1">
-                    <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">ASEPTO PREMIUM</h3>
-                    <p className="lato-700 text-[14px] sm:text-[18px] text-[#117ABA]">Create the premium positioning for your brand.</p>
+                    <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#173366]">ASEPTO PREMIUM</h3>
+                    <p className="lato-700 text-[14px] sm:text-[18px] text-[#173366]">Create the premium positioning for your brand.</p>
 
                     <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                       Asepto Premium is a design innovation that decorates the packaging with a luxurious shiny finish to elevate the product’s aesthetic presence. This innovative technology augments the packaging with distinct adornments that demarcate the product, making it visibly impacting. Asepto Premium influences a customer’s perceived notion about the brand and encourages premium positioning. It comes with a wide range of customizable colour combinations. We encourage our clients to contact our Sales Team and ask for customizations that best suit their requirements. We are always eager to add value to our client’s journeys and experiences.
@@ -398,7 +398,7 @@ export default function ProductCategorySection(props: any) {
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 py-6">
                       {foilStamps.map((foils: any, index: number) => (
                         <div key={index} className="text-center">
-                          <p className="text-start mt-3 lato-400 text-[#117ABA]">{foils.name}</p>
+                          <p className="text-start mt-3 lato-400 text-[#173366]">{foils.name}</p>
 
                           <div className="relative aspect-square overflow-hidden  bg-gray-50">
                             <Image
@@ -416,8 +416,8 @@ export default function ProductCategorySection(props: any) {
 
                   {/* ASEPTO SPARK */}
                   <div className="space-y-1">
-                    <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">ASEPTO SPARK</h3>
-                    <p className="lato-700 text-[14px] sm:text-[18px] text-[#117ABA]">Add the spark to propel the product growth engine.</p>
+                    <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#173366]">ASEPTO SPARK</h3>
+                    <p className="lato-700 text-[14px] sm:text-[18px] text-[#173366]">Add the spark to propel the product growth engine.</p>
 
                     <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
                       Asepto Spark is an outcome of a rigorous research and development process involving innovative techniques to apply holography on an aseptic liquid packaging carton. This ostentatious packaging is achieved with sparkling holographic and metallic looks, giving brands endless possibilities to give an evolutionary edge to their line of products. A product inside Asepto Spark packaging will beat the shelf competition to reach out to customers’ and consumers’ shopping lists. Asepto Spark makes the packaging ultra-attractive and exceptionally outstanding. Similar to Asepto Premium, it also comes with a wide range of customizable colour combinations and innovative design patterns. We encourage our clients to contact our Sales Team and ask for customizations that best suit their requirements. We are always eager to add value to our client’s journeys and experiences.
@@ -427,7 +427,7 @@ export default function ProductCategorySection(props: any) {
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 py-4">
                       {Stamps.map((foil: any, index: number) => (
                         <div key={index} className="text-center">
-                          <p className="text-start mt-3 lato-400 text-[#117ABA]">{foil.name}</p>
+                          <p className="text-start mt-3 lato-400 text-[#173366]">{foil.name}</p>
 
                           <div className="relative aspect-square  overflow-hidden  ">
                             <Image
@@ -444,8 +444,8 @@ export default function ProductCategorySection(props: any) {
                   </div>
 
                   <div className="flex gap-6 justify-start">
-                    {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Learn More</button> */}
-                    {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button> */}
+                    {/* <button className="bg-[#173366] text-white px-8 py-4 rounded-lg font-medium">Learn More</button> */}
+                    {/* <button className="bg-[#173366] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button> */}
                   </div>
                 </div>
               )}
@@ -463,7 +463,7 @@ export default function ProductCategorySection(props: any) {
                     />
                   </div>
                   <div>
-                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Packaging that keeps it all safe</h2>
+                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-2">Packaging that keeps it all safe</h2>
                     <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black mb-2">
                       Our aseptic liquid packaging cartons comprise six layers of protection that keep the beverage unexposed to the outer world, i.e., sunlight, air, moisture, etc.
                     </p>
@@ -480,7 +480,7 @@ export default function ProductCategorySection(props: any) {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] "
+                            className="lato-700 text-[20px] sm:text-[24px] text-[#173366] "
                           >
                             Packaging that keeps it all safe
                           </motion.span>
@@ -540,7 +540,7 @@ export default function ProductCategorySection(props: any) {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] "
+                            className="lato-700 text-[20px] sm:text-[24px] text-[#173366] "
                           >
                             12 Billion Packs per annum
                           </motion.span>
@@ -592,8 +592,8 @@ export default function ProductCategorySection(props: any) {
                   </div>
 
                   <div className="flex gap-6 justify-start">
-                    {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Learn More</button> */}
-                    {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button> */}
+                    {/* <button className="bg-[#173366] text-white px-8 py-4 rounded-lg font-medium">Learn More</button> */}
+                    {/* <button className="bg-[#173366] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button> */}
                   </div>
                 </div>
               )}
@@ -606,7 +606,7 @@ export default function ProductCategorySection(props: any) {
               </div> */}
               {/* Overview */}
               <div>
-                <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Overview</h2>
+                <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-2">Overview</h2>
                 <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black whitespace-pre-line">
                   {overview}
                 </p>
@@ -625,7 +625,7 @@ export default function ProductCategorySection(props: any) {
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] "
+                        className="lato-700 text-[20px] sm:text-[24px] text-[#173366] "
                       >
                         Why A Sip ?
 
@@ -678,7 +678,7 @@ export default function ProductCategorySection(props: any) {
 
               {/* Key Features */}
               <div>
-                <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-4">Key Features :</h3>
+                <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-4">Key Features :</h3>
                 <ul className="list-disc pl-8 space-y-3 text-lg text-black">
                   {keyFeatures.map((feature: string, idx: number) => (
                     <li key={idx}>{feature}</li>
@@ -688,7 +688,7 @@ export default function ProductCategorySection(props: any) {
 
               {/* Our Technology */}
               <div>
-                <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-4">Our Technology</h3>
+                <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-4">Our Technology</h3>
                 <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black whitespace-pre-line">
                   {technology}
                 </p>
@@ -696,10 +696,10 @@ export default function ProductCategorySection(props: any) {
 
               {/* Buttons */}
               <div className="flex flex-wrap gap-6 justify-start">
-                {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium  transition">
+                {/* <button className="bg-[#173366] text-white px-8 py-4 rounded-lg font-medium  transition">
                   Learn More
                 </button> */}
-                {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button> */}
+                {/* <button className="bg-[#173366] text-white px-8 py-4 rounded-lg font-medium">Request Sample</button> */}
 
               </div>
             </div>
@@ -713,7 +713,7 @@ export default function ProductCategorySection(props: any) {
                 </div> */}
                 {/* Machine 1: SPEED PLUS 25SK */}
                 <div>
-                  <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Overview</h2>
+                  <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-2">Overview</h2>
                   <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black whitespace-pre-line">
                     {overview}
                   </p>
@@ -721,12 +721,12 @@ export default function ProductCategorySection(props: any) {
                 <div className="bg-white  relative overflow-hidden">
 
 
-                  <h3 className="text-center lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">Speed Plus 25SK</h3>
+                  <h3 className="text-center lato-700 text-[20px] sm:text-[24px] text-[#173366]">Speed Plus 25SK</h3>
                   <div className="flex flex-col lg:flex-row gap-8 items-start lg:items-center">
                     {/* Left: Text */}
                     <div className="lg:w-1/2 space-y-1">
 
-                      <h4 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">Key Features :</h4>
+                      <h4 className="lato-700 text-[20px] sm:text-[24px] text-[#173366]">Key Features :</h4>
                       <ul className="list-disc pl-6 space-y-3 text-lg text-black">
                         <li>High Speed Machine – 25,000 Packs per hour</li>
                         <li>Advanced Integration with HMI & PLC</li>
@@ -751,10 +751,10 @@ export default function ProductCategorySection(props: any) {
 
                 {/* Machine 2: Flexpress 10,000 */}
                 <div className="bg-white ">
-                  <h3 className="text-center lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">Flexpress 10,000</h3>
+                  <h3 className="text-center lato-700 text-[20px] sm:text-[24px] text-[#173366]">Flexpress 10,000</h3>
                   <div className="flex flex-col lg:flex-row gap-8 items-start lg:items-center">
                     <div className="lg:w-1/2 space-y-6">
-                      <h4 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">Key Features :</h4>
+                      <h4 className="lato-700 text-[20px] sm:text-[24px] text-[#173366]">Key Features :</h4>
                       <ul className="list-disc pl-6 space-y-3 text-lg text-black">
                         <li>More packs per hour</li>
                         <li>More varieties from the same filling machines</li>
@@ -778,10 +778,10 @@ export default function ProductCategorySection(props: any) {
 
                 {/* Machine 3: Smart 78 */}
                 <div className="bg-white ">
-                  <h3 className="text-center lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">Smart 78</h3>
+                  <h3 className="text-center lato-700 text-[20px] sm:text-[24px] text-[#173366]">Smart 78</h3>
                   <div className="flex flex-col lg:flex-row gap-8 items-start lg:items-center">
                     <div className="lg:w-1/2 space-y-6">
-                      <h4 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">Key Features :</h4>
+                      <h4 className="lato-700 text-[20px] sm:text-[24px] text-[#173366]">Key Features :</h4>
                       <ul className="list-disc pl-6 space-y-3 text-lg text-black">
                         <li>High Speed Machine – 7,800 Packs per hour</li>
                         <li>Advanced Integration with HMI & PLC</li>
@@ -805,10 +805,10 @@ export default function ProductCategorySection(props: any) {
               </div>
 
               <div className="flex flex-wrap gap-6 justify-start mt-10">
-                {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium  transition">
+                {/* <button className="bg-[#173366] text-white px-8 py-4 rounded-lg font-medium  transition">
                   Learn More
                 </button> */}
-                {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium">
+                {/* <button className="bg-[#173366] text-white px-8 py-4 rounded-lg font-medium">
                   Request Sample
                 </button> */}
               </div>
@@ -820,14 +820,14 @@ export default function ProductCategorySection(props: any) {
                   <Image src={heroImageUrl} alt="Aseptic Cartons" fill className="object-contain" priority />
                 </div> */}
                 <div>
-                  <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Overview</h2>
+                  <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-2">Overview</h2>
                   <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black whitespace-pre-line">
                     {overview}
                   </p>
                 </div>
 
                 <div className="bg-white">
-                  <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2">Why Choose
+                  <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-2">Why Choose
                     <span>
                       </span> Asepto Pro?</h2>
                   <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
@@ -858,18 +858,18 @@ export default function ProductCategorySection(props: any) {
 
                 {/* Solutions We Offer - Dropdowns */}
                 <div className="bg-white">
-                  <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-4 pb-8">Solutions We offer</h2>
+                  <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-4 pb-8">Solutions We offer</h2>
 
                   {/* CarePro Dropdown */}
                   <details
                     onToggle={() => toggleSection('carePro')}
                     className="bg-[#F9F9F9]  px-2 py-2 mb-4  pb-4 border-white border-[1px] text-left hover:bg-gray-50 transition-colors">
-                    <summary className="flex items-center justify-between cursor-pointer lato-700 text-[15px] sm:text-[16px] md:text-[18px] text-[#117ABA]">
+                    <summary className="flex items-center justify-between cursor-pointer lato-700 text-[15px] sm:text-[16px] md:text-[18px] text-[#173366]">
                       <span>CarePro</span>
                       <motion.button
                         animate={{ rotate: openSections.carePro ? 180 : 0 }}
                         transition={{ duration: 0.3 }}
-                        className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm"
+                        className="w-6 h-6 rounded-full bg-[#173366] flex items-center justify-center shadow-sm"
                       >
                         <ChevronDown className="w-3 h-3 text-white" />
                       </motion.button>
@@ -893,12 +893,12 @@ export default function ProductCategorySection(props: any) {
                     onToggle={() => toggleSection('maxPro')}
                     className="bg-[#F9F9F9]  px-2 py-2 mb-4  pb-4 border-white border-[1px]   text-left hover:bg-gray-50 transition-colors">
 
-                    <summary className="flex items-center justify-between cursor-pointer lato-700 text-[15px] sm:text-[16px] md:text-[18px] text-[#117ABA]">
+                    <summary className="flex items-center justify-between cursor-pointer lato-700 text-[15px] sm:text-[16px] md:text-[18px] text-[#173366]">
                       <span>MaxPro</span>
                       <motion.button
                         animate={{ rotate: openSections.maxPro ? 180 : 0 }}
                         transition={{ duration: 0.3 }}
-                        className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm"
+                        className="w-6 h-6 rounded-full bg-[#173366] flex items-center justify-center shadow-sm"
                       >
                         <ChevronDown className="w-3 h-3 text-white" />
                       </motion.button>
@@ -923,12 +923,12 @@ export default function ProductCategorySection(props: any) {
                     onToggle={() => toggleSection('ultraPro')}
                     className="bg-[#F9F9F9]  px-2 py-2 mb-4  pb-4 border-white border-[1px]   text-left hover:bg-gray-50 transition-colors">
 
-                    <summary className="flex items-center justify-between cursor-pointer lato-700 text-[15px] sm:text-[16px] md:text-[18px] text-[#117ABA]">
+                    <summary className="flex items-center justify-between cursor-pointer lato-700 text-[15px] sm:text-[16px] md:text-[18px] text-[#173366]">
                       <span>UltraPro</span>
                       <motion.button
                         animate={{ rotate: openSections.ultraPro ? 180 : 0 }}
                         transition={{ duration: 0.3 }}
-                        className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm"
+                        className="w-6 h-6 rounded-full bg-[#173366] flex items-center justify-center shadow-sm"
                       >
                         <ChevronDown className="w-3 h-3 text-white" />
                       </motion.button>
@@ -949,10 +949,10 @@ export default function ProductCategorySection(props: any) {
 
                 {/* Bottom Buttons */}
                 <div className="flex flex-wrap gap-6 justify-start">
-                  <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium ">
+                  <button className="bg-[#173366] text-white px-8 py-4 rounded-lg font-medium ">
                     Learn More
                   </button>
-                  {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium ">
+                  {/* <button className="bg-[#173366] text-white px-8 py-4 rounded-lg font-medium ">
                     Request Sample
                   </button> */}
                 </div>
@@ -967,7 +967,7 @@ export default function ProductCategorySection(props: any) {
 
                   {/* We Think as Strategists We Do as Designers */}
                   <div className="bg-white ">
-                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2 text-start">
+                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-2 text-start">
                       We think as strategists we do as designers
                     </h2>
                     <p className="text-start lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black  ">
@@ -977,7 +977,7 @@ export default function ProductCategorySection(props: any) {
 
                   {/* Design that Speaks */}
                   <div className="bg-white ">
-                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2 text-start">
+                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-2 text-start">
                       Design that speaks
                     </h2>
                     <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black ">
@@ -987,7 +987,7 @@ export default function ProductCategorySection(props: any) {
 
                   {/* Some of Our Work - Gallery */}
                   <div className="bg-white ">
-                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA] mb-2 text-center">
+                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-2 text-center">
                       Some of our work
                     </h2>
 
@@ -1063,7 +1063,7 @@ export default function ProductCategorySection(props: any) {
 
                   {/* How we Design - Expandable Steps */}
                   <div className="">
-                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]  mb-2 text-start">
+                    <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#173366]  mb-2 text-start">
                       How we Design
                     </h2>
 
@@ -1074,12 +1074,12 @@ export default function ProductCategorySection(props: any) {
                                             className="bg-[#F9F9F9]  px-2 py-2 mb-4  pb-4 border-white border-[1px]   text-left hover:bg-gray-50 transition-colors">
 
                       
-                        <summary className="flex items-center justify-between cursor-pointer lato-700 text-[15px] sm:text-[16px] md:text-[18px] text-[#117ABA]">
+                        <summary className="flex items-center justify-between cursor-pointer lato-700 text-[15px] sm:text-[16px] md:text-[18px] text-[#173366]">
                           <span>Briefing</span>
                           <motion.div
                             animate={{ rotate: openSection.briefing ? 180 : 0 }}
                             transition={{ duration: 0.3, ease: 'easeInOut' }}
-                            className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm"
+                            className="w-6 h-6 rounded-full bg-[#173366] flex items-center justify-center shadow-sm"
 
                           >
                             <ChevronDown className="inline-block w-8 h-8 text-white" />
@@ -1097,12 +1097,12 @@ export default function ProductCategorySection(props: any) {
                                             className="bg-[#F9F9F9]  px-2 py-2 mb-4  pb-4 border-white border-[1px]   text-left hover:bg-gray-50 transition-colors">
 
                       
-                        <summary className="flex items-center justify-between cursor-pointer lato-700 text-[15px] sm:text-[16px] md:text-[18px] text-[#117ABA]">
+                        <summary className="flex items-center justify-between cursor-pointer lato-700 text-[15px] sm:text-[16px] md:text-[18px] text-[#173366]">
                           <span>Ideation</span>
                           <motion.div
                             animate={{ rotate: openSection.ideation ? 180 : 0 }}
                             transition={{ duration: 0.3, ease: 'easeInOut' }}
-                            className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm"
+                            className="w-6 h-6 rounded-full bg-[#173366] flex items-center justify-center shadow-sm"
 
                           >
                             <ChevronDown className="inline-block w-8 h-8 text-white" />
@@ -1119,12 +1119,12 @@ export default function ProductCategorySection(props: any) {
                         onToggle={() => toggleSections('design')}
                                             className="bg-[#F9F9F9]  px-2 py-2 mb-4  pb-4 border-white border-[1px]   text-left hover:bg-gray-50 transition-colors">
 
-                        <summary className="flex items-center justify-between cursor-pointer lato-700 text-[15px] sm:text-[16px] md:text-[18px] text-[#117ABA]">
+                        <summary className="flex items-center justify-between cursor-pointer lato-700 text-[15px] sm:text-[16px] md:text-[18px] text-[#173366]">
                           <span>Design & Mockups</span>
                           <motion.div
                             animate={{ rotate: openSection.design ? 180 : 0 }}
                             transition={{ duration: 0.3, ease: 'easeInOut' }}
-                            className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm"
+                            className="w-6 h-6 rounded-full bg-[#173366] flex items-center justify-center shadow-sm"
 
                           >
                             <ChevronDown className="inline-block w-8 h-8 text-white" />
@@ -1139,10 +1139,10 @@ export default function ProductCategorySection(props: any) {
 
                   {/* Bottom Buttons */}
                   <div className="flex flex-wrap gap-6 justify-start">
-                    {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium ">
+                    {/* <button className="bg-[#173366] text-white px-8 py-4 rounded-lg font-medium ">
                       Learn More
                     </button> */}
-                    {/* <button className="bg-[#117ABA] text-white px-8 py-4 rounded-lg font-medium ">
+                    {/* <button className="bg-[#173366] text-white px-8 py-4 rounded-lg font-medium ">
                       Request Sample
                     </button> */}
                   </div>
@@ -1152,7 +1152,7 @@ export default function ProductCategorySection(props: any) {
                 (
                   // Fallback for other categories
                   <div className="bg-white p-8 rounded-xl border">
-                    <h2 className="text-3xl font-bold text-[#117ABA] mb-6">{title}</h2>
+                    <h2 className="text-3xl font-bold text-[#173366] mb-6">{title}</h2>
                     <p className="text-lg leading-relaxed text-gray-800">Content coming soon...</p>
                   </div>
                 )}

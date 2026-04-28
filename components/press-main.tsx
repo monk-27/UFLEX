@@ -58,7 +58,7 @@ export default function PressMainCarousel() {
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] "
+                  className="text-[24px] lato-700 text-[#173366] md:text-[42px] "
                 >
                   Press Room
                 </motion.h1>
@@ -122,7 +122,7 @@ export default function PressMainCarousel() {
                       initial={{ opacity: 0, y: 10 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
-                      className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] "
+                      className="text-[24px] lato-700 text-[#173366] md:text-[42px] "
                     >
                       Press Room
                     </motion.h1>
@@ -133,7 +133,7 @@ export default function PressMainCarousel() {
         
                     {/* <button
                       onClick={() => setOpen(true)}
-                      className="mt-4 lato-400 text-[16px] sm:text-[20px] text-[#117ABA]  hover:underline"
+                      className="mt-4 lato-400 text-[16px] sm:text-[20px] text-[#173366]  hover:underline"
                     >
                       Read More
                       <span aria-hidden>↗</span>

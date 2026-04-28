@@ -66,7 +66,7 @@ const next = () => {
   return (
     <section className="pt-12">
       {heading && (
-        <h2 className="lato-700 text-[28px] md:text-[32px] text-[#117ABA] text-start pb-12">
+        <h2 className="lato-700 text-[28px] md:text-[32px] text-[#173366] text-start pb-12">
           {heading}
         </h2>
       )}
@@ -92,7 +92,7 @@ const next = () => {
 
             <div className="p-5 flex flex-col flex-1 justify-between">
               <div>
-                <h3 className="lato-700 text-[18px] md:text-[20px] leading-tight text-[#117ABA] mb-2">
+                <h3 className="lato-700 text-[18px] md:text-[20px] leading-tight text-[#173366] mb-2">
                   {card.title}
                 </h3>
                 <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">
@@ -103,7 +103,7 @@ const next = () => {
               {card.dynamiclink && (
                 <Link
                   href={card.dynamiclink}
-                  className="mt-4 lato-400 text-[16px] sm:text-[20px] text-[#117ABA] hover:underline inline-flex items-center gap-1"
+                  className="mt-4 lato-400 text-[16px] sm:text-[20px] text-[#173366] hover:underline inline-flex items-center gap-1"
                 >
                   Read More <span aria-hidden>↗</span>
                 </Link>

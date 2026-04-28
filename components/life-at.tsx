@@ -19,7 +19,7 @@
 //         transition={{ duration: 0.6 }}
 //         viewport={{ once: true }}
 //       >
-//         <h2 className="text-[24px] lato-600 text-[#117ABA] md:text-[42px] md:text-5xl">Life at UFlex</h2>
+//         <h2 className="text-[24px] lato-600 text-[#173366] md:text-[42px] md:text-5xl">Life at UFlex</h2>
 //         <h3
 //           className="font-EB-extrabold mt-0 text-[16px] text-[#181818] sm:mt-2 md:text-3xl"
 //           style={{ lineHeight: "124%" }}
@@ -142,7 +142,7 @@ export default function LifeatModules() {
         <div className="items-center justify-center flex text-center space-x-2">
 
                       {/* <Image src="/images/ula.png" width={75} height={10} alt={""}/> */}
-        <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] ">
+        <h2 className="text-[24px] lato-700 text-[#173366] md:text-[42px] ">
           Life at UFlex
         </h2>
         </div>
@@ -194,7 +194,7 @@ export default function LifeatModules() {
 
             {/* Text Content */}
             <div className="flex flex-col p-6 text-left">
-              <h3 className="text-start lato-700 text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
+              <h3 className="text-start lato-700 text-[18px] md:text-[20px] leading-tight text-[#173366]">
                 {module.title}
               </h3>
               <p className=" mt-3 lato-400 text-[14px] md:text-[18px] text-black  leading-relaxed">

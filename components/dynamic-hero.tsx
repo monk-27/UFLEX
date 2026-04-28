@@ -14,7 +14,7 @@ const DynamicHero= ({image,text}:any) => {
         <div className="absolute left-0 right-0 bottom-0 pointer-events-none">
           <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-0 ">
             <div className="relative">
-              <span className="px-4 text-center inline-block bg-[#117ABA] text-white manrope-400 w-auto h-[40px] sm:h-[59px] text-[20px] sm:text-[36px] shadow-sm translate-y-1/2">
+              <span className="px-4 text-center inline-block bg-[#173366] text-white manrope-400 w-auto h-[40px] sm:h-[59px] text-[20px] sm:text-[36px] shadow-sm translate-y-1/2">
                 {text}
               </span>
             </div>

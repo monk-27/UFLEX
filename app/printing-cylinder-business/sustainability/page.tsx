@@ -67,7 +67,7 @@ const page = () => {
                             Printing Cylinders
                         </h2>
 
-                        <p className="lato-700 mt-2 text-[18px] sm:text-[24px] text-[#117ABA] leading-tight">
+                        <p className="lato-700 mt-2 text-[18px] sm:text-[24px] text-[#173366] leading-tight">
                             Effluent Treatment Plant (ETP)
                         </p>
                     </div>

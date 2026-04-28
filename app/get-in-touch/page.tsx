@@ -307,14 +307,14 @@ function OfficeCard({ o }: { o: Office }) {
       <div className="flex gap-4">
         {/* LEFT: blue icon block */}
         <div className="flex items-start">
-          <div className="bg-[#117ABA] rounded-2xl px-3 py-3 flex items-center justify-center">
+          <div className="bg-[#173366] rounded-2xl px-3 py-3 flex items-center justify-center">
             <Building2 className="h-6 w-6 text-white" />
           </div>
         </div>
 
         {/* RIGHT: all text + small icons */}
         <div className="flex-1">
-          <h3 className="lato-700 text-lg text-[#117ABA] underline underline-offset-4">
+          <h3 className="lato-700 text-lg text-[#173366] underline underline-offset-4">
             {o.name}
           </h3>
           {
@@ -355,7 +355,7 @@ function OfficeCard({ o }: { o: Office }) {
               <div className="flex gap-3">
                 <Mail className="h-5 w-5 text-slate-500 flex-none" />
                 <a
-                  className="text-[#117ABA] underline"
+                  className="text-[#173366] underline"
                   href={`mailto:${o.email}`}
                 >
                   {o.email}
@@ -597,7 +597,7 @@ export default function GetInTouch() {
         <section className="mt-4 max-w-7xl mx-auto w-full px-4 sm:px-0">
           <div className="grid gap-4 md:grid-cols-3">
             <a href="mailto:corpcomm@uflexltd.com" className="group flex items-center gap-3 rounded-sm bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-[2px] hover:shadow-md">
-              <div className="rounded-sm bg-[#117ABA] p-3 text-white"><Mail className="h-5 w-5" /></div>
+              <div className="rounded-sm bg-[#173366] p-3 text-white"><Mail className="h-5 w-5" /></div>
               <div>
                 <p className="lato-700 text-slate-800">Corporate Communications</p>
                 <p className="text-sm text-slate-600 group-hover:text-slate-700">corpcomm@uflexltd.com</p>
@@ -605,7 +605,7 @@ export default function GetInTouch() {
             </a>
 
             <a href="mailto:enquiry@uflexltd.com" className="group flex items-center gap-3 rounded-sm bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-[2px] hover:shadow-md">
-              <div className="rounded-sm bg-[#117ABA] p-3 text-white"><Mail className="h-5 w-5" /></div>
+              <div className="rounded-sm bg-[#173366] p-3 text-white"><Mail className="h-5 w-5" /></div>
               <div>
                 <p className="lato-700 text-slate-800">Feedback / Support</p>
                 <p className="text-sm text-slate-600 group-hover:text-slate-700">feedback@uflexltd.com</p>
@@ -613,7 +613,7 @@ export default function GetInTouch() {
             </a>
 
             <div className="flex items-center gap-3 rounded-sm bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-[2px] hover:shadow-md">
-              <div className="rounded-sm bg-[#117ABA] p-3 text-white"><Phone className="h-5 w-5" /></div>
+              <div className="rounded-sm bg-[#173366] p-3 text-white"><Phone className="h-5 w-5" /></div>
               <div>
                 <p className="lato-700 text-slate-800">Board Line</p>
                 <p className="text-sm text-slate-600 group-hover:text-slate-700">+91 120 4002121</p>
@@ -624,7 +624,7 @@ export default function GetInTouch() {
 
         {/* DIRECTORY: Independent filters */}
         <section className="max-w-7xl mx-auto w-full px-4 sm:px-0 py-14 ">
-          <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px]  text-center sm:text-left">Connect with us</h2>
+          <h2 className="text-[24px] lato-700 text-[#173366] md:text-[42px]  text-center sm:text-left">Connect with us</h2>
 
           {/* Controls */}
           <div className="mt-4 grid gap-3 md:grid-cols-12">
@@ -694,7 +694,7 @@ export default function GetInTouch() {
 
           <p className="mt-12 text-center text-sm text-slate-700 ">
             Can’t find what you need? Write to{" "}
-            <a href="mailto:enquiry@uflexltd.com" className="font-semibold text-[#117ABA] underline underline-offset-4">
+            <a href="mailto:enquiry@uflexltd.com" className="font-semibold text-[#173366] underline underline-offset-4">
               enquiry@uflexltd.com
             </a>
             
@@ -706,10 +706,10 @@ export default function GetInTouch() {
           <div className="mx-auto max-w-7xl px-4">
             {/* Heading */}
             <div className="text-start mb-4 py-6">
-              <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] ">Other Queries</h2>
+              <h2 className="text-[24px] lato-700 text-[#173366] md:text-[42px] ">Other Queries</h2>
               <p className="mt-2  text-black lato-400 py-[2px] text-[14px] leading-relaxed md:text-[24px]">
                 For any other enquiries, fill the form below. Fields marked with (
-                  <span className="text-[#117ABA]">*</span>) are mandatory.
+                  <span className="text-[#173366]">*</span>) are mandatory.
               </p>
             </div>
 
@@ -740,7 +740,7 @@ export default function GetInTouch() {
                       htmlFor="name"
                       className="text-sm lato-600 text-slate-700"
                     >
-                      Full Name  <span className="text-[#117ABA]">*</span>
+                      Full Name  <span className="text-[#173366]">*</span>
                     </label>
                     <input
                       id="name"
@@ -758,7 +758,7 @@ export default function GetInTouch() {
                       htmlFor="email"
                       className="text-sm lato-600 text-slate-700"
                     >
-                      Email Address  <span className="text-[#117ABA]">*</span>
+                      Email Address  <span className="text-[#173366]">*</span>
                     </label>
                     <input
                       id="email"
@@ -785,7 +785,7 @@ export default function GetInTouch() {
                       htmlFor="phone"
                       className="text-sm lato-600 text-slate-700"
                     >
-                      Phone Number  <span className="text-[#117ABA]">*</span>
+                      Phone Number  <span className="text-[#173366]">*</span>
                     </label>
                     <input
                       id="phone"
@@ -812,7 +812,7 @@ export default function GetInTouch() {
                       htmlFor="enquiryType"
                       className="text-sm lato-600 text-slate-700"
                     >
-                      Enquiry For  <span className="text-[#117ABA]">*</span>
+                      Enquiry For  <span className="text-[#173366]">*</span>
                     </label>
                     <select
                       id="enquiryType"
@@ -834,7 +834,7 @@ export default function GetInTouch() {
                       htmlFor="businessDivision"
                       className="text-sm lato-600 text-slate-700"
                     >
-                      Business Division <span className="text-[#117ABA]">*</span>
+                      Business Division <span className="text-[#173366]">*</span>
                     </label>
                     <select
                       id="businessDivision"
@@ -881,7 +881,7 @@ export default function GetInTouch() {
                       htmlFor="location"
                       className="text-sm lato-600 text-slate-700"
                     >
-                      Location <span className="text-[#117ABA]">*</span>
+                      Location <span className="text-[#173366]">*</span>
                     </label>
                     <select
                       id="location"
@@ -907,7 +907,7 @@ export default function GetInTouch() {
                   {/* CAPTCHA Row */}
                   <div className="grid gap-1 md:col-span-2 sm:grid-cols-2 items-end">
                     <div className="grid gap-1">
-                      <label className="text-sm lato-600 text-slate-700">Verify Captcha <span className="text-[#117ABA]">*</span></label>
+                      <label className="text-sm lato-600 text-slate-700">Verify Captcha <span className="text-[#173366]">*</span></label>
                       <div className="flex items-center gap-2">
                         <canvas
                           ref={canvasRef}
@@ -918,7 +918,7 @@ export default function GetInTouch() {
                         <button
                           type="button"
                           onClick={generateCaptcha}
-                          className="p-2 text-[#117ABA] hover:bg-slate-100 rounded-full transition-colors"
+                          className="p-2 text-[#173366] hover:bg-slate-100 rounded-full transition-colors"
                           title="Refresh CAPTCHA"
                         >
                           <RefreshCw className="h-4 w-4" />
@@ -945,7 +945,7 @@ export default function GetInTouch() {
                     htmlFor="message"
                     className="text-sm lato-600 text-slate-700"
                   >
-                    Message  <span className="text-[#117ABA]">*</span>
+                    Message  <span className="text-[#173366]">*</span>
                   </label>
                   <textarea
                     id="message"
@@ -965,7 +965,7 @@ export default function GetInTouch() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-sm bg-[#117ABA] px-6 py-3 lato-600 text-white shadow-sm transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[#0B3C7D] disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-sm bg-[#173366] px-6 py-3 lato-600 text-white shadow-sm transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[#0B3C7D] disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <>Processing...</>

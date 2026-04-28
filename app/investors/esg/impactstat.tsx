@@ -57,9 +57,9 @@ export function ImpactStats() {
                 className={
                   "group flex flex-col justify-between rounded-2xl min-h-[150px] sm:min-h-[160px] px-6 py-6 shadow-sm transition " +
                 //   (isPrimary
-                //     ? "bg-[#117ABA] text-white"
+                //     ? "bg-[#173366] text-white"
                 //     : 
-                    "bg-white text-[#117ABA] border border-[#D1D5DB] hover:bg-[#117ABA] hover:text-white hover:border-[#117ABA]"
+                    "bg-white text-[#173366] border border-[#D1D5DB] hover:bg-[#173366] hover:text-white hover:border-[#173366]"
                 // )
                 }
               >
@@ -71,7 +71,7 @@ export function ImpactStats() {
                     //   (isPrimary
                     //     ? "text-white"
                     //     : 
-                        "text-[#117ABA] group-hover:text-white"
+                        "text-[#173366] group-hover:text-white"
                     // )
                     }
                     strokeWidth={2}
@@ -86,7 +86,7 @@ export function ImpactStats() {
                     //   (isPrimary
                     //     ? "text-white"
                     //     : 
-                        "text-[#117ABA] group-hover:text-white"
+                        "text-[#173366] group-hover:text-white"
                     // )
                     }
                   >
@@ -102,7 +102,7 @@ export function ImpactStats() {
                     //   (isPrimary
                     //     ? "text-white/90"
                     //     : 
-                        "text-[#117ABA] group-hover:text-white/90"
+                        "text-[#173366] group-hover:text-white/90"
                     // )
                     }
                   >

@@ -16,7 +16,7 @@ export function BusinessHero({ business }: any) {
   return (
     <section className="w-full bg-white">
       {/* Hero image */}
-      <h1 className="text-center lato-700 text-[28px]  text-[#117ABA] mb-4">
+      <h1 className="text-center lato-700 text-[28px]  text-[#173366] mb-4">
         {business.label}
       </h1>
       <div className="">
@@ -32,7 +32,7 @@ export function BusinessHero({ business }: any) {
 
 
       <div className="mt-6">
-        <h2 className="lato-700 text-[28px] md:text-[32px] text-[#117ABA] mb-4">
+        <h2 className="lato-700 text-[28px] md:text-[32px] text-[#173366] mb-4">
           {business.subheading}
         </h2>
         <p className="lato-400 text-[14px] md:text-[15px] leading-relaxed text-black ">

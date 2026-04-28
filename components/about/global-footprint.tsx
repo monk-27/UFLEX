@@ -29,7 +29,7 @@
 //     <section className="mt-[30px] px-4 py-0 text-center sm:mt-8  sm:py-10 md:px-12">
 //       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-//         <h2 className="text-[24px] lato-600 text-[#117ABA] md:text-[42px] md:text-5xl text-center">Our Global Footprint</h2>
+//         <h2 className="text-[24px] lato-600 text-[#173366] md:text-[42px] md:text-5xl text-center">Our Global Footprint</h2>
 
 
 
@@ -45,11 +45,11 @@
 
 //         <div className="mt-12 grid md:grid-cols-2 gap-12">
 //           <div className="border-2 border-gray-400 bg-gray-100 p-8 rounded-lg">
-//             <h3 className="text-2xl lato-800 mb-6 text-[#117ABA] ">Manufacturing Facilities in India</h3>
+//             <h3 className="text-2xl lato-800 mb-6 text-[#173366] ">Manufacturing Facilities in India</h3>
 //             <ul className="space-y-4">
 //               {locations.India.map((location, idx) => (
 //                 <li key={idx} className="flex items-start gap-3">
-//                   <span className="text-[#117ABA] lato-800 text-xl mt-0.5">✓</span>
+//                   <span className="text-[#173366] lato-800 text-xl mt-0.5">✓</span>
 //                   <span className="text-black text-lg">{location}</span>
 //                 </li>
 //               ))}
@@ -57,11 +57,11 @@
 //           </div>
 
 //           <div className="border-2 border-gray-400 bg-gray-100 p-8 rounded-lg">
-//             <h3 className="text-2xl lato-800 mb-6 text-[#117ABA]">International Facilities</h3>
+//             <h3 className="text-2xl lato-800 mb-6 text-[#173366]">International Facilities</h3>
 //             <ul className="space-y-4">
 //               {locations.International.map((location, idx) => (
 //                 <li key={idx} className="flex items-start gap-3">
-//                   <span className="text-[#117ABA] lato-800 text-xl mt-0.5">✓</span>
+//                   <span className="text-[#173366] lato-800 text-xl mt-0.5">✓</span>
 //                   <span className="text-black text-lg">{location}</span>
 //                 </li>
 //               ))}
@@ -187,7 +187,7 @@ const GlobalFootprint = () => {
     <section className="mt-[30px] px-4 py-0 text-center sm:mt-8 sm:py-10 md:px-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px]  text-start">
+        <h2 className="text-[24px] lato-700 text-[#173366] md:text-[42px]  text-start">
           Our Global Footprint
         </h2>
 
@@ -203,13 +203,13 @@ const GlobalFootprint = () => {
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-0 mt-12 grid md:grid-cols-2 gap-12">
           {/* INDIA */}
           <div className=" bg-gray-100 p-4 sm:p-8 rounded-lg">
-            <h3 className="text-2xl lato-700 mb-6 text-[#117ABA]">
+            <h3 className="text-2xl lato-700 mb-6 text-[#173366]">
               India – Manufacturing Facilities
             </h3>
 
             {Object.entries(categories.India).map(([category, items], idx) => (
               <div key={idx} className="mb-6">
-                <h4 className=" flex justify-start text-xl lato-400 text-[#117ABA] mb-2">{category}</h4>
+                <h4 className=" flex justify-start text-xl lato-400 text-[#173366] mb-2">{category}</h4>
                 <ul className="space-y-2">
                   {items.map((location, i) => (
                     <li key={i} className="flex items-start gap-3">
@@ -223,13 +223,13 @@ const GlobalFootprint = () => {
 
           {/* INTERNATIONAL */}
           <div className="bg-gray-100  rounded-lg p-4 sm:p-8">
-            <h3 className="text-2xl lato-700 mb-6 text-[#117ABA]">
+            <h3 className="text-2xl lato-700 mb-6 text-[#173366]">
               International Facilities
             </h3>
 
             {Object.entries(categories.International).map(([category, items], idx) => (
               <div key={idx} className="mb-6">
-                <h4 className=" flex justify-start text-xl lato-400 text-[#117ABA] mb-2">{category}</h4>
+                <h4 className=" flex justify-start text-xl lato-400 text-[#173366] mb-2">{category}</h4>
                 <ul className="space-y-2">
                   {items.map((location, i) => (
                     <li key={i} className="flex items-start gap-3">
@@ -245,13 +245,13 @@ const GlobalFootprint = () => {
 
           {/* MARKETING OFFICES */}
           {/* <div className="border-2 border-gray-400 bg-gray-100 p-8 rounded-lg">
-            <h3 className="text-2xl lato-800 mb-6 text-[#117ABA]">
+            <h3 className="text-2xl lato-800 mb-6 text-[#173366]">
               Marketing Offices
             </h3>
 
             {Object.entries(categories.Marketingind).map(([region, items], idx) => (
               <div key={idx} className="mb-6">
-                <h4 className="flex justify-start text-xl lato-400 text-[#117ABA] mb-2">{region}</h4>
+                <h4 className="flex justify-start text-xl lato-400 text-[#173366] mb-2">{region}</h4>
                 <ul className="space-y-2">
                   {items.map((location, i) => (
                     <li key={i} className="flex items-start gap-3">
@@ -263,13 +263,13 @@ const GlobalFootprint = () => {
             ))}
           </div> */}
           {/* <div className="border-2 border-gray-400 bg-gray-100 p-8 rounded-lg">
-            <h3 className="text-2xl lato-800 mb-6 text-[#117ABA]">
+            <h3 className="text-2xl lato-800 mb-6 text-[#173366]">
               Marketing Offices
             </h3>
 
             {Object.entries(categories.Marketingworld).map(([region, items], idx) => (
               <div key={idx} className="mb-6">
-                <h4 className="flex justify-start text-xl lato-400 text-[#117ABA] mb-2">{region}</h4>
+                <h4 className="flex justify-start text-xl lato-400 text-[#173366] mb-2">{region}</h4>
                 <ul className="space-y-2">
                   {items.map((location, i) => (
                     <li key={i} className="flex items-start gap-3">

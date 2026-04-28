@@ -29,9 +29,9 @@ const cardColors = [
   {
     border: "border-gray-200",
     bg: "bg-gray-100",
-    title: "text-[#117ABA]",
-    ring: "ring-[#117ABA]",
-    tint: "bg-[#117ABA]",
+    title: "text-[#173366]",
+    ring: "ring-[#173366]",
+    tint: "bg-[#173366]",
   },
 ] as const;
 
@@ -215,7 +215,7 @@ const searchParams = useSearchParams();
           <div className="absolute left-0 right-0 bottom-0 pointer-events-none">
             <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-0 ">
               <div className="relative">
-                <span className="text-center inline-block bg-[#117ABA] text-white manrope-400 w-[216px] h-[59px] text-[36px]  shadow-sm translate-y-1/2">
+                <span className="text-center inline-block bg-[#173366] text-white manrope-400 w-[216px] h-[59px] text-[36px]  shadow-sm translate-y-1/2">
                   Hall of Fame
                 </span>
               </div>

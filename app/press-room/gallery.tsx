@@ -117,7 +117,7 @@ export default function GalleryPage() {
                 
 
                 <section className="max-w-7xl mx-auto px-4 pb-12">
-                    <h2 className="py-4 text-[24px] lato-700 text-[#117ABA] md:text-[42px] text-center">
+                    <h2 className="py-4 text-[24px] lato-700 text-[#173366] md:text-[42px] text-center">
                         Gallery
                     </h2>
 

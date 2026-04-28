@@ -70,10 +70,10 @@
 //             <div ref={emblaRef} className="overflow-hidden max-w-7xl mx-auto ">
               
 
-//               <h2 className=" text-start lato-700 text-[28px] md:text-[32px] text-[#117ABA] mb-3">
+//               <h2 className=" text-start lato-700 text-[28px] md:text-[32px] text-[#173366] mb-3">
 //                 {title}
 //               </h2>
-//               {india===true && (<h2 className=" text-center lato-700 text-[28px] md:text-[32px] text-[#117ABA] mb-3">
+//               {india===true && (<h2 className=" text-center lato-700 text-[28px] md:text-[32px] text-[#173366] mb-3">
 //                 India
 //               </h2>
 //                 )}
@@ -200,7 +200,7 @@
 //                     type="button"
 //                     onClick={() => emblaApi?.scrollTo(i)}
 //                     className={`h-2.5 w-2.5 rounded-full transition ${
-//                       i === selectedIndex ? "bg-[#117ABA]" : "bg-gray-300"
+//                       i === selectedIndex ? "bg-[#173366]" : "bg-gray-300"
 //                     }`}
 //                     aria-label={`Go to slide ${i + 1}`}
 //                   />
@@ -250,7 +250,7 @@
 //                 <h3 className="text-xl md:text-2xl font-bold text-black">
 //                   {selected.name}
 //                 </h3>
-//                 <p className="mt-1 lato-700 text-[#117ABA]">
+//                 <p className="mt-1 lato-700 text-[#173366]">
 //                   {selected.role}
 //                 </p>
 //                 <p className="mt-4 text-sm md:text-base leading-relaxed text-black">
@@ -329,12 +329,12 @@ const Keypeople = ({ title, people, india }: Props) => {
         <div className="max-w-7xl mx-auto px-4">
 
           {/* Title */}
-          <h2 className="text-start lato-700 text-[28px] md:text-[32px] text-[#117ABA] mb-3">
+          <h2 className="text-start lato-700 text-[28px] md:text-[32px] text-[#173366] mb-3">
             {title}
           </h2>
 
           {india && (
-            <h2 className="text-center lato-700 text-[28px] md:text-[32px] text-[#117ABA] mb-6">
+            <h2 className="text-center lato-700 text-[28px] md:text-[32px] text-[#173366] mb-6">
               India
             </h2>
           )}
@@ -495,7 +495,7 @@ const Keypeople = ({ title, people, india }: Props) => {
                 <h3 className="text-xl md:text-2xl font-bold text-black">
                   {selected.name}
                 </h3>
-                <p className="mt-1 lato-700 text-[#117ABA]">
+                <p className="mt-1 lato-700 text-[#173366]">
                   {selected.role}
                 </p>
                 <p className="mt-4 text-sm md:text-base leading-relaxed text-black">

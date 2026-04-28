@@ -29,7 +29,7 @@ const page = () => {
                     <div className="pb-6 grid grid-cols-1 lg:grid-cols-2 gap-12">
                         {/* LEFT COLUMN */}
                         <div>
-                            <h3 className="text-[14px] md:text-[16px] lato-700 text-[#117ABA] mb-4">
+                            <h3 className="text-[14px] md:text-[16px] lato-700 text-[#173366] mb-4">
                                 Single-pellet solution: Pioneering innovation in recyclable packaging.
                             </h3>
 
@@ -55,7 +55,7 @@ const page = () => {
                         {/* RIGHT COLUMN */}
                         <div className="space-y-2">
                             <div>
-                                <h3 className="text-[14px] md:text-[16px] lato-700 text-[#117ABA] mb-1">
+                                <h3 className="text-[14px] md:text-[16px] lato-700 text-[#173366] mb-1">
                                     AsclepiusTM: High-performance PCR PET Films
                                 </h3>
                                 <p className="text-[14px] md:text-[16px] leading-7 text-[#6D6E71]">
@@ -69,7 +69,7 @@ const page = () => {
                             </div>
 
                             <div>
-                                <h3 className="text-[14px] md:text-[16px] lato-700 text-[#117ABA] mb-1">
+                                <h3 className="text-[14px] md:text-[16px] lato-700 text-[#173366] mb-1">
                                     PCR PE Films
                                 </h3>
                                 <p className="text-[14px] md:text-[16px] leading-7 text-[#6D6E71]">
@@ -79,7 +79,7 @@ const page = () => {
                             </div>
 
                             <div>
-                                <h3 className="text-[14px] md:text-[16px] lato-700 text-[#117ABA] mb-1">
+                                <h3 className="text-[14px] md:text-[16px] lato-700 text-[#173366] mb-1">
                                     Biodegradable Films
                                 </h3>
                                 <p className="text-[14px] md:text-[16px] leading-7 text-[#6D6E71]">

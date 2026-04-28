@@ -193,7 +193,7 @@ const OfferingTabs: React.FC<{
                             >
                                 <span
                                     className={`transition-colors ${isActive
-                                        ? "text-[#117ABA]"
+                                        ? "text-[#173366]"
                                         : "text-gray-500 hover:text-black"
                                         }`}
                                 >
@@ -204,7 +204,7 @@ const OfferingTabs: React.FC<{
                                 {isActive && (
                                     <motion.span
                                         initial={false}
-                                        className="absolute left-1/2 bottom-0 h-[2px] w-16 -translate-x-1/2 rounded-full bg-[#117ABA]"
+                                        className="absolute left-1/2 bottom-0 h-[2px] w-16 -translate-x-1/2 rounded-full bg-[#173366]"
                                     />
                                 )}
 
@@ -482,7 +482,7 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                                 initial={{ opacity: 0, y: 10 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
-                                className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] "
+                                className="text-[24px] lato-700 text-[#173366] md:text-[42px] "
                             >
                                 Packaging Films & PET Resin
                             </motion.h1>
@@ -493,7 +493,7 @@ const PackageComp: React.FC<Props> = ({ business }) => {
 
                             <button
                                 onClick={() => setOpen(true)}
-                                className="mt-4 lato-400 text-[16px] sm:text-[20px] text-[#117ABA]  hover:underline"
+                                className="mt-4 lato-400 text-[16px] sm:text-[20px] text-[#173366]  hover:underline"
                             >
                                 Read More
                                 <span aria-hidden>↗</span>
@@ -540,7 +540,7 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                     /> */}
 
                     <section className="pt-12">
-                        <h2 className="px-0 text-start lato-700 text-[28px] md:text-[32px] text-[#117ABA] mb-3">
+                        <h2 className="px-0 text-start lato-700 text-[28px] md:text-[32px] text-[#173366] mb-3">
                             Our Offerings
 
                         </h2>

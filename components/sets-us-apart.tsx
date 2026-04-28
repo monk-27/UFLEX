@@ -67,7 +67,7 @@ const scrollNext = useCallback(() => {
     <section className="bg-white pt-12 pb-16">
       {/* Heading */}
       <div className="text-center px-4">
-        <h2 className="text-[28px] sm:text-[36px] md:text-[42px] lato-700 text-[#117ABA]">
+        <h2 className="text-[28px] sm:text-[36px] md:text-[42px] lato-700 text-[#173366]">
           What Sets Us Apart
         </h2>
         <p className="mx-auto mt-3 max-w-4xl text-[#222] text-[18px] md:text-[24px] leading-relaxed">
@@ -107,7 +107,7 @@ const scrollNext = useCallback(() => {
 
                   {/* Content */}
                   <div className="flex flex-col flex-1 p-6 md:py-4 md:px-3">
-                    <h3 className="lato-700 text-[18px] md:text-[20px] lg:text-[21px] leading-tight text-[#117ABA] mb-4">
+                    <h3 className="lato-700 text-[18px] md:text-[20px] lg:text-[21px] leading-tight text-[#173366] mb-4">
                       {card.title}
                     </h3>
 

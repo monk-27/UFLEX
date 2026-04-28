@@ -44,7 +44,7 @@ export default function ReusablePropsCOMMComp({
 
         {/* ===== TEXT - Right on Desktop, Below Image on Mobile ===== */}
         <div className="order-2 lg:order-2 lg:flex lg:flex-col lg:justify-center">
-          <h3 className="text-[20px] sm:text-[28px] lato-700 text-[#117ABA] leading-tight">
+          <h3 className="text-[20px] sm:text-[28px] lato-700 text-[#173366] leading-tight">
             {heading}
           </h3>
 

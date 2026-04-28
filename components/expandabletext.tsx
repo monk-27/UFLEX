@@ -48,7 +48,7 @@
 //           {hasMore && (
 //             <button
 //               onClick={() => setOpen(true)}
-//               className="inline ml-1 text-[#117ABA]  lato-500 hover:underline"
+//               className="inline ml-1 text-[#173366]  lato-500 hover:underline"
 //             >
 //               Read More
 //             </button>
@@ -59,7 +59,7 @@
 //       <Dialog open={open} onOpenChange={setOpen}>
 //         <DialogContent className="w-full max-w-[1400px] max-h-[85vh] overflow-y-auto bg-white">
 //           <DialogHeader>
-//             <DialogTitle className="text-2xl lato-600 text-[#117ABA]">
+//             <DialogTitle className="text-2xl lato-600 text-[#173366]">
 //               {modalTitle}
 //             </DialogTitle>
 //           </DialogHeader>
@@ -149,7 +149,7 @@ export function ReadMoreDialog({
           >
             {/* Header */}
             <div className="flex items-center justify-between border-b px-6 py-4">
-              <h2 className="text-lg font-semibold text-[#117ABA] md:text-xl">
+              <h2 className="text-lg font-semibold text-[#173366] md:text-xl">
                 {title}
               </h2>
               <button onClick={onClose}>

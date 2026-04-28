@@ -21,7 +21,7 @@ export default function Breadcrumb({ items }: { items: Crumb[] }) {
                 {item.href && !isLast ? (
                   <Link
                     href={item.href}
-                    className=" text-[#117ABA]"
+                    className=" text-[#173366]"
                   >
                     {item.label}
                   </Link>

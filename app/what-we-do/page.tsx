@@ -88,7 +88,7 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
 
   return (
     <section aria-labelledby={`${id}-heading`} className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-0 py-10">
-      <h2 id={`${id}-heading`} className="text-center text-[20px] lato-400 text-[#117ABA] md:text-[28px] mb-12">
+      <h2 id={`${id}-heading`} className="text-center text-[20px] lato-400 text-[#173366] md:text-[28px] mb-12">
         {heading}
       </h2>
 
@@ -263,7 +263,7 @@ const [emblaRef, emblaApi] = useEmblaCarousel({
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[24px] lato-700 text-[#117ABA] md:text-[42px]  "
+            className="text-[24px] lato-700 text-[#173366] md:text-[42px]  "
           >
             What We Do
           </motion.h1>
@@ -341,7 +341,7 @@ const [emblaRef, emblaApi] = useEmblaCarousel({
                   <div className="p-5">
                     <div className="flex gap-2">
                       {/* <span className="mt-1 h-6 w-[2px] bg-[#D84A3B]" /> */}
-                      <h3 className="lato-700 text-[18px] md:text-[20px] leading-tight text-[#117ABA]">
+                      <h3 className="lato-700 text-[18px] md:text-[20px] leading-tight text-[#173366]">
                         {card.title}
                       </h3>
                     </div>

@@ -41,7 +41,7 @@ function _AwardsAccolades({
       <div className="mx-auto max-w-6xl px-4 md:px-8">
         {/* Title */}
         <div className="text-center">
-          <h2 className="text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">{heading}</h2>
+          <h2 className="text-[24px] manrope-600 text-[#173366] md:text-[42px] md:text-5xl">{heading}</h2>
           {subheading && (
             <p className="mx-auto mt-2 max-w-2xl text-zinc-700 md:text-lg">{subheading}</p>
           )}
@@ -77,7 +77,7 @@ function _AwardsAccolades({
               {first.cta && (
                 <span
                   
-                  className="mt-6 inline-flex items-center rounded-full bg-[#117ABA] px-5 py-2.5 text-sm font-semibold text-white shadow-md transition hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#24497D]"
+                  className="mt-6 inline-flex items-center rounded-full bg-[#173366] px-5 py-2.5 text-sm font-semibold text-white shadow-md transition hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#24497D]"
                 >
                   {first.cta.label}
                 </span>
@@ -110,7 +110,7 @@ function _AwardsAccolades({
                 />
               </div>
               <div className="p-5">
-                <h4 className="text-2xl poppin-600 md:text-[28px] text-[#117ABA]">{a.title}</h4>
+                <h4 className="text-2xl poppin-600 md:text-[28px] text-[#173366]">{a.title}</h4>
                 {a.description && (
                   <p className="mt-2 line-clamp-4 text-[14px] leading-relaxed text-zinc-700">
                     {a.description}

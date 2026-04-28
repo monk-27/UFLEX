@@ -48,7 +48,7 @@ export default function DynamicCarouselModal({
       {/* ===== CAROUSEL - 3 CARDS VISIBLE AT ONCE ===== */}
       <section className="py-16 bg-gray-50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-[20px] lato-400 text-[#117ABA] md:text-[28px] mb-12">
+          <h2 className="text-center text-[20px] lato-400 text-[#173366] md:text-[28px] mb-12">
             {heading}
           </h2>
 
@@ -88,7 +88,7 @@ export default function DynamicCarouselModal({
                             {item.shortDesc}
                           </p>
                         </div>
-                        <button className="mt-6 text-[#117ABA] lato-400  hover:underline">
+                        <button className="mt-6 text-[#173366] lato-400  hover:underline">
                           Read More
                         </button>
                       </div>
@@ -104,13 +104,13 @@ export default function DynamicCarouselModal({
                 onClick={scrollPrev}
                 className="p-5 bg-white rounded-full shadow-2xl hover:scale-110 transition-all"
               >
-                <ChevronLeft className="w-8 h-8 text-[#117ABA]" />
+                <ChevronLeft className="w-8 h-8 text-[#173366]" />
               </button>
               <button
                 onClick={scrollNext}
                 className="p-5 bg-white rounded-full shadow-2xl hover:scale-110 transition-all"
               >
-                <ChevronRight className="w-8 h-8 text-[#117ABA]" />
+                <ChevronRight className="w-8 h-8 text-[#173366]" />
               </button>
             </div> */}
           </div>

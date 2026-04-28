@@ -77,9 +77,9 @@ export function CaseStudySection({
           {/* Arrow */}
           <div className="flex items-center justify-end">
             {isPrimary ? (
-              <ArrowUpRight className="h-5 w-5 text-white transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 hover:text-[#117ABA]" />
+              <ArrowUpRight className="h-5 w-5 text-white transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 hover:text-[#173366]" />
             ) : (
-              <ArrowUpRight className="h-5 w-5 text-white transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 hover:text-[#117ABA]" />
+              <ArrowUpRight className="h-5 w-5 text-white transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 hover:text-[#173366]" />
             )}
           </div>
         </a>

@@ -40,16 +40,16 @@ export default function Breadcrumb({
             return (
               <span key={idx} className="flex items-center gap-1">
                 {item.href && !isLast ? (
-                  <Link href={item.href} className="text-[#117ABA] text-sm">
+                  <Link href={item.href} className="text-[#173366] text-sm">
                     {item.label}
                   </Link>
                 ) : (
-                  <span className={isLast ? "text-black text-sm" : "text-[#117ABA] text-sm"}>
+                  <span className={isLast ? "text-black text-sm" : "text-[#173366] text-sm"}>
                     {item.label}
                   </span>
                 )}
 
-                {!isLast && <span className="text-sm text-[#117ABA] mx-1">&gt;</span>}
+                {!isLast && <span className="text-sm text-[#173366] mx-1">&gt;</span>}
               </span>
             );
           })}

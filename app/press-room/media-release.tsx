@@ -41,7 +41,7 @@ export default function MediaReleasesCarousel() {
 
   return (
     <section className="py-10 bg-white">
-      <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px]  mb-6">
+      <h2 className="text-[24px] lato-700 text-[#173366] md:text-[42px]  mb-6">
         Media Releases
       </h2>
 
@@ -122,7 +122,7 @@ export default function MediaReleasesCarousel() {
 
       <p className="text-center text-sm mt-8 text-black">
         For any media queries, please email{" "}
-        <a href="mailto:corpcomm@uflexltd.com" className="text-[#117ABA] underline">
+        <a href="mailto:corpcomm@uflexltd.com" className="text-[#173366] underline">
           corpcomm@uflexltd.com
         </a>
       </p>

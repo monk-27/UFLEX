@@ -86,7 +86,7 @@ export default function BodMob() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-center text-[24px] manrope-600 text-[#117ABA] md:text-[42px] md:text-5xl">
+        <h2 className="text-center text-[24px] manrope-600 text-[#173366] md:text-[42px] md:text-5xl">
           Board Of Directors
         </h2>
       </motion.div>

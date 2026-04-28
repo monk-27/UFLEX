@@ -74,7 +74,7 @@ export default function MediaCardsCarousel() {
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   return (
-    <div className="w-screen relative bg-[#117ABA]">
+    <div className="w-screen relative bg-[#97c3ef]">
       <section className="pt-10 pb-8 max-w-7xl mx-auto px-4 relative">
 
 
@@ -123,7 +123,7 @@ export default function MediaCardsCarousel() {
 
                       {/* Title */}
                       <div className="p-6 bg-gray-300">
-                        <h3 className="lato-700 text-[19px] md:text-[21px] text-[#117ABA]">
+                        <h3 className="lato-700 text-[19px] md:text-[21px] text-[#173366]">
                           {card.title}
                         </h3>
                       </div>

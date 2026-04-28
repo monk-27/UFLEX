@@ -17,7 +17,7 @@ export function SiteFooter() {
   ]
 
   return (
-    <footer className="text-white bg-[#117ABA]">
+    <footer className="text-white bg-[#5077af]">
       {/* Match header container exactly */}
       <div className="site-header w-full max-w-7xl mx-auto px-4 sm:px-0 py-10 md:py-14">
 

@@ -18,13 +18,13 @@ export function InvestorAccordion({ items }: { items: AccordionItem[] }) {
   };
 
   return (
-    <div className="w-full border-t border-[#117ABA]">
+    <div className="w-full border-t border-[#173366]">
       {items.map((item) => {
         const isOpen = item.id === openId;
         const contentRef = useRef<HTMLDivElement | null>(null);
 
         return (
-          <div key={item.id} className="border-b border-[#117ABA]">
+          <div key={item.id} className="border-b border-[#173366]">
             {/* Row */}
             <button
               type="button"

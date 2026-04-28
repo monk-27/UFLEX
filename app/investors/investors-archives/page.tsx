@@ -244,7 +244,7 @@ const ArchivePage = () => {
                                 >
                                     {tab.label}
                                     {active && (
-                                        <span className="absolute left-0 right-0 bottom-0 h-[3px] bg-[#117ABA]" />
+                                        <span className="absolute left-0 right-0 bottom-0 h-[3px] bg-[#173366]" />
                                     )}
                                 </button>
                             );
@@ -252,7 +252,7 @@ const ArchivePage = () => {
                     </div>
 
                     {/* Main blue header */}
-                    <div className="w-full bg-[#117ABA] py-3 px-4">
+                    <div className="w-full bg-[#173366] py-3 px-4">
                         <h2 className="text-white text-sm sm:text-base lato-700 text-center">
                             {activeTab === "compliance"
                                 ? "Compliance Reports"
@@ -267,7 +267,7 @@ const ArchivePage = () => {
                         {isCompliance && (
                             <>
                                 <div className="py-3">
-                                    <p className="text-center text-[13px] sm:text-sm text-[#117ABA] lato-400">
+                                    <p className="text-center text-[13px] sm:text-sm text-[#173366] lato-400">
                                         {complianceReports.heading}
                                     </p>
                                 </div>
@@ -278,7 +278,7 @@ const ArchivePage = () => {
                         {isCompany && (
                             <>
                                 <div className="py-3">
-                                    <p className="text-center text-[13px] sm:text-sm text-[#117ABA] lato-400">
+                                    <p className="text-center text-[13px] sm:text-sm text-[#173366] lato-400">
                                         {companyRelease.heading}
                                     </p>
                                 </div>

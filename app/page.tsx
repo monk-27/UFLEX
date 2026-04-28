@@ -28,7 +28,7 @@ export default function HomePage() {
         viewport={{ once: true }}
       >
         <motion.h3
-          className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] mb-4"
+          className="text-[24px] lato-700 text-[#173366] md:text-[42px] mb-4"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
@@ -49,7 +49,7 @@ export default function HomePage() {
           </span>
         </motion.h2>
         {/* <motion.h3
-          className="text-center text-[14px] lato-400 text-[#117ABA] md:text-[28px] pt-4"
+          className="text-center text-[14px] lato-400 text-[#173366] md:text-[28px] pt-4"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
@@ -61,7 +61,7 @@ export default function HomePage() {
       </motion.section>
       <div className="z-10 bg-white pt-6">
         <div className="text-center max-w-7xl mx-auto w-full px-4 sm:px-0 pb-12">
-          <h2 className="text-center text-[24px] lato-700 text-[#117ABA] sm:text-[42px] ">
+          <h2 className="text-center text-[24px] lato-700 text-[#173366] sm:text-[42px] ">
             Sustainability
           </h2>
           <span className="text-[#181818] text-center lato-400  text-[14px] sm:text-[24px] ">

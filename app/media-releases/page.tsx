@@ -303,7 +303,7 @@ function YearTabs({
           className={[
             "px-10 py-3 text-xs lato-400 transition",
             activeYear === y
-              ? "bg-[#F5F5F5]  text-[#555]  border-b-[0.7px] border-b-[#117ABA] "
+              ? "bg-[#F5F5F5]  text-[#555]  border-b-[0.7px] border-b-[#173366] "
               : "bg-[#F5F5F5]  text-[#555]",
           ].join(" ")}
         >
@@ -352,14 +352,14 @@ const pages = () => {
       <SiteHeader />
 
       <section className='py-6'>
-        <h2 className="text-[24px] lato-700 text-[#117ABA] md:text-[42px]  py-6 text-center">
+        <h2 className="text-[24px] lato-700 text-[#173366] md:text-[42px]  py-6 text-center">
           Media Releases
         </h2>
 
         <div className="mb-10 ">
           <div className="max-w-7xl ">
 
-            <h3 className="text-[#117ABA] text-[14px] lato-400">
+            <h3 className="text-[#173366] text-[14px] lato-400">
               Press Release
             </h3>
             <YearTabs
@@ -373,7 +373,7 @@ const pages = () => {
 
         <div className="max-w-7xl ">
 
-          <h3 className="text-[#117ABA] text-[14px]  lato-400 ">
+          <h3 className="text-[#173366] text-[14px]  lato-400 ">
             Press Notes
           </h3>
           <YearTabs

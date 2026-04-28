@@ -60,7 +60,7 @@ const PackagingKeypeople = ({ title, people }: Props) => {
              <div className="max-w-7xl mx-auto px-4">
      
                {/* Title */}
-               <h2 className="text-center lato-700 text-[28px] md:text-[32px] text-[#117ABA] mb-3">
+               <h2 className="text-center lato-700 text-[28px] md:text-[32px] text-[#173366] mb-3">
                 Overseas
                </h2>
      
@@ -213,7 +213,7 @@ const PackagingKeypeople = ({ title, people }: Props) => {
 
               <div className="p-6 md:p-8 flex flex-col justify-center">
                 <h3 className="text-xl md:text-2xl font-bold text-black">{selected.name}</h3>
-                <p className="mt-1 text-lg text-[#117ABA] lato-700">{selected.role}</p>
+                <p className="mt-1 text-lg text-[#173366] lato-700">{selected.role}</p>
                 <p className="mt-6 text-sm md:text-base leading-relaxed text-black">
                   {selected.summary}
                 </p>

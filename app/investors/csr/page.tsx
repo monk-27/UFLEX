@@ -136,7 +136,7 @@ const CsrPage = () => {
         {/* CSR Annual Action Plan table */}
         <section className="max-w-6xl mx-auto px-4 sm:px-12 md:px-20 lg:px-28 py-8">
           {/* Blue header */}
-          <div className="w-full bg-[#117ABA] py-3 px-4">
+          <div className="w-full bg-[#173366] py-3 px-4">
             <h2 className="text-white text-sm sm:text-base lato-700 text-center">
               CSR Annual Action Plan
             </h2>

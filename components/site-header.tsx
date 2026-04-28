@@ -61,7 +61,7 @@ export function SiteHeader() {
       <div aria-hidden="true" className="h-20" />
 
       <header
-        className="site-header fixed top-0 left-0 z-50 w-full bg-[#117ABA] py-4 text-white shadow-sm"
+        className="site-header fixed top-0 left-0 z-50 w-full bg-[#97c3ef] py-4 text-black shadow-sm"
         onMouseLeave={closeHoverMenus}
       >
         {/* Top bar */}
@@ -96,7 +96,7 @@ export function SiteHeader() {
                     aria-current={active ? "page" : undefined}
                     className={cn(
                       "nav-link group relative inline-flex items-center px-1 text-[15px] lato-700 tracking-tight outline-none",
-                      "text-white/90 hover:text-white",
+                      "text-black",
                       "after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w/full",
                       "after:bg-[linear-gradient(to_right,#192D4BFF,#7F8692FF,#0F2952FF)] after:rounded-full",
                       "after:transition-transform after:duration-300 after:origin-left",

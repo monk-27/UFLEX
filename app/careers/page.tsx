@@ -24,7 +24,7 @@ export default function Page() {
 
 
       <section className="relative w-full overflow-hidden px-4 pb-12 mt-6">
-        <h2 className="text-center text-[24px] lato-700 text-[#117ABA] md:text-[42px]  py-4">
+        <h2 className="text-center text-[24px] lato-700 text-[#173366] md:text-[42px]  py-4">
           Current Opportunities
 
         </h2>
@@ -59,7 +59,7 @@ export default function Page() {
                     priority
                   />
                      <motion.h1
-                    className="text-[24px] lato-600 text-[#117ABA] md:text-[28px] leading-tight"
+                    className="text-[24px] lato-600 text-[#173366] md:text-[28px] leading-tight"
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -88,7 +88,7 @@ export default function Page() {
 
                 <p>
                   If you are looking for a rewarding career, you may write to us at:{" "}
-                  <span className="text-[#117ABA] font-medium">hr@uflexltd.com</span>
+                  <span className="text-[#173366] font-medium">hr@uflexltd.com</span>
                 </p>
 
                 <p>
@@ -103,7 +103,7 @@ export default function Page() {
                 href="https://aa193.taleo.net/careersection/ex/jobsearch.ftl?lang=en"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-start rounded-sm texts-md lato-600 bg-[#117ABA] text-white w-auto  py-2 mt-4 px-12 inline-block"
+                className="text-start rounded-sm texts-md lato-600 bg-[#173366] text-white w-auto  py-2 mt-4 px-12 inline-block"
               >
                 Apply Now
               </a>

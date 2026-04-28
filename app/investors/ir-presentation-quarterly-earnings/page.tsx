@@ -966,7 +966,7 @@ const Page = () => {
 
                             {/* BLUE UNDERLINE */}
                             {isPresentations && (
-                                <span className="absolute left-0 right-0 bottom-0 h-[3px] bg-[#117ABA]" />
+                                <span className="absolute left-0 right-0 bottom-0 h-[3px] bg-[#173366]" />
                             )}
                         </button>
 
@@ -983,14 +983,14 @@ const Page = () => {
 
                             {/* BLUE UNDERLINE */}
                             {isQuarterly && (
-                                <span className="absolute left-0 right-0 bottom-0 h-[3px] bg-[#117ABA]" />
+                                <span className="absolute left-0 right-0 bottom-0 h-[3px] bg-[#173366]" />
                             )}
                         </button>
                     </div>
 
 
                     {/* MAIN BLUE HEADER (changes per tab) */}
-                    <div className="w-full bg-[#117ABA] py-3 px-4">
+                    <div className="w-full bg-[#173366] py-3 px-4">
                         <h2 className="text-white text-sm sm:text-base lato-700 text-center">
                             {isPresentations
                                 ? "Investor Presentations & Updates"
@@ -1066,8 +1066,8 @@ const Page = () => {
                                                 className={[
                                                     "px-3 py-1 text-xs sm:text-sm lato-400 rounded-sm border",
                                                     active
-                                                        ? "bg-[#117ABA] border-[#117ABA] text-white"
-                                                        : "bg-white border-[#117ABA] text-[#117ABA]",
+                                                        ? "bg-[#173366] border-[#173366] text-white"
+                                                        : "bg-white border-[#173366] text-[#173366]",
                                                 ].join(" ")}
                                             >
                                                 {year.label}

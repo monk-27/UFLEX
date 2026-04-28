@@ -34,7 +34,7 @@ export default function ExpandableFlexiText({
         const [, title, description] = bulletMatch;
         return (
           <div key={i} className="flex gap-2 items-start mt-3 first:mt-0">
-            <span className="text-[#117ABA] mt-1">•</span>
+            <span className="text-[#173366] mt-1">•</span>
             <p className="flex-1">
               <strong className="text-slate-900">{title}</strong>
               <span className="text-slate-700">: {description}</span>
@@ -69,7 +69,7 @@ export default function ExpandableFlexiText({
         {paragraphs.length > 2 && (
           <button
             onClick={() => setOpen(true)}
-            className="text-[#117ABA] text-sm manrope-500 cursor-pointer hover:underline inline-block mt-4"
+            className="text-[#173366] text-sm manrope-500 cursor-pointer hover:underline inline-block mt-4"
           >
             Read More {">>"}
           </button>
@@ -80,7 +80,7 @@ export default function ExpandableFlexiText({
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="max-w-3xl max-h-[85vh] overflow-y-auto bg-white">
           <DialogHeader>
-            <DialogTitle className="text-xl manrope-600 text-[#117ABA]">{modalTitle}</DialogTitle>
+            <DialogTitle className="text-xl manrope-600 text-[#173366]">{modalTitle}</DialogTitle>
           </DialogHeader>
 
           <div className="mt-4 space-y-5 text-sm manrope-500 text-slate-700">

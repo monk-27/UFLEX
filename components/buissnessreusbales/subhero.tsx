@@ -17,7 +17,7 @@ export function SubBusinessHero({ business }: any) {
 
 
             <div className="">
-                <h2 className="lato-700 text-[20px] md:text-[28px] text-[#117ABA] mb-4">
+                <h2 className="lato-700 text-[20px] md:text-[28px] text-[#173366] mb-4">
                     {business.subhero?.heading}
                 </h2>
                 <p className="lato-400 text-[16px] sm:text-[18px] leading-relaxed text-black">

@@ -91,7 +91,7 @@ export default function ProductCategorySection({
                     >
                         <div className="">
 
-                            <div className="bg-[#117ABA] text-white px-6 py-5">
+                            <div className="bg-[#173366] text-white px-6 py-5">
                                 <h2 className="text-lg lato-700 tracking-wide">Product Categories</h2>
                             </div>
 
@@ -109,7 +109,7 @@ export default function ProductCategorySection({
       hover:bg-[#F9F9F9]
      
       ${category.isActive
-                                                ? " text-[#117ABA]"
+                                                ? " text-[#173366]"
                                                 : " text-black"
                                             }
     `}
@@ -117,7 +117,7 @@ export default function ProductCategorySection({
                                         <span
                                             className={`
         lato-400 text-[16px] sm:text-[18px] leading-relaxed
-        ${category.isActive ? "text-[#117ABA] " : "text-black"}
+        ${category.isActive ? "text-[#173366] " : "text-black"}
       `}
                                         >
                                             {category.name}
@@ -127,7 +127,7 @@ export default function ProductCategorySection({
                                             size={18}
                                             className={`
         transition-transform duration-300
-        ${category.isActive ? "rotate-90 text-[#117ABA]" : "text-gray-500"}
+        ${category.isActive ? "rotate-90 text-[#173366]" : "text-gray-500"}
       `}
                                         />
                                     </motion.button>
@@ -147,7 +147,7 @@ export default function ProductCategorySection({
                                         <li key={link.label}>
                                             <a
                                                 href={link.href}
-                                                className="text-black hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
+                                                className="text-black hover:text-[#173366] text-sm flex items-center gap-1.5 transition-colors"
                                                 {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
                                             >
                                                 {link.label}
@@ -164,7 +164,7 @@ export default function ProductCategorySection({
                     <div className="lg:hidden bg-white   overflow-hidden">
                         <button
                             onClick={() => setIsMobileOpen(!isMobileOpen)}
-                            className="w-full flex items-center justify-between bg-[#117ABA] text-white px-6 py-5 lato-400 text-[16px] sm:text-[18px] leading-relaxed "
+                            className="w-full flex items-center justify-between bg-[#173366] text-white px-6 py-5 lato-400 text-[16px] sm:text-[18px] leading-relaxed "
                         >
                             <span>PRODUCT CATEGORIES</span>
                             {isMobileOpen ? <ChevronDown size={24} /> : <ChevronRight size={24} />}
@@ -192,7 +192,7 @@ export default function ProductCategorySection({
       hover:bg-gray-100
      
       ${category.isActive
-                                                        ? "bg-blue-100  text-[#117ABA]"
+                                                        ? "bg-blue-100  text-[#173366]"
                                                         : "border-l-transparent text-black"
                                                     }
     `}
@@ -200,7 +200,7 @@ export default function ProductCategorySection({
                                                 <span
                                                     className={`
         lato-400 text-[16px] sm:text-[18px] leading-relaxed
-        ${category.isActive ? "text-[#117ABA]" : "text-black"}
+        ${category.isActive ? "text-[#173366]" : "text-black"}
       `}
                                                 >
                                                     {category.name}
@@ -210,7 +210,7 @@ export default function ProductCategorySection({
                                                     size={18}
                                                     className={`
         transition-transform duration-300
-        ${category.isActive ? "rotate-90 text-[#117ABA]" : "text-gray-500"}
+        ${category.isActive ? "rotate-90 text-[#173366]" : "text-gray-500"}
       `}
                                                 />
                                             </motion.button>
@@ -234,7 +234,7 @@ export default function ProductCategorySection({
                                             <li key={link.label}>
                                                 <a
                                                     href={link.href}
-                                                    className="text-black hover:text-[#117ABA] text-sm flex items-center gap-1.5 transition-colors"
+                                                    className="text-black hover:text-[#173366] text-sm flex items-center gap-1.5 transition-colors"
                                                     {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
                                                 >
                                                     {link.label}
@@ -275,8 +275,8 @@ export default function ProductCategorySection({
                     <div className="">
                         <motion.div variants={itemVariants}>
                             <div className="flex gap-2">
-                                {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
-                                {/* <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">
+                                {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#173366]" /> */}
+                                {/* <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#173366]">
                                     Overview
                                 </h3> */}
                             </div>
@@ -292,8 +292,8 @@ export default function ProductCategorySection({
                                 <motion.div variants={itemVariants}>
 
                                     <div className="flex gap-2  py-6 pb-4">
-                                        {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
-                                        <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">
+                                        {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#173366]" /> */}
+                                        <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#173366]">
                                             Performance Properties
                                         </h3>
                                     </div>
@@ -322,8 +322,8 @@ export default function ProductCategorySection({
                                 <motion.div variants={itemVariants}>
 
                                     <div className="flex gap-2  py-6 pb-4">
-                                        {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
-                                        <h3 className="flex-1 text-center lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">
+                                        {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#173366]" /> */}
+                                        <h3 className="flex-1 text-center lato-700 text-[20px] sm:text-[24px] text-[#173366]">
                                             Applications
                                         </h3>
                                     </div>
@@ -361,8 +361,8 @@ export default function ProductCategorySection({
                         {innovations.length > 0 && (
                             <div className="">
                                 <div className="flex gap-2  py-6">
-                                    {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#117ABA]" /> */}
-                                    <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#117ABA]">
+                                    {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#173366]" /> */}
+                                    <h3 className="lato-700 text-[20px] sm:text-[24px] text-[#173366]">
                                         Special Innovations
                                     </h3>
                                 </div>
@@ -384,14 +384,14 @@ export default function ProductCategorySection({
                                                     className="border-white border-[1px] w-full flex items-center justify-between px-5 sm:px-6 py-4 sm:py-3 text-left hover:bg-gray-50 transition-colors"
                                                     aria-expanded={isOpen}
                                                 >
-                                                    <h3 className="lato-700 text-[15px] sm:text-[16px] md:text-[18px] text-[#117ABA] pr-4 leading-tight">
+                                                    <h3 className="lato-700 text-[15px] sm:text-[16px] md:text-[18px] text-[#173366] pr-4 leading-tight">
                                                         {item.title}
                                                     </h3>
 
                                                     <motion.button
                                                         animate={{ rotate: isOpen ? 180 : 0 }}
                                                         transition={{ duration: 0.3 }}
-                                                        className="w-6 h-6 rounded-full bg-[#117ABA] flex items-center justify-center shadow-sm "
+                                                        className="w-6 h-6 rounded-full bg-[#173366] flex items-center justify-center shadow-sm "
                                                     >
                                                         <ChevronDown className="w-3 h-3 text-white" />
                                                     </motion.button>
@@ -433,21 +433,21 @@ export default function ProductCategorySection({
                             target="_blank"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.98 }}
-                                className="bg-[#117ABA] text-white px-4 py-2 rounded-sm lato-700 hover:bg-[#117ABA] transition-all shadow-md"
+                                className="bg-[#173366] text-white px-4 py-2 rounded-sm lato-700 hover:bg-[#173366] transition-all shadow-md"
                             >
                                 Learn More
                             </motion.a>
                             {/* <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.98 }}
-                                className="bg-[#117ABA] text-white px-4 py-2 rounded-sm lato-700 hover:bg-[#117ABA] transition-all shadow-md"
+                                className="bg-[#173366] text-white px-4 py-2 rounded-sm lato-700 hover:bg-[#173366] transition-all shadow-md"
                             >
                                 Request Sample
                             </motion.button> */}
                             {/* <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.98 }}
-                                className="bg-[#117ABA] text-white px-4 py-2 rounded-sm lato-700 hover:bg-[#117ABA] transition-all shadow-md"
+                                className="bg-[#173366] text-white px-4 py-2 rounded-sm lato-700 hover:bg-[#173366] transition-all shadow-md"
 
                             >
                                 Download Catalogue

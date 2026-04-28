@@ -76,7 +76,7 @@
 
 //                       {/* Title & optional description */}
 //                       <div className="p-5 sm:p-6 bg-gray-300 flex flex-col flex-grow">
-//                         <h3 className="lato-700 text-[19px] md:text-[21px] leading-tight text-[#117ABA] group-hover:text-[#0d5a9e] transition-colors">
+//                         <h3 className="lato-700 text-[19px] md:text-[21px] leading-tight text-[#173366] group-hover:text-[#0d5a9e] transition-colors">
 //                           {card.title}
 //                         </h3>
 
@@ -87,7 +87,7 @@
 
 //                         {/* Optional: small arrow or "Read more" indicator */}
 //                         {/* <div className="mt-auto pt-4 opacity-0 group-hover:opacity-100 transition-opacity">
-//                           <span className="text-sm font-medium text-[#117ABA] inline-flex items-center gap-1">
+//                           <span className="text-sm font-medium text-[#173366] inline-flex items-center gap-1">
 //                             Read Article
 //                             <ChevronRight size={16} />
 //                           </span>
@@ -123,7 +123,7 @@
 //         {/* <div className="text-center mt-8">
 //           <Link
 //             href="/media-coverage"
-//             className="inline-flex items-center gap-2 text-[#117ABA] font-medium hover:underline"
+//             className="inline-flex items-center gap-2 text-[#173366] font-medium hover:underline"
 //           >
 //             View More Coverage
 //             <ChevronRight size={18} />
@@ -235,7 +235,7 @@ export default function MediaCoverageCardsCarousel() {
 
                   {/* Title */}
                   <div className="p-5 bg-gray-300">
-                    <h3 className="lato-700 text-[19px] text-[#117ABA]">
+                    <h3 className="lato-700 text-[19px] text-[#173366]">
                       {card.title}
                     </h3>
                   </div>

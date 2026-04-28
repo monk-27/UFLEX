@@ -479,7 +479,7 @@ export default function BusinessAwards({ initialBusiness = "corporate-awards" }:
   return (
     <section className="max-w-7xl mx-auto">
       <div className="">
-        <h2 className="text-center  text-[24px] lato-700  md:text-[42px]   text-[#117ABA] mb-6">
+        <h2 className="text-center  text-[24px] lato-700  md:text-[42px]   text-[#173366] mb-6">
           Awards
         </h2>
 
@@ -504,7 +504,7 @@ export default function BusinessAwards({ initialBusiness = "corporate-awards" }:
                 setActiveYear(val.years[0]);
               }}
               className={`pb-2 text-[12px] md:text-[16px] leading-relaxed lato-700 shrink-0 ${activeBusiness === key
-                ? "text-[#117ABA] border-b-2 border-[#117ABA]"
+                ? "text-[#173366] border-b-2 border-[#173366]"
                 : "text-black"
                 }`}
             >
@@ -534,7 +534,7 @@ export default function BusinessAwards({ initialBusiness = "corporate-awards" }:
                   key={y}
                   onClick={() => setActiveYear(y)}
                   className={`text-[14px] md:text-[18px] leading-relaxed lato-700 shrink-0 px-6 py-2 text-xs ${activeYear === y
-                    ? "bg-[#F5F5F5]  text-[#555]  border-b-[0.7px] border-b-[#117ABA]"
+                    ? "bg-[#F5F5F5]  text-[#555]  border-b-[0.7px] border-b-[#173366]"
                     : "bg-[#F5F5F5]  text-[#555]"
                     }`}
                 >
@@ -575,7 +575,7 @@ export default function BusinessAwards({ initialBusiness = "corporate-awards" }:
                   className="
       text-[16px]
       lato-700
-      text-[#117ABA]
+      text-[#173366]
       leading-snug
       h-[48px]
       overflow-hidden
@@ -637,7 +637,7 @@ export default function BusinessAwards({ initialBusiness = "corporate-awards" }:
 
                   {/* Content */}
                   <div className="flex flex-1 flex-col py-4">
-                    <h3 className="h-[58px] line-clamp-3 lato-700 text-[18px] md:text-[20px] leading-tight text-[#117ABA] pb-12">
+                    <h3 className="h-[58px] line-clamp-3 lato-700 text-[18px] md:text-[20px] leading-tight text-[#173366] pb-12">
                       {card.title}
                     </h3>
 
@@ -654,8 +654,8 @@ export default function BusinessAwards({ initialBusiness = "corporate-awards" }:
             ) : (
               <article className="flex h-full flex-col items-center justify-center rounded-sm bg-white border border-dashed border-gray-300 p-8 text-center">
                 {/* Placeholder visual */}
-                <div className="mb-6 flex h-[120px] w-[120px] items-center justify-center rounded-full bg-[#117ABA]/10">
-                  <span className="text-[14px] lato-500 text-[#117ABA]">Coming Soon</span>
+                <div className="mb-6 flex h-[120px] w-[120px] items-center justify-center rounded-full bg-[#173366]/10">
+                  <span className="text-[14px] lato-500 text-[#173366]">Coming Soon</span>
                 </div>
 
 

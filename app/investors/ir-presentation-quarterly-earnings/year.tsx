@@ -113,8 +113,8 @@ export function FYQuarterAccordion() {
               }}
               className={`px-3 py-1 text-xs lato-700 border rounded-sm ${
                 isActive
-                  ? "bg-[#117ABA] text-white border-[#117ABA]"
-                  : "border-[#117ABA] text-[#001B3F] bg-white"
+                  ? "bg-[#173366] text-white border-[#173366]"
+                  : "border-[#173366] text-[#001B3F] bg-white"
               }`}
             >
               {y.year}
@@ -124,15 +124,15 @@ export function FYQuarterAccordion() {
       </div>
 
       {/* Blue underline */}
-      <div className="h-[2px] w-40 bg-[#117ABA] mb-6" />
+      <div className="h-[2px] w-40 bg-[#173366] mb-6" />
 
       {/* Quarters accordion */}
-      <div className="w-full border-t border-[#117ABA]">
+      <div className="w-full border-t border-[#173366]">
         {current.quarters.map((q) => {
           const isOpen = q.id === openQuarterId;
 
           return (
-            <div key={q.id} className="border-b border-[#117ABA]">
+            <div key={q.id} className="border-b border-[#173366]">
               <button
                 type="button"
                 onClick={() => toggleQuarter(q.id)}

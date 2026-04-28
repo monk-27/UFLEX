@@ -65,7 +65,7 @@ export default function CareersMainCarousel() {
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] "
+                  className="text-[24px] lato-700 text-[#173366] md:text-[42px] "
                 >
                   Careers
                 </motion.h1>
@@ -81,7 +81,7 @@ export default function CareersMainCarousel() {
                       href="https://aa193.taleo.net/careersection/ex/jobsearch.ftl?lang=en"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-start rounded-sm texts-md lato-600 bg-[#117ABA] text-white w-auto py-2 mt-4 px-12 inline-block"
+                      className="text-start rounded-sm texts-md lato-600 bg-[#173366] text-white w-auto py-2 mt-4 px-12 inline-block"
                     >
                       Apply Now
                     </a>
@@ -139,7 +139,7 @@ export default function CareersMainCarousel() {
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-[24px] lato-700 text-[#117ABA] md:text-[42px] "
+              className="text-[24px] lato-700 text-[#173366] md:text-[42px] "
             >
               Careers
             </motion.h1>
@@ -150,7 +150,7 @@ export default function CareersMainCarousel() {
 
             {/* <button
               onClick={() => setOpen(true)}
-              className="mt-4 lato-400 text-[16px] sm:text-[20px] text-[#117ABA]  hover:underline"
+              className="mt-4 lato-400 text-[16px] sm:text-[20px] text-[#173366]  hover:underline"
             >
               Read More
               <span aria-hidden>↗</span>
@@ -166,7 +166,7 @@ export default function CareersMainCarousel() {
                 href="https://aa193.taleo.net/careersection/ex/jobsearch.ftl?lang=en"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-start rounded-sm texts-md lato-600 bg-[#117ABA] text-white w-auto py-2 mt-4 px-12 inline-block"
+                className="text-start rounded-sm texts-md lato-600 bg-[#173366] text-white w-auto py-2 mt-4 px-12 inline-block"
               >
                 Apply Now
               </a>

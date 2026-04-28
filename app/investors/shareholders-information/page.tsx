@@ -163,7 +163,7 @@ export default function Page() {
                 <section className="max-w-6xl mx-auto px-4 sm:px-12 md:px-20 lg:px-28 py-8">
 
                     {/* BLUE HEADER */}
-                    <div className="w-full bg-[#117ABA] py-3 px-6">
+                    <div className="w-full bg-[#173366] py-3 px-6">
                         <h2 className="text-white text-sm sm:text-[16px] lato-400 text-center">
                             Shareholders Communication Details
                         </h2>

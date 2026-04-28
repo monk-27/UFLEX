@@ -94,7 +94,7 @@ export default function ProductCategorySection({
             transition={{ duration: 0.6 }}
             className="bg-white overflow-hidden hidden lg:block sticky top-6 rounded-sm"
           >
-            <div className="bg-[#117ABA] text-white px-6 py-5 rounded-t-lg">
+            <div className="bg-[#173366] text-white px-6 py-5 rounded-t-lg">
               <h2 className="text-lg lato-700 tracking-wide">Product Categories</h2>
             </div>
 
@@ -143,7 +143,7 @@ export default function ProductCategorySection({
                                 text-left transition-colors
                                 hover:bg-[#F9F9F9]
                                 ${cat.isActive
-                                  ? "bg-gray-50 text-[#117ABA] lato-400"
+                                  ? "bg-gray-50 text-[#173366] lato-400"
                                   : "text-black lato-400"
                                 }
                               `}
@@ -156,7 +156,7 @@ export default function ProductCategorySection({
                                 size={18}
                                 className={`
                                   transition-transform duration-300
-                                  ${cat.isActive ? "rotate-90 text-[#117ABA]" : "text-gray-500"}
+                                  ${cat.isActive ? "rotate-90 text-[#173366]" : "text-gray-500"}
                                 `}
                               />
                             </motion.button>
@@ -175,7 +175,7 @@ export default function ProductCategorySection({
           <div className="lg:hidden bg-white overflow-hidden border border-gray-200 rounded-lg">
             <button
               onClick={() => setIsMobileOpen(!isMobileOpen)}
-              className="w-full flex items-center justify-between bg-[#117ABA] text-white px-6 py-5 text-[16px] sm:text-[18px] rounded-t-lg"
+              className="w-full flex items-center justify-between bg-[#173366] text-white px-6 py-5 text-[16px] sm:text-[18px] rounded-t-lg"
             >
               <span>PRODUCT CATEGORIES</span>
               {isMobileOpen ? <ChevronDown size={24} /> : <ChevronRight size={24} />}
@@ -237,14 +237,14 @@ export default function ProductCategorySection({
                           text-left transition-colors
                           hover:bg-gray-50
                           ${cat.isActive
-                                      ? "bg-[#E6F0FA] text-[#117ABA]"
+                                      ? "bg-[#E6F0FA] text-[#173366]"
                                       : "text-gray-700"
                                     }
                         `}
                                 >
                                   <span className="pl-2 text-[15px]">{cat.name}</span>
                                   {cat.isActive && (
-                                    <ChevronRight size={16} className="text-[#117ABA]" />
+                                    <ChevronRight size={16} className="text-[#173366]" />
                                   )}
                                 </motion.button>
                               ))}
