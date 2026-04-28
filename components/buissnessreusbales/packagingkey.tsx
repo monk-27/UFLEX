@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import useEmblaCarousel from "embla-carousel-react";
 import type { EmblaOptionsType } from "embla-carousel";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
-import type { KeyPerson } from "@/app/business/data";
+import { KeyPerson } from "@/app/business/data";
 
 type Props = {
   title: string;
@@ -56,7 +56,7 @@ const PackagingKeypeople = ({ title, people }: Props) => {
 
   return (
     <>
-         <section className="pb-12 mt-[30px] py-12 relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#f7f7f7]">
+         <section className="pb-12 mt-[30px] my-6 sm:my-16 py-12 relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#97c3ef]">
              <div className="max-w-7xl mx-auto px-4">
      
                {/* Title */}
@@ -85,55 +85,30 @@ const PackagingKeypeople = ({ title, people }: Props) => {
                          flex-[0_0_100%]
                          sm:flex-[0_0_50%]
                          md:flex-[0_0_23%]
-                         border border-gray-200 bg-white overflow-hidden
-                         aspect-square
+                         overflow-hidden rounded-[10px]
+                         transition-colors duration-300
                        "
                      >
-                       <div className="absolute inset-0 p-4">
-                         <div className="relative h-full w-full overflow-hidden">
+                       <div className="relative flex h-full flex-col p-4">
+                         <div className="relative aspect-[4/4.2] w-full overflow-hidden rounded-[8px] bg-[#bddaf5]">
                            <Image
                              src={p.photo}
                              alt={p.name}
                              fill
                              sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 23vw"
-                             className="object-cover grayscale transition duration-300 ease-out bg-[#C9EEF4]"
+                             className="object-cover transition duration-500 ease-out group-hover:scale-[1.03]"
                            />
-                           <div className="absolute inset-x-0 bottom-0 p-3">
-                             <div className="bg-black/60 px-2 py-1">
-                               <p className="text-xs lato-700 text-white">
-                                 {p.name}
-                               </p>
-                               <p className="text-[10px] text-white/90">
-                                 {p.role}
-                               </p>
-                             </div>
-                           </div>
+                         </div>
+
+                         <div className="flex flex-1 flex-col px-2 pb-2 pt-5 text-center">
+                           <p className="text-[1.25rem] leading-tight text-[#18448b] transition-colors duration-300 group-hover:text-[#10386f] lato-700">
+                             {p.name}
+                           </p>
+                           <p className="mt-3 text-[1rem] leading-snug text-black transition-colors duration-300 group-hover:text-[#102b57]">
+                             {p.role}
+                           </p>
                          </div>
                        </div>
-                       <div
-                           className="
-                             pointer-events-none absolute inset-0 opacity-0
-                             transition-opacity duration-300
-                             group-hover:opacity-100
-                           "
-                         >
-                           <Image
-                             src={p.photo}
-                             alt={p.name}
-                             fill
-                             sizes="100vw"
-                             className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                           />
-                           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                           <div className="absolute bottom-3 left-3 right-3">
-                             <p className="text-sm md:text-base lato-700 leading-tight text-white">
-                               {p.name}
-                             </p>
-                             <p className="text-white/90 text-xs md:text-sm">
-                               {p.role}
-                             </p>
-                           </div>
-                         </div>
      
                        <button
                          onClick={() => setSelected(p)}
