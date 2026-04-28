@@ -106,9 +106,9 @@ const scrollNext = useCallback(() => {
 
   return (
     <>
-      <section className="px-4 py-0 text-center  sm:bg-gray-100 sm:pt-1 md:px-12">
-        <div className="mx-auto max-w-7xl px-4 md:px-8">
-          <h2 className="text-[24px] lato-700 text-[#173366] md:text-[42px]   text-start mb-12">
+       <section className="bg-[#97c3ef] mt-[30px] px-4 py-0 text-center sm:mt-16  sm:pt-12 md:px-12">
+        <div className="mx-auto max-w-7xl  md:px-8">
+          <h2 className="text-[24px] lato-700 text-[#173366] md:text-[42px]  text-start mb-12">
             Key Management
           </h2>
 
@@ -129,73 +129,31 @@ const scrollNext = useCallback(() => {
                     flex-[0_0_100%]
                     sm:flex-[0_0_50%]
                     md:flex-[0_0_23%]
-                    border border-gray-200 bg-white overflow-hidden
-                    aspect-[4/5]
+                    overflow-hidden rounded-[10px] 
+                    transition-colors duration-300 
                   "
                   >
-                    {/* ---------- Base (B/W) image INSET with padding ---------- */}
-                    <div className="absolute inset-0 p-4">
-                      <div className="relative h-full w-full overflow-hidden">
+                    <div className="relative flex h-full flex-col p-4">
+                      <div className="relative aspect-[4/4.2] w-full overflow-hidden rounded-[8px] bg-[#bddaf5]">
                         <Image
                           src={d.img}
                           alt={d.name}
                           fill
                           sizes="(max-width:640px) 85vw, (max-width:1024px) 46vw, (max-width:1280px) 30vw, 23vw"
-                          className="object-cover grayscale transition duration-300 ease-out"
+                          className="object-cover transition duration-500 ease-out group-hover:scale-[1.03]"
                           priority={i < 2}
                         />
-                        {/* Small name/role on B/W image */}
-                        <div className="pointer-events-none absolute inset-x-0 bottom-0 p-3">
-                          <div className="rounded-none bg-black/55 px-2 py-1 max-w-auto">
-                            <p className="text-xs lato-700 leading-tight text-white">{d.name}</p>
-                            <p className="text-[10px] text-white/90">{d.position}</p>
-                          </div>
-                        </div>
                       </div>
-                    </div>
 
-                    {/* ---------- Hover COLOR layer: fills whole card ---------- */}
-                    <div
-                      className="
-                        pointer-events-none absolute inset-0 opacity-0
-                        transition-opacity duration-300
-                        group-hover:opacity-100
-                        bg-[#c8eef4]
-                      "
-                    >
-                      <Image
-                        src={d.img}
-                        alt={d.name}
-                        fill
-                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-100"
-                        sizes="100vw"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                      <div className="absolute bottom-3 left-3 right-3">
-                        <p className="text-sm md:text-base lato-700 leading-tight text-white">
+                      <div className="flex flex-1 flex-col px-2 pb-2 pt-5 text-center">
+                        <p className="text-[1.25rem] leading-tight text-[#18448b] transition-colors duration-300 group-hover:text-[#10386f] lato-700">
                           {d.name}
                         </p>
-                        <p className="text-white/90 text-xs md:text-sm">{d.position}</p>
+                        <p className="mt-3 text-[1rem] leading-snug text-black transition-colors duration-300 group-hover:text-[#102b57]">
+                          {d.position}
+                        </p>
                       </div>
                     </div>
-                    
-
-                    {/* Tiny Read More (stays subtle; disappears on hover since image covers) */}
-                    {/* <div className="absolute left-3 top-3">
-                      <button
-                        onClick={() => setSelected(d)}
-                        className="
-                          z-10 border border-[#173366] text-[#173366]
-                          text-xs px-2 py-[3px] leading-none
-                          hover:bg-[#173366] hover:text-white transition
-                          bg-white/90
-                        "
-                      >
-                        Read More
-                      </button>
-                    </div> */}
-
-                    {/* Make whole card clickable (doesn't affect hover because overlay is pointer-events-none) */}
                     <button
                       aria-label={`Open ${d.name}`}
                       onClick={() => setSelected(d)}
@@ -293,5 +251,4 @@ const scrollNext = useCallback(() => {
   );
 }
 export default KeyManagement;
-
 
