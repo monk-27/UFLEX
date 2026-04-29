@@ -20,7 +20,7 @@ const directors: Director[] = [
   {
     name: "Mr. Ashok Chaturvedi",
     position: "Founder, Chairman and Managing Director",
-    img:"/images/hall/md.jpeg",
+    img:"/images/hall/Ashok.png",
     bio:
       "Mr. Ashok Chaturvedi is a first-generation entrepreneur and the founder of the UFlex Group. His dynamic leadership, long-term vision, and value-driven business strategy have established UFlex Limited as the largest flexible packaging and solutions company in India and a recognized global player in polymer sciences. He is considered the 'Father of the flexible packaging industry in India' and has been bestowed with several accolades to his credit.",
   },
@@ -142,7 +142,7 @@ const scrollNext = useCallback(() => {
                           alt={d.name}
                           fill
                           sizes="(max-width:640px) 85vw, (max-width:1024px) 46vw, (max-width:1280px) 30vw, 23vw"
-                          className="object-cover transition duration-500 ease-out group-hover:scale-[1.03]"
+                          className="object-cover transition duration-500 ease-out group-hover:scale-[1.03] bg-[#c8eef4]"
                           priority={i < 2}
                         />
                       </div>
@@ -225,7 +225,7 @@ const scrollNext = useCallback(() => {
               {/* Smaller, square image */}
               <div className="p-4">
                 <div className="relative aspect-square w-full border border-gray-100">
-                  <Image src={selected.img} alt={selected.name} fill className="object-cover" />
+                  <Image src={selected.img} alt={selected.name} fill className="object-cover bg-[#c8eef4]" />
                 </div>
               </div>
 
