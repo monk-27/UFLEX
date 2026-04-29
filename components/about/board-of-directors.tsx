@@ -19,8 +19,8 @@ interface Director {
 const directors: Director[] = [
   {
     name: "Mr. Ashok Chaturvedi",
-    position: "Chairman and Managing Director",
-    img:"/images/new/1.png",
+    position: "Founder, Chairman and Managing Director",
+    img:"/images/hall/md.jpeg",
     bio:
       "Mr. Ashok Chaturvedi is a first-generation entrepreneur and the founder of the UFlex Group. His dynamic leadership, long-term vision, and value-driven business strategy have established UFlex Limited as the largest flexible packaging and solutions company in India and a recognized global player in polymer sciences. He is considered the 'Father of the flexible packaging industry in India' and has been bestowed with several accolades to his credit.",
   },
