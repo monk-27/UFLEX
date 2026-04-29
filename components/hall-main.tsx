@@ -151,7 +151,7 @@ export default function SustainabilityCarousel() {
             className="relative aspect-[16/10] w-full overflow-hidden  "
           >
             <Image
-              src="/images/hall/7.png"
+              src="/images/hall/newhall.jpeg"
               alt="UFlex capabilities across the value chain"
               fill
               className="object-cover rounded-sm"

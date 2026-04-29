@@ -135,8 +135,8 @@ const scrollNext = useCallback(() => {
                     overflow-hidden rounded-[10px] 
                     transition-colors duration-300 
                   ">
-                    <div className="relative flex h-full flex-col p-4">
-                      <div className="relative aspect-[4/4.2] w-full overflow-hidden rounded-[8px] bg-[#bddaf5]">
+                    <div className="relative flex h-full flex-col">
+                      <div className="relative aspect-[3.7/4.2] w-full overflow-hidden rounded-[8px] bg-[#c8eef4">
                         <Image
                           src={d.img}
                           alt={d.name}
@@ -147,8 +147,8 @@ const scrollNext = useCallback(() => {
                         />
                       </div>
 
-                      <div className="flex flex-1 flex-col px-2 pb-2 pt-5 text-center">
-                        <p className="text-[1.25rem] leading-tight text-[#18448b] transition-colors duration-300 group-hover:text-[#10386f] lato-700">
+                      <div className="flex flex-1 flex-col pb-2 pt-5 text-center">
+                        <p className="text-[1.25rem] leading-tight text-[#173366] transition-colors duration-300 group-hover:text-[#10386f] lato-700">
                           {d.name}
                         </p>
                         <p className="mt-3 text-[1rem] leading-snug text-black transition-colors duration-300 group-hover:text-[#102b57]">

@@ -95,12 +95,12 @@ export function SiteHeader() {
                     href={item.href}
                     aria-current={active ? "page" : undefined}
                     className={cn(
-                      "nav-link group relative inline-flex items-center px-1 text-[15px] lato-700 tracking-tight outline-none",
+                      "nav-link group relative inline-flex items-center px-1 text-[15px] lato-400  tracking-tight outline-none",
                       "text-black",
                       "after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w/full",
                       "after:bg-[linear-gradient(to_right,#192D4BFF,#7F8692FF,#0F2952FF)] after:rounded-full",
                       "after:transition-transform after:duration-300 after:origin-left",
-                      active ? "after:scale-x-100" : "after:scale-x-0 group-hover:after:scale-x-100"
+                      active ? "after:scale-x-100 lato-700" : "after:scale-x-0 group-hover:after:scale-x-100"
                     )}
                   >
                     {item.label}
