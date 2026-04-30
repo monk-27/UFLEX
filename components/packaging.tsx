@@ -118,7 +118,7 @@ desc:``,
     },
     {
         title: "Film Grade Polyester",
-        img: "/images/film.png",
+        img: "/images/hall/fgp.jpeg",
       
 desc:`
 `,
@@ -249,7 +249,7 @@ export const businesses: any[] = [
                 {
                     id: "film-grade",
                     title: "Film Grade Polyester",
-                    image: "/images/film.png",
+                    image: "/images/hall/fgp.jpeg",
                     description:
                         "Biaxially oriented polypropylene films for flexible packaging.",
                 },
