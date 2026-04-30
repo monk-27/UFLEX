@@ -146,7 +146,7 @@ export default function ProductsPage() {
             key: "bopp",
             title: "Biaxially Oriented Polypropylene (BOPP) Films",
             heroImageUrl:
-                "/images/bopp.png",
+                "/images/new/bopp.jpeg",
             brandTag: "FLEXOPP",
             overview: `Flexible Packaging Films Business at UFLEX produces over 1,49,000 TPA of BOPP films on its three State-of-the-art lines. These films come in the thickness range of 8 – 75 microns and are available in plain, heat-sealable, metallisable, matte, pearlised, cavitated, overwrap, white opaque and speciality film grades variety.`,
 

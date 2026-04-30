@@ -40,7 +40,7 @@ desc:`A type of polyester film made through biaxial orientation,leading to a thi
     },
     {
         title: "Biaxially-Oriented Polypropylene (BOPP) films",
-        img: "/images/bopp.png",
+        img: "/images/new/bopp.jpeg",
         // dynamiclink: "/packaging-films-business/packaging-our-offering",
 
 //         desc: `Release films,
