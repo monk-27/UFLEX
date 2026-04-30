@@ -122,7 +122,7 @@ export default function PressMainCarousel() {
                       initial={{ opacity: 0, y: 10 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
-                      className="text-[24px] lato-700 text-[#173366] md:text-[42px] "
+                      className="text-[24px] lato-700 text-black md:text-[42px] "
                     >
                       Press Room
                     </motion.h1>

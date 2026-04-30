@@ -196,14 +196,14 @@ export default function WhatWeDoPage() {
       desc: "UFlex is the largest Flexible Packaging Exporter with manufacturing capacity of over 80000 TPA.",
       img: "/images/flexible.png",
     },
-    
+
     {
       title: "Aseptic Packaging",
       href: "/aseptic-packaging-business",
       desc: "Asepto is the Aseptic Liquid Packaging Brand from the House of UFlex Limited.",
       img: "/images/new/aseptic.jpeg",
     },
-    
+
     {
       title: "Chemicals",
       href: "/chemicals-business",
@@ -247,25 +247,25 @@ export default function WhatWeDoPage() {
   // ];
   const packagingData = [
     {
-        "id": "flexible-packaging",
-        title: "What We Do",
-        image: "/images/what.png",
-        "imageAlt": "What we do",
-        
-        paragraphs: [
-          `We operate across the entire packaging value chain, offering unmatched integration and scale. Our
+      "id": "flexible-packaging",
+      title: "What We Do",
+      image: "/images/what.png",
+      "imageAlt": "What we do",
+
+      paragraphs: [
+        `We operate across the entire packaging value chain, offering unmatched integration and scale. Our
               capabilities span PET and rPET resin, packaging films, converting, aseptic packaging, inks and
               adhesives, holography, printing cylinders, printing and packaging machinery.
 
 `,
-            ` We are the only Indian company offering both standalone components and fully integrated flexible
+        ` We are the only Indian company offering both standalone components and fully integrated flexible
               packaging solutions—from design and engineering to advanced printing and machinery—delivering true
               end-to-end capabilities.`,
-               ]
+      ]
     }
 
-];
-const [emblaRef, emblaApi] = useEmblaCarousel({
+  ];
+  const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: false,        // ❌ no infinite autoplay feel
     align: "start",
     skipSnaps: false,
@@ -274,8 +274,8 @@ const [emblaRef, emblaApi] = useEmblaCarousel({
 
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
-      const [open, setOpen] = useState(false);
-  
+  const [open, setOpen] = useState(false);
+
   return (
 
     <main className="bg-gradient-to-b from-white to-slate-50">
@@ -286,7 +286,7 @@ const [emblaRef, emblaApi] = useEmblaCarousel({
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[24px] lato-700 text-[#173366] md:text-[42px]  "
+            className="text-[24px] lato-700 text-black md:text-[42px]  "
           >
             What We Do
           </motion.h1>
@@ -308,27 +308,27 @@ const [emblaRef, emblaApi] = useEmblaCarousel({
               end-to-end capabilities.
             </p> */}
             <p className="text-wrap max-w-xl lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black">
-                                                {packagingData[0].paragraphs[0]}
-                                            </p>
-            
-                                            <button
-                                                onClick={() => setOpen(true)}
-                                                className="mt-4 lato-400 text-[16px] sm:text-[20px] text-[#173366]  hover:underline"
-                                            >
-                                                Read More
-                                                <span aria-hidden>↗</span>
-            
-                                            </button>
-            
-                                           
-                                            <ReadMoreDialog
-                                                open={open}
-                                                onClose={() => setOpen(false)}
-                                                title={packagingData[0].title}
-                                                imageSrc={packagingData[0].image}
-                                                imageAlt={packagingData[0].title}
-                                                paragraphs={packagingData[0].paragraphs}
-                                            />
+              {packagingData[0].paragraphs[0]}
+            </p>
+
+            <button
+              onClick={() => setOpen(true)}
+              className="mt-4 lato-400 text-[16px] sm:text-[20px] text-[#173366]  hover:underline"
+            >
+              Read More
+              <span aria-hidden>↗</span>
+
+            </button>
+
+
+            <ReadMoreDialog
+              open={open}
+              onClose={() => setOpen(false)}
+              title={packagingData[0].title}
+              imageSrc={packagingData[0].image}
+              imageAlt={packagingData[0].title}
+              paragraphs={packagingData[0].paragraphs}
+            />
           </motion.div>
         </div>
 
@@ -338,87 +338,96 @@ const [emblaRef, emblaApi] = useEmblaCarousel({
             viewport={{ once: true }}
             className="relative aspect-[16/10] w-full overflow-hidden  "
           >
-            <Image
+            <video
+              src="/images/new/whatwedo.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover "
+            />
+
+            {/* <Image
               src="/images/what.png"
               alt="UFlex capabilities across the value chain"
               fill
               className="object-fill rounded-sm"
               priority
-            />
-            {/* subtle overlay gradient for readability */}
+            /> */}
+            
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/0" />
           </motion.div>
         </div>
       </section>
 
       <section className="pt-12 max-w-7xl mx-auto px-4">
-      {/* Viewport */}
-      <div ref={emblaRef} className="overflow-hidden">
-        {/* Container */}
-        <div className="flex gap-6">
-          {investorRelations.map((card, index) => (
-            <motion.div
-              key={card.href}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, ease: "easeOut" }}
-              viewport={{ once: true }}
-              className="
+        {/* Viewport */}
+        <div ref={emblaRef} className="overflow-hidden">
+          {/* Container */}
+          <div className="flex gap-6">
+            {investorRelations.map((card, index) => (
+              <motion.div
+                key={card.href}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, ease: "easeOut" }}
+                viewport={{ once: true }}
+                className="
               flex-[0_0_100%]
   sm:flex-[0_0_50%]
   lg:flex-[0_0_33.3333%]
   flex-shrink-0 gap-6
               "
-            >
-              <Link href={card.href} className="block h-full">
-                <div className="group flex h-full flex-col overflow-hidden rounded-sm bg-gray-100 shadow-sm hover:shadow-md transition">
-                  {/* Image */}
-                  <div className="relative aspect-[16/9] overflow-hidden">
-                    <Image
-                      src={card.img}
-                      alt={card.title}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105 "
-                    />
-                  </div>
-
-                  {/* Content */}
-                  <div className="p-5">
-                    <div className="flex gap-2">
-                      {/* <span className="mt-1 h-6 w-[2px] bg-[#D84A3B]" /> */}
-                      <h3 className="lato-700 text-[18px] md:text-[20px] leading-tight text-[#173366]">
-                        {card.title}
-                      </h3>
+              >
+                <Link href={card.href} className="block h-full">
+                  <div className="group flex h-full flex-col overflow-hidden rounded-sm bg-gray-100 shadow-sm hover:shadow-md transition">
+                    {/* Image */}
+                    <div className="relative aspect-[16/9] overflow-hidden">
+                      <Image
+                        src={card.img}
+                        alt={card.title}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105 "
+                      />
                     </div>
 
-                    {/* <p className="mt-3 text-sm text-[#6D6E71]">
+                    {/* Content */}
+                    <div className="p-5">
+                      <div className="flex gap-2">
+                        {/* <span className="mt-1 h-6 w-[2px] bg-[#D84A3B]" /> */}
+                        <h3 className="lato-700 text-[18px] md:text-[20px] leading-tight text-[#173366]">
+                          {card.title}
+                        </h3>
+                      </div>
+
+                      {/* <p className="mt-3 text-sm text-[#6D6E71]">
                       {card.desc}
                     </p> */}
+                    </div>
                   </div>
-                </div>
-              </Link>
-            </motion.div>
-          ))}
+                </Link>
+              </motion.div>
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* Controls */}
-      <div className="mt-6 flex justify-center gap-4">
-        <button
-          onClick={scrollPrev}
-          className="rounded-full border border-gray-400 p-3 hover:bg-gray-100 transition"
-        >
-          <ChevronLeft className="h-5 w-5 text-gray-400" />
-        </button>
+        {/* Controls */}
+        <div className="mt-6 flex justify-center gap-4">
+          <button
+            onClick={scrollPrev}
+            className="rounded-full border border-gray-400 p-3 hover:bg-gray-100 transition"
+          >
+            <ChevronLeft className="h-5 w-5 text-gray-400" />
+          </button>
 
-        <button
-          onClick={scrollNext}
-          className="rounded-full border border-gray-400 p-3 hover:bg-gray-100 transition"
-        >
-          <ChevronRight className="h-5 w-5 text-gray-400" />
-        </button>
-      </div>
-    </section>
+          <button
+            onClick={scrollNext}
+            className="rounded-full border border-gray-400 p-3 hover:bg-gray-100 transition"
+          >
+            <ChevronRight className="h-5 w-5 text-gray-400" />
+          </button>
+        </div>
+      </section>
 
       <div className="h-16" />
       <SiteFooter />

@@ -114,14 +114,16 @@ export default function LifeatModules() {
   const modules = [
     {
       title: "Your growth, our success",
-      image: "/images/1.jpeg",
+      image: "/images/learn.jpg",
+
       description:
         "At UFlex, experience a vibrant work culture that empowers people to transform their knowledge and capabilities into meaningful achievements.",
     },
     {
       title: "Learn with UFlex",
       // image: "/images/learnat.png",
-      image: "/images/learn.jpg",
+      image: "/images/1.jpeg",
+
 
       description:
         "The UFlex Learning Academy fosters learning and development through a range of off-the-shelf digital, blended and classroom courses on a wide range of subjects.",

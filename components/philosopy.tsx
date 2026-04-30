@@ -21,7 +21,7 @@ const items = [
     desc: "Enabling customers to become high-performance businesses through our total packaging solutions and creating long-term relationships by being responsive, relevant and consistently delivering value.",
   },
   {
-    img: "/images/new/fp.png",
+    img: "/images/new/fp.jpeg",
     title: "Innovation",
     desc: "Strive to be the front runner in technology and business, actively contributing to the evolution of best practices in developing new and efficient packaging solutions to address customers’ dynamic needs.",
   },

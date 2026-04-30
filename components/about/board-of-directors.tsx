@@ -136,13 +136,13 @@ const scrollNext = useCallback(() => {
                     transition-colors duration-300 
                   ">
                     <div className="relative flex h-full flex-col">
-                      <div className="relative aspect-[3.7/4.2] w-full overflow-hidden rounded-[8px] bg-[#c8eef4">
+                      <div className="relative aspect-[4.2/4.2] w-full overflow-hidden  bg-[#c8eef4 ">
                         <Image
                           src={d.img}
                           alt={d.name}
                           fill
                           sizes="(max-width:640px) 85vw, (max-width:1024px) 46vw, (max-width:1280px) 30vw, 23vw"
-                          className="object-cover transition duration-500 ease-out group-hover:scale-[1.03] bg-[#c8eef4]"
+                          className="object-fit transition duration-500 ease-out group-hover:scale-[1.03] bg-[#c8eef4]"
                           priority={i < 2}
                         />
                       </div>
