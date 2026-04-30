@@ -26,7 +26,7 @@ const items = [
     title: "Aseptic Packaging",
     href: "/aseptic-packaging-business",
     desc: "Asepto is the Aseptic Liquid Packaging Brand from the House of UFlex Limited.",
-    img: "/images/aseptic.png",
+    img: "/images/new/aseptic.jpeg",
   },
   {
     title: "Chemicals",

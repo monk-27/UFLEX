@@ -50,7 +50,8 @@ const CompanyInfo = () => {
                 className="inline-flex items-center gap-2 lato-400 text-[#173366] transition-colors"
               >
                 Read More
-                <ArrowRight className="h-4 w-4" />
+                                                    <span aria-hidden>↗</span>
+
               </button>
             </div>
           </div>

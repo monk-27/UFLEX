@@ -394,7 +394,7 @@ const FlexibleComp: React.FC<Props> = ({ business }) => {
 
                                 </button>
 
-                                {/* ---- Modal ---- */}
+                               
                                 <ReadMoreDialog
                                     open={open}
                                     onClose={() => setOpen(false)}

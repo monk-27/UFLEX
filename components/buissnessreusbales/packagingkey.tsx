@@ -61,7 +61,7 @@ const PackagingKeypeople = ({ title, people }: Props) => {
      
                {/* Title */}
                <h2 className="text-center lato-700 text-[28px] md:text-[32px] text-[#173366] mb-3">
-                Overseas
+                International Operations
                </h2>
      
                

@@ -191,7 +191,7 @@ const GlobalFootprint = () => {
           Our Global Footprint
         </h2>
 
-        <p className="text-start lato-400 mt-0 text-[16px] text-[#181818] md:text-[24px]">
+        <p className="text-start lato-700 mt-0 text-[16px] text-[#181818] md:text-[24px]">
           Manufacturing excellence across five continents
         </p>
 

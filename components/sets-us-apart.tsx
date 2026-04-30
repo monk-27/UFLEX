@@ -20,7 +20,7 @@ const items = [
     desc: "UFlex serves as a one-stop-shop flexible packaging solution provider serving varied sectors spanning FMCG, consumer product goods, pharmaceuticals, building materials, automobiles, and more.",
   },
   {
-    img: "/images/whats1.jpeg",
+    img: "/images/new/nabl.jpeg",
     title: "India's first NABL-accredited R&D lab certified to ISO/IEC 17025:2017 standards",
     desc: "Located in Noida, our state-of-the-art facility leads innovation in inks, adhesives, and coatings with globally recognized quality and precision.",
   },
@@ -70,7 +70,7 @@ const scrollNext = useCallback(() => {
         <h2 className="text-[28px] sm:text-[36px] md:text-[42px] lato-700 text-[#173366]">
           What Sets Us Apart
         </h2>
-        <p className="mx-auto mt-3 max-w-4xl text-[#222] text-[18px] md:text-[24px] leading-relaxed">
+        <p className="lato-700 mx-auto mt-3 max-w-4xl text-[#222] text-[18px] md:text-[24px] leading-relaxed">
           At UFlex, research-led innovation is the pillar of our business strategy.
         </p>
       </div>

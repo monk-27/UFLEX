@@ -40,11 +40,12 @@ export default function HomePage() {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="max-w-7xl text-black lato-400 py-[2px] text-[14px] leading-relaxed md:text-[24px] mb-4"
         >
+          <span className="text-black lato-700 py-[2px] text-[14px] leading-relaxed md:text-[24px]">
+            As India's largest multinational flexible packaging and solutions company, we take pride in being a completely integrated provider of sustainable{" "}
+             packaging products and solutions.</span><br/>
+             <br/>
           <span className="text-black lato-400 py-[2px] text-[14px] leading-relaxed md:text-[24px]">
-            As India's largest multinational flexible packaging and solutions company,{" "}
-            </span>
-          <span className="text-black lato-400 py-[2px] text-[14px] leading-relaxed md:text-[24px]">
-            we take pride in being a completely integrated provider of sustainable packaging products and solutions.
+            
             Discover the world of UFlex and learn more about our offerings across the business.
           </span>
         </motion.h2>
@@ -64,7 +65,7 @@ export default function HomePage() {
           <h2 className="text-center text-[24px] lato-700 text-[#173366] sm:text-[42px] ">
             Sustainability
           </h2>
-          <span className="text-[#181818] text-center lato-400  text-[14px] sm:text-[24px] ">
+          <span className="text-[#181818] text-center lato-700  text-[14px] sm:text-[24px] ">
              Embedding sustainability across materials, operations, and value chains
           </span>
         </div>

@@ -67,7 +67,7 @@ desc:`An ideal option for packaging food, beverages, and electronics due to this
 // stationery packaging,
 // deep freeze application.`,
 desc:`
-A film manufactured through a cast extrusion process in which polypropylene resins are melted and extruded into a flat film. `,
+A film manufactured through a cast extrusion process in which polypropylene resin are melted and extruded into a flat film. `,
     },
     {
         title: "Metallized Film",
@@ -111,7 +111,7 @@ desc:`Decorative films and foils are developed with advanced metallization techn
 const SliderItemsResin: any = [
     {
         title: "Bottle Grade PET",
-        img: "/images/bottlegrade.png",
+        img: "/images/new/pet.jpeg",
 
 desc:``,
         // dynamiclink: "/packaging-films-business/packaging-our-offering"
@@ -348,9 +348,9 @@ export const businesses: any[] = [
                 {
                     photo: "/images/new/jagmohan.jpg",
                     name: "Mr. Jagmohan Mongia ",
-                    role: "President, Packaging Films business",
+                    role: "President, Packaging Films Business",
                     summary:
-                        "With four decades of industry experience, Jagmohan Mongia leads the Films business – India operations, UFlex. A commerce graduates with a diploma in sales and marketing from Bhartiya Vidya Bhawan, he has worked with leading companies like Berger Paints and Garware before joining UFlex, where he has been a key contributor for over 25 years. Jagmohan brings deep expertise in sales, marketing, and business development, with a strong track record of building sustainable, growth-driven operations. Under his leadership, the films business in India has consistently delivered strong revenue growth and increased market share.",
+                        "With four decades of industry experience, Jagmohan Mongia leads the Films Business – India operations, UFlex. A commerce graduates with a diploma in sales and marketing from Bhartiya Vidya Bhawan, he has worked with leading companies like Berger Paints and Garware before joining UFlex, where he has been a key contributor for over 25 years. Jagmohan brings deep expertise in sales, marketing, and business development, with a strong track record of building sustainable, growth-driven operations. Under his leadership, the films business in India has consistently delivered strong revenue growth and increased market share.",
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
                 },
                 {

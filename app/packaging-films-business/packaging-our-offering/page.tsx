@@ -69,7 +69,7 @@ export default function ProductsPage() {
                 {
                     title: "rPET films (contain up to 30% of Post Consumer Waste Recyclate Resin)",
                     description:
-                        "rPET is another green innovation that contains up to 30% post-consumer consumer recycle PET (rPET) resins obtained by re-processing post-consumer PET waste such as used PET bottles. This waste would otherwise be consigned to landfills. rPET films comply with the US Food and Drug Administration (USFDA) and European Union authority norms for direct food contact and have the same properties as films made from virgin PET resins.",
+                        "rPET is another green innovation that contains up to 30% post-consumer consumer recycle PET (rPET) resin obtained by re-processing post-consumer PET waste such as used PET bottles. This waste would otherwise be consigned to landfills. rPET films comply with the US Food and Drug Administration (USFDA) and European Union authority norms for direct food contact and have the same properties as films made from virgin PET resin.",
                 },
                 {
                     title: "Down-gauged Conversion Substrates",

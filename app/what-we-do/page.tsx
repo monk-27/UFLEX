@@ -13,6 +13,7 @@ import { useRouter } from "next/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 import Link from "next/link";
+import { ReadMoreDialog } from "@/components/expandabletext";
 
 /* ------------------------------- THEME ------------------------------- */
 const BRAND = {
@@ -200,7 +201,7 @@ export default function WhatWeDoPage() {
       title: "Aseptic Packaging",
       href: "/aseptic-packaging-business",
       desc: "Asepto is the Aseptic Liquid Packaging Brand from the House of UFlex Limited.",
-      img: "/images/aseptic.png",
+      img: "/images/new/aseptic.jpeg",
     },
     
     {
@@ -244,6 +245,26 @@ export default function WhatWeDoPage() {
   //   { title: "Registrar", subtitle: "RTA contact.", image: "/images/policy3.png", href: "#" },
 
   // ];
+  const packagingData = [
+    {
+        "id": "flexible-packaging",
+        title: "What We Do",
+        image: "/images/what.png",
+        "imageAlt": "What we do",
+        
+        paragraphs: [
+          `We operate across the entire packaging value chain, offering unmatched integration and scale. Our
+              capabilities span PET and rPET resin, packaging films, converting, aseptic packaging, inks and
+              adhesives, holography, printing cylinders, printing and packaging machinery.
+
+`,
+            ` We are the only Indian company offering both standalone components and fully integrated flexible
+              packaging solutions—from design and engineering to advanced printing and machinery—delivering true
+              end-to-end capabilities.`,
+               ]
+    }
+
+];
 const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: false,        // ❌ no infinite autoplay feel
     align: "start",
@@ -253,6 +274,8 @@ const [emblaRef, emblaApi] = useEmblaCarousel({
 
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
+      const [open, setOpen] = useState(false);
+  
   return (
 
     <main className="bg-gradient-to-b from-white to-slate-50">
@@ -274,16 +297,38 @@ const [emblaRef, emblaApi] = useEmblaCarousel({
             transition={{ delay: 0.05 }}
             className="lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black mt-5 space-y-4 "
           >
-            <p>
+            {/* <p className="">
               We operate across the entire packaging value chain, offering unmatched integration and scale. Our
-              capabilities span PET and rPET resins, packaging films, converting, aseptic packaging, inks and
+              capabilities span PET and rPET resin, packaging films, converting, aseptic packaging, inks and
               adhesives, holography, printing cylinders, printing and packaging machinery.
             </p>
             <p>
               We are the only Indian company offering both standalone components and fully integrated flexible
               packaging solutions—from design and engineering to advanced printing and machinery—delivering true
               end-to-end capabilities.
-            </p>
+            </p> */}
+            <p className="text-wrap max-w-xl lato-400 text-[16px] sm:text-[20px] leading-relaxed text-black">
+                                                {packagingData[0].paragraphs[0]}
+                                            </p>
+            
+                                            <button
+                                                onClick={() => setOpen(true)}
+                                                className="mt-4 lato-400 text-[16px] sm:text-[20px] text-[#173366]  hover:underline"
+                                            >
+                                                Read More
+                                                <span aria-hidden>↗</span>
+            
+                                            </button>
+            
+                                           
+                                            <ReadMoreDialog
+                                                open={open}
+                                                onClose={() => setOpen(false)}
+                                                title={packagingData[0].title}
+                                                imageSrc={packagingData[0].image}
+                                                imageAlt={packagingData[0].title}
+                                                paragraphs={packagingData[0].paragraphs}
+                                            />
           </motion.div>
         </div>
 
