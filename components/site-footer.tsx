@@ -70,7 +70,7 @@ export function SiteFooter() {
             <Link href="/hall-of-fame">Hall of Fame</Link>
             <Link href="/careers">Work With Us</Link>
             <Link href="/press-room">The Press Room</Link>
-            <Link href="/get-in-touch">Get in Touch</Link>
+            <Link href="/contact-us">Contact Us</Link>
             <Link href="/get-a-quote">Get a Quote</Link>
           </nav>
 

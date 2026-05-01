@@ -203,9 +203,9 @@ RewriteRule ^uflex-program\.php$ /careers/ [NC,R=301,L]
 RewriteRule ^current-openings\.php$ /careers/ [NC,R=301,L]
 
 # Contact Us
-RewriteRule ^contact-us\.php$ /get-in-touch/ [NC,R=301,L]
-RewriteRule ^global-presence\.php$ /get-in-touch/ [NC,R=301,L]
-RewriteRule ^contact-form\.php$ /get-in-touch/ [NC,R=301,L]
+RewriteRule ^contact-us\.php$ /contact-us/ [NC,R=301,L]
+RewriteRule ^global-presence\.php$ /contact-us/ [NC,R=301,L]
+RewriteRule ^contact-form\.php$ /contact-us/ [NC,R=301,L]
 
 # Media Centre
 RewriteRule ^press-release\.php$ /media-releases/ [NC,R=301,L]

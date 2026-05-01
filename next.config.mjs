@@ -148,9 +148,9 @@ const nextConfig = {
       { source: '/current-openings.php', destination: '/careers/', permanent: true },
 
       // Contact Us
-      { source: '/contact-us.php', destination: '/get-in-touch/', permanent: true },
-      { source: '/global-presence.php', destination: '/get-in-touch/', permanent: true },
-      { source: '/contact-form.php', destination: '/get-in-touch/', permanent: true },
+      { source: '/contact-us.php', destination: '/contact-us/', permanent: true },
+      { source: '/global-presence.php', destination: '/contact-us/', permanent: true },
+      { source: '/contact-form.php', destination: '/contact-us/', permanent: true },
 
       // Media Centre
       { source: '/press-release.php', destination: '/media-releases/', permanent: true },

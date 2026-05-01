@@ -24,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/flexible-packaging-business/sustainability',
     '/flexitube-business',
     '/get-a-quote',
-    '/get-in-touch',
+    '/contact-us',
     '/hall-of-fame',
     '/hall-of-fame/buisness-awards',
     '/holography-business',

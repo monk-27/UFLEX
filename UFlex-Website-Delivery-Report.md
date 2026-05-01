@@ -107,7 +107,7 @@ All pages below are live at [https://beta.uflexltd.com/](https://beta.uflexltd.c
 - Sustainability – [https://beta.uflexltd.com/sustainability/](https://beta.uflexltd.com/sustainability/)
 - Hall of Fame (Corporate Awards) – [https://beta.uflexltd.com/hall-of-fame/?business=corporate-awards](https://beta.uflexltd.com/hall-of-fame/?business=corporate-awards)
 - Careers – [https://beta.uflexltd.com/careers/](https://beta.uflexltd.com/careers/)
-- Get In Touch (Contact) – [https://beta.uflexltd.com/get-in-touch/](https://beta.uflexltd.com/get-in-touch/)
+- Get In Touch (Contact) – [https://beta.uflexltd.com/contact-us/](https://beta.uflexltd.com/contact-us/)
 - Get A Quote (Enquiry) – [https://beta.uflexltd.com/get-a-quote/](https://beta.uflexltd.com/get-a-quote/)
 
 ### 3.2 Business Vertical Pages (8 Verticals, 15 pages)

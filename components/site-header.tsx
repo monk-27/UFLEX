@@ -39,7 +39,7 @@ const baseNav: NavItem[] = [
   { href: "/hall-of-fame", label: "Hall of Fame" },
   { href: "/careers", label: "Careers" },
   { href: "/press-room", label: "Press\u00A0Room" },
-  { href: "/get-in-touch", label: "Get in Touch" }
+  { href: "/contact-us", label: "Contact Us" }
 ]
 
 export function SiteHeader() {
