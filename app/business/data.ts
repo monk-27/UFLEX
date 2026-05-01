@@ -262,7 +262,7 @@ export const businesses: BusinessConfig[] = [
       linkHref: "#",
     },
     keypeople: {
-      title: "Key People Leadership",
+      title: "Leadership",
       details: [
 
         {
@@ -452,7 +452,7 @@ export const businesses: BusinessConfig[] = [
       linkHref: "#",
     },
     keypeople: {
-      title: "Key People Leadership",
+      title: "Leadership",
       details: [
         {
           photo: "/images/desh.png",
@@ -595,7 +595,7 @@ export const businesses: BusinessConfig[] = [
       linkHref: "#",
     },
     keypeople: {
-      title: "Key People Leadership",
+      title: "Leadership",
       details: [
         {
           photo: "/images/ashwani.png",
@@ -670,7 +670,7 @@ export const businesses: BusinessConfig[] = [
   },
 
   keypeople: {
-    title: "Key People Leadership",
+    title: "Leadership",
     details: [
       {
         photo:
@@ -829,7 +829,7 @@ export const businesses: BusinessConfig[] = [
   },
 
   keypeople: {
-    title: "Key People Leadership",
+    title: "Leadership",
     details: [
       {
         photo: "/images/vinod.png",
@@ -957,7 +957,7 @@ export const businesses: BusinessConfig[] = [
     linkHref: "#",
   },
   keypeople: {
-    title: "Key People Leadership",
+    title: "Leadership",
     details: [
       {
         photo: "/images/ravi.png",
@@ -1095,7 +1095,7 @@ export const businesses: BusinessConfig[] = [
   },
 
   keypeople: {
-    title: "Key People Leadership",
+    title: "Leadership",
     details: [
       {
         photo: "/images/parvez.png",
@@ -1232,7 +1232,7 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
       linkHref: "#",
     },
     keypeople: {
-      title: "Key People Leadership",
+      title: "Leadership",
       details: [
         {
           photo: "/images/bose.png",

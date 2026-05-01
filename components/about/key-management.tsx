@@ -109,7 +109,7 @@ const KeyManagement = () => {
       <section className="bg-[#97c3ef] mt-[30px] px-4 py-0 text-center sm:mt-16  sm:pt-12 md:px-12">
         <div className="mx-auto max-w-7xl  md:px-8">
           <h2 className="text-[24px] lato-700 text-[#173366] md:text-[42px]  text-start mb-12">
-            Key Management Leadership
+          Leadership
           </h2>
 
           <div className="relative">

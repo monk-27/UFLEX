@@ -195,7 +195,7 @@ export const businesses: any[] = [
       linkHref: "/aseptic-packaging-business/sustainability",
     },
     keypeople: {
-      title: "Key People Leadership",
+      title: "Leadership",
       details: [
         {
           photo: "/images/new/ashwani.jpeg",

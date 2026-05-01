@@ -289,7 +289,7 @@ landfill pressure and helping curb pollution.`,
         },
 
         keypeople: {
-            title: "Key People Leadership",
+            title: "Leadership",
             details: [
                 {
                     photo:

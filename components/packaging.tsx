@@ -342,7 +342,7 @@ export const businesses: any[] = [
             linkHref: "/packaging-films-business/sustainability",
         },
         keypeopleIndia: {
-            title: "Key People Leadership",
+            title: "Leadership",
             details: [
 
                 {
@@ -368,7 +368,7 @@ export const businesses: any[] = [
             ],
         },
         keypeopleabroad: {
-            title: "Key People Leadership International",
+            title: "Leadership International",
             details: [
 
 

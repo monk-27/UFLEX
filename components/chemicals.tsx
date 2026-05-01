@@ -172,7 +172,7 @@ export const businesses: any[] = [
             linkHref: "/chemicals-business/sustainability",
         },
         keypeople: {
-            title: "Key People Leadership",
+            title: "Leadership",
             details: [
                 {
                     photo: "/images/new/desh.jpg",

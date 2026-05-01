@@ -280,7 +280,7 @@ recycle the same. \n\n We have many solutions of sustainability segment- hologra
         },
 
         keypeople: {
-            title: "Key People Leadership",
+            title: "Leadership",
             details: [
 
                 {

@@ -83,7 +83,7 @@ function _LeaderSpotlight({
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.15 }}
                 >
-                    Key People Leadership
+                    Leadership
                 </motion.h3>
           <section key={`${p.name}-${idx}`} className={`rounded-2xl border-2 border-gray-400 bg-gray-100 py-10 md:py-14 sm:mx-12`}>
 
