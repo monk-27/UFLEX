@@ -10,10 +10,11 @@ export function SiteFooter() {
   const range = `${year - 1}-${year}`
 
   const socials = [
+    { href: "https://linkedin.com", label: "LinkedIn", Icon: Linkedin },
+
     { href: "https://x.com", label: "X ", Icon: Twitter },
     { href: "https://facebook.com", label: "Facebook", Icon: Facebook },
     { href: "https://instagram.com", label: "Instagram", Icon: Instagram },
-    { href: "https://linkedin.com", label: "LinkedIn", Icon: Linkedin },
   ]
 
   return (
@@ -37,10 +38,10 @@ export function SiteFooter() {
 
             <div className="flex gap-3 flex-wrap">
               {[
+              { Icon: Linkedin, href: "https://www.linkedin.com/company/uflexltd" },
+              { Icon: Instagram, href: "https://www.instagram.com/uflexltd" },
                 { Icon: Twitter, href: " https://twitter.com/uflexltd" },
                 { Icon: Facebook, href: "https://www.facebook.com/uflexltd" },
-                { Icon: Instagram, href: "https://www.instagram.com/uflexltd" },
-                { Icon: Linkedin, href: "https://www.linkedin.com/company/uflexltd" },
                 { Icon: Youtube, href: "https://www.youtube.com/@uflexltdpackaging" },
 
               ].map(({ Icon, href }, i) => (

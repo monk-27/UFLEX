@@ -28,20 +28,20 @@ const directors: Director[] = [
     img: "/images/jeevaraj.png",
     bio: "Mr. Jeevaraj Pillai brings over 35 years of experience in packaging and packaging technology, with expertise in printing cylinders, packaging films, and advanced flexible packaging material conversion. As Director - Sustainability, he leads the development and implementation of the company’s ESG strategy, along with the development of sustainable products and solutions. His extensive background in the industry is complemented by his qualifications in mechanical engineering and an MBA.",
   },
- 
+
   {
     name: "Dr. Chandan Chattaraj", position: "President – Human Resources (India & Global)",
     img: "/images/new/chandan.png",
     bio: "Dr. Chandan Chattaraj brings three decades of extensive experience across organizations such as Aircel, the Oberoi Group, Xerox India, and Jubilant Organosys, where he held various leadership roles. In addition to his professional achievements, he serves as a member of the Board of Governors for the International School of Business & Media, Pune, and is on the Corporate Advisory Board of Poornima University, Jaipur. He is an alumnus of the Xavier Institute of Social Service (XISS), Ranchi."
   },
-  
+
   {
     name: "Mr. P. L. Sirsamkar", position: "Technical & New Product Development (Films Business)",
     img: "/images/new/pl.png",
     bio: "Mr. Sirsamkar has been with the UFlex Group for over 26 years. He has previously worked with leading organizations such as Garware and Polyplex. With nearly four decades of experience in the packaging films industry, he has been instrumental in expanding the film plant globally and has played a key role in driving the operations and development of value-added packaging films. Mr. Sirsamkar holds a degree in instrumentation and electronics engineering."
   },
 
-   {
+  {
     name: "Mr. Dinesh Jain", position: "President – Legal & Corporate Affairs",
     img: "/images/new/din.jpg",
     bio: "With over four decades of industry experience, Mr. Dinesh Jain has been with the UFlex Group for more than 29 years. He is responsible for overseeing legal and corporate affairs, as well as leading the Group&rsquo;s corporate social responsibility initiatives. In addition to his professional responsibilities, Mr. Jain serves on the managing committees of several social organizations and educational institutions, including IMS Ghaziabad and IMS Noida. He holds an MBA and an LLM from Agra University."
@@ -78,25 +78,25 @@ const KeyManagement = () => {
     setCanPrev(emblaApi.canScrollPrev());
     setCanNext(emblaApi.canScrollNext());
   }, [emblaApi]);
-const getSlidesToScroll = () => {
-  if (typeof window === "undefined") return 1;
+  const getSlidesToScroll = () => {
+    if (typeof window === "undefined") return 1;
 
-  if (window.innerWidth >= 768) return 4;   // md
-  if (window.innerWidth >= 640) return 2;   // sm
-  return 1;                                 // mobile
-};
+    if (window.innerWidth >= 768) return 4;   // md
+    if (window.innerWidth >= 640) return 2;   // sm
+    return 1;                                 // mobile
+  };
 
-const scrollPrev = useCallback(() => {
-  if (!emblaApi) return;
-  const slides = getSlidesToScroll();
-  emblaApi.scrollTo(emblaApi.selectedScrollSnap() - slides);
-}, [emblaApi]);
+  const scrollPrev = useCallback(() => {
+    if (!emblaApi) return;
+    const slides = getSlidesToScroll();
+    emblaApi.scrollTo(emblaApi.selectedScrollSnap() - slides);
+  }, [emblaApi]);
 
-const scrollNext = useCallback(() => {
-  if (!emblaApi) return;
-  const slides = getSlidesToScroll();
-  emblaApi.scrollTo(emblaApi.selectedScrollSnap() + slides);
-}, [emblaApi]);
+  const scrollNext = useCallback(() => {
+    if (!emblaApi) return;
+    const slides = getSlidesToScroll();
+    emblaApi.scrollTo(emblaApi.selectedScrollSnap() + slides);
+  }, [emblaApi]);
   useEffect(() => {
     if (!emblaApi) return;
     onSelect();
@@ -106,7 +106,7 @@ const scrollNext = useCallback(() => {
 
   return (
     <>
-       <section className="bg-[#97c3ef] mt-[30px] px-4 py-0 text-center sm:mt-16  sm:pt-12 md:px-12">
+      <section className="bg-[#97c3ef] mt-[30px] px-4 py-0 text-center sm:mt-16  sm:pt-12 md:px-12">
         <div className="mx-auto max-w-7xl  md:px-8">
           <h2 className="text-[24px] lato-700 text-[#173366] md:text-[42px]  text-start mb-12">
             Key Management
@@ -134,8 +134,8 @@ const scrollNext = useCallback(() => {
                   "
                   >
                     <div className="relative flex h-full flex-col">
-                                          <div className="relative aspect-[4.2/4.2] w-full overflow-hidden  bg-[#c8eef4 ">
-                                            {/* <Image
+                      <div className="relative aspect-[4.2/4.2] w-full overflow-hidden  bg-[#c8eef4 ">
+                        {/* <Image
                                               src={d.img}
                                               alt={d.name}
                                               fill
@@ -143,17 +143,16 @@ const scrollNext = useCallback(() => {
                                               className="object-fit transition duration-500 ease-out group-hover:scale-[1.03] bg-[#c8eef4]"
                                               priority={i < 2}
                                             /> */}
-                                            <Image
-  src={d.img}
-  alt={d.name}
-  fill
-  sizes="(max-width:640px) 85vw, (max-width:1024px) 46vw, (max-width:1280px) 30vw, 23vw"
-  className={`transition duration-500 ease-out group-hover:scale-[1.03] bg-[#c8eef4] ${
-    i === 2 ? "object-contain" : "object-fit"
-  }`}
-  priority={i < 2}
-/>
-                                          </div>
+                        <Image
+                          src={d.img}
+                          alt={d.name}
+                          fill
+                          sizes="(max-width:640px) 85vw, (max-width:1024px) 46vw, (max-width:1280px) 30vw, 23vw"
+                          className={`transition duration-500 ease-out group-hover:scale-[1.03] bg-[#c8eef4] ${i === 2 ? "object-contain" : "object-fit"
+                            }`}
+                          priority={i < 2}
+                        />
+                      </div>
 
                       <div className="flex flex-1 flex-col  pb-2 pt-5 text-center">
                         <p className="text-[1.25rem] leading-tight text-[#173366] transition-colors duration-300 group-hover:text-[#10386f] lato-700">
@@ -225,7 +224,7 @@ const scrollNext = useCallback(() => {
               <button
                 onClick={() => setSelected(null)}
                 aria-label="Close"
-                 className="absolute right-3 top-3 z-10 p-2 bg-white rounded-full shadow hover:bg-gray-400"
+                className="absolute right-3 top-3 z-10 p-2 bg-white rounded-full shadow hover:bg-gray-400"
               >
                 <X className="h-5 w-5 text-black" />
 
