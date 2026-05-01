@@ -66,7 +66,7 @@ export default function HomePage() {
             Sustainability
           </h2>
           <span className="text-[#181818] text-center lato-700  text-[14px] sm:text-[24px] ">
-             Embedding sustainability across materials, operations, and value chains
+             Embedding sustainability across materials, operations, and value chains.
           </span>
         </div>
       </div>
