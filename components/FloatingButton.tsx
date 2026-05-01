@@ -7,7 +7,7 @@ export default function FloatingButton() {
   return (
     <Link
       href="/get-a-quote"
-      aria-label="Get a quote"
+      aria-label="Submit Enquiry"
       className="
         fixed bottom-5 right-5 z-50
         group
@@ -47,7 +47,7 @@ export default function FloatingButton() {
           hidden md:block
         "
       >
-        Get a Quote
+        Submit Enquiry
       </span>
     </Link>
   );

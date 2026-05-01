@@ -571,7 +571,7 @@ export default function GetInTouch() {
         <section className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[450px] overflow-hidden">
 
           <Image
-            src="/images/careers/contact.png"
+            src="/images/sus/contact.jpeg"
             alt="Investors Relations"
             fill
             className="object-cover w-full h-full"
@@ -721,7 +721,7 @@ export default function GetInTouch() {
                 className="relative h-72 md:h-auto md:min-h-[460px]"
               >
                 <Image
-                  src="/images/careers/contacts.png"
+                  src="/images/sus/cc.jpeg"
                   alt="Contact illustration"
                   fill
                   className="rounded-none object-cover"
@@ -869,7 +869,7 @@ export default function GetInTouch() {
                       onChange={handleInputChange}
                       className="text-gray-800 rounded-sm border border-slate-300 bg-white py-2 text-sm outline-none ring-[#0B3C7D]/20 focus:ring-2 px-3"
                     >
-                      <option value="">Select product (if applicable)</option>
+                      <option value="">Select Product/Solutions (if applicable)</option>
                       {formData.businessDivision && BUSINESS_PRODUCTS[formData.businessDivision]?.map(prod => (
                         <option key={prod} value={prod}>{prod}</option>
                       ))}

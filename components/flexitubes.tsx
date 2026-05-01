@@ -281,7 +281,7 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
       linkHref: "#",
     },
     keypeople: {
-      title: "Key People",
+      title: "Key People Leadership",
       details: [
         {
           photo: "/images/bose.png",

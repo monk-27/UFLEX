@@ -37,7 +37,7 @@ const SliderItems: SliderItem[] = [
         desc: "High-performance inks for superior print quality, compliant with global food safety and sustainability standards.",
     },
     {
-        img: "/images/new/adhesive.png",
+        img: "/images/sus/adhesive.jpeg",
         title: "Adhesives",
         dynamiclink: "/chemicals-business/chemicals-our-offering?cat=Adhesives",
 
@@ -172,7 +172,7 @@ export const businesses: any[] = [
             linkHref: "/chemicals-business/sustainability",
         },
         keypeople: {
-            title: "Key People",
+            title: "Key People Leadership",
             details: [
                 {
                     photo: "/images/new/desh.jpg",

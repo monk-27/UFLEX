@@ -604,7 +604,7 @@ export default function EnquiryForm() {
           {/* Hero Content */}
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white px-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl lato-700 mb-4">Get a Quote</h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl lato-700 mb-4">Submit Enquiry</h1>
               <p className="text-lg md:text-xl lato-400 opacity-90">We're here to help with your packaging needs</p>
             </div>
           </div>

@@ -273,7 +273,7 @@ export const businesses: any[] = [
     },
 
     keypeople: {
-      title: "Key People",
+      title: "Key People Leadership",
       details: [
         {
           photo: "/images/new/pe.jpg",

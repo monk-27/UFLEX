@@ -117,7 +117,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
     },
 
     {
-        img: "/images/new/inj.jpeg",
+        img: "/images/sus/inj.jpeg",
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
 
         title: "Injection Moulding Products",
@@ -289,7 +289,7 @@ landfill pressure and helping curb pollution.`,
         },
 
         keypeople: {
-            title: "Key People",
+            title: "Key People Leadership",
             details: [
                 {
                     photo:

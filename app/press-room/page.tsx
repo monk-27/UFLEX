@@ -568,7 +568,7 @@ export default function PressRoomPage() {
 
           <div className="pt-12 flex justify-center pb-12 ">
             <span className="text-[#000000] text-[20px] lato-400">
-              For any media queries, please send an email to the Global Corporate Communications Team :{" "}
+              For any media queries, please send an email to the Global corporate communications Team :{" "}
               <span className="text-[#173366]">corpcomm@uflexltd.com</span>
             </span>
           </div>

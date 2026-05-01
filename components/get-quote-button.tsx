@@ -54,7 +54,7 @@ export function GetQuoteButton() {
                 <MessageSquare className="h-6 w-6" />
             </div>
             <span className="lato-700 text-sm whitespace-nowrap pr-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Get a Quote
+                Submit Enquiry
             </span>
         </Link>
     );

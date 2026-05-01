@@ -224,7 +224,7 @@ export const businesses: any[] = [
             linkHref: "/engineering-business/sustainability",
         },
         keypeople: {
-            title: "Key People",
+            title: "Key People Leadership",
             details: [
                 {
                     photo: "/images/ravi.png",
