@@ -71,7 +71,7 @@ A film manufactured through a cast extrusion process in which polypropylene resi
     },
     {
         title: "Metallized Film",
-        img: "/images/metallized.png",
+        img: "/images/sus/deco.jpeg",
         // dynamiclink: "/packaging-films-business/packaging-our-offering",
 
 //         desc: `Converting and
@@ -91,7 +91,7 @@ desc:`Decorative films and foils are developed with advanced metallization techn
     },
     {
         title: "AlOx-coated films",
-        img: "https://www.flexfilm.com/img/Products/AloxCoated/AC_Clear_Barrier%20Polyester_Film.jpg",
+        img: "/images/sus/alox.jpeg",
         // dynamiclink: "/packaging-films-business/packaging-our-offering",
 
         desc: `Films with a transparent aluminium oxide layer that provide strong moisture and gas barriers while keeping the product visible.
@@ -99,7 +99,7 @@ desc:`Decorative films and foils are developed with advanced metallization techn
     },
     {
         title: "Speciality films",
-        img: "https://www.flexfilm.com/img/Products/SpecialityFilms/SF_Easy_Tearing_Films.jpg",
+        img: "/images/sus/spec.jpeg",
         // dynamiclink: "/packaging-films-business/packaging-our-offering",
 
         desc: "A range of films that provide value addition for converters by enhancing the quality, performance, and functionality of the final packaging.",

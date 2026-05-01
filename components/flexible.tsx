@@ -20,7 +20,7 @@ import { AwardsSection } from './buissnessreusbales/AwardsSection'
 
 const SliderItems: SliderItem[] = [
     {
-        img: "/images/new/lam.jpeg",
+        img: "/images/sus/lam.jpeg",
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Flexible Laminates",
         desc: `Our range of flexible laminates are made from various combinations of plastic, aluminum, and paper to suit diverse packaging needs.
@@ -28,7 +28,7 @@ const SliderItems: SliderItem[] = [
         // desc: "UFlex offers a comprehensive range of flexible laminates made from various combinations of plastic, aluminum, and paper to suit diverse packaging needs. These include structures like PET/PE, PET/Foil/PE, PET/BOPP, BOPP/CPP, and advanced multilayer laminates such as PET/Extr/Foil/Extr/PE and AlOx PET/BON/CPP for retort applications. ",
     },
     {
-        img: "/images/new/f2.png",
+        img: "/images/sus/f2.jpeg",
         // img: "/images/new/flex.jpeg",
 
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
@@ -55,7 +55,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
         // desc: "MAP solution is a breakthrough innovation designed to extend the shelf life of perishable goods such as fresh vegetables, fruits, and flowers. By regulating the internal atmosphere without the use of chemicals, FlexFreshTM helps slow spoilage and preserve freshness for up to 30 days. ",
     },
     {
-        img: "/images/new/flexo.jpeg",
+        img: "/images/sus/flexo.jpeg",
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
 
         title: "Flexo printed rolls and bags",
@@ -89,7 +89,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
     },
 
     {
-        img: "/images/hy.jpeg",
+        img: "/images/sus/hy.jpeg",
 
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Hygiene Films",
@@ -98,7 +98,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
     },
 
     {
-        img: "/images/uflex-01.jpeg",
+        img: "/images/sus/f1.jpeg",
 
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Premium shower-proof bag",
@@ -195,30 +195,30 @@ export const businesses: any[] = [
         innovations: {
             heading: "Business Highlights and Innovations",
             items: [
-                {
-                    id: "itc-rte-pouch-ulp-pet",
-                    title: "ITC RTE Pouch – ULP PET pouches",
-                    image: "/images/new/itcr.jpeg",
-                    description: "These pouches are designed for convenient microwave heating and are ideal for hot-fill applications such as gravies, ketchups, sauces, jams, and marinades. They are also well-suited for packaging meat, cheese, frozen foods, and dry fruits.",
-                },
+                // {
+                //     id: "itc-rte-pouch-ulp-pet",
+                //     title: "ITC RTE Pouch – ULP PET pouches",
+                //     image: "/images/new/itcr.jpeg",
+                //     description: "These pouches are designed for convenient microwave heating and are ideal for hot-fill applications such as gravies, ketchups, sauces, jams, and marinades. They are also well-suited for packaging meat, cheese, frozen foods, and dry fruits.",
+                // },
                 {
                     id: "flexitube-laminate-metallica-holographic",
                     title: "FlexiTube Laminate",
                     image: "/images/new/lami.jpeg",
                     description: "Silver and Gold Metallica 280 Micron: This laminate consists of multiple layers, including 70-micron natural PE, 34-micron extruded PE, 12-micron special-grade metallized PET, another 34-micron extruded PE, and 130-micron natural EVOH PE. Silver Holographic Laminate: The silver holographic laminate features a multilayer structure comprising 70-micron natural PE, 13-micron metallized holographic film, 30-micron extruded PE, 12-micron aluminum foil, another 30-micron extruded PE, and 130-micron natural PE.",
                 },
-                {
-                    id: "jay-baba-bakreswfar-farm-house-rice-bag",
-                    title: "Jay Baba Bakreswar – Farm House rice bag",
-                    image: "/images/new/baba.png",
-                    description: "UFlex has developed packaging for Jay Baba Bakreswar Rice Mill Pvt. Ltd. under the Farm House brand. This marks a significant milestone, as it is the first 50 kg SKU rice bag developed by UFlex, highlighting the company’s advancement in bulk packaging solutions.",
-                },
-                {
-                    id: "itc-eco-friendly-packaging-savlon",
-                    title: "ITC’s eco-friendly packaging",
-                    image: "/images/new/savlon.png",
-                    description: "UFlex has developed a sustainable packaging solution for Savlon brand of ITC Limited, featuring an 8.2g SKU designed for the domestic market. A key highlight is the use of a PCR-based laminate, reinforcing ITC’s commitment to eco-friendly packaging solutions.",
-                },
+                // {
+                //     id: "jay-baba-bakreswfar-farm-house-rice-bag",
+                //     title: "Jay Baba Bakreswar – Farm House rice bag",
+                //     image: "/images/new/baba.png",
+                //     description: "UFlex has developed packaging for Jay Baba Bakreswar Rice Mill Pvt. Ltd. under the Farm House brand. This marks a significant milestone, as it is the first 50 kg SKU rice bag developed by UFlex, highlighting the company’s advancement in bulk packaging solutions.",
+                // },
+                // {
+                //     id: "itc-eco-friendly-packaging-savlon",
+                //     title: "ITC’s eco-friendly packaging",
+                //     image: "/images/new/savlon.png",
+                //     description: "UFlex has developed a sustainable packaging solution for Savlon brand of ITC Limited, featuring an 8.2g SKU designed for the domestic market. A key highlight is the use of a PCR-based laminate, reinforcing ITC’s commitment to eco-friendly packaging solutions.",
+                // },
                 {
                     id: "double-spout-pouch-clean-drinking-water",
                     title: "10 Litre Double Spout Pouch for clean drinking water",
@@ -231,12 +231,12 @@ export const businesses: any[] = [
                     image: "/images/elctron.png",
                     description: "These oval tubes offer 20% more space on the front and back panels compared to traditional round tubes, giving brands additional room to effectively communicate their message to consumers. The unique shape also enables more efficient use of retail shelf space, allowing brand owners to display more units at the same cost. Furthermore, the ability to accommodate more tubes per pallet contributes to reduced transportation costs. This innovation underscores UFlex’s commitment to helping brands succeed through superior and efficient packaging solutions.",
                 },
-                {
-                    id: "matte-effect-hair-dye-sachets",
-                    title: "New Packaging Solution for Frozen Food",
-                    image: "/images/new/frozen.png",
-                    description: "UFlex supported Hygienic Research Institute Pvt. Ltd. to develop innovative gel-based hair dye sachets in 24ml and 45ml sizes. This premium packaging solution features a unique matte effect, a first in the hair dye segment. The design is further enhanced with elegant touches such as detailed hair graphics and a gold-colored logo, adding to the pouch’s overall visual appeal and shelf presence.",
-                },
+                // {
+                //     id: "matte-effect-hair-dye-sachets",
+                //     title: "New Packaging Solution for Frozen Food",
+                //     image: "/images/new/frozen.png",
+                //     description: "UFlex supported Hygienic Research Institute Pvt. Ltd. to develop innovative gel-based hair dye sachets in 24ml and 45ml sizes. This premium packaging solution features a unique matte effect, a first in the hair dye segment. The design is further enhanced with elegant touches such as detailed hair graphics and a gold-colored logo, adding to the pouch’s overall visual appeal and shelf presence.",
+                // },
                 // {
                 //     id: "vacuum-sealed-marinated-chicken-packaging",
                 //     title: "New Packaging Solution for Frozen Food",
