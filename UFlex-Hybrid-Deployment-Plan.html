@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UFlex Hybrid Deployment Plan</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap');
+
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f0f4f8;
+      color: #1a202c;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+    }
+
+    /* ── COVER ── */
+    .cover {
+      background: linear-gradient(135deg, #134e5e, #71b280);
+      color: white;
+      padding: 80px 60px;
+      text-align: center;
+      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .cover .badge {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #d1fae5;
+      padding: 8px 22px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+    .cover h1 {
+      font-size: 50px;
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 22px;
+    }
+    .cover h1 span { color: #6ee7b7; }
+    .cover p {
+      font-size: 18px;
+      opacity: 0.85;
+      max-width: 620px;
+      line-height: 1.7;
+      margin-bottom: 44px;
+    }
+    .cover-tags {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .cover-tag {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    /* ── Divider ── */
+    .divider { height: 4px; background: linear-gradient(90deg, #6ee7b7, #134e5e, #71b280); }
+
+    /* ── Section Header ── */
+    .section-header {
+      padding: 50px 60px 28px;
+      border-bottom: 3px solid #f0f4f8;
+    }
+    .section-header .label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #059669;
+      margin-bottom: 10px;
+    }
+    .section-header h2 {
+      font-size: 34px;
+      font-weight: 800;
+      color: #1a202c;
+    }
+    .section-header h2 span { color: #059669; }
+    .section-header p {
+      font-size: 15px;
+      color: #64748b;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    .body { padding: 40px 60px 50px; }
+
+    /* ── Architecture Diagram ── */
+    .arch-diagram {
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+    }
+    .arch-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #94a3b8;
+      margin-bottom: 36px;
+    }
+    .arch-row {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 20px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .arch-box {
+      border-radius: 16px;
+      padding: 24px 28px;
+      min-width: 200px;
+      text-align: center;
+    }
+    .arch-vercel {
+      background: linear-gradient(135deg, #eff6ff, #dbeafe);
+      border: 2px solid #93c5fd;
+    }
+    .arch-cpanel {
+      background: linear-gradient(135deg, #fff7ed, #ffedd5);
+      border: 2px solid #fdba74;
+    }
+    .arch-user {
+      background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+      border: 2px solid #86efac;
+    }
+    .arch-box .arch-icon { font-size: 36px; margin-bottom: 10px; }
+    .arch-box .arch-name { font-size: 16px; font-weight: 800; margin-bottom: 6px; }
+    .arch-vercel .arch-name { color: #1d4ed8; }
+    .arch-cpanel .arch-name { color: #c2410c; }
+    .arch-user .arch-name { color: #166534; }
+    .arch-box .arch-items { font-size: 12px; line-height: 1.8; }
+    .arch-vercel .arch-items { color: #3b82f6; }
+    .arch-cpanel .arch-items { color: #ea580c; }
+    .arch-user .arch-items { color: #16a34a; }
+    .arch-arrow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #94a3b8;
+      font-size: 12px;
+      font-weight: 600;
+      gap: 4px;
+    }
+    .arch-arrow .arr { font-size: 28px; }
+    .arch-arrow .arr-label { font-size: 11px; color: #64748b; }
+
+    /* ── Phase Cards ── */
+    .phase-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-top: 10px;
+    }
+    .phase-card {
+      border-radius: 16px;
+      padding: 32px;
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+    }
+    .phase-1 { background: linear-gradient(135deg, #eff6ff, #dbeafe); border: 2px solid #93c5fd; }
+    .phase-2 { background: linear-gradient(135deg, #faf5ff, #ede9fe); border: 2px solid #c4b5fd; }
+    .phase-3 { background: linear-gradient(135deg, #f0fdf4, #dcfce7); border: 2px solid #86efac; }
+    .phase-num {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+    .phase-1 .phase-num { background: #1d4ed8; color: white; }
+    .phase-2 .phase-num { background: #7c3aed; color: white; }
+    .phase-3 .phase-num { background: #16a34a; color: white; }
+    .phase-content h3 { font-size: 18px; font-weight: 800; margin-bottom: 6px; }
+    .phase-1 .phase-content h3 { color: #1e40af; }
+    .phase-2 .phase-content h3 { color: #6d28d9; }
+    .phase-3 .phase-content h3 { color: #15803d; }
+    .phase-content .phase-timing {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .phase-1 .phase-timing { color: #3b82f6; }
+    .phase-2 .phase-timing { color: #8b5cf6; }
+    .phase-3 .phase-timing { color: #22c55e; }
+    .phase-content ul { padding-left: 18px; }
+    .phase-content ul li { font-size: 14px; line-height: 1.9; }
+    .phase-1 ul li { color: #1e3a8a; }
+    .phase-2 ul li { color: #4c1d95; }
+    .phase-3 ul li { color: #14532d; }
+    .phase-status {
+      margin-top: 12px;
+      display: inline-block;
+      padding: 5px 14px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .status-ready { background: #dcfce7; color: #166534; }
+    .status-planned { background: #ede9fe; color: #5b21b6; }
+    .status-future { background: #f0fdf4; color: #15803d; border: 1px solid #86efac; }
+
+    /* ── Responsibility Table ── */
+    .resp-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .resp-table thead tr {
+      background: linear-gradient(135deg, #134e5e, #71b280);
+      color: white;
+    }
+    .resp-table thead th {
+      padding: 18px 24px;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: left;
+    }
+    .resp-table tbody tr:nth-child(even) { background: #f8fafc; }
+    .resp-table tbody tr:hover { background: #f0fdf4; }
+    .resp-table tbody td {
+      padding: 15px 24px;
+      font-size: 14px;
+      border-bottom: 1px solid #e2e8f0;
+      vertical-align: middle;
+    }
+    .resp-table tbody td:first-child { font-weight: 700; color: #1e293b; }
+    .tag-vercel {
+      background: #dbeafe;
+      color: #1d4ed8;
+      padding: 4px 12px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .tag-cpanel {
+      background: #ffedd5;
+      color: #c2410c;
+      padding: 4px 12px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .tag-both {
+      background: #ede9fe;
+      color: #6d28d9;
+      padding: 4px 12px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* ── Env Vars Section ── */
+    .env-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 10px;
+    }
+    .env-card {
+      border-radius: 16px;
+      padding: 28px;
+    }
+    .env-vercel { background: #eff6ff; border: 2px solid #93c5fd; }
+    .env-cpanel { background: #fff7ed; border: 2px solid #fdba74; }
+    .env-card h3 {
+      font-size: 16px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .env-vercel h3 { color: #1d4ed8; }
+    .env-cpanel h3 { color: #c2410c; }
+    .env-var {
+      background: rgba(0,0,0,0.05);
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+    .env-vercel .env-var { background: #dbeafe; color: #1e40af; }
+    .env-cpanel .env-var { background: #ffedd5; color: #9a3412; }
+
+    /* ── Code Block ── */
+    .code-block {
+      background: #0f172a;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin: 20px 0;
+      overflow-x: auto;
+    }
+    .code-block pre {
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      color: #e2e8f0;
+      line-height: 1.8;
+    }
+    .code-block .comment { color: #64748b; }
+    .code-block .string { color: #86efac; }
+    .code-block .key { color: #93c5fd; }
+    .code-block .value { color: #fde68a; }
+
+    /* ── Checklist ── */
+    .checklist {
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 28px;
+      margin-top: 10px;
+    }
+    .checklist-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #374151;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .check-item:last-child { border-bottom: none; }
+    .check-box {
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      border: 2px solid #cbd5e1;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .check-item .check-title { font-size: 14px; font-weight: 700; color: #1e293b; margin-bottom: 3px; }
+    .check-item .check-desc { font-size: 13px; color: #64748b; line-height: 1.5; }
+
+    /* ── Benefits Banner ── */
+    .benefits-banner {
+      background: linear-gradient(135deg, #134e5e, #71b280);
+      color: white;
+      border-radius: 16px;
+      padding: 36px;
+      margin: 24px 0;
+    }
+    .benefits-banner h3 { font-size: 20px; font-weight: 800; margin-bottom: 20px; }
+    .benefits-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .benefit-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14px;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+    .benefit-item .bi-icon { font-size: 20px; flex-shrink: 0; }
+
+    /* ── Final CTA ── */
+    .final-cta {
+      background: linear-gradient(135deg, #134e5e, #71b280);
+      color: white;
+      padding: 70px 60px;
+      text-align: center;
+    }
+    .final-cta h2 { font-size: 38px; font-weight: 900; margin-bottom: 16px; }
+    .final-cta p { font-size: 17px; opacity: 0.85; max-width: 600px; margin: 0 auto 36px; line-height: 1.7; }
+    .stats-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .stat-box {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 14px;
+      padding: 22px 32px;
+      text-align: center;
+      min-width: 140px;
+    }
+    .stat-box .stat-val { font-size: 30px; font-weight: 900; color: #6ee7b7; }
+    .stat-box .stat-label { font-size: 12px; opacity: 0.75; margin-top: 6px; line-height: 1.4; }
+
+    @media print {
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      body { background: #f0f4f8 !important; }
+      .page { margin: 20px auto; border-radius: 16px; box-shadow: none; page-break-after: always; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     COVER
+══════════════════════════════════════ -->
+<div class="page">
+  <div class="cover">
+    <div class="badge">UFlex Limited — Deployment Strategy 2025</div>
+    <h1>The <span>Hybrid Deployment</span> Plan</h1>
+    <p>How we run Vercel for the frontend and cPanel for the PHP backend — together, seamlessly, with zero disruption to the live website.</p>
+    <div class="cover-tags">
+      <div class="cover-tag">🌐 Next.js on Vercel</div>
+      <div class="cover-tag">🗄️ PHP + MySQL on cPanel</div>
+      <div class="cover-tag">🔗 Connected via API calls</div>
+      <div class="cover-tag">✅ Zero Downtime</div>
+    </div>
+  </div>
+  <div class="divider"></div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SECTION 1 — OVERVIEW
+══════════════════════════════════════ -->
+<div class="page">
+  <div class="section-header">
+    <div class="label">Section 01 — Overview</div>
+    <h2>The <span>Big Picture</span> — What Lives Where</h2>
+    <p>We split the website into two parts that work together. The user-facing website lives on Vercel. All backend data processing stays on cPanel.</p>
+  </div>
+  <div class="body">
+
+    <div class="arch-diagram">
+      <div class="arch-title">🏗️ UFlex Hybrid Architecture Diagram</div>
+
+      <div class="arch-row">
+        <div class="arch-box arch-user">
+          <div class="arch-icon">🧑‍💻</div>
+          <div class="arch-name">User / Visitor</div>
+          <div class="arch-items">
+            Opens website<br>
+            Fills contact form<br>
+            Requests a quote<br>
+            Searches dividend
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; font-size: 28px; color: #94a3b8; margin: 4px 0;">↓</div>
+      <div style="text-align: center; font-size: 12px; color: #64748b; margin-bottom: 12px; font-weight: 600;">Visits website URL</div>
+
+      <div class="arch-row">
+        <div class="arch-box arch-vercel" style="min-width: 280px;">
+          <div class="arch-icon">▲</div>
+          <div class="arch-name">VERCEL</div>
+          <div class="arch-items">
+            Next.js frontend<br>
+            All website pages<br>
+            Images & assets<br>
+            SSL certificate<br>
+            Global CDN delivery
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; font-size: 28px; color: #94a3b8; margin: 4px 0;">↕</div>
+      <div style="text-align: center; font-size: 12px; color: #64748b; margin-bottom: 12px; font-weight: 600;">HTTPS API calls (fetch from browser)</div>
+
+      <div class="arch-row">
+        <div class="arch-box arch-cpanel" style="min-width: 280px;">
+          <div class="arch-icon">🖥️</div>
+          <div class="arch-name">cPANEL SERVER</div>
+          <div class="arch-items">
+            submit-contact.php<br>
+            submit-quote.php<br>
+            get-unclaimed-dividend.php<br>
+            MySQL Database<br>
+            PHPMailer / SMTP Emails
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="benefits-banner" style="margin-top: 28px;">
+      <h3>🎯 Why This Hybrid Approach is the Right Move</h3>
+      <div class="benefits-list">
+        <div class="benefit-item"><div class="bi-icon">✅</div><div>No rewriting of PHP code — it keeps working exactly as today</div></div>
+        <div class="benefit-item"><div class="bi-icon">✅</div><div>No database migration — MySQL stays on cPanel untouched</div></div>
+        <div class="benefit-item"><div class="bi-icon">✅</div><div>Frontend gets all Vercel benefits — speed, security, auto-deploy</div></div>
+        <div class="benefit-item"><div class="bi-icon">✅</div><div>Zero downtime — migrate the frontend without touching the backend</div></div>
+        <div class="benefit-item"><div class="bi-icon">✅</div><div>Can migrate PHP to Next.js API routes later — at your own pace</div></div>
+        <div class="benefit-item"><div class="bi-icon">✅</div><div>Full rollback — if anything goes wrong, switch back in minutes</div></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SECTION 2 — PHASE PLAN
+══════════════════════════════════════ -->
+<div class="page">
+  <div class="section-header">
+    <div class="label">Section 02 — Migration Plan</div>
+    <h2>3-Phase <span>Rollout Plan</span></h2>
+    <p>We move in three clear phases. Each phase is independent — we can pause after any phase and the site keeps working.</p>
+  </div>
+  <div class="body">
+    <div class="phase-grid">
+
+      <div class="phase-card phase-1">
+        <div class="phase-num">1</div>
+        <div class="phase-content">
+          <h3>Deploy Frontend to Vercel</h3>
+          <div class="phase-timing">⏱ Phase 1 — Do This Now (1-2 Days)</div>
+          <ul>
+            <li>Connect GitHub repo to Vercel — one-time setup</li>
+            <li>Set environment variable: <code>NEXT_PUBLIC_API_BASE_URL=https://yourdomain.com</code></li>
+            <li>Update all fetch() calls in Next.js to use full cPanel domain URL</li>
+            <li>Add CORS headers to cPanel PHP files (allow Vercel domain)</li>
+            <li>Point domain DNS to Vercel — website goes live on Vercel</li>
+            <li>cPanel PHP + MySQL continues running exactly as before</li>
+          </ul>
+          <div class="phase-status status-ready">🟢 Ready to Execute Now</div>
+        </div>
+      </div>
+
+      <div class="phase-card phase-2">
+        <div class="phase-num">2</div>
+        <div class="phase-content">
+          <h3>Migrate PHP APIs to Next.js (Optional)</h3>
+          <div class="phase-timing">⏱ Phase 2 — When Ready (2-4 Weeks)</div>
+          <ul>
+            <li>Rewrite submit-contact.php → Next.js API route (app/api/contact/route.ts)</li>
+            <li>Rewrite submit-quote.php → app/api/quote/route.ts</li>
+            <li>Rewrite get-unclaimed-dividend.php → app/api/dividend/route.ts</li>
+            <li>Replace PHPMailer with Nodemailer (same SMTP config)</li>
+            <li>Move file uploads to Vercel Blob or Cloudinary</li>
+            <li>Migrate MySQL to PlanetScale / Railway / Supabase</li>
+          </ul>
+          <div class="phase-status status-planned">🟣 Planned — Not Urgent</div>
+        </div>
+      </div>
+
+      <div class="phase-card phase-3">
+        <div class="phase-num">3</div>
+        <div class="phase-content">
+          <h3>Retire cPanel Completely</h3>
+          <div class="phase-timing">⏱ Phase 3 — Future (When Phase 2 is Stable)</div>
+          <ul>
+            <li>Run both systems in parallel for 2-4 weeks to verify stability</li>
+            <li>Confirm all email alerts and DB writes working on new system</li>
+            <li>Keep cPanel emails (SMTP) if needed — or move to Resend/SendGrid</li>
+            <li>Cancel cPanel hosting subscription</li>
+            <li>100% on Vercel + Cloud DB — fully modern stack</li>
+          </ul>
+          <div class="phase-status status-future">🌱 Future Goal</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SECTION 3 — RESPONSIBILITY SPLIT
+══════════════════════════════════════ -->
+<div class="page">
+  <div class="section-header">
+    <div class="label">Section 03 — Who Does What</div>
+    <h2>Responsibility <span>Split</span> — Vercel vs cPanel</h2>
+    <p>Clear breakdown of what each platform handles after Phase 1 is complete.</p>
+  </div>
+  <div class="body">
+    <table class="resp-table">
+      <thead>
+        <tr>
+          <th>Task / Component</th>
+          <th>Platform</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Website Pages (UI)</td>
+          <td><span class="tag-vercel">▲ Vercel</span></td>
+          <td>All Next.js pages, components, layouts served from Vercel CDN</td>
+        </tr>
+        <tr>
+          <td>Images & Static Assets</td>
+          <td><span class="tag-vercel">▲ Vercel</span></td>
+          <td>All files in /public folder served and optimized by Vercel</td>
+        </tr>
+        <tr>
+          <td>SSL Certificate</td>
+          <td><span class="tag-vercel">▲ Vercel</span></td>
+          <td>Auto-issued and auto-renewed. Zero manual work needed</td>
+        </tr>
+        <tr>
+          <td>Code Deployment</td>
+          <td><span class="tag-vercel">▲ Vercel</span></td>
+          <td>git push → auto build → auto deploy. No FTP ever</td>
+        </tr>
+        <tr>
+          <td>Contact Form API</td>
+          <td><span class="tag-cpanel">🖥️ cPanel</span></td>
+          <td>submit-contact.php handles validation, DB save, email send</td>
+        </tr>
+        <tr>
+          <td>Quote Request API</td>
+          <td><span class="tag-cpanel">🖥️ cPanel</span></td>
+          <td>submit-quote.php handles file uploads, DB save, email send</td>
+        </tr>
+        <tr>
+          <td>Dividend Lookup API</td>
+          <td><span class="tag-cpanel">🖥️ cPanel</span></td>
+          <td>get-unclaimed-dividend.php queries MySQL corpsh table</td>
+        </tr>
+        <tr>
+          <td>MySQL Database</td>
+          <td><span class="tag-cpanel">🖥️ cPanel</span></td>
+          <td>All form submissions and dividend data stored here</td>
+        </tr>
+        <tr>
+          <td>Email / SMTP</td>
+          <td><span class="tag-cpanel">🖥️ cPanel</span></td>
+          <td>PHPMailer uses cPanel SMTP — no change needed</td>
+        </tr>
+        <tr>
+          <td>Environment Variables</td>
+          <td><span class="tag-both">⚡ Both</span></td>
+          <td>Vercel Dashboard (frontend vars) + .env.local on cPanel (backend)</td>
+        </tr>
+        <tr>
+          <td>Domain / DNS</td>
+          <td><span class="tag-both">⚡ Both</span></td>
+          <td>Domain A record points to Vercel. cPanel accessible via subdomain</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SECTION 4 — ENV VARS
+══════════════════════════════════════ -->
+<div class="page">
+  <div class="section-header">
+    <div class="label">Section 04 — Environment Variables</div>
+    <h2>Managing <span>.env</span> Files in Hybrid Setup</h2>
+    <p>Your secret keys and credentials are managed separately on each platform. Nothing needs to move — just one new variable to add on Vercel.</p>
+  </div>
+  <div class="body">
+
+    <div class="env-grid">
+      <div class="env-card env-vercel">
+        <h3>▲ Vercel Dashboard</h3>
+        <p style="font-size: 13px; color: #3b82f6; margin-bottom: 16px;">Only Next.js frontend variables go here. Set in Vercel → Project → Settings → Environment Variables.</p>
+        <div class="env-var">NEXT_PUBLIC_API_BASE_URL</div>
+        <div style="font-size: 12px; color: #64748b; margin-bottom: 12px; padding-left: 4px;">= https://yourdomain.com (your cPanel domain)</div>
+        <div class="env-var">NEXT_PUBLIC_SITE_URL</div>
+        <div style="font-size: 12px; color: #64748b; margin-bottom: 12px; padding-left: 4px;">= https://your-app.vercel.app</div>
+        <div style="background: #dbeafe; border-radius: 8px; padding: 12px; margin-top: 8px;">
+          <p style="font-size: 12px; color: #1e40af; font-weight: 600;">⚠️ Never put DB passwords or SMTP passwords here</p>
+        </div>
+      </div>
+      <div class="env-card env-cpanel">
+        <h3>🖥️ cPanel .env.local</h3>
+        <p style="font-size: 13px; color: #ea580c; margin-bottom: 16px;">Already exists. Keep it exactly as-is. PHP reads it directly. No changes needed.</p>
+        <div class="env-var">DB_HOST</div>
+        <div class="env-var">DB_USER</div>
+        <div class="env-var">DB_PASSWORD_B64</div>
+        <div class="env-var">DB_NAME</div>
+        <div class="env-var">SMTP_HOST / SMTP_USER</div>
+        <div class="env-var">SMTP_PASSWORD / SMTP_PORT</div>
+        <div style="background: #ffedd5; border-radius: 8px; padding: 12px; margin-top: 8px;">
+          <p style="font-size: 12px; color: #9a3412; font-weight: 600;">✅ Leave untouched — PHP reads these automatically</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="code-block">
+      <pre><span class="comment">// In your Next.js frontend code — how to call cPanel PHP</span>
+
+<span class="key">const</span> <span class="value">API_BASE</span> = process.env.<span class="string">NEXT_PUBLIC_API_BASE_URL</span>
+
+<span class="comment">// Contact form submission</span>
+<span class="key">const</span> <span class="value">res</span> = <span class="key">await</span> fetch(<span class="string">`${API_BASE}/submit-contact.php`</span>, {
+  method: <span class="string">'POST'</span>,
+  body: formData   <span class="comment">// same as before</span>
+})
+
+<span class="comment">// Dividend lookup</span>
+<span class="key">const</span> <span class="value">res</span> = <span class="key">await</span> fetch(<span class="string">`${API_BASE}/get-unclaimed-dividend.php?folio_id=${folioId}`</span>)</pre>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SECTION 5 — CORS FIX
+══════════════════════════════════════ -->
+<div class="page">
+  <div class="section-header">
+    <div class="label">Section 05 — One Required Change</div>
+    <h2>The Only Change Needed on <span>cPanel</span></h2>
+    <p>Just add 3 lines to your _security-helper.php file on cPanel to allow Vercel to call your PHP APIs.</p>
+  </div>
+  <div class="body">
+
+    <div style="background: #fffbeb; border: 2px solid #fbbf24; border-radius: 16px; padding: 28px; margin-bottom: 24px;">
+      <h3 style="color: #92400e; font-size: 16px; font-weight: 700; margin-bottom: 10px;">⚡ Why This Is Needed</h3>
+      <p style="font-size: 14px; color: #78350f; line-height: 1.7;">Browsers have a security rule called CORS (Cross-Origin Resource Sharing). When your Next.js app on Vercel tries to call your PHP on cPanel, the browser blocks it unless cPanel explicitly says "yes, Vercel is allowed." These 3 lines do exactly that.</p>
+    </div>
+
+    <div class="code-block">
+      <pre><span class="comment"><?php</span>
+<span class="comment">// Add these lines at the very TOP of _security-helper.php</span>
+
+<span class="comment">// Allow Vercel frontend to call this PHP API</span>
+<span class="key">header</span>(<span class="string">'Access-Control-Allow-Origin: https://your-app.vercel.app'</span>);
+<span class="key">header</span>(<span class="string">'Access-Control-Allow-Methods: POST, GET, OPTIONS'</span>);
+<span class="key">header</span>(<span class="string">'Access-Control-Allow-Headers: Content-Type'</span>);
+
+<span class="comment">// Handle preflight request (browser sends this before POST)</span>
+<span class="key">if</span> ($_SERVER[<span class="string">'REQUEST_METHOD'</span>] === <span class="string">'OPTIONS'</span>) {
+  http_response_code(<span class="value">200</span>);
+  <span class="key">exit</span>;
+}
+
+<span class="comment">// ... rest of your existing code below ...</span></pre>
+    </div>
+
+    <div class="checklist">
+      <div class="checklist-title">📋 Complete Launch Checklist — Phase 1</div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div>
+          <div class="check-title">Connect GitHub repo to Vercel</div>
+          <div class="check-desc">One-time setup. Go to vercel.com → New Project → Import GitHub repo</div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div>
+          <div class="check-title">Add NEXT_PUBLIC_API_BASE_URL in Vercel dashboard</div>
+          <div class="check-desc">Set value to your cPanel domain e.g. https://yourdomain.com</div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div>
+          <div class="check-title">Update fetch() calls in Next.js to use full URL</div>
+          <div class="check-desc">Replace /submit-contact.php with ${API_BASE}/submit-contact.php</div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div>
+          <div class="check-title">Add CORS headers to _security-helper.php on cPanel</div>
+          <div class="check-desc">3 lines at the top of the file — allow Vercel domain</div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div>
+          <div class="check-title">Test all 3 forms on preview URL</div>
+          <div class="check-desc">Contact form, Quote form, and Dividend lookup all calling cPanel APIs</div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div>
+          <div class="check-title">Point domain DNS A record to Vercel</div>
+          <div class="check-desc">Update in your domain registrar — Vercel provides the IP</div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div>
+          <div class="check-title">Verify live site is working end-to-end</div>
+          <div class="check-desc">Submit a test form, check email received, check MySQL record saved</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     FINAL CTA
+══════════════════════════════════════ -->
+<div class="page">
+  <div class="final-cta">
+    <div style="font-size: 64px; margin-bottom: 24px;">🚀</div>
+    <h2>Ready to Move Forward</h2>
+    <p>The hybrid approach gives UFlex the best of both worlds — a modern, secure, auto-deploying frontend on Vercel with the existing PHP backend running on cPanel without any disruption.</p>
+    <div class="stats-row">
+      <div class="stat-box">
+        <div class="stat-val">0</div>
+        <div class="stat-label">Minutes of<br>downtime expected</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-val">0</div>
+        <div class="stat-label">PHP files<br>to rewrite</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-val">1-2</div>
+        <div class="stat-label">Days to complete<br>Phase 1</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-val">Auto</div>
+        <div class="stat-label">Deploy on<br>every git push</div>
+      </div>
+    </div>
+  </div>
+  <div style="padding: 20px 60px; background: #134e5e; text-align: center;">
+    <p style="color: rgba(255,255,255,0.4); font-size: 12px;">UFlex Limited — Hybrid Deployment Plan • Prepared May 2026 • Confidential</p>
+  </div>
+</div>
+
+</body>
+</html>

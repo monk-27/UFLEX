@@ -29,7 +29,7 @@ export default function SustainabilityComp() {
           {/* Fixed: Use object-cover, fill parent, remove fixed width */}
           <Image
             // src="/images/sus-top.png"
-            src="/images/sus/more.png"
+            src="/images/holography/sus.jpeg"
 
             fill
             className="object-contain object-center"

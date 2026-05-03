@@ -106,19 +106,19 @@ const SliderItems: SliderItem[] =
         // },
 
         {
-            img: "/images/holography/h7.png",
+            img: "/images/holography/ho.jpeg",
             // dynamiclink: "/holography-business/holography-Our-Offering",
             title: "Hologram",
             desc: "Best-in-class holograms using 2D/3D, Dot Matrix, and Kinemax technologies, offering vibrant colours, high print clarity, superior quality, and standard or customised formats.",
         },
         {
-            img: "/images/holography/h4.png",
+            img: "/images/holography/h8.jpeg",
             // dynamiclink: "/holography-business/holography-Our-Offering",
-            title: "Holographic Film (Wide Web Films)",
+            title: "Holographic Film ",
             desc: "High-quality holographic films (12–50 microns) for security and aesthetic applications, suitable for gift wrapping, lamination, and packaging, enhancing visual appeal and buyer interest at the point of sale.",
         },
         {
-            img: "/images/holography/h3.png",
+            img: "/images/holography/h9.jpeg",
             // dynamiclink: "/holography-business/holography-Our-Offering",
             title: "Textile Value Addition Product",
             desc: "OEKO-TEX certified sequin films for embroidered and high-fashion garments, available in 800+ colours and designs, suitable for computerized and hand embroidery, with thickness ranging from 91 to 175 microns.",
@@ -127,19 +127,25 @@ const SliderItems: SliderItem[] =
             img: "/images/holography/h6.png",
             // dynamiclink: "/holography-business/holography-Our-Offering",
             title: "Hot Stamping Foil",
-            desc: "Holographic and non-holographic hot stamping foils for printing, packaging, and textiles, designed to enhance visual appeal and brand protection, suitable for fine detailing and compatible with diverse substrates.",
+            desc: "Holographic and non-holographic hot stamping foils for printing, packaging, and textiles application, designed to enhance visual appeal and brand protection, suitable for fine detailing and large area stamping compatible with diverse substrates.",
         },
         {
-            img: "/images/holography/h5.png",
+            img: "/images/holography/h10.jpeg",
             // dynamiclink: "/holography-business/holography-Our-Offering",
             title: "Holographic Metallized Paper & Board Transfer",
             desc: "Transfer metallized paper and board using aluminium coating to deliver high-gloss, mirror-like finishes for packaging, labels, and decorative applications, offering superior aesthetic appeal and versatile surface compatibility.",
         },
         {
-            img: "/images/holography/h1.png",
+            img: "/images/holography/h11.jpeg",
             // dynamiclink: "/holography-business/holography-Our-Offering",
             title: "Labeling Solution",
             desc: "Pressure-sensitive labelling solutions across multiple substrates including paper, foil, synthetics, and films, offering high-quality, customised labels for diverse industries to enhance product visibility and brand appeal.",
+        },
+        {
+            img: "/images/holography/h12.jpeg",
+            // dynamiclink: "/holography-business/holography-Our-Offering",
+            title: "Pharma Packaging Solutions",
+            desc: "Advanced holographic solutions for pharmaceutical packaging, offering anti-counterfeit protection, high barrier performance, and authentication features. Ideal for PVC, Alu Alu, lidding foils, and cartons, with track & trace capabilities to ensure product safety and regulatory compliance.",
         },
 
 
@@ -214,22 +220,35 @@ export const businesses: any[] = [
             items: [
                 {
                     id: "digital-stamp-foiling",
-                    title: "Digital Stamp Foiling",
+                    title: "Digital Stamping Foiling",
                     description:
                         "Digital Stamping Foil, a product designed for seamless compatibility with all digital presses. This high-performance foil offers a high-gloss finish, fine detailing, and versatile application on coated/uncoated paperboard and plastics. Ideal for premium decorative applications, it enhances aesthetics with embellishment effects, including 2D and embossed designs,ensuring a sophisticated and high-end appeal",
-                    image: "/images/digital.png"
+                    image: "/images/holography/h13.jpeg"
+                },
+                {
+                    id:"High-Security",
+                    title:"High-Security Holographic Labels",
+                    description:"Advanced holographic labels designed to provide robust anti-counterfeit protection and authentication for pharmaceutical and FMCG products. These labels integrate overt and covert security features along with track & trace capabilities, ensuring product integrity, brand protection, and supply chain transparency.",
+                    image:"/images/holography/h14.jpeg"
                 },
                 {
                     id: "holography-and-stamping",
                     title: "Holography and Stamping Foils",
                     description:
-                        "UFlex continues to set global benchmarks through advanced infrastructure, technical excellence, advanced R&D, and deep market intelligence, ensuring world-class quality and innovation across its offerings. Our state-of-the-art in-house manufacturing facilities, equipped with Origination, Coatings, Metallizers, and Slitting machines, enable advanced transfer technology, enhancing both surface appeal and tactile experience.",
+                        "Holographic and non-holographic hot stamping foils for printing, packaging, and textiles application, designed to enhance visual appeal and brand protection, suitable for fine detailing and large area stamping compatible with diverse substrates.",
                     image: "/images/foils.png"
                 },
+                // {
+                //     id: "alu-alu-blister",
+                //     title: "Holographic Alu-Alu Blister",
+                //     description: "Holographic Alu-Alu Blister marks a major breakthrough in pharmaceutical packaging, reinforcing UFlex’s commitment to industry-leading brand protection. Integrated with covert security features, this innovative solution provides an enhanced layer of anti-counterfeiting protection, ensuring product authenticity and consumer safety."
+
+                //     , image: "/images/blister.png"
+                // },
                 {
                     id: "alu-alu-blister",
-                    title: "Holographic Alu-Alu Blister",
-                    description: "Holographic Alu-Alu Blister marks a major breakthrough in pharmaceutical packaging, reinforcing UFlex’s commitment to industry-leading brand protection. Integrated with covert security features, this innovative solution provides an enhanced layer of anti-counterfeiting protection, ensuring product authenticity and consumer safety."
+                    title: "High Security Holographic Lidding Foil & PVC",
+                    description: "Advanced solutions for pharmaceutical blister packaging, combining strong seal integrity, high barrier protection, and integrated anti-counterfeit holographic features. Designed for reliability and compatibility with high-speed packaging lines, these materials ensure product safety, authentication, and enhanced brand protection."
 
                     , image: "/images/blister.png"
                 },
