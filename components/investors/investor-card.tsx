@@ -173,7 +173,7 @@ function StaticCard({ card }: { card: InvestorCard }) {
             className="object-cover"
             sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw"
           />
-          <div className="absolute inset-0 bg-black/35 transition group-hover:bg-black/45" />
+          {/* <div className="absolute inset-0 bg-black/35 transition group-hover:bg-black/45" /> */}
           <div className="absolute inset-0 flex items-center justify-center text-center px-4">
             <span className="text-white text-sm sm:text-base md:text-lg lg:text-xl font-medium tracking-wide">
               {card.title}
@@ -201,7 +201,7 @@ function CarouselCard({ card }: { card: InvestorCard }) {
             className="object-cover"
             sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw"
           />
-          <div className="absolute inset-0 bg-black/35 transition group-hover:bg-black/45" />
+          {/* <div className="absolute inset-0 bg-black/35 transition group-hover:bg-black/45" /> */}
           <div className="absolute inset-0 flex items-center justify-center text-center px-4">
             <span className="text-white text-sm sm:text-base md:text-lg lg:text-xl font-medium tracking-wide">
               {card.title}
