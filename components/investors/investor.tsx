@@ -7,12 +7,13 @@ import { SiteHeader } from '../site-header';
 import { SiteFooter } from '../site-footer';
 import { InvestorCardsGrid } from './investor-card';
 import { investorCards } from '@/app/investors/invdata';
+import InvestorMainCarousel from '../investor-main';
 
 const InvestorsPage = () => {
   return (
     <main className="bg-white">
 
-      <section className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[450px] overflow-hidden">
+      {/* <section className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[450px] overflow-hidden">
 
         <Image
           src="/images/investors/hero.png"
@@ -42,7 +43,8 @@ const InvestorsPage = () => {
             
           </div>
         </div>
-      </section>
+      </section> */}
+      <InvestorMainCarousel />
 
       <InvestorCardsGrid cards={investorCards} />
 

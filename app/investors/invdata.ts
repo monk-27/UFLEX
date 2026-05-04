@@ -6,10 +6,10 @@ export const investorCards = [
     href: "/investors/financial-results",
   },
   {
-    id: "shareholders-info",
-    title: "Shareholders' Information",
-    image: "/images/investors/2.png",
-    href: "/investors/shareholders-information",
+    id: "ir-calendar",
+    title: "Presentations & Quarterly Earnings Reports",
+    image: "/images/investors/5.png",
+    href: "/investors/ir-presentation-quarterly-earnings",
   },
   {
     id: "notices",
@@ -18,17 +18,19 @@ export const investorCards = [
     href: "/investors/ir-announcements-updates",
   },
   {
+    id: "shareholders-info",
+    title: "Shareholders' Information",
+    image: "/images/investors/2.png",
+    href: "/investors/shareholders-information",
+  },
+  
+  {
     id: "corporate-policies",
     title: "Corporate Policies",
     image: "/images/investors/4.png",
     href: "/investors/corporate-policies",
   },
-  {
-    id: "ir-calendar",
-    title: "Presentations & Quarterly Earnings Reports",
-    image: "/images/investors/5.png",
-    href: "/investors/ir-presentation-quarterly-earnings",
-  },
+  
   {
     id: "annual-report",
     title: "Annual Report",
