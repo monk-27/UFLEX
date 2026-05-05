@@ -272,6 +272,27 @@ export const businesses: any[] = [
             heading: "Business Highlights and Innovations",
             items: [
                 {
+                    id:"f-etb",
+                    title:"F-ETB Transparent High-Barrier Easy-Tear Polyester Film",
+                    description:"F-ETB is a transparent, high-barrier polyester film engineered to deliver effortless usability without compromising on protection. Designed for easy tearing in both directions, it enables smooth, intuitive opening for everyday applications.The film offers excellent moisture and oxygen barrier properties, helping preserve product freshness and extend shelf life. Its eco-friendly coating and superior clarity further enhance both functionality and on-shelf appeal.Ideal for dry food packaging and other high-barrier requirements, F-ETB is built to simplify usage while maintaining reliable performance.",
+                    image:"/images/new/image2.jpg",
+                },{
+                    id:"b-thb",
+                    title:"B-THB Transparent High-Heat-Resistance BOPP Film",
+                    description:"B-THB is a transparent, high heat resistance BOPP film engineered to deliver enhanced oxygen barrier properties along with reliable thermal stability. It is designed to support demanding packaging applications where both protection and performance are essential.Developed for mono-material, recyclable packaging structures, B-THB enables a more sustainable approach by offering an effective alternative to conventional multilayer films, helping simplify packaging design and improve efficiency.Ideal for everyday products such as snacks, biscuits, confectionery, and stand-up pouches, it helps maintain product freshness while ensuring strength and durability throughout the packaging lifecycle.",
+                    image:"/images/new/image1.png",
+                },{
+                    id:"h-b-t",
+                    title:"High-Barrier Transparent BOPET Film",
+                    description:"UFlex’s transparent high-barrier BOPET film is engineered to safeguard oxygen-sensitive foods such as cheese, nuts, and pasta, ensuring consistent product quality throughout the packaging lifecycle.Designed with excellent moisture resistance, the film offers superior clarity and smooth machinability for efficient processing and high-quality finished packaging. When laminated with PE, it delivers strong oxygen and water vapour barrier properties, making it well suited for modified atmosphere packaging and helping extend product shelf life.Built with sustainability in mind, the film is chlorine-free, recyclable within the PET stream, and offers a cost-effective solution without compromising performance.",
+                    image:"/images/new/image4.jpg",
+                },{
+                    id:"f-hss",
+                    title:"F-HSS High-Seal-Strength BOPET Film",
+                    description:"F-HSS is a high-seal-strength, biaxially oriented transparent polyester film designed to support the shift toward recyclable, mono-material packaging structures and advancing sustainability goals.FDA-compliant and engineered for performance, the film delivers seal strength of up to 2 kg, making it especially suitable for small-format applications such as biscuits and confectionery. It enables the replacement of polyethylene layers, allowing brands to transition toward fully polyester-based pouch formats.F-HSS combines durability, clarity, and consistent sealing performance, making it ideal for food, beverage, and FMCG packaging applications where reliability and recyclability are equally critical.",
+                    image:"/images/new/image3.jpg",
+                },
+                {
                     id: "f-mex-m-2",
                     title: "F-ETS: One side MST coated transparent BOPET film",
                     description: "F-ETS is an advanced one-side MST-coated transparent BOPET film designed for secondary packaging of pharmaceutical tablets and pills. Developed using proprietary technology, it is a superior alternative to traditional cellophane-coated films for strip-to-paper sealing applications. The film offers excellent tearing properties in both machine and transverse directions, along with water-based coating, calibrated heat-seal strength with paper, and high gloss with good transparency. Ideal for tablet strip packaging, the MST-coated side ensures easy fiber tearing when sealed with pharmaceutical-grade wrapper paper and is also suitable for single-web lamination with aluminium foil.",

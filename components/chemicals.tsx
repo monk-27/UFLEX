@@ -123,6 +123,26 @@ export const businesses: any[] = [
             heading: "Business Highlights and Innovations",
             items: [
                 {
+                    id:"flexcote-re-2250-flexcote-9081-solvent-based-pu-adhesive",
+                    title:"FLEXCOTE RE 2250 / FLEXCOTE 9081 Solvent-Based PU Adhesive ",
+
+                    description:"UFlex Chemicals’ FLEXCOTE RE 2250 / FLEXCOTE 9081 L is a two-component, solvent-based PU adhesive engineered to deliver exceptional bond strength, chemical resistance, and thermal stability—both before and after sterilization.Built to withstand demanding retort conditions of up to 135°C under pressure, it maintains laminate integrity and prevents delamination, even in the most rigorous applications.Purpose-designed for retort-grade packaging, it safeguards product quality while ensuring consistent performance where it matters most.",
+                    image:"/images/new/image9.jpg",
+                },
+                {
+                    id:"uv-coatings-for-flexible-packaging",
+                    title:"UV Coatings for Flexible Packaging",
+                    description:"UFlex’s UV coatings are designed for flexible packaging applications that demand both sustainability and high-end visual appeal. Developed for the evolving needs of the FMCG industry, these coatings support efficient, responsible packaging solutions.Engineered with LMLO (Low Migration, Low Odour) properties, they ensure safety while delivering excellent heat resistance and reliable performance. The fast-curing formulation enhances production efficiency, making them well-suited for high-speed packaging operations.Available in both high-gloss and matt finishes, the range also includes special effect options such as glitter and cast-n-cure, enabling distinctive shelf presence and premium aesthetics.",
+                    image:"/images/new/image8.jpg",
+                },
+                
+                {
+                    id:"flexgreen-dual-cure-ink",
+                    title:"Flexgreen Dual Cure Ink",
+                    description:"UFlex Chemicals’ Flexgreen Dual Cure Ink Series is designed to meet the evolving demands of modern flexographic printing with enhanced efficiency and adaptability.Engineered to cure seamlessly under both UV and UV-LED systems, it removes the need for multiple ink sets—simplifying operations while improving productivity and reducing complexity on the press floor.Compatible across a wide range of flexo presses, this single-solution approach delivers consistent performance while supporting more sustainable printing practices.",
+                    image:"/images/new/image6.jpg",
+                },
+                {
                     id: "uv-digi-gloss",
                     title: "UV Digi Gloss Coating – Flexcure high slip digi coating",
                     description:

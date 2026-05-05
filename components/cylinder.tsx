@@ -154,6 +154,12 @@ export const businesses: any[] = [
     innovations: {
       heading: "Business Highlights and Innovations",
       items: [
+        {
+          "id": "laser-embosed",
+          "title": "Laser-Embossed Pebble Stone Pattern",
+          "description": "Inspired by the organic beauty of smooth river pebbles, our Pebble Stone pattern is developed using advanced laser-embossed cylinders to create a distinctive interlocking surface. The result is a rich, dimensional texture that delivers both visual depth and a naturally tactile feel.Engineered for performance as much as aesthetics, this pattern enhances grip and durability, making it ideal for high-usage applications without compromising on design.From footwear and automotive interiors to handbags, electronics, and premium packaging, our Pebble Stone laser-embossing brings versatility across industries while maintaining a refined, modern finish.",
+          "image": "/images/new/image5.jpg"
+        },
 
         {
           "id": "aluminium-composite-panels-laser-engraved-rollers",

@@ -202,6 +202,12 @@ export const businesses: any[] = [
                 //     description: "These pouches are designed for convenient microwave heating and are ideal for hot-fill applications such as gravies, ketchups, sauces, jams, and marinades. They are also well-suited for packaging meat, cheese, frozen foods, and dry fruits.",
                 // },
                 {
+                    id:"2-kg-bag-with-inner-zipper-closure",
+                    title:"2 kg Bag with Inner Zipper Closure",
+                    image:"/images/new/image7.jpg",
+                    description:"UFlex’s inner zipper solution for large-format food bags, such as rice and grains, offers a cost-effective reclosure feature that enhances usability without adding to production costs.Designed as a zipper-in-roll laminate, it runs effortlessly on existing FFS lines, ensuring smooth operations while eliminating the need for additional conversions or expensive format changes.Beyond functionality, it enhances shelf appeal and incorporates built-in product security, delivering a more intuitive and reliable packaging experience."
+                },
+                {
                     id: "flexitube-laminate-metallica-holographic",
                     title: "FlexiTube Laminate",
                     image: "/images/new/lami.jpeg",
