@@ -299,7 +299,7 @@ landfill pressure and helping curb pollution.`,
             details: [
                 {
                     photo:
-                        "/images/jeevaraj.png",
+                        "/images/new/pillai.png",
                     name: "Mr. Jeevaraj Gopal Pillai",
                     role: "Whole Time Director, President - Flexible Packaging and New Product Development and Director– Sustainability",
                     summary:

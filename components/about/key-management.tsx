@@ -25,7 +25,7 @@ const directors: Director[] = [
   {
     name: "Mr. Jeevaraj Gopal Pillai",
     position: "Whole Time Director, President - Flexible Packaging and New Product Development and Director– Sustainability",
-    img: "/images/jeevaraj.png",
+    img: "/images/new/pillai.png",
     bio: "Mr. Jeevaraj Pillai brings over 35 years of experience in packaging and packaging technology, with expertise in printing cylinders, packaging films, and advanced flexible packaging material conversion. As Director - Sustainability, he leads the development and implementation of the company’s ESG strategy, along with the development of sustainable products and solutions. His extensive background in the industry is complemented by his qualifications in mechanical engineering and an MBA.",
   },
 
@@ -148,7 +148,7 @@ const KeyManagement = () => {
                           alt={d.name}
                           fill
                           sizes="(max-width:640px) 85vw, (max-width:1024px) 46vw, (max-width:1280px) 30vw, 23vw"
-                          className={`transition duration-500 ease-out group-hover:scale-[1.03] bg-[#c8eef4] ${i === 2 ? "object-contain" : "object-fit"
+                          className={`transition duration-500 ease-out group-hover:scale-[1.03] bg-[#c8eef4] ${i === 2 || i === 3 ? "object-contain" : "object-fit"
                             }`}
                           priority={i < 2}
                         />
