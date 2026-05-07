@@ -5,6 +5,13 @@ export const investorCards = [
     image: "/images/investors/1.png",
     href: "/investors/financial-results",
   },
+  
+  {
+    id: "annual-report",
+    title: "Annual Report",
+    image: "/images/investors/6.png",
+    href: "/investors/annual-report",
+  },
   {
     id: "ir-calendar",
     title: "Presentations & Quarterly Earnings Reports",
@@ -31,12 +38,7 @@ export const investorCards = [
     href: "/investors/corporate-policies",
   },
   
-  {
-    id: "annual-report",
-    title: "Annual Report",
-    image: "/images/investors/6.png",
-    href: "/investors/annual-report",
-  },
+  
   {
     id: "csr",
     title: "CSR Annual Action Plan",

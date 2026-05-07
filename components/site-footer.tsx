@@ -72,7 +72,7 @@ export function SiteFooter() {
             <Link href="/careers">Work With Us</Link>
             <Link href="/press-room">The Press Room</Link>
             <Link href="/contact-us">Contact Us</Link>
-            <Link href="/get-a-quote">Submit Enquiry</Link>
+            {/* <Link href="/get-a-quote">Submit Enquiry</Link> */}
           </nav>
 
           {/* Contact column */}
@@ -106,11 +106,11 @@ export function SiteFooter() {
 
         <hr className="my-8 border-white/60" />
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6 text-center pb-20 md:pb-0">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-6 text-center pb-20 md:pb-0">
           <p className="text-[12px] sm:text-[15px] lato-700 opacity-90">
            © 2025 UFlex Limited. All right reserved. 
           </p>
-          <div className="hidden md:block w-1 h-1 rounded-full bg-white/60"></div>
+          {/* <div className="hidden md:block w-1 h-1 rounded-full bg-white/60"></div> */}
           <Link href="/legal-disclaimer" className="text-[12px] sm:text-[15px] lato-700 opacity-90 transition-opacity hover:opacity-100 hover:underline underline-offset-4">
             Legal disclaimer
           </Link>

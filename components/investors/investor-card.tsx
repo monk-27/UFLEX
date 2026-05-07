@@ -190,7 +190,7 @@ function CarouselCard({ card }: { card: InvestorCard }) {
     <motion.div
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
-      className="group relative block overflow-hidden flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-11px)]"
+      className="group relative block overflow-hidden flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-5px)]"
     >
       <Link href={card.href} className="block">
         <div className="relative h-[180px] sm:h-[200px] md:h-[220px] lg:h-[241px] w-full">
@@ -242,7 +242,7 @@ function InvestorCarousel({ cards }: { cards: InvestorCard[] }) {
     setCurrent((c) => Math.min(c, maxIndex));
   }, [maxIndex]);
 
-  const gapPx = 8; // gap-2 = 8px
+  const gapPx = 10; // gap-2 = 8px
   const translatePercent = (current * 100) / slidesPerView;
 
   return (
@@ -315,9 +315,9 @@ export function InvestorCardsGrid({ cards }: Props) {
     <section className="w-full bg-white">
       <div className="mx-auto max-w-7xl sm:px-0 px-4 py-10 md:py-12">
         {/* First 3 cards in a 3-column grid */}
-        <div className="text-center mb-10 py-8">
+        <div className="text-center mb-10 py-8 ">
         <h2 className="text-[24px] lato-700 text-[#173366] md:text-[42px] ">
-          Investor relations
+          Financial Results and Reports
         </h2>
        
       </div>
@@ -333,7 +333,7 @@ export function InvestorCardsGrid({ cards }: Props) {
         </motion.div>
         <div className="text-center mb-10 py-8">
         <h2 className="text-[24px] lato-700 text-[#173366] md:text-[42px] ">
-          Policies, announcements and other documents
+          Policies and Announcements
         </h2>
        
       </div>
