@@ -8,7 +8,7 @@ export const investorCards = [
   
   {
     id: "annual-report",
-    title: "Annual Report",
+    title: "Annual Reports",
     image: "/images/investors/6.png",
     href: "/investors/annual-report",
   },
