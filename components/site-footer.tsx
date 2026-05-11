@@ -20,7 +20,7 @@ export function SiteFooter() {
   return (
     <footer className="text-white bg-[#5077af]">
       {/* Match header container exactly */}
-      <div className="site-header w-full max-w-7xl mx-auto px-4 sm:px-0 py-10 md:py-14">
+      <div className="site-header w-full max-w-7xl mx-auto px-4 sm:px-0 py-10 md:py-8">
 
         {/* Top grid */}
         <div className="grid gap-10 md:grid-cols-3 lg:grid-cols-4 items-start">
@@ -38,20 +38,20 @@ export function SiteFooter() {
 
             <div className="flex gap-3 flex-wrap">
               {[
-              { Icon: Linkedin, href: "https://www.linkedin.com/company/uflexltd" },
-              { Icon: Instagram, href: "https://www.instagram.com/uflexltd" },
-                { Icon: Twitter, href: " https://twitter.com/uflexltd" },
-                { Icon: Facebook, href: "https://www.facebook.com/uflexltd" },
-                { Icon: Youtube, href: "https://www.youtube.com/@uflexltdpackaging" },
+              { image: "/images/new/li.png", href: "https://www.linkedin.com/company/uflexltd" },
+              { image: "/images/new/ig.png", href: "https://www.instagram.com/uflexltd" },
+                { image: "/images/new/x.jpg", href: " https://twitter.com/uflexltd" },
+                { image: "/images/new/fb.png", href: "https://www.facebook.com/uflexltd" },
+                { image: "/images/new/yt.png", href: "https://www.youtube.com/@uflexltdpackaging" },
 
-              ].map(({ Icon, href }, i) => (
+              ].map(({ image, href }, i) => (
                 <Link
                   key={i}
                   href={href}
                   target="_blank"
                   className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#4E74A6] ring-1 ring-white/40"
                 >
-                  <Icon className="h-5 w-5" />
+                  <Image src={image} alt="Social Media" width={20} height={20} />
                 </Link>
               ))}
             </div>
