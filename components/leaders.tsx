@@ -641,9 +641,9 @@ export default function BusinessAwards({ initialBusiness = "corporate-awards" }:
                       {card.title}
                     </h3>
 
-                    <p className="h-[48px] line-clamp-2 text-[16px] lato-400 leading-snug text-black">
+                    {/* <p className="h-[48px] line-clamp-2 text-[16px] lato-400 leading-snug text-black">
                       By: {card.by}
-                    </p>
+                    </p> */}
 
                     <p className="lato-400 text-[14px] md:text-[18px] text-black  leading-relaxed">
                       {card.description}

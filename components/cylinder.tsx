@@ -273,7 +273,7 @@ export const businesses: any[] = [
       subtitle: "Acting today for a sustainable tomorrow. ",
       description:
         " Through energy-efficient technologies, eco-friendly processes, and responsible waste management, we are proud to foster an eco-friendly environment at our plants.",
-      image: "/images/sus.png",
+      image: "/images/new/cylsus.jpeg",
       linkLabel: "Know More",
       linkHref: "/printing-cylinder-business/sustainability",
     },
