@@ -67,6 +67,11 @@ ServerSignature Off
 
 RewriteEngine On
 
+# Never rewrite or redirect SSL certificate validation requests.
+# AutoSSL / Let's Encrypt place temporary files under .well-known during
+# issuance and renewal - a redirect here would break certificate renewal.
+RewriteRule ^\.well-known/ - [L]
+
 # ==========================================
 # 301 PERMANENT REDIRECTS FOR OLD PHP LINKS
 # ==========================================
@@ -241,9 +246,21 @@ RewriteRule ^(.*)$ / [R=301,L]
 # Disable directory listing
 Options -Indexes
 
+# BEGIN cPanel-generated php ini directives, do not edit
+# Matches the server configuration on beta.uflexltd.com
+<IfModule php8_module>
+   php_value error_log "/home/betauflexltd/logs/php.error.log"
+   php_flag log_errors On
+</IfModule>
+<IfModule lsapi_module>
+   php_value error_log "/home/betauflexltd/logs/php.error.log"
+   php_flag log_errors On
+</IfModule>
+# END cPanel-generated php ini directives, do not edit
+
 # php -- BEGIN cPanel-generated handler, do not edit
-# Set the “ea-php81” package as the default “PHP” programming language.
+# Set the “ea-php82” package as the default “PHP” programming language.
 <IfModule mime_module>
-  AddHandler application/x-httpd-ea-php81 .php .php8 .phtml
+  AddHandler application/x-httpd-ea-php82 .php .php8 .phtml
 </IfModule>
 # php -- END cPanel-generated handler, do not edit

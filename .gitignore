@@ -25,3 +25,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# internal notes, reports and drafts - not part of the deliverable
+*.md
+*.txt
+!README.md
