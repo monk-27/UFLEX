@@ -73,6 +73,16 @@ RewriteEngine On
 RewriteRule ^\.well-known/ - [L]
 
 # ==========================================
+# DOCUMENT PATH MAPPING
+# ==========================================
+# Investor documents (annual reports, financial results, announcements,
+# shareholding patterns, policies, press releases) live on the server under
+# /pdf/, but the site references them as /media/pdf/. Map one to the other
+# rather than moving ~800 files or rewriting the URLs in every page.
+# Internal rewrite, not a redirect - the /media/pdf/ URL stays in the address bar.
+RewriteRule ^media/pdf/(.*)$ /pdf/$1 [L]
+
+# ==========================================
 # 301 PERMANENT REDIRECTS FOR OLD PHP LINKS
 # ==========================================
 # About Us

@@ -22,7 +22,7 @@ interface MediaItem {
 const PRESS_ROOM_DATA = {
   hero: {
     title: "The Press Room",
-    image: "/images/press/mainpress.jpg",
+    image: "/images/press/mainpress.png",
   },
 
   mediaCoverage: {
