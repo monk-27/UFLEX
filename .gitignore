@@ -30,3 +30,5 @@ next-env.d.ts
 *.md
 *.txt
 !README.md
+# macOS metadata - must never reach the server
+**/.DS_Store
