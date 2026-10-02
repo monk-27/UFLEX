@@ -64,6 +64,18 @@ export type AdvertisementFY = {
 /* Quarterly Results – Consolidated */
 const quarterlyConsolidated: DocItem[] = [
   {
+    text: "Financial results for the Quarter ended 30.06.2026",
+    // hideLink: true,
+    // https://beta.uflexltd.com/media/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_31DEC2025.pdf
+    link: "https://beta.uflexltd.com/media/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_30JUN2026.pdf",
+  },
+  {
+    text: "Financial results for the Quarter and Year ended 31.03.2026 (Audited)",
+    // hideLink: true,
+    // https://beta.uflexltd.com/media/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_31DEC2025.pdf
+    link: "https://beta.uflexltd.com/media/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_31MAR2026.pdf",
+  },
+  {
     text: "Financial results for the Quarter ended 31.12.2025",
     // hideLink: true,
     // https://beta.uflexltd.com/media/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_31DEC2025.pdf
@@ -190,6 +202,18 @@ const quarterlyConsolidated: DocItem[] = [
 /* Quarterly Results – Standalone */
 const quarterlyStandalone: DocItem[] = [
   {
+    text: "Financial results for the Quarter ended 30.06.2026",
+    // hideLink: true,
+    // https://beta.uflexltd.com/media/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_31DEC2025.pdf
+    link: "https://beta.uflexltd.com/media/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_30062026.pdf",
+  },
+  {
+    text: "Financial results for the Quarter and Year ended 31.03.2026 (Audited)",
+    // hideLink: true,
+    // https://beta.uflexltd.com/media/pdf/financials/Consolidated/UFLEX_NSEBSE_CONS_RESULTS_31DEC2025.pdf
+    link: "https://beta.uflexltd.com/media/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_31032026.pdf",
+  },
+  {
     text: "Financial results for the Quarter ended 31.12.2025",
     link: "https://beta.uflexltd.com/media/pdf/financials/Standalone/UFLEX_NSEBSE_QTRLY_RES_STA_31122025.pdf",
   },
@@ -310,6 +334,7 @@ const quarterlyStandalone: DocItem[] = [
 
 ];
 export type SubsidiaryFYId =
+  | "FY2025-2026"
   | "FY2024-2025"
   | "FY2023-2024"
   | "FY2022-2023"
@@ -470,6 +495,93 @@ export const subsidiariesData: SubsidiaryItem[] = [
 
 
 export const subsidiariesFYData: SubsidiaryFY[] = [
+
+  {
+  id: "FY2025-2026",
+  label: "FY2025–2026",
+  companies: [
+    {
+      title: "UFlex Packaging Inc., USA",
+      link: "https://www.uflexltd.com/",
+    },
+    {
+      title: "Flex Films (USA) Inc., Kentucky, USA",
+      link: "https://www.uflexltd.com/",
+    },
+    {
+      title: "UFlex Europe Limited, UK",
+      link: "https://www.uflexltd.com/",
+    },
+    {
+      title: "Flex Middle East FZE, UAE",
+      link: "https://www.uflexltd.com/",
+    },
+    {
+      title: "Flex P. Films (Egypt) S.A.E., Egypt",
+      link: "https://www.uflexltd.com/",
+    },
+    {
+      title: "Flex Films Europa Sp.zo.o., Poland",
+      link: "https://www.uflexltd.com/",
+    },
+    {
+      title: "UPET Holdings Ltd., Mauritius",
+      link: "https://www.uflexltd.com/",
+    },
+    {
+      title: "UPET (Singapore) Pte. Ltd., Singapore",
+      link: "https://www.uflexltd.com/",
+    },
+    {
+      title: "Flex Americas S.A. de C.V., Mexico",
+      link: "https://www.uflexltd.com/",
+    },
+    {
+      title: "Flex Films Africa Private Limited, Nigeria",
+      link: "https://www.uflexltd.com/",
+    },
+    {
+      title: "LLC Flex Chemicals Private Limited, Russia",
+      link: "https://www.uflexltd.com/",
+    },
+    {
+      title: "Flex Films Rus, LLC, Russia",
+      link: "https://www.uflexltd.com/",
+    },
+    {
+      title: "Flex Films Europa Korlatolt Feleossegu Tarsasag, Hungary",
+      link: "https://www.uflexltd.com/",
+    },
+    {
+      title: "Flex Specialty Chemicals (Egypt) S.A.E., Egypt",
+      link: "https://www.uflexltd.com/",
+    },
+    {
+      title: "Flex Foils Bangladesh Private Limited, Bangladesh",
+      link: "https://www.uflexltd.com/",
+    },
+    {
+      title: "Flex PET (Egypt) S.A.E., Egypt",
+      link: "https://www.uflexltd.com/",
+    },
+    {
+      title: "UFlex Woven Bags, S.A. DE C.V., Mexico",
+      link: "https://www.uflexltd.com/",
+    },
+    {
+      title: "Flex Asepto (Egypt) S.A.E.",
+      link: "https://www.uflexltd.com/",
+    },
+    {
+      title: "USC Holograms Pvt. Ltd., India",
+      link: "https://www.uflexltd.com/",
+    },
+    {
+      title: "UFlex Charitable Foundation, India",
+      link: "https://www.uflexltd.com/",
+    },
+  ],
+},
   {
     id: "FY2024-2025",
     label: "FY2024–2025",
@@ -750,7 +862,7 @@ export const subsidiariesFYData: SubsidiaryFY[] = [
   }
 ];
 const SubsidiariesSection: React.FC = () => {
-  const [activeFY, setActiveFY] = useState<SubsidiaryFYId>("FY2024-2025");
+  const [activeFY, setActiveFY] = useState<SubsidiaryFYId>("FY2025-2026");
 
   const fy = subsidiariesFYData.find((f) => f.id === activeFY)!;
 
@@ -800,6 +912,20 @@ export const advertisementFYData: AdvertisementFY[] = [
     id: "FY2025-2026",
     label: "FY2025–2026",
     cards: [
+      {
+        id: "2026-03",
+        quarterLabel: "QUARTER ENDED - 31st March, 2026",
+        docs: [
+          {
+            label: "Hindi",
+            href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2025-26/ADV-FR-31032026-JS.pdf",
+          },
+          {
+            label: "English",
+            href: "https://beta.uflexltd.com/media/pdf/financials/advertisements/2025-26/ADV-FR-31032026-FE.pdf",
+          },
+        ],
+      },
       {
         id: "2025-12",
         quarterLabel: "Quarter ended - 31st December, 2025",

@@ -145,6 +145,313 @@ const tabs: Tab[] = [
 const tabItems: any = {
     "announcements": [
         {
+            date: "29/09/2026",
+            items: [
+                {
+                    text: "Updates on Company’s participation in Arihant Capital’s Bharat Connect Conference: Rising Stars September 2026",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_AMIP_29SEP26.pdf",
+                },
+            ],
+        },
+        {
+            date: "25/09/2026",
+            items: [
+                {
+                    text: "Intimation of participation in Arihant Capital’s Bharat Connect Conference: Rising Stars September 2026",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSENSE_AMINT_25SEP26.pdf",
+                },
+            ],
+        },
+        {
+            date: "23/09/2026",
+            items: [
+                {
+                    text: "Closure of Trading Window",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_TW_23SEP26.pdf",
+                },
+            ],
+        },
+        {
+            date: "21/09/2026",
+            items: [
+                {
+                    text: "Disclosure under Regulation 30 of SEBI (Listing obligations and Disclosure requirements) Regulations, 2015 - Intimation of Grant of Patent",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSE_DOP_21092026.pdf",
+                },
+            ],
+        },
+        {
+            date: "07/09/2026",
+            items: [
+                {
+                    text: "Intimation of Schedule of Analyst/Institutional Investor Meet under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_AMIN_07SEP26.pdf",
+                },
+            ],
+        },
+        {
+            date: "21/08/2026",
+            items: [
+                {
+                    text: "Transcript of the earnings conference call conducted on August 17, 2026",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_TRNSCRP_17AUG26.pdf",
+                },
+            ],
+        },
+        {
+            date: "19/08/2026",
+            items: [
+                {
+                    text: "Intimation under Regulation 30 read with Schedule III of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_ESG_19AUG26.pdf",
+                },
+            ],
+        },
+        {
+            date: "17/08/2026",
+            items: [
+                {
+                    text: "Recording of earnings conference call conducted on August 17, 2026",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSE_AM_REC_17AUG26.pdf",
+                },
+                {
+                    text: "Updates on Earnings Conference Call under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_IP_17AUG26.pdf",
+                },
+            ],
+        },
+        {
+            date: "15/08/2026",
+            items: [
+                {
+                    text: "Publication of Financial Results",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_ADVT_15AUG26.pdf",
+                },
+            ],
+        },
+        {
+            date: "14/08/2026",
+            items: [
+                {
+                    text: "Earnings Release for the quarter ended 30th June, 2026",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_ER_14AUG26.pdf",
+                },
+                {
+                    text: "Outcome of Board Meeting held on 14th August, 2026",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_BMINTIMATION_14AUG26.pdf",
+                },
+            ],
+        },
+        {
+            date: "13/08/2026",
+            items: [
+                {
+                    text: "Disclosure under Regulation 30 read with Schedule III, Part A of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 - Approval and Registration of Alteration of Memorandum of Association by Registrar of Companies",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_DISC_13AUG26.pdf",
+                },
+            ],
+        },
+        {
+            date: "12/08/2026",
+            items: [
+                {
+                    text: "Intimation of Earnings Conference Call under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_AM_12AUG26.pdf",
+                },
+            ],
+        },
+        {
+            date: "07/08/2026",
+            items: [
+                {
+                    text: "Intimation under Regulation 30 read with Schedule III of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_ESG_07AUG26.pdf",
+                },
+            ],
+        },
+        {
+            date: "06/08/2026",
+            items: [
+                {
+                    text: "Intimation regarding Board Meeting",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_BMINT_06AUG26.pdf",
+                },
+            ],
+        },
+        {
+            date: "31/07/2026",
+            items: [
+                {
+                    text: "Disclosures under Regulation 30 of the SEBI (Listing Obligations & Disclosure Requirements) Regulations, 2015",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_REG30_31JUL26.pdf",
+                },
+            ],
+        },
+        {
+            date: "29/07/2026",
+            items: [
+                {
+                    text: "37th Annual General Meeting Updates: Disclosure Under Regulation 30 of the SEBI (Listing Obligations & Disclosure Requirements) Regulations, 2015",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_REG30_29JUL26.pdf",
+                },
+                {
+                    text: "37th Annual General Meeting Updates: Voting Results",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_REG44_29JUL26.pdf",
+                },
+                {
+                    text: "37th Annual General Meeting Updates: Submission of Scrutinizer’s Report",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_SCR_37THAGM_29JUL26.pdf",
+                },
+                {
+                    text: "37th Annual General Meeting Updates: Proceedings of the 37th Annual General Meeting held on 29th July, 2026",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_AGM_PROCEEDINGS_29JUL26.pdf",
+                },
+            ],
+        },
+        {
+            date: "14/07/2026",
+            items: [
+                {
+                    text: "Disclosure under Regulation 30 of SEBI (Listing obligations and Disclosure requirements) Regulations, 2015 - Intimation of Grant of Patent",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_REG30_14JUL26.pdf",
+                },
+            ],
+        },
+        {
+            date: "10/07/2026",
+            items: [
+                {
+                    text: "Disclosures under Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 – Appointment of Mr. Arun Kumar Sharma, as Chief Financial Officer and Key Managerial Personnel (KMP) of the Company",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_REG30_10JUL26.pdf",
+                },
+            ],
+        },
+        {
+            date: "06/07/2026",
+            items: [
+                {
+                    text: "Disclosures under Regulation 30 (Part-A Para A) of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 – Appointment of Senior Management Personnel",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_REG30_06JUL26.pdf",
+                },
+            ],
+        },
+        {
+            date: "29/06/2026",
+            items: [
+                {
+                    text: "Updates on an in-person Investor Roadshow of Investor Meetings",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_REG30_29JUN26.pdf",
+                },
+            ],
+        },
+        {
+            date: "24/06/2026",
+            items: [
+                {
+                    text: "Intimation of Schedule of Analyst/Institutional Investor Meet under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_REG30_24JUN26.pdf",
+                },
+            ],
+        },
+        {
+            date: "23/06/2026",
+            items: [
+                {
+                    text: "Closure of Trading Window",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_TW_23JUN26.pdf",
+                },
+            ],
+        },
+        {
+            date: "10/06/2026",
+            items: [
+                {
+                    text: "Communication sent to shareholders regarding deduction of Tax on Dividend for the Financial Year 2025-26",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_TDSCOMM10JUN26.pdf",
+                },
+            ],
+        },
+        {
+            date: "08/06/2026",
+            items: [
+                {
+                    text: "Transcript of the earnings conference call conducted on June 1, 2026",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_TRNSCRP_01JUN26.pdf",
+                },
+            ],
+        },
+        {
+            date: "01/06/2026",
+            items: [
+                {
+                    text: "Recording of earnings conference call conducted on June 1, 2026",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSE_AM_REC_01JUN26.pdf",
+                },
+                {
+                    text: "Updates on Earnings Conference Call under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_INVEPR_01JUN26.pdf",
+                },
+                {
+                    text: "Publication of Financial Results",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_ADVT_01JUN26.pdf",
+                },
+            ],
+        },
+        {
+            date: "30/05/2026",
+            items: [
+                {
+                    text: "Earnings Release for the quarter ended 31st March, 2026",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_ER_30052026.pdf",
+                },
+                {
+                    text: "Outcome of Board Meeting held on 30th May, 2026",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_BMINTIMATION_30MAY26.pdf",
+                },
+            ],
+        },
+        {
+            date: "27/05/2026",
+            items: [
+                {
+                    text: "Intimation of Earnings Conference Call under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_AM_ECC_01JUN26.pdf",
+                },
+                {
+                    text: "Intimation of Company’s participation in Goldman Sachs: India Supply Chain Resilience Corporate Days Meeting",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_PT_NSEBSE_02JUN26.pdf",
+                },
+            ],
+        },
+        {
+            date: "14/05/2026",
+            items: [
+                {
+                    text: "Intimation regarding postponement and rescheduling of Board Meeting",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_BMINTIMATION_30MAY26.pdf",
+                },
+            ],
+        },
+        {
+            date: "12/05/2026",
+            items: [
+                {
+                    text: "Intimation regarding Board Meeting",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_BM_INTIMATION_20MAY26.pdf",
+                },
+            ],
+        },
+        {
+            date: "01/05/2026",
+            items: [
+                {
+                    text: "Disclosures under Regulation 30 of the SEBI (Listing Obligations & Disclosure Requirements) Regulations, 2015",
+                    link: "https://beta.uflexltd.com/media/pdf/announcements//2026/SIGNED_UFLEX_NSEBSE_REG30_01MAY26.pdf",
+                },
+            ],
+        },
+        {
+
 
             "date": "24/03/2026",
             "items": [
@@ -854,6 +1161,10 @@ const tabItems: any = {
     ],
 
     "shareholding-pattern": [
+        { text: "SHAREHOLDING PATTERN AS ON 30.06.2026", link: "https://beta.uflexltd.com/media/pdf/SHP/UFLEX_SHP_30JUN2026.pdf" },
+
+        { text: "SHAREHOLDING PATTERN AS ON 31.03.2026", link: "https://beta.uflexltd.com/media/pdf/SHP/UFLEX_SHP_31MAR2026.pdf" },
+
         { text: "SHAREHOLDING PATTERN AS ON 31.12.2025", link: "https://beta.uflexltd.com/media/pdf/SHP/UFLEX_SHP_30DEC2025.pdf" },
 
         { text: "SHAREHOLDING PATTERN AS ON 30.09.2025", link: "https://beta.uflexltd.com/media/pdf/SHP/UFLEX_SHP_30SEP2025.pdf" },
@@ -949,6 +1260,10 @@ const tabItems: any = {
         { "text": "SHAREHOLDING PATTERN AS ON 30.06.2007", "link": "https://beta.uflexltd.com/media/pdf/SHP/UFLEX-30.06.2007-BSE.pdf" }
     ],
     "unpaid-dividend": [
+        {
+            text: "Unclaimed Dividend Details 2026",
+            link: "https://beta.uflexltd.com/media/pdf/Unclaimed-Dividend/UF-Unclaimed-Dividend-FY-2026.pdf"
+        },
         {
             text: "Unpaid/unclaimed Status as on 30.09.2025 for Year 2024-2025",
             link: "https://beta.uflexltd.com/media/pdf/Unclaimed-Dividend/UF-UD-30SEP2025.pdf",
@@ -1057,8 +1372,8 @@ const tabItems: any = {
         {
             info: "For any unresolved matters or further queries/clarification, investors may contact:",
             name: "Mr. Kapil Kumar, General Manager - Secretarial",
-            phone: "+91 - 120 - 2442903",
-            fax: "+91 - 120 - 4012345",
+            phone: "+91 - 120 - 4012345",
+            fax: "+91 - 120 - 2442903",
             email: "kapil.kumar1@uflexltd.com"
         }
     ],
@@ -1070,6 +1385,10 @@ const tabItems: any = {
         }
     ],
     "credit-ratings": [
+        {
+            text: "CRISIL RATINGS – REAFFIRMED",
+            link: "https://beta.uflexltd.com/media/pdf/CreditRatings/2026/SIGNED_UFLEX_NSEBSE_CRISIL_07AUG26.pdf"
+        },
         {
             text: "CRISIL RATINGS – REAFFIRMED",
             link: "https://beta.uflexltd.com/media/pdf/CreditRatings/2025/SIGNED_UFLEX_NSEBSE_CRISILCR_28NOV25.pdf"
@@ -1158,6 +1477,10 @@ const tabItems: any = {
 
     "annual-return": [
         {
+            text: "FINANCIAL YEAR ENDED 31ST MARCH, 2026",
+            link: "https://beta.uflexltd.com/media/pdf/Extract-Annual-Return/UFLEX-Annual-Return-2025-2026.pdf"
+        },
+        {
             text: "FINANCIAL YEAR ENDED 31ST MARCH, 2025",
             link: "https://beta.uflexltd.com/media/pdf/Extract-Annual-Return/UFLEX-Annual-Return-2024-2025.pdf"
         },
@@ -1193,6 +1516,10 @@ const tabItems: any = {
 
     "business-responsibility": [
         {
+            text: "Business Responsibility & Sustainability Report (BRSR) for the Year 2025-26",
+            link: "https://beta.uflexltd.com/media/pdf/BRR/UFLEX-BRSR-2025_2026.pdf"
+        },
+        {
             text: "Business Responsibility & Sustainability Report (BRSR) for the Year 2024-25",
             link: "https://beta.uflexltd.com/media/pdf/BRR/UFLEX-BRSR-2024-2025.pdf"
         },
@@ -1223,6 +1550,10 @@ const tabItems: any = {
     ],
 
     "secretarial-compliance": [
+        {
+            text: "FINANCIAL YEAR ENDED 31ST MARCH, 2026",
+            link: "https://beta.uflexltd.com/media/pdf/ASCR/UFLEX_SCR_2026.pdf"
+        },
         {
             text: "FINANCIAL YEAR ENDED 31ST MARCH, 2025",
             link: "https://beta.uflexltd.com/media/pdf/ASCR/UFLEX_SCR_2025.pdf"
@@ -1260,6 +1591,14 @@ const tabItems: any = {
         }
     ],
     "reconciliation": [
+        {
+            "text": "Report for the Quarter Ended 30.06.2026",
+            "link": "https://beta.uflexltd.com/media/pdf/RSCAR/UFLEX-SCR-30JUN2026.pdf"
+        },
+        {
+            "text": "Report for the Quarter Ended 31.03.2026",
+            "link": "https://beta.uflexltd.com/media/pdf/RSCAR/UFLEX-SCR-31MAR2026.pdf"
+        },
         {
             "text": "Report for the Quarter Ended 31.12.2025",
             "link": "https://beta.uflexltd.com/media/pdf/RSCAR/UFLEX-SCR-31DEC2025.pdf"
@@ -1515,15 +1854,26 @@ export default function Page() {
 
 
 
+                                    <h3 className="text-[#173366] text-lg font-semibold mb-3">
+                                        Initiative under "Saksham Niveshak" - A 100 Day Drive to Facilitate Dividend Claims and KYC Updates by IEPFA
+                                    </h3>
+
                                     <p className="text-gray-700 text-[16px] leading-relaxed mb-4">
                                         <span className="float-left text-[42px] leading-[32px] pr-2 font-semibold text-black">
-                                            T
+                                            P
                                         </span>
-                                        he shareholders who have not claimed their dividends for any Financial Years
-                                        from 2017-18 to 2024-25 or have not updated their KYC or any issues related
+                                        ursuant to the initiatives of the Investor Education and Protection Fund Authority (IEPFA),
+                                        the Ministry of Corporate affairs (MCA), the Company has started a Second 100 Days campaign
+                                        “Saksham Niveshak” starting from 1st April, 2026 to 9th July, 2026. During this Campaign,
+                                        all the shareholders who have not claimed their dividends for any Financial Years
+                                        from 2018-19 to 2024-25 or have not updated their KYC or any issues related
                                         to unclaimed dividends and shares may write to the Company’s
                                         <span className="text-[#173366]"> Registrar and Transfer Agent (RTA)</span>
-                                        i.e. M/s Beetal Financial & Computer Services (P) Limited.
+                                        {" "}i.e. M/s Beetal Financial & Computer Services (P) Limited. Know more about
+                                        “Saksham Niveshak” campaign –{" "}
+                                        <a href="https://beta.uflexltd.com/media/pdf/Unclaimed-Dividend/UFLEX_IEPFA_100D_CAMPAIGN_2026.pdf" target="_blank" className="text-[#173366] underline cursor-pointer">
+                                            click here
+                                        </a>.
                                     </p>
 
                                     <div className=" italic text-gray-600 mb-6">
@@ -1623,7 +1973,7 @@ export default function Page() {
 
                                     <p className="mt-6 text-gray-600">
                                         <strong>Note:</strong> Please{" "}
-                                        <a href="https://beta.uflexltd.com/media/pdf/SC//2025/KYC_FORMS.pdf" target="_blank" className="text-[#173366] underline cursor-pointer">
+                                        <a href="https://beta.uflexltd.com/media/pdf/SC//2026/KYC_FORMS.pdf" target="_blank" className="text-[#173366] underline cursor-pointer">
                                             download
                                         </a>{" "}
                                         the attached KYC Form and submit the same with the RTA where the KYC

@@ -63,6 +63,11 @@ import { SiteFooter } from "@/components/site-footer";
 import Breadcrumb from "../breadcrumb";
 
 const communicationList = [
+    { text: "05 Jul 2026: Newspaper Publication", link: "https://beta.uflexltd.com/media/pdf/SC//2026/SIGNED_UFLEX_NSEBSE_ADVT_05JUL26.pdf" },
+    { text: "04 Jul 2026: Notice of 37th Annual General Meeting", link: "https://beta.uflexltd.com/media/pdf/SC//2026/UFlex_Notice_for_AGM2026.pdf" },
+    { text: "19 Jun 2026: Newspaper Publication", link: "https://beta.uflexltd.com/media/pdf/SC//2026/SIGNED_UFLEX_NSEBSE_19JUN26.pdf" },
+    { text: "09 Jun 2026: Communication for Deduction of Tax on Dividend for FY 2025-26", link: "https://beta.uflexltd.com/media/pdf/SC//2026/UFLEX_2026_TDS_LETTER.pdf" },
+
     { text: "31 Dec 2025: Share Holding Pattern", link: "https://beta.uflexltd.com/media/pdf/SHP/UFLEX_SHP_30DEC2025.pdf" },
 
     { text: "30 Sep 2025: Transcript of the 36th Annual General Meeting", link: "https://beta.uflexltd.com/media/pdf/SC//2025/UFLEX_TRANSCRIPT_36AGM.pdf" },
@@ -89,9 +94,9 @@ const communicationList = [
     { text: "01 Jun 2023: Newspaper Publication", link: "https://beta.uflexltd.com/media/pdf/SC//2023/SIGNED_UFLEX_NSEBSE_ADVT_1JUN23.pdf" },
     { text: "30 May 2023: Application Cum Undertaking of Unpaid Unclaimed Dividend", link: "https://beta.uflexltd.com/media/pdf/SC//2023/UFlex_Application_Cum_Undertaking.pdf" },
     { text: "30 May 2023: Reminder Letters to Shareholders (Unpaid/Unclaimed Dividend & Shares Liable to Transfer to IEPF)", link: "https://beta.uflexltd.com/media/pdf/SC//2023/UFlex_UNP_DIV_Letter.pdf" },
-    { text: "30 May 2023: Sebi Circular March 16,2023 Circular Mandatory Furnishing of PAN, KYC Details and Nomination by holders of Physical SecuritiesUFlex Shareholders Communication", link: "https://beta.uflexltd.com/media/pdf/SC//2023/UFlex_Sebi_Circular_March162023.pdf" },
+    { text: "30 May 2023: Sebi Circular March 16,2023 Circular Mandatory Furnishing of PAN, KYC Details and Nomination by holders of Physical Securities", link: "https://beta.uflexltd.com/media/pdf/SC//2023/UFlex_Sebi_Circular_March162023.pdf" },
     { text: "06 Apr 2023: Newspaper Publication", link: "https://beta.uflexltd.com/media/pdf/SC//2023/SIGNED_UFLEX_NSEBSE_PBCORG_06APR23.pdf" },
-    { text: "04 Apr 2023: Corrigendum to Postal Ballot Notice 14th February 2023", link: "https://beta.uflexltd.com/media/pdf/SC//2023/SIGNED_UFLEX_NSEBSE_04APR2023.pdf" },
+    { text: "04 Apr 2023: Corrigendum to the Postal Ballot Notice dated 14th February, 2023", link: "https://beta.uflexltd.com/media/pdf/SC//2023/SIGNED_UFLEX_NSEBSE_04APR2023.pdf" },
     { text: "20 Mar 2023: Newspaper Publication", link: "https://beta.uflexltd.com/media/pdf/SC//2023/SIGNED_NSEBSE_PBADVERTISEMENT_19MAR2023.pdf" },
     { text: "18 Mar 2023: Notice of Postal ballot", link: "https://beta.uflexltd.com/media/pdf/SC//2023/SIGNED_UFLEX_NSEBSE_PBNOTICE_18MAR2023.pdf" },
     { text: "19 Sep 2022: Transcript of 33rd Annual General Meeting", link: "https://beta.uflexltd.com/media/pdf/SC//2022/UFlex_33rd_AGM_Transcript.pdf" },
@@ -101,7 +106,8 @@ const communicationList = [
     { text: "02 Jul 2022: Communication for Deduction of Tax on Dividend For FY 2021-2022", link: "https://beta.uflexltd.com/media/pdf/SC//2022/UFlex_Communication_TDS_FY21-22.pdf" },
     { text: "23 Feb 2022: Newspaper Publication", link: "https://beta.uflexltd.com/media/pdf/SC//2022/UFLEX_NSEBSE_ADVERTISEMENT_23FEB2022.pdf" },
     { text: "23 Feb 2022: Newspaper Publication", link: "https://beta.uflexltd.com/media/pdf/SC//2022/UFLEX_NSEBSE_ADVERTISEMENT_23FEB2022.pdf" },
-    { text: "29 Dec 2021: Mandatory furnishing of PAN, KYC details and Nomination by   holders of physical securitiesUFlex Shareholders Communication", link: "https://beta.uflexltd.com/media/pdf/SC//2021/UFlex_Mandotry_KYC_Letter.pdf" },
+    { text: "22 Feb 2022: Notice of Postal ballot", link: "https://beta.uflexltd.com/media/pdf/SC//2022/UFLEX_NSEBSE_PBNOTICE_11FEB2022.pdf" },
+    { text: "29 Dec 2021: Mandatory furnishing of PAN, KYC details and Nomination by holders of physical securities", link: "https://beta.uflexltd.com/media/pdf/SC//2021/UFlex_Mandotry_KYC_Letter.pdf" },
     { text: "01 Oct 2021: Transcript of 32nd Annual General Meeting", link: "https://beta.uflexltd.com/media/pdf/SC//2021/UFLEX_32nd_AGM_Transcript.pdf" },
     { text: "04 Sep 2021: Newspaper Publication", link: "https://beta.uflexltd.com/media/pdf/SC//2021/UFLEX_BSENSE_AGMADVT_04SEP2021.pdf" },
     { text: "02 Sep 2021: Notice of 32nd Annual General Meeting", link: "https://beta.uflexltd.com/media/pdf/SC//2021/UFLEX_Notice_32nd_AGM_2021.pdf" },
@@ -151,8 +157,8 @@ export default function Page() {
                 <div className="bg-white">
                     <div className="max-w-7xl mx-auto px-4 pb-2">
                         <div className="flex flex-col sm:flex-row sm:justify-end gap-2">
-                            <Link href="#" className="bg-[#CF3438] text-white text-xs lato-700 px-4 py-2 text-center">KYC FORMS</Link>
-                            <Link href="#" className="bg-[#CF3438] text-white text-xs lato-700 px-4 py-2 text-center sm:whitespace-nowrap">
+                            <Link href="https://beta.uflexltd.com/media/pdf/SC//2026/KYC_FORMS.pdf" target="_blank" className="bg-[#CF3438] text-white text-xs lato-700 px-4 py-2 text-center">KYC FORMS</Link>
+                            <Link href="https://smartodr.in/login" target="_blank" className="bg-[#CF3438] text-white text-xs lato-700 px-4 py-2 text-center sm:whitespace-nowrap">
                                 LOGIN TO THE ONLINE DISPUTE RESOLUTION PORTAL (ODR)
                             </Link>
                         </div>

@@ -140,7 +140,7 @@ const GlobalFootprint = () => {
       "Aseptic Packaging (Upcoming)": [
         "AIN Sokhna Suez Governorate, Egypt"
       ],
-      "Flexible Packaging -  (Upcoming)": [
+      "Flexible Packaging ": [
         "Altamira Tamaulipas, Mexico",
       ],
       Recycling: [

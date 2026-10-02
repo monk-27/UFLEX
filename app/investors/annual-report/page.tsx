@@ -84,6 +84,10 @@ const tabs: ArTab[] = [
 /* ---------- UFLEX: Annual Reports list ---------- */
 const annualReportsUFLEX: DocItem[] = [
   {
+    text: "Annual Report for the Year 2025-2026",
+    link: "https://beta.uflexltd.com/media/pdf/financials/annual-reports/UFLEX-AR-2025-26.pdf",
+  },
+  {
     text: "Annual Report for the Year 2024-2025",
     link: "https://beta.uflexltd.com/media/pdf/financials/annual-reports/UFLEX-AR-2024-25.pdf",
   },

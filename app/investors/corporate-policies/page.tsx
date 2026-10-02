@@ -135,7 +135,7 @@ const policies: PolicyItem[] = [
   },
   {
     text: "Energy Management Policy",
-    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_EM_Policy.pdf",  // Energy Management
+    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_ENM_Policy.pdf",
   },
   {
     text: "Environmental Management Policy",
@@ -147,11 +147,11 @@ const policies: PolicyItem[] = [
   },
   {
     text: "Human Rights Policy",
-    link: "https://beta.uflexltd.com/media/pdf/Policies/BRSP/2023/UFlex_Human_Rights_Policy.pdf",  // older path, still active
+    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_HR_Policy.pdf",
   },
   {
     text: "Information Technology (IT), Cyber Security, and Privacy Policy",
-    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_IT_Cyber_Privacy_Policy.pdf",  // inferred
+    link: "https://beta.uflexltd.com/media/pdf/Policies/2025/UFlex_IT_CS_DP_Policy.pdf",
   },
   {
     text: "OHS Policy",
@@ -189,6 +189,7 @@ const policies: PolicyItem[] = [
 ];
 
 const familiarizationPrograms: PolicyItem[] = [
+  { text: "Familiarization Programme - 2025-2026", link: "https://beta.uflexltd.com/media/pdf/Policies/UFlex_FP-Independent-Directors_25-26.pdf" },
   { text: "Familiarization Programme - 2024-2025", link: "https://beta.uflexltd.com/media/pdf/Policies/UFlex_FP-Independent-Directors_24-25.pdf" },
   { text: "Familiarization Programme - 2023-2024", link: "https://beta.uflexltd.com/media/pdf/Policies/UFlex_FP-Independent-Directors_23-24.pdf" },
   { text: "Familiarization Programme - 2022-2023", link: "https://beta.uflexltd.com/media/pdf/Policies/UFlex_FP-Independent-Directors_22-23.pdf" },
