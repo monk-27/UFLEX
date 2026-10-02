@@ -61,7 +61,7 @@ export function BusinessPage({
                   title={cs.title}
                   excerpt={cs.excerpt}
                   content={cs.content}
-                  image={{ src: "/case-study-presentation.png", alt: `${cs.title} image` }}
+                  image={{ src: "/case-study-presentation.webp", alt: `${cs.title} image` }}
                 />
               </div>
             </motion.div>
@@ -79,7 +79,7 @@ export function BusinessPage({
                 <ReadMoreModal
                   title={sustainability.title}
                   content={sustainability.content}
-                  image={{ src: "/sustainability-concept.png", alt: "Sustainability" }}
+                  image={{ src: "/sustainability-concept.webp", alt: "Sustainability" }}
                   cta="Know More"
                 />
               </div>
@@ -108,7 +108,7 @@ export function BusinessPage({
                     title={h.title}
                     excerpt={h.excerpt}
                     content={h.content}
-                    image={{ src: "/abstract-innovation.png", alt: `${h.title} image` }}
+                    image={{ src: "/abstract-innovation.webp", alt: `${h.title} image` }}
                   />
                 </div>
               </motion.div>

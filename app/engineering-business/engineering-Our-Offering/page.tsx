@@ -235,7 +235,7 @@ Our converting machines are tailored as per the clients’ needs and are enabled
                                     "label": "Standard Spl. (ELS):",
                                     "text": "ROTOFLEX Standard Spl. is a modular construction machine. The Unique feature of this machine is the special trolley system which contains the printing cylinder, Ink-tray along with ink-circulation system, self-shaft chucking, sleeve type impression. Turret un-wind and re-wind using air expandable shafts with auto splicing arrangement which makes the job change-over a matter of few minutes. The speed can be attained up to 400 meters/min.",
                                     "moreLink": "https://www.uflexltd.com/standard-spl-els-rotogravure-printing-machines.php",
-                                    "image": "/images/new/els.png"
+                                    "image": "/images/new/els.webp"
                                 },
                                 {
                                     "label": "Standard (ELS):",
@@ -283,7 +283,7 @@ Our converting machines are tailored as per the clients’ needs and are enabled
                     subSections: [
                         {
                             title: "Solvent-less Lamination Machines:",
-                            image: "/images/new/solventless.png",
+                            image: "/images/new/solventless.webp",
                             intro: `Solventless Super-550 is a high-speed, eco-friendly laminating machine with a
 maximum web width of 1320 mm, designed for flexible packaging applications. It
 features independent motors at both unwind and rewind sections for precise web
@@ -506,7 +506,7 @@ system ensures clean, stable, high-speed performance.`,
                     items: [
                         {
                             label: "ReLAM 50:",
-                            image: "/images/new/relam.png",
+                            image: "/images/new/relam.webp",
 
                             text: `ReLAM 50 is a decentralized recycling system designed to process up to 50 kg of
 mixed flexible waste per hour, offering an efficient solution for hard-to-recycle
@@ -653,7 +653,7 @@ the circular economy while advancing sustainable waste management practices`,
                     <section className="relative w-full h-[580px] sm:h-[451px] overflow-hidden">
 
                         <Image
-                            src="/images/heroengg.png"
+                            src="/images/heroengg.webp"
                             alt="Investors Relations"
                             fill
                             className="object-cover w-full h-full"

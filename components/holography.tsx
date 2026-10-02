@@ -22,43 +22,43 @@ import { ReadMoreDialog } from './expandabletext'
 const SliderItems: SliderItem[] =
     [
         //    {
-        //         img: "/images/holography/h1.png",
+        //         img: "/images/holography/h1.webp",
         //         dynamiclink: "/holography-business/holography-Our-Offering",
         //         title: "Security Paper Labels & Tax Stamps",
         //         desc: "",
         //     },
         //     {
-        //         img: "/images/holography/h2.png",
+        //         img: "/images/holography/h2.webp",
         //         dynamiclink: "/holography-business/holography-Our-Offering",
         //         title: "Security Documents",
         //         desc: "",
         //     },
         //     {
-        //         img: "/images/holography/h3.png",
+        //         img: "/images/holography/h3.webp",
         //         dynamiclink: "/holography-business/holography-Our-Offering",
         //         title: "Textile Application Films for: Sequins ,Hot Melt ,Glitter Powder",
         //         desc: "",
         //     },
         //     {
-        //         img: "/images/holography/h4.png",
+        //         img: "/images/holography/h4.webp",
         //         dynamiclink: "/holography-business/holography-Our-Offering",
         //         title: "Wide Web Holographic Films",
         //         desc: "",
         //     },
         //     {
-        //         img: "/images/holography/h5.png",
+        //         img: "/images/holography/h5.webp",
         //         dynamiclink: "/holography-business/holography-Our-Offering",
         //         title: "Transfer Holographic Metallized Paper & Paperboard",
         //         desc: "",
         //     },
         //     {
-        //         img: "/images/holography/h6.png",
+        //         img: "/images/holography/h6.webp",
         //         dynamiclink: "/holography-business/holography-Our-Offering",
         //         title: "Stamping Foils",
         //         desc: "",
         //     },
         //     {
-        //         img: "/images/holography/h7.png",
+        //         img: "/images/holography/h7.webp",
         //         dynamiclink: "/holography-business/holography-Our-Offering",
         //         title: "Advanced Security Holograms",
         //         desc: "",
@@ -67,7 +67,7 @@ const SliderItems: SliderItem[] =
 
 
         // {
-        //     img: "/images/holography/h7.png",
+        //     img: "/images/holography/h7.webp",
         //     // dynamiclink: "/holography-business/holography-Our-Offering",
         //     title: "HOLOGRAM",
         //     desc: "",
@@ -75,31 +75,31 @@ const SliderItems: SliderItem[] =
         // },
 
         // {
-        //     img: "/images/holography/h4.png",
+        //     img: "/images/holography/h4.webp",
         //     // dynamiclink: "/holography-business/holography-Our-Offering",
         //     title: "HOLOGRAPHIC FILM (Wide Web Films)",
         //     desc: "",
         // },
         // {
-        //     img: "/images/holography/h3.png",
+        //     img: "/images/holography/h3.webp",
         //     // dynamiclink: "/holography-business/holography-Our-Offering",
         //     title: "TEXTILE VALUE ADDITION PRODUCT",
         //     desc: "",
         // },
         // {
-        //     img: "/images/holography/h6.png",
+        //     img: "/images/holography/h6.webp",
         //     // dynamiclink: "/holography-business/holography-Our-Offering",
         //     title: "Hot Stamping Foil",
         //     desc: "",
         // },
         // {
-        //     img: "/images/holography/h5.png",
+        //     img: "/images/holography/h5.webp",
         //     // dynamiclink: "/holography-business/holography-Our-Offering",
         //     title: "HOLOGRAPHIC METALIZED PAPER & BOARD TRANSFER",
         //     desc: "",
         // },
         // {
-        //     img: "/images/holography/h1.png",
+        //     img: "/images/holography/h1.webp",
         //     // dynamiclink: "/holography-business/holography-Our-Offering",
         //     title: "Labeling Solution",
         //     desc: "",
@@ -124,7 +124,7 @@ const SliderItems: SliderItem[] =
             desc: "OEKO-TEX certified sequin films for embroidered and high-fashion garments, available in 800+ colours and designs, suitable for computerized and hand embroidery, with thickness ranging from 91 to 175 microns.",
         },
         {
-            img: "/images/holography/h6.png",
+            img: "/images/holography/h6.webp",
             // dynamiclink: "/holography-business/holography-Our-Offering",
             title: "Hot Stamping Foil",
             desc: "Holographic and non-holographic hot stamping foils for printing, packaging, and textiles application, designed to enhance visual appeal and brand protection, suitable for fine detailing and large area stamping compatible with diverse substrates.",
@@ -164,7 +164,7 @@ export const businesses: any[] = [
         label: "Holography",
         hero: {
             heading: "Holography",
-            image: "/images/holographyhero.png", // replace with your actual image
+            image: "/images/holographyhero.webp", // replace with your actual image
             body:
                 "The UFlex holography business is India's largest and most trusted provider of brand protection and anti-counterfeiting solutions, as well as an emerging global player in the industry. The Holography Business offers a comprehensive range of holographic solutions, including Advanced Security Holograms, Security Paper Labels & Tax Stamps, Wide Web Holographic Films, Stamping Foils, Transfer Holographic Metallized Paper & Paperboard, Security documents, & Textile Application Films for Sequins, Hot Melt, and Glitter Powder.",
         },
@@ -175,42 +175,42 @@ export const businesses: any[] = [
                 {
                     id: "stamping-foils",
                     title: "Stamping Foils",
-                    image: "/images/stamping.png"
+                    image: "/images/stamping.webp"
                 },
                 {
                     id: "security-documents",
                     title: "Security Documents",
-                    image: "/images/security.png"
+                    image: "/images/security.webp"
                 },
                 {
                     id: "textile-application",
                     title: "Textile Application",
-                    image: "/images/textile.png"
+                    image: "/images/textile.webp"
                 },
                 {
                     id: "holographic-paper",
                     title: "Holographic Metallized Paper",
-                    image: "/images/holographic.png"
+                    image: "/images/holographic.webp"
                 },
                 {
                     id: "transfer-holographic-metallized-paper",
                     title: "Stamping Foils ",
-                    image: "/images/digital.png"
+                    image: "/images/digital.webp"
                 },
                 {
                     id: "transfer-paper-board",
                     title: "Transfer Paper/ Board",
-                    image: "/images/transfer.png"
+                    image: "/images/transfer.webp"
                 },
                 {
                     id: "wide-web-holographic-films",
                     title: "Wide Web Holographic Films ",
-                    image: "/images/wide.png"
+                    image: "/images/wide.webp"
                 },
                 {
                     id: "stamping-foils-2",
                     title: "Stamping Foils",
-                    image: "/images/stampingfoil.png"
+                    image: "/images/stampingfoil.webp"
                 }
             ]
         },
@@ -236,46 +236,46 @@ export const businesses: any[] = [
                     title: "Holography and Stamping Foils",
                     description:
                         "Holographic and non-holographic hot stamping foils for printing, packaging, and textiles application, designed to enhance visual appeal and brand protection, suitable for fine detailing and large area stamping compatible with diverse substrates.",
-                    image: "/images/foils.png"
+                    image: "/images/foils.webp"
                 },
                 // {
                 //     id: "alu-alu-blister",
                 //     title: "Holographic Alu-Alu Blister",
                 //     description: "Holographic Alu-Alu Blister marks a major breakthrough in pharmaceutical packaging, reinforcing UFlex’s commitment to industry-leading brand protection. Integrated with covert security features, this innovative solution provides an enhanced layer of anti-counterfeiting protection, ensuring product authenticity and consumer safety."
 
-                //     , image: "/images/blister.png"
+                //     , image: "/images/blister.webp"
                 // },
                 {
                     id: "alu-alu-blister",
                     title: "High Security Holographic Lidding Foil & PVC",
                     description: "Advanced solutions for pharmaceutical blister packaging, combining strong seal integrity, high barrier protection, and integrated anti-counterfeit holographic features. Designed for reliability and compatibility with high-speed packaging lines, these materials ensure product safety, authentication, and enhanced brand protection."
 
-                    , image: "/images/blister.png"
+                    , image: "/images/blister.webp"
                 },
                 {
                     id: "decorative-products",
                     title: "Decorative Products Segment",
                     description: "As part of UFlex’s strategic diversification, the decorative holographic calendar represents a distinctive offering within the holographic product segment. This unique application combines high-end aesthetics with functional design, creating a visually striking product ideal for festive and promotional use.",
-                    image: "/images/decorative.png"
+                    image: "/images/decorative.webp"
                 },
                 {
                     id: "advanced-blister-packs",
                     title: "Advanced holographic blister packs",
-                    description: "UFlex’s enhanced holographic blister packs are engineered with advanced security features, making replication virtually impossible.", image: "/images/advanced.png"
+                    description: "UFlex’s enhanced holographic blister packs are engineered with advanced security features, making replication virtually impossible.", image: "/images/advanced.webp"
                 },
                 {
                     id: "high-refractive-sequins",
                     title: "High-Refractive Holographic Sequins Film",
                     description: "UFlex’s high-refractive holographic sequins film delivers exceptional brilliance and luster. Targeted at premium markets, it combines advanced holographic technology with precision coatings to create stunning light and color effects. Ideally suited for premium fashion, accessories, haute couture, and upscale décor, this cutting-edge sequins film enhances embellishments with a touch of luxury and sophistication. With this high-performance solution, UFlex Holography continues to set industry benchmarks, demonstrating its ongoing commitment to innovation, quality, and excellence in high-end decorative applications.",
 
-                    image: "/images/refractive.png"
+                    image: "/images/refractive.webp"
                 },
                 {
                     id: "3d-flipogram",
                     title: "3D Flipogram – Advanced Visual Anti-Counterfeiting Technology",
                     description: "UFlex’s 3D Flipogram revolutionizes brand protection with its advanced micro-optical technology, delivering unparalleled visual anti-counterfeiting solutions. Comprising hundreds of thousands of micro-lenses, this highly secure technology—also used in currency notes—creates a unique and dynamic 3D visual effect that is virtually impossible to replicate. Effortless to use, the Flipogram effect allows consumers to instantly verify authenticity by simply viewing the imagery, with no special lighting or devices required. Beyond its powerful security benefits, this innovation also enhances product appeal, reinforcing trust and elevating brand value.",
 
-                    image: "/images/flipogram.png"
+                    image: "/images/flipogram.webp"
                 }
             ]
         },
@@ -293,7 +293,7 @@ We continuously strive for
 minimum process waste
 generation and optimally
 recycle the same. \n\n We have many solutions of sustainability segment- holographic transfer on paper and board, cold transfer foils, recycled RSC certified sequins film, cast and cure holographic films among many other.`,
-            image: "/images/sus/holography.jpeg",
+            image: "/images/sus/holography.webp",
             linkLabel: "Know More",
             linkHref: "/holography-business/sustainability"
         },
@@ -389,7 +389,7 @@ Kolkata.`,
             title: "Awards & Accolades",
             description:
                 "Over the last several years, UFlex’s Flexible Packaging business has received various awards and certifications for its innovative and sustainable packaging solutions.",
-            image: "/images/awards.png",
+            image: "/images/awards.webp",
             linkLabel: "Know More",
             linkHref: "/hall-of-fame"
         },
@@ -412,7 +412,7 @@ Kolkata.`,
 //     {
 //         "id": "holography",
 //         title: "Holography Business",
-//         image: "/images/advanced.png",
+//         image: "/images/advanced.webp",
 //         "imageAlt": "UFlex Holography Solutions",
 //         paragraphs: [
 //             `Holography business of UFlex
@@ -432,7 +432,7 @@ const packagingData = [
     {
         id: "holography",
         title: "Holography Business",
-        image: "/images/holography/hall.png",
+        image: "/images/holography/hall.webp",
         imageAlt: "UFlex Holography Solutions",
 
         content: [
@@ -587,7 +587,7 @@ const HoloGraphyComp: React.FC<Props> = ({ business }) => {
                                 className="relative aspect-[16/10] w-full overflow-hidden "
                             >
                                 <Image
-                                    src="/images/holography/hall.png"
+                                    src="/images/holography/hall.webp"
                                     alt="UFlex capabilities across the value chain"
                                     fill
                                     className="object-cover rounded-sm"

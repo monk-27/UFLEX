@@ -12,14 +12,14 @@ export const LEADERSHIP_AWARDS: LeadershipAwardItem[] =
       "UFlex was recognised as an ET Sustainable Organization for its commitment to circularity, responsible manufacturing, and long-term ESG goals. The award honours businesses that demonstrate measurable progress in environmental stewardship and sustainability-led transformation.",
   },
   {
-    image: "/images/awards/b2.png",
+    image: "/images/awards/b2.webp",
     title: "ET Now Best Organisations to Work 2025",
     by: "By: ET Now",
     description:
       "UFlex received this recognition for fostering a high-performance workplace built on innovation, employee engagement, and strong leadership. The award honours companies that excel in culture-building, talent development, and employee well-being.",
   },
   {
-    image: "/images/awards/b3.png",
+    image: "/images/awards/b3.webp",
     title: "Business Leader of the Decade 2024 – Mr. Ashok Chaturvedi",
     by: "By: Indo-American Chamber of Commerce (IACC)",
     description:
@@ -27,7 +27,7 @@ export const LEADERSHIP_AWARDS: LeadershipAwardItem[] =
   },
 
   {
-    image: "/images/awards/b4.png",
+    image: "/images/awards/b4.webp",
     title: "IFCA Star Awards 2025",
     by: "By: Indian Flexible Packaging and Folding Carton Association (IFCA)",
     description:
@@ -41,7 +41,7 @@ export const LEADERSHIP_AWARDS: LeadershipAwardItem[] =
       "UFlex earned the Top Employer certification for its outstanding HR practices, employee development initiatives, and inclusive workplace culture. The TEI recognition is awarded to organisations that meet rigorous global standards in people strategy, leadership, and talent experience.",
   },
   {
-    image: "/images/awards/b6.png",
+    image: "/images/awards/b6.webp",
     title: "ET Edge Top 100 CSOs – Mr. Jeevaraj Pillai",
     by: "By: ET Edge Global Sustainability Alliance",
     description:
@@ -49,21 +49,21 @@ export const LEADERSHIP_AWARDS: LeadershipAwardItem[] =
   },
 
   {
-    image: "/images/awards/b7.png",
+    image: "/images/awards/b7.webp",
     title: "SIES SOP Star Awards 2025",
     by: "By: SIES School of Packaging",
     description:
       "UFlex was honoured for outstanding packaging innovations that advance sustainability, functionality, and consumer convenience. Winning eight awards, including the prestigious President’s Sustainability Award, reflects UFlex’s commitment to environmentally responsible and high-performance packaging.",
   },
   {
-    image: "/images/awards/b8.png",
+    image: "/images/awards/b8.webp",
     title: "Most Preferred Workplaces 2024–25",
     by: "By: Team Marksmen & India Today Group",
     description:
       "UFlex received this recognition for fostering a resilient, future-ready workplace driven by innovation, employee well-being, and strong cultural values. The award honours brands that excel in leadership, employee experience, and organisational development.",
   },
   {
-    image: "/images/awards/b9.png",
+    image: "/images/awards/b9.webp",
     title: "Dream Employer of the Year – Multiple Categories",
     by: "By: World HRD Congress 2025",
     description:
@@ -71,21 +71,21 @@ export const LEADERSHIP_AWARDS: LeadershipAwardItem[] =
   },
 
   {
-    image: "/images/awards/b10.png",
+    image: "/images/awards/b10.webp",
     title: "North India Best Employer Brand Award 2024",
     by: "By: Employer Branding Institute / World HRD Congress",
     description:
       "UFlex received this award for building a strong employer brand through innovative HR practices, leadership development, and employee engagement. It recognises organisations that align culture, communication, and talent strategy to create sustained workplace excellence.",
   },
   {
-    image: "/images/awards/b11.png",
+    image: "/images/awards/b11.webp",
     title: "Sustainable Packaging Challenge Winner – PACK.NXT 2024",
     by: "By: PACK.NXT",
     description:
       "UFlex won this award for its next-generation sustainable packaging technologies designed to promote recyclability and reduce environmental impact. The recognition highlights leading innovations that support circularity and deliver practical, scalable sustainability solutions.",
   },
   {
-    image: "/images/awards/b12.png",
+    image: "/images/awards/b12.webp",
     title: "ET Sustainable Organization 2023",
     by: "By: ET Edge",
     description:
@@ -93,21 +93,21 @@ export const LEADERSHIP_AWARDS: LeadershipAwardItem[] =
   },
 
   {
-    image: "/images/awards/b13.png",
+    image: "/images/awards/b13.webp",
     title: "CII Industrial Innovation Award 2024 – Top 75 Innovators",
     by: "By: Confederation of Indian Industry (CII)",
     description:
       "UFlex was recognised as one of India’s Top 75 Most Innovative Companies for its technological advancements in packaging, recycling, and material science. The award evaluates innovation capability, product breakthroughs, and R&D impact across industries.",
   },
   {
-    image: "/images/awards/b14.png",
+    image: "/images/awards/b14.webp",
     title: "Times Now Sustainable Organization 2024",
     by: "By: Times Now",
     description:
       "UFlex was honoured for integrating sustainability into core operations, advancing recyclable packaging, and promoting responsible resource use. The award celebrates companies demonstrating meaningful progress toward environmental protection and sustainable business growth.",
   },
   {
-    image: "/images/awards/b15.png",
+    image: "/images/awards/b15.webp",
     title: "Innovation in Awareness – POSH Excellence Awards 2025",
     by: "By: National POSH Conclave & Excellence Awards",
     description:

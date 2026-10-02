@@ -721,7 +721,7 @@ export default function GetInTouch() {
                 className="relative h-72 md:h-auto md:min-h-[460px]"
               >
                 <Image
-                  src="/images/sus/cc.jpeg"
+                  src="/images/sus/cc.webp"
                   alt="Contact illustration"
                   fill
                   className="rounded-none object-cover"

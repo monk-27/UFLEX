@@ -64,7 +64,7 @@ export const MARQUEE_ITEMS = [
     title: "ET Now Best Organisations to Work 2025",
     by: "ET Now",
 
-    image: "/images/awards/s2.png",
+    image: "/images/awards/s2.webp",
   },
   // {
   //   id: 3,
@@ -72,14 +72,14 @@ export const MARQUEE_ITEMS = [
 
   //   by: "Indo-American Chamber of Commerce (IACC)",
 
-  //   image: "/images/awards/s3.png",
+  //   image: "/images/awards/s3.webp",
   // },
   {
     id: 4,
     title: "ET Edge Top 100 CSOs – Mr. Jeevaraj Pillai",
     by: "ET Edge Global Sustainability Alliance",
 
-    image: "/images/awards/s4.png",
+    image: "/images/awards/s4.webp",
   },
   // {
   //   id: 5,
@@ -93,28 +93,28 @@ export const MARQUEE_ITEMS = [
   //   title: "IFCA Star Awards 2025",
   //   by: "Indian Flexible Packaging and Folding Carton Association (IFCA)",
 
-  //   image: "/images/awards/s6.png",
+  //   image: "/images/awards/s6.webp",
   // },
   // {
   //   id: 7,
   //   title: "Innovation in Awareness – POSH Excellence Awards 2025",
   //   by: "National POSH Conclave & Excellence Awards",
 
-  //   image: "/images/awards/s7.png",
+  //   image: "/images/awards/s7.webp",
   // },
   {
     id: 8,
     title: "Times Now Sustainable Organization 2024",
     by: "Times Now",
 
-    image: "/images/awards/s8.png",
+    image: "/images/awards/s8.webp",
   },
   {
     id: 9,
     title: "CII  Award 2024 – Top 75 Innovators",
     by: "Confederation of Indian Industry (CII)",
 
-    image: "/images/awards/s9.png",
+    image: "/images/awards/s9.webp",
   },
 ];
 
@@ -126,7 +126,7 @@ export const business = {
     heading: "In The Spotlight",
     items: [
       {
-        image: "/images/awards/newspot.png",
+        image: "/images/awards/newspot.webp",
         title: "Business Leader of the Decade 2024 – Mr. Ashok Chaturvedi",
         by: "Indo-American Chamber of Commerce (IACC)",
         description:
@@ -141,7 +141,7 @@ export const business = {
 
       },
       {
-        image: "/images/awards/b7.png",
+        image: "/images/awards/b7.webp",
         title: "SIES SOP Star Awards 2025",
         by: "SIES School of Packaging",
         description:
@@ -208,7 +208,7 @@ const searchParams = useSearchParams();
       {/* <section className="bg-gradient-to-b from-white to-slate-50">
         <header className=" relative h-[360px] sm:h-[666.6px] w-auto ">
           <div className="relative h-[360px] w-auto sm:h-[666.6px] ">
-            <Image src="/images/mainhall.png" alt="hero" fill className="object-cover object-top" priority />
+            <Image src="/images/mainhall.webp" alt="hero" fill className="object-cover object-top" priority />
 
              </div>
 

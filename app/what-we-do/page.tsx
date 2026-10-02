@@ -201,7 +201,7 @@ export default function WhatWeDoPage() {
       title: "Aseptic Packaging",
       href: "/aseptic-packaging-business",
       desc: "Asepto is the Aseptic Liquid Packaging Brand from the House of UFlex Limited.",
-      img: "/images/new/aseptic.jpeg",
+      img: "/images/new/aseptic.webp",
     },
 
     {
@@ -226,7 +226,7 @@ export default function WhatWeDoPage() {
       title: "Printing Cylinders",
       href: "/printing-cylinder-business",
       desc: "UFlex Printing Cylinders Business has a State-of-the-art manufacturing facility for producing Rotogravure Cylinders, Flexo Plates & Sleeves.",
-      img: "/images/heroprinting.png",
+      img: "/images/heroprinting.webp",
     },
     {
       title: "Flexible Tubes",
@@ -238,18 +238,18 @@ export default function WhatWeDoPage() {
   ];
 
   // const policiesDocs: InvestorCard[] = [
-  //   { title: "Unpaid / Unclaimed Dividend", subtitle: "Check & claim.", image: "/images/policy1.png", href: "#" },
-  //   { title: "Transfer of shares to IEPF", subtitle: "Process & status.", image: "/images/policy2.png", href: "#" },
-  //   { title: "Registrar", subtitle: "RTA contact.", image: "/images/policy3.png", href: "#" },
-  //   { title: "Compliance Report", subtitle: "Statutory disclosures.", image: "/images/policy4.png", href: "#" },
-  //   { title: "Registrar", subtitle: "RTA contact.", image: "/images/policy3.png", href: "#" },
+  //   { title: "Unpaid / Unclaimed Dividend", subtitle: "Check & claim.", image: "/images/policy1.webp", href: "#" },
+  //   { title: "Transfer of shares to IEPF", subtitle: "Process & status.", image: "/images/policy2.webp", href: "#" },
+  //   { title: "Registrar", subtitle: "RTA contact.", image: "/images/policy3.webp", href: "#" },
+  //   { title: "Compliance Report", subtitle: "Statutory disclosures.", image: "/images/policy4.webp", href: "#" },
+  //   { title: "Registrar", subtitle: "RTA contact.", image: "/images/policy3.webp", href: "#" },
 
   // ];
   const packagingData = [
     {
       "id": "flexible-packaging",
       title: "What We Do",
-      image: "/images/what.png",
+      image: "/images/what.webp",
       "imageAlt": "What we do",
 
       paragraphs: [
@@ -348,7 +348,7 @@ export default function WhatWeDoPage() {
             />
 
             {/* <Image
-              src="/images/what.png"
+              src="/images/what.webp"
               alt="UFlex capabilities across the value chain"
               fill
               className="object-fill rounded-sm"

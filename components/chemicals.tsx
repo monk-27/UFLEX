@@ -44,7 +44,7 @@ const SliderItems: SliderItem[] = [
         desc: "A range of adhesives that ensure strong bonding, efficient processing, and compliance with global food safety and sustainability standards.",
     },
     {
-        img: "/images/new/cc.png",
+        img: "/images/new/cc.webp",
         title: "Coatings",
         dynamiclink: "/chemicals-business/chemicals-our-offering?cat=Coatings",
 
@@ -52,7 +52,7 @@ const SliderItems: SliderItem[] = [
     },
 
     {
-        img: "/images/new/h1.png",
+        img: "/images/new/h1.webp",
         title: "Specialty Chemicals ",
         dynamiclink: "/chemicals-business/chemicals-our-offering?cat=Specialty Chemicals",
 
@@ -67,7 +67,7 @@ const packagingData = [
     {
         "id": "holography",
         title: "Chemicals ",
-        image: "/images/herochem.png",
+        image: "/images/herochem.webp",
         "imageAlt": "UFlex Aseptic Packaging Solutions",
         paragraphs: [
             `Our various inks, adhesives, and coatings are meticulously crafted to enhance brand vibrancy, durability, and functionality while ensuring environmental protection. Discover the essence of unparalleled commitment at our innovative hub, where excellence seamlessly intertwines with sustainability. `,
@@ -87,7 +87,7 @@ export const businesses: any[] = [
         // subheading: "Chemicals",
         hero: {
             heading: "Our Businesses",
-            image: "/images/herochem.png",
+            image: "/images/herochem.webp",
             // body:
             //     "Our various inks, adhesives, and coatings are meticulously crafted to enhance brand vibrancy, durability, and functionality while ensuring environmental protection. Discover the essence of unparalleled commitment at our innovative hub, where excellence seamlessly intertwines with sustainability. Our solutions are meticulously crafted to cater to the distinctive requirements of the brands and businesses looking for innovative and sustainable packaging solutions.",
         },
@@ -98,21 +98,21 @@ export const businesses: any[] = [
                 {
                     id: "printing-inks",
                     title: "Printing Inks",
-                    image: "/images/printinginks.png",
+                    image: "/images/printinginks.webp",
                     description:
                         "High-performance polyester films for diverse packaging applications.",
                 },
                 {
                     id: "coatings",
                     title: "Coatings",
-                    image: "/images/coatings.png",
+                    image: "/images/coatings.webp",
                     description:
                         "Biaxially oriented polypropylene films for flexible packaging.",
                 },
                 {
                     id: "specialty-chemicals",
                     title: "Specialty Chemicals",
-                    image: "/images/speciality.png",
+                    image: "/images/speciality.webp",
                     description:
                         "Cast polypropylene films for specialty and general packaging.",
                 },
@@ -147,7 +147,7 @@ export const businesses: any[] = [
                     title: "UV Digi Gloss Coating – Flexcure high slip digi coating",
                     description:
                         "It is an advanced solution engineered specifically for LED digitally printed PVC sheets, widely used in decor and signage applications. This advanced coating offers excellent adhesion on digitally printed surfaces, ensuring a long-lasting finish. Its high-gloss finish adds a premium visual appeal, while its superior scratch and abrasion resistance protects the print surface from everyday wear and tear. Additionally, the coating cures rapidly under UV lamps, significantly enhancing the durability and lifespan of printed materials.",
-                    image: "/images/new/pat.png",
+                    image: "/images/new/pat.webp",
                 },
                 {
                     id: "flexcure-hf-gr-gloss-coating",
@@ -155,7 +155,7 @@ export const businesses: any[] = [
                         "High Flexibility UV Coating for Flexible Packaging – FLEXCURE HF GR GLOSS COATING",
                     description:
                         "It is an advanced UV coating solution developed specifically for flexible packaging. Ideal for use on flexible laminates, pouches, and specialty packaging, this coating offers exceptional flexibility and fold-crack resistance, making it suitable for dynamic packaging formats.",
-                    image: "/images/new/high.jpeg",
+                    image: "/images/new/high.webp",
                 },
                 {
                     id: "water-based-adhesives",
@@ -163,7 +163,7 @@ export const businesses: any[] = [
                         "Water Based Dry Lamination Adhesives – FLEXBOND FB DL–502 and FLEXBOND FB DL– 504",
                     description:
                         "These are water-based synthetic copolymer emulsion adhesives developed for high-speed dry lamination applications in offset packaging. These ready-to-use, 100% aqueous adhesives are ideal for laminating a wide range of films—including clear BOPP, matt BOPP, METPET, clear PET, and PVC—to printed or unprinted paper and duplex board substrates.",
-                    image: "/images/new/water.png",
+                    image: "/images/new/water.webp",
                 },
                 {
                     id: "thermoplastic-polyurethane-resin",
@@ -178,7 +178,7 @@ export const businesses: any[] = [
 //                     description: `• Water based ink application areas have been extended by developing new inks for corrugation, Paper Cups, Paper bags, Tissue paper & Notebook printing. Brand owners like Subway, KFC, Adidas have approved of our inks
 // • 4S Non-Toluene Polyurethane ink has been rolled out successfully in the Domestic market
 // • In CI Flexo the new inks series developed for corona treated PET, breathable & non breathable PE printing`,
-//                     image: "/images/latestink.png",
+//                     image: "/images/latestink.webp",
 //                 },
             ],
         },
@@ -203,7 +203,7 @@ export const businesses: any[] = [
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
                 },
                 {
-                    photo: "/images/rajesh.png",
+                    photo: "/images/rajesh.webp",
                     name: "Mr. Rajesh Srivastava",
                     role:
                         "Executive Vice President, Sales and Marketing - Chemicals Business",
@@ -251,7 +251,7 @@ export const businesses: any[] = [
             title: "Awards & Accolades",
             description:
                 "Over the last several years, UFlex's Chemicals business has received various awards and certifications for its innovative and sustainable products and solutions, reflecting its strong commitment to responsible manufacturing, safety excellence, regulatory compliance, and continuous improvement in environmental and operational performance.",
-            image: "/images/awards.png",
+            image: "/images/awards.webp",
             linkLabel: "Know More",
             linkHref: "/hall-of-fame",
         },
@@ -348,7 +348,7 @@ const ChemicalsComp: React.FC<Props> = ({ business }) => {
                                 className="relative aspect-[16/10] w-full overflow-hidden "
                             >
                                 <Image
-                                    src="/images/herochem.png"
+                                    src="/images/herochem.webp"
                                     alt="UFlex capabilities across the value chain"
                                     fill
                                     className="object-cover rounded-sm"

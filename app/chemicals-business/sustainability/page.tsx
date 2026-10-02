@@ -8,42 +8,42 @@ import SustainabilityGrid from '@/components/buisness-sustainability'
 
 export const SUSTAINABILITY_GRID_DATA = [
   {
-    image: "/images/sus/c1.png",
+    image: "/images/sus/c1.webp",
     title: "Green Products UFlex Limited – Chemicals",
     by: "",
     description:
       "Business is committed to developing adhesives and inks that reduce environmental footprint across sourcing, manufacturing, and distribution. With eco-friendly products in the market, the company supports global packaging industries in adopting sustainable solutions. Green product sales increased by 30%, making up 32% of total sales in FY 2022–23.",
   },
   {
-    image: "/images/sus/c2.png",
+    image: "/images/sus/c2.webp",
     title: "Water Conservation",
     by: "",
     description:
       "Both manufacturing sites manage water consumption efficiently. The Noida unit was recognized by FICCI as the best in Chemicals and Petrochemicals for water efficiency in 2022.",
   },
   {
-    image: "/images/sus/c3.png",
+    image: "/images/sus/c3.webp",
     title: "Water Positive Status",
     by: "",
     description:
       "UFlex focuses on replenishing groundwater through rainwater harvesting, with a developed capacity of 87,000 KL per year. This includes rejuvenation of three ponds in Jewar tehsil, Gautam Budh Nagar district, Uttar Pradesh.",
   },
   {
-    image: "/images/sus/c4.png",
+    image: "/images/sus/c4.webp",
     title: "Zero Liquid Discharge (ZLD)",
     by: "",
     description:
       "The Noida unit is a zero discharge site. Wastewater from industrial and domestic use is treated via ETP and STP, then recycled through a ZLD plant. Recycled water accounts for 25% of total site consumption and is reused in utilities.",
   },
   {
-    image: "/images/sus/c5.png",
+    image: "/images/sus/c5.webp",
     title: "Reduction of Specific Waste Generation",
     by: "",
     description:
       "UFlex optimizes processes to minimize hazardous and non-hazardous waste. Waste is disposed of in eco-friendly ways, promoting circular economy through authorized reuse, reprocessing, and recycling. Achieved a 26% reduction in specific waste over five years.",
   },
   {
-    image: "/images/sus/c6.png",
+    image: "/images/sus/c6.webp",
     title: "Energy Conservation",
     by: "",
     description:
@@ -58,7 +58,7 @@ const page = () => {
             <div className='bg-white'>
                 <section className="relative w-full h-[260px] sm:h-[549px]  overflow-hidden">
                     <Image
-                        src="/images/sus/sc.png"
+                        src="/images/sus/sc.webp"
                         alt="Investors Relations"
                         fill
                         className="object-cover w-full h-full"

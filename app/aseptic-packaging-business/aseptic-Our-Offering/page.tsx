@@ -18,7 +18,7 @@ export default function ProductsPage() {
     "aseptic-cartons": {
       key: "aseptic-cartons",
       title: "Aseptic Cartons",
-      heroImageUrl: "/images/aseptic/asepproduct.png",
+      heroImageUrl: "/images/aseptic/asepproduct.webp",
       brandTag: "ASEPTO",
       overview: `Asepto innovatively incorporates the 3P's of Packaging - PRESERVE, PROTECT and PROMOTE. Our aseptic liquid packaging cartons encompass six layers of protection that keeps the freshness preserved in varieties of beverages, be it dairy and dairy-based beverages, nectar-based beverages, or beverages from the distillery industry. We augment your product positioning through innovative design aesthetics. Our state-of-the-art converting process and manufacturing facilities help us materialize our thoughts into reality. They are advanced, automated, and human-touch-free.`,
 
@@ -31,7 +31,7 @@ export default function ProductsPage() {
     "a-sip": {
       key: "a-sip",
       title: "A SIP",
-      heroImageUrl: "/images/aseptic/asepproduct.png", // your screenshot hero
+      heroImageUrl: "/images/aseptic/asepproduct.webp", // your screenshot hero
       brandTag: "A SIP",
       overview: `A sip is an upshot of UFlex Asepto’s core philosophy – Nature First. Asip, the u-shaped portion-pack paper straw from the house of UFlex, is the first ‘Made-in-India’ U-shaped paper straw. Asip u-shaped paper straw is the natural and the most viable alternative to plastic straws. It consists high-quality edible-grade paper that meets global standards. The adhesive used to keep the paper intact is ultra-premium and lab-tested – it helps the paper to maintain its shape. Asip u-shaped paper straw is environmentally friendly and in line with UFlex’s commitments towards nature.`,
 
@@ -69,7 +69,7 @@ export default function ProductsPage() {
     "asepto-pro": {
       key: "asepto-pro",
       title: "Asepto Pro",
-      heroImageUrl: "/images/aseptic/aseptopro.png", // your map background image
+      heroImageUrl: "/images/aseptic/aseptopro.webp", // your map background image
       brandTag: "Asepto Pro",
       overview: "A minute of downtime can cause hours of losses to you. We will not let that happen. Our team of engineers spread across geographies look after your filling machines, their technical overhauling, spare parts assistance, and the technical training to the on-ground team for enhanced operations.Asepto Pro provides services to a complete range of filling machines across brands.",
       quickLinks: [
@@ -81,7 +81,7 @@ export default function ProductsPage() {
     "asepto-design": {
       key: "asepto-design",
       title: "Asepto Design",
-      heroImageUrl: "/images/aseptic/asepticdesign.png", // your hero with fruits & carton
+      heroImageUrl: "/images/aseptic/asepticdesign.webp", // your hero with fruits & carton
       brandTag: "Asepto Design",
       overview: "Asepto Designs is the creative powerhouse within Asepto...",
       quickLinks: [
@@ -170,7 +170,7 @@ const enhancedCategories = categories.map((cat) => ({
           <section className="relative w-full h-[580px] sm:h-[451px] overflow-hidden">
 
             <Image
-              src="/images/3.png"
+              src="/images/3.webp"
               alt="Investors Relations"
               fill
               className="object-cover w-full h-full"
@@ -257,7 +257,7 @@ const enhancedCategories = categories.map((cat) => ({
                 {/* Default Overview - exact first screenshot */}
                 <main className="lg:col-span-3 space-y-10">
                   {/* <div className="relative h-[388px] overflow-hidden bg-[#8BB2C1]">
-                    <Image src="/images/aseptic/asepproduct.png" alt="Aseptic Cartons" fill className="object-cover" priority />
+                    <Image src="/images/aseptic/asepproduct.webp" alt="Aseptic Cartons" fill className="object-cover" priority />
                   </div> */}
 
                   <div className="bg-white ">
@@ -277,7 +277,7 @@ The second plant in Sokhna, Egypt, is about to be commissioned. Once operational
  </p>
                     <div className="mb-10">
                       <div className="relative h-[452px]  overflow-hidden bg-gray-50">
-                        <Image src="/images/aseptic/world.png" alt="Our Presence" fill className="object-cover" />
+                        <Image src="/images/aseptic/world.webp" alt="Our Presence" fill className="object-cover" />
                       </div>
                       
                     </div>
@@ -308,7 +308,7 @@ The second plant in Sokhna, Egypt, is about to be commissioned. Once operational
         <section className="relative w-full h-[580px] sm:h-[451px] overflow-hidden">
 
           <Image
-            src="/images/3.png"
+            src="/images/3.webp"
             alt="Investors Relations"
             fill
             className="object-cover w-full h-full"

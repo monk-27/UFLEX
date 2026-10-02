@@ -187,7 +187,7 @@ export default function ProductsPage() {
           <section className="relative w-full h-[380px] sm:h-[451px] overflow-hidden">
 
             <Image
-              src="/images/heroprinting.png"
+              src="/images/heroprinting.webp"
               alt="Investors Relations"
               fill
               className="object-cover w-full h-full"

@@ -11,7 +11,7 @@ const page = () => {
             <div className='bg-white'>
                 <section className="relative w-full h-[260px] sm:h-[549px] overflow-hidden">
                     <Image
-                        src="/images/sus/hs.png"
+                        src="/images/sus/hs.webp"
                         alt="Investors Relations"
                         fill
                         className="object-cover w-full h-full"
@@ -61,7 +61,7 @@ const page = () => {
             <div className="grid grid-rows-2 ">
               <div className="relative h-[327px] rounded-t-sm overflow-hidden">
                 <Image
-                  src="/images/sus/hs1.png"
+                  src="/images/sus/hs1.webp"
                   alt=""
                   fill
                   className="object-cover"
@@ -70,7 +70,7 @@ const page = () => {
 
               <div className="relative h-[327px]  overflow-hidden">
                 <Image
-                  src="/images/sus/hs2.png"
+                  src="/images/sus/hs2.webp"
                   alt=""
                   fill
                   className="object-cover"
@@ -81,7 +81,7 @@ const page = () => {
             {/* Right tall image */}
             <div className="relative h-[665px]  rounded-b-sm overflow-hidden">
               <Image
-                src="/images/sus/hs3.png"
+                src="/images/sus/hs3.webp"
                 alt=""
                 fill
                 className="object-cover"
@@ -92,15 +92,15 @@ const page = () => {
           {/* Mobile */}
           <div className="grid md:hidden gap-4 mt-6">
             <div className="relative h-[220px] rounded-lg overflow-hidden">
-              <Image src="/images/sus/hs1.png" alt="" fill className="object-cover" />
+              <Image src="/images/sus/hs1.webp" alt="" fill className="object-cover" />
             </div>
 
             <div className="relative h-[220px] rounded-lg overflow-hidden">
-              <Image src="/images/sus/hs2.png" alt="" fill className="object-cover" />
+              <Image src="/images/sus/hs2.webp" alt="" fill className="object-cover" />
             </div>
 
             <div className="relative h-[260px] rounded-lg overflow-hidden">
-              <Image src="/images/sus/hs3.png" alt="" fill className="object-cover" />
+              <Image src="/images/sus/hs3.webp" alt="" fill className="object-cover" />
             </div>
           </div>
 

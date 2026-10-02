@@ -457,7 +457,7 @@ export default function ProductCategorySection({
 
                                     <div className="relative h-[380px] bg-gray-100 border-2 border-[#173366]">
                                         <Image
-                                            src="/images/new/zip.jpeg"
+                                            src="/images/new/zip.webp"
                                             alt={title}
                                             fill
                                             className="object-cover"

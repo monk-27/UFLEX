@@ -593,7 +593,7 @@ export default function EnquiryForm() {
         {/* Hero Section */}
         <section className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[450px] overflow-hidden">
           <Image
-            src="/images/hall/quote.png"
+            src="/images/hall/quote.webp"
             alt="Get a Quote"
             fill
             className="object-cover w-full h-full"

@@ -22,13 +22,13 @@ import { title } from 'process'
 
 const SliderItems: SliderItem[] = [
     {
-        img: "/images/new/e1.png",
+        img: "/images/new/e1.webp",
         dynamiclink: "/engineering-business/engineering-Our-Offering",
         title: "Packaging Machines",
         desc: "A range of packaging machines and special purpose machines for wrapping of products of any shape and size and with specialised requirements.",
     },
     {
-        img: "/images/new/e2.png",
+        img: "/images/new/e2.webp",
         dynamiclink: "/engineering-business/engineering-Our-Offering",
 
         title: "Converting Machines",
@@ -103,7 +103,7 @@ export const businesses: any[] = [
         label: "Engineering",
         hero: {
             heading: "Engineering",
-            image: "/images/heroengg.png",
+            image: "/images/heroengg.webp",
             body:
                 "A leading manufacturer specializing in top-tier packaging, printing, and allied machines, catering to diverse needs across industries. Established in 1985, UFlex Engineering is a leading manufacturer specializing in top-tier packaging, printing, and allied machines. Our commitment to delivering high-performance machines and tailored solutions has propelled us to the forefront of the industry. We offer a comprehensive range of products and cater to diverse needs across various sectors.",
         },
@@ -113,13 +113,13 @@ export const businesses: any[] = [
                 {
                     id: "packaging-machines",
                     title: "Packaging Machines",
-                    image: "/images/packagingmacines.png",
+                    image: "/images/packagingmacines.webp",
                     description: "",
                 },
                 {
                     id: "converting-machines",
                     title: "Converting Machines",
-                    image: "/images/converting.png",
+                    image: "/images/converting.webp",
                     description: "",
                 },
             ],
@@ -150,19 +150,19 @@ export const businesses: any[] = [
                     title: "Accu Slit-3300",
                     description:
                         "UFlex developed Accu Slit-3300, the new slitter of width 3300, for slitting Metalized BOPP and other substrates. This is secondary slitters for packaging film manufacturing Industry with a working width of models from 2500 mm to 3300 mm. This slitter can slit BOPET, BOPP, CPP and Plain film and can run at a maximum speed of 800 mpm.",
-                    image: "/images/accu.png",
+                    image: "/images/accu.webp",
                 },
                 {
                     id: "rotoflex",
                     title: "Rotoflex ELS Standard Special -1300 Printing Machine",
                     description:
                         "Rotoflex ELS Standard Special-1300 is engineered for reliable, high-quality printing on flexible packaging materials, with a maximum web width of 1320 mm. It features a robust main drive system for smooth and stable performance, along with precision side lay assembly for accurate web alignment. Equipped with a shafted printing cylinder, doctor blade assembly, and individual ink trolley system, it ensures consistent print quality. Advanced motorized controls enable precise registration, uniform ink transfer, and faster job changeovers.",
-                    image: "/images/new/els.png",
+                    image: "/images/new/els.webp",
                 },
                 {
                     id: "solvent-less-lamination-machines",
                     title: "Solvent-less Lamination Machines:",
-                    image: "/images/new/solventless.png",
+                    image: "/images/new/solventless.webp",
                     description: "Solventless Super-550 is a high-speed, eco-friendly laminating machine with a maximum web width of 1320 mm, designed for flexible packaging applications. It features independent motors at both unwind and rewind sections for precise web tension control, smooth material handling, and stable operation across diverse substrates. Equipped with sleeve-type transport rollers, it ensures uniform web support and high running accuracy. An integrated sleeve cleaning system removes adhesive residue, maintaining consistent lamination quality and reducing downtime.",
 
                 },
@@ -179,7 +179,7 @@ export const businesses: any[] = [
                 //                         `UFlex's Engineering Business meets market demand with coating machines covering up to 2500mm web widths. Recent offerings include a 1650mm double-headed model applying various coatings with methods like gravure and kiss coating. 
                 //                         \n Ceramic IR heaters ensure smooth coating, while safety measures like the LEL system are integrated. Additional features like floor lifting unwind, sleeve-type impression rollers, and chamber doctor blades enhance versatility. With corona treaters, these machines offer coatings from 0.2 to 6 GSM, adding value to substrates.
                 //  `,
-                //                     image: "/images/double.png",
+                //                     image: "/images/double.webp",
                 //                 },
                 // {
                 //     id: "pfs-4u",
@@ -187,12 +187,12 @@ export const businesses: any[] = [
                 //     description:
                 //         `UFlex launched the LPFS-4U (4 UP Linear, Pick, Fill, and Seal) machine in Q3, 2022. This machine, driven entirely by servos, ensures speed, performance, safety, hygiene, and environmental sustainability for brands. 
                 //         \nWith an operator-friendly interface and efficient filling system, it accommodates various applications, running up to 20 PPM per track with four channels. `,
-                //     image: "/images/new/lpfs.png",
+                //     image: "/images/new/lpfs.webp",
                 // },
                 {
                     id: "relam-50",
                     title: "ReLAM 50:",
-                    image: "/images/new/relam.png",
+                    image: "/images/new/relam.webp",
 
                     description: `ReLAM 50 is a decentralized recycling system designed to process up to 50 kg of mixed flexible waste per hour, offering an efficient solution for hard-to-recycle materials. Ideal for start-ups, rural enterprises, local recycling units, waste management companies, NGOs, and municipalities, the system converts mixed flexible waste into recycled granules or panels. These outputs can be reused to manufacture household plastic products, plastic lumber, tiles, and other non-critical applications. Compact and versatile, ReLAM 50 enables grassroots participation in the circular economy while advancing sustainable waste management practices`,
                 },
@@ -211,7 +211,7 @@ export const businesses: any[] = [
                 //                         `The newly introduced machinery boasts an array of features designed to optimize operation efficiency. Its user-friendly interface ensures easy operation, while its low maintenance requirements minimize downtime. 
                 //                         \nDespite its compact design and small footprint, it integrates seven servos, enabling high-speed performance. A specialized forming tool ensures uniform and superior forming, while the engineered filling system with positive cut-off guarantees precision. Additionally, a servo-controlled continuous sealing mechanism maximizes sealing time, enhancing sealing quality and strength. The servo-pulling method ensures accurate and uniform eye-mark-to-eye-mark pulling. Notably, the machine facilitates seamless roll changes without halting operations. Optional features include an auto splicing system, online coding system, and outfeed conveyor, further enhancing productivity. Customer color preferences are accommodated, and pouch-making capacity varies depending on film material and thickness. The equipment improvements may lead to changes in appearance and optional features are sold separately from standard equipment.
                 // `,
-                //                     image: "/images/flexiuflex.png",
+                //                     image: "/images/flexiuflex.webp",
                 //                 },
             ],
         },
@@ -227,14 +227,14 @@ export const businesses: any[] = [
             title: "Leadership",
             details: [
                 {
-                    photo: "/images/ravi.png",
+                    photo: "/images/ravi.webp",
                     name: "Mr. Ravi Sharma",
                     role: "Joint President - Engineering and Solutions Delivery, Engineering Business",
                     summary: `Mr. Ravi Sharma, joining in 1992, brings over 12 years of manufacturing experience, including tenure with notable multinationals like Allied Signals, Molins India Limited, and a subsidiary of Philips Carbon Black Limited (RPG Group). Holding a mechanical engineering degree from Thapar Institute of Engineering & Technology, Patiala, Ravi has attended numerous management and leadership seminars globally. His expertise spans plant management, R&D, innovation, supply chain, and customer relations. Ravi's leadership has significantly enhanced the company's production of reliable, high-quality packaging machines. Guiding a team of skilled technocrats, his innovative initiatives have bolstered sales. His experience, dedication, and motivational skills inspire the organization's workforce.`,
                     cta: { label: "Read More", href: "/leadership/ravi-sharma" },
                 },
                 {
-                    photo: "/images/akash.png",
+                    photo: "/images/akash.webp",
                     name: "Mr. Akash Khandelwal",
                     role: "Executive Vice President – Operations, Engineering Business",
                     summary: `With nearly three decades of experience across manufacturing operations, strategy, project management, and quality. He drives operational excellence and business growth at engineering business. He brings strong expertise in manufacturing, product development, and business expansion, with a proven ability to enhance processes, improve efficiency, and boost productivity.`,
@@ -254,7 +254,7 @@ export const businesses: any[] = [
         awards: {
             title: "Awards & Accolades",
             description: "Over the last several years, UFlex’s Flexible Packaging business has received various awards and certifications for its innovative and sustainable packaging solutions.",
-            image: "/images/awards.png",
+            image: "/images/awards.webp",
             linkLabel: "Know More",
             linkHref: "/hall-of-fame",
         },

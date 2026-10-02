@@ -20,7 +20,7 @@ const directors: Director[] = [
   {
     name: "Mr. Ashok Chaturvedi",
     position: "Founder, Chairman and Managing Director",
-    img:"/images/hall/Ashok.png",
+    img:"/images/hall/Ashok.webp",
     bio:
       "Mr. Ashok Chaturvedi is a first-generation entrepreneur and the founder of the UFlex Group. His dynamic leadership, long-term vision, and value-driven business strategy have established UFlex Limited as the largest flexible packaging and solutions company in India and a recognized global player in polymer sciences. He is considered the 'Father of the flexible packaging industry in India' and has been bestowed with several accolades to his credit.",
   },
@@ -29,7 +29,7 @@ const directors: Director[] = [
     position: "Whole Time Director, President - Flexible Packaging and New Product Development and Director– Sustainability",
     bio:
       "Mr. Jeevaraj Pillai brings over 35 years of experience in packaging and packaging technology, with expertise in printing cylinders, packaging films, and advanced flexible packaging material conversion. As Director-Sustainability, he leads the development and implementation of the company's ESG strategy, along with the development of sustainable products and solutions. He has been serving on the board of UFlex Limited as a whole-time director since November 14, 2023. His extensive background in the industry is complemented by his qualifications in mechanical engineering and an MBA.",
-    img: "/images/new/pillai.png",
+    img: "/images/new/pillai.webp",
   },
   {
     name: "Mr. Paresh Nath Sharma",

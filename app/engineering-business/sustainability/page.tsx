@@ -8,28 +8,28 @@ import SustainabilityGrid from '@/components/buisness-sustainability'
 
 export const ENGINEERING_SUSTAINABILITY_DATA = [
   {
-    image: "/images/sus/e1.png",
+    image: "/images/sus/e1.webp",
     title: "Effluent Treatment for Reuse",
     by: "",
     description:
       "Installed Effluent Treatment Plants treat effluent to reuse water for gardening.",
   },
   {
-    image: "/images/sus/e2.png",
+    image: "/images/sus/e2.webp",
     title: "Hazardous Waste Disposal",
     by: "",
     description:
       "Membership with Bharat Oil and Waste Management Limited provides Treatment, Storage, and Disposal Facilities (TSDFs) for hazardous waste.",
   },
   {
-    image: "/images/sus/e3.png",
+    image: "/images/sus/e3.webp",
     title: "Sludge Management",
     by: "",
     description:
       "ETP sludge is managed by packing dried sludge in high-quality polythene bags, stored onsite.",
   },
   {
-    image: "/images/sus/e4.png",
+    image: "/images/sus/e4.webp",
     title: "Pollution Control Measures",
     by: "",
     description:
@@ -45,7 +45,7 @@ const page = () => {
             <div className='bg-white'>
                 <section className="relative w-full h-[260px] sm:h-[549px]  overflow-hidden">
                     <Image
-                        src="/images/sus/es.png"
+                        src="/images/sus/es.webp"
                         alt="Investors Relations"
                         fill
                         className="object-cover w-full h-full"

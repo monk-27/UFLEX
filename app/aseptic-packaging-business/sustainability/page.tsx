@@ -11,7 +11,7 @@ const page = () => {
             <div className='bg-white'>
                 <section className="relative w-full h-[260px] sm:h-[549px] overflow-hidden">
                     <Image
-                        src="/images/sus/as.png"
+                        src="/images/sus/as.webp"
                         alt="Investors Relations"
                         fill
                         className="object-cover w-full h-full"

@@ -53,7 +53,7 @@ const sectionRef = useRef<HTMLDivElement>(null);
         hologram: {
             key: "hologram",
             title: "HOLOGRAM",
-            heroImageUrl: "/images/holography/h7.png", // replace with actual hero
+            heroImageUrl: "/images/holography/h7.webp", // replace with actual hero
             brandTag: "HOLOGRAM",
             overview: `UFLEX offers best-in-class holograms that are available with 2D/3D, Dot Matrix & High-resolution Kinemax technology. Our range is reckoned for its vibrant color combination, print clarity and uncompromised quality. Further, these are offered in standard and customized shapes to the clients at most competitive price coordinates.`,
 
@@ -109,7 +109,7 @@ const sectionRef = useRef<HTMLDivElement>(null);
         "holographic-film": {
             key: "holographic-film",
             title: "HOLOGRAPHIC FILM (Wide Web Films)",
-            heroImageUrl: "/images/holography/h4.png", // your hero
+            heroImageUrl: "/images/holography/h4.webp", // your hero
             brandTag: "HOLOGRAPHIC FILM",
             categories: [
   { name: "Hologram",                              productKey: "hologram" },
@@ -123,7 +123,7 @@ const sectionRef = useRef<HTMLDivElement>(null);
         "textile": {
             key: "textile",
             title: "TEXTILE VALUE ADDITION PRODUCT",
-            heroImageUrl: "/images/holography/h3.png", // add your hero
+            heroImageUrl: "/images/holography/h3.webp", // add your hero
             brandTag: "TEXTILE VALUE ADDITION",
             categories: [
   { name: "Hologram",                              productKey: "hologram" },
@@ -137,7 +137,7 @@ const sectionRef = useRef<HTMLDivElement>(null);
         "hot-stamping": {
             key: "hot-stamping",
             title: "Hot Stamping Foil",
-            heroImageUrl: "/images/holography/h6.png", // add your hero image
+            heroImageUrl: "/images/holography/h6.webp", // add your hero image
             brandTag: "HOT STAMPING FOIL",
            categories: [
   { name: "Hologram",                              productKey: "hologram" },
@@ -151,7 +151,7 @@ const sectionRef = useRef<HTMLDivElement>(null);
         "metalized-paper": {
             key: "metalized-paper",
             title: "HOLOGRAPHIC METALIZED PAPER & BOARD TRANSFER",
-            heroImageUrl: "/images/holography/h5.png", // add your hero image
+            heroImageUrl: "/images/holography/h5.webp", // add your hero image
             brandTag: "METALIZED PAPER & BOARD TRANSFER",
             categories: [
   { name: "Hologram",                              productKey: "hologram" },
@@ -165,7 +165,7 @@ const sectionRef = useRef<HTMLDivElement>(null);
         "labeling": {
             key: "labeling",
             title: "Labeling Solution",
-            heroImageUrl: "/images/holography/h1.png", // add your hero image
+            heroImageUrl: "/images/holography/h1.webp", // add your hero image
             brandTag: "LABELING SOLUTION",
             categories: [
   { name: "Hologram",                              productKey: "hologram" },
@@ -240,7 +240,7 @@ const sectionRef = useRef<HTMLDivElement>(null);
                         <section className="relative w-full h-[580px] sm:h-[451px] overflow-hidden">
 
                             <Image
-                                src="/images/holography/hall.png"
+                                src="/images/holography/hall.webp"
                                 alt="Investors Relations"
                                 fill
                                 className="object-cover w-full h-full"

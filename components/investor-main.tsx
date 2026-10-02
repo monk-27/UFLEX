@@ -8,22 +8,22 @@ import { ReadMoreDialog } from "./expandabletext";
 const SLIDES = [
   // {
   //   title: "UFlex to Showcase a Comprehensive Range of Pet Food  Packaging Solutions at Pet Fair South East Asia 2025",
-  //   image: "/images/press/dog.png",
+  //   image: "/images/press/dog.webp",
   // },
   // {
   //   title: "UFlex’s FlexiTubes to Showcase Advanced Tube Packaging Solutions  for the Beauty Industry at Cosmoprof India 2025",
-  //   image: "/images/press/flexitube.png",
+  //   image: "/images/press/flexitube.webp",
   // },
   {
     title: "UFlex Introduces FSSAI compliant Single-Pellet Solution for Food Packaging - Enables Food and Beverage Brands to Meet EPR Compliance",
-    image: "/images/press/man.png",
+    image: "/images/press/man.webp",
   },
 ];
 
 const packagingData = [
   {
     title: 'Investors Relations',
-    image: '/images/investors/hero.png',
+    image: '/images/investors/hero.webp',
     paragraphs: [
       `At UFlex, we are focused on delivering sustainable, responsible, and profitable growth driven by innovation, operational efficiency, and prudent capital allocation. Supported by a strong balance sheet, we continue to strengthen our presence across packaging films, converting, and recycling, while expanding globally in a calibrated and future-focused manner.
 
@@ -96,7 +96,7 @@ export default function InvestorMainCarousel() {
             className="relative aspect-[16/10] w-full overflow-hidden  "
           >
             <Image
-              src="/images/investors/hero.png"
+              src="/images/investors/hero.webp"
               alt="UFlex capabilities across the value chain"
               fill
               className="object-fill rounded-sm"

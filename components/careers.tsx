@@ -16,10 +16,10 @@ type Item = {
 }
 
 const items: Item[] = [
-    { desc: "Every package we create has a story. It's about protecting the food families love, reducing waste, and building a more sustainable future.", title: "Making a difference", image: "/images/careers/c1.png" },
-    { desc: "We don't just follow trends, we set them. Our commitment to quality innovation means you will be surrounded by brilliant minds, pushing the boundaries of what's possible in packaging.", title: "Innovation", image: "/images/careers/c2.png" },
-    { title: "Growth", desc: "We believe in investing in our people. You'll have the opportunity to learn, grow, and lead, taking on challenging projects and shaping your career alongside industry experts.", image: "/images/careers/c3.png" },
-    { title: "Building relationships", desc: "At UFlex, we're more than just colleagues, we're a family. We foster a culture of collaboration, support, and mutual respect, creating a workplace where you can thrive.", image: "/images/careers/c4.png" },
+    { desc: "Every package we create has a story. It's about protecting the food families love, reducing waste, and building a more sustainable future.", title: "Making a difference", image: "/images/careers/c1.webp" },
+    { desc: "We don't just follow trends, we set them. Our commitment to quality innovation means you will be surrounded by brilliant minds, pushing the boundaries of what's possible in packaging.", title: "Innovation", image: "/images/careers/c2.webp" },
+    { title: "Growth", desc: "We believe in investing in our people. You'll have the opportunity to learn, grow, and lead, taking on challenging projects and shaping your career alongside industry experts.", image: "/images/careers/c3.webp" },
+    { title: "Building relationships", desc: "At UFlex, we're more than just colleagues, we're a family. We foster a culture of collaboration, support, and mutual respect, creating a workplace where you can thrive.", image: "/images/careers/c4.webp" },
 ]
 
 // Same palette you used for Board/Key Management
@@ -42,7 +42,7 @@ const Careers = () => {
             <section className="bg-gradient-to-b from-white to-slate-50 ">
                 <section className="relative w-full  overflow-hidden">
                     {/* <Image
-                        src="/images/careers/main.png"
+                        src="/images/careers/main.webp"
                         alt="Notices and Announcements"
                         fill
                         className="object-cover"

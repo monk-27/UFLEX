@@ -26,7 +26,7 @@
 //                 <section className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[450px] overflow-hidden">
 
 //                     <Image
-//                         src="/images/investors/archives.png"
+//                         src="/images/investors/archives.webp"
 //                         alt="Investors Relations"
 //                         fill
 //                         className="object-cover w-full h-full"
@@ -194,7 +194,7 @@ const ArchivePage = () => {
                 {/* HERO */}
                 <section className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[450px] overflow-hidden">
                     <Image
-                        src="/images/investors/archives.png"
+                        src="/images/investors/archives.webp"
                         alt="Investors Relations"
                         fill
                         className="object-cover w-full h-full"
@@ -293,7 +293,7 @@ const ArchivePage = () => {
                                 className="relative mt-[-10px] bg-cover bg-center text-white"
                                 style={{
                                     backgroundImage:
-                                        "url('/images/hall/stock.png')", // put your bg here
+                                        "url('/images/hall/stock.webp')", // put your bg here
                                 }}
                             >
                                 {/* dark overlay for readability */}

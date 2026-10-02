@@ -48,14 +48,14 @@ const AWARDS_DATA: Record<
             "UFlex was recognised as an ET Sustainable Organization for its commitment to circularity, responsible manufacturing, and long-term ESG goals. The award honours businesses that demonstrate measurable progress in environmental stewardship and sustainability-led transformation.",
         },
         {
-          image: "/images/awards/b2.png",
+          image: "/images/awards/b2.webp",
           title: "ET Now Best Organisations to Work 2025",
           by: "ET Now",
           description:
             "UFlex received this recognition for fostering a high-performance workplace built on innovation, employee engagement, and strong leadership. The award honours companies that excel in culture-building, talent development, and employee well-being.",
         },
         {
-          image: "/images/awards/b3.png",
+          image: "/images/awards/b3.webp",
           title: "Business Leader of the Decade 2024 – Mr. Ashok Chaturvedi",
           by: "Indo-American Chamber of Commerce (IACC)",
           description:
@@ -63,7 +63,7 @@ const AWARDS_DATA: Record<
         },
 
         {
-          image: "/images/awards/b4.png",
+          image: "/images/awards/b4.webp",
           title: "IFCA Star Awards 2025",
           by: "Indian Flexible Packaging and Folding Carton Association (IFCA)",
           description:
@@ -77,7 +77,7 @@ const AWARDS_DATA: Record<
             "UFlex earned the Top Employer certification for its outstanding HR practices, employee development initiatives, and inclusive workplace culture. The TEI recognition is awarded to organisations that meet rigorous global standards in people strategy, leadership, and talent experience.",
         },
         {
-          image: "/images/awards/b6.png",
+          image: "/images/awards/b6.webp",
           title: "ET Edge Top 100 CSOs – Mr. Jeevaraj Pillai",
           by: "ET Edge Global Sustainability Alliance",
           description:
@@ -85,21 +85,21 @@ const AWARDS_DATA: Record<
         },
 
         {
-          image: "/images/awards/b7.png",
+          image: "/images/awards/b7.webp",
           title: "SIES SOP Star Awards 2025",
           by: "SIES School of Packaging",
           description:
             "UFlex was honoured for outstanding packaging innovations that advance sustainability, functionality, and consumer convenience. Winning eight awards, including the prestigious President’s Sustainability Award, reflects UFlex’s commitment to environmentally responsible and high-performance packaging.",
         },
         {
-          image: "/images/awards/b8.png",
+          image: "/images/awards/b8.webp",
           title: "Most Preferred Workplaces 2024–25",
           by: "Team Marksmen & India Today Group",
           description:
             "UFlex received this recognition for fostering a resilient, future-ready workplace driven by innovation, employee well-being, and strong cultural values. The award honours brands that excel in leadership, employee experience, and organisational development.",
         },
         {
-          image: "/images/awards/b9.png",
+          image: "/images/awards/b9.webp",
           title: "Dream Employer of the Year – Multiple Categories",
           by: "World HRD Congress 2025",
           description:
@@ -107,21 +107,21 @@ const AWARDS_DATA: Record<
         },
 
         {
-          image: "/images/awards/b10.png",
+          image: "/images/awards/b10.webp",
           title: "North India Best Employer Brand Award 2024",
           by: "Employer Branding Institute / World HRD Congress",
           description:
             "UFlex received this award for building a strong employer brand through innovative HR practices, leadership development, and employee engagement. It recognises organisations that align culture, communication, and talent strategy to create sustained workplace excellence.",
         },
         {
-          image: "/images/awards/b11.png",
+          image: "/images/awards/b11.webp",
           title: "Sustainable Packaging Challenge Winner – PACK.NXT 2024",
           by: "PACK.NXT",
           description:
             "UFlex won this award for its next-generation sustainable packaging technologies designed to promote recyclability and reduce environmental impact. The recognition highlights leading innovations that support circularity and deliver practical, scalable sustainability solutions.",
         },
         {
-          image: "/images/awards/b12.png",
+          image: "/images/awards/b12.webp",
           title: "ET Sustainable Organization 2023",
           by: "ET Edge",
           description:
@@ -129,21 +129,21 @@ const AWARDS_DATA: Record<
         },
 
         {
-          image: "/images/awards/b13.png",
+          image: "/images/awards/b13.webp",
           title: "CII Industrial Innovation Award 2024 – Top 75 Innovators",
           by: "Confederation of Indian Industry (CII)",
           description:
             "UFlex was recognised as one of India’s Top 75 Most Innovative Companies for its technological advancements in packaging, recycling, and material science. The award evaluates innovation capability, product breakthroughs, and R&D impact across industries.",
         },
         {
-          image: "/images/awards/b14.png",
+          image: "/images/awards/b14.webp",
           title: "Times Now Sustainable Organization 2024",
           by: "Times Now",
           description:
             "UFlex was honoured for integrating sustainability into core operations, advancing recyclable packaging, and promoting responsible resource use. The award celebrates companies demonstrating meaningful progress toward environmental protection and sustainable business growth.",
         },
         {
-          image: "/images/awards/b15.png",
+          image: "/images/awards/b15.webp",
           title: "Innovation in Awareness – POSH Excellence Awards 2025",
           by: "National POSH Conclave & Excellence Awards",
           description:
@@ -167,21 +167,21 @@ const AWARDS_DATA: Record<
           by: "Indian Flexible Packaging and Folding Carton Association (IFCA)",
           description:
             "UFlex’s Packaging Films business won three Innovation awards at the IFCA Star Awards 2025 for advanced film solutions that enhance barrier performance, seal strength, and sustainability, reinforcing our high-performance packaging portfolio for global markets.",
-          image: "/images/awards/a12025.png",
+          image: "/images/awards/a12025.webp",
         },
         {
           title: "Gold Award for Environment Excellence – Petrochemical Sector",
           by: "GreenEnviro Environment Awards 2025",
           description:
             "UFlex was awarded for the environmental performance of its Panipat PET chips plant, reflecting leadership in sustainable operations, resource efficiency, and energy management. The GreenEnviro Awards celebrate organisations demonstrating measurable progress in environmental stewardship within the petrochemical industry.",
-          image: "/images/awards/a22025.png",
+          image: "/images/awards/a22025.webp",
         },
         {
           title: "Gold Award for F-ISB PET Film for Cold Blister Forming",
           by: "35th Dow Packaging Innovation Awards",
           description:
             "UFlex’s F-ISB PET film was honoured for its superior barrier performance and sustainable cold-blister capability, with the Dow Awards recognising it as a breakthrough innovation advancing high-barrier pharmaceutical packaging, environmental responsibility, and user convenience.",
-          image: "/images/awards/a32025.png",
+          image: "/images/awards/a32025.webp",
         },
       ],
 
@@ -191,21 +191,21 @@ const AWARDS_DATA: Record<
           by: "PTAK Warsaw Expo",
           description:
             "UFlex won the Best Debut Award for showcasing pioneering recycling technologies that support circularity in plastics. The recognition honours companies making significant contributions to recycling innovation and demonstrating solutions that enhance resource recovery and sustainable film production.",
-          image: "/images/awards/a42024.png",
+          image: "/images/awards/a42024.webp",
         },
         {
           title: "Four Awards at INDIASTAR 2024",
           by: "Indian Institute of Packaging (IIP)",
           description:
             "UFlex Packaging Films received four INDIASTAR Awards for excellence in packaging innovation, material performance, and design functionality. The awards recognise India’s most impactful packaging solutions that address sustainability, product protection, and consumer convenience across industries.",
-          image: "/images/awards/a52024.png",
+          image: "/images/awards/a52024.webp",
         },
         {
           title: "Best Design & Product Presentation – RosUpack 2024",
           by: "RosUpack",
           description:
             "UFlex was recognised for its impactful exhibition booth, showcasing advanced packaging technologies through visually striking design and product storytelling. The award celebrates brands that demonstrate excellence in creative presentation and industry engagement.",
-          image: "/images/awards/a62024.png",
+          image: "/images/awards/a62024.webp",
         },
       ],
 
@@ -215,14 +215,14 @@ const AWARDS_DATA: Record<
           by: "Flexible Packaging Achievement Awards (FPA) 2023",
           description:
             "UFlex’s Flex Films USA won for its ultra-high-barrier metallized polyester film designed as a sustainable alternative to aluminum foil. The FPA Awards highlight packaging innovations that improve performance, reduce material usage, and support recyclability.",
-          image: "/images/awards/a72023.png",
+          image: "/images/awards/a72023.webp",
         },
         {
           title: "ET Sustainable Organization 2023",
           by: "ET Edge",
           description:
             "Flex Films, UAE has been recognised as an Economic Times Sustainable Organisation 2023 for its ESG-driven efforts in sustainable development across the GCC region, reflecting its commitment to eco-friendly operations and responsible manufacturing.",
-          image: "/images/awards/a82023.png",
+          image: "/images/awards/a82023.webp",
         },
       ],
 
@@ -232,14 +232,14 @@ const AWARDS_DATA: Record<
           by: "Association of International Metallizers, Coaters & Laminators (AIMCAL)",
           description:
             "UFlex won for its F-ISB Cold Forming Metallized BOPET film, a sustainable replacement for aluminium in blister packaging. The award recognises major environmental advancements in coated and metallized materials that reduce waste, improve efficiency, and support recyclability.",
-          image: "/images/awards/a92021.png",
+          image: "/images/awards/a92021.webp",
         },
         {
           title: "WorldStar Awards 2021",
           by: "World Packaging Organisation (WPO)",
           description:
             "UFlex was honoured for three innovations: PCR-based Asclepius films, ultra-soft durable BOPET films, and high-barrier metallized films. The WorldStar Awards recognise the world’s most innovative packaging that advances sustainability, functionality, and material science.",
-          image: "/images/awards/a102021.png",
+          image: "/images/awards/a102021.webp",
         },
       ],
 
@@ -249,7 +249,7 @@ const AWARDS_DATA: Record<
           by: "Association of International Metallizers, Coaters & Laminators (AIMCAL)",
           description:
             "UFlex received awards for PCR-based high-barrier films, ultra-thin high-yield films, and advanced BOPET structures. These distinctions highlight innovations that deliver improved performance, reduced material consumption, and lower environmental impact.",
-          image: "/images/awards/a112019.png",
+          image: "/images/awards/a112019.webp",
         },
       ],
     },
@@ -264,14 +264,14 @@ const AWARDS_DATA: Record<
           by: "Indian Flexible Packaging and Folding Carton Association (IFCA)",
           description:
             "Our Flexible Packaging business has been recognised with five awards at the IFCA Star Awards 2025 for innovative, customer-focused, and sustainable solutions across products such as Aashirvaad Punjabi Amber Rice, Elephant Extra-Long Basmati Rice, DetoXFi Spout Pouch, 3D Handle Pouch, and Frozen Food Packaging.",
-          image: "/images/awards/fp12025.png",
+          image: "/images/awards/fp12025.webp",
         },
         {
           title: "Excellence in Global Supply Chain and Logistics Award",
           by: "CargoNXT Logistics SCM Summit",
           description:
             "UFlex received this award for demonstrating superior global supply chain capabilities, operational efficiency, and agility in packaging delivery. The recognition highlights organisations that build resilient logistics systems, optimise cost and speed, and ensure uninterrupted customer service across international markets.",
-          image: "/images/awards/fp22025.png",
+          image: "/images/awards/fp22025.webp",
         },
       ], 2022: [
         {
@@ -279,21 +279,21 @@ const AWARDS_DATA: Record<
           by: "Flexible Packaging Awards 2022",
           description:
             "UFlex won multiple awards for Kraftika, its sustainability-driven paper-based tube solution. The recognition honours breakthroughs in eco-friendly packaging that reduce plastic usage while maintaining product strength, barrier integrity, and design appeal.",
-          image: "/images/awards/fp32022.png",
+          image: "/images/awards/fp32022.webp",
         },
         {
           title: "Runner-up – Fully Recyclable Mono-Polymer Rice Bags",
           by: "The Economic Times Polymers Awards 2022",
           description:
             "UFlex was awarded for its mono-polymer PE/PE rice packaging designed for full recyclability. The award celebrates packaging that enables circularity, improves consumer convenience, and offers durable performance for large-quantity food applications.",
-          image: "/images/awards/fp42022.png",
+          image: "/images/awards/fp42022.webp",
         },
         {
           title: "TPCI MSME Export Excellence Award 2022",
           by: "Trade Promotion Council of India (TPCI)",
           description:
             "UFlex received this award for its significant contribution to global exports and leadership in flexible packaging innovation. It recognises MSMEs that demonstrate export competitiveness, technological advancement, and continuous product improvement.",
-          image: "/images/awards/fp52022.png",
+          image: "/images/awards/fp52022.webp",
         },
       ],
       2021: [
@@ -302,7 +302,7 @@ const AWARDS_DATA: Record<
           by: "AIMCAL Awards 2021",
           description:
             "UFlex won Product of the Year for its high-strength, reclosable block-bottom bags used for rice packaging. The award honours breakthrough materials that enhance shelf presence, consumer convenience, durability, and sustainable performance.",
-          image: "/images/awards/fp62021.png",
+          image: "/images/awards/fp62021.webp",
         },
       ],
       2020: [
@@ -311,21 +311,21 @@ const AWARDS_DATA: Record<
           by: "Economic Times Polymers Awards 2020",
           description:
             "UFlex won for its recyclable mono-material laminate pouch designed for healthcare packaging. The award recognises sustainable materials offering strong barrier performance and compatibility with circular recycling systems.",
-          image: "/images/awards/fp72020.png",
+          image: "/images/awards/fp72020.webp",
         },
         {
           title: "AIMCAL Awards 2020",
           by: "Association of International Metallizers, Coaters & Laminators (AIMCAL)",
           description:
             "UFlex earned recognition for recyclable PE/PE laminate structures, high-performance BOPET films, FlexiTubes for skincare products, and innovative tube packaging. These recognitions highlight UFlex’s commitment to sustainability, barrier performance, and consumer-focused design.",
-          image: "/images/awards/fp82020.png",
+          image: "/images/awards/fp82020.webp",
         },
         {
           title: "Flexible Packaging Achievement Award – Shelf Impact",
           by: "Flexible Packaging Association (FPA)",
           description:
             "UFlex Limited received the Shelf Impact Award for its 4D Bag with Handle, recognising excellence in packaging aesthetics, shelf appeal, and consumer engagement.",
-          image: "/images/awards/fp082025.png",
+          image: "/images/awards/fp082025.webp",
         },
       ],
       2019: [
@@ -334,7 +334,7 @@ const AWARDS_DATA: Record<
           by: "India Packaging Awards 2019",
           description:
             "UFlex was recognised for developing Alu-Alu Laminates that improve sustainability in solid dosage pharma packaging. The award honours innovations that reduce material waste while maintaining product safety, barrier protection, and regulatory compliance.",
-          image: "/images/awards/fp92019.png",
+          image: "/images/awards/fp92019.webp",
         },
       ],
       2018: [
@@ -343,14 +343,14 @@ const AWARDS_DATA: Record<
           by: "Packaging Europe",
           description:
             "UFlex won for its biodegradable, waterless flower packaging, which reduces water use and enhances product freshness. The award recognises innovations that meaningfully reduce environmental footprint in real-world applications.",
-          image: "/images/awards/fp102018.png",
+          image: "/images/awards/fp102018.webp",
         },
         {
           title: "Diamond Finalist – Dow Packaging Innovation Awards 2018",
           by: "Dow Packaging Innovation Awards",
           description:
             "UFlex was named a Diamond Finalist for its Waterless Internet Flower Packaging, an innovation enabling long-distance flower delivery without water. The award celebrates breakthrough solutions combining sustainability, functionality, and consumer benefit.",
-          image: "/images/awards/fp112018.png",
+          image: "/images/awards/fp112018.webp",
         },
       ]
 
@@ -391,13 +391,13 @@ const AWARDS_DATA: Record<
           title: "IFCA Star Awards 2025",
           by: "Indian Flexible Packaging and Folding Carton Association (IFCA)",
           description: "UFlex’s Holography Business won two IFCA Star Awards 2025 for its Hybrid Hologram and 3D Optical Label—innovations that elevate brand protection, authentication, and visual impact through advanced creativity and high-security holographic solutions.",
-          image: "/images/awards/h12025.png",
+          image: "/images/awards/h12025.webp",
         },
         {
           title: "Top 10 Pharma Brand Protection & Anti-Counterfeiting Solutions Company",
           by: "India Pharma Outlook",
           description: "UFlex was recognised as a leading provider of anti-counterfeiting and brand protection solutions for the pharmaceutical sector. The award honours organisations delivering advanced holography, security features, and authentication technologies that safeguard product integrity and help pharma brands fight counterfeiting across global supply chains.",
-          image: "/images/awards/h22025.png",
+          image: "/images/awards/h22025.webp",
         },
       ],
       2024: [],
@@ -429,7 +429,7 @@ const AWARDS_DATA: Record<
           title: "IFCA Star Awards 2025",
           by: "Indian Flexible Packaging and Folding Carton Association (IFCA)",
           description: "UFlex’s Printing Cylinders business won four Innovation awards at the IFCA Star Awards 2025 for advanced laser-engraved and laser-embossed cylinder solutions, including Ginkgo Leaves, Golden Python Glaze, and Pebble Stone patterns for premium leather applications.",
-          image: "/images/awards/p12025.png",
+          image: "/images/awards/p12025.webp",
         },
       ],
       2024: [],

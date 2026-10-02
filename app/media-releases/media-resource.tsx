@@ -22,7 +22,7 @@ const items = [
   {
     title: "February 2026",
     desc: "UFlex Launches Sustainable Water-Based Soft Touch Coating at PLASTINDIA 2026",
-    img: "/images/new/m2.png",
+    img: "/images/new/m2.webp",
     link: "https://beta.uflexltd.com/media/pdf/Press-Release/2026/PN_06Feb26_UFlex_PlastIndia_WB_Soft_Touch_Coating.pdf"
   },
   {

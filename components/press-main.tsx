@@ -8,22 +8,22 @@ import { ReadMoreDialog } from "./expandabletext";
 const SLIDES = [
   // {
   //   title: "UFlex to Showcase a Comprehensive Range of Pet Food  Packaging Solutions at Pet Fair South East Asia 2025",
-  //   image: "/images/press/dog.png",
+  //   image: "/images/press/dog.webp",
   // },
   // {
   //   title: "UFlex’s FlexiTubes to Showcase Advanced Tube Packaging Solutions  for the Beauty Industry at Cosmoprof India 2025",
-  //   image: "/images/press/flexitube.png",
+  //   image: "/images/press/flexitube.webp",
   // },
   {
     title: "UFlex Introduces FSSAI compliant Single-Pellet Solution for Food Packaging - Enables Food and Beverage Brands to Meet EPR Compliance",
-    image: "/images/press/man.png",
+    image: "/images/press/man.webp",
   },
 ];
 
   const packagingData = [
     {
       title: 'Press Room',
-      image: '/images/press/man.png',
+      image: '/images/press/man.webp',
       paragraphs: [
         `Bringing updates on business, innovation, sustainability, manufacturing milestones, and industry perspectives. Explore official press releases, media coverage, leadership interactions, and stories that display progress across the global packaging value chain.
         `,

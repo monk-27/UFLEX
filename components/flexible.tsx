@@ -55,7 +55,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
         // desc: "MAP solution is a breakthrough innovation designed to extend the shelf life of perishable goods such as fresh vegetables, fruits, and flowers. By regulating the internal atmosphere without the use of chemicals, FlexFreshTM helps slow spoilage and preserve freshness for up to 30 days. ",
     },
     {
-        img: "/images/sus/flexo.jpeg",
+        img: "/images/sus/flexo.webp",
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
 
         title: "Flexo printed rolls and bags",
@@ -71,7 +71,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
         desc: `Bags with high strength, durability, and superior printability, ideal for a variety of industrial and consumer applications.`
     },
     {
-        img: "/images/new/f3.png",
+        img: "/images/new/f3.webp",
 
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Electron beam and Cast n Cure",
@@ -98,7 +98,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
     },
 
     {
-        img: "/images/sus/f1.jpeg",
+        img: "/images/sus/f1.webp",
 
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Premium shower-proof bag",
@@ -107,7 +107,7 @@ Our wide array of flexible pouches designed to cater to diverse product categori
     },
 
     {
-        img: "/images/new/zip.jpeg",
+        img: "/images/new/zip.webp",
 
         // dynamiclink: "/flexible-packaging-business/flexible-Our-offering",
         title: "Zipouch",
@@ -139,7 +139,7 @@ const packagingData = [
     {
         "id": "flexible-packaging",
         title: "Flexible Packaging",
-        image: "/images/flexi.png",
+        image: "/images/flexi.webp",
         "imageAlt": "UFlex Flexible Packaging Solutions",
         //         paragraphs: [
         //             `UFlex Limited is India’s largest flexible packaging company, headquartered in Noida, Delhi NCR. With
@@ -188,7 +188,7 @@ export const businesses: any[] = [
         label: "Flexible Packaging",
         hero: {
             heading: "Our Businesses",
-            image: "/images/flexi.png",
+            image: "/images/flexi.webp",
             // body:
             //     "We offer a comprehensive range of products, including flexible laminates, pre-formed pouches, Flexo-printed rolls and bags, laminated woven polypropylene (WPP) bags, electron beam and Cast n Cure technology, pharmaceutical packaging, Flexible Tubes, hygiene films, Flexfresh™ modified atmosphere packaging, and big bags. At UFlex, we don’t just deliver packaging—we deliver excellence, innovation.",
         },
@@ -216,37 +216,37 @@ export const businesses: any[] = [
                 // {
                 //     id: "jay-baba-bakreswfar-farm-house-rice-bag",
                 //     title: "Jay Baba Bakreswar – Farm House rice bag",
-                //     image: "/images/new/baba.png",
+                //     image: "/images/new/baba.webp",
                 //     description: "UFlex has developed packaging for Jay Baba Bakreswar Rice Mill Pvt. Ltd. under the Farm House brand. This marks a significant milestone, as it is the first 50 kg SKU rice bag developed by UFlex, highlighting the company’s advancement in bulk packaging solutions.",
                 // },
                 // {
                 //     id: "itc-eco-friendly-packaging-savlon",
                 //     title: "ITC’s eco-friendly packaging",
-                //     image: "/images/new/savlon.png",
+                //     image: "/images/new/savlon.webp",
                 //     description: "UFlex has developed a sustainable packaging solution for Savlon brand of ITC Limited, featuring an 8.2g SKU designed for the domestic market. A key highlight is the use of a PCR-based laminate, reinforcing ITC’s commitment to eco-friendly packaging solutions.",
                 // },
                 {
                     id: "double-spout-pouch-clean-drinking-water",
                     title: "10 Litre Double Spout Pouch for clean drinking water",
-                    image: "/images/new/pouch.png",
+                    image: "/images/new/pouch.webp",
                     description: "UFlex has developed an innovative pouch for a start-up focused on tackling the critical issue of clean drinking water availability for underprivileged communities. The 10-litre double spout pouch is a portable water filtration solution equipped with a durable plastic handle for easy carrying. It features a laminate structure comprising 12μ PET, 15μ BON, and 165μ natural PE, offering both strength and sustainability. A 40 mm spout enables convenient water dispensing, while the brand’s patented natural filter ensures safe drinking water reaches those who need it most.",
                 },
                 {
                     id: "50mm-oval-tubes-packaging",
                     title: "50mm dia Oval tubes",
-                    image: "/images/elctron.png",
+                    image: "/images/elctron.webp",
                     description: "These oval tubes offer 20% more space on the front and back panels compared to traditional round tubes, giving brands additional room to effectively communicate their message to consumers. The unique shape also enables more efficient use of retail shelf space, allowing brand owners to display more units at the same cost. Furthermore, the ability to accommodate more tubes per pallet contributes to reduced transportation costs. This innovation underscores UFlex’s commitment to helping brands succeed through superior and efficient packaging solutions.",
                 },
                 // {
                 //     id: "matte-effect-hair-dye-sachets",
                 //     title: "New Packaging Solution for Frozen Food",
-                //     image: "/images/new/frozen.png",
+                //     image: "/images/new/frozen.webp",
                 //     description: "UFlex supported Hygienic Research Institute Pvt. Ltd. to develop innovative gel-based hair dye sachets in 24ml and 45ml sizes. This premium packaging solution features a unique matte effect, a first in the hair dye segment. The design is further enhanced with elegant touches such as detailed hair graphics and a gold-colored logo, adding to the pouch’s overall visual appeal and shelf presence.",
                 // },
                 // {
                 //     id: "vacuum-sealed-marinated-chicken-packaging",
                 //     title: "New Packaging Solution for Frozen Food",
-                //     image: "/images/elctron.png",
+                //     image: "/images/elctron.webp",
                 //     description: "UFlex has partnered with Jubilant FoodWorks to enhance the packaging of their marinated chicken, which is distributed in 500 gm packs from their Bangalore facility. The innovative laminate used in this packaging is thermoformed and vacuum-sealed, featuring a barrier film that protects the food from contamination by preventing exposure to air.",
                 // },
             ]
@@ -259,21 +259,21 @@ export const businesses: any[] = [
                 {
                     id: "flexible-laminates",
                     title: "ITC RTE Pouch – UL PET pouches",
-                    image: "/images/flexiblelaminates.png",
+                    image: "/images/flexiblelaminates.webp",
                     description:
                         "High-performance polyester films for diverse packaging applications.",
                 },
                 {
                     id: "pre-formed-pouches",
                     title: "Pre Formed Pouches",
-                    image: "/images/preformpouches.png",
+                    image: "/images/preformpouches.webp",
                     description:
                         "Biaxially oriented polypropylene films for flexible packaging.",
                 },
                 {
                     id: "electron-bar",
                     title: "Electron Bar",
-                    image: "/images/elctron.png",
+                    image: "/images/elctron.webp",
                     description:
                         "Cast polypropylene films for specialty and general packaging.",
                 },
@@ -289,7 +289,7 @@ company consistently invests in advanced technologies that consume less energy p
 packaging, promoting more efficient and responsible manufacturing practices. All in-house
 production waste is recycled and reintegrated into the manufacturing cycle, significantly reducing
 landfill pressure and helping curb pollution.`,
-            image: "/images/sus/flexible.jpeg",
+            image: "/images/sus/flexible.webp",
             linkLabel: "Know More",
             linkHref: "/flexible-packaging-business/sustainability",
         },
@@ -299,7 +299,7 @@ landfill pressure and helping curb pollution.`,
             details: [
                 {
                     photo:
-                        "/images/new/pillai.png",
+                        "/images/new/pillai.webp",
                     name: "Mr. Jeevaraj Gopal Pillai",
                     role: "Whole Time Director, President - Flexible Packaging and New Product Development and Director– Sustainability",
                     summary:
@@ -321,7 +321,7 @@ landfill pressure and helping curb pollution.`,
             title: "Awards & Accolades",
             description:
                 "Over the last several years, UFlex’s Flexible Packaging business has received various awards and certifications for its innovative and sustainable packaging solutions.",
-            image: "/images/awards.png",
+            image: "/images/awards.webp",
             linkLabel: "Know More",
             linkHref: "/hall-of-fame",
         },
@@ -419,7 +419,7 @@ const FlexibleComp: React.FC<Props> = ({ business }) => {
                                 className="relative aspect-[16/10] w-full overflow-hidden "
                             >
                                 <Image
-                                    src="/images/flexi.png"
+                                    src="/images/flexi.webp"
                                     alt="UFlex capabilities across the value chain"
                                     fill
                                     className="object-cover rounded-sm"

@@ -2,39 +2,39 @@ export const investorCards = [
   {
     id: "financial-reports",
     title: "Financial Results",
-    image: "/images/investors/1.png",
+    image: "/images/investors/1.webp",
     href: "/investors/financial-results",
   },
   
   {
     id: "annual-report",
     title: "Annual Reports",
-    image: "/images/investors/6.png",
+    image: "/images/investors/6.webp",
     href: "/investors/annual-report",
   },
   {
     id: "ir-calendar",
     title: "Presentations & Quarterly Earnings Reports",
-    image: "/images/investors/5.png",
+    image: "/images/investors/5.webp",
     href: "/investors/ir-presentation-quarterly-earnings",
   },
   {
     id: "notices",
     title: "Announcements & Updates",
-    image: "/images/investors/3.png",
+    image: "/images/investors/3.webp",
     href: "/investors/ir-announcements-updates",
   },
   {
     id: "shareholders-info",
     title: "Shareholders' Information",
-    image: "/images/investors/2.png",
+    image: "/images/investors/2.webp",
     href: "/investors/shareholders-information",
   },
   
   {
     id: "corporate-policies",
     title: "Corporate Policies",
-    image: "/images/investors/4.png",
+    image: "/images/investors/4.webp",
     href: "/investors/corporate-policies",
   },
   
@@ -42,19 +42,19 @@ export const investorCards = [
   {
     id: "csr",
     title: "CSR Annual Action Plan",
-    image: "/images/investors/7.png",
+    image: "/images/investors/7.webp",
     href: "/investors/csr",
   },
   {
     id: "archive",
     title: "Archive",
-    image: "/images/investors/8.png",
+    image: "/images/investors/8.webp",
     href: "/investors/investors-archives",
   },
   // {
   //   id: "esg",
   //   title: "ESG",
-  //   image: "/images/investors/9.png",
+  //   image: "/images/investors/9.webp",
   //   href: "/investors/esg",
   // },
 ];

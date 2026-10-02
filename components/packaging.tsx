@@ -28,7 +28,7 @@ type OfferingTab = "films" | "resin";
 const SliderItems: any = [
     {
         title: "Biaxially Oriented Polyethylene Terepthalate (BOPET) films",
-        img: "/images/bopet.png",
+        img: "/images/bopet.webp",
 //         desc: `Printing and lamination,
 // metallizing, industrial
 // coating, thermal
@@ -57,7 +57,7 @@ desc:`An ideal option for packaging food, beverages, and electronics due to this
     },
     {
         title: "Cast Polypropylene (CPP) films",
-        img: "/images/cpp.png",
+        img: "/images/cpp.webp",
         // dynamiclink: "/packaging-films-business/packaging-our-offering",
 
 //         desc: `Bakery products,
@@ -118,7 +118,7 @@ desc:``,
     },
     {
         title: "Film Grade Polyester",
-        img: "/images/hall/fgp.jpeg",
+        img: "/images/hall/fgp.webp",
       
 desc:`
 `,
@@ -156,7 +156,7 @@ const enhancedSliderItems = SliderItems.map((item:any) => {
 const packagingData = [
     {
         title: 'Packaging Films & PET Resin',
-        image: '/images/resin.png',
+        image: '/images/resin.webp',
         paragraphs: [
             `UFlex’s Packaging Films business, under the Flex Films brand, is a global leader offering innovative and sustainable packaging solutions, including BOPP, BOPET, CPP, specialty, and 100% PCR PET films, with manufacturing across 9 countries and presence in 150+ markets.`,
             
@@ -225,13 +225,13 @@ export const businesses: any[] = [
         subheading: "Packaging Films",
         hero: {
             heading: "Our Businesses",
-            image: "/images/resin.png",
+            image: "/images/resin.webp",
             body:
                 "UFlex's Packaging Films business, under the Flex Films brand, is a global leader offering innovative and sustainable packaging solutions, including BOPP, BOPET, CPP, specialty, and 100% PCR PET films, with manufacturing across 9 countries and presence in 150+ markets.",
         },
         subhero: {
             heading: "PET Resin",
-            image: "/images/resin.png",
+            image: "/images/resin.webp",
             body:
                 "UFlex manufactures high-quality PET Resin in India and Egypt, supporting the global packaging ecosystem with reliable, high-performance material solutions. Poly-condensed polyester resin is a preferred raw material for producing BOPET films and rigid packaging. Known for its strength, optical clarity.",
         },
@@ -242,28 +242,28 @@ export const businesses: any[] = [
                 {
                     id: "bottle-grade",
                     title: "Bottle Grade PET",
-                    image: "/images/bottlegrade.png",
+                    image: "/images/bottlegrade.webp",
                     description:
                         "High-performance polyester films for diverse packaging applications.",
                 },
                 {
                     id: "film-grade",
                     title: "Film Grade Polyester",
-                    image: "/images/hall/fgp.jpeg",
+                    image: "/images/hall/fgp.webp",
                     description:
                         "Biaxially oriented polypropylene films for flexible packaging.",
                 },
                 {
                     id: "rpet",
                     title: "Recycled PET",
-                    image: "/images/rpet.png",
+                    image: "/images/rpet.webp",
                     description:
                         "Cast polypropylene films for specialty and general packaging.",
                 },
                 // {
                 //   id: "Single-Pellet Soultion ",
                 //   title: "Single-Pellet Soultion ",
-                //   image: "/images/single-pellet.png",
+                //   image: "/images/single-pellet.webp",
                 //   description: "High-barrier metallized films for enhanced shelf life.",
                 // },
             ],
@@ -280,7 +280,7 @@ export const businesses: any[] = [
                     id:"b-thb",
                     title:"B-THB Transparent High-Heat-Resistance BOPP Film",
                     description:"B-THB is a transparent, high heat resistance BOPP film engineered to deliver enhanced oxygen barrier properties along with reliable thermal stability. It is designed to support demanding packaging applications where both protection and performance are essential.Developed for mono-material, recyclable packaging structures, B-THB enables a more sustainable approach by offering an effective alternative to conventional multilayer films, helping simplify packaging design and improve efficiency.Ideal for everyday products such as snacks, biscuits, confectionery, and stand-up pouches, it helps maintain product freshness while ensuring strength and durability throughout the packaging lifecycle.",
-                    image:"/images/new/image1.png",
+                    image:"/images/new/image1.webp",
                 },{
                     id:"h-b-t",
                     title:"High-Barrier Transparent BOPET Film",
@@ -296,37 +296,37 @@ export const businesses: any[] = [
                     id: "f-mex-m-2",
                     title: "F-ETS: One side MST coated transparent BOPET film",
                     description: "F-ETS is an advanced one-side MST-coated transparent BOPET film designed for secondary packaging of pharmaceutical tablets and pills. Developed using proprietary technology, it is a superior alternative to traditional cellophane-coated films for strip-to-paper sealing applications. The film offers excellent tearing properties in both machine and transverse directions, along with water-based coating, calibrated heat-seal strength with paper, and high gloss with good transparency. Ideal for tablet strip packaging, the MST-coated side ensures easy fiber tearing when sealed with pharmaceutical-grade wrapper paper and is also suitable for single-web lamination with aluminium foil.",
-                    image: "/images/new/fets.png",
+                    image: "/images/new/fets.webp",
                 },
                 {
                     id: "f-mex-m",
                     title: "F-MEX-M",
                     description: "F-MEX-M is a high-performance metallized BOPET film designed to offer excellent versatility across a wide range of packaging applications. With optical densities ranging from 2.2 to 2.8, it provides customizable barrier properties to suit diverse requirements. Engineered for both-side extrusion coating, this film eliminates the need for additional priming and ensures no solvent emissions or residuals during the coating process. Its strong adhesion to extruded polyethylene without primers and suitability for hot-fill applications make F-MEX-M an ideal choice for brands seeking efficiency, sustainability, and performance in their packaging solutions.",
-                    image: "/images/new/fmex.png",
+                    image: "/images/new/fmex.webp",
                 },
                 {
                     id: "b-tcm-m",
                     title: "B-TCM-M: Ultra-thin high-barrier metallized BOPP film",
                     description: "B-TCM-M is an innovative, non-heat sealable metallized BOPP film developed for sustainable and high-performance packaging applications. At just 8 microns, it is the thinnest metallized BOPP film available, offering low GSM and high linear mileage, making it a resource-efficient choice. With an optical density of 2.8, the film delivers outstanding barrier protection against moisture, oxygen, and light, while also offering excellent metal brilliance and adhesion. Its superior adhesive bonding makes it ideal for cold release applications and paperboard lamination, where performance and aesthetics are equally critical.",
-                    image: "/images/new/bctc.jpeg",
+                    image: "/images/new/bctc.webp",
                 },
                 {
                     id: "B-TDF:",
                     title: "B-TDF: Heat sealable transparent BOPP film for heavy-duty packaging",
                     description: "B-TDF is a high-performance, heat sealable transparent BOPP film engineered to meet the rigorous demands of heavy-duty packaging applications. It features a diamond COF of 0.80 on the sealing side for consistent performance and a treated reverse surface that ensures excellent printability and strong lamination. With superior extrusion bond, dimensional stability, and optical clarity, B-TDF is an ideal choice for packaging pet foods, rice bags, and other heavy-duty products requiring durability and visual appeal.",
-                    image: "/images/new/bdtf.png",
+                    image: "/images/new/bdtf.webp",
                 },
                 {
                     id: "f-hsa",
                     title: "F-HSA: Heat sealable anti-fog transparent BOPET film",
                     description: "F-HSA is a high-performance transparent BOPET film designed with a heat sealable anti-fog surface on one side and an untreated surface on the other. Its exceptional clarity, transparency, and reliable sealing capabilities make it ideal for food packaging applications. The film offers excellent hot and cold anti-fog performance and can seal to itself as well as to substrates like APET, CPET, PVDC, and PVC. F-HSA is particularly well-suited for food tray sealing and tack seal applications, ensuring product visibility and freshness throughout the packaging lifecycle.",
-                    image: "/images/new/spices.png",
+                    image: "/images/new/spices.webp",
                 },
                 {
                     id: "b-dsc-aa",
                     title: "B-DSC-AA – Both side acrylic coated BOPP film",
                     description: "This high-performance packaging film is engineered for modern flexible packaging needs, offering excellent heat sealability, hot-tack, and compatibility with lap and fin seals and PVDC-coated films. Ideal for monolayer pouches, it ensures tamper-proof, transparent packaging with strong aroma and flavor barriers. With high clarity, gloss, and excellent ink and lamination adhesion, it is perfect for formats like stand-up and pillow pouches. Common applications include baby food, snacks, biscuits, tobacco, personal care items, confectionery, tea, and other fragrance-rich products.",
-                    image: "/images/new/bdsc.png",
+                    image: "/images/new/bdsc.webp",
                 },
                  {
                     id: "b-dsc-al",
@@ -338,7 +338,7 @@ export const businesses: any[] = [
                     id: "b-dsc-dl",
                     title: "B-DSC-DL: High barrier PVDC coated BOPP film",
                     description:"A specialized BOPP film with one side PVDC coating and the other side low-temperature seal coating that activates at 65°C. Designed for monolayer pouch applications, it offers excellent oxygen barrier performance (below 15 cc/m²/day) while maintaining high clarity. The film provides strong low-temperature sealability and hot tack, and retains its barrier properties even in high humidity. Ideal for stand-up and pillow pouches, it delivers excellent gas, flavor, and aroma barrier, good ink compatibility, and improved fat migration resistance for applications such as biscuits, snacks, dry foods, confectionery, beverage powders, and pet food.",
-                      image: "/images/new/bdscc.png",
+                      image: "/images/new/bdscc.webp",
                 },
                
                 {
@@ -462,7 +462,7 @@ export const businesses: any[] = [
             title: "Awards & Accolades",
             description:
                 "UFlex's Packaging Films business, under the Flex Films brand, is a global leader offering innovative and sustainable packaging solutions, including BOPP, BOPET, CPP, specialty, and 100% PCR PET films, with manufacturing across 9 countries and presence in 150+ markets.",
-            image: "/images/awards.png",
+            image: "/images/awards.webp",
             linkLabel: "Know More",
             linkHref: "/hall-of-fame",
         },
@@ -540,7 +540,7 @@ const PackageComp: React.FC<Props> = ({ business }) => {
                             className="relative aspect-[16/10] w-full overflow-hidden  "
                         >
                             <Image
-                                src="/images/resin.png"
+                                src="/images/resin.webp"
                                 alt="UFlex capabilities across the value chain"
                                 fill
                                 className="object-cover rounded-sm"

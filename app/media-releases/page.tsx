@@ -25,7 +25,7 @@ const PRESS_ROOM_DATA = {
   hero: {
     title: "The Press Room",
     image:
-      "/images/press/mainpress.png",
+      "/images/press/mainpress.webp",
   },
 
   mediaReleases: {
@@ -269,17 +269,17 @@ const PRESS_ROOM_DATA = {
     data: {
       "Print Media": {
         2026: ["", "",],
-        2025: ["/images/press/pm1.png", "/images/press/pm2.png", "/images/press/pm3.png", "/images/press/pm4.png", "/images/press/pm5.png"],
-        2024: ["/images/press/pm1.png", "/images/press/pm2.png"],
+        2025: ["/images/press/pm1.webp", "/images/press/pm2.png", "/images/press/pm3.png", "/images/press/pm4.png", "/images/press/pm5.webp"],
+        2024: ["/images/press/pm1.webp", "/images/press/pm2.png"],
       },
       // "Electronic Media": {
-      //   2025: ["/images/press/pm1.png", "/images/press/pm2.png", "/images/press/pm3.png"],
-      //   2024: ["/images/press/pm1.png"],
+      //   2025: ["/images/press/pm1.webp", "/images/press/pm2.png", "/images/press/pm3.png"],
+      //   2024: ["/images/press/pm1.webp"],
       // },
       "Online Media": {
         2026: ["", "",],
-        2025: ["/images/press/pm1.png", "/images/press/pm2.png", "/images/press/pm3.png", "/images/press/pm4.png"],
-        2024: ["/images/press/pm1.png", "/images/press/pm2.png"],
+        2025: ["/images/press/pm1.webp", "/images/press/pm2.png", "/images/press/pm3.png", "/images/press/pm4.png"],
+        2024: ["/images/press/pm1.webp", "/images/press/pm2.png"],
       },
     } satisfies Record<CoverageTab, Record<Year, string[]>>,
   },

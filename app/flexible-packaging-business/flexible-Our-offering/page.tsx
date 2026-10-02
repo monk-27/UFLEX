@@ -551,7 +551,7 @@ export default function ProductsPage() {
                         <section className="relative w-full h-[580px] sm:h-[451px] overflow-hidden">
 
                             <Image
-                                src="/images/flexi.png"
+                                src="/images/flexi.webp"
                                 alt="Investors Relations"
                                 fill
                                 className="object-cover w-full h-full"

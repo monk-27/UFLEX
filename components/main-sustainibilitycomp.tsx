@@ -4,8 +4,8 @@
 import Image from "next/image";
 
 export default function MainSustainabilityCOMMComp({
-  // image = "/images/sus/susmain.png",
-  image = "/images/Mask.png",
+  // image = "/images/sus/susmain.webp",
+  image = "/images/Mask.webp",
 
 }: {
   image?: string;

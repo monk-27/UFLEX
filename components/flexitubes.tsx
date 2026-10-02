@@ -21,7 +21,7 @@ import { ReadMoreDialog } from './expandabletext'
 
 const SliderItems: SliderItem[] = [
   {
-    img: "/images/new/fm1.png",
+    img: "/images/new/fm1.webp",
     // dynamiclink: "/flexitube-business/flexiTube-Our-Offerings",
     title: "Metallika",
     desc: "Tubes with high-shine metallization and holographic features for that premium appeal. We also offer matte and de-metallized options.",
@@ -34,7 +34,7 @@ const SliderItems: SliderItem[] = [
     desc: "Sustainable web, mono-material, lightweight, low-carbon footprint solutions",
   },
   {
-    img: "/images/new/fm3.png",
+    img: "/images/new/fm3.webp",
     // dynamiclink: "/flexitube-business/flexiTube-Our-Offerings",
 
     title: "Greenika",
@@ -168,7 +168,7 @@ const packagingData = [
   {
     "id": "Flexible Tube",
     title: "Flexible Tube",
-    image: "/images/heroflexi.png",
+    image: "/images/heroflexi.webp",
     "imageAlt": "UFlex Flexible Packaging Solutions",
     paragraphs: [
       "Our innovative multilayer flexible tube packaging solutions have been designed especially for the beauty, personal care and pharma industries. At UFlex, we challenge conventions through design thinking—reimagining material choices, printing, lamination, and production to deliver packaging that’s as innovative as it is impactful.",
@@ -187,7 +187,7 @@ export const businesses: any[] = [
     label: "Flexible Tubes",
     hero: {
       heading: "Flexible Tubes",
-      image: "/images/heroflexi.png",
+      image: "/images/heroflexi.webp",
       body: `Our innovative multilayer flexible tube packaging solutions have been designed especially for the beauty, personal care and pharma industries.
 At UFlex, we challenge conventions through design thinking—reimagining material choices, printing, lamination, and production to deliver packaging that’s as innovative as it is impactful.`,
     },
@@ -197,37 +197,37 @@ At UFlex, we challenge conventions through design thinking—reimagining materia
         {
           id: "greenika",
           title: "GREENIKA",
-          image: "/images/greenika.png",
+          image: "/images/greenika.webp",
         },
         {
           id: "gloss-tubes",
           title: "Gloss Tubes",
-          image: "/images/glosstubes.png",
+          image: "/images/glosstubes.webp",
         },
         {
           id: "mettalika",
           title: "METTALIKA",
-          image: "/images/metalika.png",
+          image: "/images/metalika.webp",
         },
         {
           id: "mattika",
           title: "MATTIKA",
-          image: "/images/matika.png",
+          image: "/images/matika.webp",
         },
         {
           id: "matte-metallica",
           title: "Matte Metallica",
-          image: "/images/matte.png",
+          image: "/images/matte.webp",
         },
         {
           id: "de-mettalized",
           title: "DE METTALIZED",
-          image: "/images/de.png",
+          image: "/images/de.webp",
         },
         {
           id: "optika",
           title: "OPTIKA",
-          image: "/images/optika.png",
+          image: "/images/optika.webp",
         },
       ],
     },
@@ -241,7 +241,7 @@ At UFlex, we challenge conventions through design thinking—reimagining materia
           description: `Our Gravure-reverse printed tubes with ultra-HD resolution provide vibrant, razor-sharp branding. The photorealistic imagery enhances the shelf presence of the brand.
 
 With 75% of purchasing decisions made by consumers at the shelf, aesthetically designed packaging is a brand’s silent salesperson.`,
-          image: "/images/matika.png",
+          image: "/images/matika.webp",
         },
         {
           id: "metallized-holographic-films",
@@ -257,7 +257,7 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
           description: `Our laser engraving and covert printing technologies offer brand protection and authenticity for pharmaceuticals and premium cosmetics through:
 • Tamper-proof designs (overt and covert security features)
 • Lensing effect (single or multiple lensing)`,
-          image: "/images/optika.png",
+          image: "/images/optika.webp",
         },
         {
           id: "sustainability-measurable",
@@ -267,7 +267,7 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
 • In-house BOPP/PET/polyethylene production - Lower carbon vs. outsourced supply chains
 • Water-based inks/chemicals - Safer end-of-life processing
 • Circularity Pathways - Lightweighting (up to 20% material reduction) and recyclability-ready designs (mono-material structures)`,
-          image: "/images/de.png",
+          image: "/images/de.webp",
         },
       ],
     },
@@ -276,7 +276,7 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
       subtitle:"Driving Sustainable Growth Through Smarter Packaging Practices.",
       description:
         "Our commitment to Environmental & Social Responsibility (ESR) and sustainability is more than a value—it’s a strategy. We foster collaborative, long-term partnerships with brand owners to co-create packaging that is not only beautiful and secure but also future-ready and planet-positive.",
-      image: "/images/sus.png",
+      image: "/images/sus.webp",
       linkLabel: "Know More",
       linkHref: "#",
     },
@@ -284,14 +284,14 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
       title: "Leadership",
       details: [
         {
-          photo: "/images/bose.png",
+          photo: "/images/bose.webp",
           name: "Mr. Subrata Bose",
           role:
             "Senior Vice President - Tubes, Flexible Packaging Business",
           summary: "Mr. Subrata Bose is a seasoned professional with nearly three decades of experience across the packaging, healthcare, and engineering industries. He brings a strong track record of driving growth, leading high-performing teams, and fostering lasting customer relationships. His expertise spans strategic planning, sales and marketing, business development, account management, and P&L oversight. Prior to UFlex, he held key leadership positions at Albéa Group and Betts Group, where he successfully led sales and distribution strategies, and market expansion efforts.",
         },
         // {
-        //   photo: "/images/venkatesh.png",
+        //   photo: "/images/venkatesh.webp",
         //   name: "Mr. Venkatesh Rajagopalan",
         //   role:
         //     "Senior Vice President - Flexible Tubes Business",
@@ -302,7 +302,7 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
     awards: {
       title: "Awards & Accolades",
       description: "Over the last several years, UFlex’s Printing Cylinder business has received various awards and certifications.",
-      image: "/images/awards.png",
+      image: "/images/awards.webp",
       linkLabel: "Know More",
       linkHref: "/hall-of-fame",
     },
@@ -401,7 +401,7 @@ const FlexiComp: React.FC<Props> = ({ business }) => {
                 className="relative aspect-[16/10] w-full overflow-hidden "
               >
                 <Image
-                  src="/images/new/flexi.png"
+                  src="/images/new/flexi.webp"
                   alt="UFlex capabilities across the value chain"
                   fill
                   className="object-fill rounded-sm"

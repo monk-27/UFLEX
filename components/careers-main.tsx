@@ -9,17 +9,17 @@ const SLIDES = [
   {
     title: "Global Perspective",
     subtitle: " Thinking globally and acting locally, we leverage the power of global insight, relationships, collaborations, and learnings to deliver exceptional packaging solutions for the clients.",
-    image: "/images/careers/global.png",
+    image: "/images/careers/global.webp",
   },
   // {
   //   title: "Trust & Respect ",
   //   subtitle: "Proactively build inclusive and egalitarian partnerships with all stakeholders, through the virtues of honesty of purpose, mutual trust, and respect.",
-  //   image: "/images/careers/trust.png",
+  //   image: "/images/careers/trust.webp",
   // },
   // {
   //   title: "Socio-environmental Sustainability",
   //   subtitle: " Upholding that society and environment are cornerstones for sustainability, we support and promote inclusive social development and strive towards the conservation of the environment and protection of our planet.",
-  //   image: "/images/careers/socio.png",
+  //   image: "/images/careers/socio.webp",
   // },
 ];
 
@@ -39,7 +39,7 @@ export default function CareersMainCarousel() {
   const packagingData = [
     {
       title: 'Careers',
-      image: '/images/careers/global.png',
+      image: '/images/careers/global.webp',
       paragraphs: [
         ` At UFlex, we pride ourselves on fostering an inclusive, caring, and productive environment for our people. As a leading player in the flexible packaging industry, we engage and retain purpose-driven talent through a fair and consistent HR framework. Our entrepreneurial culture empowers employees to drive UFlex’s growth and success.`,
 
@@ -193,7 +193,7 @@ export default function CareersMainCarousel() {
             className="relative aspect-[16/10] w-full overflow-hidden  "
           >
             <Image
-              src="/images/careers/global.png"
+              src="/images/careers/global.webp"
               alt="UFlex capabilities across the value chain"
               fill
               className="object-cover rounded-sm"

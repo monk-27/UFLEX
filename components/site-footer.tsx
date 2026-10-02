@@ -39,7 +39,7 @@ export function SiteFooter() {
             <div className="flex gap-3 flex-wrap">
               {[
               { image: "/images/new/li.png", href: "https://www.linkedin.com/company/uflexltd" },
-              { image: "/images/new/ig.png", href: "https://www.instagram.com/uflexltd" },
+              { image: "/images/new/ig.webp", href: "https://www.instagram.com/uflexltd" },
                 { image: "/images/new/x.jpg", href: " https://twitter.com/uflexltd" },
                 { image: "/images/new/fb.png", href: "https://www.facebook.com/uflexltd" },
                 { image: "/images/new/yt.png", href: "https://www.youtube.com/@uflexltdpackaging" },

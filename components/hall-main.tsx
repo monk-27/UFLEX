@@ -8,15 +8,15 @@ import { ReadMoreDialog } from "./expandabletext";
 const SLIDES = [
   // {
   //   title: "ET Sustainable Organisations 2025",
-  //   image: "/images/hall/6.png",
+  //   image: "/images/hall/6.webp",
   // },
   {
     title: "Best Organisations to Work 2025",
-    image: "/images/hall/7.png",
+    image: "/images/hall/7.webp",
   },
   // {
   //   title: "Top Employer 2025 in India",
-  //   image: "/images/hall/8.png",
+  //   image: "/images/hall/8.webp",
   // },
 ];
 
@@ -34,7 +34,7 @@ export default function SustainabilityCarousel() {
   const packagingData = [
     {
       title: 'Hall of Fame',
-      image: '/images/hall/7.png',
+      image: '/images/hall/7.webp',
       paragraphs: [
         ` Our journey of growth and leadership in flexible packaging has been consistently recognized by prestigious industry forums worldwide. `,
         `From accolades in sustainability and product innovation to honors as a top employer, our awards reflect more than achievements- they embody our commitment to shaping a responsible, forward-looking future.`,
@@ -151,7 +151,7 @@ export default function SustainabilityCarousel() {
             className="relative aspect-[16/10] w-full overflow-hidden  "
           >
             <Image
-              src="/images/hall/newhall.jpeg"
+              src="/images/hall/newhall.webp"
               alt="UFlex capabilities across the value chain"
               fill
               className="object-cover rounded-sm"

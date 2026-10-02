@@ -157,7 +157,7 @@ const mediaItems = [
   },
   {
     title: "NDTV Profit",
-    img: "/images/new/nn.png",
+    img: "/images/new/nn.webp",
     link: "https://www.youtube.com/watch?v=S8-J23J8O4c",
   },
   // {

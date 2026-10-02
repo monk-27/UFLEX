@@ -22,14 +22,14 @@ import { ReadMoreDialog } from './expandabletext'
 
 const SliderItems: SliderItem[] = [
   {
-    img: "/images/new/a.png",
+    img: "/images/new/a.webp",
     title: "Aseptic Cartons",
     // dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offering",
 
     desc: "Our aseptic liquid packaging cartons encompass six layers of protection that keeps the freshness preserved.",
   },
   {
-        img: "/images/new/a1.png",
+        img: "/images/new/a1.webp",
 
     title: "A SIP",
     // dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offering",
@@ -38,7 +38,7 @@ const SliderItems: SliderItem[] = [
     desc: "India’s first food-grade and moisture-resistant U-shaped paper straw that is 100% recyclable.",
   },
   {
-        img: "/images/new/a2.png",
+        img: "/images/new/a2.webp",
 
     title: "Filling Machines",
     // dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offering",
@@ -48,7 +48,7 @@ const SliderItems: SliderItem[] = [
   },
 
   {
-        img: "/images/new/a3.png",
+        img: "/images/new/a3.webp",
 
     title: "Asepto Pro",
     // dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offering",
@@ -58,7 +58,7 @@ const SliderItems: SliderItem[] = [
   },
 
   {
-    img: "/images/aseptic/9.png",
+    img: "/images/aseptic/9.webp",
     title: "Asepto Design",
     // dynamiclink: "/aseptic-packaging-business/aseptic-Our-Offering",
 
@@ -76,7 +76,7 @@ const packagingData = [
   {
     "id": "holography",
     title: "Aseptic Packaging",
-    image: "/images/3.png",
+    image: "/images/3.webp",
     "imageAlt": "UFlex Aseptic Packaging Solutions",
     paragraphs: [
       `Asepto, the Aseptic Packaging brand
@@ -127,7 +127,7 @@ export const businesses: any[] = [
     label: "Aseptic Packaging",
     hero: {
       heading: "Our Businesses",
-      image: "/images/3.png",
+      image: "/images/3.webp",
       body:
         "Asepto, the Aseptic Packaging brand of UFlex, is the world's fastest-growing aseptic packaging company, proudly serving over 200 esteemed clients across more than 40 countries. As a leading provider of end-to-end aseptic liquid packaging solutions, we offer innovative designs, six-layered cartons, highly advanced filling machines, and exceptional service from highly trained engineers.",
     },
@@ -138,28 +138,28 @@ export const businesses: any[] = [
         {
           id: "aseptic-cartons",
           title: "Aseptic Cartons",
-          image: "/images/asepcticcartons.png",
+          image: "/images/asepcticcartons.webp",
           description:
             "High-performance polyester films for diverse packaging applications.",
         },
         {
           id: "sip",
           title: "A Sip",
-          image: "/images/asip.png",
+          image: "/images/asip.webp",
           description:
             "Biaxially oriented polypropylene films for flexible packaging.",
         },
         {
           id: "filling-machines",
           title: "Filling Machines",
-          image: "/images/filling.png",
+          image: "/images/filling.webp",
           description:
             "Cast polypropylene films for specialty and general packaging.",
         },
         {
           id: "asepto-pro",
           title: "Asepto Pro",
-          image: "/images/aseptopro.png",
+          image: "/images/aseptopro.webp",
           description:
             "Cast polypropylene films for specialty and general packaging.",
         },
@@ -174,14 +174,14 @@ export const businesses: any[] = [
           title: "India’s First Aseptic Carton Package",
           description:
             "As the first aseptic carton package in India featuring 5% certified recycled polymers, and the first paper-based beverage carton producer in the country to use recycled plastic, UFlex is setting new benchmarks in sustainable packaging, supporting circularity, resource efficiency, and reduced environmental impact.",
-          image: "/images/invp.png",
+          image: "/images/invp.webp",
         },
         {
           id: "holography-stamping-foils",
           title: "Holography and Stamping Foils",
           description:
             "Flex continues to set global benchmarks through advanced infrastructure, technical excellence, advanced R&D, and deep market intelligence, ensuring world-class quality and innovation across its offerings. Our state-of-the-art in-house manufacturing facilities, equipped with Origination, Coatings, Metallizers, and Slitting machines, enable advanced transfer technology, enhancing both surface appeal and tactile experience.",
-          image: "/images/invps.png",
+          image: "/images/invps.webp",
         },
       ],
     },
@@ -190,7 +190,7 @@ export const businesses: any[] = [
 
       "description": "At Asepto, sustainability isn't just a commitment; it's a driving force behind innovation. Asepto brings a sustainable solution to this pressing concern of aseptic cartons reaching landfills. With their proper extraction and assimilation, Asepto paves the way for a Circular Economy.\n\nEnzymatic Delamination Technology (EDT) is Asepto’s sustainable solution to reprocess aseptic cartons and bring them back into the circular economy. Through EDT, we can separate and recover valuable materials like aluminium, polymers, and paper pulp from these cartons. By doing so, we significantly reduce the environmental footprint associated with their disposal.",
 
-      image: "/images/new/sus3.png",
+      image: "/images/new/sus3.webp",
       linkLabel: "Know More",
       linkHref: "/aseptic-packaging-business/sustainability",
     },
@@ -198,7 +198,7 @@ export const businesses: any[] = [
       title: "Leadership",
       details: [
         {
-          photo: "/images/new/ashwani.jpeg",
+          photo: "/images/new/ashwani.webp",
           name: "Mr. Ashwani K. Sharma",
           role: "President and CEO, Aseptic packaging business",
           summary:
@@ -212,7 +212,7 @@ export const businesses: any[] = [
       title: "Awards & Accolades",
       description:
         "Our circular initiatives and recycling programmes have been recognised by leading global industry bodies, reflecting Asepto’s commitment to responsible and sustainable packaging. These recognitions highlight our consistent efforts to reduce waste, improve material efficiency, and support recycling across our operations.",
-      image: "/images/awards.png",
+      image: "/images/awards.webp",
       linkLabel: "Know More",
       linkHref: "/hall-of-fame",
     },
@@ -312,7 +312,7 @@ const AsepticComp: React.FC<Props> = ({ business }) => {
                 className="relative aspect-[16/10] w-full overflow-hidden "
               >
                 <Image
-                  src="/images/3.png"
+                  src="/images/3.webp"
                   alt="UFlex capabilities across the value chain"
                   fill
                   className="object-cover rounded-sm"

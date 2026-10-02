@@ -15,20 +15,20 @@ const ESG_ITEMS: ESGItem[] = [
   {
     id: "environment",
     title: "Environment",
-    image: "/images/investors/env.png",
+    image: "/images/investors/env.webp",
     href: "/investors/esg",
   },
   {
     id: "social",
     title: "Social",
-    image: "/images/investors/social.png",
+    image: "/images/investors/social.webp",
 
     href: "/investors/esg",
   },
   {
     id: "governance",
     title: "Governance",
-    image: "/images/investors/gov.png",
+    image: "/images/investors/gov.webp",
 
     href: "/investors/esg",
   },

@@ -31,7 +31,7 @@ const sustainabilityReports = [
   {
     year: "2024–25",
     // title: "Sustainability Report 2023–24",
-    image: "/images/sus/25.png",
+    image: "/images/sus/25.webp",
     href: "https://beta.uflexltd.com/media/pdf/Sustainability/UFlex_Sustainability_Report_2024-25.pdf",
   },
   {
@@ -43,13 +43,13 @@ const sustainabilityReports = [
   {
      year: "2022–23",
     // title: "Sustainability Report 2022–23",
-    image: "/images/sus/2023.png",
+    image: "/images/sus/2023.webp",
     href: "https://beta.uflexltd.com/media/pdf/Sustainability/UFlex_Sustainability_Report_2022-23.pdf",
   },
   {
     year: "2021–22",
     // title: "Sustainability Report 2021–22",
-    image: "/images/sus/2022.png",
+    image: "/images/sus/2022.webp",
     href: "https://beta.uflexltd.com/media/pdf/Sustainability/UFlex_Sustainability_Report_2021-22.pdf",
   },
 ];

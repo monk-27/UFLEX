@@ -64,19 +64,19 @@ export default function ProductCategorySection(props: any) {
   const Stamps: any = [
     {
       name: "Cracked Ice Holography",
-      image: "/images/aseptic/cracked.png",
+      image: "/images/aseptic/cracked.webp",
     },
     {
       name: "Multi Lens Holography",
-      image: "/images/aseptic/multi.png",
+      image: "/images/aseptic/multi.webp",
     },
     {
       name: "Pillar of Light Holography",
-      image: "/images/aseptic/pillar.png",
+      image: "/images/aseptic/pillar.webp",
     },
     {
       name: "Sparkle Holography",
-      image: "/images/aseptic/sparkle.png",
+      image: "/images/aseptic/sparkle.webp",
     },
   ];
 
@@ -455,7 +455,7 @@ export default function ProductCategorySection(props: any) {
                 <div className="bg-white  space-y-12">
                   <div className="relative h-[388px] overflow-hidden">
                     <Image
-                      src="/images/aseptic/3c.png"
+                      src="/images/aseptic/3c.webp"
                       alt="Six layers of protection"
                       height={388}
                       width={100}
@@ -512,7 +512,7 @@ export default function ProductCategorySection(props: any) {
                             className="absolute inset-0"
                           >
                             <Image
-                              src="/images/aseptic/packaging.png"
+                              src="/images/aseptic/packaging.webp"
                               alt="Hall of Fame"
                               height={460}
                               width={460}
@@ -573,7 +573,7 @@ export default function ProductCategorySection(props: any) {
                             className="absolute inset-0"
                           >
                             <Image
-                              src="/images/aseptic/sol.png"
+                              src="/images/aseptic/sol.webp"
                               alt="Hall of Fame"
                               height={320}
                               width={320}
@@ -739,7 +739,7 @@ export default function ProductCategorySection(props: any) {
                     {/* Right: Image */}
                     <div className="lg:w-1/2 height-[183px]">
                       <Image
-                        src="/images/aseptic/speed.png" // replace with your actual image
+                        src="/images/aseptic/speed.webp" // replace with your actual image
                         alt="SPEED PLUS 25SK"
                         width={550}
                         height={183}
@@ -766,7 +766,7 @@ export default function ProductCategorySection(props: any) {
 
                     <div className="lg:w-1/2 height-[283px]">
                       <Image
-                        src="/images/aseptic/flexpress.png" // replace with your actual image
+                        src="/images/aseptic/flexpress.webp" // replace with your actual image
                         alt="SPEED PLUS 25SK"
                         width={550}
                         height={283}
@@ -1000,7 +1000,7 @@ export default function ProductCategorySection(props: any) {
                         {/* 9 */}
                         <div className="w-full">
                           <Image
-                            src="/images/aseptic/9.png"
+                            src="/images/aseptic/9.webp"
                             alt="Design 9"
                             width={280}
                             height={280}
@@ -1011,7 +1011,7 @@ export default function ProductCategorySection(props: any) {
                         {/* 10 */}
                         <div className="w-full">
                           <Image
-                            src="/images/aseptic/10.png"
+                            src="/images/aseptic/10.webp"
                             alt="Design 10"
                             width={280}
                             height={280}
@@ -1022,7 +1022,7 @@ export default function ProductCategorySection(props: any) {
                         {/* 11 (full width like collage style) */}
                         <div className="sm:col-span-2 w-full">
                           <Image
-                            src="/images/aseptic/11.png"
+                            src="/images/aseptic/11.webp"
                             alt="Design 11"
                             width={280}
                             height={280}
@@ -1037,7 +1037,7 @@ export default function ProductCategorySection(props: any) {
                         {/* 12 - Tall image */}
                         <div className="flex-1">
                           <Image
-                            src="/images/aseptic/12.png"
+                            src="/images/aseptic/12.webp"
                             alt="Design 12"
                             width={800}
                             height={1200}
@@ -1048,7 +1048,7 @@ export default function ProductCategorySection(props: any) {
                         {/* 13 */}
                         <div className="flex-1">
                           <Image
-                            src="/images/aseptic/13.png"
+                            src="/images/aseptic/13.webp"
                             alt="Design 13"
                             width={800}
                             height={800}

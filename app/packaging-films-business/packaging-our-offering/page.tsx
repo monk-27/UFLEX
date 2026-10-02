@@ -17,7 +17,7 @@ export default function ProductsPage() {
             key: "bopet",
             title: "Biaxially Oriented Polyethylene Terephthalate (BOPET) Films",
             heroImageUrl:
-                "/images/bopet.png",
+                "/images/bopet.webp",
             brandTag: "FLEXPET",
             overview: `Our Packaging Films Business produces 3,50,000 TPA of BOPET films on its ten State-of-the-art BOPET film producing lines worldwide. The BOPET films come in a thickness range of 6.5 – 75 microns and are available in plain, surface treated, chemically coated, matte, heat sealable, metallisable, green, clear and extra clear varieties.`,
 
@@ -246,7 +246,7 @@ export default function ProductsPage() {
             key: "cpp",
             title: "Cast Polypropylene (CPP) Films",
             heroImageUrl:
-                "/images/cpp.png",
+                "/images/cpp.webp",
             brandTag: "FLEXCPP",
             overview: `Film Business of UFLEX produces over 11,000 TPA of CPP films which can be supplied in widths up to 3000mm. These films come in thickness range of 18 – 200 microns and can be offered with corona treatment on one or both sides. These films are available in plain, heat-sealable, metallisable, polished, mirror finish, embossed surface, glossy/ matte finish, high stiffness, flexible, clear and opaque varieties.`,
 
@@ -317,7 +317,7 @@ export default function ProductsPage() {
             key: "metallised",
             title: "Metallised BOPP, BOPET & CPP Films",
             heroImageUrl:
-                "/images/metallized.png",
+                "/images/metallized.webp",
             brandTag: "FLEXMETPROTECT",
             overview: `With its fourteen State-of-the-art metallizers with plasma treatment facilities for better metal to film adhesion and superior metal coverage, Film Business of UFLEX produces over 45,000 TPA (100 million lbs) of High Barrier Metalized films per annum with optical density ranging from 0.4 to 3.5 in widths up to 2,850 mm. These films come in the thickness range 6.5 – 75 microns for BOPET; 8 – 75 microns for BOPP and 18-200 microns for CPP.`,
 
@@ -537,7 +537,7 @@ const sectionRef = useRef<HTMLDivElement>(null);
                         <section className="relative w-full h-[380px] sm:h-[451px] overflow-hidden">
 
                             <Image
-                                src="/images/resin.png"
+                                src="/images/resin.webp"
                                 alt="Investors Relations"
                                 fill
                                 className="object-cover w-full h-full"

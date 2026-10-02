@@ -1237,7 +1237,7 @@ const Page = () => {
         {/* HERO */}
         <section className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[450px] overflow-hidden">
           <Image
-            src="/images/investors/fr.png"
+            src="/images/investors/fr.webp"
             alt="Investors Relations"
             fill
             className="object-cover w-full h-full"

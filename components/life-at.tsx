@@ -44,7 +44,7 @@
 //           },
 //           {
 //             title: "Your growth, our success",
-//             image: "/images/growth.png",
+//             image: "/images/growth.webp",
 //             description:
 //               "At UFlex, experience a vibrant work culture that empowers people to transform their knowledge and capabilities into meaningful achievements.",
 //           },
@@ -121,7 +121,7 @@ export default function LifeatModules() {
     },
     {
       title: "Learn with UFlex",
-      // image: "/images/learnat.png",
+      // image: "/images/learnat.webp",
       image: "/images/1.jpeg",
 
 

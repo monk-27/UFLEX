@@ -10,12 +10,12 @@ import useEmblaCarousel from "embla-carousel-react";
 
 const items = [
   {
-    img: "/images/trusted.png",
+    img: "/images/trusted.webp",
     title: "A trusted partner to global brands in 150+ countries",
     desc: "Delivering excellence in sustainable packaging solutions, we empower global brands worldwide with innovative technologies and unmatched reliability.",
   },
   {
-    img: "/images/endtoend.png",
+    img: "/images/endtoend.webp",
     title: "End-to-end packaging solutions for diverse industries",
     desc: "UFlex serves as a one-stop-shop flexible packaging solution provider serving varied sectors spanning FMCG, consumer product goods, pharmaceuticals, building materials, automobiles, and more.",
   },
@@ -25,12 +25,12 @@ const items = [
     desc: "Located in Noida, our state-of-the-art facility leads innovation in inks, adhesives, and coatings with globally recognized quality and precision.",
   },
   {
-    img: "/images/putting.png",
+    img: "/images/putting.webp",
     title: "Putting India on the global map for aseptic packaging",
     desc: "UFlex proudly represents India on the global aseptic packaging map, delivering innovative and sustainable solutions that meet the evolving needs of the beverage industry worldwide.",
   },
   {
-    img: "/images/new/com.jpeg",
+    img: "/images/new/com.webp",
     title: "Comprehensive and sustainable packaging ecosystems",
     desc: "From producing films, converting, engineering, printing cylinders, chemicals, holography, and aseptic packaging to recycling solutions, we deliver eco-friendly packaging solutions for a sustainable future.",
   },

@@ -110,13 +110,13 @@ export const businesses: BusinessConfig[] = [
     subheading: "Packaging Films",
     hero: {
       heading: "Our Businesses",
-      image: "/images/resin.png",
+      image: "/images/resin.webp",
       body:
         "UFlex's Packaging Films business, under the Flex Films brand, is a global leader offering innovative and sustainable packaging solutions, including BOPP, BOPET, CPP, specialty, and 100% PCR PET films, with manufacturing across 9 countries and presence in 150+ markets.",
     },
     subhero: {
       heading: "PET Resin",
-      image: "/images/resin.png",
+      image: "/images/resin.webp",
       body:
         "UFlex manufactures high-quality PET Resin in India and Egypt, supporting the global packaging ecosystem with reliable, high-performance material solutions. Poly-condensed polyester resin is a preferred raw material for producing BOPET films and rigid packaging. Known for its strength, optical clarity.",
     },
@@ -126,34 +126,34 @@ export const businesses: BusinessConfig[] = [
         {
           id: "bopet",
           title: "BOPET Film",
-          image: "/images/bopet.png",
+          image: "/images/bopet.webp",
           description:
             "High-performance polyester films for diverse packaging applications.",
         },
         {
           id: "bopp",
           title: "BOPP Film",
-          image: "/images/bopp.png",
+          image: "/images/bopp.webp",
           description:
             "Biaxially oriented polypropylene films for flexible packaging.",
         },
         {
           id: "cpp",
           title: "CPP Film",
-          image: "/images/cpp.png",
+          image: "/images/cpp.webp",
           description:
             "Cast polypropylene films for specialty and general packaging.",
         },
         {
           id: "metallized",
           title: "Metallized Film",
-          image: "/images/metallized.png",
+          image: "/images/metallized.webp",
           description: "High-barrier metallized films for enhanced shelf life.",
         },
         {
           id: "pcr",
           title: "PCR Film",
-          image: "/images/pcr.png",
+          image: "/images/pcr.webp",
           description:
             "100% PCR PET films for sustainable packaging solutions.",
         },
@@ -165,28 +165,28 @@ export const businesses: BusinessConfig[] = [
         {
           id: "bottle-grade",
           title: "Bottle Grade PET",
-          image: "/images/bottlegrade.png",
+          image: "/images/bottlegrade.webp",
           description:
             "High-performance polyester films for diverse packaging applications.",
         },
         {
           id: "film-grade",
           title: "Film Grade Polyester",
-          image: "/images/film.png",
+          image: "/images/film.webp",
           description:
             "Biaxially oriented polypropylene films for flexible packaging.",
         },
         {
           id: "rpet",
           title: "Recycled PET",
-          image: "/images/rpet.png",
+          image: "/images/rpet.webp",
           description:
             "Cast polypropylene films for specialty and general packaging.",
         },
         // {
         //   id: "Single-Pellet Soultion ",
         //   title: "Single-Pellet Soultion ",
-        //   image: "/images/single-pellet.png",
+        //   image: "/images/single-pellet.webp",
         //   description: "High-barrier metallized films for enhanced shelf life.",
         // },
       ],
@@ -199,56 +199,56 @@ export const businesses: BusinessConfig[] = [
           title: "F-MEX-M",
           description:
             "F-ETS is an advanced one-side MST-coated transparent BOPET film, specially engineered for secondary packaging of pharmaceutical tablets and pills. Developed using proprietary technology, it serves as a superior alternative to traditional cellophane-coated films for strip-to-paper sealing applications.",
-          image: "/images/fmex.png",
+          image: "/images/fmex.webp",
         },
         {
           id: "f-mex-m-2",
           title: "F-ETS: One side MST coated transparent BOPET film",
           description:
             "F-ETS is an advanced one-side MST-coated transparent BOPET film, specially engineered for secondary packaging of pharmaceutical tablets and pills. Developed using proprietary technology, it serves as a superior alternative to traditional cellophane-coated films for strip-to-paper sealing applications.",
-          image: "/images/fets.png",
+          image: "/images/fets.webp",
         },
         {
           id: "b-tcm-m",
           title: "B-TCM-M: Ultra-thin high-barrier metallized BOPP film",
           description:
             "B-TCM-M is an innovative, non-heat sealable metallized BOPP film developed for sustainable and high-performance packaging applications. At just 8 microns, it is the thinnest metallized BOPP film available, offering low GSM and high linear mileage- making it a resource-efficient choice.",
-          image: "/images/btcm.png",
+          image: "/images/btcm.webp",
         },
         {
           id: "f-hsa",
           title: "F-HSA: Heat sealable anti-fogtransparent BOPET film",
           description:
             "F-HSA is a high-performance transparent BOPET film designed with a heat sealable anti-fog surface on one side and an untreated surface on the other. Its exceptional clarity, transparency, and reliable sealing capabilities make it ideal for food packaging applications.",
-          image: "/images/fhsa.png",
+          image: "/images/fhsa.webp",
         },
         {
           id: "b-dsc-aa",
           title: "B-DSC-AA – Both side acrylic coated BOPP film",
           description:
             "This high-performance packaging film is engineered for modern flexible packaging needs, offering excellent heat sealability, hot-tack, and compatibility with lap/fin seals and PVDC-coated films. Ideal for monolayer pouches, it ensures tamper-proof, transparent packaging with strong aroma and flavor barriers.",
-          image: "/images/bdsc.png",
+          image: "/images/bdsc.webp",
         },
         {
           id: "b-dsc-al",
           title: "B-DSC-AL – Low SIT and acrylic coated BOPP film",
           description:
             "This is an advanced BOPP film coated with acrylic and a low-temperature seal layer that activates at just 65°C. Engineered for high-performance packaging, this film offers exceptional low-temperature sealability and hot-tack strength on the coated side, ensuring strong seals even under minimal heat.",
-          image: "/images/bdscda.png",
+          image: "/images/bdscda.webp",
         },
         {
           id: "b-dsc-ds",
           title: "B-DSC-DA – High barrier PVDC-acrylic coated BOPP film",
           description:
             "B-DSC-DA is a high-performance BOPP film with one side PVDC and the other side acrylic coating, designed to meet the evolving needs of flexible packaging. This film delivers outstanding barrier performance, with an oxygen transmission rate (OTR) of less than 15 cc/m²/day and water vapor transmission rate (WVTR) under 5 gm/m²/day, while maintaining excellent clarity.",
-          image: "/images/bdscas.png",
+          image: "/images/bdscas.webp",
         },
         {
           id: "b-dsc-dl",
           title: "B-DSC-DL: High barrier PVDC coated BOPP film",
           description:
             "A specialized BOPP film featuring one side PVDC coating and the other side low temperature seal (LTS) coating, which activates at just 65°C. Engineered for monolayer pouch applications, this film delivers outstanding oxygen barrier properties (<15 cc/m²/day) while maintaining excellent clarity. It offers superior low-temperature sealability and hot tack performance on the LTS side.",
-          image: "/images/bdscdl.png",
+          image: "/images/bdscdl.webp",
         },
       ],
     },
@@ -257,7 +257,7 @@ export const businesses: BusinessConfig[] = [
       subtitle: "At UFlex Packaging films business, sustainability is deeply embedded in our innovation journey.",
       description:
         "Single-pellet solution: Pioneering innovation in recyclable packaging. Our breakthrough FSSAI-compliant single-pellet solution enables the incorporation of recycled PET (rPET) in food and beverage packaging, combining recycled and virgin PET into a single, high-purity pellet with excellent strength, stability and clarity.",
-      image: "/images/sus.png",
+      image: "/images/sus.webp",
       linkLabel: "Know More",
       linkHref: "#",
     },
@@ -350,7 +350,7 @@ export const businesses: BusinessConfig[] = [
       title: "Awards & Accolades",
       description:
         "UFlex's Packaging Films business, under the Flex Films brand, is a global leader offering innovative and sustainable packaging solutions, including BOPP, BOPET, CPP, specialty, and 100% PCR PET films, with manufacturing across 9 countries and presence in 150+ markets.",
-      image: "/images/awards.png",
+      image: "/images/awards.webp",
       linkLabel: "Know More",
       linkHref: "/hall-of-fame",
     },
@@ -368,7 +368,7 @@ export const businesses: BusinessConfig[] = [
     // subheading: "Chemicals",
     hero: {
       heading: "Our Businesses",
-      image: "/images/herochem.png",
+      image: "/images/herochem.webp",
       body:
         "Our various inks, adhesives, and coatings are meticulously crafted to enhance brand vibrancy, durability, and functionality while ensuring environmental protection. Discover the essence of unparalleled commitment at our innovative hub, where excellence seamlessly intertwines with sustainability. Our solutions are meticulously crafted to cater to the distinctive requirements of the brands and businesses looking for innovative and sustainable packaging solutions.",
     },
@@ -379,21 +379,21 @@ export const businesses: BusinessConfig[] = [
         {
           id: "printing-inks",
           title: "Printing Inks",
-          image: "/images/printinginks.png",
+          image: "/images/printinginks.webp",
           description:
             "High-performance polyester films for diverse packaging applications.",
         },
         {
           id: "coatings",
           title: "Coatings",
-          image: "/images/coatings.png",
+          image: "/images/coatings.webp",
           description:
             "Biaxially oriented polypropylene films for flexible packaging.",
         },
         {
           id: "specialty-chemicals",
           title: "Specialty Chemicals",
-          image: "/images/speciality.png",
+          image: "/images/speciality.webp",
           description:
             "Cast polypropylene films for specialty and general packaging.",
         },
@@ -408,7 +408,7 @@ export const businesses: BusinessConfig[] = [
           title: "UV Digi Gloss Coating – Flexcure high slip digi coating",
           description:
             "It is an advanced solution engineered specifically for LED digitally printed PVC sheets, widely used in decor and signage applications. This advanced coating offers excellent adhesion on digitally printed surfaces, ensuring a long-lasting finish. Its high-gloss finish adds a premium visual appeal, while its superior scratch and abrasion resistance protects the print surface from everyday wear and tear. Additionally, the coating cures rapidly under UV lamps, significantly enhancing the durability and lifespan of printed materials.",
-          image: "/images/uvgloss.png",
+          image: "/images/uvgloss.webp",
         },
         {
           id: "flexcure-hf-gr-gloss-coating",
@@ -416,7 +416,7 @@ export const businesses: BusinessConfig[] = [
             "High Flexibility UV Coating for Flexible Packaging – FLEXCURE HF GR GLOSS COATING",
           description:
             "It is an advanced UV coating solution developed specifically for flexible packaging. Ideal for use on flexible laminates, pouches, and specialty packaging, this coating offers exceptional flexibility and fold-crack resistance, making it suitable for dynamic packaging formats.",
-          image: "/images/new/high.jpeg",
+          image: "/images/new/high.webp",
         },
         {
           id: "water-based-adhesives",
@@ -424,14 +424,14 @@ export const businesses: BusinessConfig[] = [
             "Water Based Dry Lamination Adhesives – FLEXBOND FB DL–502 and FLEXBOND FB DL– 504",
           description:
             "These are water-based synthetic copolymer emulsion adhesives developed for high-speed dry lamination applications in offset packaging. These ready-to-use, 100% aqueous adhesives are ideal for laminating a wide range of films—including clear BOPP, matt BOPP, METPET, clear PET, and PVC—to printed or unprinted paper and duplex board substrates.",
-          image: "/images/waterbased.png",
+          image: "/images/waterbased.webp",
         },
         {
           id: "thermoplastic-polyurethane-resin",
           title: "Thermoplastic Polyurethane Resin - FLEXPAK 5300",
           description:
             "It is a newly developed thermoplastic polyurethane resin with high molecular weight, formulated using aliphatic urethane technology. Designed to support sustainable packaging solutions, this advanced binder system demonstrates excellent solubility in a range of alcohols, esters, and co-solvents, making it ideally suited for flexographic ink systems.",
-          image: "/images/thermo.png",
+          image: "/images/thermo.webp",
         },
         {
           id: "inks-latest-updates",
@@ -439,7 +439,7 @@ export const businesses: BusinessConfig[] = [
           description: `• Water based ink application areas have been extended by developing new inks for corrugation, Paper Cups, Paper bags, Tissue paper & Notebook printing. Brand owners like Subway, KFC, Adidas have approved of our inks
 • 4S Non-Toluene Polyurethane ink has been rolled out successfully in the Domestic market
 • In CI Flexo the new inks series developed for corona treated PET, breathable & non breathable PE printing`,
-          image: "/images/latestink.png",
+          image: "/images/latestink.webp",
         },
       ],
     },
@@ -447,7 +447,7 @@ export const businesses: BusinessConfig[] = [
       title: "Sustainability",
       description:
         "Committed to reducing our carbon footprint Development of sustainable products such as water-based inks and adhesives, along with focused water and energy conservation efforts and a reduction in hazardous waste generation, are some of the key initiatives undertaken by our Chemicals business to reduce its carbon footprint. These efforts are supported by process optimisation, responsible sourcing, improved effluent management practices, and continuous monitoring to enhance environmental performance across operations",
-      image: "/images/sus.png",
+      image: "/images/sus.webp",
       linkLabel: "Know More",
       linkHref: "#",
     },
@@ -455,7 +455,7 @@ export const businesses: BusinessConfig[] = [
       title: "Leadership",
       details: [
         {
-          photo: "/images/desh.png",
+          photo: "/images/desh.webp",
           name: "Desh Deepak Misra",
           role: "Joint President, Chemicals Business",
           summary:
@@ -463,7 +463,7 @@ export const businesses: BusinessConfig[] = [
           cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
         },
         {
-          photo: "/images/rajesh.png",
+          photo: "/images/rajesh.webp",
           name: "Mr. Rajesh Srivastava",
           role:
             "Executive Vice President, Sales and Marketing - Chemicals Business",
@@ -511,7 +511,7 @@ export const businesses: BusinessConfig[] = [
       title: "Awards & Accolades",
       description:
         "Over the last several years, UFlex's Chemicals business has received various awards and certifications for its innovative and sustainable products and solutions, reflecting its strong commitment to responsible manufacturing, safety excellence, regulatory compliance, and continuous improvement in environmental and operational performance.",
-      image: "/images/awards.png",
+      image: "/images/awards.webp",
       linkLabel: "Know More",
       linkHref: "/hall-of-fame",
     },
@@ -528,7 +528,7 @@ export const businesses: BusinessConfig[] = [
     label: "Aseptic Packaging",
     hero: {
       heading: "Our Businesses",
-      image: "/images/3.png",
+      image: "/images/3.webp",
       body:
         "Asepto, the Aseptic Packaging brand of UFlex, is the world's fastest-growing aseptic packaging company, proudly serving over 200 esteemed clients across more than 40 countries. As a leading provider of end-to-end aseptic liquid packaging solutions, we offer innovative designs, six-layered cartons, highly advanced filling machines, and exceptional service from highly trained engineers.",
     },
@@ -539,28 +539,28 @@ export const businesses: BusinessConfig[] = [
         {
           id: "aseptic-cartons",
           title: "Aseptic Cartons",
-          image: "/images/asepcticcartons.png",
+          image: "/images/asepcticcartons.webp",
           description:
             "High-performance polyester films for diverse packaging applications.",
         },
         {
           id: "sip",
           title: "A Sip",
-          image: "/images/asip.png",
+          image: "/images/asip.webp",
           description:
             "Biaxially oriented polypropylene films for flexible packaging.",
         },
         {
           id: "filling-machines",
           title: "Filling Machines",
-          image: "/images/filling.png",
+          image: "/images/filling.webp",
           description:
             "Cast polypropylene films for specialty and general packaging.",
         },
         {
           id: "asepto-pro",
           title: "Asepto Pro",
-          image: "/images/aseptopro.png",
+          image: "/images/aseptopro.webp",
           description:
             "Cast polypropylene films for specialty and general packaging.",
         },
@@ -575,14 +575,14 @@ export const businesses: BusinessConfig[] = [
           title: "India’s First Aseptic Carton Package",
           description:
             "As the first aseptic carton package in India featuring 5% certified recycled polymers, and the first paper-based beverage carton producer in the country to use recycled plastic, UFlex is setting new benchmarks in sustainable packaging, supporting circularity, resource efficiency, and reduced environmental impact.",
-          image: "/images/invp.png",
+          image: "/images/invp.webp",
         },
         {
           id: "holography-stamping-foils",
           title: "Holography and Stamping Foils",
           description:
             "Flex continues to set global benchmarks through advanced infrastructure, technical excellence, advanced R&D, and deep market intelligence, ensuring world-class quality and innovation across its offerings. Our state-of-the-art in-house manufacturing facilities, equipped with Origination, Coatings, Metallizers, and Slitting machines, enable advanced transfer technology, enhancing both surface appeal and tactile experience.",
-          image: "/images/invps.png",
+          image: "/images/invps.webp",
         },
       ],
     },
@@ -590,7 +590,7 @@ export const businesses: BusinessConfig[] = [
       title: "Sustainability",
       description:
         "At Asepto, sustainability isn't just a commitment; it's a driving force behind innovation. Asepto brings a sustainable solution to this pressing concern of aseptic cartons reaching landfills. With their proper extraction and assimilation, Asepto paves the way for a Circular Economy. Enzymatic Delamination Technology (EDT) is Asepto’s sustainable solution to reprocess the aseptic cartons to bring them back into the circular economy. Through EDT, we can separate and recover valuable materials like aluminium, polymers, and paper pulp from these cartons. By doing so, we significantly reduce the environmental footprint associated with their disposal.",
-      image: "/images/sus.png",
+      image: "/images/sus.webp",
       linkLabel: "Know More",
       linkHref: "#",
     },
@@ -598,7 +598,7 @@ export const businesses: BusinessConfig[] = [
       title: "Leadership",
       details: [
         {
-          photo: "/images/ashwani.png",
+          photo: "/images/ashwani.webp",
           name: "Mr. Ashwani K. Sharma",
           role: "President and CEO, Aseptic packaging business",
           summary:
@@ -612,7 +612,7 @@ export const businesses: BusinessConfig[] = [
       title: "Awards & Accolades",
       description:
         "Our circular initiatives and recycling programmes have been recognised by leading global industry bodies, reflecting Asepto’s commitment to responsible and sustainable packaging. These recognitions highlight our consistent efforts to reduce waste, improve material efficiency, and support recycling across our operations.",
-      image: "/images/awards.png",
+      image: "/images/awards.webp",
       linkLabel: "Know More",
       linkHref: "/hall-of-fame",
     },
@@ -628,7 +628,7 @@ export const businesses: BusinessConfig[] = [
   label: "Flexible Packaging",
   hero: {
     heading: "Our Businesses",
-    image: "/images/flexi.png",
+    image: "/images/flexi.webp",
     body:
       "We offer a comprehensive range of products, including flexible laminates, pre-formed pouches, Flexo-printed rolls and bags, laminated woven polypropylene (WPP) bags, electron beam and Cast n Cure technology, pharmaceutical packaging, Flexible Tubes, hygiene films, Flexfresh™ modified atmosphere packaging, and big bags. At UFlex, we don’t just deliver packaging—we deliver excellence, innovation.",
   },
@@ -639,21 +639,21 @@ export const businesses: BusinessConfig[] = [
       {
         id: "flexible-laminates",
         title: "Flexible Laminates",
-        image: "/images/flexiblelaminates.png",
+        image: "/images/flexiblelaminates.webp",
         description:
           "High-performance polyester films for diverse packaging applications.",
       },
       {
         id: "pre-formed-pouches",
         title: "Pre Formed Pouches",
-        image: "/images/preformpouches.png",
+        image: "/images/preformpouches.webp",
         description:
           "Biaxially oriented polypropylene films for flexible packaging.",
       },
       {
         id: "electron-bar",
         title: "Electron Bar",
-        image: "/images/elctron.png",
+        image: "/images/elctron.webp",
         description:
           "Cast polypropylene films for specialty and general packaging.",
       },
@@ -664,7 +664,7 @@ export const businesses: BusinessConfig[] = [
     title: "Sustainability",
     description:
       "Driving Sustainable Growth Through Smarter Packaging Practices. UFlex is deeply committed to environmental sustainability and has undertaken several impactful initiatives across India to reduce its carbon footprint and enhance operational productivity. The company consistently invests in advanced technologies that consume less energy per ton of flexible packaging, promoting more efficient and responsible manufacturing practices. All in-house production waste is recycled and reintegrated into the manufacturing cycle, significantly reducing landfill pressure and helping curb pollution.",
-    image: "/images/sus.png",
+    image: "/images/sus.webp",
     linkLabel: "Know More",
     linkHref: "#",
   },
@@ -674,7 +674,7 @@ export const businesses: BusinessConfig[] = [
     details: [
       {
         photo:
-          "/images/jeevaraj.png",
+          "/images/jeevaraj.webp",
         name: "Mr. Jeevaraj Gopal Pillai",
         role: "Whole Time Director",
         summary:
@@ -696,7 +696,7 @@ export const businesses: BusinessConfig[] = [
     title: "Awards & Accolades",
     description:
       "Over the last several years, UFlex’s Flexible Packaging business has received various awards and certifications for its innovative and sustainable packaging solutions.",
-    image: "/images/awards.png",
+    image: "/images/awards.webp",
     linkLabel: "Know More",
     linkHref: "/hall-of-fame",
   },
@@ -713,7 +713,7 @@ export const businesses: BusinessConfig[] = [
   label: "Holography",
   hero: {
     heading: "Holography",
-    image: "/images/holographyhero.png", // replace with your actual image
+    image: "/images/holographyhero.webp", // replace with your actual image
     body:
       "The UFlex holography business is India's largest and most trusted provider of brand protection and anti-counterfeiting solutions, as well as an emerging global player in the industry. The Holography Business offers a comprehensive range of holographic solutions, including Advanced Security Holograms, Security Paper Labels & Tax Stamps, Wide Web Holographic Films, Stamping Foils, Transfer Holographic Metallized Paper & Paperboard, Security documents, & Textile Application Films for Sequins, Hot Melt, and Glitter Powder.",
   },
@@ -724,42 +724,42 @@ export const businesses: BusinessConfig[] = [
       {
         id: "stamping-foils",
         title: "Stamping Foils",
-        image: "/images/stamping.png"
+        image: "/images/stamping.webp"
       },
       {
         id: "security-documents",
         title: "Security Documents",
-        image: "/images/security.png"
+        image: "/images/security.webp"
       },
       {
         id: "textile-application",
         title: "Textile Application",
-        image: "/images/textile.png"
+        image: "/images/textile.webp"
       },
       {
         id: "holographic-paper",
         title: "Holographic Metallized Paper",
-        image: "/images/holographic.png"
+        image: "/images/holographic.webp"
       },
       {
         id: "transfer-holographic-metallized-paper",
         title: "Stamping Foils ",
-        image: "/images/digital.png"
+        image: "/images/digital.webp"
       },
       {
         id: "transfer-paper-board",
         title: "Transfer Paper/ Board",
-        image: "/images/transfer.png"
+        image: "/images/transfer.webp"
       },
       {
         id: "wide-web-holographic-films",
         title: "Wide Web Holographic Films ",
-        image: "/images/wide.png"
+        image: "/images/wide.webp"
       },
       {
         id: "stamping-foils-2",
         title: "Stamping Foils",
-        image: "/images/stampingfoil.png"
+        image: "/images/stampingfoil.webp"
       }
     ]
   },
@@ -772,49 +772,49 @@ export const businesses: BusinessConfig[] = [
         title: "Digital Stamp Foiling",
         description:
           "Digital Stamping Foil, a product designed for seamless compatibility with all digital presses. This high-performance foil offers a high-gloss finish, fine detailing, and versatile application on coated/uncoated paperboard and plastics. Ideal for premium decorative applications, it enhances aesthetics with embellishment effects, including 2D and embossed designs,ensuring a sophisticated and high-end appeal",
-        image: "/images/digital.png"
+        image: "/images/digital.webp"
       },
       {
         id: "holography-and-stamping",
         title: "Holography and Stamping Foils",
         description:
           "Flex continues to set global benchmarks through advanced infrastructure, technical excellence, advanced R&D, and deep market intelligence, ensuring world-class quality and innovation across its offerings. Our state-of-the-art in-house manufacturing facilities, equipped with Origination, Coatings, Metallizers, and Slitting machines, enable advanced transfer technology, enhancing both surface appeal and tactile experience.",
-        image: "/images/foils.png"
+        image: "/images/foils.webp"
       },
       {
         id: "alu-alu-blister",
         title: "Holographic Alu-Alu Blister",
         description:
           "With a growing demand for secure and overt packaging solutions, UFlex’s Holographic Alu-Alu Blister is making a significant impact, with sustained adoption expected among pharmaceutical companies seeking advanced anti-counterfeiting measures.",
-        image: "/images/blister.png"
+        image: "/images/blister.webp"
       },
       {
         id: "decorative-products",
         title: "Decorative Products Segment",
         description:
           "Designed using specialized holographic foils and intricate patterns, these products create vibrant multi-dimensional effects. Their surfaces capture and reflect light from various angles, delivering a premium and dynamic visual appeal.",
-        image: "/images/decorative.png"
+        image: "/images/decorative.webp"
       },
       {
         id: "advanced-blister-packs",
         title: "Advanced holographic blister packs",
         description:
           "UFlex’s enhanced holographic blister packs are engineered with advanced security features, making replication virtually impossible. In the pharmaceutical industry- where safety and efficacy are critical- UFlex's cutting-edge holographic technology offers unparalleled protection for both brands and consumers.",
-        image: "/images/advanced.png"
+        image: "/images/advanced.webp"
       },
       {
         id: "high-refractive-sequins",
         title: "High-Refractive Holographic Sequins Film",
         description:
           "UFlex’s high-refractive holographic sequins film delivers exceptional brilliance and luster. Targeted at premium markets, it combines advanced holographic technology with precision coatings to create stunning light and color effects.",
-        image: "/images/refractive.png"
+        image: "/images/refractive.webp"
       },
       {
         id: "3d-flipogram",
         title: "3D Flipogram – Advanced Visual Anti-Counterfeiting Technology",
         description:
           "UFlex’s 3D Flipogram revolutionizes brand protection with its advanced micro-optical technology, delivering unparalleled visual anti-counterfeiting solutions. Comprising hundreds of thousands of micro-lenses, this highly secure technology, also used in currency notes, creates a unique and dynamic 3D visual effect that is virtually impossible to replicate.",
-        image: "/images/flipogram.png"
+        image: "/images/flipogram.webp"
       }
     ]
   },
@@ -823,7 +823,7 @@ export const businesses: BusinessConfig[] = [
     title: "Sustainability",
     description:
       "In the process of providing the best fraud-preventive infallible seals of full-proof product security, we ensure that all emissions are well below the permissible levels. We continuously strive for minimum process waste generation and optimally recycle the same. We have many solutions of sustainability segment- holographic transfer on paper and board, cold transfer foils, recycled RSC certified sequins film, cast and cure holographic films among many other",
-    image: "/images/sus.png",
+    image: "/images/sus.webp",
     linkLabel: "Know More",
     linkHref: "#"
   },
@@ -832,7 +832,7 @@ export const businesses: BusinessConfig[] = [
     title: "Leadership",
     details: [
       {
-        photo: "/images/vinod.png",
+        photo: "/images/vinod.webp",
         name: "Mr. Vinod Hariharan",
         role: "Executive Vice President – Holography Business",
         summary:
@@ -840,7 +840,7 @@ export const businesses: BusinessConfig[] = [
         cta: { label: "Read More", href: "/leadership/vinod-hariharan" }
       },
       {
-        photo: "/images/pathak.png",
+        photo: "/images/pathak.webp",
         name: "Mr. G.P. Pathak",
         role: "Vice President – Operations and New Product Development, Holography Business",
         summary:
@@ -848,7 +848,7 @@ export const businesses: BusinessConfig[] = [
         cta: { label: "Read More", href: "/leadership/gp-pathak" }
       },
       {
-        photo: "/images/rakesh.png",
+        photo: "/images/rakesh.webp",
         name: "Mr. Rakesh Khazanchi",
         role: "Vice President – Sales and Marketing, Holography Business",
         summary:
@@ -862,7 +862,7 @@ export const businesses: BusinessConfig[] = [
     title: "Awards & Accolades",
     description:
       "Over the last several years, UFlex’s Flexible Packaging business has received various awards and certifications for its innovative and sustainable packaging solutions.",
-    image: "/images/awards.png",
+    image: "/images/awards.webp",
     linkLabel: "Know More",
     linkHref: "/hall-of-fame"
   },
@@ -880,7 +880,7 @@ export const businesses: BusinessConfig[] = [
   label: "Engineering",
   hero: {
     heading: "Engineering",
-    image: "/images/heroengg.png",
+    image: "/images/heroengg.webp",
     body:
       "A leading manufacturer specializing in top-tier packaging, printing, and allied machines, catering to diverse needs across industries. Established in 1985, UFlex Engineering is a leading manufacturer specializing in top-tier packaging, printing, and allied machines. Our commitment to delivering high-performance machines and tailored solutions has propelled us to the forefront of the industry. We offer a comprehensive range of products and cater to diverse needs across various sectors.",
   },
@@ -890,13 +890,13 @@ export const businesses: BusinessConfig[] = [
       {
         id: "packaging-machines",
         title: "Packaging Machines",
-        image: "/images/packagingmacines.png",
+        image: "/images/packagingmacines.webp",
         description: "",
       },
       {
         id: "converting-machines",
         title: "Converting Machines",
-        image: "/images/converting.png",
+        image: "/images/converting.webp",
         description: "",
       },
     ],
@@ -909,42 +909,42 @@ export const businesses: BusinessConfig[] = [
         title: "Double Head Coating-1650",
         description:
           "UFlex's Engineering Business meets market demand with coating machines covering up to 2500mm web widths. Recent offerings include a 1650mm double-headed model applying various coatings with methods like gravure and kiss coating.",
-        image: "/images/double.png",
+        image: "/images/double.webp",
       },
       {
         id: "pfs-4u",
         title: "PFS-4U",
         description:
           "UFlex launched the LPFS-4U (4 UP Linear, Pick, Fill, and Seal) machine in Q3, 2022. This machine, driven entirely by servos, ensures speed, performance, safety, hygiene, and environmental sustainability for brands. With an operator-friendly interface and efficient filling system, it accommodates various applications, running up to 20 PPM per track with four channels.",
-        image: "/images/pfs4u.png",
+        image: "/images/pfs4u.webp",
       },
       {
         id: "rotary-horizontal-high-speed-form-fill-and-seal",
         title: "Rotary Horizontal High-Speed Form Fill and Seal Machine with Gripper",
         description:
           "UFlex Engineering's innovative design for a Rotary Horizontal High-Speed Form Fill and Seal machine features grippers that hold pouches without conveyor belts, enhancing pouch quality and preventing leaks.",
-        image: "/images/rotary.png",
+        image: "/images/rotary.webp",
       },
       {
         id: "accu-slit-3300",
         title: "Accu Slit-3300",
         description:
           "After the successful performance of Accu Slit2500 and Accu Eco Slit-3000, the UFlex Engineering Business design team developed Accu Slit-3300, the new slitter of width 3300, for slitting Metalized BOPP and other substrates in FY23.",
-        image: "/images/accu.png",
+        image: "/images/accu.webp",
       },
       {
         id: "asepto-speed-25000",
         title: "Asepto Speed 25000 machine",
         description:
           "UFlex, under the flagship of Asepto, introduced the next-gen, superpower Asepto Speed 25000 machine, an innovative engineering marvel that can process 25,000 aseptic liquid cartons per hour. It is the next-generation aseptic liquid filling machine with state-of-the-art technology that works at lightning speed with the convenience of an all-in-one portion-pack filling facility.",
-        image: "/images/asepto.png",
+        image: "/images/asepto.webp",
       },
       {
         id: "uflex-flexi-liquid-double-head",
         title: "UFlex-flexi-liquid (double head)",
         description:
           "The newly introduced machinery boasts an array of features designed to optimize operation efficiency. Its user-friendly interface ensures easy operation, while its low maintenance requirements minimize downtime. Despite its compact design and small footprint, it integrates seven servos, enabling high-speed performance.",
-        image: "/images/flexiuflex.png",
+        image: "/images/flexiuflex.webp",
       },
     ],
   },
@@ -952,7 +952,7 @@ export const businesses: BusinessConfig[] = [
     title: "Sustainability",
     description:
       "At UFlex, we prioritise environmental responsibility across our operations. UFlex engineering has undertaken several initiatives focussed on water conservation, waste management and enhancing biodiversity surrounding our facilities.",
-    image: "/images/sus.png",
+    image: "/images/sus.webp",
     linkLabel: "Know More",
     linkHref: "#",
   },
@@ -960,7 +960,7 @@ export const businesses: BusinessConfig[] = [
     title: "Leadership",
     details: [
       {
-        photo: "/images/ravi.png",
+        photo: "/images/ravi.webp",
         name: "Mr. Ravi Sharma",
         role: "Joint President - Engineering and Solutions Delivery, Engineering Business",
         summary:
@@ -968,7 +968,7 @@ export const businesses: BusinessConfig[] = [
         cta: { label: "Read More", href: "/leadership/ravi-sharma" },
       },
       {
-        photo: "/images/akash.png",
+        photo: "/images/akash.webp",
         name: "Mr. Akash Khandelwal",
         role: "Executive Vice President – Operations, Engineering Business",
         summary:
@@ -976,7 +976,7 @@ export const businesses: BusinessConfig[] = [
         cta: { label: "Read More", href: "/leadership/akash-khandelwal" },
       },
       {
-        photo: "/images/summet.png",
+        photo: "/images/summet.webp",
         name: "Mr. Sumeet Arora",
         role: "Senior Vice President - Sales and Marketing, Engineering Business",
         summary:
@@ -988,7 +988,7 @@ export const businesses: BusinessConfig[] = [
   awards: {
     title: "Awards & Accolades",
     description: "Over the last several years, UFlex’s Flexible Packaging business has received various awards and certifications for its innovative and sustainable packaging solutions.",
-    image: "/images/awards.png",
+    image: "/images/awards.webp",
     linkLabel: "Know More",
     linkHref: "/hall-of-fame",
   },
@@ -1003,7 +1003,7 @@ export const businesses: BusinessConfig[] = [
   label: "Printing Cylinders",
   hero: {
     heading: "Printing Cylinders",
-    image: "/images/heroprinting.png",
+    image: "/images/heroprinting.webp",
     body:
       "UFlex printing cylinders business enforces stringent quality control at every stage of production to deliver world-class cylinders. With advanced technology, the business manages the complete cylinder production process, starting from the steel base, copper plating, and surface finishing to digital engraving, chrome plating, and final proof printing.",
   },
@@ -1014,21 +1014,21 @@ export const businesses: BusinessConfig[] = [
       {
         id: "gravure-cylinders",
         title: "Gravure Cylinders",
-        image: "/images/gravure.png",
+        image: "/images/gravure.webp",
         description:
           "High-performance cylinders for precision gravure printing.",
       },
       {
         id: "ctp-flexo-plates",
         title: "CTP Flexo Plates",
-        image: "/images/ctp.png",
+        image: "/images/ctp.webp",
         description:
           "Computer-to-plate flexographic plates for consistent, high-quality impressions.",
       },
       {
         id: "flexo-printing-sleeves",
         title: "Flexo Printing Sleeves",
-        image: "/images/flexo.png",
+        image: "/images/flexo.webp",
         description:
           "Durable sleeves designed for efficient and flexible flexo printing.",
       },
@@ -1044,7 +1044,7 @@ export const businesses: BusinessConfig[] = [
           "Holographic effect on leatherettes through steel embossed cylinders",
         description:
           "The holographic effect on leatherettes like PU and PVC-based materials through steel embossed cylinders have multiple applications that enhance the aesthetics of products used for home decor, handbags, car seat cover, and raincoat and shoes.",
-        image: "/images/leather.png",
+        image: "/images/leather.webp",
       },
       {
         id: "twining-effect-leatherettes-steel",
@@ -1052,35 +1052,35 @@ export const businesses: BusinessConfig[] = [
           "Twining effect on leatherettes and steel through laser embossed cylinders",
         description:
           "The twining effect on leatherettes and steel provides an array of applications and enhances the product finish and aesthetics in fashion, lift wall decorations, curtains, handbags, car seat covers, flooring, shopping malls, and hospital floors.",
-        image: "/images/pfs4u.png",
+        image: "/images/pfs4u.webp",
       },
       {
         id: "carving-effect-pvc",
         title: "Carving effect through laser embossing on PVC",
         description:
           "Carving effect through laser embossing on PVC has many attractive applications for home decoration. It can enhance the attractiveness and aesthetics of home interiors like modular kitchens, table covers, door mats, floor mats, and even in-car floor mats. It is durable, easy to maintain, cost-effective, and can be installed in a short time.",
-        image: "/images/pvc.png",
+        image: "/images/pvc.webp",
       },
       {
         id: "laser-embossing-shoe-soles",
         title: "Laser embossing on the shoe soles",
         description:
           "Carving effect through laser embossing on PVC has many attractive applications for home decoration. It can enhance the attractiveness and aesthetics of home interiors like modular kitchens, table covers, door mats, floor mats, and even in-car floor mats. It is durable, easy to maintain, cost-effective, and can be installed in a short time.",
-        image: "/images/shoes.png",
+        image: "/images/shoes.webp",
       },
       {
         id: "aesthetic-effect-shoe-foxing",
         title: "Aesthetic effect on shoe foxing through laser embossing",
         description:
           "Solutions that make footwear more attractive and appealing to customers. The aesthetic effect of shoe foxing (the upper layer of shoe sides) makes footwear more attractive and appealing to customers. This effect helps shoe manufacturers to rapidly multiply their revenues. In addition, this embossing on shoe foxing creates a higher demand for such footwear in the market.",
-        image: "/images/laser.png",
+        image: "/images/laser.webp",
       },
       {
         id: "anti-skidding-foot-mat",
         title: "Anti-skidding pattern on foot mat through laser embossing",
         description:
           "3D anti-skidding effect on PVC sheets through laser embossing. This innovation creates a 3D anti-skidding effect on PVC sheets through laser embossing. Such skid-free embossing can be used in the manufacturing of foot mats.",
-        image: "/images/antiskiding.png",
+        image: "/images/antiskiding.webp",
       },
     ],
   },
@@ -1089,7 +1089,7 @@ export const businesses: BusinessConfig[] = [
     title: "Sustainability",
     description:
       "Acting today for a sustainable tomorrow. Through energy-efficient technologies, eco-friendly processes, and responsible waste management, we are proud to foster an eco-friendly environment at our plants.",
-    image: "/images/sus.png",
+    image: "/images/sus.webp",
     linkLabel: "Know More",
     linkHref: "#",
   },
@@ -1098,7 +1098,7 @@ export const businesses: BusinessConfig[] = [
     title: "Leadership",
     details: [
       {
-        photo: "/images/parvez.png",
+        photo: "/images/parvez.webp",
         name: "Mr. Parwez Izhar",
         role: "Executive Vice President - Printing Cylinders Business",
         summary:`With nearly three decades of experience
@@ -1122,7 +1122,7 @@ a Lean Six Sigma black belt champion.`,cta: { label: "Read More", href: "/leader
     title: "Awards & Accolades",
     description:
       "Over the last several years, UFlex’s Printing Cylinder business has received various awards and certifications.",
-    image: "/images/awards.png",
+    image: "/images/awards.webp",
     linkLabel: "Know More",
     linkHref: "/hall-of-fame",
   },
@@ -1139,7 +1139,7 @@ a Lean Six Sigma black belt champion.`,cta: { label: "Read More", href: "/leader
     label: "Flexible Tubes",
     hero: {
       heading: "Flexible Tubes",
-      image: "/images/heroflexi.png",
+      image: "/images/heroflexi.webp",
       body: `Our innovative multilayer flexible tube packaging solutions have been designed especially for the beauty, personal care and pharma industries.
 At UFlex, we challenge conventions through design thinking—reimagining material choices, printing, lamination, and production to deliver packaging that’s as innovative as it is impactful.`,
     },
@@ -1149,37 +1149,37 @@ At UFlex, we challenge conventions through design thinking—reimagining materia
         {
           id: "greenika",
           title: "GREENIKA",
-          image: "/images/greenika.png",
+          image: "/images/greenika.webp",
         },
         {
           id: "gloss-tubes",
           title: "Gloss Tubes",
-          image: "/images/glosstubes.png",
+          image: "/images/glosstubes.webp",
         },
         {
           id: "mettalika",
           title: "METTALIKA",
-          image: "/images/metalika.png",
+          image: "/images/metalika.webp",
         },
         {
           id: "mattika",
           title: "MATTIKA",
-          image: "/images/matika.png",
+          image: "/images/matika.webp",
         },
         {
           id: "matte-metallica",
           title: "Matte Metallica",
-          image: "/images/matte.png",
+          image: "/images/matte.webp",
         },
         {
           id: "de-mettalized",
           title: "DE METTALIZED",
-          image: "/images/de.png",
+          image: "/images/de.webp",
         },
         {
           id: "optika",
           title: "OPTIKA",
-          image: "/images/optika.png",
+          image: "/images/optika.webp",
         },
       ],
     },
@@ -1193,7 +1193,7 @@ At UFlex, we challenge conventions through design thinking—reimagining materia
           description: `Our Gravure-reverse printed tubes with ultra-HD resolution provide vibrant, razor-sharp branding. The photorealistic imagery enhances the shelf presence of the brand.
 
 With 75% of purchasing decisions made by consumers at the shelf, aesthetically designed packaging is a brand’s silent salesperson.`,
-          image: "/images/matika.png",
+          image: "/images/matika.webp",
         },
         {
           id: "metallized-holographic-films",
@@ -1209,7 +1209,7 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
           description: `Our laser engraving and covert printing technologies offer brand protection and authenticity for pharmaceuticals and premium cosmetics through:
 • Tamper-proof designs (overt and covert security features)
 • Lensing effect (single or multiple lensing)`,
-          image: "/images/optika.png",
+          image: "/images/optika.webp",
         },
         {
           id: "sustainability-measurable",
@@ -1219,7 +1219,7 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
 • In-house BOPP/PET/polyethylene production - Lower carbon vs. outsourced supply chains
 • Water-based inks/chemicals - Safer end-of-life processing
 • Circularity Pathways - Lightweighting (up to 20% material reduction) and recyclability-ready designs (mono-material structures)`,
-          image: "/images/de.png",
+          image: "/images/de.webp",
         },
       ],
     },
@@ -1227,7 +1227,7 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
       title: "Sustainability",
       description:
         "Driving Sustainable Growth Through Smarter Packaging Practices.\nOur commitment to Environmental & Social Responsibility (ESR) and sustainability is more than a value—it’s a strategy. We foster collaborative, long-term partnerships with brand owners to co-create packaging that is not only beautiful and secure but also future-ready and planet-positive.",
-      image: "/images/sus.png",
+      image: "/images/sus.webp",
       linkLabel: "Know More",
       linkHref: "#",
     },
@@ -1235,14 +1235,14 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
       title: "Leadership",
       details: [
         {
-          photo: "/images/bose.png",
+          photo: "/images/bose.webp",
           name: "Mr. Subrata Bose",
           role:
             "Senior Vice President - Tubes, Flexible Packaging Business",
           summary: "",
         },
         {
-          photo: "/images/venkatesh.png",
+          photo: "/images/venkatesh.webp",
           name: "Mr. Venkatesh Rajagopalan",
           role:
             "Senior Vice President - Flexible Tubes Business",
@@ -1253,7 +1253,7 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
     awards: {
       title: "Awards & Accolades",
       description: "Over the last several years, UFlex’s Printing Cylinder business has received various awards and certifications.",
-      image: "/images/awards.png",
+      image: "/images/awards.webp",
       linkLabel: "Know More",
       linkHref: "/hall-of-fame",
     },

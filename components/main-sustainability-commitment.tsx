@@ -810,14 +810,14 @@ export default function WhatWeDoPage() {
       title: "2023-24",
       href: "/packaging-films-business",
       desc: "High-performance BOPET/BOPP films for diverse applications.",
-      img: "/images/sr1.png"
+      img: "/images/sr1.webp"
       // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Packaging-Films-Business-faq-icon21.svg",
     },
     {
       title: "2022-23",
       href: "/flexible-packaging-business",
       desc: "Custom structures for brand impact and efficiency.",
-      img: "/images/sr2.png"
+      img: "/images/sr2.webp"
 
       // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Flexible-Packaging-Business-faq-icon36.svg",
     },
@@ -825,7 +825,7 @@ export default function WhatWeDoPage() {
       title: "2021-22",
       href: "/aseptic-packaging-business",
       desc: "Safe, shelf-stable solutions with extended freshness.",
-      img: "/images/sr3.png"
+      img: "/images/sr3.webp"
 
       // img: "https://uflex.wpdevstudio.site/HTML/uploaded-files/category/icons/Aseptic-Packaging-Business-faq-icon56.svg",
     },
@@ -834,11 +834,11 @@ export default function WhatWeDoPage() {
   ]
 
   // const policiesDocs: InvestorCard[] = [
-  //   { title: "Unpaid / Unclaimed Dividend", subtitle: "Check & claim.", image: "/images/policy1.png", href: "#" },
-  //   { title: "Transfer of shares to IEPF", subtitle: "Process & status.", image: "/images/policy2.png", href: "#" },
-  //   { title: "Registrar", subtitle: "RTA contact.", image: "/images/policy3.png", href: "#" },
-  //   { title: "Compliance Report", subtitle: "Statutory disclosures.", image: "/images/policy4.png", href: "#" },
-  //   { title: "Registrar", subtitle: "RTA contact.", image: "/images/policy3.png", href: "#" },
+  //   { title: "Unpaid / Unclaimed Dividend", subtitle: "Check & claim.", image: "/images/policy1.webp", href: "#" },
+  //   { title: "Transfer of shares to IEPF", subtitle: "Process & status.", image: "/images/policy2.webp", href: "#" },
+  //   { title: "Registrar", subtitle: "RTA contact.", image: "/images/policy3.webp", href: "#" },
+  //   { title: "Compliance Report", subtitle: "Statutory disclosures.", image: "/images/policy4.webp", href: "#" },
+  //   { title: "Registrar", subtitle: "RTA contact.", image: "/images/policy3.webp", href: "#" },
 
   // ];
 

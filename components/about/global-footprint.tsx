@@ -37,7 +37,7 @@
 //           Manufacturing excellence across five continents
 //         </p>
 //         <div className="mt-12 flex items-center justify-center">
-//           <Image src="/images/map.png"
+//           <Image src="/images/map.webp"
 //             height={1500} width={1700} alt={""} />
 //         </div>
 
@@ -196,7 +196,7 @@ const GlobalFootprint = () => {
         </p>
 
         <div className="mt-12 flex items-center justify-center">
-          <Image src="/images/maps.png" width={100} height={100} priority alt="" className="object-fit sm:object-cover w-[1800px] sm:w-[1800px] h-[200px] sm:h-[617px]"/>
+          <Image src="/images/maps.webp" width={100} height={100} priority alt="" className="object-fit sm:object-cover w-[1800px] sm:w-[1800px] h-[200px] sm:h-[617px]"/>
         </div>
 
         {/* CATEGORY WISE CARDS */}

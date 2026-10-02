@@ -8,14 +8,14 @@ import SustainabilityGrid from '@/components/buisness-sustainability'
 
 export const PLANT_FEATURES_SUSTAINABILITY_DATA = [
     {
-        image: "/images/sus/p1.png",
+        image: "/images/sus/p1.webp",
         title: "",
         by: "",
         description:
             "Energy efficiency technology at the plant reduces power consumption by nearly 60%, cutting operational and maintenance costs.",
     },
     {
-        image: "/images/sus/p2.png",
+        image: "/images/sus/p2.webp",
         title: "",
         by: "",
         description:
@@ -29,7 +29,7 @@ export const PLANT_FEATURES_SUSTAINABILITY_DATA = [
             "Made from high-grade FRP, the plant is durable, lightweight, compact, and portable.",
     },
     {
-        image: "/images/sus/p4.png",
+        image: "/images/sus/p4.webp",
         title: "",
         by: "",
         description:
@@ -46,7 +46,7 @@ const page = () => {
             <div className='bg-white'>
                 <section className="relative w-full h-[260px] sm:h-[549px]  overflow-hidden">
                     <Image
-                        src="/images/sus/pc.png"
+                        src="/images/sus/pc.webp"
                         alt="Investors Relations"
                         fill
                         className="object-cover w-full h-full"

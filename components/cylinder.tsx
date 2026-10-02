@@ -22,7 +22,7 @@ import SimpleCarousel, { SliderItem } from './clyslider'
 
 const SliderItems: SliderItem[] = [
   {
-    img: "/images/new/p1.png",
+    img: "/images/new/p1.webp",
     // dynamiclink:"/printing-cylinder-business/printing-Our-Offering",
     title: "Gravure Cylinders",
     desc: `UFlex manufactures high-precision
@@ -31,7 +31,7 @@ purpose cylinders for diverse
 applications.`,
   },
   {
-    img: "/images/new/p2.png",
+    img: "/images/new/p2.webp",
     // dynamiclink:"/printing-cylinder-business/printing-Our-Offering",
 
     title: "Flexo Plates",
@@ -41,7 +41,7 @@ DPI, sets a new standard for high-
 definition flexographic plates.`,
   },
   //   {
-  //     img: "/images/new/p3.png",
+  //     img: "/images/new/p3.webp",
   //     // dynamiclink:"/printing-cylinder-business/printing-Our-Offering",
 
   //     title: "Flexo Printing Sleeves",
@@ -61,7 +61,7 @@ const packagingData = [
   {
     "id": "Printing Cylinders Business",
     title: "Printing Cylinders Business",
-    image: "/images/heroprinting.png",
+    image: "/images/heroprinting.webp",
     "imageAlt": "UFlex Flexible Packaging Solutions",
     paragraphs: [
       `UFlex Printing Cylinders business boasts a
@@ -119,7 +119,7 @@ export const businesses: any[] = [
     label: "Printing Cylinders",
     hero: {
       heading: "Printing Cylinders",
-      image: "/images/heroprinting.png",
+      image: "/images/heroprinting.webp",
       body:
         "UFlex printing cylinders business enforces stringent quality control at every stage of production to deliver world-class cylinders. With advanced technology, the business manages the complete cylinder production process, starting from the steel base, copper plating, and surface finishing to digital engraving, chrome plating, and final proof printing.",
     },
@@ -130,21 +130,21 @@ export const businesses: any[] = [
         {
           id: "gravure-cylinders",
           title: "Gravure Cylinders",
-          image: "/images/gravure.png",
+          image: "/images/gravure.webp",
           description:
             "High-performance cylinders for precision gravure printing.",
         },
         {
           id: "ctp-flexo-plates",
           title: "Flexo Plates",
-          image: "/images/ctp.png",
+          image: "/images/ctp.webp",
           description:
             "Computer-to-plate flexographic plates for consistent, high-quality impressions.",
         },
         {
           id: "flexo-printing-sleeves",
           title: "Flexo Printing Sleeves",
-          image: "/images/flexo.png",
+          image: "/images/flexo.webp",
           description:
             "Durable sleeves designed for efficient and flexible flexo printing.",
         },
@@ -165,104 +165,104 @@ export const businesses: any[] = [
           "id": "aluminium-composite-panels-laser-engraved-rollers",
           "title": "Aluminium composite panels through laser-engraved rollers",
           "description": "UFlex offers Aluminium Composite Panels (ACPs) featuring high-definition surface designs created using advanced laser-engraved rollers. This technology enables intricate wood, marble, cloud, and floral finishes with superior precision. Each panel comprises two aluminium sheets bonded to a PE or fire-retardant core and coated with durable PVDF or polyester paint for UV resistance and long-lasting colour. Lightweight yet rigid, ACPs are widely used in architecture, interiors, signage, metro stations, and lift décor for their durability, insulation properties, and aesthetic versatility.",
-          "image": "/images/new/alu1.png"
+          "image": "/images/new/alu1.webp"
         },
         {
           "id": "ginkgo-leaves-pattern-laser-engraved-leather",
           "title": "Ginkgo Leaves pattern on original leather through specialized laser engraving",
           "description": "Crafted using a specialized laser-engraving process, the Ginkgo Leaves pattern features intricate, fan-shaped motifs with fine radiating lines on a light neutral base, highlighted by subtle pale gold tones. The result is a glossy, shimmering finish that exudes contemporary luxury. Ideal for wallpaper, upholstery, decorative panels, and premium stationery, the design offers refined aesthetic appeal. Precision-engraved cylinders ensure consistent quality, customization flexibility, and scalable production, positioning UFlex distinctively in the luxury materials market while supporting steady revenue growth.",
-          "image": "/images/new/ginko1.png"
+          "image": "/images/new/ginko1.webp"
         },
         {
           "id": "pebble-stone-pattern-artificial-leather",
           "title": "Pebble stone pattern on artificial leather through laser-embossed cylinders",
           "description": "The Pebble Stone pattern on artificial leather is created using advanced laser-embossed cylinders, forming a tactile grid of rounded, pebble-like blocks with a distinctive woven effect. This design adds depth, dimension, and a non-slip surface that enhances both aesthetics and functionality. Ideal for footwear, automotive interiors, handbags, flooring, consumer electronics, packaging, and furniture, the pattern offers improved grip, durability, and scratch resistance while delivering a refined, premium finish across diverse applications.",
-          "image": "/images/new/pebble1.png"
+          "image": "/images/new/pebble1.webp"
         },
         {
           "id": "golden-python-glaze-pattern-leather",
           "title": "Golden python glaze pattern on original leather through specialized laser-engraving cylinders",
           "description": "Golden Python Glaze is a premium leather finish developed using specialized laser-engraving cylinders to replicate the luxurious texture and sheen of python skin. The pattern features interlocking, raised scales in light golden tones, creating a three-dimensional, high-gloss, wet-look effect. Designed to exude sophistication and exclusivity, it is ideal for high-fashion garments, premium footwear, luxury bags and accessories, as well as upscale home décor and automotive interiors, delivering refined elegance and superior craftsmanship.",
-          "image": "/images/new/python1.png"
+          "image": "/images/new/python1.webp"
         },
         {
           "id": "woven-starburst-pattern-original-leather",
           "title": "Woven starburst pattern on original leather through specialized laser-engraving cylinders",
           "description": "Woven Starburst is a refined leather design created through specialized laser engraving on original leather. The pattern showcases concentric, undulating circles forming intricate interwoven spirals, enhanced by a monochromatic palette that adds depth and a dynamic three-dimensional texture. Its premium finish and durability make it ideal for luxury applications. The design elevates high-end fashion garments, accessories such as handbags and footwear, and premium interior or automotive upholstery, offering a distinctive, modern, and sophisticated aesthetic.",
-          "image": "/images/new/woven1.png"
+          "image": "/images/new/woven1.webp"
         },
         {
           "id": "crocodile-skin-pattern-artificial-leather",
           "title": "Crocodile skin patterns on artificial leather (PU/PVC) through laser embossed cylinders",
           "description": "The Crocodile pattern embodies luxury, sophistication, and an exotic appeal, featuring a richly textured, scaly surface inspired by natural crocodile or alligator skin. Crafted to reflect premium quality and fine craftsmanship, it is widely favoured in high-end fashion and décor. The design enhances garments such as blazers and skirts, elevates footwear, and adds prestige to handbags, belts, and wallets. It is also used in luxury home décor and premium automotive interiors, delivering an exclusive and refined finish.",
-          "image": "/images/new/crocodile1.png"
+          "image": "/images/new/crocodile1.webp"
         },
         {
           "id": "geometric-chevron-embossed-tile-design",
           "title": "EP - Geometric chevron embossed tile design on artificial leather through laser embossed cylinders",
           "description": "This sleek geometric chevron pattern features interlocking Y-shaped blocks embossed on a metallic-like surface, creating a striking three-dimensional illusion of depth. Fine hatching within each form adds texture and sophistication, delivering a modern, tactile finish. Ideal for statement feature walls, kitchen backsplashes, and bathroom accents, it enhances interiors with a contemporary edge. The design is also suitable for ceiling panels, furniture surfaces, and commercial spaces such as office lobbies, hotels, and restaurants, offering a refined and dynamic aesthetic appeal.",
-          "image": "/images/new/geo1.png"
+          "image": "/images/new/geo1.webp"
         },
         {
           "id": "grid-weave-pattern-artificial-leather",
           "title": "Grid weave pattern on artificial leather through laser embossed cylinders",
           "description": "The Grid Weave pattern combines striking visual appeal with a rich tactile experience, making it a preferred choice across global markets. Its interlaced, overlapping design adds depth, texture, and a refined aesthetic to products across industries. Widely used in fashion for handbags, footwear, belts, and wallets, it also enhances rugs, wall coverings, table linens, and home accessories. Beyond décor, the pattern finds applications in automotive interiors and industrial products, delivering durability, sophistication, and a distinctive contemporary finish.",
-          "image": "/images/new/grid1.png"
+          "image": "/images/new/grid1.webp"
         },
         {
           "id": "intricate-vines-floral-design-artificial-leather",
           "title": "Intricate vines and floral design on artificial leather through laser embossed cylinders",
           "description": "The intricate vines and floral design on artificial leather is created using advanced laser-embossed cylinders, delivering deep texture and finely detailed patterns. Featuring flowing organic shapes in a vibrant green tone, the design offers a harmonious and visually striking aesthetic that feels both fresh and inviting. Ideal for fashion accessories such as handbags, belts, and shoes, it also enhances home décor, stationery, gift items, and industrial applications including automotive interiors and packaging, combining elegance, durability, and refined craftsmanship.",
-          "image": "/images/new/r12.png"
+          "image": "/images/new/r12.webp"
         },
         {
           "id": "reptile-retreat-pattern-artificial-leather",
           "title": "Reptile retreat pattern on artificial leather through laser embossed cylinders",
           "description": "Reptile Retreat on artificial leather is created using precision laser-embossed cylinders that replicate the rich texture and appearance of genuine reptile skin. This advanced process delivers a luxurious, exotic finish while offering a cost-effective and ethical alternative to natural leather. The result is a durable, low-maintenance surface with enhanced grip and visual appeal. Ideal for automotive interiors, consumer electronics, fashion goods, and decorative items, the innovation has also contributed to revenue growth, adding approximately 0.4% to the overall business.",
-          "image": "/images/new/reptile1.png"
+          "image": "/images/new/reptile1.webp"
         },
         {
           "id": "tangled-threads-design-artificial-leather",
           "title": "Tangled threads design on artificial leather through laser embossed cylinders",
           "description": "The Tangled Threads design on artificial leather is crafted using advanced laser-embossed cylinders, creating an intricate network of interwoven patterns with striking visual depth. The raised texture adds artistic complexity while enhancing tactile appeal and functionality, including improved grip and subtle insulation properties. Ideal for automotive interiors such as dashboards and steering wheels, it also elevates consumer electronics, fashion accessories, and apparel. In home décor, the design enhances wall coverings, upholstery, curtains, and floor coverings, delivering a sophisticated and contemporary finish.",
-          "image": "/images/new/tangled1.png"
+          "image": "/images/new/tangled1.webp"
         }
 
         // {
         //   id: "holographic-effect-leatherettes",
         //   title: "Holographic effect on leatherettes through steel embossed cylinders",
         //   description: "The holographic effect on leatherettes like PU and PVC-based materials through steel embossed cylinders have multiple applications that enhance the aesthetics of products.",
-        //   image: "/images/leather.png",
+        //   image: "/images/leather.webp",
         // },
         // {
         //   id: "twining-effect-leatherettes-steel",
         //   title: "Twining effect on leatherettes and steel through laser embossed cylinders",
         //   description: "The twining effect on leatherettes and steel provides an array of applications and enhances the product finish and aesthetics of wide range of products.",
-        //   image: "/images/pfs4u.png",
+        //   image: "/images/pfs4u.webp",
         // },
         // {
         //   id: "carving-effect-pvc",
         //   title: "Carving effect through laser embossing on PVC",
         //   description: "Carving effect through laser embossing on PVC has many attractive applications for home decoration.",
-        //   image: "/images/pvc.png",
+        //   image: "/images/pvc.webp",
         // },
         // {
         //   id: "laser-embossing-shoe-soles",
         //   title: "Laser embossing on the shoe soles",
         //   description: "Laser embossing on the soles of shoes, making them skid-free.",
-        //   image: "/images/shoes.png",
+        //   image: "/images/shoes.webp",
         // },
         // {
         //   id: "aesthetic-effect-shoe-foxing",
         //   title: "Aesthetic effect on shoe foxing through laser embossing",
         //   description: "Solutions that make footwear more attractive and appealing to customers.",
-        //   image: "/images/laser.png",
+        //   image: "/images/laser.webp",
         // },
         // {
         //   id: "anti-skidding-foot-mat",
         //   title: "Anti-skidding pattern on foot mat through laser embossing",
         //   description: "3D anti-skidding effect on PVC sheets through laser embossing.",
-        //   image: "/images/antiskiding.png",
+        //   image: "/images/antiskiding.webp",
         // },
       ],
 
@@ -273,7 +273,7 @@ export const businesses: any[] = [
       subtitle: "Acting today for a sustainable tomorrow. ",
       description:
         " Through energy-efficient technologies, eco-friendly processes, and responsible waste management, we are proud to foster an eco-friendly environment at our plants.",
-      image: "/images/new/cylsus.jpeg",
+      image: "/images/new/cylsus.webp",
       linkLabel: "Know More",
       linkHref: "/printing-cylinder-business/sustainability",
     },
@@ -295,7 +295,7 @@ export const businesses: any[] = [
       title: "Awards & Accolades",
       description:
         "Over the last several years, UFlex’s Printing Cylinder business has received various awards and certifications.",
-      image: "/images/awards.png",
+      image: "/images/awards.webp",
       linkLabel: "Know More",
       linkHref: "/hall-of-fame",
     },
@@ -391,7 +391,7 @@ const CylComp: React.FC<Props> = ({ business }) => {
                 className="relative aspect-[16/10] w-full overflow-hidden "
               >
                 <Image
-                  src="/images/heroprinting.png"
+                  src="/images/heroprinting.webp"
                   alt="UFlex capabilities across the value chain"
                   fill
                   className="object-cover rounded-sm"

@@ -26,7 +26,7 @@ const items = [
     title: "Aseptic Packaging",
     href: "/aseptic-packaging-business",
     desc: "Asepto is the Aseptic Liquid Packaging Brand from the House of UFlex Limited.",
-    img: "/images/new/aseptic.jpeg",
+    img: "/images/new/aseptic.webp",
   },
   {
     title: "Chemicals",
@@ -44,13 +44,13 @@ const items = [
     title: "Engineering",
     href: "/engineering-business",
     desc: "Engineering Business of UFlex has grown to be the manufacturing major of top of the line packaging, printing and allied machines.",
-    img: "/images/heroengg.png",
+    img: "/images/heroengg.webp",
   },
   {
     title: "Printing Cylinders",
     href: "/printing-cylinder-business",
     desc: "Engineering Business of UFlex has grown to be the manufacturing major of top of the line packaging, printing and allied machines.",
-    img: "/images/heroprinting.png",
+    img: "/images/heroprinting.webp",
   },
   {
     title: "Flexible Tubes",
