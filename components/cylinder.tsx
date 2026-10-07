@@ -301,9 +301,14 @@ export const businesses: any[] = [
     },
 
     accreditation: [
-      { image: "/images/accc16.png" },
-      { image: "/images/accc16.png" }
-
+        {
+            image: "/images/accreditations/printing-cylinders/01-iso-ems-certificate.webp",
+            link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Cylinder/ISO-EMS-CERTIFICATE.pdf",
+        },
+        {
+            image: "/images/accreditations/printing-cylinders/02-iso-qms-2015-certificate.webp",
+            link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Cylinder/ISO-QMS-2015-CERTIFICATE.pdf",
+        },
     ],
   },
 

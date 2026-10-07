@@ -395,10 +395,42 @@ Kolkata.`,
         },
 
         accreditation: [
-            { image: "/images/accc12.png" },
-            { image: "/images/accc13.png" },
-            { image: "/images/accc14.png" },
-            { image: "/images/accc15.png" }
+            {
+                image: "/images/accreditations/holography/01-hssms-tv-rheinland-2018.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Holography/HSSMS-T%C3%9CV%20Rheinland-2018.pdf",
+            },
+            {
+                image: "/images/accreditations/holography/02-iso-9001.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Holography/ISO-9001.pdf",
+            },
+            {
+                image: "/images/accreditations/holography/03-iso-14001.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Holography/ISO-14001.pdf",
+            },
+            {
+                image: "/images/accreditations/holography/04-oeko-tex-certificate-2018-19.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Holography/OEKO-TEX-CERTIFICATE-2018-19.pdf",
+            },
+            {
+                image: "/images/accreditations/holography/05-bqc-cetificate.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Holography/BQC-Cetificate.pdf",
+            },
+            {
+                image: "/images/accreditations/holography/06-iba.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Holography/IBA.pdf",
+            },
+            {
+                image: "/images/accreditations/holography/07-itsa-2018.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Holography/ITSA-2018.pdf",
+            },
+            {
+                image: "/images/accreditations/holography/08-ihma-2018.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Holography/IHMA-2018.pdf",
+            },
+            {
+                image: "/images/accreditations/holography/09-aspa.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Holography/ASPA.pdf",
+            },
         ]
     },
 

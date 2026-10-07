@@ -256,10 +256,30 @@ export const businesses: any[] = [
             linkHref: "/hall-of-fame",
         },
         accreditation: [
-            { image: "/images/acc1.png" },
-            { image: "/images/acc2.png" },
-            { image: "/images/acc3.png" },
-            { image: "/images/acc4.png" },
+            {
+                image: "/images/accreditations/chemicals/01-iso-9001-2015-certificate-fy25.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Chemicals/ISO_9001_2015_Certificate_FY25.pdf",
+            },
+            {
+                image: "/images/accreditations/chemicals/02-iso-14001-2015-certificate-fy25.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Chemicals/ISO_14001_2015_Certificate_FY25.pdf",
+            },
+            {
+                image: "/images/accreditations/chemicals/03-iso-31000-2018-certificate-fy25.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Chemicals/ISO_31000_2018_Certificate_FY25.pdf",
+            },
+            {
+                image: "/images/accreditations/chemicals/04-iso-45001-2018-certificate-fy25.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Chemicals/ISO_45001_2018_Certificate_FY25.pdf",
+            },
+            {
+                image: "/images/accreditations/chemicals/05-iso-50001-2018-certificate-fy25.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Chemicals/ISO_50001_2018_Certificate_FY25.pdf",
+            },
+            {
+                image: "/images/accreditations/chemicals/06-nabl-certificate-fy25.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Chemicals/NABL_Certificate_FY25.pdf",
+            },
         ],
     },
 

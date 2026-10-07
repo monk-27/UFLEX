@@ -307,10 +307,9 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
       linkHref: "/hall-of-fame",
     },
     accreditation: [
-
-      { image: "/images/accc16.png" },
-      { image: "/images/accc16.png" },
-
+        {
+            image: "/images/accreditations/placeholder.webp",
+        },
     ],
   }
 

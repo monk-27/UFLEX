@@ -41,9 +41,9 @@ const OFFICES: Office[] = [
     country: "India",
     city: "Noida, Uttar Pradesh",
     address: ["A – 107 - 108, Sector - IV,", "Noida - 201301 (U.P.), India."],
-    phone: "+91 120 4012345 (30 lines) ",
+    phone: "+91 120 4012345/6108444 (30 Lines)",
     fax: "+91 120 2556040",
-    email: "corpcomm@uflexltd.com",
+    email: "enquiry@uflexltd.com",
   },
   {
     id: "reg-delhi",
@@ -55,8 +55,8 @@ const OFFICES: Office[] = [
       "305, Third Floor, Bhanot Corner, Pamposh Enclave",
       "Greater Kailash-I, New Delhi – 110048, India",
     ],
-    phone: "+91 11 2644091",
-    email: "enquiry@uflexltd.com",
+    phone: "+91 11 26440 917/925",
+    email: "feedback@uflexltd.com",
   },
 
   /* ---------- Packaging Films (India) ---------- */
@@ -67,8 +67,8 @@ const OFFICES: Office[] = [
     country: "India",
     city: "Noida, Uttar Pradesh",
     address: ["A-1, Sector-60", "Noida – 201307, Uttar Pradesh, India"],
-    phone: "+91 120 4002121",
-    email: "enquiry@uflexltd.com",
+    phone: "+91 120 4002121, 6100000",
+    email: "film@uflexltd.com",
   },
   {
     id: "pf-dharwad",
@@ -108,6 +108,7 @@ const OFFICES: Office[] = [
       "Sanand, Ahmedabad, Gujarat – 382110, India",
     ],
     phone: "+91 2717 622400",
+    email: "enquiry@asepto.com",
   },
 
   /* ---------- Chemicals (India) ---------- */
@@ -121,7 +122,8 @@ const OFFICES: Office[] = [
       "C–5, 6, 7, 8, 17 & 18, Sector–57",
       "Gautam Budh Nagar, Noida, Uttar Pradesh – 201301, India",
     ],
-    phone: "+91 120 610 600",
+    phone: "+91 120 610 6000 | 610 6200",
+    email: "info.chem@uflexltd.com",
   },
   {
     id: "chem-jk",
@@ -134,6 +136,7 @@ const OFFICES: Office[] = [
       "SIDCO Industrial Complex, Bari Brahmana – 181133, J&K, India",
     ],
     email: "enquiry@uflexltd.com",
+    phone: "+91 1923 222 986/995",
   },
 
   /* ---------- Engineering (India) ---------- */
@@ -144,8 +147,8 @@ const OFFICES: Office[] = [
     country: "India",
     city: "Noida, Uttar Pradesh",
     address: ["A-2, Sector-60", "Noida – 201307, Uttar Pradesh, India"],
-    phone: "+91 120 6100 12",
-    email: "enquiry@uflexltd.com",
+    phone: "+91 120 6100 121/371, 4002121(30 Lines)",
+    email: "engineering@uflexltd.com",
   },
 
   /* ---------- Holography (India) ---------- */
@@ -181,7 +184,7 @@ const OFFICES: Office[] = [
       "Unit–III, Lane No. 3, Phase 1",
       "SIDCO Industrial Complex, Bari Brahmana – 181133, J&K, India",
     ],
-    phone: "+91 120 4002121",
+    phone: "+91 1923 222 986/995",
     email: "enquiry@uflexltd.com",
   },
 
@@ -194,6 +197,7 @@ const OFFICES: Office[] = [
     city: "Dubai",
     address: ["P.O. Box 17930", "Jebel Ali Free Zone Area", "Dubai, UAE"],
     phone: "+971 4 810 2300",
+    email: "enquiry@flexfilm.com",
   },
   {
     id: "egy-ppfilms",
@@ -207,6 +211,7 @@ const OFFICES: Office[] = [
       "6th October City, Arab Republic of Egypt",
     ],
     phone: "+20 23828 3000",
+    email: "enquiry.eg@flexfilm.com",
   },
   {
     id: "mex-americas",
@@ -219,7 +224,8 @@ const OFFICES: Office[] = [
       "Zona Puerto Industrial C.P. 89603",
       "Altamira, Tamaulipas, Mexico",
     ],
-    phone: "+52 833 260 810",
+    phone: "+52 833 260 8100",
+    email: "enquiry@flexfilm.com",
   },
   {
     id: "usa-ffinc",
@@ -229,6 +235,7 @@ const OFFICES: Office[] = [
     city: "Elizabethtown, Kentucky",
     address: ["1221 North Black Branch Road", "Elizabethtown, Kentucky 42701, USA"],
     phone: "+1 270 982 3456",
+    email: "enquiry@flexfilm.com",
   },
   {
     id: "pol-europa",
@@ -238,6 +245,7 @@ const OFFICES: Office[] = [
     city: "Wrzésnia",
     address: ["62-300 Wrzésnia", "ul. Gen. Władysława Sikorskiego 48"],
     phone: "+48 61 4366167",
+    email: "enquiry@flexfilm.com",
   },
   {
     id: "rus-rusllc",
@@ -249,7 +257,8 @@ const OFFICES: Office[] = [
       "Bld. 1, Pos. 4 Industrialnaya Str.",
       "Smatovo vil., Stupino, Region 142821, CIS",
     ],
-    phone: "+7 495 643 11 9",
+    phone: "+7 495 643 11 94",
+    email: "office.russia@flexfilm.com",
   },
   {
     id: "hun-kft",
@@ -258,7 +267,8 @@ const OFFICES: Office[] = [
     country: "Hungary",
     city: "Rétság",
     address: ["2651 Rétság, Ipari Park-7"],
-    phone: "+36 20 747 3635",
+    phone: "+36 20 747 3635/3636",
+    email: "enquiry@flexfilm.com",
   },
   {
     id: "nga-africa",
@@ -272,6 +282,157 @@ const OFFICES: Office[] = [
       "Ikenne Local Government Area, Ogun State",
     ],
     phone: "+234 146 08450",
+    email: "enquiry@flexfilm.com",
+  },
+  /* ---------- Additional offices listed on uflexltd.com/global-presence.php ---------- */
+  {
+    id: "jammu-unit-1",
+    name: "UFlex Limited — Jammu Unit I",
+    business: "Manufacturing Unit",
+    country: "India",
+    city: "Jammu (J&K)",
+    address: [
+      "Unit I, Lane No.3, Phase I,",
+      "SIDCO Industrial Complex, Bari Brahmana,",
+      "Jammu - 181133 (J&K), India.",
+    ],
+    phone: "+91 1923 220 483/487/488",
+    email: "enquiry@uflexltd.com",
+  },
+  {
+    id: "jammu-unit-2",
+    name: "UFlex Limited — Jammu Unit II",
+    business: "Manufacturing Unit",
+    country: "India",
+    city: "Jammu (J&K)",
+    address: [
+      "Unit II, Lane No.2, Phase I,",
+      "SIDCO Industrial Complex, Bari Brahmana,",
+      "Jammu - 181133 (J&K), India.",
+    ],
+    phone: "+91 1923 2228 53/56",
+    email: "enquiry@uflexltd.com",
+  },
+  {
+    id: "fp-malanpur",
+    name: "UFlex Limited — Flexible Packaging (AMLP Recycling)",
+    business: "Flexible Packaging",
+    country: "India",
+    city: "Malanpur, Madhya Pradesh",
+    address: [
+      "L-1, Malanpur Industrial Area,",
+      "Ghirongi, Bhind - 477117, Madhya Pradesh, India.",
+    ],
+    email: "enquiry@uflexltd.com",
+  },
+  {
+    id: "fp-noida-recycling",
+    name: "UFlex Limited — Flexible Packaging (Recycling)",
+    business: "Flexible Packaging",
+    country: "India",
+    city: "Noida, Uttar Pradesh",
+    address: [
+      "Plot No 108, Sector 155, Noida - 201301,",
+      "Gautam Buddha Nagar, Uttar Pradesh, India.",
+    ],
+    email: "enquiry@uflexltd.com",
+  },
+  {
+    id: "mex-woven-bags",
+    name: "UFlex Woven Bags, SA.De C.V.",
+    business: "Manufacturing Unit",
+    country: "Mexico",
+    city: "Altamira, Tamaulipas",
+    address: [
+      "Carretera Federal 80 km 28+250 Int. 1140,",
+      "Santa Amalia, Altamira, C.P. 89602,",
+      "Tamaulipas, Mexico.",
+    ],
+    email: "enquiry@uflexltd.com",
+  },
+  {
+    id: "egy-flexpet",
+    name: "Flex Pet (Egypt) S.A.E. (PET Chip Resin)",
+    business: "Packaging Films",
+    country: "Egypt",
+    city: "Ain Sokhna, Suez Governorate",
+    address: [
+      "Plot No. 120, 1 Industrial Zone, ORASCOM Industrial Park,",
+      "AIN-Sokhna, North West Gulf of Suez, Suez Governorate,",
+      "Arab Republic of Egypt",
+    ],
+    phone: "+20 23828 3000",
+    email: "enquiry.eg@flexfilm.com",
+  },
+  {
+    id: "mkt-mumbai",
+    name: "UFlex Limited — Marketing Office (Mumbai)",
+    business: "Marketing Office",
+    country: "India",
+    city: "Mumbai, Maharashtra",
+    address: [
+      "402, 4th Floor, Naman Centre, Plot no. C - 31,",
+      "Bandra Kurla Complex, Bandra (East),",
+      "Mumbai - 400051, India.",
+    ],
+    phone: "+91 22 61189 100/116",
+  },
+  {
+    id: "mkt-kolkata",
+    name: "UFlex Limited — Marketing Office (Kolkata)",
+    business: "Marketing Office",
+    country: "India",
+    city: "Kolkata, West Bengal",
+    address: [
+      "FMC Fortuna, 2nd Floor, Unit No. A - 16,",
+      "234/3A, A.J.C. Bose Road,",
+      "Kolkata - 700020, India.",
+    ],
+    phone: "+91 33 22809758, 2287 8920/8646/4670",
+  },
+  {
+    id: "mkt-bangalore",
+    name: "UFlex Limited — Marketing Office (Bangalore)",
+    business: "Marketing Office",
+    country: "India",
+    city: "Bangalore, Karnataka",
+    address: [
+      "# 4007, 5th Floor, Hallmark Square,",
+      "HAL 2nd Stage Extension, 100 Ft. Road, Domlur,",
+      "Bangalore – 560038, India.",
+    ],
+    phone: "+91 80 46326600",
+  },
+  {
+    id: "mkt-noida",
+    name: "UFlex Limited — Marketing Office (Noida)",
+    business: "Marketing Office",
+    country: "India",
+    city: "Noida, Uttar Pradesh",
+    address: [
+      "B 63, Sector 57, Noida - 201301,",
+      "Gautam Buddha Nagar, Uttar Pradesh, India.",
+    ],
+  },
+  {
+    id: "usa-uflex-packaging",
+    name: "UFlex Packaging Inc.",
+    business: "Marketing Office",
+    country: "USA",
+    city: "Ridgefield Park, New Jersey",
+    address: ["55 Challenger Road, Suite 203,", "Ridgefield Park, NJ 07660, USA"],
+    phone: "+1 201 947 3539",
+    fax: "+1 201 947 0255",
+  },
+  {
+    id: "uk-uflex-europe",
+    name: "UFlex Europe Ltd.",
+    business: "Marketing Office",
+    country: "UK",
+    city: "London",
+    address: ["62/64 Baker Street, 4th Floor,", "London, W1U 7DF, UK"],
+    phone: "+44 2074 875777",
+    fax: "+44 2074 565722",
   },
 ];
 

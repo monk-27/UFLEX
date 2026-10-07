@@ -306,6 +306,13 @@ landfill pressure and helping curb pollution.`,
                         "Mr. Jeevaraj Pillai brings close to four decades of experience in packaging and packaging technology, with expertise in printing cylinders, packaging films, and advanced flexible packaging material conversion. As Director-Sustainability, he leads the development and implementation of the company’s ESG strategy, along with the development of sustainable products and solutions. He has been serving on the board of UFlex Limited as a whole-time director since November 14, 2023. His extensive background in the industry is complemented by his qualifications in mechanical engineering and an MBA.",
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
                 },
+                {
+                    photo: "",
+                    name: "Mr. Rohit Kachroo",
+                    role: "Executive Vice President – Export, Flexible Packaging Business",
+                    summary: "",
+                    cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+                },
                 //     {
                 //     photo: "https://uflex.wpdevstudio.site/HTML/uploaded-files/blog/images/(FP)-2.-Mr.-Amit-Shah38.jpg",
                 //     name: "Mr. Amit Shah",
@@ -327,10 +334,54 @@ landfill pressure and helping curb pollution.`,
         },
 
         accreditation: [
-            { image: "/images/accc8.png" },
-            { image: "/images/accc9.png" },
-            { image: "/images/accc10.png" },
-            { image: "/images/accc11.png" },
+            {
+                image: "/images/accreditations/flexible-packaging/01-dnv-gl-fssc22000-uflex-noida-2020.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging/DNV-GL_FSSC22000_UFlex_Noida_2020.pdf",
+            },
+            {
+                image: "/images/accreditations/flexible-packaging/02-dnv-gl-iso90012015-uflex-noida-2020.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging/DNV-GL_ISO90012015_UFlex_Noida_2020.pdf",
+            },
+            {
+                image: "/images/accreditations/flexible-packaging/03-brc-uflex-noida-2020.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging/BRC_UFlex_Noida_2020.pdf",
+            },
+            {
+                image: "/images/accreditations/flexible-packaging/04-sgs-iso90012015-uflex-j1-2020.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging/SGS_ISO90012015_UFlex_J1_2020.pdf",
+            },
+            {
+                image: "/images/accreditations/flexible-packaging/05-sgs-iso220002005-uflex-j1-2020.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging/SGS_ISO220002005_UFlex_J1_2020.pdf",
+            },
+            {
+                image: "/images/accreditations/flexible-packaging/06-brc-uflex-j1-2020.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging/BRC_UFlex_J1_2020.pdf",
+            },
+            {
+                image: "/images/accreditations/flexible-packaging/07-bscic-gmp-uflex-j1-2020.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging/BSCIC_GMP_UFlex_J1_2020.pdf",
+            },
+            {
+                image: "/images/accreditations/flexible-packaging/08-ppc-dmf-uflex-j1-2020.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging/PPC_DMF_UFlex_J1_2020.pdf",
+            },
+            {
+                image: "/images/accreditations/flexible-packaging/09-dnv-gl-iso90012015-uflex-j2-2020.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging/DNV-GL_ISO90012015_UFlex_J2_2020.pdf",
+            },
+            {
+                image: "/images/accreditations/flexible-packaging/10-dnv-gl-fssc22000-uflex-j2-2020.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging/DNV-GL_FSSC22000_UFlex_J2_2020.pdf",
+            },
+            {
+                image: "/images/accreditations/flexible-packaging/11-brc-uflex-j2-2020.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging/BRC_UFlex_J2_2020.pdf",
+            },
+            {
+                image: "/images/accreditations/flexible-packaging/12-tv-sd-iso90012015-certifcat-noida-moulding.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging/T%C3%9CV-S%C3%9CD_ISO90012015_Certifcat_Noida_Moulding.pdf",
+            },
         ],
     },
 

@@ -217,10 +217,22 @@ export const businesses: any[] = [
       linkHref: "/hall-of-fame",
     },
     accreditation: [
-      { image: "/images/accc4.png" },
-      { image: "/images/accc5.png" },
-      { image: "/images/accc6.png" },
-      { image: "/images/accc7.png" },
+        {
+            image: "/images/accreditations/aseptic-packaging/01-brc-global-standard-for-packaging-certificate.webp",
+            link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/asepto/BRC-GLOBAL-STANDARD-FOR-PACKAGING-CERTIFICATE.pdf",
+        },
+        {
+            image: "/images/accreditations/aseptic-packaging/02-halal-cert-2018.webp",
+            link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/asepto/Halal-Cert-2018.pdf",
+        },
+        {
+            image: "/images/accreditations/aseptic-packaging/03-iso-22000-2005.webp",
+            link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/asepto/ISO-22000-2005.pdf",
+        },
+        {
+            image: "/images/accreditations/aseptic-packaging/04-iso-9001-2015-14001-2015-ohsas18001-2007.webp",
+            link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/asepto/ISO-9001-2015-14001-2015-OHSAS18001-2007.pdf",
+        },
     ],
   },
 

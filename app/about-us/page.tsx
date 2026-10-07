@@ -2,27 +2,17 @@
 
 "use client";
 
-import dynamic from "next/dynamic";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import Hero from "@/components/about/hero";
 import CompanyInfo from "@/components/about/company-info";
 import VisionMission from "@/components/about/vision-mission";
 import GlobalFootprint from "@/components/about/global-footprint";
+import BoardOfDirectors from "@/components/about/board-of-directors";
 import KeyManagement from "@/components/about/key-management";
 import Journey from "@/components/about/journey";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
-// 👇 Dynamically import Swiper-based components
-const BoardOfDirectors = dynamic(() => import("@/components/about/board-of-directors"), {
-  ssr: false,
-  loading: () => null,
-});
-const BodMob = dynamic(() => import("@/components/about/bod-mob"), {
-  ssr: false,
-  loading: () => null,
-});
 
 export default function AboutPage() {
   return (

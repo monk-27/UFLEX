@@ -259,8 +259,9 @@ export const businesses: any[] = [
             linkHref: "/hall-of-fame",
         },
         accreditation: [
-            { image: "/images/accc13.png" },
-            { image: "/images/accc14.png" },
+            {
+                image: "/images/accreditations/placeholder.webp",
+            },
         ],
     },
 

@@ -97,13 +97,15 @@ const Keypeople = ({ title, people, india }: Props) => {
                 >
                   <div className="relative flex h-full flex-col p-4">
                     <div className="relative aspect-[4/4.2] w-full overflow-hidden rounded-[8px] bg-[#bddaf5]">
-                      <Image
-                        src={p.photo}
-                        alt={p.name}
-                        fill
-                        sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 23vw"
-                        className="object-cover transition duration-500 ease-out group-hover:scale-[1.03]"
-                      />
+                      {p.photo && (
+                        <Image
+                          src={p.photo}
+                          alt={p.name}
+                          fill
+                          sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 23vw"
+                          className="object-cover transition duration-500 ease-out group-hover:scale-[1.03]"
+                        />
+                      )}
                     </div>
 
                     <div className="flex flex-1 flex-col px-2 pb-2 pt-5 text-center">
@@ -189,12 +191,14 @@ const Keypeople = ({ title, people, india }: Props) => {
 
               <div className="p-4">
                 <div className="relative aspect-square w-full border border-gray-100">
-                  <Image
-                    src={selected.photo}
-                    alt={selected.name}
-                    fill
-                    className="object-cover"
-                  />
+                  {selected.photo && (
+                    <Image
+                      src={selected.photo}
+                      alt={selected.name}
+                      fill
+                      className="object-cover"
+                    />
+                  )}
                 </div>
               </div>
 

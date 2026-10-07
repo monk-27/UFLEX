@@ -6,7 +6,7 @@ import { AnimatedSection } from "./animated-section";
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-export type AccreditationItem = { image: string };
+export type AccreditationItem = { image: string; link?: string };
 
 export type AccreditationsSliderProps = {
   items: AccreditationItem[];
@@ -86,23 +86,32 @@ export default function AccreditationsSlider({
             {visibleItems.map((it, idx) => {
               const globalIdx = startIndex + idx;
               const c = CARD_COLORS[globalIdx % CARD_COLORS.length];
+              const card = (
+                <div
+                  className={`relative w-full h-[176px] max-w-[260px] aspect-[4/3]  flex items-center justify-center`}
+                >
+                  <Image
+                    src={it.image}
+                    alt={`Accreditation ${globalIdx + 1}`}
+                    fill
+                    className="object-contain p-4"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 30vw"
+                    priority={globalIdx === 0}
+                  />
+                </div>
+              );
               return (
                 <div
                   key={it.image + globalIdx}
                   className="flex justify-center"
                 >
-                  <div
-                    className={`relative w-full h-[176px] max-w-[260px] aspect-[4/3]  flex items-center justify-center`}
-                  >
-                    <Image
-                      src={it.image}
-                      alt={`Accreditation ${globalIdx + 1}`}
-                      fill
-                      className="object-contain p-4"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 30vw"
-                      priority={globalIdx === 0}
-                    />
-                  </div>
+                  {it.link ? (
+                    <a href={it.link} target="_blank" rel="noopener noreferrer" className="contents">
+                      {card}
+                    </a>
+                  ) : (
+                    card
+                  )}
                 </div>
               );
             })}

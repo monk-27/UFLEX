@@ -374,14 +374,6 @@ export const businesses: any[] = [
                         "With four decades of industry experience, Jagmohan Mongia leads the Films Business – India operations, UFlex. A commerce graduates with a diploma in sales and marketing from Bhartiya Vidya Bhawan, he has worked with leading companies like Berger Paints and Garware before joining UFlex, where he has been a key contributor for over 25 years. Jagmohan brings deep expertise in sales, marketing, and business development, with a strong track record of building sustainable, growth-driven operations. Under his leadership, the films business in India has consistently delivered strong revenue growth and increased market share.",
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
                 },
-                {
-                    photo: "/images/new/aa.jpg",
-                    name: "Mr. Ashish Saxena",
-                    role: "Joint President – Packaging Films Business",
-                    summary:
-                        "Mr. Ashish Saxena is Joint President of the packaging films business in India. He has over 25 years’ of experience in Packaging, Petroleum and Management Consulting industries in India, Europe and North America. Prior to UFlex, he was CEO of Jindal Films’ European Business, Vice President and General Manager for Amcor Ltd in the US and a management consultant at McKinsey & Co in London, UK. He holds an MBA degree from the London Business School, UK and BA from St. Stephen’s College, Delhi, India",
-                    cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-                },
 
 
 
@@ -430,15 +422,6 @@ export const businesses: any[] = [
                 },
                 {
                     photo:
-                        "/images/new/vijayy.png",
-                    name: "Mr. Vijay Yadav",
-                    role: "Business Head - Flex Films, USA",
-                    summary:
-                        "With three decades of global experience, Vijay Yadav has successfully led roles in strategy, operations, R&D, and organizational transformation, having worked with renowned companies like SEKISUI (USA), Arjobex, and British Petroleum. He holds a BSc (Hons) in polymer technology from Brunel University, UK, an MBA from East London Business School, and has completed executive programs at Wharton, Stanford, and Harvard. He joined the organization in 2016, contributing significantly to its strategic growth and innovation.",
-                    cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
-                },
-                {
-                    photo:
                         "/images/new/more.png",
                     name: "Mr. Suhas More",
                     role: "Business Head - Flex Films, Nigeria",
@@ -467,10 +450,126 @@ export const businesses: any[] = [
             linkHref: "/hall-of-fame",
         },
         accreditation: [
-            { image: "/images/acc1.png" },
-            { image: "/images/acc2.png" },
-            { image: "/images/acc3.png" },
-            { image: "/images/acc4.png" },
+            {
+                image: "/images/accreditations/packaging-films/01-uflex-no-brc-certificate-2023.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/India/UFlex_NO_BRC_Certificate_2023.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/02-uflex-no-tuv-iso45001-certificate-2023.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/India/UFlex_NO_TUV_ISO45001_Certificate_2023.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/03-uflex-no-tuv-iso14001-certificate-2023.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/India/UFlex_NO_TUV_ISO14001_Certificate_2023.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/04-uflex-no-tuv-iso9001-certificate-2023.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/India/UFlex_NO_TUV_ISO9001_Certificate_2023.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/05-uflex-dh-brc-certificate-2023.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/India/UFlex_DH_BRC_Certificate_2023.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/06-ffuae-iso9001-2015-22102020.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/uae/FFUAE_ISO9001-2015_22102020.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/07-ffuae-iso14001-2015-22102020.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/uae/FFUAE_ISO14001-2015_22102020.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/08-ffuae-iso22000-2018-14122020.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/uae/FFUAE_ISO22000-2018_14122020.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/09-ffmx-2020-iso9001-2015-bv.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/mexico/FFMX_2020_ISO9001_2015_BV.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/10-ffmx-2020-iso14001-2015-bv.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/mexico/FFMX_2020_ISO14001_2015_BV.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/11-ffmx-2020-fssc-22000-bv.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/mexico/FFMX_2020_FSSC_22000_BV.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/12-ffmx-2020-fda-certificate-2020.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/mexico/FFMX_2020_FDA_CERTIFICATE_2020.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/13-ffe-aib-certificate-2023.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/egypt/FFE_AIB_Certificate_2023.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/14-ffe-brcgs-aa-certificate-2023.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/egypt/FFE_BRCGS_AA_Certificate_2023.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/15-ffe-sgs-iso45001-2018-certificate-2020.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/egypt/FFE_SGS_ISO45001-2018_Certificate_2020.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/16-ffe-sgs-iso9001-2015-certificate-2020.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/egypt/FFE_SGS_ISO9001-2015_Certificate_2020.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/17-ffe-sgs-iso14001-2015-certificate-2020.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/egypt/FFE_SGS_ISO14001-2015_Certificate_2020.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/18-ffpo-2024-iso22000-2018-intertek-eng.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/poland/FFPO_2024_ISO22000-2018_Intertek_ENG.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/19-ffpo-2024-iso14001-2015-intertek-eng.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/poland/FFPO_2024_ISO14001-2015_Intertek_ENG.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/20-ffpo-2024-iso9001-2015-intertek-eng.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/poland/FFPO_2024_ISO9001-2015_Intertek_ENG.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/21-ffpo-2024-iso50001-2018-lrqa-eng.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/poland/FFPO_2024_ISO50001-2018_LRQA_ENG.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/22-ffpo-2024-iso45001-2018-intertek-eng.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/poland/FFPO_2024_ISO45001-2018_Intertek_ENG.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/23-ffpo-2024-fda-2023-24.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/poland/FFPO_2024_FDA_2023-24.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/24-ffusa-2023-iso9001-2015-certificate.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/usa/FFUSA_2023_ISO9001-2015_Certificate.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/25-ffusa-2025-scs-100ppcr-certificate.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/usa/FFUSA_2025_SCS_100PPCR_Certificate.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/26-ffusa-2025-scs-90ppcr-certificate.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/usa/FFUSA_2025_SCS_90PPCR_Certificate.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/27-ffusa-2023-aib.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/usa/FFUSA_2023_AIB.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/28-ffusa-2023-kosher-certificate.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/usa/FFUSA_2023_Kosher_Certificate.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/29-ffusa-2020-permit-cert-dep-publichealth.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/usa/FFUSA_2020_Permit_Cert_Dep_PublicHealth.pdf",
+            },
+            {
+                image: "/images/accreditations/packaging-films/30-ffusa-2023-drug-free-workplace.webp",
+                link: "https://beta.uflexltd.com/media/pdf/recognition-accreditation/Packaging-Films/usa/FFUSA_2023_Drug_Free_Workplace.pdf",
+            },
         ],
     },
 

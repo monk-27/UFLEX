@@ -5,7 +5,6 @@
 
 import { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
 import useEmblaCarousel from "embla-carousel-react";
 import type { EmblaOptionsType } from "embla-carousel";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
@@ -118,12 +117,8 @@ const KeyManagement = () => {
             <div ref={emblaRef} className="overflow-hidden">
               <div className="flex gap-8">
                 {directors.map((d, i) => (
-                  <motion.article
+                  <article
                     key={d.name}
-                    initial={{ opacity: 0, y: 18 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.06 }}
                     className="
                     group relative min-w-0
                     flex-[0_0_100%]
@@ -169,7 +164,7 @@ const KeyManagement = () => {
                       className="absolute inset-0"
                       tabIndex={-1}
                     />
-                  </motion.article>
+                  </article>
                 ))}
               </div>
             </div>
@@ -205,20 +200,13 @@ const KeyManagement = () => {
       </section>
 
       {/* ---------------- Modal: smaller image layout ---------------- */}
-      <AnimatePresence>
-        {selected && (
-          <motion.div
-            className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 p-4"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+              {selected && (
+          <div
+            className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 p-4 animate-in fade-in duration-200"
             onClick={() => setSelected(null)}
           >
-            <motion.div
-              className="relative w-full max-w-3xl grid grid-cols-1 md:grid-cols-[38%_62%] border border-gray-200 bg-white shadow-2xl"
-              initial={{ scale: 0.97, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.97, opacity: 0 }}
+            <div
+              className="relative w-full max-w-3xl grid grid-cols-1 md:grid-cols-[38%_62%] border border-gray-200 bg-white shadow-2xl animate-in fade-in zoom-in-95 duration-200"
               onClick={(e) => e.stopPropagation()}
             >
               <button
@@ -252,10 +240,9 @@ const KeyManagement = () => {
                   </button>
                 </div> */}
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         )}
-      </AnimatePresence>
     </>
   );
 }
