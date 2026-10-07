@@ -3,7 +3,6 @@
 
 import { useEffect, useState, useCallback, useMemo } from "react";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
 import useEmblaCarousel from "embla-carousel-react";
 import type { EmblaOptionsType } from "embla-carousel";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
@@ -74,12 +73,8 @@ const PackagingKeypeople = ({ title, people }: Props) => {
                    }`}
                  >
                    {people.map((p, i) => (
-                     <motion.article
+                     <article
                        key={p.name + i}
-                       initial={{ opacity: 0, y: 18 }}
-                       whileInView={{ opacity: 1, y: 0 }}
-                       viewport={{ once: true }}
-                       transition={{ delay: i * 0.05 }}
                        className="
                          group relative min-w-0
                          flex-[0_0_100%]
@@ -114,7 +109,7 @@ const PackagingKeypeople = ({ title, people }: Props) => {
                          onClick={() => setSelected(p)}
                          className="absolute inset-0"
                        />
-                     </motion.article>
+                     </article>
                    ))}
                  </div>
                </div>
@@ -159,20 +154,13 @@ const PackagingKeypeople = ({ title, people }: Props) => {
            </section>
 
       {/* Modal */}
-      <AnimatePresence>
-        {selected && (
-          <motion.div
-            className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 p-4"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+              {selected && (
+          <div
+            className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 p-4 animate-in fade-in duration-200"
             onClick={() => setSelected(null)}
           >
-            <motion.div
-              className="relative w-full max-w-3xl grid grid-cols-1 md:grid-cols-[38%_62%] bg-white shadow-2xl border border-gray-200 overflow-hidden"
-              initial={{ scale: 0.95 }}
-              animate={{ scale: 1 }}
-              exit={{ scale: 0.95 }}
+            <div
+              className="relative w-full max-w-3xl grid grid-cols-1 md:grid-cols-[38%_62%] bg-white shadow-2xl border border-gray-200 overflow-hidden animate-in fade-in zoom-in-95 duration-200"
               onClick={(e) => e.stopPropagation()}
             >
               <button
@@ -193,10 +181,9 @@ const PackagingKeypeople = ({ title, people }: Props) => {
                   {selected.summary}
                 </p>
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         )}
-      </AnimatePresence>
     </>
   );
 };
