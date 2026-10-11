@@ -307,7 +307,7 @@ landfill pressure and helping curb pollution.`,
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
                 },
                 {
-                    photo: "",
+                    photo: "/images/new/rohit-kachroo.webp",
                     name: "Mr. Rohit Kachroo",
                     role: "Executive Vice President – Export, Flexible Packaging Business",
                     summary: "",

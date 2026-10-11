@@ -42,6 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/investors/shareholders-information',
     '/media-coverage',
     '/media-releases',
+    '/legal-disclaimer',
     '/packaging-films-business',
     '/packaging-films-business/packaging-our-offering',
     '/packaging-films-business/sustainability',
