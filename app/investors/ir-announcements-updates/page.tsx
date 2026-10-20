@@ -1261,6 +1261,10 @@ const tabItems: any = {
     ],
     "unpaid-dividend": [
         {
+            text: "Unpaid/unclaimed Status as on 30.09.2026 for Year 2025-2026",
+            link: "https://beta.uflexltd.com/media/pdf/Unclaimed-Dividend/UF-UD-30SEP2026.pdf",
+        },
+        {
             text: "Unclaimed Dividend Details 2026",
             link: "https://beta.uflexltd.com/media/pdf/Unclaimed-Dividend/UF-Unclaimed-Dividend-FY-2026.pdf"
         },
@@ -1282,6 +1286,14 @@ const tabItems: any = {
         },
     ],
     "transfer-to-iepF": [
+        {
+            text: "PUBLICATION OF NOTICE TRANSFER OF EQUITY SHARES TO IEPF 2026",
+            link: "https://beta.uflexltd.com/media/pdf/IEPF/UF_Advt_FE_JS_12May2026.pdf",
+        },
+        {
+            text: "PARTICULARS OF UNCLAIMED SHARES TRANSFERRED TO IEPF 2026",
+            link: "https://beta.uflexltd.com/media/pdf/IEPF/UF-PARTICULARS-OF-UNCLAIMED-SHARES-TRANSFERRED-TO-IEPF-2026.pdf",
+        },
         {
             text: "PARTICULARS OF UNCLAIMED SHARES TRANSFERRED TO IEPF 2025",
             link: "https://beta.uflexltd.com/media/pdf/IEPF/UF-PARTICULARS-OF-UNCLAIMED-SHARES-TRANSFERRED-TO-IEPF-2025.pdf"
