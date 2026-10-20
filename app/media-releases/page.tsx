@@ -42,17 +42,17 @@ const PRESS_ROOM_DATA = {
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2026/PR_30May26_UFlex_Q4FY26_Earnings.pdf",
         },
         {
-          title: "12 Feb 2026: Earnings Release for the Quarter ended December 31, 2025 | Resilent Q3 with 9M Growth, EBITDA ON Track | Macro Tailwinds to Drive Growth",
+          title: "12 Feb 2026: Earnings Release for the Quarter ended December 31, 2025 | Resilient Q3 with 9M Growth, EBITDA ON Track | Macro Tailwinds to Drive Growth",
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2026/PR_12Feb26_UFlex_Q3FY26_Earnings.pdf",
         },
       ],
       2025: [
         {
-          title: "13 Nov 2025: Earnings Release for the Quarter ended September 30,2025 | GST reforms, evolving trade dynamics set to catalyze growth ahead",
+          title: "13 Nov 2025: Earnings Release for the Quarter ended September 30, 2025 | GST reforms, evolving trade dynamics set to catalyze growth ahead",
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2025/PR_13Nov25_UFlex_Q2FY26_Earnings.pdf",
         },
         {
-          title: "13 Aug 2025: Earnings Release for the Quarter ended June 30,2025 | Stable growth amidst tariff challenges",
+          title: "13 Aug 2025: Earnings Release for the Quarter ended June 30, 2025 | Stable growth amidst tariff challenges",
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2025/PR_13Aug25_UFlex_Q1FY26_Earnings.pdf",
         },
         {
@@ -66,15 +66,15 @@ const PRESS_ROOM_DATA = {
       ],
       2024: [
         {
-          title: "14 November 2024: Continued Strong Revival in Packaging Films Business",
+          title: "14 Nov 2024: Continued Strong Revival in Packaging Films Business",
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2024/PR_14Nov24_2QFY25_Release.pdf",
         },
         {
-          title: "12 August 2024: UFlex reports total net revenue of INR 36,825 million in Q1, 2024, underpinned by strong sales volume in packaging films",
+          title: "12 Aug 2024: UFlex reports total net revenue of INR 36,825 million in Q1, 2024, underpinned by strong sales volume in packaging films",
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2024/PR_12Aug24_UFlex_Q1FY25_Results.pdf",
         },
         {
-          title: "29 May 2024: UFlex clocks a 6.8% increase in sales volume in QoQ and 10.5% YoY Clocks 8.7% increase in sales volume in flexible packaging in Q4",
+          title: "29 May 2024: UFlex clocks a 6.8% increase in sales volume in QoQ and 10.5% YoY | Clocks 8.7% increase in sales volume in flexible packaging in Q4",
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2024/PR_29May24_UFlex_Q4FY24_Results.pdf",
         },
         {
@@ -154,7 +154,7 @@ const PRESS_ROOM_DATA = {
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2022/PR_19Apr2022_UFlex_Asepto.pdf",
         },
         {
-          title: "15 Mar 2022: UFlex Chemicals Introduce Zero Liquid Discharge Technology at its Noida Facility for Water & Environmental Protection | Saving 20 kilolitre of water everyday",
+          title: "15 Mar 2022: UFlex Chemicals Introduces Zero Liquid Discharge Technology at its Noida Facility for Water & Environmental Protection | Saving 20 kilolitres of water every day",
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2022/PR_15Mar2022_UFlex_Chemicals.pdf",
         },
         {
@@ -162,7 +162,7 @@ const PRESS_ROOM_DATA = {
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2022/PR_11Feb2022_UFlex_Q3FY22_Result.pdf",
         },
         {
-          title: "24 Jan 2022: FDC's flagship brand Electral value added ready-to-drink ORS+Zinc Solution ’Electral-Z+ launched in UFlex’ Asepto Holographic Packaging",
+          title: "24 Jan 2022: FDC's flagship brand Electral value added ready-to-drink ORS+Zinc Solution ‘Electral-Z+’ launched in UFlex Asepto Holographic Packaging",
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2022/PR_24Jan2022_UFlex_Asepto_FDC.pdf",
         },
       ],
@@ -357,7 +357,7 @@ const PRESS_ROOM_DATA = {
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2023/PN_03May23_UFlex_Interpak2023.pdf",
         },
         {
-          title: "15 Mar 2023: UFlex to showcase innovative, eco-friendly and recyclable tubes and packaging solutions at Cosmoprof Worldwide In Bologna, Italy",
+          title: "15 Mar 2023: UFlex to showcase innovative, eco-friendly and recyclable tubes and packaging solutions at Cosmoprof Worldwide in Bologna, Italy",
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2023/PN_15Mar23_UFlex_Cosmoprof2023_Bologna.pdf",
         },
         {
@@ -425,7 +425,7 @@ const PRESS_ROOM_DATA = {
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2021/PressRelease_14Aug2021_Q1FY22.pdf",
         },
         {
-          title: "29 June 2021: UFlex rises above challenges to post best-ever performance in Q4FY21 & FY2020-21",
+          title: "29 Jun 2021: UFlex rises above challenges to post best-ever performance in Q4FY21 & FY2020-21",
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2021/PressRelease_29Jun2021_Q4FY21.pdf",
         },
         {
@@ -467,7 +467,7 @@ const PRESS_ROOM_DATA = {
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2020/Press_Release_Jun_30_2020.pdf",
         },
         {
-          title: "28 May 2020: UFlex & IIT-Delhi Contributes to the Front-line Warriors Safety by Developing PPE Coverall with Anti-microbial Coating",
+          title: "28 May 2020: UFlex & IIT-Delhi Contribute to the Front-line Warriors’ Safety by Developing PPE Coverall with Anti-microbial Coating",
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2020/Press_Release_May_28_2020.pdf",
         },
         {
@@ -547,7 +547,7 @@ const PRESS_ROOM_DATA = {
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2018/PR_Nov_03_2018.pdf",
         },
         {
-          title: "24 Oct 2018: Uflex’s Waterless Internet Flower Packaging Wins Top Honors at Sustainability Awards 2018",
+          title: "24 Oct 2018: UFlex’s Waterless Internet Flower Packaging Wins Top Honors at Sustainability Awards 2018",
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2018/PR_Oct_24_2018.pdf",
         },
         {
@@ -571,11 +571,11 @@ const PRESS_ROOM_DATA = {
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2018/PR_Sep_21_2018.pdf",
         },
         {
-          title: "19 Sep 2018: FlexFilms Launches Two New Advanced BOPET Film",
+          title: "19 Sep 2018: FlexFilms Launches Two New Advanced BOPET Films",
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2018/PR_Sep_19_2018.pdf",
         },
         {
-          title: "12 Sep 2018: Uflex’s Waterless Internet Flower Packaging Adjudged Diamond Finalist Winner at Dow’s 2018 30th Awards for Packaging Innovation",
+          title: "12 Sep 2018: UFlex’s Waterless Internet Flower Packaging Adjudged Diamond Finalist Winner at Dow’s 2018 30th Awards for Packaging Innovation",
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2018/PR_Sep_12_2018.pdf",
         },
         {
@@ -595,7 +595,7 @@ const PRESS_ROOM_DATA = {
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2018/PR_Aug_20_2018.pdf",
         },
         {
-          title: "10 Aug 2018: UFlex INCOME FOR Q1 FY 2018 UP BY 17.5 %, VOLUMES ARE UP TOO!",
+          title: "10 Aug 2018: UFlex INCOME FOR Q1 FY 2018 UP BY 17.5%, VOLUMES ARE UP TOO!",
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2018/PR_Aug_10_2018.pdf",
         },
         {
@@ -611,7 +611,7 @@ const PRESS_ROOM_DATA = {
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2018/PR_Jul_11_2018.pdf",
         },
         {
-          title: "03 Jul 2018: UFlex Chemicals launches Single Component Solvent-less PU Adhesive- FLEXBON OC512",
+          title: "03 Jul 2018: UFlex Chemicals launches Single Component Solvent-less PU Adhesive - FLEXBON OC512",
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2018/PR_Jul_03_2018.pdf",
         },
         {
@@ -669,8 +669,12 @@ const PRESS_ROOM_DATA = {
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2017/PR_May_30_2017.pdf",
         },
         {
-          title: "18 May 2017: UFlex value - engineers different variants of Extrusion Lamination Machine",
+          title: "18 May 2017: UFlex value-engineers different variants of Extrusion Lamination Machine",
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2017/PR_May_18_2017.pdf",
+        },
+        {
+          title: "27 Apr 2017: AIMCAL Marketing Excellence Award 2017 to UFlex for 3 Dimensional Slide to Close Zipper Bag with a Side Gusset Handle",
+          link: "https://beta.uflexltd.com/media/pdf/Press-Release/2017/PR_Apr_27_2017.pdf",
         },
         {
           title: "18 Apr 2017: Flex Films to set the trend for the Art and Science of Converting at INTERPACK 2017",
@@ -679,10 +683,6 @@ const PRESS_ROOM_DATA = {
         {
           title: "17 Apr 2017: UFlex honoured as Asia’s Most Trusted Flexible Packaging Solution Company",
           link: "https://beta.uflexltd.com/media/pdf/Press-Release/2017/PR_Apr_17_2017.pdf",
-        },
-        {
-          title: "27 Apr 2017: AIMCAL Marketing Excellence Award 2017 to UFlex for 3 Dimensional Slide to Close Zipper Bag with a Side Gusset Handle",
-          link: "https://beta.uflexltd.com/media/pdf/Press-Release/2017/PR_Apr_27_2017.pdf",
         },
         {
           title: "03 Apr 2017: UFlex invests in Laser Scoring Technology to offer Easy to Open flexible packaging solutions",

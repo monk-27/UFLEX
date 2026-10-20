@@ -299,7 +299,7 @@ landfill pressure and helping curb pollution.`,
             details: [
                 {
                     photo:
-                        "/images/new/pillai.webp",
+                        "/images/new/pillai-card.webp",
                     name: "Mr. Jeevaraj Gopal Pillai",
                     role: "Whole Time Director, President - Flexible Packaging and New Product Development and Director– Sustainability",
                     summary:
@@ -311,6 +311,14 @@ landfill pressure and helping curb pollution.`,
                     name: "Mr. Rohit Kachroo",
                     role: "Executive Vice President – Export, Flexible Packaging Business",
                     summary: "",
+                    cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
+                },
+                {
+                    photo: "/images/bose.webp",
+                    name: "Mr. Subrata Bose",
+                    role: "Senior Vice President - Tubes, Flexible Packaging Business",
+                    summary:
+                        "Mr. Subrata Bose is a seasoned professional with nearly three decades of experience across the packaging, healthcare, and engineering industries. He brings a strong track record of driving growth, leading high-performing teams, and fostering lasting customer relationships. His expertise spans strategic planning, sales and marketing, business development, account management, and P&L oversight. Prior to UFlex, he held key leadership positions at Albéa Group and Betts Group, where he successfully led sales and distribution strategies, and market expansion efforts.",
                     cta: { label: "Read More", href: "/leadership/ashwani-sharma" },
                 },
                 //     {
