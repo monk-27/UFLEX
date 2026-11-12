@@ -496,6 +496,8 @@ export default function ProductsPage() {
         ) ?? productsData.flexible;
 
     const { key: _ignored, ...productProps } = product;
+    // The layout below is chosen by the product's original title, so renaming the title in the admin is safe.
+    const layoutTitle = ((Object.values(productsData_CMS_FALLBACK).find((p: any) => p.key === (product as any).key) ?? product) as any).title;
 
 
     // const handleCategoryClick = (productKey: string) => {
@@ -606,6 +608,7 @@ export default function ProductsPage() {
 
                             <ProductCategorySection
                                 {...productProps}
+                                layoutTitle={layoutTitle}
                                 categories={enhancedCategories}
                             />
                         </div>

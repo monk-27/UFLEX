@@ -8,8 +8,10 @@ import { SiteFooter } from '../site-footer';
 import { InvestorCardsGrid } from './investor-card';
 import { investorCards } from '@/app/investors/invdata';
 import InvestorMainCarousel from '../investor-main';
+import { useContent } from "@/lib/cms";
 
 const InvestorsPage = () => {
+  const { investorCards } = useContent("investors.landing", CMS_CONTENT_FALLBACK);
   return (
     <main className="bg-white">
 
@@ -56,3 +58,6 @@ const InvestorsPage = () => {
 export default InvestorsPage
 
 
+
+// CMS: investorCards (app/investors/invdata.ts) is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { investorCards };

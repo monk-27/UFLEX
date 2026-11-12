@@ -5,6 +5,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRef, useEffect, useState, useLayoutEffect } from "react";
+import { useContent } from "@/lib/cms";
 
 /* ============================= Data ============================= */
 
@@ -167,6 +168,7 @@ function DropdownList({ items }: { items: SustainabilityItem[] }) {
 /* ============================= Main Component (no Framer Motion) ============================= */
 
 export default function SustainabilityShowcase() {
+  const { DATA } = useContent("company.sustainability-vision", CMS_CONTENT_FALLBACK);
   // const sectionRef = useRef<HTMLDivElement | null>(null);
 
   const colHeightClass = "min-h-[680px] h-[680px]";
@@ -240,3 +242,6 @@ export default function SustainabilityShowcase() {
     </section>
   );
 }
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { DATA };

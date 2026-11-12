@@ -2,7 +2,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useContent } from "@/lib/cms";
 type Year = 2025 | 2024 | 2023 | 2022 | 2021 | 2020 | 2019 | 2018;
 type YearMap<T> = Partial<Record<Year, T>>;
@@ -467,6 +467,13 @@ export default function BusinessAwards({ initialBusiness = "corporate-awards" }:
 
   const business = AWARDS_DATA[activeBusiness];
   const [activeYear, setActiveYear] = useState<Year>(business.years[0]);
+  // When published content arrives with a new latest year, show it — unless the
+  // visitor has already picked a year themselves.
+  const yearPicked = useRef(false);
+  useEffect(() => {
+    if (!yearPicked.current || !business.years.includes(activeYear)) setActiveYear(business.years[0]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [business]);
 
   const cards = business.data[activeYear] ?? [];
 
@@ -502,6 +509,7 @@ export default function BusinessAwards({ initialBusiness = "corporate-awards" }:
             <button
               key={key}
               onClick={() => {
+                yearPicked.current = false;
                 setActiveBusiness(key as BusinessKey);
                 setActiveYear(val.years[0]);
               }}
@@ -519,7 +527,8 @@ export default function BusinessAwards({ initialBusiness = "corporate-awards" }:
         {/* Year Tabs */}
         {/* Year Tabs */}
         {
-          activeBusiness !== "corporate-awards" && (
+          // Corporate shows a single list until it has awards in more than one year.
+          (activeBusiness !== "corporate-awards" || business.years.length > 1) && (
             <div
               className="
     mb-10
@@ -534,7 +543,7 @@ export default function BusinessAwards({ initialBusiness = "corporate-awards" }:
               {business.years.map((y) => (
                 <button
                   key={y}
-                  onClick={() => setActiveYear(y)}
+                  onClick={() => { yearPicked.current = true; setActiveYear(y); }}
                   className={`text-[14px] md:text-[18px] leading-relaxed lato-700 shrink-0 px-6 py-2 text-xs ${activeYear === y
                     ? "bg-[#F5F5F5]  text-[#555]  border-b-[0.7px] border-b-[#173366]"
                     : "bg-[#F5F5F5]  text-[#555]"

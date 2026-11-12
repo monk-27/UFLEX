@@ -5,7 +5,7 @@ import { SiteHeader } from "@/components/site-header";
 import Image from "next/image";
 import React, { useState, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useContent } from "@/lib/cms";
+import { useContent, useNewestChoice, yearKeys } from "@/lib/cms";
 
 type Year = 2026 | 2025 | 2024;
 type CoverageTab = "Print Media" | "Online Media" | "Electronic Media";
@@ -494,26 +494,21 @@ const ITEMS_PER_PAGE = 8;
 const PressRoomPage = () => {
   const { PRESS_ROOM_DATA } = useContent("media.media-coverage", CMS_CONTENT_FALLBACK);
   const [activeTab, setActiveTab] = useState<CoverageTab>("Print Media");
-  const [activeYear, setActiveYear] = useState<Year>(2026);
   const [currentPage, setCurrentPage] = useState(1);
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
 
   // Filter years that actually have data for the active tab
+  // Years come from the data (newest first), so a year added in the admin appears automatically.
   const availableYears = React.useMemo(() => {
-    return PRESS_ROOM_DATA.mediaCoverage.years.filter(
-      (year) => PRESS_ROOM_DATA.mediaCoverage.data[activeTab][year]?.length > 0
-    );
-  }, [activeTab]);
-  console.log(PRESS_ROOM_DATA.mediaCoverage.data["Electronic Media"][2026][0])
-  // Switch activeYear if the currently selected one is not available for this tab
+    const byYear = PRESS_ROOM_DATA.mediaCoverage.data?.[activeTab];
+    return yearKeys(byYear).filter((year) => (byYear as any)[year]?.length > 0) as Year[];
+  }, [activeTab, PRESS_ROOM_DATA]);
+  const [activeYear, setActiveYear] = useNewestChoice<Year>(availableYears);
   React.useEffect(() => {
-    if (availableYears.length > 0 && !availableYears.includes(activeYear)) {
-      setActiveYear(availableYears[0]);
-    }
     setCurrentPage(1);
-  }, [activeTab, availableYears, activeYear]);
+  }, [activeTab, activeYear]);
 
-  const currentItems = PRESS_ROOM_DATA.mediaCoverage.data[activeTab][activeYear] || [];
+  const currentItems = PRESS_ROOM_DATA.mediaCoverage.data?.[activeTab]?.[activeYear] || [];
 
   const totalPages = Math.ceil(currentItems.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;

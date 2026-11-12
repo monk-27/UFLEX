@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
+import { useContent } from "@/lib/cms";
 
 const items = [
   {
@@ -37,6 +38,7 @@ const items = [
 ];
 
 export default function WhatSetsUsApartCarousel() {
+  const { items } = useContent("company.home-sets-apart", CMS_CONTENT_FALLBACK);
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: false,
     align: "start",
@@ -144,3 +146,6 @@ const scrollNext = useCallback(() => {
     </section>
   );
 }
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { items };

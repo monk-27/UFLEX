@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useContent } from "@/lib/cms";
 
 const items = [
   {
@@ -61,6 +62,7 @@ const items = [
 ];
 
 export default function BusinessCardsCarousel() {
+  const { items } = useContent("company.home-what-we-do", CMS_CONTENT_FALLBACK);
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: false,        // ❌ no infinite autoplay feel
     align: "start",
@@ -159,3 +161,6 @@ const scrollNext = useCallback(() => {
     </section>
   );
 }
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { items };

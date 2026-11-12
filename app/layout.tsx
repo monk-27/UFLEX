@@ -8,6 +8,7 @@ import { GetQuoteButton } from "@/components/get-quote-button"
 import { ScrollToTopButton } from "@/components/scroll-to-top-button"
 import CookieConsent from "./what-we-do/cookies"
 import { CmsPreviewBanner } from "@/components/cms-preview-banner"
+import { CmsSafeBoundary } from "@/lib/cms"
 
 import type { Viewport } from "next";
 
@@ -39,14 +40,15 @@ export default function RootLayout({
         </a>
         <Suspense fallback={null}>
           {/* <PageTransition> */}
-          <main id="content" className="">{children}</main>
+          <main id="content" className=""><CmsSafeBoundary>{children}</CmsSafeBoundary></main>
           {/* </PageTransition> */}
           <CookieConsent />
         </Suspense>
         <ScrollToTopButton />
         <GetQuoteButton />
         <CmsPreviewBanner />
-        <Analytics />
+        {/* Vercel Analytics only works on Vercel hosting; elsewhere it fails to load. */}
+        {process.env.VERCEL === "1" && <Analytics />}
       </body>
     </html>
   )

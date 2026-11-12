@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from 'next/link'
 import { AnimatedSection } from './animated-section'
 import CareersMainCarousel from './careers-main'
+import { useContent } from "@/lib/cms";
 
 
 
@@ -37,6 +38,7 @@ const cardColors = [
 
 ]
 const Careers = () => {
+    const { items } = useContent("company.careers-cards", CMS_CONTENT_FALLBACK);
     return (
         <div>
             <section className="bg-gradient-to-b from-white to-slate-50 ">
@@ -182,3 +184,6 @@ const Careers = () => {
 }
 
 export default Careers
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { items };

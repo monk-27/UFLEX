@@ -1,18 +1,11 @@
 "use client";
 
-import React, { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import React from 'react';
+import Link from 'next/link';
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
 export default function NotFound() {
-  const router = useRouter();
-
-  useEffect(() => {
-    // Automatically redirect to home page for any client-side 404 hits
-    router.replace('/');
-  }, [router]);
-
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <SiteHeader />
@@ -24,13 +17,17 @@ export default function NotFound() {
         </div>
 
         <div className="text-center max-w-3xl mx-auto space-y-6 flex flex-col items-center">
-          <div className="w-12 h-12 border-4 border-[#173366] border-t-transparent rounded-full animate-spin"></div>
+          {/* Previously this page showed a spinner and silently jumped to the home page,
+              which looked like the site was stuck loading. */}
           <h2 className="text-2xl md:text-3xl font-semibold text-[#333333] lato-700 mt-6">
-            Redirecting...
+            Page not found
           </h2>
           <p className="text-gray-500 lato-400">
-            Taking you back to the home page.
+            The page you are looking for may have moved. Please use the menu above, or go to the home page.
           </p>
+          <Link href="/" className="mt-2 inline-block bg-[#173366] px-6 py-3 text-white lato-700 hover:opacity-90">
+            Go to the home page
+          </Link>
         </div>
       </main>
       <SiteFooter />

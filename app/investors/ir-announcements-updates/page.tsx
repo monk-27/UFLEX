@@ -9,7 +9,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { Calendar } from "lucide-react";
 import { title } from "process";
 import Breadcrumb from "../breadcrumb";
-import { useContent } from "@/lib/cms";
+import { parseDate, useContent, useNewestChoice } from "@/lib/cms";
 
 /* -------------------------- Tabs & data types -------------------------- */
 
@@ -1672,7 +1672,10 @@ const getYearFromDate = (date: string) => {
     return date.split("/")[2];
 };
 const buildAnnouncementsData = (tabItems: any) => Object.entries(
-    (tabItems["announcements"] as AnnouncementGroup[]).reduce(
+    // Newest date first, whatever order the entries were added in.
+    [...((tabItems["announcements"] ?? []) as AnnouncementGroup[])]
+        .sort((a, b) => parseDate(b.date) - parseDate(a.date))
+        .reduce(
         (acc: Record<string, AnnouncementGroup[]>, item) => {
             const year = getYearFromDate(item.date);
 
@@ -1749,8 +1752,8 @@ export default function Page() {
     const flatItems =
         !isAnnouncements && !isGrievance ? (rawData as DocItem[]) : [];
 
-    const [activeYear, setActiveYear] = useState(
-        announcementsData[0]?.year || ""
+    const [activeYear, setActiveYear] = useNewestChoice<string>(
+        announcementsData.map((y) => y.year)
     );
     const selectedYearData = announcementsData.find(
         (y) => y.year === activeYear

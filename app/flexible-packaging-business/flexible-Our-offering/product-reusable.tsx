@@ -30,6 +30,8 @@ interface QuickLink {
 interface ProductCategorySectionProps {
     title: string;
     heroImageUrl: string;
+    /** the product's original title, used to pick the layout (defaults to title) */
+    layoutTitle?: string;
     overview?: string;
     highlightText?: string | string[];
     bulletList?: string[];
@@ -46,6 +48,7 @@ interface ProductCategorySectionProps {
 
 export default function ProductCategorySection({
     title,
+    layoutTitle = title,
     heroImageUrl,
     overview = "",
     learnlink = "",
@@ -280,7 +283,7 @@ export default function ProductCategorySection({
                     {/* Overview */}
                     <div className=" space-y-6">
                         <motion.div variants={itemVariants}>
-                            {title?.toLowerCase() != "flexitubes" &&
+                            {layoutTitle?.toLowerCase() != "flexitubes" &&
                                 (
                                     <div className="flex gap-2">
                                         {/* <span className="mt-1 h-6 w-[4px] rounded-full bg-[#173366]" /> */}
@@ -317,7 +320,7 @@ export default function ProductCategorySection({
                         </motion.div>
 
 
-                        {title?.toLowerCase() === "flexitubes" && (
+                        {layoutTitle?.toLowerCase() === "flexitubes" && (
                             <div className="space-y-8">
 
                                 {/* IMAGE BLOCK */}
@@ -395,7 +398,7 @@ export default function ProductCategorySection({
                             </div>
                         )}
 
-                        {title?.toLowerCase() === "premium shower proof bag" && (
+                        {layoutTitle?.toLowerCase() === "premium shower proof bag" && (
                             <div className="space-y-6">
 
                                 {/* Overview text */}
@@ -436,7 +439,7 @@ export default function ProductCategorySection({
 
                             </div>
                         )}
-                        {title === "Zipouch" && (
+                        {layoutTitle === "Zipouch" && (
                             <div className="space-y-6">
 
                                 {/* Red highlight bar */}
@@ -478,7 +481,7 @@ export default function ProductCategorySection({
                             </div>
                         )}
 
-                        {title?.toLowerCase() === "six layered cotton n95 mask" && (
+                        {layoutTitle?.toLowerCase() === "six layered cotton n95 mask" && (
                             <div className="space-y-6">
 
                                 {/* Red highlight bar */}
@@ -589,7 +592,7 @@ export default function ProductCategorySection({
                         )}
 
 
-                        {title?.toLowerCase() === "injection moulding products" && (
+                        {layoutTitle?.toLowerCase() === "injection moulding products" && (
                             <div className="space-y-6">
 
                                 {/* Overview paragraph */}

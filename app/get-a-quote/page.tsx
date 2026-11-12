@@ -7,6 +7,7 @@ import { useState, useEffect, FormEvent, useRef, useCallback } from "react";
 import { QuoteFormData } from "@/types/quote";
 import { Mail, Phone, Building2, MessageSquare, User, Send, RefreshCw, Paperclip, X, FileVideo, Image as ImageIcon, Upload } from "lucide-react";
 import Swal from "sweetalert2";
+import { useContent } from "@/lib/cms";
 
 const BUSINESS_OPTIONS = [
   "Packaging Films and PET Resin",
@@ -101,6 +102,7 @@ interface FilePreview {
 }
 
 export default function EnquiryForm() {
+  const { BUSINESS_PRODUCTS, BUSINESS_OPTIONS } = useContent("company.get-a-quote", CMS_CONTENT_FALLBACK);
   const searchParams = useSearchParams();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
@@ -1026,3 +1028,6 @@ export default function EnquiryForm() {
     </div>
   );
 }
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { BUSINESS_OPTIONS, BUSINESS_PRODUCTS };

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ReadMoreDialog } from "./expandabletext";
+import { useContent } from "@/lib/cms";
 
 const SLIDES = [
   // {
@@ -31,7 +32,7 @@ export default function SustainabilityCarousel() {
     return () => clearInterval(interval);
   }, []);
 
-  const packagingData = [
+  const packagingData_CMS_FALLBACK = [
     {
       title: 'Hall of Fame',
       image: '/images/hall/7.webp',
@@ -43,6 +44,7 @@ export default function SustainabilityCarousel() {
     },
 
   ];
+  const { packagingData } = useContent("awards.hall-top", { packagingData: packagingData_CMS_FALLBACK });
   return (
     <section className="w-full pt-4 sm:pt-12 ">
       <div className="max-w-7xl mx-auto px-4">

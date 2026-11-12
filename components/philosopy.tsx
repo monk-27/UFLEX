@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
+import { useContent } from "@/lib/cms";
 
 const items = [
   {
@@ -44,6 +45,7 @@ const items = [
 ];
 
 export default function Philosopy() {
+  const { items } = useContent("company.careers-philosophy", CMS_CONTENT_FALLBACK);
   const [currentSlide, setCurrentSlide] = useState(0);
 
 const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -142,3 +144,6 @@ const [emblaRef, emblaApi] = useEmblaCarousel({
   );
   
 }
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { items };

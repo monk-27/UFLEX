@@ -16,6 +16,8 @@ interface Category {
 interface ProductCategorySectionProps {
   title: string;
   heroImageUrl: string;
+  /** the product's original title, used to pick the layout (defaults to title) */
+  layoutTitle?: string;
   overview?: string;
   categories: Category[];
   brandTag?: string;
@@ -24,6 +26,7 @@ interface ProductCategorySectionProps {
 
 export default function ProductCategorySection({
   title,
+  layoutTitle = title,
   heroImageUrl,
   overview = "",
   categories = [],
@@ -223,7 +226,7 @@ export default function ProductCategorySection({
           {/* </div> */}
 
           {/* Conditional Layouts per Category */}
-          {title === "HOLOGRAM" && (
+          {layoutTitle === "HOLOGRAM" && (
             <div className="bg-white  space-y-10">
               <div>
                 {/* <h2 className="lato-700 text-[20px] sm:text-[24px] text-[#173366] mb-6">Overview:</h2> */}
@@ -323,7 +326,7 @@ export default function ProductCategorySection({
             </div>
           )}
 
-          {title === "HOLOGRAPHIC FILM (Wide Web Films)" && (
+          {layoutTitle === "HOLOGRAPHIC FILM (Wide Web Films)" && (
             <div className="bg-white space-y-10">
               {/* Overview */}
               <div>
@@ -515,7 +518,7 @@ export default function ProductCategorySection({
               </div>
             </div>
           )}
-          {title === "TEXTILE VALUE ADDITION PRODUCT" && (
+          {layoutTitle === "TEXTILE VALUE ADDITION PRODUCT" && (
             <div className="bg-white space-y-12">
               {/* Overview */}
               <div>
@@ -781,7 +784,7 @@ export default function ProductCategorySection({
           )}
 
 
-          {title === "Hot Stamping Foil" && (
+          {layoutTitle === "Hot Stamping Foil" && (
             <div className="bg-white space-y-12">
               {/* Overview */}
               <div>
@@ -871,7 +874,7 @@ export default function ProductCategorySection({
               </div>
             </div>
           )}
-          {title === "HOLOGRAPHIC METALIZED PAPER & BOARD TRANSFER" && (
+          {layoutTitle === "HOLOGRAPHIC METALIZED PAPER & BOARD TRANSFER" && (
             <div className="bg-white space-y-12">
               {/* Overview */}
               <div>
@@ -1063,7 +1066,7 @@ export default function ProductCategorySection({
             </div>
           )}
 
-          {title === "Labeling Solution" && (
+          {layoutTitle === "Labeling Solution" && (
             <div className="bg-white space-y-12">
               {/* Overview */}
               <div>

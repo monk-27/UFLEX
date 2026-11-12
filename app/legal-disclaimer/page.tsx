@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { LegalParagraphs } from "@/components/legal-paragraphs";
 
 export const metadata: Metadata = {
   title: "Legal Disclaimer",
@@ -59,16 +60,7 @@ export default function Page() {
             />
           </div>
 
-          <div className="mt-6 space-y-6">
-            {paragraphs.map((text, i) => (
-              <p
-                key={i}
-                className="text-[16px] sm:text-[18px] lato-400 text-black leading-relaxed text-justify"
-              >
-                {text}
-              </p>
-            ))}
-          </div>
+          <LegalParagraphs paragraphs={paragraphs} />
         </section>
       </main>
 

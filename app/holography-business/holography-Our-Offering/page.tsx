@@ -213,6 +213,8 @@ const sectionRef = useRef<HTMLDivElement>(null);
     productsData.hologram;
 
   const { key: _ignored, ...productProps } = product;
+  // The layout below is chosen by the product's original title, so renaming the title in the admin is safe.
+  const layoutTitle = ((Object.values(productsData_CMS_FALLBACK).find((p: any) => p.key === (product as any).key) ?? product) as any).title;
     //   const product = productsData[selectedKey] || productsData.hologram;
 
 
@@ -294,6 +296,7 @@ const sectionRef = useRef<HTMLDivElement>(null);
 
                         <ProductCategorySection
                             {...productProps}
+                            layoutTitle={layoutTitle}
                             categories={enhancedCategories}
                             />
                             </div>

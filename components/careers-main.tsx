@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ReadMoreDialog } from "./expandabletext";
+import { useContent } from "@/lib/cms";
 
 const SLIDES = [
   {
@@ -24,6 +25,7 @@ const SLIDES = [
 ];
 
 export default function CareersMainCarousel() {
+  const { SLIDES } = useContent("company.careers-top", CMS_CONTENT_FALLBACK);
   const [active, setActive] = useState(0);
   const [open, setOpen] = useState(false);
 
@@ -33,10 +35,11 @@ export default function CareersMainCarousel() {
     }, 4000);
 
     return () => clearInterval(interval);
-  }, []);
+    // Restart when the number of slides changes (slides edited in the admin).
+  }, [SLIDES.length]);
 
 
-  const packagingData = [
+  const packagingData_CMS_FALLBACK = [
     {
       title: 'Careers',
       image: '/images/careers/global.webp',
@@ -47,6 +50,7 @@ export default function CareersMainCarousel() {
     },
 
   ];
+  const { packagingData } = useContent("company.careers-top", { packagingData: packagingData_CMS_FALLBACK });
 
   return (
 
@@ -106,7 +110,7 @@ export default function CareersMainCarousel() {
 
               <AnimatePresence mode="wait">
                 <motion.div
-                  key={SLIDES[active].image}
+                  key={SLIDES[active % SLIDES.length].image}
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
@@ -114,8 +118,8 @@ export default function CareersMainCarousel() {
                   className="absolute inset-0"
                 >
                   <Image
-                    src={SLIDES[active].image}
-                    alt={SLIDES[active].title}
+                    src={SLIDES[active % SLIDES.length].image}
+                    alt={SLIDES[active % SLIDES.length].title}
                     fill
                     className="object-cover"
                     priority
@@ -209,3 +213,6 @@ export default function CareersMainCarousel() {
     </section>
   );
 }
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { SLIDES };

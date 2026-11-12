@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ReadMoreDialog } from "./expandabletext";
+import { useContent } from "@/lib/cms";
 
 const SLIDES = [
   // {
@@ -36,6 +37,7 @@ const packagingData = [
 ];
 
 export default function InvestorMainCarousel() {
+  const { packagingData } = useContent("investors.landing-top", CMS_CONTENT_FALLBACK);
   const [active, setActive] = useState(0);
   const [open, setOpen] = useState(false);
 
@@ -110,3 +112,6 @@ export default function InvestorMainCarousel() {
     </section>
   );
 }
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { packagingData };

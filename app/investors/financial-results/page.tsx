@@ -6,7 +6,7 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import Breadcrumb from "../breadcrumb";
-import { useContent } from "@/lib/cms";
+import { useContent, useNewestChoice } from "@/lib/cms";
 
 /* ----------------------------- Types ----------------------------- */
 
@@ -864,9 +864,9 @@ export const subsidiariesFYData: SubsidiaryFY[] = [
 ];
 const SubsidiariesSection: React.FC = () => {
   const { subsidiariesFYData } = useContent("investors.financial-results", CMS_CONTENT_FALLBACK);
-  const [activeFY, setActiveFY] = useState<SubsidiaryFYId>("FY2025-2026");
+  const [activeFY, setActiveFY] = useNewestChoice<SubsidiaryFYId>(subsidiariesFYData.map((f) => f.id));
 
-  const fy = subsidiariesFYData.find((f) => f.id === activeFY)!;
+  const fy = subsidiariesFYData.find((f) => f.id === activeFY) ?? subsidiariesFYData[0];
 
   return (
     <div className="mt-4">
@@ -1304,8 +1304,8 @@ const QuarterCard: React.FC<{ card: AdvertisementFY["cards"][number] }> = ({
 /* Advertisements section with FY pills */
 const AdvertisementsSection: React.FC = () => {
   const { advertisementFYData } = useContent("investors.financial-results", CMS_CONTENT_FALLBACK);
-  const [activeFY, setActiveFY] = useState<AdFYId>(advertisementFYData[0].id);
-  const fy = advertisementFYData.find((f) => f.id === activeFY)!;
+  const [activeFY, setActiveFY] = useNewestChoice<AdFYId>(advertisementFYData.map((f) => f.id));
+  const fy = advertisementFYData.find((f) => f.id === activeFY) ?? advertisementFYData[0];
 
   return (
     <div className="mt-4">

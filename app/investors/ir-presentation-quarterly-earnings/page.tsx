@@ -63,7 +63,7 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import Breadcrumb from "../breadcrumb";
-import { useContent } from "@/lib/cms";
+import { useContent, useNewestChoice } from "@/lib/cms";
 
 /* ----------------------------- Types & data ----------------------------- */
 
@@ -853,11 +853,11 @@ const Page = () => {
     const isPresentations = activeTab === "presentations-updates";
     const isQuarterly = activeTab === "quarterly-earnings";
 
-    const [activeFY, setActiveFY] = useState<FinancialYearId>(
-        quarterlyEarningsData[0].id
+    const [activeFY, setActiveFY] = useNewestChoice<FinancialYearId>(
+        quarterlyEarningsData.map((f) => f.id)
     );
 
-    const fy = quarterlyEarningsData.find((f) => f.id === activeFY)!;
+    const fy = quarterlyEarningsData.find((f) => f.id === activeFY) ?? quarterlyEarningsData[0];
     const ALL_QUARTERS: { id: QuarterId; label: string }[] = [
         { id: "Q1", label: "Quarter 1" },
         { id: "Q2", label: "Quarter 2" },

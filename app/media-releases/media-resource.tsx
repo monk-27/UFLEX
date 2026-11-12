@@ -5,6 +5,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useContent } from "@/lib/cms";
 
 const items = [
   {
@@ -64,6 +65,7 @@ const items = [
 ];
 
 export default function MediaCardsCarousel() {
+  const { items } = useContent("media.press-room-releases", CMS_CONTENT_FALLBACK);
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: false,
     align: "start",
@@ -157,3 +159,6 @@ export default function MediaCardsCarousel() {
     </div>
   );
 }
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { items };

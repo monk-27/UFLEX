@@ -13,6 +13,7 @@ import AutoScroll from "embla-carousel-auto-scroll";
 import useEmblaCarousel from "embla-carousel-react";
 import GalleryPage from "./gallery";
 import { useContent } from "@/lib/cms";
+import { LiteYouTube } from "@/components/lite-youtube";
 
 /* ==========================
    TYPES
@@ -423,7 +424,7 @@ export default function PressRoomPage() {
   const { hero, mediaReleases, mediaResources, mediaCoverage } =
     PRESS_ROOM_DATA;
   const coverageItems =
-    mediaCoverage.data[activeCoverageTab][activeCoverageYear];
+    mediaCoverage?.data?.[activeCoverageTab]?.[activeCoverageYear];
 
 
   const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -543,13 +544,10 @@ export default function PressRoomPage() {
                   <div className="relative overflow-hidden rounded-sm shadow-md bg-black">
                     <div className="relative aspect-[16/9]">
                       {/* {res.type === "video" ? ( */}
-                      <iframe
+                      <LiteYouTube
                         className="absolute inset-0 h-full w-full"
-                        src={`https://www.youtube.com/embed/${res.youtubeId}`}
+                        id={res.youtubeId}
                         title={res.title}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                        loading="lazy" // better perf
                       />
                       {/* ) : (
                         <Image

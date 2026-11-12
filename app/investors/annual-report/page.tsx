@@ -59,7 +59,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { quarterlyEarningsData } from "../ir-presentation-quarterly-earnings/page";
 import Breadcrumb from "../breadcrumb";
-import { useContent } from "@/lib/cms";
+import { useContent, useNewestChoice } from "@/lib/cms";
 
 /* ----------------------------- Types & data ----------------------------- */
 
@@ -496,11 +496,11 @@ const Page = () => {
   };
 
   const AdvertisementsSection: React.FC = () => {
-    const [activeFY, setActiveFY] = useState<AdFYId>(
-      advertisementFYData[0].id
+    const [activeFY, setActiveFY] = useNewestChoice<AdFYId>(
+      advertisementFYData.map((f) => f.id)
     );
 
-    const fy = advertisementFYData.find((f) => f.id === activeFY)!;
+    const fy = advertisementFYData.find((f) => f.id === activeFY) ?? advertisementFYData[0];
 
     return (
       <div className="mt-4">

@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useContent } from "@/lib/cms";
 
 type ESGItem = {
   id: string;
@@ -59,6 +60,7 @@ function ESGCard({ item }: { item: ESGItem }) {
 }
 
 export function ESGSection() {
+  const { ESG_ITEMS } = useContent("investors.esg", CMS_CONTENT_FALLBACK);
   return (
     <section className="bg-white">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-12">
@@ -86,3 +88,6 @@ export function ESGSection() {
     </section>
   );
 }
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { ESG_ITEMS };

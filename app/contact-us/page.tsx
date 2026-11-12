@@ -706,11 +706,11 @@ export default function GetInTouch() {
   /* Build select options dynamically (independent) */
   const businessOptions = useMemo(
     () => ["all", ...Array.from(new Set(OFFICES.map((o) => o.business)))],
-    []
+    [OFFICES]
   );
   const locationOptions = useMemo(
     () => ["all", ...Array.from(new Set(OFFICES.map((o) => o.country)))],
-    []
+    [OFFICES]
   );
 
   /* Filter logic (each filter works independently; both = intersection) */
@@ -723,7 +723,7 @@ export default function GetInTouch() {
         const hay = `${o.name} ${o.business} ${o.country} ${o.city ?? ""} ${o.address.join(" ")} ${o.phone ?? ""} ${o.email ?? ""}`.toLowerCase();
         return hay.includes(q.toLowerCase());
       });
-  }, [biz, loc, q]);
+  }, [OFFICES, biz, loc, q]);
 
   return (
     <>

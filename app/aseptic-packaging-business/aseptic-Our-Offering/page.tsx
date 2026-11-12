@@ -302,6 +302,8 @@ The second plant in Sokhna, Egypt, is about to be commissioned. Once operational
   // When any category is selected
   const product = productsData[selectedKey] || productsData["aseptic-cartons"];
   const { key: itemKey, ...restProps } = product;
+  // The layout below is chosen by the product's original title, so renaming the title in the admin is safe.
+  const layoutTitle = (productsData_CMS_FALLBACK[selectedKey] || productsData_CMS_FALLBACK["aseptic-cartons"]).title;
 
   return (
     <>
@@ -366,6 +368,7 @@ The second plant in Sokhna, Egypt, is about to be commissioned. Once operational
           <ProductCategorySection
             key={itemKey}
             {...restProps}
+            layoutTitle={layoutTitle}
             categories={enhancedCategories}
             />
             </div>

@@ -109,9 +109,10 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
+import { useContent } from "@/lib/cms";
 
 export default function LifeatModules() {
-  const modules = [
+  const modules_CMS_FALLBACK = [
     {
       title: "Your growth, our success",
       image: "/images/learn.jpg",
@@ -130,6 +131,7 @@ export default function LifeatModules() {
     },
     
   ]
+  const { modules } = useContent("company.home-life-at", { modules: modules_CMS_FALLBACK });
 
   return (
     <section className="px-1 py-10 text-center  sm:bg-gray-100 sm:py-10 md:px-12">

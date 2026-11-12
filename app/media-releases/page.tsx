@@ -4,7 +4,7 @@ import { SiteFooter } from '@/components/site-footer'
 import React, { useState } from 'react'
 import Image from "next/image";
 import { SiteHeader } from '@/components/site-header';
-import { useContent } from "@/lib/cms";
+import { useContent, useNewestChoice, yearKeys } from "@/lib/cms";
 
 
 type Year = 2026 | 2025 | 2024;
@@ -802,8 +802,6 @@ function PdfList({ items }: { items: PdfItem[] }) {
 }
 const pages = () => {
   const { PRESS_ROOM_DATA } = useContent("media.media-releases", CMS_CONTENT_FALLBACK);
-  const [releaseYear, setReleaseYear] = useState<ReleaseYear>(2026);
-  const [notesYear, setNotesYear] = useState<NotesYear>(2026);
 
   const [activeCoverageTab, setActiveCoverageTab] =
     useState<CoverageTab>("Print Media");
@@ -812,8 +810,13 @@ const pages = () => {
 
   const { hero, mediaReleases, mediaCoverage } =
     PRESS_ROOM_DATA;
+  // Year buttons come from the data, newest first (a new year added in the admin appears automatically).
+  const releaseYears = yearKeys(mediaReleases.pressRelease) as ReleaseYear[];
+  const notesYears = yearKeys(mediaReleases.pressNotes) as NotesYear[];
+  const [releaseYear, setReleaseYear] = useNewestChoice<ReleaseYear>(releaseYears);
+  const [notesYear, setNotesYear] = useNewestChoice<NotesYear>(notesYears);
   const coverageItems =
-    mediaCoverage.data[activeCoverageTab][activeCoverageYear];
+    mediaCoverage?.data?.[activeCoverageTab]?.[activeCoverageYear];
   return (
     <div className="bg-white">
       <SiteHeader />
@@ -830,12 +833,12 @@ const pages = () => {
               Press Release
             </h3>
             <YearTabs
-              years={[2026, 2025, 2024, 2023, 2022]}
+              years={releaseYears}
               activeYear={releaseYear}
               onChange={setReleaseYear}
             />
           </div>
-          <PdfList items={mediaReleases.pressRelease[releaseYear]} />
+          <PdfList items={mediaReleases.pressRelease[releaseYear] ?? []} />
         </div>
 
         <div className="max-w-7xl ">
@@ -844,12 +847,12 @@ const pages = () => {
             Press Notes
           </h3>
           <YearTabs
-            years={[2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017]}
+            years={notesYears}
             activeYear={notesYear}
             onChange={setNotesYear}
           />
         </div>
-        <PdfList items={mediaReleases.pressNotes[notesYear]} />
+        <PdfList items={mediaReleases.pressNotes[notesYear] ?? []} />
       </section>
 
       <SiteFooter />

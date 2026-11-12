@@ -142,6 +142,7 @@ import { motion } from "framer-motion";
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
 import Image from "next/image";
+import { useContent } from "@/lib/cms";
 
 // Media coverage items
 const mediaItems = [
@@ -173,6 +174,7 @@ const mediaItems = [
 ];
 
 export default function MediaCoverageCardsCarousel() {
+  const { mediaItems } = useContent("media.press-room-coverage", CMS_CONTENT_FALLBACK);
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
       loop: true,
@@ -248,3 +250,6 @@ export default function MediaCoverageCardsCarousel() {
     </section>
   );
 }
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { mediaItems };

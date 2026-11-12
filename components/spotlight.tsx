@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { LeadershipAwardItem } from "./hall-off-fame";
+import { useContent } from "@/lib/cms";
 export const LEADERSHIP_AWARDS: LeadershipAwardItem[] = 
 [
   {
@@ -116,6 +117,7 @@ export const LEADERSHIP_AWARDS: LeadershipAwardItem[] =
 ];
 
 export default function LeadershipAwards() {
+  const { LEADERSHIP_AWARDS } = useContent("awards.leadership-awards", CMS_CONTENT_FALLBACK);
   return (
     <section className="py-12">
       <div className="">
@@ -179,3 +181,6 @@ export default function LeadershipAwards() {
     </section>
   );
 }
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { LEADERSHIP_AWARDS };

@@ -9,6 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 export default function ProductCategorySection(props: any) {
   const {
     title,
+    layoutTitle = title,
     heroImageUrl,
     brandTag,
     overview,
@@ -22,11 +23,11 @@ export default function ProductCategorySection(props: any) {
   const [activeTab, setActiveTab] = useState<"cartons" | "innovations" | "process">("cartons");
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
-  const isAsepticCartons = title === "Aseptic Cartons";
-  const isASip = title === "A SIP";
-  const isFillingMachines = title === "Filling Machines";
-  const isAseptoPro = title === "Asepto Pro";
-  const isAseptoDesign = title === "Asepto Design";
+  const isAsepticCartons = layoutTitle === "Aseptic Cartons";
+  const isASip = layoutTitle === "A SIP";
+  const isFillingMachines = layoutTitle === "Filling Machines";
+  const isAseptoPro = layoutTitle === "Asepto Pro";
+  const isAseptoDesign = layoutTitle === "Asepto Design";
 
 
   const shapeImageMap: Record<string, string> = {
