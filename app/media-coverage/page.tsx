@@ -5,6 +5,7 @@ import { SiteHeader } from "@/components/site-header";
 import Image from "next/image";
 import React, { useState, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useContent } from "@/lib/cms";
 
 type Year = 2026 | 2025 | 2024;
 type CoverageTab = "Print Media" | "Online Media" | "Electronic Media";
@@ -491,6 +492,7 @@ function YearTabs({
 const ITEMS_PER_PAGE = 8;
 
 const PressRoomPage = () => {
+  const { PRESS_ROOM_DATA } = useContent("media.media-coverage", CMS_CONTENT_FALLBACK);
   const [activeTab, setActiveTab] = useState<CoverageTab>("Print Media");
   const [activeYear, setActiveYear] = useState<Year>(2026);
   const [currentPage, setCurrentPage] = useState(1);
@@ -750,3 +752,6 @@ const PressRoomPage = () => {
 
 export default PressRoomPage;
 
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { PRESS_ROOM_DATA };

@@ -61,6 +61,7 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import Breadcrumb from "../breadcrumb";
+import { useContent } from "@/lib/cms";
 
 const communicationList = [
     { text: "05 Jul 2026: Newspaper Publication", link: "https://beta.uflexltd.com/media/pdf/SC//2026/SIGNED_UFLEX_NSEBSE_ADVT_05JUL26.pdf" },
@@ -121,6 +122,7 @@ const communicationList = [
 ];
 
 export default function Page() {
+    const { communicationList } = useContent("investors.shareholders-information", CMS_CONTENT_FALLBACK);
     return (
         <div>
             <SiteHeader />
@@ -200,3 +202,6 @@ export default function Page() {
         </div>
     );
 }
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { communicationList };

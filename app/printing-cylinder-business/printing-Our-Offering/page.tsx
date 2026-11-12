@@ -8,9 +8,10 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Breadcrumb from "@/components/breadcrumb";
 import { useSearchParams } from "next/navigation";
+import { useContent } from "@/lib/cms";
 
 export default function ProductsPage() {
-  const printingCylindersData = {
+  const printingCylindersData_CMS_FALLBACK = {
     title: "Printing Cylinders",
     heroImageUrl:
       "https://uflex.wpdevstudio.site/HTML/uploaded-files/catalogue/Catalogue-Item1-05492704927.jpg",
@@ -113,6 +114,7 @@ export default function ProductsPage() {
       },
     },
   };
+  const { printingCylindersData } = useContent("business.printing-cylinders.offerings", { printingCylindersData: printingCylindersData_CMS_FALLBACK });
 
   // const [activeKey, setActiveKey] =
   //   useState<"gravure" | "ctp" | "sleeves">("gravure");

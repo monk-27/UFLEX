@@ -11,6 +11,7 @@ import { ChevronRight, ChevronDown } from "lucide-react";
 import { AnimatePresence } from "framer-motion";
 import Breadcrumb from "@/components/breadcrumb";
 import { useSearchParams } from "next/navigation";
+import { useContent } from "@/lib/cms";
 
 export default function ProductsPage() {
     // const [selectedKey, setSelectedKey] = useState<string>("hologram");
@@ -49,7 +50,7 @@ const sectionRef = useRef<HTMLDivElement>(null);
         }
     }, [searchParams]);
 
-    const productsData: Record<string, any> = {
+    const productsData_CMS_FALLBACK: Record<string, any> = {
         hologram: {
             key: "hologram",
             title: "HOLOGRAM",
@@ -179,6 +180,7 @@ const sectionRef = useRef<HTMLDivElement>(null);
         // Add more products later with different layouts
         // "holographic-film": { ... },
     };
+    const { productsData } = useContent("business.holography.offerings", { productsData: productsData_CMS_FALLBACK });
 
 
    const handleCategoryClick = (productKey: string) => {

@@ -59,6 +59,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { quarterlyEarningsData } from "../ir-presentation-quarterly-earnings/page";
 import Breadcrumb from "../breadcrumb";
+import { useContent } from "@/lib/cms";
 
 /* ----------------------------- Types & data ----------------------------- */
 
@@ -392,6 +393,7 @@ export const advertisementFYData: AdvertisementFY[] = [
 /* ----------------------------- Component ----------------------------- */
 
 const Page = () => {
+  const { advertisementFYData, annualReportsUFLEX, subsidiariesData } = useContent("investors.annual-report", CMS_CONTENT_FALLBACK);
   const [activeTab, setActiveTab] = useState<ArTabId>("uflex");
 
   const isUFLEX = activeTab === "uflex";
@@ -678,3 +680,6 @@ const Page = () => {
 
 export default Page;
 
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { annualReportsUFLEX, quarterlyConsolidated, quarterlyStandalone, subsidiariesData, advertisementFYData };

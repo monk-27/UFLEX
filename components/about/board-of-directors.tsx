@@ -7,6 +7,7 @@ import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import type { EmblaOptionsType } from "embla-carousel";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { useContent } from "@/lib/cms";
 
 interface Director {
   name: string;
@@ -68,6 +69,7 @@ const emblaOptions: EmblaOptionsType = {
 };
 
 const BoardOfDirectors = () => {
+  const { directors } = useContent("leadership.board-of-directors", CMS_CONTENT_FALLBACK);
   const [selected, setSelected] = useState<Director | null>(null);
 
   const [emblaRef, emblaApi] = useEmblaCarousel(emblaOptions);
@@ -240,3 +242,6 @@ const scrollNext = useCallback(() => {
   );
 }
 export default BoardOfDirectors;
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { directors };

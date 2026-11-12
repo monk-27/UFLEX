@@ -14,6 +14,7 @@ import { SustainabilitySection } from './buissnessreusbales/SustainabilitySectio
 import Keypeople from './buissnessreusbales/keypeople'
 import { CaseStudySection } from './buissnessreusbales/case-studies'
 import { AwardsSection } from './buissnessreusbales/AwardsSection'
+import { useContent } from "@/lib/cms";
 
 
 
@@ -401,7 +402,9 @@ landfill pressure and helping curb pollution.`,
 type Props = {
     business: any;
 };
-const FlexibleComp: React.FC<Props> = ({ business }) => {
+const FlexibleComp: React.FC<Props> = ({ business: businessProp }) => {
+  const { businesses, SliderItems, packagingData } = useContent("business.flexible-packaging", CMS_CONTENT_FALLBACK);
+  const business = businesses.find((b: any) => b.key === businessProp?.key) ?? businessProp;
     const [open, setOpen] = useState(false);
 
     return (
@@ -572,3 +575,6 @@ const FlexibleComp: React.FC<Props> = ({ business }) => {
 }
 
 export default FlexibleComp
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { businesses, SliderItems, packagingData };

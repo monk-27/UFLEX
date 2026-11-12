@@ -75,9 +75,10 @@
 // export default GlobalFootprint;
 "use client";
 import Image from "next/image";
+import { useContent } from "@/lib/cms";
 
 const GlobalFootprint = () => {
-  const categories = {
+  const categories_CMS_FALLBACK = {
     India: {
       "Packaging Films": [
         "Noida, Uttar Pradesh, India",
@@ -182,6 +183,7 @@ const GlobalFootprint = () => {
       ],
     },
   };
+  const { categories } = useContent("company.global-footprint", { categories: categories_CMS_FALLBACK });
 
   return (
     <section className="mt-[30px] px-4 py-0 text-center sm:mt-8 sm:py-10 md:px-12">

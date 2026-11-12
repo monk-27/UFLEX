@@ -14,6 +14,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 import Link from "next/link";
 import { ReadMoreDialog } from "@/components/expandabletext";
+import { useContent } from "@/lib/cms";
 
 /* ------------------------------- THEME ------------------------------- */
 const BRAND = {
@@ -183,7 +184,7 @@ function InvestorSlider({ items, heading, id }: { items: InvestorCard[]; heading
 
 /* --------------------------------- PAGE -------------------------------- */
 export default function WhatWeDoPage() {
-  const investorRelations: any[] = [
+  const investorRelations_CMS_FALLBACK: any[] = [
     {
       title: "Packaging Films and PET Resin",
       href: "/packaging-films-business",
@@ -236,6 +237,7 @@ export default function WhatWeDoPage() {
       img: "/images/flexible.jpeg",
     },
   ];
+  const { investorRelations } = useContent("company.what-we-do", { investorRelations: investorRelations_CMS_FALLBACK });
 
   // const policiesDocs: InvestorCard[] = [
   //   { title: "Unpaid / Unclaimed Dividend", subtitle: "Check & claim.", image: "/images/policy1.webp", href: "#" },
@@ -245,7 +247,7 @@ export default function WhatWeDoPage() {
   //   { title: "Registrar", subtitle: "RTA contact.", image: "/images/policy3.webp", href: "#" },
 
   // ];
-  const packagingData = [
+  const packagingData_CMS_FALLBACK = [
     {
       "id": "flexible-packaging",
       title: "What We Do",
@@ -265,6 +267,7 @@ export default function WhatWeDoPage() {
     }
 
   ];
+  const { packagingData } = useContent("company.what-we-do", { packagingData: packagingData_CMS_FALLBACK });
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: false,        // ❌ no infinite autoplay feel
     align: "start",

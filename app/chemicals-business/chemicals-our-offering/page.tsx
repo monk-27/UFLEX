@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Breadcrumb from "@/components/breadcrumb";
 import { useSearchParams } from "next/navigation";
+import { useContent } from "@/lib/cms";
 const groupDefaultMap: Record<string, string> = {
   "Inks": "water-based-inks",
   "Adhesives": "water-based-adhesives",
@@ -120,7 +121,7 @@ const enhancedCategories = flatCategories.map((cat) => ({
   // ────────────────────────────────────────────────
   // COMPLETE productsData – EVERY SINGLE ITEM FROM DOCUMENT
   // ────────────────────────────────────────────────
-  const productsData: Record<string, any> = {
+  const productsData_CMS_FALLBACK: Record<string, any> = {
     "water-based-inks": {
       key: "water-based-inks",
       title: "Water Based Inks",
@@ -443,6 +444,7 @@ const enhancedCategories = flatCategories.map((cat) => ({
       ]
     }
   };
+  const { productsData } = useContent("business.chemicals.offerings", { productsData: productsData_CMS_FALLBACK });
 
   const product = productsData[selectedKey] ?? productsData["water-based-inks"];
 

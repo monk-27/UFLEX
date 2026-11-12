@@ -10,9 +10,10 @@ import { ReadMoreDialog } from "@/components/expandabletext";
 import Image from 'next/image';
 import Breadcrumb from "@/components/breadcrumb";
 import { useSearchParams } from "next/navigation";
+import { useContent } from "@/lib/cms";
 
 export default function ProductsPage() {
-    const productsData: any = {
+    const productsData_CMS_FALLBACK: any = {
         bopet: {
             key: "bopet",
             title: "Biaxially Oriented Polyethylene Terephthalate (BOPET) Films",
@@ -462,6 +463,7 @@ export default function ProductsPage() {
             ],
         },
     };
+    const { productsData } = useContent("business.packaging-films.offerings", { productsData: productsData_CMS_FALLBACK });
 
 
     const searchParams = useSearchParams();

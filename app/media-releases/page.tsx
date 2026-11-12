@@ -4,6 +4,7 @@ import { SiteFooter } from '@/components/site-footer'
 import React, { useState } from 'react'
 import Image from "next/image";
 import { SiteHeader } from '@/components/site-header';
+import { useContent } from "@/lib/cms";
 
 
 type Year = 2026 | 2025 | 2024;
@@ -800,6 +801,7 @@ function PdfList({ items }: { items: PdfItem[] }) {
   );
 }
 const pages = () => {
+  const { PRESS_ROOM_DATA } = useContent("media.media-releases", CMS_CONTENT_FALLBACK);
   const [releaseYear, setReleaseYear] = useState<ReleaseYear>(2026);
   const [notesYear, setNotesYear] = useState<NotesYear>(2026);
 
@@ -856,3 +858,6 @@ const pages = () => {
 }
 
 export default pages
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { PRESS_ROOM_DATA };

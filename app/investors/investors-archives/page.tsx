@@ -69,6 +69,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { LinkIcon } from "lucide-react";
 import Breadcrumb from "../breadcrumb";
+import { useContent } from "@/lib/cms";
 
 // archiveData.ts (or same file)
 
@@ -170,6 +171,7 @@ const tabs: { id: ArchiveTabId; label: string }[] = [
 ];
 
 const ArchivePage = () => {
+    const { complianceReports, companyRelease, stockPriceLinks } = useContent("investors.archives", CMS_CONTENT_FALLBACK);
     const [activeTab, setActiveTab] = useState<ArchiveTabId>("compliance");
 
     const isCompliance = activeTab === "compliance";
@@ -495,3 +497,6 @@ const ArchivePage = () => {
 
 export default ArchivePage;
 
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { complianceReports, companyRelease, stockPriceLinks };

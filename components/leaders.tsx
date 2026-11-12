@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { useContent } from "@/lib/cms";
 type Year = 2025 | 2024 | 2023 | 2022 | 2021 | 2020 | 2019 | 2018;
 type YearMap<T> = Partial<Record<Year, T>>;
 
@@ -454,6 +455,7 @@ type BusinessAwardsProps = {
   initialBusiness?: string;
 };
 export default function BusinessAwards({ initialBusiness = "corporate-awards" }: BusinessAwardsProps) {
+  const { AWARDS_DATA } = useContent("awards.hall-of-fame", CMS_CONTENT_FALLBACK);
   // const [activeBusiness, setActiveBusiness] =
   //   useState<BusinessKey>("corporate-awards");
   const [activeBusiness, setActiveBusiness] = useState<BusinessKey>(
@@ -671,3 +673,6 @@ export default function BusinessAwards({ initialBusiness = "corporate-awards" }:
   );
 }
 
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { AWARDS_DATA };

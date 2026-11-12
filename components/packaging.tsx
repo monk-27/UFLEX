@@ -20,6 +20,7 @@ import SimpleCarousel from './slidercomp'
 import { ReadMoreModal } from './read-more-modal'
 import { ReadMoreDialog } from './expandabletext'
 import { SubBusinessHero } from './buissnessreusbales/subhero'
+import { useContent } from "@/lib/cms";
 
 type OfferingTab = "films" | "resin";
 
@@ -588,7 +589,9 @@ export const businesses: any[] = [
 type Props = {
     business: any;
 };
-const PackageComp: React.FC<Props> = ({ business }) => {
+const PackageComp: React.FC<Props> = ({ business: businessProp }) => {
+  const { businesses, SliderItems, SliderItemsResin, packagingData } = useContent("business.packaging-films", CMS_CONTENT_FALLBACK);
+  const business = businesses.find((b: any) => b.key === businessProp?.key) ?? businessProp;
     const [activeTab, setActiveTab] = useState<any>("films");
 
     const [open, setOpen] = useState(false);
@@ -780,3 +783,6 @@ const PackageComp: React.FC<Props> = ({ business }) => {
 }
 
 export default PackageComp
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { businesses, SliderItems, SliderItemsResin, packagingData };

@@ -15,6 +15,7 @@ import Link from "next/link";
 import SustainabilityCarousel from "./hall-main";
 import { AwardsSlider } from "./buissnessreusbales/awards-slider";
 import { useSearchParams } from "next/navigation";
+import { useContent } from "@/lib/cms";
 
 /* --------------------- Dynamic import (client-only) --------------------- */
 const AwardsTabs = dynamic(() => import("@/components/leaders"), {
@@ -155,6 +156,7 @@ type BusinessAwardsProps = {
 };
 /* --------------------------- Page --------------------------- */
 const HallPage = ({ initialBusiness = "corporate-awards" }: BusinessAwardsProps) => {
+  const { business } = useContent("awards.hall-highlights", CMS_CONTENT_FALLBACK);
   const [openIdx, setOpenIdx] = useState<number | null>(null);
   const rowRef = useRef<HTMLDivElement>(null);
   const [hasMounted, setHasMounted] = useState(false);
@@ -278,3 +280,6 @@ const searchParams = useSearchParams();
   );
 }
 export default HallPage;
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { MARQUEE_ITEMS, business };

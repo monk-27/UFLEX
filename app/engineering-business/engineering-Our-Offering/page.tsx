@@ -8,9 +8,10 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Breadcrumb from "@/components/breadcrumb";
 import { useSearchParams } from "next/navigation";
+import { useContent } from "@/lib/cms";
 
 export default function ProductsPage() {
-    const engineeringProductsData: any = {
+    const engineeringProductsData_CMS_FALLBACK: any = {
         engineering: {
             title: "Products",
             heroImageUrl: "/images/engineering-hero.png",
@@ -571,6 +572,7 @@ the circular economy while advancing sustainable waste management practices`,
 
 
     };
+    const { engineeringProductsData } = useContent("business.engineering.offerings", { engineeringProductsData: engineeringProductsData_CMS_FALLBACK });
     const searchParams = useSearchParams();
     const catFromUrl = searchParams.get('cat')?.toLowerCase() || null;
 

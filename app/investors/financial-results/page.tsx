@@ -6,6 +6,7 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import Breadcrumb from "../breadcrumb";
+import { useContent } from "@/lib/cms";
 
 /* ----------------------------- Types ----------------------------- */
 
@@ -862,6 +863,7 @@ export const subsidiariesFYData: SubsidiaryFY[] = [
   }
 ];
 const SubsidiariesSection: React.FC = () => {
+  const { subsidiariesFYData } = useContent("investors.financial-results", CMS_CONTENT_FALLBACK);
   const [activeFY, setActiveFY] = useState<SubsidiaryFYId>("FY2025-2026");
 
   const fy = subsidiariesFYData.find((f) => f.id === activeFY)!;
@@ -1301,6 +1303,7 @@ const QuarterCard: React.FC<{ card: AdvertisementFY["cards"][number] }> = ({
 
 /* Advertisements section with FY pills */
 const AdvertisementsSection: React.FC = () => {
+  const { advertisementFYData } = useContent("investors.financial-results", CMS_CONTENT_FALLBACK);
   const [activeFY, setActiveFY] = useState<AdFYId>(advertisementFYData[0].id);
   const fy = advertisementFYData.find((f) => f.id === activeFY)!;
 
@@ -1348,6 +1351,7 @@ const AdvertisementsSection: React.FC = () => {
 /* ---------------------------- Page component ---------------------------- */
 
 const Page = () => {
+  const { quarterlyConsolidated, quarterlyStandalone } = useContent("investors.financial-results", CMS_CONTENT_FALLBACK);
   const [activeTab, setActiveTab] = useState<FrTabId>("consolidated");
 
   const isConsolidated = activeTab === "consolidated";
@@ -1487,3 +1491,6 @@ const Page = () => {
 };
 
 export default Page;
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { quarterlyConsolidated, quarterlyStandalone, subsidiariesData, subsidiariesFYData, advertisementFYData };

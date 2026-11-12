@@ -16,6 +16,7 @@ import Keypeople from './buissnessreusbales/keypeople'
 import { CaseStudySection } from './buissnessreusbales/case-studies'
 import { AwardsSection } from './buissnessreusbales/AwardsSection'
 import { ReadMoreDialog } from './expandabletext'
+import { useContent } from "@/lib/cms";
 
 
 
@@ -321,7 +322,9 @@ With 75% of purchasing decisions made by consumers at the shelf, aesthetically d
 type Props = {
   business: any;
 };
-const FlexiComp: React.FC<Props> = ({ business }) => {
+const FlexiComp: React.FC<Props> = ({ business: businessProp }) => {
+  const { businesses, SliderItems, packagingData } = useContent("business.flexible-tubes", CMS_CONTENT_FALLBACK);
+  const business = businesses.find((b: any) => b.key === businessProp?.key) ?? businessProp;
   const [open, setOpen] = useState(false);
 
   return (
@@ -452,3 +455,6 @@ const FlexiComp: React.FC<Props> = ({ business }) => {
 }
 
 export default FlexiComp
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { businesses, SliderItems, packagingData };

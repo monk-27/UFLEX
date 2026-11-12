@@ -63,6 +63,7 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import Breadcrumb from "../breadcrumb";
+import { useContent } from "@/lib/cms";
 
 /* ----------------------------- Types & data ----------------------------- */
 
@@ -846,6 +847,7 @@ const investorUpdates: DocItem[] = [
 /* ----------------------------- Page component ----------------------------- */
 
 const Page = () => {
+    const { quarterlyEarningsData, investorPresentations, investorUpdates } = useContent("investors.ir-presentations", CMS_CONTENT_FALLBACK);
     const [activeTab, setActiveTab] = useState<TabId>("presentations-updates");
 
     const isPresentations = activeTab === "presentations-updates";
@@ -1171,3 +1173,6 @@ const Page = () => {
 
 export default Page;
 
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { quarterlyEarningsData, investorPresentations, investorUpdates };

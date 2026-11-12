@@ -1,7 +1,7 @@
 
 "use client";
 
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
@@ -9,6 +9,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { Calendar } from "lucide-react";
 import { title } from "process";
 import Breadcrumb from "../breadcrumb";
+import { useContent } from "@/lib/cms";
 
 /* -------------------------- Tabs & data types -------------------------- */
 
@@ -1670,7 +1671,7 @@ const tabItems: any = {
 const getYearFromDate = (date: string) => {
     return date.split("/")[2];
 };
-const announcementsData = Object.entries(
+const buildAnnouncementsData = (tabItems: any) => Object.entries(
     (tabItems["announcements"] as AnnouncementGroup[]).reduce(
         (acc: Record<string, AnnouncementGroup[]>, item) => {
             const year = getYearFromDate(item.date);
@@ -1693,6 +1694,8 @@ const announcementsData = Object.entries(
         groups,
     }));
 export default function Page() {
+    const { tabItems } = useContent("investors.announcements-updates", CMS_CONTENT_FALLBACK);
+    const announcementsData = useMemo(() => buildAnnouncementsData(tabItems), [tabItems]);
     const [activeTabId, setActiveTabId] = useState<TabId>("announcements");
 
     // New states for Dividend Folio Search
@@ -2246,3 +2249,6 @@ export default function Page() {
         </div>
     );
 }
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { tabItems };

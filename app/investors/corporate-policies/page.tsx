@@ -66,6 +66,7 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import Breadcrumb from "../breadcrumb";
+import { useContent } from "@/lib/cms";
 
 /* ----------------------------- Types & data ----------------------------- */
 
@@ -208,6 +209,7 @@ const familiarizationPrograms: PolicyItem[] = [
 /* ----------------------------- Page component ----------------------------- */
 
 const Page = () => {
+  const { policies, familiarizationPrograms } = useContent("investors.corporate-policies", CMS_CONTENT_FALLBACK);
   return (
     <div>
       <SiteHeader />
@@ -314,3 +316,6 @@ const Page = () => {
 
 export default Page;
 
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { policies, familiarizationPrograms };

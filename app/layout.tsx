@@ -7,6 +7,7 @@ import { PageTransition } from "@/components/page-transition"
 import { GetQuoteButton } from "@/components/get-quote-button"
 import { ScrollToTopButton } from "@/components/scroll-to-top-button"
 import CookieConsent from "./what-we-do/cookies"
+import { CmsPreviewBanner } from "@/components/cms-preview-banner"
 
 import type { Viewport } from "next";
 
@@ -44,6 +45,7 @@ export default function RootLayout({
         </Suspense>
         <ScrollToTopButton />
         <GetQuoteButton />
+        <CmsPreviewBanner />
         <Analytics />
       </body>
     </html>

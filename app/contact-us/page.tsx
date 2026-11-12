@@ -7,6 +7,7 @@ import { Mail, Phone, MapPin, Building2, Globe2, Send, Filter, Search, RefreshCw
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import Swal from "sweetalert2";
+import { useContent } from "@/lib/cms";
 
 
 /* ----------------------------- Anim helper ----------------------------- */
@@ -536,6 +537,7 @@ function OfficeCard({ o }: { o: Office }) {
 
 /* --------------------------------- Page --------------------------------- */
 export default function GetInTouch() {
+  const { OFFICES, ENQUIRY_TYPES, BUSINESS_PRODUCTS } = useContent("company.offices", CMS_CONTENT_FALLBACK);
   /* Independent filters */
   // const [biz, setBiz] = useState<string>("all");
   const [biz, setBiz] = useState<string>("Corporate");
@@ -1162,3 +1164,6 @@ export default function GetInTouch() {
     </>
   );
 }
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { OFFICES, BUSINESS_PRODUCTS, ENQUIRY_TYPES };

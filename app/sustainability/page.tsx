@@ -14,6 +14,7 @@ import Image from "next/image"
 import SustainabilityReportsCarousel from "@/components/main-sustainability-commitment"
 import Link from "next/link"
 import { useState } from "react"
+import { useContent } from "@/lib/cms";
 
 type SusTabId = "reports" | "materiality" | "assurance"
 
@@ -90,6 +91,7 @@ const susTabs: { id: SusTabId; label: string }[] = [
 ]
 
 export default function Page() {
+  const { sustainabilityReports, materialityReports, assuranceStatements } = useContent("company.sustainability", CMS_CONTENT_FALLBACK);
   const [activeTab, setActiveTab] = useState<SusTabId>("reports")
 
 
@@ -301,3 +303,6 @@ export default function Page() {
     </main>
   )
 }
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { sustainabilityReports, materialityReports, assuranceStatements };

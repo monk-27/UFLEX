@@ -12,6 +12,7 @@ import MediaCoverageCardsCarousel from "../media-releases/media-coverage";
 import AutoScroll from "embla-carousel-auto-scroll";
 import useEmblaCarousel from "embla-carousel-react";
 import GalleryPage from "./gallery";
+import { useContent } from "@/lib/cms";
 
 /* ==========================
    TYPES
@@ -410,6 +411,7 @@ function PdfList({ items }: { items: PdfItem[] }) {
 ========================== */
 
 export default function PressRoomPage() {
+  const { PRESS_ROOM_DATA } = useContent("media.press-room", CMS_CONTENT_FALLBACK);
   const [releaseYear, setReleaseYear] = useState<Year>(2025);
   const [notesYear, setNotesYear] = useState<Year>(2025);
 
@@ -584,3 +586,6 @@ export default function PressRoomPage() {
     </div>
   );
 }
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { PRESS_ROOM_DATA };

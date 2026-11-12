@@ -58,6 +58,7 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import Breadcrumb from "../breadcrumb";
+import { useContent } from "@/lib/cms";
 
 /* --------------------------- CSR data (JSON) --------------------------- */
 
@@ -96,6 +97,7 @@ const csrAnnualActionPlans: CsrPlanItem[] = [
 /* ------------------------------ Page ------------------------------ */
 
 const CsrPage = () => {
+  const { csrAnnualActionPlans } = useContent("investors.csr", CMS_CONTENT_FALLBACK);
   return (
     <div>
       <SiteHeader />
@@ -186,3 +188,6 @@ const CsrPage = () => {
 };
 
 export default CsrPage;
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { csrAnnualActionPlans };

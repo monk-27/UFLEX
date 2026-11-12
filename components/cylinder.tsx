@@ -17,6 +17,7 @@ import { CaseStudySection } from './buissnessreusbales/case-studies'
 import { AwardsSection } from './buissnessreusbales/AwardsSection'
 import { ReadMoreDialog } from './expandabletext'
 import SimpleCarousel, { SliderItem } from './clyslider'
+import { useContent } from "@/lib/cms";
 
 
 
@@ -320,7 +321,9 @@ export const businesses: any[] = [
 type Props = {
   business: any;
 };
-const CylComp: React.FC<Props> = ({ business }) => {
+const CylComp: React.FC<Props> = ({ business: businessProp }) => {
+  const { businesses, SliderItems, packagingData } = useContent("business.printing-cylinders", CMS_CONTENT_FALLBACK);
+  const business = businesses.find((b: any) => b.key === businessProp?.key) ?? businessProp;
   const [open, setOpen] = useState(false);
 
   return (
@@ -492,3 +495,6 @@ const CylComp: React.FC<Props> = ({ business }) => {
 }
 
 export default CylComp
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { businesses, SliderItems, packagingData };

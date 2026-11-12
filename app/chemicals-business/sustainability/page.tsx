@@ -4,6 +4,7 @@ import { SiteHeader } from '@/components/site-header'
 import React from 'react'
 import Image from 'next/image'
 import SustainabilityGrid from '@/components/buisness-sustainability'
+import { useContent } from "@/lib/cms";
 
 
 export const SUSTAINABILITY_GRID_DATA = [
@@ -52,6 +53,7 @@ export const SUSTAINABILITY_GRID_DATA = [
 ];
 
 const page = () => {
+    const { SUSTAINABILITY_GRID_DATA } = useContent("business.chemicals.sustainability", CMS_CONTENT_FALLBACK);
     return (
         <div className='bg-white'>
             <SiteHeader />
@@ -89,3 +91,6 @@ const page = () => {
 }
 
 export default page
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { SUSTAINABILITY_GRID_DATA };

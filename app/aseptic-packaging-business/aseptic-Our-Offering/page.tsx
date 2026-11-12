@@ -10,11 +10,12 @@ import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import Breadcrumb from "@/components/breadcrumb";
 import { useSearchParams } from "next/navigation";
+import { useContent } from "@/lib/cms";
 
 export default function ProductsPage() {
   // const [selectedKey, setSelectedKey] = useState<string | null>(null);
 
-  const productsData: Record<string, any> = {
+  const productsData_CMS_FALLBACK: Record<string, any> = {
     "aseptic-cartons": {
       key: "aseptic-cartons",
       title: "Aseptic Cartons",
@@ -92,6 +93,7 @@ export default function ProductsPage() {
     },
     // Add other categories later...
   };
+  const { productsData } = useContent("business.aseptic-packaging.offerings", { productsData: productsData_CMS_FALLBACK });
 
   const categories = [
     { name: "Aseptic Cartons", productKey: "aseptic-cartons" },

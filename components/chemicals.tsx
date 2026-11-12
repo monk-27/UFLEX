@@ -17,6 +17,7 @@ import { AwardsSection } from './buissnessreusbales/AwardsSection'
 import Keypeople from './buissnessreusbales/keypeople'
 import SimpleCarousel from './slidercomp'
 import { ReadMoreDialog } from './expandabletext'
+import { useContent } from "@/lib/cms";
 
 
 // Default sub-category when clicking a group from slider
@@ -293,7 +294,9 @@ type Props = {
 };
 
 
-const ChemicalsComp: React.FC<Props> = ({ business }) => {
+const ChemicalsComp: React.FC<Props> = ({ business: businessProp }) => {
+  const { businesses, SliderItems, packagingData } = useContent("business.chemicals", CMS_CONTENT_FALLBACK);
+  const business = businesses.find((b: any) => b.key === businessProp?.key) ?? businessProp;
     const [open, setOpen] = useState(false);
 
     return (
@@ -421,3 +424,6 @@ const ChemicalsComp: React.FC<Props> = ({ business }) => {
 }
 
 export default ChemicalsComp
+
+// CMS: the data above is the fallback; published content from the admin replaces it (see lib/cms.ts).
+const CMS_CONTENT_FALLBACK = { businesses, SliderItems, packagingData };
